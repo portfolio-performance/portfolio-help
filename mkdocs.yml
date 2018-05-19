@@ -1,0 +1,47 @@
+
+# Project information
+site_name: 'Portfolio Performance Handbuch'
+site_description: 'Handbuch für Portfolio Performance Software'
+site_author: 'Andreas Buchen, et. al.'
+site_url: 'https://help.portfolio-performance.info/'
+
+repo_name: 'buchen/portfolio-help'
+repo_url: 'https://github.com/buchen/portfolio-help'
+edit_uri: 'blob/master/docs/'
+
+copyright: 'Dieses Werk ist lizenziert unter <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.'
+
+theme:
+  name: 'material'
+  custom_dir: 'theme'
+  palette:
+    primary: 'light green'
+    accent: 'amber'
+  logo: 'images/logo.svg'
+  favicon: 'images/favicon.ico'
+  language: 'de'
+
+extra:
+  social:
+    - type: 'home'
+      link: 'https://www.portfolio-performance.info'
+    - type: 'github'
+      link: 'https://github.com/buchen/portfolio'
+    - type: 'twitter'
+      link: 'https://twitter.com/portfolioperf'
+    - type: 'comments-o'
+      link: 'https://forum.portfolio-performance.info'
+    - type: 'bug'
+      link: 'https://github.com/buchen/portfolio/issues'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+
+pages:
+  - Überblick: index.md
+  - Lizenz: license.md
+
