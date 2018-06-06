@@ -43,5 +43,6 @@ markdown_extensions:
 
 pages:
   - Überblick: index.md
+  - Kursdaten laden: kursdaten_laden.md
   - Lizenz: license.md
 
