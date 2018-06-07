@@ -10,9 +10,10 @@ media_folder: "docs/images/uploads"
 
 collections:
   - name: "page"
-    label: "Pages"
+    label: "Page"
     folder: "docs"
     create: true
     slug: "{{slug}}"
     fields:
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
