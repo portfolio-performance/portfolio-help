@@ -1,3 +1,7 @@
+---
+title: Kursdaten laden
+---
+
 # Kursdaten laden
 
 ## Yahoo Finance

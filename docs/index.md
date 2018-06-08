@@ -1,3 +1,7 @@
+---
+title: Über dieses Handbuch
+---
+
 # Über dieses Handbuch
 
 Seit Anfang 2012 gibt es [Portfolio Performance](https://portfolio-performance.info) um die Performance eines Gesamtportfolios zu berechnen - über verschiedene Depots und Konten hinweg - anhand von True-Time Weighted Rate of Return und internem Zinsfuß.
