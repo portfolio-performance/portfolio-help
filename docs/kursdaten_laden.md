@@ -16,7 +16,7 @@ title: Kursdaten laden
 
 Manche Seiten verteilen die Daten auf mehrere Requests. Wenn eines der Macros in der URL gefunden wird, wird die URL dynamisch zusammengesetzt und PP macht solange Aufrufe bis keine weiteren Kurse mehr gefunden werden.
 
-In einer URL darf immer nur genau ein Macros vorkommen.
+In einer URL darf immer nur genau ein Macro vorkommen.
 
 #### DATE
 
