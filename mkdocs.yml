@@ -46,3 +46,6 @@ pages:
   - Kursdaten laden: kursdaten_laden.md
   - Lizenz: license.md
 
+google_analytics:
+  - 'UA-34744550-1'
+  - 'auto'
