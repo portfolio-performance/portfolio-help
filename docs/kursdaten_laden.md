@@ -18,6 +18,8 @@ Manche Seiten verteilen die Daten auf mehrere Requests. Wenn eines der Macros in
 
 In einer URL darf immer nur genau ein Macro vorkommen.
 
+[<i class="fa fa-comments-o" aria-hidden="true"></i> Forum](https://forum.portfolio-performance.info/t/dynamische-kursdaten-urls/2929/1)
+
 #### DATE
 
 ```DATE:<format>``` generiert eine Abfrage für jedes Datum mit dem angegebenen Format, und zwar
@@ -29,12 +31,18 @@ Das Datumsformat folgt den Regeln des [DateTimeFormatter](https://docs.oracle.co
 
 Beispiele:
 ```
-https://example.com/data?datum={DATE:yyyy-MM-dd}
 https://example.com/data?month={DATE:yyyy-MM}
-https://example.com/data?datum={DATE:yyyy-MM-31}
+https://example.com/data?datum={DATE:yyyy-MM-32}
 ```
 
-Wenn die identische URL mehrfach generiert wird, dann macht PP nur eine einzige Abfrage. Nehmen wir das Datumsformat aus dem letzten Beispiel: ```{DATE:yyyy-MM-31}``` Der Tag ist statisch auf 31 gesetzt. Es wird für jeden Tag in einem Monat die identische URL generiert, aber nur eine Abfrage zum Server gemacht.
+Wenn die identische URL mehrfach generiert wird, dann macht PP nur eine einzige Abfrage. Nehmen wir das Datumsformat aus dem letzten Beispiel: ```{DATE:yyyy-MM-32}``` Der Tag ist statisch auf 32 gesetzt. Es wird für jeden Tag in einem Monat die identische URL generiert, aber nur eine Abfrage zum Server gemacht.
+
+!!! tip "Tipp"
+    Warum den 32. und nicht den 31. als letzten Tag? [Al2Klimov](https://forum.portfolio-performance.info/t/dynamische-kursdaten-urls/2929/10) schreibt dazu im Forum: *Aus eigener Erfahrung u.a. als Berufsprogrammierer kann ich dieses “Ausreiz-Prinzip” vielerseits empfehlen: Entweder es fährt alles “gegen die Wand” (den 32. Monatstag gibts so nicht) oder alles funktioniert – aber bitteschön kein inkonsistenter Zustand dazwischen!*
+
+!!! warning "Warnung"
+    Mit dem Datumsformat ```yyyy-MM-dd``` wird für jeden Tag eine URL generiert und damit eine ganze Menge Abfragen gemacht. Das sollte man nach Möglichkeit vermeiden. Der Server könnte das als Fehlanwendung verstehen und dann keine Daten liefern.
+
 
 #### PAGE
 
