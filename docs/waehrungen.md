@@ -12,11 +12,11 @@ Portfolio Performance unterstützt Konten und Wertpapiere in Fremdwährungen.
 * Neben den Wechselkursen der [Europäischen Zentralbank](#referenzwechselkurse-der-europaischen-zentralbank) kann man auch [benutzerdefinierte Wechselkurse](#benutzerdefinierte-wechselkurse) anlegen und - anlog zu Wertpapieren - aus den üblichen Quellen mit Kursen versorgen.
 * Standardmässig rechnet PP bei monetären Beträgen mit 2 Nachkommastellen und bei Wechselkursen mit 4 Nachkommastellen. Wenn der Wechselkurse invertiert wird, rechnet PP mit 10 Nachkommastellen.
 * Wechselkurse können in [Mengennotierung oder Preisnotierung](#notierung) dargestellt werden.
-* Beträge in einer Buchung weden wenn möglich mit dem Wechselkurs aus der Buchung selbst umgerechnet.
+* Beträge in einer Buchung werden - wenn möglich - mit dem Wechselkurs aus der Buchung selbst umgerechnet.
 
 Die verfügbaren Wechselkurse finden sich unter *Allgemeine Daten -> Währungen -> Wechselkurse*.
 
-<a href="../images/assets/liste_waehrungen.png"><img alt="Allgemeine Daten - Währungen - Wechselkurse" src="../images/assets/liste_waehrungen.png" width="670" style="width: 100%; max-width: 670px; display: block; margin-left: auto; margin-right: auto;"/></a>
+<a href="../images/assets/liste_waehrungen.png"><img alt="Allgemeine Daten - Währungen - Wechselkurse" src="../images/assets/liste_waehrungen.png" width="670" style="max-width: 670px;" class="screenshot"/></a>
 
 ## Notierung
 
@@ -45,7 +45,9 @@ Preisnotierung üblich ist, insbesondere auch in der Schweiz. [Quelle](https://d
 
 Mit dem Währungsrechner unter *Allgemeine Daten -> Währungen -> Währungsrechner* kann man nachvollziehen welche Wechselkurse PP für eine Umrechnung verwendet.
 
-<a href="../images/assets/waehrungsrechner.png"><img alt="Währungsrechner" src="../images/assets/waehrungsrechner.png" width="471" style="width: 100%; max-width: 471px; display: block; margin-left: auto; margin-right: auto;"/></a>
+In diesem Beispiel wird der *Dirham* aus den Vereinige Arabische Emiraten zunächst in *US Doller* und anschliessend in *Euro* umgerechnet.
+
+<a href="../images/assets/waehrungsrechner.png"><img alt="Währungsrechner" src="../images/assets/waehrungsrechner.png" width="471" style="max-width: 471px;" class="screenshot"/></a>
 
 PP gewichtet Wechselkurse und nutzt zur Umrechnung den Wechselkurs mit dem niedrigsten Gewicht:
 
@@ -66,3 +68,24 @@ Laut Webseite werden die Wechselkurse der EZB gegen 16 Uhr aktualisiert:
 
 ## Benutzerdefinierte Wechselkurse
 
+Benutzerdefinierte Wechselkurse sind in PP nichts anderes als Wertpapiere, die neben der eigenen Währung auch noch eine Zielwährung haben. Die Kurse werden zur Umrechnung der Beträge verwendet. Wechselkurse können über die gleichen Mechanismen wie [Kurse geladen](kursdaten_laden.md) werden, z.B. von Yahoo Finance oder per CSV Import.
+
+Benutzerdefinierte Wechselkurse erstellt man mit dem Dialog *Wertpapiere -> Neuen Wechselkurs anlegen...*.
+
+<a href="../images/assets/wechselkurs_anlegen.png"><img alt="Wechselkurs anlegen" src="../images/assets/wechselkurs_anlegen.png" width="654" style="max-width: 654px;" class="screenshot"/></a>
+
+Neben der Währung ("Basiswährung") gibt man die Zielwährung des Wechselkurses ein.
+
+<a href="../images/assets/config_waehrungen.png"><img alt="Wechselkurs editieren" src="../images/assets/config_waehrungen.png" width="538" style="max-width: 538px;" class="screenshot"/></a>
+
+Um Kurse von **Yahoo Finance** zu laden, verwendet man ein Symbol aus der Basiswährung und Zielwährung mit dem Suffix **=X**. Für die Umrechnung von EUR (Euro) in den Vietnamesischen Dong (VND) heißt das Symbol entsprechnd ```EURVND=X```.
+
+<a href="../images/assets/wechselkurse_laden.png"><img alt="Wechselkurse laden" src="../images/assets/wechselkurse_laden.png" width="538" style="max-width: 538px;" class="screenshot"/></a>
+
+Alternativ kann man die Wechselkurse auch per CSV importieren: *Datei -> Importieren... -> CSV Dateien*. Die CSV-Datei für den Kurs Euro nach Vietnamesischer Dong kann man z.B. per Google Sheets erstellen. Dazu nutzt man einfach die Funktion ```GoogleFinance``` für Euro und Dong ```CURRENCY:EURVND``` in etwa so für das letzte Jahr:
+
+<a href="../images/assets/wechselkurs_googlesheet.png"><img alt="Wechselkurs in Google Sheet laden" src="../images/assets/wechselkurs_googlesheet.png" width="519" style="max-width: 519px;" class="screenshot"/></a>
+
+Die Google Sheets-Datei lädt man dann als CSV herunter und importiert sie danach ganz normal mit dem CSV-Import in Portfolio Performance.
+
+<a href="../images/assets/wechselkurs_googlesheet_export.png"><img alt="Wechselkurs in Google Sheet laden" src="../images/assets/wechselkurs_googlesheet_export.png" width="617" style="max-width: 617px;" class="screenshot"/></a>

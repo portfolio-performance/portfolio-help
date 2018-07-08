@@ -21,6 +21,9 @@ theme:
   favicon: 'images/favicon.ico'
   language: 'de'
 
+extra_css:
+  - 'stylesheets/extra.css'
+
 extra:
   social:
     - type: 'home'
