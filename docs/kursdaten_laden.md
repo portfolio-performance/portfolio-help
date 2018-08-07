@@ -75,7 +75,28 @@ https://example.com/data?page={PAGE}
 ```TICKER``` ersetzt das Ticker Symbol des Wertpapiers in der URL.
 
 ```
-https://example.com/data?ticker={ISIN}
+https://example.com/data?ticker={TICKER}
+```
+
+#### TODAY
+
+```TODAY:<format>:<delta>``` ersetzt das aktuelle Datum in der URL.
+
+* ```<format>``` ist das Datumsformat nach den Regeln des [DateTimeFormatter](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html) aus Java. Die wichtigsten Symbole sind ```y``` für das Jahr, ```M``` für den Monat im Jahr und ```d``` für den Tag im Monat.
+* ```<delta>``` ist eine Zeitspanne basierend auf den ISO-8601 Regeln wie in [Java](https://docs.oracle.com/javase/8/docs/api/java/time/Period.html#parse-java.lang.CharSequence-) implementiert. Die Zeitspanne kann optional mit einem Minuszeichen beginnen - dann wird sie vom aktuellen Datum abgezogen. Dann folgt ein ```P``` (für period) und anschliessend eine Zahl und ein Suffix - z.B. einem ```Y``` für Jahre, ```M``` für Monate, ```W``` für Wochen und einem ```D``` für Tage.
+
+```
+// aktuelles Datum im ISO Format
+https://example.com/data?datum={TODAY}
+
+// aktuelles Datum im deutschen Datumsformat
+https://example.com/data?datum={TODAY:dd.MM.yyyy}
+
+// aktuelles Datum minus 1 Jahr
+https://example.com/data?datum={TODAY:dd.MM.yyyy:-P1Y}
+
+// aktuelles Datum minus 2 Monate
+https://example.com/data?datum={TODAY:dd.MM.yyyy:-P2M}
 ```
 
 #### WKN
