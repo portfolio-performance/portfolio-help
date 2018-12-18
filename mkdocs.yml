@@ -48,6 +48,7 @@ pages:
   - Überblick: index.md
   - Währungen: waehrungen.md
   - Kursdaten laden: kursdaten_laden.md
+  - Buchungen erfassen: buchungen_erfassen.md
   - Lizenz: license.md
 
 google_analytics:
