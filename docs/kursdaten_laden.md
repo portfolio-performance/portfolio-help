@@ -4,11 +4,19 @@ title: Kursdaten laden
 
 # Kursdaten laden
 
+Historische Kurse sind extrem wichtig um eine Performance berechnen zu können. Wenn man nicht weiß wieviel ein Wertpapier vor einem Jahr wert war, dann helfen auch schicke Formeln nicht weiter. Allerdings ist es nicht einfach an gute und gleichzeitig kostenlose historische Kurse heranzukommen.
+
+Die erste Anlaufstelle ist [Yahoo Finance](#yahoo-finance): sofern Yahoo Finance das Wertpapier kennt und auch Kurse hat, kann man bequem anhand des Tickers den Download direkt in PP konfigurieren. Allerdings ist die Abdeckung für deutsche Fonds oder ETFs nicht so prickelnd. Eine weitere Möglichkeit ist [AlphaVantage](#alphavantage): ebenfalls mit viel Gewicht auf den amerikanischen Markt. Allerdings erlaubt das kostenlose API nur wenige Aufrufe pro Minute.
+
+Wenn diese zwei automatischen Quellen keine historischen Kurse bieten, muss man zu "halbautomatischen" Lösungen greifen. Die erste Möglichkeit ist eine URL zu hinterlegen auf der nach einer [Tabelle mit Kursinformationen](#tabelle-auf-einer-webseite) gesucht wird. Neben der Schwierigkeit überhaupt die passende Seite zu finden, kann es auch sein, dass die URLs sich immer wieder ändert so dass man mit Markos [dynamische Kursdaten-URLs](#dynamische-kursdaten-urls) zusammenbauen muss.
+
+Und schließlich bleiben die manuellen Lösungen: die Kursdaten [per CSV-Datei](#csv-import) zu importieren oder manuell im Programm selbst zu erfassen.
+
+[<i class="fa fa-comments-o" aria-hidden="true"></i> Forum: Quellen für historische Kurse](https://forum.portfolio-performance.info/t/quellen-fuer-historische-kurse/46)
+
 ## Yahoo Finance
 
 ## AlphaVantage
-
-## CSV Import
 
 ## Tabelle auf einer Webseite
 
@@ -18,7 +26,7 @@ Manche Seiten verteilen die Daten auf mehrere Requests. Wenn eines der Macros in
 
 In einer URL dürfen mehrere Marcos verwendet werden. Allerdings dürfen ```DATE``` und ```PAGE``` nicht gemeinsam verwendet werden, weil beide unterschiedliche Iterationen von URLs generieren.
 
-[<i class="fa fa-comments-o" aria-hidden="true"></i> Forum](https://forum.portfolio-performance.info/t/dynamische-kursdaten-urls/2929/1)
+[<i class="fa fa-comments-o" aria-hidden="true"></i> Forum: Dynamische Kursdaten-URLs](https://forum.portfolio-performance.info/t/dynamische-kursdaten-urls/2929/1)
 
 #### CURRENCY
 
@@ -63,7 +71,7 @@ https://example.com/data?isin={ISIN}
 
 #### PAGE
 
-```PAGE``` fängt mit 1 an zu zählen bis keine weiteren Kurse mehr auf der Seite gefunden werden. 
+```PAGE``` fängt mit 1 an zu zählen bis keine weiteren Kurse mehr auf der Seite gefunden werden.
 
 ```
 https://example.com/data?page={PAGE}
@@ -107,3 +115,5 @@ https://example.com/data?datum={TODAY:dd.MM.yyyy:-P2M}
 ```
 https://example.com/data?wkn={WKN}
 ```
+
+## CSV Import
