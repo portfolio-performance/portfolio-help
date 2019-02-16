@@ -10,6 +10,7 @@ Portfolio Performance (PP) selber versucht so einfach und intuitiv zu bleiben wi
 
 ## Inhaltsverzeichnis
 
+* [Installation](installation.md)
 * [Währungen](waehrungen.md)
 * [Kursdaten laden](kursdaten_laden.md)
 * [Buchungen erfassen](buchungen_erfassen.md)

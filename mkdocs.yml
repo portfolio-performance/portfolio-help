@@ -46,6 +46,7 @@ markdown_extensions:
 
 pages:
   - Überblick: index.md
+  - Installation: installation.md
   - Währungen: waehrungen.md
   - Kursdaten laden: kursdaten_laden.md
   - Buchungen erfassen: buchungen_erfassen.md
