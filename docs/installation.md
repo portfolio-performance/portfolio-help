@@ -10,20 +10,21 @@ Die XML/Portfolio Datei mit den eigenen Daten (Wertpapiere, Depots und Konten, B
 
 ## macOS
 
-Portfolio Performance ist nicht mit einem Apple Zertifikat signiert. Darum kann es beim ersten Öffnen zu einer Meldung wie dieser kommen:
+Portfolio Performance ist nicht mit einem Apple Zertifikat signiert. Aus diesem Grund behandelt der [macOS Gatekeeper](https://en.wikipedia.org/wiki/Gatekeeper_(macOS)) die Anwendung beim ersten Starten besonders. Mit folgenden Schritten lässt sich PP starten:
 
-> “Portfolio Performance" kann nicht geöffnet werden, da es von einem nicht verifizierten Entwickler stammt
-
-Für den ersten Start muss man zunächst per Kontextmenü (rechte Maustaste) den Menüpunkt *Öffnen* und in der anschließenden Meldung nochmals *Öffnen* wählen.
+* PP laden und auspacken (zum Beispiel im "Downloads" Verzeichnis)
+* PP nach "Anwendungen" verschieben
+* PP per Rechtsklick und "Öffnen" starten (per Kontextmenü (rechte Maustaste) den Menüpunkt "Öffnen" und in der anschließenden Meldung nochmals "Öffnen" wählen)
 
 ## Linux
 
 Portfolio Performance nutzt [Eclipse SWT](https://www.eclipse.org/swt/) und damit unter Linux native Bibliotheken. Standardmässig wird dabei **GTK3** verwendet, allerdings gibt es bei verschiedenen Kombinationen mit Themes immer mal wieder Probleme. So meldete zum Beispiel ein Benutzer Probleme im Zusammenhang mit ["oxygen-gtk" Theme](https://github.com/buchen/portfolio/issues/1089#issuecomment-459698493).
 
-PP kann man mit folgender Anweisung auf GTK2 zwingen:
-```
-env SWT_GTK3=0 PortfolioPerformance
-```
+Wenn es Probleme gibt, dann bieten sich folgende Optionen an:
+
+* Alternatives GTK3 Theme ausprobieren
+* PP auf GTK2 zwingen: ```env SWT_GTK3=0 PortfolioPerformance```
+* Alternative input method nutzen: ```env GTK_IM_MODULE=ibus PortfolioPerformance```
 
 ## Workspace Verzeichnis
 
