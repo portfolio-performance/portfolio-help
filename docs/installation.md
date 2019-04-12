@@ -10,7 +10,7 @@ Die XML/Portfolio Datei mit den eigenen Daten (Wertpapiere, Depots und Konten, B
 
 ## macOS
 
-Portfolio Performance ist nicht mit einem Apple Zertifikat signiert. Aus diesem Grund behandelt der [macOS Gatekeeper](https://en.wikipedia.org/wiki/Gatekeeper_(macOS)) die Anwendung beim ersten Starten besonders. Mit folgenden Schritten lässt sich PP starten:
+Portfolio Performance ist nicht mit einem Apple Zertifikat signiert. Aus diesem Grund behandelt der [macOS Gatekeeper](https://en.wikipedia.org/wiki/Gatekeeper_(macOS)) die Anwendung beim ersten Starten besonders. Mit folgenden Schritten lässt sich PP leicht starten:
 
 * PP laden und auspacken (zum Beispiel im "Downloads" Verzeichnis)
 * PP nach "Anwendungen" verschieben
@@ -41,3 +41,6 @@ Das Workspace Verzeichnis liegt:
 
 !!! note "Windows"
     Das "LOCALAPPDATA" Verzeichnis ist ein verstecktes Verzeichnis. Am einfachsten ist es die Tastenkombination [Windows] + [R] zu drücken und im "Ausführen"-Fenster "%localappdata%" (ohne Anführungszeichen) eingeben.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTI4MDIwMjM3NV19
+-->
