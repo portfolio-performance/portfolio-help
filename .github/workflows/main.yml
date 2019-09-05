@@ -10,11 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Build
-      uses: peaceiris/actions-pipenv@3.6
-      if: github.event.deleted == false
+    - name: Set up Python
+      uses: actions/setup-python@v1
       with:
-        args: mkdocs build
+        python-version: 2.7
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Build
+      run: mkdocs build
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v1.1.0
       if: success()
