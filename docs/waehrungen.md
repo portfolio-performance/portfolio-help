@@ -89,3 +89,4 @@ Alternativ kann man die Wechselkurse auch per CSV importieren: *Datei -> Importi
 Die Google Sheets-Datei lädt man dann als CSV herunter und importiert sie danach ganz normal mit dem CSV-Import in Portfolio Performance.
 
 <a href="../images/assets/wechselkurs_googlesheet_export.png"><img alt="Wechselkurs in Google Sheet laden" src="../images/assets/wechselkurs_googlesheet_export.png" width="617" style="max-width: 617px;" class="screenshot"/></a>
+
