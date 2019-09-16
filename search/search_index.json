@@ -1,0 +1,204 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "\u00dcber dieses Handbuch\n\n\nSeit Anfang 2012 gibt es \nPortfolio Performance\n um die Performance eines Gesamtportfolios zu berechnen - \u00fcber verschiedene Depots und Konten hinweg - anhand von True-Time Weighted Rate of Return und internem Zinsfu\u00df.\n\n\nPortfolio Performance (PP) selber versucht so einfach und intuitiv zu bleiben wie es nur geht. Aber ohne Erkl\u00e4rungen geht es nicht immer - viele \u00e4hnliche Fragen im \nForum\n zeigen das. Dieses \"Handbuch\" soll Euch auf den ersten Schritte in PP begleiten, grundlegende Konzepte erkl\u00e4ren und die erkl\u00e4rungsbed\u00fcrftigen Features dokumentieren.\n\n\nInhaltsverzeichnis\n\n\n\n\nInstallation\n\n\nW\u00e4hrungen\n\n\nKursdaten laden\n\n\nBuchungen erfassen\n\n\n\n\nMithelfen...\n\n\nWie Ihr leicht sehen k\u00f6nnt, gibt es noch viele wei\u00dfe Seiten in diesem Handbuch. Einige Fragen decken die \nFrequently Asked Questions (FAQ)\n im Forum ab. Wer sich berufen f\u00fchlt, ist herzlich eingeladen an diesem Handbuch mitzuschreiben: auf jeder Seite gibt es oben rechts einen kleinen Stift um die Seite direkt auf \nGithub\n zu bearbeiten. Meldet Euch bei Interesse auch im Forum!", 
+            "title": "\u00dcberblick"
+        }, 
+        {
+            "location": "/#uber-dieses-handbuch", 
+            "text": "Seit Anfang 2012 gibt es  Portfolio Performance  um die Performance eines Gesamtportfolios zu berechnen - \u00fcber verschiedene Depots und Konten hinweg - anhand von True-Time Weighted Rate of Return und internem Zinsfu\u00df.  Portfolio Performance (PP) selber versucht so einfach und intuitiv zu bleiben wie es nur geht. Aber ohne Erkl\u00e4rungen geht es nicht immer - viele \u00e4hnliche Fragen im  Forum  zeigen das. Dieses \"Handbuch\" soll Euch auf den ersten Schritte in PP begleiten, grundlegende Konzepte erkl\u00e4ren und die erkl\u00e4rungsbed\u00fcrftigen Features dokumentieren.", 
+            "title": "\u00dcber dieses Handbuch"
+        }, 
+        {
+            "location": "/#inhaltsverzeichnis", 
+            "text": "Installation  W\u00e4hrungen  Kursdaten laden  Buchungen erfassen", 
+            "title": "Inhaltsverzeichnis"
+        }, 
+        {
+            "location": "/#mithelfen", 
+            "text": "Wie Ihr leicht sehen k\u00f6nnt, gibt es noch viele wei\u00dfe Seiten in diesem Handbuch. Einige Fragen decken die  Frequently Asked Questions (FAQ)  im Forum ab. Wer sich berufen f\u00fchlt, ist herzlich eingeladen an diesem Handbuch mitzuschreiben: auf jeder Seite gibt es oben rechts einen kleinen Stift um die Seite direkt auf  Github  zu bearbeiten. Meldet Euch bei Interesse auch im Forum!", 
+            "title": "Mithelfen..."
+        }, 
+        {
+            "location": "/installation/", 
+            "text": "Installation\n\n\nKomprimierte Datei laden, auspacken und per Doppelklick starten.\n\n\nDie XML/Portfolio Datei mit den eigenen Daten (Wertpapiere, Depots und Konten, Buchungen) speichert man am besten irgendwo unter \nEigene Dokumente\n.\n\n\nmacOS\n\n\nPortfolio Performance ist nicht mit einem Apple Zertifikat signiert. Aus diesem Grund behandelt der \nmacOS Gatekeeper\n die Anwendung beim ersten Starten besonders. Mit folgenden Schritten l\u00e4sst sich PP leicht starten:\n\n\n\n\nPP laden und auspacken (zum Beispiel im \"Downloads\" Verzeichnis)\n\n\nPP nach \"Anwendungen\" verschieben\n\n\nPP per Rechtsklick und \"\u00d6ffnen\" starten (per Kontextmen\u00fc (rechte Maustaste) den Men\u00fcpunkt \"\u00d6ffnen\" und in der anschlie\u00dfenden Meldung nochmals \"\u00d6ffnen\" w\u00e4hlen)\n\n\n\n\nLinux\n\n\nPortfolio Performance nutzt \nEclipse SWT\n und damit unter Linux native Bibliotheken. Standardm\u00e4ssig wird dabei \nGTK3\n verwendet, allerdings gibt es bei verschiedenen Kombinationen mit Themes immer mal wieder Probleme. So meldete zum Beispiel ein Benutzer Probleme im Zusammenhang mit \n\"oxygen-gtk\" Theme\n.\n\n\nWenn es Probleme gibt, dann bieten sich folgende Optionen an:\n\n\n\n\nAlternatives GTK3 Theme ausprobieren\n\n\nPP auf GTK2 zwingen: \nenv SWT_GTK3=0 PortfolioPerformance\n\n\nAlternative input method nutzen: \nenv GTK_IM_MODULE=ibus PortfolioPerformance\n\n\n\n\nWorkspace Verzeichnis\n\n\nIm \nWorkspace\n Verzeichnis speichert PP tempor\u00e4re Informationen wie die aktuelle Fenstergr\u00f6\u00dfe, die zuletzt ge\u00f6ffneten Dateien und Verzeichnisse und andere Laufzeitinformationen.\n\n\nDas Workspace Verzeichnis liegt:\n\n\n\n\nunter macOS: \n~/Library/Application Support/name.abuchen.portfolio.product/workspace\n\n\nunter Windows: \n$LOCALAPPDATA$\\PortfolioPerformance\\workspace\n wobei $LOCALAPPDATA$ \u00fcberlicherweise nach \nC:\\Users\\{Benutzername}\\AppData\\Local\n zeigt\n\n\nunter Linux: \n~/.PortfolioPerformance/workspace\n\n\n\n\n\n\nmacOS\n\n\nDas \"Library\" Verzeichnis ist ein verstecktes Verzeichnis. Am einfachsten ist es im Finder \u00fcber das Men\u00fc \nGehe zu\n -\n \nGehe zum Ordner...\n den Ordner \"~/Library/\" (ohne Anf\u00fchrungszeichen) zu \u00f6ffnen.\n\n\n\n\n\n\nWindows\n\n\nDas \"LOCALAPPDATA\" Verzeichnis ist ein verstecktes Verzeichnis. Am einfachsten ist es die Tastenkombination [Windows] + [R] zu dr\u00fccken und im \"Ausf\u00fchren\"-Fenster \"%localappdata%\" (ohne Anf\u00fchrungszeichen) eingeben.", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/installation/#installation", 
+            "text": "Komprimierte Datei laden, auspacken und per Doppelklick starten.  Die XML/Portfolio Datei mit den eigenen Daten (Wertpapiere, Depots und Konten, Buchungen) speichert man am besten irgendwo unter  Eigene Dokumente .", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/installation/#macos", 
+            "text": "Portfolio Performance ist nicht mit einem Apple Zertifikat signiert. Aus diesem Grund behandelt der  macOS Gatekeeper  die Anwendung beim ersten Starten besonders. Mit folgenden Schritten l\u00e4sst sich PP leicht starten:   PP laden und auspacken (zum Beispiel im \"Downloads\" Verzeichnis)  PP nach \"Anwendungen\" verschieben  PP per Rechtsklick und \"\u00d6ffnen\" starten (per Kontextmen\u00fc (rechte Maustaste) den Men\u00fcpunkt \"\u00d6ffnen\" und in der anschlie\u00dfenden Meldung nochmals \"\u00d6ffnen\" w\u00e4hlen)", 
+            "title": "macOS"
+        }, 
+        {
+            "location": "/installation/#linux", 
+            "text": "Portfolio Performance nutzt  Eclipse SWT  und damit unter Linux native Bibliotheken. Standardm\u00e4ssig wird dabei  GTK3  verwendet, allerdings gibt es bei verschiedenen Kombinationen mit Themes immer mal wieder Probleme. So meldete zum Beispiel ein Benutzer Probleme im Zusammenhang mit  \"oxygen-gtk\" Theme .  Wenn es Probleme gibt, dann bieten sich folgende Optionen an:   Alternatives GTK3 Theme ausprobieren  PP auf GTK2 zwingen:  env SWT_GTK3=0 PortfolioPerformance  Alternative input method nutzen:  env GTK_IM_MODULE=ibus PortfolioPerformance", 
+            "title": "Linux"
+        }, 
+        {
+            "location": "/installation/#workspace-verzeichnis", 
+            "text": "Im  Workspace  Verzeichnis speichert PP tempor\u00e4re Informationen wie die aktuelle Fenstergr\u00f6\u00dfe, die zuletzt ge\u00f6ffneten Dateien und Verzeichnisse und andere Laufzeitinformationen.  Das Workspace Verzeichnis liegt:   unter macOS:  ~/Library/Application Support/name.abuchen.portfolio.product/workspace  unter Windows:  $LOCALAPPDATA$\\PortfolioPerformance\\workspace  wobei $LOCALAPPDATA$ \u00fcberlicherweise nach  C:\\Users\\{Benutzername}\\AppData\\Local  zeigt  unter Linux:  ~/.PortfolioPerformance/workspace    macOS  Das \"Library\" Verzeichnis ist ein verstecktes Verzeichnis. Am einfachsten ist es im Finder \u00fcber das Men\u00fc  Gehe zu  -   Gehe zum Ordner...  den Ordner \"~/Library/\" (ohne Anf\u00fchrungszeichen) zu \u00f6ffnen.    Windows  Das \"LOCALAPPDATA\" Verzeichnis ist ein verstecktes Verzeichnis. Am einfachsten ist es die Tastenkombination [Windows] + [R] zu dr\u00fccken und im \"Ausf\u00fchren\"-Fenster \"%localappdata%\" (ohne Anf\u00fchrungszeichen) eingeben.", 
+            "title": "Workspace Verzeichnis"
+        }, 
+        {
+            "location": "/waehrungen/", 
+            "text": "W\u00e4hrungen\n\n\nPortfolio Performance unterst\u00fctzt Konten und Wertpapiere in Fremdw\u00e4hrungen.\n\n\n\n\nDie \nBerichtsw\u00e4hrung\n stellt man unter \nBerichte -\n Verm\u00f6gensaufstellung\n oben rechts in der Werkzeugleiste ein.\n\n\nBetr\u00e4ge in der Berichtsw\u00e4hrung werden \u00fcblicherweise ohne W\u00e4hrungsk\u00fcrzel dargestellt (damit die Ansichten nicht unn\u00f6tig viele Informationen darstellen).\n\n\nKonten und Wertpapiere k\u00f6nnen in einer Fremdw\u00e4hrung gef\u00fchrt werden. In einem Portfolio k\u00f6nnen Wertpapiere unterschiedlichster W\u00e4hrung existieren. Ein Wertpapiere ohne W\u00e4hrung wird als \nAktienindex\n interpretiert und kann entsprechend nicht gekauft werden.\n\n\nNeben den Wechselkursen der \nEurop\u00e4ischen Zentralbank\n kann man auch \nbenutzerdefinierte Wechselkurse\n anlegen und - anlog zu Wertpapieren - aus den \u00fcblichen Quellen mit Kursen versorgen.\n\n\nStandardm\u00e4ssig rechnet PP bei monet\u00e4ren Betr\u00e4gen mit 2 Nachkommastellen und bei Wechselkursen mit 4 Nachkommastellen. Wenn der Wechselkurse invertiert wird, rechnet PP mit 10 Nachkommastellen.\n\n\nWechselkurse k\u00f6nnen in \nMengennotierung oder Preisnotierung\n dargestellt werden.\n\n\nBetr\u00e4ge in einer Buchung werden - wenn m\u00f6glich - mit dem Wechselkurs aus der Buchung selbst umgerechnet.\n\n\n\n\nDie verf\u00fcgbaren Wechselkurse finden sich unter \nAllgemeine Daten -\n W\u00e4hrungen -\n Wechselkurse\n.\n\n\n\n\nNotierung\n\n\nIn den Einstellungen kann man zwischen \nMengennotierung\n und \nPreisnotierung\n umstellen.\n\n\n\n\nDie Mengennotierung gibt den Preis einer Einheit der inl\u00e4ndischen\nW\u00e4hrung in Einheiten der ausl\u00e4ndischen W\u00e4hrung an (am Beispiel von\nEuropa und den USA aus europ\u00e4ischer Sicht: Dollar je Euro). Dagegen\ngibt die Preisnotierung den Preis einer Einheit der ausl\u00e4ndischen\nW\u00e4hrung in Einheiten der inl\u00e4ndischen W\u00e4hrung an (Euro je Dollar\naus europ\u00e4ischer Sicht).\n\n\nIn der Eurozone, Gro\u00dfbritannien, Australien und Neuseeland wird heute\nmehrheitlich die Mengennotierung verwendet, w\u00e4hrend ansonsten die\nPreisnotierung \u00fcblich ist, insbesondere auch in der Schweiz. \nQuelle\n\n\n\n\n\n\nBeispiele\n\n\nMengennotierung: EUR/USD 1,1232\n\"F\u00fcr einen Euro bekommt man 1,1232 US-Dollar.\"\n\n\nPreisnotierung: USD/EUR 0,89\n\"F\u00fcr einen US-Dollar muss man 0,89 Euro bezahlen.\"\n\n\n\n\nW\u00e4hrungsrechner\n\n\nMit dem W\u00e4hrungsrechner unter \nAllgemeine Daten -\n W\u00e4hrungen -\n W\u00e4hrungsrechner\n kann man nachvollziehen welche Wechselkurse PP f\u00fcr eine Umrechnung verwendet.\n\n\nIn diesem Beispiel wird der \nDirham\n aus den Vereinige Arabische Emiraten zun\u00e4chst in \nUS Doller\n und anschliessend in \nEuro\n umgerechnet.\n\n\n\n\nPP gewichtet Wechselkurse und nutzt zur Umrechnung den Wechselkurs mit dem niedrigsten Gewicht:\n\n\n\n\nBenutzerdefinierte Wechselkurse haben ein Gewicht von 1\n\n\nWechselkurse der EZB haben ein Gewicht von 2\n\n\nInvertierte Wechselkurse (Umkehrkurs) z\u00e4hlen zu dem Gewicht +2 hinzu\n\n\nEine Kette von Wechselkursen (z.B. USD -\n EUR -\n CHD) z\u00e4hlt eine Gewicht von +1 hinzu\n\n\n\n\nMit diesen Gewichten wird sichergestellt, dass benutzerdefinierte Wechselkurse von denen der Europ\u00e4ischen Zentralbank genutzt werden. Andrerseits wird ein Wechselkurs der Europ\u00e4ischen Zentralbank dem Umkehrkurs eines benutzerdefinierten Wechselkurses vorgezogen. Ein direkter Wechselkurs wird einer Kette von Wechselkursen vorgezogen die zu der gleichen Umrechnung f\u00fchren w\u00fcrden.\n\n\nReferenzwechselkurse der Europ\u00e4ischen Zentralbank\n\n\nPP l\u00e4dt automatisch beim Start die \nReferenzwechselkurse der Europ\u00e4ischen Zentralbank (EZB)\n. Damit kennt PP die Wechselkurse aller wichtigen W\u00e4hrungen vom US Dollar \u00fcber den japanischen Yen, das britischen Pfund bis zum Schweizer Franken.\n\n\nLaut Webseite werden die Wechselkurse der EZB gegen 16 Uhr aktualisiert:\n\n\n\n\nThe reference rates are usually updated around 16:00 CET on every working day, except on TARGET closing days. They are based on a regular daily concertation procedure between central banks across Europe, which normally takes place at 14:15 CET. \nQuelle\n\n\n\n\nBenutzerdefinierte Wechselkurse\n\n\nBenutzerdefinierte Wechselkurse sind in PP nichts anderes als Wertpapiere, die neben der eigenen W\u00e4hrung auch noch eine Zielw\u00e4hrung haben. Die Kurse werden zur Umrechnung der Betr\u00e4ge verwendet. Wechselkurse k\u00f6nnen \u00fcber die gleichen Mechanismen wie \nKurse geladen\n werden, z.B. von Yahoo Finance oder per CSV Import.\n\n\nBenutzerdefinierte Wechselkurse erstellt man mit dem Dialog \nWertpapiere -\n Neuen Wechselkurs anlegen...\n.\n\n\n\n\nNeben der W\u00e4hrung (\"Basisw\u00e4hrung\") gibt man die Zielw\u00e4hrung des Wechselkurses ein.\n\n\n\n\nUm Kurse von \nYahoo Finance\n zu laden, verwendet man ein Symbol aus der Basisw\u00e4hrung und Zielw\u00e4hrung mit dem Suffix \n=X\n. F\u00fcr die Umrechnung von EUR (Euro) in den Vietnamesischen Dong (VND) hei\u00dft das Symbol entsprechnd \nEURVND=X\n.\n\n\n\n\nAlternativ kann man die Wechselkurse auch per CSV importieren: \nDatei -\n Importieren... -\n CSV Dateien\n. Die CSV-Datei f\u00fcr den Kurs Euro nach Vietnamesischer Dong kann man z.B. per Google Sheets erstellen. Dazu nutzt man einfach die Funktion \nGoogleFinance\n f\u00fcr Euro und Dong \nCURRENCY:EURVND\n in etwa so f\u00fcr das letzte Jahr:\n\n\n\n\nDie Google Sheets-Datei l\u00e4dt man dann als CSV herunter und importiert sie danach ganz normal mit dem CSV-Import in Portfolio Performance.", 
+            "title": "W\u00e4hrungen"
+        }, 
+        {
+            "location": "/waehrungen/#wahrungen", 
+            "text": "Portfolio Performance unterst\u00fctzt Konten und Wertpapiere in Fremdw\u00e4hrungen.   Die  Berichtsw\u00e4hrung  stellt man unter  Berichte -  Verm\u00f6gensaufstellung  oben rechts in der Werkzeugleiste ein.  Betr\u00e4ge in der Berichtsw\u00e4hrung werden \u00fcblicherweise ohne W\u00e4hrungsk\u00fcrzel dargestellt (damit die Ansichten nicht unn\u00f6tig viele Informationen darstellen).  Konten und Wertpapiere k\u00f6nnen in einer Fremdw\u00e4hrung gef\u00fchrt werden. In einem Portfolio k\u00f6nnen Wertpapiere unterschiedlichster W\u00e4hrung existieren. Ein Wertpapiere ohne W\u00e4hrung wird als  Aktienindex  interpretiert und kann entsprechend nicht gekauft werden.  Neben den Wechselkursen der  Europ\u00e4ischen Zentralbank  kann man auch  benutzerdefinierte Wechselkurse  anlegen und - anlog zu Wertpapieren - aus den \u00fcblichen Quellen mit Kursen versorgen.  Standardm\u00e4ssig rechnet PP bei monet\u00e4ren Betr\u00e4gen mit 2 Nachkommastellen und bei Wechselkursen mit 4 Nachkommastellen. Wenn der Wechselkurse invertiert wird, rechnet PP mit 10 Nachkommastellen.  Wechselkurse k\u00f6nnen in  Mengennotierung oder Preisnotierung  dargestellt werden.  Betr\u00e4ge in einer Buchung werden - wenn m\u00f6glich - mit dem Wechselkurs aus der Buchung selbst umgerechnet.   Die verf\u00fcgbaren Wechselkurse finden sich unter  Allgemeine Daten -  W\u00e4hrungen -  Wechselkurse .", 
+            "title": "W\u00e4hrungen"
+        }, 
+        {
+            "location": "/waehrungen/#notierung", 
+            "text": "In den Einstellungen kann man zwischen  Mengennotierung  und  Preisnotierung  umstellen.   Die Mengennotierung gibt den Preis einer Einheit der inl\u00e4ndischen\nW\u00e4hrung in Einheiten der ausl\u00e4ndischen W\u00e4hrung an (am Beispiel von\nEuropa und den USA aus europ\u00e4ischer Sicht: Dollar je Euro). Dagegen\ngibt die Preisnotierung den Preis einer Einheit der ausl\u00e4ndischen\nW\u00e4hrung in Einheiten der inl\u00e4ndischen W\u00e4hrung an (Euro je Dollar\naus europ\u00e4ischer Sicht).  In der Eurozone, Gro\u00dfbritannien, Australien und Neuseeland wird heute\nmehrheitlich die Mengennotierung verwendet, w\u00e4hrend ansonsten die\nPreisnotierung \u00fcblich ist, insbesondere auch in der Schweiz.  Quelle    Beispiele  Mengennotierung: EUR/USD 1,1232\n\"F\u00fcr einen Euro bekommt man 1,1232 US-Dollar.\"  Preisnotierung: USD/EUR 0,89\n\"F\u00fcr einen US-Dollar muss man 0,89 Euro bezahlen.\"", 
+            "title": "Notierung"
+        }, 
+        {
+            "location": "/waehrungen/#wahrungsrechner", 
+            "text": "Mit dem W\u00e4hrungsrechner unter  Allgemeine Daten -  W\u00e4hrungen -  W\u00e4hrungsrechner  kann man nachvollziehen welche Wechselkurse PP f\u00fcr eine Umrechnung verwendet.  In diesem Beispiel wird der  Dirham  aus den Vereinige Arabische Emiraten zun\u00e4chst in  US Doller  und anschliessend in  Euro  umgerechnet.   PP gewichtet Wechselkurse und nutzt zur Umrechnung den Wechselkurs mit dem niedrigsten Gewicht:   Benutzerdefinierte Wechselkurse haben ein Gewicht von 1  Wechselkurse der EZB haben ein Gewicht von 2  Invertierte Wechselkurse (Umkehrkurs) z\u00e4hlen zu dem Gewicht +2 hinzu  Eine Kette von Wechselkursen (z.B. USD -  EUR -  CHD) z\u00e4hlt eine Gewicht von +1 hinzu   Mit diesen Gewichten wird sichergestellt, dass benutzerdefinierte Wechselkurse von denen der Europ\u00e4ischen Zentralbank genutzt werden. Andrerseits wird ein Wechselkurs der Europ\u00e4ischen Zentralbank dem Umkehrkurs eines benutzerdefinierten Wechselkurses vorgezogen. Ein direkter Wechselkurs wird einer Kette von Wechselkursen vorgezogen die zu der gleichen Umrechnung f\u00fchren w\u00fcrden.", 
+            "title": "W\u00e4hrungsrechner"
+        }, 
+        {
+            "location": "/waehrungen/#referenzwechselkurse-der-europaischen-zentralbank", 
+            "text": "PP l\u00e4dt automatisch beim Start die  Referenzwechselkurse der Europ\u00e4ischen Zentralbank (EZB) . Damit kennt PP die Wechselkurse aller wichtigen W\u00e4hrungen vom US Dollar \u00fcber den japanischen Yen, das britischen Pfund bis zum Schweizer Franken.  Laut Webseite werden die Wechselkurse der EZB gegen 16 Uhr aktualisiert:   The reference rates are usually updated around 16:00 CET on every working day, except on TARGET closing days. They are based on a regular daily concertation procedure between central banks across Europe, which normally takes place at 14:15 CET.  Quelle", 
+            "title": "Referenzwechselkurse der Europ\u00e4ischen Zentralbank"
+        }, 
+        {
+            "location": "/waehrungen/#benutzerdefinierte-wechselkurse", 
+            "text": "Benutzerdefinierte Wechselkurse sind in PP nichts anderes als Wertpapiere, die neben der eigenen W\u00e4hrung auch noch eine Zielw\u00e4hrung haben. Die Kurse werden zur Umrechnung der Betr\u00e4ge verwendet. Wechselkurse k\u00f6nnen \u00fcber die gleichen Mechanismen wie  Kurse geladen  werden, z.B. von Yahoo Finance oder per CSV Import.  Benutzerdefinierte Wechselkurse erstellt man mit dem Dialog  Wertpapiere -  Neuen Wechselkurs anlegen... .   Neben der W\u00e4hrung (\"Basisw\u00e4hrung\") gibt man die Zielw\u00e4hrung des Wechselkurses ein.   Um Kurse von  Yahoo Finance  zu laden, verwendet man ein Symbol aus der Basisw\u00e4hrung und Zielw\u00e4hrung mit dem Suffix  =X . F\u00fcr die Umrechnung von EUR (Euro) in den Vietnamesischen Dong (VND) hei\u00dft das Symbol entsprechnd  EURVND=X .   Alternativ kann man die Wechselkurse auch per CSV importieren:  Datei -  Importieren... -  CSV Dateien . Die CSV-Datei f\u00fcr den Kurs Euro nach Vietnamesischer Dong kann man z.B. per Google Sheets erstellen. Dazu nutzt man einfach die Funktion  GoogleFinance  f\u00fcr Euro und Dong  CURRENCY:EURVND  in etwa so f\u00fcr das letzte Jahr:   Die Google Sheets-Datei l\u00e4dt man dann als CSV herunter und importiert sie danach ganz normal mit dem CSV-Import in Portfolio Performance.", 
+            "title": "Benutzerdefinierte Wechselkurse"
+        }, 
+        {
+            "location": "/kursdaten_laden/", 
+            "text": "Kursdaten laden\n\n\nHistorische Kurse sind extrem wichtig um eine Performance berechnen zu k\u00f6nnen. Wenn man nicht wei\u00df wieviel ein Wertpapier vor einem Jahr wert war, dann helfen auch schicke Formeln nicht weiter. Allerdings ist es nicht einfach an gute und gleichzeitig kostenlose historische Kurse heranzukommen.\n\n\nDie erste Anlaufstelle ist \nYahoo Finance\n: sofern Yahoo Finance das Wertpapier kennt und auch Kurse hat, kann man bequem anhand des Tickers den Download direkt in PP konfigurieren. Allerdings ist die Abdeckung f\u00fcr deutsche Fonds oder ETFs nicht so prickelnd. Eine weitere M\u00f6glichkeit ist \nAlphaVantage\n: ebenfalls mit viel Gewicht auf den amerikanischen Markt. Allerdings erlaubt das kostenlose API nur wenige Aufrufe pro Minute.\n\n\nWenn diese zwei automatischen Quellen keine historischen Kurse bieten, muss man zu \"halbautomatischen\" L\u00f6sungen greifen. Die erste M\u00f6glichkeit ist eine URL zu hinterlegen auf der nach einer \nTabelle mit Kursinformationen\n gesucht wird. Neben der Schwierigkeit \u00fcberhaupt die passende Seite zu finden, kann es auch sein, dass die URLs sich immer wieder \u00e4ndert so dass man mit Markos \ndynamische Kursdaten-URLs\n zusammenbauen muss.\n\n\nUnd schlie\u00dflich bleiben die manuellen L\u00f6sungen: die Kursdaten \nper CSV-Datei\n zu importieren oder manuell im Programm selbst zu erfassen.\n\n\n Forum: Quellen f\u00fcr historische Kurse\n\n\nYahoo Finance\n\n\nAlphaVantage\n\n\nTabelle auf einer Webseite\n\n\nDynamische Kursdaten-URLs\n\n\nManche Seiten verteilen die Daten auf mehrere Requests. Wenn eines der Macros in der URL gefunden wird, wird die URL dynamisch zusammengesetzt und PP macht solange Aufrufe bis keine weiteren Kurse mehr gefunden werden.\n\n\nIn einer URL d\u00fcrfen mehrere Marcos verwendet werden. Allerdings d\u00fcrfen \nDATE\n und \nPAGE\n nicht gemeinsam verwendet werden, weil beide unterschiedliche Iterationen von URLs generieren.\n\n\n Forum: Dynamische Kursdaten-URLs\n\n\nCURRENCY\n\n\nCURRENCY\n ersetzt das dreistellige ISO W\u00e4hrungsk\u00fcrzel des Wertpapiers in der URL.\n\n\nhttps://example.com/data?waehrung={CURRENCY}\n\n\n\n\n\nDATE\n\n\nDATE:\nformat\n generiert eine Abfrage f\u00fcr jedes Datum mit dem angegebenen Format, und zwar\n\n\n\n\nwenn \nkeine\n Kurse existieren, wird vom aktuellen Datum r\u00fcckw\u00e4rts in die Vergangenheit gesucht solange bis keine Kurse mehr gefunden werden;\n\n\nwenn historische \nKurse existieren\n, dann wird vom letzten Kursdatum vorw\u00e4rts bis zum aktuellen Datum eine URL generiert.\n\n\n\n\nDas Datumsformat folgt den Regeln des \nDateTimeFormatter\n aus Java. Die wichtigsten Symbole sind \ny\n f\u00fcr das Jahr, \nM\n f\u00fcr den Monat im Jahr und \nd\n f\u00fcr den Tag im Monat.\n\n\nBeispiele:\n\n\nhttps://example.com/data?month={DATE:yyyy-MM}\nhttps://example.com/data?datum={DATE:yyyy-MM-32}\n\n\n\n\n\nWenn die identische URL mehrfach generiert wird, dann macht PP nur eine einzige Abfrage. Nehmen wir das Datumsformat aus dem letzten Beispiel: \n{DATE:yyyy-MM-32}\n Der Tag ist statisch auf 32 gesetzt. Es wird f\u00fcr jeden Tag in einem Monat die identische URL generiert, aber nur eine Abfrage zum Server gemacht.\n\n\nDas Marco \nDATE\n darf in einer URL mehrfach auftauchen. Es wird dann das gleiche Datum verwendet. So kann man zum Beispiel mit \n{DATE:yyyy-MM-01}\n und \n{DATE:yyyy-MM-31}\n vom Monatsersten bis zum Monatsletzten selektieren.\n\n\n\n\nTipp\n\n\nWarum den 32. und nicht den 31. als letzten Tag? \nAl2Klimov\n schreibt dazu im Forum: \nAus eigener Erfahrung u.a. als Berufsprogrammierer kann ich dieses \u201cAusreiz-Prinzip\u201d vielerseits empfehlen: Entweder es f\u00e4hrt alles \u201cgegen die Wand\u201d (den 32. Monatstag gibts so nicht) oder alles funktioniert \u2013 aber bittesch\u00f6n kein inkonsistenter Zustand dazwischen!\n\n\n\n\n\n\nWarnung\n\n\nMit dem Datumsformat \nyyyy-MM-dd\n wird f\u00fcr jeden Tag eine URL generiert und damit eine ganze Menge Abfragen gemacht. Das sollte man nach M\u00f6glichkeit vermeiden. Der Server k\u00f6nnte das als Fehlanwendung verstehen und \u00fcberhaupt keine Daten mehr liefern.\n\n\n\n\nISIN\n\n\nISIN\n ersetzt die ISIN des Wertpapiers in der URL.\n\n\nhttps://example.com/data?isin={ISIN}\n\n\n\n\n\nPAGE\n\n\nPAGE\n f\u00e4ngt mit 1 an zu z\u00e4hlen bis keine weiteren Kurse mehr auf der Seite gefunden werden.\n\n\nhttps://example.com/data?page={PAGE}\n\n\n\n\n\nTICKER\n\n\nTICKER\n ersetzt das Ticker Symbol des Wertpapiers in der URL.\n\n\nhttps://example.com/data?ticker={TICKER}\n\n\n\n\n\nTODAY\n\n\nTODAY:\nformat\n:\ndelta\n ersetzt das aktuelle Datum in der URL.\n\n\n\n\nformat\n ist das Datumsformat nach den Regeln des \nDateTimeFormatter\n aus Java. Die wichtigsten Symbole sind \ny\n f\u00fcr das Jahr, \nM\n f\u00fcr den Monat im Jahr und \nd\n f\u00fcr den Tag im Monat.\n\n\ndelta\n ist eine Zeitspanne basierend auf den ISO-8601 Regeln wie in \nJava\n implementiert. Die Zeitspanne kann optional mit einem Minuszeichen beginnen - dann wird sie vom aktuellen Datum abgezogen. Dann folgt ein \nP\n (f\u00fcr period) und anschliessend eine Zahl und ein Suffix - z.B. einem \nY\n f\u00fcr Jahre, \nM\n f\u00fcr Monate, \nW\n f\u00fcr Wochen und einem \nD\n f\u00fcr Tage.\n\n\n\n\n// aktuelles Datum im ISO Format\nhttps://example.com/data?datum={TODAY}\n\n// aktuelles Datum im deutschen Datumsformat\nhttps://example.com/data?datum={TODAY:dd.MM.yyyy}\n\n// aktuelles Datum minus 1 Jahr\nhttps://example.com/data?datum={TODAY:dd.MM.yyyy:-P1Y}\n\n// aktuelles Datum minus 2 Monate\nhttps://example.com/data?datum={TODAY:dd.MM.yyyy:-P2M}\n\n\n\n\n\nWKN\n\n\nWKN\n ersetzt die Wertpapierkennnummer (WKN) in der URL.\n\n\nhttps://example.com/data?wkn={WKN}\n\n\n\n\n\nCSV Import", 
+            "title": "Kursdaten laden"
+        }, 
+        {
+            "location": "/kursdaten_laden/#kursdaten-laden", 
+            "text": "Historische Kurse sind extrem wichtig um eine Performance berechnen zu k\u00f6nnen. Wenn man nicht wei\u00df wieviel ein Wertpapier vor einem Jahr wert war, dann helfen auch schicke Formeln nicht weiter. Allerdings ist es nicht einfach an gute und gleichzeitig kostenlose historische Kurse heranzukommen.  Die erste Anlaufstelle ist  Yahoo Finance : sofern Yahoo Finance das Wertpapier kennt und auch Kurse hat, kann man bequem anhand des Tickers den Download direkt in PP konfigurieren. Allerdings ist die Abdeckung f\u00fcr deutsche Fonds oder ETFs nicht so prickelnd. Eine weitere M\u00f6glichkeit ist  AlphaVantage : ebenfalls mit viel Gewicht auf den amerikanischen Markt. Allerdings erlaubt das kostenlose API nur wenige Aufrufe pro Minute.  Wenn diese zwei automatischen Quellen keine historischen Kurse bieten, muss man zu \"halbautomatischen\" L\u00f6sungen greifen. Die erste M\u00f6glichkeit ist eine URL zu hinterlegen auf der nach einer  Tabelle mit Kursinformationen  gesucht wird. Neben der Schwierigkeit \u00fcberhaupt die passende Seite zu finden, kann es auch sein, dass die URLs sich immer wieder \u00e4ndert so dass man mit Markos  dynamische Kursdaten-URLs  zusammenbauen muss.  Und schlie\u00dflich bleiben die manuellen L\u00f6sungen: die Kursdaten  per CSV-Datei  zu importieren oder manuell im Programm selbst zu erfassen.   Forum: Quellen f\u00fcr historische Kurse", 
+            "title": "Kursdaten laden"
+        }, 
+        {
+            "location": "/kursdaten_laden/#yahoo-finance", 
+            "text": "", 
+            "title": "Yahoo Finance"
+        }, 
+        {
+            "location": "/kursdaten_laden/#alphavantage", 
+            "text": "", 
+            "title": "AlphaVantage"
+        }, 
+        {
+            "location": "/kursdaten_laden/#tabelle-auf-einer-webseite", 
+            "text": "", 
+            "title": "Tabelle auf einer Webseite"
+        }, 
+        {
+            "location": "/kursdaten_laden/#dynamische-kursdaten-urls", 
+            "text": "Manche Seiten verteilen die Daten auf mehrere Requests. Wenn eines der Macros in der URL gefunden wird, wird die URL dynamisch zusammengesetzt und PP macht solange Aufrufe bis keine weiteren Kurse mehr gefunden werden.  In einer URL d\u00fcrfen mehrere Marcos verwendet werden. Allerdings d\u00fcrfen  DATE  und  PAGE  nicht gemeinsam verwendet werden, weil beide unterschiedliche Iterationen von URLs generieren.   Forum: Dynamische Kursdaten-URLs", 
+            "title": "Dynamische Kursdaten-URLs"
+        }, 
+        {
+            "location": "/kursdaten_laden/#currency", 
+            "text": "CURRENCY  ersetzt das dreistellige ISO W\u00e4hrungsk\u00fcrzel des Wertpapiers in der URL.  https://example.com/data?waehrung={CURRENCY}", 
+            "title": "CURRENCY"
+        }, 
+        {
+            "location": "/kursdaten_laden/#date", 
+            "text": "DATE: format  generiert eine Abfrage f\u00fcr jedes Datum mit dem angegebenen Format, und zwar   wenn  keine  Kurse existieren, wird vom aktuellen Datum r\u00fcckw\u00e4rts in die Vergangenheit gesucht solange bis keine Kurse mehr gefunden werden;  wenn historische  Kurse existieren , dann wird vom letzten Kursdatum vorw\u00e4rts bis zum aktuellen Datum eine URL generiert.   Das Datumsformat folgt den Regeln des  DateTimeFormatter  aus Java. Die wichtigsten Symbole sind  y  f\u00fcr das Jahr,  M  f\u00fcr den Monat im Jahr und  d  f\u00fcr den Tag im Monat.  Beispiele:  https://example.com/data?month={DATE:yyyy-MM}\nhttps://example.com/data?datum={DATE:yyyy-MM-32}  Wenn die identische URL mehrfach generiert wird, dann macht PP nur eine einzige Abfrage. Nehmen wir das Datumsformat aus dem letzten Beispiel:  {DATE:yyyy-MM-32}  Der Tag ist statisch auf 32 gesetzt. Es wird f\u00fcr jeden Tag in einem Monat die identische URL generiert, aber nur eine Abfrage zum Server gemacht.  Das Marco  DATE  darf in einer URL mehrfach auftauchen. Es wird dann das gleiche Datum verwendet. So kann man zum Beispiel mit  {DATE:yyyy-MM-01}  und  {DATE:yyyy-MM-31}  vom Monatsersten bis zum Monatsletzten selektieren.   Tipp  Warum den 32. und nicht den 31. als letzten Tag?  Al2Klimov  schreibt dazu im Forum:  Aus eigener Erfahrung u.a. als Berufsprogrammierer kann ich dieses \u201cAusreiz-Prinzip\u201d vielerseits empfehlen: Entweder es f\u00e4hrt alles \u201cgegen die Wand\u201d (den 32. Monatstag gibts so nicht) oder alles funktioniert \u2013 aber bittesch\u00f6n kein inkonsistenter Zustand dazwischen!    Warnung  Mit dem Datumsformat  yyyy-MM-dd  wird f\u00fcr jeden Tag eine URL generiert und damit eine ganze Menge Abfragen gemacht. Das sollte man nach M\u00f6glichkeit vermeiden. Der Server k\u00f6nnte das als Fehlanwendung verstehen und \u00fcberhaupt keine Daten mehr liefern.", 
+            "title": "DATE"
+        }, 
+        {
+            "location": "/kursdaten_laden/#isin", 
+            "text": "ISIN  ersetzt die ISIN des Wertpapiers in der URL.  https://example.com/data?isin={ISIN}", 
+            "title": "ISIN"
+        }, 
+        {
+            "location": "/kursdaten_laden/#page", 
+            "text": "PAGE  f\u00e4ngt mit 1 an zu z\u00e4hlen bis keine weiteren Kurse mehr auf der Seite gefunden werden.  https://example.com/data?page={PAGE}", 
+            "title": "PAGE"
+        }, 
+        {
+            "location": "/kursdaten_laden/#ticker", 
+            "text": "TICKER  ersetzt das Ticker Symbol des Wertpapiers in der URL.  https://example.com/data?ticker={TICKER}", 
+            "title": "TICKER"
+        }, 
+        {
+            "location": "/kursdaten_laden/#today", 
+            "text": "TODAY: format : delta  ersetzt das aktuelle Datum in der URL.   format  ist das Datumsformat nach den Regeln des  DateTimeFormatter  aus Java. Die wichtigsten Symbole sind  y  f\u00fcr das Jahr,  M  f\u00fcr den Monat im Jahr und  d  f\u00fcr den Tag im Monat.  delta  ist eine Zeitspanne basierend auf den ISO-8601 Regeln wie in  Java  implementiert. Die Zeitspanne kann optional mit einem Minuszeichen beginnen - dann wird sie vom aktuellen Datum abgezogen. Dann folgt ein  P  (f\u00fcr period) und anschliessend eine Zahl und ein Suffix - z.B. einem  Y  f\u00fcr Jahre,  M  f\u00fcr Monate,  W  f\u00fcr Wochen und einem  D  f\u00fcr Tage.   // aktuelles Datum im ISO Format\nhttps://example.com/data?datum={TODAY}\n\n// aktuelles Datum im deutschen Datumsformat\nhttps://example.com/data?datum={TODAY:dd.MM.yyyy}\n\n// aktuelles Datum minus 1 Jahr\nhttps://example.com/data?datum={TODAY:dd.MM.yyyy:-P1Y}\n\n// aktuelles Datum minus 2 Monate\nhttps://example.com/data?datum={TODAY:dd.MM.yyyy:-P2M}", 
+            "title": "TODAY"
+        }, 
+        {
+            "location": "/kursdaten_laden/#wkn", 
+            "text": "WKN  ersetzt die Wertpapierkennnummer (WKN) in der URL.  https://example.com/data?wkn={WKN}", 
+            "title": "WKN"
+        }, 
+        {
+            "location": "/kursdaten_laden/#csv-import", 
+            "text": "", 
+            "title": "CSV Import"
+        }, 
+        {
+            "location": "/buchungen_erfassen/", 
+            "text": "Buchungen erfassen\n\n\nF\u00fcr die Berechnung der Performance braucht Portfolio Performance die historischen Buchungen.\n\n\nUnterst\u00fctzte Buchungstypen\n\n\nFolgende Typen von Buchungen werden von PP unterst\u00fctzt:\n\n\nWertpapier: Kauf / Verkauf\n\n\nMit einem Kauf wird ein Wertpapier mit der angegebenen St\u00fcckzahl dem Depot zugef\u00fchrt und zur selben Zeit das angegebene Konto mit dem Betrag belastet. K\u00e4ufe und Verk\u00e4ufe sind - bis auf die erfassten Steuern und Geb\u00fchren - performanceneutrale Buchungen, denn zun\u00e4chst wird nur Geld in Aktien umgewandelt. Erst mit einer Kurs\u00e4nderung kommt es zu einer Performance.\n\n\nF\u00fcr Kauf- und Verkaufsbuchungen kann - wie f\u00fcr alle Wertpapierbuchungen - eine \nUhrzeit\n erfasst werden, z.B. die Handelszeit an der B\u00f6rse. Die Uhrzeit hat nur informativen Charakter, da die Peformance nur f\u00fcr ganze Tage berechnet wird.  Wenn man als Uhrzeit \n00:00\n erfasst, wird die Uhrzeit nicht in der Liste der Buchungen angezeigt (Idee: nur so viel Informationen wie notwendig anzeigen).\n\n\nWertpapier: Einlieferung / Auslieferung\n\n\nEinlieferungen und Auslieferungen sind das Pendant zu K\u00e4ufen und Verk\u00e4ufen aber \nohne\n eine Buchung auf dem Verrechnungskonto. Es gibt zwei typische Anwendungsf\u00e4lle f\u00fcr diesen Buchungstyp: man bekommt Wertpapiere in sein Depot \u00fcbertragen oder man m\u00f6chte das Depot in PP abbilden ohne das Verrechnungskonto pflegen zu m\u00fcssen.\n\n\nEinlieferungen und Auslieferungen sind performanceneutral bis auf die ggf. erfassten Steuern und Geb\u00fchren.\n\n\nWertpapier: Umbuchung\n\n\nEin Umbuchung bucht die angegebene St\u00fcckzahl an Wertpapieren von einem Depot in ein anderes Depot um.\n\n\nEin Umbuchung hat zun\u00e4chst mal keine Auswirkung auf die Performance. Allerdings werden Umbuchungen dann relevant wenn man sich nur Teile der Datei anschaut, z.B. die Performance nur f\u00fcr eines der Depots. Dann wird als Einstandswert des Wertpapieres der Wert der Umbuchung herangezogen.\n\n\nWertpapier: Dividende\n\n\nMit einer Dividende kann man - wer h\u00e4tte das gedacht - Dividenden zu Wertpapiere erfassen - oder besser gesagt: jegliche performancerelevante Aussch\u00fcttung. Eine Dividendenbuchung muss zwingend auf einem Konto erfasst werden.\n\n\nOptional kann man die St\u00fcckzahl eingeben auf die sich die Dividende bezieht. Dieser Wert wird bisher nur genutzt um Dividende pro Anteil in der Liste der Buchungen anzuzeigen.\n\n\nBuchungen importieren", 
+            "title": "Buchungen erfassen"
+        }, 
+        {
+            "location": "/buchungen_erfassen/#buchungen-erfassen", 
+            "text": "F\u00fcr die Berechnung der Performance braucht Portfolio Performance die historischen Buchungen.", 
+            "title": "Buchungen erfassen"
+        }, 
+        {
+            "location": "/buchungen_erfassen/#unterstutzte-buchungstypen", 
+            "text": "Folgende Typen von Buchungen werden von PP unterst\u00fctzt:", 
+            "title": "Unterst\u00fctzte Buchungstypen"
+        }, 
+        {
+            "location": "/buchungen_erfassen/#wertpapier-kauf-verkauf", 
+            "text": "Mit einem Kauf wird ein Wertpapier mit der angegebenen St\u00fcckzahl dem Depot zugef\u00fchrt und zur selben Zeit das angegebene Konto mit dem Betrag belastet. K\u00e4ufe und Verk\u00e4ufe sind - bis auf die erfassten Steuern und Geb\u00fchren - performanceneutrale Buchungen, denn zun\u00e4chst wird nur Geld in Aktien umgewandelt. Erst mit einer Kurs\u00e4nderung kommt es zu einer Performance.  F\u00fcr Kauf- und Verkaufsbuchungen kann - wie f\u00fcr alle Wertpapierbuchungen - eine  Uhrzeit  erfasst werden, z.B. die Handelszeit an der B\u00f6rse. Die Uhrzeit hat nur informativen Charakter, da die Peformance nur f\u00fcr ganze Tage berechnet wird.  Wenn man als Uhrzeit  00:00  erfasst, wird die Uhrzeit nicht in der Liste der Buchungen angezeigt (Idee: nur so viel Informationen wie notwendig anzeigen).", 
+            "title": "Wertpapier: Kauf / Verkauf"
+        }, 
+        {
+            "location": "/buchungen_erfassen/#wertpapier-einlieferung-auslieferung", 
+            "text": "Einlieferungen und Auslieferungen sind das Pendant zu K\u00e4ufen und Verk\u00e4ufen aber  ohne  eine Buchung auf dem Verrechnungskonto. Es gibt zwei typische Anwendungsf\u00e4lle f\u00fcr diesen Buchungstyp: man bekommt Wertpapiere in sein Depot \u00fcbertragen oder man m\u00f6chte das Depot in PP abbilden ohne das Verrechnungskonto pflegen zu m\u00fcssen.  Einlieferungen und Auslieferungen sind performanceneutral bis auf die ggf. erfassten Steuern und Geb\u00fchren.", 
+            "title": "Wertpapier: Einlieferung / Auslieferung"
+        }, 
+        {
+            "location": "/buchungen_erfassen/#wertpapier-umbuchung", 
+            "text": "Ein Umbuchung bucht die angegebene St\u00fcckzahl an Wertpapieren von einem Depot in ein anderes Depot um.  Ein Umbuchung hat zun\u00e4chst mal keine Auswirkung auf die Performance. Allerdings werden Umbuchungen dann relevant wenn man sich nur Teile der Datei anschaut, z.B. die Performance nur f\u00fcr eines der Depots. Dann wird als Einstandswert des Wertpapieres der Wert der Umbuchung herangezogen.", 
+            "title": "Wertpapier: Umbuchung"
+        }, 
+        {
+            "location": "/buchungen_erfassen/#wertpapier-dividende", 
+            "text": "Mit einer Dividende kann man - wer h\u00e4tte das gedacht - Dividenden zu Wertpapiere erfassen - oder besser gesagt: jegliche performancerelevante Aussch\u00fcttung. Eine Dividendenbuchung muss zwingend auf einem Konto erfasst werden.  Optional kann man die St\u00fcckzahl eingeben auf die sich die Dividende bezieht. Dieser Wert wird bisher nur genutzt um Dividende pro Anteil in der Liste der Buchungen anzuzeigen.", 
+            "title": "Wertpapier: Dividende"
+        }, 
+        {
+            "location": "/buchungen_erfassen/#buchungen-importieren", 
+            "text": "", 
+            "title": "Buchungen importieren"
+        }, 
+        {
+            "location": "/license/", 
+            "text": "Lizenz\n\n\nDieses Handbuch ist lizenziert unter einer \nCreative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz\n.\n\n\nDer \nSource Code\n von \nPortfolio Performance\n ist unter der \nEclipse Public License 1.0\n lizensiert.\n\n\nImpressum\n\n\nSiehe \nImpressum und Datenschutz\n.", 
+            "title": "Lizenz"
+        }, 
+        {
+            "location": "/license/#lizenz", 
+            "text": "Dieses Handbuch ist lizenziert unter einer  Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz .  Der  Source Code  von  Portfolio Performance  ist unter der  Eclipse Public License 1.0  lizensiert.", 
+            "title": "Lizenz"
+        }, 
+        {
+            "location": "/license/#impressum", 
+            "text": "Siehe  Impressum und Datenschutz .", 
+            "title": "Impressum"
+        }
+    ]
+}

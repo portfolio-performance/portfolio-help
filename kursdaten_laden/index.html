@@ -1,0 +1,749 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Handbuch für Portfolio Performance Software">
+      
+      
+        <link rel="canonical" href="https://help.portfolio-performance.info/kursdaten_laden/">
+      
+      
+        <meta name="author" content="Andreas Buchen, et. al.">
+      
+      
+        <meta name="lang:clipboard.copy" content="In Zwischenablage kopieren">
+      
+        <meta name="lang:clipboard.copied" content="In Zwischenablage kopiert">
+      
+        <meta name="lang:search.language" content="de">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Keine Suchergebnisse">
+      
+        <meta name="lang:search.result.one" content="1 Suchergebnis">
+      
+        <meta name="lang:search.result.other" content="# Suchergebnisse">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-0.17.5, mkdocs-material-2.7.3">
+    
+    
+      
+        <title>Kursdaten laden</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.8d40d89b.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="light-green" data-md-color-accent="amber">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#kursdaten-laden" tabindex="1" class="md-skip">
+        Zum Inhalt
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://help.portfolio-performance.info/" title="Portfolio Performance Handbuch" class="md-header-nav__button md-logo">
+          
+            <img src="../images/logo.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Portfolio Performance Handbuch
+              </span>
+              <span class="md-header-nav__topic">
+                Kursdaten laden
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Suchbegriff eingeben
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+<a href="https://www.portfolio-performance.info" title="Download" class="md-header-nav__button md-logo"><i class="fa fa-download" aria-hidden="true"></i></a>
+
+<a href="https://forum.portfolio-performance.info" title="Forum" class="md-header-nav__button md-logo"><i class="fa fa-comments-o" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <img src="../images/logo.svg" width="48" height="48">
+      
+    </span>
+    Portfolio Performance Handbuch
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://www.portfolio-performance.info" title="Download" class="md-header-nav__button md-logo"><i class="fa fa-download" aria-hidden="true"></i></a>
+
+<a href="https://forum.portfolio-performance.info" title="Forum" class="md-header-nav__button md-logo"><i class="fa fa-comments-o" aria-hidden="true"></i></a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Überblick" class="md-nav__link">
+      Überblick
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../waehrungen/" title="Währungen" class="md-nav__link">
+      Währungen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Kursdaten laden
+      </label>
+    
+    <a href="./" title="Kursdaten laden" class="md-nav__link md-nav__link--active">
+      Kursdaten laden
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#yahoo-finance" title="Yahoo Finance" class="md-nav__link">
+    Yahoo Finance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alphavantage" title="AlphaVantage" class="md-nav__link">
+    AlphaVantage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tabelle-auf-einer-webseite" title="Tabelle auf einer Webseite" class="md-nav__link">
+    Tabelle auf einer Webseite
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dynamische-kursdaten-urls" title="Dynamische Kursdaten-URLs" class="md-nav__link">
+    Dynamische Kursdaten-URLs
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#currency" title="CURRENCY" class="md-nav__link">
+    CURRENCY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date" title="DATE" class="md-nav__link">
+    DATE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isin" title="ISIN" class="md-nav__link">
+    ISIN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#page" title="PAGE" class="md-nav__link">
+    PAGE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticker" title="TICKER" class="md-nav__link">
+    TICKER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#today" title="TODAY" class="md-nav__link">
+    TODAY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wkn" title="WKN" class="md-nav__link">
+    WKN
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#csv-import" title="CSV Import" class="md-nav__link">
+    CSV Import
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../buchungen_erfassen/" title="Buchungen erfassen" class="md-nav__link">
+      Buchungen erfassen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../license/" title="Lizenz" class="md-nav__link">
+      Lizenz
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Inhaltsverzeichnis</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#yahoo-finance" title="Yahoo Finance" class="md-nav__link">
+    Yahoo Finance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alphavantage" title="AlphaVantage" class="md-nav__link">
+    AlphaVantage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tabelle-auf-einer-webseite" title="Tabelle auf einer Webseite" class="md-nav__link">
+    Tabelle auf einer Webseite
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dynamische-kursdaten-urls" title="Dynamische Kursdaten-URLs" class="md-nav__link">
+    Dynamische Kursdaten-URLs
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#currency" title="CURRENCY" class="md-nav__link">
+    CURRENCY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date" title="DATE" class="md-nav__link">
+    DATE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isin" title="ISIN" class="md-nav__link">
+    ISIN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#page" title="PAGE" class="md-nav__link">
+    PAGE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticker" title="TICKER" class="md-nav__link">
+    TICKER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#today" title="TODAY" class="md-nav__link">
+    TODAY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wkn" title="WKN" class="md-nav__link">
+    WKN
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#csv-import" title="CSV Import" class="md-nav__link">
+    CSV Import
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/buchen/portfolio-help/blob/master/docs/kursdaten_laden.md" title="Seite editieren" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="kursdaten-laden">Kursdaten laden<a class="headerlink" href="#kursdaten-laden" title="Permanent link">&para;</a></h1>
+<p>Historische Kurse sind extrem wichtig um eine Performance berechnen zu können. Wenn man nicht weiß wieviel ein Wertpapier vor einem Jahr wert war, dann helfen auch schicke Formeln nicht weiter. Allerdings ist es nicht einfach an gute und gleichzeitig kostenlose historische Kurse heranzukommen.</p>
+<p>Die erste Anlaufstelle ist <a href="#yahoo-finance">Yahoo Finance</a>: sofern Yahoo Finance das Wertpapier kennt und auch Kurse hat, kann man bequem anhand des Tickers den Download direkt in PP konfigurieren. Allerdings ist die Abdeckung für deutsche Fonds oder ETFs nicht so prickelnd. Eine weitere Möglichkeit ist <a href="#alphavantage">AlphaVantage</a>: ebenfalls mit viel Gewicht auf den amerikanischen Markt. Allerdings erlaubt das kostenlose API nur wenige Aufrufe pro Minute.</p>
+<p>Wenn diese zwei automatischen Quellen keine historischen Kurse bieten, muss man zu "halbautomatischen" Lösungen greifen. Die erste Möglichkeit ist eine URL zu hinterlegen auf der nach einer <a href="#tabelle-auf-einer-webseite">Tabelle mit Kursinformationen</a> gesucht wird. Neben der Schwierigkeit überhaupt die passende Seite zu finden, kann es auch sein, dass die URLs sich immer wieder ändert so dass man mit Markos <a href="#dynamische-kursdaten-urls">dynamische Kursdaten-URLs</a> zusammenbauen muss.</p>
+<p>Und schließlich bleiben die manuellen Lösungen: die Kursdaten <a href="#csv-import">per CSV-Datei</a> zu importieren oder manuell im Programm selbst zu erfassen.</p>
+<p><a href="https://forum.portfolio-performance.info/t/quellen-fuer-historische-kurse/46"><i class="fa fa-comments-o" aria-hidden="true"></i> Forum: Quellen für historische Kurse</a></p>
+<h2 id="yahoo-finance">Yahoo Finance<a class="headerlink" href="#yahoo-finance" title="Permanent link">&para;</a></h2>
+<h2 id="alphavantage">AlphaVantage<a class="headerlink" href="#alphavantage" title="Permanent link">&para;</a></h2>
+<h2 id="tabelle-auf-einer-webseite">Tabelle auf einer Webseite<a class="headerlink" href="#tabelle-auf-einer-webseite" title="Permanent link">&para;</a></h2>
+<h3 id="dynamische-kursdaten-urls">Dynamische Kursdaten-URLs<a class="headerlink" href="#dynamische-kursdaten-urls" title="Permanent link">&para;</a></h3>
+<p>Manche Seiten verteilen die Daten auf mehrere Requests. Wenn eines der Macros in der URL gefunden wird, wird die URL dynamisch zusammengesetzt und PP macht solange Aufrufe bis keine weiteren Kurse mehr gefunden werden.</p>
+<p>In einer URL dürfen mehrere Marcos verwendet werden. Allerdings dürfen <code>DATE</code> und <code>PAGE</code> nicht gemeinsam verwendet werden, weil beide unterschiedliche Iterationen von URLs generieren.</p>
+<p><a href="https://forum.portfolio-performance.info/t/dynamische-kursdaten-urls/2929/1"><i class="fa fa-comments-o" aria-hidden="true"></i> Forum: Dynamische Kursdaten-URLs</a></p>
+<h4 id="currency">CURRENCY<a class="headerlink" href="#currency" title="Permanent link">&para;</a></h4>
+<p><code>CURRENCY</code> ersetzt das dreistellige ISO Währungskürzel des Wertpapiers in der URL.</p>
+<div class="codehilite"><pre><span></span>https://example.com/data?waehrung={CURRENCY}
+</pre></div>
+
+
+<h4 id="date">DATE<a class="headerlink" href="#date" title="Permanent link">&para;</a></h4>
+<p><code>DATE:&lt;format&gt;</code> generiert eine Abfrage für jedes Datum mit dem angegebenen Format, und zwar</p>
+<ul>
+<li>wenn <strong>keine</strong> Kurse existieren, wird vom aktuellen Datum rückwärts in die Vergangenheit gesucht solange bis keine Kurse mehr gefunden werden;</li>
+<li>wenn historische <strong>Kurse existieren</strong>, dann wird vom letzten Kursdatum vorwärts bis zum aktuellen Datum eine URL generiert.</li>
+</ul>
+<p>Das Datumsformat folgt den Regeln des <a href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a> aus Java. Die wichtigsten Symbole sind <code>y</code> für das Jahr, <code>M</code> für den Monat im Jahr und <code>d</code> für den Tag im Monat.</p>
+<p>Beispiele:</p>
+<div class="codehilite"><pre><span></span>https://example.com/data?month={DATE:yyyy-MM}
+https://example.com/data?datum={DATE:yyyy-MM-32}
+</pre></div>
+
+
+<p>Wenn die identische URL mehrfach generiert wird, dann macht PP nur eine einzige Abfrage. Nehmen wir das Datumsformat aus dem letzten Beispiel: <code>{DATE:yyyy-MM-32}</code> Der Tag ist statisch auf 32 gesetzt. Es wird für jeden Tag in einem Monat die identische URL generiert, aber nur eine Abfrage zum Server gemacht.</p>
+<p>Das Marco <code>DATE</code> darf in einer URL mehrfach auftauchen. Es wird dann das gleiche Datum verwendet. So kann man zum Beispiel mit <code>{DATE:yyyy-MM-01}</code> und <code>{DATE:yyyy-MM-31}</code> vom Monatsersten bis zum Monatsletzten selektieren.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p>Warum den 32. und nicht den 31. als letzten Tag? <a href="https://forum.portfolio-performance.info/t/dynamische-kursdaten-urls/2929/10">Al2Klimov</a> schreibt dazu im Forum: <em>Aus eigener Erfahrung u.a. als Berufsprogrammierer kann ich dieses “Ausreiz-Prinzip” vielerseits empfehlen: Entweder es fährt alles “gegen die Wand” (den 32. Monatstag gibts so nicht) oder alles funktioniert – aber bitteschön kein inkonsistenter Zustand dazwischen!</em></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warnung</p>
+<p>Mit dem Datumsformat <code>yyyy-MM-dd</code> wird für jeden Tag eine URL generiert und damit eine ganze Menge Abfragen gemacht. Das sollte man nach Möglichkeit vermeiden. Der Server könnte das als Fehlanwendung verstehen und überhaupt keine Daten mehr liefern.</p>
+</div>
+<h4 id="isin">ISIN<a class="headerlink" href="#isin" title="Permanent link">&para;</a></h4>
+<p><code>ISIN</code> ersetzt die ISIN des Wertpapiers in der URL.</p>
+<div class="codehilite"><pre><span></span>https://example.com/data?isin={ISIN}
+</pre></div>
+
+
+<h4 id="page">PAGE<a class="headerlink" href="#page" title="Permanent link">&para;</a></h4>
+<p><code>PAGE</code> fängt mit 1 an zu zählen bis keine weiteren Kurse mehr auf der Seite gefunden werden.</p>
+<div class="codehilite"><pre><span></span>https://example.com/data?page={PAGE}
+</pre></div>
+
+
+<h4 id="ticker">TICKER<a class="headerlink" href="#ticker" title="Permanent link">&para;</a></h4>
+<p><code>TICKER</code> ersetzt das Ticker Symbol des Wertpapiers in der URL.</p>
+<div class="codehilite"><pre><span></span>https://example.com/data?ticker={TICKER}
+</pre></div>
+
+
+<h4 id="today">TODAY<a class="headerlink" href="#today" title="Permanent link">&para;</a></h4>
+<p><code>TODAY:&lt;format&gt;:&lt;delta&gt;</code> ersetzt das aktuelle Datum in der URL.</p>
+<ul>
+<li><code>&lt;format&gt;</code> ist das Datumsformat nach den Regeln des <a href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a> aus Java. Die wichtigsten Symbole sind <code>y</code> für das Jahr, <code>M</code> für den Monat im Jahr und <code>d</code> für den Tag im Monat.</li>
+<li><code>&lt;delta&gt;</code> ist eine Zeitspanne basierend auf den ISO-8601 Regeln wie in <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html#parse-java.lang.CharSequence-">Java</a> implementiert. Die Zeitspanne kann optional mit einem Minuszeichen beginnen - dann wird sie vom aktuellen Datum abgezogen. Dann folgt ein <code>P</code> (für period) und anschliessend eine Zahl und ein Suffix - z.B. einem <code>Y</code> für Jahre, <code>M</code> für Monate, <code>W</code> für Wochen und einem <code>D</code> für Tage.</li>
+</ul>
+<div class="codehilite"><pre><span></span>// aktuelles Datum im ISO Format
+https://example.com/data?datum={TODAY}
+
+// aktuelles Datum im deutschen Datumsformat
+https://example.com/data?datum={TODAY:dd.MM.yyyy}
+
+// aktuelles Datum minus 1 Jahr
+https://example.com/data?datum={TODAY:dd.MM.yyyy:-P1Y}
+
+// aktuelles Datum minus 2 Monate
+https://example.com/data?datum={TODAY:dd.MM.yyyy:-P2M}
+</pre></div>
+
+
+<h4 id="wkn">WKN<a class="headerlink" href="#wkn" title="Permanent link">&para;</a></h4>
+<p><code>WKN</code> ersetzt die Wertpapierkennnummer (WKN) in der URL.</p>
+<div class="codehilite"><pre><span></span>https://example.com/data?wkn={WKN}
+</pre></div>
+
+
+<h2 id="csv-import">CSV Import<a class="headerlink" href="#csv-import" title="Permanent link">&para;</a></h2>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../waehrungen/" title="Währungen" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Zurück
+                </span>
+                Währungen
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../buchungen_erfassen/" title="Buchungen erfassen" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Weiter
+                </span>
+                Buchungen erfassen
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Dieses Werk ist lizenziert unter <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://www.portfolio-performance.info" class="md-footer-social__link fa fa-home"></a>
+    
+      <a href="https://github.com/buchen/portfolio" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/portfolioperf" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://forum.portfolio-performance.info" class="md-footer-social__link fa fa-comments-o"></a>
+    
+      <a href="https://github.com/buchen/portfolio/issues" class="md-footer-social__link fa fa-bug"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.b438e6c5.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.de.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"0.17.5",url:{base:".."}})</script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-34744550-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>
