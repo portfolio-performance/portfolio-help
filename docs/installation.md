@@ -36,7 +36,7 @@ Im *Workspace* Verzeichnis speichert PP temporäre Informationen wie die aktuell
 Das Workspace Verzeichnis liegt:
 
 * unter macOS: **~/Library/Application Support/name.abuchen.portfolio.product/workspace**
-* unter Windows: **$LOCALAPPDATA$\PortfolioPerformance\workspace** wobei $LOCALAPPDATA$ überlicherweise nach **C:\Users\\{Benutzername}\AppData\Local** zeigt
+* unter Windows: **%LOCALAPPDATA%\PortfolioPerformance\workspace** wobei %LOCALAPPDATA% überlicherweise nach **C:\Users\\{Benutzername}\AppData\Local** zeigt
 * unter Linux: **~/.PortfolioPerformance/workspace**
 
 !!! note "macOS"
