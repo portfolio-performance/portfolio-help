@@ -23,6 +23,39 @@ Portfolio Performance nutzt [Eclipse SWT](https://www.eclipse.org/swt/) und dami
 
 Die notwendigen Abhängigkeiten lassen sich unter Ubuntu 18.04 mit `sudo apt install libwebkitgtk-3.0-0 default-jre` installieren.
 
+Das Programm lässt sich mit folgendem Skript installieren:
+```
+#!/bin/bash
+
+# Download/unpack current release to /opt/PortfolioPerformance/
+pm_repo=buchen/portfolio #GitHub Repo
+pm_release=`wget -qO- \
+"https://api.github.com/repos/$pm_repo/releases/latest" \
+| grep -Po '"tag_name": "\K.*?(?=")'` 
+pm_file=PortfolioPerformance-$pm_release-linux.gtk.x86_64.tar.gz
+pm_dl=https://github.com/$pm_repo/releases/download/$pm_release/$pm_file
+pm_location=/opt/PortfolioPerformance/
+sudo mkdir -p $pm_location
+sudo wget $pm_dl -P $pm_location
+sudo tar xfzv $pm_location/$pm_file -C $pm_location --strip 1
+sudo rm $pm_location/$pm_file
+
+# Create menu item
+echo -e "[Desktop Entry]\n"\
+"Version=$pm_release\n"\
+"Name=Portfolio Performance\n"\
+"Comment=Calculates the performance of an entire portfolio\n"\
+"Comment[de]=Berechnet die Performance eines Gesamtportfolios\n"\
+"Exec=$pm_location/PortfolioPerformance\n"\
+"Terminal=false\n"\
+"Encoding=UTF-8\n"\
+"Type=Application\n"\
+"Icon=$pm_location/icon.xpm\n"\
+"Categories=Office;Finance\n"\
+| sudo tee  /usr/share/applications/PortfolioPerformance.desktop
+```
+
+
 Wenn es Probleme gibt, dann bieten sich folgende Optionen an:
 
 * Alternatives GTK3 Theme ausprobieren
