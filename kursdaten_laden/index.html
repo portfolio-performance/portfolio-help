@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de" class="no-js">
   <head>
     
@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../images/favicon.ico">
-      <meta name="generator" content="mkdocs-0.17.5, mkdocs-material-2.7.3">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
     
     
       
@@ -46,24 +46,58 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.8d40d89b.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.6079476c.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#7cb342">
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-34744550-1", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -76,32 +110,15 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
-    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#kursdaten-laden" tabindex="1" class="md-skip">
+      <a href="#kursdaten-laden" tabindex="0" class="md-skip">
         Zum Inhalt
       </a>
     
@@ -110,40 +127,39 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://help.portfolio-performance.info/" title="Portfolio Performance Handbuch" class="md-header-nav__button md-logo">
+        <a href="https://help.portfolio-performance.info/" title="Portfolio Performance Handbuch" aria-label="Portfolio Performance Handbuch" class="md-header-nav__button md-logo">
           
-            <img src="../images/logo.svg" width="24" height="24">
+            <img alt="logo" src="../images/logo.svg" width="24" height="24">
           
         </a>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Portfolio Performance Handbuch
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              Portfolio Performance Handbuch
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Kursdaten laden
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="search"></label>
+  <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="search"></label>
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
       <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
         &#xE5CD;
       </button>
@@ -160,7 +176,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -182,7 +197,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -190,12 +205,12 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="drawer">
-    <span class="md-nav__button md-logo">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://help.portfolio-performance.info/" title="Portfolio Performance Handbuch" class="md-nav__button md-logo">
       
-        <img src="../images/logo.svg" width="48" height="48">
+        <img alt="logo" src="../images/logo.svg" width="48" height="48">
       
-    </span>
+    </a>
     Portfolio Performance Handbuch
   </label>
   
@@ -253,12 +268,12 @@
 
   <li class="md-nav__item md-nav__item--active">
     
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="toc">
+      <label class="md-nav__link md-nav__link--active" for="__toc">
         Kursdaten laden
       </label>
     
@@ -273,33 +288,52 @@
     
   
   
-    <label class="md-nav__title" for="toc">Inhaltsverzeichnis</label>
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#yahoo-finance" title="Yahoo Finance" class="md-nav__link">
+  <a href="#yahoo-finance" class="md-nav__link">
     Yahoo Finance
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#alphavantage" title="AlphaVantage" class="md-nav__link">
+  <a href="#alphavantage" class="md-nav__link">
     AlphaVantage
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tabelle-auf-einer-webseite" title="Tabelle auf einer Webseite" class="md-nav__link">
+  <a href="#tabelle-auf-einer-webseite" class="md-nav__link">
     Tabelle auf einer Webseite
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    JSON
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#dynamische-kursdaten-urls" title="Dynamische Kursdaten-URLs" class="md-nav__link">
+  <a href="#beispiele" class="md-nav__link">
+    Beispiele
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamische-kursdaten-urls" class="md-nav__link">
     Dynamische Kursdaten-URLs
   </a>
   
@@ -307,49 +341,49 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#currency" title="CURRENCY" class="md-nav__link">
+  <a href="#currency" class="md-nav__link">
     CURRENCY
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#date" title="DATE" class="md-nav__link">
+  <a href="#date" class="md-nav__link">
     DATE
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#isin" title="ISIN" class="md-nav__link">
+  <a href="#isin" class="md-nav__link">
     ISIN
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#page" title="PAGE" class="md-nav__link">
+  <a href="#page" class="md-nav__link">
     PAGE
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ticker" title="TICKER" class="md-nav__link">
+  <a href="#ticker" class="md-nav__link">
     TICKER
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#today" title="TODAY" class="md-nav__link">
+  <a href="#today" class="md-nav__link">
     TODAY
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#wkn" title="WKN" class="md-nav__link">
+  <a href="#wkn" class="md-nav__link">
     WKN
   </a>
   
@@ -357,18 +391,6 @@
         
       </ul>
     </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#csv-import" title="CSV Import" class="md-nav__link">
-    CSV Import
-  </a>
   
 </li>
       
@@ -424,33 +446,52 @@
     
   
   
-    <label class="md-nav__title" for="toc">Inhaltsverzeichnis</label>
+    <label class="md-nav__title" for="__toc">Inhaltsverzeichnis</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#yahoo-finance" title="Yahoo Finance" class="md-nav__link">
+  <a href="#yahoo-finance" class="md-nav__link">
     Yahoo Finance
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#alphavantage" title="AlphaVantage" class="md-nav__link">
+  <a href="#alphavantage" class="md-nav__link">
     AlphaVantage
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tabelle-auf-einer-webseite" title="Tabelle auf einer Webseite" class="md-nav__link">
+  <a href="#tabelle-auf-einer-webseite" class="md-nav__link">
     Tabelle auf einer Webseite
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    JSON
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#dynamische-kursdaten-urls" title="Dynamische Kursdaten-URLs" class="md-nav__link">
+  <a href="#beispiele" class="md-nav__link">
+    Beispiele
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamische-kursdaten-urls" class="md-nav__link">
     Dynamische Kursdaten-URLs
   </a>
   
@@ -458,49 +499,49 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#currency" title="CURRENCY" class="md-nav__link">
+  <a href="#currency" class="md-nav__link">
     CURRENCY
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#date" title="DATE" class="md-nav__link">
+  <a href="#date" class="md-nav__link">
     DATE
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#isin" title="ISIN" class="md-nav__link">
+  <a href="#isin" class="md-nav__link">
     ISIN
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#page" title="PAGE" class="md-nav__link">
+  <a href="#page" class="md-nav__link">
     PAGE
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ticker" title="TICKER" class="md-nav__link">
+  <a href="#ticker" class="md-nav__link">
     TICKER
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#today" title="TODAY" class="md-nav__link">
+  <a href="#today" class="md-nav__link">
     TODAY
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#wkn" title="WKN" class="md-nav__link">
+  <a href="#wkn" class="md-nav__link">
     WKN
   </a>
   
@@ -508,18 +549,6 @@
         
       </ul>
     </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#csv-import" title="CSV Import" class="md-nav__link">
-    CSV Import
-  </a>
   
 </li>
       
@@ -551,14 +580,95 @@
 <h2 id="yahoo-finance">Yahoo Finance<a class="headerlink" href="#yahoo-finance" title="Permanent link">&para;</a></h2>
 <h2 id="alphavantage">AlphaVantage<a class="headerlink" href="#alphavantage" title="Permanent link">&para;</a></h2>
 <h2 id="tabelle-auf-einer-webseite">Tabelle auf einer Webseite<a class="headerlink" href="#tabelle-auf-einer-webseite" title="Permanent link">&para;</a></h2>
-<h3 id="dynamische-kursdaten-urls">Dynamische Kursdaten-URLs<a class="headerlink" href="#dynamische-kursdaten-urls" title="Permanent link">&para;</a></h3>
+<h2 id="json">JSON<a class="headerlink" href="#json" title="Permanent link">&para;</a></h2>
+<p>Der Kurslieferant <em>JSON</em> kann mit Hilfe von <a href="https://github.com/json-path/JsonPath/blob/master/README.md">JsonPath</a> Ausdrücken aus einem JSON (JavaScript Object Notation) Dokument Kurse extrahieren.</p>
+<p>Es müssen zwei JsonPath Ausdrücke konfiguriert werden: <strong>Pfad zum Datum</strong> und <strong>Pfad zum (Schluss)kurs</strong>. Beide Ausdrücke müssen ein Array zurückgeben. Die Arrays müssen die gleiche Länge habe, d.h. zu jedem Datum gibt es auch einen Kurs und umgekehrt.</p>
+<p>Die <a href="#dynamische-kursdaten-urls">URL darf Makros</a> enthalten.</p>
+<h3 id="beispiele">Beispiele<a class="headerlink" href="#beispiele" title="Permanent link">&para;</a></h3>
+<p>Nehmen wir an die konfigurierte URL liefert folgendes JSON Dokument:</p>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;isin&quot;</span><span class="p">:</span> <span class="s2">&quot;IE00B3WJKG14&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;totalCount&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="nt">&quot;tradedInPercent&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;close&quot;</span><span class="p">:</span> <span class="mf">10.336</span><span class="p">,</span>
+            <span class="nt">&quot;date&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-03-05&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;high&quot;</span><span class="p">:</span> <span class="mf">10.392</span><span class="p">,</span>
+            <span class="nt">&quot;low&quot;</span><span class="p">:</span> <span class="mf">10.114</span><span class="p">,</span>
+            <span class="nt">&quot;open&quot;</span><span class="p">:</span> <span class="mf">10.392</span><span class="p">,</span>
+            <span class="nt">&quot;turnoverEuro&quot;</span><span class="p">:</span> <span class="mf">8039993.78</span><span class="p">,</span>
+            <span class="nt">&quot;turnoverPieces&quot;</span><span class="p">:</span> <span class="mi">781747</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;close&quot;</span><span class="p">:</span> <span class="mf">10.292</span><span class="p">,</span>
+            <span class="nt">&quot;date&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-03-04&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;high&quot;</span><span class="p">:</span> <span class="mf">10.374</span><span class="p">,</span>
+            <span class="nt">&quot;low&quot;</span><span class="p">:</span> <span class="mf">10.172</span><span class="p">,</span>
+            <span class="nt">&quot;open&quot;</span><span class="p">:</span> <span class="mf">10.224</span><span class="p">,</span>
+            <span class="nt">&quot;turnoverEuro&quot;</span><span class="p">:</span> <span class="mf">4737489.8</span><span class="p">,</span>
+            <span class="nt">&quot;turnoverPieces&quot;</span><span class="p">:</span> <span class="mi">461168</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+<p>Der Pfad zum Datum <strong>$.data[*].date</strong>. '$' steht für das Wurzelelement, mit der Wildcard '*' werden alle Einträge aus dem Array eingesammelt.</p>
+<p>Als Schlusskurs verwenden wir das <strong>close</strong> Attribut und damit den Pfad <strong>$.data[*].close</strong>.</p>
+<p>Ein zweites Beispiel sind die <a href="https://www.quandl.com/data/LBMA/GOLD-Gold-Price-London-Fixing">LBMA/GOLD</a> Kurse von Quandl. Da es einen separaten <a href="#quandl">Quandl Kurslieferant</a> gibt, kann man Kursinformationen von Quandl natürlich einfacher konfigurieren. Es dient hier als Beispiel für ein weiteres JSON.</p>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;dataset&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;collapse&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;column_index&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;column_names&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Date&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;USD (AM)&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;USD (PM)&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;GBP (AM)&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;GBP (PM)&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;EURO (AM)&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;EURO (PM)&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">[</span>
+                <span class="s2">&quot;2020-03-05&quot;</span><span class="p">,</span>
+                <span class="mf">1647.45</span><span class="p">,</span>
+                <span class="mf">1659.6</span><span class="p">,</span>
+                <span class="mf">1274.47</span><span class="p">,</span>
+                <span class="mf">1284.7</span><span class="p">,</span>
+                <span class="mf">1474.63</span><span class="p">,</span>
+                <span class="mf">1482.69</span>
+            <span class="p">],</span>
+            <span class="p">[</span>
+                <span class="s2">&quot;2020-03-04&quot;</span><span class="p">,</span>
+                <span class="mf">1644.8</span><span class="p">,</span>
+                <span class="mf">1641.85</span><span class="p">,</span>
+                <span class="mf">1286.73</span><span class="p">,</span>
+                <span class="mf">1281.63</span><span class="p">,</span>
+                <span class="mf">1475.06</span><span class="p">,</span>
+                <span class="mf">1477.83</span>
+            <span class="p">]</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;database_code&quot;</span><span class="p">:</span> <span class="s2">&quot;LBMA&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;database_id&quot;</span><span class="p">:</span> <span class="mi">139</span><span class="p">,</span>
+        <span class="nt">&quot;dataset_code&quot;</span><span class="p">:</span> <span class="s2">&quot;GOLD&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+<p><strong>$.dataset.data[*][0]</strong> extrahiert das Datum.</p>
+<p><strong>$.dataset.data[*][6]</strong> extrahiert das 7. Element (JsonPath fängt mit 0 an zu zählen). Von den <strong>column_names</strong> Attribut wissen wir, dass das 7. Element als <strong>EURO (PM)</strong> bezeichnet ist, also das Nachmittags Fixing in Euro. </p>
+<p>Der Entwickler von JsonPath hat eine <a href="http://jsonpath.herokuapp.com">kleine Anwendung</a> gebaut, mit der man interaktiv die JsonPath Ausdrücke testen kann. Die Anwendung scheint keine großen JSON Dokumente zu vertragen, darum macht es Sinn mit nur ein paar wenigen Kursen die Ausdrücke zu testen.</p>
+<h2 id="dynamische-kursdaten-urls">Dynamische Kursdaten-URLs<a class="headerlink" href="#dynamische-kursdaten-urls" title="Permanent link">&para;</a></h2>
 <p>Manche Seiten verteilen die Daten auf mehrere Requests. Wenn eines der Macros in der URL gefunden wird, wird die URL dynamisch zusammengesetzt und PP macht solange Aufrufe bis keine weiteren Kurse mehr gefunden werden.</p>
 <p>In einer URL dürfen mehrere Marcos verwendet werden. Allerdings dürfen <code>DATE</code> und <code>PAGE</code> nicht gemeinsam verwendet werden, weil beide unterschiedliche Iterationen von URLs generieren.</p>
 <p><a href="https://forum.portfolio-performance.info/t/dynamische-kursdaten-urls/2929/1"><i class="fa fa-comments-o" aria-hidden="true"></i> Forum: Dynamische Kursdaten-URLs</a></p>
 <h4 id="currency">CURRENCY<a class="headerlink" href="#currency" title="Permanent link">&para;</a></h4>
 <p><code>CURRENCY</code> ersetzt das dreistellige ISO Währungskürzel des Wertpapiers in der URL.</p>
-<div class="codehilite"><pre><span></span>https://example.com/data?waehrung={CURRENCY}
-</pre></div>
+<div class="codehilite"><pre><span></span><code>https://example.com/data?waehrung={CURRENCY}
+</code></pre></div>
 
 
 <h4 id="date">DATE<a class="headerlink" href="#date" title="Permanent link">&para;</a></h4>
@@ -569,9 +679,9 @@
 </ul>
 <p>Das Datumsformat folgt den Regeln des <a href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a> aus Java. Die wichtigsten Symbole sind <code>y</code> für das Jahr, <code>M</code> für den Monat im Jahr und <code>d</code> für den Tag im Monat.</p>
 <p>Beispiele:</p>
-<div class="codehilite"><pre><span></span>https://example.com/data?month={DATE:yyyy-MM}
+<div class="codehilite"><pre><span></span><code>https://example.com/data?month={DATE:yyyy-MM}
 https://example.com/data?datum={DATE:yyyy-MM-32}
-</pre></div>
+</code></pre></div>
 
 
 <p>Wenn die identische URL mehrfach generiert wird, dann macht PP nur eine einzige Abfrage. Nehmen wir das Datumsformat aus dem letzten Beispiel: <code>{DATE:yyyy-MM-32}</code> Der Tag ist statisch auf 32 gesetzt. Es wird für jeden Tag in einem Monat die identische URL generiert, aber nur eine Abfrage zum Server gemacht.</p>
@@ -586,20 +696,20 @@ https://example.com/data?datum={DATE:yyyy-MM-32}
 </div>
 <h4 id="isin">ISIN<a class="headerlink" href="#isin" title="Permanent link">&para;</a></h4>
 <p><code>ISIN</code> ersetzt die ISIN des Wertpapiers in der URL.</p>
-<div class="codehilite"><pre><span></span>https://example.com/data?isin={ISIN}
-</pre></div>
+<div class="codehilite"><pre><span></span><code>https://example.com/data?isin={ISIN}
+</code></pre></div>
 
 
 <h4 id="page">PAGE<a class="headerlink" href="#page" title="Permanent link">&para;</a></h4>
 <p><code>PAGE</code> fängt mit 1 an zu zählen bis keine weiteren Kurse mehr auf der Seite gefunden werden.</p>
-<div class="codehilite"><pre><span></span>https://example.com/data?page={PAGE}
-</pre></div>
+<div class="codehilite"><pre><span></span><code>https://example.com/data?page={PAGE}
+</code></pre></div>
 
 
 <h4 id="ticker">TICKER<a class="headerlink" href="#ticker" title="Permanent link">&para;</a></h4>
 <p><code>TICKER</code> ersetzt das Ticker Symbol des Wertpapiers in der URL.</p>
-<div class="codehilite"><pre><span></span>https://example.com/data?ticker={TICKER}
-</pre></div>
+<div class="codehilite"><pre><span></span><code>https://example.com/data?ticker={TICKER}
+</code></pre></div>
 
 
 <h4 id="today">TODAY<a class="headerlink" href="#today" title="Permanent link">&para;</a></h4>
@@ -608,7 +718,7 @@ https://example.com/data?datum={DATE:yyyy-MM-32}
 <li><code>&lt;format&gt;</code> ist das Datumsformat nach den Regeln des <a href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a> aus Java. Die wichtigsten Symbole sind <code>y</code> für das Jahr, <code>M</code> für den Monat im Jahr und <code>d</code> für den Tag im Monat.</li>
 <li><code>&lt;delta&gt;</code> ist eine Zeitspanne basierend auf den ISO-8601 Regeln wie in <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html#parse-java.lang.CharSequence-">Java</a> implementiert. Die Zeitspanne kann optional mit einem Minuszeichen beginnen - dann wird sie vom aktuellen Datum abgezogen. Dann folgt ein <code>P</code> (für period) und anschliessend eine Zahl und ein Suffix - z.B. einem <code>Y</code> für Jahre, <code>M</code> für Monate, <code>W</code> für Wochen und einem <code>D</code> für Tage.</li>
 </ul>
-<div class="codehilite"><pre><span></span>// aktuelles Datum im ISO Format
+<div class="codehilite"><pre><span></span><code>// aktuelles Datum im ISO Format
 https://example.com/data?datum={TODAY}
 
 // aktuelles Datum im deutschen Datumsformat
@@ -619,18 +729,16 @@ https://example.com/data?datum={TODAY:dd.MM.yyyy:-P1Y}
 
 // aktuelles Datum minus 2 Monate
 https://example.com/data?datum={TODAY:dd.MM.yyyy:-P2M}
-</pre></div>
+</code></pre></div>
 
 
 <h4 id="wkn">WKN<a class="headerlink" href="#wkn" title="Permanent link">&para;</a></h4>
 <p><code>WKN</code> ersetzt die Wertpapierkennnummer (WKN) in der URL.</p>
-<div class="codehilite"><pre><span></span>https://example.com/data?wkn={WKN}
-</pre></div>
-
-
-<h2 id="csv-import">CSV Import<a class="headerlink" href="#csv-import" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>https://example.com/data?wkn={WKN}
+</code></pre></div>
                 
                   
+                
                 
               
               
@@ -690,37 +798,34 @@ https://example.com/data?datum={TODAY:dd.MM.yyyy:-P2M}
           </div>
         
         powered by
-        <a href="http://www.mkdocs.org">MkDocs</a>
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
         and
-        <a href="https://squidfunk.github.io/mkdocs-material/">
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
           Material for MkDocs</a>
       </div>
       
-        
   <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <a href="https://www.portfolio-performance.info" target="_blank" rel="noopener" title="home" class="md-footer-social__link fa fa-home"></a>
     
-      <a href="https://www.portfolio-performance.info" class="md-footer-social__link fa fa-home"></a>
+      <a href="https://github.com/buchen/portfolio" target="_blank" rel="noopener" title="github" class="md-footer-social__link fa fa-github"></a>
     
-      <a href="https://github.com/buchen/portfolio" class="md-footer-social__link fa fa-github"></a>
+      <a href="https://twitter.com/portfolioperf" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
     
-      <a href="https://twitter.com/portfolioperf" class="md-footer-social__link fa fa-twitter"></a>
+      <a href="https://forum.portfolio-performance.info" target="_blank" rel="noopener" title="comments-o" class="md-footer-social__link fa fa-comments-o"></a>
     
-      <a href="https://forum.portfolio-performance.info" class="md-footer-social__link fa fa-comments-o"></a>
-    
-      <a href="https://github.com/buchen/portfolio/issues" class="md-footer-social__link fa fa-bug"></a>
+      <a href="https://github.com/buchen/portfolio/issues" target="_blank" rel="noopener" title="bug" class="md-footer-social__link fa fa-bug"></a>
     
   </div>
 
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.b438e6c5.js"></script>
+      <script src="../assets/javascripts/application.c33a9706.js"></script>
       
         
         
@@ -737,12 +842,7 @@ https://example.com/data?datum={TODAY:dd.MM.yyyy:-P2M}
           
         
       
-      <script>app.initialize({version:"0.17.5",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-34744550-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.1",url:{base:".."}})</script>
       
     
   </body>
