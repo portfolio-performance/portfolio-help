@@ -8,7 +8,7 @@ Historische Kurse sind extrem wichtig um eine Performance berechnen zu können. 
 
 Die erste Anlaufstelle ist [Yahoo Finance](#yahoo-finance): sofern Yahoo Finance das Wertpapier kennt und auch Kurse hat, kann man bequem anhand des Tickers den Download direkt in PP konfigurieren. Allerdings ist die Abdeckung für deutsche Fonds oder ETFs nicht so prickelnd. Eine weitere Möglichkeit ist [AlphaVantage](#alphavantage): ebenfalls mit viel Gewicht auf den amerikanischen Markt. Allerdings erlaubt das kostenlose API nur wenige Aufrufe pro Minute.
 
-Wenn diese zwei automatischen Quellen keine historischen Kurse bieten, muss man zu "halbautomatischen" Lösungen greifen. Die erste Möglichkeit ist eine URL zu hinterlegen auf der nach einer [Tabelle mit Kursinformationen](#tabelle-auf-einer-webseite) gesucht wird. Neben der Schwierigkeit überhaupt die passende Seite zu finden, kann es auch sein, dass die URLs sich immer wieder ändert so dass man mit Markos [dynamische Kursdaten-URLs](#dynamische-kursdaten-urls) zusammenbauen muss.
+Wenn diese zwei automatischen Quellen keine historischen Kurse bieten, muss man zu "halbautomatischen" Lösungen greifen. Die erste Möglichkeit ist eine URL zu hinterlegen auf der nach einer [Tabelle mit Kursinformationen](#tabelle-auf-einer-webseite) gesucht wird. Neben der Schwierigkeit überhaupt die passende Seite zu finden, kann es auch sein, dass die URLs sich immer wieder ändert so dass man mit Makros [dynamische Kursdaten-URLs](#dynamische-kursdaten-urls) zusammenbauen muss.
 
 Und schließlich bleiben die manuellen Lösungen: die Kursdaten [per CSV-Datei](#csv-import) zu importieren oder manuell im Programm selbst zu erfassen.
 
