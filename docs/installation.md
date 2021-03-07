@@ -29,6 +29,18 @@ Wenn es Probleme gibt, dann bieten sich folgende Optionen an:
 * PP auf GTK2 zwingen: ```env SWT_GTK3=0 PortfolioPerformance```
 * Alternative input method nutzen: ```env GTK_IM_MODULE=ibus PortfolioPerformance```
 
+### Integration in die Desktop Umgebung (Ubuntu-basierte Distros)
+* Entpacken der `.tar.gz` in `/opt/`
+* Erstellen einer `portfolio.desktop` Datei in `~/.local/share/applications/` mit
+```
+[Desktop Entry]
+Exec=/opt/portfolio/PortfolioPerformance
+Type=Application
+Name=Portfolio Performance
+Icon=icon.xpm
+```
+* Bei Problemen mit dem Theme z.B. `env GTK_THEME=Adwaita:light` for den Exec Befehl
+
 ## Workspace Verzeichnis
 
 Im *Workspace* Verzeichnis speichert PP temporäre Informationen wie die aktuelle Fenstergröße, die zuletzt geöffneten Dateien und Verzeichnisse und andere Laufzeitinformationen.
