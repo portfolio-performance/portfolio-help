@@ -14,6 +14,57 @@ Und schließlich bleiben die manuellen Lösungen: die Kursdaten [per CSV-Datei](
 
 [<i class="fa fa-comments-o" aria-hidden="true"></i> Forum: Quellen für historische Kurse](https://forum.portfolio-performance.info/t/quellen-fuer-historische-kurse/46)
 
+## ETF - historische Kurse von Portfolio Report hinzufügen
+
+Die Webseite Portfolio Report (PRep) (https://www.portfolio-report.net) speichert täglich ETF Schlusskurse. Diese Kurse können in Portfolio Performance (PPerf) als "historische" Kurse automatisch eingelesen werden. Dazu müssen die Kurse von PRep im PPerf "verbunden" werden.  
+### Fall A
+Ausgangslage: ein Wertpapier in PPerf existiert schon bzw. wurde neu angelegt - ISIN/Beschreibung/WKN sind also schon eingetragen. 
+Vorgehen:
+
+1. Im Portfolio Performance die ISIN eines Wertpapieres kopieren mit Doppelklick auf ISIN.
+
+![grafik](https://user-images.githubusercontent.com/82599585/115005774-85b72a00-9ea8-11eb-8e55-417cb84fe17d.png)
+
+2. Die Webseite https://www.portfolio-report.net/search öffnen, und nach der ISIN Nummer suchen lassen.
+
+![grafik](https://user-images.githubusercontent.com/82599585/115006366-142bab80-9ea9-11eb-8c34-9774fe3b29bf.png)
+
+3. Auf das Ergebnis (Results) klicken und die dann angezeigte URL kopieren. 
+
+![grafik](https://user-images.githubusercontent.com/82599585/115006758-869c8b80-9ea9-11eb-9505-8ed852a3b06c.png)
+
+4. Zurück im PPerf: in der Übersicht rechts-Klick auf das entsprechende Wertpapier und im Menu "mit Portfolio Report verknüpfen" anklicken.
+
+![grafik](https://user-images.githubusercontent.com/82599585/115007011-d11e0800-9ea9-11eb-83ab-0d552c793852.png)
+
+5. In dem sich öffnenden Fenster die URL aus Schritt 3 einfügen und mit OK bestätigen.
+
+![grafik](https://user-images.githubusercontent.com/82599585/115007247-117d8600-9eaa-11eb-9901-701625a7d60d.png)
+
+6. Das entsprechende Wertpapier mit Editieren (STRG+E) zum Bearbeiten öffnen. Das Wertpapier wird nun als mit PRep gekoppelt angezeigt.
+
+![grafik](https://user-images.githubusercontent.com/82599585/115007862-bc8e3f80-9eaa-11eb-8f5c-5d3776be6765.png)
+
+7. Im Reiter "Historische Kurse" als Kurslieferant "Portfolio Report" auswählen und mit OK bbestätigen.
+
+![grafik](https://user-images.githubusercontent.com/82599585/115008149-12fb7e00-9eab-11eb-8779-8492ced89fa5.png)
+
+
+### Fall B
+Ausgangslage: ein Wertpapier wird in Portfolio Report gefunden, und wird mit "Drag and Drop" in Portfolio Performance eröffnet. Portfolio Performance sollte geöffnet sein.
+Vorgehen:
+
+1. Das Wertpapier in https://www.portfolio-report.net/search suchen/bestimmen. Nachdem das Resultat angezeigt wird, mit dem Cursor auf das Werpapier zeigen bis der Cursor sich in eine "Hand" verwandelt. 
+
+![grafik](https://user-images.githubusercontent.com/82599585/115011485-f6f9db80-9eae-11eb-841b-0603485bc8bd.png)
+![grafik](https://user-images.githubusercontent.com/82599585/115014111-32e27000-9eb2-11eb-970b-38a5531e5498.png)
+
+
+2. Dann linke Maustaste drücken/halten und den Cursor nach Portfolio Performance in das Wertpapier Feld ziehen, loslassen. Automatisch öffnet sich das Editiermenu des entsprechenden Wertpapiers.
+
+![grafik](https://user-images.githubusercontent.com/82599585/115012308-fada2d80-9eaf-11eb-8eb7-ec8463616ca8.png)
+![grafik](https://user-images.githubusercontent.com/82599585/115012457-26f5ae80-9eb0-11eb-88de-26f244cc25aa.png)
+
 ## Yahoo Finance
 
 ## AlphaVantage
