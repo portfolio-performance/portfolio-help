@@ -14,6 +14,41 @@ Und schließlich bleiben die manuellen Lösungen: die Kursdaten [per CSV-Datei](
 
 [<i class="fa fa-comments-o" aria-hidden="true"></i> Forum: Quellen für historische Kurse](https://forum.portfolio-performance.info/t/quellen-fuer-historische-kurse/46)
 
+## CSV – historische Kurse importieren
+
+### Allgemeines
+
+Falls historische Kurse vorliegen, können sie einfach als CSV-Datei importiert werden. Dazu die Daten in einer Tabelle auflisten, die einzelnen Werte durch ein Komma, Tabstopp oder besser Semikolon trennen und als CSV-Datei speichern. Bei Kurswerte im Format EURO,Cent verbietet sich der Komma-Separator. 
+
+![grafik](https://user-images.githubusercontent.com/82599585/116431429-134f2e00-a848-11eb-937a-8bdb0ab967ef.png) 
+Dazu eignet sich ein Tabellenkalkulationsprogram bestens, so dass man sich nicht um die weitere Formatierung kümmern muss.
+
+![grafik](https://user-images.githubusercontent.com/82599585/116431458-1a763c00-a848-11eb-994b-dfb4a472f721.png) Dann wird die Datei als CSV-Datei gespeichert.
+
+![grafik](https://user-images.githubusercontent.com/82599585/116431530-28c45800-a848-11eb-9084-4576d0af24cd.png)
+
+### Portfolio Performance Vorgehen
+
+Mit Rechtsklick auf das Wertpapier --> Kurse --> CSV-Datei importieren das CSV-Import Fenster öffnen.
+
+![grafik](https://user-images.githubusercontent.com/82599585/116431840-6e812080-a848-11eb-95ed-f2c1c3e9e7dc.png) 
+ 
+Portfolio Performance zeigt nun grün hinterlegt, welche Spalten als Datum und Kurs identifiziert wurden. Ein Häckchen zeigt ob eine Spaltenüberschrift vorhanden ist.
+
+![grafik](https://user-images.githubusercontent.com/82599585/116431887-79d44c00-a848-11eb-8a40-dd845bd7830e.png) 
+ 
+Mit Doppelklick auf die entsprechende Stelle kann die Spaltenzuteilung geändert werden. Werden mehrere Kursspalten ausgewählt, wird der Wert der Letzten? eingelesen.
+
+![grafik](https://user-images.githubusercontent.com/82599585/116431930-83f64a80-a848-11eb-873a-10df00c85ca8.png)
+
+Ein Klick auf ok und die Daten sind sichtbar. 
+
+![grafik](https://user-images.githubusercontent.com/82599585/116431984-8fe20c80-a848-11eb-823f-4af73b74ec4e.png)
+ 
+Daten, die von online Seiten stammen bereiten mitunter Enkodierungs-Probleme. Dann kann das Format nicht gelesen werden. Abhilfe schafft hier der Versuch die Enkodierungseinstellung zu ändern. UTF-8 ist neben windows-1252 ein gängiges Format. 
+
+![grafik](https://user-images.githubusercontent.com/82599585/116432053-9d979200-a848-11eb-93d7-ef3e288a87d3.png)
+
 ## Yahoo Finance
 
 ## AlphaVantage
