@@ -26,16 +26,19 @@ extra_css:
 
 extra:
   social:
-    - type: 'home'
+    - icon: 'fontawesome/solid/home'
       link: 'https://www.portfolio-performance.info'
-    - type: 'github'
+    - icon: 'fontawesome/brands/github'
       link: 'https://github.com/buchen/portfolio'
-    - type: 'twitter'
+    - icon: 'fontawesome/brands/twitter'
       link: 'https://twitter.com/portfolioperf'
-    - type: 'comments-o'
+    - icon: 'fontawesome/solid/comments'
       link: 'https://forum.portfolio-performance.info'
-    - type: 'bug'
+    - icon: 'fontawesome/solid/bug'
       link: 'https://github.com/buchen/portfolio/issues'
+  analytics:
+    provider: google
+    property: UA-34744550-1
 
 markdown_extensions:
   - admonition
@@ -51,7 +54,3 @@ nav:
   - Kursdaten laden: kursdaten_laden.md
   - Buchungen erfassen: buchungen_erfassen.md
   - Lizenz: license.md
-
-google_analytics:
-  - 'UA-34744550-1'
-  - 'auto'
