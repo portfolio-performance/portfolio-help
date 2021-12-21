@@ -1,6 +1,6 @@
 
 # Project information
-site_name: 'Portfolio Performance Handbuch'
+site_name: 'Portfolio Performance'
 site_description: 'Handbuch für Portfolio Performance Software'
 site_author: 'Andreas Buchen, et. al.'
 site_url: 'https://help.portfolio-performance.info/'
@@ -36,6 +36,13 @@ extra:
       link: 'https://forum.portfolio-performance.info'
     - icon: 'fontawesome/solid/bug'
       link: 'https://github.com/buchen/portfolio/issues'
+  alternate:
+    - name: Deutsch
+      link: /
+      lang: de
+    - name: English
+      link: /en/
+      lang: en
   analytics:
     provider: google
     property: UA-34744550-1
@@ -46,6 +53,20 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
+
+plugins:
+  - i18n:
+      default_language: de
+      languages:
+        en: English
+      nav_translations:
+        en:
+          Überblick: Overview
+          Installation: Installation
+          Währungen: Currencies
+          Kursdaten laden: Loading data
+          Buchungen erfassen: Recording transactions
+          Lizenz: License
 
 nav:
   - Überblick: index.md
