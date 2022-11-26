@@ -53,6 +53,7 @@ nav:
   - Überblick: index.md
   - Installation: installation.md
   - Währungen: waehrungen.md
-  - Kursdaten laden: kursdaten_laden.md
-  - Buchungen erfassen: buchungen_erfassen.md
+  - Konten: konten_anlegen.md
+  - Kursdaten: kursdaten_laden.md
+  - Buchungen: buchungen_erfassen.md
   - Lizenz: license.md
