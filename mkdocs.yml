@@ -20,7 +20,7 @@ theme:
   features:
     - content.code.annotate 
   logo: 'images/logo.svg'
-  favicon: 'images/favicon.ico'
+  favicon: 'images/favicon.png'
   language: 'de'
 
 extra_css:
