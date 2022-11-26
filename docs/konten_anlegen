@@ -59,4 +59,4 @@ Buchungen können auf diesen Konten über einen Rechtsklick auf das entsprechend
 **SCREENSHOT EINFÜGEN**
 
 Sofern es sich um ein Depotverrechnungskonto handelt, muss es unter "Stammdaten – Depots" in der Spalte "Referenzkonto" einem Depot noch zugeordnet werden.
-Es können mehrere Verrechnungskonten in unterschiedlichen Währungen für dassselbe Depot geführt werden. Dazu ein entsprechendes Konto anlegen, Kontowährung festlegen und dem Depot unter "Stammdaten - Depots" zuordnen.
+Es können mehrere Verrechnungskonten in unterschiedlichen Währungen für dassselbe Depot geführt werden. Dazu unter "Stammdaten - Konten" die entsprechenden Konten anlegen, Kontowährung für jedes Verrechnungskonto entsprechend festlegen und jedes dieser Konten demselben Depot unter "Stammdaten - Depots" zuordnen.
