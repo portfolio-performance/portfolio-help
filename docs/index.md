@@ -18,5 +18,5 @@ Portfolio Performance (PP) selber versucht so einfach und intuitiv zu bleiben wi
 
 ## Mithelfen...
 
-Wie Ihr leicht sehen könnt, gibt es noch viele weiße Seiten in diesem Handbuch. Einige Fragen decken die [Frequently Asked Questions (FAQ)](https://forum.portfolio-performance.info/t/faq-haeufig-gestellte-fragen/1721) im Forum ab. Wer sich berufen fühlt, ist herzlich eingeladen an diesem Handbuch mitzuschreiben: auf jeder Seite gibt es oben rechts einen kleinen Stift um die Seite direkt auf [Github](https://github.com/buchen/portfolio-help) zu bearbeiten. Meldet Euch bei Interesse auch im Forum!
+Wie Ihr leicht sehen könnt, gibt es noch viele weiße Seiten in diesem Handbuch. Einige Fragen decken die [Frequently Asked Questions (FAQ)](https://forum.portfolio-performance.info/t/faq-haeufig-gestellte-fragen/1721) im Forum ab. Wer sich berufen fühlt, ist herzlich eingeladen an diesem Handbuch mitzuschreiben: auf jeder Seite gibt es oben rechts einen kleinen Stift um die Seite direkt auf [Github](https://github.com/buchen/portfolio-help) zu bearbeiten. Meldet Euch bei Interesse auch im Forum! [Vielen Dank an alle die bisher schon mitgeholfen haben.](https://github.com/buchen/portfolio-help/graphs/contributors)
 
