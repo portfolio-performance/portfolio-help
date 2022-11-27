@@ -437,6 +437,36 @@
 <h2 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h2>
 <p>Portfolio Performance nutzt <a href="https://www.eclipse.org/swt/">Eclipse SWT</a> und damit unter Linux native Bibliotheken. Standardmässig wird dabei <strong>GTK3</strong> verwendet, allerdings gibt es bei verschiedenen Kombinationen mit Themes immer mal wieder Probleme. So meldete zum Beispiel ein Benutzer Probleme im Zusammenhang mit <a href="https://github.com/buchen/portfolio/issues/1089#issuecomment-459698493">"oxygen-gtk" Theme</a>.</p>
 <p>Die notwendigen Abhängigkeiten lassen sich unter Ubuntu 18.04 mit <code>sudo apt install libwebkitgtk-3.0-0 default-jre</code> installieren.</p>
+<p>Das Programm lässt sich mit folgendem Skript installieren:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>#!/bin/bash
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a># Download/unpack current release to /opt/PortfolioPerformance/
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>pm_repo=buchen/portfolio #GitHub Repo
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>pm_release=`wget -qO- \
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>&quot;https://api.github.com/repos/$pm_repo/releases/latest&quot; \
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>| grep -Po &#39;&quot;tag_name&quot;: &quot;\K.*?(?=&quot;)&#39;` 
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>pm_file=PortfolioPerformance-$pm_release-linux.gtk.x86_64.tar.gz
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>pm_dl=https://github.com/$pm_repo/releases/download/$pm_release/$pm_file
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>pm_location=/opt/PortfolioPerformance/
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>sudo mkdir -p $pm_location
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>sudo wget $pm_dl -P $pm_location
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>sudo tar xfzv $pm_location/$pm_file -C $pm_location --strip 1
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>sudo rm $pm_location/$pm_file
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a># Create menu item
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>echo -e &quot;[Desktop Entry]\n&quot;\
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>&quot;Version=$pm_release\n&quot;\
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>&quot;Name=Portfolio Performance\n&quot;\
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>&quot;Comment=Calculates the performance of an entire portfolio\n&quot;\
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>&quot;Comment[de]=Berechnet die Performance eines Gesamtportfolios\n&quot;\
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>&quot;Exec=$pm_location/PortfolioPerformance\n&quot;\
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>&quot;Terminal=false\n&quot;\
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>&quot;Encoding=UTF-8\n&quot;\
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>&quot;Type=Application\n&quot;\
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>&quot;Icon=$pm_location/icon.xpm\n&quot;\
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>&quot;Categories=Office;Finance\n&quot;\
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>| sudo tee  /usr/share/applications/PortfolioPerformance.desktop
+</code></pre></div></p>
 <p>Wenn es Probleme gibt, dann bieten sich folgende Optionen an:</p>
 <ul>
 <li>Alternatives GTK3 Theme ausprobieren</li>
