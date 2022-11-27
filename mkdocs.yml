@@ -38,6 +38,9 @@ extra:
       link: 'https://forum.portfolio-performance.info'
     - icon: 'material/bug'
       link: 'https://github.com/buchen/portfolio/issues'
+  analytics:
+    provider: google
+    property: G-9F7652B62Z
 
 markdown_extensions:
   - admonition
