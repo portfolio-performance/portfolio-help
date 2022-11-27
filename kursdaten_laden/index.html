@@ -299,6 +299,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#comman-separated-values-csv" class="md-nav__link">
+    Comman-separated Values (CSV)
+  </a>
+  
+    <nav class="md-nav" aria-label="Comman-separated Values (CSV)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#allgemeines" class="md-nav__link">
+    Allgemeines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv-daten-importieren" class="md-nav__link">
+    CSV Daten importieren
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#yahoo-finance" class="md-nav__link">
     Yahoo Finance
   </a>
@@ -466,6 +493,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#comman-separated-values-csv" class="md-nav__link">
+    Comman-separated Values (CSV)
+  </a>
+  
+    <nav class="md-nav" aria-label="Comman-separated Values (CSV)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#allgemeines" class="md-nav__link">
+    Allgemeines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv-daten-importieren" class="md-nav__link">
+    CSV Daten importieren
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#yahoo-finance" class="md-nav__link">
     Yahoo Finance
   </a>
@@ -592,8 +646,28 @@
 <p>Historische Kurse sind extrem wichtig um eine Performance berechnen zu können. Wenn man nicht weiß wieviel ein Wertpapier vor einem Jahr wert war, dann helfen auch schicke Formeln nicht weiter. Allerdings ist es nicht einfach an gute und gleichzeitig kostenlose historische Kurse heranzukommen.</p>
 <p>Die erste Anlaufstelle ist <a href="#yahoo-finance">Yahoo Finance</a>: sofern Yahoo Finance das Wertpapier kennt und auch Kurse hat, kann man bequem anhand des Tickers den Download direkt in PP konfigurieren. Allerdings ist die Abdeckung für deutsche Fonds oder ETFs nicht so prickelnd. Eine weitere Möglichkeit ist <a href="#alphavantage">AlphaVantage</a>: ebenfalls mit viel Gewicht auf den amerikanischen Markt. Allerdings erlaubt das kostenlose API nur wenige Aufrufe pro Minute.</p>
 <p>Wenn diese zwei automatischen Quellen keine historischen Kurse bieten, muss man zu "halbautomatischen" Lösungen greifen. Die erste Möglichkeit ist eine URL zu hinterlegen auf der nach einer <a href="#tabelle-auf-einer-webseite">Tabelle mit Kursinformationen</a> gesucht wird. Neben der Schwierigkeit überhaupt die passende Seite zu finden, kann es auch sein, dass die URLs sich immer wieder ändert so dass man mit Markos <a href="#dynamische-kursdaten-urls">dynamische Kursdaten-URLs</a> zusammenbauen muss.</p>
-<p>Und schließlich bleiben die manuellen Lösungen: die Kursdaten <a href="#csv-import">per CSV-Datei</a> zu importieren oder manuell im Programm selbst zu erfassen.</p>
+<p>Und schließlich bleiben die manuellen Lösungen: die Kursdaten <a href="#comman-separated-values-csv">per CSV-Datei</a> zu importieren oder manuell im Programm selbst zu erfassen.</p>
 <p><a href="https://forum.portfolio-performance.info/t/quellen-fuer-historische-kurse/46"><i class="fa fa-comments-o" aria-hidden="true"></i> Forum: Quellen für historische Kurse</a></p>
+<h2 id="comman-separated-values-csv">Comman-separated Values (CSV)<a class="headerlink" href="#comman-separated-values-csv" title="Permanent link">&para;</a></h2>
+<p><a href="https://de.wikipedia.org/wiki/CSV_(Dateiformat)">CSV</a> steht für <em>Comma Separated Values</em>, also Werte die durch ein Komma getrennt werden.</p>
+<h3 id="allgemeines">Allgemeines<a class="headerlink" href="#allgemeines" title="Permanent link">&para;</a></h3>
+<p>Falls historische Kurse vorliegen, können sie einfach als CSV-Datei importiert werden. Dazu die Daten in einer Tabelle auflisten, die einzelnen Werte durch ein Komma, Tabstopp oder besser Semikolon trennen und als CSV-Datei speichern. Bei Kurswerte im Format EURO,Cent verbietet sich der Komma-Separator. </p>
+<p><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431429-134f2e00-a848-11eb-937a-8bdb0ab967ef.png" /> </p>
+<p>Dazu eignet sich ein Tabellenkalkulationsprogram bestens, so dass man sich nicht um die weitere Formatierung kümmern muss.</p>
+<p><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431458-1a763c00-a848-11eb-994b-dfb4a472f721.png" /></p>
+<p>Dann wird die Datei als CSV-Datei gespeichert.</p>
+<p><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431530-28c45800-a848-11eb-9084-4576d0af24cd.png" /></p>
+<h3 id="csv-daten-importieren">CSV Daten importieren<a class="headerlink" href="#csv-daten-importieren" title="Permanent link">&para;</a></h3>
+<p>Mit Rechtsklick auf das Wertpapier --&gt; Kurse --&gt; CSV-Datei importieren das CSV-Import Fenster öffnen.</p>
+<p><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431840-6e812080-a848-11eb-95ed-f2c1c3e9e7dc.png" /> </p>
+<p>Portfolio Performance zeigt nun grün hinterlegt, welche Spalten als Datum und Kurs identifiziert wurden. Ein Häckchen zeigt ob eine Spaltenüberschrift vorhanden ist.</p>
+<p><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431887-79d44c00-a848-11eb-8a40-dd845bd7830e.png" /> </p>
+<p>Mit Doppelklick auf die entsprechende Stelle kann die Spaltenzuteilung geändert werden. Werden mehrere Kursspalten ausgewählt, wird der Wert der Letzten? eingelesen.</p>
+<p><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431930-83f64a80-a848-11eb-873a-10df00c85ca8.png" /></p>
+<p>Ein Klick auf ok und die Daten sind sichtbar. </p>
+<p><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431984-8fe20c80-a848-11eb-823f-4af73b74ec4e.png" /></p>
+<p>Daten, die von online Seiten stammen bereiten mitunter Enkodierungs-Probleme. Dann kann das Format nicht gelesen werden. Abhilfe schafft hier der Versuch die Enkodierungseinstellung zu ändern. UTF-8 ist neben windows-1252 ein gängiges Format. </p>
+<p><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116432053-9d979200-a848-11eb-93d7-ef3e288a87d3.png" /></p>
 <h2 id="yahoo-finance">Yahoo Finance<a class="headerlink" href="#yahoo-finance" title="Permanent link">&para;</a></h2>
 <h2 id="alphavantage">AlphaVantage<a class="headerlink" href="#alphavantage" title="Permanent link">&para;</a></h2>
 <h2 id="tabelle-auf-einer-webseite">Tabelle auf einer Webseite<a class="headerlink" href="#tabelle-auf-einer-webseite" title="Permanent link">&para;</a></h2>
