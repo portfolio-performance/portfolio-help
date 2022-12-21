@@ -6,7 +6,8 @@ In diesem Schritt vollziehen wir alle Transaktionen in unserem Depot nach, die z
 
 Portfolio Performance bietet *Kauf, Verkauf, Einlieferung* und *Auslieferung* für die Buchung von Transaktionen an. Wo ist der Unterschied? 
 
-<img src="../images/assets/kauf.png" alt="Kauf" style="zoom:50%;" /> <img src="../images/assets/einlieferung.png" alt="Einlieferung" style="zoom:50%;" />
+<img src="../images/assets/kauf.png" alt="Kauf" style="zoom:50%;" />
+<img src="../images/assets/einlieferung.png" alt="Einlieferung" style="zoom:50%;" />
 
 Bei einem *Kauf* bucht *Portfolio Performance* den Kauf als Zugang im Depot, und belastet dazu das zugehörige Verrechnungskonto. 
 
@@ -34,19 +35,29 @@ Basis sind die Kontoauszüge von Depot und Verrechnungskonto zu einem Stichtag. 
 - die Bestände zum Stichtag als *Einlieferung* in das Depot 
 - den Stand des Verrechnungskontos zum Stichtag als *Einlage*.
 
-Damit haben wir einen sauberen Aufsetzpunkt für die Buchung der Transaktionen nach dem Stichtag.
+Damit haben wir einen sauberen Aufsetzpunkt für die Buchung der Transaktionen nach dem Stichtag. Wir buchen jetzt noch vom Stichtag bis heute
 
-## Einlieferung ins Depot buchen
+- alle *Käufe* und *Verkäufe* für das Depot inkl. Gebühren und Steuern 
+- alle *Einlagen, Entnahmen, Zinsen* und *Steuern* für das Verrechnungskonto 
 
-<img src="../images/assets/einlage-buchen.gif" alt="Einlage buchen" style="zoom:50%;" />
+## Depot: Transaktionen buchen
 
-In der linken Navigationsleiste wählst du `Alle Wertpapiere`. Jetzt kannst du das Wertpapier in der Wertpapier-Übersicht auswählen und mit rechter Maustaste `Einlieferung ...` selektieren. Gib das Datum und die Anzahl *Stück* eintragen und klicke `Speichern`. 
+<img src="../images/assets/kaeufe-usw-buchen.png" alt="Depot Transaktionen buchen" style="zoom:50%;" />
 
-<img src="../images/assets/trades.png" alt="trades" style="zoom:50%;" />
+In der linken Navigationsleiste wählst du `Alle Wertpapiere`. Jetzt kannst du das Wertpapier in der Wertpapier-Übersicht auswählen und mit der rechten Maustaste `Kauf ...`, `Einlieferung ...` usw. das entsprechende Eingabefenster öffnen. 
 
-Eine Kontrolle kann über die Navigationsleiste *Trades* erfolgen, hier ist die Einlage jetzt in der Liste aufgeführt. Bei einem Eingabefehler kannst du die Buchung hier auch korrigieren (`rechte Maustaste > *Editieren ...*`) 
+<img src="../images/assets/kauf-buchen.png" alt="Depot Kauf von Wertpapieren buchen" style="zoom:50%;" />
 
-## Einlage ins Verrechnungskonto buchen
+Gib  Datum, Stück, Kurs, Gebühren und ggf. Steuern ein und klicke `Speichern`. 
 
-*... hier fehlt noch Text*
+Für viele Online-Banken und -Broker kannst du PDF-Wertpapierabrechnungen schnell und bequem importieren, sogar mehrere auf einmal. Siehe Forum/FAQ [Buchungen aus PDF-Dateien importieren](https://forum.portfolio-performance.info/t/buchungen-aus-pdf-dateien-importieren/38) .
 
+## Verrechnungskonto: Transaktionen buchen
+
+<img src="../images/assets/einlage-usw-buchen.png" alt="Verrechnungskonto Transaktionen buchen" style="zoom:50%;" />
+
+In der linken Navigationsleiste wählst du `Konten`. Jetzt kannst du das Konto in der Konten-Übersicht auswählen und mit der rechten Maustaste `Einlage ...`, `Zinsen ...` usw. das entsprechende Eingabefenster öffnen. 
+
+## Buchungen überprüfen und korrigieren
+
+Du kannst deine Buchungen über die Navigationsleiste `Alle Buchungen` anzeigen, hier ist sind alle gebuchten Käufe, Verkäufe, Einlagen usw. in einer Liste aufgeführt. Bei einem Eingabefehler kannst du die Buchung hier auch korrigieren (rechte Maustaste `Buchung editieren`) oder eine fehlerhafte Buchung löschen (rechte Maustaste `Löschen`). 
