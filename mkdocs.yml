@@ -54,9 +54,16 @@ markdown_extensions:
 
 nav:
   - Überblick: index.md
-  - Installation: installation.md
-  - Währungen: waehrungen.md
-  - Konten: konten_anlegen.md
-  - Kursdaten: kursdaten_laden.md
-  - Buchungen: buchungen_erfassen.md
+  - 'Erste Schritte':
+      - 'Portfoliodatei anlegen': intro-neue-portfoliodatei-anlegen.md
+      - 'Wertpapiere anlegen': intro-wertpapiere-anlegen.md
+      - 'Bestände aufbauen': intro-bestaende-erstmalig-aufbauen.md
+      
+  - 'Weiterführende Themen':
+      - Installation: installation.md
+      - Währungen: waehrungen.md
+      - Konten: konten_anlegen.md
+      - Kursdaten: kursdaten_laden.md
+      - Buchungen: buchungen_erfassen.md
   - Lizenz: license.md
+
