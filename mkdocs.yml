@@ -5,7 +5,7 @@ site_description: 'Handbuch für Portfolio Performance Software'
 site_author: 'Andreas Buchen, et. al.'
 site_url: 'https://tenorix.github.io/portfolio-help/'
 
-repo_name: 'buchen/portfolio-help'
+repo_name: 'tenorix/portfolio-help'
 repo_url: 'https://github.com/tenorix/portfolio-help'
 edit_uri: 'blob/master/docs/'
 
@@ -18,7 +18,8 @@ theme:
     primary: 'light green'
     accent: 'amber'
   features:
-    - content.code.annotate 
+    - content.code.annotate
+    - navigation.expand
   logo: 'images/logo.svg'
   favicon: 'images/favicon.png'
   language: 'de'
@@ -54,9 +55,15 @@ markdown_extensions:
 
 nav:
   - Überblick: index.md
-  - Installation: installation.md
-  - Währungen: waehrungen.md
-  - Konten: konten_anlegen.md
-  - Kursdaten: kursdaten_laden.md
-  - Buchungen: buchungen_erfassen.md
+  - 'Erste Schritte':
+      - 'Portfoliodatei anlegen': intro-neue-portfoliodatei-anlegen.md
+      - 'Wertpapiere anlegen': intro-wertpapiere-anlegen.md
+      - 'Bestände aufbauen': intro-bestaende-erstmalig-aufbauen.md
+      
+  - 'Weiterführende Themen':
+      - Installation: installation.md
+      - Währungen: waehrungen.md
+      - Konten: konten_anlegen.md
+      - Kursdaten: kursdaten_laden.md
+      - Buchungen: buchungen_erfassen.md
   - Lizenz: license.md
