@@ -9,7 +9,7 @@ Im ersten Schritt erstellen wir eine neue Portfoliodatei. Zunächst erfassen wir
 
 Über `Datei > Neu...` richtest du das Portfolio erstmalig ein. Als erstes wählst du _Euro_ als die Hauptwährung, die als Standard für neue Konten, Depots und Wertpapiere verwendet wird. Klicke `Weiter`. 
 
-Dann fügst du das erste Paar aus Depot und Referenzkonto mit `Hinzufügen` hinzu. Das Hinzufügen von weiteren Depots und Konten kannst du hier überspringen und später nachholen. Klicke `Fertigstellen`. 
+Dann fügst du das erste Paar aus Depot und Referenzkonto mit `Hinzufügen` hinzu. Füge ggf. weitere Depots mit ihren Referenzkonten hinzu. Klicke `Fertigstellen`. 
 
 Im Arbeitsbereich wird jetzt die (noch leere) Vermögensaufstellung angezeigt.
 

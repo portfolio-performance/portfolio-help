@@ -31,7 +31,7 @@ Der Einstieg in die Verfolgung und Verwaltung eines Wertpapier-Portfolios mit Po
 
 [Neue Portfoliodatei anlegen](intro-neue-portfoliodatei-anlegen.md)
 
-- wir erstellen eine neue Portfoliodatei und legen darin das erste Paar aus Depot und Verrechnungskonto an. Die Portfoliodatei enthält alle Wertpapiere, Konten, Depots, Buchungen, Klassifierungen usw. 
+- wir erstellen eine neue Portfoliodatei und legen darin das unsere Depots und zugehörigen Verrechnungskonten an. Die Portfoliodatei enthält alle Wertpapiere, Konten, Depots, Buchungen, Klassifierungen usw. 
 
 [Wertpapiere erstmalig anlegen](intro-wertpapiere-anlegen.md)  
 
