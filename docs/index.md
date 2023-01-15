@@ -29,34 +29,37 @@ Einfache Berechnungen mit Excel oder aus dem Online-Banking liefern falsche Erge
 
 Damit du dein Wertpapier-Portfolio mit *Portfolio Performance* verfolgen, bewerten und verwalten kannst, braucht *Portfolio Performance* die grundlegenden Daten zu deinen Depots und den zurückliegenden Transaktionen. Danach kannst du sofort deine erste Auswertungen machen und dein Portfolio und die Wertentwicklung aus verschiedenen Blickwinkeln analysieren.  
 
-[Neue Portfoliodatei anlegen](intro-neue-portfoliodatei-anlegen.md)
+### Portfoliodatei anlegen
 
-- du erstellst eine neue Portfoliodatei und legst darin deine Depots und zugehörigen Verrechnungskonten an. Die Portfoliodatei enthält alle Wertpapiere, Konten, Depots, Buchungen, Klassifierungen usw. 
+- du erstellst eine neue Portfoliodatei und legst darin deine Depots und zugehörigen Verrechnungskonten an. Die Portfoliodatei enthält alle Wertpapiere, Konten, Depots, Buchungen, Klassifierungen usw.
+- [mehr dazu...](intro-neue-portfoliodatei-anlegen.md) 
 
-[Wertpapiere erstmalig anlegen](intro-wertpapiere-anlegen.md)  
+### Wertpapiere anlegen  
 
 - du legst die für dich interessanten Wertpapiere in der Wertpapierliste an 
 - Stammdaten und historische Kursverläufe werden von *Portfolio Performance* automatisch ergänzt und aktualisiert
+- [mehr dazu ...](intro-wertpapiere-anlegen.md)
 
-[Der Aufsetzpunkt: Bestände erstmalig aufbauen](intro-bestaende-erstmalig-aufbauen.md)
+### Bestände aufbauen
 
 - du befüllst Depot und Verrechnungskonto erstmalig mit Beständen und/oder historischen Transaktionen 
+- [mehr dazu ...](intro-bestaende-erstmalig-aufbauen.md)
 
-Berichte zur Vermögensaufstellung und Performance abrufen
+### Berichte zur Vermögensaufstellung und Performance abrufen
 
 - Wie ist dein Portfolio zusammengesetzt? Die Vermögensaufstellung zeigt die Zusammensetzung des Portfolios als Liste, in der historischen Wertentwicklung und als Kreisdiagramm
-- Wie ist die aktuelle Performance deines Portfolios? Neben Auswertungen zu Rendite und Volatilität erhälst du einen Überblick der angefallenen Steuern und Kosten
+- Wie ist die aktuelle Performance deines Portfolios? Neben Auswertungen zu Rendite und Volatilität erhältst du einen Überblick der angefallenen Steuern und Kosten
 
-Klassifizierung der Vermögensanteile durchführen
+### Klassifizierung der Vermögensanteile durchführen
 
 - mit deiner eigenen, selbst gewählten Struktur stellst du die Gewichtung der Vermögensanteile dar, z.B. nach Regionen und/oder Anlageklassen
 
-Portfolio Strategie definieren und Rebalancing durchführen
+### Portfolio Strategie definieren und Rebalancing durchführen
 
 - du bildest deine eigene Portfolio Strategie mit Soll-Werten für verschiedene Anteilsklassen ab 
 - du kanst einen Soll-Ist Vergleich machen und ein Rebalancing durchführen 
 
-Das Portfolio auf dem aktuellen Stand halten
+### Das Portfolio auf dem aktuellen Stand halten
 
 - du buchst neue Käufe, Verkäufe und Dividenden sowie anfallende Kosten und Steuern. Das geht einfach und schnell per Import der PDF-Abrechnungen der Bank, oder auch manuell
 
