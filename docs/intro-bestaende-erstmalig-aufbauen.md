@@ -47,12 +47,12 @@ Auf den ersten Blick kann es dir überflüssig erscheinen, die Buchungen auf dem
 
 ### Variante B: Anlage der Bestände zu einem Stichtag, danach lückenlose Buchung  
 
-Basis sind die Kontoauszüge von Depot und Verrechnungskonto zu einem Stichtag. Du betrachtest die Bestände der Wertpapiere im Depot und das Guthaben auf dem Verrechnungskonto zum heutigen Stichtag als "vom Himmel gefallen". Dazu buchst du 
+Basis sind die Kontoauszüge von Depot und Verrechnungskonto zu einem Stichtag. Du betrachtest die Bestände der Wertpapiere im Depot und das Guthaben auf dem Verrechnungskonto zum gewählten Stichtag als "vom Himmel gefallen". Dazu buchst du 
 
 - die Bestände zum Stichtag als *Einlieferung* in das Depot 
 - den Stand des Verrechnungskontos zum Stichtag als *Einlage*.
 
-Damit hast du einen sauberen Aufsetzpunkt für die Buchung der Transaktionen nach dem Stichtag. Du buchstn jetzt noch vom Stichtag bis heute
+Damit hast du einen sauberen Aufsetzpunkt für die Buchung der Transaktionen nach dem Stichtag. Du buchst du jetzt noch vom Stichtag bis heute
 
 - alle *Käufe* und *Verkäufe* für das Depot inkl. Gebühren und Steuern 
 - alle *Einlagen, Entnahmen, Zinsen* und *Steuern* für das Verrechnungskonto 
@@ -78,6 +78,10 @@ Für viele Online-Banken und -Broker kannst du PDF-Wertpapierabrechnungen schnel
 
 In der linken Navigationsleiste wählst du `Konten`. Jetzt kannst du das Konto in der Konten-Übersicht auswählen und mit der rechten Maustaste `Einlage ...`, `Zinsen ...` usw. das entsprechende Eingabefenster öffnen. 
 
-## Buchungen überprüfen und korrigieren
+## Buchungen überprüfen und editieren
 
-Du kannst deine Buchungen über die Navigationsleiste `Alle Buchungen` anzeigen, hier ist sind alle gebuchten Käufe, Verkäufe, Einlagen usw. in einer Liste aufgeführt. Bei einem Eingabefehler kannst du die Buchung hier auch korrigieren (rechte Maustaste `Buchung editieren`) oder eine fehlerhafte Buchung löschen (rechte Maustaste `Löschen`). 
+<img src="../images/assets/alle-buchungen.PNG" alt="alle Buchungen anzeigen" />
+<figcaption>Bild: Alle Buchungen für das Musterportfolio anzeigen</figcaption>
+
+
+Du kannst deine Buchungen über die Navigationsleiste `Alle Buchungen` anzeigen, hier ist sind alle gebuchten Käufe, Verkäufe, Einlagen usw. in einer Liste aufgeführt. Bei einem Eingabefehler kannst du die Buchung hier auch editieren und korrigieren (rechte Maustaste `Buchung editieren`) oder eine fehlerhafte Buchung löschen (rechte Maustaste `Löschen`). 
