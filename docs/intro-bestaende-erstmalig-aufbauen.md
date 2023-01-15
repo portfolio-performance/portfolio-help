@@ -80,7 +80,7 @@ In der linken Navigationsleiste wählst du `Konten`. Jetzt kannst du das Konto i
 
 ## Buchungen überprüfen und editieren
 
-<img src="../images/assets/alle-buchungen.PNG" alt="alle Buchungen anzeigen" />
+<img src="../images/assets/alle-buchungen-anzeigen.png" alt="alle Buchungen anzeigen" />
 <figcaption>Bild: Alle Buchungen für das Musterportfolio anzeigen</figcaption>
 
 
