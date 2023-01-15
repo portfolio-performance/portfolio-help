@@ -1,13 +1,23 @@
 # Bestände erstmalig aufbauen
 
-In diesem Schritt vollziehen wir alle Transaktionen in unserem Depot nach, die zum heutigen Stand geführt haben. Das ist notwendig, um die Portfolio Performance (und darum ging es ja eigentlich) unter Berücksichtigung der Anlageentscheidungen der Vergangenheit berechnen zu können. Alternativ können wir auch einfach mit den aktuellen Beständen starten, oder zu einem ausgewählten Aufsetzpunkt in der Vergangenheit.
+In diesem Schritt vollziehst du alle Transaktionen in deinem Depot nach, die zum heutigen Stand geführt haben. Das ist notwendig, um die Wertentwicklung unter Berücksichtigung deiner Anlageentscheidungen der Vergangenheit berechnen zu können. Alternativ kannst du auch einfach mit den aktuellen Beständen starten, oder zu einem ausgewählten Aufsetzpunkt in der Vergangenheit.
 
 ## Kauf oder Einlieferung?
 
 Portfolio Performance bietet *Kauf, Verkauf, Einlieferung* und *Auslieferung* für die Buchung von Transaktionen an. Wo ist der Unterschied? 
 
+<table> 
+<tr>
+<td>
 <img src="../images/assets/kauf.png" alt="Kauf" style="zoom:50%;" />
+<figcaption>Bild: Kauf - Zugang im Depot, belastet Verrechnungskonto</figcaption>
+</td>
+<td>
 <img src="../images/assets/einlieferung.png" alt="Einlieferung" style="zoom:50%;" />
+<figcaption>Bild: Einlieferung - nur Zugang im Depot</figcaption>
+</td>
+</tr> 
+</table>
 
 Bei einem *Kauf* bucht *Portfolio Performance* den Kauf als Zugang im Depot, und belastet dazu das zugehörige Verrechnungskonto. 
 
@@ -15,38 +25,47 @@ Bei einer *Einlieferung* bucht *Portfolio Performance* nur den Zugang im Depot.
 
 ## Aufsetzpunkt festlegen
 
-Es kommt auf die Zielsetzung an, wie weit wir die zurückliegenden Transaktionen in *Portfolio Performance* erfassen. 
+Es kommt auf deine Zielsetzung an, wie weit du die zurückliegenden Transaktionen in *Portfolio Performance* erfassen möchtest. 
 
-Um die Performance des Portfolios von der ersten Einlage bis heute zu bestimmen, müssen wir alle Bewegungen auf dem Depot und Verrechnungskonto seit der Einrichtung nachvollziehen. Das ist einmalig ein bißchen Arbeit, schafft aber volle Transparenz (Variante A). Alternativ können wir mit den Beständen aus einem Depot-Auszug (Quartals- oder Jahresauszug) beginnen, dann können wir aber nur bis zu diesem Stichtag zurückschauen (Variante B).
+Um die Performance des Portfolios von der ersten Einlage bis heute zu bestimmen, musst du alle Bewegungen auf dem Depot und Verrechnungskonto seit der Einrichtung nachvollziehen. Das ist einmalig ein bißchen Arbeit, schafft aber die volle Transparenz (Variante A). Alternativ kannst du mit den Beständen aus einem Depot-Auszug (Quartals- oder Jahresauszug) beginnen, dann kannst du aber nur bis zu diesem Stichtag zurückschauen (Variante B).
 
 ### Variante A: Lückenlose Buchung aller zurückliegenden Transaktionen für Depot und Verrechnungskonto
 
-Wollen wir die Performance der Bestände und Einlagen auf Depot und Verrechnungskonto rückwirkend nachvollziehen, müssen wir bei Null starten. Wir buchen rückwirkend
+Möchtest du die Performance der Bestände und Einlagen auf Depot und Verrechnungskonto rückwirkend nachvollziehen, musst du bei Null starten. Du buchst rückwirkend
 
 - alle *Käufe* und *Verkäufe* für das Depot inkl. Gebühren und Steuern 
 - alle *Einlagen, Entnahmen, Zinsen* und *Steuern* für das Verrechnungskonto 
 
-Das kann je nach Alter des Portfolios und Menge der Transaktionen etwas Mühe machen. Wenn längere Zeit größere Beträge auf dem Verrechnungskonto vorgehalten wurden, kann es interessant sein, sich ein Bild über den Einfluss auf die Wertentwicklung zu machen.
+Das kann je nach Alter des Portfolios und Menge der Transaktionen etwas Mühe machen. 
+
+Auf den ersten Blick kann es dir überflüssig erscheinen, die Buchungen auf dem Verrechnungskonto auch noch zu erfassen, und nicht nur die Bewegungen im Depot. Das ist aber grundsätzlich sinnvoll:
+
+- Dividenden werden auf das Verrechnungskonto ausgezahlt
+- laufende Depotgebühren werden vom Verrechnungskonto abgebucht
+- eine möglicherweise anfallende Vorabpauschale als jährlicher Steuerabschlag wird vom Verrechnungskonto abgebucht
+- zuletzt ist auch das Guthaben auf dem Verrechnungskonto relevant für die gesamte Wertentwicklung deines Vermögens
 
 ### Variante B: Anlage der Bestände zu einem Stichtag, danach lückenlose Buchung  
 
-Basis sind die Kontoauszüge von Depot und Verrechnungskonto zu einem Stichtag. Wir betrachten die Bestände der Wertpapiere im Depot und das Guthaben auf dem Verrechnungskonto zum heutigen Stichtag als "vom Himmel gefallen". Dazu buchen wir 
+Basis sind die Kontoauszüge von Depot und Verrechnungskonto zu einem Stichtag. Du betrachtest die Bestände der Wertpapiere im Depot und das Guthaben auf dem Verrechnungskonto zum heutigen Stichtag als "vom Himmel gefallen". Dazu buchst du 
 
 - die Bestände zum Stichtag als *Einlieferung* in das Depot 
 - den Stand des Verrechnungskontos zum Stichtag als *Einlage*.
 
-Damit haben wir einen sauberen Aufsetzpunkt für die Buchung der Transaktionen nach dem Stichtag. Wir buchen jetzt noch vom Stichtag bis heute
+Damit hast du einen sauberen Aufsetzpunkt für die Buchung der Transaktionen nach dem Stichtag. Du buchstn jetzt noch vom Stichtag bis heute
 
 - alle *Käufe* und *Verkäufe* für das Depot inkl. Gebühren und Steuern 
 - alle *Einlagen, Entnahmen, Zinsen* und *Steuern* für das Verrechnungskonto 
 
 ## Depot: Transaktionen buchen
 
-<img src="../images/assets/kaeufe-usw-buchen.png" alt="Depot Transaktionen buchen" style="zoom:50%;" />
+<img src="../images/assets/kaeufe-usw-buchen.png" alt="Depot Wertpapier für Kauf etc. auswählen" />
+<figcaption>Bild: Wertpapier für Kauf, Verkauf, Einlieferunng usw. auswählen</figcaption>
 
 In der linken Navigationsleiste wählst du `Alle Wertpapiere`. Jetzt kannst du das Wertpapier in der Wertpapier-Übersicht auswählen und mit der rechten Maustaste `Kauf ...`, `Einlieferung ...` usw. das entsprechende Eingabefenster öffnen. 
 
-<img src="../images/assets/kauf-buchen.png" alt="Depot Kauf von Wertpapieren buchen" style="zoom:50%;" />
+<img src="../images/assets/kauf-buchen.png" alt="Depot Kauf von Wertpapieren buchen" />
+<figcaption>Bild: Kauf von Wertpapieren im Depot buchen</figcaption>
 
 Gib  Datum, Stück, Kurs, Gebühren und ggf. Steuern ein und klicke `Speichern`. 
 
@@ -54,7 +73,8 @@ Für viele Online-Banken und -Broker kannst du PDF-Wertpapierabrechnungen schnel
 
 ## Verrechnungskonto: Transaktionen buchen
 
-<img src="../images/assets/einlage-usw-buchen.png" alt="Verrechnungskonto Transaktionen buchen" style="zoom:50%;" />
+<img src="../images/assets/einlage-usw-buchen.png" alt="Verrechnungskonto Transaktionen buchen" />
+<figcaption>Bild: Einlagen, Entnahmen usw. für das Verrechnungskonto buchen</figcaption>
 
 In der linken Navigationsleiste wählst du `Konten`. Jetzt kannst du das Konto in der Konten-Übersicht auswählen und mit der rechten Maustaste `Einlage ...`, `Zinsen ...` usw. das entsprechende Eingabefenster öffnen. 
 
