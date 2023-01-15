@@ -60,7 +60,7 @@ Damit hast du einen sauberen Aufsetzpunkt für die Buchung der Transaktionen nac
 ## Depot: Transaktionen buchen
 
 <img src="../images/assets/kaeufe-usw-buchen.png" alt="Depot Wertpapier für Kauf etc. auswählen" />
-<figcaption>Bild: Wertpapier für Kauf, Verkauf, Einlieferunng usw. auswählen</figcaption>
+<figcaption>Bild: Wertpapier für Kauf, Verkauf, Einlieferung usw. auswählen</figcaption>
 
 In der linken Navigationsleiste wählst du `Alle Wertpapiere`. Jetzt kannst du das Wertpapier in der Wertpapier-Übersicht auswählen und mit der rechten Maustaste `Kauf ...`, `Einlieferung ...` usw. das entsprechende Eingabefenster öffnen. 
 
