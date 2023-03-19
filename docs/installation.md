@@ -21,7 +21,16 @@ Portfolio Performance ist nicht mit einem Apple Zertifikat signiert. Aus diesem 
 
 Portfolio Performance nutzt [Eclipse SWT](https://www.eclipse.org/swt/) und damit unter Linux native Bibliotheken. Standardmässig wird dabei **GTK3** verwendet, allerdings gibt es bei verschiedenen Kombinationen mit Themes immer mal wieder Probleme. So meldete zum Beispiel ein Benutzer Probleme im Zusammenhang mit ["oxygen-gtk" Theme](https://github.com/buchen/portfolio/issues/1089#issuecomment-459698493).
 
-Die notwendigen Abhängigkeiten lassen sich unter Ubuntu 18.04 mit `sudo apt install libwebkitgtk-3.0-0 default-jre` installieren.
+Die notwendigen Abhängigkeiten sind bei aktuellen Linux-Distros schon vorhanden:
+```
+$ dpkg -l | grep libwebkit
+ii  libwebkit2gtk-4.0-37:amd64             2.38.5-0ubuntu0.22.04.1                     amd64        Web content engine library for GTK
+```
+Aktuell (März 2023) ist Java 17 erforderlich um Portfolio Performance erfolgreich zu starten. Falls noch nicht vorhanden:
+```
+$ sudo apt install openjdk-17-jre*
+```
+Sollte openjdk-17 nicht in den Paketquellen angeboten werden, ist dies ein Hinweis darauf das die verwendete Linuxversion nicht mehr up-to-date ist.
 
 Das Programm lässt sich mit folgendem Skript installieren:
 ```
