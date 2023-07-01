@@ -57,7 +57,7 @@ Damit du dein Wertpapier-Portfolio mit *Portfolio Performance* verfolgen, bewert
 ### Portfolio Strategie definieren und Rebalancing durchführen
 
 - du bildest deine eigene Portfolio Strategie mit Soll-Werten für verschiedene Anteilsklassen ab 
-- du kanst einen Soll-Ist Vergleich machen und ein Rebalancing durchführen 
+- du kannst einen Soll-Ist-Vergleich machen und ein Rebalancing durchführen 
 
 ### Das Portfolio auf dem aktuellen Stand halten
 
