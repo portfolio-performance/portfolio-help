@@ -22,7 +22,7 @@ Dabei ergänzt *Portfolio Performance* die Stammdaten, aktuelle und historische 
 
 So sieht die Wertpapierliste aus, nachdem du eine Reihe von Wertpapieren hinzugefügt hast. 
 
-In diesem Fall sind die von *Portfolio Performance* vorgeschlagenen Namen der Wertpapiere nicht einfach verständlich. Es sind aber die selben Namen, die auch im Online-Banking angezeigt werden (zumindest bei ING). Daher ist es eine gute Idee, die automatisch erzeugten Namen in die Spalte Notiz zu kopieren, und dann den Namen in der ersten Spalte mit einem aussagekräftigen Namen zu überschreiben. Die Tabellenfelder kannst du direkt mit Doppelklick selektieren, dann kannst du mit `Ctrl-C / Ctrl-V` kopieren und einfügen.
+In diesem Fall sind die von *Portfolio Performance* vorgeschlagenen Namen der Wertpapiere nicht einfach verständlich. Es sind aber dieselben Namen, die auch im Online-Banking angezeigt werden (zumindest bei ING). Daher ist es eine gute Idee, die automatisch erzeugten Namen in die Spalte Notiz zu kopieren, und dann den Namen in der ersten Spalte mit einem aussagekräftigen Namen zu überschreiben. Die Tabellenfelder kannst du direkt mit Doppelklick selektieren, dann kannst du mit `Ctrl-C / Ctrl-V` kopieren und einfügen.
 
 ## Die fertige Wertpapierliste
 
