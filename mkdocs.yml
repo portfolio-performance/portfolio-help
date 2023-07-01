@@ -3,10 +3,10 @@
 site_name: 'Portfolio Performance Handbuch'
 site_description: 'Handbuch für Portfolio Performance Software'
 site_author: 'Andreas Buchen, et. al.'
-site_url: 'https://tenorix.github.io/portfolio-help/'
+site_url: 'https://help.portfolio-performance.info/'
 
-repo_name: 'tenorix/portfolio-help'
-repo_url: 'https://github.com/tenorix/portfolio-help'
+repo_name: 'buchen/portfolio-help'
+repo_url: 'https://github.com/buchen/portfolio-help'
 edit_uri: 'blob/master/docs/'
 
 copyright: 'Dieses Werk ist lizenziert unter <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.'
@@ -18,8 +18,7 @@ theme:
     primary: 'light green'
     accent: 'amber'
   features:
-    - content.code.annotate
-    - navigation.expand
+    - content.code.annotate 
   logo: 'images/logo.svg'
   favicon: 'images/favicon.png'
   language: 'de'
@@ -55,15 +54,9 @@ markdown_extensions:
 
 nav:
   - Überblick: index.md
-  - 'Erste Schritte':
-      - 'Portfoliodatei anlegen': intro-neue-portfoliodatei-anlegen.md
-      - 'Wertpapiere anlegen': intro-wertpapiere-anlegen.md
-      - 'Bestände aufbauen': intro-bestaende-erstmalig-aufbauen.md
-      
-  - 'Weiterführende Themen':
-      - Installation: installation.md
-      - Währungen: waehrungen.md
-      - Konten: konten_anlegen.md
-      - Kursdaten: kursdaten_laden.md
-      - Buchungen: buchungen_erfassen.md
+  - Installation: installation.md
+  - Währungen: waehrungen.md
+  - Konten: konten_anlegen.md
+  - Kursdaten: kursdaten_laden.md
+  - Buchungen: buchungen_erfassen.md
   - Lizenz: license.md
