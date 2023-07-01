@@ -27,7 +27,7 @@ Bei einer *Einlieferung* bucht *Portfolio Performance* nur den Zugang im Depot.
 
 Es kommt auf deine Zielsetzung an, wie weit du die zurückliegenden Transaktionen in *Portfolio Performance* erfassen möchtest. 
 
-Um die Performance des Portfolios von der ersten Einlage bis heute zu bestimmen, musst du alle Bewegungen auf dem Depot und Verrechnungskonto seit der Einrichtung nachvollziehen. Das ist einmalig ein bißchen Arbeit, schafft aber die volle Transparenz (Variante A). Alternativ kannst du mit den Beständen aus einem Depot-Auszug (Quartals- oder Jahresauszug) beginnen, dann kannst du aber nur bis zu diesem Stichtag zurückschauen (Variante B).
+Um die Performance des Portfolios von der ersten Einlage bis heute zu bestimmen, musst du alle Bewegungen auf dem Depot und Verrechnungskonto seit der Einrichtung nachvollziehen. Das ist einmalig ein bisschen Arbeit, schafft aber die volle Transparenz (Variante A). Alternativ kannst du mit den Beständen aus einem Depot-Auszug (Quartals- oder Jahresauszug) beginnen, dann kannst du aber nur bis zu diesem Stichtag zurückschauen (Variante B).
 
 ### Variante A: Lückenlose Buchung aller zurückliegenden Transaktionen für Depot und Verrechnungskonto
 
