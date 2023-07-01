@@ -4,7 +4,7 @@ title: Über dieses Handbuch
 
 # Über dieses Handbuch
 
-Seit Anfang 2012 gibt es [Portfolio Performance](https://portfolio-performance.info) um die Performance eines Gesamtportfolios zu berechnen - über verschiedene Depots und Konten hinweg - anhand von True-Time Weighted Rate of Return und internem Zinsfuß.
+Seit Anfang 2012 gibt es [Portfolio Performance](https://portfolio-performance.info), um die Performance eines Gesamtportfolios zu berechnen - über verschiedene Depots und Konten hinweg - anhand von True-Time Weighted Rate of Return und internem Zinsfuß.
 
 *Portfolio Performance* (PP) selber versucht so einfach und intuitiv zu bleiben wie es nur geht. Aber ohne Erklärungen geht es nicht immer - viele ähnliche Fragen im [Forum](https://forum.portfolio-performance.info) zeigen das. Dieses "Handbuch" soll Euch bei den ersten Schritten mit PP begleiten, grundlegende Konzepte erklären und die erklärungsbedürftigen Features dokumentieren.
 
