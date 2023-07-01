@@ -17,7 +17,7 @@ Seit Anfang 2012 gibt es [Portfolio Performance](https://portfolio-performance.i
 - die Wertpapiere im Portfolio nach deinem Bedarf klassifizieren und und die Zusammensetzung visualisieren, z. B. nach Anlageklassen und Regionen
 - die Portfolio Strategie mit deiner geplanten Asset Allocation definieren, verfolgen und im Rebalancing sicherstellen
 - eine übergreifende Sicht über mehrere Depots und Verrechnungskonten herstellen
-- Abrechnungen von Online-Banken und -Brokern schnell und bequem importieren
+- Abrechnungen von Online-Banken und -Brokern schnell und bequem zu importieren
 
 ## Warum noch ein Tool, es gibt doch Excel?
 
