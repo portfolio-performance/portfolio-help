@@ -31,7 +31,7 @@ Um die Performance des Portfolios von der ersten Einlage bis heute zu bestimmen,
 
 ### Variante A: Lückenlose Buchung aller zurückliegenden Transaktionen für Depot und Verrechnungskonto
 
-Möchtest du die Performance der Bestände und Einlagen auf Depot und Verrechnungskonto rückwirkend nachvollziehen, musst du bei Null starten. Du buchst rückwirkend
+Möchtest du die Performance der Bestände und Einlagen auf Depot und Verrechnungskonto rückwirkend nachvollziehen, musst du bei null starten. Du buchst rückwirkend
 
 - alle *Käufe* und *Verkäufe* für das Depot inkl. Gebühren und Steuern 
 - alle *Einlagen, Entnahmen, Zinsen* und *Steuern* für das Verrechnungskonto 
