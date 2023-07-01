@@ -27,7 +27,7 @@ Einfache Berechnungen mit Excel oder aus dem Online-Banking liefern falsche Erge
 
 ## Erste Schritte mit Portfolio Performance
 
-Damit du dein Wertpapier-Portfolio mit *Portfolio Performance* verfolgen, bewerten und verwalten kannst, braucht *Portfolio Performance* die grundlegenden Daten zu deinen Depots und den zurückliegenden Transaktionen. Danach kannst du sofort deine erste Auswertungen machen und dein Portfolio und die Wertentwicklung aus verschiedenen Blickwinkeln analysieren.  
+Damit du dein Wertpapier-Portfolio mit *Portfolio Performance* verfolgen, bewerten und verwalten kannst, braucht *Portfolio Performance* die grundlegenden Daten zu deinen Depots und den zurückliegenden Transaktionen. Danach kannst du sofort deine ersten Auswertungen machen und dein Portfolio und die Wertentwicklung aus verschiedenen Blickwinkeln analysieren.  
 
 ### Portfoliodatei anlegen
 
