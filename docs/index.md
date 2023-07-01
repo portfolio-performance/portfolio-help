@@ -14,7 +14,7 @@ Seit Anfang 2012 gibt es [Portfolio Performance](https://portfolio-performance.i
 
 - die Zusammensetzung und Entwicklung deines Wertpapier-Portfolios mit aussagekräftigen Übersichten, Kennzahlen und Diagrammen verfolgen
 - historische Kursverläufe der Wertpapiere und deine Käufe und Verkäufe nachverfolgen  
-- die Wertpapiere im Portfolio nach deinem Bedarf klassifizieren und und die Zusammensetzung visualisieren, z.B. nach Anlageklassen und Regionen
+- die Wertpapiere im Portfolio nach deinem Bedarf klassifizieren und und die Zusammensetzung visualisieren, z. B. nach Anlageklassen und Regionen
 - die Portfolio Strategie mit deiner geplanten Asset Allocation definieren, verfolgen und im Rebalancing sicherstellen
 - eine übergreifende Sicht über mehrere Depots und Verrechnungskonten herstellen
 - Abrechnungen von Online-Banken und -Brokern schnell und bequem importieren
