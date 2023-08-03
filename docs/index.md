@@ -73,5 +73,5 @@ Damit du dein Wertpapier-Portfolio mit *Portfolio Performance* verfolgen, bewert
 
 ## Mithelfen...
 
-Wie Ihr leicht sehen könnt, gibt es noch viele weiße Seiten in diesem Handbuch. Einige Fragen decken die [Frequently Asked Questions (FAQ)](https://forum.portfolio-performance.info/t/faq-haeufig-gestellte-fragen/1721) im Forum ab. Wer sich berufen fühlt, ist herzlich eingeladen an diesem Handbuch mitzuschreiben: auf jeder Seite gibt es oben rechts einen kleinen Stift um die Seite direkt auf [Github](https://github.com/buchen/portfolio-help) zu bearbeiten. Meldet Euch bei Interesse auch im Forum! [Vielen Dank an alle die bisher schon mitgeholfen haben.](https://github.com/buchen/portfolio-help/graphs/contributors)
+Wie Ihr leicht sehen könnt, gibt es noch viele weiße Seiten in diesem Handbuch. Einige Fragen decken die [Frequently Asked Questions (FAQ)](https://forum.portfolio-performance.info/t/faq-haeufig-gestellte-fragen/1721) im Forum ab. Wer sich berufen fühlt, ist herzlich eingeladen an diesem Handbuch mitzuschreiben: auf jeder Seite gibt es oben rechts einen kleinen Stift um die Seite direkt auf [Github](https://github.com/portfolio-performance/portfolio-help) zu bearbeiten. Meldet Euch bei Interesse auch im Forum! [Vielen Dank an alle die bisher schon mitgeholfen haben.](https://github.com/portfolio-performance/portfolio-help/graphs/contributors)
 

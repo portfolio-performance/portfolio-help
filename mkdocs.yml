@@ -5,8 +5,8 @@ site_description: 'Handbuch für Portfolio Performance Software'
 site_author: 'Andreas Buchen, et. al.'
 site_url: 'https://help.portfolio-performance.info/'
 
-repo_name: 'buchen/portfolio-help'
-repo_url: 'https://github.com/buchen/portfolio-help'
+repo_name: 'portfolio-performance/portfolio-help'
+repo_url: 'https://github.com/portfolio-performance/portfolio-help'
 edit_uri: 'blob/master/docs/'
 
 copyright: 'Dieses Werk ist lizenziert unter <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.'
@@ -31,13 +31,13 @@ extra:
     - icon: 'material/home'
       link: 'https://www.portfolio-performance.info'
     - icon: 'fontawesome/brands/github'
-      link: 'https://github.com/buchen/portfolio'
+      link: 'https://github.com/portfolio-performance/portfolio'
     - icon: 'fontawesome/brands/twitter'
       link: 'https://twitter.com/portfolioperf'
     - icon: 'fontawesome/solid/comments'
       link: 'https://forum.portfolio-performance.info'
     - icon: 'material/bug'
-      link: 'https://github.com/buchen/portfolio/issues'
+      link: 'https://github.com/portfolio-performance/portfolio/issues'
   analytics:
     provider: google
     property: G-9F7652B62Z

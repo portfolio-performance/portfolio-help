@@ -19,7 +19,7 @@ Portfolio Performance ist nicht mit einem Apple Zertifikat signiert. Aus diesem 
 
 ## Linux
 
-Portfolio Performance nutzt [Eclipse SWT](https://www.eclipse.org/swt/) und damit unter Linux native Bibliotheken. Standardmässig wird dabei **GTK3** verwendet, allerdings gibt es bei verschiedenen Kombinationen mit Themes immer mal wieder Probleme. So meldete zum Beispiel ein Benutzer Probleme im Zusammenhang mit ["oxygen-gtk" Theme](https://github.com/buchen/portfolio/issues/1089#issuecomment-459698493).
+Portfolio Performance nutzt [Eclipse SWT](https://www.eclipse.org/swt/) und damit unter Linux native Bibliotheken. Standardmässig wird dabei **GTK3** verwendet, allerdings gibt es bei verschiedenen Kombinationen mit Themes immer mal wieder Probleme. So meldete zum Beispiel ein Benutzer Probleme im Zusammenhang mit ["oxygen-gtk" Theme](https://github.com/portfolio-performance/portfolio/issues/1089#issuecomment-459698493).
 
 Die notwendigen Abhängigkeiten sind bei aktuellen Linux-Distros schon vorhanden.
 
