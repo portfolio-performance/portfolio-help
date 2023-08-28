@@ -1,9 +1,13 @@
 
 # Project information
 site_name: 'Portfolio Performance Handbuch'
+
+docs_dir: '../../docs/de'
+site_dir: '../../site/de'
+
 site_description: 'Handbuch für Portfolio Performance Software'
 site_author: 'Andreas Buchen, et. al.'
-site_url: 'https://help.portfolio-performance.info/'
+site_url: 'https://help.portfolio-performance.info/de/'
 
 repo_name: 'portfolio-performance/portfolio-help'
 repo_url: 'https://github.com/portfolio-performance/portfolio-help'
@@ -13,20 +17,28 @@ copyright: 'Dieses Werk ist lizenziert unter <a rel="license" href="http://creat
 
 theme:
   name: 'material'
-  custom_dir: 'theme'
+  custom_dir: '../../overrides/'
   palette:
     primary: 'light green'
     accent: 'amber'
   features:
     - content.code.annotate 
-  logo: 'images/logo.svg'
-  favicon: 'images/favicon.png'
+  logo: 'assets/images/logo.svg'
+  favicon: 'assets/images/favicon.png'
   language: 'de'
 
 extra_css:
-  - 'stylesheets/extra.css'
+  - 'assets/stylesheets/extra.css'
 
 extra:
+  alternate:  
+    - name: English
+      link: /en/
+      lang: en
+    - name: Deutsch
+      link: /de/
+      lang: de
+
   social:
     - icon: 'material/home'
       link: 'https://www.portfolio-performance.info'
@@ -41,6 +53,10 @@ extra:
   analytics:
     provider: google
     property: G-9F7652B62Z
+
+plugins:
+  - search:
+      lang: de
 
 markdown_extensions:
   - admonition
