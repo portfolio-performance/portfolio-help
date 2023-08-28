@@ -1,0 +1,74 @@
+
+# Project information
+site_name: 'Portfolio Performance Manual'
+
+docs_dir: '../../docs/en'
+site_dir: '../../site/en'
+
+site_description: 'Manual of Portfolio Performance'
+site_author: 'Andreas Buchen, et. al.'
+site_url: 'https://help.portfolio-performance.info/en/'
+
+repo_name: 'portfolio-performance/portfolio-help'
+repo_url: 'https://github.com/portfolio-performance/portfolio-help'
+edit_uri: 'blob/master/docs/'
+
+copyright: 'This work is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.'
+
+theme:
+  name: 'material'
+  custom_dir: '../../overrides/'
+  palette:
+    primary: 'light green'
+    accent: 'amber'
+  features:
+    - content.code.annotate 
+  logo: 'assets/images/logo.svg'
+  favicon: 'assets/images/favicon.png'
+  language: 'en'
+
+extra_css:
+  - 'assets/stylesheets/extra.css'
+
+extra:
+  alternate:  
+    - name: English
+      link: /en/
+      lang: en
+    - name: Deutsch
+      link: /de/
+      lang: de
+
+  social:
+    - icon: 'material/home'
+      link: 'https://www.portfolio-performance.info'
+    - icon: 'fontawesome/brands/github'
+      link: 'https://github.com/portfolio-performance/portfolio'
+    - icon: 'fontawesome/brands/twitter'
+      link: 'https://twitter.com/portfolioperf'
+    - icon: 'fontawesome/solid/comments'
+      link: 'https://forum.portfolio-performance.info'
+    - icon: 'material/bug'
+      link: 'https://github.com/portfolio-performance/portfolio/issues'
+  analytics:
+    provider: google
+    property: G-9F7652B62Z
+
+plugins:
+  - search:
+      lang: en
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+nav:
+  - Welcome: index.md
+  - Lizenz: license.md
+
