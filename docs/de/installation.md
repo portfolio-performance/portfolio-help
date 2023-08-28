@@ -10,64 +10,28 @@ Die XML/Portfolio Datei mit den eigenen Daten (Wertpapiere, Depots und Konten, B
 
 ## macOS
 
-Portfolio Performance ist nicht mit einem Apple Zertifikat signiert. Aus diesem Grund behandelt der [macOS Gatekeeper](https://en.wikipedia.org/wiki/Gatekeeper_(macOS)) die Anwendung beim ersten Starten besonders. Mit folgenden Schritten lässt sich PP leicht starten:
-
-
-* PP laden und auspacken (zum Beispiel im "Downloads" Verzeichnis)
-* PP nach "Anwendungen" verschieben
-* PP per Rechtsklick und "Öffnen" starten (per Kontextmenü (rechte Maustaste) den Menüpunkt "Öffnen" und in der anschließenden Meldung nochmals "Öffnen" wählen)
+- [Lade die DMG-Datei von Portfolio Performance herunter](https://www.portfolio-performance.info) (entweder für Intel oder für Apple Silicon)
+- Doppelklicke die DMG-Datei, um sie zu öffnen.
+- Ziehe das App-Symbol in den "Programme"-Ordner.
 
 ## Linux
 
-Portfolio Performance nutzt [Eclipse SWT](https://www.eclipse.org/swt/) und damit unter Linux native Bibliotheken. Standardmässig wird dabei **GTK3** verwendet, allerdings gibt es bei verschiedenen Kombinationen mit Themes immer mal wieder Probleme. So meldete zum Beispiel ein Benutzer Probleme im Zusammenhang mit ["oxygen-gtk" Theme](https://github.com/portfolio-performance/portfolio/issues/1089#issuecomment-459698493).
+Die präferierte Option ist [Portfolio Performance von Flathub](https://flathub.org/apps/info.portfolio_performance.PortfolioPerformance) zu installieren.
 
-Die notwendigen Abhängigkeiten sind bei aktuellen Linux-Distros schon vorhanden.
 
-Aktuell (März 2023) ist Java 17 erforderlich, um Portfolio Performance erfolgreich zu starten. 
+Alternativ kannst Du PP auch manuell installieren:
+
+* Für Portfolio Performance ist aktuell (März 2023) Java 17 erforderlich. 
 Falls noch nicht vorhanden (Beispiel für Systeme mit Debianbezug, wie z.B. Ubuntu):
 ```
 sudo apt install openjdk-17-jre
 ```
-Sollte openjdk-17 nicht in den Paketquellen angeboten werden, ist dies ein Hinweis darauf, dass die verwendete Linuxversion nicht mehr up-to-date ist.
 
-Das Programm lässt sich mit folgendem Skript installieren:
-```
-#!/bin/bash
+* Lade und entpacke das GZIP Archive (entweder für x86_64 oder aarch64) an eine passende Stelle, z.B. /opt
 
-# Download/unpack current release to /opt/PortfolioPerformance/
-pm_repo=portfolio-performance/portfolio #GitHub Repo
-pm_release=`wget -qO- \
-"https://api.github.com/repos/$pm_repo/releases/latest" \
-| grep -Po '"tag_name": "\K.*?(?=")'` 
-pm_file=PortfolioPerformance-$pm_release-linux.gtk.x86_64.tar.gz
-pm_dl=https://github.com/$pm_repo/releases/download/$pm_release/$pm_file
-pm_location=/opt/PortfolioPerformance/
-sudo mkdir -p $pm_location
-sudo wget $pm_dl -P $pm_location
-sudo tar xfzv $pm_location/$pm_file -C $pm_location --strip 1
-sudo rm $pm_location/$pm_file
+## Windows
 
-# Create menu item
-echo -e "[Desktop Entry]\n"\
-"Version=$pm_release\n"\
-"Name=Portfolio Performance\n"\
-"Comment=Calculates the performance of an entire portfolio\n"\
-"Comment[de]=Berechnet die Performance eines Gesamtportfolios\n"\
-"Exec=$pm_location/PortfolioPerformance\n"\
-"Terminal=false\n"\
-"Encoding=UTF-8\n"\
-"Type=Application\n"\
-"Icon=$pm_location/icon.xpm\n"\
-"Categories=Office;Finance\n"\
-| sudo tee  /usr/share/applications/PortfolioPerformance.desktop
-```
-
-
-Wenn es Probleme gibt, dann bieten sich folgende Optionen an:
-
-* Alternatives GTK3 Theme ausprobieren
-* PP auf GTK2 zwingen: ```env SWT_GTK3=0 PortfolioPerformance```
-* Alternative input method nutzen: ```env GTK_IM_MODULE=ibus PortfolioPerformance```
+Die präferierte Option ist der [Windows-Installer](https://www.portfolio-performance.info). Damit wird PP (üblicherweise) in das Verzeichnis **C:\Users\{Benutzername}\AppData\Local\Programs\PortfolioPerformance** installiert wird. Diese Installation kann dann im Anschluss über die Online Aktualisierung einfach aktualisiert werden.
 
 ## Workspace Verzeichnis
 
@@ -76,7 +40,7 @@ Im *Workspace* Verzeichnis speichert PP temporäre Informationen wie die aktuell
 Das Workspace Verzeichnis liegt:
 
 * unter macOS: **~/Library/Application Support/name.abuchen.portfolio.product/workspace**
-* unter Windows: **%LOCALAPPDATA%\PortfolioPerformance\workspace** wobei %LOCALAPPDATA% überlicherweise nach **C:\Users\\{Benutzername}\AppData\Local** zeigt
+* unter Windows: **%LOCALAPPDATA%\PortfolioPerformance\workspace** wobei %LOCALAPPDATA% üblicherweise nach **C:\Users\\{Benutzername}\AppData\Local** zeigt
 * unter Linux: **~/.PortfolioPerformance/workspace**
 
 !!! note "macOS"
