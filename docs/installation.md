@@ -35,7 +35,7 @@ Das Programm lässt sich mit folgendem Skript installieren:
 #!/bin/bash
 
 # Download/unpack current release to /opt/PortfolioPerformance/
-pm_repo=buchen/portfolio #GitHub Repo
+pm_repo=portfolio-performance/portfolio #GitHub Repo
 pm_release=`wget -qO- \
 "https://api.github.com/repos/$pm_repo/releases/latest" \
 | grep -Po '"tag_name": "\K.*?(?=")'` 
