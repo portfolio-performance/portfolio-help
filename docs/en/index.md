@@ -31,7 +31,7 @@ In order to be able to track, evaluate and manage your securities portfolio with
 
 ### Create portfolio file
 
-- You create a new portfolio file and set up your securities accounts and related clearing accounts in it. The portfolio file contains all securities, accounts, cash accounts, transactions, classifications, etc.
+- You create a new portfolio file and set up your [accounts](accounts.md). The portfolio file contains all of these accounts but also all of your transactions, classifications, etc.
 
 ### Create securities  
 

@@ -70,5 +70,5 @@ markdown_extensions:
 
 nav:
   - Welcome: index.md
-  - Lizenz: license.md
+  - License: license.md
 
