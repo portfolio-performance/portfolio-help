@@ -23,8 +23,12 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: Build
-      run: mkdocs build
+    - name: Build English
+      run: mkdocs build -f config/en/mkdocs.yml
+    - name: Build German
+      run: mkdocs build -f config/de/mkdocs.yml
+    - name: Copy common root files (including legacy redirects)
+      run: cp -R docs/root/* site
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       if: success()
