@@ -1,16 +1,16 @@
 ---
-title: Types of accounts
+title: Types of accounts!
 ---
-An account is a collection of [transactions](/pp/transaction). These could be buy and sell transactions of securities (shares, …) in case of a Securities account or the withdrawal and deposit of money for a Deposit account. Each account has a default currency attached. As part of the installation procedure, you should already have created at least one Securities account and one Deposit account.
+An account is a collection of [transactions](transaction.md). These could be buy and sell transactions of securities (shares, …) in case of a Securities account or the withdrawal and deposit of money for a Deposit account. Each account has a default currency attached. As part of the installation procedure, you should already have created at least one Securities account and one Deposit account.
 
-PP has two main type accounts: Securities and Deposit accounts. They are rather well described in the [Guide on getting started]([https://forum.portfolio-performance.info/t/guide-on-getting-started/5390#accounts-6]) of Thomas (Contributor); you have to scroll quite a bit down.
+PP has two main type accounts: Securities and Deposit accounts. They are rather well described in the [Guide on getting started]([https://forum.portfolio-performance.info/t/guide-on-getting-started/5390]) of Thomas (Contributor); you have to scroll quite a bit down.
 
 Other related terms are “Investment Plans”, “All Transactions”, “Reference account” and “Offset account”. Sometimes a Deposit Account is called a Cash Account.
 
 # Deposit account
 
 <img src="../images/account-types-deposit.png" alt="Account type Deposit" style="zoom:100%;" />
-<figcaption>Figure 1: Example of a Deposit Account</figcaption>
+<figcaption >Figure 1: Example of a Deposit Account</figcaption>
 
 
 In figure 1, there are two deposit accounts; named EUR and USD (in column Cash Account). They will be used for deposits and withdrawals in EUR or USD. It's a bit redundant to call them “EUR” and “USD” because you also have to specify the currency that the account will use (see third column in figure). Then, for example, when you want to book a dividend in EUR, you will get the following dialog. The cash account can be selected from a drop-down and the correct currency is automatically added.
