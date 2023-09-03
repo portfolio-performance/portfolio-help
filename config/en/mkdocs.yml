@@ -23,6 +23,9 @@ theme:
     accent: 'amber'
   features:
     - content.code.annotate 
+    - content.code.copy
+    - navigation.indexes
+    - navigation.tabs
   logo: 'assets/images/logo.svg'
   favicon: 'assets/images/favicon.png'
   language: 'en'
@@ -67,8 +70,21 @@ markdown_extensions:
   - pymdownx.superfences
   - toc:
       permalink: true
+  - attr_list
+  - md_in_html
+  - markdown_captions
 
 nav:
-  - Welcome: index.md
-  - License: license.md
+  - About this manual: index.md
+  - Getting started:
+      - Getting started: getting-started/index.md
+      - Installation: getting-started/installation.md
+  - Basic concepts:
+      - Basic concepts: concepts/index.md
+      - Account: concepts/account.md
+      - Transaction: concepts/transaction.md
+  - Common procedures:
+      - Importing CSV-files: procedures/importing.md
+  - Tips & tricks:
+      - Import fund data from Morningstar: tricks/morningstar.md
 
