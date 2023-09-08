@@ -1,7 +1,8 @@
 ---
 title: Import fund data from Morningstar
 ---
-[Best answer in forum from SimonFitz](https://forum.portfolio-performance.info/t/import-fund-data-from-morningstar/14516)
+!!! info
+    **Best** answer in [forum](https://forum.portfolio-performance.info/t/import-fund-data-from-morningstar/14516) from SimonFitz!
 
 The website of Morningstar is quite famous for its extensive list of funds. With some magic, you can download the historical data for specific funds.
 

@@ -9,15 +9,22 @@
 	border-radius: 10px;
 }
 
-.md-typeset figcaption {
-	margin: 0;
-	max-width: 30rem;
-}
-
-.md-typeset figure {
-	text-align: left;
-}
-
 .hidden {
 	display: none;
  }
+
+figure.pp-figure {
+	text-align: left; 
+	margin: 2rem 0; 
+}
+
+.pp-figure figcaption {
+	margin: 0;
+	max-width: 40rem;
+}
+
+
+
+
+
+
