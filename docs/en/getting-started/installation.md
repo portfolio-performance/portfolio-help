@@ -27,6 +27,7 @@ The easiest way to download and install PP is by using one of the installer file
 TODO: difference between windows installer & zip + adding how to install on macOS & Linux
 {: .hidden} 
 
+<<<<<<< HEAD
 # Github   
 The installer files are in fact stored in the [author's github repository](https://github.com/portfolio-performance/portfolio/releases). So, you can also download the program from this repository. If you ever should need a previous version, this is also the place to be (click on the version number at the left side).
 
@@ -45,6 +46,9 @@ After the first installation, the program will check on each start-up for new up
 <<<<<<< HEAD
 <<<<<<< HEAD
 ![Fig 2: Github repository for downloading (previous) releases](images/installation-download-github.png)
+=======
+![Fig 3: Github repository for downloading (previous) releases](../images/installation-download-github.png)
+>>>>>>> 661be0b (adding reporting period & IRR)
 =======
 ![Fig 3: Github repository for downloading (previous) releases](../images/installation-download-github.png)
 >>>>>>> 661be0b (adding reporting period & IRR)
