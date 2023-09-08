@@ -1,9 +1,9 @@
 ---
 title: Types of accounts!
 ---
-An account is a collection of [transactions](transaction.md). These could be buy and sell transactions of securities (shares, …) in case of a Securities account or the withdrawal and deposit of money for a Deposit account. Each account has a default currency attached. As part of the installation procedure, you should already have created at least one Securities account and one Deposit account.
+An account is a collection of [transactions](transaction.md). These could be buy and sell transactions of securities (shares, …) in case of a Securities account or the withdrawal and deposit of money for a Deposit account. Each account has a default currency attached. As part of the installation process, you should have already created at least one Securities account and one Deposit account.
 
-PP has two main type accounts: Securities and Deposit accounts. They are rather well described in the [Guide on getting started]([https://forum.portfolio-performance.info/t/guide-on-getting-started/5390]) of Thomas (Contributor); you have to scroll quite a bit down.
+PP has two main types of accounts: Securities and Deposit accounts. They are described quite well in the [Guide on getting started]([https://forum.portfolio-performance.info/t/guide-on-getting-started/5390]) of Thomas (Contributor); you will have to scroll quite far down.
 
 Other related terms are “Investment Plans”, “All Transactions”, “Reference account” and “Offset account”. Sometimes a Deposit Account is called a Cash Account.
 
@@ -13,13 +13,13 @@ Other related terms are “Investment Plans”, “All Transactions”, “Refer
 <figcaption >Figure 1: Example of a Deposit Account</figcaption>
 
 
-In figure 1, there are two deposit accounts; named EUR and USD (in column Cash Account). They will be used for deposits and withdrawals in EUR or USD. It's a bit redundant to call them “EUR” and “USD” because you also have to specify the currency that the account will use (see third column in figure). Then, for example, when you want to book a dividend in EUR, you will get the following dialog. The cash account can be selected from a drop-down and the correct currency is automatically added.
+In Figure 1, there are two deposit accounts; named EUR and USD (in column Cash Account). They are used for deposits and withdrawals in EUR and USD respectively. It's a bit redundant to call them “EUR” and “USD” because you also need to specify the currency that the account will use (see third column in figure). For example, if you want to book a dividend in EUR, you will see the following dialog box (see fig 2). The cash account can be selected from a drop-down list and the correct currency will be automatically.
 
 
 <img src="../images/account-dividend-booking.png" alt="Deposit Account with redundant Currency" style="zoom:50%;" />
 <figcaption>Figure 2: Deposit Account with redundant Currency</figcaption>
 
-According to your needs, you can use other names. For example, if you want to collect all of your dividends or taxes in a separate account, you could name them “Dividends” and “Taxes” in stead of EUR and USD. Of course, you also have to decide which currency that will be used for them. And, if you receive dividends in both EUR and USD then you need two deposit accounts with the name “Dividends” but with different currencies.
+You can use other names depending on your needs. For example, if you want to keep all your dividends or taxes in a separate account, you could name it “Dividends” and “Taxes” in stead of EUR and USD. Of course, you will also need to decide which currency that will be used for them. And, if you receive dividends in both EUR and USD then you need two deposit accounts with the name “Dividends” but with different currencies.
 
 Another possibility is to name the deposit accounts with the name of the bank or broker they belong to; e.g. BNPPF, Deutsche Bank, …
 

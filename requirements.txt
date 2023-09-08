@@ -1,3 +1,7 @@
 mkdocs == 1.5.2
 mkdocs-material == 9.1.21
+<<<<<<< HEAD
 markdown-captions == 2.1.2
+=======
+markdown-captions == 2.1.2
+>>>>>>> 661be0b (adding reporting period & IRR)

@@ -1,37 +1,43 @@
 
 # Project information
-site_name: 'Portfolio Performance Manual'
+site_name: Portfolio Performance Manual
 
-docs_dir: '../../docs/en'
-site_dir: '../../site/en'
+docs_dir: ../../docs/en
+site_dir: ../../site/en
 
-site_description: 'Manual of Portfolio Performance'
-site_author: 'Andreas Buchen, et. al.'
-site_url: 'https://help.portfolio-performance.info/en/'
+site_description: Manual of Portfolio Performance
+site_author: Andreas Buchen, et. al.
+site_url: https://help.portfolio-performance.info/en/
 
-repo_name: 'portfolio-performance/portfolio-help'
-repo_url: 'https://github.com/portfolio-performance/portfolio-help'
-edit_uri: 'blob/master/docs/'
+repo_name: portfolio-performance/portfolio-help
+repo_url: https://github.com/portfolio-performance/portfolio-help
+edit_uri: blob/master/docs/
 
-copyright: 'This work is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.'
+copyright: This work is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
 
 theme:
-  name: 'material'
-  custom_dir: '../../overrides/'
+  name: material
+  custom_dir: ../../overrides/
   palette:
-    primary: 'light green'
-    accent: 'amber'
+    primary: light green
+    accent: amber
   features:
     - content.code.annotate 
     - content.code.copy
     - navigation.indexes
     - navigation.tabs
-  logo: 'assets/images/logo.svg'
-  favicon: 'assets/images/favicon.png'
-  language: 'en'
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.png
+  language: en
 
 extra_css:
-  - 'assets/stylesheets/extra.css'
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/katex.js 
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
 
 extra:
   alternate:  
@@ -43,16 +49,16 @@ extra:
       lang: de
 
   social:
-    - icon: 'material/home'
-      link: 'https://www.portfolio-performance.info'
-    - icon: 'fontawesome/brands/github'
-      link: 'https://github.com/portfolio-performance/portfolio'
-    - icon: 'fontawesome/brands/twitter'
-      link: 'https://twitter.com/portfolioperf'
-    - icon: 'fontawesome/solid/comments'
-      link: 'https://forum.portfolio-performance.info'
-    - icon: 'material/bug'
-      link: 'https://github.com/portfolio-performance/portfolio/issues'
+    - icon: material/home
+      link: https://www.portfolio-performance.info
+    - icon: fontawesome/brands/github
+      link: https://github.com/portfolio-performance/portfolio
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/portfolioperf
+    - icon: fontawesome/solid/comments
+      link: https://forum.portfolio-performance.info
+    - icon: material/bug
+      link: https://github.com/portfolio-performance/portfolio/issues
   analytics:
     provider: google
     property: G-9F7652B62Z
@@ -73,6 +79,7 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - markdown_captions
+  - tables
 
 nav:
   - About this manual: index.md
@@ -83,6 +90,10 @@ nav:
       - Basic concepts: concepts/index.md
       - Account: concepts/account.md
       - Transaction: concepts/transaction.md
+      - Reporting period: concepts/reporting-period.md
+      - Purchase value: concepts/purchase-value.md
+      - IRR: concepts/irr-theory.md
+      - IRR example: concepts/irr-example.md
   - Common procedures:
       - Importing CSV-files: procedures/importing.md
   - Tips & tricks:

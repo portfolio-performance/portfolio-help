@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="802.06335"
+   height="344.45459"
+   viewBox="0 0 802.0642 344.45495"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="irr-calculations.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview2776"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="4.8669803"
+     inkscape:cx="604.89253"
+     inkscape:cy="274.29739"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <defs
+     id="defs2">
+    <marker
+       id="Arrow2-2-1-0"
+       overflow="visible"
+       markerHeight="10.182"
+       markerWidth="14.00024989"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid"
+       viewBox="0 0 7.7 5.6">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         fill="context-stroke"
+         fill-rule="evenodd"
+         id="path3424" />
+    </marker>
+    <marker
+       id="Arrow2"
+       overflow="visible"
+       markerHeight="5.5999999"
+       markerWidth="7.6999998"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid"
+       viewBox="0 0 7.7 5.6">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         fill="context-stroke"
+         fill-rule="evenodd"
+         id="path3421" />
+    </marker>
+    <marker
+       overflow="visible"
+       markerHeight="5.5999999"
+       markerWidth="7.6999998"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid"
+       viewBox="0 0 7.7 5.6"
+       id="Arrow2-2-1-0-77825"
+       inkscape:stockid="Arrow2-2-1-0-77825">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         fill="context-stroke"
+         fill-rule="evenodd"
+         id="path8176"
+         style="fill:#f9f9f9;fill-opacity:1;stroke:#f9f9f9;stroke-opacity:1" />
+    </marker>
+    <marker
+       overflow="visible"
+       markerHeight="5.5999999"
+       markerWidth="7.6999998"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid"
+       viewBox="0 0 7.7 5.6"
+       id="Arrow2-2-1-0-73903"
+       inkscape:stockid="Arrow2-2-1-0-73903">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         fill="context-stroke"
+         fill-rule="evenodd"
+         id="path8179"
+         style="fill:#f9f9f9;fill-opacity:1;stroke:#f9f9f9;stroke-opacity:1" />
+    </marker>
+    <marker
+       overflow="visible"
+       markerHeight="5.5999999"
+       markerWidth="7.6999998"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid"
+       viewBox="0 0 7.7 5.6"
+       inkscape:stockid="Arrow2-2-1-0-778254820"
+       id="Arrow2-2-1-0-778254820">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         fill="context-stroke"
+         fill-rule="evenodd"
+         id="path1"
+         style="fill:#f9f9f9;fill-opacity:1.0;stroke:#f9f9f9;stroke-opacity:1.0" />
+    </marker>
+    <marker
+       overflow="visible"
+       markerHeight="5.5999999"
+       markerWidth="7.6999998"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid"
+       viewBox="0 0 7.7 5.6"
+       inkscape:stockid="Arrow2-2-1-0-739034416"
+       id="Arrow2-2-1-0-739034416">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         fill="context-stroke"
+         fill-rule="evenodd"
+         id="path2"
+         style="fill:#f9f9f9;fill-opacity:1.0;stroke:#f9f9f9;stroke-opacity:1.0" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     style="display:inline;fill:#292929;fill-opacity:1;stroke:none;stroke-width:2.99999;stroke-dasharray:8.00002, 2.00002;stop-color:#000000"
+     id="rect4054"
+     width="802.06421"
+     height="344.45496"
+     x="0"
+     y="0" />
+  <path
+     d="M 41.363357,111.75888 H 91.586649"
+     fill="none"
+     stroke="#000000"
+     stroke-width="0.529162"
+     id="path3541"
+     style="stroke:#f9f9f9" />
+  <text
+     x="91.896774"
+     y="245.27696"
+     style="font-size:14.3978px;line-height:125%;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke-width:0.264575"
+     xml:space="preserve"
+     id="text3545"><tspan
+       x="91.896774"
+       y="245.27696"
+       font-family="Calibri"
+       font-size="14.3978px"
+       text-align="end"
+       text-anchor="end"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3543">€ 15.67</tspan></text>
+  <text
+     x="91.896774"
+     y="261.76187"
+     style="font-size:14.3978px;line-height:125%;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke-width:0.264575"
+     xml:space="preserve"
+     id="text3549"><tspan
+       x="91.896774"
+       y="261.76187"
+       font-family="Calibri"
+       font-size="14.3978px"
+       text-align="end"
+       text-anchor="end"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3547">€ 164.45</tspan></text>
+  <text
+     x="92.100639"
+     y="228.79204"
+     style="font-size:14.3978px;line-height:125%;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke-width:0.264575"
+     xml:space="preserve"
+     id="text3553"><tspan
+       x="92.100639"
+       y="228.79204"
+       font-family="Calibri"
+       font-size="14.3978px"
+       text-align="end"
+       text-anchor="end"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3551">€ 14.52</tspan></text>
+  <text
+     x="91.79834"
+     y="286.91769"
+     fill="#d35400"
+     font-family="Calibri"
+     font-size="14.3978px"
+     letter-spacing="0px"
+     stroke-width="0.264575"
+     word-spacing="0px"
+     style="line-height:125%;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:#ffff00;fill:#ffff00"
+     xml:space="preserve"
+     id="text3559"><tspan
+       x="91.79834"
+       y="286.91769"
+       fill="#d35400"
+       font-family="Calibri"
+       font-size="14.3978px"
+       text-align="end"
+       text-anchor="end"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264572;stroke:#ffff00;fill:#ffff00"
+       id="tspan3557">€ 194.64</tspan></text>
+  <path
+     d="M 41.363357,267.79562 H 91.586649"
+     fill="none"
+     stroke="#000000"
+     stroke-width="0.529162"
+     id="path3561"
+     style="stroke:#f9f9f9" />
+  <text
+     x="91.79834"
+     y="330.67001"
+     font-size="14.3978px"
+     font-style="italic"
+     style="line-height:125%;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke-width:0.264575"
+     xml:space="preserve"
+     id="text3565"><tspan
+       x="91.79834"
+       y="330.67001"
+       font-family="Calibri"
+       font-size="14.3978px"
+       font-style="italic"
+       text-align="end"
+       text-anchor="end"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3563">IRR = 5%</tspan></text>
+  <text
+     x="97.170662"
+     y="22.38192"
+     font-size="14.3978px"
+     font-style="italic"
+     style="line-height:125%;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke-width:0.264575"
+     xml:space="preserve"
+     id="text3569"><tspan
+       x="97.170662"
+       y="22.38192"
+       font-family="Calibri"
+       font-size="14.3978px"
+       font-style="italic"
+       text-align="end"
+       text-anchor="end"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3567">IRR = 15%</tspan></text>
+  <text
+     x="693.4364"
+     y="66.350105"
+     font-size="9.59844px"
+     style="line-height:125%;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke-width:0.264575;-inkscape-font-specification:'Calibri, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.33334733px"
+     xml:space="preserve"
+     id="text3573"><tspan
+       x="693.4364"
+       y="66.350105"
+       font-family="Calibri"
+       font-size="9.59844px"
+       text-align="end"
+       text-anchor="end"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572;-inkscape-font-specification:'Calibri, Normal';font-family:Calibri;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.33334733px"
+       id="tspan3571">PV = 185 / (1.15)^(881/365)</tspan></text>
+  <text
+     x="464.33228"
+     y="237.42674"
+     font-size="9.59844px"
+     style="line-height:125%;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke-width:0.264575;-inkscape-font-specification:'Calibri, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.33334733px"
+     xml:space="preserve"
+     id="text3577"><tspan
+       x="464.33228"
+       y="237.42674"
+       font-family="Calibri"
+       font-size="9.59844px"
+       text-align="end"
+       text-anchor="end"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572;-inkscape-font-specification:'Calibri, Normal';font-family:Calibri;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.33334733px"
+       id="tspan3575">PV = 17 / (1.05)^(608/365)</tspan></text>
+  <path
+     d="m 64.184252,322.00769 v -21.7191"
+     marker-end="url(#Arrow2-2-1-0-7)"
+     stroke="#000000"
+     stroke-width="0.793737"
+     id="path3457"
+     style="fill:none;stroke:#f9f9f9;marker-end:url(#Arrow2-2-1-0-739034416)" />
+  <path
+     d="M 65.908584,27.721698 V 49.440799"
+     marker-end="url(#Arrow2-2-1-0-7)"
+     stroke="#000000"
+     stroke-width="0.793737"
+     id="path3459"
+     style="fill:none;stroke:#f9f9f9;marker-end:url(#Arrow2-2-1-0-778254820)" />
+  <path
+     d="m 113.09134,175.49049 h 98.12895"
+     marker-end="url(#Arrow2-2-1-0)"
+     stroke="#000000"
+     stroke-width="0.793737"
+     id="path3435"
+     style="fill:none;stroke:#f9f9f9;stroke-width:1;stroke-dasharray:none"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 315.42827,175.49049 h 137.8566"
+     marker-end="url(#Arrow2-2-1-0)"
+     stroke="#000000"
+     stroke-width="0.793737"
+     id="path3439"
+     style="fill:none;stroke:#ffff00;stroke-width:1;stroke-dasharray:none"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 558.0081,175.49049 113.26807,0"
+     marker-end="url(#Arrow2-2-1-0)"
+     stroke="#000000"
+     stroke-width="0.793737"
+     id="path3441"
+     style="fill:none;stroke:#f9f9f9;stroke-width:1;stroke-dasharray:none"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="109.42229"
+     y="161.03242"
+     style="font-size:14.3978px;line-height:125%;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#f9f9f9;stroke-width:0.264575"
+     xml:space="preserve"
+     id="text3473"><tspan
+       x="67.344612"
+       y="161.03242"
+       text-align="center"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3467"><tspan
+         x="67.344612"
+         y="161.03242"
+         font-family="Calibri"
+         font-size="14.3978px"
+         stroke-width="0.264575"
+         text-align="center"
+         text-anchor="middle"
+         style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9"
+         id="tspan3465">t<tspan
+   baseline-shift="sub"
+   font-family="Calibri"
+   font-size="9.59844px"
+   style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+   id="tspan3463">0</tspan></tspan></tspan><tspan
+       x="67.344612"
+       y="180.22948"
+       text-align="center"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3469">2021-01-15</tspan><tspan
+       x="67.344612"
+       y="198.22667"
+       text-align="center"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3471">€ 170</tspan></text>
+  <text
+     x="311.64597"
+     y="161.03242"
+     style="font-size:14.3978px;line-height:125%;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#f9f9f9;stroke-width:0.264575"
+     xml:space="preserve"
+     id="text3485"><tspan
+       x="269.56827"
+       y="161.03242"
+       text-align="center"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3479"><tspan
+         x="269.56827"
+         y="161.03242"
+         font-family="Calibri"
+         font-size="14.3978px"
+         stroke-width="0.264575"
+         text-align="center"
+         text-anchor="middle"
+         style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9"
+         id="tspan3477">t<tspan
+   baseline-shift="sub"
+   font-family="Calibri"
+   font-size="9.59844px"
+   style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+   id="tspan3475">243</tspan></tspan></tspan><tspan
+       x="269.56827"
+       y="180.22948"
+       text-align="center"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3481">2021-09-15</tspan><tspan
+       x="269.56827"
+       y="198.22667"
+       text-align="center"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3483">€ 15</tspan></text>
+  <text
+     x="554.34711"
+     y="161.04298"
+     style="font-size:14.3978px;line-height:125%;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#f9f9f9;stroke-width:0.264575"
+     xml:space="preserve"
+     id="text3497"><tspan
+       x="512.26941"
+       y="161.04298"
+       text-align="center"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3491"><tspan
+         x="512.26941"
+         y="161.04298"
+         font-family="Calibri"
+         font-size="14.3978px"
+         stroke-width="0.264575"
+         text-align="center"
+         text-anchor="middle"
+         style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9"
+         id="tspan3489">t<tspan
+   baseline-shift="sub"
+   font-family="Calibri"
+   font-size="9.59844px"
+   style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+   id="tspan3487">608</tspan></tspan></tspan><tspan
+       x="512.26941"
+       y="180.24002"
+       text-align="center"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3493">2022-09-15</tspan><tspan
+       x="512.26941"
+       y="198.23723"
+       text-align="center"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3495">€ 17</tspan></text>
+  <rect
+     x="21.5555"
+     y="147.6801"
+     width="91.535843"
+     height="55.619061"
+     rx="45.767921"
+     ry="0"
+     stop-color="#000000"
+     id="rect3501"
+     style="fill:none;stroke:#ffff00;stroke-width:1.50000157;stroke-dasharray:none" />
+  <rect
+     x="223.78697"
+     y="147.6801"
+     width="91.535843"
+     height="55.619061"
+     rx="45.767921"
+     ry="0"
+     stop-color="#000000"
+     id="rect3503"
+     style="fill:none;stroke:#ffff00;stroke-width:1.50000157;stroke-dasharray:none" />
+  <rect
+     x="466.48587"
+     y="147.6801"
+     width="91.535843"
+     height="55.619061"
+     rx="45.767921"
+     ry="0"
+     stop-color="#000000"
+     id="rect3505"
+     style="fill:none;stroke:#ffff00;stroke-width:1.50000157;stroke-dasharray:none" />
+  <text
+     x="773.10895"
+     y="161.03242"
+     dominant-baseline="auto"
+     fill="#000000"
+     font-family="Calibri"
+     font-size="14.3978px"
+     letter-spacing="0px"
+     stop-color="#000000"
+     stroke-width="0.264575"
+     text-anchor="middle"
+     word-spacing="0px"
+     style="line-height:125%;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;fill:#f9f9f9;-inkscape-stroke:none"
+     xml:space="preserve"
+     id="text3519"><tspan
+       x="731.03131"
+       y="161.03242"
+       dominant-baseline="auto"
+       stop-color="#000000"
+       style="line-height:125%;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;fill:#f9f9f9;stroke-width:0.264572;-inkscape-stroke:none"
+       id="tspan3513"><tspan
+         x="731.03131"
+         y="161.03242"
+         dominant-baseline="auto"
+         fill="#000000"
+         font-family="Calibri"
+         font-size="14.3978px"
+         letter-spacing="0px"
+         stop-color="#000000"
+         stroke-width="0.264575"
+         text-anchor="middle"
+         word-spacing="0px"
+         style="line-height:125%;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;fill:#f9f9f9;-inkscape-stroke:none"
+         id="tspan3511">t<tspan
+   baseline-shift="sub"
+   dominant-baseline="auto"
+   fill="#000000"
+   font-family="Calibri"
+   font-size="9.35844px"
+   letter-spacing="0px"
+   stop-color="#000000"
+   stroke-width="0.264575"
+   word-spacing="0px"
+   style="line-height:125%;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;fill:#f9f9f9;-inkscape-stroke:none"
+   id="tspan3509">881</tspan></tspan></tspan><tspan
+       x="731.03131"
+       y="179.02965"
+       dominant-baseline="auto"
+       stop-color="#000000"
+       style="line-height:125%;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;fill:#f9f9f9;stroke-width:0.264572;-inkscape-stroke:none"
+       id="tspan3515">2023-06-15</tspan><tspan
+       x="731.03131"
+       y="197.02689"
+       dominant-baseline="auto"
+       stop-color="#000000"
+       style="line-height:125%;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;fill:#f9f9f9;stroke-width:0.264572;-inkscape-stroke:none"
+       id="tspan3517">€ 185</tspan></text>
+  <rect
+     x="685.24133"
+     y="147.6801"
+     width="91.535843"
+     height="55.619061"
+     rx="45.767921"
+     ry="0"
+     fill="none"
+     stop-color="#000000"
+     stroke="#d45500"
+     stroke-width="0.793737"
+     id="rect3521"
+     style="stroke:#ffff00;stroke-width:1.50000157;stroke-dasharray:none" />
+  <path
+     d="M 268.62983,147.68011 V 101.29149 H 115.11667"
+     marker-end="url(#Arrow2)"
+     stroke="#1a1a1a"
+     stroke-dasharray="3.17501, 0.793751"
+     stroke-width="0.793737"
+     id="path3437"
+     style="fill:none;stroke:#f9f9f9;stroke-width:1;stroke-linecap:butt;stroke-dasharray:4.00009, 1.00002;stroke-dashoffset:0" />
+  <path
+     d="M 511.49875,147.68011 V 85.180725 h -396.1032"
+     marker-end="url(#Arrow2)"
+     stroke-dasharray="3.17494, 0.793741"
+     id="path3443"
+     style="fill:none;stroke:#f9f9f9;stroke-width:1;stroke-linecap:butt;stroke-dasharray:3.99999, 1.00001;stroke-dashoffset:0" />
+  <path
+     d="M 730.33926,147.68011 V 69.879405 H 115.51459"
+     marker-end="url(#Arrow2)"
+     stroke-dasharray="3.17494, 0.793741"
+     id="path3445"
+     style="fill:none;stroke:#f9f9f9;stroke-width:1;stroke-linecap:butt;stroke-dasharray:3.99999, 1.00001;stroke-dashoffset:0" />
+  <path
+     d="m 268.62983,205.58978 v 21.0916 H 115.11667"
+     marker-end="url(#Arrow2)"
+     stroke-dasharray="3.17496, 0.793741"
+     id="path3447"
+     style="fill:none;stroke:#f9f9f9;stroke-width:1;stroke-linecap:butt;stroke-dasharray:4.00002, 1.00001;stroke-dashoffset:0" />
+  <path
+     d="M 511.49875,205.23266 V 242.6017 H 115.39555"
+     marker-end="url(#Arrow2)"
+     stroke-dasharray="3.17499, 0.793754"
+     stroke-width="0.793737"
+     id="path3451"
+     style="fill:none;stroke:#f9f9f9;stroke-width:1;stroke-linecap:butt;stroke-dasharray:4.00005, 1.00002;stroke-dashoffset:0" />
+  <path
+     d="m 730.33926,205.07961 v 52.31495 H 115.51459"
+     marker-end="url(#Arrow2)"
+     stroke-dasharray="3.17499, 0.793753"
+     stroke-width="0.793737"
+     id="path3453"
+     style="fill:none;stroke:#f9f9f9;stroke-width:1;stroke-dasharray:4.00005, 1.00002;stroke-dashoffset:0" />
+  <text
+     x="91.79834"
+     y="130.87581"
+     dominant-baseline="auto"
+     fill="#d35400"
+     fill-opacity="0.99336"
+     font-family="Calibri"
+     font-size="14.3978px"
+     letter-spacing="0px"
+     stop-color="#000000"
+     stroke-width="0.264575"
+     text-align="end"
+     word-spacing="0px"
+     style="line-height:125%;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;-inkscape-stroke:none;stroke:#ffff00;fill:#ffff00"
+     xml:space="preserve"
+     id="text3539"><tspan
+       x="91.79834"
+       y="130.87581"
+       dominant-baseline="auto"
+       fill="#d35400"
+       fill-opacity="0.99336"
+       font-family="Calibri"
+       font-size="14.3978px"
+       letter-spacing="0px"
+       stop-color="#000000"
+       stroke-width="0.264575"
+       text-align="end"
+       text-anchor="end"
+       word-spacing="0px"
+       style="line-height:125%;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;-inkscape-stroke:none;stroke:#ffff00;fill:#ffff00"
+       id="tspan3537">€ 159.16</tspan></text>
+  <text
+     x="91.896774"
+     y="89.235039"
+     style="font-size:14.3978px;line-height:125%;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke-width:0.264575"
+     xml:space="preserve"
+     id="text3525"><tspan
+       x="91.896774"
+       y="89.235039"
+       font-family="Calibri"
+       font-size="14.3978px"
+       text-align="end"
+       text-anchor="end"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3523">€ 13.67</tspan></text>
+  <text
+     x="91.896774"
+     y="105.71996"
+     style="font-size:14.3978px;line-height:125%;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke-width:0.264575"
+     xml:space="preserve"
+     id="text3529"><tspan
+       x="91.896774"
+       y="105.71996"
+       font-family="Calibri"
+       font-size="14.3978px"
+       text-align="end"
+       text-anchor="end"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3527">€ 13.47</tspan></text>
+  <text
+     x="92.100639"
+     y="72.750122"
+     style="font-size:14.3978px;line-height:125%;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke-width:0.264575"
+     xml:space="preserve"
+     id="text3533"><tspan
+       x="92.100639"
+       y="72.750122"
+       font-family="Calibri"
+       font-size="14.3978px"
+       text-align="end"
+       text-anchor="end"
+       style="font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.264572"
+       id="tspan3531">€ 132.03</tspan></text>
+</svg>
