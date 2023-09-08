@@ -7,7 +7,13 @@ PP is available for MacOS, Windows and Linux. You need to download it and do som
 ![Fig 1: Automatic updating with newer version](../images/installation-update.png)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ![Fig 1: Homepage with download links for various packages (2023-09-03)](images/installation-download.png)
+=======
+The easiest way to download and install PP is by using one of the installer files at the homepage (see fig 2). 
+
+![Fig 2: Homepage with download links for various packages (2023-09-03)](../images/installation-download.png)
+>>>>>>> 661be0b (adding reporting period & IRR)
 =======
 The easiest way to download and install PP is by using one of the installer files at the homepage (see fig 2). 
 
@@ -22,7 +28,11 @@ TODO: difference between windows installer & zip + macOS & Linux
 The downloaded files come in fact from the author's github repository. So, you can also download there the program. If you ever should nee a previous version, this is also the place to download it (click on the version number at the left side). Here you can also download the source code.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ![Fig 2: Github repository for downloading (previous) releases](images/installation-download-github.png)
+=======
+![Fig 3: Github repository for downloading (previous) releases](../images/installation-download-github.png)
+>>>>>>> 661be0b (adding reporting period & IRR)
 =======
 ![Fig 3: Github repository for downloading (previous) releases](../images/installation-download-github.png)
 >>>>>>> 661be0b (adding reporting period & IRR)
