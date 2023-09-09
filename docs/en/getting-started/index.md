@@ -5,10 +5,10 @@ title: Getting started
 In order for you to be able to track, evaluate and manage your securities, Portfolio Performance needs the basic data about your securities accounts and past transactions. After that, you can immediately make your first evaluations and analyze your portfolio and performance from different angles.
 
 # [Installation](installation.md)
-You can either use one of the precompiled installation files or compile the complete application by yourself.
+You can either use one of the precompiled installation files or compile the complete application by yourself. The application is available for MacOS, Windows and Linux.
 
-# Create a portfolio file
-You create a new portfolio file and create your custody accounts and associated clearing accounts in it. The portfolio file contains all securities, accounts, custody accounts, bookings, classifications, etc.
+# [Creating a portfolio file](create-portfolio.md)
+Your fist step - of course - is to create a new portfolio file with your accounts. The portfolio file contains all securities, accounts, custody accounts, bookings, classifications, etc.
 
 # Investing in securities
 You create the securities that are of interest to you in the list of securities. Master data and historical prices are automatically supplemented and updated by Portfolio Performance.
