@@ -5,12 +5,12 @@ Let's build a simple example -step by step- to illustrate some pitfalls of the I
 
 Add the following transactions: make a deposit of 155 EUR, buy 10 shares of share-1 at 15 EUR on 2021-01-15, ... (see figure 1).
 
-![Figure 1: overview of transactions - Deposit (3x), Buy (3x), Dividend, and partial Sell.](../images/irr-example-transactions.png){ pp-figure } 
+![Figure 1: overview of transactions - Deposit (3x), Buy (3x), Dividend, and partial Sell.](images/irr-example-transactions.png){ pp-figure } 
 
 
-![Figure 2: graph of historical quotes and transactions of share 1](../images/irr-example-share-1.png){ pp-figure }
+![Figure 2: graph of historical quotes and transactions of share 1](images/irr-example-share-1.png){ pp-figure }
 
-![Figure 3: graph of historical quotes and transactions of share 2](../images/irr-example-share-2.png){ pp-figure }
+![Figure 3: graph of historical quotes and transactions of share 2](images/irr-example-share-2.png){ pp-figure }
 
 
 **Some caveats**
