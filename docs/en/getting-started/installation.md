@@ -9,25 +9,15 @@ PP is available for MacOS, Windows and Linux. You need to download it and do som
 # Windows
 You can download the compressed *Zip-file* and extract it in a directory at your choice. Even a portable USB-stick (about 250 MB free space) is fine (run from stick).
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-![Fig 1: Homepage with download links for various packages (2023-09-03)](images/installation-download.png)
-=======
-The easiest way to download and install PP is by using one of the installer files at the homepage (see fig 2). 
+You can also download the Windows - Installer (setup.exe). On Windows 11, you get a security warning about the dangers of running an exe-file. After that, double clicking on this file, will start the installation. You can change the destination folder. By default, the c:\user directory is taken. You need about 200 MB of free space (see figure 2).
 
-![Fig 2: Homepage with download links for various packages (2023-09-03)](../images/installation-download.png)
->>>>>>> 661be0b (adding reporting period & IRR)
-=======
-The easiest way to download and install PP is by using one of the installer files at the homepage (see fig 2). 
+![Fig 2: Windows Installer dialog box.](images/installation-win-installer-path.png) { .pp-figure}
 
-![Fig 2: Homepage with download links for various packages (2023-09-03)](../images/installation-download.png)
->>>>>>> 661be0b (adding reporting period & IRR)
-
+   + Windows: you can download the compressed Zip-file and extract it in a directory at your choice. Even an USB-stick (about 250 MB free space) is fine (run from stick). You can also download the installer file (setup.exe). On Windows 11, you get a security warning about the dangers to run a exe-file. Double clicking on this file, will start the installation. You need about 200 MB of free space.
 
 TODO: difference between windows installer & zip + adding how to install on macOS & Linux
 {: .hidden} 
 
-<<<<<<< HEAD
 # Github   
 The installer files are in fact stored in the [author's github repository](https://github.com/portfolio-performance/portfolio/releases). So, you can also download the program from this repository. If you ever should need a previous version, this is also the place to be (click on the version number at the left side).
 
@@ -43,16 +33,5 @@ After the first installation, the program will check on each start-up for new up
 
 ![Fig 1: Automatic updating with newer version](images/installation-update.png)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-![Fig 2: Github repository for downloading (previous) releases](images/installation-download-github.png)
-=======
-![Fig 3: Github repository for downloading (previous) releases](../images/installation-download-github.png)
->>>>>>> 661be0b (adding reporting period & IRR)
-=======
-![Fig 3: Github repository for downloading (previous) releases](../images/installation-download-github.png)
->>>>>>> 661be0b (adding reporting period & IRR)
-=======
-![Fig 3: Github repository for downloading (previous) releases](../images/installation-download-github.png)
->>>>>>> 661be0b (adding reporting period & IRR)
+To disable this automatic updating, uncheck the option `Check for updates on start` at menu `Help > Preferences ... > Updates`. Use `Help > Check for updates ...` to check manually for updates.
 
