@@ -9,9 +9,6 @@ PP is available for MacOS, Windows and Linux. You need to download it and do som
 # Windows
 You can download the compressed *Zip-file* and extract it in a directory at your choice. Even a portable USB-stick (about 250 MB free space) is fine (run from stick).
 
-# Windows
-You can download the compressed *Zip-file* and extract it in a directory at your choice. Even a portable USB-stick (about 250 MB free space) is fine (run from stick).
-
 You can also download the Windows - Installer (setup.exe). On Windows 11, you get a security warning about the dangers of running an exe-file. After that, double clicking on this file, will start the installation. You can change the destination folder. By default, the c:\user directory is taken. You need about 200 MB of free space (see figure 2).
 
 ![Fig 2: Windows Installer dialog box.](images/installation-win-installer-path.png) { .pp-figure}
@@ -20,6 +17,9 @@ You can also download the Windows - Installer (setup.exe). On Windows 11, you ge
 TODO: difference between windows installer & zip + adding how to install on macOS & Linux
 TODO: difference between windows installer & zip + adding how to install on macOS & Linux
 {: .hidden} 
+
+# MacOS
+
 
 # Github   
 The installer files are in fact stored in the [author's github repository](https://github.com/portfolio-performance/portfolio/releases). So, you can also download the program from this repository. If you ever should need a previous version, this is also the place to be (click on the version number at the left side).
