@@ -18,6 +18,9 @@ You can also download the Windows - Installer (setup.exe). On Windows 11, you ge
 TODO: difference between windows installer & zip + adding how to install on macOS & Linux
 {: .hidden} 
 
+# MacOS
+
+
 # Github   
 The installer files are in fact stored in the [author's github repository](https://github.com/portfolio-performance/portfolio/releases). So, you can also download the program from this repository. If you ever should need a previous version, this is also the place to be (click on the version number at the left side).
 
