@@ -110,6 +110,6 @@ Share-2: same dates and values as in reporting periods 3 years and 2 years.
 
   + The start date of the period should be `2022-06-12`; so 1st and 2nd buy of share-1 are already done and should be valuated on that day. This date, however, is a Sunday, so, the historical quote of Friday, `2022-06-10` is taken (18.15 EUR), making the initial value 15 * 18.15 = 272.25 EUR. This includes the second buy. The value of this transaction is set to 0. The starting date of the period should be set to `2022-06-10`.
 
-  + There is a small difference between the calculated IRR from PP (27.75%) and the outlined procedure above (27.45%). [todo Why?]{ .hidden}
+  + There is a small difference between the calculated IRR from PP (27.75%) and the outlined procedure above (27.45%). 
 
 
