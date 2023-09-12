@@ -18,7 +18,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../concepts/">
+        <link rel="next" href="../create-portfolio/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
@@ -47,6 +47,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
       <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
     
@@ -85,6 +87,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#windows" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -362,6 +369,8 @@
         
           
         
+          
+        
       
       
         
@@ -396,11 +405,27 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Installation
       </a>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create-portfolio/" class="md-nav__link">
+        Creating a portfolio
+      </a>
     </li>
   
 
@@ -431,6 +456,14 @@
         
           
             
+          
+        
+          
+        
+          
+        
+          
+        
           
         
           
@@ -481,6 +514,62 @@
     <li class="md-nav__item">
       <a href="../../concepts/transaction/" class="md-nav__link">
         Transaction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/reporting-period/" class="md-nav__link">
+        Reporting period
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/purchase-value/" class="md-nav__link">
+        Purchase value
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/irr-theory/" class="md-nav__link">
+        IRR
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/irr-example/" class="md-nav__link">
+        IRR example
       </a>
     </li>
   
@@ -616,6 +705,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -633,23 +724,51 @@
   
 
 
-  <h1>Installation</h1>
-
-<p>PP is available for MacOS, Windows and Linux. You need to download it and do some installation steps. After the first installation, the program will check on each start-up for new updates and install these automatically.</p>
-<p>The easiest way to download and install PP is by using one of the installer files at the homepage (see fig 1). </p>
+<p>PP is available for MacOS, Windows and Linux. You need to download it and do some installation steps. The easiest way to download and install the latest version of PP is by using one of the installer files at the <a href="https://www.portfolio-performance.info/">homepage</a> (see fig 1). A link to the release notes of this latest version is also provided. </p>
 <p>
 <figure><img src="../images/installation-download.png" /><figcaption>Fig 1: Homepage with download links for various packages (2023-09-03)</figcaption>
-</figure>
-</p>
+</figure> { .pp-figure}</p>
+<h1 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h1>
+<p>You can download the compressed <em>Zip-file</em> and extract it in a directory at your choice. Even a portable USB-stick (about 250 MB free space) is fine (run from stick).</p>
+<p>You can also download the Windows - Installer (setup.exe). On Windows 11, you get a security warning about the dangers of running an exe-file. After that, double clicking on this file, will start the installation. You can change the destination folder. By default, the c:\user directory is taken. You need about 200 MB of free space (see figure 2).</p>
+<p>
+<figure><img src="../images/installation-win-installer-path.png" /><figcaption>Fig 2: Windows Installer dialog box.</figcaption>
+</figure> { .pp-figure}</p>
 <ul>
 <li>Windows: you can download the compressed Zip-file and extract it in a directory at your choice. Even an USB-stick (about 250 MB free space) is fine (run from stick). You can also download the installer file (setup.exe). On Windows 11, you get a security warning about the dangers to run a exe-file. Double clicking on this file, will start the installation. You need about 200 MB of free space.</li>
 </ul>
-<p class="hidden">TODO: difference between windows installer &amp; zip + macOS &amp; Linux</p>
-<p>The downloaded files come in fact from the author's github repository. So, you can also download there the program. If you ever should nee a previous version, this is also the place to download it (click on the version number at the left side). Here you can also download the source code.</p>
+<p class="hidden">TODO: difference between windows installer &amp; zip + adding how to install on macOS &amp; Linux
+TODO: difference between windows installer &amp; zip + adding how to install on macOS &amp; Linux</p>
+<h1 id="macos">MacOS<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h1>
+<h1 id="github">Github<a class="headerlink" href="#github" title="Permanent link">&para;</a></h1>
+<p>The installer files are in fact stored in the <a href="https://github.com/portfolio-performance/portfolio/releases">author's github repository</a>. So, you can also download the program from this repository. If you ever should need a previous version, this is also the place to be (click on the version number at the left side).</p>
 <p>
-<figure><img src="../images/installation-download-github.png" /><figcaption>Fig 2: Github repository for downloading (previous) releases</figcaption>
+<figure><img src="../images/installation-download-github.svg" /><figcaption>Fig 3: Github repository for downloading (previous) releases</figcaption>
 </figure>
 </p>
+<p class="hidden">TODO: explain third box in figure 3, the meaning of asc extension, and question windows 32 bits or 64 bits?</p>
+<p>You can edit and compile the source code; see <a href="https://github.com/portfolio-performance/portfolio/blob/master/CONTRIBUTING.md#project-setup">Contributing to Portfolio Performance</a>.</p>
+<h1 id="updating-the-software">Updating the software<a class="headerlink" href="#updating-the-software" title="Permanent link">&para;</a></h1>
+<p>After the first installation, the program will check on each start-up for new updates and install these automatically (see figure 1).</p>
+<p>
+<figure><img src="../images/installation-update.png" /><figcaption>Fig 1: Automatic updating with newer version</figcaption>
+</figure>
+</p>
+<h1 id="github_1">Github<a class="headerlink" href="#github_1" title="Permanent link">&para;</a></h1>
+<p>The installer files are in fact stored in the <a href="https://github.com/portfolio-performance/portfolio/releases">author's github repository</a>. So, you can also download the program from this repository. If you ever should need a previous version, this is also the place to be (click on the version number at the left side).</p>
+<p>
+<figure><img src="../images/installation-download-github.svg" /><figcaption>Fig 3: Github repository for downloading (previous) releases</figcaption>
+</figure>
+</p>
+<p class="hidden">TODO: explain third box in figure 3, the meaning of asc extension, and question windows 32 bits or 64 bits?</p>
+<p>You can edit and compile the source code; see <a href="https://github.com/portfolio-performance/portfolio/blob/master/CONTRIBUTING.md#project-setup">Contributing to Portfolio Performance</a>.</p>
+<h1 id="updating-the-software_1">Updating the software<a class="headerlink" href="#updating-the-software_1" title="Permanent link">&para;</a></h1>
+<p>After the first installation, the program will check on each start-up for new updates and install these automatically (see figure 1).</p>
+<p>
+<figure><img src="../images/installation-update.png" /><figcaption>Fig 1: Automatic updating with newer version</figcaption>
+</figure>
+</p>
+<p>To disable this automatic updating, uncheck the option <code>Check for updates on start</code> at menu <code>Help &gt; Preferences ... &gt; Updates</code>. Use <code>Help &gt; Check for updates ...</code> to check manually for updates.</p>
 
 
   
@@ -756,6 +875,18 @@
     
     
       <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+        
+          <script src="../../assets/javascripts/katex.js"></script>
+        
+      
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+        
+      
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+        
       
     
   </body>

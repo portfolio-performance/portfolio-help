@@ -46,6 +46,8 @@
       
     
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
       <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -358,6 +360,8 @@
         
           
         
+          
+        
       
       
         
@@ -394,6 +398,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/create-portfolio/" class="md-nav__link">
+        Creating a portfolio
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -419,6 +437,14 @@
         
           
             
+          
+        
+          
+        
+          
+        
+          
+        
           
         
           
@@ -469,6 +495,62 @@
     <li class="md-nav__item">
       <a href="../../concepts/transaction/" class="md-nav__link">
         Transaction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/reporting-period/" class="md-nav__link">
+        Reporting period
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/purchase-value/" class="md-nav__link">
+        Purchase value
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/irr-theory/" class="md-nav__link">
+        IRR
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/irr-example/" class="md-nav__link">
+        IRR example
       </a>
     </li>
   
@@ -633,7 +715,10 @@
 
   <h1>Import fund data from Morningstar</h1>
 
-<p><a href="https://forum.portfolio-performance.info/t/import-fund-data-from-morningstar/14516">Best answer in forum from SimonFitz</a></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><strong>Best</strong> answer in <a href="https://forum.portfolio-performance.info/t/import-fund-data-from-morningstar/14516">forum</a> from SimonFitz!</p>
+</div>
 <p>The website of Morningstar is quite famous for its extensive list of funds. With some magic, you can download the historical data for specific funds.</p>
 <p>First go to the Chart page for the fund (or trust or EFT) on the Morningstar website; e.g. <a href="https://www.morningstar.co.uk/uk/">https://www.morningstar.co.uk/uk/</a>. I will use the Baillie Gifford Positive Change Fund B Accumulation fund (ISIN GB00BYVGKV59) as an example.</p>
 <p>Remove any other benchmarks etc the are charted (this is not necessary, but makes things easier). Open your browser's "developer tools" which is F12 in Firefox &amp; Edge and probably other browsers as well. Go to the "Network" tab and press the clear button which looks like a bin; again, not necessary but makes things easier. Now press the "chart settings" button just above the chart, click "display options", and then click the "percentage" button - this switches the chart to show the actual fund price, rather than a percentage change, and handily for our purposes causes the Morningstar website to request a link that we can use in Portfolio Performance with a bit of modification. That link should display in the "network" screen of the browser's developer tools, so now right click on the entry that comes from the "tools.morningstar.co.uk 44" domain and is of type "json" and select the Copy-&gt;Copy URL option. The link should be</p>
@@ -765,6 +850,18 @@ You now need to change some of the options in the link and slightly simplify it 
     
     
       <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+        
+          <script src="../../assets/javascripts/katex.js"></script>
+        
+      
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+        
+      
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+        
       
     
   </body>

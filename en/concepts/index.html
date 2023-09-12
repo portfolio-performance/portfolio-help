@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://help.portfolio-performance.info/en/concepts/">
       
       
-        <link rel="prev" href="../getting-started/installation/">
+        <link rel="prev" href="../getting-started/create-portfolio/">
       
       
         <link rel="next" href="account/">
@@ -47,6 +47,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
       <link rel="stylesheet" href="../assets/stylesheets/extra.css">
     
@@ -365,6 +367,8 @@
         
           
         
+          
+        
       
       
         
@@ -401,6 +405,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/create-portfolio/" class="md-nav__link">
+        Creating a portfolio
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -428,6 +446,14 @@
         
           
             
+          
+        
+          
+        
+          
+        
+          
+        
           
         
           
@@ -478,6 +504,62 @@
     <li class="md-nav__item">
       <a href="transaction/" class="md-nav__link">
         Transaction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reporting-period/" class="md-nav__link">
+        Reporting period
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="purchase-value/" class="md-nav__link">
+        Purchase value
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="irr-theory/" class="md-nav__link">
+        IRR
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="irr-example/" class="md-nav__link">
+        IRR example
       </a>
     </li>
   
@@ -637,6 +719,10 @@
 <ul>
 <li><a href="account/">Account</a>: An account is a collection of <a href="transaction/">transactions</a>. PP uses several terms to indicate the concept of account: Securities, Deposit, Reference, Cash, Offset, ... account. What do they mean and in what aspects do they differ?</li>
 <li><a href="transaction/">Transaction</a>: A financial transaction is an agreement between a buyer and seller to exchange goods, services, or assets for payment. In case of PP, the exchange is about securities. There are security transactions such as buy, sell delivery (inbound), and delivery (outbound); deposit transactions such as deposit, removal, interest, interest charge, fees, fees refund, taxes, tax refund; and dividend transactions.</li>
+<li><a href="reporting-period/">Reporting period</a>: The (reporting) period is the time slice that is taken into account for reporting (calculations, graphs, statistics). It's very important that you realize that for every performance calculation a reporting period is taken into account, even if you haven't set one explicitly.</li>
+<li><a href="purchase-value/">Purchase value</a>: The Purchase Value of a security is the summed value of each buy (+) and sell (-) transaction of that security, taken into account the <a href="reporting-period/">reporting period</a>. The value of a transaction includes the taxes and fees; sometimes also called “Net Transaction Value”.</li>
+<li><a href="irr-theory/">Internal Rate of Return (IRR)</a>: The Internal Rate of Return (IRR) measures the performance of an investment between two dates. It is expressed as an annual interest rate that is necessary to bring the initial value of the investment at time \(t_{0}\) to the final value at time \(t_{n}\).</li>
+<li>An <a href="irr-example/">extensive but simplified example</a> about the different IRR calculations: Trade, security &amp; performance for three reporting periods (1, 2 and 3 years.</li>
 </ul>
 
 
@@ -744,6 +830,18 @@
     
     
       <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+        
+          <script src="../assets/javascripts/katex.js"></script>
+        
+      
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+        
+      
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+        
       
     
   </body>

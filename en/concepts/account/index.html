@@ -48,6 +48,8 @@
       
     
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
       <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -365,6 +367,8 @@
         
           
         
+          
+        
       
       
         
@@ -401,6 +405,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/create-portfolio/" class="md-nav__link">
+        Creating a portfolio
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -428,6 +446,14 @@
         
           
             
+          
+        
+          
+        
+          
+        
+          
+        
           
         
           
@@ -488,6 +514,62 @@
     <li class="md-nav__item">
       <a href="../transaction/" class="md-nav__link">
         Transaction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reporting-period/" class="md-nav__link">
+        Reporting period
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../purchase-value/" class="md-nav__link">
+        Purchase value
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../irr-theory/" class="md-nav__link">
+        IRR
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../irr-example/" class="md-nav__link">
+        IRR example
       </a>
     </li>
   
@@ -642,25 +724,27 @@
   
 
 
-<p>An account is a collection of <a href="../transaction/">transactions</a>. These could be buy and sell transactions of securities (shares, …) in case of a Securities account or the withdrawal and deposit of money for a Deposit account. Each account has a default currency attached. As part of the installation procedure, you should already have created at least one Securities account and one Deposit account.</p>
-<p>PP has two main type accounts: Securities and Deposit accounts. They are rather well described in the <a href="[https://forum.portfolio-performance.info/t/guide-on-getting-started/5390]">Guide on getting started</a> of Thomas (Contributor); you have to scroll quite a bit down.</p>
+<p>An account is a collection of <a href="../transaction/">transactions</a>. These could be buy and sell transactions of securities (shares, …) in case of a Securities account or the withdrawal and deposit of money for a Deposit account. Each account has a default currency attached. As part of the installation process, you should have already created at least one Securities account and one Deposit account.</p>
+<p>PP has two main types of accounts: Securities and Deposit accounts. They are described quite well in the <a href="[https://forum.portfolio-performance.info/t/guide-on-getting-started/5390]">Guide on getting started</a> of Thomas (Contributor); you will have to scroll quite far down.</p>
 <p>Other related terms are “Investment Plans”, “All Transactions”, “Reference account” and “Offset account”. Sometimes a Deposit Account is called a Cash Account.</p>
 <h1 id="deposit-account">Deposit account<a class="headerlink" href="#deposit-account" title="Permanent link">&para;</a></h1>
-<p><img src="../images/account-types-deposit.png" alt="Account type Deposit" style="zoom:100%;" /></p>
-<figcaption >Figure 1: Example of a Deposit Account</figcaption>
-
-<p>In figure 1, there are two deposit accounts; named EUR and USD (in column Cash Account). They will be used for deposits and withdrawals in EUR or USD. It's a bit redundant to call them “EUR” and “USD” because you also have to specify the currency that the account will use (see third column in figure). Then, for example, when you want to book a dividend in EUR, you will get the following dialog. The cash account can be selected from a drop-down and the correct currency is automatically added.</p>
-<p><img src="../images/account-dividend-booking.png" alt="Deposit Account with redundant Currency" style="zoom:50%;" /></p>
-<figcaption>Figure 2: Deposit Account with redundant Currency</figcaption>
-
-<p>According to your needs, you can use other names. For example, if you want to collect all of your dividends or taxes in a separate account, you could name them “Dividends” and “Taxes” in stead of EUR and USD. Of course, you also have to decide which currency that will be used for them. And, if you receive dividends in both EUR and USD then you need two deposit accounts with the name “Dividends” but with different currencies.</p>
+<p>
+<figure pp-figure="pp-figure"><img src="../images/account-types-deposit.png" /><figcaption>Figure 1: Example of a Deposit Account.</figcaption></figure>
+</p>
+<p>In Figure 1, there are two deposit accounts; named EUR and USD (in column Cash Account). They are used for deposits and withdrawals in EUR and USD respectively. It's a bit redundant to call them “EUR” and “USD” because you also need to specify the currency that the account will use (see third column in figure). For example, if you want to book a dividend in EUR, you will see the following dialog box (see fig 2). The cash account can be selected from a drop-down list and the correct currency will be automatically.</p>
+<p>
+<figure><img src="../images/account-dividend-booking.png" /><figcaption>Figure 2: Deposit Account with redundant Currency.</figcaption>
+</figure>
+</p>
+<p>You can use other names depending on your needs. For example, if you want to keep all your dividends or taxes in a separate account, you could name it “Dividends” and “Taxes” in stead of EUR and USD. Of course, you will also need to decide which currency that will be used for them. And, if you receive dividends in both EUR and USD then you need two deposit accounts with the name “Dividends” but with different currencies.</p>
 <p>Another possibility is to name the deposit accounts with the name of the bank or broker they belong to; e.g. BNPPF, Deutsche Bank, …</p>
 <p>A deposit account is used to transfer or receive money as the result of a transaction. In figure 1 (bottom part), 4 buy/sell transactions result in a negative balance (-2210 EUR). Good practice however requires that you first add a deposit of a large enough sum to cover the subsequent buy transactions; just as you should do with a real broker.</p>
 <h1 id="securities-account">Securities account<a class="headerlink" href="#securities-account" title="Permanent link">&para;</a></h1>
 <p>A security account will hold your securities and will be used for buying or selling securities. A security account is most of the time named after the broker or bank that you use to buy or sell.</p>
-<p><img src="../images/account_securities.png" alt="Example of Securities accounts" style="zoom:50%;" /></p>
-<figcaption>Figure 3: Example of Securities accounts</figcaption>
-
+<p>
+<figure><img src="../images/account_securities.png" /><figcaption>Figure 3: Example of Securities accounts.</figcaption>
+</figure>
+</p>
 <h1 id="related-terms">Related terms<a class="headerlink" href="#related-terms" title="Permanent link">&para;</a></h1>
 <h2 id="reference-account">Reference account<a class="headerlink" href="#reference-account" title="Permanent link">&para;</a></h2>
 <p>A security account is always associated with a deposit account. This is the deposit account that will used (if no other is explicitly assigned) for any buy or sell transaction on that securities account. This deposit account is called Reference Account. In figure 3, the Broker-A security has a reference account Broker-A (EUR) while the Broker-B security account has a USD-deposit account (Broker-B (USD). Probably, you use Broker A mostly for your EUR transactions and Broker B for the USD transactions.</p>
@@ -772,6 +856,18 @@
     
     
       <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+        
+          <script src="../../assets/javascripts/katex.js"></script>
+        
+      
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+        
+      
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+        
       
     
   </body>
