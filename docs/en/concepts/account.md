@@ -26,7 +26,6 @@ A deposit account is used to transfer or receive money as the result of a transa
 # Securities account
 
 A security account will hold your securities and will be used for buying or selling securities. A security account is most of the time named after the broker or bank that you use to buy or sell.
---
 
 ![Figure 3: Example of Securities accounts.](images/account_securities.png)
 
