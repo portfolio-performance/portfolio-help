@@ -1,10 +1,11 @@
 ---
 title: Import fund data from Morningstar
+lastUpdate: 2023-09-13
 ---
 !!! info
     **Best** answer in [forum](https://forum.portfolio-performance.info/t/import-fund-data-from-morningstar/14516) from SimonFitz!
 
-The website of Morningstar is quite famous for its extensive list of funds. With some magic, you can download the historical data for specific funds.
+The website of Morningstar is quite famous for its extensive list of funds. With some magic, you can download the historical data for specific funds from this website.
 
 First go to the Chart page for the fund (or trust or EFT) on the Morningstar website; e.g. [https://www.morningstar.co.uk/uk/](https://www.morningstar.co.uk/uk/). I will use the Baillie Gifford Positive Change Fund B Accumulation fund (ISIN GB00BYVGKV59) as an example.
 
