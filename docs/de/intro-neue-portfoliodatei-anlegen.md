@@ -7,7 +7,7 @@ Im ersten Schritt erstellst du in *Portfolio Performance* deine neue Portfolioda
 <img src="../images/assets/neu-portfolio.gif" alt="Grundlegende Portfoliodaten eingeben" />
 <figcaption>Bild: Grundlegende Portfoliodaten eingeben</figcaption>
 
-Über `Datei > Neu...` richtest du das Portfolio erstmalig ein. Als Erstes wählst du _Euro_ als die Hauptwährung, die als Standard für neue Konten, Depots und Wertpapiere verwendet wird. Klicke `Weiter`. 
+Über `Datei > Neu > Datei` richtest du das Portfolio erstmalig ein. Als Erstes wählst du _Euro_ als die Hauptwährung, die als Standard für neue Konten, Depots und Wertpapiere verwendet wird. Klicke `Weiter`. 
 
 Dann fügst du das erste Paar aus Depot und Referenzkonto mit `Hinzufügen` hinzu. Füge ggf. weitere Depots mit ihren Referenzkonten hinzu. Klicke `Fertigstellen`. 
 
