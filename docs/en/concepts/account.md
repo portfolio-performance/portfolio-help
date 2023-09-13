@@ -40,3 +40,4 @@ A security account is always associated with a deposit account. This is the depo
 
 ## Offset account
 Offset account is translated from the German "Gegenkonto. It is the account used as the twin-account for a transaction. If you buy a share, then the Securities account is debeted and the "Gegenkonto" deposit account is credited.
+
