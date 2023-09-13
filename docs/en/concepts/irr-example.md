@@ -1,5 +1,6 @@
 ---
 title: IRR Practical example step-by-step
+TODO: performance IRR - 1 year reporting small difference line 114
 ---
 Let's build a simple example -step by step- to illustrate some pitfalls of the IRR concept. Create a new portfolio `test-01.xml` with currency EUR. Add a securities account `broker-A` and a reference account `broker-A (EUR)`. Add two new empty instruments (`share-1` & `share-2`). Use the symbol tickers `DTE.DE` and `TMV.DE` respectively and set Yahoo Finance (`Exchange Deutsche Börse XETRA`) as quote Feed.
 
