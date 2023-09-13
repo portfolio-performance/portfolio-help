@@ -1,5 +1,6 @@
 ---
 title: Types of accounts!
+lastUpdate: 2023-09-05
 ---
 An account is a collection of [transactions](transaction.md). These could be buy and sell transactions of securities (shares, …) in case of a Securities account or the withdrawal and deposit of money for a Deposit account. Each account has a default currency attached. As part of the installation process, you should have already created at least one Securities account and one Deposit account.
 
