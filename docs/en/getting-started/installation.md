@@ -19,6 +19,17 @@ You can also download the Windows - Installer (setup.exe). On Windows 11, you ge
 
 # MacOS
 
+# Linux
+
+The preferred option is to install Portfolio Performance on Linux is using from [Flathub](https://flathub.org/apps/info.portfolio_performance.PortfolioPerformance).
+
+Alternatively, you can install PP manually:
+
+* Portfolio Performance currently (March 2023) requires Java 17. If not already available (example for Debian-related systems, such as Ubuntu):
+```
+sudo apt install openjdk-17-jre
+```
+* [Download](https://www.portfolio-performance.info) and unpack the GZIP archive (either for x86_64 or aarch64) to a suitable location, e.g. /opt
 
 # Github   
 The installer files are in fact stored in the [author's github repository](https://github.com/portfolio-performance/portfolio/releases). So, you can also download the program from this repository. If you ever should need a previous version, this is also the place to be (click on the version number at the left side).
