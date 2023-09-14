@@ -4,7 +4,7 @@ lastUpdate: 2023-09-13
 ---
 An account is a collection of [transactions](transaction.md). These could be buy and sell transactions of securities (shares, …) in case of a Securities account or the withdrawal and deposit of money for a Deposit account. Each account has a default currency attached. As part of the installation process, you should have already created at least one Securities account and one Deposit account.
 
-PP has two main types of accounts: Securities and Deposit accounts. They are described quite well in the [Guide on getting started]([https://forum.portfolio-performance.info/t/guide-on-getting-started/5390]) of Thomas (Contributor); you will have to scroll quite far down.
+PP has two main types of accounts: Securities and Deposit accounts. They are described quite well in the [Guide on getting started](https://forum.portfolio-performance.info/t/guide-on-getting-started/5390) of Thomas (Contributor); you will have to scroll quite far down.
 
 Other related terms are “Investment Plans”, “All Transactions”, “Reference account” and “Offset account”. Sometimes a Deposit Account is called a Cash Account.
 

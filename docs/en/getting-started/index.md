@@ -8,7 +8,7 @@ In order for you to be able to track, evaluate and manage your securities, Portf
 You can either use one of the precompiled installation files or compile the complete application by yourself. The application is available for MacOS, Windows and Linux.
 
 # [Creating a portfolio file](create-portfolio.md)
-Your fist step - of course - is to create a new portfolio file with your accounts. The portfolio file contains all securities, accounts, custody accounts, bookings, classifications, etc.
+Your first step - of course - is to create a new portfolio file with your accounts. The portfolio file contains all securities, accounts, custody accounts, bookings, classifications, etc.
 
 # [Adding securities](adding-securities)
 You create the securities that are of interest to you in the list of securities. Master data and historical prices are automatically supplemented and updated by Portfolio Performance.

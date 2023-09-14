@@ -87,6 +87,7 @@ nav:
       - Getting started: getting-started/index.md
       - Installation: getting-started/installation.md
       - Creating a portfolio: getting-started/create-portfolio.md
+      - Adding securities: getting-started/adding-securities.md
   - Basic concepts:
       - Basic concepts: concepts/index.md
       - Account: concepts/account.md
