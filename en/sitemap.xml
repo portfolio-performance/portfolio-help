@@ -46,6 +46,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://help.portfolio-performance.info/en/getting-started/adding-securities/</loc>
+         <lastmod>2023-09-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://help.portfolio-performance.info/en/getting-started/create-portfolio/</loc>
          <lastmod>2023-09-14</lastmod>
          <changefreq>daily</changefreq>

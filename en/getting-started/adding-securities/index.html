@@ -12,20 +12,16 @@
         <meta name="author" content="Andreas Buchen, et. al.">
       
       
-        <link rel="canonical" href="https://help.portfolio-performance.info/en/getting-started/installation/">
+        <link rel="canonical" href="https://help.portfolio-performance.info/en/getting-started/adding-securities/">
       
       
-        <link rel="prev" href="../">
-      
-      
-        <link rel="next" href="../create-portfolio/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>Installation - Portfolio Performance Manual</title>
+        <title>Creating a portfolio - Portfolio Performance Manual</title>
       
     
     
@@ -88,11 +84,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#windows" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -121,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation
+              Creating a portfolio
             
           </span>
         </div>
@@ -228,15 +219,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link md-tabs__link--active">
+      <a href="../" class="md-tabs__link">
         Getting started
       </a>
     </li>
@@ -350,16 +339,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
       
       
         
@@ -384,7 +371,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Getting started
@@ -397,21 +384,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
         Installation
       </a>
-      
     </li>
   
 
@@ -705,8 +682,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -724,41 +699,9 @@
   
 
 
-<p>PP is available for MacOS, Windows and Linux. You need to download it and do some installation steps. The easiest way to download and install the latest version of PP is by using one of the installer files at the <a href="https://www.portfolio-performance.info/">homepage</a> (see fig 1). A link to the release notes of this latest version is also provided. </p>
-<p>
-<figure class="pp-figure"><img src="../images/installation-download.png" /><figcaption>Fig 1: Homepage with download links for various packages (2023-09-03)</figcaption></figure>
-</p>
-<h1 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h1>
-<p>You can download the compressed <em>Zip-file</em> and extract it in a directory at your choice. Even a portable USB-stick (about 250 MB free space) is fine (run from stick).</p>
-<p>You can also download the Windows - Installer (setup.exe). On Windows 11, you get a security warning about the dangers of running an exe-file. After that, double clicking on this file, will start the installation. You can change the destination folder. By default, the c:\user directory is taken. You need about 200 MB of free space (see figure 2).</p>
-<p>
-<figure class="pp-figure"><img src="../images/installation-win-installer-path.png" /><figcaption>Fig 2: Windows Installer dialog box.</figcaption></figure>
-</p>
-<ul>
-<li>Windows: you can download the compressed Zip-file and extract it in a directory at your choice. Even an USB-stick (about 250 MB free space) is fine (run from stick). You can also download the installer file (setup.exe). On Windows 11, you get a security warning about the dangers to run a exe-file. Double clicking on this file, will start the installation. You need about 200 MB of free space.</li>
-</ul>
-<h1 id="macos">MacOS<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h1>
-<h1 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h1>
-<p>The preferred option is to install Portfolio Performance on Linux is using from <a href="https://flathub.org/apps/info.portfolio_performance.PortfolioPerformance">Flathub</a>.</p>
-<p>Alternatively, you can install PP manually:</p>
-<ul>
-<li>Portfolio Performance currently (March 2023) requires Java 17. If not already available (example for Debian-related systems, such as Ubuntu):
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt install openjdk-17-jre
-</code></pre></div></li>
-<li><a href="https://www.portfolio-performance.info">Download</a> and unpack the GZIP archive (either for x86_64 or aarch64) to a suitable location, e.g. /opt</li>
-</ul>
-<h1 id="github">Github<a class="headerlink" href="#github" title="Permanent link">&para;</a></h1>
-<p>The installer files are in fact stored in the <a href="https://github.com/portfolio-performance/portfolio/releases">author's github repository</a>. So, you can also download the program from this repository. If you ever should need a previous version, this is also the place to be (click on the version number at the left side).</p>
-<p>
-<figure class="pp-figure"><img src="../images/installation-download-github.svg" /><figcaption>Fig 3: Github repository for downloading (previous) releases</figcaption></figure>
-</p>
-<p>You can edit and compile the source code; see <a href="https://github.com/portfolio-performance/portfolio/blob/master/CONTRIBUTING.md#project-setup">Contributing to Portfolio Performance</a>.</p>
-<h1 id="updating-the-software">Updating the software<a class="headerlink" href="#updating-the-software" title="Permanent link">&para;</a></h1>
-<p>After the first installation, the program will check on each start-up for new updates and install these automatically (see figure 1). You can change this setting with the menu <code>Help &gt; Settings &gt; Updates &gt; Check for updates on start</code>.</p>
-<p>
-<figure class="pp-figure"><img src="../images/installation-update.png" /><figcaption>Fig 1: Automatic updating with newer version</figcaption></figure>
-</p>
-<p>Also, you can update manually with the menu <code>Help &gt; Check for updates ...</code>.</p>
+  <h1>Creating a portfolio</h1>
+
+
 
 
   
