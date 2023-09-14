@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://help.portfolio-performance.info/en/getting-started/adding-securities/">
       
       
+        <link rel="prev" href="../create-portfolio/">
+      
+      
+        <link rel="next" href="../../concepts/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
@@ -219,13 +223,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         Getting started
       </a>
     </li>
@@ -339,19 +345,23 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
         
           
             
+          
+        
           
         
           
@@ -371,7 +381,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Getting started
@@ -403,6 +413,28 @@
       <a href="../create-portfolio/" class="md-nav__link">
         Creating a portfolio
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Adding securities
+      </a>
+      
     </li>
   
 
@@ -699,9 +731,31 @@
   
 
 
-  <h1>Creating a portfolio</h1>
+  <h1>Adding securities</h1>
 
-
+<p>Immediately after the previous "Create portfolio" step, your portfolio main screen looks a bit empty (see figure 1). A list of all securities could me shown with the <code>All Securities</code> item from the left sidebar. Right now, it's still empty.</p>
+<p>
+<figure class="pp-figure"><img src="../images/adding-securties-starting-screen.svg" /><figcaption>Figure 1: Main screen after creating a new portfolio</figcaption></figure>
+</p>
+<p>With the <code>Add new investment instrment</code> button, you can start adding securities in your portfolio. As you can see from figure 1, you can add new instruments (shares, bonds, ...), new Cryptocurrencies, new exchange rates. There is also a possibility to import securities from a CSV-file or to create a new (not existing) security.</p>
+<p>More options are available through the menu <code>File &gt; New</code> (see figure 1).</p>
+<p># Adding new instruments</p>
+<p>Selecting the New &gt; Security (menu) or New instrument ... (button) option will display the following window (see figure 2).</p>
+<p>
+<figure class="pp-figure"><img src="../images/adding-securties-new-security.svg" /><figcaption>Figure 2: Searching and adding new securities to the All Securities list</figcaption></figure>
+</p>
+<p>You can type (part of) the security name in the search box. Searching could be done in shares or bonds only or within both types of instruments. After clicking the Search button, the list below is populated with possible target instruments.</p>
+<p>For each instrument, the following fields are displayed:</p>
+<ul>
+<li>Name: the full name of the security according to the data source (see below) from which it is retrieved, e.g. Yahoo Finance.</li>
+<li>Symbol: the abbreviation (ticker) used by the data source.</li>
+<li>ISIN:  International Securities Identification Number: a unique twelve-digit code that is assigned to every security in the world. Is mostly used by European brokers &amp; banks.</li>
+<li>WKN: Wertpapierkennnummer: a German six-digit alphanumerical code for the identification of a security, which has since been replaced by the ISIN code.</li>
+<li>Type: could be Share, Bond, Cryptocurrency, Aktie, Währung, Futures, etf, fonds.</li>
+<li>Exchange:</li>
+<li>Currency: not used?</li>
+<li>Data source: could be Yahoo Finance, CoinGecko, or Portfolio Report. <a href="https://finance.yahoo.com/">Yahoo Finance</a> provides financial news and data including stock quotes, press releases, and financial reports. <a href="https://www.coingecko.com/">CoinGecko</a> is a website with real-time information about the majority of cryptocurrencies. <a href="https://www.portfolio-report.net/search">Portfolio Report</a> is an open source project that aims to provide portfolio performance with data centrally.</li>
+</ul>
 
 
   
