@@ -26,7 +26,7 @@ The minimum info that you should enter for a buying or selling transaction is:
 
   - Security: you can choose the security from the drop-down. If a particular security was already selected before the start of the transaction, this info is filled in. Please note that the currency is automatically set because each security has a currency associated with it.
   - Securities Account: choose with drop-down or already filled in, if you started from the Securities account.
-  - Deposit Account: choose with drop-down or already filled in with the [account](/pp/account) of the security. If the currency of the deposit account is different from the security currency, then the Gross Amount and eventually Fees and Taxes (in the Security currency) have to be converted. So, you also need an Exchange Rate. See Figure 3 for an example.
+  - Deposit Account: choose with drop-down or already filled in with the [account](account.md) of the security. If the currency of the deposit account is different from the security currency, then the Gross Amount and eventually Fees and Taxes (in the Security currency) have to be converted. So, you also need an Exchange Rate. See Figure 3 for an example.
   - Date of transaction: you can choose it from a calendar or enter it manually. With the field to the right (00:00), you can set the time. A 12 or 24 hours clock is set with menu Help > Preferences > Language > Country.
   - Shares: the number of securities that you buy or sell. This can be a decimal number.
   - Debit Note: this is the amount that you have to pay or receive as a result of this transaction. Other names are: Value or Net Value.
@@ -63,4 +63,4 @@ Booking a dividend is almost like a buy or sale; except that the quote price is 
 <img src="../images/transaction-2023-06-25d.svg" alt="Booking a USD security" style="zoom:100%;" />
 <figcaption> Figure 5: Booking a USD security dividend through an EUR deposit account</figcaption>
 
-There is no separate function to book a "Dividend Investment Plan" (DRIP). One solution is to fully book all dividends with a buy transaction of the agreed-upon number of shares. More information at [Reinvesting dividends](/pp/reinvesting-dividends).
+There is no separate function to book a "Dividend Investment Plan" (DRIP). One solution is to fully book all dividends with a buy transaction of the agreed-upon number of shares. More information at [Reinvesting dividends](../procedures/reinvesting-dividends).

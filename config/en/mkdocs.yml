@@ -97,7 +97,9 @@ nav:
       - IRR: concepts/irr-theory.md
       - IRR example: concepts/irr-example.md
   - Common procedures:
+      - Common procedures: procedures/index.md
       - Importing CSV-files: procedures/importing.md
   - Tips & tricks:
+      - Tips & tricks: tricks/index.md
       - Import fund data from Morningstar: tricks/morningstar.md
 

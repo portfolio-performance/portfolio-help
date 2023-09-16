@@ -64,7 +64,7 @@ Additional attributes are defined in `(left) Sidebar > General Data > Settings >
 ## Taxonomies
 
 <figure style="float: right; width: 40%">
-  <img src="images/adding-securities-taxonomies.png" alt="Figure 6">
+  <img src="../images/adding-securities-taxonomies.png" alt="Figure 6">
   <figcaption>Figure 6: Managing taxonomies.</figcaption>
 </figure>
 
