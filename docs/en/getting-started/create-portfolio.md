@@ -1,5 +1,6 @@
 ---
 title: Creating a portfolio
+lastUpdate: 2023-09-14
 ---
 
 With the menu `File > New > File` you can create a new portfolio file. You can have as many portfolios on your system. A wizard will guide you through the setup process.

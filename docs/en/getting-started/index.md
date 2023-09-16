@@ -1,5 +1,6 @@
 ---
 title: Getting started
+lastUpdate: 2023-09-15
 ---
 
 In order for you to be able to track, evaluate and manage your securities, Portfolio Performance needs the basic data about your securities accounts and past transactions. After that, you can immediately make your first evaluations and analyze your portfolio and performance from different angles.

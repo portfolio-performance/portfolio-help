@@ -1,5 +1,6 @@
 ---
 title: Installation
+lastUpdate: 2023-09-11
 TODO: difference between windows installer & zip + adding how to install on macOS
 TODO: explain third box in figure 3, the meaning of asc extension, and question windows 32 bits or 64 bits?
 ---

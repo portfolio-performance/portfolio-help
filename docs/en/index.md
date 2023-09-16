@@ -10,7 +10,7 @@ The *Portfolio Performance (PP)* manual contains four chapters:
 - [Getting started](getting-started/index.md): If you are new to PP, this chapter will get you on your way. From installation, to creating a new portfolio, importing securities and transaction data, and evaluation of your entire portfolio.
 - [Basic concepts](concepts/index.md): Although PP is a very intuitive and easy to use program, the underlying (financial) concepts are not. This chapter will provide you with a concise but clear understanding of the key concepts of Portfolio Performance, such as accounts, transaction, reporting period, IRR, ...
 - [Common procedures](procedures/index.md): In this chapter you will find the step-by-step description of some common procedures, such as importing data, booking dividends, finding historical quotes, ...
-- Tips & tricks: the financial world is full of intricacies and special cases. For example, no broker uses the exact same terminology or bank statement. In this chapter, you will find some tips and tricks to deal with these special cases.
+- [Tips & tricks](tricks/index.md): the financial world is full of intricacies and special cases. For example, no broker uses the exact same terminology or bank statement. In this chapter, you will find some tips and tricks to deal with these special cases.
 
 # About Portfolio Performance
 

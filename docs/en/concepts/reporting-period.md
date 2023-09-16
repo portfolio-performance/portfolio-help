@@ -1,8 +1,9 @@
 ---
 title: Reporting period
+lastUpdate: 2023-09-05
 ---
 
-![Fig 1: drop-down list for selecting the reporting period](../images/reporting-period-performance.svg)
+![Fig 1: drop-down list for selecting the reporting period](images/reporting-period-performance.svg)
 
 
 
@@ -19,4 +20,4 @@ The 1, 2, 3 years period is always calculated from the current day. If the curre
 | 3 years | 2020, May 15 - 2023, May 15 |
 
 With New, you can create custom time periods. The options in the figure below are self-explanatory. You cannot give a self-chosen name to this period.
-![Fig 2: Different custom time periods for reporting](../images/reporting-period-new.png)
+![Fig 2: Different custom time periods for reporting](images/reporting-period-new.png)

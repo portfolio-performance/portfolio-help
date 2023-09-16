@@ -23,7 +23,9 @@ figure.pp-figure {
 	max-width: 40rem;
 }
 
-
+img.float-right{
+	float: right;
+}
 
 
 

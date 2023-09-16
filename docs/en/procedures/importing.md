@@ -1,5 +1,6 @@
 ---
 title: Importing a CSV-file
+lastUpdate: 2023-09-05
 ---
 In PP you can enter your transactions (buy, sell, dividends, … ) manually but you can also *import* those transactions from a CSV file (comma-separated values) or from a PDF document. Not all brokers, however, provide the format that PP needs. So, how should this CSV-file look? Suppose, you want to import the following transaction.
 

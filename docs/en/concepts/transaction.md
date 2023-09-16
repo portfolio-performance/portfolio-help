@@ -1,5 +1,6 @@
 ---
 title: Transaction types
+lastUpdate: 2023-09-05
 ---
 <div style="float: right;">
 <img src="../images/transaction-2023-06-23-10-27-29.png" alt="Transactions menu"  />
