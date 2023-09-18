@@ -486,6 +486,8 @@
         
           
         
+          
+        
       
       
         
@@ -506,6 +508,20 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/financial-terminology/" class="md-nav__link">
+        Financial terminology
+      </a>
+    </li>
+  
+
             
           
             
@@ -621,6 +637,8 @@
         
           
         
+          
+        
       
       
         
@@ -651,6 +669,20 @@
     <li class="md-nav__item">
       <a href="../../procedures/importing/" class="md-nav__link">
         Importing CSV-files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../procedures/reinvesting-dividends/" class="md-nav__link">
+        Reinvesting dividends
       </a>
     </li>
   
@@ -766,35 +798,19 @@
 
 <p>With the menu <code>File &gt; New &gt; File</code> you can create a new portfolio file. You can have as many portfolios on your system. A wizard will guide you through the setup process.</p>
 <p>First you need to select the default currency for the portfolio (see figure 1). You can always change the currency for individual securities. PP supports almost every possible currency: from AED (United Arab Emirates Dirham) to ZWL (Zimbabwean dollar).
-<figure><img src="../images/create-portfolio-wizard-step-1.png" /><figcaption>Figure 1: Selecting the default currency for the portfolio.</figcaption>
-</figure>
-</p>
+<figure id="_figure-1"><figcaption>Figure 1.  Selecting the default currency for the portfolio.</figcaption><img alt="Selecting the default currency for the portfolio." class="pp-figure" src="../images/create-portfolio-wizard-step-1.png"></figure></p>
 <p>Your portfolio must contain at least one security <a href="../../concepts/account/">account</a> and one associated deposit account (reference).</p>
-<p>
-<figure><img src="../images/create-portfolio-wizard-step-2.png" /><figcaption>Figure 2: Adding security and reference accounts to the portfolio.</figcaption>
-</figure>
-</p>
+<p><figure id="_figure-2"><figcaption>Figure 2.  Adding security and reference accounts to the portfolio.</figcaption><img alt="Adding security and reference accounts to the portfolio." class="pp-figure" src="../images/create-portfolio-wizard-step-2.png"></figure></p>
 <p>Sometimes, you need more than one deposit account. In step 3, you can add these extra cash accounts (e.g. in different currencies) to your portfolio.
-<figure><img src="../images/create-portfolio-wizard-step-3.png" /><figcaption>Figure 3: Adding additional cash accounts to the portfolio.</figcaption>
-</figure>
-</p>
+<figure id="_figure-3"><figcaption>Figure 3.  Adding additional cash accounts to the portfolio.</figcaption><img alt="Adding additional cash accounts to the portfolio." class="pp-figure" src="../images/create-portfolio-wizard-step-3.png"></figure></p>
 <p>As part of the creation wizard, you can also add the securities that you want to track in this portfolio. These securities are retrieved from German index trackers such a DAX (Deutscher Aktienindex) , tecDax, SDAX, and MDAX. You can also add the index itself or others (e.g. NASDAQ) with Indizes. Of course, you can add securities later on. Your choice is then much larger. </p>
-<p>
-<figure><img src="../images/create-portfolio-wizard-step-4.png" /><figcaption>Figure 4: Adding instruments to the portfolio.</figcaption>
-</figure>
-</p>
+<p><figure id="_figure-4"><figcaption>Figure 4.  Adding instruments to the portfolio.</figcaption><img alt="Adding instruments to the portfolio." class="pp-figure" src="../images/create-portfolio-wizard-step-4.png"></figure></p>
 <p>Taxonomies such as Asset classes and Regions are used to classify your securities. This classification can then later on be used in performance analysis e.g. show me the performance of all securities from region xxx.</p>
-<p>
-<figure><img src="../images/create-portfolio-wizard-step-5.png" /><figcaption>Figure 5: Adding taxonomies to the portfolio.</figcaption>
-</figure>
-</p>
+<p><figure id="_figure-5"><figcaption>Figure 5.  Adding taxonomies to the portfolio.</figcaption><img alt="Adding taxonomies to the portfolio." class="pp-figure" src="../images/create-portfolio-wizard-step-5.png"></figure></p>
 <p>Only steps 1 and 2 are mandatory: setting the default currency and base portfolio with associated cash account. You can tell this from figure 2 because the <code>Finish</code> button becomes available. After that a file <code>unamed.xml</code> is created. Of course, you should save it under a different name and location.</p>
-<h1 id="xml">XML<a class="headerlink" href="#xml" title="Permanent link">&para;</a></h1>
+<h1 id="xml">XML<a class="headerlink" href="#xml" title="Permanent link">¶</a></h1>
 <p>All data of your portfolio is stored in one XML-file (eXtensible Markup Language). This is a human-readable file format. For example, take the following buying transaction  of 5 shares of Microsoft at a purchase price of 334.27 USD with 30  USD fees and 45 USD taxes (see figure 6.).</p>
-<p>
-<figure><img src="../images/create-portfolio-example-buy-transaction.png" /><figcaption>Figure 6: Example of a buying transaction.</figcaption>
-</figure>
-</p>
+<p><figure id="_figure-6"><figcaption>Figure 6.  Example of a buying transaction.</figcaption><img alt="Example of a buying transaction." class="pp-figure" src="../images/create-portfolio-example-buy-transaction.png"></figure></p>
 <p>This single buying transaction is represented with the following XML code.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&lt;transactions&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">   </span><span class="nt">&lt;portfolio-transaction&gt;</span>
@@ -802,16 +818,16 @@
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">      </span><span class="nt">&lt;date&gt;</span>2023-09-10T00:00<span class="nt">&lt;/date&gt;</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">      </span><span class="nt">&lt;currencyCode&gt;</span>USD<span class="nt">&lt;/currencyCode&gt;</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">      </span><span class="nt">&lt;amount&gt;</span>174635<span class="nt">&lt;/amount&gt;</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">      </span><span class="nt">&lt;security</span><span class="w"> </span><span class="na">reference=</span><span class="s">&quot;../../../../../../../../../securities/security&quot;</span><span class="nt">/&gt;</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">      </span><span class="nt">&lt;crossEntry</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;buysell&quot;</span><span class="w"> </span><span class="na">reference=</span><span class="s">&quot;../../../..&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">      </span><span class="nt">&lt;security</span><span class="w"> </span><span class="na">reference=</span><span class="s">"../../../../../../../../../securities/security"</span><span class="nt">/&gt;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">      </span><span class="nt">&lt;crossEntry</span><span class="w"> </span><span class="na">class=</span><span class="s">"buysell"</span><span class="w"> </span><span class="na">reference=</span><span class="s">"../../../.."</span><span class="nt">/&gt;</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">      </span><span class="nt">&lt;shares&gt;</span>500000000<span class="nt">&lt;/shares&gt;</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">      </span><span class="nt">&lt;note&gt;</span>First<span class="w"> </span>buy<span class="w"> </span>on<span class="w"> </span>advice<span class="w"> </span>of<span class="w"> </span>...<span class="nt">&lt;/note&gt;</span>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="nt">&lt;units&gt;</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">         </span><span class="nt">&lt;unit</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;FEE&quot;</span><span class="nt">&gt;</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">            </span><span class="nt">&lt;amount</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;USD&quot;</span><span class="w"> </span><span class="na">amount=</span><span class="s">&quot;3000&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">         </span><span class="nt">&lt;unit</span><span class="w"> </span><span class="na">type=</span><span class="s">"FEE"</span><span class="nt">&gt;</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">            </span><span class="nt">&lt;amount</span><span class="w"> </span><span class="na">currency=</span><span class="s">"USD"</span><span class="w"> </span><span class="na">amount=</span><span class="s">"3000"</span><span class="nt">/&gt;</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">          </span><span class="nt">&lt;/unit&gt;</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">         </span><span class="nt">&lt;unit</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;TAX&quot;</span><span class="nt">&gt;</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">            </span><span class="nt">&lt;amount</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;USD&quot;</span><span class="w"> </span><span class="na">amount=</span><span class="s">&quot;4500&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">         </span><span class="nt">&lt;unit</span><span class="w"> </span><span class="na">type=</span><span class="s">"TAX"</span><span class="nt">&gt;</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">            </span><span class="nt">&lt;amount</span><span class="w"> </span><span class="na">currency=</span><span class="s">"USD"</span><span class="w"> </span><span class="na">amount=</span><span class="s">"4500"</span><span class="nt">/&gt;</span>
 <a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">         </span><span class="nt">&lt;/unit&gt;</span>
 <a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">      </span><span class="nt">&lt;/units&gt;</span>
 <a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">      </span><span class="nt">&lt;updatedAt&gt;</span>2023-09-10T18:43:28.135529700Z<span class="nt">&lt;/updatedAt&gt;</span>

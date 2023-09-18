@@ -18,7 +18,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../tricks/">
+        <link rel="next" href="../reinvesting-dividends/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
@@ -474,6 +474,8 @@
         
           
         
+          
+        
       
       
         
@@ -494,6 +496,20 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/financial-terminology/" class="md-nav__link">
+        Financial terminology
+      </a>
+    </li>
+  
+
             
           
             
@@ -611,6 +627,8 @@
         
           
         
+          
+        
       
       
         
@@ -686,6 +704,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reinvesting-dividends/" class="md-nav__link">
+        Reinvesting dividends
+      </a>
     </li>
   
 
@@ -821,10 +853,7 @@
   <h1>Importing CSV-files</h1>
 
 <p>In PP you can enter your transactions (buy, sell, dividends, … ) manually but you can also <em>import</em> those transactions from a CSV file (comma-separated values) or from a PDF document. Not all brokers, however, provide the format that PP needs. So, how should this CSV-file look? Suppose, you want to import the following transaction.</p>
-<p>
-<figure><img src="../images/import-buy-transaction.png" /><figcaption>Fig 1: Buying transaction example for import</figcaption>
-</figure>
-</p>
+<p><figure id="_figure-1"><figcaption>Figure 1.  Buying transaction example for import</figcaption><img alt="Buying transaction example for import" class="pp-figure" src="../images/import-buy-transaction.png"></figure></p>
 <p>As you can see in figure 1, the following PP fields are  used: Security Name (share-2), the implied currency (USD), Securities Account (Broker-A), Deposit Account (Broker-A (EUR), Date &amp; time, number of Shares (10), buying quote (5 USD), Gross Amount in USD (50), Exchange Rate (1.0785 EUR/USD), Gross Amount in EUR(46.36), Fees USD and EUR), Taxes (USD and EUR), Value or Debit Note (55.21), and a note (My Note). You don't have to provide all fields in the CSV-file; some of them aren't even possible e.g. implied currency and fees/taxes in the foreign currency.</p>
 <p>With the menu <code>File &gt; Import &gt; CSV files (comma-separated values)</code> you can import all kind of transactions. A CSV file is simply a text file. The first line contains the names of the fields (columns); separated by commas. The second and following lines contain the data, also separated by commas. For example, the following print-out of a CSV-file contains three fields or columns and two lines of data.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Name,Type,Date,Value
@@ -832,10 +861,7 @@
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Share-2,buy,2023-06-01, 20
 </code></pre></div>
 <p>PP distinguishes between 5 types of import: Account Transactions, Portfolio Transactions, Securities, Historical Quotes, and Securities Account (see figure 2). To correctly use a type and import the data into PP, the CSV file must contain specific fields. Depending on the type of account, there are other required and optional fields.</p>
-<p>
-<figure><img src="../images/import-types.png" /><figcaption>Fig 2: Import dialog window with the 5 types</figcaption>
-</figure>
-</p>
+<p><figure id="_figure-2"><figcaption>Figure 2.  Import dialog window with the 5 types</figcaption><img alt="Import dialog window with the 5 types" class="pp-figure" src="../images/import-types.png"></figure></p>
 <p>The difference between each type is rather nebulous and not very good documented. The following definitions are tentative.</p>
 <ul>
 <li>
@@ -855,49 +881,34 @@
 </li>
 </ul>
 <p>Each type has required and optional fields. For example, the Historical Quotes type only needs the Date and the Quote. Instead of repeating the name of the share again and again for each date, you can select the security in the next pop-up window. The Account Transactions type has two required Fields: Value and Date. The Portfolio Transactions has three required fields: Value, Date, and Shares (see figure 3).</p>
-<p>
-<figure><img src="../images/import-required-optional-fields.png" /><figcaption>Fig 3: Required and optional fields for the 5 types of import</figcaption>
-</figure>
-</p>
-<h2 id="importing-buysell-transactions">Importing buy/sell transactions<a class="headerlink" href="#importing-buysell-transactions" title="Permanent link">&para;</a></h2>
+<p><figure id="_figure-3"><figcaption>Figure 3.  Required and optional fields for the 5 types of import</figcaption><img alt="Required and optional fields for the 5 types of import" class="pp-figure" src="../images/import-required-optional-fields.png"></figure></p>
+<h2 id="importing-buysell-transactions">Importing buy/sell transactions<a class="headerlink" href="#importing-buysell-transactions" title="Permanent link">¶</a></h2>
 <p>An easy way to discover which fields you need, is to export a demo transaction first. After selecting the transaction in All Transactions, click the Export button at the top-right of the window (up-pointing arrow). Choose “Selected transactions (CSV)”. If you should open this CSV-file with a text editor, it will look something like this:</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Date,Type,Security,Shares,Quote,Amount,Fees,Taxes,Net Transaction Value,Cash Account,Offset Account,Note,Source
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Date,Type,Security,Shares,Quote,Amount,Fees,Taxes,Net Transaction Value,Cash Account,Offset Account,Note,Source
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>2023-05-25 00:00:00,Buy,share-2,10,5.50,55.00,4.10,6.20,65.30,Broker-A,Broker-A (EUR),My Note,
 </code></pre></div>
-The first line contains the field names, separated by a comma. The second line contains the value of those fields. Notice that there is no value for the field Source. <em>Unfortunately</em>, the field names do not match with the required field names for the import nor with the labels used in the dialog box (e.g. Name vs Security Name, Net Transaction Value vs Value). Also, a new field is added (Type) but worse, a necessary field (Exchange Rate) is missing. Also, USD and EUR fees and taxes are added into a total amount in EUR.</p>
+The first line contains the field names, separated by a comma. The second line contains the value of those fields. Notice that there is no value for the field Source. <em>Unfortunately</em>, the field names do not match with the required field names for the import nor with the labels used in the dialog box (e.g. Name vs Security Name, Net Transaction Value vs Value). Also, a new field is added (Type) but worse, a necessary field (Exchange Rate) is missing. Also, USD and EUR fees and taxes are added into a total amount in EUR.
 <p>Importing this transaction again (after deleting the original one) <em>will fail</em>.</p>
 <p>In order to recreate the transaction of figure 1, you need at least the following fields. Restoring the split between USD and EUR fees and taxes seems to be impossible. You have to use the Portfolio Transactions type.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Date,Type,Security Name,Shares,Fees,Taxes,Value,Exchange Rate
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>2023-05-25 0:00,Buy,share-2,10,4.1,6.2,65.30,0.9091
 </code></pre></div>
-<h2 id="importing-dividends">Importing dividends<a class="headerlink" href="#importing-dividends" title="Permanent link">&para;</a></h2>
-<p>
-<figure><img src="../images/import-dividend-transaction.png" /><figcaption>Fig 4: Dividend transaction example for import</figcaption>
-</figure>
-</p>
+<h2 id="importing-dividends">Importing dividends<a class="headerlink" href="#importing-dividends" title="Permanent link">¶</a></h2>
+<p><figure id="_figure-4"><figcaption>Figure 4.  Dividend transaction example for import</figcaption><img alt="Dividend transaction example for import" class="pp-figure" src="../images/import-dividend-transaction.png"></figure></p>
 <p>Suppose that your broker can deliver a CSV-file with all the dividend payments from a past period. Of course, you would like to import this file in stead of entering manually all these dividend payments. The file content looks something like this (see figure 1 below).</p>
-<p>
-<figure><img src="../images/import-dividend-csv-table.png" /><figcaption>Fig 5: CSV table for importing two dividends</figcaption>
-</figure>
-</p>
+<p><figure id="_figure-5"><figcaption>Figure 5.  CSV table for importing two dividends</figcaption><img alt="CSV table for importing two dividends" class="pp-figure" src="../images/import-dividend-csv-table.png"></figure></p>
 <p>Unfortunately, this is not enough information to use the Import CSV-function. From the three available columns of the CSV-file, two of them are recognized by PP: ISIN and Date (see figure 6). For the column Payment, you have to map this field to one of the PP fields. Because, it is a dividend you need to use the import type Account transactions. A dividend payment is a simple deposit transaction, which has no implications on the securities account.</p>
 <p>According to the pop-up message of figure 6, there are two required fields: Date and Value, of which the last one is unmapped. This is because the name that your broker uses (Payment) is different from the required name (Value). You can however, double click on the Payment column to choose the correct field name.</p>
-<p>
-<figure><img src="../images/import-CSV-dialog.png" /><figcaption>Fig 6: Dialog box for importing dividends</figcaption>
-</figure>
-</p>
+<p><figure id="_figure-6"><figcaption>Figure 6.  Dialog box for importing dividends</figcaption><img alt="Dialog box for importing dividends" class="pp-figure" src="../images/import-CSV-dialog.png"></figure></p>
 <p>But how is PP able to recreate a dividend payment with only these two fields (date, value). It can't! You can only use this import to create a deposit in a Security and Cash account. If you want to create a dividend, you should also specify a type: Dividend. Specifying a number of shares or fees/taxes will also do the job.</p>
 <p>Of course, PP does also need the name of the Cash and Securities account. You can enter this in the next step of the wizard or you can specify it in the CSV-file.</p>
 <p>Let's take a simplified example (EUR-dividend in a EUR-cash account; see figure 7). The minimal info to register this dividend is:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>type, Date, ISIN, Value
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>dividend, 2022-01-01, BE0974258874, 40
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>+ This will result in the following &quot;dividend&quot; transaction.
+<div class="highlight"><pre><span></span><code>+ This will result in the following "dividend" transaction.
 </code></pre></div>
-<p>
-<figure><img src="../images/import-buy-transaction-simplified.png" /><figcaption>Fig 7: Simplified buying transaction example for import</figcaption>
-</figure>
-</p>
+<p><figure id="_figure-7"><figcaption>Figure 7.  Simplified buying transaction example for import</figcaption><img alt="Simplified buying transaction example for import" class="pp-figure" src="../images/import-buy-transaction-simplified.png"></figure></p>
 <p>Adding Fees and Taxes will calculate the Gross Amount. You cannot specify the Gross Amount in itself. Adding the number of Shares will calculate the dividend payment/share. It is also not possible to specify this in itself. So, a typical CSV-file for a dividend payment in the currency of the Cash account will look like:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Type, Date, ISIN, Value, fees, taxes, shares
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>dividend, 2022-01-01, BE0974258874, 200, 3, 2, 25

@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://help.portfolio-performance.info/en/procedures/reinvesting-dividends/">
       
       
+        <link rel="prev" href="../importing/">
+      
+      
+        <link rel="next" href="../../tricks/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
@@ -251,13 +255,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         Common procedures
       </a>
     </li>
@@ -463,6 +469,8 @@
         
           
         
+          
+        
       
       
         
@@ -483,6 +491,20 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/financial-terminology/" class="md-nav__link">
+        Financial terminology
+      </a>
+    </li>
+  
+
             
           
             
@@ -581,19 +603,23 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
       
       
         
           
             
+          
+        
           
         
           
@@ -611,7 +637,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Common procedures
@@ -629,6 +655,28 @@
       <a href="../importing/" class="md-nav__link">
         Importing CSV-files
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Reinvesting dividends
+      </a>
+      
     </li>
   
 
@@ -761,9 +809,7 @@
 <li>book the dividends for all shares <em>without</em> fees and taxes. These will be paid for in the following step. If your broker doesn't allow for share fractions, you can use one transaction for the share dividend part (e.g. 295 in the example) without fees &amp; taxes and another transaction with taxes and fees for the cash dividend. </li>
 <li>buy the allocated shares at the same day with the theoretical historical quote and the associated fees and taxes.</li>
 </ul>
-<p>
-<figure pp-figure="pp-figure"><img src="../images/reinvesting-dividends-pp-implementation.png" /><figcaption>Implementation in PP</figcaption></figure>
-</p>
+<p><figure id="_figure-1"><figcaption>Figure 1.  Implementation in PP</figcaption><img alt="Implementation in PP" pp-figure="pp-figure" src="../images/reinvesting-dividends-pp-implementation.png"></figure></p>
 <p>Please note that in this example the total outflow is much larger the inflow from the dividend payment. This is because the number of reinvested shares is calculated on the gross amount. So, all taxes and fees are in surplus of this choice dividend.</p>
 
 

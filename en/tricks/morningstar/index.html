@@ -467,6 +467,8 @@
         
           
         
+          
+        
       
       
         
@@ -487,6 +489,20 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/financial-terminology/" class="md-nav__link">
+        Financial terminology
+      </a>
+    </li>
+  
+
             
           
             
@@ -602,6 +618,8 @@
         
           
         
+          
+        
       
       
         
@@ -632,6 +650,20 @@
     <li class="md-nav__item">
       <a href="../../procedures/importing/" class="md-nav__link">
         Importing CSV-files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../procedures/reinvesting-dividends/" class="md-nav__link">
+        Reinvesting dividends
       </a>
     </li>
   
@@ -761,13 +793,13 @@
 </div>
 <p>The website of Morningstar is quite famous for its extensive list of funds. With some magic, you can download historical data for specific funds from this website.</p>
 <p>First go to the Chart page for the fund (or trust or EFT) on the Morningstar website; e.g. <a href="https://www.morningstar.co.uk/uk/">https://www.morningstar.co.uk/uk/</a>. I will use the Baillie Gifford Positive Change Fund B Accumulation fund (ISIN GB00BYVGKV59) as an example.</p>
-<p>Remove any other benchmarks etc the are charted (this is not necessary, but makes things easier). Open your browser's "developer tools" which is F12 in Firefox &amp; Edge and probably other browsers as well. Go to the "Network" tab and press the clear button which looks like a bin; again, not necessary but makes things easier. Now press the "chart settings" button just above the chart, click "display options", and then click the "percentage" button - this switches the chart to show the actual fund price, rather than a percentage change, and handily for our purposes causes the Morningstar website to request a link that we can use in Portfolio Performance with a bit of modification. That link should display in the "network" screen of the browser's developer tools, so now right click on the entry that comes from the "tools.morningstar.co.uk 44" domain and is of type "json" and select the Copy-&gt;Copy URL option. The link should be</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://tools.morningstar.co.uk/api/rest.svc/timeseries_price/
+<p>Remove any other benchmarks etc. the are charted (this is not necessary, but makes things easier). Open your browser's "developer tools" which is F12 in Firefox &amp; Edge and probably other browsers as well. Go to the "Network" tab and press the clear button which looks like a bin; again, not necessary but makes things easier. Now press the "chart settings" button just above the chart, click "display options", and then click the "percentage" button - this switches the chart to show the actual fund price, rather than a percentage change, and handily for our purposes causes the Morningstar website to request a link that we can use in Portfolio Performance with a bit of modification. That link should display in the "network" screen of the browser's developer tools, so now right-click on the entry that comes from the "tools.morningstar.co.uk 44" domain and is of type "json" and select the Copy-&gt;Copy URL option. The link should be</p>
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://tools.morningstar.co.uk/api/rest.svc/timeseries_price/
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>t92wz0sj7c?currencyId=GBP<span class="err">&amp;</span>idtype=Morningstar<span class="err">&amp;</span>frequency=daily<span class="err">&amp;</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>startDate=2011-02-01<span class="err">&amp;</span>priceType=<span class="err">&amp;</span>outputType=COMPACTJSON<span class="err">&amp;</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>id=F00000ZB0M]2]0]FOGBR$$ALL<span class="err">&amp;</span>applyTrackRecordExtension=true
 </code></pre></div>
-You now need to change some of the options in the link and slightly simplify it as well so it becomes:</p>
+You now need to change some options in the link and slightly simplify it as well so it becomes:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>https://tools.morningstar.co.uk/api/rest.svc/timeseries_price/
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>t92wz0sj7c?currencyId=GBP<span class="err">&amp;</span>idtype=Morningstar<span class="err">&amp;</span>frequency=daily<span class="err">&amp;</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>outputType=JSON<span class="err">&amp;</span>startDate=2020-12-31<span class="err">&amp;</span>id=F00000ZB0M]2]0]
@@ -779,11 +811,8 @@ You now need to change some of the options in the link and slightly simplify it 
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Path to Date = $.TimeSeries.Security[*].HistoryDetail[*].EndDate
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Path to Close = $.TimeSeries.Security[*].HistoryDetail[*].Value
 </code></pre></div>
-<p>
-<figure><img src="../images/morningstar.png" /><figcaption>Fig 1: Example of JSON provider for historical quotes</figcaption>
-</figure>
-</p>
-<p>Always worth double checking the displayed values against the Morningstar chart.</p>
+<p><figure id="_figure-1"><figcaption>Figure 1.  Example of JSON provider for historical quotes</figcaption><img alt="Example of JSON provider for historical quotes" class="pp-figure" src="../images/morningstar.png"></figure></p>
+<p>Always worth double-checking the displayed values against the Morningstar chart.</p>
 
 
   
