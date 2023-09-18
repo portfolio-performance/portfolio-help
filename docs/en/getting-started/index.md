@@ -1,6 +1,6 @@
 ---
 title: Getting started
-lastUpdate: 2023-09-15
+lastUpdate: 2023-09-18
 ---
 
 In order for you to be able to track, evaluate and manage your securities, Portfolio Performance needs the basic data about your securities accounts and past transactions. After that, you can immediately make your first evaluations and analyze your portfolio and performance from different angles.
@@ -14,8 +14,8 @@ Your first step - of course - is to create a new portfolio file with your accoun
 # [Adding securities](adding-securities.md)
 You create the securities that are of interest to you in the list of securities. Master data and historical prices are automatically supplemented and updated by Portfolio Performance.
 
-# Build up inventories
-You fill the custody account and clearing account with balances and/or historical transactions for the first time.
+# [Manage your portfolio](manage-portfolio.md)
+So far you have created your portfolio file with a list of interesting securities. Now, it's time to buy and sell some of those securities, receive dividends, set up a savings plan, receive dividends, ....
 
 # Get reports on asset statement and performance
 How is your portfolio composed? The asset statement shows the composition of the portfolio as a list, in historical performance and as a pie chart. What is the current performance of your portfolio? In addition to evaluations of returns and volatility, you will receive an overview of the taxes and costs incurred.
