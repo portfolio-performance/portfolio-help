@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      showgrid="false"
-     inkscape:zoom="4.8669803"
-     inkscape:cx="604.89253"
-     inkscape:cy="274.29739"
+     inkscape:zoom="1.5507699"
+     inkscape:cx="634.52353"
+     inkscape:cy="424.30537"
      inkscape:window-width="3840"
      inkscape:window-height="2054"
      inkscape:window-x="-11"
@@ -42,28 +42,34 @@
        markerWidth="14.00024989"
        orient="auto-start-reverse"
        preserveAspectRatio="xMidYMid"
-       viewBox="0 0 7.7 5.6">
+       viewBox="0 0 7.7 5.6"
+       inkscape:stockid="Arrow2-2-1-0">
       <path
          transform="scale(0.7)"
          d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
          fill="context-stroke"
          fill-rule="evenodd"
-         id="path3424" />
+         id="path3424"
+         style="stroke-opacity:1.0;stroke:#f9f9f9;fill-opacity:1.0;fill:#f9f9f9" />
     </marker>
     <marker
        id="Arrow2"
        overflow="visible"
-       markerHeight="5.5999999"
-       markerWidth="7.6999998"
+       markerHeight="5.59999986"
+       markerWidth="7.69999981"
        orient="auto-start-reverse"
        preserveAspectRatio="xMidYMid"
-       viewBox="0 0 7.7 5.6">
+       viewBox="0 0 7.7 5.6"
+       refX="0.0"
+       refY="0.0"
+       inkscape:stockid="Arrow2">
       <path
          transform="scale(0.7)"
          d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
          fill="context-stroke"
          fill-rule="evenodd"
-         id="path3421" />
+         id="path3421"
+         style="stroke-opacity:1.0;stroke:#f9f9f9;fill-opacity:1.0;fill:#f9f9f9" />
     </marker>
     <marker
        overflow="visible"
@@ -132,6 +138,21 @@
          fill-rule="evenodd"
          id="path2"
          style="fill:#f9f9f9;fill-opacity:1.0;stroke:#f9f9f9;stroke-opacity:1.0" />
+    </marker>
+    <marker
+       id="Arrow2-2-1-0-8"
+       overflow="visible"
+       markerHeight="10.182"
+       markerWidth="14.00025"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid"
+       viewBox="0 0 7.7 5.6">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         fill="context-stroke"
+         fill-rule="evenodd"
+         id="path3424-8" />
     </marker>
   </defs>
   <metadata
@@ -321,7 +342,7 @@
      stroke="#000000"
      stroke-width="0.793737"
      id="path3439"
-     style="fill:none;stroke:#ffff00;stroke-width:1;stroke-dasharray:none"
+     style="fill:none;stroke:#f9f9f9;stroke-width:1;stroke-dasharray:none;font-variation-settings:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#Arrow2-2-1-0);stop-color:#000000;stop-opacity:1"
      sodipodi:nodetypes="cc" />
   <path
      d="m 558.0081,175.49049 113.26807,0"
@@ -555,7 +576,7 @@
      marker-end="url(#Arrow2)"
      stroke-dasharray="3.17494, 0.793741"
      id="path3445"
-     style="fill:none;stroke:#f9f9f9;stroke-width:1;stroke-linecap:butt;stroke-dasharray:3.99999, 1.00001;stroke-dashoffset:0" />
+     style="fill:none;stroke:#f9f9f9;stroke-width:1.00000105;stroke-linecap:butt;stroke-dasharray:3.99999419, 1.00001106;stroke-dashoffset:0;marker-end:url(#Arrow2)" />
   <path
      d="m 268.62983,205.58978 v 21.0916 H 115.11667"
      marker-end="url(#Arrow2)"

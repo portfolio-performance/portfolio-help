@@ -10,7 +10,7 @@ Immediately after the previous "Create portfolio" step, the application's main s
 
 The list contains all the securities you are interested in; not necessarily the ones you have bought. At the moment, it's still empty.
 
-![Figure 1: Main screen after creating a new portfolio](images/adding-securties-starting-screen.svg){.pp-figure}
+![Main screen after creating a new portfolio](images/adding-securties-starting-screen.svg){.pp-figure}
 
  The `Add new investment instrument` button allows you to start adding securities to your portfolio. As you can see in Figure 1, you can add new instruments (stocks, bonds, ...), cryptocurrencies, exchange rates. You can also import securities from a CSV-file or to create a new empty security.
 
@@ -20,7 +20,7 @@ The list contains all the securities you are interested in; not necessarily the 
 
  Selecting the New > Security (menu) or New instrument ... (button) opens the following window (see Figure 2).
 
- ![Figure 2: Searching and adding new securities to the All Securities list](images/adding-securties-new-security.svg){.pp-figure}
+ ![Searching and adding new securities to the All Securities list](images/adding-securties-new-security.svg){.pp-figure}
 
  You can type (part of) the security name in the search box. You can search for shares or bonds or both. After clicking the Search button, the list below will be populated with possible target instruments.
 
@@ -37,13 +37,13 @@ The list contains all the securities you are interested in; not necessarily the 
 
  Once you have selected the correct security, you need to click on the Apply button to proceed to the next step. Some information such as name, symbol and historical quotes will already be filled in, based on the selected data source. You can/should change all this info; even the name. In fact, it's even possible to start from an empty instrument and fill in this information yourself.
 
- ![Figure 3: Panel for entering info about the selected security.](images/adding-securities-additional-info.png){.pp-figure}
+ ![Panel for entering info about the selected security.](images/adding-securities-additional-info.png){.pp-figure}
 
 It's very important that you select the correct currency in which your security is traded. For NVIDIA on Nasdaq, this is USD, which may be different from the default currency of your portfolio.
 
 The Calendar dropdown allows you to select a specific stock market calendar; e.g. Euronext, London Stock Exchange, New York Stock Exchange, ... These calendars contain info about trading days, (bank) holidays, ... for this specific exchange. These dates will affect some calculations, the display of price gaps and the execution of savings plans. You can view the different calendars available with their respective dates from the `Help > Preferences > Calendar` menu. See for example the specific dates for the New York Stock Exchange in Figure 4. 
 
-![Figure 4: NYSE calendar with some specific dates.](images/adding-securities-calendar-preferences.png){.pp-figure}
+![NYSE calendar with some specific dates.](images/adding-securities-calendar-preferences.png){.pp-figure}
 
 A security can be set to active or inactive. If it is set to inactive, then the security will not appear in buy or sell dialogs and the historical prices will not be updated automatically.
 
@@ -59,13 +59,14 @@ Click on the `+ button` to add a new attribute such as Logo, Total Expense Ratio
 
 Additional attributes are defined in `(left) Sidebar > General Data > Settings > Attributes : Securities` (at the bottom).
 
-![Figure 5: Defining additional attributes.](images/adding-securities-additional-attributes.png){.pp-figure}
+![Defining additional attributes.](images/adding-securities-additional-attributes.png){.pp-figure}
 
 ## Taxonomies
 
 <figure style="float: right; width: 40%">
-  <img src="../images/adding-securities-taxonomies.png" alt="Figure 6">
   <figcaption>Figure 6: Managing taxonomies.</figcaption>
+  <img src="../images/adding-securities-taxonomies.png" alt="Figure 6">
+  
 </figure>
 
 
@@ -80,11 +81,11 @@ You can select these taxonomies in the `Left sidebar > Taxonomies` (see figure 6
 
 For evaluating your portfolio, you need the current & historical prices of the security. In this panel (see Figure 7) you can set the data source of the Quote Feed. As provider, you can choose between several alternatives: Yahoo Finance, Alpha Vantage, Quandl, .... You can even refer to a webpage (e.g. from an investor site) that contains these historical data; see for example [Morningstar](../tricks/morningstar.md). Or you can create them yourself and import the quotes with a csv-file.
 
-![Figure 7: Historical quotes.](images/adding-securities-historical-quotes.png){.pp-figure}
+![Historical quotes.](images/adding-securities-historical-quotes.png){.pp-figure}
 
 ## Latest Quote.
 
 The latest (most recent) quote can be retrieved from the same data source as the (older) historical prices. However, this data source may be returning only daily quotes. If you want more recent prices from another source, you can use this panel (see Figure 8).
 
-![Figure 8: Latest Quote](images/adding-securities-latest-quote.png){.pp-figure}
+![Latest Quote](images/adding-securities-latest-quote.png){.pp-figure}
 

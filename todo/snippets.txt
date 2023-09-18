@@ -1,0 +1,5 @@
+<figure class="inline end" markdown>
+  ![](images/transaction-types.png)
+  <figcaption>Figure 1: Transaction menu</figcaption>
+</figure>
+

@@ -4,7 +4,7 @@ lastUpdate: 2023-09-05
 ---
 In PP you can enter your transactions (buy, sell, dividends, … ) manually but you can also *import* those transactions from a CSV file (comma-separated values) or from a PDF document. Not all brokers, however, provide the format that PP needs. So, how should this CSV-file look? Suppose, you want to import the following transaction.
 
-![Fig 1: Buying transaction example for import](images/import-buy-transaction.png)
+![Buying transaction example for import](images/import-buy-transaction.png){.pp-figure}
 
 As you can see in figure 1, the following PP fields are  used: Security Name (share-2), the implied currency (USD), Securities Account (Broker-A), Deposit Account (Broker-A (EUR), Date & time, number of Shares (10), buying quote (5 USD), Gross Amount in USD (50), Exchange Rate (1.0785 EUR/USD), Gross Amount in EUR(46.36), Fees USD and EUR), Taxes (USD and EUR), Value or Debit Note (55.21), and a note (My Note). You don't have to provide all fields in the CSV-file; some of them aren't even possible e.g. implied currency and fees/taxes in the foreign currency.
 
@@ -18,7 +18,7 @@ Share-2,buy,2023-06-01, 20
 
 PP distinguishes between 5 types of import: Account Transactions, Portfolio Transactions, Securities, Historical Quotes, and Securities Account (see figure 2). To correctly use a type and import the data into PP, the CSV file must contain specific fields. Depending on the type of account, there are other required and optional fields.
 
-![Fig 2: Import dialog window with the 5 types](images/import-types.png)
+![Import dialog window with the 5 types](images/import-types.png){.pp-figure}
 
 The difference between each type is rather nebulous and not very good documented. The following definitions are tentative.
 
@@ -34,7 +34,7 @@ The difference between each type is rather nebulous and not very good documented
 
 Each type has required and optional fields. For example, the Historical Quotes type only needs the Date and the Quote. Instead of repeating the name of the share again and again for each date, you can select the security in the next pop-up window. The Account Transactions type has two required Fields: Value and Date. The Portfolio Transactions has three required fields: Value, Date, and Shares (see figure 3).
 
-![Fig 3: Required and optional fields for the 5 types of import](images/import-required-optional-fields.png)
+![Required and optional fields for the 5 types of import](images/import-required-optional-fields.png){.pp-figure}
 
 
 ## Importing buy/sell transactions
@@ -59,18 +59,18 @@ Date,Type,Security Name,Shares,Fees,Taxes,Value,Exchange Rate
 
 ## Importing dividends
 
-![Fig 4: Dividend transaction example for import](images/import-dividend-transaction.png)
+![Dividend transaction example for import](images/import-dividend-transaction.png){.pp-figure}
 
 
 Suppose that your broker can deliver a CSV-file with all the dividend payments from a past period. Of course, you would like to import this file in stead of entering manually all these dividend payments. The file content looks something like this (see figure 1 below).
 
-![Fig 5: CSV table for importing two dividends](images/import-dividend-csv-table.png)
+![CSV table for importing two dividends](images/import-dividend-csv-table.png){.pp-figure}
 
 Unfortunately, this is not enough information to use the Import CSV-function. From the three available columns of the CSV-file, two of them are recognized by PP: ISIN and Date (see figure 6). For the column Payment, you have to map this field to one of the PP fields. Because, it is a dividend you need to use the import type Account transactions. A dividend payment is a simple deposit transaction, which has no implications on the securities account.
 
 According to the pop-up message of figure 6, there are two required fields: Date and Value, of which the last one is unmapped. This is because the name that your broker uses (Payment) is different from the required name (Value). You can however, double click on the Payment column to choose the correct field name.
 
-![Fig 6: Dialog box for importing dividends](images/import-CSV-dialog.png)
+![Dialog box for importing dividends](images/import-CSV-dialog.png){.pp-figure}
 
 
 But how is PP able to recreate a dividend payment with only these two fields (date, value). It can't! You can only use this import to create a deposit in a Security and Cash account. If you want to create a dividend, you should also specify a type: Dividend. Specifying a number of shares or fees/taxes will also do the job.
@@ -86,7 +86,7 @@ dividend, 2022-01-01, BE0974258874, 40
 
     + This will result in the following "dividend" transaction.
 
-![Fig 7: Simplified buying transaction example for import](images/import-buy-transaction-simplified.png)
+![Simplified buying transaction example for import](images/import-buy-transaction-simplified.png){.pp-figure}
 
 Adding Fees and Taxes will calculate the Gross Amount. You cannot specify the Gross Amount in itself. Adding the number of Shares will calculate the dividend payment/share. It is also not possible to specify this in itself. So, a typical CSV-file for a dividend payment in the currency of the Cash account will look like:
 

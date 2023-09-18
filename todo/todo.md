@@ -47,5 +47,16 @@ Upon creating a security, you can specify a Calendar in the Security Master Data
 ### 2023-09-16 (question)
 At the moment there is a top-level menu item called "Tips & tricks". Isn't this too informal? Replacing with "Advanced topics"?
 
-Also the top-level item "Common procedures" may seem to generic. Other suggestions?
+Also the top-level item "Common procedures" may seem too generic. Other suggestions?
+
+### 2023-09-17 (info)
+Images are added with mkdocs plugin [MkDocs Caption](https://pypi.org/project/mkdocs-caption/). This plugin will put the image within a Figure HTML-element and will add a caption based on the Alt-field (between brackets). This caption will be auto-numbered as Figure 1, Figure 2, ...
+
+Some customizations are possible. Still need to figure out how to style a right-aligned image.
+
+Before I used the markdown extension [markdown-captions](https://github.com/evidlo/markdown_captions)
+
+### 2023-09-18 (info)
+There was a question about a kind of styleguide for the PP manual. Maybe we can use the APA styleguide as reference. For example, the caption of a figure should be placed on top of the figure with label Figure 1. Normally the caption itself should be at the next line in bold or italic.
+Partially implemented it with the mkdocs-caption plugin.
 

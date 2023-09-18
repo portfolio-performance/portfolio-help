@@ -66,6 +66,10 @@ extra:
 plugins:
   - search:
       lang: en
+  - caption:
+      figure:
+        caption_prefix: 'Figure {index}. '
+        position: top
 
 markdown_extensions:
   - admonition
@@ -78,7 +82,6 @@ markdown_extensions:
       permalink: true
   - attr_list
   - md_in_html
-  - markdown_captions
   - tables
 
 nav:
@@ -90,6 +93,7 @@ nav:
       - Adding securities: getting-started/adding-securities.md
   - Basic concepts:
       - Basic concepts: concepts/index.md
+      - Financial terminology: concepts/financial-terminology.md
       - Account: concepts/account.md
       - Transaction: concepts/transaction.md
       - Reporting period: concepts/reporting-period.md
@@ -99,6 +103,7 @@ nav:
   - Common procedures:
       - Common procedures: procedures/index.md
       - Importing CSV-files: procedures/importing.md
+      - Reinvesting dividends: procedures/reinvesting-dividends.md
   - Tips & tricks:
       - Tips & tricks: tricks/index.md
       - Import fund data from Morningstar: tricks/morningstar.md

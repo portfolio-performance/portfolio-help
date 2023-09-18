@@ -6,13 +6,15 @@ The Purchase Value of a security is the summed value of each buy (+) and sell 
 
 If the purchase date lies before the beginning of the reporting period, then the value at the beginning of the period is taken. If the purchase date lies within the period, then the value at the purchase date is used. However, if the purchase data is later than the end of the reporting period, then the purchase is not taken into account for the calculation of the purchase value. Purchase Value and Purchase Price are used in Reports > Performance > Securities (see figure 1)
 
-![Fig. 1: Purchase value of a security](images/purchase-value-reports-securities.png)
+![Purchase value of a security](images/purchase-value-reports-securities.png){.pp-figure}
 
 Assume the following scenario. We are now 2023, May, 15th and you have bought 30 shares at different times and quotes (see figure 2). An overview of all buys and their respective quotes is shown in figure.
 
-![Fig. 2: List of Buy transactions of security example](images/purchase-value-all-transactions-buy-only.png)
+![List of Buy transactions of security example](images/purchase-value-all-transactions-buy-only.png){.pp-figure}
 
-The reported purchase value of a particular security is dependent upon the selected reporting period. In the table below, you can see that the purchase value of this simple transaction, can vary between 3300 EUR and 500 EUR, depending on the selected period.
+The reported purchase value of a particular security is dependent upon the selected reporting period. In the Table 1, you can see that the purchase value of this simple transaction, can vary between 3300 EUR and 500 EUR, depending on the selected period.
+
+Table: Three reporting periods based on the current day (2023-05-15)
 
 | Period | From … to … | Purchase Value |
 | --- | --- | --- |
@@ -27,14 +29,14 @@ The 2 years period starts at 2021, May 15. Only the third buy falls within the p
 
 The 3 years period start at 2020, May 15. The second and third buy lie within the reporting period and are evaluated at their respective quotes: 10 shares at 90 EUR (= 900 EUR) and 15 shares at 110 EUR (= 1650 EUR). The beginning of the period or Statement of Assets is the result of the first buy (2020, Jan 1) takes the quote from the beginning of the period (2020, May 15) which is the same as the purchase quote (e.g. 100 EUR); resulting in a purchase of 5 * 100 EUR = 500 EUR.
 
-The previous explanation can be seen in the pop-over, when hovering the mouse over the Purchase Value (see figure below).
+The previous explanation can be seen in the pop-over, when hovering the mouse over the Purchase Value (see Figure 3).
 
-![purchase-value-pop-over.png](images/purchase-value-pop-over.png)
+![Pop-over panel for Purchase value field.](images/purchase-value-pop-over.png){.pp-figure}
 
 The custom period (from 2000, Jan 1 (not included) until 2020, Jan 1 (included) has a Purchase Value of 500 EUR because it contains only the first buy (= 5 * 100 EUR). The second and third buy or not taken into account because they occur later than the period end.
-Things become more complicated -but with the same logic- when there are also sell transactions. Important to remember is that PP use a FIFO (First In, First OUT) method to calculate the result of a sell transaction. Suppose that you did a (rather bad timed) sell at 2021, Jul 1 2020 of 12 shares (see figure below).
+Things become more complicated -but with the same logic- when there are also sell transactions. Important to remember is that PP use a FIFO (First In, First OUT) method to calculate the result of a sell transaction. Suppose that you did a (rather bad timed) sell at 2021, Jul 1 2020 of 12 shares (see Figure 4).
 
-![purchase-value-all-transaction-buy-sell.png](images/purchase-value-all-transaction-buy-sell.png)
+![Overview and graph of all buy and sell transactions.](images/purchase-value-all-transaction-buy-sell.png)
 
 At that moment there were 15 shares available (5 at 100 EUR and 10 at 90 EUR). Selling 12 of them will first sell the 5 shares of 100 EUR and then another 2 of 90 EUR, leaving 3 shares of 90 EUR available.
 

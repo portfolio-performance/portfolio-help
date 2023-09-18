@@ -10,12 +10,12 @@ Other related terms are “Investment Plans”, “All Transactions”, “Refer
 
 # Deposit account
 
-![Figure 1: Example of a Deposit Account.](images/account-types-deposit.png){ pp-figure } 
+![Example of a Deposit Account.](images/account-types-deposit.png){ pp-figure } 
 
 In Figure 1, there are two deposit accounts; named EUR and USD (in column Cash Account). They are used for deposits and withdrawals in EUR and USD respectively. It's a bit redundant to call them “EUR” and “USD” because you also need to specify the currency that the account will use (see third column in figure). For example, if you want to book a dividend in EUR, you will see the following dialog box (see fig 2). The cash account can be selected from a drop-down list and the correct currency will be automatically.
 
 
-![Figure 2: Deposit Account with redundant Currency.](images/account-dividend-booking.png)
+![Deposit Account with redundant Currency.](images/account-dividend-booking.png)
 
 
 You can use other names depending on your needs. For example, if you want to keep all your dividends or taxes in a separate account, you could name it “Dividends” and “Taxes” in stead of EUR and USD. Of course, you will also need to decide which currency that will be used for them. And, if you receive dividends in both EUR and USD then you need two deposit accounts with the name “Dividends” but with different currencies.
@@ -28,7 +28,7 @@ A deposit account is used to transfer or receive money as the result of a transa
 
 A security account will hold your securities and will be used for buying or selling securities. A security account is most of the time named after the broker or bank that you use to buy or sell.
 
-![Figure 3: Example of Securities accounts.](images/account_securities.png)
+![Example of Securities accounts.](images/account_securities.png)
 
 
 
