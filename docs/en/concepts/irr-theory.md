@@ -10,6 +10,8 @@ The Internal Rate of Return (IRR) measures the performance of an investment betw
 $CF_{t0}$ is the initial cashflow at time $t_0$. It is the sum of all in- and outflows at that moment in time and represents your initial investment. $CF_{t1}$, $CF_{tn}$ are the -hopefully positive- net cashflows that your initial investment will yield. PP works with periods of 1 day instead of the classical periods of 1 year. Therefore $t_1$, $t_2$, $t_n$ should be converted to the number of days between $t_0$ and $t_n$. Of course, if the period between $t_0$ and $t_n$ is  for example 365 days, the exponent becomes 1. Eq (1) is a direct derivation from the classic formula of [present value](images/irr-future-present-value.svg).
 
 A simple example. There is also a [IRR Practical example step-by-step](irr-example.md), solved in PP. On 2021-01-15 you have bought 10 shares at 17 EUR. Now (2023-06-15) the price has increased to 18.5 EUR. Meanwhile, you have received a dividend of 1.5 EUR/share on 2021-09-10 and a second dividend of 1.7 EUR/share on 2022-09-10. What is the performance or IRR of this security? Let's first have the timing and cashflows correct.
+
+
 Table: Cash flows at different times of investment.
 
 | Date       | $t_n$ | $CF_n$           |
