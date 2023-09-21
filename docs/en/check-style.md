@@ -1,7 +1,4 @@
----
-title: About this manual
-date: 2023-09-21
----
+Certainly, here's an improved version of the provided markdown text:
 
 # About this Manual
 
