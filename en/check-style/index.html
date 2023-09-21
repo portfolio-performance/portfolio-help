@@ -21,7 +21,7 @@
     
     
       
-        <title>Check style - Portfolio Performance Manual</title>
+        <title>Basic Concepts - Portfolio Performance Manual</title>
       
     
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#about-this-manual" class="md-skip">
+        <a href="#basic-concepts" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Check style
+              Basic Concepts
             
           </span>
         </div>
@@ -778,34 +778,17 @@
   
 
 
-<p>Certainly, here's an improved version of the provided markdown text:</p>
-<h1 id="about-this-manual">About this Manual<a class="headerlink" href="#about-this-manual" title="Permanent link">¶</a></h1>
-<p>The <em>Portfolio Performance (PP)</em> manual consists of four chapters:</p>
+<h1 id="basic-concepts">Basic Concepts<a class="headerlink" href="#basic-concepts" title="Permanent link">¶</a></h1>
+<p>In this chapter, you'll find a concise yet clear explanation of several fundamental concepts crucial for understanding portfolio performance. It's essential to grasp these concepts to avoid miscalculations or misinterpretations of the numbers.</p>
 <ul>
-<li><a href="../getting-started/">Getting Started</a>: If you're new to PP, this chapter will help you get started. It covers everything from installation to creating a new portfolio, importing securities and transaction data, and evaluating your entire portfolio.</li>
-<li><a href="../concepts/">Basic Concepts</a>: Although PP is a highly intuitive and user-friendly program, the underlying financial concepts can be complex. This chapter provides a concise yet clear understanding of key Portfolio Performance concepts, such as accounts, transactions, reporting periods, IRR, and more.</li>
-<li><a href="../procedures/">Common Procedures</a>: In this chapter, you'll find step-by-step descriptions of common procedures, including data import, dividend booking, finding historical quotes, and more.</li>
-<li><a href="../tricks/">Tips &amp; Tricks</a>: The financial world is filled with intricacies and special cases. For example, no broker uses the exact same terminology or bank statement. In this chapter, you'll discover useful tips and tricks to navigate these special cases.</li>
+<li><a href="financial-terminology.md">Financial Terminology</a>: Understanding basic financial terminology is crucial for optimal use of PP and this manual. This page contains links to excellent resources.</li>
+<li><a href="account.md">Account</a>: An account in PP can take various forms: Securities, Deposit, Reference, Cash, Offset, etc. Learn what these terms mean and how they differ.</li>
+<li><a href="transaction.md">Transaction</a>: A financial transaction is an agreement between a buyer and seller to exchange goods, services, or assets for payment. In the case of PP, transactions involve securities. There are security transactions such as buy, sell delivery (inbound), and delivery (outbound); deposit transactions such as deposit, removal, interest, interest charge, fees, fees refund, taxes, and tax refund; and dividend transactions.</li>
+<li><a href="reporting-period.md">Reporting Period</a>: The (reporting) period is the time frame considered for reporting (calculations, graphs, statistics). It's crucial to realize that every performance calculation considers a reporting period, even if not explicitly set.</li>
+<li><a href="purchase-value.md">Purchase Value</a>: The Purchase Value of a security is the total value of each buy (+) and sell (-) transaction for that security, factoring in the reporting period. The transaction value includes taxes and fees and is sometimes referred to as "Net Transaction Value."</li>
+<li><a href="irr-theory.md">Internal Rate of Return (IRR)</a>: IRR measures the performance of an investment between two dates. It's expressed as an annual interest rate required to bring the initial value of the investment at time \(t_{0}\) to the final value at time \(t_{n}\).</li>
+<li><a href="irr-example.md">Extensive Simplified Example</a>: Explore a comprehensive yet simplified example covering different IRR calculations, including trade, security, and performance for various reporting periods (1, 2, and 3 years).</li>
 </ul>
-<h1 id="about-portfolio-performance">About Portfolio Performance<a class="headerlink" href="#about-portfolio-performance" title="Permanent link">¶</a></h1>
-<p>PP is an Eclipse-based desktop application written in Java. This open-source project started in 2012 and has been <a href="https://github.com/portfolio-performance/portfolio/releases">updated</a> numerous times. With PP, you can:</p>
-<ul>
-<li>Monitor the composition and development of your securities portfolio with meaningful overviews, key figures, and charts.</li>
-<li>Track the historical price development of securities and your purchases and sales.</li>
-<li>Classify the securities in your portfolio according to your needs and visualize the composition, such as by asset classes and regions.</li>
-<li>Define and track the portfolio strategy with your planned asset allocation and ensure it in the rebalancing process.</li>
-<li>Create an overview across multiple securities accounts and clearing accounts.</li>
-<li>Import statements from online banks and brokers quickly and conveniently.</li>
-</ul>
-<p>Why choose yet another application? While you can simulate some of these calculations with Excel or rely on your broker for information, they often provide incorrect results. They are typically based solely on absolute figures at the beginning and end of a reporting period and do not properly include purchases and sales or variable reporting periods. PP calculates performance accurately using True-Time Weighted Rate of Return and Internal Rate of Return, taking into account the purchases and sales at their respective execution date.</p>
-<h1 id="other-information-sources">Other Information Sources<a class="headerlink" href="#other-information-sources" title="Permanent link">¶</a></h1>
-<p>The source code is hosted on <a href="https://github.com/portfolio-performance/portfolio">GitHub</a>. Examining this code will give you direct access to the inner workings of the program.</p>
-<p>There is also an active <a href="https://forum.portfolio-performance.info/">discussion forum</a> available in both English and German, with an extensive <a href="https://forum.portfolio-performance.info/t/faq-haeufig-gestellte-fragen/1721">Frequently Asked Questions (FAQ)</a> section.</p>
-<h1 id="license">License<a class="headerlink" href="#license" title="Permanent link">¶</a></h1>
-<p>This manual is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. The <a href="https://github.com/portfolio-performance/portfolio">source code</a> of <a href="https://www.portfolio-performance.info">Portfolio Performance</a> is licensed under the <a href="https://github.com/portfolio-performance/portfolio/blob/master/LICENSE">Eclipse Public License 1.0</a>.</p>
-<p>Thanks to all <a href="https://github.com/portfolio-performance/portfolio-help/graphs/contributors">contributors</a>!</p>
-<h2 id="imprint">Imprint<a class="headerlink" href="#imprint" title="Permanent link">¶</a></h2>
-<p>For more information, please see the <a href="https://www.portfolio-performance.info/portfolio/impressum.html">Imprint and Privacy Policy</a>.</p>
 
 
   
