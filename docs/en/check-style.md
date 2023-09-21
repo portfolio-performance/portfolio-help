@@ -1,39 +1,16 @@
-Certainly, here's an improved version of the provided markdown text:
+---
+Title: Basic concepts
+Last Update: 2023-09-14
+---
 
-# About this Manual
+# Basic Concepts
 
-The *Portfolio Performance (PP)* manual consists of four chapters:
+In this chapter, you'll find a concise yet clear explanation of several fundamental concepts crucial for understanding portfolio performance. It's essential to grasp these concepts to avoid miscalculations or misinterpretations of the numbers.
 
-- [Getting Started](getting-started/index.md): If you're new to PP, this chapter will help you get started. It covers everything from installation to creating a new portfolio, importing securities and transaction data, and evaluating your entire portfolio.
-- [Basic Concepts](concepts/index.md): Although PP is a highly intuitive and user-friendly program, the underlying financial concepts can be complex. This chapter provides a concise yet clear understanding of key Portfolio Performance concepts, such as accounts, transactions, reporting periods, IRR, and more.
-- [Common Procedures](procedures/index.md): In this chapter, you'll find step-by-step descriptions of common procedures, including data import, dividend booking, finding historical quotes, and more.
-- [Tips & Tricks](tricks/index.md): The financial world is filled with intricacies and special cases. For example, no broker uses the exact same terminology or bank statement. In this chapter, you'll discover useful tips and tricks to navigate these special cases.
-
-# About Portfolio Performance
-
-PP is an Eclipse-based desktop application written in Java. This open-source project started in 2012 and has been [updated](https://github.com/portfolio-performance/portfolio/releases) numerous times. With PP, you can:
-
-- Monitor the composition and development of your securities portfolio with meaningful overviews, key figures, and charts.
-- Track the historical price development of securities and your purchases and sales.
-- Classify the securities in your portfolio according to your needs and visualize the composition, such as by asset classes and regions.
-- Define and track the portfolio strategy with your planned asset allocation and ensure it in the rebalancing process.
-- Create an overview across multiple securities accounts and clearing accounts.
-- Import statements from online banks and brokers quickly and conveniently.
-
-Why choose yet another application? While you can simulate some of these calculations with Excel or rely on your broker for information, they often provide incorrect results. They are typically based solely on absolute figures at the beginning and end of a reporting period and do not properly include purchases and sales or variable reporting periods. PP calculates performance accurately using True-Time Weighted Rate of Return and Internal Rate of Return, taking into account the purchases and sales at their respective execution date.
-
-# Other Information Sources
-
-The source code is hosted on [GitHub](https://github.com/portfolio-performance/portfolio). Examining this code will give you direct access to the inner workings of the program.
-
-There is also an active [discussion forum](https://forum.portfolio-performance.info/) available in both English and German, with an extensive [Frequently Asked Questions (FAQ)](https://forum.portfolio-performance.info/t/faq-haeufig-gestellte-fragen/1721) section.
-
-# License
-
-This manual is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). The [source code](https://github.com/portfolio-performance/portfolio) of [Portfolio Performance](https://www.portfolio-performance.info) is licensed under the [Eclipse Public License 1.0](https://github.com/portfolio-performance/portfolio/blob/master/LICENSE).
-
-Thanks to all [contributors](https://github.com/portfolio-performance/portfolio-help/graphs/contributors)!
-
-## Imprint
-
-For more information, please see the [Imprint and Privacy Policy](https://www.portfolio-performance.info/portfolio/impressum.html).
+- [Financial Terminology](financial-terminology.md): Understanding basic financial terminology is crucial for optimal use of PP and this manual. This page contains links to excellent resources.
+- [Account](account.md): An account in PP can take various forms: Securities, Deposit, Reference, Cash, Offset, etc. Learn what these terms mean and how they differ.
+- [Transaction](transaction.md): A financial transaction is an agreement between a buyer and seller to exchange goods, services, or assets for payment. In the case of PP, transactions involve securities. There are security transactions such as buy, sell delivery (inbound), and delivery (outbound); deposit transactions such as deposit, removal, interest, interest charge, fees, fees refund, taxes, and tax refund; and dividend transactions.
+- [Reporting Period](reporting-period.md): The (reporting) period is the time frame considered for reporting (calculations, graphs, statistics). It's crucial to realize that every performance calculation considers a reporting period, even if not explicitly set.
+- [Purchase Value](purchase-value.md): The Purchase Value of a security is the total value of each buy (+) and sell (-) transaction for that security, factoring in the reporting period. The transaction value includes taxes and fees and is sometimes referred to as "Net Transaction Value."
+- [Internal Rate of Return (IRR)](irr-theory.md): IRR measures the performance of an investment between two dates. It's expressed as an annual interest rate required to bring the initial value of the investment at time \\(t_{0}\\) to the final value at time \\(t_{n}\\).
+- [Extensive Simplified Example](irr-example.md): Explore a comprehensive yet simplified example covering different IRR calculations, including trade, security, and performance for various reporting periods (1, 2, and 3 years).
