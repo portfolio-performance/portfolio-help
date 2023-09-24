@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="775.49347"
+   height="378.52103"
+   viewBox="0 0 205.18264 100.15035"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="info-transaction-types.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#1e211a"
+     borderopacity="0.82745098"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8003756"
+     inkscape:cx="402.08893"
+     inkscape:cy="236.39686"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:pagecheckerboard="true"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     showborder="false"
+     inkscape:showpageshadow="false"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid833"
+       dotted="false"
+       originx="159.69869"
+       originy="71.473986"
+       units="px"
+       spacingx="5.2916667"
+       spacingy="5.2916667"
+       empspacing="6"
+       visible="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker44"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="marker44"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:#00ff00;fill-opacity:1;fill-rule:evenodd;stroke:#00ff00;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         transform="scale(-0.5)"
+         id="path44" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DartArrow"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="DartArrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         transform="scale(-0.5)"
+         id="path6" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="background"
+     style="display:inline"
+     transform="translate(41.308797,-0.52288671)">
+    <rect
+       style="opacity:1;fill:#ffffff;stroke:#ffffff;stroke-width:0.264582;stroke-dasharray:0.529167, 0.264582;stroke-dashoffset:0"
+       id="rect44"
+       width="204.91806"
+       height="99.885773"
+       x="-41.176506"
+       y="0.65517771"
+       ry="2.1552799e-14"
+       sodipodi:insensitive="true" />
+  </g>
+  <g
+     inkscape:label="boxes"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="fill:none;stroke:#1a1a1a"
+     transform="translate(42.253611,18.910825)">
+    <rect
+       style="opacity:1;fill:none;stroke:#1a1a1a;stroke-width:0.529167;stroke-dasharray:none"
+       id="rect1"
+       width="32.583229"
+       height="35.170292"
+       x="13.09411"
+       y="13.040751"
+       ry="6.1013202e-15" />
+    <rect
+       style="opacity:1;fill:none;stroke:#1a1a1a;stroke-width:0.529167;stroke-dasharray:none"
+       id="rect2"
+       width="32.583229"
+       height="35.170292"
+       x="122.51094"
+       y="13.040751"
+       ry="6.1013202e-15" />
+    <rect
+       style="fill:none;stroke:#333333;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       id="rect4"
+       width="25.634853"
+       height="15.345832"
+       x="125.98513"
+       y="-14.593615"
+       ry="2.6621852e-15" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       x="138.65579"
+       y="-8.1421604"
+       id="text6"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+         x="138.65579"
+         y="-8.1421604"
+         id="tspan7">DELIVERY</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+         x="138.65579"
+         y="-3.9088306"
+         id="tspan8">(inbound)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#333333;stroke:none;stroke-width:0.264583"
+       x="29.407429"
+       y="29.895191"
+       id="text12"><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583"
+         x="29.407429"
+         y="29.895191"
+         id="tspan11">Deposit</tspan><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583"
+         x="29.407429"
+         y="34.834091"
+         id="tspan12">Account</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#333333;stroke:none;stroke-width:0.264583"
+       x="138.78688"
+       y="29.925335"
+       id="text15"><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583"
+         x="138.78688"
+         y="29.925335"
+         id="tspan14">Securities</tspan><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583"
+         x="138.78688"
+         y="34.864235"
+         id="tspan15">Account</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5875, 1.5875;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#DartArrow)"
+       d="m 45.799682,20.713668 c 21.107995,1e-6 21.107995,1e-6 21.107995,1e-6"
+       id="path17" />
+    <path
+       style="fill:none;stroke:#00ff00;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5875, 1.5875;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker44)"
+       d="m 70.555145,40.670422 c -20.824546,10e-7 -20.824546,10e-7 -20.824546,10e-7"
+       id="path25" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       x="83.268089"
+       y="22.451206"
+       id="text10"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+         x="83.268089"
+         y="22.451206"
+         id="tspan10">BUY</tspan></text>
+    <rect
+       style="fill:none;stroke:#333333;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       id="rect26"
+       width="25.634853"
+       height="15.345832"
+       x="70.612236"
+       y="13.040752"
+       ry="2.6621852e-15" />
+    <rect
+       style="fill:none;stroke:#333333;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       id="rect26-8"
+       width="27.677677"
+       height="15.345832"
+       x="-39.347385"
+       y="3.2444553"
+       ry="2.6621852e-15" />
+    <rect
+       style="fill:none;stroke:#333333;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       id="rect27"
+       width="25.634853"
+       height="15.345832"
+       x="125.98513"
+       y="60.499577"
+       ry="2.6621852e-15" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       x="138.65579"
+       y="67.125534"
+       id="text28"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+         x="138.65579"
+         y="67.125534"
+         id="tspan27">DELIVERY</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+         x="138.65579"
+         y="71.358864"
+         id="tspan28">(outbound)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       x="83.406754"
+       y="42.438103"
+       id="text30"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+         x="83.406754"
+         y="42.438103"
+         id="tspan30">SELL</tspan></text>
+    <rect
+       style="fill:none;stroke:#333333;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       id="rect30"
+       width="25.634853"
+       height="15.345832"
+       x="70.612236"
+       y="32.997505"
+       ry="2.6621852e-15" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5875, 1.5875;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#DartArrow)"
+       d="m 122.44133,40.670421 c -21.97522,1e-6 -21.97522,1e-6 -21.97522,1e-6"
+       id="path32" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:94.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="115.46569"
+       y="54.983143"
+       id="text32"><tspan
+         sodipodi:role="line"
+         id="tspan32"
+         style="stroke-width:0.264583"
+         x="115.46569"
+         y="54.983143" /></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.529168;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5875, 1.5875;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#DartArrow)"
+       d="m 138.80256,48.475629 c 0,7.851853 0,7.851853 0,7.851853"
+       id="path33" />
+    <path
+       style="fill:none;stroke:#00ff00;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.58749, 1.58749;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker44)"
+       d="m 96.22955,20.444467 c 22.12561,1e-6 22.12561,1e-6 22.12561,1e-6"
+       id="path35" />
+    <path
+       style="fill:none;stroke:#00ff00;stroke-width:0.529168;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5875, 1.5875;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker44)"
+       d="m 138.80256,0.88450879 c 0,7.96584791 0,7.96584791 0,7.96584791"
+       id="path45" />
+    <rect
+       style="fill:none;stroke:#333333;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       id="rect45"
+       width="25.634853"
+       height="15.345832"
+       x="16.568296"
+       y="-14.593615"
+       ry="2.6621852e-15" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       x="29.264801"
+       y="-5.4045134"
+       id="text46"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+         x="29.264801"
+         y="-5.4045134"
+         id="tspan46">DEPOSIT</tspan></text>
+    <path
+       style="fill:none;stroke:#00ff00;stroke-width:0.529168;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5875, 1.5875;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker44)"
+       d="m 29.385724,0.88450879 c 0,7.96584791 0,7.96584791 0,7.96584791"
+       id="path46" />
+    <rect
+       style="fill:none;stroke:#333333;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       id="rect46"
+       width="25.634853"
+       height="15.345832"
+       x="16.568296"
+       y="60.499577"
+       ry="2.6621852e-15" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       x="29.294773"
+       y="69.688675"
+       id="text48"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+         x="29.294773"
+         y="69.688675"
+         id="tspan48">REMOVAL</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.529168;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5875, 1.5875;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#DartArrow)"
+       d="m 29.385724,48.475629 c 0,7.851853 0,7.851853 0,7.851853"
+       id="path48" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.2;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       x="-25.637737"
+       y="7.9466639"
+       id="text49"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.2;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+         x="-25.637737"
+         y="7.9466639"
+         id="tspan49">INTEREST</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.2;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+         x="-25.637737"
+         y="12.179999"
+         id="tspan50">FEES refund</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.2;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+         x="-25.637737"
+         y="16.413338"
+         id="tspan51">TAXES refund</tspan></text>
+    <rect
+       style="fill:none;stroke:#333333;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       id="rect51"
+       width="27.677677"
+       height="15.345832"
+       x="-39.347385"
+       y="22.952984"
+       ry="2.6621852e-15" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.2;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       x="-25.590712"
+       y="27.528927"
+       id="text54"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:1.2;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+         x="-25.590712"
+         y="27.528927"
+         id="tspan52">INTEREST charge</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:1.2;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+         x="-25.590712"
+         y="31.762264"
+         id="tspan53">FEES</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:1.2;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+         x="-25.590712"
+         y="35.995598"
+         id="tspan54">TAXES</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5875, 1.5875;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#DartArrow)"
+       d="m 12.777336,30.625897 c -20.6497456,1e-6 -20.6497456,1e-6 -20.6497456,1e-6"
+       id="path54" />
+    <path
+       style="fill:none;stroke:#00ff00;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.58749, 1.58749;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker44)"
+       d="M -11.687562,11.703223 H 4.1945427 L 3.9157158,21.23032 h 5.1066113"
+       id="path55"
+       sodipodi:nodetypes="cccc" />
+    <rect
+       style="fill:none;stroke:#333333;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       id="rect55"
+       width="27.677677"
+       height="15.345832"
+       x="-39.347385"
+       y="42.66151"
+       ry="2.6621852e-15" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.2;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+       x="-25.546528"
+       y="51.470791"
+       id="text57"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:1.2;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#333333;stroke:none;stroke-width:0.264583;stroke-dasharray:0.529167, 0.264583;stroke-dashoffset:0"
+         x="-25.546528"
+         y="51.470791"
+         id="tspan57">DIVIDEND</tspan></text>
+    <path
+       style="fill:none;stroke:#00ff00;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.58749, 1.58749;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker44)"
+       d="M -11.687562,50.334429 H 4.1945427 L 3.9157158,40.807332 h 5.1066113"
+       id="path59"
+       sodipodi:nodetypes="cccc" />
+  </g>
+</svg>

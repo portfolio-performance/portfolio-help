@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://help.portfolio-performance.info/en/getting-started/manage-portfolio/">
       
       
+        <link rel="prev" href="../adding-securities/">
+      
+      
+        <link rel="next" href="../../concepts/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
@@ -224,13 +228,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         Getting started
       </a>
     </li>
@@ -344,19 +350,23 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
         
           
             
+          
+        
           
         
           
@@ -378,7 +388,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Getting started
@@ -408,7 +418,7 @@
   
     <li class="md-nav__item">
       <a href="../create-portfolio/" class="md-nav__link">
-        Creating a portfolio
+        Creating your portfolio
       </a>
     </li>
   
@@ -424,6 +434,30 @@
       <a href="../adding-securities/" class="md-nav__link">
         Adding securities
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Managing your portfolio
+      </a>
+      
     </li>
   
 
@@ -795,7 +829,50 @@
    Starting your portfolio management from today involves assessing your current financial situation. Start with the list of your securities and enter for each of them a buy transaction as of today. Of course, you loose some valuable info and the performance calculations aren't reflecting the real performance of your assets.</p>
 </li>
 </ol>
-<h1 id="starting-from-scratch">Starting from scratch<a class="headerlink" href="#starting-from-scratch" title="Permanent link">¶</a></h1>
+<h1 id="registering-transactions">Registering Transactions<a class="headerlink" href="#registering-transactions" title="Permanent link">¶</a></h1>
+<h2 id="buy-transaction">Buy transaction<a class="headerlink" href="#buy-transaction" title="Permanent link">¶</a></h2>
+<p>Figure 2 shows the input panel to enter a buy transaction. The security (share-1) is quoted in EUR and the transaction is handled through an EUR deposit account. In figure 4 (sell transaction) a more complex situation is depicted. The security is quoted in USD, but the transaction runs through a deposit account in EUR.</p>
+<p><figure id="_figure-1"><figcaption>Figure 1.  Buying a security (EUR) through a deposit account (EUR).</figcaption><img alt="Buying a security (EUR) through a deposit account (EUR)." class="pp-figure" src="../../images/mnu-transaction-buy.svg"></figure></p>
+<ul>
+<li><strong>Security</strong> : you can choose the security from a drop-down. If a particular security was already selected before the start of the transaction, this info is filled in. Please note that the currency is automatically set because each security has a reference currency. This is set while <a href="../adding-securities/">creating the security</a>.</li>
+<li><strong>Securities Account</strong> : choose with drop-down or already filled in, if you started from a Securities account.</li>
+<li><strong>Deposit Account</strong> : choose with drop-down or already filled in with the <a href="account.md">account</a> of the security. If the currency of the chosen deposit account is different from the security currency, then the Gross Amount and Fees and Taxes have to be converted. So, you also need an Exchange Rate. See Figure 3 for an example.</li>
+<li><strong>Date of transaction</strong> : you can choose this date from a calendar or enter it manually (format = YYYY-MM-DD). With the field to the right (00:00), you can enter the time of the transaction. A 12 or 24 hours clock is set with the menu <code>Help &gt; Preferences &gt; Language &gt; Country</code>.</li>
+<li><strong>Shares</strong>: the number of securities that you buy or sell. This can be a decimal number.</li>
+<li><strong>Quote</strong> : this is the price that you paid for one share. If the security contains historical prices (see <a href="../adding-securities/">adding securities</a>), the correct price for the given date is already filled in.</li>
+</ul>
+<p>The above six fields are mandatory in order to complete the transaction. Most of these fields are already filled, based on the selected security. The following fields are calculated or optional.</p>
+<ul>
+<li>
+<p><strong>Gross Value</strong> : this is the product of shares * Quote. If you change afterwards the gross value, then the quote price is changed, so that the equation shares * quote is again correct.</p>
+</li>
+<li>
+<p><strong>Fees</strong> and <strong>Taxes</strong> : a buying transaction typically involves fees and taxes. The can be in the currency of the security and/or deposit account (see figure 4 for an example).</p>
+</li>
+<li>
+<p><strong>Debit Note</strong> : this is the amount that you have to pay as a result of this buying transaction. It is calculated from shares * quote + fees + taxes. Other names are: Value or Net Value.</p>
+</li>
+<li>
+<p><strong>Note</strong> : you can add a textual note to each transaction.</p>
+</li>
+</ul>
+<p>The normal flow to enter this information is probably: shares * quote (price) &gt;&gt; gross value + fees + taxes &gt;&gt; debit note. There are a few peculiarities if you change something afterwards (see figure 3)</p>
+<p><figure id="_figure-2"><figcaption>Figure 2.  Calculation flow between Shares and Debit Note.</figcaption><img alt="Calculation flow between Shares and Debit Note." class="pp-figure" src="../../images/info-transaction-calculation-flow.svg"></figure></p>
+<ul>
+<li>Changing the debit note (afterwards) will change the Gross value and as a result of that also the quote price. The number of shares is untouched.</li>
+<li>Changing the Gross Value afterwards, will change the Debit note and the Quote Price. Fees and taxes and the number of shares are untouched.</li>
+</ul>
+<h2 id="sell-transaction">Sell transaction<a class="headerlink" href="#sell-transaction" title="Permanent link">¶</a></h2>
+<p>The Sell transaction is more complicated because we use a USD security that is cashed in an EUR deposit account. Three new fields appear upon selecting the EUR account: exchange rate (XR), USD fees and USD taxes.</p>
+<p><figure id="_figure-3"><figcaption>Figure 3.  Selling a USD security through an EUR deposit account.</figcaption><img alt="Selling a USD security through an EUR deposit account." class="pp-figure" src="../../images/mnu-transaction-sell.svg"></figure></p>
+<p>The share is quoted in USD and therefore the first Gross Value is also calculated in USD.  Because, you want to cash this transaction in an EUR account, this USD value must be converted. From the moment, you select a deposit account with a different currency, the exchange rate field (e.g. 0.9383) is populated with the correct rate for that date and currency. The website of the European Central Bank (ECB) is consulted for this. See the menu <code>View &gt; Currencies &gt; Currency Converter</code>.</p>
+<p>Changing the date afterwards will change the XR appropriately, even if you have entered manually an XR. So, setting the transaction date first is good practice.</p>
+<p>You can enter fees and taxes in both currencies. The foreign fees and taxes will of course be converted using the same XR. There is no subtotal of this in local currency. So, the Credit Note is not a simple addition of the numbers above.</p>
+<p>The calculation flow remains the same as in figure 3. For example, changing the Credit Note will change the Gross Value in EUR, that in turn will change the Gross Value in USD (XR remains untouched), and finally the Quote price.</p>
+<h2 id="dividend-transaction">Dividend transaction<a class="headerlink" href="#dividend-transaction" title="Permanent link">¶</a></h2>
+<p>Booking a dividend is almost like a buy or sale; except that the quote price is replaced with a field Dividend payment per shares (see figure 5)</p>
+<p><figure id="_figure-4"><figcaption>Figure 4.  Booking a USD security dividend through an EUR deposit account.</figcaption><img alt="Booking a USD security dividend through an EUR deposit account." class="pp-figure" src="../../images/mnu-transaction-dividend.svg"></figure></p>
+<p>There is no separate function to book a "Dividend Investment Plan" (DRIP). One solution is to fully book all dividends with a buy transaction of the agreed-upon number of shares. More information at <a href="../../procedures/reinvesting-dividends/">Reinvesting dividends</a>.</p>
 
 
   
