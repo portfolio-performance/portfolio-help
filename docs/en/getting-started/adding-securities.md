@@ -6,7 +6,7 @@ TODO: get and define full list of type of security; see adding new instruments
 Immediately after the previous "Create portfolio" step, the application's main screen looks a bit empty (see Figure 1). The left sidebar option 'Securities > All Securities' can be used to generate a list of securities.
 
 !!! note
-    A security is a financial instrument that holds value and can be traded between parties. Securities can be broadly categorized into: debt securities (e.g., banknotes, bonds, and debentures) equity securities (e.g., common stocks) derivatives (e.g., forwards, futures, options, and swaps) [[1]]('https://en.wikipedia.org/wiki/Security_(finance)').
+    A security is a financial instrument that holds value and can be traded between parties. Securities can be broadly categorized into: debt securities (e.g., banknotes, bonds, and debentures) equity securities (e.g., common stocks) derivatives (e.g., forwards, futures, options, and swaps) [\[1\]](<https://en.wikipedia.org/wiki/Security_ (finance)>).
 
 The list contains all the securities you are interested in; not necessarily the ones you have bought. At the moment, it's still empty.
 

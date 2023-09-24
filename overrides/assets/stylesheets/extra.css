@@ -23,13 +23,14 @@ figure.pp-figure {
 	max-width: 40rem;
 }
 
-#align-right {
+figure.align-right {
 	float: right;
 	margin-top: 0;
 	margin-left: 10px;
+	width: 30%;
  }
 
- #align-right figcaption {
+ .align-right figcaption {
 	text-align: left;
 	margin-left: 10px;
  }

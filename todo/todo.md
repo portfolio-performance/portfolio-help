@@ -60,7 +60,7 @@ Before I used the markdown extension [markdown-captions](https://github.com/evid
 There was a question about a kind of styleguide for the PP manual. Maybe we can use the APA styleguide as reference. For example, the caption of a figure should be placed on top of the figure with label Figure 1. Normally the caption itself should be at the next line in bold or italic.
 Partially implemented it with the mkdocs-caption plugin.
 
-### 2024-09-19
+### 2023-09-19
 There should be a small but representative example portfolio on which the manual is based. This example could start from (real/anonymised) bank notes for representative securities:
 
 - shares (EUR, GBX and USD to illustrate exchange rate and GBX). Which companies should we choose? Bayer, Nvidia, Rio Tinto?
@@ -75,3 +75,12 @@ The example portfolio must be small and comprehensible for a beginner.
 
 Other requirements?
 
+### 2023-09-23
+How to manage images for the EN-site? At the moment, the images were saved close to the chapter/folder they belong, e.g. concepts/images, getting-started/images, ... The naming convention was: page-name + image-description, where page-name is the page where the image is used: `irr-example-performance-reporting-period-1y.png`
+
+Another approach is to collect all images of the EN-site into one folder en/images. Because there will be a lot of images, a workable naming convention should be followed.
+
+path-to-image-from-UI + image-description
+
+The name for the above example should be:
+`sb-reports-performance-1yr_irr-example.png` (sb stands for sidebar)

@@ -70,6 +70,7 @@ plugins:
       figure:
         caption_prefix: 'Figure {index}. '
         position: top
+        markdown_identifier: 'Figure:'
 
 markdown_extensions:
   - admonition
@@ -89,8 +90,9 @@ nav:
   - Getting started:
       - Getting started: getting-started/index.md
       - Installation: getting-started/installation.md
-      - Creating a portfolio: getting-started/create-portfolio.md
+      - Creating your portfolio: getting-started/create-portfolio.md
       - Adding securities: getting-started/adding-securities.md
+      - Managing your portfolio: getting-started/manage-portfolio.md 
   - Basic concepts:
       - Basic concepts: concepts/index.md
       - Financial terminology: concepts/financial-terminology.md
