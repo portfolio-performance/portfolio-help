@@ -80,7 +80,7 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - toc:
-      permalink: true
+      permalink: "#"
   - attr_list
   - md_in_html
   - tables
@@ -92,7 +92,12 @@ nav:
       - Installation: getting-started/installation.md
       - Creating your portfolio: getting-started/create-portfolio.md
       - Adding securities: getting-started/adding-securities.md
-      - Managing your portfolio: getting-started/manage-portfolio.md 
+      - Managing your portfolio:
+          - Managing your portfolio: getting-started/manage-portfolio/index.md
+          - Making a Deposit: getting-started/manage-portfolio/deposit.md
+          - Buying securities: getting-started/manage-portfolio/buy.md 
+          - Selling securities: getting-started/manage-portfolio/sell.md 
+          - Dividend payment: getting-started/manage-portfolio/dividend.md 
   - Basic concepts:
       - Basic concepts: concepts/index.md
       - Financial terminology: concepts/financial-terminology.md

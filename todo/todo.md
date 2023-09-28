@@ -84,3 +84,13 @@ path-to-image-from-UI + image-description
 
 The name for the above example should be:
 `sb-reports-performance-1yr_irr-example.png` (sb stands for sidebar)
+
+### 2023-09-27
+Upgraded to the newest versions:
+mkdocs == 1.5.3
+mkdocs-material == 9.4.2
+mkdocs-caption == 0.0.9
+
+### 2023-09-28
+Refering to a header in another page doesn't seem to work. For example: 
+[convert](deposit.md#transferbetweentwocurrencies) will jump to the correct page but not the header. The TOC extension is activated.

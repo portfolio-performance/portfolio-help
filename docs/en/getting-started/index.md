@@ -14,7 +14,7 @@ Your first step - of course - is to create a new portfolio file with your accoun
 # [Adding securities](adding-securities.md)
 You create the securities that are of interest to you in the list of securities. Master data and historical prices are automatically supplemented and updated by Portfolio Performance.
 
-# [Manage your portfolio](manage-portfolio.md)
+# [Manage your portfolio](manage-portfolio/index.md)
 So far you have created your portfolio file with a list of interesting securities. Now, it's time to buy and sell some of those securities, receive dividends, set up a savings plan, receive dividends, ....
 
 # Get reports on asset statement and performance

@@ -1,3 +1,3 @@
-mkdocs == 1.5.2
-mkdocs-material == 9.1.21
-git+https://github.com/tobiasah/mkdocs-caption.git@main
+mkdocs == 1.5.3
+mkdocs-material == 9.4.2
+mkdocs-caption == 0.0.9
