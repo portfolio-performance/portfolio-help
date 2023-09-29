@@ -1,11 +1,15 @@
 ---
 title: Dividend
-lastUpdate: 2023-09-27
+lastUpdate: 2023-09-29
 ---
 
 ## Dividend transaction
-Booking a dividend is almost like a buy or sale; except that the quote price is replaced with a field Dividend payment per shares (see figure 5)
+Recording a dividend is similar to recording a buy or sale transaction, except that `Quote price` is replaced with `Dividend payment per shares` (see Figure 1). The number of shares is automatically determined based on the entered date.
 
-![Booking a USD security dividend through an EUR deposit account.](../../images/mnu-transaction-dividend.svg){.pp-figure}
 
-There is no separate function to book a "Dividend Investment Plan" (DRIP). One solution is to fully book all dividends with a buy transaction of the agreed-upon number of shares. More information at [Reinvesting dividends](../../procedures/reinvesting-dividends.md).
+Figure: Recording a dividend (same currency).{class=pp-figure}
+
+![](../../images/mnu-transaction-dividend-heidelberg-2022.png)
+
+
+There isn't a dedicated function for recording a "Dividend Investment Plan" (DRIP). One workaround is to record all dividends in full and then proceed with a purchase of the agreed-upon number of shares.More information at [Reinvesting dividends](../../procedures/reinvesting-dividends.md).
