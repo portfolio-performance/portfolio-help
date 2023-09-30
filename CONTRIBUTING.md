@@ -4,11 +4,11 @@
 
 
   - [Writing setup](#writing-setup)
-    - [MkDocs](#Mkdocs)
-    - [Material for MkDocs](#material-for-mkdocs)
-  - [Project setup](#project-setup)
-  - [Source files](#source-files-portfolio-performance-manual)
-- Site navigation
+    - [Source files of the Portfolio Performance Manual](#source-files-of-the-portfolio-performance-manual)
+    - [MkDocs & Material for MkDocs](#mkdocs--material-for-mkdocs)
+  - [Navigation](#navigation)
+  - [Style guide](#style-guide)
+    - [Figure captions](#figure-captions)
 
 ## Writing setup
 
