@@ -97,6 +97,7 @@ nav:
           - Making a Deposit: getting-started/manage-portfolio/deposit.md
           - Buying securities: getting-started/manage-portfolio/buy.md 
           - Selling securities: getting-started/manage-portfolio/sell.md 
+          - Recording a delivery: getting-started/manage-portfolio/delivery.md
           - Dividend payment: getting-started/manage-portfolio/dividend.md 
   - Basic concepts:
       - Basic concepts: concepts/index.md

@@ -94,3 +94,7 @@ mkdocs-caption == 0.0.9
 ### 2023-09-28
 Refering to a header in another page doesn't seem to work. For example: 
 [convert](deposit.md#transferbetweentwocurrencies) will jump to the correct page but not the header. The TOC extension is activated.
+
+### 2023-09-30
+Issue source code?
+The Note field of the dialog box Delivery (Inbound) and Buy differ in size, although they should be the same. The currency selector for the delivery panel is also too long (see images\mnu-transaction-delivery-vs-buy.svg).
