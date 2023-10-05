@@ -1,6 +1,6 @@
 ---
 title: Purchase Value
-lastUpdate: 2023-09-05
+lastUpdate: 2023-10-04
 ---
 The Purchase Value of a security is the summed value of each buy (+) and sell (-) transaction of that security, taken into account the [reporting period](reporting-period.md). The value of a transaction includes the taxes and fees; sometimes also called “Net Transaction Value”.
 
@@ -20,7 +20,7 @@ Table: Three reporting periods based on the current day (2023-05-15)
 | --- | --- | --- |
 | 1 year | 2022, May 15 - 2023, May 15 | 3300 EUR |
 | 2 years | 2021, May 15 - 2023, May 15 | 3000 EUR |
-| 3 years | 2020, May 15 - 2023, May 15 | 2050 EUR |
+| 3 years | 2020, May 15 - 2023, May 15 | 3050 EUR |
 | Custom | 2000, Jan 1 - 2020, Jan 01 | 500 EUR |
 
 The 1 year period starts at 2022, May 15 and ends today (2023,May 15); sometimes also called YTD (Year To Date). Because all purchases fall before the reporting period, the value for each of them is taken from the beginning of the period. At that time (2022, May 15), the share was valued at a quote of 110 EUR (see graph). So, the total purchase value is 30 shares * 110 = 3300 EUR. This is the beginning situation of the period (also called Statement of Assets). Since, there are no purchases afterwards, this amount is also the purchase value of the 1 year period.

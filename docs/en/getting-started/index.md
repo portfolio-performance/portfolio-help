@@ -17,15 +17,15 @@ You create the securities that are of interest to you in the list of securities.
 # [Manage your portfolio](manage-portfolio/index.md)
 So far you have created your portfolio file with a list of interesting securities. Now, it's time to buy and sell some of those securities, receive dividends, set up a savings plan, receive dividends, ....
 
-# Get reports on asset statement and performance
-How is your portfolio composed? The asset statement shows the composition of the portfolio as a list, in historical performance and as a pie chart. What is the current performance of your portfolio? In addition to evaluations of returns and volatility, you will receive an overview of the taxes and costs incurred.
+# [Reports & Performance](reports/statement.md)
+How is your portfolio structured? The Statement of Assets displays the composition of your portfolio assets. A line and pie chart provide a more visual overview of all assets. What is the current performance of your portfolio? Along with assessments of returns and volatility, you will also receive an overview of the taxes and costs associated with it.
 
 # Carry out classification of asset shares
 With your own structure of your choice, you represent the weighting of the asset shares, e.g. by region and/or asset class.
 
 # Define portfolio strategy and carry out rebalancing
 You map your own portfolio strategy with target values for different share classes.
-you can make a target/actual comparison and perform a rebalancing
+You can make a target/actual comparison and perform a rebalancing
 
 # Keeping the portfolio up-to-date
 You book new purchases, sales and dividends as well as any costs and taxes incurred. This can be done quickly and easily by importing the bank's PDF statements, or manually

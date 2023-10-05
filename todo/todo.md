@@ -98,3 +98,6 @@ Refering to a header in another page doesn't seem to work. For example:
 ### 2023-09-30
 Issue source code?
 The Note field of the dialog box Delivery (Inbound) and Buy differ in size, although they should be the same. The currency selector for the delivery panel is also too long (see images\mnu-transaction-delivery-vs-buy.svg).
+
+### 2023-10-03
+The text about bounds.md still has a few open questions. Asked for feedback on the >English forum.
