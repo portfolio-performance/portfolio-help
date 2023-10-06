@@ -101,7 +101,7 @@ nav:
           - Dividend payment: getting-started/manage-portfolio/dividend.md 
           - Bonds: getting-started/manage-portfolio/bonds.md
       - Reports & Performance:
-          - Reports: reports/statement.md 
+          - Reports: getting-started/reports/statement.md 
   - Basic concepts:
       - Basic concepts: concepts/index.md
       - Financial terminology: concepts/financial-terminology.md

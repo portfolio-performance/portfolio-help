@@ -6048,8 +6048,9 @@
         <price t="2023-10-02" v="7242000000"/>
         <price t="2023-10-03" v="7200000000"/>
         <price t="2023-10-04" v="7196000000"/>
+        <price t="2023-10-05" v="7184000000"/>
       </prices>
-      <latest t="2023-10-04" v="7196000000">
+      <latest t="2023-10-05" v="7184000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -6059,9 +6060,9 @@
       </attributes>
       <events/>
       <property type="FEED" name="PORTFOLIO-REPORT-MARKET">XETR</property>
-      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;HEI&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2023-10-04&quot;}]</property>
+      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;HEI&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2023-10-05&quot;}]</property>
       <isRetired>false</isRetired>
-      <updatedAt>2023-10-04T09:21:09.988003700Z</updatedAt>
+      <updatedAt>2023-10-06T08:19:49.965958Z</updatedAt>
     </security>
     <security>
       <uuid>d4e87f79-68f9-49ed-b502-a4edb6e3907c</uuid>
@@ -8587,8 +8588,9 @@
         <price t="2023-10-02" v="52113000000"/>
         <price t="2023-10-03" v="50703000000"/>
         <price t="2023-10-04" v="51842000000"/>
+        <price t="2023-10-05" v="51644000000"/>
       </prices>
-      <latest t="2023-10-04" v="51842000000">
+      <latest t="2023-10-06" v="51267500000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -8598,7 +8600,7 @@
       </attributes>
       <events/>
       <isRetired>false</isRetired>
-      <updatedAt>2023-10-04T16:15:45.569173500Z</updatedAt>
+      <updatedAt>2023-10-06T08:20:01.136489900Z</updatedAt>
     </security>
     <security>
       <uuid>b8dcba46-afbf-4579-8d2a-7c685f437904</uuid>
@@ -8633,9 +8635,10 @@
         <price t="2023-10-03" v="9370600000"/>
         <price t="2023-10-04" v="9342000000"/>
         <price t="2023-10-05" v="9342000000"/>
+        <price t="2023-10-06" v="9372200000"/>
       </prices>
-      <latest t="2023-10-05" v="9342000000">
-        <high>9342000000</high>
+      <latest t="2023-10-06" v="9372200000">
+        <high>9372200000</high>
         <low>9342000000</low>
         <volume>0</volume>
       </latest>
@@ -8644,7 +8647,7 @@
       </attributes>
       <events/>
       <isRetired>false</isRetired>
-      <updatedAt>2023-10-04T17:01:10.110415300Z</updatedAt>
+      <updatedAt>2023-10-06T08:20:13.314645700Z</updatedAt>
     </security>
   </securities>
   <watchlists/>
@@ -9287,7 +9290,7 @@
             <config>
               <uuid>2be3493c-23dc-4d4e-9e01-6437b1d0e74e</uuid>
               <name>Standard</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:300},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:96},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:124},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:154},{&quot;id&quot;:&quot;6&quot;,&quot;width&quot;:158},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:200}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:300},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:60},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;6&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:200}]}</data>
             </config>
           </configurations>
         </config-set>
