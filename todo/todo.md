@@ -100,4 +100,17 @@ Issue source code?
 The Note field of the dialog box Delivery (Inbound) and Buy differ in size, although they should be the same. The currency selector for the delivery panel is also too long (see images\mnu-transaction-delivery-vs-buy.svg).
 
 ### 2023-10-03
-The text about bounds.md still has a few open questions. Asked for feedback on the >English forum.
+The text about bonds.md still has a few open questions. Asked for feedback on the >English forum.
+
+### 2023-10-06
+The "Statement of Assets" contains three acronyms: MA, SMA and ATH. Difficult to find any info about them.
+
+The acronym MA (moving average) might be better translated as WA (weighted average). With a one-time calculation, there is no "moving" average. This probably is OK for the graph. SMA stands for Simple Moving Average, where "simple" refers to the fact that it is not weighted? Same problem with moving as above.  ATH stands for All-Time High. This seems correct.
+
+### 2023-10-23
+The option "Adjust range: 0" in reports > chart.md is not understood nor described.
+Earnings: dividends + Interests? or something more? 
+
+In the Pick Dataseries dialog (Reports > Chart > Gear) the option Taxes (accumulated) is present, but Taxes alone is missing (is present for Fees, Dividends, Interests).
+
+

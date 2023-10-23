@@ -102,6 +102,7 @@ nav:
           - Bonds: getting-started/manage-portfolio/bonds.md
       - Reports & Performance:
           - Reports: getting-started/reports/statement.md 
+          - Chart: getting-started/reports/chart.md
   - Basic concepts:
       - Basic concepts: concepts/index.md
       - Financial terminology: concepts/financial-terminology.md
