@@ -1,5 +1,5 @@
 ---
-title: Statement of Assets: History
+title: Statement of Assets - History
 lastUpdate: 2023-10-21
 ---
 
