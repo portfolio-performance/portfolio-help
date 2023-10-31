@@ -101,9 +101,12 @@ nav:
           - Dividend payment: getting-started/manage-portfolio/dividend.md 
           - Bonds: getting-started/manage-portfolio/bonds.md
       - Reports & Performance:
-          - Statement of Assets: getting-started/reports/statement.md 
-          - History (chart): getting-started/reports/chart.md
-          - Holdings: getting-started/reports/holdings.md
+          - Statement of Assets:
+             - Statement of Assets: getting-started/reports/statement/index.md 
+             - History (chart): getting-started/reports/statement/chart.md
+             - Holdings: getting-started/reports/statement/holdings.md
+          - Performance:
+            - Performance: getting-started/reports/performance/index.md
   - Basic concepts:
       - Basic concepts: concepts/index.md
       - Financial terminology: concepts/financial-terminology.md

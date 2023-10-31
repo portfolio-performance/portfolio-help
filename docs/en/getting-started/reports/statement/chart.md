@@ -3,12 +3,12 @@ title: Statement of Assets - History
 lastUpdate: 2023-10-21
 ---
 
-Using the menu `View > Reports > Statement of Assets > Chart` or the sidebar, you can generate a graphical representation of your assets performance over time. The y-axis displays the total value of your assets, denominated in the portfolio's default currency (1k = 1000 units of the portfolio currency). You can change the scale of this axis by scrolling with the middle mouse button. Hold the mouse position at the value (e.g. 4k) where you want to increase or decrease the scale around.  The x-axis represents time, and you can select the desired time period using the dropdown menu in the top-right corner. By default, the periods of 1 year, 2 years, 3 years, 4 years, 6 years, and the previous day are available. Additionally, you have the option to create a custom time period using the 'New' feature; see [Reporting Period](../../concepts/reporting-period.md) for a description.
+Using the menu `View > Reports > Statement of Assets > Chart` or the sidebar, you can generate a graphical representation of your assets performance over time. The y-axis displays the total value of your assets, denominated in the portfolio's default currency (1k = 1000 units of the portfolio currency). You can change the scale of this axis by scrolling with the middle mouse button. Hold the mouse position at the value (e.g. 4k) where you want to increase or decrease the scale around.  The x-axis represents time, and you can select the desired time period using the dropdown menu in the top-right corner. By default, the periods of 1 year, 2 years, 3 years, 4 years, 6 years, and the previous day are available. Additionally, you have the option to create a custom time period using the 'New' feature; see [Reporting Period](../../../concepts/reporting-period.md) for a description.
 
 
 Figure: Chart of the Total value of the demo portfolio.{class=pp-figure}
 
-![](../../images/sb-reports-chart.svg)
+![](../../../images/sb-reports-chart.svg)
 
 By default, two data series are displayed: 'Transferals' (primarily deposits) and 'Total' (which includes transferals). When you left-click the canvas and hold the mouse down on a specific day, for example, March 28, 2022, a dialog box will appear, displaying detailed values for all data series on that day. Right-clicking on the chart canvas provides additional options (see Figure 1).
 
@@ -22,7 +22,7 @@ Right-clicking on the legend icons (for example, the blue and red squares from F
 
 Figure: Dataseries for chart.{class=align-right}
 
-![](../../images/sb-reports-chart-gear-add-dataseries.png)
+![](../../../images/sb-reports-chart-gear-add-dataseries.png)
 
 With the gear icon (top right) you can display additional data series to the chart. Remember that in the demo-portfolio, we have two brokers; where broker-1 has two deposit accounts (EUR and USD). Broker-2 has only one EUR-deposit account.
 
@@ -30,10 +30,10 @@ With the `Accounts and Portfolios` option, you can choose to display specific co
 
 The Common option in Figure 2 will display some additional info.
 
-- Delta (for reporting period or since first transaction): represents how much the portfolio's value has increased or decreased for the reporting period or since first transaction until today. This Delta will fluctuate around zero, for example for the first transaction day the delta will be zero. The chapter on [Reporting Period](../../concepts/reporting-period.md) explains that the valuation of a portfolio can differ according to the selected `Reporting Period`.
-- Dividends, Fees, Interest, Interest Charge, and Taxes are available with an accumulated and 'instance' version. These fields are described in [Transactions](../../concepts/transaction.md) and are recorded as part of each transaction.
+- Delta (for reporting period or since first transaction): represents how much the portfolio's value has increased or decreased for the reporting period or since first transaction until today. This Delta will fluctuate around zero, for example for the first transaction day the delta will be zero. The chapter on [Reporting Period](../../../concepts/reporting-period.md) explains that the valuation of a portfolio can differ according to the selected `Reporting Period`.
+- Dividends, Fees, Interest, Interest Charge, and Taxes are available with an accumulated and 'instance' version. These fields are described in [Transactions](../../../concepts/transaction.md) and are recorded as part of each transaction.
 - Earnings: the sum of dividends and interests.
-- Invested Capital (for reporting period or since first transaction): the term "invested capital" refers to the total amount of money that an investor has used to purchase various securities, such as stocks, bonds, or other financial instruments. It includes the initial purchase price of the securities, additional investments made over time, and other factors such as fees, taxes, ....
+- Invested Capital (for reporting period or since first transaction): the term "invested capital" refers to the total amount of money that an investor has used to purchase various securities, such as stocks, bonds, or other financial instruments. It includes the initial purchase price of the securities, additional investments made over time, and other factors such as fees, taxes, ...
 - Total: the total value of the portfolio valuated over time.
 - Transferals: each Deposit or Removal is represented by a very small spike (positive or negative) on the day that the transferal was made.
 

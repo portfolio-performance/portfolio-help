@@ -7,13 +7,13 @@ The `Statement of Assets` report provides a snapshot of your portfolio's assets 
 
 Figure: List of All transactions of demo portfolio (2023-10-05){class=pp-figure}
 
-![](../../images/sb-all-transactions.png)
+![](../../../images/sb-all-transactions.png)
 
 In addition to the purchase of `share-1`, `share-2`, and `bond-1`, there is also a sale of a portion of `share-1`. In this latter transaction, no deposit is made, and the proceeds from the sale remain in the deposit account.
 
 Figure: Statement of Assets report of demo portfolio (2023-10-05){class=pp-figure}
 
-![](../../images/sb-reports-statement.png)
+![](../../../images/sb-reports-statement.png)
 
 The report in Figure 2 displays all the available assets on October 5, 2023, including the deposit account with the result of the sale of `share-1`. The securities are valued at their market prices based on the closing quotes from the previous day, which is -in this case- October 4, 2023. `Share-2` is handled in USD. The conversion to EUR is based on the exchange rate provided by the ECB on October 4, 2023 (closing previous day).
 
@@ -23,10 +23,10 @@ The report displays a total line above and below the assets. With the Presentati
 
 Figure: Available columns. {class=align-right}
 
-![](../../images/sb-reports-statement-gear-icon.png)
+![](../../../images/sb-reports-statement-gear-icon.png)
 The default columns that are displayed are `Shares`, `Name`, `Symbol`, `Quote`, `Market Value`, `Share in %`, and `Note`. Many more columns/fields are available (see Figure 3). While the column headings are mostly self-explanatory, a few of them may require further clarification. You can customize the default columns using the gear icon located in the top-right corner (see Figure 2).
 
-The abbreviation "MA" that follows Purchase Price/Value stands for "Moving Average" but in fact it should be better called WA or "Weighted Average". As mentioned in the discussion about [Purchase Value](../../concepts/purchase-value.md), PP uses the FIFO (First-in, First-out) method to calculate prices and values. "Moving/weighted average", however, is another commonly used method.
+The abbreviation "MA" that follows Purchase Price/Value stands for "Moving Average" but in fact it should be better called WA or "Weighted Average". As mentioned in the discussion about [Purchase Value](../../../concepts/purchase-value.md), PP uses the FIFO (First-in, First-out) method to calculate prices and values. "Moving/weighted average", however, is another commonly used method.
 
 The Purchase Price and the Purchase Price (MA) of `share-1` are respectively 44.41 EUR and 51.61 EUR; a rather big difference. Why? From Figure 2:
 
@@ -41,7 +41,7 @@ What is the Purchase Price of the remaining 40 shares in the portfolio?
 
 The available fields under `Performance` and `Dividends` are discussed in a separate chapter.
 
-With the `Attributes` option, you can add custom fields to the table. These fields are defined in `left sidebar > settings > Attributes: Securities` and following panels. You can enter a specific attribute value for a security in the `Additional attributes` panel of the security (see for example, Figure 3 in [Getting started > Adding securities](../adding-securities.md))
+With the `Attributes` option, you can add custom fields to the table. These fields are defined in `left sidebar > settings > Attributes: Securities` and following panels. You can enter a specific attribute value for a security in the `Additional attributes` panel of the security (see for example, Figure 3 in [Getting started > Adding securities](../../adding-securities.md))
 
 The `Forex` (Foreign Exchange) option allows you to view the currency of the quote for each asset and its exchange rate relative to the base currency of the portfolio. The fields labeled as `Market value**`, `Purchase Price**`, and `Profit/Loss**` retain the same meaning as their counterparts in the base currency, but they are presented in the foreign currency.
 

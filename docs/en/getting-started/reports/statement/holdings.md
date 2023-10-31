@@ -6,7 +6,7 @@ A visual representation of the total value of the portfolio divided into categor
 
 Figure: Doughnut chart of the total value of portfolio.{class=pp-figure}
 
-![](../../images/sb-reports-holdings.png)
+![](../../../images/sb-reports-holdings.png)
 
 Hovering the mouse pointer over a segment of the doughnut chart reveals the following account details: name, percentage, number of shares, current share price, total value in the portfolio currency. In the case of a deposit account, the number of shares is fixed at one (see Figure 1).
 

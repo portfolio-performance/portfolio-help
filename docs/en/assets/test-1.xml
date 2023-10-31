@@ -8619,8 +8619,9 @@
         <price t="2023-10-24" v="53956000000"/>
         <price t="2023-10-25" v="52114000000"/>
         <price t="2023-10-26" v="51428000000"/>
+        <price t="2023-10-27" v="50834000000"/>
       </prices>
-      <latest t="2023-10-26" v="51428000000">
+      <latest t="2023-10-27" v="50834000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -8773,40 +8774,6 @@
                   <updatedAt>2023-10-05T07:05:55.610045300Z</updatedAt>
                   <type>BUY</type>
                 </portfolio-transaction>
-                <portfolio-transaction>
-                  <uuid>3949ee26-db24-40db-8ca2-66d93f784098</uuid>
-                  <date>2023-09-28T00:00</date>
-                  <currencyCode>EUR</currencyCode>
-                  <amount>287167</amount>
-                  <security reference="../../../../../../../../../securities/security"/>
-                  <crossEntry class="buysell">
-                    <portfolio reference="../../../.."/>
-                    <portfolioTransaction reference="../.."/>
-                    <account reference="../../../../../../../.."/>
-                    <accountTransaction>
-                      <uuid>377eb763-9c39-4847-9174-9838152eab96</uuid>
-                      <date>2023-09-28T00:00</date>
-                      <currencyCode>EUR</currencyCode>
-                      <amount>287167</amount>
-                      <security reference="../../../../../../../../../../../securities/security"/>
-                      <crossEntry class="buysell" reference="../.."/>
-                      <shares>0</shares>
-                      <updatedAt>2023-10-05T07:06:59.547697500Z</updatedAt>
-                      <type>SELL</type>
-                    </accountTransaction>
-                  </crossEntry>
-                  <shares>4000000000</shares>
-                  <units>
-                    <unit type="FEE">
-                      <amount currency="EUR" amount="1739"/>
-                    </unit>
-                    <unit type="TAX">
-                      <amount currency="EUR" amount="1014"/>
-                    </unit>
-                  </units>
-                  <updatedAt>2023-10-05T07:06:59.547697500Z</updatedAt>
-                  <type>SELL</type>
-                </portfolio-transaction>
               </transactions>
               <attributes>
                 <map/>
@@ -8833,7 +8800,6 @@
           <type>DEPOSIT</type>
         </account-transaction>
         <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/accountTransaction"/>
-        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[3]/crossEntry/accountTransaction"/>
         <account-transaction>
           <uuid>3e4c1b97-b5a2-4178-b1b4-0581f139da91</uuid>
           <date>2022-09-29T00:00</date>
@@ -8873,7 +8839,54 @@
       <name>broker-2 (EUR)</name>
       <currencyCode>EUR</currencyCode>
       <isRetired>false</isRetired>
-      <transactions/>
+      <transactions>
+        <account-transaction>
+          <uuid>8793dd40-5271-4080-902f-dbf660032f6b</uuid>
+          <date>2023-09-28T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>287167</amount>
+          <security reference="../../../../../securities/security"/>
+          <crossEntry class="buysell">
+            <portfolio>
+              <uuid>69ced9b8-88a4-4289-a08c-8a699693ad9e</uuid>
+              <name>broker-2</name>
+              <isRetired>false</isRetired>
+              <referenceAccount reference="../../../../.."/>
+              <transactions>
+                <portfolio-transaction>
+                  <uuid>56374327-53dc-4268-89ac-e618d18ab365</uuid>
+                  <date>2023-09-28T00:00</date>
+                  <currencyCode>EUR</currencyCode>
+                  <amount>287167</amount>
+                  <security reference="../../../../../../../../../securities/security"/>
+                  <crossEntry class="buysell" reference="../../../.."/>
+                  <shares>4000000000</shares>
+                  <units>
+                    <unit type="FEE">
+                      <amount currency="EUR" amount="1739"/>
+                    </unit>
+                    <unit type="TAX">
+                      <amount currency="EUR" amount="1014"/>
+                    </unit>
+                  </units>
+                  <updatedAt>2023-10-27T19:37:47.110017600Z</updatedAt>
+                  <type>SELL</type>
+                </portfolio-transaction>
+              </transactions>
+              <attributes>
+                <map/>
+              </attributes>
+              <updatedAt>2023-09-23T07:30:35.625775500Z</updatedAt>
+            </portfolio>
+            <portfolioTransaction reference="../portfolio/transactions/portfolio-transaction"/>
+            <account reference="../../../.."/>
+            <accountTransaction reference="../.."/>
+          </crossEntry>
+          <shares>0</shares>
+          <updatedAt>2023-10-27T19:37:47.110017600Z</updatedAt>
+          <type>SELL</type>
+        </account-transaction>
+      </transactions>
       <attributes>
         <map/>
       </attributes>
@@ -8894,17 +8907,7 @@
   </accounts>
   <portfolios>
     <portfolio reference="../../accounts/account/transactions/account-transaction/crossEntry/portfolio"/>
-    <portfolio>
-      <uuid>69ced9b8-88a4-4289-a08c-8a699693ad9e</uuid>
-      <name>broker-2</name>
-      <isRetired>false</isRetired>
-      <referenceAccount reference="../../../accounts/account[2]"/>
-      <transactions/>
-      <attributes>
-        <map/>
-      </attributes>
-      <updatedAt>2023-09-23T07:30:35.625775500Z</updatedAt>
-    </portfolio>
+    <portfolio reference="../../accounts/account[2]/transactions/account-transaction/crossEntry/portfolio"/>
   </portfolios>
   <plans/>
   <taxonomies/>
@@ -8924,8 +8927,13 @@
               <label>Key Indicators</label>
             </widget>
             <widget type="TTWROR">
-              <label>True Time-Weighted Rate of Return (cumulative)</label>
-              <configuration/>
+              <label>True Time-Weighted Rate of Return (cumulative), broker-1</label>
+              <configuration>
+                <entry>
+                  <string>DATA_SERIES</string>
+                  <string>Portfolioc957c92b-4674-4959-8a8c-38afce694313</string>
+                </entry>
+              </configuration>
             </widget>
             <widget type="IRR">
               <label>Internal Rate of Return (IRR)</label>
