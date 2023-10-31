@@ -6049,8 +6049,23 @@
         <price t="2023-10-03" v="7200000000"/>
         <price t="2023-10-04" v="7196000000"/>
         <price t="2023-10-05" v="7184000000"/>
+        <price t="2023-10-06" v="7368000000"/>
+        <price t="2023-10-09" v="7232000000"/>
+        <price t="2023-10-10" v="7326000000"/>
+        <price t="2023-10-11" v="7294000000"/>
+        <price t="2023-10-12" v="7362000000"/>
+        <price t="2023-10-13" v="7378000000"/>
+        <price t="2023-10-16" v="7416000000"/>
+        <price t="2023-10-17" v="7420000000"/>
+        <price t="2023-10-18" v="7198000000"/>
+        <price t="2023-10-19" v="7084000000"/>
+        <price t="2023-10-20" v="6602000000"/>
+        <price t="2023-10-23" v="6750000000"/>
+        <price t="2023-10-24" v="6746000000"/>
+        <price t="2023-10-25" v="6784000000"/>
+        <price t="2023-10-26" v="6750000000"/>
       </prices>
-      <latest t="2023-10-05" v="7184000000">
+      <latest t="2023-10-26" v="6750000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -6060,7 +6075,7 @@
       </attributes>
       <events/>
       <property type="FEED" name="PORTFOLIO-REPORT-MARKET">XETR</property>
-      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;HEI&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2023-10-05&quot;}]</property>
+      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;HEI&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2023-10-26&quot;}]</property>
       <isRetired>false</isRetired>
       <updatedAt>2023-10-06T08:19:49.965958Z</updatedAt>
     </security>
@@ -8589,8 +8604,23 @@
         <price t="2023-10-03" v="50703000000"/>
         <price t="2023-10-04" v="51842000000"/>
         <price t="2023-10-05" v="51644000000"/>
+        <price t="2023-10-06" v="52668000000"/>
+        <price t="2023-10-09" v="52929000000"/>
+        <price t="2023-10-10" v="53272000000"/>
+        <price t="2023-10-11" v="54991000000"/>
+        <price t="2023-10-12" v="55963000000"/>
+        <price t="2023-10-13" v="54876000000"/>
+        <price t="2023-10-16" v="55074000000"/>
+        <price t="2023-10-17" v="56009000000"/>
+        <price t="2023-10-18" v="55787000000"/>
+        <price t="2023-10-19" v="55574000000"/>
+        <price t="2023-10-20" v="54096000000"/>
+        <price t="2023-10-23" v="54041000000"/>
+        <price t="2023-10-24" v="53956000000"/>
+        <price t="2023-10-25" v="52114000000"/>
+        <price t="2023-10-26" v="51428000000"/>
       </prices>
-      <latest t="2023-10-06" v="51267500000">
+      <latest t="2023-10-26" v="51428000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -8636,10 +8666,25 @@
         <price t="2023-10-04" v="9342000000"/>
         <price t="2023-10-05" v="9342000000"/>
         <price t="2023-10-06" v="9372200000"/>
+        <price t="2023-10-09" v="9346300000"/>
+        <price t="2023-10-10" v="9402700000"/>
+        <price t="2023-10-11" v="9402700000"/>
+        <price t="2023-10-12" v="9402700000"/>
+        <price t="2023-10-13" v="9402700000"/>
+        <price t="2023-10-16" v="9410000000"/>
+        <price t="2023-10-17" v="9371000000"/>
+        <price t="2023-10-18" v="9361000000"/>
+        <price t="2023-10-19" v="9339000000"/>
+        <price t="2023-10-20" v="9339000000"/>
+        <price t="2023-10-23" v="9323000000"/>
+        <price t="2023-10-24" v="9343500000"/>
+        <price t="2023-10-25" v="9343500000"/>
+        <price t="2023-10-26" v="9343500000"/>
+        <price t="2023-10-27" v="9343500000"/>
       </prices>
-      <latest t="2023-10-06" v="9372200000">
-        <high>9372200000</high>
-        <low>9342000000</low>
+      <latest t="2023-10-27" v="9343500000">
+        <high>9343500000</high>
+        <low>9343500000</low>
         <volume>0</volume>
       </latest>
       <attributes>

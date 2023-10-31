@@ -706,8 +706,6 @@
       
         
       
-        
-      
     
     
     
@@ -743,19 +741,55 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../getting-started/reports/statement/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../getting-started/reports/statement/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Statement of Assets
   </span>
   
 
-      </a>
-    </li>
-  
-
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6_1" id="__nav_2_6_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Statement of Assets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
             
               
@@ -764,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/reports/chart/" class="md-nav__link">
+      <a href="../../getting-started/reports/statement/chart/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -784,7 +818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/reports/holdings/" class="md-nav__link">
+      <a href="../../getting-started/reports/statement/holdings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -793,6 +827,69 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../getting-started/reports/performance/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Performance
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Performance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1267,90 +1364,95 @@
   
 
 
-<p>Let's build a simple example -step by step- to illustrate some pitfalls of the IRR concept. Create a new portfolio <code>test-01.xml</code> with currency EUR. Add a securities account <code>broker-A</code> and a reference account <code>broker-A (EUR)</code>. Add two new empty instruments (<code>share-1</code> &amp; <code>share-2</code>). Use the symbol tickers <code>DTE.DE</code> and <code>TMV.DE</code> respectively and set Yahoo Finance (<code>Exchange Deutsche Börse XETRA</code>) as quote Feed.</p>
-<p>Add the following transactions: make a deposit of 155 EUR, buy 10 shares of share-1 at 15 EUR on 2021-01-15, ... (see figure 1).</p>
-<p><figure id="_figure-1"><figcaption>Figure 1.  Overview of transactions - Deposit (3x), Buy (3x), Dividend, and partial Sell.</figcaption><img alt="Overview of transactions - Deposit (3x), Buy (3x), Dividend, and partial Sell." class="pp-figure" src="../images/irr-example-transactions.png"></figure> </p>
-<p><figure id="_figure-2"><figcaption>Figure 2.  Graph of historical quotes and transactions of share 1</figcaption><img alt="Graph of historical quotes and transactions of share 1" class="pp-figure" src="../images/irr-example-share-1.png"></figure></p>
-<p><figure id="_figure-3"><figcaption>Figure 3.  Graph of historical quotes and transactions of share 2</figcaption><img alt="Graph of historical quotes and transactions of share 2" class="pp-figure" src="../images/irr-example-share-2.png"></figure> </p>
-<p><strong>Some caveats</strong></p>
+<p>Let's create a simple example, step by step, to illustrate the calculation of the Internal Rate of Return (IRR) and highlight some of its caveats. You can either download the <a href="../../assets/test-01.xml">XML file</a> or create the file yourself (as outlined below).</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Create a new portfolio <code>test-01.xml</code> with currency EUR. Add a securities account <code>broker-A</code> and a reference account <code>broker-A (EUR)</code>. Add two new empty instruments (<code>share-1</code> &amp; <code>share-2</code>). Use the symbol tickers <code>DTE.DE</code> and <code>TMV.DE</code> respectively and set Yahoo Finance (<code>Exchange Deutsche Börse XETRA</code>) as quote Feed. Add the following transactions: make a deposit of 155 EUR, buy 10 shares of share-1 at 15 EUR on 2021-01-15, ... (see figure 1, 2 and 3).</p>
+</div>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Overview of transactions - Deposit (3x), Buy (3x), Dividend, and partial Sell.</figcaption><img alt="" src="../../images/info-irr-example-transactions.png"></figure> </p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Graph of historical quotes and transactions of share-1. </figcaption><img alt="" class="pp-figure" src="../../images/info-irr-example-share-1.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Graph of historical quotes and transactions of share-2/ </figcaption><img alt="" class="pp-figure" src="../../images/info-irr-example-share-2.png"></figure> </p>
 <ul>
 <li>
-<p>If you don't include the deposits (to buy the securities), the performance IRR would become -infinity for longer reporting periods. Deposits accounts are <em>always</em> included in IRR calculation. If you don't deposit before buying shares, this account will be most of the time negative (you have bought some shares but there was no deposit) until there are dividends or sell transactions.</p>
+<p>If you don't include the deposits (to buy the securities), the performance IRR would become -infinity for longer reporting periods. Deposits accounts are <em>always</em> included in IRR calculation. If you don't deposit before buying shares, this account will be most of the time negative (you have bought some shares, but there was no deposit) until there are dividends or sell transactions.</p>
 </li>
 <li>
 <p>If you don't provide historical quotes, Performance and Securities IRR (1 and 2 years) will differ from the example. In absence of the historical quotes, PP will take the transaction value to calculate the initial value at reporting start; see manual on <a href="../reporting-period/">reporting periods</a>.</p>
 </li>
 </ul>
 <h1 id="trade-irr">Trade IRR<a class="headerlink" href="#trade-irr" title="Permanent link">#</a></h1>
-<p>The <strong>Trade IRR</strong> is calculated under <code>Sidebar &gt; Reports &gt; Performance &gt; Trades</code>. There are three trades in the example of figure 1. A <em>closed</em> trade starting with a buy on <code>2021-01-15</code> and ending with a partial sell on <code>2022-01-14</code>. The remaining shares make the second <em>open</em> trade, starting at <code>2022-01-14</code> and ending at the current date (e.g. <code>2023-06-12</code>). The third trade is also open because share-2 hasn't been sold yet.</p>
-<p><figure id="_figure-4"><figcaption>Figure 4.  IRR calculations for the open and closed trades of figure 1.</figcaption><img alt="IRR calculations for the open and closed trades of figure 1." class="pp-figure" src="../images/irr-example-trade.png"></figure></p>
-<p>Note that PP use a <code>FIFO principle</code> (first-in; first-out) to determine which shares will be sold. The 5 shares that are sold on 2023-04-12 are the one that were bought in 2021-01-15; <em>not</em> the one that were bought on 2022-01-14.</p>
-<p>It's very important to have the cashflow amounts and dates correct. In the first trade (share-1 closed), 5 shares of the first buy are sold. The net transaction value of this first buy was 155 EUR. The initial outflow of trade 1 is 5 * 155/10 or 77.5 EUR. These were sold on <code>2023-04-12</code> for 105 EUR. The holding period of these 5 shares was <code>2023-04-12</code> - <code>2023-06-12</code> = 817 days. The IRR is according to <a href="../irr-theory/">equation (2)</a> = (105/77.50)^(1/(817/365) or 14.53%.  You can of course also use the Excel-function XIRR().</p>
-<p>Trade (share-1 open) is a special case. First of all this trade ends on the current day (e.g. <code>2023-06-12</code>). But it consists of shares that were bought in 2021 and in 2022. Five shares are from 2021. The cash outflow is thus -77.5 EUR. Today, they are valuated at 95.36 EUR. The remaining 5 are from 2022-01-04 with a cash outflow of -84 EUR. These 5 shares are also 95.36 EUR worth today (<code>2023-06-12</code>). Equation 2 cannot help us here because there are multiple terms. Inserting IRR = 9.16% in eq (1) will result in exactly the initial cash outflow of -77.5 EUR (or you could use the Excel function; see figure 5).</p>
-<p><figure id="_figure-5"><figcaption>Figure 5.  Calculating the IRR with Excel</figcaption><img alt="Calculating the IRR with Excel" class="pp-figure" src="../images/irr-example-excel.png"></figure></p>
+<p>The <strong>Trade IRR</strong> can be calculated using the menu <code>View &gt; Reports &gt; Performance &gt; Trades</code> or through the sidebar. There are three trades in the example of figure 1. A <em>closed</em> trade starting with a buy of <code>share-1</code> on <code>2021-01-15</code> and ending with a partial sell on <code>2022-01-14</code>. The remaining shares make the second <em>open</em> trade, starting at <code>2022-01-14</code> and ending at the current date (e.g. <code>2023-06-12</code>). The third trade is also open because <code>share-2</code> hasn't been sold yet.</p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  IRR calculations for the open and closed trades of figure 1.</figcaption><img alt="" src="../../images/mnu-view-reports-trade-irr-example.png"></figure></p>
+<p>Please note that PP use a <code>FIFO principle</code> (first-in; first-out) to determine which shares will be sold. The 5 shares sold on <code>2023-04-12</code> are the ones purchased on <code>2021-01-15</code>; <em>not</em> the ones acquired on <code>2022-01-14</code>.</p>
+<p>It's very important to have the cashflow amounts and dates correct. In the first trade (share-1 closed), 5 shares of the first buy of 10 shares are sold. The net transaction value of this first purchase was 155 EUR (see Figure 1). The initial outflow of trade 1 is 5 * 155/10 or 77.5 EUR. These were sold on <code>2023-04-12</code> for 105 EUR. The holding period of these 5 shares was <code>2023-04-12</code> - <code>2023-06-12</code> = 817 days. The IRR is according to <a href="../irr-theory/">equation (2)</a> = (105/77.50)^(1/(817/365) or 14.53%.  You can also use the Excel-function XIRR(); see Figure 5.</p>
+<p>Trade (share-1 open) is a special case. This trade ends on the current day (<code>2023-06-12</code>). But it consists of shares that were bought in 2021 and in 2022. Five shares are from 2021. The cash outflow of these shares is thus -77.5 EUR (see also paragraph above). Today, they are valuated at 95.36 EUR. The remaining 5 shares are from 2022-01-04 with a cash outflow of -84 EUR (see Figure 1). These 5 shares are also 95.36 EUR worth today (<code>2023-06-12</code>). Equation 2 cannot help us here because there are multiple terms. Inserting IRR = 9.16% in eq (1) will result in exactly the initial cash outflow of -77.5 EUR (or you could use the Excel function; see figure 5 bottom).</p>
+<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5.  Calculating the Trade IRR with Excel. </figcaption><img alt="" class="pp-figure" src="../../images/info-irr-example-excel.png"></figure></p>
+<p>The trade involving <code>share-2</code> is much simpler. Referring to Figure 1, these shares were acquired for a net value of 67 EUR on <code>2022-09-30</code>, which was 255 days ago. The current value is 111.76 EUR, resulting in an IRR of 108% (as indicated in Figure 5, top right).</p>
 <h1 id="security-irr">Security IRR<a class="headerlink" href="#security-irr" title="Permanent link">#</a></h1>
-<p>Both Security IRR and Performance IRR work with a <a href="../reporting-period/">reporting period</a>. This complicates the calculation quite a bit.</p>
-<p><figure id="_figure-6"><figcaption>Figure 6.  Evolution of share-2 and share-2, according to reporting period.</figcaption><img alt="Evolution of share-2 and share-2, according to reporting period." class="pp-figure" src="../images/irr-example-security.png"></figure></p>
+<p><strong>Security IRR</strong> can be calculated using the menu <code>View &gt; Reports &gt; Performance &gt; Security</code> or through the sidebar.</p>
+<p>Both Security IRR and Performance IRR (see below) work with a <a href="../reporting-period/">reporting period</a>. This complicates the calculation quite a bit.</p>
+<p><figure pp-figure="" id="_figure-6"><figcaption>Figure 6.  Evolution of share-1 and share-2, according to reporting period.</figcaption><img alt="" class="pp-figure" src="../../images/info-irr-example-security.png"></figure></p>
 <p><strong>Important</strong></p>
 <ul>
 <li>
-<p>All values are WITHOUT taxes. Fees are included. The Net Transaction value is not used for the Security IRR calculation (it is for the other types).</p>
+<p>Depending on the selected period, the date used for the valuation of 1st buy and 2nd buy is either the transaction date or the starting date of the reporting period. If the starting date of the selected period (e.g. 3 years) is before the transaction date, then both the transaction date AND transaction value is used to valuate the investment. Otherwise, the historical price at the period's starting date is utilized. For example, the starting date of a 2 years period is at <code>2021-06-12</code>. The purchase date <code>2021-01-15</code> of <code>share-1</code> precedes that date. Thus, the historical price of <code>share-1</code> at the starting date of the period (17.794 EUR) is used to determine the value of the investment.</p>
 </li>
 <li>
-<p>Depending on the selected period, the  reporting date of 1st buy and 2nd buy is either at the transaction date or at the starting date of the reporting period.</p>
+<p>All transaction values are used WITHOUT taxes. Fees however are included. However, if the historical price is used, neither fees nor taxes are factored in.</p>
 </li>
 <li>
-<p>Contrary to the Performance IRR, dividends and sell results leave the portfolio at transaction date. Deposit accounts (where these results are stored) are not included in the Security IRR.</p>
+<p>In contrast to the Performance IRR, dividends and sell results are considered as leaving  the portfolio at transaction date. Deposit accounts (where these results are stored) are NOT included in the Security IRR calculation.</p>
 </li>
 </ul>
 <h2 id="3-years-reporting-period">3 years reporting period<a class="headerlink" href="#3-years-reporting-period" title="Permanent link">#</a></h2>
 <p>Today is <code>2023-06-12</code>. The start date of the period is thus <code>2020-06-12</code>. Because all shares are bought after this date, you need to work with the transaction dates and values (excluding taxes!).</p>
-<p><figure id="_figure-7"><figcaption>Figure 7.  Security IRR for a 3 year reporting period</figcaption><img alt="Security IRR for a 3 year reporting period" class="pp-figure" src="../images/irr-example-security-reporting-period-3y.png"></figure></p>
-<p>With an IRR = 18.00%, applying <a href="../irr-theory/">Eq (1)</a> with share-1 will result in:</p>
-<p>=153 - (-83/(1.18)^(364/365))+(30/(1.18)^(699/365))+(107/(1.18)^(817/365))+(190.06/(1.18)^(878/365)) = 0</p>
-<p>Calculating IRR for share-2 is much easier because there are only two terms; see <a href="../irr-theory/">equation (2)</a>.</p>
-<p>IRR = (111.76/66)^(1/(255/365))-1</p>
+<p><figure class="pp-figure" id="_figure-7"><figcaption>Figure 7.  Security IRR for a 3 year reporting period.</figcaption><img alt="" src="../../images/mnu-view-reports-securities-irr-example-period-3y.png"></figure></p>
+<p>With an IRR = 18.00%, applying <a href="../irr-theory/">Eq (1)</a> with <code>share-1</code> will result in:</p>
+<p><code>=153 - (-83/(1.18)^(364/365))+(30/(1.18)^(699/365))+(107/(1.18)^(817/365))+(190.06/(1.18)^(878/365)) = 0</code></p>
+<p>Calculating IRR for <code>share-2</code> is much easier because there are only two terms; see <a href="../irr-theory/">equation (2)</a>.</p>
+<p><code>IRR = (111.76/66)^(1/(255/365))-1</code></p>
 <h2 id="2-years-reporting-period">2 years reporting period<a class="headerlink" href="#2-years-reporting-period" title="Permanent link">#</a></h2>
-<p><figure id="_figure-8"><figcaption>Figure 8.  Security IRR for a 2 year reporting period</figcaption><img alt="Security IRR for a 2 year reporting period" class="pp-figure" src="../images/irr-example-security-reporting-period-2y.png"></figure></p>
-<p>The start of the reporting period is on <code>2021-06-12</code>. The first buy of share-1 is already done. For this cashflow, you need to take the transaction date as the reporting date. The other dates and values remain the same as in the 3 years report.</p>
+<p><figure pp-figure="" id="_figure-8"><figcaption>Figure 8.  Security IRR for a 2 year reporting period.</figcaption><img alt="" class="pp-figure" src="../../images/mnu-view-reports-securities-irr-example-period-2y.png"></figure></p>
+<p>The start of the reporting period is on <code>2021-06-12</code>. The first buy of share-1 is already done. For this cashflow, you need to take the reporting start date to determine the value of the transaction and 2 * 365 days as period length. The other dates and values remain the same as in the 3 years report.</p>
 <p>For share-2 nothing changes because the transaction date is later than the reporting start.</p>
 <h2 id="1-year-reporting-period">1 year reporting period<a class="headerlink" href="#1-year-reporting-period" title="Permanent link">#</a></h2>
-<p><figure id="_figure-9"><figcaption>Figure 9.  Security IRR for a 1 year reporting period</figcaption><img alt="Security IRR for a 1 year reporting period" class="pp-figure" src="../images/irr-example-security-reporting-period-1y.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-9"><figcaption>Figure 9.  Security IRR for a 1 year reporting period.</figcaption><img alt="" src="../../images/mnu-view-reports-securities-irr-example-period-1y.png"></figure></p>
 <p>Both 1st and 2nd buy fall before the reporting date. Both transactions are valuated at the reporting start for 272.25 EUR. You can delete the line of 2nd buy or set the value to zero (0/xxx = 0).</p>
 <p>Share-2: same dates and values as in reporting periods 3 years and 2 years.</p>
 <h1 id="performance-irr">Performance IRR<a class="headerlink" href="#performance-irr" title="Permanent link">#</a></h1>
+<p><figure class="pp-figure" id="_figure-10"><figcaption>Figure 10.  Performance IRR calculation for different reporting periods.</figcaption><img alt="" src="../../images/info-irr-example-performance-reporting-period.png"></figure></p>
 <p><strong>Important</strong></p>
 <ul>
 <li>
-<p>The performance IRR computes the IRR for the whole portfolio, including deposit accounts.</p>
+<p>The performance IRR computes the IRR for the whole portfolio, including deposit accounts. It is possible to filter the portfolio for certain accounts by right-clicking the label and choosing <code>Data series &gt; Select data series</code>.</p>
 </li>
 <li>
-<p>a deposit for each buy is necessary, otherwise a -infinity IRR (because of the very large negative deposit accounts)</p>
+<p>A deposit for each buy is necessary, otherwise a <code>minus infinity IRR</code> could occur because of the very large negative deposit accounts. </p>
 </li>
 <li>
-<p>dividends and sell transactions are placed on a deposit account and keep contributing to the IRR.</p>
+<p>Dividends and sell transactions are retained in a deposit account and keep contributing to the IRR.</p>
 </li>
 <li>
-<p>PP calculates a "Pooled IRR". This has some disadvantages.</p>
+<p>PP calculates a "Pooled IRR".</p>
 </li>
 </ul>
 <h2 id="3-years-reporting-period_1">3 years reporting period<a class="headerlink" href="#3-years-reporting-period_1" title="Permanent link">#</a></h2>
-<p><figure id="_figure-10"><figcaption>Figure 10.  Performance IRR for a 3 year reporting period</figcaption><img alt="Performance IRR for a 3 year reporting period" class="pp-figure" src="../images/irr-example-performance-reporting-period-3y.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-11"><figcaption>Figure 11.  Performance IRR for a 3 year reporting period. </figcaption><img alt="" src="../../images/mnu-view-reports-performance-irr-example-period-3y.png"></figure></p>
 <ul>
 <li>
-<p>The values are self-explaining: the net transaction value of the 1st buy of share-1 was 155 EUR. On the ending date of the period the remaining share-1 are valuated at 190.06 EUR (10 x 19.006 EUR ).</p>
+<p>The values in Figure 10 are self-explaining: the net transaction value of the 1st buy of share-1 was 155 EUR. On the ending date of the period the remaining <code>share-1</code> are valuated at 190.06 EUR (10 x 19.006 EUR).</p>
 </li>
 <li>
 <p>The dividend and sell transaction have a different date than the transaction date. That's because the result of the transaction is put on a deposit account and stays there until the period end.</p>
 </li>
 </ul>
 <h2 id="2-years-reporting-period_1">2 years reporting period<a class="headerlink" href="#2-years-reporting-period_1" title="Permanent link">#</a></h2>
-<p><figure id="_figure-11"><figcaption>Figure 11.  Performance IRR for a 2 year reporting period</figcaption><img alt="Performance IRR for a 2 year reporting period" class="pp-figure" src="../images/irr-example-performance-reporting-period-2y.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-12"><figcaption>Figure 12.  Performance IRR for a 2 year reporting period.</figcaption><img alt="" src="../../images/mnu-view-reports-performance-irr-example-period-2y.png"></figure></p>
 <ul>
-<li>The initial value of the 2 years reporting period is 177.94 EUR. The 1st buy of share-1 has taken place before the starting date of the period (2021-06-12). This date, however is a Saturday. So, the last valid historical quote on Friday, 2021-06-11 (17.794 EUR) is taken to valuate the stock and the period start has moved 1 day earlier.</li>
+<li>The initial value of the 2 years reporting period is 177.94 EUR. The 1st buy of <code>share-1</code> has taken place before the starting date of the period (<code>2021-06-12</code>). This date, however is a Saturday. So, the last valid historical quote on Friday, 2021-06-11 (17.794 EUR) is taken to valuate the stock and the period start has moved 1 day earlier.</li>
 </ul>
 <h2 id="1-year-reporting-period_1">1 year reporting period<a class="headerlink" href="#1-year-reporting-period_1" title="Permanent link">#</a></h2>
-<p><figure id="_figure-12"><figcaption>Figure 12.  Performance IRR for a 1 year reporting period</figcaption><img alt="Performance IRR for a 1 year reporting period" class="pp-figure" src="../images/irr-example-performance-reporting-period-1y.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-13"><figcaption>Figure 13.  Performance IRR for a 1 year reporting period.</figcaption><img alt="" src="../../images/mnu-view-reports-performance-irr-example-period-1y.png"></figure></p>
 <ul>
 <li>
 <p>The start date of the period should be <code>2022-06-12</code>; so 1st and 2nd buy of share-1 are already done and should be valuated on that day. This date, however, is a Sunday, so, the historical quote of Friday, <code>2022-06-10</code> is taken (18.15 EUR), making the initial value 15 * 18.15 = 272.25 EUR. This includes the second buy. The value of this transaction is set to 0. The starting date of the period should be set to <code>2022-06-10</code>.</p>
