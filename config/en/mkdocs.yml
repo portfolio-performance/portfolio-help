@@ -27,7 +27,6 @@ theme:
     - navigation.indexes
     - navigation.
     - content.action.edit
-    - content.action.view
   logo: assets/images/logo.svg
   favicon: assets/images/favicon.png
   language: en
