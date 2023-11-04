@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://help.portfolio-performance.info/en/concepts/irr-theory/">
       
       
-        <link rel="prev" href="../purchase-value/">
+        <link rel="prev" href="../performance/">
       
       
         <link rel="next" href="../irr-example/">
@@ -933,6 +933,8 @@
       
         
       
+        
+      
     
     
     
@@ -1067,6 +1069,26 @@
   
   <span class="md-ellipsis">
     Purchase value
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../performance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Performance
   </span>
   
 
@@ -1359,7 +1381,7 @@
 
 <p>The Internal Rate of Return (IRR) measures the performance of an investment between two dates ($t_{0}$ and $t_{n}$). It is expressed as an annual interest rate that is necessary to bring the initial value of the investment at time $t_{0}$ to the final value at time $t_{n}$. In PP, the reporting period is measured in days. The classic equation to explain the meaning of IRR is:</p>
 <p><strong>Eq (1)</strong>    $CF_{t0} = \frac{CF_{t1}}{(1 + IRR)^\frac{t_1}{365}}+\frac{CF_{t2}}{(1 + IRR)^\frac{t_2}{365}}+...+ \frac{CF_{tn}}{(1 + IRR)^\frac{t_n}{365}}$</p>
-<p>$CF_{t0}$ is the initial cashflow at time $t_0$. It is the sum of all in- and outflows at that moment in time and represents your initial investment. $CF_{t1}$, $CF_{tn}$ are the net cashflows that your initial investment will yield. PP works with daily periods instead of the traditional annual periods. Therefore, $t_1$, $t_2$, and $t_n$ should be converted to the number of days between $t_0$ and $t_n$. Of course, if the period between $t_0$ and $t_n$ is, for example, 365 days, the exponent becomes 1 as in the more traditional version of the equation. Eq (1) is derived from the calculation of the <a href="../images/info-irr-future-present-value.svg">present value</a> of a future cashflow.</p>
+<p>$CF_{t0}$ is the initial cashflow at time $t_0$. It is the sum of all in- and outflows at that moment in time and represents your initial investment. $CF_{t1}$, $CF_{tn}$ are the net cashflows that your initial investment will yield. PP works with daily periods instead of the traditional annual periods. Therefore, $t_1$, $t_2$, and $t_n$ should be converted to the number of days between $t_0$ and $t_n$. Of course, if the period between $t_0$ and $t_n$ is, for example, 365 days, the exponent becomes 1 as in the more traditional version of the equation. Eq (1) is derived from the calculation of the <a href="../../images/info-irr-future-present-value.svg">present value</a> of a future cashflow.</p>
 <p>The IRR can be measured for a specific trade, security or the whole portfolio. Here's a simple example. Additionally, there is also a more complex <a href="../irr-example/">Practical step-by-step example</a>, solved in PP.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
