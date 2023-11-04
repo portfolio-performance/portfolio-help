@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#xml" class="md-skip">
+        <a href="#step-1" class="md-skip">
           Skip to content
         </a>
       
@@ -1387,52 +1387,31 @@
 
 
 <p>You can quickly create a PP file using a wizard to guide you through the setup process. There are five steps but only the first two are mandatory. Start with the menu <code>File &gt; New &gt; File</code> to create a new portfolio file.</p>
-<ul>
-<li>
-<p><strong>Step 1</strong></p>
+<h1 id="step-1">Step 1<a class="headerlink" href="#step-1" title="Permanent link">#</a></h1>
 <p>First you need to select the default currency for the portfolio (see figure 1). You can always change the currency for individual securities. PP supports almost every possible currency: from AED (United Arab Emirates Dirham) to ZWL (Zimbabwean dollar).</p>
-<p>Figure: Selecting the default currency for the portfolio.{class=pp-figure}</p>
-<p><img alt="" src="../../images/mnu-file-new-file-create-portfolio-wizard-step-1.png"></p>
-</li>
-<li>
-<p><strong>Step 2</strong></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Selecting the default currency for the portfolio.</figcaption><img alt="" src="../../images/mnu-file-new-file-create-portfolio-wizard-step-1.png"></figure></p>
+<h1 id="step-2">Step 2<a class="headerlink" href="#step-2" title="Permanent link">#</a></h1>
 <p>Your portfolio must contain at least one security <a href="../../concepts/account/">account</a> and one associated reference (deposit) account.</p>
-<p>Figure: Adding security and reference accounts to the portfolio.{class=pp-figure}</p>
-<p><img alt="" src="../../images/mnu-file-new-file-create-portfolio-wizard-step-2.png"></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Adding security and reference accounts to the portfolio.</figcaption><img alt="" src="../../images/mnu-file-new-file-create-portfolio-wizard-step-2.png"></figure></p>
 <p>When at least one security account with a reference account has been created the <code>Finish</code> button becomes available. Don't worry about the next steps if you don't understand what they are about.</p>
-</li>
-</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you have an existing portfolio PP supports importing csv files to quickly add securities, buy and sell transactions, and payments. See <a href="https://forum.portfolio-performance.info/t/import-csv-file/17123">https://forum.portfolio-performance.info/t/import-csv-file/17123</a> for a tutorial on importing a portfolio and dividends.</p>
 </div>
-<ul>
-<li>
-<p><strong>Step 3</strong></p>
+<h1 id="step-3">Step 3<a class="headerlink" href="#step-3" title="Permanent link">#</a></h1>
 <p>Sometimes, you need more than one deposit account. You can add these extra cash accounts (e.g. in different currencies) to your portfolio.</p>
-<p>Figure: Adding additional cash accounts to the portfolio.{class=pp-figure}</p>
-<p><img alt="" src="../../images/mnu-file-new-file-create-portfolio-wizard-step-3.png"></p>
-</li>
-<li>
-<p><strong>Step 4</strong></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Adding additional cash accounts to the portfolio.</figcaption><img alt="" src="../../images/mnu-file-new-file-create-portfolio-wizard-step-3.png"></figure></p>
+<h1 id="step-4">Step 4<a class="headerlink" href="#step-4" title="Permanent link">#</a></h1>
 <p>As part of the creation wizard, you can also add the securities that you want to track in this portfolio. These securities are retrieved from German index trackers such a DAX (Deutscher Aktienindex) , tecDax, SDAX, and MDAX. You can also add the index itself or others (e.g. NASDAQ) with <code>Indizes</code>. Of course, you can add securities later on. Your choice is then much larger.</p>
-<p>Figure: Adding instruments to the portfolio.{class=pp-figure}</p>
-<p><img alt="" class="pp-figure" src="../images/mnu-file-new-create-portfolio-wizard-step-4.png"></p>
-</li>
-<li>
-<p><strong>Step 5</strong></p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Adding instruments to the portfolio.</figcaption><img alt="" src="../../images/mnu-file-new-file-create-portfolio-wizard-step-4.png"></figure></p>
+<p>Step 5</p>
 <p>Taxonomies such as Asset classes and Regions are used to classify your securities. This classification can then later on be used in performance analysis e.g. show me the performance of all securities from region xxx.</p>
-<p>Figure: Adding taxonomies to the portfolio.{class=pp-figure}</p>
-<p><img alt="" class="pp-figure" src="../images/mnu-file-new-create-portfolio-wizard-step-5.png"></p>
-</li>
-<li>
-<p><strong>Finish</strong></p>
+<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5.  Adding taxonomies to the portfolio.</figcaption><img alt="" src="../images/mnu-file-new-create-portfolio-wizard-step-5.png"></figure></p>
+<p>Finish</p>
 <p>When the wizard is finished, a <code>unnamed.xml</code> file is created. Of course, you should save it with a different name and location.</p>
-</li>
-</ul>
 <h1 id="xml">XML<a class="headerlink" href="#xml" title="Permanent link">#</a></h1>
 <p>All data of your portfolio is stored in one XML-file (eXtensible Markup Language). This is a human-readable file format. For example, take the following buying transaction  of 5 shares of Microsoft at a purchase price of 334.27 USD with 30  USD fees and 45 USD taxes (see figure 6.).</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Example of a buying transaction.</figcaption><img alt="" src="../../images/mnu-transaction-buy-share-microsoft.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6.  Example of a buying transaction.</figcaption><img alt="" src="../../images/mnu-transaction-buy-share-microsoft.png"></figure></p>
 <p>This single buying transaction is represented with the following XML code.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&lt;transactions&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">   </span><span class="nt">&lt;portfolio-transaction&gt;</span>
