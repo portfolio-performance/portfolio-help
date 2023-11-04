@@ -17,8 +17,8 @@ You create the securities that are of interest to you in the list of securities.
 # [Manage your portfolio](manage-portfolio/index.md)
 So far you have created your portfolio file with a list of interesting securities. Now, it's time to buy and sell some of those securities, receive dividends, set up a savings plan, receive dividends, ....
 
-# [Reports & Performance](reports/statement.md)
-How is your portfolio structured? The [Statement of Assets](reports/statement.md) displays the composition of your portfolio assets. A [line chart](reports/chart.md) and [doughnut chart](reports/holdings.md) provide a more visual overview of all assets.
+# [Reports & Performance](reports/statement/index.md)
+How is your portfolio structured? The [Statement of Assets](reports/statement/index.md) displays the composition of your portfolio assets. A [line chart](reports/statement/chart.md) and [doughnut chart](reports/statement/holdings.md) provide a more visual overview of all assets.
 
 What is the current performance of your portfolio? Along with assessments of returns and volatility, you will also receive an overview of the taxes and costs associated with it.
 

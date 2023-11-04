@@ -114,6 +114,7 @@ nav:
       - Transaction: concepts/transaction.md
       - Reporting period: concepts/reporting-period.md
       - Purchase value: concepts/purchase-value.md
+      - Performance: concepts/performance.md
       - IRR: concepts/irr-theory.md
       - IRR example: concepts/irr-example.md
   - Common procedures:
