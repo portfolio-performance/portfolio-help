@@ -122,7 +122,7 @@ All images are stored in a folder named `images` at the language level, which me
 
 If you want to annotate a screenshot with text, arrows, boxes, and more, use an SVG file and embed the screenshot as a background image. For example, in Inkscape, you can easily paste the screenshot from the clipboard onto the canvas and then save the resulting image as an SVG.
 
-### Latex
+### Formulas or mathematical symbols
 
 To include formulas or mathematical symbols, the manual uses the open-source [Katex libary](https://katex.org/).
 
@@ -133,14 +133,11 @@ Block
 
 `$$CF_{t0} = \frac{CF_{t1}}{(1 + IRR)^\frac{t_1}{365}}+\frac{CF_{t2}}{(1 + IRR)^\frac{t_2}{365}}+...+ \frac{CF_{tn}}{(1 + IRR)^\frac{t_n}{365}}$$`
 
-$$CF_{t0} = \frac{CF_{t1}}{(1 + IRR)^\frac{t_1}{365}}+\frac{CF_{t2}}{(1 + IRR)^\frac{t_2}{365}}+...+ \frac{CF_{tn}}{(1 + IRR)^\frac{t_n}{365}}$$
+$$CF_{t0} = \frac{CF_{t1}}{(1 + IRR)^\frac{t_1}{365}}+\frac{CF_{t2}}{(1 + IRR)^\frac{t_2}{365}}+...+ \frac{CF_{tn}}{(1 + IRR)^\frac{t_n}{365}} \qquad\mathrm{(Eq 1)}$$
 
 Inline
 
-`The Simple Return formulas looks like $r = \frac{(V_E - V_S)}{V_S}$`
+`The Simple Return formula looks like $r = \frac{(V_E - V_S)}{V_S}$`
 
-The Simple Return formulas looks like $r = \frac{(V_E - V_S)}{V_S}$
-
-
-
+The Simple Return formula looks like $r = \frac{(V_E - V_S)}{V_S}$
 

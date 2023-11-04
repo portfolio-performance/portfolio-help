@@ -42,13 +42,13 @@ Figure: Adding instruments to the portfolio.{class=pp-figure}
 
 ![](../images/mnu-file-new-file-create-portfolio-wizard-step-4.png)
 
-Step 5
+# Step 5
 
 Taxonomies such as Asset classes and Regions are used to classify your securities. This classification can then later on be used in performance analysis e.g. show me the performance of all securities from region xxx.
 
 Figure: Adding taxonomies to the portfolio.{class=pp-figure}
 
-![](../images/mnu-file-new-create-portfolio-wizard-step-5.png)
+![](../images/mnu-file-new-file-create-portfolio-wizard-step-5.png)
 
 Finish
 

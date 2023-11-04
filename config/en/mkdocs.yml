@@ -25,7 +25,9 @@ theme:
     - content.code.annotate 
     - content.code.copy
     - navigation.indexes
-    - navigation.tabs
+    - navigation.
+    - content.action.edit
+    - content.action.view
   logo: assets/images/logo.svg
   favicon: assets/images/favicon.png
   language: en

@@ -2,9 +2,9 @@
 title: Performance
 lastUpdate: 2023-11-02
 ---
-The performance of a financial portfolio is often measured using the concept of return: the increase or decrease of the value of the portfolio.
+The performance of a financial portfolio is often measured using the concept of return: the increase or decrease of the value of the portfolio over a specific period. Other names for this concept are Rate of Return (ROR) or Return on Investment (ROI).
 
-$$r = \frac{(V_E - V_S)}{V_S}$$
+$$r = \frac{(V_E - V_S)}{V_S} \qquad\mathrm{(Eq 1)}$$
 
 where $V_E =$ the end value of the portfolio, and $V_S =$ the start value of the portfolio.
 
