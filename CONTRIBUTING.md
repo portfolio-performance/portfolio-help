@@ -121,3 +121,26 @@ The figure caption is written after `Figure:`. You can add a class to the figure
 All images are stored in a folder named `images` at the language level, which means they are placed within the `en` or `de` folder at the top level. The naming convention follows Kebab case, where spaces are replaced with hyphens. Additionally, the image names provide an indication of their source or origin. For instance, "mnu-transaction-buy.png" is a screenshot, produced from the top-level menu `Transaction > Buy`.
 
 If you want to annotate a screenshot with text, arrows, boxes, and more, use an SVG file and embed the screenshot as a background image. For example, in Inkscape, you can easily paste the screenshot from the clipboard onto the canvas and then save the resulting image as an SVG.
+
+### Latex
+
+To include formulas or mathematical symbols, the manual uses the open-source [Katex libary](https://katex.org/).
+
+The `$$ ... $$` syntax is used to insert blocks. The `$ ... $` syntax is needed for inline additions; see [Mkdocs with Material theme](https://squidfunk.github.io/mkdocs-material/reference/math/).
+
+
+Block
+
+`$$CF_{t0} = \frac{CF_{t1}}{(1 + IRR)^\frac{t_1}{365}}+\frac{CF_{t2}}{(1 + IRR)^\frac{t_2}{365}}+...+ \frac{CF_{tn}}{(1 + IRR)^\frac{t_n}{365}}$$`
+
+$$CF_{t0} = \frac{CF_{t1}}{(1 + IRR)^\frac{t_1}{365}}+\frac{CF_{t2}}{(1 + IRR)^\frac{t_2}{365}}+...+ \frac{CF_{tn}}{(1 + IRR)^\frac{t_n}{365}}$$
+
+Inline
+
+`The Simple Return formulas looks like $r = \frac{(V_E - V_S)}{V_S}$`
+
+The Simple Return formulas looks like $r = \frac{(V_E - V_S)}{V_S}$
+
+
+
+
