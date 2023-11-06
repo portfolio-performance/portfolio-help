@@ -126,4 +126,5 @@ nav:
   - Tips & tricks:
       - Tips & tricks: tricks/index.md
       - Import fund data from Morningstar: tricks/morningstar.md
+      - Hack data file to add defauly Quote Feed: tricks/quote-feed.md
 

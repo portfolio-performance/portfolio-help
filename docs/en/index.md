@@ -5,8 +5,6 @@ date: 2023-09-21
 
 # About this Manual
 
-![](../shared/info-irr-example-share-1.png)
-
 The *Portfolio Performance (PP)* manual consists of four chapters:
 
 - [Getting Started](getting-started/index.md): If you're new to PP, this chapter will help you get started. It covers everything from installation to creating a new portfolio, importing securities and transaction data, and evaluating your entire portfolio.

@@ -113,4 +113,14 @@ Earnings: dividends + Interests? or something more?
 
 In the Pick Dataseries dialog (Reports > Chart > Gear) the option Taxes (accumulated) is present, but Taxes alone is missing (is present for Fees, Dividends, Interests).
 
+### 2023-11-06
+Suggestions from Flywire.
+Adding the Last Update date in the front matter is indeed duplicating Git functionality. Replaced it with mkdocs-git-revision-date-localized-plugin. This plugin will add "Last update: localized date" at the bottom of each page.
+
+In-depth text and video about writing good documentation: [https://documentation.divio.com/](https://documentation.divio.com/)
+PP handbook should be structured around 2 axes (practical vs theoretical and useful for learning vs useful for working).
+This gives 4 chapters: Tutorials (practical-learning), How-to (practical-working), explanation (theoretical-learning), and reference (theoretical-working).
+The current structure goes in the right direction: getting-started = tutorial, common procedure and tips & tricks = how-to, basic concepts = explanation.
+The section reference seems to be missing.
+
 
