@@ -56,7 +56,7 @@ The Markdown source files of the manual can be retrieved from [https://github.co
 
 ```
 
-At present, the manual is available in two languages: English (en) and German (de). All documentation pages should be stored within these directories; including images and assets (e.g. demo-portfolio.xml).
+At present, the manual is available in two languages: English (en) and German (de). All documentation pages should be stored within these directories; including images and assets (e.g. demo-portfolio.xml). Each language is a separate version and contributors translate the content manually.
 
 Use your favorite (Markdown) text editor to make corrections to the (local) source files. Upon finishing, create a Pull Request to the maintainer of the PP manual. If accepted, your changes will be visible within minutes. 
 
@@ -64,6 +64,15 @@ Use your favorite (Markdown) text editor to make corrections to the (local) sour
 Only if you need to view your changes locally and within the integrated Materials framework, you need to install both Python modules: [MkDocs installation](https://www.mkdocs.org/user-guide/installation/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/).
 
 Minor changes can be easily previewed within your Markdown editor.
+
+### Plugins
+
+Two plugins are specified in the requirements.txt
+
+- mkdocs-caption == 0.0.9
+- mkdocs-git-revision-date-localized-plugin == 1.2.1
+
+The `mkdocs-caption` is needed to insert numbered figure captions in pages. The second plugin will add 'Last update: month, day, year' at the bottom of each page. 
 
 ### Version control
 Since the PP manual is being maintained in GitHub, version control is already in place. Please pay special attention to the following:
