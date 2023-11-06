@@ -1,4 +1,4 @@
 mkdocs == 1.5.3
 mkdocs-material == 9.4.2
 mkdocs-caption == 0.0.9
-git-revision-date-localized == 1.2.1
+mkdocs-git-revision-date-localized-plugin == 1.2.1
