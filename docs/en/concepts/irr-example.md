@@ -16,7 +16,7 @@ Figure: Graph of historical quotes and transactions of share-1. {class=pp-figure
 
 ![](../images/info-irr-example-share-1.png){.pp-figure}
 
-Figure: Graph of historical quotes and transactions of share-2/ {class=pp-figure}
+Figure: Graph of historical quotes and transactions of share-2. {class=pp-figure}
 
 ![](../images/info-irr-example-share-2.png){.pp-figure} 
 
@@ -112,7 +112,7 @@ Figure: Performance IRR calculation for different reporting periods.{class=pp-fi
 
   + A deposit for each buy is necessary, otherwise a `minus infinity IRR` could occur because of the very large negative deposit accounts. 
 
-  + Dividends and sell transactions are retained in a deposit account and keep contributing to the IRR.
+  + Dividends and sell transactions are retained in a deposit account and keep contributing to the IRR. The valuation date for these cashflows is at the end of the reporting period.
 
   + PP calculates a "Pooled IRR".
 

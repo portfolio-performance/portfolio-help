@@ -72,6 +72,7 @@ plugins:
         caption_prefix: 'Figure {index}. '
         position: top
         markdown_identifier: 'Figure:'
+  - git-revision-date-localized
 
 markdown_extensions:
   - admonition
