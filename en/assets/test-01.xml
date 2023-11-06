@@ -2645,9 +2645,12 @@
         <price t="2023-10-26" v="2038500000"/>
         <price t="2023-10-27" v="2038500000"/>
         <price t="2023-10-30" v="2047500000"/>
-        <price t="2023-10-31" v="2044500000"/>
+        <price t="2023-10-31" v="2047500000"/>
+        <price t="2023-11-01" v="2075000000"/>
+        <price t="2023-11-02" v="2137500000"/>
+        <price t="2023-11-03" v="2139000000"/>
       </prices>
-      <latest t="2023-10-31" v="2044500000">
+      <latest t="2023-11-03" v="2139000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3706,9 +3709,12 @@
         <price t="2023-10-26" v="1469500000"/>
         <price t="2023-10-27" v="1445000000"/>
         <price t="2023-10-30" v="1453000000"/>
-        <price t="2023-10-31" v="1448500000"/>
+        <price t="2023-10-31" v="1449500000"/>
+        <price t="2023-11-01" v="1420500000"/>
+        <price t="2023-11-02" v="1440500000"/>
+        <price t="2023-11-03" v="1419000000"/>
       </prices>
-      <latest t="2023-10-31" v="1448500000">
+      <latest t="2023-11-03" v="1419000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -4189,6 +4195,18 @@
       </attribute-type>
     </attributeTypes>
     <configurationSets>
+      <entry>
+        <string>ReturnsVolatilityChartView-PICKER</string>
+        <config-set>
+          <configurations>
+            <config>
+              <uuid>6c2d3073-1d95-4f1f-b51f-03dfac0891dd</uuid>
+              <name>Standard</name>
+              <data>Client-totals;#000000;SOLID;false;2</data>
+            </config>
+          </configurations>
+        </config-set>
+      </entry>
       <entry>
         <string>name.abuchen.portfolio.ui.views.SecuritiesPerformanceView</string>
         <config-set>

@@ -1271,23 +1271,36 @@
   
 
 
-<p>The performance of a financial portfolio is often measured using the concept of return: the increase or decrease of the value of the portfolio over a specific period. Other names for this concept are Rate of Return (ROR) or Return on Investment (ROI).</p>
-<p>$$r = \frac{(V_E - V_S)}{V_S} \qquad\mathrm{(Eq 1)}$$</p>
+<p>The measurement of the performance of a financial portfolio is based on the concept of return: the increase or decrease of the value of the portfolio over a specific period. A <em>simple</em> rate of return can be calculated as $r = \frac{(V_E - V_S)}{V_S}$ or the equivalent form $r = \frac{V_E}{V_S} - 1$ (Eq 1).</p>
 <p>where $V_E =$ the end value of the portfolio, and $V_S =$ the start value of the portfolio.</p>
-<p>The <em>simple return</em> is calculated as the final portfolio value minus the initial portfolio value, divided by the initial portfolio value. This gives us a percentage change in the portfolio’s value over a specific period.</p>
+<p>For example, if you purchased a security for 100 EUR and can now sell it for 107 EUR, your simple rate of return is (107-100)/100 = 7%. This seems straightforward, but what does it truly signify? Did you acquire this security just one month ago, or was it a decade ago? To provide a more meaningful perspective, it's better to calculate an annualized rate of return.</p>
+<p>Moreover, your approach to calculating returns should also accommodate scenarios involving multiple securities with cash inflows and outflows. To handle such situations effectively, you can choose between a <em>money-weighted</em> or <em>time-weighted</em> approach.</p>
 <h1 id="money-weighted-rate-of-return">Money-weighted Rate of Return<a class="headerlink" href="#money-weighted-rate-of-return" title="Permanent link">#</a></h1>
-<p>The money-weighted rate of return is essentially the Internal Rate of Return (IRR) of the cash flows associated with the portfolio. It takes into account both the timing and amount of cash flows into and out of the portfolio. The formula (see also <a href="../irr-theory/">IRR theory</a>) looks like:
-$$CF_{t0} = \frac{CF_{t1}}{(1 + IRR)^\frac{t_1}{365}}+\frac{CF_{t2}}{(1 + IRR)^\frac{t_2}{365}}+...+ \frac{CF_{tn}}{(1 + IRR)^\frac{t_n}{365}}$$</p>
-<p>The formula for MWRR is derived by setting the initial investment value equal to the sum of the present values of future cash flows, each discounted at the MWRR itself, and solving for MWRR.</p>
+<p>The money-weighted rate of return is essentially the Internal Rate of Return (IRR) of the cash flows associated with the portfolio. This calculation considers both the timing (when) and the amount (how much) of the cash moves into and out of the portfolio. The money-weighted rate of return or IRR is the annual interest rate that is necessary to bring the start value of the investment to the end value. To generate the specified cash flows within the given time period, your portfolio must grow each year by a percentage equal to the IRR.</p>
+<p>The base formula to calculate the IRR (see also <a href="../irr-theory/">IRR theory</a>) looks like:
+$$CF_{t0} = \frac{CF_{t1}}{(1 + IRR)^\frac{t_1}{365}}+\frac{CF_{t2}}{(1 + IRR)^\frac{t_2}{365}}+...+ \frac{CF_{tn}}{(1 + IRR)^\frac{t_n}{365}} \qquad\mathrm{(Eq 2)}$$</p>
+<p>For each cash flow CF at time $t_1$, $t_2$, ..., $t_n$, you calculate its present value by dividing it by ${(1 + IRR)^\frac{t_1}{365}}$, where t is the number of days from the reference time t0. This part discounts the future cash flows to their present values, considering the time value of money. Choosing an appropriate IRR will ensure that the sum of all discounted cash flows equals the initial investment or $CF_{t0}$.</p>
+<p>It's easy to see from Eq 2 that the value of IRR is influenced by the magnitude of the cash flow. If the cash flow CF increases, the IRR must also become larger to balance the equation. If the exponent $\frac{t_2}{365}$ increases, the value of IRR should decrease. Therefore, IRR is a money-weighted rate of return.</p>
+<p>In <a href="../irr-example/">IRR - Practical example</a>, you will find a detailed and comprehensive explanation of the IRR calculation for our demonstration portfolio.</p>
 <h1 id="time-weighted-rate-of-return">Time-weighted Rate of Return<a class="headerlink" href="#time-weighted-rate-of-return" title="Permanent link">#</a></h1>
-<p>Time-weighted Rate of Return provide a popular alternative to the Money-weighted Rate of Return method in which each time period is given equal weight regardless of the amount invested.</p>
-<p>In the <em>True</em> time-weighted methodology (TTWROR), performance is calculated for each sub-period between cash flows using simple returns.</p>
-<p>From eq 1 it follows that
-$$ 1 + r = \frac{V_E}{V_S}$$</p>
-<p>If you consider multiple sub-periods, for example daily valuations of your portfolio, the <em>compounded</em> return could be written as (let $V_t$ equal to the value of the portfolio after the end of period <em>t</em> (e.g. day <em>t</em>).</p>
-<p>$$\frac{V_1}{V_S}.\frac{V_2}{V_1}.\frac{V_3}{V_2} ... \frac{V_{n-1}}{V_{n-2}}.\frac{V_e}{V_{n-1}}= \frac{V_E}{V_S}= 1 + r$$</p>
-<p>because each period will cancel itself out.</p>
-<p>$$(1 + r_1) . (1 + r_2) . (1 + r_3) ... (1 + r_{n-1}) . (1 + r_n) = (1 + r)$$</p>
+<p>The time-weighted rate of return is not influenced by the amount invested. Whether you invest 1 EUR or 100 EUR, you will achieve the same return. The reporting period is divided into several holding periods, and for each holding period, a return value is calculated and then compounded into an overall return. Each period carries equal weight. In the True time-weighted methodology (TTWROR), performance is calculated using simple returns without any consideration for the total amount invested.</p>
+<p>PP computes the TTWOR as follows. For each day within the reporting period, it collects the total portfolio value, inbound transfers, and outbound transfers. The portfolio value encompasses all deposit and securities accounts. To determine the value of a security, it multiplies the quantity by the (historical) price. Transfers encompass external cash flows, which can either enter the portfolio from outside (inbound) or exit it (outbound); assuming that fresh money is added at the beginning of the day (and hence is available to generate return) and removed at the end of the day. A dividend or sale transaction is not considered as a transfer; they remain within the portfolio. They are recorded in the cash account, thereby contributing to the increased valuation of the portfolio. A modified version of the simple return formula (see eq 1), including the transfers, is used to calculate the daily return value (named delta).</p>
+<p>The total <em>compounded</em> return can be calculated as follows:
+$$r = [(1 + r_1) * (1 + r_2) * (1 + r_3) ... (1 + r_{n-1}) * (1 + r_n)] - 1$$</p>
+<p>This formula follows directly from Eq 1, which can be rewritten as:</p>
+<p>$$\frac{V_1}{V_S} * \frac{V_2}{V_1} * \frac{V_3}{V_2} ... \frac{V_{n-1}}{V_{n-2}} * \frac{V_E}{V_{n-1}}= \frac{V_E}{V_S}= 1 + r$$</p>
+<p>$V_t$ is the value of the portfolio after the end of period <em>t</em> and each sub-period effectively cancels itself out.</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 6, 2023</span>
+      
+    
+  </small>
+</div>
 
 
   

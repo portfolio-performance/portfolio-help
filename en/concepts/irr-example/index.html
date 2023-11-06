@@ -1278,7 +1278,7 @@
 </div>
 <p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Overview of transactions - Deposit (3x), Buy (3x), Dividend, and partial Sell.</figcaption><img alt="" src="../../images/info-irr-example-transactions.png"></figure> </p>
 <p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Graph of historical quotes and transactions of share-1. </figcaption><img alt="" class="pp-figure" src="../../images/info-irr-example-share-1.png"></figure></p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Graph of historical quotes and transactions of share-2/ </figcaption><img alt="" class="pp-figure" src="../../images/info-irr-example-share-2.png"></figure> </p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Graph of historical quotes and transactions of share-2. </figcaption><img alt="" class="pp-figure" src="../../images/info-irr-example-share-2.png"></figure> </p>
 <ul>
 <li>
 <p>If you don't include the deposits (to buy the securities), the performance IRR would become -infinity for longer reporting periods. Deposits accounts are <em>always</em> included in IRR calculation. If you don't deposit before buying shares, this account will be most of the time negative (you have bought some shares, but there was no deposit) until there are dividends or sell transactions.</p>
@@ -1337,7 +1337,7 @@
 <p>A deposit for each buy is necessary, otherwise a <code>minus infinity IRR</code> could occur because of the very large negative deposit accounts. </p>
 </li>
 <li>
-<p>Dividends and sell transactions are retained in a deposit account and keep contributing to the IRR.</p>
+<p>Dividends and sell transactions are retained in a deposit account and keep contributing to the IRR. The valuation date for these cashflows is at the end of the reporting period.</p>
 </li>
 <li>
 <p>PP calculates a "Pooled IRR".</p>
@@ -1368,6 +1368,17 @@
 <p>There is a small difference between the calculated IRR from PP (27.75%) and the outlined procedure above (27.45%). </p>
 </li>
 </ul>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 6, 2023</span>
+      
+    
+  </small>
+</div>
 
 
   
