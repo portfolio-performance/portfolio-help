@@ -116,8 +116,8 @@ nav:
       - Transaction: concepts/transaction.md
       - Reporting period: concepts/reporting-period.md
       - Purchase value: concepts/purchase-value.md
-      - Performance: concepts/performance.md
-      - IRR: concepts/irr-theory.md
+      - Performance:
+          - Performance: concepts/performance/index.md
       - IRR example: concepts/irr-example.md
   - Common procedures:
       - Common procedures: procedures/index.md
@@ -127,4 +127,3 @@ nav:
       - Tips & tricks: tricks/index.md
       - Import fund data from Morningstar: tricks/morningstar.md
       - Hack data file to add defauly Quote Feed: tricks/quote-feed.md
-

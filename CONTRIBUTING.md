@@ -127,7 +127,7 @@ Figure: Example of Deposit Accounts. {class="pp-figure"}
 ```
 The figure caption is written after `Figure:`. You can add a class to the figure with {myclass}. The reference to the figure is plain Markdown syntax.
 
-All images are stored in a folder named `images` at the language level, which means they are placed within the `en` or `de` folder at the top level. The naming convention follows Kebab case, where spaces are replaced with hyphens. Additionally, the image names provide an indication of their source or origin. For instance, "mnu-transaction-buy.png" is a screenshot, produced from the top-level menu `Transaction > Buy`.
+Images are stored in subfolders named `images` at level of the document. This means that there could be several `images` folders. However, this seems a better solution than one single image folder: better scalability, contextual meaning, easier linking. Attention should be given to possible duplication of images. The naming convention follows Kebab case, where spaces are replaced with hyphens. Additionally, the image names provide an indication of their source or origin. For instance, "mnu-transaction-buy.png" is a screenshot, produced from the top-level menu `Transaction > Buy`.
 
 If you want to annotate a screenshot with text, arrows, boxes, and more, use an SVG file and embed the screenshot as a background image. For example, in Inkscape, you can easily paste the screenshot from the clipboard onto the canvas and then save the resulting image as an SVG.
 
