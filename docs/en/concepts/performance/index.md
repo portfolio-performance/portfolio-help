@@ -24,10 +24,4 @@ The time-weighted rate of return is not influenced by the amount invested. Wheth
 
 The TTWOR method is explained in depth in the [time-weighted section](./time-weighted.md) of this chapter.
 
-# Which one to use?
-
-# Many IRR and TTWOR's?
-
-# Impact of the reporting period
-
-# How are dividends, taxes, fees handled in the different scenarios?
+A nice video about the calculation and difference between money-weighted and time-weighted approach is given by the following [CFA-level-1 exam video](https://www.youtube.com/watch?v=FePaJoXno_M).
