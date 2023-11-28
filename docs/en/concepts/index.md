@@ -1,6 +1,5 @@
 ---
 Title: Basic concepts
-lastUpdate: 2023-09-14
 ---
 # Basic concepts
 
@@ -12,5 +11,3 @@ In this chapter, you will find a concise but clear explanation of several basic 
 - [Reporting period](reporting-period.md): The (reporting) period is the time slice that is taken into account for reporting (calculations, graphs, statistics). It's very important that you realize that for every performance calculation a reporting period is taken into account, even if you haven't set one explicitly.
 - [Purchase value](purchase-value.md): The Purchase Value of a security is the summed value of each buy (+) and sell (-) transaction of that security, taken into account the [reporting period](reporting-period.md). The value of a transaction includes the taxes and fees; sometimes also called “Net Transaction Value”.
 - [Performance](performance/index.md): Measuring your portfolio's performance may seem straightforward, but it involves a range of concepts and calculation techniques that require explanation.
-- [Internal Rate of Return (IRR)](irr-theory.md): The Internal Rate of Return (IRR) measures the performance of an investment between two dates. It is expressed as an annual interest rate that is necessary to bring the initial value of the investment at time \\(t_{0}\\) to the final value at time \\(t_{n}\\).
-- An [extensive but simplified example](irr-example.md) about the different IRR calculations: Trade, security & performance for three reporting periods (1, 2 and 3 years.

@@ -20,7 +20,7 @@ The Delta (for reporting period) is 120.82 EUR. This value represents the actual
 
 The Absolute change of the Last Day is negative (red). It remains the same for each reporting period. Hovering over the label gives some info. This value is the absolute change for a Reporting period of 1 trading day. Unfortunately, it's not the last day of the chosen reporting period; e.g. 11-12 Jun 2023, but the last trading day before 'today'.
 
-What about the True Time-Weighted Rate of Return (TTWOR) and the Internal Rate of Return (IRR) indices? The IRR is a percentage that shows how well your portfolio performs, considering when and how much money you have put in or take out. TTWOR measure the growth of your investments without being influenced by the timing and size of your contributions or withdrawals. An in-depth explanation of both measurements is given at [Concepts > Performance](../../../concepts/performance.md).
+What about the True Time-Weighted Rate of Return (TTWOR) and the Internal Rate of Return (IRR) indices? The IRR is a percentage that shows how well your portfolio performs, considering when and how much money you have put in or take out. TTWOR measure the growth of your investments without being influenced by the timing and size of your contributions or withdrawals. An in-depth explanation of both measurements is given at [Concepts > Performance](../../../concepts/performance/index.md)
 
 How should you interpret the difference between the two measures? If you look at the chart of historical prices of `share-1` and `share-2`, it is immediately evident that the timing of purchase and sale was rather optimal.
 
