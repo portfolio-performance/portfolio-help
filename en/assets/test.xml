@@ -3,25 +3,36 @@
   <baseCurrency>EUR</baseCurrency>
   <securities>
     <security>
-      <uuid>0152978e-2ea2-436f-b07a-0333b988ea8b</uuid>
-      <name>share-1</name>
+      <uuid>adfa4c8f-3426-4560-a5ec-f7af0d7ec467</uuid>
+      <name>share-4</name>
       <currencyCode>EUR</currencyCode>
-      <tickerSymbol>DTE.DE</tickerSymbol>
       <feed>MANUAL</feed>
       <prices>
-        <price t="2021-01-14" v="1100000000"/>
+        <price t="2021-01-15" v="1700000000"/>
+        <price t="2023-06-15" v="1850000000"/>
       </prices>
-      <latest t="2023-11-14" v="2155000000">
-        <high>-1</high>
-        <low>-1</low>
-        <volume>-1</volume>
-      </latest>
       <attributes>
         <map/>
       </attributes>
       <events/>
       <isRetired>false</isRetired>
-      <updatedAt>2023-11-14T19:38:37.608924800Z</updatedAt>
+      <updatedAt>2023-11-19T15:22:53.950628600Z</updatedAt>
+    </security>
+    <security>
+      <uuid>651be8b3-68f4-41ae-98fa-9ec87ab3f3d7</uuid>
+      <name>share-5</name>
+      <currencyCode>EUR</currencyCode>
+      <feed>MANUAL</feed>
+      <prices>
+        <price t="2021-09-15" v="5000000000"/>
+        <price t="2023-06-15" v="3000000000"/>
+      </prices>
+      <attributes>
+        <map/>
+      </attributes>
+      <events/>
+      <isRetired>false</isRetired>
+      <updatedAt>2023-11-19T20:03:03.874955400Z</updatedAt>
     </security>
   </securities>
   <watchlists/>
@@ -34,19 +45,19 @@
       <transactions>
         <account-transaction>
           <uuid>8cb19693-445d-4bb3-9ab0-4f6f79da7c50</uuid>
-          <date>2020-01-14T00:00</date>
+          <date>2021-01-15T00:00</date>
           <currencyCode>EUR</currencyCode>
-          <amount>15500</amount>
+          <amount>17000</amount>
           <shares>0</shares>
           <note>1. Deposit for purchase share-1</note>
-          <updatedAt>2023-11-14T20:36:02.139387600Z</updatedAt>
+          <updatedAt>2023-11-19T14:59:38.224958700Z</updatedAt>
           <type>DEPOSIT</type>
         </account-transaction>
         <account-transaction>
-          <uuid>d44f0c89-406d-4301-8f80-14f1795bf81b</uuid>
-          <date>2020-12-16T00:00</date>
+          <uuid>1aa9703e-dbe7-48a9-98af-4cbb345d0a19</uuid>
+          <date>2021-01-15T00:00</date>
           <currencyCode>EUR</currencyCode>
-          <amount>10000</amount>
+          <amount>17000</amount>
           <security reference="../../../../../securities/security"/>
           <crossEntry class="buysell">
             <portfolio>
@@ -56,14 +67,40 @@
               <referenceAccount reference="../../../../.."/>
               <transactions>
                 <portfolio-transaction>
-                  <uuid>fe5e28c0-f65b-4b05-baef-4e063a0ff368</uuid>
-                  <date>2020-12-16T00:00</date>
+                  <uuid>52fb5f94-5118-4b11-aaa8-dd42732a3bb4</uuid>
+                  <date>2021-01-15T00:00</date>
                   <currencyCode>EUR</currencyCode>
-                  <amount>10000</amount>
+                  <amount>17000</amount>
                   <security reference="../../../../../../../../../securities/security"/>
                   <crossEntry class="buysell" reference="../../../.."/>
                   <shares>1000000000</shares>
-                  <updatedAt>2023-11-14T20:38:29.156711800Z</updatedAt>
+                  <updatedAt>2023-11-19T15:24:24.091107100Z</updatedAt>
+                  <type>BUY</type>
+                </portfolio-transaction>
+                <portfolio-transaction>
+                  <uuid>ed39df9b-2c4a-42f4-bcde-e804e2c548c4</uuid>
+                  <date>2021-09-15T00:00</date>
+                  <currencyCode>EUR</currencyCode>
+                  <amount>25000</amount>
+                  <security reference="../../../../../../../../../securities/security[2]"/>
+                  <crossEntry class="buysell">
+                    <portfolio reference="../../../.."/>
+                    <portfolioTransaction reference="../.."/>
+                    <account reference="../../../../../../../.."/>
+                    <accountTransaction>
+                      <uuid>9bf53a35-f2b5-4bb8-81c8-fc07c46df68b</uuid>
+                      <date>2021-09-15T00:00</date>
+                      <currencyCode>EUR</currencyCode>
+                      <amount>25000</amount>
+                      <security reference="../../../../../../../../../../../securities/security[2]"/>
+                      <crossEntry class="buysell" reference="../.."/>
+                      <shares>0</shares>
+                      <updatedAt>2023-11-19T20:09:16.773595500Z</updatedAt>
+                      <type>BUY</type>
+                    </accountTransaction>
+                  </crossEntry>
+                  <shares>500000000</shares>
+                  <updatedAt>2023-11-19T20:09:16.773595500Z</updatedAt>
                   <type>BUY</type>
                 </portfolio-transaction>
               </transactions>
@@ -77,8 +114,18 @@
             <accountTransaction reference="../.."/>
           </crossEntry>
           <shares>0</shares>
-          <updatedAt>2023-11-14T20:38:29.156711800Z</updatedAt>
+          <updatedAt>2023-11-19T15:24:24.091107100Z</updatedAt>
           <type>BUY</type>
+        </account-transaction>
+        <account-transaction reference="../account-transaction[2]/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/accountTransaction"/>
+        <account-transaction>
+          <uuid>ff0fb665-24c4-4f9b-beee-1f8790a01b1d</uuid>
+          <date>2021-09-15T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>25000</amount>
+          <shares>0</shares>
+          <updatedAt>2023-11-19T20:09:38.448253500Z</updatedAt>
+          <type>DEPOSIT</type>
         </account-transaction>
       </transactions>
       <attributes>
@@ -386,7 +433,7 @@
             <config>
               <uuid>3580a087-a144-41e6-b45e-351eb5535064</uuid>
               <name>Standard</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:87},{&quot;id&quot;:&quot;name&quot;,&quot;width&quot;:114},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:235},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:228},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:103},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:104},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:120},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:160},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:130},{&quot;id&quot;:&quot;izf&quot;,&quot;sortDirection&quot;:128,&quot;width&quot;:177},{&quot;id&quot;:&quot;delta&quot;,&quot;width&quot;:143}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:87},{&quot;id&quot;:&quot;name&quot;,&quot;width&quot;:89},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:173},{&quot;id&quot;:&quot;pp&quot;,&quot;sortDirection&quot;:1024,&quot;width&quot;:161},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:103},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:104},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:120},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:160},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:130},{&quot;id&quot;:&quot;izf&quot;,&quot;width&quot;:162},{&quot;id&quot;:&quot;delta&quot;,&quot;width&quot;:143}]}</data>
             </config>
           </configurations>
         </config-set>
@@ -422,27 +469,12 @@
             <config>
               <uuid></uuid>
               <name></name>
-              <data>F2020-01-15_2023-01-15</data>
+              <data>L4Y0</data>
             </config>
             <config>
               <uuid></uuid>
               <name></name>
-              <data>L1Y0</data>
-            </config>
-            <config>
-              <uuid></uuid>
-              <name></name>
-              <data>L2Y0</data>
-            </config>
-            <config>
-              <uuid></uuid>
-              <name></name>
-              <data>L3Y0</data>
-            </config>
-            <config>
-              <uuid></uuid>
-              <name></name>
-              <data>P</data>
+              <data>F2021-01-15_2023-06-15</data>
             </config>
           </configurations>
         </config-set>

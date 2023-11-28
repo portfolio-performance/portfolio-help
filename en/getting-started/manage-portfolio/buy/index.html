@@ -837,8 +837,6 @@
       
         
       
-        
-      
     
     
     
@@ -991,6 +989,10 @@
           
         
       
+        
+      
+        
+      
     
     
     
@@ -1015,6 +1017,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
@@ -1026,9 +1033,21 @@
             
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../concepts/performance/money-weighted/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Money-weighted return
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1040,15 +1059,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../concepts/irr-example/" class="md-nav__link">
+      <a href="../../../concepts/performance/time-weighted/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    IRR example
+    Time-weighted return
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1309,7 +1336,7 @@
 
 
 <p>When you receive a notification from your bank or broker detailing a transaction, as shown in Figure 1, you need to record this transaction in PP. If it's on paper, you must do this manually. Otherwise, you can attempt to <a href="../../../procedures/importing/">import</a> the transaction.</p>
-<h1 id="transaction-with-one-currency">Transaction with one currency<a class="headerlink" href="#transaction-with-one-currency" title="Permanent link">#</a></h1>
+<h1 id="transaction-with-one-currency">Transaction with one currency</h1>
 <p>The transaction in Figure 1 involves only one currency. Both the Security and the Deposit Account use the same currency (EUR). There is no need for currency conversion.</p>
 <p><figure id="_figure-1"><figcaption>Figure 1.  Paper note from your bank regarding your buy transaction.</figcaption><img alt="" class="pp-figure" src="../../../images/info-bank-note-share-heidelberg.svg"></figure></p>
 <p>With this note, you can enter the transaction details into PP. Figure 2 displays the input panel for entering the information. The security (Heidelberg Materials) is quoted in EUR and the transaction is handled with the <code>broker-1</code> security account and the <code>broker-1 (EUR)</code> deposit account. The example of the <a href="../sell/">sell transaction</a> involves a more complex setup with a security quoted in USD, but the transaction handled through a deposit account in EUR.</p>
@@ -1343,7 +1370,7 @@
 <li>Changing the <em>Debit note</em> (afterward) will modify the Gross Value, and consequently, the Quote Price will be adjusted. The number of shares remains unchanged.</li>
 <li>Changing the <em>Gross Value</em> afterward will alter the Debit Note and the Quote Price. Fees, taxes, and the number of shares are unaffected.</li>
 </ul>
-<h1 id="transaction-with-two-currencies">Transaction with two currencies<a class="headerlink" href="#transaction-with-two-currencies" title="Permanent link">#</a></h1>
+<h1 id="transaction-with-two-currencies">Transaction with two currencies</h1>
 <p>If you want to purchase shares in a foreign currency, there are two options. Either you have the required amount in the foreign currency in a deposit account. Or, you'll need to <a href="../deposit/#MakingaDeposit">make a deposit</a> or <a href="../deposit/#transferbetweentwocurrencies">convert</a> another currency into the foreign currency first.</p>
 <p>Figure 4 displays the bank's paper note regarding the purchase of USD shares. Since taxes and fees need to be settled in EUR (due to it being a European bank), and the portfolio's base currency for reporting is also EUR, the total amount in USD is also converted to EUR.</p>
 <p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Paper note of a Buy transaction of a share in a foreign currency.</figcaption><img alt="" src="../../../images/info-bank-note-share-adobe.svg"></figure></p>
@@ -1358,7 +1385,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 28, 2023</span>
       
     
   </small>

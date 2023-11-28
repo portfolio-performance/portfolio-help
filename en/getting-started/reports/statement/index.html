@@ -829,8 +829,6 @@
       
         
       
-        
-      
     
     
     
@@ -983,6 +981,10 @@
           
         
       
+        
+      
+        
+      
     
     
     
@@ -1007,6 +1009,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
@@ -1018,9 +1025,21 @@
             
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../concepts/performance/money-weighted/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Money-weighted return
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1032,15 +1051,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../concepts/irr-example/" class="md-nav__link">
+      <a href="../../../concepts/performance/time-weighted/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    IRR example
+    Time-weighted return
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1306,7 +1333,7 @@
 <p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Statement of Assets report of demo portfolio (2023-10-05)</figcaption><img alt="" src="../../../images/sb-reports-statement.png"></figure></p>
 <p>The report in Figure 2 displays all the available assets on October 5, 2023, including the deposit account with the result of the sale of <code>share-1</code>. The securities are valued at their market prices based on the closing quotes from the previous day, which is -in this case- October 4, 2023. <code>Share-2</code> is handled in USD. The conversion to EUR is based on the exchange rate provided by the ECB on October 4, 2023 (closing previous day).</p>
 <p>The report displays a total line above and below the assets. With the Presentation option (see Figure 3 bottom), you could add or remove the Total lines. The default setting is above <em>and</em> below. Since no taxonomy has been added to the demo portfolio, all assets are listed as <code>Without classification</code>.</p>
-<h1 id="available-columns">Available columns<a class="headerlink" href="#available-columns" title="Permanent link">#</a></h1>
+<h1 id="available-columns">Available columns</h1>
 <p><figure class="align-right" id="_figure-3"><figcaption>Figure 3.  Available columns. </figcaption><img alt="" src="../../../images/sb-reports-statement-gear-icon.png"></figure>
 The default columns that are displayed are <code>Shares</code>, <code>Name</code>, <code>Symbol</code>, <code>Quote</code>, <code>Market Value</code>, <code>Share in %</code>, and <code>Note</code>. Many more columns/fields are available (see Figure 3). While the column headings are mostly self-explanatory, a few of them may require further clarification. You can customize the default columns using the gear icon located in the top-right corner (see Figure 2).</p>
 <p>The abbreviation "MA" that follows Purchase Price/Value stands for "Moving Average" but in fact it should be better called WA or "Weighted Average". As mentioned in the discussion about <a href="../../../concepts/purchase-value/">Purchase Value</a>, PP uses the FIFO (First-in, First-out) method to calculate prices and values. "Moving/weighted average", however, is another commonly used method.</p>
@@ -1350,7 +1377,7 @@ The default columns that are displayed are <code>Shares</code>, <code>Name</code
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 28, 2023</span>
       
     
   </small>

@@ -823,8 +823,6 @@
       
         
       
-        
-      
     
     
     
@@ -977,6 +975,10 @@
           
         
       
+        
+      
+        
+      
     
     
     
@@ -1001,6 +1003,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
@@ -1012,9 +1019,21 @@
             
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/performance/money-weighted/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Money-weighted return
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1026,15 +1045,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/irr-example/" class="md-nav__link">
+      <a href="../../concepts/performance/time-weighted/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    IRR example
+    Time-weighted return
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1398,7 +1425,7 @@
 </ul>
 <p>Each type has required and optional fields. For example, the Historical Quotes type only needs the Date and the Quote. Instead of repeating the name of the share again and again for each date, you can select the security in the next pop-up window. The Account Transactions type has two required Fields: Value and Date. The Portfolio Transactions has three required fields: Value, Date, and Shares (see figure 3).</p>
 <p><figure id="_figure-3"><figcaption>Figure 3.  Required and optional fields for the 5 types of import</figcaption><img alt="Required and optional fields for the 5 types of import" class="pp-figure" src="../images/import-required-optional-fields.png"></figure></p>
-<h2 id="importing-buysell-transactions">Importing buy/sell transactions<a class="headerlink" href="#importing-buysell-transactions" title="Permanent link">#</a></h2>
+<h2 id="importing-buysell-transactions">Importing buy/sell transactions</h2>
 <p>An easy way to discover which fields you need, is to export a demo transaction first. After selecting the transaction in All Transactions, click the Export button at the top-right of the window (up-pointing arrow). Choose “Selected transactions (CSV)”. If you should open this CSV-file with a text editor, it will look something like this:</p>
 <p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Date,Type,Security,Shares,Quote,Amount,Fees,Taxes,Net Transaction Value,Cash Account,Offset Account,Note,Source
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>2023-05-25 00:00:00,Buy,share-2,10,5.50,55.00,4.10,6.20,65.30,Broker-A,Broker-A (EUR),My Note,
@@ -1409,7 +1436,7 @@ The first line contains the field names, separated by a comma. The second line c
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Date,Type,Security Name,Shares,Fees,Taxes,Value,Exchange Rate
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>2023-05-25 0:00,Buy,share-2,10,4.1,6.2,65.30,0.9091
 </code></pre></div>
-<h2 id="importing-dividends">Importing dividends<a class="headerlink" href="#importing-dividends" title="Permanent link">#</a></h2>
+<h2 id="importing-dividends">Importing dividends</h2>
 <p><figure id="_figure-4"><figcaption>Figure 4.  Dividend transaction example for import</figcaption><img alt="Dividend transaction example for import" class="pp-figure" src="../images/import-dividend-transaction.png"></figure></p>
 <p>Suppose that your broker can deliver a CSV-file with all the dividend payments from a past period. Of course, you would like to import this file in stead of entering manually all these dividend payments. The file content looks something like this (see figure 1 below).</p>
 <p><figure id="_figure-5"><figcaption>Figure 5.  CSV table for importing two dividends</figcaption><img alt="CSV table for importing two dividends" class="pp-figure" src="../images/import-dividend-csv-table.png"></figure></p>
@@ -1435,7 +1462,7 @@ The first line contains the field names, separated by a comma. The second line c
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 28, 2023</span>
       
     
   </small>

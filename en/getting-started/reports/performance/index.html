@@ -829,8 +829,6 @@
       
         
       
-        
-      
     
     
     
@@ -983,6 +981,10 @@
           
         
       
+        
+      
+        
+      
     
     
     
@@ -1007,6 +1009,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
@@ -1018,9 +1025,21 @@
             
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../concepts/performance/money-weighted/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Money-weighted return
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1032,15 +1051,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../concepts/irr-example/" class="md-nav__link">
+      <a href="../../../concepts/performance/time-weighted/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    IRR example
+    Time-weighted return
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1346,7 +1373,7 @@
 <p>Let's skip the first two key indicators and focus on the simpler ones first. The Absolute Change is 426.82 EUR. Take a look at the Calculation panel on the right side. The initial value of your portfolio as of June 12, 2020 was zero EURO and the final value is 426.82 EUR, which, of course, equals the absolute change. You can check the final value with <code>sidebar &gt; Reports &gt; Performance &gt; Calculation</code>. Click at the <code>Assets at End</code> heading tab. As you can see, there is 125 EUR in the deposit account from the dividend and sell transactions. <code>share-1</code> is valuated at 190.06 EUR (10 shares remaining x 19.06) and <code>share-2</code> at 111.76 (8 shares x 13.97). Taken together, this sums to 426.62 EUR, which represents the market value of your portfolio on June 12, 2023.</p>
 <p>The Delta (for reporting period) is 120.82 EUR. This value represents the actual return of <code>share-1</code> and <code>share-2</code>. The final portfolio value of 426.82 EUR is partly caused by external cash inflows of 155 EUR and 84 EUR to buy <code>share-1</code> and 67 EUR to buy <code>share-2</code>. This money comes from an external source and should be subtracted from the Absolute change. They are summarized as Performance neutral Transfers in the calculation panel.</p>
 <p>The Absolute change of the Last Day is negative (red). It remains the same for each reporting period. Hovering over the label gives some info. This value is the absolute change for a Reporting period of 1 trading day. Unfortunately, it's not the last day of the chosen reporting period; e.g. 11-12 Jun 2023, but the last trading day before 'today'.</p>
-<p>What about the True Time-Weighted Rate of Return (TTWOR) and the Internal Rate of Return (IRR) indices? The IRR is a percentage that shows how well your portfolio performs, considering when and how much money you have put in or take out. TTWOR measure the growth of your investments without being influenced by the timing and size of your contributions or withdrawals. An in-depth explanation of both measurements is given at <a href="../../../concepts/performance.md">Concepts &gt; Performance</a>.</p>
+<p>What about the True Time-Weighted Rate of Return (TTWOR) and the Internal Rate of Return (IRR) indices? The IRR is a percentage that shows how well your portfolio performs, considering when and how much money you have put in or take out. TTWOR measure the growth of your investments without being influenced by the timing and size of your contributions or withdrawals. An in-depth explanation of both measurements is given at <a href="../../../concepts/performance/">Concepts &gt; Performance</a></p>
 <p>How should you interpret the difference between the two measures? If you look at the chart of historical prices of <code>share-1</code> and <code>share-2</code>, it is immediately evident that the timing of purchase and sale was rather optimal.</p>
 <p>????
 When the Time-Weighted Rate of Return (TWR) is larger than the Internal Rate of Return (IRR), it typically means that you have successfully timed your buys and sells to take advantage of favorable market conditions. In this scenario, your investments have experienced significant growth due to buying low and selling high, which boosts the TWR. The TWR measures the performance of your investments over different time periods, and it doesn't consider the size and timing of your contributions or withdrawals. If these investments were made at opportune moments, it could lead to a TWR that appears more favorable compared to the IRR, which accounts for cash flows and their timing. This demonstrates your skill in making well-timed investment decisions, which can result in a higher TWR.
@@ -1358,24 +1385,24 @@ To calculate the IRR, you need to find the discount rate that makes the net pres
 </ul>
 <p>You can see that the IRR is much lower than the TWR because you withdrew money when the portfolio was doing well and reinvested it when the portfolio was doing even better. This means you missed out on some of the portfolio’s growth potential.</p>
 <p>By default, this dashboard contains three widgets (panels): <code>Key Indicators</code>, <code>Risk Indicators</code>, and <code>Calculation</code>. Right mouse click on an empty space of the canvas lets you add more widgets (see later).</p>
-<h1 id="key-indicators">Key Indicators<a class="headerlink" href="#key-indicators" title="Permanent link">#</a></h1>
-<h2 id="true-time-weighted-rate-of-return-cumulative">True Time-Weighted Rate of Return (cumulative)<a class="headerlink" href="#true-time-weighted-rate-of-return-cumulative" title="Permanent link">#</a></h2>
+<h1 id="key-indicators">Key Indicators</h1>
+<h2 id="true-time-weighted-rate-of-return-cumulative">True Time-Weighted Rate of Return (cumulative)</h2>
 <p>The True Time-Weighted Rate of Return (TTWROR) is a financial metric used to evaluate the performance of your portfolio over time, eliminating the effects of cash flowing in or out of the portfolio.</p>
-<h2 id="internal-rate-of-return-irr">Internal Rate of Return (IRR)<a class="headerlink" href="#internal-rate-of-return-irr" title="Permanent link">#</a></h2>
+<h2 id="internal-rate-of-return-irr">Internal Rate of Return (IRR)</h2>
 <p>The Internal Rate of Return (IRR) is a financial metric used to evaluate the potential profitability of an investment or project.</p>
-<h2 id="absolute-change">Absolute Change<a class="headerlink" href="#absolute-change" title="Permanent link">#</a></h2>
+<h2 id="absolute-change">Absolute Change</h2>
 <p>The difference between the initial investment and the current value of the investment.</p>
-<h2 id="delta-for-period">Delta (for period)<a class="headerlink" href="#delta-for-period" title="Permanent link">#</a></h2>
+<h2 id="delta-for-period">Delta (for period)</h2>
 <p>The difference between the value of the portfolio at the beginning of the period versus the end of the period.</p>
-<h1 id="risk-indicators">Risk indicators<a class="headerlink" href="#risk-indicators" title="Permanent link">#</a></h1>
-<h2 id="maximum-drawdown">Maximum Drawdown<a class="headerlink" href="#maximum-drawdown" title="Permanent link">#</a></h2>
-<h2 id="maximum-drawdown-duration">Maximum Drawdown Duration<a class="headerlink" href="#maximum-drawdown-duration" title="Permanent link">#</a></h2>
-<h2 id="volatility">Volatility<a class="headerlink" href="#volatility" title="Permanent link">#</a></h2>
-<h2 id="semivariance">Semivariance<a class="headerlink" href="#semivariance" title="Permanent link">#</a></h2>
-<h1 id="last-day">Last day<a class="headerlink" href="#last-day" title="Permanent link">#</a></h1>
-<h2 id="true-time-weighted-rate-of-return-cumulative_1">True Time-Weighted Rate of Return (cumulative)<a class="headerlink" href="#true-time-weighted-rate-of-return-cumulative_1" title="Permanent link">#</a></h2>
-<h2 id="absolute-change-absolute-verandering">Absolute Change (Absolute verandering)<a class="headerlink" href="#absolute-change-absolute-verandering" title="Permanent link">#</a></h2>
-<h1 id="calculation">Calculation<a class="headerlink" href="#calculation" title="Permanent link">#</a></h1>
+<h1 id="risk-indicators">Risk indicators</h1>
+<h2 id="maximum-drawdown">Maximum Drawdown</h2>
+<h2 id="maximum-drawdown-duration">Maximum Drawdown Duration</h2>
+<h2 id="volatility">Volatility</h2>
+<h2 id="semivariance">Semivariance</h2>
+<h1 id="last-day">Last day</h1>
+<h2 id="true-time-weighted-rate-of-return-cumulative_1">True Time-Weighted Rate of Return (cumulative)</h2>
+<h2 id="absolute-change-absolute-verandering">Absolute Change (Absolute verandering)</h2>
+<h1 id="calculation">Calculation</h1>
 <p>With the icons (top right), you can
 - Duplicate, Rename or Delete a Dashboard view
 - Create a New Dashboard view
@@ -1387,7 +1414,7 @@ To calculate the IRR, you need to find the discount rate that makes the net pres
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 28, 2023</span>
       
     
   </small>

@@ -12,24 +12,28 @@
         <meta name="author" content="Andreas Buchen, et. al.">
       
       
-        <link rel="canonical" href="https://help.portfolio-performance.info/en/concepts/irr-theory/">
+        <link rel="canonical" href="https://help.portfolio-performance.info/en/concepts/performance/time-weighted/">
       
       
+        <link rel="prev" href="../money-weighted/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+        <link rel="next" href="../../../procedures/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.2">
     
     
       
-        <title>Internal Rate of Return - Portfolio Performance Manual</title>
+        <title>Time-Weighted Rate of Return - Portfolio Performance Manual</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.d451bc0e.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.d451bc0e.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a5377069.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a5377069.min.css">
       
       
 
@@ -50,9 +54,9 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -86,6 +90,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ttwror-at-portfolio-level" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -98,9 +107,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Portfolio Performance Manual" class="md-header__button md-logo" aria-label="Portfolio Performance Manual" data-md-component="logo">
+    <a href="../../.." title="Portfolio Performance Manual" class="md-header__button md-logo" aria-label="Portfolio Performance Manual" data-md-component="logo">
       
-  <img src="../../assets/images/logo.svg" alt="logo">
+  <img src="../../../assets/images/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -117,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Internal Rate of Return
+              Time-Weighted Rate of Return
             
           </span>
         </div>
@@ -224,9 +233,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Portfolio Performance Manual" class="md-nav__button md-logo" aria-label="Portfolio Performance Manual" data-md-component="logo">
+    <a href="../../.." title="Portfolio Performance Manual" class="md-nav__button md-logo" aria-label="Portfolio Performance Manual" data-md-component="logo">
       
-  <img src="../../assets/images/logo.svg" alt="logo">
+  <img src="../../../assets/images/logo.svg" alt="logo">
 
     </a>
     Portfolio Performance Manual
@@ -247,7 +256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -296,7 +305,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../getting-started/" class="md-nav__link ">
+            <a href="../../../getting-started/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -328,7 +337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/installation/" class="md-nav__link">
+      <a href="../../../getting-started/installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -348,7 +357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/create-portfolio/" class="md-nav__link">
+      <a href="../../../getting-started/create-portfolio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -368,7 +377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/adding-securities/" class="md-nav__link">
+      <a href="../../../getting-started/adding-securities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -420,7 +429,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../getting-started/manage-portfolio/" class="md-nav__link ">
+            <a href="../../../getting-started/manage-portfolio/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -452,7 +461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/manage-portfolio/deposit/" class="md-nav__link">
+      <a href="../../../getting-started/manage-portfolio/deposit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -472,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/manage-portfolio/buy/" class="md-nav__link">
+      <a href="../../../getting-started/manage-portfolio/buy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -492,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/manage-portfolio/sell/" class="md-nav__link">
+      <a href="../../../getting-started/manage-portfolio/sell/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -512,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/manage-portfolio/delivery/" class="md-nav__link">
+      <a href="../../../getting-started/manage-portfolio/delivery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -532,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/manage-portfolio/dividend/" class="md-nav__link">
+      <a href="../../../getting-started/manage-portfolio/dividend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -552,7 +561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/manage-portfolio/bonds/" class="md-nav__link">
+      <a href="../../../getting-started/manage-portfolio/bonds/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -646,7 +655,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../getting-started/reports/statement/" class="md-nav__link ">
+            <a href="../../../getting-started/reports/statement/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -678,7 +687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/reports/statement/chart/" class="md-nav__link">
+      <a href="../../../getting-started/reports/statement/chart/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -698,7 +707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/reports/statement/holdings/" class="md-nav__link">
+      <a href="../../../getting-started/reports/statement/holdings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -746,7 +755,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../getting-started/reports/performance/" class="md-nav__link ">
+            <a href="../../../getting-started/reports/performance/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -794,6 +803,8 @@
       
   
   
+    
+  
   
     
     
@@ -814,23 +825,21 @@
       
         
       
-        
-      
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -847,7 +856,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Basic concepts
@@ -862,7 +871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../financial-terminology/" class="md-nav__link">
+      <a href="../../financial-terminology/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -882,7 +891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../account/" class="md-nav__link">
+      <a href="../../account/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -902,7 +911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../transaction/" class="md-nav__link">
+      <a href="../../transaction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -922,7 +931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reporting-period/" class="md-nav__link">
+      <a href="../../reporting-period/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -942,7 +951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../purchase-value/" class="md-nav__link">
+      <a href="../../purchase-value/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -960,6 +969,8 @@
                 
   
   
+    
+  
   
     
     
@@ -968,21 +979,25 @@
           
         
       
+        
+      
+        
+      
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../performance/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -992,9 +1007,14 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_7">
             <span class="md-nav__icon md-icon"></span>
             Performance
@@ -1003,9 +1023,21 @@
             
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../money-weighted/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Money-weighted return
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1015,17 +1047,35 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../irr-example/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    IRR example
+    Time-weighted return
   </span>
   
 
       </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1068,7 +1118,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../procedures/" class="md-nav__link ">
+            <a href="../../../procedures/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1100,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/importing/" class="md-nav__link">
+      <a href="../../../procedures/importing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1120,7 +1170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/reinvesting-dividends/" class="md-nav__link">
+      <a href="../../../procedures/reinvesting-dividends/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1171,7 +1221,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tricks/" class="md-nav__link ">
+            <a href="../../../tricks/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1203,7 +1253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tricks/morningstar/" class="md-nav__link">
+      <a href="../../../tricks/morningstar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1223,7 +1273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tricks/quote-feed/" class="md-nav__link">
+      <a href="../../../tricks/quote-feed/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1261,6 +1311,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1275,7 +1327,7 @@
                   
 
   
-    <a href="https://github.com/portfolio-performance/portfolio-help/tree/master/docs/en/concepts/irr-theory.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/portfolio-performance/portfolio-help/tree/master/docs/en/concepts/performance/time-weighted.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1283,90 +1335,40 @@
   
 
 
-  <h1>Internal Rate of Return</h1>
-
-<p>The Internal Rate of Return (IRR) measures the performance of an investment between two dates ($t_{0}$ and $t_{n}$). It is expressed as an annual interest rate that is necessary to bring the initial value of the investment at time $t_{0}$ to the final value at time $t_{n}$. In PP, the reporting period is measured in days. The classic equation to explain the meaning of IRR is:</p>
-<p><strong>Eq (1)</strong>    $CF_{t0} = \frac{CF_{t1}}{(1 + IRR)^\frac{t_1}{365}}+\frac{CF_{t2}}{(1 + IRR)^\frac{t_2}{365}}+...+ \frac{CF_{tn}}{(1 + IRR)^\frac{t_n}{365}}$</p>
-<p>$CF_{t0}$ is the initial cashflow at time $t_0$. It is the sum of all in- and outflows at that moment in time and represents your initial investment. $CF_{t1}$, $CF_{tn}$ are the net cashflows that your initial investment will yield. PP works with daily periods instead of the traditional annual periods. Therefore, $t_1$, $t_2$, and $t_n$ should be converted to the number of days between $t_0$ and $t_n$. Of course, if the period between $t_0$ and $t_n$ is, for example, 365 days, the exponent becomes 1 as in the more traditional version of the equation. Eq (1) is derived from the calculation of the <a href="../../images/info-irr-future-present-value.svg">present value</a> of a future cashflow.</p>
-<p>The IRR can be measured for a specific trade, security or the whole portfolio. Here's a simple example. Additionally, there is also a more complex <a href="../irr-example/">Practical step-by-step example</a>, solved in PP.</p>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>On <code>2021-01-15</code>, you purchased 10 shares at 17 EUR each.
-As of today (<code>2023-06-15</code>), the price has risen to 18.5 EUR per share. During this period, you received a dividend of 1.5 EUR per share on <code>2021-09-10</code> and a second dividend of 1.7 EUR per share on <code>2022-09-10</code>.</p>
+<p>The calculation of the time-weighted rate of return starts with dividing the reporting period into distinct holding periods. For each holding period, a return value is calculated and then compounded into an overall return. Each period carries equal weight; hence the name time-weighted rate of return. In the True Time-Weighted Rate Of Return methodology (TTWROR), performance is calculated using simple returns without any consideration for the total amount invested.</p>
+<p>To minimize the computational effort, older methods utilized larger holding periods. A natural marker could be the dates of each cash flow.  The holding periods would be formed by: <code>Period Start --&gt; CF1, CF1 --&gt; CF2, CF2 --&gt; CF3, ..., CFn-1 --&gt; Period end</code>. A holding period starts at period start or immediately before a cash flow and ends just before the following cash flow or the period end: CF1 is included in HP1 but CF2 isn't. If any cash flow exists outside the reporting period, making the Market Value Begin &gt; 0, then the first holding period must start at the beginning of the reporting period. Otherwise, the first period starts with the first CF. Figure 1 illustrates the various concepts, applied to our demo-portfolio-03, with a three-year reporting period, making MVB = 0.</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Calculation of True Time-Weighted Rate of Return.</figcaption><img alt="" src="../images/info-ttwror-example-visualisation.svg"></figure></p>
+<p>For every holding period, the return rate is computed using Equation 1.</p>
+<p>$$\mathrm{r = \frac{MV_t}{MV_{t-1} + CF_t} - 1 \qquad \text{(Eq 1)}}$$</p>
+<p>where $MV_t$ = the market value of the portfolio at the end of holding period <em>t</em>, $MV_{t-1}$ = the market value of the previous holding period.  $CF_t$ is the incoming (positive) or outgoing (negative) cashflow in that period.</p>
+<p>The return rate is thus corrected for the cashflow, occurring in that period. If the cash flow is incoming or positive, the MVB of the period is increased by it making the performance independent of the cash flow. For example, suppose that MV1 = 100, CF2 = 200, MV2 = 300 for a certain holding period. Without the correcting mechanism, the return would be calculated at 300% while in fact your portfolio hasn't changed and the performance should be 0%.</p>
+<p>Please note that for  for each holding period, you require the market value of the portfolio <em>twice</em>: once at the end of the previous holding period and once at the end of the current one. </p>
+<p>After calculating the return rates of each period, they are compounded with the following formula.</p>
+<p>$$\mathrm{r = [(1 + r_1) \times (1 + r_2) \times (1 + r_3) \cdots (1 + r_{n-1}) \times (1 + r_n)] - 1 \qquad \text{Eq  2}}$$</p>
+<p>where $r_t$ is the return rate from holding period <em>t</em>.</p>
+<h1 id="ttwror-at-portfolio-level">TTWROR at portfolio level</h1>
+<p>Our <a href="../../../assets/demo-portfolio-03.xml">demo-portfolio-03.xml</a> has three cash flows (see Figure 1). Because all cash flows fall within the reporting period, the first period (<code>Period start --&gt; CF1</code>)could be omitted. The market value is zero at both the beginning and end of the period.</p>
+<p>The market value is the sum of the value of all deposit and securities accounts. To determine the value of a security, the (historical) closing price is taken. A cashflow can be positive (inbound transfer) or negative (outbound transfer); assuming that fresh money is added at the beginning of the day (and hence is available to generate return) and removed at the end of the day.</p>
+<p>For each period, you need $MV_{t-1}$ and the current $MV_{t}$ period. Because the market value is determined at the end of the trading day (closing price), $MV_{t-1}$ is also the value immediately before the cashflow at the beginning of the day.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>One could argue that, as we are required to add the cash flow to $MV_{t-1}$ (as per Equation 1), an alternative approach is to consider the market value of $MV_{t}$, which already includes this cash flow. However, it's important to note that throughout the day, market forces may cause fluctuations in $MV_{t-1}$, and these variations should be excluded when determining the market value at the beginning of the day, just before the cash flow.</p>
 </div>
-<p>What is the performance or IRR of this security? Let's first have the timing and cashflows correct.</p>
-<table id="_table-1">
-<caption style="caption-side:bottom">Table 1: Cash flows at different times of investment.</caption><thead>
-<tr>
-<th>Date</th>
-<th>$t_n$</th>
-<th>$CF_n$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2021-01-15</td>
-<td>0d</td>
-<td>170€</td>
-</tr>
-<tr>
-<td>2021-09-15</td>
-<td>243d</td>
-<td>15€</td>
-</tr>
-<tr>
-<td>2022-09-15</td>
-<td>608d</td>
-<td>17€</td>
-</tr>
-<tr>
-<td>2023-06-15</td>
-<td>881d</td>
-<td>185€</td>
-</tr>
-</tbody>
-</table>
-<p>According to (1)</p>
-<p>$$CF_{t0} = 170 = \frac{15}{(1 + IRR)^\frac{243}{365}}+\frac{17}{(1 + IRR)^\frac{608}{365}}+ \frac{185}{(1 + IRR)^\frac{881}{365}}$$</p>
-<p>What IRR will solve this equation (1)?</p>
-<p>In Figure 1, we reverse the scenario: What's the value of $CF_{t0}$ if the IRR is, for example, 5% or 15%?</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Calculating CF0 for IRR = 5% and 15%.</figcaption><img alt="" src="../../images/info-irr-calculations.svg"></figure></p>
-<p>If IRR = 15% then the combined future cashflows are worth 159.16 EUR in <code>2021-01-15</code>. So, you need less money (than 170 EUR) to get the same financial results.  The real IRR should be somewhat lower. With 5% however, you need 194.64 EUR to get the same total cashflows in 2021. After some guesswork and interpolation, you arrive at the exact IRR of <span style="color:red"><strong>11.61%</strong></span>, which will precisely bring all future cash flows to the initial investment of 170 EUR.</p>
-<p>In the previous example, the dividends are immediately "consumed": you got yourself a nice meal from it. In another scenario, you keep the dividends in your drawer - or in PP terminology: a deposit account -  until <code>2023-06-15</code> and cash them in at the same moment you sell the share. In that case, there are only two cashflows: $CF_{t0}$ = 170 EUR and $CF_{t881}$ = 15 + 17 +185 EUR.</p>
-<p>Equation (1) has only two terms and could be solved for IRR rather easily.</p>
-<p><strong>Eq (2)</strong>    $CF_{t0} = \frac{CF_{t1}}{(1 + IRR)^\frac{t_1}{365}} \implies  IRR = \sqrt[\frac{t_1}{365}]{\frac{CF_{t1}}{CF_{t0}}}-1$</p>
-<p>In this case, your initial investment of 170 EUR has an IRR = $\sqrt[\frac{881}{365}]{\frac{217}{170}}-1$ = <span style="color:red"><strong>10.64%</strong></span>. Why is this IRR smaller than the previous one? Because you kept the dividend until a later date, the 15 EUR in <code>2021-09-15</code> is less worth in <code>2023-06-15</code>.</p>
-<p>PP calculates three variants of IRR.</p>
-<ul>
-<li>
-<p><strong>Performance IRR</strong>: this is the IRR for the whole project and a specific reporting period; see <code>side bar &gt; Reports &gt; Performance</code>.</p>
-</li>
-<li>
-<p><strong>Security IRR</strong>: the IRR of a selected security for a specific reporting period; see <code>sidebar &gt; Reports &gt; Performance &gt; Securities</code>.</p>
-</li>
-<li>
-<p><strong>Trade IRR</strong>: the IRR of a buy-sell cycle of a selected security. See <code>sidebar &gt; Reports &gt; Performance &gt; Trades</code></p>
-</li>
-</ul>
-<p>The Performance and Security IRR are calculated for a specific <a href="../reporting-period/">reporting period</a>; e.g. 1 year, 2 years, 3 years, custom period. It is very important to distinguish the following cases:</p>
-<ul>
-<li>
-<p>$t_0$ occurs before the start of the reporting period $RP_{start}$.  PP can calculate the value of $CF_0$ (through historic quotes or transaction price) at $RP_{start}$. The holding period is calculated from $RP_{start}$ for each CF.</p>
-</li>
-<li>
-<p>$t_0$ occurs after $RP_{start}$ but before $RP_{end}$. The value of $CF_0$ is known. The holding period is calculated from $RP_{start}$.</p>
-</li>
-<li>
-<p>$t_n$ falls after $RP_{end}$. All transactions after $RP_{end}$ do not contribute to the calculation of IRR for that reporting period.</p>
-</li>
-</ul>
+<p>Manually calculating these portfolio market values can be a tedious task. It involves multiplying the number of shares for each security by the historical price and then adding fees and other relevant factors. But in PP, you can also generate a spreadsheet for all days in the reporting period with these values (see below).</p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Manual calculation of cumulative and annual TTWROR.</figcaption><img alt="" src="../images/info-ttwror-manual-calculation.png"></figure></p>
+<p>As can be seen in Figure 2 [<a href="../../../assets/demo-portfolio-03-calculation.xlsx">download workbook</a>], the market value at the beginning of the HP1 is zero EUR (= the closing value of the previous period) and 160.26 at the end (immediately before the next cash flow). There was one inbound positive cashflow of 155 EUR, necessary for buying 10 shares of <code>share-1</code>. The return of this period = 160.26/(0 +155) = 3.39%. Thus, eliminating the effect of the incoming cash flow, your portfolio has grown with 3.39% during this holding period of 364 days.</p>
+<p>Compounding these individual periodical returns into one portfolio return for the whole portfolio with Equation 2 results in a cumulative performance of 44.16%.</p>
+<p>Since computer time is inexpensive nowadays, there's no need to define long holding periods to minimize manual computation. Therefore, PP employs a single day as the holding period. You can export a file with daily portfolio. Select the menu <code>View &gt; Reports &gt; Performance &gt; Chart</code> and click the icon (top right) <code>Export Data as CSV</code>. Choose <code>Export Entire Portfolio</code> (see Figure 3 for an example).</p>
+<p>The calculation is analogous to the explanation for manual calculation using longer holding periods. Before <code>2021-01-15</code>, all values are zero, as the first transaction occurred on that day. The <code>Delta in %</code> is equivalent to the value of <em>r</em> in the manual calculation. The formula is slightly different: <code>(MV_t + Outbound Transfer)/(MV_t-1 + Inbound transfer)</code>. The market value at the end of the period (day) is increased by all outbound transfers, such as withdrawals. In the manual calculation, a separate transfer would be used for this purpose.</p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Export TTWROR data from PP.</figcaption><img alt="" src="../images/info-ttwror-export-data-from-pp.png"></figure></p>
+<p>It's important to highlight that the performance for '2021-01-15' is negative. This is the result of the market value of the portfolio being smaller at that moment than the required cash flow, owing to the taxes and fees associated with acquiring the security. Fortunately, the subsequent market rally has led to a cumulative performance increase to 3.39%, aligning precisely with the manually calculated value for the first holding period.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 28, 2023</span>
       
     
   </small>
@@ -1473,12 +1475,12 @@ As of today (<code>2023-06-15</code>), the price has risen to 18.5 EUR per share
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "navigation.indexes", "navigation.", "content.action.edit"], "search": "../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.code.copy", "navigation.indexes", "navigation.", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.726fbb30.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.726fbb30.min.js"></script>
       
-        <script src="../../assets/javascripts/katex.js"></script>
+        <script src="../../../assets/javascripts/katex.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       

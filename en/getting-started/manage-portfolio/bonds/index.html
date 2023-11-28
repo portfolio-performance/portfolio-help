@@ -837,8 +837,6 @@
       
         
       
-        
-      
     
     
     
@@ -991,6 +989,10 @@
           
         
       
+        
+      
+        
+      
     
     
     
@@ -1015,6 +1017,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
@@ -1026,9 +1033,21 @@
             
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../concepts/performance/money-weighted/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Money-weighted return
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1040,15 +1059,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../concepts/irr-example/" class="md-nav__link">
+      <a href="../../../concepts/performance/time-weighted/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    IRR example
+    Time-weighted return
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1309,11 +1336,11 @@
 
 
 <p>A bond is a financial instrument that represents a debt obligation. When an entity, such as a government or corporation, issues a bond, they are borrowing money from investors. In return, they promise to pay back the principal amount along with periodic interest payments over a specified period [<a href="https://www.investopedia.com/articles/bonds/08/bond-market-basics.asp">1</a>]. Bonds are not well-supported in PP but with a few simple workarounds mentioned in the <a href="https://forum.portfolio-performance.info/t/verbuchung-von-anleihen/1537/43">German forum</a>, you could manage them effectively. </p>
-<h1 id="adding-the-bond-as-a-security">Adding the bond as a security.<a class="headerlink" href="#adding-the-bond-as-a-security" title="Permanent link">#</a></h1>
+<h1 id="adding-the-bond-as-a-security">Adding the bond as a security.</h1>
 <p>Let's assume you've purchased a Volkswagen bond. You received the following banknote as shown in Figure 1.</p>
 <p><figure pp-figure="" id="_figure-1"><figcaption>Figure 1.  Banknote of buying a bond.</figcaption><img alt="" src="../../../images/info-bank-note-bond-vw.svg"></figure></p>
 <p>Before you can add the buying transaction, you must <a href="../../adding-securities/">create the security</a> in the Securities account. Searching for the ISIN in PP does not yield any results, and searching by name returns the tradable Volkswagen shares. Therefore, you'll need to create an empty instrument and manually input the information for the bond. Historical prices for bonds are not as critical, but -if necessary- they can be obtained in table format from for example the <a href="https://www.ariva.de/XS1972547696/kurse/historische-kurse?go=1&amp;boerse_id=1&amp;month=&amp;clean_bezug=1">ariva.de website </a>. Keep in mind that the historical prices for bonds are represented as percentages, ranging from 0 to 100.</p>
-<h1 id="recording-the-buy-transaction">Recording the buy transaction<a class="headerlink" href="#recording-the-buy-transaction" title="Permanent link">#</a></h1>
+<h1 id="recording-the-buy-transaction">Recording the buy transaction</h1>
 <p>Since historical prices are represented as numbers from 0 to 100, you can use this format also for the buying price. At maturity date, the bond will value 5000 EUR with a price of 100%. In terms of <code>shares</code> and <code>quotes</code>, this means 100 shares x 100 EUR. However, you buy the security at 91.76%. The Gross Value becomes 50 x 91.76 EUR = 4588 EUR. Fees and taxes can be registered as usual.</p>
 <p>The bond depicted in Figure 1 matures on October 1, 2027, with an annual interest rate of 2.25%, payable each year on October 1. Since you acquired the bond on October 27, there have already been 26 days of accrued interest. At a rate of 2.25%, this amounts to 5000 EUR * 2.25% * 26/365, or 8.10 EUR. You have to pay this accrued interest at the purchase date, but you will get it back on the first interest payment on October 1, 2023.</p>
 <p>To process the accrued interest correctly, there are a few options; (see <a href="https://forum.portfolio-performance.info/t/verbuchung-von-anleihen/1537/43">discussion</a> on forum for a few variants).</p>
@@ -1324,7 +1351,7 @@
 2. To maintain a precise record of the purchase price, you could record the accrued interest as an additional <code>tax</code> (see Figure 3). The correct amount will be withdrawn from the deposit account. The quote price is correct. The 'false' taxes could be corrected at the first interest payment with a <code>Tax refund</code> transaction.</p>
 <p><figure pp-figure="" id="_figure-3"><figcaption>Figure 3.  Workaround with adding accrued interest to taxes.</figcaption><img alt="" src="../../../images/mnu-transaction-buy-bond-vw-2.png"></figure>
 3. The buy transaction of the bond security is recorded without the accrued interest. To handle the accrued interest, you transfer the correct amount (8.01 EUR), from the deposit account associated with the security to a separate deposit account. During the first interest payment, the accrued interest amount then is transferred back to the original deposit account associated with the security. </p>
-<h1 id="recording-the-interest-payment">Recording the interest payment<a class="headerlink" href="#recording-the-interest-payment" title="Permanent link">#</a></h1>
+<h1 id="recording-the-interest-payment">Recording the interest payment</h1>
 <p>You can record the interest payment with a "Transaction &gt; Interest" transaction in the menu. Unfortunately, you cannot specify the security from which the interest originated; only a deposit account. It's an aggregate account for all interest payments, and there is no way to attribute that interest payment back to the performance of that specific security.</p>
 <p>A better, albeit somewhat unintuitive, is to record the transaction as a <code>Transaction &gt; Dividend</code>. Dividends are associated with specific securities, ensuring that the performance calculation of the security remains accurate.</p>
 <p>What about the first interest payment? Depending on the selected option from above:</p>
@@ -1340,7 +1367,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 28, 2023</span>
       
     
   </small>

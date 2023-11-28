@@ -837,8 +837,6 @@
       
         
       
-        
-      
     
     
     
@@ -991,6 +989,10 @@
           
         
       
+        
+      
+        
+      
     
     
     
@@ -1015,6 +1017,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
@@ -1026,9 +1033,21 @@
             
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../concepts/performance/money-weighted/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Money-weighted return
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1040,15 +1059,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../concepts/irr-example/" class="md-nav__link">
+      <a href="../../../concepts/performance/time-weighted/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    IRR example
+    Time-weighted return
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1309,13 +1336,13 @@
 
 
 <p>To initiate a deposit in a specific currency, navigate to the <code>Transaction &gt; Deposit</code> menu. Ensure that the chosen account shares the same currency as the deposit. For transferring funds between accounts, whether in the same currency or different currencies (utilizing exchange rates provided by the <a href="https://data.ecb.europa.eu/currency-converter">ECB</a>), employ the <code>Transaction &gt; Transfer between Accounts</code> command.</p>
-<h1 id="making-a-deposit">Making a Deposit<a class="headerlink" href="#making-a-deposit" title="Permanent link">#</a></h1>
+<h1 id="making-a-deposit">Making a Deposit</h1>
 <p>Recording a deposit is a straightforward process (see Figure 1). Input the deposit account, transaction date, amount, and optionally, an accompanying note.</p>
 <p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Making a provision for the Heidelberg buy transaction.</figcaption><img alt="" src="../../../images/mnu-transaction-deposit-heidelberg.png"></figure></p>
 <p><img alt="" src="../../../images/mnu-transaction-deposit-heidelberg.png"></p>
 <p><img alt="" src="../../../images/mnu-transaction-deposit-heidelberg.png"></p>
 <p>Please be aware that a deposit contributes to certain performance metrics. Additionally, note that each security purchase corresponds to a reduction in a deposit account. If the account balance is insufficient, the deposit account's balance may become negative.</p>
-<h1 id="transfer-between-two-currencies">Transfer between two currencies<a class="headerlink" href="#transfer-between-two-currencies" title="Permanent link">#</a></h1>
+<h1 id="transfer-between-two-currencies">Transfer between two currencies</h1>
 <p>You can transfer funds between two accounts, whether they share the same currency or not. In cases where the accounts have different currencies (see Figure 2), PP will automatically suggest an exchange rate based on the <a href="https://data.ecb.europa.eu/currency-converter">ECB website</a>.</p>
 <p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Converting from EUR to USD.</figcaption><img alt="" src="../../../images/mnu-transaction-transfer.png"></figure></p>
 
@@ -1324,7 +1351,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 28, 2023</span>
       
     
   </small>

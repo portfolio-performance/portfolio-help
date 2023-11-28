@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://help.portfolio-performance.info/en/concepts/performance/money-weighted/">
       
       
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../time-weighted/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -85,6 +89,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#the-money-weighted-rate-of-return" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -794,6 +803,8 @@
       
   
   
+    
+  
   
     
     
@@ -814,18 +825,16 @@
       
         
       
-        
-      
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
@@ -847,7 +856,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Basic concepts
@@ -960,6 +969,8 @@
                 
   
   
+    
+  
   
     
     
@@ -968,16 +979,20 @@
           
         
       
+        
+      
+        
+      
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" checked>
         
           
           
@@ -992,9 +1007,14 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_7">
             <span class="md-nav__icon md-icon"></span>
             Performance
@@ -1003,8 +1023,30 @@
             
               
             
-          </ul>
-        </nav>
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Money-weighted return
+  </span>
+  
+
+      </a>
       
     </li>
   
@@ -1017,15 +1059,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../../irr-example/" class="md-nav__link">
+      <a href="../time-weighted/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    IRR example
+    Time-weighted return
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1261,6 +1311,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1283,99 +1335,137 @@
   
 
 
-  <h1>Money weighted rate of return</h1>
-
-<p>The money-weighted rate of return (MWRR) is a measure of the performance of an investment between two dates ($t_{0}$ and $t_{n}$). It is expressed as an annual interest rate that is necessary to bring the initial value of the investment at time $t_{0}$ to the final value at time $t_{n}$ and in fact, it is essentially equivalent to the Internal Rate of Return (IRR). The IRR of an investment is defined by equation (1).</p>
-<p>$$V_S * (1 + r) + \sum_{t=1} ^{n}C_t * (1 + r)^{\frac{dte}{365}} = V_E \qquad\mathrm{(Eq 1)}$$</p>
-<p>where $V_S$ = the start value of the investment or portfolio, $V_E$ = the end value of the portfolio, $C_t$ = the external cash flow on day <em>t</em>, and $dte$ = the number of days to the end of the period.</p>
-<p><em>[1] Bacon, Carl, R. Practical Portfolio Performance Measurement and Attribution. West Sussex: John Wiley &amp; Sons, 2004, 225p.</em></p>
-<p>Let's try to apply Eq 1 to our demo-portfolio-03. The IRR for a 3 year period (e.g. from 2020-06-12 to 2023-06-12) is equal to 28.28%.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Money-weighted rate of return applied to demo-portfolio.</figcaption><img alt="" src="../images/info-irr-example-demo-portfolio.png"></figure></p>
-<p>The portfolio is empty at the start of the reporting period on 2020-06-12. The first share is bought on 2021-01-15. The start value $V_S$ = 0. The end value $V_E$ is 426.82 EUR. This is the result of the dividend payment, the partial sale of share-1 and the market value of the remaining <code>share-1</code> and <code>share-2</code> on 2023-06-12. This final result is made possible thanks to the buying of share-1 and share-2 at the respective dates. However, the 155 EUR, spent on 2021-01-15 is now (2023-06-12) worth 241.68 EUR. This is the <a href="../images/info-irr-future-present-value.svg">Future Value</a> of this cashflow from the perspective of the buy-transaction. The formula is: $C_t * (1 + r)^{\frac{dte}{365}}$. For example, the future value of 100 EUR after one year with an interest rate of 10% is 110 EUR = 100 * (1 + 0.10). But what interest rate should you use? The IRR is that interest rate that make the sum of the future values of all cashflow equal to the final value of the portfolio, e.g. 426.82 EUR.</p>
+<h1 id="the-money-weighted-rate-of-return">The money-weighted rate of return</h1>
+<p>The money-weighted rate of return is in fact identical to the Internal Rate of Return (IRR) technique used in project management. This calculation considers both the timing (when) and the amount (how much) of money moves into and out of the portfolio within the reporting period. The base formula for the IRR calculation is:</p>
+<p>$$\mathrm{MVE = MVB \times (1 + IRR)^{\frac{RD_1}{365}} + \sum_{t=1} ^{n}CF_t \times (1+IRR)^{\frac{RD_t}{365}} \qquad \text{(Eq 1)}}$$</p>
+<p>where <em>n</em> = the number of cash flows in the reporting period, $CF_t$ = cash flow at time <em>t</em> within the period, and $RD_t$ = the number of remaining days within the period. For MVB, the $RD_t$ equals the entire period, representing the period length in years. You can simplify the equation by treating the MVB as the initial cash flow. A cash flow is any amount of money that is added to or withdrawn from an investment.</p>
+<p>The formula is very similar to the calculation of <a href="../images/info-irr-future-present-value.svg">Future Value</a>. With an interest rate of 5%, 100 EUR today will be worth 115.76 EUR in three years or <code>100 x (1 +0.05)^3</code>. Since PP uses days as standard period, we need to divide the remaining number of days that the cash flow could influence the performance by 365 to obtain a decimal representation of the yearly period. $\mathrm{CF_t \times (1+IRR)^{\frac{RD_t}{365}}}$ is thus the expected future value of the cash flow CF at time <em>t</em> by the the end of the period with an annual interest rate = IRR. Please note that in the absence of any cash flows, Equation (1) resembles the simple return formula <a href="../">MVE = MVB x (1 + r)</a>. The added exponent transforms the return rate into an annual rate of return rather than a periodic rate of return, as in the simple return formula.</p>
+<p>The IRR is the annual interest rate that is necessary to bring the beginning value of the investment (MVB) and all subsequent cash flows to the end value (MVE). To produce the specified cash flows within the given time period, your portfolio needs to grow each year by a percentage equal to the Internal Rate of Return (IRR).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Why aren't dividend payments and share sales considered external cashflows? Certainly, the funds originate from outside the portfolio. However, they are generated by a share. In that regard, they are no different from the capital growth of a share. Moreover, the dividend payment is deposited into a cash account, and nothing further happens with it until the end of the period. At that point, the portfolio is settled, and the dividend payment and sales results are included in the $V_E, along with the capital growth of the share.</p>
-<p>If, however, you immediately reinvested the dividend, the purchase of those new shares would be recorded as a cashflow on that date. The cash account would then be credited, naturally reducing to zero, and consequently, it would no longer impact $V_E.</p>
+<p>In project management literature, you are more likely to encounter Equation (1) expressed as:</p>
+<p>$$\mathrm{CF_{t0} = \frac{CF_{t1}}{(1 + IRR)^\frac{t_1}{365}}+\frac{CF_{t2}}{(1 + IRR)^\frac{t_2}{365}}+...+ \frac{CF_{tn}}{(1 + IRR)^\frac{t_n}{365}}}$$</p>
+<p>where $\mathrm{CF_{t0}}$ denotes the initial cash outflow at time $t_0$, representing your initial investment. $\mathrm{CF_{t1} \cdots CF_{tn}}$ are the net cashflows that your initial investment will yield. PP works with daily periods instead of the traditional annual periods. Therefore, $\mathrm{t_1, t_2, \cdots t_n}$ should be converted to the number of days between $t_0$ and $t_n$.</p>
 </div>
-<p>The IRR can be measured for a specific trade, security or the whole portfolio. Here's a simple example. Additionally, there is also a more complex <a href="../../irr-example/">Practical step-by-step example</a>, solved in PP.</p>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>On <code>2021-01-15</code>, you purchased 10 shares at 17 EUR each.
-As of today (<code>2023-06-15</code>), the price has risen to 18.5 EUR per share. During this period, you received a dividend of 1.5 EUR per share on <code>2021-09-10</code> and a second dividend of 1.7 EUR per share on <code>2022-09-10</code>.</p>
-</div>
-<p>What is the performance or IRR of this security? Let's first have the timing and cashflows correct.</p>
-<table id="_table-1">
-<caption style="caption-side:bottom">Table 1: Cash flows at different times of investment.</caption><thead>
-<tr>
-<th>Date</th>
-<th>$t_n$</th>
-<th>$CF_n$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2021-01-15</td>
-<td>0d</td>
-<td>170€</td>
-</tr>
-<tr>
-<td>2021-09-15</td>
-<td>243d</td>
-<td>15€</td>
-</tr>
-<tr>
-<td>2022-09-15</td>
-<td>608d</td>
-<td>17€</td>
-</tr>
-<tr>
-<td>2023-06-15</td>
-<td>881d</td>
-<td>185€</td>
-</tr>
-</tbody>
-</table>
-<p>According to (1)</p>
-<p>$$CF_{t0} = 170 = \frac{15}{(1 + IRR)^\frac{243}{365}}+\frac{17}{(1 + IRR)^\frac{608}{365}}+ \frac{185}{(1 + IRR)^\frac{881}{365}}$$</p>
-<p>What IRR will solve this equation (1)?</p>
-<p>In Figure 1, we reverse the scenario: What's the value of $CF_{t0}$ if the IRR is, for example, 5% or 15%?</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Calculating CF0 for IRR = 5% and 15%.</figcaption><img alt="" src="../images/info-irr-calculations.svg"></figure></p>
-<p>If IRR = 15% then the combined future cashflows are worth 159.16 EUR in <code>2021-01-15</code>. So, you need less money (than 170 EUR) to get the same financial results.  The real IRR should be somewhat lower. With 5% however, you need 194.64 EUR to get the same total cashflows in 2021. After some guesswork and interpolation, you arrive at the exact IRR of <span style="color:red"><strong>11.61%</strong></span>, which will precisely bring all future cash flows to the initial investment of 170 EUR.</p>
-<p>In the previous example, the dividends are immediately "consumed": you got yourself a nice meal from it. In another scenario, you keep the dividends in your drawer - or in PP terminology: a deposit account -  until <code>2023-06-15</code> and cash them in at the same moment you sell the share. In that case, there are only two cashflows: $CF_{t0}$ = 170 EUR and $CF_{t881}$ = 15 + 17 +185 EUR.</p>
-<p>Equation (1) has only two terms and could be solved for IRR rather easily.</p>
-<p><strong>Eq (2)</strong>    $CF_{t0} = \frac{CF_{t1}}{(1 + IRR)^\frac{t_1}{365}} \implies  IRR = \sqrt[\frac{t_1}{365}]{\frac{CF_{t1}}{CF_{t0}}}-1$</p>
-<p>In this case, your initial investment of 170 EUR has an IRR = $\sqrt[\frac{881}{365}]{\frac{217}{170}}-1$ = <span style="color:red"><strong>10.64%</strong></span>. Why is this IRR smaller than the previous one? Because you kept the dividend until a later date, the 15 EUR in <code>2021-09-15</code> is less worth in <code>2023-06-15</code>.</p>
-<p>PP calculates three variants of IRR.</p>
+<p>Unfortunately, there is no easy way to derive the value of IRR from Equation 1. Software tools such as Excel have functions like IRR and XIRR, that employ a brute-force approach, iteratively solving the equation with various "guesses" of IRR until a suitable match is identified. In the examples below we will use the Goal Seek method of Excel to illustrate the solution.</p>
+<h1 id="irr-at-portfolio-level">IRR at portfolio level</h1>
+<p>The following examples will calculate the IRR for the whole portfolio. For example, our demo-portfolio-03 contains two securities and one deposit account. The resulting IRR should not be extrapolated to an individual security. It's the performance of the whole portfolio. Of course, you can calculate the IRR for a <a href="#irr-on-security-level">specific security</a> or even <a href="#irr-on-trade-level">trade</a> in PP. </p>
+<h2 id="example-1-one-buy-transaction">Example 1: one buy transaction</h2>
+<p>In our <a href="../../../assets/demo-portfolio-03.xml">demo-portfolio-03</a> all transactions take place within a holding period of three years, starting at <code>2020-06-12</code>. Consequently, the MVB for this period is 0 EUR because the portfolio is empty at the beginning of the period. The following transactions occur in the holding period (see Figure 1 below).</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Overview of transactions - Deposit (3x), Buy (3x), Dividend, and partial Sell.</figcaption><img alt="" src="../images/info-irr-example-transactions.png"></figure> </p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Graph of historical quotes and transactions of share-1. </figcaption><img alt="" src="../images/info-irr-example-share-1.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Graph of historical quotes and transactions of share-2. </figcaption><img alt="" src="../images/info-irr-example-share-2.png"></figure></p>
+<p>Assume that only the first buy (+ deposit) has taken place. The calculation of the IRR should then be straightforward.</p>
+<ul>
+<li>MVB = 0 EUR</li>
+<li>First cash flow on January 15, 2021: the purchase of 10 shares of <code>share-1</code> at a price of 15 EUR each, resulting in a total sum of 155 EUR (including fees and taxes); see Figure 1. Due to the three-year reporting period, this security will remain in the portfolio for an additional 878 days until MVE.</li>
+<li>MVE = 10 shares at quote 19.006 EUR; in total 190.06 EUR.</li>
+</ul>
+<p>Since MVB = 0, we can derive the IRR from Equation 2 directly: $\mathrm{IRR = \left({\frac{MVE}{CF_1}}\right)^\frac{365}{878} - 1}$</p>
+<p><code>IRR = (190.06/155)^(365/878) = 8.85%</code></p>
+<p>In order to generate the MVE = 190.06 EUR, the initial cash flow CF1 of 155 EUR must grow at 8.85% per year for 2.41 years or 878 remaining days.</p>
+<h2 id="example-2-multiple-buy-transactions">Example 2: multiple buy transactions</h2>
+<p>When dealing with multiple cash flows, deriving the Internal Rate of Return (IRR) becomes more complex. Take, for example, the three buying transactions from Figure 1. The same logic as mentioned earlier still applies, albeit with a bit more complexity.</p>
+<ul>
+<li>MVB is still zero EUR.</li>
+<li>Three cash flows (see Figure 1). The remaining days in the reporting period are respectively 878, 514, and 255 days.</li>
+<li>MVE = 15 shares at a quoted price of 19.006 EUR, and 5 shares at 13.77 EUR, totaling 396.85 EUR. </li>
+</ul>
+<p>$$
+\mathrm{MVE = MVB \times (1 + IRR)^{\frac{1095}{365}} + CF_1 \times (1+IRR)^{\frac{878}{365}} + CF_2 \times (1+IRR)^{\frac{514}{365}} +  CF_3 \times (1+IRR)^{\frac{255}{365}}  \qquad (Eq  3)}
+$$</p>
+<p>Figure 4 illustrates the calculation in Excel (<a href="../../../assets/demo-portfolio-03-calculation.xlsx">download workbook</a>). The initial cash flow of 155 EUR will have grown to 219.68 EUR, if the holding period was 878 days and the yearly interest rate was 15.60%. The second buy will increase from 84 EUR to 103.03 EUR. The profit of <code>share-2</code> appears smaller due to the smaller amount of holding days. The calculation of IRR can be simulated it in Excel using the Data &gt; Goal Seek method (see Figure 4). The method tries to set the value of the calculated MVE (cell F11) to the observed MVE (manual input) by iteratively changing the value of IRR, until a match (15.60%) is found.</p>
+<p>Please note that the individual calculated end values of the shares do not necessarily correspond with the observed individual end values. Compare for example the expected and observed value of <code>share-2</code>. Only the sum of the whole portfolio match. See balow to calculate the performance of <a href="#irr-on-security-level">individual securities</a> and <a href="#irr-on-trade-level">trades</a>.</p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  IRR-calculation for three buy-transactions. </figcaption><img alt="" src="../images/info-irr-caluclation-excel-buys-only.png"></figure></p>
+<h2 id="example-3-buy-dividend-sell-transactions">Example 3: buy - dividend - sell transactions</h2>
+<p>Whether dividend payments and selling securities should be considered as cash flows depends on the context. In demo-portfolio-03, the outcomes of dividend and selling transactions are deposited in a cash account, which is part of the portfolio. Consequently, there isn't any 'external' cash flow. Also, the cash account is included in the portfolio valuation at the end of the period (MVE), meaning that the value of MVE already incorporates dividends and sales. </p>
+<p>If the dividend payment is "consumed" (you bought yourself a nice meal from it), resulting in an external cash flow (withdrawal), this transaction should be recorded in PP. Similarly, if you choose to reinvest the dividend or the proceeds from a sale, it necessitates recording a new transaction in PP.</p>
+<p>As evident in Figure 5, MVE comprises the paid dividend and the outcome of the sale transaction (both held in a deposit account), in addition to the valuation on the end date of the remaining shares from the portfolio. This aligns with what PP displays in the calculation tab.  The MVE is the total of all deposit and securities accounts.</p>
+<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5.  IRR-calculation for buy-sell-dividend transactions. </figcaption><img alt="" src="../images/info-irr-caluclation-excel-buys-dividend-sell.png"></figure></p>
+<p>If you should like to consider the dividend and sale as a cash flow, then you should change the transaction date to the holding period end date. Indeed, before the end date, these payments essentially remain dormant on the cash account, without actively contributing to the portfolio. As the number of remaining days in the period reaches zero, the formula will simplify to the face value of the dividend and sale.</p>
+<p><code>155 x 1.2^(878/365) + 111.76 x 1.2^(514/365) + 67 * 1.2^(255/365) + 20 x 1.2^0 + 105 x 1.2^0 = MVE (but without dividend and sale)</code></p>
+<h2 id="example-4-mvb-0">Example 4: MVB &gt; 0</h2>
+<p>In the previous examples, all transactions took place within the reporting period. This isn't always the case. It is very important to distinguish the following cases:</p>
 <ul>
 <li>
-<p><strong>Performance IRR</strong>: this is the IRR for the whole project and a specific reporting period; see <code>side bar &gt; Reports &gt; Performance</code>.</p>
+<p>$CF_t$ occurs before the beginning of the reporting period (MVB date).  PP will calculate the value of $CF_t$ through historic quotes at time <em>t</em>. The holding period is the entire reporting period.</p>
 </li>
 <li>
-<p><strong>Security IRR</strong>: the IRR of a selected security for a specific reporting period; see <code>sidebar &gt; Reports &gt; Performance &gt; Securities</code>.</p>
+<p>$CF_t$ occurs after the beginning but before the end of the reporting period. The value of $CF_t$ is known through the transaction data. The holding period is the number of remaining days from time <em>t</em> until the end of the reporting period.</p>
 </li>
 <li>
-<p><strong>Trade IRR</strong>: the IRR of a buy-sell cycle of a selected security. See <code>sidebar &gt; Reports &gt; Performance &gt; Trades</code></p>
+<p>$CF_t$ falls after the end of the reporting period. $CF_t$ does not contribute to MVE and is omitted from the calculation of IRR for that reporting period.</p>
 </li>
 </ul>
-<p>The Performance and Security IRR are calculated for a specific <a href="./reporting-period.md">reporting period</a>; e.g. 1 year, 2 years, 3 years, custom period. It is very important to distinguish the following cases:</p>
+<p>Consider a scenario where the holding period is only two years (from 2021-06-12 to 2023-06-12), or 730 days. Since the first buy of <code>share-1</code> occurs outside of this period (item 1 from above), the quoted price of <code>share-1</code> at the beginning of the period is used rather than the actual buying price.</p>
+<ul>
+<li>MVB = 177.94 EUR, representing 10 shares of <code>share-1</code> at the closing price of 17.794 EUR on June 11, 2021 (= the closing price from the day before the buying transaction).</li>
+<li>Additional buys: two additional buys within the reporting period with respective remaining days of 514 and 255 days and known buying transaction price. Remember, the dividend and sale will be valuated at end date in the MVE.</li>
+<li>MVE = 426.82 EUR, including 125 EUR on the cash account from dividend and sale.</li>
+</ul>
+<p>The resulting formula is with IRR = 17.63% is:</p>
+<p><code>177.94 x 1.18^(730/365) + 84 x 1.18^(514/365) + 67 x 1.18^(255/365)
+= MVE (including dividend and sale)</code></p>
+<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6.  IRR-calculation for a 2 year holding period (MVB &gt; 0).</figcaption><img alt="" src="../images/info-irr-caluclation-excel-2y-period.png"></figure></p>
+<h1 id="irr-at-security-level">IRR at security level</h1>
+<p>The value of IRR, calculated on the portfolio level, doesn't say much about the performance of a specific security. For example, the <a href="#example-3-buy---dividend---sell-transactions">demo-portfolio-03 IRR</a> (3 years reporting period) is 20.28%. The security IRR of <code>share-2</code> is 112.53%. A glance at Figure 7 should make it evident why: the security is purchased at the lowest price of the entire period. You can obtain the IRR for each security separately using the menu View &gt; Reports &gt; Securities. The calculation closely resembles that of the portfolio. It is essential to set a reporting period beforehand.</p>
+<p><figure class="pp-figure" id="_figure-7"><figcaption>Figure 7.  IRR-calculation for individual securities.</figcaption><img alt="" src="../images/info-irr-caluclation-securities.png"></figure></p>
 <ul>
 <li>
-<p>$t_0$ occurs before the start of the reporting period $RP_{start}$.  PP can calculate the value of $CF_0$ (through historic quotes or transaction price) at $RP_{start}$. The holding period is calculated from $RP_{start}$ for each CF.</p>
+<p>Fees are omitted from the security IRR calculation.</p>
 </li>
 <li>
-<p>$t_0$ occurs after $RP_{start}$ but before $RP_{end}$. The value of $CF_0$ is known. The holding period is calculated from $RP_{start}$.</p>
+<p>In contrast to the Portfolio IRR, dividends and sale results are treated as leaving the portfolio at the transaction date in Security IRR calculations. Deposit accounts are not included in the Security IRR calculation.</p>
 </li>
 <li>
-<p>$t_n$ falls after $RP_{end}$. All transactions after $RP_{end}$ do not contribute to the calculation of IRR for that reporting period.</p>
+<p>With a multi-transaction security, the purchase price and value could be somewhat tricky to obtain. For instance, the remaining 10 shares of <code>share-1</code> are the outcome of two purchase transactions and one sell transaction. Following the FIFO principle (First In, First Out), these 10 shares consist of the 5 remaining shares from the first buy and the 5 shares from the second buy. This results in an average price of 15.50 EUR.</p>
 </li>
 </ul>
+<h2 id="example-5-a-security-with-one-buy-transaction">Example 5: a security with one buy transaction</h2>
+<p>A simple example is provided by the IRR calculation of <code>share-2</code>. The single buy transaction falls within every holding period (1,2, or 3 years). The transaction data without taxes is used to determine the cash flow; e.g. 67 EUR.</p>
+<ul>
+<li>MVB = 0 EUR.</li>
+<li>First cashflow: 8 shares at 8 EUR/share + 2 EUR fees. Remaining days = 255.</li>
+<li>MVE = 8 shares at 13.97 EUR/share.</li>
+</ul>
+<p>Inserting these values into Equation 2 gives
+<code>111.76 = 0 x (1+IRR)^1095/365 + 66 x (1+IRR)^255/365</code></p>
+<p><code>IRR = ((111.76/66)^(365/255)) - 1 = 112.53%</code></p>
+<h2 id="example-a-security-with-multiple-transactions">Example : a security with multiple transactions</h2>
+<p><code>share-1</code> has multiple transactions, including sell and dividend. It's important to get the dates and cash flows correct, see Figure 8.</p>
+<p><figure class="pp-figure" id="_figure-8"><figcaption>Figure 8.  IRR-calculation for individual security with multiple transactions.</figcaption><img alt="" src="../images/info-irr-caluclation-securities-multiple-transactions.png"></figure></p>
+<p>Please note that the dividend payment and the sale is recorded at the transaction date; not the end date of the holding period. This is different behaviour than with the IRR calculation on portfolio level. The resulting amounts are not deposited on a cash account but are withdrawn from the portfolio at the transaction date.  Because of this withdrawal, the cash flow is also negative.</p>
+<p>Inserting these values into Equation 2 gives:
+<code>190.06 = 153 x (1+IRR)^(878/365) + 83 x (1+IRR)^(514/365) - 30 x (1+IRR)^(179/365) - 107 x (1 + IRR)^(61/365)</code> As can be seen from Figure 7, the IRR = 18.00%.</p>
+<p><code>190.6 = 227.81 + 104.78 - 32.54 - 110.00</code></p>
+<h1 id="irr-at-trade-level">IRR at trade level</h1>
+<p>A trade is formed by aggregating all buy and sell transactions related to a specific security. A trade can be <code>closed</code>, indicating that no further transactions can be conducted within this trade or <code>open</code>: more transactions are possible. The demo-project-03 contains 3 trades (see Figure 9).  A <em>closed</em> trade starting with a buy of <code>share-1</code> on <code>2021-01-15</code> and ending with a partial sell on <code>2022-01-14</code>. The remaining shares initiate the second <em>open</em> trade, starting at <code>2022-01-14</code> and ending at the current date (e.g. <code>2023-06-12</code>). The third trade is also open because <code>share-2</code> hasn't been sold yet.</p>
+<p><figure class="pp-figure" id="_figure-9"><figcaption>Figure 9.  IRR-calculation for trades.</figcaption><img alt="" src="../images/mnu-view-reports-trade-irr-example.png"></figure></p>
+<p>Please note that, in contrast with the portfolio and security IRR calculation, you can not set a reporting period.  All open trades are calculated with the end date set as of today.</p>
+<p>Also note that PP follows a <code>FIFO principle</code> (First-In; First-Out) to determine which shares will be sold. The 5 shares sold on <code>2023-04-12</code> correspond to those acquired on <code>2021-01-15</code>, rather than the ones obtained on <code>2022-01-14</code>.</p>
+<h2 id="irr-calculation-of-a-closed-trade">IRR calculation of a closed trade</h2>
+<p>Five shares of <code>share-1</code> were sold on April 12, 2023. The market value of those shares was 5 x 21 EUR = 105 EUR. The exact values could be obtained from the historical prices or with Report &gt; Performance &gt; Trades. The Entry and Exit values aren't displayed by default. Because of the FIFO-principle, these 5 shares were from the 1th buy, meaning that they are purchased for 5 x 15 EUR = 75 EUR. The fees and taxes are proportionally allocated based on the amount used, in this case, 5/2 = 2.5 EUR. The securities are held for 817 days (from 2021-01-15 till 2023-04-12). Inserting these values in Equation 2 and solving for IRR gives:</p>
+<p>IRR = ((105/77.50)^(817/365)) - 1 = 14.53% </p>
+<h2 id="irr-calculation-of-an-open-trade">IRR calculation of an open trade</h2>
+<p>The open trade involving <code>share-2</code> is rather simple. Referring to Figure 1, these shares were acquired for a net value of 67 EUR on <code>2022-09-30</code>, which was 255 days ago. The current value is 111.76 EUR, resulting in <code>IRR = (111.76/67)^(365/255) - 1 = 108%</code>.</p>
+<p>There is no easy way to check the trade IRR for a date other than the current date in PP.</p>
+<p>The open trade involving <code>share-1</code> is a special case. Since it is an open trade, it ends on the current day (<code>2023-06-12</code>). But the trade consists of shares that were bought in 2021 and in 2022. Five shares are from 2021. The cash flow of these shares is thus 77.5 EUR (see also paragraph above). Today, they are valuated at 95.36 EUR. The remaining 5 shares are from <code>2022-01-04</code> with a cash flow of 84 EUR (see Figure 1). These 5 shares are also 95.36 EUR worth today (<code>2023-06-12</code>).</p>
+<p>According to PP (see Figure 9) the exit value is 190.72 = 2 x 95.36 EUR and the entry value is 77.5 + 84 = 161.50 EUR.</p>
+<ul>
+<li>1st buy: 77.50 EUR with a holding period of 878 days</li>
+<li>2nd buy: 84.00 EUR with a holding period of 514 days </li>
+</ul>
+<p>Inserting these values in Equation 1.</p>
+<p><code>190.72 = 77.5*(1+IRR)^(878/365) + 84*(1+IRR)^(514/365)</code></p>
+<p>Finding IRR with Goal Seek gives IRR = 9.16% and the formula solves into</p>
+<p><code>190.72 = 95.69 + 95.03</code></p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 28, 2023</span>
       
     
   </small>

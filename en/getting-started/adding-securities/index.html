@@ -889,8 +889,6 @@
       
         
       
-        
-      
     
     
     
@@ -1043,6 +1041,10 @@
           
         
       
+        
+      
+        
+      
     
     
     
@@ -1067,6 +1069,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
@@ -1078,9 +1085,21 @@
             
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/performance/money-weighted/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Money-weighted return
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1092,15 +1111,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/irr-example/" class="md-nav__link">
+      <a href="../../concepts/performance/time-weighted/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    IRR example
+    Time-weighted return
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1428,12 +1455,12 @@
 <p>A security can be set to active or inactive. If it is set to inactive, then the security will not appear in buy or sell dialogs and the historical prices will not be updated automatically.</p>
 <p>At the bottom of Figure 3 you can add a personal note for this security.</p>
 <p>These fields are called the Security Master Data (see top of Figure 3). There are four other tabs: Additional Attributes, Taxonomies, Historical Quotes, and Latest Quote.</p>
-<h2 id="additional-attributes">Additional Attributes<a class="headerlink" href="#additional-attributes" title="Permanent link">#</a></h2>
+<h2 id="additional-attributes">Additional Attributes</h2>
 <p>This tab allows you to supply additional data, besides the info that is already included in the Security Master Panel.</p>
 <p>Click on the <code>+ button</code> to add a new attribute such as Logo, Total Expense Ratio, Assets under Management, Vendor, Acquisition Fee (percentage), and Management Fee (percentage). These additional attributes can be added to tables such as <code>Reports &gt; Performance &gt; Securities</code>. These fields are not calculatedand cannot be used in calculations.</p>
 <p>Additional attributes are defined in <code>(left) Sidebar &gt; General Data &gt; Settings &gt; Attributes : Securities</code> (at the bottom).</p>
 <p><figure id="_figure-5"><figcaption>Figure 5.  Defining additional attributes.</figcaption><img alt="Defining additional attributes." class="pp-figure" src="../images/adding-securities-additional-attributes.png"></figure></p>
-<h2 id="taxonomies">Taxonomies<a class="headerlink" href="#taxonomies" title="Permanent link">#</a></h2>
+<h2 id="taxonomies">Taxonomies</h2>
 <figure style="float: right; width: 40%">
   <figcaption>Figure 6: Managing taxonomies.</figcaption>
   <img src="../images/adding-securities-taxonomies.png" alt="Figure 6">
@@ -1443,10 +1470,10 @@
 <p>A taxonomy is a classification of your securities. For example, the <code>Type of Security</code> taxonomy (see presets in Figure 6) can classify your securities into: stock, Equity Fund, Exchange Traded Fund (ETF), Bond, Stock Option, Index, or Currency. Setting the correct type should be done in the Taxonomies panel when adding or editing the security (see Figure 3).</p>
 <p>Other useful presets are Industries, following the Global Industry Classification Standard (GICS), regions (up to country level), and assets (cash, equity, debt, ...).</p>
 <p>You can select these taxonomies in the <code>Left sidebar &gt; Taxonomies</code> (see figure 6). Click on the <code>+ button</code> to see all presets or to create your own custom taxonomy.</p>
-<h2 id="historical-quotes">Historical Quotes<a class="headerlink" href="#historical-quotes" title="Permanent link">#</a></h2>
+<h2 id="historical-quotes">Historical Quotes</h2>
 <p>For evaluating your portfolio, you need the current &amp; historical prices of the security. In this panel (see Figure 7) you can set the data source of the Quote Feed. As provider, you can choose between several alternatives: Yahoo Finance, Alpha Vantage, Quandl, .... You can even refer to a webpage (e.g. from an investor site) that contains these historical data; see for example <a href="../../tricks/morningstar/">Morningstar</a>. Or you can create them yourself and import the quotes with a csv-file.</p>
 <p><figure id="_figure-6"><figcaption>Figure 6.  Historical quotes.</figcaption><img alt="Historical quotes." class="pp-figure" src="../images/adding-securities-historical-quotes.png"></figure></p>
-<h2 id="latest-quote">Latest Quote.<a class="headerlink" href="#latest-quote" title="Permanent link">#</a></h2>
+<h2 id="latest-quote">Latest Quote.</h2>
 <p>The latest (most recent) quote can be retrieved from the same data source as the (older) historical prices. However, this data source may be returning only daily quotes. If you want more recent prices from another source, you can use this panel (see Figure 8).</p>
 <p><figure id="_figure-7"><figcaption>Figure 7.  Latest Quote</figcaption><img alt="Latest Quote" class="pp-figure" src="../images/adding-securities-latest-quote.png"></figure></p>
 
@@ -1455,7 +1482,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 28, 2023</span>
       
     
   </small>
