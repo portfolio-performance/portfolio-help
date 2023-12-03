@@ -118,11 +118,11 @@ nav:
           - Performance: concepts/performance/index.md
           - Money-weighted return: concepts/performance/money-weighted.md
           - Time-weighted return: concepts/performance/time-weighted.md
-  - Common procedures:
-      - Common procedures: procedures/index.md
-      - Importing CSV-files: procedures/importing.md
-      - Reinvesting dividends: procedures/reinvesting-dividends.md
-  - Tips & tricks:
-      - Tips & tricks: tricks/index.md
-      - Import fund data from Morningstar: tricks/morningstar.md
-      - Hack data file to add defauly Quote Feed: tricks/quote-feed.md
+  - How-to:
+      - How-to: how-to/index.md
+      - Importing CSV-files: how-to/importing.md
+      - Reinvesting dividends: how-to/reinvesting-dividends.md
+      - Import fund data from Morningstar: how-to/morningstar.md
+      - Hack data file to add defauly Quote Feed: how-to/quote-feed.md
+  - Reference manual:
+      - Reference manual: reference/index.md

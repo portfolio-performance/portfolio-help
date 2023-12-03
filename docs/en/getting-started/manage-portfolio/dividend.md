@@ -1,6 +1,5 @@
 ---
 title: Dividend
-lastUpdate: 2023-09-29
 ---
 
 ## Dividend transaction
@@ -12,4 +11,4 @@ Figure: Recording a dividend (same currency).{class=pp-figure}
 ![](../../images/mnu-transaction-dividend-heidelberg-2022.png)
 
 
-There isn't a dedicated function for recording a "Dividend Investment Plan" (DRIP). One workaround is to record all dividends in full and then proceed with a purchase of the agreed-upon number of shares.More information at [Reinvesting dividends](../../procedures/reinvesting-dividends.md).
+There isn't a dedicated function for recording a "Dividend Investment Plan" (DRIP). One workaround is to record all dividends in full and then proceed with a purchase of the agreed-upon number of shares.More information at [Reinvesting dividends](../../how-to/reinvesting-dividends.md).

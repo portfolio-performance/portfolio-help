@@ -1,7 +1,5 @@
 ---
 title: Creating a portfolio
-lastUpdate: 2023-09-14
-TODO: get and define full list of type of security; see adding new instruments
 ---
 Immediately after the previous "Create portfolio" step, the application's main screen looks a bit empty (see Figure 1). The left sidebar option 'Securities > All Securities' can be used to generate a list of securities.
 
@@ -79,7 +77,7 @@ You can select these taxonomies in the `Left sidebar > Taxonomies` (see figure 6
 
 ## Historical Quotes
 
-For evaluating your portfolio, you need the current & historical prices of the security. In this panel (see Figure 7) you can set the data source of the Quote Feed. As provider, you can choose between several alternatives: Yahoo Finance, Alpha Vantage, Quandl, .... You can even refer to a webpage (e.g. from an investor site) that contains these historical data; see for example [Morningstar](../tricks/morningstar.md). Or you can create them yourself and import the quotes with a csv-file.
+For evaluating your portfolio, you need the current & historical prices of the security. In this panel (see Figure 7) you can set the data source of the Quote Feed. As provider, you can choose between several alternatives: Yahoo Finance, Alpha Vantage, Quandl, .... You can even refer to a webpage (e.g. from an investor site) that contains these historical data; see for example [Morningstar](../how-to/morningstar.md). Or you can create them yourself and import the quotes with a csv-file.
 
 ![Historical quotes.](images/adding-securities-historical-quotes.png){.pp-figure}
 
