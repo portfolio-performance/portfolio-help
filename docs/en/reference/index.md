@@ -8,12 +8,10 @@ Figure: Opening screen of the PortfolioPerformance program.{class=pp-figure}
 
 ![](./images/components-UI.svg)
 
-Certainly:
-
 Figure 1 illustrates the outcome of selecting the `All Transactions` view, accessible either through the side panel or the menu `View > All Transactions`. The last Buy transaction for `share-3` is selected, prompting the display of a chart showing the historical quotes of `share-3` in the lower panel. The following UI elements can be distinguished:
 
 - **Menu bar** containing five elements: File, View, Transaction, Online, Help. This menu bar is *not* context sensitive.
-- **Open projects**: you can open multiple projects simultaneously. The highlighted project is visible in the panels below. Projects marked with a star (*) preceding their name has been changed and should be saved before closing. It is possible to display two projects side by side in the UI.
+- **Open projects**: you can open multiple projects simultaneously. The highlighted project is visible in the panels below. Projects marked with a star (*) preceding their name has been changed and should be saved before closing. It is possible to display two projects [side by side](../how-to/copy-securities.md) in the UI.
 -  The **Side panel** serves as a convenient shortcut for accessing various views within the project. All available options can also be accessed through the `View` menu. It's important to note that the list in the side panel mirrors the options available in the `View` menu, providing a one-to-one translation of the available views. The chosen view dictates the content displayed in the adjacent top and bottom panels. Next to the options `Securities` and `Taxonomies`, a very small (green) icon will let you add new elements.
 - **Top panel**: in the example of Figure 1, the top panel contains the `All Transactions` view. This is a list of all the transactions that you have made with your portfolio, such as deposits, withdrawals, buys, and sells. The default columns, such as `date`, `type`, `security`, ..., are initially visible. However, you have the flexibility to modify them using the Settings (cog) icon located in the top-right corner. Please, note that the icons in the top-right corner are specific to this view and may not necessarily appear in other views.
 - The **Bottom panel** follows the selection of the top panel. For example, selecting `share-1` in the top panel will display the chart of this share in the bottom panel.
