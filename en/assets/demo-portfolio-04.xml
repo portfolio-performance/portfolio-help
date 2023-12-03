@@ -6980,7 +6980,13 @@
       <entry>
         <string>client-filter-selection</string>
         <config-set>
-          <configurations/>
+          <configurations>
+            <config>
+              <uuid>PaymentsViewModel</uuid>
+              <name></name>
+              <data></data>
+            </config>
+          </configurations>
         </config-set>
       </entry>
     </configurationSets>

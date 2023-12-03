@@ -131,6 +131,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://help.portfolio-performance.info/en/how-to/copy-securities/</loc>
+         <lastmod>2023-12-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://help.portfolio-performance.info/en/how-to/importing/</loc>
          <lastmod>2023-12-03</lastmod>
          <changefreq>daily</changefreq>
