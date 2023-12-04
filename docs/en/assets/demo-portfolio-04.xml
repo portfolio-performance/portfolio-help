@@ -2669,8 +2669,9 @@
         <price t="2023-11-29" v="2193500000"/>
         <price t="2023-11-30" v="2197500000"/>
         <price t="2023-12-01" v="2224500000"/>
+        <price t="2023-12-04" v="2236500000"/>
       </prices>
-      <latest t="2023-12-01" v="2224500000">
+      <latest t="2023-12-04" v="2236500000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3753,8 +3754,9 @@
         <price t="2023-11-29" v="1337000000"/>
         <price t="2023-11-30" v="1328500000"/>
         <price t="2023-12-01" v="1330000000"/>
+        <price t="2023-12-04" v="1319000000"/>
       </prices>
-      <latest t="2023-12-01" v="1330000000">
+      <latest t="2023-12-04" v="1319000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -6291,8 +6293,9 @@
         <price t="2023-11-29" v="61739000000"/>
         <price t="2023-11-30" v="61101000000"/>
         <price t="2023-12-01" v="61247000000"/>
+        <price t="2023-12-04" v="60209000000"/>
       </prices>
-      <latest t="2023-12-01" v="61247000000">
+      <latest t="2023-12-04" v="60209000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -6313,6 +6316,16 @@
       <currencyCode>EUR</currencyCode>
       <isRetired>false</isRetired>
       <transactions>
+        <account-transaction>
+          <uuid>8cb19693-445d-4bb3-9ab0-4f6f79da7c50</uuid>
+          <date>2021-01-15T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>15500</amount>
+          <shares>0</shares>
+          <note>01</note>
+          <updatedAt>2023-12-03T09:51:02.297291Z</updatedAt>
+          <type>DEPOSIT</type>
+        </account-transaction>
         <account-transaction>
           <uuid>6de7af2d-3c02-4d4c-969a-c29f2be8b515</uuid>
           <date>2021-01-15T00:00</date>
@@ -6527,17 +6540,28 @@
           <updatedAt>2023-12-03T09:51:06.892182100Z</updatedAt>
           <type>BUY</type>
         </account-transaction>
-        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/accountTransaction"/>
         <account-transaction>
-          <uuid>8cb19693-445d-4bb3-9ab0-4f6f79da7c50</uuid>
-          <date>2021-01-15T00:00</date>
+          <uuid>19ef63e5-4370-4d24-9c5d-06bc6f9f07fd</uuid>
+          <date>2022-01-14T00:00</date>
           <currencyCode>EUR</currencyCode>
-          <amount>15500</amount>
+          <amount>8400</amount>
           <shares>0</shares>
-          <note>01</note>
-          <updatedAt>2023-12-03T09:51:02.297291Z</updatedAt>
+          <note>03</note>
+          <updatedAt>2023-12-03T09:51:11.531486800Z</updatedAt>
           <type>DEPOSIT</type>
         </account-transaction>
+        <account-transaction reference="../account-transaction[2]/crossEntry/portfolio/transactions/portfolio-transaction[3]/crossEntry/accountTransaction"/>
+        <account-transaction>
+          <uuid>f1cfbd77-f4fb-4131-8e97-563dc633eaad</uuid>
+          <date>2022-09-30T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>6700</amount>
+          <shares>0</shares>
+          <note>05</note>
+          <updatedAt>2023-12-03T09:51:20.021277900Z</updatedAt>
+          <type>DEPOSIT</type>
+        </account-transaction>
+        <account-transaction reference="../account-transaction[2]/crossEntry/portfolio/transactions/portfolio-transaction[4]/crossEntry/accountTransaction"/>
         <account-transaction>
           <uuid>b1e88740-a392-4a87-afaf-ab7e3c35968c</uuid>
           <date>2022-12-15T00:00</date>
@@ -6554,38 +6578,17 @@
           <updatedAt>2023-12-03T09:51:26.706206100Z</updatedAt>
           <type>DIVIDENDS</type>
         </account-transaction>
-        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[3]/crossEntry/accountTransaction"/>
-        <account-transaction>
-          <uuid>19ef63e5-4370-4d24-9c5d-06bc6f9f07fd</uuid>
-          <date>2022-01-14T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>8400</amount>
-          <shares>0</shares>
-          <note>03</note>
-          <updatedAt>2023-12-03T09:51:11.531486800Z</updatedAt>
-          <type>DEPOSIT</type>
-        </account-transaction>
-        <account-transaction>
-          <uuid>f1cfbd77-f4fb-4131-8e97-563dc633eaad</uuid>
-          <date>2022-09-30T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>6700</amount>
-          <shares>0</shares>
-          <note>05</note>
-          <updatedAt>2023-12-03T09:51:20.021277900Z</updatedAt>
-          <type>DEPOSIT</type>
-        </account-transaction>
-        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[4]/crossEntry/accountTransaction"/>
+        <account-transaction reference="../account-transaction[2]/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/accountTransaction"/>
       </transactions>
       <attributes>
         <map/>
       </attributes>
       <updatedAt>2023-06-07T17:58:03.601398500Z</updatedAt>
     </account>
-    <account reference="../account/transactions/account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[5]/crossEntry/account"/>
+    <account reference="../account/transactions/account-transaction[2]/crossEntry/portfolio/transactions/portfolio-transaction[5]/crossEntry/account"/>
   </accounts>
   <portfolios>
-    <portfolio reference="../../accounts/account/transactions/account-transaction/crossEntry/portfolio"/>
+    <portfolio reference="../../accounts/account/transactions/account-transaction[2]/crossEntry/portfolio"/>
   </portfolios>
   <plans/>
   <taxonomies/>
