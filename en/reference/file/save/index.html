@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#file-save-save-as" class="md-skip">
+        <a href="#file-save-save-as-save-all" class="md-skip">
           Skip to content
         </a>
       
@@ -1417,8 +1417,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#xml" class="md-nav__link">
-    XML
+  <a href="#xml-format" class="md-nav__link">
+    XML format
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xml-compressed-format" class="md-nav__link">
+    XML compressed format
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xml-aes-128256-encrypted" class="md-nav__link">
+    XML AES-128/256 Encrypted
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary-binary-password-protected" class="md-nav__link">
+    Binary &amp; Binary password protected
   </a>
   
 </li>
@@ -1542,8 +1563,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#xml" class="md-nav__link">
-    XML
+  <a href="#xml-format" class="md-nav__link">
+    XML format
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xml-compressed-format" class="md-nav__link">
+    XML compressed format
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xml-aes-128256-encrypted" class="md-nav__link">
+    XML AES-128/256 Encrypted
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary-binary-password-protected" class="md-nav__link">
+    Binary &amp; Binary password protected
   </a>
   
 </li>
@@ -1571,9 +1613,11 @@
   
 
 
-<h1 id="file-save-save-as">File ❯ Save - Save As</h1>
-<p>With the menu <code>File &gt; Save</code>, you can save your portfolio in an XML-file (eXtensible Markup Language) format using the existing name. It's equivalent to choosing <code>File &gt; Save As</code>, with the latter having the added flexibility to change the name and file type. Six file formats are available.</p>
-<h2 id="xml">XML</h2>
+<h1 id="file-save-save-as-save-all">File ❯ Save - Save As - Save All</h1>
+<p>With the menu <code>File &gt; Save</code>, you can save your portfolio in an XML-file (eXtensible Markup Language) format using the existing name. It's equivalent to choosing <code>File &gt; Save As</code>, with the latter having the added flexibility to change the name and file type. Six file formats are available. <code>File &gt; Save All</code> will of course save all open projects.</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Dialog after closing app with two updated portfolios.</figcaption><img alt="" src="../images/app-close.png"></figure></p>
+<p>Closing a portfolio that has been modified since opening will trigger a dialog <code>'xxx.xml is modified. Do you want to save the changes?</code>. Closing the application with multiple updated project will prompt the dialog from Figure 1.</p>
+<h2 id="xml-format">XML format</h2>
 <p>All data of your portfolio is stored in one XML-file (eXtensible Markup Language). This is a human-readable file format. For example, the following xml-file <a href="../../../assets/test.xml">test.xml</a> is a very simple portfolio with one security (<code>share-1</code>) and two transactions (one deposit and one buy). You can view the xml-content by opening this file with a text editor (e.g. Notepad++). Here's a brief description of the main elements:</p>
 <ul>
 <li>
@@ -1599,10 +1643,10 @@
 <li><code>&lt;settings&gt;</code>: Contains various settings, including bookmarks and attribute types.</li>
 <li><code>&lt;configurationSets&gt;</code>: Stores configuration sets with specific data.</li>
 </ul>
-<p>Below you can see the xml code for the buying transaction in Figure 1.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Example of a buying transaction.</figcaption><img alt="" src="../images/mnu-transaction-buy-share-microsoft.png"></figure></p>
+<p>Below you can see the xml code for the buying transaction in Figure 2.</p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Example of a buying transaction.</figcaption><img alt="" src="../images/mnu-transaction-buy-share-microsoft.png"></figure></p>
 <p>This single buying transaction is represented with the following XML code.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&lt;transactions&gt;</span>
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&lt;transactions&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">   </span><span class="nt">&lt;portfolio-transaction&gt;</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">      </span><span class="nt">&lt;uuid&gt;</span>72bf2b32-60a5-4c99-ba6d-d3ab695624e5<span class="nt">&lt;/uuid&gt;</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">      </span><span class="nt">&lt;date&gt;</span>2023-09-10T00:00<span class="nt">&lt;/date&gt;</span>
@@ -1625,13 +1669,23 @@
 <a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">   </span><span class="nt">&lt;/portfolio-transaction&gt;</span>
 <a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="nt">&lt;/transactions&gt;</span>
 </code></pre></div>
+As you can see, there is nearly a one-to-one relationship between the input form of the buy transaction and the XML. Please note that -internally- PP works with nano units (10^9) for the number of shares and hecto units (10^2) for the price.
+<h2 id="xml-compressed-format">XML compressed format</h2>
+<p>With this option the XML file is compressed and stored as a ZIP file.The compression ratio is quite high (around 1:10). Subsequently, you can directly open the ZIP file in PP without the need to extract the XML from the ZIP archive beforehand.</p>
+<h2 id="xml-aes-128256-encrypted">XML AES-128/256 Encrypted</h2>
+<p>Saving the project in the AES-128 format (Advanced Encryption Standard) will use a key of 128 bits (= 16 bytes or characters) to encrypt your data. In order to generate this key, PP needs a password that is at least 6 characters. However, a password that is longer and more complex will have more entropy, which means it is harder to guess. A password with at least 128 bits of entropy will produce a key that is as secure as AES-128 encryption. However, most passwords do not have that much entropy, because they are based on words, names, dates, or personal information that can be easily guessed or found out. Therefore, you should use a password that is as long and as random as possible, and avoid using common or simple passwords.</p>
+<p>Since AES-256 uses a key of 256 bits, it's more secure.</p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Saving a portfolio with AES-128 encryption needs a password.</figcaption><img alt="" src="../images/mnu-save-encrypted.png"></figure></p>
+<p>Distinguishing an encrypted file from a regular one is possible by examining the file extension. Encrypted files have the extension .portfolio, while other formats are represented by XML or ZIP extensions.</p>
+<h2 id="binary-binary-password-protected">Binary &amp; Binary password protected</h2>
+<p>An XML file is a human-readable file format (see above for an example). A binary format is more compact and efficient. More info is available in <a href="https://github.com/portfolio-performance/portfolio/issues/2363">Issue #2363</a>; watch for example the comparison in opening speed of a 720 securities &amp; 1.3 MB historical prices project.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 4, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 5, 2023</span>
       
     
   </small>
