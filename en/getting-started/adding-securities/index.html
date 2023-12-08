@@ -26,7 +26,7 @@
     
     
       
-        <title>Creating a portfolio - Portfolio Performance Manual</title>
+        <title>Adding securities - Portfolio Performance Manual</title>
       
     
     
@@ -90,11 +90,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#additional-attributes" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -126,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Creating a portfolio
+              Adding securities
             
           </span>
         </div>
@@ -386,17 +381,6 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Adding securities
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -406,51 +390,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#additional-attributes" class="md-nav__link">
-    Additional Attributes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#taxonomies" class="md-nav__link">
-    Taxonomies
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#historical-quotes" class="md-nav__link">
-    Historical Quotes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#latest-quote" class="md-nav__link">
-    Latest Quote.
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1465,6 +1404,8 @@
       
         
       
+        
+      
     
     
     
@@ -1515,6 +1456,26 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/view/settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1548,42 +1509,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#additional-attributes" class="md-nav__link">
-    Additional Attributes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#taxonomies" class="md-nav__link">
-    Taxonomies
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#historical-quotes" class="md-nav__link">
-    Historical Quotes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#latest-quote" class="md-nav__link">
-    Latest Quote.
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1607,66 +1532,28 @@
 
   <h1>Adding securities</h1>
 
-<p>Immediately after the previous "Create portfolio" step, the application's main screen looks a bit empty (see Figure 1). The left sidebar option 'Securities &gt; All Securities' can be used to generate a list of securities.</p>
+<p>Right after the preceding <em>Create portfolio</em> step, your portfolio is still empty. You can check with the left sidebar option <code>Securities &gt; All Securities</code>. This list should encompasses all the securities you are monitoring, not necessarily the ones you have purchased. Currently, the list is empty (see Figure 1).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>A security is a financial instrument that holds value and can be traded between parties. Securities can be broadly categorized into: debt securities (e.g., banknotes, bonds, and debentures) equity securities (e.g., common stocks) derivatives (e.g., forwards, futures, options, and swaps) <a href="https://en.wikipedia.org/wiki/Security_%20(finance)">[1]</a>.</p>
+<p>A security is a financial instrument that holds value and can be traded between parties. Securities can be broadly categorized into: debt securities (e.g., banknotes, bonds, and debentures), equity securities (e.g., common stocks) derivatives (e.g., forwards, futures, options, and swaps) <a href="https://en.wikipedia.org/wiki/Security_%20(finance)">[Source Wikipedia]</a>.</p>
 </div>
-<p>The list contains all the securities you are interested in; not necessarily the ones you have bought. At the moment, it's still empty.</p>
-<p><figure id="_figure-1"><figcaption>Figure 1.  Main screen after creating a new portfolio</figcaption><img alt="Main screen after creating a new portfolio" class="pp-figure" src="../images/adding-securties-starting-screen.svg"></figure></p>
-<p>The <code>Add new investment instrument</code> button allows you to start adding securities to your portfolio. As you can see in Figure 1, you can add new instruments (stocks, bonds, ...), cryptocurrencies, exchange rates. You can also import securities from a CSV-file or to create a new empty security.</p>
-<p>More options are available from the <code>File &gt; New</code> menu (see Figure 1).</p>
-<p># Adding new instruments</p>
-<p>Selecting the New &gt; Security (menu) or New instrument ... (button) opens the following window (see Figure 2).</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Main screen after creating a new portfolio.</figcaption><img alt="" src="../images/adding-securties-starting-screen.svg"></figure></p>
+<p>The <code>Add new investment instrument</code> button allows you to start adding securities to your portfolio. As you can see in Figure 1, you can add new instruments (stocks, bonds, ...), cryptocurrencies, exchange rates. You can also import securities from a CSV-file or to create a new empty security. You could also use the menu <code>File &gt; New</code> menu (see Figure 1).</p>
+<p><strong>Adding new instruments</strong></p>
+<p>Suppose you intend to acquire NVIDIA shares. Before proceeding with the purchase, you must first add the specific share to the list of Securities. To achieve this, choose either <code>New &gt; Security</code> from the menu or click on <code>New Instrument...</code> (button). This action will open the following window (refer to Figure 2).</p>
 <p><figure id="_figure-2"><figcaption>Figure 2.  Searching and adding new securities to the All Securities list</figcaption><img alt="Searching and adding new securities to the All Securities list" class="pp-figure" src="../images/adding-securties-new-security.svg"></figure></p>
-<p>You can type (part of) the security name in the search box. You can search for shares or bonds or both. After clicking the Search button, the list below will be populated with possible target instruments.</p>
-<p>The following fields are displayed for each instrument:</p>
-<ul>
-<li>Name: the full name of the security according to the data source (see below) from which it is retrieved, e.g. Yahoo Finance.</li>
-<li>Symbol: the abbreviation (ticker) used by the data source.</li>
-<li>ISIN: International Securities Identification Number: a unique twelve-digit code that is assigned to every security in the world. Mostly used by European brokers &amp; banks.</li>
-<li>WKN: Wertpapierkennnummer: a German six-digit alphanumeric code for the identification of a security, now replaced by the ISIN code.</li>
-<li>Type: can be Share, Bond, Cryptocurrency, Aktie, Währung, Futures, etf, fonds.</li>
-<li>Exchange: a security may be traded on more than one exchange. For example, the NVIDIA stock is traded on Nasdaq (symbol NVDA, exchange NMS) or XETRA (symbol NVD.DE, exchange GER), and many other exchanges.  </li>
-<li>Currency: not used?</li>
-<li>Source: could be Yahoo Finance, CoinGecko, or Portfolio Report. <a href="https://finance.yahoo.com/">Yahoo Finance</a> provides financial news and data including stock quotes, press releases, and financial reports. <a href="https://www.coingecko.com/">CoinGecko</a> is a website with real-time information on most cryptocurrencies. <a href="https://www.portfolio-report.net/search">Portfolio Report</a> is an open source project that aims to provide centralised portfolio performance data.</li>
-</ul>
-<p>Once you have selected the correct security, you need to click on the Apply button to proceed to the next step. Some information such as name, symbol and historical quotes will already be filled in, based on the selected data source. You can/should change all this info; even the name. In fact, it's even possible to start from an empty instrument and fill in this information yourself.</p>
-<p><figure id="_figure-3"><figcaption>Figure 3.  Panel for entering info about the selected security.</figcaption><img alt="Panel for entering info about the selected security." class="pp-figure" src="../images/adding-securities-additional-info.png"></figure></p>
-<p>It's very important that you select the correct currency in which your security is traded. For NVIDIA on Nasdaq, this is USD, which may be different from the default currency of your portfolio.</p>
-<p>The Calendar dropdown allows you to select a specific stock market calendar; e.g. Euronext, London Stock Exchange, New York Stock Exchange, ... These calendars contain info about trading days, (bank) holidays, ... for this specific exchange. These dates will affect some calculations, the display of price gaps and the execution of savings plans. You can view the different calendars available with their respective dates from the <code>Help &gt; Preferences &gt; Calendar</code> menu. See for example the specific dates for the New York Stock Exchange in Figure 4. </p>
-<p><figure id="_figure-4"><figcaption>Figure 4.  NYSE calendar with some specific dates.</figcaption><img alt="NYSE calendar with some specific dates." class="pp-figure" src="../images/adding-securities-calendar-preferences.png"></figure></p>
-<p>A security can be set to active or inactive. If it is set to inactive, then the security will not appear in buy or sell dialogs and the historical prices will not be updated automatically.</p>
-<p>At the bottom of Figure 3 you can add a personal note for this security.</p>
-<p>These fields are called the Security Master Data (see top of Figure 3). There are four other tabs: Additional Attributes, Taxonomies, Historical Quotes, and Latest Quote.</p>
-<h2 id="additional-attributes">Additional Attributes</h2>
-<p>This tab allows you to supply additional data, besides the info that is already included in the Security Master Panel.</p>
-<p>Click on the <code>+ button</code> to add a new attribute such as Logo, Total Expense Ratio, Assets under Management, Vendor, Acquisition Fee (percentage), and Management Fee (percentage). These additional attributes can be added to tables such as <code>Reports &gt; Performance &gt; Securities</code>. These fields are not calculatedand cannot be used in calculations.</p>
-<p>Additional attributes are defined in <code>(left) Sidebar &gt; General Data &gt; Settings &gt; Attributes : Securities</code> (at the bottom).</p>
-<p><figure id="_figure-5"><figcaption>Figure 5.  Defining additional attributes.</figcaption><img alt="Defining additional attributes." class="pp-figure" src="../images/adding-securities-additional-attributes.png"></figure></p>
-<h2 id="taxonomies">Taxonomies</h2>
-<figure style="float: right; width: 40%">
-  <figcaption>Figure 6: Managing taxonomies.</figcaption>
-  <img src="../images/adding-securities-taxonomies.png" alt="Figure 6">
-
-</figure>
-
-<p>A taxonomy is a classification of your securities. For example, the <code>Type of Security</code> taxonomy (see presets in Figure 6) can classify your securities into: stock, Equity Fund, Exchange Traded Fund (ETF), Bond, Stock Option, Index, or Currency. Setting the correct type should be done in the Taxonomies panel when adding or editing the security (see Figure 3).</p>
-<p>Other useful presets are Industries, following the Global Industry Classification Standard (GICS), regions (up to country level), and assets (cash, equity, debt, ...).</p>
-<p>You can select these taxonomies in the <code>Left sidebar &gt; Taxonomies</code> (see figure 6). Click on the <code>+ button</code> to see all presets or to create your own custom taxonomy.</p>
-<h2 id="historical-quotes">Historical Quotes</h2>
-<p>For evaluating your portfolio, you need the current &amp; historical prices of the security. In this panel (see Figure 7) you can set the data source of the Quote Feed. As provider, you can choose between several alternatives: Yahoo Finance, Alpha Vantage, Quandl, .... You can even refer to a webpage (e.g. from an investor site) that contains these historical data; see for example <a href="../../how-to/morningstar/">Morningstar</a>. Or you can create them yourself and import the quotes with a csv-file.</p>
-<p><figure id="_figure-6"><figcaption>Figure 6.  Historical quotes.</figcaption><img alt="Historical quotes." class="pp-figure" src="../images/adding-securities-historical-quotes.png"></figure></p>
-<h2 id="latest-quote">Latest Quote.</h2>
-<p>The latest (most recent) quote can be retrieved from the same data source as the (older) historical prices. However, this data source may be returning only daily quotes. If you want more recent prices from another source, you can use this panel (see Figure 8).</p>
-<p><figure id="_figure-7"><figcaption>Figure 7.  Latest Quote</figcaption><img alt="Latest Quote" class="pp-figure" src="../images/adding-securities-latest-quote.png"></figure></p>
+<p>You can type (part of) the security name in the search box, e.g. <em>NVID</em>. After clicking the Search button, the list below will be populated with possible target instruments (see Figure 2).</p>
+<p>After selecting the appropriate security, click on the Apply button to move on to the next step. Certain information, such as name, symbol, and historical quotes, will be pre-filled based on the selected data source. You have the flexibility to modify all this information, including the name. In Figure 3, it is evident that the currency for the NVIDIA share is incorrectly set to EUR.</p>
+<p><figure-caption identifier="Figure">Panel for entering info about the selected security.{class=pp-figure}    <img alt="" src="../images/adding-securities-additional-info.png"></figure-caption></p>
+<p>In some cases, starting with an empty instrument and manually inputting the information might be more straightforward. While only the name is mandatory, it is advisable to set additional details such as <code>Currency</code>, <code>Symbol</code>, and <code>Historical Quotes Feed</code>.</p>
+<p>More information about all these attributes can be found in the <a href="../../reference/file/new/">Reference Manual &gt; File &gt; New</a>. Finding the correct settings to import the Historical Prices of your security is described in the <a href="../../how-to/download-historical-prices/">How-to section</a>.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 5, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 8, 2023</span>
       
     
   </small>
