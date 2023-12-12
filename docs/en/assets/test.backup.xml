@@ -9,6 +9,9 @@
       <tickerSymbol></tickerSymbol>
       <feed>MANUAL</feed>
       <prices>
+        <price t="2023-01-01" v="10000000000"/>
+        <price t="2023-03-01" v="11000000000"/>
+        <price t="2023-06-01" v="12000000000"/>
         <price t="2023-09-01" v="10000000000"/>
       </prices>
       <latest t="2023-12-08" v="2261500000">
@@ -108,32 +111,6 @@
                   <updatedAt>2023-12-10T15:55:50.664754200Z</updatedAt>
                   <type>BUY</type>
                 </portfolio-transaction>
-                <portfolio-transaction>
-                  <uuid>79c3555a-f754-4d5a-82a1-f94671db1956</uuid>
-                  <date>2023-09-01T00:00</date>
-                  <currencyCode>EUR</currencyCode>
-                  <amount>100000</amount>
-                  <security reference="../../../../../../../../../securities/security"/>
-                  <crossEntry class="buysell">
-                    <portfolio reference="../../../.."/>
-                    <portfolioTransaction reference="../.."/>
-                    <account reference="../../../../../../../.."/>
-                    <accountTransaction>
-                      <uuid>608576ac-06d0-4826-bf50-e66acad57bcc</uuid>
-                      <date>2023-09-01T00:00</date>
-                      <currencyCode>EUR</currencyCode>
-                      <amount>100000</amount>
-                      <security reference="../../../../../../../../../../../securities/security"/>
-                      <crossEntry class="buysell" reference="../.."/>
-                      <shares>0</shares>
-                      <updatedAt>2023-12-10T19:27:27.133951100Z</updatedAt>
-                      <type>SELL</type>
-                    </accountTransaction>
-                  </crossEntry>
-                  <shares>1000000000</shares>
-                  <updatedAt>2023-12-10T19:27:27.133951100Z</updatedAt>
-                  <type>SELL</type>
-                </portfolio-transaction>
               </transactions>
               <attributes>
                 <map/>
@@ -150,7 +127,6 @@
         </account-transaction>
         <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/accountTransaction"/>
         <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[3]/crossEntry/accountTransaction"/>
-        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[4]/crossEntry/accountTransaction"/>
       </transactions>
       <attributes>
         <map/>
@@ -179,11 +155,11 @@
               <label>Key Indicators</label>
             </widget>
             <widget type="TTWROR">
-              <label>True Time-Weighted Rate of Return (cumulative), share-1</label>
+              <label>True Time-Weighted Rate of Return (cumulative), broker-A</label>
               <configuration>
                 <entry>
                   <string>DATA_SERIES</string>
-                  <string>Security0152978e-2ea2-436f-b07a-0333b988ea8b</string>
+                  <string>Portfolioccd0ccf0-d4cd-4c16-8316-2b8727eb514d</string>
                 </entry>
               </configuration>
             </widget>

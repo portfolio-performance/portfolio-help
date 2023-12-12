@@ -41,7 +41,7 @@ What is the Purchase Price of the remaining 40 shares in the portfolio?
 
 The available fields under `Performance` and `Dividends` are discussed in a separate chapter.
 
-With the `Attributes` option, you can add custom fields to the table. These fields are defined in `left sidebar > settings > Attributes: Securities` and following panels. You can enter a specific attribute value for a security in the `Additional attributes` panel of the security (see for example, Figure 3 in [Getting started > Adding securities](../../adding-securities.md))
+With the `Attributes` option, you can add custom fields to the table. These fields are defined in `left sidebar > settings > Attributes: Securities` and following panels. You can enter a specific attribute value for a security in the `Additional attributes` panel of the security (see for example, Figure 3 in [Getting started > Adding securities](../../../getting-started/adding-securities.md))
 
 The `Forex` (Foreign Exchange) option allows you to view the currency of the quote for each asset and its exchange rate relative to the base currency of the portfolio. The fields labeled as `Market value**`, `Purchase Price**`, and `Profit/Loss**` retain the same meaning as their counterparts in the base currency, but they are presented in the foreign currency.
 

@@ -6,7 +6,7 @@ todo: describe crypto, exchange Rate, Consumer Price Index, Taxonomy, Watchlist
 
 With the `File > New` menu you can create the different assets PP can manage.
 
-Figure: File > New submenu{class=pp-figure}
+Figure: File > New submenu.{class=pp-figure}
 
 ![](./images/mnu-new.png)
 

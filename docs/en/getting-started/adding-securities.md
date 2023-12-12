@@ -16,15 +16,17 @@ The `Add new investment instrument` button allows you to start adding securities
 
 Suppose you intend to acquire NVIDIA shares. Before proceeding with the purchase, you must first add the specific share to the list of Securities. To achieve this, choose either `New > Security` from the menu or click on `New Instrument...` (button). This action will open the following window (refer to Figure 2).
 
-![Searching and adding new securities to the All Securities list](images/adding-securties-new-security.svg){.pp-figure}
+Figure: Searching and adding new securities to the All Securities list.{class=pp-figure}
+
+![](images/adding-securties-new-security.svg)
 
 You can type (part of) the security name in the search box, e.g. *NVID*. After clicking the Search button, the list below will be populated with possible target instruments (see Figure 2).
 
 After selecting the appropriate security, click on the Apply button to move on to the next step. Certain information, such as name, symbol, and historical quotes, will be pre-filled based on the selected data source. You have the flexibility to modify all this information, including the name. In Figure 3, it is evident that the currency for the NVIDIA share is incorrectly set to EUR.
 
- Figure: Panel for entering info about the selected security.{class=pp-figure}
- 
- ![](images/adding-securities-additional-info.png)
+Figure: Panel for entering info about the selected security.{class=pp-figure}
+
+![](images/adding-securities-additional-info.png)
 
 
 In some cases, starting with an empty instrument and manually inputting the information might be more straightforward. While only the name is mandatory, it is advisable to set additional details such as `Currency`, `Symbol`, and `Historical Quotes Feed`.

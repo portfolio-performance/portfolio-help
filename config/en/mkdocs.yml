@@ -133,3 +133,8 @@ nav:
       - View Menu:
           - Options: reference/view/options.md
           - Settings: reference/view/settings.md
+          - Performance: reference/view/performance.md
+          - Reports:
+              Statement of Assets: reference/view/reports/statement.md
+              Chart: reference/view/reports/statement-chart.md
+              Holdings: reference/view/reports/holdings.md

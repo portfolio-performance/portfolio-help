@@ -3,3 +3,11 @@
   <figcaption>Figure 1: Transaction menu</figcaption>
 </figure>
 
+To align right use the following code
+
+Figure: Context menu of the bookmarks page.{class=align-right style="width:50%"}
+
+![](images/bookmarks-context-menu.svg)
+
+You can overrule the default width =30% 
+
