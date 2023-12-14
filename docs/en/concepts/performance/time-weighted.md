@@ -64,12 +64,16 @@ Note however that the performance for `2021-01-15`is negative in Figure 3 and po
 
 Understanding the calculation for a single security should not pose any problems by now. In PP you can retrieve these values through the menu `View > Reports > Performance > Securities`. However, these values are not displayed by default and should be made available with the `Show or Hide columns` icon (top right).
 
-Figure: Cumulative and annual TTWROR for securities.{class=pp-figure}
+Figure: Cumulative and annual TTWROR for securities - share-2.{class=pp-figure}
 
 ![](images/info-ttwror-securities-calculation.png)
 
 For the manual calculation, you need to define the holding periods. Luckily, there are less. For `share-2` one HP suffices: from just before the buying date until the end of the reporting period. The market value of `share-2` at the beginning of the holding period is 0 EUR and at the end 111.76 (8 shares at 13.97 EUR/share). You purchased these 8 shares at 8 EUR/share. Fees were 2 EUR and taxes one EUR. Taxes however are **NOT** considered in the calculation of TTWROR. So, the total value of CFin = 66 EUR. The TTWROR is thus equal to 111.76/(0 + 66)= 69.33%.
 
-The calculation for `share-1` is more complex (2 buy, 1 sale, 1 dividend transaction).
+The calculation for `share-1` is more complex (2 buy, 1 sale, 1 dividend transaction). Figure 5 lists all the data.
+
+Figure: Cumulative and annual TTWROR for securities - share-1.{class=pp-figure}
+
+![](images/info-ttwror-securities-calculation-share-1-3yrs.png)
 
 
