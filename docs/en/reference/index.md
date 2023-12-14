@@ -2,7 +2,7 @@
 title: Reference Manual
 ---
 
-The Reference manual is structured around the User Interface (UI) of the program, probably the easiest and quickest way for users, developers, or contributors to find relevant information. Figure 1 shows a typical opening screen of a small portfolio, e.g. [demo-portfolio-04](../assets/demo-portfolio-04.xml).
+The Reference manual is structured around the User Interface (UI) of the program, probably the easiest and quickest way for users, developers, or contributors to find relevant information. Figure 1 shows a typical opening screen of a small portfolio, e.g. [demo-portfolio-04](../assets/demo-portfolio-04.xml). An overview of the menu and all sub menus is given [here](./menu.md).
 
 Figure: Opening screen of the Portfolio Performance program.{class=pp-figure}
 
