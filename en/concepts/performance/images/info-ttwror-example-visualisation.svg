@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="1472.3096"
-   height="239.60516"
-   viewBox="0 0 389.54857 63.395533"
+   width="1427.1542"
+   height="496.32397"
+   viewBox="0 0 377.6012 131.31905"
    version="1.1"
    id="svg8"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
@@ -16,18 +16,18 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#d1d1d1"
      bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.9126942"
-     inkscape:cx="414.33701"
-     inkscape:cy="184.55642"
+     inkscape:zoom="1.7388129"
+     inkscape:cx="659.933"
+     inkscape:cy="105.81932"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
-     showgrid="false"
+     showgrid="true"
      units="px"
      inkscape:pagecheckerboard="false"
      inkscape:window-width="3840"
@@ -35,23 +35,42 @@
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     showborder="false"
+     showborder="true"
      inkscape:showpageshadow="false"
-     inkscape:deskcolor="#d1d1d1">
+     inkscape:deskcolor="#d1d1d1"
+     borderlayer="false">
     <inkscape:grid
        type="xygrid"
        id="grid833"
        dotted="false"
-       originx="-212.23007"
-       originy="-199.35783"
+       originx="-293.88055"
+       originy="-124.56979"
        units="px"
        spacingx="5.2916667"
        spacingy="5.2916667"
        empspacing="6"
-       visible="false" />
+       visible="true" />
   </sodipodi:namedview>
   <defs
      id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Stop"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Stop"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1"
+         d="M 0,4 V -4"
+         id="path35" />
+    </marker>
     <marker
        style="overflow:visible"
        id="marker46"
@@ -66,27 +85,9 @@
        inkscape:collect="always"
        preserveAspectRatio="xMidYMid">
       <path
-         style="fill:#000000;stroke:#000000;stroke-width:1;stroke-opacity:1.0;fill-opacity:1.0"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1"
          d="M 0,4 V -4"
          id="path46" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="marker45"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="marker45"
-       markerWidth="1"
-       markerHeight="1"
-       viewBox="0 0 1 1"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         style="fill:#000000;stroke:#000000;stroke-width:1;stroke-opacity:1.0;fill-opacity:1.0"
-         d="M 0,4 V -4"
-         id="path45" />
     </marker>
     <marker
        style="overflow:visible"
@@ -104,7 +105,7 @@
       <path
          transform="scale(0.7)"
          d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
-         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-opacity:1.0;fill-opacity:1.0"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-opacity:1"
          id="path7" />
     </marker>
     <marker
@@ -121,9 +122,28 @@
        inkscape:collect="always"
        preserveAspectRatio="xMidYMid">
       <path
-         style="fill:#000000;stroke:#000000;stroke-width:1;stroke-opacity:1.0;fill-opacity:1.0"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1"
          d="M 0,4 V -4"
          id="path2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="ConcaveTriangle-6"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-opacity:1"
+         id="path7-9" />
     </marker>
   </defs>
   <metadata
@@ -141,245 +161,382 @@
      inkscape:label="background"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-56.152537,-52.74676)" />
+     transform="translate(-77.755895,-32.959088)" />
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="lines"
-     transform="translate(-56.152537,-52.74676)">
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.793747;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker45);marker-end:url(#marker2)"
-       d="M 137.60964,77.689032 H 418.53677"
-       id="path1" />
+     transform="translate(-77.755895,-32.959088)">
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-       x="181.18274"
-       y="65.20742"
+       x="192.93115"
+       y="77.655602"
        id="text2"><tspan
          sodipodi:role="line"
-         id="tspan2"
          style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="181.18274"
-         y="65.20742">Holding Period</tspan><tspan
-         sodipodi:role="line"
-         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="181.18274"
-         y="71.381042"
-         id="tspan3">1</tspan></text>
+         x="192.93115"
+         y="77.655602"
+         id="tspan3">Holding Period 1</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-       x="245.8792"
-       y="100.46009"
+       x="251.3217"
+       y="59.480228"
        id="text11"><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="245.8792"
-         y="100.46009"
-         id="tspan28">CF<tspan
+         x="251.3217"
+         y="59.480228"
+         id="tspan28">CFin<tspan
    style="font-size:65%;baseline-shift:sub"
-   id="tspan47">2</tspan> = +84 €</tspan></text>
+   id="tspan47">2</tspan> = 84 €</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-       x="206.92917"
-       y="100.42995"
+       x="245.40468"
+       y="110.69492"
        id="text15"><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="206.92917"
-         y="100.42995"
+         x="245.40468"
+         y="110.69492"
          id="tspan15">Market Value</tspan><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="206.92917"
-         y="105.36885"
+         x="245.40468"
+         y="115.63382"
          id="tspan27">160.26 €</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-       x="419.75073"
-       y="100.42995"
+       x="441.19635"
+       y="110.69492"
        id="text17"><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="419.75073"
-         y="100.42995"
+         x="441.19635"
+         y="110.69492"
          id="tspan17">Market Value</tspan><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="419.75073"
-         y="105.36885"
+         x="441.19635"
+         y="115.63382"
          id="tspan33">426.82 €</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
-       d="m 207.77059,95.501911 10.624,-10.623999"
-       id="path21"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
-       d="m 418.47922,96.662918 -2e-5,-10.971352"
-       id="path24"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       d="m 225.93489,75.630962 v 3.76074"
-       id="path26" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       d="m 325.08364,75.630962 v 3.76074"
-       id="path27" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
-       d="m 244.20263,95.501911 -10.624,-10.623999"
-       id="path28"
-       sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-       x="345.24002"
-       y="100.46009"
+       x="332.54486"
+       y="60.877022"
        id="text30"><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="345.24002"
-         y="100.46009"
-         id="tspan30">CF<tspan
+         x="332.54486"
+         y="60.877022"
+         id="tspan30">CFin<tspan
    style="font-size:65%;baseline-shift:sub"
-   id="tspan48">3</tspan> = +67 €</tspan></text>
+   id="tspan48">3</tspan> = 67 €</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-       x="306.29001"
-       y="100.42995"
+       x="326.67584"
+       y="110.69492"
        id="text32"><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="306.29001"
-         y="100.42995"
+         x="326.67584"
+         y="110.69492"
          id="tspan31">Market Value</tspan><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="306.29001"
-         y="105.36885"
+         x="326.67584"
+         y="115.63382"
          id="tspan32">264.57 €</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
-       d="m 307.13142,95.501911 10.624,-10.623999"
-       id="path32"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
-       d="m 343.56346,95.501911 -10.624,-10.623999"
-       id="path33"
-       sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-       x="157.43469"
-       y="100.46009"
+       x="147.717"
+       y="61.832214"
        id="text35"><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="157.43469"
-         y="100.46009"
-         id="tspan35">CF<tspan
+         x="147.717"
+         y="61.832214"
+         id="tspan35">CFin<tspan
    style="font-size:65%;baseline-shift:sub"
-   id="tspan49">1</tspan> = +155 €</tspan></text>
+   id="tspan49">1</tspan> = 155 €</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-       x="118.48466"
-       y="100.42995"
+       x="139.57135"
+       y="110.69492"
        id="text37"><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="118.48466"
-         y="100.42995"
+         x="139.57135"
+         y="110.69492"
          id="tspan36">Market Value</tspan><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="118.48466"
-         y="105.36885"
+         x="139.57135"
+         y="115.63382"
          id="tspan37">0 €</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
-       d="m 119.32608,95.501911 10.624,-10.623999"
-       id="path37"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
-       d="m 155.75812,95.501911 -10.624,-10.623999"
-       id="path38"
+       style="fill:none;stroke:#ff0000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:2.11667, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle-6)"
+       d="M 144.94323,66.279698 V 79.115709"
+       id="path38-5"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-       x="273.91357"
-       y="65.20742"
-       id="text39"><tspan
-         sodipodi:role="line"
-         id="tspan38"
-         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="273.91357"
-         y="65.20742">Holding Period</tspan><tspan
+       x="286.46329"
+       y="77.655602"
+       id="text4"><tspan
          sodipodi:role="line"
          style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="273.91357"
-         y="71.381042"
-         id="tspan39">2</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-       x="371.04211"
-       y="65.144722"
-       id="text41"><tspan
-         sodipodi:role="line"
-         id="tspan40"
-         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="371.04211"
-         y="65.144722">Holding Period</tspan><tspan
-         sodipodi:role="line"
-         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="371.04211"
-         y="71.318344"
-         id="tspan41">3</tspan></text>
+         x="286.46329"
+         y="77.655602"
+         id="tspan4">Holding Period 2</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.793744;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:6.34997, 0.793744;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker46);marker-end:url(#marker2)"
-       d="M 81.390281,77.689032 H 137.78145"
-       id="path41" />
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.23334, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker46);marker-end:url(#Stop)"
+       d="M 139.86611,83.148392 H 245.48495"
+       id="path4" />
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-       x="82.044685"
-       y="65.147133"
-       id="text43"><tspan
-         sodipodi:role="line"
-         id="tspan42"
-         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="82.044685"
-         y="65.147133">Reporting Period</tspan><tspan
+       x="384.15594"
+       y="77.655602"
+       id="text5"><tspan
          sodipodi:role="line"
          style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="82.044685"
-         y="71.320755"
-         id="tspan43">Start</tspan></text>
+         x="384.15594"
+         y="77.655602"
+         id="tspan5">Holding Period 3</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.23333, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker46);marker-end:url(#marker2)"
+       d="m 245.81073,83.148395 h 81.44014"
+       id="path5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.23333, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker46);marker-end:url(#marker2)"
+       d="M 327.20654,83.148395 H 441.27659"
+       id="path6" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:2.11667, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle-6)"
+       d="M 250.77661,64.447738 V 78.694992"
+       id="path8"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:2.11667, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle-6)"
+       d="M 332.04877,65.8637 V 79.07109"
+       id="path9"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:2.11667, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="M 441.27661,105.19399 V 94.569991"
+       id="path14"
+       sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-       x="420.22797"
-       y="65.149544"
-       id="text45"><tspan
-         sodipodi:role="line"
-         id="tspan44"
-         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="420.22797"
-         y="65.149544">Reporting Period</tspan><tspan
+       x="437.88431"
+       y="36.508923"
+       id="text16"><tspan
          sodipodi:role="line"
          style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="420.22797"
-         y="71.323166"
-         id="tspan45">End</tspan></text>
+         x="437.88431"
+         y="36.508923"
+         id="tspan19">2023-06-12</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="266.60104"
+       y="37.258926"
+       id="text21"><tspan
+         sodipodi:role="line"
+         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="266.60104"
+         y="37.258926"
+         id="tspan21">Reporting Period - 3 years</tspan></text>
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker46);marker-end:url(#marker2)"
+       d="M 92.123236,42.666619 H 441.27661"
+       id="path1" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="90.238579"
+       y="36.508923"
+       id="text1"><tspan
+         sodipodi:role="line"
+         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="90.238579"
+         y="36.508923"
+         id="tspan1">2020-06-12</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="251.45091"
+       y="51.844559"
+       id="text3"><tspan
+         sodipodi:role="line"
+         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="251.45091"
+         y="51.844559"
+         id="tspan2">2022-01-14</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="332.67285"
+       y="53.260521"
+       id="text7"><tspan
+         sodipodi:role="line"
+         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="332.67285"
+         y="53.260521"
+         id="tspan7">2021-09-30</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="147.82571"
+       y="53.676521"
+       id="text8"><tspan
+         sodipodi:role="line"
+         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="147.82571"
+         y="53.676521"
+         id="tspan8">2021-01-15</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:2.11667, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="M 139.65162,105.19399 V 94.569991"
+       id="path15"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:2.11667, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="M 327.18557,105.19399 V 94.569991"
+       id="path16"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:2.11667, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="M 245.91441,105.19399 V 94.569991"
+       id="path17"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="437.88431"
+       y="155.12796"
+       id="text18"><tspan
+         sodipodi:role="line"
+         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="437.88431"
+         y="155.12796"
+         id="tspan18">2023-06-12</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="319.46939"
+       y="155.87798"
+       id="text20"><tspan
+         sodipodi:role="line"
+         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="319.46939"
+         y="155.87798"
+         id="tspan20">Reporting Period - 2 years</tspan></text>
+    <path
+       style="fill:#0000ff;stroke:#0000ff;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker46);marker-end:url(#marker2)"
+       d="M 197.85995,162.16147 H 441.27661"
+       id="path20" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="197.85995"
+       y="155.12796"
+       id="text22"><tspan
+         sodipodi:role="line"
+         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="197.85995"
+         y="155.12796"
+         id="tspan22">2021-06-12</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="222.03696"
+       y="136.8799"
+       id="text23"><tspan
+         sodipodi:role="line"
+         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="222.03696"
+         y="136.8799"
+         id="tspan23">Holding Period 1</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.23334, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker46);marker-end:url(#marker2)"
+       d="m 197.85994,142.17158 h 47.84278"
+       id="path23" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="286.46329"
+       y="136.67877"
+       id="text24"><tspan
+         sodipodi:role="line"
+         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="286.46329"
+         y="136.67877"
+         id="tspan24">Holding Period 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="384.15594"
+       y="136.67877"
+       id="text25"><tspan
+         sodipodi:role="line"
+         style="line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="384.15594"
+         y="136.67877"
+         id="tspan25">Holding Period 3</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.23333, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker46);marker-end:url(#marker2)"
+       d="m 245.81073,142.17158 h 81.44014"
+       id="path25" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.23333, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker46);marker-end:url(#marker2)"
+       d="M 327.20654,142.17158 H 441.27659"
+       id="path26" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:2.11667, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="m 327.00472,120.98766 v 10.624"
+       id="path27"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:2.11667, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="m 246.05794,120.98766 v 10.624"
+       id="path28"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:2.11667, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="m 441.27661,120.98766 v 10.624"
+       id="path29"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="197.85995"
+       y="110.69492"
+       id="text34"><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="197.85995"
+         y="110.69492"
+         id="tspan29">Market Value</tspan><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="197.85995"
+         y="115.63382"
+         id="tspan34">177.94 €</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:2.11667, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="m 197.94022,120.98766 v 10.624"
+       id="path34"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>
