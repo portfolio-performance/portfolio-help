@@ -1084,6 +1084,8 @@
       
         
       
+        
+      
     
     
     
@@ -1440,6 +1442,74 @@
 
               
             
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Help Menu
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Help Menu
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/help/check-updates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Check for Updates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1500,10 +1570,10 @@
 <ol>
 <li>Adapt the buying price. In case of the example in Figure 1, the buying price becomes 4588 EUR + 8.01 EUR accrued interest divided by 50 or 91.92 EUR. The disadvantage is that the price evolution and the performance calculation is not correct.</li>
 </ol>
-<p><figure id="_figure-2"><figcaption>Figure 2.  Workaround with adaptation of quote price to incorporate accrued interest.</figcaption><img alt="" pp-figure="pp-figure" src="../../../images/mnu-transaction-buy-bond-vw-1.png"></figure>
-2. To maintain a precise record of the purchase price, you could record the accrued interest as an additional <code>tax</code> (see Figure 3). The correct amount will be withdrawn from the deposit account. The quote price is correct. The 'false' taxes could be corrected at the first interest payment with a <code>Tax refund</code> transaction.</p>
-<p><figure pp-figure="" id="_figure-3"><figcaption>Figure 3.  Workaround with adding accrued interest to taxes.</figcaption><img alt="" src="../../../images/mnu-transaction-buy-bond-vw-2.png"></figure>
-3. The buy transaction of the bond security is recorded without the accrued interest. To handle the accrued interest, you transfer the correct amount (8.01 EUR), from the deposit account associated with the security to a separate deposit account. During the first interest payment, the accrued interest amount then is transferred back to the original deposit account associated with the security. </p>
+<p><figure id="_figure-2"><figcaption>Figure 2.  Workaround with adaptation of quote price to incorporate accrued interest.</figcaption><img alt="" pp-figure="pp-figure" src="../../../images/mnu-transaction-buy-bond-vw-1.png">
+2. To maintain a precise record of the purchase price, you could record the accrued interest as an additional </figure><code>tax</code> (see Figure 3). The correct amount will be withdrawn from the deposit account. The quote price is correct. The 'false' taxes could be corrected at the first interest payment with a <code>Tax refund</code> transaction.</p>
+<p><figure pp-figure="" id="_figure-3"><figcaption>Figure 3.  Workaround with adding accrued interest to taxes.</figcaption><img alt="" src="../../../images/mnu-transaction-buy-bond-vw-2.png">
+3. The buy transaction of the bond security is recorded without the accrued interest. To handle the accrued interest, you transfer the correct amount (8.01 EUR), from the deposit account associated with the security to a separate deposit account. During the first interest payment, the accrued interest amount then is transferred back to the original deposit account associated with the security. </figure></p>
 <h1 id="recording-the-interest-payment">Recording the interest payment</h1>
 <p>You can record the interest payment with a "Transaction &gt; Interest" transaction in the menu. Unfortunately, you cannot specify the security from which the interest originated; only a deposit account. It's an aggregate account for all interest payments, and there is no way to attribute that interest payment back to the performance of that specific security.</p>
 <p>A better, albeit somewhat unintuitive, is to record the transaction as a <code>Transaction &gt; Dividend</code>. Dividends are associated with specific securities, ensuring that the performance calculation of the security remains accurate.</p>
@@ -1511,8 +1581,8 @@
 <ol>
 <li>The accrued interest is fully booked as a dividend (see Figure 4). The accrued interest (for the seller) on the purchase date (8.01 EUR) has already been accounted for in the recorded purchase price.</li>
 </ol>
-<p><figure id="_figure-4"><figcaption>Figure 4.  Interest payment 2.25% of 5000 EUR.</figcaption><img alt="" src="../../../images/mnu-transaction-dividend-vw-1.png"></figure>
-2. The interest payment (112.50 EUR) is reduced by the amount that was already recorded as tax on the purchase date (8.01 EUR). With a <code>Tansaction &gt; Tax refund</code> that amount is refunded.
+<p><figure id="_figure-4"><figcaption>Figure 4.  Interest payment 2.25% of 5000 EUR.</figcaption><img alt="" src="../../../images/mnu-transaction-dividend-vw-1.png">
+2. The interest payment (112.50 EUR) is reduced by the amount that was already recorded as tax on the purchase date (8.01 EUR). With a </figure><code>Tansaction &gt; Tax refund</code> that amount is refunded.
 3. The interest payment is reduced by the amount that was transferred to a separate account. The accrued interest amount then is transferred back to the original deposit account associated with the security.</p>
 
   <hr>
@@ -1520,7 +1590,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 14, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 8, 2024</span>
       
     
   </small>
