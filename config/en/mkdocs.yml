@@ -132,3 +132,6 @@ nav:
               - Statement of Assets: reference/view/reports/statement.md
               - Chart: reference/view/reports/statement-chart.md
               - Holdings: reference/view/reports/holdings.md
+      - Help Menu:
+          - Check for Updates: reference/help/check-updates.md
+

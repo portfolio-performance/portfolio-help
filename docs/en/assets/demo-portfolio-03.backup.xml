@@ -2651,8 +2651,34 @@
         <price t="2023-11-03" v="2139000000"/>
         <price t="2023-11-06" v="2135000000"/>
         <price t="2023-11-07" v="2123000000"/>
+        <price t="2023-11-08" v="2133500000"/>
+        <price t="2023-11-09" v="2152000000"/>
+        <price t="2023-11-10" v="2143500000"/>
+        <price t="2023-11-13" v="2164500000"/>
+        <price t="2023-11-14" v="2155000000"/>
+        <price t="2023-11-15" v="2141000000"/>
+        <price t="2023-11-16" v="2146500000"/>
+        <price t="2023-11-17" v="2155500000"/>
+        <price t="2023-11-20" v="2162000000"/>
+        <price t="2023-11-21" v="2159000000"/>
+        <price t="2023-11-22" v="2174000000"/>
+        <price t="2023-11-23" v="2180000000"/>
+        <price t="2023-11-24" v="2190000000"/>
+        <price t="2023-11-27" v="2195500000"/>
+        <price t="2023-11-28" v="2187500000"/>
+        <price t="2023-11-29" v="2193500000"/>
+        <price t="2023-11-30" v="2197500000"/>
+        <price t="2023-12-01" v="2224500000"/>
+        <price t="2023-12-04" v="2235000000"/>
+        <price t="2023-12-05" v="2259000000"/>
+        <price t="2023-12-06" v="2263500000"/>
+        <price t="2023-12-07" v="2260000000"/>
+        <price t="2023-12-08" v="2261500000"/>
+        <price t="2023-12-11" v="2278500000"/>
+        <price t="2023-12-12" v="2278000000"/>
+        <price t="2023-12-13" v="2255500000"/>
       </prices>
-      <latest t="2023-11-07" v="2123000000">
+      <latest t="2023-12-14" v="2169000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3717,8 +3743,34 @@
         <price t="2023-11-03" v="1419000000"/>
         <price t="2023-11-06" v="1419000000"/>
         <price t="2023-11-07" v="1439500000"/>
+        <price t="2023-11-08" v="1460500000"/>
+        <price t="2023-11-09" v="1480500000"/>
+        <price t="2023-11-10" v="1460000000"/>
+        <price t="2023-11-13" v="1470000000"/>
+        <price t="2023-11-14" v="1487000000"/>
+        <price t="2023-11-15" v="1486500000"/>
+        <price t="2023-11-16" v="1464000000"/>
+        <price t="2023-11-17" v="1485500000"/>
+        <price t="2023-11-20" v="1496000000"/>
+        <price t="2023-11-21" v="1310000000"/>
+        <price t="2023-11-22" v="1346000000"/>
+        <price t="2023-11-23" v="1337500000"/>
+        <price t="2023-11-24" v="1339500000"/>
+        <price t="2023-11-27" v="1347000000"/>
+        <price t="2023-11-28" v="1330000000"/>
+        <price t="2023-11-29" v="1337000000"/>
+        <price t="2023-11-30" v="1328500000"/>
+        <price t="2023-12-01" v="1330000000"/>
+        <price t="2023-12-04" v="1307000000"/>
+        <price t="2023-12-05" v="1315000000"/>
+        <price t="2023-12-06" v="1299000000"/>
+        <price t="2023-12-07" v="1310500000"/>
+        <price t="2023-12-08" v="1352000000"/>
+        <price t="2023-12-11" v="1353500000"/>
+        <price t="2023-12-12" v="1344500000"/>
+        <price t="2023-12-13" v="1348500000"/>
       </prices>
-      <latest t="2023-11-07" v="1439500000">
+      <latest t="2023-12-14" v="1387000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3976,8 +4028,13 @@
               <configuration/>
             </widget>
             <widget type="IRR">
-              <label>Internal Rate of Return (IRR)</label>
-              <configuration/>
+              <label>Internal Rate of Return (IRR), Entire portfolio</label>
+              <configuration>
+                <entry>
+                  <string>DATA_SERIES</string>
+                  <string>Client-totals</string>
+                </entry>
+              </configuration>
             </widget>
             <widget type="ABSOLUTE_CHANGE">
               <label>Absolute Change</label>
@@ -4250,7 +4307,7 @@
             <config>
               <uuid>3580a087-a144-41e6-b45e-351eb5535064</uuid>
               <name>Standard</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:87},{&quot;id&quot;:&quot;name&quot;,&quot;width&quot;:114},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:235},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:228},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:103},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:104},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:120},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:160},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:130},{&quot;id&quot;:&quot;izf&quot;,&quot;sortDirection&quot;:128,&quot;width&quot;:177},{&quot;id&quot;:&quot;delta&quot;,&quot;width&quot;:143}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:87},{&quot;id&quot;:&quot;name&quot;,&quot;width&quot;:106},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:68},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:127},{&quot;id&quot;:&quot;izf&quot;,&quot;sortDirection&quot;:128,&quot;width&quot;:120},{&quot;id&quot;:&quot;twror&quot;,&quot;width&quot;:134},{&quot;id&quot;:&quot;ttwror_pa&quot;,&quot;width&quot;:144},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:194},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:188},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:72}]}</data>
             </config>
           </configurations>
         </config-set>

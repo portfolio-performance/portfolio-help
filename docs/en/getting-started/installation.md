@@ -38,10 +38,3 @@ The installer files are in fact stored in the [author's github repository](https
 ![Github repository for downloading (previous) releases](images/installation-download-github.svg){.pp-figure}
 
 You can edit and compile the source code; see [Contributing to Portfolio Performance](https://github.com/portfolio-performance/portfolio/blob/master/CONTRIBUTING.md#project-setup).
-
-# Updating the software
-After the first installation, the program will check on each start-up for new updates and install these automatically (see figure 1). You can change this setting with the menu `Help > Settings > Updates > Check for updates on start`.
-
-![Automatic updating with newer version](images/installation-update.png){.pp-figure}
-
- Also, you can update manually with the menu `Help > Check for updates ...`.

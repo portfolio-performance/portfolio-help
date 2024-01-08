@@ -7,7 +7,7 @@ Some screenshots contain text fields that are not aligned (see figure below). Th
 
 This issue seems to be related with the changing of the default font (`Help > Settings > Presentation > Formatting > Font size`). Setting it to 9px (Default) removes the issue.
 
-### 2023-09-10 (question)
+### 2023-09-10 (question)[solved]
 Images are stored in a subdirectory of the one where the md file resides.
 ``` 
 concepts
@@ -44,7 +44,7 @@ Upon creating a security, you can specify a Calendar in the Security Master Data
 
 (3) What's the difference between the `Apply` and `Apply and close` in the panel `Help > Preferences > Calendar`. Necessary?
 
-### 2023-09-16 (question)
+### 2023-09-16 (question)[solved]
 At the moment there is a top-level menu item called "Tips & tricks". Isn't this too informal? Replacing with "Advanced topics"?
 
 Also the top-level item "Common procedures" may seem too generic. Other suggestions?
@@ -91,7 +91,7 @@ mkdocs == 1.5.3
 mkdocs-material == 9.4.2
 mkdocs-caption == 0.0.9
 
-### 2023-09-28
+### 2023-09-28 [solved]
 Refering to a header in another page doesn't seem to work. For example: 
 [convert](deposit.md#transferbetweentwocurrencies) will jump to the correct page but not the header. The TOC extension is activated.
 
@@ -122,5 +122,10 @@ PP handbook should be structured around 2 axes (practical vs theoretical and use
 This gives 4 chapters: Tutorials (practical-learning), How-to (practical-working), explanation (theoretical-learning), and reference (theoretical-working).
 The current structure goes in the right direction: getting-started = tutorial, common procedure and tips & tricks = how-to, basic concepts = explanation.
 The section reference seems to be missing.
+
+### 2023-12-16
+Spending a few weeks trying to describe the performance indicators IRR and TTWROR.
+Also restructured the manual according to the principles of divio.com (see above).
+Historical prices: many of the presets don't seem to function?
 
 
