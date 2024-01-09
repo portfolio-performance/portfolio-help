@@ -16,32 +16,17 @@ Either no updates are available; indicating that your version is up-to-date or f
 
 Figure: Checking for updates.{class=pp-figure}
 
-![](images/installation-update.png)
+![](images/installation-update-2.png)
 
-To install the updated version, click `OK`. To cancel the update and stay with the old version, click `Cancel`.
+To install the most recent version, click `OK`. To cancel the update and stay with the old version, click `Cancel`.
 
-There is link to [New & Noteworthy](https://forum.portfolio-performance.info/t/neues-nennenswertes/23/148). This webpage provides detailed information about the changes in each program version. Unfortunately, the link in the program directs to the German website. An [English version](https://forum.portfolio-performance.info/t/new-noteworthy/17945/1) is also available.
+There are three links at the top of the panel. [New & Noteworthy](https://forum.portfolio-performance.info/t/new-noteworthy/17945/52) provides detailed information about the changes in the latest version but also about *all* previous releases. The [Change Log](https://github.com/portfolio-performance/portfolio/releases) link leads to the Github page of the project where all (previous) releases are described. The [download link](https://www.portfolio-performance.info/) takes you to the homepage; where you can download the program for the different operating systems (Linux, Windows, macOS); see [Getting Started > Installation](../../getting-started/installation.md).
 
-The second link leads to the [Change Log](https://www.portfolio-performance.info/versions.html). Although this webpage is in German, a bilingual version (German-English) can be found on[Github](https://github.com/portfolio-performance/portfolio/releases).
-
-The [download link](https://www.portfolio-performance.info/) takes you to the homepage (German version); where you can download the program in different versions; see [Getting Started > Installation](../../getting-started/installation.md).
-
-Below the links, you can find an overview of the changes in the last few releases. At the bottom right, you can enable the automatic check for updates (see below).
+Below the links, you can find an overview of the changes in the last two releases. At the bottom right, you can enable the automatic check for updates (see below).
 
 ## Automatic check for updates
 
-Automatic checking for updates is enabled by default. You can change this behavior in the menu `Help > Settings > Updates > Check for updates on start` (see figure 3).
+Automatic checking for updates is enabled by default. You can change this setting in the menu `Help > Settings > Updates > Check for updates on start` (see figure 3).
 
 Figure: Setting for automatic check for updates.{class=pp-figure}
 ![](images/automatic-check-for-update.png)
-
-
-## Updating error
-
-If the program is corrupted or some files are missing, automatic updates are not feasible. An error message (see figure 4) is displayed, and the automatic update is no longer possible.
-
-The simplest workaround is to delete the program and reinstall it.
-
-Figure: Error message upon manual check for updates.{class=pp-figure}
-
-![](images/error-on-updating.png)
