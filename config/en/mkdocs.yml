@@ -124,6 +124,7 @@ nav:
       - File Menu:
           - New: reference/file/new.md
           - Save: reference/file/save.md
+          - Export: reference/file/export.md
       - View Menu:
           - Options: reference/view/options.md
           - Settings: reference/view/settings.md
