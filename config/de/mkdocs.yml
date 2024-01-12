@@ -50,9 +50,6 @@ extra:
       link: 'https://forum.portfolio-performance.info'
     - icon: 'material/bug'
       link: 'https://github.com/portfolio-performance/portfolio/issues'
-  analytics:
-    provider: google
-    property: G-9F7652B62Z
 
 plugins:
   - search:
