@@ -3821,7 +3821,27 @@
       <updatedAt>2023-06-12T18:37:20.042953800Z</updatedAt>
     </security>
     <security>
-      <uuid>1cdbe008-121b-4f0d-8783-f4b2aeba8c02</uuid>
+      <uuid>79c6f482-3aa0-448e-b1b8-a28cdf324cc1</uuid>
+      <name>share-3</name>
+      <currencyCode>EUR</currencyCode>
+      <feed>MANUAL</feed>
+      <prices>
+        <price t="2024-01-03" v="2100000000"/>
+        <price t="2024-01-04" v="224600000000"/>
+        <price t="2024-01-05" v="224300000000"/>
+        <price t="2024-01-06" v="1500000000"/>
+        <price t="2024-01-08" v="225400000000"/>
+        <price t="2024-01-09" v="225100000000"/>
+      </prices>
+      <attributes>
+        <map/>
+      </attributes>
+      <events/>
+      <isRetired>false</isRetired>
+      <updatedAt>2024-01-14T13:24:11.386700400Z</updatedAt>
+    </security>
+    <security>
+      <uuid>c2c88e26-d8e3-47ab-9dad-d210fa8d7748</uuid>
       <onlineId>be525a0ebdef4921b261aa2498a6949e</onlineId>
       <name>BASF</name>
       <currencyCode>EUR</currencyCode>
@@ -9970,10 +9990,10 @@
       <property type="FEED" name="PORTFOLIO-REPORT-MARKET">XETR</property>
       <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;BAS&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-01-12&quot;}]</property>
       <isRetired>false</isRetired>
-      <updatedAt>2024-01-13T20:04:12.205858900Z</updatedAt>
+      <updatedAt>2024-01-14T13:52:31.418936900Z</updatedAt>
     </security>
     <security>
-      <uuid>fd1879d0-1ec6-4584-be19-ff6dd2f7932a</uuid>
+      <uuid>5cee2708-f4e9-419c-b056-3beed1932e78</uuid>
       <name>NVIDIA</name>
       <currencyCode>USD</currencyCode>
       <tickerSymbol>NVDA</tickerSymbol>
@@ -9982,7 +10002,7 @@
         <map/>
       </attributes>
       <isRetired>false</isRetired>
-      <updatedAt>2024-01-14T10:13:28.735943700Z</updatedAt>
+      <updatedAt>2024-01-14T13:52:13.430487Z</updatedAt>
     </security>
   </securities>
   <watchlists/>
@@ -9994,11 +10014,11 @@
       <isRetired>false</isRetired>
       <transactions>
         <account-transaction>
-          <uuid>7b619edd-a396-4b48-a82d-f9e3cc2eb5d4</uuid>
-          <date>2024-01-15T00:00</date>
+          <uuid>de895f8b-68c1-41db-bdb5-b5689a5bcfeb</uuid>
+          <date>2024-01-03T00:00</date>
           <currencyCode>EUR</currencyCode>
-          <amount>112500</amount>
-          <security reference="../../../../../securities/security"/>
+          <amount>90000</amount>
+          <security reference="../../../../../securities/security[4]"/>
           <crossEntry class="buysell">
             <portfolio>
               <uuid>ccd0ccf0-d4cd-4c16-8316-2b8727eb514d</uuid>
@@ -10007,14 +10027,56 @@
               <referenceAccount reference="../../../../.."/>
               <transactions>
                 <portfolio-transaction>
-                  <uuid>b635aa11-0df6-4bd9-887a-fc1588204788</uuid>
-                  <date>2024-01-15T00:00</date>
+                  <uuid>aa8747c8-90cb-482e-99d5-0ecc7cc545c2</uuid>
+                  <date>2024-01-03T00:00</date>
                   <currencyCode>EUR</currencyCode>
-                  <amount>112500</amount>
-                  <security reference="../../../../../../../../../securities/security"/>
+                  <amount>90000</amount>
+                  <security reference="../../../../../../../../../securities/security[4]"/>
                   <crossEntry class="buysell" reference="../../../.."/>
-                  <shares>2500000000</shares>
-                  <updatedAt>2024-01-14T11:17:49.260552200Z</updatedAt>
+                  <shares>2000000000</shares>
+                  <units>
+                    <unit type="TAX">
+                      <amount currency="EUR" amount="500"/>
+                    </unit>
+                    <unit type="FEE">
+                      <amount currency="EUR" amount="1000"/>
+                    </unit>
+                  </units>
+                  <updatedAt>2024-01-14T14:58:13.719509200Z</updatedAt>
+                  <type>BUY</type>
+                </portfolio-transaction>
+                <portfolio-transaction>
+                  <uuid>0ca9914e-1b4a-4a51-918e-c2e29a5374fc</uuid>
+                  <date>2024-01-04T00:00</date>
+                  <currencyCode>EUR</currencyCode>
+                  <amount>90000</amount>
+                  <security reference="../../../../../../../../../securities/security[4]"/>
+                  <crossEntry class="buysell">
+                    <portfolio reference="../../../.."/>
+                    <portfolioTransaction reference="../.."/>
+                    <account reference="../../../../../../../.."/>
+                    <accountTransaction>
+                      <uuid>0cb2d145-a106-4d0b-8801-a74ca01863db</uuid>
+                      <date>2024-01-04T00:00</date>
+                      <currencyCode>EUR</currencyCode>
+                      <amount>90000</amount>
+                      <security reference="../../../../../../../../../../../securities/security[4]"/>
+                      <crossEntry class="buysell" reference="../.."/>
+                      <shares>0</shares>
+                      <updatedAt>2024-01-14T16:03:37.291909200Z</updatedAt>
+                      <type>BUY</type>
+                    </accountTransaction>
+                  </crossEntry>
+                  <shares>2000000000</shares>
+                  <units>
+                    <unit type="TAX">
+                      <amount currency="EUR" amount="500"/>
+                    </unit>
+                    <unit type="FEE">
+                      <amount currency="EUR" amount="1000"/>
+                    </unit>
+                  </units>
+                  <updatedAt>2024-01-14T16:03:37.291909200Z</updatedAt>
                   <type>BUY</type>
                 </portfolio-transaction>
               </transactions>
@@ -10028,9 +10090,20 @@
             <accountTransaction reference="../.."/>
           </crossEntry>
           <shares>0</shares>
-          <updatedAt>2024-01-14T11:17:49.260552200Z</updatedAt>
+          <updatedAt>2024-01-14T14:58:13.718511500Z</updatedAt>
           <type>BUY</type>
         </account-transaction>
+        <account-transaction>
+          <uuid>aacc99f9-0800-4bbb-b979-c4807ebb24f1</uuid>
+          <date>2024-01-06T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>9800</amount>
+          <security reference="../../../../../securities/security[4]"/>
+          <shares>0</shares>
+          <updatedAt>2024-01-14T15:26:09.794940800Z</updatedAt>
+          <type>FEES</type>
+        </account-transaction>
+        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/accountTransaction"/>
       </transactions>
       <attributes>
         <map/>
@@ -10053,7 +10126,26 @@
       <name>broker-B (EUR)</name>
       <currencyCode>EUR</currencyCode>
       <isRetired>false</isRetired>
-      <transactions/>
+      <transactions>
+        <account-transaction>
+          <uuid>55615aaa-e7eb-4844-a229-19e05148e611</uuid>
+          <date>2024-01-04T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>15000</amount>
+          <shares>0</shares>
+          <updatedAt>2024-01-14T16:03:37.291909200Z</updatedAt>
+          <type>REMOVAL</type>
+        </account-transaction>
+        <account-transaction>
+          <uuid>0a0709b8-1b21-47c0-8d16-9e422696aa9c</uuid>
+          <date>2024-01-05T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>9900</amount>
+          <shares>0</shares>
+          <updatedAt>2024-01-14T16:03:37.291909200Z</updatedAt>
+          <type>INTEREST</type>
+        </account-transaction>
+      </transactions>
       <attributes>
         <map/>
       </attributes>
@@ -10361,7 +10453,7 @@
             <config>
               <uuid>3580a087-a144-41e6-b45e-351eb5535064</uuid>
               <name>Standard</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:87},{&quot;id&quot;:&quot;name&quot;,&quot;sortDirection&quot;:1024,&quot;width&quot;:114},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:235},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:228},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:103},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:104},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:120},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:160},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:130},{&quot;id&quot;:&quot;izf&quot;,&quot;width&quot;:177},{&quot;id&quot;:&quot;delta&quot;,&quot;width&quot;:143}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:87},{&quot;id&quot;:&quot;name&quot;,&quot;sortDirection&quot;:1024,&quot;width&quot;:114},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:235},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:228},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:103},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:104},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:120},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:160},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:130},{&quot;id&quot;:&quot;izf&quot;,&quot;width&quot;:177},{&quot;id&quot;:&quot;delta&quot;,&quot;width&quot;:143},{&quot;id&quot;:&quot;fees&quot;,&quot;width&quot;:80}]}</data>
             </config>
           </configurations>
         </config-set>

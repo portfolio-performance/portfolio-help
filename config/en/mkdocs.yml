@@ -19,8 +19,16 @@ theme:
   name: material
   custom_dir: ../../overrides/
   palette:
-    primary: light green
-    accent: amber
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   features:
     - content.code.annotate 
     - content.code.copy
@@ -72,6 +80,8 @@ plugins:
         caption_prefix: 'Figure {index}. '
         position: top
         markdown_identifier: 'Figure:'
+      table:
+        position: top
   - git-revision-date-localized
 
 markdown_extensions:
@@ -124,6 +134,7 @@ nav:
       - File Menu:
           - New: reference/file/new.md
           - Save: reference/file/save.md
+          - Import: reference/file/import.md
           - Export: reference/file/export.md
       - View Menu:
           - Options: reference/view/options.md

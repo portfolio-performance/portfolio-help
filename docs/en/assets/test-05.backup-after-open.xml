@@ -9992,46 +9992,7 @@
       <name>broker-A (EUR)</name>
       <currencyCode>EUR</currencyCode>
       <isRetired>false</isRetired>
-      <transactions>
-        <account-transaction>
-          <uuid>7b619edd-a396-4b48-a82d-f9e3cc2eb5d4</uuid>
-          <date>2024-01-15T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>112500</amount>
-          <security reference="../../../../../securities/security"/>
-          <crossEntry class="buysell">
-            <portfolio>
-              <uuid>ccd0ccf0-d4cd-4c16-8316-2b8727eb514d</uuid>
-              <name>broker-A</name>
-              <isRetired>false</isRetired>
-              <referenceAccount reference="../../../../.."/>
-              <transactions>
-                <portfolio-transaction>
-                  <uuid>b635aa11-0df6-4bd9-887a-fc1588204788</uuid>
-                  <date>2024-01-15T00:00</date>
-                  <currencyCode>EUR</currencyCode>
-                  <amount>112500</amount>
-                  <security reference="../../../../../../../../../securities/security"/>
-                  <crossEntry class="buysell" reference="../../../.."/>
-                  <shares>2500000000</shares>
-                  <updatedAt>2024-01-14T11:17:49.260552200Z</updatedAt>
-                  <type>BUY</type>
-                </portfolio-transaction>
-              </transactions>
-              <attributes>
-                <map/>
-              </attributes>
-              <updatedAt>2023-06-07T17:57:54.777434100Z</updatedAt>
-            </portfolio>
-            <portfolioTransaction reference="../portfolio/transactions/portfolio-transaction"/>
-            <account reference="../../../.."/>
-            <accountTransaction reference="../.."/>
-          </crossEntry>
-          <shares>0</shares>
-          <updatedAt>2024-01-14T11:17:49.260552200Z</updatedAt>
-          <type>BUY</type>
-        </account-transaction>
-      </transactions>
+      <transactions/>
       <attributes>
         <map/>
       </attributes>
@@ -10072,7 +10033,17 @@
     </account>
   </accounts>
   <portfolios>
-    <portfolio reference="../../accounts/account/transactions/account-transaction/crossEntry/portfolio"/>
+    <portfolio>
+      <uuid>ccd0ccf0-d4cd-4c16-8316-2b8727eb514d</uuid>
+      <name>broker-A</name>
+      <isRetired>false</isRetired>
+      <referenceAccount reference="../../../accounts/account"/>
+      <transactions/>
+      <attributes>
+        <map/>
+      </attributes>
+      <updatedAt>2023-06-07T17:57:54.777434100Z</updatedAt>
+    </portfolio>
     <portfolio>
       <uuid>4bf19ec7-0129-4aa7-9b16-b1053d435b81</uuid>
       <name>broker-B</name>

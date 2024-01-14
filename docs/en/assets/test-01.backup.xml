@@ -9972,18 +9972,6 @@
       <isRetired>false</isRetired>
       <updatedAt>2024-01-13T20:04:12.205858900Z</updatedAt>
     </security>
-    <security>
-      <uuid>fd1879d0-1ec6-4584-be19-ff6dd2f7932a</uuid>
-      <name>NVIDIA</name>
-      <currencyCode>USD</currencyCode>
-      <tickerSymbol>NVDA</tickerSymbol>
-      <prices/>
-      <attributes>
-        <map/>
-      </attributes>
-      <isRetired>false</isRetired>
-      <updatedAt>2024-01-14T10:13:28.735943700Z</updatedAt>
-    </security>
   </securities>
   <watchlists/>
   <accounts>
@@ -9994,11 +9982,11 @@
       <isRetired>false</isRetired>
       <transactions>
         <account-transaction>
-          <uuid>7b619edd-a396-4b48-a82d-f9e3cc2eb5d4</uuid>
+          <uuid>cb09fc7d-fc74-4afa-9e24-b9d4f4b17865</uuid>
           <date>2024-01-15T00:00</date>
           <currencyCode>EUR</currencyCode>
-          <amount>112500</amount>
-          <security reference="../../../../../securities/security"/>
+          <amount>90000</amount>
+          <security reference="../../../../../securities/security[3]"/>
           <crossEntry class="buysell">
             <portfolio>
               <uuid>ccd0ccf0-d4cd-4c16-8316-2b8727eb514d</uuid>
@@ -10007,14 +9995,22 @@
               <referenceAccount reference="../../../../.."/>
               <transactions>
                 <portfolio-transaction>
-                  <uuid>b635aa11-0df6-4bd9-887a-fc1588204788</uuid>
+                  <uuid>32986c7d-a83a-4969-9c31-7d5bd5a08e19</uuid>
                   <date>2024-01-15T00:00</date>
                   <currencyCode>EUR</currencyCode>
-                  <amount>112500</amount>
-                  <security reference="../../../../../../../../../securities/security"/>
+                  <amount>90000</amount>
+                  <security reference="../../../../../../../../../securities/security[3]"/>
                   <crossEntry class="buysell" reference="../../../.."/>
-                  <shares>2500000000</shares>
-                  <updatedAt>2024-01-14T11:17:49.260552200Z</updatedAt>
+                  <shares>2000000000</shares>
+                  <units>
+                    <unit type="TAX">
+                      <amount currency="EUR" amount="2000"/>
+                    </unit>
+                    <unit type="FEE">
+                      <amount currency="EUR" amount="1000"/>
+                    </unit>
+                  </units>
+                  <updatedAt>2024-01-13T20:39:41.714526300Z</updatedAt>
                   <type>BUY</type>
                 </portfolio-transaction>
               </transactions>
@@ -10028,7 +10024,7 @@
             <accountTransaction reference="../.."/>
           </crossEntry>
           <shares>0</shares>
-          <updatedAt>2024-01-14T11:17:49.260552200Z</updatedAt>
+          <updatedAt>2024-01-13T20:39:41.714526300Z</updatedAt>
           <type>BUY</type>
         </account-transaction>
       </transactions>
