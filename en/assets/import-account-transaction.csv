@@ -1,0 +1,5 @@
+﻿Type;Date;Value;Cash Account;Securities Account;Shares;Taxes;Fees;Security Name
+Buy;2024-01-04;900;;;20;5;10;BASF
+Removal ;2024-01-04;150;broker-B (EUR);broker-A;;;;
+Interest;2024-01-05;99;broker-B (EUR);;;;;
+Fees;2024-01-06;98;broker-A (EUR);;;;;BASF
