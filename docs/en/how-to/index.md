@@ -11,3 +11,7 @@ This chapter outlines various standard procedures and workflows such as importin
 - [Importing Fund Data from Morningstar](morningstar.md): Downloading historical prices from the [Morningstar website](https://www.morningstar.co.uk/uk/) is a straightforward process, but understanding the steps is crucial.
 
 - [Directly Edit the XML File to Add the Quote Feed](quote-feed.md): Learn how to use a text editor to seamlessly incorporate the Quote Feed.
+
+- [Copy securities between portfolios](./copy-securities.md): A rather well hidden but easy method to manually copy securities between two portfolios within the PP app.
+
+- [Using Portfolio Report](portfolioreport.md): Easily adding securities and their Quote Feed to tour portfolio.
