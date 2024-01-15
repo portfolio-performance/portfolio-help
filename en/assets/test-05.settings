@@ -1,8 +1,17 @@
-#Sun Jan 14 12:26:10 CET 2024
+#Sun Jan 14 22:26:35 CET 2024
 SecurityListView-newsash=200
+import-target-portfolio-Portfolio\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
 SecurityPriceChartPane=Y2
 StatementOfAssetsView-newsash=200
 HoldingsPieChartView-newsash=-200
 name.abuchen.portfolio.ui.views.SecuritiesTable$picked=ace4b28f-3207-4dc2-95fa-edc3936851f9
+IMPORT_NOTESPortfolio\ Transactions=true
+name.abuchen.portfolio.ui.views.AllTransactionsView={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:164},{"id"\:"1","width"\:80},{"id"\:"2","width"\:250},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"account","width"\:120},{"id"\:"9","width"\:120},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
+import-target-account-Account\ Transactions=a8844383-5b6c-4b59-b786-d48ccafd628b
 name.abuchen.portfolio.ui.views.StatementOfAssetsViewer$picked=5626df9e-7f9b-47e2-b7f4-07557fdf6e55
 CSV_IMPORT_PATH=D\:\\OneDrive\\Projects\\PortfolioPerformance\\portfolio-help\\docs\\en\\assets
+import-target-portfolio-Account\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
+IMPORT_NOTESAccount\ Transactions=true
+name.abuchen.portfolio.ui.wizards.datatransfer.CSVImportWizard-encoding=UTF-8
+AllTransactionsView-newsash=200
+import-target-account-Portfolio\ Transactions=a8844383-5b6c-4b59-b786-d48ccafd628b
