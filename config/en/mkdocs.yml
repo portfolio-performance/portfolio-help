@@ -126,6 +126,7 @@ nav:
       - Import fund data from Morningstar: how-to/morningstar.md
       - Hack data file to add defauly Quote Feed: how-to/quote-feed.md
       - Copy securities between portfolios: how-to/copy-securities.md
+      - Using Portfolio Report: how-to/portfolioreport.md
   - Reference manual:
       - Reference manual: reference/index.md
       - File Menu:
