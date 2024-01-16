@@ -144,5 +144,5 @@ nav:
               - Holdings: reference/view/reports/holdings.md
       - Help Menu:
           - Check for Updates: reference/help/check-updates.md
-          # - About Portfolio Performance: reference/help/about.md
+          - About Portfolio Performance: reference/help/about.md
 

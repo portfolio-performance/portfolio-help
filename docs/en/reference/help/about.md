@@ -14,40 +14,31 @@ The bottom panel contains links to the used (open source) software, code contrib
 
 [Eclipse Foundation](https://www.eclipse.org/): Eclipse is a free and open source software development environment that supports various languages, platforms and plugins. It is a very popular and widely used IDE (Integrated Development Environment). Eclipse allows developers to create, test, debug, and deploy applications using a common framework and a rich set of tools. From a user perspective, the choice of a specific IDE is not important. The development platform e.g. Java SDK however is very much.
 
-[Apache Software Foundation](https://apache.org/)
+[Apache Software Foundation](https://apache.org/): Several libraries are used; for example to extract text and metadata from PDF documents, and to perform HTTP requests and handle responses (e.g. communicate with Portfolio Report). 
 
-[SWT Chart Project](https://github.com/eclipse/swtchart/wiki): The Eclipse SWTChart software is used to create the line and pie charts in the app. PP uses the Standard Widget Toolkit (SWT) which is a graphical user interface (GUI) library that allows Java developers to create native-looking applications for different platforms.
+[SWT Chart Project](https://github.com/eclipse/swtchart/wiki): The Eclipse SWTChart software is used to create the line and pie charts in the app. PP uses the Standard Widget Toolkit (SWT) which is a graphical user interface (GUI) library that allows Java developers to create native-looking applications for different platforms. You enable this library in `Help > Preferences > General`.
 
-[Tree Map Library](https://github.com/smurf667/treemaplib): 
+[Tree Map Library](https://github.com/smurf667/treemaplib): Treemaps represent a distinct visualization technique for illustrating hierarchical data by using a series of nested rectangles. This kind of map is used in the Taxonomies menu.
 
-??? The link is the app is no longer correct (https://code.google.com/archive/p/treemaplib/): 
-
-[jsoup Java HTML Parser]: jsoup is a Java library that simplifies working with real-world HTML and XML. It offers an easy-to-use API for URL fetching, data parsing, extraction, and manipulation using DOM API methods, CSS, and xpath selectors. The library is used for example to fetch the historical prices from a table on a financial website.
+[jsoup Java HTML Parser](https://jsoup.org/): jsoup is a Java library that simplifies working with real-world HTML and XML. It offers an easy-to-use API for URL fetching, data parsing, extraction, and manipulation using DOM API methods, CSS, and xpath selectors. The library is used for example to fetch the historical prices from a table on a financial website.
 
 [JSON.simple](https://github.com/fangyidong/json-simple): JSON.simple is a simple Java toolkit for JSON. You can use JSON.simple to encode or decode JSON text. This tool is used in the app for downloading historical prices from a JSON data source.
 
-!!!!! The link is the app is no longer correct?? (https://code.google.com/archive/p/json-simple/) 
-
 [Protobuf](https://github.com/protocolbuffers/protobuf): Protocol Buffers (a.k.a., protobuf) are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data. The software is used to convert the XML-datastructures of the portfolio file into Java usable data structures.  
 
-[Guava](https://github.com/google/guava):
+[Guava](https://github.com/google/guava): The Guava libraries are intended to complement the core java libraries and make working in the Java language more pleasant and more productive.
 
-[JsonPath](https://github.com/json-path/JsonPath):
-??? works together with JSON.simple???
+[JsonPath](https://github.com/json-path/JsonPath): JsonPath is a query language for JSON. It allows to select and extract a sub-section from a JSON document using a simple syntax that is similar to XPath for XML.
 
-[D3.js](https://d3js.org/):
-??? why is D3.js needed if SWT Chart is already available. Create graphs in a webbrowser?
+[D3.js](https://d3js.org/): D3.js is an abbreviation for Data-Driven Documents and is a JavaScript library to work on data visualization e.g. graphs. 
 
-[XStream](https://github.com/x-stream/xstream)
-??? Idem: why needed if protobuf is available??
+[XStream](https://github.com/x-stream/xstream): A Java library that allows you to serialize and deserialize Java objects to and from XML or JSON.
 
 [OpenJDK](https://openjdk.org/): Running a Java program on for example a Windows machine requires that the Java Development Kit (JDK) is installed on that computer. PP uses the JDK provided by Azul.com.
 
 ## Code Contributors
 
 A link to the Github pages of each of the 159 contributors is given. A graphical overview of all contributions from 2012 till today can be found at [Github](https://github.com/portfolio-performance/portfolio/graphs/contributors). 
-
-??? Is this list up-to-date? According to github there are 159 contributors (I only count 143).  Update automatically?
 
 ## Translators
 
