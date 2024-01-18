@@ -2,227 +2,237 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://help.portfolio-performance.info/en/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/concepts/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://help.portfolio-performance.info/en/concepts/PP-terminology/</loc>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/concepts/account/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/concepts/financial-terminology/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/concepts/purchase-value/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/concepts/reporting-period/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/concepts/transaction/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/concepts/performance/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/concepts/performance/money-weighted/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/concepts/performance/time-weighted/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/getting-started/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/getting-started/adding-securities/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/getting-started/create-portfolio/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/getting-started/installation/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/getting-started/measure-performance/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/getting-started/trouble-shooting/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/getting-started/manage-portfolio/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/getting-started/manage-portfolio/bonds/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/getting-started/manage-portfolio/buy/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/getting-started/manage-portfolio/delivery/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/getting-started/manage-portfolio/deposit/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/getting-started/manage-portfolio/dividend/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/getting-started/manage-portfolio/sell/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/how-to/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/how-to/copy-securities/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/how-to/download-historical-prices/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/how-to/importing/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/how-to/morningstar/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/how-to/portfolioreport/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/how-to/quote-feed/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/how-to/reinvesting-dividends/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/reference/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/reference/menu/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/reference/file/export/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/reference/file/import/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/reference/file/new/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/reference/file/save/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/reference/help/about/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/reference/help/check-updates/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://help.portfolio-performance.info/en/reference/view/all-securities/</loc>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/reference/view/options/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/reference/view/performance/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/reference/view/settings/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/reference/view/reports/holdings/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/reference/view/reports/statement-chart/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/reference/view/reports/statement/</loc>
-         <lastmod>2024-01-16</lastmod>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
