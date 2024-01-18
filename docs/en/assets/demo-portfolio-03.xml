@@ -7,6 +7,7 @@
       <name>share-1</name>
       <currencyCode>EUR</currencyCode>
       <tickerSymbol>DTE.DE</tickerSymbol>
+      <calendar>euronext</calendar>
       <feed>YAHOO</feed>
       <prices>
         <price t="2013-06-10" v="897500000"/>
@@ -2693,18 +2694,30 @@
         <price t="2024-01-05" v="2243500000"/>
         <price t="2024-01-08" v="2254000000"/>
         <price t="2024-01-09" v="2251000000"/>
+        <price t="2024-01-10" v="2245500000"/>
+        <price t="2024-01-11" v="2236000000"/>
+        <price t="2024-01-12" v="2250500000"/>
+        <price t="2024-01-15" v="2267000000"/>
+        <price t="2024-01-16" v="2278000000"/>
+        <price t="2024-01-17" v="2273500000"/>
+        <price t="2024-01-18" v="2281500000"/>
       </prices>
-      <latest t="2024-01-09" v="2251000000">
+      <latest t="2024-01-18" v="2281500000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
       </latest>
       <attributes>
-        <map/>
+        <map>
+          <entry>
+            <string>135b7a79-cf82-4597-9457-5d741f05c9c5</string>
+            <long>2070000000</long>
+          </entry>
+        </map>
       </attributes>
       <events/>
       <isRetired>false</isRetired>
-      <updatedAt>2023-06-11T08:26:58.426438Z</updatedAt>
+      <updatedAt>2024-01-18T13:46:24.345115800Z</updatedAt>
     </security>
     <security>
       <uuid>245661d8-6510-40d7-96cc-3f05f7a679ad</uuid>
@@ -3801,8 +3814,15 @@
         <price t="2024-01-05" v="1339500000"/>
         <price t="2024-01-08" v="1358500000"/>
         <price t="2024-01-09" v="1378500000"/>
+        <price t="2024-01-10" v="1386000000"/>
+        <price t="2024-01-11" v="1379500000"/>
+        <price t="2024-01-12" v="1407500000"/>
+        <price t="2024-01-15" v="1376500000"/>
+        <price t="2024-01-16" v="1376500000"/>
+        <price t="2024-01-17" v="1349000000"/>
+        <price t="2024-01-18" v="1294000000"/>
       </prices>
-      <latest t="2024-01-09" v="1378500000">
+      <latest t="2024-01-18" v="1322000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -4161,7 +4181,7 @@
   <properties>
     <entry>
       <string>security-chart-details</string>
-      <string>SCALING_LINEAR,INVESTMENT,DIVIDENDS,EVENTS,SHOW_MAIN_HORIZONTAL_LINES</string>
+      <string>SCALING_LINEAR,INVESTMENT,SHARES_HELD,DIVIDENDS,EVENTS,SHOW_LIMITS,SHOW_PERCENTAGE_AXIS,SHOW_MAIN_HORIZONTAL_LINES</string>
     </entry>
   </properties>
   <settings>
@@ -4306,6 +4326,14 @@
         <type>java.lang.Double</type>
         <converterClass>name.abuchen.portfolio.model.AttributeType$PercentConverter</converterClass>
       </attribute-type>
+      <attribute-type>
+        <id>135b7a79-cf82-4597-9457-5d741f05c9c5</id>
+        <name>Limit</name>
+        <columnLabel>Limit</columnLabel>
+        <target>name.abuchen.portfolio.model.Security</target>
+        <type>java.lang.Long</type>
+        <converterClass>name.abuchen.portfolio.model.AttributeType$QuoteConverter</converterClass>
+      </attribute-type>
     </attributeTypes>
     <configurationSets>
       <entry>
@@ -4363,7 +4391,7 @@
             <config>
               <uuid>ace4b28f-3207-4dc2-95fa-edc3936851f9</uuid>
               <name>Standard</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;sortDirection&quot;:128,&quot;width&quot;:400},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:200},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:100},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:111},{&quot;id&quot;:&quot;7&quot;,&quot;width&quot;:97},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:102},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:136},{&quot;id&quot;:&quot;9&quot;,&quot;width&quot;:164},{&quot;id&quot;:&quot;10&quot;,&quot;width&quot;:171},{&quot;id&quot;:&quot;q-date-first-historic&quot;,&quot;width&quot;:167}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;sortDirection&quot;:128,&quot;width&quot;:400},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:200},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:100},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:111},{&quot;id&quot;:&quot;7&quot;,&quot;width&quot;:97},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:102},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:136},{&quot;id&quot;:&quot;9&quot;,&quot;width&quot;:164},{&quot;id&quot;:&quot;10&quot;,&quot;width&quot;:171},{&quot;id&quot;:&quot;q-date-first-historic&quot;,&quot;width&quot;:167},{&quot;id&quot;:&quot;attribute$135b7a79-cf82-4597-9457-5d741f05c9c5&quot;,&quot;width&quot;:80}]}</data>
             </config>
           </configurations>
         </config-set>

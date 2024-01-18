@@ -124,7 +124,7 @@ nav:
       - Importing CSV-files: how-to/importing.md
       - Reinvesting dividends: how-to/reinvesting-dividends.md
       - Import fund data from Morningstar: how-to/morningstar.md
-      - Hack data file to add defaul Quote Feed: how-to/quote-feed.md
+      - Hack data file to add default Quote Feed: how-to/quote-feed.md
       - Copy securities between portfolios: how-to/copy-securities.md
       - Using Portfolio Report: how-to/portfolioreport.md
   - Reference manual:
@@ -136,12 +136,16 @@ nav:
           - Export: reference/file/export.md
       - View Menu:
           - Options: reference/view/options.md
-          - Settings: reference/view/settings.md
-          - Performance: reference/view/performance.md
+          - Securities:
+              - All Securities: reference/view/all-securities.md
           - Reports:
-              - Statement of Assets: reference/view/reports/statement.md
-              - Chart: reference/view/reports/statement-chart.md
-              - Holdings: reference/view/reports/holdings.md
+              - Statement of Assets:
+                - Statement of Assets: reference/view/reports/statement.md
+                - Chart: reference/view/reports/statement-chart.md
+                - Holdings: reference/view/reports/holdings.md
+              - Performance: reference/view/performance.md
+          - General Data:
+            - Settings: reference/view/settings.md
       - Help Menu:
           - Check for Updates: reference/help/check-updates.md
           - About Portfolio Performance: reference/help/about.md

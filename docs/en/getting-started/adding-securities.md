@@ -1,7 +1,7 @@
 ---
 title: Adding securities
 ---
-Right after the preceding *Create portfolio* step, your portfolio is still empty. You can check with the left sidebar option `Securities > All Securities`. This list should encompasses all the securities you are monitoring, not necessarily the ones you have purchased. Currently, the list is empty (see Figure 1).
+Right after the preceding *Create portfolio* step, your portfolio is still empty. You can check with the left sidebar option `Securities > All Securities`. This list contains all the securities you are monitoring, not necessarily the ones you have purchased. Currently, the list is empty (see Figure 1).
 
 !!! note
     A security is a financial instrument that holds value and can be traded between parties. Securities can be broadly categorized into: debt securities (e.g., banknotes, bonds, and debentures), equity securities (e.g., common stocks) derivatives (e.g., forwards, futures, options, and swaps) [\[Source Wikipedia\]](<https://en.wikipedia.org/wiki/Security_ (finance)>).
