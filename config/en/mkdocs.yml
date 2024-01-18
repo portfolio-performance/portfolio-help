@@ -110,6 +110,7 @@ nav:
           - Measure Performance: getting-started/measure-performance.md
   - Basic concepts:
       - Basic concepts: concepts/index.md
+      - PP-terminology: concepts/PP-terminology.md
       - Financial terminology: concepts/financial-terminology.md
       - Account: concepts/account.md
       - Transaction: concepts/transaction.md
