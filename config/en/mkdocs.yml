@@ -147,6 +147,7 @@ nav:
               - Performance: reference/view/performance.md
           - General Data:
             - Settings: reference/view/settings.md
+      - Online Menu: reference/online.md
       - Help Menu:
           - Check for Updates: reference/help/check-updates.md
           - About Portfolio Performance: reference/help/about.md

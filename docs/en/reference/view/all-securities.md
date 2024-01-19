@@ -33,7 +33,7 @@ The table displayed in the current view can be exported as a CSV file, preservin
 
 By dragging the divider bar, you can adjust the size of the top panel, making it larger or smaller. You can even extend it to completely occupy the canvas or hide it entirely. The divider bar becomes visible when hovering over with the mouse.
 
-## Bottom panel: graph
+## Bottom panel
 
 The bottom panel showcases by default a graph or chart of the active security, namely the last one selected in the top panel (refer to Figure 3). The graph is updated each time a different security is selected in the top panel.
 
@@ -104,5 +104,54 @@ With Configuration chart icon (gear at the top right) you set numerous additiona
     - Percentage axis (secondary): a new Y-axis is added at the left border of the graph. The scale is expressed in percentage, with the initial buying price set to 0%.
     - Horizontal lines (Value axis): if a secondary percentage axis is visible, dashed horizontal lines can be aligned with the primary value axis (this option) or with the secondary percentage axis (the following option).
     - Horizontal lines (Percentage axis): either this option or the previous one should be enabled. With this option, the dashed horizontal lines are aligned at percentage levels.
+
+### Historical Quotes
+
+The Historical Quotes menu in the bottom panel reveals a two-column table displaying the date and quote of the selected security in the top panel (see Figure 6). Clicking on a column header will sort the table in ascending or descending order based on that column. You can rearrange the columns by dragging the header.
+
+Double-click on the date or the quote to modify its value. Be careful when changing the date, as the new quote will overwrite any quote registered for that date.
+
+Utilize the "Export data as CSV" feature (icon to right) to save the entire table as a CSV file. The context menu (right-click) offers various management options.
+
+Figure: Context menu of Historical Quotes in bottom panel.{class=pp-figure}
+
+![](images/contxt-mnu-all-securities-bottom-panel-hist-quotes.png)
+
+- Add: This option enables you to input the date and corresponding quote for the security. You can add quotes for any valid date, even in the future.
+
+- Delete: To delete one or more rows, make a selection. For a consecutive selection, click the first row, press Shift, and click the last row. For a non-consecutive selection, use the Ctrl key. Utilize the context menu to delete the selected rows.
+
+- Delete All: This command removes all historical quotes in the table. Note that this action cannot be undone.
+
+- Quotes: this heading conceals several additional options (see Figure 6). Many of these options can also be executed from another context, e.g. menu.
+
+    - Update quotes online: Shortcut for the [menu Online > Update quotes (selected security)](../online.md#update-quotes-selected-security).
     
+    - Debug: Show server response: If the security is linked to an online data provider, you can view the HTTP response from that server.
+    
+    - Configure online update ...: this option will display the Securities attributes panel with the Historical Quotes tab selected; see [File > New](../file/new.md#historical-quotes).
+    
+    - Search for suppliers of historical prices ...: displays the first step of the [File > New](../file/new.md#file-❯-new) wizard.
+    
+    - Import from CSV file ...: This command is equivalent with the [File > Import](../file/import.md) menu. The CSV file must contain at least two columns.
+    
+    - Import HTML table ...: This option lets you import a table with historical Quotes that you can find on a webpage. Some examples are given (see Figure 7). 
+        
+        Figure: Import HTML table from context menu Historical Quotes. {class=pp-figure}
+
+        ![](images/contxt-mnu-all-securities-bottom-panel-hist-quotes-import-html-table.png)
+
+
+    - Create manually: This command is identical with the `Add` option above.
+
+    - Export to CSV file ...: This command is identical with the `Export button` (top right).
+
+    - Create historical quotes from transactions: If a security has transactions (buy or sell), the quote price associated with these transactions can be included into the historical prices. The transaction price takes precedence and will overwrite any existing historical quote on that date.
+
+    - Delete latest price:
+
+    - Round historical prices to X decimal places: When rounding a value like 99.994 to two decimals, the result will be 99.99, whereas the value of 99.995 will round up to 100.00. Keep in mind that it's not possible to round a number to a higher precision than originally available. Attempting to round the previous number to 4 decimal places, for example, will not change the number.
+
+
+
 

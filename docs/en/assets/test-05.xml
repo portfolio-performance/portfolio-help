@@ -2696,8 +2696,13 @@
         <price t="2024-01-10" v="2245500000"/>
         <price t="2024-01-11" v="2236000000"/>
         <price t="2024-01-12" v="2250500000"/>
+        <price t="2024-01-15" v="2267000000"/>
+        <price t="2024-01-16" v="2278000000"/>
+        <price t="2024-01-17" v="2273500000"/>
+        <price t="2024-01-18" v="100000000"/>
+        <price t="2024-01-19" v="10000000000"/>
       </prices>
-      <latest t="2024-01-12" v="2250500000">
+      <latest t="2024-01-18" v="2289000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3807,8 +3812,12 @@
         <price t="2024-01-10" v="1386000000"/>
         <price t="2024-01-11" v="1379500000"/>
         <price t="2024-01-12" v="1407500000"/>
+        <price t="2024-01-15" v="1376500000"/>
+        <price t="2024-01-16" v="1376500000"/>
+        <price t="2024-01-17" v="1349000000"/>
+        <price t="2024-01-18" v="1308000000"/>
       </prices>
-      <latest t="2024-01-12" v="1407500000">
+      <latest t="2024-01-18" v="1308000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3832,6 +3841,7 @@
         <price t="2024-01-06" v="1500000000"/>
         <price t="2024-01-08" v="225400000000"/>
         <price t="2024-01-09" v="225100000000"/>
+        <price t="2024-01-18" v="225120000000"/>
       </prices>
       <attributes>
         <map/>
@@ -9977,8 +9987,11 @@
         <price t="2024-01-10" v="4502000000"/>
         <price t="2024-01-11" v="4483000000"/>
         <price t="2024-01-12" v="4478000000"/>
+        <price t="2024-01-15" v="4452500000"/>
+        <price t="2024-01-16" v="4425500000"/>
+        <price t="2024-01-17" v="4316000000"/>
       </prices>
-      <latest t="2024-01-12" v="4478000000">
+      <latest t="2024-01-17" v="4316000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -9988,7 +10001,7 @@
       </attributes>
       <events/>
       <property type="FEED" name="PORTFOLIO-REPORT-MARKET">XETR</property>
-      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;BAS&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-01-12&quot;}]</property>
+      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;BAS&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-01-17&quot;}]</property>
       <isRetired>false</isRetired>
       <updatedAt>2024-01-14T13:52:31.418936900Z</updatedAt>
     </security>
@@ -10079,6 +10092,32 @@
                   <updatedAt>2024-01-14T16:03:37.291909200Z</updatedAt>
                   <type>BUY</type>
                 </portfolio-transaction>
+                <portfolio-transaction>
+                  <uuid>049dc2d9-8fd2-4090-8585-4196e8e54bdf</uuid>
+                  <date>2024-01-18T00:00</date>
+                  <currencyCode>EUR</currencyCode>
+                  <amount>2251000</amount>
+                  <security reference="../../../../../../../../../securities/security[3]"/>
+                  <crossEntry class="buysell">
+                    <portfolio reference="../../../.."/>
+                    <portfolioTransaction reference="../.."/>
+                    <account reference="../../../../../../../.."/>
+                    <accountTransaction>
+                      <uuid>efe4efd7-5e3e-494e-80e6-59f5a58e79d9</uuid>
+                      <date>2024-01-18T00:00</date>
+                      <currencyCode>EUR</currencyCode>
+                      <amount>2251000</amount>
+                      <security reference="../../../../../../../../../../../securities/security[3]"/>
+                      <crossEntry class="buysell" reference="../.."/>
+                      <shares>0</shares>
+                      <updatedAt>2024-01-18T20:23:36.380056900Z</updatedAt>
+                      <type>BUY</type>
+                    </accountTransaction>
+                  </crossEntry>
+                  <shares>1000000000</shares>
+                  <updatedAt>2024-01-18T20:23:36.380056900Z</updatedAt>
+                  <type>BUY</type>
+                </portfolio-transaction>
               </transactions>
               <attributes>
                 <map/>
@@ -10104,6 +10143,7 @@
           <type>FEES</type>
         </account-transaction>
         <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/accountTransaction"/>
+        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[3]/crossEntry/accountTransaction"/>
       </transactions>
       <attributes>
         <map/>
