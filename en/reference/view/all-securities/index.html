@@ -1136,6 +1136,8 @@
       
         
       
+        
+      
     
     
     
@@ -1475,16 +1477,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bottom-panel-graph" class="md-nav__link">
-    Bottom panel: graph
+  <a href="#bottom-panel" class="md-nav__link">
+    Bottom panel
   </a>
   
-    <nav class="md-nav" aria-label="Bottom panel: graph">
+    <nav class="md-nav" aria-label="Bottom panel">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#chart-menu" class="md-nav__link">
     Chart menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historical-quotes" class="md-nav__link">
+    Historical Quotes
   </a>
   
 </li>
@@ -1774,6 +1783,26 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../online/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Online Menu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
     
     
       
@@ -1790,10 +1819,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
         
           
-          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1804,8 +1833,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
             <span class="md-nav__icon md-icon"></span>
             Help Menu
           </label>
@@ -1898,16 +1927,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bottom-panel-graph" class="md-nav__link">
-    Bottom panel: graph
+  <a href="#bottom-panel" class="md-nav__link">
+    Bottom panel
   </a>
   
-    <nav class="md-nav" aria-label="Bottom panel: graph">
+    <nav class="md-nav" aria-label="Bottom panel">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#chart-menu" class="md-nav__link">
     Chart menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historical-quotes" class="md-nav__link">
+    Historical Quotes
   </a>
   
 </li>
@@ -1955,7 +1991,7 @@
 <p>The Filter icon is used as a more categorical filter. Available options are: Only active instruments, Only securities, Only exchange rates, Shares held ≠ 0, Shares held = 0, and Securities: Limit price exceeded. For the latter, you need to create a new attribute of type “limit price” in the <a href="../settings/">settings</a> of the portfolio (menu View &gt; Settings). Then you can add this column to the table and enter some values.</p>
 <p>The table displayed in the current view can be exported as a CSV file, preserving the number of rows and columns along with their (custom) column headings.</p>
 <p>By dragging the divider bar, you can adjust the size of the top panel, making it larger or smaller. You can even extend it to completely occupy the canvas or hide it entirely. The divider bar becomes visible when hovering over with the mouse.</p>
-<h2 id="bottom-panel-graph">Bottom panel: graph</h2>
+<h2 id="bottom-panel">Bottom panel</h2>
 <p>The bottom panel showcases by default a graph or chart of the active security, namely the last one selected in the top panel (refer to Figure 3). The graph is updated each time a different security is selected in the top panel.</p>
 <p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Graph of active security from top panel.</figcaption><img alt="" src="../images/mnu-all-securities-bottom-panel-graph.svg"></figure></p>
 <h3 id="chart-menu">Chart menu</h3>
@@ -2020,13 +2056,68 @@
 </ul>
 </li>
 </ul>
+<h3 id="historical-quotes">Historical Quotes</h3>
+<p>The Historical Quotes menu in the bottom panel reveals a two-column table displaying the date and quote of the selected security in the top panel (see Figure 6). Clicking on a column header will sort the table in ascending or descending order based on that column. You can rearrange the columns by dragging the header.</p>
+<p>Double-click on the date or the quote to modify its value. Be careful when changing the date, as the new quote will overwrite any quote registered for that date.</p>
+<p>Utilize the "Export data as CSV" feature (icon to right) to save the entire table as a CSV file. The context menu (right-click) offers various management options.</p>
+<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6.  Context menu of Historical Quotes in bottom panel.</figcaption><img alt="" src="../images/contxt-mnu-all-securities-bottom-panel-hist-quotes.png"></figure></p>
+<ul>
+<li>
+<p>Add: This option enables you to input the date and corresponding quote for the security. You can add quotes for any valid date, even in the future.</p>
+</li>
+<li>
+<p>Delete: To delete one or more rows, make a selection. For a consecutive selection, click the first row, press Shift, and click the last row. For a non-consecutive selection, use the Ctrl key. Utilize the context menu to delete the selected rows.</p>
+</li>
+<li>
+<p>Delete All: This command removes all historical quotes in the table. Note that this action cannot be undone.</p>
+</li>
+<li>
+<p>Quotes: this heading conceals several additional options (see Figure 6). Many of these options can also be executed from another context, e.g. menu.</p>
+<ul>
+<li>
+<p>Update quotes online: Shortcut for the <a href="../../online/#update-quotes-selected-security">menu Online &gt; Update quotes (selected security)</a>.</p>
+</li>
+<li>
+<p>Debug: Show server response: If the security is linked to an online data provider, you can view the HTTP response from that server.</p>
+</li>
+<li>
+<p>Configure online update ...: this option will display the Securities attributes panel with the Historical Quotes tab selected; see <a href="../../file/new/#historical-quotes">File &gt; New</a>.</p>
+</li>
+<li>
+<p>Search for suppliers of historical prices ...: displays the first step of the <a href="../../file/new/#file-%E2%9D%AF-new">File &gt; New</a> wizard.</p>
+</li>
+<li>
+<p>Import from CSV file ...: This command is equivalent with the <a href="../../file/import/">File &gt; Import</a> menu. The CSV file must contain at least two columns.</p>
+</li>
+<li>
+<p>Import HTML table ...: This option lets you import a table with historical Quotes that you can find on a webpage. Some examples are given (see Figure 7). </p>
+<p><figure class="pp-figure" id="_figure-7"><figcaption>Figure 7.  Import HTML table from context menu Historical Quotes. </figcaption><img alt="" src="../images/contxt-mnu-all-securities-bottom-panel-hist-quotes-import-html-table.png"></figure></p>
+</li>
+<li>
+<p>Create manually: This command is identical with the <code>Add</code> option above.</p>
+</li>
+<li>
+<p>Export to CSV file ...: This command is identical with the <code>Export button</code> (top right).</p>
+</li>
+<li>
+<p>Create historical quotes from transactions: If a security has transactions (buy or sell), the quote price associated with these transactions can be included into the historical prices. The transaction price takes precedence and will overwrite any existing historical quote on that date.</p>
+</li>
+<li>
+<p>Delete latest price:</p>
+</li>
+<li>
+<p>Round historical prices to X decimal places: When rounding a value like 99.994 to two decimals, the result will be 99.99, whereas the value of 99.995 will round up to 100.00. Keep in mind that it's not possible to round a number to a higher precision than originally available. Attempting to round the previous number to 4 decimal places, for example, will not change the number.</p>
+</li>
+</ul>
+</li>
+</ul>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 18, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 19, 2024</span>
       
     
   </small>
