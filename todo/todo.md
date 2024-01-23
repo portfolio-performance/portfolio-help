@@ -132,4 +132,10 @@ Historical prices: many of the presets don't seem to function?
 - context menu Historical Quotes (bottom panel All securities) - import HTML table: examples refer to the German website of onvista and Fianzen.net dialog. The first link (onvista) needs a selected security in the top panel that exists on onvista; otherwise null exception. Similar with finanz.net. Pasting the source code also doesn't seem to work.
 - A lot of the functionality under the Quotes submenu (see above) is the same as other options; for example create manually is the same as the Add option just above.
 
+### 2024-01-22
+- menu View > Currencies > Currency converter:
+    - convert USD-->SEK will be calculates as  USD --> EUR --> SEK?
+    - table has two columns Exchage rate and Value. The value column has an awkwardly looking border
+    - if you click and hold on a value of the graph a pop-up shows the exchange rate. Holding and moving the mouse to the left or right will go in the past or future (for example 2035-01-01) where no exchange rates exist.
+
 

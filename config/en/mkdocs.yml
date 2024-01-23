@@ -120,6 +120,7 @@ nav:
           - Performance: concepts/performance/index.md
           - Money-weighted return: concepts/performance/money-weighted.md
           - Time-weighted return: concepts/performance/time-weighted.md
+      - Historical prices: concepts/historical-prices.md
   - How-to:
       - How-to: how-to/index.md
       - Importing CSV-files: how-to/importing.md

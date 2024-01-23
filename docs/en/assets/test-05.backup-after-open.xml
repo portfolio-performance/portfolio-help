@@ -2696,8 +2696,13 @@
         <price t="2024-01-10" v="2245500000"/>
         <price t="2024-01-11" v="2236000000"/>
         <price t="2024-01-12" v="2250500000"/>
+        <price t="2024-01-15" v="2267000000"/>
+        <price t="2024-01-16" v="2278000000"/>
+        <price t="2024-01-17" v="2273500000"/>
+        <price t="2024-01-18" v="100000000"/>
+        <price t="2024-01-19" v="2308000000"/>
       </prices>
-      <latest t="2024-01-12" v="2250500000">
+      <latest t="2024-01-19" v="2308000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3807,8 +3812,13 @@
         <price t="2024-01-10" v="1386000000"/>
         <price t="2024-01-11" v="1379500000"/>
         <price t="2024-01-12" v="1407500000"/>
+        <price t="2024-01-15" v="1376500000"/>
+        <price t="2024-01-16" v="1376500000"/>
+        <price t="2024-01-17" v="1349000000"/>
+        <price t="2024-01-18" v="1308000000"/>
+        <price t="2024-01-19" v="1305500000"/>
       </prices>
-      <latest t="2024-01-12" v="1407500000">
+      <latest t="2024-01-19" v="1305500000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3821,7 +3831,49 @@
       <updatedAt>2023-06-12T18:37:20.042953800Z</updatedAt>
     </security>
     <security>
-      <uuid>1cdbe008-121b-4f0d-8783-f4b2aeba8c02</uuid>
+      <uuid>79c6f482-3aa0-448e-b1b8-a28cdf324cc1</uuid>
+      <name>share-3</name>
+      <currencyCode>EUR</currencyCode>
+      <tickerSymbol>NVDA</tickerSymbol>
+      <feed>YAHOO</feed>
+      <prices>
+        <price t="2023-12-20" v="48111000000"/>
+        <price t="2023-12-21" v="48990000000"/>
+        <price t="2023-12-22" v="48830000000"/>
+        <price t="2023-12-26" v="49279000000"/>
+        <price t="2023-12-27" v="49417000000"/>
+        <price t="2023-12-28" v="49522000000"/>
+        <price t="2023-12-29" v="49522000000"/>
+        <price t="2024-01-02" v="48168000000"/>
+        <price t="2024-01-03" v="47569000000"/>
+        <price t="2024-01-04" v="47998000000"/>
+        <price t="2024-01-05" v="49097000000"/>
+        <price t="2024-01-08" v="52253000000"/>
+        <price t="2024-01-09" v="53140000000"/>
+        <price t="2024-01-10" v="54350000000"/>
+        <price t="2024-01-11" v="54822000000"/>
+        <price t="2024-01-12" v="54710000000"/>
+        <price t="2024-01-16" v="56382000000"/>
+        <price t="2024-01-17" v="56053000000"/>
+        <price t="2024-01-18" v="57107000000"/>
+        <price t="2024-01-19" v="1000000000"/>
+        <price t="2024-01-20" v="900000000"/>
+        <price t="2024-01-21" v="800000000"/>
+      </prices>
+      <latest t="2024-01-19" v="59491000000">
+        <high>-1</high>
+        <low>-1</low>
+        <volume>-1</volume>
+      </latest>
+      <attributes>
+        <map/>
+      </attributes>
+      <events/>
+      <isRetired>false</isRetired>
+      <updatedAt>2024-01-20T08:13:17.658391100Z</updatedAt>
+    </security>
+    <security>
+      <uuid>c2c88e26-d8e3-47ab-9dad-d210fa8d7748</uuid>
       <onlineId>be525a0ebdef4921b261aa2498a6949e</onlineId>
       <name>BASF</name>
       <currencyCode>EUR</currencyCode>
@@ -9957,8 +10009,13 @@
         <price t="2024-01-10" v="4502000000"/>
         <price t="2024-01-11" v="4483000000"/>
         <price t="2024-01-12" v="4478000000"/>
+        <price t="2024-01-15" v="4452500000"/>
+        <price t="2024-01-16" v="4425500000"/>
+        <price t="2024-01-17" v="4316000000"/>
+        <price t="2024-01-18" v="4366000000"/>
+        <price t="2024-01-19" v="4305000000"/>
       </prices>
-      <latest t="2024-01-12" v="4478000000">
+      <latest t="2024-01-19" v="4305000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -9968,12 +10025,12 @@
       </attributes>
       <events/>
       <property type="FEED" name="PORTFOLIO-REPORT-MARKET">XETR</property>
-      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;BAS&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-01-12&quot;}]</property>
+      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;BAS&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-01-19&quot;}]</property>
       <isRetired>false</isRetired>
-      <updatedAt>2024-01-13T20:04:12.205858900Z</updatedAt>
+      <updatedAt>2024-01-14T13:52:31.418936900Z</updatedAt>
     </security>
     <security>
-      <uuid>fd1879d0-1ec6-4584-be19-ff6dd2f7932a</uuid>
+      <uuid>5cee2708-f4e9-419c-b056-3beed1932e78</uuid>
       <name>NVIDIA</name>
       <currencyCode>USD</currencyCode>
       <tickerSymbol>NVDA</tickerSymbol>
@@ -9982,7 +10039,21 @@
         <map/>
       </attributes>
       <isRetired>false</isRetired>
-      <updatedAt>2024-01-14T10:13:28.735943700Z</updatedAt>
+      <updatedAt>2024-01-14T13:52:13.430487Z</updatedAt>
+    </security>
+    <security>
+      <uuid>82b46baf-6e11-49f0-b890-ceea17e51c7e</uuid>
+      <name>share-4</name>
+      <currencyCode>EUR</currencyCode>
+      <feed>GENERIC-JSON</feed>
+      <feedURL>https://query1.finance.yahoo.com/v8/finance/chart/NVDA?metrics=high?&amp;interval=1d&amp;range=5d</feedURL>
+      <prices/>
+      <attributes>
+        <map/>
+      </attributes>
+      <property type="FEED" name="GENERIC-JSON-DATE">chart.result[0].timestamp[0]</property>
+      <isRetired>false</isRetired>
+      <updatedAt>2024-01-20T19:17:14.196796800Z</updatedAt>
     </security>
   </securities>
   <watchlists/>
@@ -9992,7 +10063,126 @@
       <name>broker-A (EUR)</name>
       <currencyCode>EUR</currencyCode>
       <isRetired>false</isRetired>
-      <transactions/>
+      <transactions>
+        <account-transaction>
+          <uuid>de895f8b-68c1-41db-bdb5-b5689a5bcfeb</uuid>
+          <date>2024-01-03T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>90000</amount>
+          <security reference="../../../../../securities/security[4]"/>
+          <crossEntry class="buysell">
+            <portfolio>
+              <uuid>ccd0ccf0-d4cd-4c16-8316-2b8727eb514d</uuid>
+              <name>broker-A</name>
+              <isRetired>false</isRetired>
+              <referenceAccount reference="../../../../.."/>
+              <transactions>
+                <portfolio-transaction>
+                  <uuid>aa8747c8-90cb-482e-99d5-0ecc7cc545c2</uuid>
+                  <date>2024-01-03T00:00</date>
+                  <currencyCode>EUR</currencyCode>
+                  <amount>90000</amount>
+                  <security reference="../../../../../../../../../securities/security[4]"/>
+                  <crossEntry class="buysell" reference="../../../.."/>
+                  <shares>2000000000</shares>
+                  <units>
+                    <unit type="TAX">
+                      <amount currency="EUR" amount="500"/>
+                    </unit>
+                    <unit type="FEE">
+                      <amount currency="EUR" amount="1000"/>
+                    </unit>
+                  </units>
+                  <updatedAt>2024-01-14T14:58:13.719509200Z</updatedAt>
+                  <type>BUY</type>
+                </portfolio-transaction>
+                <portfolio-transaction>
+                  <uuid>0ca9914e-1b4a-4a51-918e-c2e29a5374fc</uuid>
+                  <date>2024-01-04T00:00</date>
+                  <currencyCode>EUR</currencyCode>
+                  <amount>90000</amount>
+                  <security reference="../../../../../../../../../securities/security[4]"/>
+                  <crossEntry class="buysell">
+                    <portfolio reference="../../../.."/>
+                    <portfolioTransaction reference="../.."/>
+                    <account reference="../../../../../../../.."/>
+                    <accountTransaction>
+                      <uuid>0cb2d145-a106-4d0b-8801-a74ca01863db</uuid>
+                      <date>2024-01-04T00:00</date>
+                      <currencyCode>EUR</currencyCode>
+                      <amount>90000</amount>
+                      <security reference="../../../../../../../../../../../securities/security[4]"/>
+                      <crossEntry class="buysell" reference="../.."/>
+                      <shares>0</shares>
+                      <updatedAt>2024-01-14T16:03:37.291909200Z</updatedAt>
+                      <type>BUY</type>
+                    </accountTransaction>
+                  </crossEntry>
+                  <shares>2000000000</shares>
+                  <units>
+                    <unit type="TAX">
+                      <amount currency="EUR" amount="500"/>
+                    </unit>
+                    <unit type="FEE">
+                      <amount currency="EUR" amount="1000"/>
+                    </unit>
+                  </units>
+                  <updatedAt>2024-01-14T16:03:37.291909200Z</updatedAt>
+                  <type>BUY</type>
+                </portfolio-transaction>
+                <portfolio-transaction>
+                  <uuid>049dc2d9-8fd2-4090-8585-4196e8e54bdf</uuid>
+                  <date>2024-01-18T00:00</date>
+                  <currencyCode>EUR</currencyCode>
+                  <amount>2251000</amount>
+                  <security reference="../../../../../../../../../securities/security[3]"/>
+                  <crossEntry class="buysell">
+                    <portfolio reference="../../../.."/>
+                    <portfolioTransaction reference="../.."/>
+                    <account reference="../../../../../../../.."/>
+                    <accountTransaction>
+                      <uuid>efe4efd7-5e3e-494e-80e6-59f5a58e79d9</uuid>
+                      <date>2024-01-18T00:00</date>
+                      <currencyCode>EUR</currencyCode>
+                      <amount>2251000</amount>
+                      <security reference="../../../../../../../../../../../securities/security[3]"/>
+                      <crossEntry class="buysell" reference="../.."/>
+                      <shares>0</shares>
+                      <updatedAt>2024-01-18T20:23:36.380056900Z</updatedAt>
+                      <type>BUY</type>
+                    </accountTransaction>
+                  </crossEntry>
+                  <shares>1000000000</shares>
+                  <updatedAt>2024-01-18T20:23:36.380056900Z</updatedAt>
+                  <type>BUY</type>
+                </portfolio-transaction>
+              </transactions>
+              <attributes>
+                <map/>
+              </attributes>
+              <updatedAt>2023-06-07T17:57:54.777434100Z</updatedAt>
+            </portfolio>
+            <portfolioTransaction reference="../portfolio/transactions/portfolio-transaction"/>
+            <account reference="../../../.."/>
+            <accountTransaction reference="../.."/>
+          </crossEntry>
+          <shares>0</shares>
+          <updatedAt>2024-01-14T14:58:13.718511500Z</updatedAt>
+          <type>BUY</type>
+        </account-transaction>
+        <account-transaction>
+          <uuid>aacc99f9-0800-4bbb-b979-c4807ebb24f1</uuid>
+          <date>2024-01-06T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>9800</amount>
+          <security reference="../../../../../securities/security[4]"/>
+          <shares>0</shares>
+          <updatedAt>2024-01-14T15:26:09.794940800Z</updatedAt>
+          <type>FEES</type>
+        </account-transaction>
+        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/accountTransaction"/>
+        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[3]/crossEntry/accountTransaction"/>
+      </transactions>
       <attributes>
         <map/>
       </attributes>
@@ -10014,7 +10204,26 @@
       <name>broker-B (EUR)</name>
       <currencyCode>EUR</currencyCode>
       <isRetired>false</isRetired>
-      <transactions/>
+      <transactions>
+        <account-transaction>
+          <uuid>55615aaa-e7eb-4844-a229-19e05148e611</uuid>
+          <date>2024-01-04T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>15000</amount>
+          <shares>0</shares>
+          <updatedAt>2024-01-14T16:03:37.291909200Z</updatedAt>
+          <type>REMOVAL</type>
+        </account-transaction>
+        <account-transaction>
+          <uuid>0a0709b8-1b21-47c0-8d16-9e422696aa9c</uuid>
+          <date>2024-01-05T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>9900</amount>
+          <shares>0</shares>
+          <updatedAt>2024-01-14T16:03:37.291909200Z</updatedAt>
+          <type>INTEREST</type>
+        </account-transaction>
+      </transactions>
       <attributes>
         <map/>
       </attributes>
@@ -10033,17 +10242,7 @@
     </account>
   </accounts>
   <portfolios>
-    <portfolio>
-      <uuid>ccd0ccf0-d4cd-4c16-8316-2b8727eb514d</uuid>
-      <name>broker-A</name>
-      <isRetired>false</isRetired>
-      <referenceAccount reference="../../../accounts/account"/>
-      <transactions/>
-      <attributes>
-        <map/>
-      </attributes>
-      <updatedAt>2023-06-07T17:57:54.777434100Z</updatedAt>
-    </portfolio>
+    <portfolio reference="../../accounts/account/transactions/account-transaction/crossEntry/portfolio"/>
     <portfolio>
       <uuid>4bf19ec7-0129-4aa7-9b16-b1053d435b81</uuid>
       <name>broker-B</name>
@@ -10332,7 +10531,7 @@
             <config>
               <uuid>3580a087-a144-41e6-b45e-351eb5535064</uuid>
               <name>Standard</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:87},{&quot;id&quot;:&quot;name&quot;,&quot;sortDirection&quot;:1024,&quot;width&quot;:114},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:235},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:228},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:103},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:104},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:120},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:160},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:130},{&quot;id&quot;:&quot;izf&quot;,&quot;width&quot;:177},{&quot;id&quot;:&quot;delta&quot;,&quot;width&quot;:143}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:87},{&quot;id&quot;:&quot;name&quot;,&quot;sortDirection&quot;:1024,&quot;width&quot;:114},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:235},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:228},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:103},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:104},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:120},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:160},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:130},{&quot;id&quot;:&quot;izf&quot;,&quot;width&quot;:177},{&quot;id&quot;:&quot;delta&quot;,&quot;width&quot;:143},{&quot;id&quot;:&quot;fees&quot;,&quot;width&quot;:80}]}</data>
             </config>
           </configurations>
         </config-set>
