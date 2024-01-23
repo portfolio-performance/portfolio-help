@@ -12,13 +12,13 @@
         <meta name="author" content="Andreas Buchen, et. al.">
       
       
-        <link rel="canonical" href="https://help.portfolio-performance.info/en/concepts/PP-terminology/">
+        <link rel="canonical" href="https://help.portfolio-performance.info/en/concepts/historical-prices/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../performance/time-weighted/">
       
       
-        <link rel="next" href="../financial-terminology/">
+        <link rel="next" href="../../how-to/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Portfolio Performance terminology - Portfolio Performance Manual</title>
+        <title>Historical Prices - Portfolio Performance Manual</title>
       
     
     
@@ -84,6 +84,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#downloading-a-csv-file" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -115,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Portfolio Performance terminology
+              Historical Prices
             
           </span>
         </div>
@@ -697,16 +702,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../PP-terminology/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -715,7 +713,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -929,9 +926,27 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../historical-prices/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Historical prices
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -940,6 +955,38 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#downloading-a-csv-file" class="md-nav__link">
+    Downloading a CSV file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-the-data-with-an-api" class="md-nav__link">
+    Import the data with an API
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1864,6 +1911,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#downloading-a-csv-file" class="md-nav__link">
+    Downloading a CSV file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-the-data-with-an-api" class="md-nav__link">
+    Import the data with an API
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1877,7 +1946,7 @@
                   
 
   
-    <a href="https://github.com/portfolio-performance/portfolio-help/tree/master/docs/en/concepts/PP-terminology.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/portfolio-performance/portfolio-help/tree/master/docs/en/concepts/historical-prices.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1885,95 +1954,175 @@
   
 
 
-  <h1>PP-terminology</h1>
+  <h1>Historical prices</h1>
 
-<p>Fundamental concepts such as account, transaction, reporting period, purchase value, and performance are described in a separate chapter (see sidebar). Below is an alphabetical list containing descriptions of all attributes, also referred to as fields or columns, used in various sections within PP.</p>
+<p>To calculate performance, PP requires two types of historical prices: the historical quotes of securities and in case of foreign investments, the historical exchange rates for currencies.</p>
+<p>You can find the historical exchange rates under the menu View &gt; Settings. These exchange rates are retrieved from <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">The European Central Bank</a> (ECB) and go back until the year 1999 when the EUR was introduced on the financial markets. They are in fact reference rates and will probably differ slightly from the real transaction rates that your broker or bank will use.</p>
+<p>Securities are traded on exchange markets such as NADAQ or XETRA, where buyers and sellers agree on a price. Historical quotes are the prices of securities at different points in time. The <code>Close</code> price is the last price of the security at the end of the trading day. Other types are the <code>Open</code> quote, the first price of the security at the start of the trading day, the <code>Low</code> and <code>High</code>quotes, which are the lowest and highest price of the security during the trading day. The <code>Latest</code> quote is the most recent price of the security available from the exchange market. The latest quote may not be the same as the close price.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>PP uses the <code>Close</code> quote in its performance calculations. If there is a Latest quote available, it will be integrated in the Close price. For Bitcoins, the situation is more complex because they are traded 24/24. PP uses midnight (on the users system) to set the Close Quote. So, the historical quotes of a bitcoin could vary between users.</p>
+</div>
+<p>Sometimes, the historical quotes are adjusted to reflect certain events that affect the value of the security, such as stock splits, dividends, or mergers. These are called the <code>Adjusted close</code> quotes. They are useful for comparing the long-term performance of the security, as they account for the changes in the number of shares or the amount of cash paid to the shareholders.</p>
+<p>Exchange markets (must) publish the historical quotes of the securities they trade. Several financial services such as Yahoo Finance, Alpha Vantage, and others provide historical quotes for different securities and exchange markets through their websites.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Usually, a user navigates to a specific website to download a web page containing historical price data. The outcome is a well-crafted page featuring a table displaying daily stock prices. In theory, one could scrape this webpage. PP has even an option for that. However, in practice, most service providers utilize JavaScript or another technology that hinders this scraping process.</p>
+</div>
+<p>There are two primary methods for obtaining financial data from the web: downloading a csv file, or using an API (Application Programming Interface) to get the data.</p>
+<p>Both methods start with a request to the financial service or website. A request is a message that contains the information and parameters needed to access the historical quote feed. A request is sent from the client, which is the user's device or application, to the server, which is the financial service or website. The server processes the request and sends back a response. The response could be a csv file, or a structured text (JSON or XML).</p>
+<p>In both cases, PP needs to map its internal fields, such as date and value of the quote, with the data in the response. If successfully, PP can use these fields then in its performance calculation.</p>
+<h2 id="downloading-a-csv-file">Downloading a CSV file</h2>
+<p>A csv file is a comma-separated values file, which is a text file that stores tabular data. Each row in the file represents a record, and each column represents a field. For example, a typical historical quotes CSV file will contain two columns (date and quote) and several rows, one for each date with its corresponding historical quote. A csv file can be opened and edited by spreadsheet software and easily imported into PP.</p>
+<p><figure-caption identifier="Figure"class=pp-figure>Webpage from finance.yahoo.com to download the historical prices of NVIDIA.</figure-caption></p>
+<p><img alt="" src="../images/yahoo-finance-webpage.png" /></p>
+<p>Each website may have a distinct approach for downloading a csv file of the historical data (see Figure 1). Typically, you need to navigate to the desired security and locate the download link on that webpage. For instance, after navigating to the website <a href="https://finance.yahoo.com">Yahoo Finance</a>, you can enter the name "NVIDIA" in the Search box at the top of the screen. Select the Historical Prices tab in the middle of the screen. From there, you can specify the Time Period and frequency before downloading a CSV file containing historical prices. Import this CSV file into Portfolio Performance using the menu <code>File &gt; Import &gt; CSV Files</code>, choosing the Historical Prices option and assign it to the correct security.</p>
+<p>Hovering over the download link, you may have noticed the URL endpoint: <code>https://query1.finance.yahoo.com/v7/finance/download/NVDA?period1=1674359406&amp;period2=1705895406&amp;interval=1d&amp;events=history&amp;includeAdjustedClose=true</code> (see Figure 1 at the bottom of the image).</p>
+<p>This is the request you send to the Yahoo server. It contains the ticker symbol of the security (NVDA), the time period expressed as Unix timestamps or the number of seconds that have elapsed since January 1, 1970, the frequency or interval (1d), the type of info you want (events=history), and the Adjusted Close price. The CSV file contains 7 columns: Date, Open, High, Low, Close, Volume, and Adj Close.</p>
+<p>It's important to note that this method provides a snapshot of historical prices. To obtain the quotes of tomorrow, you should repeat the process. In practice, you need to combine this approach with one of the automatic quote download methods below. Remember that you can <a href="../../reference/file/images/mnu-file-import-reload-quotes.png">keep the existing historical quotes</a> in PP, even if you change the quote provider to automatic download.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For instance, stock exchange markets usually offer a restricted period of historical data, typically one or two years. Therefore, you might import older historical quotes through a more specialised service. Subsequently, you could utilise an automatic quote feed such as PortfolioReport for the daily updates.</p>
+</div>
+<h2 id="import-the-data-with-an-api">Import the data with an API</h2>
+<p>An API is an application programming interface, which is a set of rules and protocols that allow different software applications to communicate and exchange data. An API can be used to request and receive historical quotes from a financial service in a structured and human-readable format, such as JSON (JavaScript Object Notation) or XML (Extensible Markup Language). For example, the following endpoint URL can be used to request NVIDIA's 5 most recent daily quotes from Yahoo Finance.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://query1.finance.yahoo.com/v8/finance/chart/NVDA?interval=1d&amp;range=5d
+</code></pre></div>
+<p>The response from the Yahoo server is a lengthy JSON document with all the historical quotes of the last 5 days (scroll down to see the quotes).</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;chart&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">&quot;result&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="p">{</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="nt">&quot;meta&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">          </span><span class="nt">&quot;currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;USD&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">          </span><span class="nt">&quot;symbol&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NVDA&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">          </span><span class="nt">&quot;exchangeName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NMS&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">          </span><span class="nt">&quot;instrumentType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EQUITY&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">          </span><span class="nt">&quot;firstTradeDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">917015400</span><span class="p">,</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">          </span><span class="nt">&quot;regularMarketTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1705957200</span><span class="p">,</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">          </span><span class="nt">&quot;gmtoffset&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-18000</span><span class="p">,</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">          </span><span class="nt">&quot;timezone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EST&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">          </span><span class="nt">&quot;exchangeTimezoneName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;America/New_York&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">          </span><span class="nt">&quot;regularMarketPrice&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">596.54</span><span class="p">,</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">          </span><span class="nt">&quot;chartPreviousClose&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">547.1</span><span class="p">,</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">          </span><span class="nt">&quot;priceHint&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">          </span><span class="nt">&quot;currentTradingPeriod&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">            </span><span class="nt">&quot;pre&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">              </span><span class="nt">&quot;timezone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EST&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">              </span><span class="nt">&quot;start&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1706000400</span><span class="p">,</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">              </span><span class="nt">&quot;end&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1706020200</span><span class="p">,</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">              </span><span class="nt">&quot;gmtoffset&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-18000</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">            </span><span class="p">},</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">            </span><span class="nt">&quot;regular&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">              </span><span class="nt">&quot;timezone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EST&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">              </span><span class="nt">&quot;start&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1706020200</span><span class="p">,</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">              </span><span class="nt">&quot;end&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1706043600</span><span class="p">,</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">              </span><span class="nt">&quot;gmtoffset&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-18000</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="w">            </span><span class="p">},</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="w">            </span><span class="nt">&quot;post&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="w">              </span><span class="nt">&quot;timezone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EST&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">              </span><span class="nt">&quot;start&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1706043600</span><span class="p">,</span>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="w">              </span><span class="nt">&quot;end&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1706058000</span><span class="p">,</span>
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="w">              </span><span class="nt">&quot;gmtoffset&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-18000</span>
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="w">          </span><span class="p">},</span>
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="w">          </span><span class="nt">&quot;dataGranularity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1d&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="w">          </span><span class="nt">&quot;range&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;5d&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="w">          </span><span class="nt">&quot;validRanges&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a><span class="w">            </span><span class="s2">&quot;1d&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a><span class="w">            </span><span class="s2">&quot;5d&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a><span class="w">            </span><span class="s2">&quot;1mo&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a><span class="w">            </span><span class="s2">&quot;3mo&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a><span class="w">            </span><span class="s2">&quot;6mo&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a><span class="w">            </span><span class="s2">&quot;1y&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a><span class="w">            </span><span class="s2">&quot;2y&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a><span class="w">            </span><span class="s2">&quot;5y&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a><span class="w">            </span><span class="s2">&quot;10y&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a><span class="w">            </span><span class="s2">&quot;ytd&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a><span class="w">            </span><span class="s2">&quot;max&quot;</span>
+<a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a><span class="w">          </span><span class="p">]</span>
+<a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a><span class="w">        </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a><span class="w">          </span><span class="mi">1705415400</span><span class="p">,</span>
+<a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a><span class="w">          </span><span class="mi">1705501800</span><span class="p">,</span>
+<a id="__codelineno-1-57" name="__codelineno-1-57" href="#__codelineno-1-57"></a><span class="w">          </span><span class="mi">1705588200</span><span class="p">,</span>
+<a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a><span class="w">          </span><span class="mi">1705674600</span><span class="p">,</span>
+<a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a><span class="w">          </span><span class="mi">1705933800</span>
+<a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a><span class="w">        </span><span class="p">],</span>
+<a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a><span class="w">        </span><span class="nt">&quot;indicators&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-62" name="__codelineno-1-62" href="#__codelineno-1-62"></a><span class="w">          </span><span class="nt">&quot;quote&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-1-64" name="__codelineno-1-64" href="#__codelineno-1-64"></a><span class="w">              </span><span class="nt">&quot;close&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a><span class="w">                </span><span class="mf">563.8200073242188</span><span class="p">,</span>
+<a id="__codelineno-1-66" name="__codelineno-1-66" href="#__codelineno-1-66"></a><span class="w">                </span><span class="mf">560.530029296875</span><span class="p">,</span>
+<a id="__codelineno-1-67" name="__codelineno-1-67" href="#__codelineno-1-67"></a><span class="w">                </span><span class="mf">571.0700073242188</span><span class="p">,</span>
+<a id="__codelineno-1-68" name="__codelineno-1-68" href="#__codelineno-1-68"></a><span class="w">                </span><span class="mf">594.9099731445312</span><span class="p">,</span>
+<a id="__codelineno-1-69" name="__codelineno-1-69" href="#__codelineno-1-69"></a><span class="w">                </span><span class="mf">596.5399780273438</span>
+<a id="__codelineno-1-70" name="__codelineno-1-70" href="#__codelineno-1-70"></a><span class="w">              </span><span class="p">],</span>
+<a id="__codelineno-1-71" name="__codelineno-1-71" href="#__codelineno-1-71"></a><span class="w">              </span><span class="nt">&quot;open&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-72" name="__codelineno-1-72" href="#__codelineno-1-72"></a><span class="w">                </span><span class="mf">550.1799926757812</span><span class="p">,</span>
+<a id="__codelineno-1-73" name="__codelineno-1-73" href="#__codelineno-1-73"></a><span class="w">                </span><span class="mf">563.469970703125</span><span class="p">,</span>
+<a id="__codelineno-1-74" name="__codelineno-1-74" href="#__codelineno-1-74"></a><span class="w">                </span><span class="mf">572.5999755859375</span><span class="p">,</span>
+<a id="__codelineno-1-75" name="__codelineno-1-75" href="#__codelineno-1-75"></a><span class="w">                </span><span class="mf">579.8900146484375</span><span class="p">,</span>
+<a id="__codelineno-1-76" name="__codelineno-1-76" href="#__codelineno-1-76"></a><span class="w">                </span><span class="mf">600.489990234375</span>
+<a id="__codelineno-1-77" name="__codelineno-1-77" href="#__codelineno-1-77"></a><span class="w">              </span><span class="p">],</span>
+<a id="__codelineno-1-78" name="__codelineno-1-78" href="#__codelineno-1-78"></a><span class="w">              </span><span class="nt">&quot;high&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-79" name="__codelineno-1-79" href="#__codelineno-1-79"></a><span class="w">                </span><span class="mf">568.3499755859375</span><span class="p">,</span>
+<a id="__codelineno-1-80" name="__codelineno-1-80" href="#__codelineno-1-80"></a><span class="w">                </span><span class="mf">564.7100219726562</span><span class="p">,</span>
+<a id="__codelineno-1-81" name="__codelineno-1-81" href="#__codelineno-1-81"></a><span class="w">                </span><span class="mi">576</span><span class="p">,</span>
+<a id="__codelineno-1-82" name="__codelineno-1-82" href="#__codelineno-1-82"></a><span class="w">                </span><span class="mi">595</span><span class="p">,</span>
+<a id="__codelineno-1-83" name="__codelineno-1-83" href="#__codelineno-1-83"></a><span class="w">                </span><span class="mf">603.3099975585938</span>
+<a id="__codelineno-1-84" name="__codelineno-1-84" href="#__codelineno-1-84"></a><span class="w">              </span><span class="p">],</span>
+<a id="__codelineno-1-85" name="__codelineno-1-85" href="#__codelineno-1-85"></a><span class="w">              </span><span class="nt">&quot;low&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-86" name="__codelineno-1-86" href="#__codelineno-1-86"></a><span class="w">                </span><span class="mi">549</span><span class="p">,</span>
+<a id="__codelineno-1-87" name="__codelineno-1-87" href="#__codelineno-1-87"></a><span class="w">                </span><span class="mf">547.4000244140625</span><span class="p">,</span>
+<a id="__codelineno-1-88" name="__codelineno-1-88" href="#__codelineno-1-88"></a><span class="w">                </span><span class="mf">561.0700073242188</span><span class="p">,</span>
+<a id="__codelineno-1-89" name="__codelineno-1-89" href="#__codelineno-1-89"></a><span class="w">                </span><span class="mf">572.25</span><span class="p">,</span>
+<a id="__codelineno-1-90" name="__codelineno-1-90" href="#__codelineno-1-90"></a><span class="w">                </span><span class="mf">590.7000122070312</span>
+<a id="__codelineno-1-91" name="__codelineno-1-91" href="#__codelineno-1-91"></a><span class="w">              </span><span class="p">],</span>
+<a id="__codelineno-1-92" name="__codelineno-1-92" href="#__codelineno-1-92"></a><span class="w">              </span><span class="nt">&quot;volume&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-93" name="__codelineno-1-93" href="#__codelineno-1-93"></a><span class="w">                </span><span class="mi">44958000</span><span class="p">,</span>
+<a id="__codelineno-1-94" name="__codelineno-1-94" href="#__codelineno-1-94"></a><span class="w">                </span><span class="mi">47439400</span><span class="p">,</span>
+<a id="__codelineno-1-95" name="__codelineno-1-95" href="#__codelineno-1-95"></a><span class="w">                </span><span class="mi">49165000</span><span class="p">,</span>
+<a id="__codelineno-1-96" name="__codelineno-1-96" href="#__codelineno-1-96"></a><span class="w">                </span><span class="mi">54210300</span><span class="p">,</span>
+<a id="__codelineno-1-97" name="__codelineno-1-97" href="#__codelineno-1-97"></a><span class="w">                </span><span class="mi">45213100</span>
+<a id="__codelineno-1-98" name="__codelineno-1-98" href="#__codelineno-1-98"></a><span class="w">              </span><span class="p">]</span>
+<a id="__codelineno-1-99" name="__codelineno-1-99" href="#__codelineno-1-99"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-1-100" name="__codelineno-1-100" href="#__codelineno-1-100"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-1-101" name="__codelineno-1-101" href="#__codelineno-1-101"></a><span class="w">          </span><span class="nt">&quot;adjclose&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-102" name="__codelineno-1-102" href="#__codelineno-1-102"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-1-103" name="__codelineno-1-103" href="#__codelineno-1-103"></a><span class="w">              </span><span class="nt">&quot;adjclose&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-104" name="__codelineno-1-104" href="#__codelineno-1-104"></a><span class="w">                </span><span class="mf">563.8200073242188</span><span class="p">,</span>
+<a id="__codelineno-1-105" name="__codelineno-1-105" href="#__codelineno-1-105"></a><span class="w">                </span><span class="mf">560.530029296875</span><span class="p">,</span>
+<a id="__codelineno-1-106" name="__codelineno-1-106" href="#__codelineno-1-106"></a><span class="w">                </span><span class="mf">571.0700073242188</span><span class="p">,</span>
+<a id="__codelineno-1-107" name="__codelineno-1-107" href="#__codelineno-1-107"></a><span class="w">                </span><span class="mf">594.9099731445312</span><span class="p">,</span>
+<a id="__codelineno-1-108" name="__codelineno-1-108" href="#__codelineno-1-108"></a><span class="w">                </span><span class="mf">596.5399780273438</span>
+<a id="__codelineno-1-109" name="__codelineno-1-109" href="#__codelineno-1-109"></a><span class="w">              </span><span class="p">]</span>
+<a id="__codelineno-1-110" name="__codelineno-1-110" href="#__codelineno-1-110"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-1-111" name="__codelineno-1-111" href="#__codelineno-1-111"></a><span class="w">          </span><span class="p">]</span>
+<a id="__codelineno-1-112" name="__codelineno-1-112" href="#__codelineno-1-112"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-1-113" name="__codelineno-1-113" href="#__codelineno-1-113"></a><span class="w">      </span><span class="p">}</span>
+<a id="__codelineno-1-114" name="__codelineno-1-114" href="#__codelineno-1-114"></a><span class="w">    </span><span class="p">],</span>
+<a id="__codelineno-1-115" name="__codelineno-1-115" href="#__codelineno-1-115"></a><span class="w">    </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-1-116" name="__codelineno-1-116" href="#__codelineno-1-116"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-1-117" name="__codelineno-1-117" href="#__codelineno-1-117"></a><span class="p">}</span>
+</code></pre></div>
+The JSON text from above has one top-level key: <code>chart</code>. This key contains an object with two keys: <code>result</code> and <code>error</code>.</p>
 <ul>
 <li>
-<p>Actual # quotes: the number of quotes in the historic prices list of a security.</p>
-</li>
-<li>
-<p>Change in Price (period): the difference in historic quotes between the last and first quote of a specified time span, expressed as a percentage. The period may be denoted in years (e.g., 1 year, 2 years, 3 years) or as a date range (From yyyy-mm-dd to yyyy-mm-dd). If the duration is in years, the last date is today, and the first date is today minus x years.</p>
-</li>
-<li>
-<p>Change on Previous Day (amount) or Δ amount: the absolute difference between the latest retrieved quote and the previous one (which is most likely the quote from the previous day).</p>
-</li>
-<li>
-<p>Change on Previous Day (%) or Δ %: the difference between the latest retrieved quote and the previous one (which is most likely the quote from the previous day), expressed as a percentage.</p>
-</li>
-<li>
-<p>Completeness of historic quotes: the ratio between the actual and expected number of historic quotes of a security, expressed as a percentage.</p>
-</li>
-<li>
-<p>Currency: the currency for a security chosen at its creation, which becomes immutable after the initial transaction involving this security.</p>
-</li>
-<li>
-<p>Date of first historical quote: The first date for which you have historical prices of a security.</p>
-</li>
-<li>
-<p>Date of last historical quote: The last date for which you have historical prices of the security. It's important to note that having these dates does not necessarily mean you have all intermediate historical prices.</p>
-</li>
-<li>
-<p>Date of latest quote: the most recent date on which the current market value or price of a financial instrument, such as a stock, bond, or commodity, was publicly provided or updated.</p>
-</li>
-<li>
-<p>Distance to SMA (days): a metric that measures the difference between the current price (quote) of a share and the average price of that share over a specified number of past days (5, 20, 30, 38, 50, 90, 100, or 200 days), expressed as a percentage. The acronym "SMA" stands for "Simple Moving Average". For example, the average price of security for the last 5 daily quotes is (100 + 98 + 99 + 97 + 96)/5 = 98. The Distance to SMA (5 days) is (100-98)/98 = 2.04%.  </p>
-</li>
-<li>
-<p>Distance to ATH (period): a metric that shows how far the current price is from the highest price in the specified period (1 year, 2 years, 3 years or a date range From yyyy-mm-dd to yyyy-mm-dd). For example, the highest price of a security in the last year was 77.4 EUR. The current price is 71.96 EUR. So the Distance to ATH for a 1 year period is equal to (71.96 - 77.4)/77.4 or -7.03%.</p>
-</li>
-<li>
-<p>Exchange: a security may be traded on more than one exchange. For example, the NVIDIA stock is traded on Nasdaq (symbol NVDA, exchange NMS) or XETRA (symbol NVD.DE, exchange GER), and many more exchanges.</p>
-</li>
-<li>
-<p>Expected # quotes: given the nature and frequency of a security and the calendar in use, PP calculates the expected number of quotes for the time period between the Date of last and first historical quote. Weekend and holidays are taken into account.</p>
-</li>
-<li>
-<p>Inactive: A security can be set to active or inactive. If set to inactive, the security will not appear in buy or sell dialogs, and historical prices will not be updated automatically.</p>
-</li>
-<li>
-<p>ISIN: <em>International Securities Identification Number</em>. This is a unique twelve-digit code that is assigned to every security in the world. Mostly used by European brokers &amp; banks.</p>
-</li>
-<li>
-<p>Latest Quote: the most recent quote of a security. You can refresh these values to the latest information using the menu option <code>Online &gt; Update Quotes</code>.</p>
-</li>
-<li>
-<p>Name: the full name of the security according to the data source (see below) from which it is retrieved, e.g. Yahoo Finance.</p>
-</li>
-<li>
-<p>Net Transaction value: the total sum of costs of a transaction, including the taxes and fees.</p>
-</li>
-<li>
-<p>Purchase Value: the summed transaction value of each buy (+) and sell (-) transaction of a security, taken into account the <a href="../reporting-period/">reporting period</a>.</p>
-</li>
-<li>
-<p>Quote Feed (historic): data source or provider of the historic quotes: Alpha Vantage, Bitfinex Cryptocurrency Exchange, Binance Crypto Exchange, CoinGecko, EOD Historical Data, Finnhub, Inflation rate - Eurostat (HICP), ECB Statistical Data Warehouse, Kraken Cryptocurrency Exchange, PWP Leeway UG, Twelve Data, Quandl, Table on website, VIA/CS Funds, Yahoo Finance, Yahoo Finance (Adjusted Close), JSON, no automatic download.</p>
-</li>
-<li>
-<p>Quote Feed (latest): data source or provider of the latest quotes (same list as above) or could be set as "same as historical quotes".</p>
-</li>
-<li>
-<p>URL (historic quotes): the URL that should be provided, if the choice in Quote Feed is set to Table on website or JSON.</p>
-</li>
-<li>
-<p>URL (latest quotes): see above but for the latest quote provider.</p>
-</li>
-<li>
-<p>Source: data source used in <code>File &gt; New Security</code> Search. Possible source are: <a href="https://finance.yahoo.com/">Yahoo Finance</a> provides financial news and data including stock quotes, press releases, and financial reports. <a href="https://www.coingecko.com/">CoinGecko</a> is a website with real-time information on most cryptocurrencies. <a href="https://www.portfolio-report.net/search">Portfolio Report</a> is an open source project that aims to provide centralized portfolio performance data.</p>
-</li>
-<li>
-<p>Symbol: the abbreviation (ticker) used by the data source.</p>
-</li>
-<li>
-<p>Target Currency: </p>
-</li>
-<li>
-<p>Type: can be Share, Bond, Cryptocurrency, Aktie (German for stock or share), Währung (=German for currency), Futures, etf, fonds (= funds).</p>
-</li>
-<li>
-<p>WKN: <em>Wertpapierkennnummer</em>. A German six-digit alphanumeric code for the identification of a security, now replaced by the ISIN code.</p>
+<p><strong>result</strong>: An array of objects, each object having two keys:</p>
+<ul>
+<li><strong>meta</strong>: Contains metadata about the equity, such as currency, symbol, exchange name, instrument type, ...</li>
+<li><strong>timestamp</strong>: An array of Unix timestamps, i.e. the dates of the quotes blow.</li>
+<li><strong>indicators</strong>: Contains two keys, <code>quote</code> with the close, low, high, ... values and <code>adjclose</code> with the adjusted close value.</li>
+<li><strong>error</strong>: Contains error information, if any. In this case, it's <code>null</code>, indicating no error occurred.</li>
+</ul>
 </li>
 </ul>
+<p>PP knows about the Yahoo's endpoint URL and the structure of the JSON response. Therefore, it can extract the historical quotes automatically and you -as user- has only to specify that the quote provider is Yahoo. Let's imagine that PP doesn't know about Yahoo's API. Then, you have to specify yourself the URL endpoint and where in the json structure the dates and quotes are placed. You do this with the parameters Path to Date, Path to Close, path to ... (see figure 2).</p>
+<p><figure-caption identifier="Figure"class:pp-figure>Server response from JSON Quote Feed Provider. </figure-caption></p>
+<p><img alt="" src="../images/historical-quotes-json.png" /></p>
+<p>For most services, one needs to register and obtain an API key, which is a unique identifier that authenticates the user and grants access to the service. While numerous financial services provide seemingly free API keys, their terms of use and long-term commitment often prove inadequate. PP has, for compatibility reasons, maintained several of these services in its list of Quote Feed providers. Although once considered excellent solutions, they have changed their offerings and are no longer as useful as free services. In practical terms, only Portfolio Report and Yahoo Finance can be recommended for a typical portfolio.</p>
 
   <hr>
 <div class="md-source-file">

@@ -32,7 +32,12 @@ figure.align-right {
 
  .align-right figcaption {
 	text-align: left;
-	margin-left: 10px;
+	margin-left: 0px;
+    font-size:small;
  }
+
+ .md-typeset pre > code {
+    max-height: 15rem;
+}
 
 

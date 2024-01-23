@@ -2700,9 +2700,9 @@
         <price t="2024-01-16" v="2278000000"/>
         <price t="2024-01-17" v="2273500000"/>
         <price t="2024-01-18" v="100000000"/>
-        <price t="2024-01-19" v="10000000000"/>
+        <price t="2024-01-19" v="2308000000"/>
       </prices>
-      <latest t="2024-01-18" v="2289000000">
+      <latest t="2024-01-19" v="2308000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3816,8 +3816,9 @@
         <price t="2024-01-16" v="1376500000"/>
         <price t="2024-01-17" v="1349000000"/>
         <price t="2024-01-18" v="1308000000"/>
+        <price t="2024-01-19" v="1305500000"/>
       </prices>
-      <latest t="2024-01-18" v="1308000000">
+      <latest t="2024-01-19" v="1305500000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3833,22 +3834,43 @@
       <uuid>79c6f482-3aa0-448e-b1b8-a28cdf324cc1</uuid>
       <name>share-3</name>
       <currencyCode>EUR</currencyCode>
-      <feed>MANUAL</feed>
+      <tickerSymbol>NVDA</tickerSymbol>
+      <feed>YAHOO</feed>
       <prices>
-        <price t="2024-01-03" v="2100000000"/>
-        <price t="2024-01-04" v="224600000000"/>
-        <price t="2024-01-05" v="224300000000"/>
-        <price t="2024-01-06" v="1500000000"/>
-        <price t="2024-01-08" v="225400000000"/>
-        <price t="2024-01-09" v="225100000000"/>
-        <price t="2024-01-18" v="225120000000"/>
+        <price t="2023-12-20" v="48111000000"/>
+        <price t="2023-12-21" v="48990000000"/>
+        <price t="2023-12-22" v="48830000000"/>
+        <price t="2023-12-26" v="49279000000"/>
+        <price t="2023-12-27" v="49417000000"/>
+        <price t="2023-12-28" v="49522000000"/>
+        <price t="2023-12-29" v="49522000000"/>
+        <price t="2024-01-02" v="48168000000"/>
+        <price t="2024-01-03" v="47569000000"/>
+        <price t="2024-01-04" v="47998000000"/>
+        <price t="2024-01-05" v="49097000000"/>
+        <price t="2024-01-08" v="52253000000"/>
+        <price t="2024-01-09" v="53140000000"/>
+        <price t="2024-01-10" v="54350000000"/>
+        <price t="2024-01-11" v="54822000000"/>
+        <price t="2024-01-12" v="54710000000"/>
+        <price t="2024-01-16" v="56382000000"/>
+        <price t="2024-01-17" v="56053000000"/>
+        <price t="2024-01-18" v="57107000000"/>
+        <price t="2024-01-19" v="1000000000"/>
+        <price t="2024-01-20" v="900000000"/>
+        <price t="2024-01-21" v="800000000"/>
       </prices>
+      <latest t="2024-01-19" v="59491000000">
+        <high>-1</high>
+        <low>-1</low>
+        <volume>-1</volume>
+      </latest>
       <attributes>
         <map/>
       </attributes>
       <events/>
       <isRetired>false</isRetired>
-      <updatedAt>2024-01-14T13:24:11.386700400Z</updatedAt>
+      <updatedAt>2024-01-20T08:13:17.658391100Z</updatedAt>
     </security>
     <security>
       <uuid>c2c88e26-d8e3-47ab-9dad-d210fa8d7748</uuid>
@@ -9990,8 +10012,10 @@
         <price t="2024-01-15" v="4452500000"/>
         <price t="2024-01-16" v="4425500000"/>
         <price t="2024-01-17" v="4316000000"/>
+        <price t="2024-01-18" v="4366000000"/>
+        <price t="2024-01-19" v="4305000000"/>
       </prices>
-      <latest t="2024-01-17" v="4316000000">
+      <latest t="2024-01-19" v="4305000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -10001,7 +10025,7 @@
       </attributes>
       <events/>
       <property type="FEED" name="PORTFOLIO-REPORT-MARKET">XETR</property>
-      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;BAS&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-01-17&quot;}]</property>
+      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;BAS&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-01-19&quot;}]</property>
       <isRetired>false</isRetired>
       <updatedAt>2024-01-14T13:52:31.418936900Z</updatedAt>
     </security>
@@ -10016,6 +10040,20 @@
       </attributes>
       <isRetired>false</isRetired>
       <updatedAt>2024-01-14T13:52:13.430487Z</updatedAt>
+    </security>
+    <security>
+      <uuid>82b46baf-6e11-49f0-b890-ceea17e51c7e</uuid>
+      <name>share-4</name>
+      <currencyCode>EUR</currencyCode>
+      <feed>GENERIC-JSON</feed>
+      <feedURL>https://query1.finance.yahoo.com/v8/finance/chart/NVDA?metrics=high?&amp;interval=1d&amp;range=5d</feedURL>
+      <prices/>
+      <attributes>
+        <map/>
+      </attributes>
+      <property type="FEED" name="GENERIC-JSON-DATE">chart.result[0].timestamp[0]</property>
+      <isRetired>false</isRetired>
+      <updatedAt>2024-01-20T19:17:14.196796800Z</updatedAt>
     </security>
   </securities>
   <watchlists/>
