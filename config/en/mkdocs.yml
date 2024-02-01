@@ -125,7 +125,7 @@ nav:
       - How-to: how-to/index.md
       - Downloading historical prices:
           - Downloading historical prices:  how-to/downloading-historical-prices/index.md
-          #- Alpha Vantage: how-to/downloading-historical-prices/alpha-vantage.md
+          - Alpha Vantage: how-to/downloading-historical-prices/alpha-vantage.md
           - EODHistorical Data: how-to/downloading-historical-prices/eodhd.md
           - Yahoo Finance: how-to/downloading-historical-prices/yahoo-finance.md
           - Portfolio Report: how-to/downloading-historical-prices/portfolioreport.md
