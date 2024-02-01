@@ -2696,8 +2696,18 @@
         <price t="2024-01-10" v="2245500000"/>
         <price t="2024-01-11" v="2236000000"/>
         <price t="2024-01-12" v="2250500000"/>
+        <price t="2024-01-15" v="2267000000"/>
+        <price t="2024-01-16" v="2278000000"/>
+        <price t="2024-01-17" v="2273500000"/>
+        <price t="2024-01-18" v="2289000000"/>
+        <price t="2024-01-19" v="2308000000"/>
+        <price t="2024-01-22" v="2330000000"/>
+        <price t="2024-01-23" v="2324500000"/>
+        <price t="2024-01-24" v="2326000000"/>
+        <price t="2024-01-25" v="2324500000"/>
+        <price t="2024-01-26" v="2305000000"/>
       </prices>
-      <latest t="2024-01-12" v="2250500000">
+      <latest t="2024-01-26" v="2305000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3807,8 +3817,18 @@
         <price t="2024-01-10" v="1386000000"/>
         <price t="2024-01-11" v="1379500000"/>
         <price t="2024-01-12" v="1407500000"/>
+        <price t="2024-01-15" v="1376500000"/>
+        <price t="2024-01-16" v="1376500000"/>
+        <price t="2024-01-17" v="1349000000"/>
+        <price t="2024-01-18" v="1308000000"/>
+        <price t="2024-01-19" v="1305500000"/>
+        <price t="2024-01-22" v="1327500000"/>
+        <price t="2024-01-23" v="1339500000"/>
+        <price t="2024-01-24" v="1370500000"/>
+        <price t="2024-01-25" v="1369500000"/>
+        <price t="2024-01-26" v="1333500000"/>
       </prices>
-      <latest t="2024-01-12" v="1407500000">
+      <latest t="2024-01-26" v="1333500000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -9957,8 +9977,17 @@
         <price t="2024-01-10" v="4502000000"/>
         <price t="2024-01-11" v="4483000000"/>
         <price t="2024-01-12" v="4478000000"/>
+        <price t="2024-01-15" v="4452500000"/>
+        <price t="2024-01-16" v="4425500000"/>
+        <price t="2024-01-17" v="4316000000"/>
+        <price t="2024-01-18" v="4366000000"/>
+        <price t="2024-01-19" v="4305000000"/>
+        <price t="2024-01-22" v="4281500000"/>
+        <price t="2024-01-23" v="4362000000"/>
+        <price t="2024-01-24" v="4378000000"/>
+        <price t="2024-01-25" v="4495500000"/>
       </prices>
-      <latest t="2024-01-12" v="4478000000">
+      <latest t="2024-01-25" v="4495500000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -9968,7 +9997,7 @@
       </attributes>
       <events/>
       <property type="FEED" name="PORTFOLIO-REPORT-MARKET">XETR</property>
-      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;BAS&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-01-12&quot;}]</property>
+      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;BAS&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-01-25&quot;}]</property>
       <isRetired>false</isRetired>
       <updatedAt>2024-01-13T20:04:12.205858900Z</updatedAt>
     </security>

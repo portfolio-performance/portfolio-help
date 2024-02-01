@@ -1,6 +1,6 @@
-#Mon Jan 22 11:55:16 CET 2024
-SecurityEventsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:120},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:300}]}
+#Thu Jan 25 13:51:59 CET 2024
 import-target-portfolio-Portfolio\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
+SecurityEventsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:120},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:300}]}
 ExchangeRatesListTab@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:154},{"id"\:"1","width"\:211},{"id"\:"2","width"\:210},{"id"\:"3","width"\:267}]}
 StatementOfAssetsView-newsash=200
 name.abuchen.portfolio.ui.views.SecuritiesTable$picked=ace4b28f-3207-4dc2-95fa-edc3936851f9
@@ -12,10 +12,10 @@ SecurityQuoteQualityMetricsViewer@unexpected={"items"\:[{"id"\:"0","sortDirectio
 CurrencyView-newsash=-200
 CurrencyConverterTab={"items"\:[{"id"\:"label","width"\:520},{"id"\:"value","width"\:104}]}
 name.abuchen.portfolio.ui.wizards.datatransfer.CSVImportWizard-encoding=UTF-8
-SecurityListView-newsash=175
+SecurityListView-newsash=330
 PerformanceChartView-PICKER$picked=7600e16d-0168-49d1-aadb-18c66a64bc8f
 AttributeListTab@v2={"items"\:[{"id"\:"0","width"\:250},{"id"\:"1","width"\:150},{"id"\:"2","width"\:150},{"id"\:"3","width"\:100}]}
-SecurityPriceChartPane=ALL
+SecurityPriceChartPane=Y5
 StatementOfAssetsHistoryView-PICKER$picked=6a5bd133-1dd6-439d-a4dd-f1038913cad2
 SettingsView-newsash=200
 SecuritiesPerformanceView@trades@SINGLE_SECURITY={"items"\:[{"id"\:"start","sortDirection"\:1024,"width"\:80},{"id"\:"end","width"\:80},{"id"\:"tx","width"\:80},{"id"\:"shares","width"\:80},{"id"\:"entryvalue","width"\:80},{"id"\:"exitvalue","width"\:80},{"id"\:"pl","width"\:80},{"id"\:"gpl","width"\:80},{"id"\:"holdingperiod","width"\:80},{"id"\:"irr","width"\:80},{"id"\:"note","width"\:80}]}

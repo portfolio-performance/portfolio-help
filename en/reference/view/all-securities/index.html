@@ -1016,6 +1016,198 @@
   
   
   
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../how-to/downloading-historical-prices/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Downloading historical prices
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Downloading historical prices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/downloading-historical-prices/eodhd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EODHistorical Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/downloading-historical-prices/yahoo-finance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yahoo Finance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/downloading-historical-prices/portfolioreport/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Portfolio Report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/downloading-historical-prices/csv-file/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSV File
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/downloading-historical-prices/json/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-to/downloading-historical-prices/table-website/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Table on Website
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../../how-to/importing/" class="md-nav__link">
         
@@ -1102,26 +1294,6 @@
   
   <span class="md-ellipsis">
     Copy securities between portfolios
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../how-to/portfolioreport/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Using Portfolio Report
   </span>
   
 
@@ -2047,7 +2219,9 @@
 <li>Market trend vs. Purchase Value: The additional horizontal axis intersects at the level of the purchase price of this security. </li>
 </ul>
 </li>
-<li>Marking: Additional symbols can be incorporated onto the graph to convey specific information or highlight key data points.<ul>
+<li>
+<p>Marking: Additional symbols can be incorporated onto the graph to convey specific information or highlight key data points.</p>
+<ul>
 <li>Investments: Buy (delivery inbound) and sell (delivery outbound) transactions are marked by respectively a green up-pointing triangle and a red/orange down-pointing triangle.</li>
 <li>Shares: An additional step-line is overlaid on the graph, depicting the number of shares at any given moment in time. </li>
 <li>Dividends: Dividends are illustrated on the graph using a small blue rectangle. Given that dividends typically constitute a fraction of the market price, the marker is positioned in close proximity to the origin of the y-axis.</li>
@@ -2055,10 +2229,15 @@
 <li>High/Low: A green up-pointing arrow (high) and a red down-pointing arrow (low) are added to the chart at the positions where the security reaches it highest or lowest quote.</li>
 <li>Purchase Value (FIFO): A pink step-line is super-imposed on the graph, representing the <a href="../../../concepts/purchase-value/">purchase value</a> at that moment in time. The purchase value is calculated using the First-in, First-out method.</li>
 <li>Purchase (moving average): Similar to the FIFO method, a pink step-line is added to the graph, illustrating the purchase value at each moment in time. However, in this case, the calculation method follows the <a href="../../../concepts/purchase-value/">moving average</a> principle. </li>
-<li>Show limits: ?</li>
+<li>
+<p>Show limits: before enabling this option, one has to create a new <a href="../settings/#attributes-securities">Security Attribute</a> of type Limit Price.  You should also add this attribute as an <a href="../../file/new/#security-master-data">Additional Attribute</a> to your security. Enter as limit for example <code>&gt; 17</code> (see Figure 6). An orange horizontal bar will appear at the value of 17.</p>
+<p><figure pp-figure="" id="_figure-6"><figcaption>Figure 6.  Chart with limit price indication. </figcaption><img alt="" src="../images/limit-price-missing-values.png"></figure></p>
+</li>
 </ul>
 </li>
-<li>Indicator<ul>
+<li>
+<p>Indicator</p>
+<ul>
 <li>Bollinger Bands: Consist of three bands/lines – an upper band, a middle band, and a lower band – that are plotted on a price chart. The middle band (dashed) is the simple moving average (SMA) of the security's price over a specified period. The upper and lower bands are +1/-1 standard deviation of the price from the middle band.</li>
 <li>MACD: Stands for <a href="https://www.investopedia.com/terms/m/macd.asp">Moving Average Convergence Divergence</a>. It is a popular momentum indicator used to analyze the strength and direction of a trend in a security's price.</li>
 </ul>
@@ -2071,7 +2250,7 @@
 <li>Settings<ul>
 <li>Show with Marker Lines: When marking is enabled (as described above), a vertical marker line is presented on the chart in the corresponding color, accompanied by the value adjacent to the vertical line.</li>
 <li>Show Data Labels: Alternatively, when data labels are activated, the value of the marker is displayed directly beside the marker symbol instead of placing it next to the vertical line. </li>
-<li>Show missing trading days: ?</li>
+<li>Show missing trading days: Enabling this option will draw small vertical bars at the position where historical quotes are missing for a regular business day (see for example Figure 6).</li>
 <li>Percentage axis (secondary): a new Y-axis is added at the left border of the graph. The scale is expressed in percentage, with the initial buying price set to 0%.</li>
 <li>Horizontal lines (Value axis): if a secondary percentage axis is visible, dashed horizontal lines can be aligned with the primary value axis (this option) or with the secondary percentage axis (the following option).</li>
 <li>Horizontal lines (Percentage axis): either this option or the previous one should be enabled. With this option, the dashed horizontal lines are aligned at percentage levels.</li>
@@ -2082,7 +2261,7 @@
 <p>The Historical Quotes menu in the bottom panel reveals a two-column table displaying the date and quote of the selected security in the top panel (see Figure 6). Clicking on a column header will sort the table in ascending or descending order based on that column. You can rearrange the columns by dragging the header.</p>
 <p>Double-click on the date or the quote to modify its value. Be careful when changing the date, as the new quote will overwrite any quote registered for that date.</p>
 <p>Utilize the "Export data as CSV" feature (icon to right) to save the entire table as a CSV file. The context menu (right-click) offers various management options.</p>
-<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6.  Context menu of Historical Quotes in bottom panel.</figcaption><img alt="" src="../images/contxt-mnu-all-securities-bottom-panel-hist-quotes.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-7"><figcaption>Figure 7.  Context menu of Historical Quotes in bottom panel.</figcaption><img alt="" src="../images/contxt-mnu-all-securities-bottom-panel-hist-quotes.png"></figure></p>
 <ul>
 <li>
 <p>Add: This option enables you to input the date and corresponding quote for the security. You can add quotes for any valid date, even in the future.</p>
@@ -2111,12 +2290,14 @@
 <li>
 <p>Import from CSV file ...: This command is equivalent with the <a href="../../file/import/">File &gt; Import</a> menu. The CSV file must contain at least two columns.</p>
 </li>
+</ul>
+<p><a name="import-html-table"></a></p>
+<ul>
 <li>
-<p>Import HTML table ...: This option lets you import a table with historical Quotes that you can find on a webpage. Some examples are given (see Figure 7). </p>
-<p><figure class="pp-figure" id="_figure-7"><figcaption>Figure 7.  Import HTML table from context menu Historical Quotes. </figcaption><img alt="" src="../images/contxt-mnu-all-securities-bottom-panel-hist-quotes-import-html-table.png"></figure></p>
-</li>
-<li>
-<p>Create manually: This command is identical with the <code>Add</code> option above.</p>
+<p>Import HTML table ...: This option lets you import a table with historical Quotes that you can find on a webpage. Some examples are given (see Figure 7). {#import-html-table}</p>
+<p><figure class="pp-figure" id="_figure-8"><figcaption>Figure 8.  Import HTML table from context menu Historical Quotes. </figcaption><img alt="" src="../images/contxt-mnu-all-securities-bottom-panel-hist-quotes-import-html-table.png"></figure></p>
+<p>For example, navigate to <a href="https://www.finanzen.net/historische-kurse/nvidia">https://www.finanzen.net/historische-kurse/nvidia</a>. You could also search for the security at the homepage. Enter a start and end date and a marketplace. NVIDIA is listed on XETRA. Click on Suchen (Search). Right-click the table and select View Page Source in the contaxt menu. Copy and paste everything in the PP. <br>
+    - Create manually: This command is identical with the <code>Add</code> option above.</p>
 </li>
 <li>
 <p>Export to CSV file ...: This command is identical with the <code>Export button</code> (top right).</p>
@@ -2139,7 +2320,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 23, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 1, 2024</span>
       
     
   </small>
