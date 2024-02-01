@@ -1,13 +1,16 @@
 #Thu Feb 01 17:18:26 CET 2024
-import-target-portfolio-Portfolio\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
 SecurityEventsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:120},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:300}]}
+import-target-portfolio-Portfolio\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
 ExchangeRatesListTab@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:154},{"id"\:"1","width"\:211},{"id"\:"2","width"\:210},{"id"\:"3","width"\:267}]}
 StatementOfAssetsView-newsash=200
 name.abuchen.portfolio.ui.views.SecuritiesTable$picked=ace4b28f-3207-4dc2-95fa-edc3936851f9
-name.abuchen.portfolio.ui.views.AllTransactionsView={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:164},{"id"\:"1","width"\:80},{"id"\:"2","width"\:250},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:222},{"id"\:"account","width"\:149},{"id"\:"9","width"\:120},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
+name.abuchen.portfolio.ui.views.AllTransactionsView={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:164},{"id"\:"1","width"\:80},{"id"\:"2","width"\:250},{"id"\:"3","width"\:80},{"id"\:"4","width"\:142},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:222},{"id"\:"account","width"\:149},{"id"\:"9","width"\:120},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
 FilterDropDown-filterSettings=2
 name.abuchen.portfolio.ui.views.StatementOfAssetsViewer$picked=5626df9e-7f9b-47e2-b7f4-07557fdf6e55
 CSV_IMPORT_PATH=D\:\\OneDrive\\Projects\\PortfolioPerformance\\portfolio-help\\docs\\en\\assets
+AccountListView@bottom5={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:250},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:120},{"id"\:"8","width"\:200},{"id"\:"source","width"\:120}]}
+AccountListView-newsash=342
+AccountListView@top2={"items"\:[{"id"\:"0","width"\:150},{"id"\:"1","width"\:80},{"id"\:"currency","width"\:60},{"id"\:"note","width"\:200}]}
 SecurityQuoteQualityMetricsViewer@unexpected={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:300}]}
 CurrencyView-newsash=-200
 CurrencyConverterTab={"items"\:[{"id"\:"label","width"\:520},{"id"\:"value","width"\:104}]}
@@ -25,7 +28,7 @@ BookmarksListTab@bottom={"items"\:[{"id"\:"0","width"\:150},{"id"\:"1","width"\:
 import-target-account-Account\ Transactions=a8844383-5b6c-4b59-b786-d48ccafd628b
 PortfolioListView@top2={"items"\:[{"id"\:"0","width"\:100},{"id"\:"1","width"\:160},{"id"\:"volume","width"\:100},{"id"\:"note","width"\:200}]}
 PerformanceChartView-newsash=-200
-HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:266},{"id"\:"1","width"\:266}]}
+HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:190},{"id"\:"1","width"\:266}]}
 SecurityQuoteQualityMetricsViewer@missing={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:300}]}
 import-target-portfolio-Account\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
 StatementOfAssetsHistoryView-newsash=-200

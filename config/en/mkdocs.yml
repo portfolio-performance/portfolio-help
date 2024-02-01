@@ -88,6 +88,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
   - md_in_html
   - tables
@@ -132,7 +135,7 @@ nav:
           - CSV File: how-to/downloading-historical-prices/csv-file.md
           - JSON: how-to/downloading-historical-prices/json.md
           - Table on Website: how-to/downloading-historical-prices/table-website.md
-      - Importing CSV-files: how-to/importing.md
+      #- Importing CSV-files: how-to/importing.md
       - Reinvesting dividends: how-to/reinvesting-dividends.md
       - Import fund data from Morningstar: how-to/morningstar.md
       - Hack data file to add default Quote Feed: how-to/quote-feed.md

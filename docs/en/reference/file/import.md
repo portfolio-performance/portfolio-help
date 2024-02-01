@@ -16,14 +16,14 @@ There are two primary data sources: PDF documents and CSV files. Some brokers or
 
 PP employs a wizard to lead you through the import process, consisting of three steps. At each step, you are required to furnish additional information.
 
-**Step 1**. Start with the menu `File > Import > CSV files (comma-separated values)`, navigate to the correct folder and select the appropriate CSV file. Only files with the extension `CSV` are displayed (step 1).
+**Step 1**. Start with the menu `File > Import > CSV files (comma-separated values)`, navigate to the correct folder and select the appropriate CSV file. Only files with the extension `CSV` are displayed.
 
 A CSV file is simply a text file. The first line contains the names of the fields (columns); separated by a marker such as a comma. The second and following lines contain the data, also separated by a marker. The number and type of fields the file should contain, depend on the type of import. The names in the heading can be freely chosen, although it is preferable for them to match PP's internal usage, as it simplifies the mapping process (associating each column with its corresponding field in PP). The printout of a CSV file in Table 1 (see below) comprises two fields or columns and four lines of data that could be utilized for importing historical prices.
 
 In **step 2** of the wizard, you need to select the appropriate import type or template by clicking on the drop down box (see Figure 3). PP distinguishes between 5 types of import: `Account Transactions`, `Portfolio Transactions`, `Securities`, `Historical Quotes`, and `Securities Account`. These templates are discussed in detail below. You also need to decide about the following options.
 
 - *Delimiter*: PP will probably choose the correct delimiter; in this case a semicolon. Other possibilities include comma and the tab symbol.
-- *Encoding*: 'strange' characters in the output table indicate a mismatch between the chosen encoding and the source file encoding. There are numerous possibilities, and the correct choice depends on the application used to create the file.
+- *Encoding*: "strange" characters in the output table indicate a mismatch between the chosen encoding and the source file encoding. There are numerous possibilities, and the correct choice depends on the application used to create the file. A good choice is likely `UTF-8` or `Windows-1250`. 
 - *First line contains header*: enable this option if the first line of your CSV contains field  labels.
 - *Skip lines*: sometimes the CSV-file contains irrelevant information in the first few lines. You can skip them with this option.
 - *Mapping fields*: PP needs to determine the corresponding columns for its internal fields. If PP recognizes a field, it will be indicated by a message `-> 'Field'` in the second row of the output; otherwise, a message `Double click here` will appear (see Figure 3). To associate a column with an internal PP field, double-click on the second line. You can then choose from the available fields. If you don't want to associate a field, select the `---` option. PP will then ignore this column. To change the format of a column, e.g. Date format of a date, double-click on the name in the second line.
@@ -40,9 +40,9 @@ Step 3 differs depending on the selected type of import. For the historical quot
 !!! Note
     The cash and security account could be set globally for all import rows of the CSV file through the top panel; see for example Figure 6.  You can also provide this information as part of the CSV file (include a column Cash account and Securities account). Or you can set the accounts through the context menu. Right-click on a row in the table preview and choose the appropriate account.
 
-### Historical Quotes import
+### 1. Historical Quotes import
 
-To import the historical quotes of a security, only two columns in the CSV file are required: a date and the corresponding quote. There are no optional fields.
+To import the historical quotes of a security, only two columns in the CSV file are required: a date and the corresponding quote. There are no optional fields. The name of the security needs to be provided as a separate step.
 
 *Table 1: Source data for the import of Historical Quotes.*
 ```
@@ -66,11 +66,11 @@ Figure: Importing Historical Quotes (step 3).{class=pp-figure}
 
 ![](./images/mnu-file-import-step-3-historical-prices.png)
 
-### Securities import
+### 2. Securities import
 
-Use this type to create new securities from a CSV file. There are no required fields. The optional fields include `Ticker Symbol`, `Security Name`, `WKN`, `ISIN`, `Currency`, `Date of Quote`, `Note`, and `Quote`. It is evident that at least one of the first four fields should be mapped. Refer to the [File > New](./new.md) section for the meaning of these terms. See Table 2 for an example of the CSV-file.
+Use this type to create new securities from a CSV file. There are no required fields. The optional fields include `Ticker Symbol`, `Security Name`, `WKN`, `ISIN`, `Currency`, `Date of Quote`, `Note`, and `Quote`. It is evident that at least one of the first four fields should be mapped. Refer to the [glossary](../../concepts/PP-terminology.md) for the meaning of these terms. See Table 2 for an example of the CSV-file.
 
-*Table 1: Source data for the import of Historical Prices.*
+*Table 2: Source data for the import of Historical Prices.*
 ```
 Ticker Symbol; ISIN; Security Name ;Currency
 BAS; DE000BASF111; BASF; EUR
@@ -82,7 +82,7 @@ Figure: Importing securities (Step 2).{class=pp-figure}
 
 ![](./images/mnu-file-import-securities-step-2.png)
 
-The field `Currency` is apparently not recognized by PP. You should map it manually.
+The field `Currency` is not recognized by PP; in fact it should be named `Transaction Currency`. You should map it manually. In step 3 (below), you can observe that the status of both securities contains a green check mark, indicating that the import will be successful. Click Finish.
 
 Figure: Importing securities (Step 3).{class=pp-figure}
 
@@ -98,9 +98,9 @@ Figure: Importing securities (Step 4).{class=pp-figure}
 
 Only securities listed on XETRA (Deutsche Börse) and analyzed by the Portfolio Report are eligible for an automatic Quote Feed. The BASF security in Figure 7 meets these criteria and can therefore receive an automatic quote feed. However, the NVIDIA security is not listed on XETRA in USD, so automatic quotes should be obtained through another candidate provider e.g. Yahoo Finance.
 
-### Securities Account import
+### 3. Securities Account import
 
-With this import type, you can create a new security (see above) and at the same time the first Buy transaction. The required fields are Shares, and Value. The optional fields are Ticker Symbol, ISIN, WKN, Time, Currency, Note, Date of Quote, Securities Account, Cash Account, Quote, Date of Value, and Security Name. This works well as long as the securities have the same currency. The following CSV file will be imported in Figure 8.
+With this import type, you can create a new security (see above), while adding at the same time the first Buy transaction. The required fields are `Shares`, and `Value`. The optional fields are `Ticker`, `Symbol`, `ISIN`, `WKN`, `Time`, `Currency`, `Note`, `Date of Quote`, `Securities Account`, `Cash Account`, `Quote`, `Date of Value`, and `Security Name`. This works well as long as the securities have the same currency. The following CSV file will be imported in Figure 8.
 ```
 Ticker Symbol; ISIN; Security Name; Currency; shares; value
 BAS; DE000BASF111; BASF; EUR; 20; 900
@@ -117,21 +117,27 @@ Figure: Importing securities (Step 4).{class=pp-figure}
 ![](./images/mnu-file-import-securities-account-step-2.png)
 
 
-### Account Transactions import
+### 4. Account Transactions import
 
-The Account Transactions and Portfolio Transactions import are much a like. They only differ in the number of required fields (2 versus 3) and one optional field (see below).
+The Account Transactions import type will be used to register transactions on a deposit or cash account such as deposit, removal, interest, ... It is equivalent with manual recording a transaction with the menu Transaction (third group). The required fields are `Date`, and `Value`.
 
-The Transactions import type will be used to register simple transactions within one security account. It is equivalent with manual recording a transaction with the menu Transactions. The required fields are `Date`, and `Value`. Optional fields are `Type`, `Transaction Currency`, `Security Name`, `Shares`, `Securities Account`, `Exchange Rate`, `Gross Amount`, `Currency Gross Amount`, `Ticker Symbol`, `Taxes`, `Note`, `Cash Account`, `Fees`, `ISIN`, `WKN`, `Offset Account`, and `Time`.
+!!! Important
+    The Account Transactions and Portfolio Transactions import types are quite similar. Internally, an account transaction is reserved to work with cash accounts and their transactions such as deposits. A portfolio transaction works with instruments and their transactions: buy, sell, delivery, ... A buy/sell transaction however has both components: something is added/removed from the securities account and some money is deducted/added to the cash account. In most cases, both types could be used interchangeably.
 
-Acceptable values for the field `Type` are `Deposit`, `Removal`, `Buy`, `Sell`, `Dividend`, `Interest`, `Interest Charge`, `Fees`, `Fees Refund`, `Taxes`, `Tax Refund`, `Transfer (Inbound)`, `Transfer (Outbound)`, `Delivery (Inbound)`, and `Delivery (Outbound)`.
+    :warning: 
+    <span style="color:orange">Use Account Transactions type for deposit, removal, ... and Portfolio Transactions type for buy, sell, ...</span>
 
-The default value for `Type` is `Deposit`. If the Cash and Securities account is not provided in the CSV file, the value from the top panel is used. It's important to note that Fees and Taxes can be included as part of the Buy or Sell transaction through a dedicated column in the CSV file. In this case, the taxes and fees are subtracted from the total value field (Value = Gross Amount + Taxes + Fees). Alternatively, a separate transaction with the type Fees or Taxes can be created, and the amount is then specified in the Value column. In this case, the fees and taxes are added to the value.
+The required fields are `Date`, and `Value`. Optional fields are `Type`, `Transaction Currency`, `Security Name`, `Shares`, `Securities Account`, `Exchange Rate`, `Gross Amount`, `Currency Gross Amount`, `Ticker Symbol`, `Taxes`, `Note`, `Cash Account`, `Fees`, `ISIN`, `WKN`, `Offset Account`, and `Time`.
+
+Acceptable values for the field `Type` are `Deposit`, `Removal`, `Buy`, `Sell`, `Dividend`, `Interest`, `Interest Charge`, `Fees`, `Fees Refund`, `Taxes`, `Tax Refund`, `Transfer (Inbound)`, `Transfer (Outbound)`, `Delivery (Inbound)`, and `Delivery (Outbound)`. The default value for `Type` is `Deposit`.
+
+If the Cash and Securities account are not provided in the CSV file, the value from the top panel is used. It's important to note that Fees and Taxes can be included as part of the Buy or Sell transaction through a dedicated column in the CSV file. In this case, the taxes and fees are subtracted from the total value field (Value = Gross Amount + Taxes + Fees). Alternatively, a separate transaction with the type Fees or Taxes can be created, and the amount is then specified in the Value column. In this case, the fees and taxes are added to the value.
 
 Figure: Importing account transactions - content CSV file{class=pp-figure}
 
 ![](./images/mnu-file-import-account-transactions-csv-file.png)
 
-Figure 8 displays the content of a sample CSV file. Four transactions are described. Note that the Cash account of the first transaction is not provided. The default account from the top panel is taken in that case.
+Figure 9 displays the content of a sample CSV file. Four transactions are described. Note that the Cash account of the first transaction is not provided. The default account from the top panel is taken in that case.
 
 Figure: Importing account transactions - content CSV file{class=pp-figure}
 
@@ -141,11 +147,32 @@ Figure: Importing account transactions - content CSV file{class=pp-figure}
 
 ![](./images/mnu-file-import-account-transactions-step-3.png)
 
-### Portfolio Transactions import
+### 5. Portfolio Transactions import
 
 This type of import requires three fields: Shares, Date, Value. The optional fields are the same as above; except that the optional Offset Account field is replaced with Offset Securities Account.
 
 Because the number of shares is a required field, one would assume that simple deposit of removal transactions are not allowed; but they are. The number of shares is ignored.
 
-The acceptable values for the field `Type` are: Deposit, Removal, Interest, Interest Charge, Dividend, Fees, Fees Refund, Taxes, Tax Refund, Buy, Sell, Transfer (Inbound), and Transfer (Outbound). The default value of Type is Sell.
+The acceptable values for the field `Type` are: `Deposit`, `Removal`, `Interest`, `Interest Charge`, `Dividend`, `Fees`, `Fees Refund`, `Taxes`, `Tax Refund`, `Buy`, `Sell`, `Transfer (Inbound)`, and `Transfer (Outbound)`. The default value of Type is `Sell`.
+
+Suppose that you want to import two portfolio transactions: a sell of 2 shares of BASF in EUR and a buy of 3 shares NVIDIA in USD. Since we are using the EUR cash account in both cases, the transaction in USD must be converted into EUR. The CSV file should look as follows.
+
+```
+Date; Type; Shares; Security Name; Value; Gross Amount; Exchange rate; fees;taxes; Transaction Currency; Currency Gross Amount
+2024-01-04;	Sell; 2; BASF; 90;;; 5;3;;		
+2024-01-13;	Buy; 3; NVIDIA; 1741,34; 1860; 1,0837,15; 10; EUR; USD
+```
+Please note that several fields are without value in case of the BASF transaction i.e. Exchange Rate. Figure 12 displays the result of this import transaction.
+
+
+Figure: Result of import from above. {class=pp-figure}
+
+![](images/mnu-file-import-portfolio-account-transactions-result.svg)
+
+Figure 13 displays the first step of the Import wizard. Be sure that the type Portfolio Transactions is selected in step 1; otherwise an error will occur in step 2.  
+
+Figure: Result of import from above. {class=pp-figure}
+
+![](images/mnu-file-import-portfolio-transactions.png)
+
 
