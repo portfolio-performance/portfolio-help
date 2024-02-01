@@ -72,10 +72,10 @@ At the bottom of Figure 3, you can add a personal `note` for this security.
 
     ![](images/quote-feeds.png)
 
-    Downloading historical prices for large-cap (big companies) stocks is relatively straightforward. However, obtaining data for less common stocks, mutual funds, bonds, bitcoin, etc., can sometimes be more challenging. We explore these topics in depth in [Downloading Historial Prices](../../how-to/download-historical-prices.md) in the how-to section.   
+    Downloading historical prices for large-cap (big companies) stocks is relatively straightforward. However, obtaining data for less common stocks, mutual funds, bonds, bitcoin, etc., can sometimes be more challenging. We explore these topics in depth in [Downloading Historical Prices](../../how-to/downloading-historical-prices.md) in the how-to section.   
 
     !!! Note
-        An alternative but convenient method for securities listed on XETRA is to utilize the Portfolio Report website. See [how-to > Using Portfolio Report](../../how-to/portfolioreport.md) for more info.
+        An alternative but convenient method for securities listed on XETRA is to utilize the Portfolio Report website. See [how-to > Using Portfolio Report](../../how-to/historical-prices/portfolioreport.md) for more info.
 
 - ### **Latest Quote**
 

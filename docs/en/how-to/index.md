@@ -14,4 +14,4 @@ This chapter outlines various standard procedures and workflows such as importin
 
 - [Copy securities between portfolios](./copy-securities.md): A rather well hidden but easy method to manually copy securities between two portfolios within the PP app.
 
-- [Using Portfolio Report](portfolioreport.md): Easily adding securities and their Quote Feed to tour portfolio.
+- [Using Portfolio Report](historical-prices/portfolioreport.md): Easily adding securities and their Quote Feed to tour portfolio.

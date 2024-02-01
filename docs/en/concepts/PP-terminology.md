@@ -47,10 +47,6 @@ Fundamental concepts such as account, transaction, reporting period, purchase va
 
 - Quote Feed (latest): data source or provider of the latest quotes (same list as above) or could be set as "same as historical quotes".
 
-- URL (historic quotes): the URL that should be provided, if the choice in Quote Feed is set to Table on website or JSON.
-
-- URL (latest quotes): see above but for the latest quote provider.
-
 - Source: data source used in `File > New Security` Search. Possible source are: [Yahoo Finance](https://finance.yahoo.com/) provides financial news and data including stock quotes, press releases, and financial reports. [CoinGecko](https://www.coingecko.com/) is a website with real-time information on most cryptocurrencies. [Portfolio Report](https://www.portfolio-report.net/search) is an open source project that aims to provide centralized portfolio performance data.
 
 - Symbol: the abbreviation (ticker) used by the data source.
@@ -58,6 +54,10 @@ Fundamental concepts such as account, transaction, reporting period, purchase va
 - Target Currency: 
 
 - Type: can be Share, Bond, Cryptocurrency, Aktie (German for stock or share), Währung (=German for currency), Futures, etf, fonds (= funds).
+
+- URL (historic quotes): the URL that should be provided, if the choice in Quote Feed is set to Table on website or JSON.
+
+- URL (latest quotes): see above but for the latest quote provider.
 
 - WKN: *Wertpapierkennnummer*. A German six-digit alphanumeric code for the identification of a security, now replaced by the ISIN code.
 

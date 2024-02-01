@@ -90,7 +90,12 @@ With Configuration chart icon (gear at the top right) you set numerous additiona
     - High/Low: A green up-pointing arrow (high) and a red down-pointing arrow (low) are added to the chart at the positions where the security reaches it highest or lowest quote.
     - Purchase Value (FIFO): A pink step-line is super-imposed on the graph, representing the [purchase value](../../concepts/purchase-value.md) at that moment in time. The purchase value is calculated using the First-in, First-out method.
     - Purchase (moving average): Similar to the FIFO method, a pink step-line is added to the graph, illustrating the purchase value at each moment in time. However, in this case, the calculation method follows the [moving average](../../concepts/purchase-value.md) principle. 
-    - Show limits: ?
+    - Show limits: before enabling this option, one has to create a new [Security Attribute](../view/settings.md#attributes-securities) of type Limit Price.  You should also add this attribute as an [Additional Attribute](../file/new.md#security-master-data) to your security. Enter as limit for example `> 17` (see Figure 6). An orange horizontal bar will appear at the value of 17.
+
+        Figure: Chart with limit price indication. {pp-figure}
+
+        ![](images/limit-price-missing-values.png)
+
 - Indicator
     - Bollinger Bands: Consist of three bands/lines – an upper band, a middle band, and a lower band – that are plotted on a price chart. The middle band (dashed) is the simple moving average (SMA) of the security's price over a specified period. The upper and lower bands are +1/-1 standard deviation of the price from the middle band.
     - MACD: Stands for [Moving Average Convergence Divergence](https://www.investopedia.com/terms/m/macd.asp). It is a popular momentum indicator used to analyze the strength and direction of a trend in a security's price.
@@ -100,7 +105,7 @@ With Configuration chart icon (gear at the top right) you set numerous additiona
 - Settings
     - Show with Marker Lines: When marking is enabled (as described above), a vertical marker line is presented on the chart in the corresponding color, accompanied by the value adjacent to the vertical line.
     - Show Data Labels: Alternatively, when data labels are activated, the value of the marker is displayed directly beside the marker symbol instead of placing it next to the vertical line. 
-    - Show missing trading days: ?
+    - Show missing trading days: Enabling this option will draw small vertical bars at the position where historical quotes are missing for a regular business day (see for example Figure 6).
     - Percentage axis (secondary): a new Y-axis is added at the left border of the graph. The scale is expressed in percentage, with the initial buying price set to 0%.
     - Horizontal lines (Value axis): if a secondary percentage axis is visible, dashed horizontal lines can be aligned with the primary value axis (this option) or with the secondary percentage axis (the following option).
     - Horizontal lines (Percentage axis): either this option or the previous one should be enabled. With this option, the dashed horizontal lines are aligned at percentage levels.
@@ -135,13 +140,15 @@ Figure: Context menu of Historical Quotes in bottom panel.{class=pp-figure}
     
     - Import from CSV file ...: This command is equivalent with the [File > Import](../file/import.md) menu. The CSV file must contain at least two columns.
     
-    - Import HTML table ...: This option lets you import a table with historical Quotes that you can find on a webpage. Some examples are given (see Figure 7). 
+    <a name="import-html-table"></a>
+
+    - Import HTML table ...: This option lets you import a table with historical Quotes that you can find on a webpage. Some examples are given (see Figure 7). {#import-html-table}
         
         Figure: Import HTML table from context menu Historical Quotes. {class=pp-figure}
 
         ![](images/contxt-mnu-all-securities-bottom-panel-hist-quotes-import-html-table.png)
 
-
+        For example, navigate to [https://www.finanzen.net/historische-kurse/nvidia](https://www.finanzen.net/historische-kurse/nvidia). You could also search for the security at the homepage. Enter a start and end date and a marketplace. NVIDIA is listed on XETRA. Click on Suchen (Search). Right-click the table and select View Page Source in the contaxt menu. Copy and paste everything in the PP.   
     - Create manually: This command is identical with the `Add` option above.
 
     - Export to CSV file ...: This command is identical with the `Export button` (top right).

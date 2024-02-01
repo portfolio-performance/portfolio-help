@@ -123,12 +123,20 @@ nav:
       - Historical prices: concepts/historical-prices.md
   - How-to:
       - How-to: how-to/index.md
+      - Downloading historical prices:
+          - Downloading historical prices:  how-to/downloading-historical-prices/index.md
+          #- Alpha Vantage: how-to/downloading-historical-prices/alpha-vantage.md
+          - EODHistorical Data: how-to/downloading-historical-prices/eodhd.md
+          - Yahoo Finance: how-to/downloading-historical-prices/yahoo-finance.md
+          - Portfolio Report: how-to/downloading-historical-prices/portfolioreport.md
+          - CSV File: how-to/downloading-historical-prices/csv-file.md
+          - JSON: how-to/downloading-historical-prices/json.md
+          - Table on Website: how-to/downloading-historical-prices/table-website.md
       - Importing CSV-files: how-to/importing.md
       - Reinvesting dividends: how-to/reinvesting-dividends.md
       - Import fund data from Morningstar: how-to/morningstar.md
       - Hack data file to add default Quote Feed: how-to/quote-feed.md
       - Copy securities between portfolios: how-to/copy-securities.md
-      - Using Portfolio Report: how-to/portfolioreport.md
   - Reference manual:
       - Reference manual: reference/index.md
       - File Menu:

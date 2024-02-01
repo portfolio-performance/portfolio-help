@@ -25,7 +25,7 @@ You can type (part of) the security name in the search box, e.g. *NVID*. After c
 After selecting the appropriate security, click on the Apply button to move on to the next step. Certain information, such as name, symbol, and historical quotes, will be pre-filled based on the selected data source. You have the flexibility to modify all this information, including the name. In Figure 3, it is evident that the currency for the NVIDIA share is incorrectly set to EUR.
 
 !!! Note
-    An alternative but very convenient method for securities listed on XETRA is to utilize the Portfolio Report website. Adding a security is as easy as drag & drop a link from that website into PP. See [how-to > Using Portfolio Report](../how-to/portfolioreport.md) for more info.
+    An alternative but very convenient method for securities listed on XETRA is to utilize the Portfolio Report website. Adding a security is as easy as drag & drop a link from that website into PP. See [how-to > Using Portfolio Report](../how-to/historical-prices/portfolioreport.md) for more info.
 
 Figure: Panel for entering info about the selected security.{class=pp-figure}
 

@@ -23,7 +23,7 @@ title: Settings
 
     The available placeholders are listed in the context menu (accessible via right-click) on the bookmarks page under the "Insert replacement" option (see figure 2): {isin}, {name}, {wkn}, {tickersymbol}, and {tickersymbolprefix}. In the ticker format XXX.YY (for instance, DTE.DE), XXX corresponds to {tickersymbolprefix}, and xxx.YY represents {tickersymbol}. For some websites, you may need only the {tickersymbolprefix}.
 
-    With this pontext menu, you can manage the bookmark list.
+    With this context menu, you can manage the bookmark list.
 
     - **Open in browser**: a second pop-up displays all available securities; this could be a very long, unsorted list. Opening a webpage from a selected security within the `All securties` view is a better approach.
     -**Move up**: moves a bookmark one line up in the list; for example to sort the bookmarks in a particular order.

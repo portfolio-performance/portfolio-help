@@ -14,7 +14,7 @@ You can use PR to create securities or to provide historical prices for already 
 
     Figure: Search Result{class=pp-figure}
 
-    ![](./images/portfolio-report-search-result.png)
+    ![](../images/portfolio-report-search-result.png)
 
     If the security is in PR's database, the name (e.g *BASF S NA O.N.*), ISIN (*DE000BASF111*), and WKN (*BASF11*) are displayed, together with a logo of the security (*We create chemistry*) and some extra information such as the trading market (*XETRA*), the currency (*EUR*), the ticker symbol on the specified trading market (*BAS*), the availability of prices (*2000-01-03 - 2024-01-12*), the country (*Germany*) and the industry sector (*Materials*) of the company. On a second tab `Prices`, you can find the historical prices of the security.
 
@@ -24,7 +24,7 @@ You can use PR to create securities or to provide historical prices for already 
 
     Figure: Using Portfolio Report to create a security.{class=pp-figure}
 
-    ![](./images/portfolio-report-drag-drop.svg)
+    ![](../images/portfolio-report-drag-drop.svg)
 
 - You can verify the successful addition of the newly created security by checking the master data tab. A message stating `Linked to Portfolio Report` should be visible (see Figure 3). Additionally, on the Historical Quotes tab, the Quote Feed should be populated with the correct information.
 
@@ -32,7 +32,7 @@ You can use PR to create securities or to provide historical prices for already 
 
     Figure: Master data and historical prices of newly created security. {class=pp-figure}
 
-    ![](./images/portfolio-report-created-security.svg)
+    ![](../images/portfolio-report-created-security.svg)
 
 ## Linking an existing security with PR
 
