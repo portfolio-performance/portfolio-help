@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://help.portfolio-performance.info/en/how-to/downloading-historical-prices/alpha-vantage/">
       
       
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../eodhd/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -942,6 +946,8 @@
       
   
   
+    
+  
   
     
     
@@ -966,12 +972,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           
@@ -993,7 +999,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             How-to
@@ -1005,6 +1011,8 @@
               
                 
   
+  
+    
   
   
     
@@ -1026,16 +1034,18 @@
       
         
       
+        
+      
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
         
           
           
@@ -1057,13 +1067,41 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_2">
             <span class="md-nav__icon md-icon"></span>
             Downloading historical prices
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Alpha Vantage
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
               
             
               
@@ -2047,10 +2085,10 @@
 
 <p>Alpha Vantage provides realtime and historical financial prices through data APIs and spreadsheets. You can request a <a href="https://www.alphavantage.co/support/">free API key</a> with lifetime access covering the majority of the datasets for up to 25 requests per day. Realtime quotes and some other resources however are premium.</p>
 <p>The <a href="https://www.alphavantage.co/documentation/">API documentation</a> is very well written with many examples. These examples can be executed in the browser with a provided demo API-key.  If you want to execute your own queries, you need the free API key.</p>
-<p>Download the NVIDIA historical prices.
-https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&amp;symbol=NVDA&amp;apikey=my_API_key</p>
-<p>This will return some metadata and the last 100 historical quotes. If you want all available historical prices, use the option "outputsize=full".</p>
-<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{
+<p>Download the NVIDIA historical prices.</p>
+<p><code>https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&amp;symbol=NVDA&amp;apikey=my_API_key</code></p>
+<p>This will return some metadata and the last 100 historical quotes in the browser window. If you want all available historical prices, use the option "outputsize=full".</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    "Meta Data": {
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        "1. Information": "Daily Prices (open, high, low, close) and Volumes",
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        "2. Symbol": "NVDA",
@@ -2076,17 +2114,14 @@ https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&amp;symbol=NVDA&amp
 <a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    }
 <a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>}
 </code></pre></div>
-Path to Date: $.[Time Series (Daily)].*~
-<p>Path to Close: $.[Time Series (Daily)].[*].[4. close]</p>
-<p>The symbol list can be downloaded as a csv file with the same API key. ThAvailable fields are: symbol, name, type, region, marketOpen, marketClose, timezone, currency, matchScore
- For example
-symbol, name, type, region, marketOpen, marketClose, timezone, currency, matchScore
-BA, Boeing Company, Equity, United States, 09:30, 16:00, UTC-04, USD, 1.0000
-BABA, Alibaba Group Holding Ltd, Equity, United States, 09:30, 16:00, UTC-04, USD, 0.6667</p>
-<p>https://www.alphavantage.co/query?function=SYMBOL_SEARCH&amp;keywords=tesco&amp;apikey=demo</p>
-<p>https://www.alphavantage.co/documentation/#symbolsearch</p>
-<p>$.['Time Series (Daily)'].*~</p>
-<p>$.['Time Series (Daily)'].[*].['4. close']</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As of January 2024, Alpha Vantage changed some parameters and PP's JSON Quote Feed is no longer functional for this URL. The <code>Path to Date</code> and <code>Path to Close</code> JSON paths below result in an error; even if they are, according to the <a href="https://jsonpath.com/">JSONPath Online Evaluator</a>a valid JSON path.</p>
+<ul>
+<li>Path to Date: <code>$.[Time Series (Daily)].*~</code></li>
+<li>Path to Close: <code>$.[Time Series (Daily)].[*].[4. close]</code></li>
+</ul>
+</div>
 
   <hr>
 <div class="md-source-file">
