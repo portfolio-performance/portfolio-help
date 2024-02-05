@@ -140,6 +140,8 @@ nav:
       - Import fund data from Morningstar: how-to/morningstar.md
       - Hack data file to add default Quote Feed: how-to/quote-feed.md
       - Copy securities between portfolios: how-to/copy-securities.md
+      - Recording a spin-off operation: how-to/recording-spin-off.md
+      
   - Reference manual:
       - Reference manual: reference/index.md
       - File Menu:

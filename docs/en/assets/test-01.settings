@@ -1,4 +1,4 @@
-#Sun Jan 14 12:18:29 CET 2024
+#Mon Feb 05 22:20:51 CET 2024
 import-target-portfolio-Portfolio\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
 ExchangeRatesListTab@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:150},{"id"\:"3","width"\:150}]}
 StatementOfAssetsView-newsash=200
@@ -19,7 +19,7 @@ CurrencyConverterTab={"items"\:[{"id"\:"label","width"\:520},{"id"\:"value","wid
 InvestmentPlanListView@top={"items"\:[{"id"\:"0","width"\:100},{"id"\:"1","width"\:250},{"id"\:"2","width"\:120},{"id"\:"3","width"\:120},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"9","width"\:80},{"id"\:"10","width"\:80}]}
 name.abuchen.portfolio.ui.wizards.datatransfer.CSVImportWizard-encoding=UTF-8
 IMPORT_NOTESSecurities=true
-SecurityListView-newsash=399
+SecurityListView-newsash=456
 TransactionsTab@v3={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:250},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:120},{"id"\:"9","width"\:200}]}
 SecurityPriceChartPane=Y2
 InvestmentPlanListView-newsash=200
@@ -38,7 +38,7 @@ HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:152},{
 PaymentsView-newsash=-200
 import-target-portfolio-Account\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
 name.abuchen.portfolio.ui.views.panes.TransactionsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:250},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"account","width"\:120},{"id"\:"9","width"\:120},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
-StatementOfAssetsHistoryView-newsash=-200
+StatementOfAssetsHistoryView-newsash=-11
 IMPORT_NOTESAccount\ Transactions=true
 IMPORT_NOTESSecurities\ Account=true
 AllTransactionsView-newsash=200
