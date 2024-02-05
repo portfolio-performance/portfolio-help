@@ -8690,9 +8690,9 @@
         <price t="2024-01-29" v="62465000000"/>
         <price t="2024-01-30" v="62774000000"/>
         <price t="2024-01-31" v="61527000000"/>
-        <price t="2024-02-01" v="61988000000"/>
+        <price t="2024-02-01" v="61952910000"/>
       </prices>
-      <latest t="2024-02-01" v="61996000000">
+      <latest t="2024-02-01" v="62604000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -8745,79 +8745,6 @@
                   <updatedAt>2024-01-14T16:03:37.291909200Z</updatedAt>
                   <type>BUY</type>
                 </portfolio-transaction>
-                <portfolio-transaction>
-                  <uuid>9056562b-e47e-41bf-b44e-8751479be08f</uuid>
-                  <date>2024-01-04T00:00</date>
-                  <currencyCode>EUR</currencyCode>
-                  <amount>9000</amount>
-                  <security reference="../../../../../../../../../securities/security"/>
-                  <crossEntry class="buysell">
-                    <portfolio reference="../../../.."/>
-                    <portfolioTransaction reference="../.."/>
-                    <account reference="../../../../../../../.."/>
-                    <accountTransaction>
-                      <uuid>527998c3-574f-4e9b-9787-36cfd289559b</uuid>
-                      <date>2024-01-04T00:00</date>
-                      <currencyCode>EUR</currencyCode>
-                      <amount>9000</amount>
-                      <security reference="../../../../../../../../../../../securities/security"/>
-                      <crossEntry class="buysell" reference="../.."/>
-                      <shares>0</shares>
-                      <updatedAt>2024-02-01T14:56:52.810545300Z</updatedAt>
-                      <type>SELL</type>
-                    </accountTransaction>
-                  </crossEntry>
-                  <shares>200000000</shares>
-                  <units>
-                    <unit type="FEE">
-                      <amount currency="EUR" amount="500"/>
-                    </unit>
-                    <unit type="TAX">
-                      <amount currency="EUR" amount="300"/>
-                    </unit>
-                  </units>
-                  <updatedAt>2024-02-01T14:56:52.810545300Z</updatedAt>
-                  <type>SELL</type>
-                </portfolio-transaction>
-                <portfolio-transaction>
-                  <uuid>99ba27b5-f686-4473-a667-48bb365c703c</uuid>
-                  <date>2024-01-13T00:00</date>
-                  <currencyCode>EUR</currencyCode>
-                  <amount>174134</amount>
-                  <security reference="../../../../../../../../../securities/security[2]"/>
-                  <crossEntry class="buysell">
-                    <portfolio reference="../../../.."/>
-                    <portfolioTransaction reference="../.."/>
-                    <account reference="../../../../../../../.."/>
-                    <accountTransaction>
-                      <uuid>3f441ec2-160a-4398-81a3-2fd1a9118283</uuid>
-                      <date>2024-01-13T00:00</date>
-                      <currencyCode>EUR</currencyCode>
-                      <amount>174134</amount>
-                      <security reference="../../../../../../../../../../../securities/security[2]"/>
-                      <crossEntry class="buysell" reference="../.."/>
-                      <shares>0</shares>
-                      <updatedAt>2024-02-01T14:56:52.810545300Z</updatedAt>
-                      <type>BUY</type>
-                    </accountTransaction>
-                  </crossEntry>
-                  <shares>300000000</shares>
-                  <units>
-                    <unit type="FEE">
-                      <amount currency="EUR" amount="1500"/>
-                    </unit>
-                    <unit type="TAX">
-                      <amount currency="EUR" amount="1000"/>
-                    </unit>
-                    <unit type="GROSS_VALUE">
-                      <amount currency="EUR" amount="171634"/>
-                      <forex currency="USD" amount="158378"/>
-                      <exchangeRate>1.0837</exchangeRate>
-                    </unit>
-                  </units>
-                  <updatedAt>2024-02-01T14:56:52.810545300Z</updatedAt>
-                  <type>BUY</type>
-                </portfolio-transaction>
               </transactions>
               <attributes>
                 <map/>
@@ -8832,8 +8759,6 @@
           <updatedAt>2024-01-14T16:03:37.291909200Z</updatedAt>
           <type>BUY</type>
         </account-transaction>
-        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/accountTransaction"/>
-        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[3]/crossEntry/accountTransaction"/>
       </transactions>
       <attributes>
         <map/>
