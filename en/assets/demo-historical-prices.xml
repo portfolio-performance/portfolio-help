@@ -72,11 +72,17 @@
         <price t="2024-01-29" v="62465002441"/>
         <price t="2024-01-30" v="62773999023"/>
         <price t="2024-01-31" v="61527001953"/>
+        <price t="2024-02-05" v="69332000732"/>
+        <price t="2024-02-06" v="68222998047"/>
+        <price t="2024-02-07" v="70098999023"/>
+        <price t="2024-02-08" v="69640997314"/>
+        <price t="2024-02-09" v="72133001709"/>
+        <price t="2024-02-12" v="73849987793"/>
       </prices>
-      <latest t="2024-02-01" v="62054498291">
+      <latest t="2024-02-12" v="72334002686">
         <high>-1</high>
         <low>-1</low>
-        <volume>13309083</volume>
+        <volume>56035771</volume>
       </latest>
       <attributes>
         <map/>
@@ -6238,8 +6244,15 @@
         <price t="2024-01-29" v="4506000000"/>
         <price t="2024-01-30" v="4447000000"/>
         <price t="2024-01-31" v="4446000000"/>
+        <price t="2024-02-01" v="4413500000"/>
+        <price t="2024-02-02" v="4468000000"/>
+        <price t="2024-02-05" v="4460500000"/>
+        <price t="2024-02-06" v="4535000000"/>
+        <price t="2024-02-07" v="4459000000"/>
+        <price t="2024-02-08" v="4470500000"/>
+        <price t="2024-02-09" v="4402000000"/>
       </prices>
-      <latest t="2024-01-31" v="4446000000">
+      <latest t="2024-02-09" v="4402000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -6249,7 +6262,7 @@
       </attributes>
       <events/>
       <property type="FEED" name="PORTFOLIO-REPORT-MARKET">XETR</property>
-      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;BAS&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-01-31&quot;}]</property>
+      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;BAS&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-02-09&quot;}]</property>
       <isRetired>false</isRetired>
       <updatedAt>2024-01-14T13:52:31.418936900Z</updatedAt>
     </security>
@@ -12593,11 +12606,19 @@
         <price t="2024-01-29" v="62465002441"/>
         <price t="2024-01-30" v="62773999023"/>
         <price t="2024-01-31" v="61527001953"/>
+        <price t="2024-02-01" v="63027001953"/>
+        <price t="2024-02-02" v="66159997559"/>
+        <price t="2024-02-05" v="69332000732"/>
+        <price t="2024-02-06" v="68222998047"/>
+        <price t="2024-02-07" v="70098999023"/>
+        <price t="2024-02-08" v="69640997314"/>
+        <price t="2024-02-09" v="72133001709"/>
+        <price t="2024-02-12" v="73834997559"/>
       </prices>
-      <latest t="2024-02-01" v="62060009766">
-        <high>62482000732</high>
-        <low>61650000000</low>
-        <volume>13309186</volume>
+      <latest t="2024-02-12" v="72334002686">
+        <high>74610998535</high>
+        <low>71250000000</low>
+        <volume>56035771</volume>
       </latest>
       <attributes>
         <map/>
@@ -12641,10 +12662,18 @@
         <price t="2024-01-29" v="62478000000"/>
         <price t="2024-01-30" v="62774000000"/>
         <price t="2024-01-31" v="61527000000"/>
+        <price t="2024-02-01" v="63027000000"/>
+        <price t="2024-02-02" v="66160000000"/>
+        <price t="2024-02-05" v="69332000000"/>
+        <price t="2024-02-06" v="68219000000"/>
+        <price t="2024-02-07" v="70099000000"/>
+        <price t="2024-02-08" v="69654000000"/>
+        <price t="2024-02-09" v="72133000000"/>
+        <price t="2024-02-12" v="73662000000"/>
       </prices>
-      <latest t="2024-02-01" v="62254000000">
-        <high>62474000000</high>
-        <low>62048000000</low>
+      <latest t="2024-02-12" v="72563000000">
+        <high>72760000000</high>
+        <low>72379000000</low>
         <volume>0</volume>
       </latest>
       <attributes>
