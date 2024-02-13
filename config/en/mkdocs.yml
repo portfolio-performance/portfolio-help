@@ -141,6 +141,7 @@ nav:
       - Hack data file to add default Quote Feed: how-to/quote-feed.md
       - Copy securities between portfolios: how-to/copy-securities.md
       - Recording a spin-off operation: how-to/recording-spin-off.md
+      - Recording a stock split operation: how-to/recording-stock-split.md
       
   - Reference manual:
       - Reference manual: reference/index.md
@@ -152,7 +153,8 @@ nav:
       - View Menu:
           - Options: reference/view/options.md
           - Securities:
-              - All Securities: reference/view/all-securities.md
+              - All Securities: reference/view/securities/all-securities.md
+              - Context Menu: reference/view/securities/context-menu.md
           - Reports:
               - Statement of Assets:
                 - Statement of Assets: reference/view/reports/statement.md

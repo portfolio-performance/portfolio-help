@@ -10,9 +10,7 @@ For example, the following [endpoint URL](https://eodhd.com/api/eod/AAPL?from=20
 
 `https://eodhd.com/api/eod/AAPL?from=2024-01-15&to=2024-01-17&period=d&api_token=demo&fmt=json`
 
-Certainly! Here's an improved version of your text:
-
-"As of January, 2024, the demo API token or key provided is still valid. If it ceases to function in the future, kindly apply for a [free API key](./eodhd.md). The expected result should appear as follows (click the link above to view in your browser):"
+As of January, 2024, the demo API token or key provided is still valid. If it ceases to function in the future, kindly apply for a [free API key](./eodhd.md).
 
 ``` JSON
 [

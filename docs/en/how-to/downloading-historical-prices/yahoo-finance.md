@@ -2,7 +2,7 @@
 title: Yahoo Finance
 ---
 
-Yahoo Finance provides a wide array of tools and financial resources, including historical and real-time stock quotes, interactive charts, and news updates that cover a diverse range of financial markets.
+[Yahoo Finance](https://finance.yahoo.com/) provides a wide array of tools and financial resources, including historical and real-time stock quotes, interactive charts, and news updates that cover a diverse range of financial markets.
 
 Figure: Yahoo Finance website with historical prices of Deutsche Telekom.{class=pp-figure}
 

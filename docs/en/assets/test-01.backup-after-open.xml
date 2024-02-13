@@ -22950,7 +22950,7 @@
     <security>
       <uuid>d8ca67cd-921e-4a18-84d7-2dc6056e2e2d</uuid>
       <onlineId>b7f458d6debe41288ee029cbbdc9ed69</onlineId>
-      <name>PROSUS NV</name>
+      <name>PROSUS NV         EO -,05</name>
       <currencyCode>EUR</currencyCode>
       <isin>NL0013654783</isin>
       <tickerSymbol>1TY</tickerSymbol>
@@ -24089,7 +24089,7 @@
       <property type="FEED" name="PORTFOLIO-REPORT-MARKET">XETR</property>
       <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;1TY&quot;,&quot;firstPriceDate&quot;:&quot;2019-09-12&quot;,&quot;lastPriceDate&quot;:&quot;2024-02-08&quot;}]</property>
       <isRetired>false</isRetired>
-      <updatedAt>2024-02-09T21:58:12.164935500Z</updatedAt>
+      <updatedAt>2024-02-09T21:41:45.028468300Z</updatedAt>
     </security>
   </securities>
   <watchlists/>
@@ -24232,58 +24232,6 @@ Purchase of 1 share with result of dividend of 2 shares Mercedes</note>
                   <updatedAt>2024-02-09T21:25:51.520717100Z</updatedAt>
                   <type>BUY</type>
                 </portfolio-transaction>
-                <portfolio-transaction>
-                  <uuid>ea986fb1-13d0-432c-8323-7c75d92b39ca</uuid>
-                  <date>2022-01-03T00:00</date>
-                  <currencyCode>EUR</currencyCode>
-                  <amount>739000</amount>
-                  <security reference="../../../../../../../../../securities/security[8]"/>
-                  <crossEntry class="buysell">
-                    <portfolio reference="../../../.."/>
-                    <portfolioTransaction reference="../.."/>
-                    <account reference="../../../../../../../.."/>
-                    <accountTransaction>
-                      <uuid>547fec52-470f-494d-a6e7-a6b274f78d07</uuid>
-                      <date>2022-01-03T00:00</date>
-                      <currencyCode>EUR</currencyCode>
-                      <amount>739000</amount>
-                      <security reference="../../../../../../../../../../../securities/security[8]"/>
-                      <crossEntry class="buysell" reference="../.."/>
-                      <shares>0</shares>
-                      <updatedAt>2024-02-09T22:05:58.759249400Z</updatedAt>
-                      <type>BUY</type>
-                    </accountTransaction>
-                  </crossEntry>
-                  <shares>10000000000</shares>
-                  <updatedAt>2024-02-09T22:05:58.759249400Z</updatedAt>
-                  <type>BUY</type>
-                </portfolio-transaction>
-                <portfolio-transaction>
-                  <uuid>bd2daab5-b30a-4dce-a784-cd2b09105703</uuid>
-                  <date>2023-07-02T00:00</date>
-                  <currencyCode>EUR</currencyCode>
-                  <amount>325000</amount>
-                  <security reference="../../../../../../../../../securities/security[8]"/>
-                  <crossEntry class="buysell">
-                    <portfolio reference="../../../.."/>
-                    <portfolioTransaction reference="../.."/>
-                    <account reference="../../../../../../../.."/>
-                    <accountTransaction>
-                      <uuid>1d55b318-9f82-4829-9c7f-7fe72e2f2e6d</uuid>
-                      <date>2023-07-02T00:00</date>
-                      <currencyCode>EUR</currencyCode>
-                      <amount>325000</amount>
-                      <security reference="../../../../../../../../../../../securities/security[8]"/>
-                      <crossEntry class="buysell" reference="../.."/>
-                      <shares>0</shares>
-                      <updatedAt>2024-02-09T22:06:08.287486600Z</updatedAt>
-                      <type>SELL</type>
-                    </accountTransaction>
-                  </crossEntry>
-                  <shares>5000000000</shares>
-                  <updatedAt>2024-02-09T22:06:08.287486600Z</updatedAt>
-                  <type>SELL</type>
-                </portfolio-transaction>
               </transactions>
               <attributes>
                 <map/>
@@ -24314,18 +24262,6 @@ of 1 share Daimler Truck Holding at 28€/share</note>
         </account-transaction>
         <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[4]/crossEntry/accountTransaction"/>
         <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[5]/crossEntry/accountTransaction"/>
-        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[6]/crossEntry/accountTransaction"/>
-        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[7]/crossEntry/accountTransaction"/>
-        <account-transaction>
-          <uuid>3929158a-69e3-4c6c-b2d5-d3e8206b61db</uuid>
-          <date>2022-09-27T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>70</amount>
-          <security reference="../../../../../securities/security[8]"/>
-          <shares>10000000000</shares>
-          <updatedAt>2024-02-09T22:05:36.628658500Z</updatedAt>
-          <type>DIVIDENDS</type>
-        </account-transaction>
       </transactions>
       <attributes>
         <map/>

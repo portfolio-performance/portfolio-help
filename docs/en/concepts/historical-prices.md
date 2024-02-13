@@ -23,5 +23,5 @@ Both methods start with a request to the financial service or website. A request
 In both cases, PP needs to map its internal fields, such as date and value of the quote, with the data in the response. If successfully, PP can use these fields then in its performance calculation.
 
 !!! note
-    In theory, one could scrape webpages that contain tables with historical prices (see for example, Figure 1). PP supports this method; see [Import HTML table](../reference/view/all-securities.md#import-html-table). However, in practice, nowadays most service providers utilize JavaScript or another technology that hinders this scraping process.
+    In theory, one could scrape webpages that contain tables with historical prices (see for example, Figure 1). PP supports this method; see [Import HTML table](../reference/view/securities/all-securities.md#import-html-table). However, in practice, nowadays most service providers utilize JavaScript or another technology that hinders this scraping process.
 
