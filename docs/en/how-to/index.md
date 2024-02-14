@@ -6,6 +6,8 @@ Figure: Documentation framework.{class=align-right style="width:40%"}
 
 ![](../images/documentation-framework.svg)
 
+
+
 The how-to section of this manual is designed to help you apply the features and functions of the PP program in a real working context.  Unlike the "Getting-started" section, which use more general and use simplified examples, the how-to section shows you how to use the program in a real environment with real data. The how-to section covers topics such as:
 
 - Importing stock data
