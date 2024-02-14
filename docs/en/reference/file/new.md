@@ -16,7 +16,7 @@ The option `File > New > File` initiates a wizard for creating a new portfolio. 
 
 ## Security
 
-The menu option `File > New > Security` is self-explaining: it allows you to create a new security. This can also be done at other locations within the UI; for example as part of the portfolio creation wizard (see above), or with the little green icon next to Securities in the side panel or in the `All Securities`view.
+The menu option `File > New > Security` is self-explaining: it allows you to create a new security. This can also be done at other locations within the UI; for example as part of the portfolio creation wizard (see above), or with the little green icon next to Securities in the sidebar or in the `All Securities`view.
 
 Figure: File > New > Security menu.{class=pp-figure}
 
