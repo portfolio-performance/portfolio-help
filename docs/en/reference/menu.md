@@ -57,7 +57,7 @@ View
 │   ├── Always start with 'All transactions' in this part
 │   ├── Always start with last view
 │   ├── Hide sidebar ... Ctrl+K
-│   ├── Hide information panel ... Ctrl+L
+│   ├── Hide information pane ... Ctrl+L
 │   ├── Discreet Mode
 ├── Securities
 ├── All Securities
