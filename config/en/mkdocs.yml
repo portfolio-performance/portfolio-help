@@ -145,6 +145,7 @@ nav:
       
   - Reference manual:
       - Reference manual: reference/index.md
+      - Overview: reference/menu.md
       - File Menu:
           - New: reference/file/new.md
           - Save: reference/file/save.md

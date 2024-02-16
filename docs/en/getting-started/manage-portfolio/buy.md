@@ -1,7 +1,7 @@
 ---
 title: Recording a Buy transaction
 ---
-When you receive a notification from your bank or broker detailing a transaction, as shown in Figure 1, you need to record this transaction in PP. If it's on paper, you must do this manually. Otherwise, you can attempt to [import](../../how-to/importing.md) the transaction.
+When you receive a notification from your bank or broker detailing a transaction, as shown in Figure 1, you need to record this transaction in PP. If it's on paper, you must do this manually. Otherwise, you can attempt to [import](../../reference/file/import.md) the transaction.
 
 # Transaction with one currency
 

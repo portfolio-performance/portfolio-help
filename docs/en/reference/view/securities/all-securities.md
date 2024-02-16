@@ -9,15 +9,15 @@ Figure: View All Securities.{class=pp-figure}
 
 ![](./images/mnu-all-securities.svg)
 
-This view contains two panels. The top panel is a list of all available securities. You can select multiple securities, but only one of them can be active. The bottom panel features a graph of the active security.
+This view contains two panes. The main pane is a list of all available securities. You can select multiple securities, but only one of them can be active. The information pane features a graph of the active security.
 
-## Top panel: list All Securities
+## Main pane: list All Securities
 
 Figure: All available columns.{class=align-right style="width:30%"}
 
 ![](./images/mnu-all-securities-all-columns.png)
 
-The top panel represents essentially a table with all the available securities listed. Click the column heading to sort the table based on that column. You can rearrange any column by dragging its header. Drag the divider line between two columns to adjust the with of the left column. You can rename or hide a column with the context menu (right-click on the column header). Adding, deleting or resetting the columns to their original layout is done with the `Show or hide columns` icon (gear symbol top right). The default columns are shown in Figure 1; they are also checked in Figure 2. Figure 2 gives a list of all available columns.
+The main pane represents essentially a table with all the available securities listed. Click the column heading to sort the table based on that column. You can rearrange any column by dragging its header. Drag the divider line between two columns to adjust the with of the left column. You can rename or hide a column with the context menu (right-click on the column header). Adding, deleting or resetting the columns to their original layout is done with the `Show or hide columns` icon (gear symbol top right). The default columns are shown in Figure 1; they are also checked in Figure 2. Figure 2 gives a list of all available columns.
 
 Refer to the [glossary](../../../concepts/PP-terminology.md) for a definition and short explanation of the columns.  Note that the column heading is sometimes different from the field name e.g. &Delta; amount and that several fields are collapsed into a single category e.g. Data Quality.
 
@@ -31,13 +31,13 @@ The Filter icon is used as a more categorical filter. Available options are: Onl
 
 The table displayed in the current view can be exported as a CSV file, preserving the number of rows and columns along with their (custom) column headings.
 
-By dragging the divider bar, you can adjust the size of the top panel, making it larger or smaller. You can even extend it to completely occupy the canvas or hide it entirely. The divider bar becomes visible when hovering over with the mouse.
+By dragging the divider bar, you can adjust the size of the main pane, making it larger or smaller. You can even extend it to completely occupy the canvas or hide it entirely. The divider bar becomes visible when hovering over with the mouse.
 
-## Bottom panel
+## Information pane
 
-The bottom panel showcases by default a graph or chart of the active security, namely the last one selected in the top panel (refer to Figure 3). The graph is updated each time a different security is selected in the top panel.
+The information pane showcases by default a graph or chart of the active security, namely the last one selected in the main pane (refer to Figure 3). The graph is updated each time a different security is selected in the main pane.
 
-Figure: Graph of active security from top panel.{class=pp-figure}
+Figure: Graph of active security from main pane.{class=pp-figure}
 
 ![](./images/mnu-all-securities-bottom-panel-graph.svg)
 
@@ -112,13 +112,13 @@ With Configuration chart icon (gear at the top right) you set numerous additiona
 
 ### Historical Quotes
 
-The Historical Quotes menu in the bottom panel reveals a two-column table displaying the date and quote of the selected security in the top panel (see Figure 6). Clicking on a column header will sort the table in ascending or descending order based on that column. You can rearrange the columns by dragging the header.
+The Historical Quotes menu in the information pane reveals a two-column table displaying the date and quote of the selected security in the main pane (see Figure 6). Clicking on a column header will sort the table in ascending or descending order based on that column. You can rearrange the columns by dragging the header.
 
 Double-click on the date or the quote to modify its value. Be careful when changing the date, as the new quote will overwrite any quote registered for that date.
 
 Utilize the "Export data as CSV" feature (icon to right) to save the entire table as a CSV file. The context menu (right-click) offers various management options.
 
-Figure: Context menu of Historical Quotes in bottom panel.{class=pp-figure}
+Figure: Context menu of Historical Quotes in the information pane.{class=pp-figure}
 
 ![](../images/contxt-mnu-all-securities-bottom-panel-hist-quotes.png)
 
@@ -134,7 +134,7 @@ Figure: Context menu of Historical Quotes in bottom panel.{class=pp-figure}
     
     - Debug: Show server response: If the security is linked to an online data provider, you can view the HTTP response from that server.
     
-    - Configure online update ...: this option will display the Securities attributes panel with the Historical Quotes tab selected; see [File > New](../../file/new.md#historical-quotes).
+    - Configure online update ...: this option will display the Securities attributes form with the Historical Quotes tab selected; see [File > New](../../file/new.md#historical-quotes).
     
     - Search for suppliers of historical prices ...: displays the first step of the [File > New](../../file/new.md#file-❯-new) wizard.
     

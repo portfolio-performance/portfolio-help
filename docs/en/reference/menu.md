@@ -29,8 +29,11 @@ File
 ├── Currency >
 │   ├── EUR (Euro)
 │   ├── USD (UnitedStates dollar)
-│   ├── A - D
-│   └── E - I
+│   ├── A - D >
+│   │   ├── AED (United Arab Emirates dirham)
+│   │   ├── ...
+│   │   ├── DZD (Algerian dinar)
+│   └── E - I >
 │   ├── ...
 ├── Sanity Check...
 ├── Import
