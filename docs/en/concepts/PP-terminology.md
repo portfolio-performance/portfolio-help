@@ -29,6 +29,10 @@ Fundamental concepts such as account, transaction, reporting period, purchase va
 
 - Exchange: a security may be traded on more than one exchange. For example, the NVIDIA stock is traded on Nasdaq (symbol NVDA, exchange NMS) or XETRA (symbol NVD.DE, exchange GER), and many more exchanges.
 
+- Ex-date: used in stock split; date when a stock exchange first trades the (split) shares at the adjusted price.
+
+- Ex-dividend date: shareholders who owned their shares at least one full business day before the ex-dividend date will be entitled to receive a dividend. Sometimes also called the ex-date (see above).
+
 - Expected # quotes: given the nature and frequency of a security and the calendar in use, PP calculates the expected number of quotes for the time period between the Date of last and first historical quote. Weekend and holidays are taken into account.
 
 - Inactive: A security can be set to active or inactive. If set to inactive, the security will not appear in buy or sell dialogs, and historical prices will not be updated automatically.
