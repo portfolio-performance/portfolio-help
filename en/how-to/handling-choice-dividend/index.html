@@ -12,13 +12,9 @@
         <meta name="author" content="Andreas Buchen, et. al.">
       
       
-        <link rel="canonical" href="https://help.portfolio-performance.info/en/how-to/reinvesting-dividends/">
+        <link rel="canonical" href="https://help.portfolio-performance.info/en/how-to/handling-choice-dividend/">
       
       
-        <link rel="prev" href="../downloading-historical-prices/table-website/">
-      
-      
-        <link rel="next" href="../morningstar/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +22,7 @@
     
     
       
-        <title>Reinvesting dividends - Portfolio Performance Manual</title>
+        <title>Handling choice dividends - Portfolio Performance Manual</title>
       
     
     
@@ -81,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#handling-choice-dividends" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -112,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Reinvesting dividends
+              Handling choice dividends
             
           </span>
         </div>
@@ -962,8 +963,6 @@
       
   
   
-    
-  
   
   
     
@@ -990,11 +989,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           
@@ -1016,7 +1015,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             How-to
@@ -1249,17 +1248,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../reinvesting-dividends.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1268,7 +1260,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -2158,6 +2149,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example-nn-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example NN Group
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recording-the-choice-dividend-in-pp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recording the choice dividend in PP
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2172,7 +2191,7 @@
                   
 
   
-    <a href="https://github.com/portfolio-performance/portfolio-help/tree/master/docs/en/how-to/reinvesting-dividends.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/portfolio-performance/portfolio-help/tree/master/docs/en/how-to/handling-choice-dividend.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -2180,30 +2199,66 @@
   
 
 
-  <h1>Reinvesting dividends</h1>
-
-<p>How do you book the reinvestment of a dividend? What about DRIP? A dividend is the payment of a part of the company's profit to its shareholders. Sometimes you can choose to receive this dividend in cash or in shares. But how should you register this latter share dividend.</p>
-<p>For example, at the annual general meeting of the NN Group, the shareholders approved a final dividend of EUR 1.56. The final dividend will be paid either fully in cash, after deduction of withholding tax if applicable, or fully in ordinary shares, at the election of the shareholders. The following example is about the choice dividend (300 shares) of a Dutch company, paid to a non-resident investor. The dividend is 1.56 EUR/share. The converting ratio is 1 new share for 29.43 old shares. The historical quote at the pay date is 45.91 EUR.</p>
-<ul>
+<h1 id="handling-choice-dividends">Handling choice dividends</h1>
+<p>A dividend is the payment of a part of the company's profit to its shareholders. With a choice dividend, shareholders are given the option to choose between receiving cash payment (cash dividend) or additional shares of stock (stock dividend).</p>
+<h2 id="example-nn-group">Example NN Group</h2>
+<p>For example, the Dutch financial services company, <a href="https://www.nn-group.com/investors/share-information/dividend-policy-and-dividend-history.htm">NN Group</a> provided its shareholders with the option to receive the interim dividend for 2023 of 1.12 EUR per share, either in cash or in shares. The <a href="../../concepts/PP-terminology/">ex-dividend date</a> was set on August 31, 2023, with the dividend payment scheduled for September 25, 2023. The reference share price was determined at 36.2513 EUR by taking the average of five daily historical prices between 12 and 18 September 2023 on Euronext Amsterdam between 12 and 18 September 2023.</p>
+<p>With this reference price the distribution ratio was established at 1-for-32.37 shares. Indeed, to receive one share of 36.2513 EUR, you need 32.37 shares x 1.12 EUR dividend.</p>
+<p>Theoretically, the cash and stock dividend options should lead to the same gross result. Otherwise, shareholders would naturally gravitate towards the more advantageous choice. Let's consider a scenario where you hold 100 shares of the NN group at the ex-date. Opting for the cash dividend would yield 100 shares x 1.12 = 112 EUR gross. On the other hand, choosing the stock dividend would grant you approximately 3.09 shares (100 shares / 32.37), valued at 36.2513 EUR per share. This totals around 112.02 EUR gross, which is approximately equivalent to the cash dividend amount. Please note that fractional shares are not always possible; although PP can easily work with them. So a solution for the .09 shares may need to be found.</p>
+<p>Of course, your choice will be influenced by your need for immediate liquidity (prompting for cash dividend) and your desire to further invest in this company (stock dividend).</p>
+<p>Although theoretically equivalent in terms of the gross value, factors such as fees, taxes, and various fiscal and broker regulations will impact the final net amount of cash retained. In practice the choices do differ. For example, a Belgian (thus, foreign) shareholder with 100 shares will receive 68.12 EUR of cash dividend, while the stock dividend is valued at 72.93 EUR; approximately 7% more. This difference is primarily caused by the elimination of foreign taxes in the case of stock dividend.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ol>
 <li>
-<p>you choose for <em>cash dividend</em>. You receive the net amount of 278.46 EUR.
-300 shares * 1.56 EUR = 468 EUR minus foreign taxes (15% or 70.2 EUR), minus fees (0 EUR), minus domestic taxes (30% or 119.34 EUR).</p>
+<p>If you opt for <em>cash dividend</em>. You receive a Gross Amount of 100 x 1.12 = 112 EUR. The net value depends on the fiscal and broker regulations of your country. For example, as a <em>Belgian shareholder</em>, you pay 10% foreign taxes (=11.2 EUR), 30.24 EUR or 30% domestic taxes on the remaining value (112 - 11.2 = 100.8), 2.44 EUR or 2% broker fees + TVA 21%. The remaining net value is 100.8 - 30.24 - 2.44 = 68.12 EUR.</p>
 </li>
 <li>
-<p>You choose for <em>share dividend</em>. You receive 10 shares at 45.91 and 5 cash dividends (6.63 EUR). You have to pay some fees (3.50 EUR) and domestic taxes (140.09 EUR).</p>
+<p>You choose for <em>stock dividend</em>. The calculation becomes much more complex. Your broker need to solve the fractional share and you have to decide about the valuation of the newly acquired shares.</p>
+<ul>
+<li>You are entitled to 100/32.37 = 3.0893 shares. So, you will receive three new shares and your broker will convert the fraction (.0893) to a cash dividend. In this case, the closest approximation is two shares; 32.37 x 0.0893 = 2.89 or rounded down (!) two shares.</li>
+<li>The cash dividend follows the same rules as above. In this case, the Belgian broker does not charge a fee. The net cash dividend is thus 2 x 1.12 minus 10% foreign taxes and 30% domestic taxes = 1.41 EUR.</li>
+<li>From the point of view of the (Belgian) government, the acquirement of 3 shares is the result of the dividend payment of the NN group. The total of all taxes is <ul>
+<li>30% of domestic taxes are withheld = 32.63 EUR</li>
+<li>no foreign taxes because of the double-treaty between Belgium and The Netherlands</li>
+<li>Stock exchange tax of 0.35% or 1.78 EUR.</li>
+<li>TVA of 21% on the broker's fee: 0.74 EUR.</li>
+</ul>
+</li>
+<li>From the broker's point of view, you buy 3 shares. The total fees amount is apparently a fixed 3.5 EUR.</li>
+<li>Rests the difficult question of valuation of the three newly acquired bonus shares. How much are they worth at dividend payment date? <ul>
+<li>You could take the historical close price of the NN share on payment day: 3 x 36.33 EUR/share or 108.99 EUR.</li>
+<li>You could also take the reference price which will lead to the total amount of 3 x 36.25 = 108.7632.</li>
+<li>Because the close price on the payment day isn't very different from the reference price (36.33 vs 36.25), both valuations will be practically the same here.</li>
+</ul>
+</li>
+<li>So, how much did you really receive from this stock dividend?<ul>
+<li>net dividend of the remaining shares: 1.41 EUR.</li>
+<li>net price of the three newly acquired shares: 108.73 - 33.74 (taxes) - 3.5 (fees) = 71.52 EUR.</li>
+<li>Total net value: 72.93 EUR.</li>
+</ul>
 </li>
 </ul>
-<p>Theoretically, there is no difference between the two choices. 300 shares/29.43 * 45.91 ~= 300 shares * 1.56 EUR.</p>
-<p>In this example, the broker doesn't allow share fractions. So, you only receive 10 additional new shares (not 10.19 shares) for 295 old shares and a pay-out of the remaining 5 old shares dividend.</p>
-<p>The domestic taxes are much larger for the share dividend (30%) than if you should buy the shares from your cash account(0.35%) (140.09 EUR). Of course, if the dividends are paid in cash, then you would also have paid domestic taxes. Either way, the government receives the same amount.</p>
-<p>In this particular example, there is a small benefit because there are no foreign taxes (15%) in case of a share dividend.</p>
-<p>There has been a lot of <a href="https://forum.portfolio-performance.info/t/dividend-paid-in-security-stock-dividend-reinvestment-plan-drip/13828/16">debate</a> about how to book these transactions in PP. My understanding of the proposed procedure is:</p>
+</li>
+</ol>
+</div>
+<p>Certainly, the calculation above applies only for a Belgian shareholder with a particular broker in 2024. The advantage of the stock dividend is primarily due to the foreign tax situation, which may differ significantly for shareholders in other countries, particularly Dutch shareholders.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Note that in the case of cash dividend, you will receive money, while with the stock dividend, you have to invest additional money. Although you receive the shares, you also have to cover the associated taxes and fees.</p>
+</div>
+<h2 id="recording-the-choice-dividend-in-pp">Recording the choice dividend in PP</h2>
+<p>There has been a lot of <a href="https://forum.portfolio-performance.info/t/dividend-paid-in-security-stock-dividend-reinvestment-plan-drip/13828/16">debate</a> about how to book these transactions in PP. Many users suggest considering the choice of dividend as a sequence of receiving the dividend and purchasing the shares. A possible workflow is the following.</p>
 <ul>
-<li>book the dividends for all shares <em>without</em> fees and taxes. These will be paid for in the following step. If your broker doesn't allow for share fractions, you can use one transaction for the share dividend part (e.g. 295 in the example) without fees &amp; taxes and another transaction with taxes and fees for the cash dividend. </li>
-<li>buy the allocated shares at the same day with the theoretical historical quote and the associated fees and taxes.</li>
+<li>Book the gross dividend of all shares <em>without</em> fees and taxes. These will be paid for in the following step. This transaction has not been taken place in reality; so you have no note of this of your broker. Your designated deposit account will be increased by the gross amount of the dividend; e.g. 112 EUR in the previous example.</li>
+<li>Purchase the allocated bonus shares at the same day with the reference price and the associated fees and taxes, you receive from your broker.</li>
+<li>If you want to account for the minimal impact of the fraction shares (e.g. the dividend of 2 shares in the above example), you need to split the first dividend transaction in two.<ul>
+<li>Book the dividend with fees and taxes of the fraction shares (e.g. 2). You should have a note from your broker of this.</li>
+<li>Book the dividend of the other shares (e.g. 98) without fees and taxes (you do not have a note from your broker).</li>
+</ul>
+</li>
 </ul>
 <p><figure id="_figure-1"><figcaption>Figure 1.  Implementation in PP</figcaption><img alt="Implementation in PP" pp-figure="pp-figure" src="../images/reinvesting-dividends-pp-implementation.png"></figure></p>
-<p>Please note that in this example the total outflow is much larger the inflow from the dividend payment. This is because the number of reinvested shares is calculated on the gross amount. So, all taxes and fees are in surplus of this choice dividend.</p>
 
 
 
@@ -2224,7 +2279,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 16, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 23, 2024</span>
   </span>
 
     
