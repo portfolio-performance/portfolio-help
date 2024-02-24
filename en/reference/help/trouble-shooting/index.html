@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#showsave-error-log" class="md-skip">
+        <a href="#show-error-log" class="md-skip">
           Skip to content
         </a>
       
@@ -2174,9 +2174,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#showsave-error-log" class="md-nav__link">
+  <a href="#show-error-log" class="md-nav__link">
     <span class="md-ellipsis">
-      Show/Save Error Log
+      Show Error Log
     </span>
   </a>
   
@@ -2258,9 +2258,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#showsave-error-log" class="md-nav__link">
+  <a href="#show-error-log" class="md-nav__link">
     <span class="md-ellipsis">
-      Show/Save Error Log
+      Show Error Log
     </span>
   </a>
   
@@ -2319,10 +2319,17 @@
   <h1>Trouble-shooting</h1>
 
 <p>On rare occasions, the PP app may not function properly or even crash. Beneath the Help menu, three options can assist in such instances.</p>
-<h2 id="showsave-error-log">Show/Save Error Log</h2>
-<p>Every time the program starts, it creates a log-file. It is saved automatically in your User directory e.g. for Windows users in <code>C:\Users\Your-name\AppData\Local\PortfolioPerformance\workspace\.metadata\</code>. You can view this log file within the PP app in a separate window with the command <code>Help &gt; Show Error Log</code>. Double-clicking the message will display the entire text. If there were no errors, this will be a minimal log (see Figure 1).</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Minimal Error Log after successful start-up. </figcaption><img alt="" src="../images/show-error-log-minimal.png"></figure></p>
-<p>This changes drastically when an error is encountered. A large text file will appear when double-clicking the message (see below).</p>
+<h2 id="show-error-log">Show Error Log</h2>
+<p>Every time the program starts, it creates a log-file. You can view this log file from within the PP app in a separate window with the command <code>Help &gt; Show Error Log</code>. Double-clicking the message will display the entire text. If there were no errors, this will be a minimal log (see Figure 1).</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Log after successful start-up. </figcaption><img alt="" src="../images/show-error-log-minimal.png"></figure></p>
+<p>If an error is encountered, the log file will list them sequentially. Figure 2 hints at the error (No quotes found). You can double-click on the message to receive more detailed info.</p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Log after unsuccessful operation. </figcaption><img alt="" src="../images/show-error-log-multiple-errors.png"></figure></p>
+<p>A rather large text file will appear when double-clicking the message (see below). If you can open the portfolio, you need to fix the historical prices source of this security. Otherwise, you need to open the XML-file in a text editor and manually remove the offending data source.</p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Log after unsuccessful operation. </figcaption><img alt="" src="../images/show-error-log-multiple-errors-dbl-click.png"></figure></p>
+<p>You can copy this text to the clipboard, for example when seeking help on the <a href="https://forum.portfolio-performance.info/">forum</a> or you can save the file.</p>
+<h2 id="save-error-log">Save Error Log ...</h2>
+<p>As previously mentioned, each time the program starts, it generates a log file. This file is automatically saved in your user directory. For Windows users, it typically resides in: <code>C:\Users\Your-name\AppData\Local\PortfolioPerformance\workspace\.metadata\</code>.</p>
+<p>To save the latest log to a text file with the extension <code>.log</code>, you should use this command. The text file provides more comprehensive information (see below) than the error window depicted in Figure 3, including details about the operating system, the current Java version, and other relevant data.</p>
 <p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>!SESSION 2024-02-19 11:47:29.300 -----------------------------------------------
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>eclipse.buildId=0.67.3.
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>java.version=17.0.5
@@ -2344,20 +2351,18 @@
 <a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    at name.abuchen.portfolio.ui.jobs.UpdateQuotesJob$1.run(UpdateQuotesJob.java:244)
 <a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 </code></pre></div>
-Part of this text can be helpful when seeking assistance in the <a href="https://forum.portfolio-performance.info/">forum</a> or when reporting an <a href="https://github.com/portfolio-performance/portfolio/issues">issue on GitHub</a>.
-<h2 id="save-error-log">Save Error Log ...</h2>
-<p>This command will allow you to save the latest log to a text-file with extension <code>.log</code>.</p>
+It is advisable to include this file when reporting the <a href="https://github.com/portfolio-performance/portfolio/issues">issue on GitHub</a>. Please refrain from using a portfolio containing sensitive information for this purpose.
 <h2 id="debug-reset-ui">Debug: Reset UI ...</h2>
 <p>Choosing this option will simply display the dialog boxes of Figure 1 &amp; 2. As you can see, you need to quit and restart the application after that.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Reset GUI dialog box. </figcaption><img alt="" src="../images/reset-UI.png"></figure></p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Successful reset of UI. </figcaption><img alt="" src="../images/reset-UI-successful.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Reset GUI dialog box. </figcaption><img alt="" src="../images/reset-UI.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5.  Successful reset of UI. </figcaption><img alt="" src="../images/reset-UI-successful.png"></figure></p>
 <p>The Reset UI function will NOT delete any created views or custom reporting periods, nor will it reset the Recent Files list, as these parameters are saved separately.</p>
 <p>However, it does reset the position and size of the PP application window on your monitor and does not restore open files from the moment of closing. Additionally, it sets the main and information panes to their initial values. In essence, as the name implies, it resets the Graphical User Interface (GUI/UI).</p>
 <p>In the event of unexpected errors, initiating a Reset UI could be your initial troubleshooting step, as it minimally disrupts your workflow.</p>
 <h2 id="updating-error">Updating error</h2>
 <p>If the program is corrupted or some files are missing, automatic updates are not feasible. An error message (see figure 4) is displayed, and the automatic update is no longer possible.</p>
 <p>The simplest workaround is to delete the program and reinstall it.</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Error message upon manual check for updates.</figcaption><img alt="" src="../images/error-on-updating.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6.  Error message upon manual check for updates.</figcaption><img alt="" src="../images/error-on-updating.png"></figure></p>
 
 
 
