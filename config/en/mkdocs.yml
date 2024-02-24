@@ -136,7 +136,7 @@ nav:
           - JSON: how-to/downloading-historical-prices/json.md
           - Table on Website: how-to/downloading-historical-prices/table-website.md
       #- Importing CSV-files: how-to/importing.md
-      - Reinvesting dividends: how-to/reinvesting-dividends.md
+      - Handling a choice dividend: how-to/handling-choice-dividend.md
       - Import fund data from Morningstar: how-to/morningstar.md
       - Hack data file to add default Quote Feed: how-to/quote-feed.md
       - Copy securities between portfolios: how-to/copy-securities.md
@@ -168,4 +168,5 @@ nav:
       - Help Menu:
           - Check for Updates: reference/help/check-updates.md
           - About Portfolio Performance: reference/help/about.md
+          - Trouble-shooting: reference/help/trouble-shooting.md
 

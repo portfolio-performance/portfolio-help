@@ -1,5 +1,5 @@
 <client>
-  <version>58</version>
+  <version>59</version>
   <baseCurrency>EUR</baseCurrency>
   <securities>
     <security>
@@ -505,6 +505,11 @@
               <name></name>
               <data>F2023-01-01_2023-09-01</data>
             </config>
+            <config>
+              <uuid></uuid>
+              <name></name>
+              <data>Y2021</data>
+            </config>
           </configurations>
         </config-set>
       </entry>
@@ -516,6 +521,11 @@
               <uuid>5626df9e-7f9b-47e2-b7f4-07557fdf6e55</uuid>
               <name>Standard</name>
               <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:300},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:121},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:112},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:222},{&quot;id&quot;:&quot;6&quot;,&quot;width&quot;:239},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:200}]}</data>
+            </config>
+            <config>
+              <uuid>1175c086-9559-4631-844a-6c75735ab171</uuid>
+              <name>test view</name>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:300},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:60},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;6&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:200}]}</data>
             </config>
           </configurations>
         </config-set>
