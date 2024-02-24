@@ -4,15 +4,34 @@ title: Trouble shooting
 On rare occasions, the PP app may not function properly or even crash. Beneath the Help menu, three options can assist in such instances.
 
 
-## Show/Save Error Log
+## Show Error Log
 
-Every time the program starts, it creates a log-file. It is saved automatically in your User directory e.g. for Windows users in `C:\Users\Your-name\AppData\Local\PortfolioPerformance\workspace\.metadata\`. You can view this log file within the PP app in a separate window with the command `Help > Show Error Log`. Double-clicking the message will display the entire text. If there were no errors, this will be a minimal log (see Figure 1).
+Every time the program starts, it creates a log-file. You can view this log file from within the PP app in a separate window with the command `Help > Show Error Log`. Double-clicking the message will display the entire text. If there were no errors, this will be a minimal log (see Figure 1).
 
-Figure: Minimal Error Log after successful start-up. {class=pp-figure}
+Figure: Log after successful start-up. {class=pp-figure}
 
 ![](./images/show-error-log-minimal.png)
 
-This changes drastically when an error is encountered. A large text file will appear when double-clicking the message (see below).
+If an error is encountered, the log file will list them sequentially. Figure 2 hints at the error (No quotes found). You can double-click on the message to receive more detailed info.
+
+Figure: Log after unsuccessful operation. {class=pp-figure}
+
+![](./images/show-error-log-multiple-errors.png)
+
+A rather large text file will appear when double-clicking the message (see below). If you can open the portfolio, you need to fix the historical prices source of this security. Otherwise, you need to open the XML-file in a text editor and manually remove the offending data source.
+
+Figure: Log after unsuccessful operation. {class=pp-figure}
+
+![](./images/show-error-log-multiple-errors-dbl-click.png)
+
+You can copy this text to the clipboard, for example when seeking help on the [forum](https://forum.portfolio-performance.info/) or you can save the file.
+
+## Save Error Log ...
+
+As previously mentioned, each time the program starts, it generates a log file. This file is automatically saved in your user directory. For Windows users, it typically resides in: `C:\Users\Your-name\AppData\Local\PortfolioPerformance\workspace\.metadata\`.
+
+To save the latest log to a text file with the extension `.log`, you should use this command. The text file provides more comprehensive information (see below) than the error window depicted in Figure 3, including details about the operating system, the current Java version, and other relevant data.
+
 
 ```
 !SESSION 2024-02-19 11:47:29.300 -----------------------------------------------
@@ -38,11 +57,8 @@ name.abuchen.portfolio.util.WebAccess$WebAccessException: 404 Not Found --> http
 
 
 ```
-Part of this text can be helpful when seeking assistance in the [forum](https://forum.portfolio-performance.info/) or when reporting an [issue on GitHub](https://github.com/portfolio-performance/portfolio/issues).
+It is advisable to include this file when reporting the [issue on GitHub](https://github.com/portfolio-performance/portfolio/issues). Please refrain from using a portfolio containing sensitive information for this purpose.
 
-## Save Error Log ...
-
-This command will allow you to save the latest log to a text-file with extension `.log`.
 
 ## Debug: Reset UI ...
 Choosing this option will simply display the dialog boxes of Figure 1 & 2. As you can see, you need to quit and restart the application after that.
