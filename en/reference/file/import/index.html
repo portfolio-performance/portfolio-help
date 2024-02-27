@@ -2467,6 +2467,10 @@ There is however a problem with the NVIDIA share. The error message (bottom) exp
 <p><figure class="pp-figure" id="_figure-10"><figcaption>Figure 10.  Importing account transactions - content CSV file</figcaption><img alt="" src="../images/mnu-file-import-account-transactions-step-2.png"></figure></p>
 <p><figure class="pp-figure" id="_figure-11"><figcaption>Figure 11.  Importing account transactions - content CSV file</figcaption><img alt="" src="../images/mnu-file-import-account-transactions-step-3.png"></figure></p>
 <h3 id="5-portfolio-transactions-import">5. Portfolio Transactions import</h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you have transactions with securities in different currencies, it is good practice to explicitly add the <code>Security Account</code> and <code>Cash Account</code> to the CSV-file.</p>
+</div>
 <p>This type of import requires three fields: Shares, Date, Value. The optional fields are the same as above; except that the optional Offset Account field is replaced with Offset Securities Account.</p>
 <p>Because the number of shares is a required field, one would assume that simple deposit of removal transactions are not allowed; but they are. The number of shares is then ignored.</p>
 <p>The acceptable values for the field <code>Type</code> are: <code>Deposit</code>, <code>Removal</code>, <code>Interest</code>, <code>Interest Charge</code>, <code>Dividend</code>, <code>Fees</code>, <code>Fees Refund</code>, <code>Taxes</code>, <code>Tax Refund</code>, <code>Buy</code>, <code>Sell</code>, <code>Transfer (Inbound)</code>, and <code>Transfer (Outbound)</code>. The default value of Type is <code>Sell</code>.</p>
@@ -2477,7 +2481,7 @@ There is however a problem with the NVIDIA share. The error message (bottom) exp
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>2024-01-04; Sell; 2; BASF; 90; ;5; 3; broker-A; broker-A (EUR)
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>2024-01-13; Buy; 3; NVIDIA; 1740,98; 1,0837; 15; 10; broker-A; broker-A (EUR)
 </code></pre></div>
-Please note that the <code>Exchange Rate</code> field is empty in case of the BASF transaction. Figure 12 displays the result of this import transaction.
+Because the <code>(Net) Value</code> field is required, it makes no sense to add the <code>Gross Value</code>, which will be overwritten anyway (Gross Value = Value + Fees + Taxes). Please note that the <code>Exchange Rate</code> field is empty (or zero) in case of the BASF transaction. Figure 12 displays the result of this import transaction.
 <p><figure class="pp-figure" id="_figure-12"><figcaption>Figure 12.  Result of import from above. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-account-transactions-result.svg"></figure></p>
 <p>Figure 13 displays the first step of the Import wizard. Be sure that the type Portfolio Transactions is selected in step 1; otherwise an error will occur in step 2.  </p>
 <p><figure class="pp-figure" id="_figure-13"><figcaption>Figure 13.  Result of import from above. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-transactions.png"></figure></p>

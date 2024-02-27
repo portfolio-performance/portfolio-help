@@ -1,3 +1,3 @@
 ﻿Date;Type;Shares;Security Name;Value;Exchange rate;fees;taxes;Securities Account;Cash Account
-2024-01-04; Sell; 2; BASF; 90; ;5; 3; broker-A; broker-A (EUR)
+2024-01-04; Sell; 2; BASF; 90;  ;5; 3; broker-A; broker-A (EUR)
 2024-01-13; Buy; 3; NVIDIA; 1740,98; 1,0837; 15; 10; broker-A; broker-A (EUR)
