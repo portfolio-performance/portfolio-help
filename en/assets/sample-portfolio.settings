@@ -1,0 +1,10 @@
+#Sat Feb 24 17:25:58 CET 2024
+SecurityListView-newsash=431
+HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:164},{"id"\:"1","width"\:133}]}
+SecurityPriceChartPane=Y2
+StatementOfAssetsView-newsash=200
+name.abuchen.portfolio.ui.views.SecuritiesTable$picked=cb645d68-1166-407b-b902-7fe1e3c58e9e
+StatementOfAssetsViewer=assetclasses
+name.abuchen.portfolio.ui.views.AllTransactionsView={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:177},{"id"\:"1","width"\:130},{"id"\:"2","width"\:485},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"account","width"\:308},{"id"\:"9","width"\:120},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
+AllTransactionsView-newsash=200
+name.abuchen.portfolio.ui.views.StatementOfAssetsViewer$picked=6c528024-05df-4f02-9ca0-ded4a4395556

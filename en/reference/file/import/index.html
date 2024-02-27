@@ -2468,14 +2468,16 @@ There is however a problem with the NVIDIA share. The error message (bottom) exp
 <p><figure class="pp-figure" id="_figure-11"><figcaption>Figure 11.  Importing account transactions - content CSV file</figcaption><img alt="" src="../images/mnu-file-import-account-transactions-step-3.png"></figure></p>
 <h3 id="5-portfolio-transactions-import">5. Portfolio Transactions import</h3>
 <p>This type of import requires three fields: Shares, Date, Value. The optional fields are the same as above; except that the optional Offset Account field is replaced with Offset Securities Account.</p>
-<p>Because the number of shares is a required field, one would assume that simple deposit of removal transactions are not allowed; but they are. The number of shares is ignored.</p>
+<p>Because the number of shares is a required field, one would assume that simple deposit of removal transactions are not allowed; but they are. The number of shares is then ignored.</p>
 <p>The acceptable values for the field <code>Type</code> are: <code>Deposit</code>, <code>Removal</code>, <code>Interest</code>, <code>Interest Charge</code>, <code>Dividend</code>, <code>Fees</code>, <code>Fees Refund</code>, <code>Taxes</code>, <code>Tax Refund</code>, <code>Buy</code>, <code>Sell</code>, <code>Transfer (Inbound)</code>, and <code>Transfer (Outbound)</code>. The default value of Type is <code>Sell</code>.</p>
-<p>Suppose that you want to import two portfolio transactions: a sell of 2 shares of BASF in EUR and a buy of 3 shares NVIDIA in USD. Since we are using the EUR cash account in both cases, the transaction in USD must be converted into EUR. The CSV file should look as follows.</p>
-<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Date; Type; Shares; Security Name; Value; Gross Amount; Exchange rate; fees;taxes; Transaction Currency; Currency Gross Amount
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>2024-01-04; Sell; 2; BASF; 90;;; 5;3;;      
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>2024-01-13; Buy; 3; NVIDIA; 1741,34; 1860; 1,0837,15; 10; EUR; USD
+<p>Suppose that you wish to import two portfolio transactions: a sell of 2 shares of BASF in EUR and a buy of 3 shares NVIDIA in USD. Since we are using the EUR cash account in both cases, the transaction in USD must be converted into EUR. In this case, PP will handle this automatically because the NVIDIA security is listed in USD and the security account in EUR. Alternatively, you can designate the <code>Currency Gross Amount</code> column as <code>USD</code>. However, a more efficient workflow may involve defining the <code>Cash Account</code>, and eventually the <code>Securities Account</code>. This prevents the import from defaulting to standard accounts, such as <code>broker-A</code> and <code>broker-A (EUR)</code> in this case.</p>
+<p>Figure 13 displays the <code>Mapped to Field</code> dialog box is shown (accessible via double-clicking the Value column). It's advisable to confirm that the selected format aligns with your language settings, especially if you use a comma as the decimal point as in this example.</p>
+<p>The CSV file should look as follows.</p>
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Date;Type;Shares;Security Name;Value;Exchange rate;fees;taxes;Securities Account;Cash Account
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>2024-01-04; Sell; 2; BASF; 90; ;5; 3; broker-A; broker-A (EUR)
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>2024-01-13; Buy; 3; NVIDIA; 1740,98; 1,0837; 15; 10; broker-A; broker-A (EUR)
 </code></pre></div>
-Please note that several fields are without value in case of the BASF transaction i.e. Exchange Rate. Figure 12 displays the result of this import transaction.
+Please note that the <code>Exchange Rate</code> field is empty in case of the BASF transaction. Figure 12 displays the result of this import transaction.
 <p><figure class="pp-figure" id="_figure-12"><figcaption>Figure 12.  Result of import from above. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-account-transactions-result.svg"></figure></p>
 <p>Figure 13 displays the first step of the Import wizard. Be sure that the type Portfolio Transactions is selected in step 1; otherwise an error will occur in step 2.  </p>
 <p><figure class="pp-figure" id="_figure-13"><figcaption>Figure 13.  Result of import from above. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-transactions.png"></figure></p>
@@ -2499,7 +2501,7 @@ Please note that several fields are without value in case of the BASF transactio
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 27, 2024</span>
   </span>
 
     
