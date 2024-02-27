@@ -138,4 +138,5 @@ Historical prices: many of the presets don't seem to function?
     - table has two columns Exchage rate and Value. The value column has an awkwardly looking border
     - if you click and hold on a value of the graph a pop-up shows the exchange rate. Holding and moving the mouse to the left or right will go in the past or future (for example 2035-01-01) where no exchange rates exist.
 
-
+### 2024-02-25
+- Menu Help > Preferences > Backups > Automatically ... (*.backup.xml). Although the text says ...xml, the file is backup in the format of the saved one (for example binary).

@@ -151,18 +151,22 @@ Figure: Importing account transactions - content CSV file{class=pp-figure}
 
 This type of import requires three fields: Shares, Date, Value. The optional fields are the same as above; except that the optional Offset Account field is replaced with Offset Securities Account.
 
-Because the number of shares is a required field, one would assume that simple deposit of removal transactions are not allowed; but they are. The number of shares is ignored.
+Because the number of shares is a required field, one would assume that simple deposit of removal transactions are not allowed; but they are. The number of shares is then ignored.
 
 The acceptable values for the field `Type` are: `Deposit`, `Removal`, `Interest`, `Interest Charge`, `Dividend`, `Fees`, `Fees Refund`, `Taxes`, `Tax Refund`, `Buy`, `Sell`, `Transfer (Inbound)`, and `Transfer (Outbound)`. The default value of Type is `Sell`.
 
-Suppose that you want to import two portfolio transactions: a sell of 2 shares of BASF in EUR and a buy of 3 shares NVIDIA in USD. Since we are using the EUR cash account in both cases, the transaction in USD must be converted into EUR. The CSV file should look as follows.
+Suppose that you wish to import two portfolio transactions: a sell of 2 shares of BASF in EUR and a buy of 3 shares NVIDIA in USD. Since we are using the EUR cash account in both cases, the transaction in USD must be converted into EUR. In this case, PP will handle this automatically because the NVIDIA security is listed in USD and the security account in EUR. Alternatively, you can designate the `Currency Gross Amount` column as `USD`. However, a more efficient workflow may involve defining the `Cash Account`, and eventually the `Securities Account`. This prevents the import from defaulting to standard accounts, such as `broker-A` and `broker-A (EUR)` in this case.
+
+Figure 13 displays the `Mapped to Field` dialog box is shown (accessible via double-clicking the Value column). It's advisable to confirm that the selected format aligns with your language settings, especially if you use a comma as the decimal point as in this example.
+
+The CSV file should look as follows.
 
 ```
-Date; Type; Shares; Security Name; Value; Gross Amount; Exchange rate; fees;taxes; Transaction Currency; Currency Gross Amount
-2024-01-04;	Sell; 2; BASF; 90;;; 5;3;;		
-2024-01-13;	Buy; 3; NVIDIA; 1741,34; 1860; 1,0837,15; 10; EUR; USD
+Date;Type;Shares;Security Name;Value;Exchange rate;fees;taxes;Securities Account;Cash Account
+2024-01-04; Sell; 2; BASF; 90; ;5; 3; broker-A; broker-A (EUR)
+2024-01-13; Buy; 3; NVIDIA; 1740,98; 1,0837; 15; 10; broker-A; broker-A (EUR)
 ```
-Please note that several fields are without value in case of the BASF transaction i.e. Exchange Rate. Figure 12 displays the result of this import transaction.
+Please note that the `Exchange Rate` field is empty in case of the BASF transaction. Figure 12 displays the result of this import transaction.
 
 
 Figure: Result of import from above. {class=pp-figure}
