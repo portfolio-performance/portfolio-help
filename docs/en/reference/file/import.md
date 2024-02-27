@@ -149,6 +149,9 @@ Figure: Importing account transactions - content CSV file{class=pp-figure}
 
 ### 5. Portfolio Transactions import
 
+!!! Important
+    If you have transactions with securities in different currencies, it is good practice to explicitly add the `Security Account` and `Cash Account` to the CSV-file.
+
 This type of import requires three fields: Shares, Date, Value. The optional fields are the same as above; except that the optional Offset Account field is replaced with Offset Securities Account.
 
 Because the number of shares is a required field, one would assume that simple deposit of removal transactions are not allowed; but they are. The number of shares is then ignored.
@@ -166,7 +169,7 @@ Date;Type;Shares;Security Name;Value;Exchange rate;fees;taxes;Securities Account
 2024-01-04; Sell; 2; BASF; 90; ;5; 3; broker-A; broker-A (EUR)
 2024-01-13; Buy; 3; NVIDIA; 1740,98; 1,0837; 15; 10; broker-A; broker-A (EUR)
 ```
-Please note that the `Exchange Rate` field is empty in case of the BASF transaction. Figure 12 displays the result of this import transaction.
+Because the `(Net) Value` field is required, it makes no sense to add the `Gross Value`, which will be overwritten anyway (Gross Value = Value + Fees + Taxes). Please note that the `Exchange Rate` field is empty (or zero) in case of the BASF transaction. Figure 12 displays the result of this import transaction.
 
 
 Figure: Result of import from above. {class=pp-figure}
