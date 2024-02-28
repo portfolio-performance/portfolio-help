@@ -1655,6 +1655,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="4. Account Transactions import">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dividend-transaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dividend transaction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -2345,6 +2360,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="4. Account Transactions import">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dividend-transaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dividend transaction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -2466,25 +2496,71 @@ There is however a problem with the NVIDIA share. The error message (bottom) exp
 <p>Figure 9 displays the content of a sample CSV file. Four transactions are described. Note that the Cash account of the first transaction is not provided. The default account from the top panel is taken in that case.</p>
 <p><figure class="pp-figure" id="_figure-10"><figcaption>Figure 10.  Importing account transactions - content CSV file</figcaption><img alt="" src="../images/mnu-file-import-account-transactions-step-2.png"></figure></p>
 <p><figure class="pp-figure" id="_figure-11"><figcaption>Figure 11.  Importing account transactions - content CSV file</figcaption><img alt="" src="../images/mnu-file-import-account-transactions-step-3.png"></figure></p>
+<h4 id="dividend-transaction">Dividend transaction</h4>
+<p>It is noteworthy to address the dividend transaction separately, as it presents unique challenges, particularly when dealing with foreign dividends. For instance, complications may arise when dividends are paid in USD but deposited into a cash account denominated in EUR.</p>
+<p>To illustrate, let us assume that three USD dividends are paid, with a hypothetical simple exchange rate of 0.5 EUR-for-1-USD. For the purpose of this example, we will use a cash account <code>Broker-A (EUR)</code> denominated in EUR for the deposit.</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Type</th>
+<th>Security Name</th>
+<th>Shares</th>
+<th>Currency</th>
+<th>Gross Amount</th>
+<th>Exchange Rate</th>
+<th>Cash Account</th>
+<th>Value (EUR)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024-01-13</td>
+<td>Dividend</td>
+<td>NVIDIA</td>
+<td>3</td>
+<td>USD</td>
+<td>15</td>
+<td>0.5</td>
+<td>broker-A (EUR)</td>
+<td>7.5</td>
+</tr>
+</tbody>
+</table>
+<p>In this example, the CSV file contains columns for the date, type of transaction (in this case, a dividend), the security name (NVIDIA), the number of shares, the currency in which the dividend was paid (USD), the gross amount of the dividend, the applicable exchange rate, the cash account into which the dividend was deposited <code>broker-A (EUR)</code>, and the converted value of the total dividend in EUR.</p>
+<p>The raw CSV-file looks like:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Date;Type;Security Name;Shares; Currency Gross Amount; Gross Amount; Exchange Rate; Cash Account;  Value
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>2024-01-13; Dividend; NVIDIA; 3; USD; 15; 0,5; broker-A (EUR);  7,5
+</code></pre></div>
+<p>Figure 12 illustrates the initial step in the import wizard process. As the CSV file incorporates the accurately spelled field names, no mapping adjustments are required. It is crucial to take note of number formatting of the various fields, particularly the exchange rate field, which will likely always contain a decimal separator (comma or point). Also check the date format; <code>YYYY-MM-DD</code>, or <code>DD/MM/YY</code>, or ....</p>
+<p>In this instance, we are receiving a dividend payment for three shares, with a <code>Gross Amount</code> of 15 USD. Consequently, the dividend value should be 5 USD per share (see Figure 13). Given the <code>Exchange Rate</code> of 0.5 EUR-for-1-USD, the net <code>Value</code> of the dividend, once deposited into the <code>broker-A (EUR)</code> account, should amount to 7.5 EUR.</p>
+<p><figure class="pp-figure" id="_figure-12"><figcaption>Figure 12.  Step 1 of the Import wizard: type dividends. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-account-transactions-dividend-step-1.png"></figure></p>
+<p>The necessity of the <code>Gross Amount</code> field is not apparent, particularly as it is not utilized in the subsequent section. However, the Portfolio Performance (PP) software verifies the values within this field, ensuring that the following calculation holds true: <code>Gross Amount</code> multiplied by the <code>Exchange Rate</code> equals the <code>Value</code>. If the numbers do not correspond, an error message will be displayed, preventing progression to the next step.</p>
+<p>Upon importing the CSV file detailed above and selecting the <code>Account Transactions</code> type, the dividend transaction will be generated as depicted in Figure 13.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Regrettably, the software does not currently support the inclusion of Fees and Taxes, either in the foreign or domestic currency. </p>
+</div>
+<p><figure class="pp-figure" id="_figure-13"><figcaption>Figure 13.  Result of import from above. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-account-transactions-dividend-result.png"></figure></p>
 <h3 id="5-portfolio-transactions-import">5. Portfolio Transactions import</h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>If you have transactions with securities in different currencies, it is good practice to explicitly add the <code>Security Account</code> and <code>Cash Account</code> to the CSV-file.</p>
+<p>If you have transactions with securities in different currencies, it is good practice to explicitly add the <code>Security Account</code> and <code>Cash Account</code> to the CSV-file. As the <code>Date</code> is a required field, pay attention to the default date format (YYYY-MM-DD). </p>
 </div>
 <p>This type of import requires three fields: Shares, Date, Value. The optional fields are the same as above; except that the optional Offset Account field is replaced with Offset Securities Account.</p>
 <p>Because the number of shares is a required field, one would assume that simple deposit of removal transactions are not allowed; but they are. The number of shares is then ignored.</p>
 <p>The acceptable values for the field <code>Type</code> are: <code>Deposit</code>, <code>Removal</code>, <code>Interest</code>, <code>Interest Charge</code>, <code>Dividend</code>, <code>Fees</code>, <code>Fees Refund</code>, <code>Taxes</code>, <code>Tax Refund</code>, <code>Buy</code>, <code>Sell</code>, <code>Transfer (Inbound)</code>, and <code>Transfer (Outbound)</code>. The default value of Type is <code>Sell</code>.</p>
 <p>Suppose that you wish to import two portfolio transactions: a sell of 2 shares of BASF in EUR and a buy of 3 shares NVIDIA in USD. Since we are using the EUR cash account in both cases, the transaction in USD must be converted into EUR. In this case, PP will handle this automatically because the NVIDIA security is listed in USD and the security account in EUR. Alternatively, you can designate the <code>Currency Gross Amount</code> column as <code>USD</code>. However, a more efficient workflow may involve defining the <code>Cash Account</code>, and eventually the <code>Securities Account</code>. This prevents the import from defaulting to standard accounts, such as <code>broker-A</code> and <code>broker-A (EUR)</code> in this case.</p>
-<p>Figure 13 displays the <code>Mapped to Field</code> dialog box is shown (accessible via double-clicking the Value column). It's advisable to confirm that the selected format aligns with your language settings, especially if you use a comma as the decimal point as in this example.</p>
+<p>Figure 15 displays the <code>Mapped to Field</code> dialog box is shown (accessible via double-clicking the Value column). It's advisable to confirm that the selected format aligns with your language settings, especially if you use a comma as the decimal point as in this example.</p>
 <p>The CSV file should look as follows.</p>
-<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Date;Type;Shares;Security Name;Value;Exchange rate;fees;taxes;Securities Account;Cash Account
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>2024-01-04; Sell; 2; BASF; 90; ;5; 3; broker-A; broker-A (EUR)
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>2024-01-13; Buy; 3; NVIDIA; 1740,98; 1,0837; 15; 10; broker-A; broker-A (EUR)
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Date;Type;Shares;Security Name;Value;Exchange rate;fees;taxes;Securities Account;Cash Account
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>2024-01-04; Sell; 2; BASF; 90; ;5; 3; broker-A; broker-A (EUR)
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>2024-01-13; Buy; 3; NVIDIA; 1740,98; 1,0837; 15; 10; broker-A; broker-A (EUR)
 </code></pre></div>
-Because the <code>(Net) Value</code> field is required, it makes no sense to add the <code>Gross Value</code>, which will be overwritten anyway (Gross Value = Value + Fees + Taxes). Please note that the <code>Exchange Rate</code> field is empty (or zero) in case of the BASF transaction. Figure 12 displays the result of this import transaction.
-<p><figure class="pp-figure" id="_figure-12"><figcaption>Figure 12.  Result of import from above. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-account-transactions-result.svg"></figure></p>
+Because the <code>(Net) Value</code> field is required, it makes no sense to add the <code>Gross Value</code>, which will be overwritten anyway (Gross Value = Value + Fees + Taxes). Please note that the <code>Exchange Rate</code> field is empty (or zero) in case of the BASF transaction. Figure 14 displays the result of this import transaction.
+<p><figure class="pp-figure" id="_figure-14"><figcaption>Figure 14.  Result of import from above. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-account-transactions-result.svg"></figure></p>
 <p>Figure 13 displays the first step of the Import wizard. Be sure that the type Portfolio Transactions is selected in step 1; otherwise an error will occur in step 2.  </p>
-<p><figure class="pp-figure" id="_figure-13"><figcaption>Figure 13.  Result of import from above. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-transactions.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-15"><figcaption>Figure 15.  Result of import from above. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-transactions.png"></figure></p>
 
 
 
@@ -2505,7 +2581,7 @@ Because the <code>(Net) Value</code> field is required, it makes no sense to add
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 27, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 28, 2024</span>
   </span>
 
     
