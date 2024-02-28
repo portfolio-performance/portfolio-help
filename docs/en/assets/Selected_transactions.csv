@@ -1,2 +1,2 @@
-Date,Type,Security,Shares,Quote,Amount,Fees,Taxes,Net Transaction Value,Cash Account,Offset Account,Note,Source
-2024-01-13 00:00:00,Buy,NVIDIA,3,500.00,"1,500.00",15.00,10.00,"1,525.00",broker-A,broker-A (EUR),,
+Date;Type;Security;Shares;Quote;Amount;Fees;Taxes;Net Transaction Value;Cash Account;Offset Account;Note;Source
+2024-02-28 00:00:00;Dividend;NVIDIA;3;;5,53;;;5,53;broker-A (EUR);;;

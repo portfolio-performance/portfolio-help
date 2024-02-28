@@ -147,10 +147,52 @@ Figure: Importing account transactions - content CSV file{class=pp-figure}
 
 ![](./images/mnu-file-import-account-transactions-step-3.png)
 
+#### Dividend transaction
+
+It is noteworthy to address the dividend transaction separately, as it presents unique challenges, particularly when dealing with foreign dividends. For instance, complications may arise when dividends are paid in USD but deposited into a cash account denominated in EUR.
+
+To illustrate, let us assume that three USD dividends are paid, with a hypothetical simple exchange rate of 0.5 EUR-for-1-USD. For the purpose of this example, we will use a cash account `Broker-A (EUR)` denominated in EUR for the deposit.
+
+
+
+
+| Date       | Type     | Security Name | Shares | Currency | Gross Amount | Exchange Rate | Cash Account | Value (EUR) |
+| ---------- | -------- | ------------- | ------ | -------- | ------------ | ------------- | ------------ | ---------- |
+| 2024-01-13 | Dividend | NVIDIA        | 3      | USD      | 15           | 0.5           | broker-A (EUR) | 7.5        |
+
+In this example, the CSV file contains columns for the date, type of transaction (in this case, a dividend), the security name (NVIDIA), the number of shares, the currency in which the dividend was paid (USD), the gross amount of the dividend, the applicable exchange rate, the cash account into which the dividend was deposited `broker-A (EUR)`, and the converted value of the total dividend in EUR.
+
+The raw CSV-file looks like:
+
+```
+Date;Type;Security Name;Shares; Currency Gross Amount; Gross Amount; Exchange Rate; Cash Account;  Value
+2024-01-13; Dividend; NVIDIA; 3; USD; 15; 0,5; broker-A (EUR);  7,5
+```
+
+Figure 12 illustrates the initial step in the import wizard process. As the CSV file incorporates the accurately spelled field names, no mapping adjustments are required. It is crucial to take note of number formatting of the various fields, particularly the exchange rate field, which will likely always contain a decimal separator (comma or point). Also check the date format; `YYYY-MM-DD`, or `DD/MM/YY`, or ....
+
+In this instance, we are receiving a dividend payment for three shares, with a `Gross Amount` of 15 USD. Consequently, the dividend value should be 5 USD per share (see Figure 13). Given the `Exchange Rate` of 0.5 EUR-for-1-USD, the net `Value` of the dividend, once deposited into the `broker-A (EUR)` account, should amount to 7.5 EUR.
+
+Figure: Step 1 of the Import wizard: type dividends. {class=pp-figure}
+
+![](./images/mnu-file-import-portfolio-account-transactions-dividend-step-1.png)
+
+The necessity of the `Gross Amount` field is not apparent, particularly as it is not utilized in the subsequent section. However, the Portfolio Performance (PP) software verifies the values within this field, ensuring that the following calculation holds true: `Gross Amount` multiplied by the `Exchange Rate` equals the `Value`. If the numbers do not correspond, an error message will be displayed, preventing progression to the next step.
+
+Upon importing the CSV file detailed above and selecting the `Account Transactions` type, the dividend transaction will be generated as depicted in Figure 13.
+
+!!! Important
+    Regrettably, the software does not currently support the inclusion of Fees and Taxes, either in the foreign or domestic currency. 
+
+Figure: Result of import from above. {class=pp-figure}
+
+![](images/mnu-file-import-portfolio-account-transactions-dividend-result.png)
+
+
 ### 5. Portfolio Transactions import
 
 !!! Important
-    If you have transactions with securities in different currencies, it is good practice to explicitly add the `Security Account` and `Cash Account` to the CSV-file.
+    If you have transactions with securities in different currencies, it is good practice to explicitly add the `Security Account` and `Cash Account` to the CSV-file. As the `Date` is a required field, pay attention to the default date format (YYYY-MM-DD). 
 
 This type of import requires three fields: Shares, Date, Value. The optional fields are the same as above; except that the optional Offset Account field is replaced with Offset Securities Account.
 
@@ -160,7 +202,7 @@ The acceptable values for the field `Type` are: `Deposit`, `Removal`, `Interest`
 
 Suppose that you wish to import two portfolio transactions: a sell of 2 shares of BASF in EUR and a buy of 3 shares NVIDIA in USD. Since we are using the EUR cash account in both cases, the transaction in USD must be converted into EUR. In this case, PP will handle this automatically because the NVIDIA security is listed in USD and the security account in EUR. Alternatively, you can designate the `Currency Gross Amount` column as `USD`. However, a more efficient workflow may involve defining the `Cash Account`, and eventually the `Securities Account`. This prevents the import from defaulting to standard accounts, such as `broker-A` and `broker-A (EUR)` in this case.
 
-Figure 13 displays the `Mapped to Field` dialog box is shown (accessible via double-clicking the Value column). It's advisable to confirm that the selected format aligns with your language settings, especially if you use a comma as the decimal point as in this example.
+Figure 15 displays the `Mapped to Field` dialog box is shown (accessible via double-clicking the Value column). It's advisable to confirm that the selected format aligns with your language settings, especially if you use a comma as the decimal point as in this example.
 
 The CSV file should look as follows.
 
@@ -169,7 +211,7 @@ Date;Type;Shares;Security Name;Value;Exchange rate;fees;taxes;Securities Account
 2024-01-04; Sell; 2; BASF; 90; ;5; 3; broker-A; broker-A (EUR)
 2024-01-13; Buy; 3; NVIDIA; 1740,98; 1,0837; 15; 10; broker-A; broker-A (EUR)
 ```
-Because the `(Net) Value` field is required, it makes no sense to add the `Gross Value`, which will be overwritten anyway (Gross Value = Value + Fees + Taxes). Please note that the `Exchange Rate` field is empty (or zero) in case of the BASF transaction. Figure 12 displays the result of this import transaction.
+Because the `(Net) Value` field is required, it makes no sense to add the `Gross Value`, which will be overwritten anyway (Gross Value = Value + Fees + Taxes). Please note that the `Exchange Rate` field is empty (or zero) in case of the BASF transaction. Figure 14 displays the result of this import transaction.
 
 
 Figure: Result of import from above. {class=pp-figure}
