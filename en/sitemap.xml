@@ -131,7 +131,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://help.portfolio-performance.info/en/how-to/benchmarking/</loc>
+         <lastmod>2024-03-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://help.portfolio-performance.info/en/how-to/copy-securities/</loc>
+         <lastmod>2024-03-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://help.portfolio-performance.info/en/how-to/gold-prices/</loc>
          <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -147,6 +157,11 @@
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/how-to/quote-feed/</loc>
+         <lastmod>2024-03-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://help.portfolio-performance.info/en/how-to/reconstruct-sample-portfolio/</loc>
          <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
