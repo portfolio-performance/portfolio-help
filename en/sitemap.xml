@@ -126,11 +126,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://help.portfolio-performance.info/en/how-to/administrators-receivers/</loc>
-         <lastmod>2024-03-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://help.portfolio-performance.info/en/how-to/benchmarking/</loc>
          <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
@@ -147,6 +142,11 @@
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/how-to/handling-choice-dividend/</loc>
+         <lastmod>2024-03-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://help.portfolio-performance.info/en/how-to/insolvency/</loc>
          <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
