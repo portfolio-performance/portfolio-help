@@ -1,4 +1,4 @@
-#Wed Feb 28 01:15:50 CET 2024
+#Wed Feb 28 23:50:28 CET 2024
 SecurityEventsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:120},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:300}]}
 import-target-portfolio-Portfolio\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
 ExchangeRatesListTab@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:154},{"id"\:"1","width"\:211},{"id"\:"2","width"\:210},{"id"\:"3","width"\:267}]}
@@ -27,7 +27,7 @@ InvestmentPlanListView-newsash=200
 HoldingsPieChartView-newsash=-200
 IMPORT_NOTESPortfolio\ Transactions=true
 BookmarksListTab@bottom={"items"\:[{"id"\:"0","width"\:150},{"id"\:"1","width"\:500}]}
-import-target-account-Account\ Transactions=954059d0-d009-47fe-a8e0-4b522a88a2aa
+import-target-account-Account\ Transactions=a8844383-5b6c-4b59-b786-d48ccafd628b
 PortfolioListView@top2={"items"\:[{"id"\:"0","width"\:100},{"id"\:"1","width"\:160},{"id"\:"volume","width"\:100},{"id"\:"note","width"\:200}]}
 PerformanceChartView-newsash=-200
 HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:190},{"id"\:"1","width"\:266}]}

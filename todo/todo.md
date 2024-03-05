@@ -140,3 +140,7 @@ Historical prices: many of the presets don't seem to function?
 
 ### 2024-02-25
 - Menu Help > Preferences > Backups > Automatically ... (*.backup.xml). Although the text says ...xml, the file is backup in the format of the saved one (for example binary).
+
+### 2024-02-29
+- importing dividends with different currencies is not intuitive concerning the requirement of Gross Amount and the check between value and Exchange Rate (see file > import > dividends)
+- specifying the content of a sample-portfolio.xml (cfr kommer.xml)

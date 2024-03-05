@@ -6170,8 +6170,13 @@
         <price t="2024-02-22" v="4684500000"/>
         <price t="2024-02-23" v="4660000000"/>
         <price t="2024-02-26" v="4633000000"/>
+        <price t="2024-02-27" v="4745500000"/>
+        <price t="2024-02-28" v="4697000000"/>
+        <price t="2024-02-29" v="4707500000"/>
+        <price t="2024-03-01" v="4798500000"/>
+        <price t="2024-03-04" v="4710000000"/>
       </prices>
-      <latest t="2024-02-26" v="4633000000">
+      <latest t="2024-03-04" v="4710000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -6181,7 +6186,7 @@
       </attributes>
       <events/>
       <property type="FEED" name="PORTFOLIO-REPORT-MARKET">XETR</property>
-      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;BAS&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-02-26&quot;}]</property>
+      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;BAS&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-03-04&quot;}]</property>
       <isRetired>false</isRetired>
       <updatedAt>2024-01-14T13:52:31.418936900Z</updatedAt>
     </security>
@@ -8726,8 +8731,12 @@
         <price t="2024-02-23" v="78817000000"/>
         <price t="2024-02-26" v="79092000000"/>
         <price t="2024-02-27" v="78701000000"/>
+        <price t="2024-02-28" v="77663000000"/>
+        <price t="2024-02-29" v="79112000000"/>
+        <price t="2024-03-01" v="82279000000"/>
+        <price t="2024-03-04" v="85237000000"/>
       </prices>
-      <latest t="2024-02-27" v="78701000000">
+      <latest t="2024-03-04" v="85237000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -8810,18 +8819,7 @@
       <name>broker-A (USD)</name>
       <currencyCode>USD</currencyCode>
       <isRetired>false</isRetired>
-      <transactions>
-        <account-transaction>
-          <uuid>026ee8e3-16fe-4418-a856-79c0aacc4c82</uuid>
-          <date>2024-01-13T00:00</date>
-          <currencyCode>USD</currencyCode>
-          <amount>1500</amount>
-          <security reference="../../../../../securities/security[2]"/>
-          <shares>300000000</shares>
-          <updatedAt>2024-02-28T00:00:20.757972600Z</updatedAt>
-          <type>DIVIDENDS</type>
-        </account-transaction>
-      </transactions>
+      <transactions/>
       <attributes>
         <map/>
       </attributes>
