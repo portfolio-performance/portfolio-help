@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#portfolio-transactions" class="md-skip">
+        <a href="#all-securities" class="md-skip">
           Skip to content
         </a>
       
@@ -988,6 +988,8 @@
       
         
       
+        
+      
     
     
     
@@ -1384,6 +1386,27 @@
   
   <span class="md-ellipsis">
     Insolvency
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gold-prices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Retrieving gold prices
   </span>
   
 
@@ -2195,8 +2218,32 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#all-securities" class="md-nav__link">
+    <span class="md-ellipsis">
+      All Securities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portfolio-transactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portfolio transactions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2219,7 +2266,17 @@
   
 
 
-<h1 id="portfolio-transactions">Portfolio transactions</h1>
+  <h1>Reconstructing the sample-portfolio.xml file</h1>
+
+<p>In order to reconstruct the sample-portfolio.xml file, you need to do the following:
+1. Create the file with the menu <code>File &gt; New &gt; File</code> (see <a href="../../getting-started/create-portfolio/">Getting Started</a>). Set the default currency to EUR.
+2. Create one Security Account (<code>Broker-A</code>) with a reference deposit account (<code>Broker-A (Eur)</code>).
+3. Create a second deposit account <code>Broker-A (USD)</code>.</p>
+<h2 id="all-securities">All Securities</h2>
+<p>Add the following securities (see <a href="../../getting-started/adding-securities/">Getting Started</a> to know how) in the <code>All Securities</code> view.
+    A. Amazon: you bought one share of Amazon on 2020-07-01, long before the 20-for-1 split on June 6, 2022. Therefore, you need a CSV-file with the pré-split historical prices.</p>
+<p>create the needed securities and their transactions.</p>
+<h2 id="portfolio-transactions">Portfolio transactions</h2>
 <ul>
 <li>2020-01-01: Deposit of starting capital - EUR 5,000 on account Broker-A (EUR).</li>
 <li>2020-01-03: Purchase of Daimler AG. Due to a spin-off on 2021-12-10 into Mercedes-Benz and Daimler Trucks, you should search for the Mercedes share.( ISIN: DE0007100000). Portfolio Report can deliver the historical prices. Make a purchase of 20 shares at the historical price of 49.07 EUR.</li>
@@ -2268,7 +2325,7 @@ https://www.ariva.de/goldpreis_gold-kurs/kurse/historische-kurse</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 5, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 7, 2024</span>
   </span>
 
     
