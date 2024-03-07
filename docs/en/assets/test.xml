@@ -511,6 +511,32 @@
                   <updatedAt>2023-12-10T19:27:27.133951100Z</updatedAt>
                   <type>SELL</type>
                 </portfolio-transaction>
+                <portfolio-transaction>
+                  <uuid>b514039d-c734-4dab-8b47-55ada7b18922</uuid>
+                  <date>2024-03-05T00:00</date>
+                  <currencyCode>EUR</currencyCode>
+                  <amount>1</amount>
+                  <security reference="../../../../../../../../../securities/security[3]"/>
+                  <crossEntry class="buysell">
+                    <portfolio reference="../../../.."/>
+                    <portfolioTransaction reference="../.."/>
+                    <account reference="../../../../../../../.."/>
+                    <accountTransaction>
+                      <uuid>5d634390-05f0-4d8d-b321-e552eadaf51f</uuid>
+                      <date>2024-03-05T00:00</date>
+                      <currencyCode>EUR</currencyCode>
+                      <amount>1</amount>
+                      <security reference="../../../../../../../../../../../securities/security[3]"/>
+                      <crossEntry class="buysell" reference="../.."/>
+                      <shares>0</shares>
+                      <updatedAt>2024-03-05T20:05:59.231976300Z</updatedAt>
+                      <type>BUY</type>
+                    </accountTransaction>
+                  </crossEntry>
+                  <shares>1000000000</shares>
+                  <updatedAt>2024-03-05T20:05:59.231976300Z</updatedAt>
+                  <type>BUY</type>
+                </portfolio-transaction>
               </transactions>
               <attributes>
                 <map/>
@@ -528,6 +554,7 @@
         <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/accountTransaction"/>
         <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[3]/crossEntry/accountTransaction"/>
         <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[4]/crossEntry/accountTransaction"/>
+        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[5]/crossEntry/accountTransaction"/>
       </transactions>
       <attributes>
         <map/>

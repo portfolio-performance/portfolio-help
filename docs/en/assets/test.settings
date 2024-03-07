@@ -1,4 +1,4 @@
-#Tue Mar 05 17:06:43 CET 2024
+#Tue Mar 05 21:48:09 CET 2024
 SecurityListView-newsash=739
 AttributeListTab@v2={"items"\:[{"id"\:"0","width"\:250},{"id"\:"1","width"\:150},{"id"\:"2","width"\:150},{"id"\:"3","width"\:100}]}
 ExchangeRatesListTab@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:150},{"id"\:"3","width"\:150}]}
@@ -15,7 +15,7 @@ DashboardView-newsash=-200
 AccountListView@bottom5={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:250},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:120},{"id"\:"8","width"\:200},{"id"\:"source","width"\:120}]}
 AccountListView-newsash=200
 AccountListView@top2={"items"\:[{"id"\:"0","width"\:150},{"id"\:"1","width"\:80},{"id"\:"currency","width"\:60},{"id"\:"note","width"\:200}]}
-HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:288},{"id"\:"1","width"\:80}]}
+HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:288},{"id"\:"1","width"\:80}]}
 CurrencyView-newsash=-200
 CurrencyConverterTab={"items"\:[{"id"\:"label","width"\:520},{"id"\:"value","width"\:104}]}
 name.abuchen.portfolio.ui.views.panes.TransactionsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:250},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"account","width"\:120},{"id"\:"9","width"\:120},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}

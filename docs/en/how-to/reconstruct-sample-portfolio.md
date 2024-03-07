@@ -1,10 +1,19 @@
 ---
 title: Reconstructing the sample-portfolio.xml file
 ---
+In order to reconstruct the sample-portfolio.xml file, you need to do the following:
+1. Create the file with the menu `File > New > File` (see [Getting Started](../getting-started/create-portfolio.md)). Set the default currency to EUR.
+2. Create one Security Account (`Broker-A`) with a reference deposit account (`Broker-A (Eur)`).
+3. Create a second deposit account `Broker-A (USD)`.
 
+## All Securities
 
+Add the following securities (see [Getting Started](../getting-started/adding-securities.md) to know how) in the `All Securities` view.
+    A. Amazon: you bought one share of Amazon on 2020-07-01, long before the 20-for-1 split on June 6, 2022. Therefore, you need a CSV-file with the pré-split historical prices.
 
-# Portfolio transactions
+create the needed securities and their transactions.
+
+## Portfolio transactions
 
 - 2020-01-01: Deposit of starting capital - EUR 5,000 on account Broker-A (EUR).
 - 2020-01-03: Purchase of Daimler AG. Due to a spin-off on 2021-12-10 into Mercedes-Benz and Daimler Trucks, you should search for the Mercedes share.( ISIN: DE0007100000). Portfolio Report can deliver the historical prices. Make a purchase of 20 shares at the historical price of 49.07 EUR.
