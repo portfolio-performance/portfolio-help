@@ -1,27 +1,32 @@
 ---
 title: Benchmarking your portfolio
 ---
-Benchmarking your portfolio performance against financial indexes, such as the MSCI World Index, is a common practice in investment management. This process involves comparing the returns of your portfolio to the returns of a selected benchmark index. It also allows you to evaluate the performance of individual securities within your portfolio, helping you determine whether they are contributing positively to your overall returns or underperforming compared to the broader market.
+Benchmarking your portfolio performance against financial indexes is a common practice in investment management. This process involves comparing the returns of your portfolio or individual securities to the returns of a selected benchmark index.
 
-A financial index is a hypothetical portfolio of investment holdings that represents a segment of the financial market. For example, the [MSCI World](https://www.msci.com/documents/10199/178e6643-6ae6-47b9-82be-e1fc565ededb), maintained by MSCI, formerly Morgan Stanley Capital International, is a widely followed global stock market index that tracks the performance of around 1500 large and mid-cap companies across 23 developed countries. The top three stock constituents are Apple, Microsoft Corp, and Nvidia (together about 10% of the hypothetical portfolio).
+A stock index is a measure of the value of a hypothetical portfolio of investment holdings that represents a segment of the financial market. For example, [Standard & Poor’s
+500](https://www.spglobal.com/spdji/en/indices/equity/sp-500/#overview) index measures the performance of 500 large companies listed on stock exchanges in the United States. It is a market capitalization-weighted index, which means that the influence of each company in the index is proportional to its market capitalization. On March 8, 2024, the S&P 500 Index stood at 5,123.69 USD.
 
-A list of all major indexes can be found at [investing.com](https://www.investing.com/indices/major-indices). Some major American indexes are [S&P 500](https://www.spglobal.com/spdji/en/indices/equity/sp-500/), [Dow Jones Industrial Average (DJIA)](https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/#overview), and the [Nasdaq Composite](https://www.nasdaq.com/market-activity/indexes/ixic). Some major European indexes are [Euro Stoxx 50](https://www.stoxx.com/index-details?symbol=SX5E), [Financial Times Stock Exchange 100](https://www.ftse.com/products/indices/UK), and the [Deutscher Aktienindex (DAX)](https://www.dax-index.de/en/). Most indexes have several variants and/or expressed in multiple currencies.
+## Finding an index
 
-!!! Note Index variants
+A list of major indexes can be found on several financial websites such as [investing.com](https://www.investing.com/indices/major-indices) and [Yahoo Finance](https://finance.yahoo.com/world-indices/). In order to use an index for benchmarking your portfolio, you need to add it as a security.
 
-    An index variant refers to the specific way an index is calculated. Here are some common types of index variants (see [MSCI](https://www.msci.com/search?keywords=msci+world) for an example):
+For the indexes listed on Yahoo Finance, simply [add a new security](../getting-started/adding-securities.md) and search for the ticker symbol; e.g. ^GSPC. If you want to use the data from investing.com, you have to download the historical prices. Select the correct time period and click the download button to receive a CSV-file (you need a free registration for that). Create a new empty instrument. See the section [File > Import](../reference/file/import.md#csv-files-comma-separated-values) and [How-to > Downloading Historical Prices](./downloading-historical-prices/csv-file.md#investingcom) for a detailed explanation how to import these historical prices. For appending the future daily prices, you can use the daily updated table from the last month. Set the Quote Feed of the Historical Quotes to `Table on website` and use the following Feed URL: https://www.investing.com/indices/us-spx-500-historical-data. This Quote Feed will not overwrite the existing prices but will append new ones.
 
-    1. **Price Return**: This variant only considers the price changes of the index's constituents. It does not take into account dividends or distributions.
+There are plenty of mutual funds or ETF's that replicate an index. For example, both [Vanguard 500 Index Fund Admiral](https://investor.vanguard.com/investment-products/mutual-funds/profile/vfiax#portfolio-composition) and the [iShares Core S&P 500 ETF](https://www.ishares.com/us/products/239726/ishares-core-sp-500-etf) replicate the S&P 500 quite narrowly. So, you could use also one these funds as benchmark.
 
-    2. **Gross Return**: This variant includes both the price changes and the full dividends or distributions paid by the index's constituents. It assumes that all dividends or distributions are reinvested back into the index.
+Figure: Benchmark of S&P 500 index with two replicating funds. {class=pp-figure}
 
-    3. **Net Return**: This variant is similar to the Total Return variant, but it takes into account the effect of dividend taxes (withholding taxes). It assumes that dividends or distributions, after tax deductions, are reinvested back into the index.
+![](images/benchmark-chart.png)
 
-    4. **Total Return**: A total return index is similar to a gross return index in that it considers both the changes in the prices of the constituent securities and the reinvestment of dividends. However, a total return index may also account for other corporate actions, such as stock splits, rights issues, and spin-offs. This variant provides the most comprehensive view of an index's performance, taking into account all possible factors that could impact returns.
+As depicted in Figure 1, the iShares Core S&P 500 ETF closely mirrors the S&P index. The Vanguard index fund also follows the trend closely but exhibits some deviations.
 
-## Adding an index to your portfolio
+## Displaying the benchmark
 
-You can either download the historical prices of the index and assign it to a new (empty) security or you can add an ETF that replicates the index.
+To display a graph similar to Figure 1, follow these steps:
 
-1. Download the historical prices from investing.com. For example, the [MSCI World Net EUR Historical Data](https://www.investing.com/indices/msci-world-net-eur-historical-data). Select the correct time period and click the download button to receive a CSV-file (you need a free registration for that). Create a new empty instrument. See the section [File > Import](../reference/file/import.md#csv-files-comma-separated-values) and [How-to > Downloading Historical Prices](./downloading-historical-prices/csv-file.md#investingcom) for a detailed explanation how to import these historical prices. For appending the future daily prices, you can use the daily updated table from the last month. Set the Quote Feed of the Historical Quotes to `Table on website` and use the following Feed URL: https://www.investing.com/indices/msci-world-net-eur-historical-data. This Quote Feed will not overwrite the existing prices but will append new ones.
-2. Many funds or ETF's replicate the MSCI World index. So, the historical prices of these ETF's are an exact copy of all the +- 1500 securities with their exact relative weight. For example As can be seen in Figure 1, their graphs are virtual identical.
+1. Navigate to the menu `View > Reports > Performance > Chart`.
+2. Utilize the `Configure Chart` icon, represented by a gear symbol, located in the top right corner of the screen.
+3. Within the configuration options, you can add or remove `time series` and `benchmarks`.
+4. It's important to note that securities must have a market value, meaning they have been purchased, in order to be used as a time series. Benchmarks only require historical prices. Since we cannot buy stock of an index, we need to use the benchmark option for it.
+
+Please take note that the historical prices for the displayed securities differ notably: roughly 5000 USD for the S&P index, and approximately 500 USD for both the iShares ETF and Vanguard index fund. Despite this discrepancy, the curves overlap, indicating that the vertical value axis of the graph is represented in percentages (not USD). This percentage is calculated from the initial historical price of March 10, 2014 for each benchmark separately.

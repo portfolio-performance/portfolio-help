@@ -61,7 +61,7 @@ Figure: Gold prices through JSON Quote Feed from London Bullion Market.{class=pp
 
 ## Website Gold.org
 
-The website gold.org offers historical gold prices in different currencies and for various quantities (oz, grams, kg; 1 ounce = 31.1034768 gr). To access the numerical data, you'll need a workaround. First, open the [gold prices graph](https://www.gold.org/goldhub/data/gold-prices). The server sends a text file (JSON file) containing the data, which is then used to create the graph locally on your computer. This method is more efficient in terms of time and bandwidth.
+The website gold.org offers historical gold prices in different currencies and for various quantities (oz, grams, kg; 1 (troy) ounce = 31.1034768 gr). To access the numerical data, you'll need a workaround. First, open the [gold prices graph](https://www.gold.org/goldhub/data/gold-prices). The server sends a text file (JSON file) containing the data, which is then used to create the graph locally on your computer. This method is more efficient in terms of time and bandwidth.
 
 To find the URL for the JSON download, follow these steps:
 
