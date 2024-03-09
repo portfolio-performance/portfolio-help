@@ -144,6 +144,7 @@ nav:
       - Recording a stock split operation: how-to/recording-stock-split.md
       - Insolvency: how-to/insolvency.md
       - Retrieving gold prices: how-to/gold-prices.md
+      - Benchmarking your portfolio: how-to/benchmarking.md
   - Reference manual:
       - Reference manual: reference/index.md
       - Overview: reference/menu.md
