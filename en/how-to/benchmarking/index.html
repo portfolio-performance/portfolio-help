@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adding-an-index-to-your-portfolio" class="md-skip">
+        <a href="#finding-an-index" class="md-skip">
           Skip to content
         </a>
       
@@ -2226,9 +2226,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#adding-an-index-to-your-portfolio" class="md-nav__link">
+  <a href="#finding-an-index" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding an index to your portfolio
+      Finding an index
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#displaying-the-benchmark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Displaying the benchmark
     </span>
   </a>
   
@@ -2259,33 +2268,24 @@
 
   <h1>Benchmarking your portfolio</h1>
 
-<p>Benchmarking your portfolio performance against financial indexes, such as the MSCI World Index, is a common practice in investment management. This process involves comparing the returns of your portfolio to the returns of a selected benchmark index. It also allows you to evaluate the performance of individual securities within your portfolio, helping you determine whether they are contributing positively to your overall returns or underperforming compared to the broader market.</p>
-<p>A financial index is a hypothetical portfolio of investment holdings that represents a segment of the financial market. For example, the <a href="https://www.msci.com/documents/10199/178e6643-6ae6-47b9-82be-e1fc565ededb">MSCI World</a>, maintained by MSCI, formerly Morgan Stanley Capital International, is a widely followed global stock market index that tracks the performance of around 1500 large and mid-cap companies across 23 developed countries. The top three stock constituents are Apple, Microsoft Corp, and Nvidia (together about 10% of the hypothetical portfolio).</p>
-<p>A list of all major indexes can be found at <a href="https://www.investing.com/indices/major-indices">investing.com</a>. Some major American indexes are <a href="https://www.spglobal.com/spdji/en/indices/equity/sp-500/">S&amp;P 500</a>, <a href="https://www.spglobal.com/spdji/en/indices/equity/dow-jones-industrial-average/#overview">Dow Jones Industrial Average (DJIA)</a>, and the <a href="https://www.nasdaq.com/market-activity/indexes/ixic">Nasdaq Composite</a>. Some major European indexes are <a href="https://www.stoxx.com/index-details?symbol=SX5E">Euro Stoxx 50</a>, <a href="https://www.ftse.com/products/indices/UK">Financial Times Stock Exchange 100</a>, and the <a href="https://www.dax-index.de/en/">Deutscher Aktienindex (DAX)</a>. Most indexes have several variants and/or expressed in multiple currencies.</p>
-<div class="admonition note index variants">
-<p class="admonition-title">Note</p>
-<p>An index variant refers to the specific way an index is calculated. Here are some common types of index variants (see <a href="https://www.msci.com/search?keywords=msci+world">MSCI</a> for an example):</p>
+<p>Benchmarking your portfolio performance against financial indexes is a common practice in investment management. This process involves comparing the returns of your portfolio or individual securities to the returns of a selected benchmark index.</p>
+<p>A stock index is a measure of the value of a hypothetical portfolio of investment holdings that represents a segment of the financial market. For example, <a href="https://www.spglobal.com/spdji/en/indices/equity/sp-500/#overview">Standard &amp; Poor’s
+500</a> index measures the performance of 500 large companies listed on stock exchanges in the United States. It is a market capitalization-weighted index, which means that the influence of each company in the index is proportional to its market capitalization. On March 8, 2024, the S&amp;P 500 Index stood at 5,123.69 USD.</p>
+<h2 id="finding-an-index">Finding an index</h2>
+<p>A list of major indexes can be found on several financial websites such as <a href="https://www.investing.com/indices/major-indices">investing.com</a> and <a href="https://finance.yahoo.com/world-indices/">Yahoo Finance</a>. In order to use an index for benchmarking your portfolio, you need to add it as a security.</p>
+<p>For the indexes listed on Yahoo Finance, simply <a href="../../getting-started/adding-securities/">add a new security</a> and search for the ticker symbol; e.g. ^GSPC. If you want to use the data from investing.com, you have to download the historical prices. Select the correct time period and click the download button to receive a CSV-file (you need a free registration for that). Create a new empty instrument. See the section <a href="../../reference/file/import/#csv-files-comma-separated-values">File &gt; Import</a> and <a href="../downloading-historical-prices/csv-file/#investingcom">How-to &gt; Downloading Historical Prices</a> for a detailed explanation how to import these historical prices. For appending the future daily prices, you can use the daily updated table from the last month. Set the Quote Feed of the Historical Quotes to <code>Table on website</code> and use the following Feed URL: https://www.investing.com/indices/us-spx-500-historical-data. This Quote Feed will not overwrite the existing prices but will append new ones.</p>
+<p>There are plenty of mutual funds or ETF's that replicate an index. For example, both <a href="https://investor.vanguard.com/investment-products/mutual-funds/profile/vfiax#portfolio-composition">Vanguard 500 Index Fund Admiral</a> and the <a href="https://www.ishares.com/us/products/239726/ishares-core-sp-500-etf">iShares Core S&amp;P 500 ETF</a> replicate the S&amp;P 500 quite narrowly. So, you could use also one these funds as benchmark.</p>
+<p><img alt="" src="../images/benchmark-chart.png"></p>
+<p>As depicted in Figure 1, the iShares Core S&amp;P 500 ETF closely mirrors the S&amp;P index. The Vanguard index fund also follows the trend closely but exhibits some deviations.</p>
+<h2 id="displaying-the-benchmark">Displaying the benchmark</h2>
+<p>To display a graph similar to Figure 1, follow these steps:</p>
 <ol>
-<li>
-<p><strong>Price Return</strong>: This variant only considers the price changes of the index's constituents. It does not take into account dividends or distributions.</p>
-</li>
-<li>
-<p><strong>Gross Return</strong>: This variant includes both the price changes and the full dividends or distributions paid by the index's constituents. It assumes that all dividends or distributions are reinvested back into the index.</p>
-</li>
-<li>
-<p><strong>Net Return</strong>: This variant is similar to the Total Return variant, but it takes into account the effect of dividend taxes (withholding taxes). It assumes that dividends or distributions, after tax deductions, are reinvested back into the index.</p>
-</li>
-<li>
-<p><strong>Total Return</strong>: A total return index is similar to a gross return index in that it considers both the changes in the prices of the constituent securities and the reinvestment of dividends. However, a total return index may also account for other corporate actions, such as stock splits, rights issues, and spin-offs. This variant provides the most comprehensive view of an index's performance, taking into account all possible factors that could impact returns.</p>
-</li>
+<li>Navigate to the menu <code>View &gt; Reports &gt; Performance &gt; Chart</code>.</li>
+<li>Utilize the <code>Configure Chart</code> icon, represented by a gear symbol, located in the top right corner of the screen.</li>
+<li>Within the configuration options, you can add or remove <code>time series</code> and <code>benchmarks</code>.</li>
+<li>It's important to note that securities must have a market value, meaning they have been purchased, in order to be used as a time series. Benchmarks only require historical prices. Since we cannot buy stock of an index, we need to use the benchmark option for it.</li>
 </ol>
-</div>
-<h2 id="adding-an-index-to-your-portfolio">Adding an index to your portfolio</h2>
-<p>You can either download the historical prices of the index and assign it to a new (empty) security or you can add an ETF that replicates the index.</p>
-<ol>
-<li>Download the historical prices from investing.com. For example, the <a href="https://www.investing.com/indices/msci-world-net-eur-historical-data">MSCI World Net EUR Historical Data</a>. Select the correct time period and click the download button to receive a CSV-file (you need a free registration for that). Create a new empty instrument. See the section <a href="../../reference/file/import/#csv-files-comma-separated-values">File &gt; Import</a> and <a href="../downloading-historical-prices/csv-file/#investingcom">How-to &gt; Downloading Historical Prices</a> for a detailed explanation how to import these historical prices. For appending the future daily prices, you can use the daily updated table from the last month. Set the Quote Feed of the Historical Quotes to <code>Table on website</code> and use the following Feed URL: https://www.investing.com/indices/msci-world-net-eur-historical-data. This Quote Feed will not overwrite the existing prices but will append new ones.</li>
-<li>Many funds or ETF's replicate the MSCI World index. So, the historical prices of these ETF's are an exact copy of all the +- 1500 securities with their exact relative weight. For example As can be seen in Figure 1, their graphs are virtual identical.</li>
-</ol>
+<p>Please take note that the historical prices for the displayed securities differ notably: roughly 5000 USD for the S&amp;P index, and approximately 500 USD for both the iShares ETF and Vanguard index fund. Despite this discrepancy, the curves overlap, indicating that the vertical value axis of the graph is represented in percentages (not USD). This percentage is calculated from the initial historical price of March 10, 2014 for each benchmark separately.</p>
 
 
 
@@ -2306,7 +2306,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 7, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 9, 2024</span>
   </span>
 
     
