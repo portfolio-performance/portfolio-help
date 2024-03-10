@@ -50,8 +50,11 @@ For each security, info should be provide such as ticker, taxonomy, historical p
 For each of the above securities, at least one buy or inbound delivery transaction should be made.  Other transactions (sell, dividend, ...) should also be present.
 
 *Work in Progress*
+
 - 2020-01-01: Deposit of starting capital - EUR 5,000 on account Broker-A (EUR).
+
 - 2020-01-03: Purchase of Daimler AG. Due to a spin-off on 2021-12-10 into Mercedes-Benz and Daimler Trucks, you should search for the Mercedes share.( ISIN: DE0007100000). Portfolio Report can deliver the historical prices. Make a purchase of 20 shares at the historical price of 49.07 EUR.
+
 - 2020-07-09: Dividend from Mercedes benz. Lookup at https://www.investing.com/dividends-calendar/ (set filter to company). Take 20% as global tax rate and 1% as fee.
 - 2020-07-01: transfer 2700 EUR from Broker-A (EUR) to Broker-A (USD). The exchange rate is 0.8929 USD/EUR. The total amount of USD = 3024 USD.
 - 2020-07-01: buy 1 share of Amazon at the price of 2878 USD. Include 1% fees and 2% taxes, totaling into 2962.80 USD net. Use CSV-file to import prices from before split
