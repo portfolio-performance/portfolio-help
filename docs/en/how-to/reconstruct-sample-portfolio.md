@@ -1,20 +1,55 @@
 ---
 title: Reconstructing the sample-portfolio.xml file
 ---
-In order to reconstruct the sample-portfolio.xml file, you need to do the following:
-1. Create the file with the menu `File > New > File` (see [Getting Started](../getting-started/create-portfolio.md)). Set the default currency to EUR.
-2. Create one Security Account (`Broker-A`) with a reference deposit account (`Broker-A (Eur)`).
-3. Create a second deposit account `Broker-A (USD)`.
+In order to reconstruct the sample-portfolio.xml file, you first need to create a new portfolio with the menu `File > New > File` (see [Getting Started](../getting-started/create-portfolio.md)). Choose your base currency. Set it to EUR if you want to follow the sample portfolio. Add a security account (e.g. `Stocks`) and a reference deposit account (e.g. `EUR-account`). Finish the wizard. Add more security and deposit accounts.
 
-## All Securities
+The sample portfolio contains the following security accounts: `Stocks`, `Bonds`, `Funds`, `Crypto`, and `Gold`. They all have the same `EUR-account` as reference.
 
-Add the following securities (see [Getting Started](../getting-started/adding-securities.md) to know how) in the `All Securities` view.
-    A. Amazon: you bought one share of Amazon on 2020-07-01, long before the 20-for-1 split on June 6, 2022. Therefore, you need a CSV-file with the pré-split historical prices.
+The sample portfolio contains the following deposit accounts: `EUR-account`, `USD-account`, `GBP-account`, `JPY-acount`, `ZAR-account`... [*The choice of multiple currency accounts should emphasis the international character/open mindedness of the software*]
 
-create the needed securities and their transactions.
+In the `All Securities` view, add your securities. The sample portfolio contains the following securities.
+
+**Gold & other precious metals**
+
+    - Gold: [see how-to > Retrieving gold and other precious metals prices](./gold-prices.md) to create a security that can hold Degussa 30 oz gold bars.
+    - other metal: ??
+
+**Bonds**
+    - Government: e.g. Germany 10Y YTM (Bund)Germany 10 Year bond
+    - Corporate bond: e.g. Rolls-Royce, 5.75% 15oct2027, GBP (XS2244321787)
+    - do we place here also "iShares Core Euro Government Bond UCITS ETF (Dist)" or does it belong with "funds"?
+
+**Crypto**
+    - see existing kommer.xml : Bitcoin BTC
+    - other: ?
+
+**Funds**
+    - some ETF from kommer.xml (but there are too many?): I should keep: iShares Core Euro Government Bond UCITS ETF (Dist) (see above) and iShares MSCI EM UCITS ETF (Dist) (because our stock from EM is probably limited)
+    - I should add: iShares Core S&P 500 ETF (to illustrate the S&P 500 index) or an ETF that replicates the MSCI world or all countries. 
+
+**Stock**
+    
+    - [Stock should be spread over countries and sectors from GICS]. For example:
+
+    1. Energy: Royal Dutch Shell (Netherlands/GB)
+    2. Materials: Rio Tinto (GB/Australia) [also choice dividend]
+    3. Industrials: Bombardier Inc (Canada)
+    4. Consumer Discretionary: Daimler AG (Germany) [also spin-off Mercedes ...] & Amazon (USA) [also split]
+    5. Consumer Staples: The Procter & Gamble Company (United States)
+    6. Health Care: Novartis AG (Switzerland)
+    7. Financials: HSBC Holdings plc (United Kingdom)
+    8. Information Technology: Sony (Japan)
+    9. Telecommunication Services: Deutsche telekom (Germany)
+    10. Utilities: Engie SA (France)
+    11. Real Estate: Mariott International (United States)
+
+For each security, info should be provide such as ticker, taxonomy, historical prices download instructions.
 
 ## Portfolio transactions
 
+For each of the above securities, at least one buy or inbound delivery transaction should be made.  Other transactions (sell, dividend, ...) should also be present.
+
+*Work in Progress*
 - 2020-01-01: Deposit of starting capital - EUR 5,000 on account Broker-A (EUR).
 - 2020-01-03: Purchase of Daimler AG. Due to a spin-off on 2021-12-10 into Mercedes-Benz and Daimler Trucks, you should search for the Mercedes share.( ISIN: DE0007100000). Portfolio Report can deliver the historical prices. Make a purchase of 20 shares at the historical price of 49.07 EUR.
 - 2020-07-09: Dividend from Mercedes benz. Lookup at https://www.investing.com/dividends-calendar/ (set filter to company). Take 20% as global tax rate and 1% as fee.
@@ -36,22 +71,6 @@ create the needed securities and their transactions.
 
 
 
-
-https://fsapi.gold.org/api/goldprice/v11/chart/price/usd/oz/1677768823962,1709391615090
-
-
-https://fsapi.gold.org/api/goldprice/v11/chart/price/usd/oz/{TODAY:dd.MM.yyyy:-P2M},{TODAY}
-https://www.ariva.de/goldpreis_gold-kurs/kurse/historische-kurse
-
-https://www.gold.org/goldhub/data/gold-prices
-
-https://fsapi.gold.org/api/goldprice/v11/chart/price/usd/oz/1677768823962,1709391615090
-
-https://www.degussa-goldhandel.de/preise/preisliste/
-
-dynamische URL
-
-https://help.portfolio-performance.info/de/kursdaten_laden/#ticker
 
 
 

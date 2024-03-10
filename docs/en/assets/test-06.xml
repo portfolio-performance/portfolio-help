@@ -6175,8 +6175,12 @@
         <price t="2024-02-29" v="4707500000"/>
         <price t="2024-03-01" v="4798500000"/>
         <price t="2024-03-04" v="4710000000"/>
+        <price t="2024-03-05" v="4725000000"/>
+        <price t="2024-03-06" v="4853000000"/>
+        <price t="2024-03-07" v="4906000000"/>
+        <price t="2024-03-08" v="4880500000"/>
       </prices>
-      <latest t="2024-03-04" v="4710000000">
+      <latest t="2024-03-08" v="4880500000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -6186,7 +6190,7 @@
       </attributes>
       <events/>
       <property type="FEED" name="PORTFOLIO-REPORT-MARKET">XETR</property>
-      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;BAS&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-03-04&quot;}]</property>
+      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;BAS&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-03-08&quot;}]</property>
       <isRetired>false</isRetired>
       <updatedAt>2024-01-14T13:52:31.418936900Z</updatedAt>
     </security>
@@ -8735,9 +8739,12 @@
         <price t="2024-02-29" v="79112000000"/>
         <price t="2024-03-01" v="82279000000"/>
         <price t="2024-03-04" v="85237000000"/>
-        <price t="2024-03-05" v="85122500000"/>
+        <price t="2024-03-05" v="85964000000"/>
+        <price t="2024-03-06" v="88700000000"/>
+        <price t="2024-03-07" v="92669000000"/>
+        <price t="2024-03-08" v="87528000000"/>
       </prices>
-      <latest t="2024-03-05" v="85000800000">
+      <latest t="2024-03-08" v="87528000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>

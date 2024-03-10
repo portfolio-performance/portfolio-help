@@ -1,4 +1,4 @@
-#Sat Mar 09 21:14:03 CET 2024
+#Sat Mar 09 23:24:47 CET 2024
 SecurityListView-newsash=739
 AttributeListTab@v2={"items"\:[{"id"\:"0","width"\:250},{"id"\:"1","width"\:150},{"id"\:"2","width"\:150},{"id"\:"3","width"\:100}]}
 PerformanceChartView-PICKER$picked=7600e16d-0168-49d1-aadb-18c66a64bc8f
@@ -17,7 +17,7 @@ AccountListView@bottom5={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80}
 AccountListView-newsash=200
 PerformanceChartView-newsash=273
 AccountListView@top2={"items"\:[{"id"\:"0","width"\:150},{"id"\:"1","width"\:80},{"id"\:"currency","width"\:60},{"id"\:"note","width"\:200}]}
-HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:187},{"id"\:"1","width"\:80}]}
+HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:187},{"id"\:"1","width"\:80}]}
 CurrencyView-newsash=-200
 CurrencyConverterTab={"items"\:[{"id"\:"label","width"\:520},{"id"\:"value","width"\:104}]}
 name.abuchen.portfolio.ui.views.panes.TransactionsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:250},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"account","width"\:120},{"id"\:"9","width"\:120},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}

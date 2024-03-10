@@ -14,7 +14,7 @@ For the indexes listed on Yahoo Finance, simply [add a new security](../getting-
 
 There are plenty of mutual funds or ETF's that replicate an index. For example, both [Vanguard 500 Index Fund Admiral](https://investor.vanguard.com/investment-products/mutual-funds/profile/vfiax#portfolio-composition) and the [iShares Core S&P 500 ETF](https://www.ishares.com/us/products/239726/ishares-core-sp-500-etf) replicate the S&P 500 quite narrowly. So, you could use also one these funds as benchmark.
 
-Figure: Benchmark of S&P 500 index with two replicating funds. {class=pp-figure}
+Figure: Benchmark of SP 500 index with two replicating funds. {class=pp-figure}
 
 ![](images/benchmark-chart.png)
 
