@@ -2,7 +2,7 @@
 title: Performance Dashboard
 draft: true
 ---
-To assess your portfolio's performance, start by examining the Dashboard. Key performance and risk indicators for the entire portfolio are summarized in a dashboard, accessible through the menu `View > Reports > Performance` or via the sidebar (see Figure 1). A comprehensive review of the dashboard is available in the [Reference Manual](../reference/view/performance.md) under `View > Performance`. As always, green values indicate a profit, while red signifies a loss.
+To assess your portfolio's performance, start by examining the Dashboard. Key performance and risk indicators for the entire portfolio are summarized in a dashboard, accessible through the menu `View > Reports > Performance` or via the sidebar (see Figure 1). A comprehensive review of the dashboard is available in the [Reference Manual](../reference/view/reports/performance/index.md) under `View > Performance`. As always, green values indicate a profit, while red signifies a loss.
 
 Figure: Dashboard with key performance indicators - 2-year reporting period.{class=pp-figure}
 

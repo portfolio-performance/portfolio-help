@@ -13,3 +13,10 @@ You can overrule the default width =30%
 
 <span style="color:blue">some *blue* text</span>.
 
+
+
+HTML entities
+
+right-pointing caret: &rsaquo;
+ampersand: &amp;
+less than: &lt;

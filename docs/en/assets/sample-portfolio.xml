@@ -16428,10 +16428,11 @@ Info: https://www.investing.com/rates-bonds/de0001102622</note>
         <price t="2024-03-06" v="214630000000"/>
         <price t="2024-03-07" v="215813000000"/>
         <price t="2024-03-08" v="217652000000"/>
+        <price t="2024-03-11" v="218219000000"/>
       </prices>
-      <latest t="2024-03-08" v="217652000000">
-        <high>219495000000</high>
-        <low>215878000000</low>
+      <latest t="2024-03-11" v="217810000000">
+        <high>218243000000</high>
+        <low>217597000000</low>
         <volume>0</volume>
       </latest>
       <attributes>
@@ -16535,7 +16536,9 @@ Info: https://www.investing.com/rates-bonds/de0001102622</note>
         <price t="2024-03-06" v="198434532"/>
         <price t="2024-03-07" v="191555895"/>
         <price t="2024-03-08" v="189007154"/>
-        <price t="2024-03-09" v="173950177"/>
+        <price t="2024-03-09" v="172606336"/>
+        <price t="2024-03-10" v="164336571"/>
+        <price t="2024-03-11" v="173683942"/>
       </prices>
       <latestFeed>MANUAL</latestFeed>
       <attributes>
@@ -22420,7 +22423,7 @@ Info: https://www.investing.com/rates-bonds/de0001102622</note>
             <config>
               <uuid>a900963b-2d5c-4750-8ff1-3344dc5a16ac</uuid>
               <name>Standard</name>
-              <data>[b]Security621fc5f3-156b-4669-824f-5d9bf854f4a9;#a079e2;SOLID;false;2,[b]Security21ad2d2e-4270-4bd5-bdd8-a884def225f4;#00ffff;SOLID;false;2,[b]Security4ae8d6ba-0f16-4953-ae54-3d80d217ccb2;#e2797c;SOLID;false;2,[b]Security81f12f99-bbc2-49a6-892a-0fd2e09c0ba9;#e2a079;SOLID;false;2</data>
+              <data>[b]Security621fc5f3-156b-4669-824f-5d9bf854f4a9;#a079e2;SOLID;false;2,[b]Security21ad2d2e-4270-4bd5-bdd8-a884def225f4;#00ffff;SOLID;false;2,[b]Security4ae8d6ba-0f16-4953-ae54-3d80d217ccb2;#e2797c;SOLID;false;2</data>
             </config>
           </configurations>
         </config-set>

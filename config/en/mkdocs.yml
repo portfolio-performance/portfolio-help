@@ -160,10 +160,12 @@ nav:
               - Context Menu: reference/view/securities/context-menu.md
           - Reports:
               - Statement of Assets:
-                - Statement of Assets: reference/view/reports/statement.md
-                - Chart: reference/view/reports/statement-chart.md
-                - Holdings: reference/view/reports/holdings.md
-              - Performance: reference/view/performance.md
+                - Statement of Assets: reference/view/reports/statement/index.md
+                - Chart: reference/view/reports/statement/statement-chart.md
+                - Holdings: reference/view/reports/statement/holdings.md
+              - Performance:  
+                - Performance: reference/view/reports/performance/index.md
+                - Chart: reference/view/reports/performance/performance-chart.md
           - General Data:
             - Settings: reference/view/settings.md
       - Online Menu: reference/online.md
