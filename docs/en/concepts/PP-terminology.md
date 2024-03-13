@@ -63,6 +63,8 @@ Fundamental concepts such as account, transaction, reporting period, purchase va
 
 - URL (latest quotes): see above but for the latest quote provider.
 
+- Watchlist: manual grouping of securities.
+
 - WKN: *Wertpapierkennnummer*. A German six-digit alphanumeric code for the identification of a security, now replaced by the ISIN code.
 
  
