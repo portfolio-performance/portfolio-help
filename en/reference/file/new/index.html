@@ -2631,7 +2631,7 @@
 </li>
 <li>
 <h3 id="taxonomies"><strong>Taxonomies</strong></h3>
-<p>A taxonomy serves as a classification system for your securities. For instance, the existing <code>Type of Security</code> taxonomy allows you to classify your securities into categories such as stock, Equity Fund, Exchange Traded Fund (ETF), Bond, Stock Option, Index, or Currency. It is essential to set the correct type in the Taxonomies panel when adding or editing the security (refer to Figure 3).</p>
+<p>A taxonomy serves as a classification system for your securities. For instance, the existing <code>Type of Security</code> taxonomy allows you to classify your securities into categories such as stock, Equity Fund, Exchange Traded Fund (ETF), Bond, Stock Option, Index, or Currency. It is essential to set the correct type in the <code>Taxonomies</code> panel when adding or editing the security (refer to Figure 3).</p>
 <p>Other valuable presets include Industries, aligned with the Global Industry Classification Standard (GICS), regions (up to country level), and assets (cash, equity, debt, and more).</p>
 <p>To access these taxonomies, navigate to the <code>Left sidebar &gt; Taxonomies</code> (see Figure 6). Click on the <code>+ button</code> to view all presets or create your custom taxonomy.</p>
 </li>
@@ -2639,12 +2639,12 @@
 <h3 id="historical-quotes"><strong>Historical Quotes</strong></h3>
 <p>For evaluating your portfolio, you need the current &amp; historical prices of the security. In this panel (see Figure 4) you can set the data source of the <code>Quote Feed</code>. As <code>Provider</code>, you can choose between several alternatives: Yahoo Finance, Alpha Vantage, Quandl, ... (see Figure 5). You can even refer to a webpage (e.g. from an investor site) that contains these historical data; an example is given in <a href="../../../how-to/morningstar/">Import fund data from Morningstar</a>. Or you can create them yourself and import the quotes from a csv-file. </p>
 <p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Historical quotes panel.</figcaption><img alt="" src="../images/historical-quotes.png"></figure></p>
-<p>Depending upon the chosen provider, you may need to input additional information. If the provider is a website, you need to specify an URL. If the provider covers more than one <code>Exchange</code>, you need to select the correct one.</p>
+<p>Depending upon the chosen provider, you may need to input additional information. If the provider is a website, you need to specify a URL. If the provider covers more than one <code>Exchange</code>, you need to select the correct one.</p>
 <p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5.  Historical quotes panel.</figcaption><img alt="" src="../images/quote-feeds.png"></figure></p>
 <p>Downloading historical prices for large-cap (big companies) stocks is relatively straightforward. However, obtaining data for less common stocks, mutual funds, bonds, bitcoin, etc., can sometimes be more challenging. We explore these topics in depth in <a href="../../../how-to/downloading-historical-prices/">Downloading Historical Prices</a> in the how-to section.   </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>An alternative but convenient method for securities listed on XETRA is to utilize the Portfolio Report website. See <a href="../../../how-to/downloading-historical-prices/portfolioreport/">how-to &gt; Using Portfolio Report</a> for more info.</p>
+<p>An alternative, but convenient method for securities listed on XETRA is to utilize the Portfolio Report website. See <a href="../../../how-to/downloading-historical-prices/portfolioreport/">how-to &gt; Using Portfolio Report</a> for more info.</p>
 </div>
 </li>
 <li>
@@ -2657,11 +2657,14 @@
 <h2 id="exchange-rate">Exchange Rate</h2>
 <p>Used for handling exchange rate information, which is crucial for portfolios involving multiple currencies.</p>
 <h2 id="consumer-price-index">Consumer Price Index</h2>
-<p>for incorporating consumer price index data, providing a macroeconomic indicators for financial analysis.</p>
+<p>For incorporating consumer price index data, providing a macroeconomic indicators for financial analysis.</p>
 <h2 id="taxonomy">Taxonomy</h2>
 <p>Used for managing classifications or categorizations of assets based on a defined taxonomy.</p>
 <h2 id="watchlist">Watchlist</h2>
-<p>Used for creating and managing watchlists, allowing users to monitor specific securities or assets without direct ownership.</p>
+<p><figure class="align-right" style="width:50%" id="_figure-6"><figcaption>Figure 6.  Create new watchlist.</figcaption><img alt="" src="../images/mnu-file-new-watchlist.png"></figure></p>
+<p>A watchlist is a manual grouping of securities. To create a new list, navigate to <code>File &gt; New &gt; Watchlist</code> in the menu. Once created, it will appear under the <code>All Securities</code> heading. You can create as many watchlists as you want; in Figure 6, two lists are created with the names <code>Indexes</code> and <code>New Watchlist</code>.</p>
+<p>Using the context menu (right-click on a list), you can rename, delete, or move (up) the watchlist (refer to Figure 6). Adding securities to the watchlist is a manual process done by dragging one or more securities from the <code>All Securities</code> view to the watchlist. To remove a security from the watchlist, right-click the security and choose 'Remove from <em>Your_Watchlist</em>'.</p>
+<p>Watchlists inherit the view from <code>All Securities</code>. Changing the view in one watchlist will also change the view in all other watchlists, including the <code>All Securities</code> view.</p>
 
 
 
@@ -2682,7 +2685,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 12, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 13, 2024</span>
   </span>
 
     
