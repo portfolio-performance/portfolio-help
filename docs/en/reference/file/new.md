@@ -52,7 +52,7 @@ At the bottom of Figure 3, you can add a personal `note` for this security.
 
 - ### **Taxonomies**
 
-    A taxonomy serves as a classification system for your securities. For instance, the existing `Type of Security` taxonomy allows you to classify your securities into categories such as stock, Equity Fund, Exchange Traded Fund (ETF), Bond, Stock Option, Index, or Currency. It is essential to set the correct type in the Taxonomies panel when adding or editing the security (refer to Figure 3).
+    A taxonomy serves as a classification system for your securities. For instance, the existing `Type of Security` taxonomy allows you to classify your securities into categories such as stock, Equity Fund, Exchange Traded Fund (ETF), Bond, Stock Option, Index, or Currency. It is essential to set the correct type in the `Taxonomies` panel when adding or editing the security (refer to Figure 3).
 
     Other valuable presets include Industries, aligned with the Global Industry Classification Standard (GICS), regions (up to country level), and assets (cash, equity, debt, and more).
 
@@ -66,7 +66,7 @@ At the bottom of Figure 3, you can add a personal `note` for this security.
 
     ![](images/historical-quotes.png)
     
-    Depending upon the chosen provider, you may need to input additional information. If the provider is a website, you need to specify an URL. If the provider covers more than one `Exchange`, you need to select the correct one.
+    Depending upon the chosen provider, you may need to input additional information. If the provider is a website, you need to specify a URL. If the provider covers more than one `Exchange`, you need to select the correct one.
 
     Figure: Historical quotes panel.{class=pp-figure}
 
@@ -75,7 +75,7 @@ At the bottom of Figure 3, you can add a personal `note` for this security.
     Downloading historical prices for large-cap (big companies) stocks is relatively straightforward. However, obtaining data for less common stocks, mutual funds, bonds, bitcoin, etc., can sometimes be more challenging. We explore these topics in depth in [Downloading Historical Prices](../../how-to/downloading-historical-prices/index.md) in the how-to section.   
 
     !!! Note
-        An alternative but convenient method for securities listed on XETRA is to utilize the Portfolio Report website. See [how-to > Using Portfolio Report](../../how-to/downloading-historical-prices/portfolioreport.md) for more info.
+        An alternative, but convenient method for securities listed on XETRA is to utilize the Portfolio Report website. See [how-to > Using Portfolio Report](../../how-to/downloading-historical-prices/portfolioreport.md) for more info.
 
 - ### **Latest Quote**
 
@@ -90,7 +90,7 @@ Used for handling exchange rate information, which is crucial for portfolios inv
 
 ## Consumer Price Index
 
-for incorporating consumer price index data, providing a macroeconomic indicators for financial analysis.
+For incorporating consumer price index data, providing a macroeconomic indicators for financial analysis.
 
 ## Taxonomy
 
@@ -98,4 +98,12 @@ Used for managing classifications or categorizations of assets based on a define
 
 ## Watchlist
 
-Used for creating and managing watchlists, allowing users to monitor specific securities or assets without direct ownership.
+Figure: Create new watchlist.{class=align-right style="width:50%"}
+
+![](images/mnu-file-new-watchlist.png)
+
+A watchlist is a manual grouping of securities. To create a new list, navigate to `File > New > Watchlist` in the menu. Once created, it will appear under the `All Securities` heading. You can create as many watchlists as you want; in Figure 6, two lists are created with the names `Indexes` and `New Watchlist`.
+
+Using the context menu (right-click on a list), you can rename, delete, or move (up) the watchlist (refer to Figure 6). Adding securities to the watchlist is a manual process done by dragging one or more securities from the `All Securities` view to the watchlist. To remove a security from the watchlist, right-click the security and choose 'Remove from *Your_Watchlist*'.
+
+Watchlists inherit the view from `All Securities`. Changing the view in one watchlist will also change the view in all other watchlists, including the `All Securities` view.
