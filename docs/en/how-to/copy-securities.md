@@ -3,7 +3,7 @@ title: Copy securities between portfolios
 ---
 Sometimes, it is necessary to transfer securities between different portfolios, which involves copying information between physical XML files. However, the challenge lies in the fact that each security has historical pricing data associated with it, along with transactions tied to various cash accounts.
 
-## Drag & drop
+## Drag & Drop
 
 After opening two or more portfolios, they are displayed as tabs in the portfolio bar located just below the menu bar. The active portfolio, typically the last one opened, is easily discernible. It appears with a lighter color and an x-mark after the name, allowing you to close the tab. To switch between portfolios, simply select the corresponding tab in the portfolio bar. Only one portfolio can be viewed at a time.
 
@@ -43,9 +43,28 @@ Figure: Importing transactions with change of cash account and exclusion. {class
 
 ![](images/copy-securities-import-transactions.png)
 
+A more efficient way to select desired transactions is to begin from the `All Transactions` view. While this list may be extensive, you can streamline it using the Search function. For instance, entering `share-3` will filter the transactions to only display those associated with the security named `share-3`. Alternatively, you can utilize the Filter function available under [View > Accounts > All Transactions](../reference/view/accounts/all-transactions.md).  You can further narrow down the list by selecting individual transactions (see following topic). 
+
+Once you've refined the list, you can export it as either a CSV or JSON file. Click on the Export Data button (located at the top-right with an up-pointing icon) to export either all the displayed transactions or only the selected ones.
+
+## Copy and Paste
+
+At times, it may be simpler to manually copy and paste the desired transactions, albeit still requiring a CSV file format to import the data.
+
+1. Select the desired security in the main pane. Navigate to the transactions tab in the information pane (refer to Figure 1). Only the transactions associated with the selected security will appear in the information pane. Selecting more than one security in the main pane does not display all transactions but only the transactions associated with the "active" security.
+2. To select all transactions, move the cursor above the top row, click, press and hold SHIFT (Windows), and then click on the last row. This action will select all rows between the first and last.
+3. For a non-contiguous selection, click the first row, press and hold CTRL (Windows), and click on the following rows accordingly.
+4. Once all desired rows are selected, press CTRL+C (Windows) to copy the content to the clipboard.
+5. Navigate to a spreadsheet or text editor and paste the content. PP uses the TAB-code as a list separator.
+6. Unfortunately, the header isn't copied along with the data. Therefore, you should either map the fields during the importing process (you can use a [template](../reference/file/import.md#csv-files-comma-separated-values) for that) or manually add them to the pasted content.
+7. You still have to save the file with extension CSV and import it.
+
+This technique will also work in the `All Transactions` view (see previous topic).
+
+
 ## Copy between XML
 
-Theoretically, one could also copy the transaction code between the two XML files. A Buy transaction, for example, is represented by the following code snippet:
+Theoretically, one could also copy the transaction code between the two XML files. However, the XML code is optimized for speed which has a negative impact on the readability. A Buy transaction, for example, is represented by the following code snippet:
 ```
 <account-transaction>
     <uuid>0e6a94e5-da57-44d4-aeb1-37dc792d40ef</uuid>
@@ -87,5 +106,5 @@ Theoretically, one could also copy the transaction code between the two XML file
 </account-transaction>
 
 ```
-In practice, the XML code for a moderate project with a few transactions and historical prices often becomes excessively large and complex to navigate confidently. Additionally, relative references such as `<security reference="../../../../../../../../../securities/security[2]"/>` assume an identical structure between the source and target XML, concerning list of securities. Moreover, this method is -of course- not applicable to binary-coded portfolios.
+In practice, the XML code for a moderate project with a few transactions and historical prices often becomes excessively large and complex to navigate confidently. Additionally, relative references such as `<security reference="../../../../../../../../../securities/security[2]"/>` -which are the result of the optimization- assume an identical structure between the source and target XML, concerning list of securities. Moreover, this method is -of course- not applicable to binary-coded portfolios.
 

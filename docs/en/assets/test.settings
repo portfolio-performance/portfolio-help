@@ -1,9 +1,9 @@
-#Tue Mar 12 21:15:51 CET 2024
+#Thu Mar 14 13:47:50 CET 2024
 ExchangeRatesListTab@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:150},{"id"\:"3","width"\:150}]}
 StatementOfAssetsView-newsash=-16
 PerformanceView@2Earnings={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:100},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:250},{"id"\:"6","width"\:100},{"id"\:"7","width"\:100},{"id"\:"note","width"\:200}]}
 name.abuchen.portfolio.ui.views.SecuritiesTable$picked=ace4b28f-3207-4dc2-95fa-edc3936851f9
-name.abuchen.portfolio.ui.views.AllTransactionsView={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:138},{"id"\:"1","width"\:138},{"id"\:"2","width"\:203},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"account","width"\:120},{"id"\:"9","width"\:120},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
+name.abuchen.portfolio.ui.views.AllTransactionsView={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:138},{"id"\:"1","width"\:138},{"id"\:"2","width"\:203},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"account","width"\:230},{"id"\:"9","width"\:214},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
 PerformanceView@2Taxes={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:100},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:250},{"id"\:"6","width"\:100},{"id"\:"7","width"\:100},{"id"\:"note","width"\:200}]}
 ReturnsVolatilityChartView-newsash=-200
 SecuritiesPerformanceView-newsash=200
@@ -17,7 +17,7 @@ AccountListView@top2={"items"\:[{"id"\:"0","width"\:150},{"id"\:"1","width"\:80}
 CurrencyView-newsash=-200
 ReturnsVolatilityChartView-risk-metric=VOLATILITY
 CurrencyConverterTab={"items"\:[{"id"\:"label","width"\:520},{"id"\:"value","width"\:104}]}
-SecurityListView-newsash=287
+SecurityListView-newsash=414
 PerformanceView-newsash=200
 AttributeListTab@v2={"items"\:[{"id"\:"0","width"\:250},{"id"\:"1","width"\:150},{"id"\:"2","width"\:150},{"id"\:"3","width"\:100}]}
 PerformanceChartView-PICKER$picked=7600e16d-0168-49d1-aadb-18c66a64bc8f
