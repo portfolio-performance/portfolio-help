@@ -81,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#drag-drop" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1328,6 +1333,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Copy securities between portfolios
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1337,6 +1353,50 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#drag-drop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drag &amp; drop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exporting-importing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exporting &amp; importing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy-between-xml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copy between XML
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2303,6 +2363,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#drag-drop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drag &amp; drop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exporting-importing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exporting &amp; importing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy-between-xml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copy between XML
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2326,13 +2421,173 @@
 
   <h1>Copy securities between portfolios</h1>
 
-<p>To copy a security between portfolios, you must arrange the two portfolios side by side. (see Figure 1).</p>
+<p>Sometimes, it is necessary to transfer securities between different portfolios, which involves copying information between physical XML files. However, the challenge lies in the fact that each security has historical pricing data associated with it, along with transactions tied to various cash accounts.</p>
+<h2 id="drag-drop">Drag &amp; drop</h2>
+<p>After opening two or more portfolios, they are displayed as tabs in the portfolio bar located just below the menu bar. The active portfolio, typically the last one opened, is easily discernible. It appears with a lighter color and an x-mark after the name, allowing you to close the tab. To switch between portfolios, simply select the corresponding tab in the portfolio bar. Only one portfolio can be viewed at a time.</p>
+<p>However, for tasks like copying securities between portfolios, it's necessary to have both portfolios visible side by side. Securities cannot be directly dragged and dropped or copied and pasted between portfolios from the tabs in the portfolio bar.</p>
 <p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Side-by-side display of two portfolios.</figcaption><img alt="" src="../images/portfolios-side-by-side.png"></figure></p>
-<p>After opening two or more portfolios, they are displayed in the portfolio bar located just below the menu bar. The active portfolio, typically the last one opened, is easily discernible. To switch between portfolios, you can select the corresponding tab in the portfolio bar.</p>
-<p>However, for tasks like copying securities between portfolios, it's necessary to have both portfolios visible side by side. Securities cannot be directly dragged and dropped or copied and pasted between portfolios in the portfolio bar.</p>
 <p>To <strong>arrange</strong> portfolios side by side, choose one in the portfolio bar, click and hold the mouse to drag it to a new position. With two portfolios, you can position them either horizontally (left to right) or vertically (top to bottom). In Figure 1, the arrangement is left to right. This process can be repeated with multiple portfolios, allowing you to make more than two portfolios visible at the same time. To restore the original arrangement, drag the portfolio into the portfolio bar.</p>
-<p>For <strong>copying</strong> securities between portfolios, both portfolios need to be visible. Then, you can select a security from Portfolio A and drag it to the <code>All Securities</code> option in the side panel of portfolio B. There, you can drop the security to create a copy. Pay attention, as it's feasible to unintentionally create identical securities (e.g. two instances of <code>share-1</code>).</p>
-<p>It's important to note that dropping the security within the main top panel is not possible. </p>
+<p>For <strong>copying</strong> securities between portfolios, both portfolios need to be visible. Then, you can select a security from Portfolio A and drag it to the <code>All Securities</code> option in the side panel of portfolio B. There, you can drop the security to create a copy. Pay attention, as it's feasible to unintentionally create identical securities (e.g. two instances of <code>share-1</code>). You can also drop the security to a Watchlist. It will be added to this list then automatically.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>When you copy securities from one portfolio to another with drag-and-drop, the associated transactions will <strong>NOT</strong> be copied along with them. Only the security master data, including historical price information, will be transferred to the new portfolio. This means that any trades, dividends, or other transactions that were recorded for the security in the original portfolio will not be reflected in the new one. In the relatively rare case you need also the transactions, you can either enter them manually or use the following method.</p>
+</div>
+<h2 id="exporting-importing">Exporting &amp; importing</h2>
+<p>With the menu File &gt; Export &gt; CSV Files, you can create a list of all securities, historical prices, and transactions. See <a href="../../reference/file/export/">File &gt; Export</a> for more info. Copying the securities with their historical prices however is much easier with the drag &amp; drop technique, described above.</p>
+<p>For example, after dragging share-3 from Figure 1 above to the demo-portfolio-03.xml, you can export the transactions of demo-portfolio-04.xml and import them in demo-portfolio-03.xml. You can either use the import type <code>Accounts transactions</code> or <code>Portfolio transactions</code>. The result of the export however contains <strong>ALL</strong> transactions of the project, not only those that are linked with <code>share-3</code>. </p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Type</th>
+<th>Value</th>
+<th>Transaction Currency</th>
+<th>Gross Amount</th>
+<th>Currency Gross Amount</th>
+<th>Exchange Rate</th>
+<th>Fees</th>
+<th>Taxes</th>
+<th>Shares</th>
+<th>ISIN</th>
+<th>WKN</th>
+<th>Ticker Symbol</th>
+<th>Security Name</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021-01-15T00:00</td>
+<td>Buy</td>
+<td>155</td>
+<td>EUR</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>2</td>
+<td>10</td>
+<td></td>
+<td></td>
+<td>DTE.DE</td>
+<td>share-1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2023-04-12T00:00</td>
+<td>Sell</td>
+<td>-105</td>
+<td>EUR</td>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td></td>
+<td></td>
+<td>DTE.DE</td>
+<td>share-1</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2022-01-14T00:00</td>
+<td>Buy</td>
+<td>84</td>
+<td>EUR</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>1</td>
+<td>5</td>
+<td></td>
+<td></td>
+<td>DTE.DE</td>
+<td>share-1</td>
+<td>4</td>
+</tr>
+<tr>
+<td>2022-09-30T00:00</td>
+<td>Buy</td>
+<td>67</td>
+<td>EUR</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>1</td>
+<td>8</td>
+<td></td>
+<td></td>
+<td>TMV.DE</td>
+<td>share-2</td>
+<td>6</td>
+</tr>
+<tr>
+<td>2023-09-12T00:00</td>
+<td>Buy</td>
+<td>2,267.76</td>
+<td>USD</td>
+<td></td>
+<td></td>
+<td></td>
+<td>14</td>
+<td>6</td>
+<td>4</td>
+<td></td>
+<td></td>
+<td>ADBE</td>
+<td>share-3</td>
+<td>10-copy</td>
+</tr>
+</tbody>
+</table>
+<p>From this table, in fact, you need only the last row. Please note, that the purchase of share-3 is in USD. Because the main cash account is set to EUR, this will generate an error, unless you change (via the context menu) the cash account to USD for that particular transaction.</p>
+<p>As can be seen in Figure 2, all transactions will be imported (green checkmark to the left). You can exclude the first four with the context menu <code>Do not import</code> (see Figure 2). Alternatively, you can delete the unwanted transactions from the original CSV file before importing it. </p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Importing transactions with change of cash account and exclusion. </figcaption><img alt="" src="../images/copy-securities-import-transactions.png"></figure></p>
+<h2 id="copy-between-xml">Copy between XML</h2>
+<p>Theoretically, one could also copy the transaction code between the two XML files. A Buy transaction, for example, is represented by the following code snippet:
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;account-transaction&gt;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    &lt;uuid&gt;0e6a94e5-da57-44d4-aeb1-37dc792d40ef&lt;/uuid&gt;
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    &lt;date&gt;2024-03-14T00:00&lt;/date&gt;
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    &lt;currencyCode&gt;EUR&lt;/currencyCode&gt;
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    &lt;amount&gt;19800&lt;/amount&gt;
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    &lt;security reference="../../../../../securities/security[2]"/&gt;
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    &lt;crossEntry class="buysell"&gt;
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        &lt;portfolio&gt;
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>            &lt;uuid&gt;c1c03e7d-c320-4167-8737-2f35cfb1a2e0&lt;/uuid&gt;
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>            &lt;name&gt;broker-1&lt;/name&gt;
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>            &lt;isRetired&gt;false&lt;/isRetired&gt;
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            &lt;referenceAccount reference="../../../../.."/&gt;
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>            &lt;transactions&gt;
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>                &lt;portfolio-transaction&gt;
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>                    &lt;uuid&gt;75c79e11-4c3d-4b39-bf91-08ab04fe0088&lt;/uuid&gt;
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>                    &lt;date&gt;2024-03-14T00:00&lt;/date&gt;
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>                    &lt;currencyCode&gt;EUR&lt;/currencyCode&gt;
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>                    &lt;amount&gt;19800&lt;/amount&gt;
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>                    &lt;security reference="../../../../../../../../../securities/security[2]"/&gt;
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>                    &lt;crossEntry class="buysell" reference="../../../.."/&gt;
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>                    &lt;shares&gt;9900000000&lt;/shares&gt;
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>                    &lt;updatedAt&gt;2024-03-14T10:06:25.707240300Z&lt;/updatedAt&gt;
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>                    &lt;type&gt;BUY&lt;/type&gt;
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>                &lt;/portfolio-transaction&gt;
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>            &lt;/transactions&gt;
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>            &lt;attributes&gt;
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>                &lt;map/&gt;
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>            &lt;/attributes&gt;
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>            &lt;updatedAt&gt;2024-03-13T18:11:15.593620500Z&lt;/updatedAt&gt;
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>        &lt;/portfolio&gt;
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>        &lt;portfolioTransaction reference="../portfolio/transactions/portfolio-transaction"/&gt;
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>        &lt;account reference="../../../.."/&gt;
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>        &lt;accountTransaction reference="../.."/&gt;
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>    &lt;/crossEntry&gt;
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>    &lt;shares&gt;0&lt;/shares&gt;
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>    &lt;updatedAt&gt;2024-03-14T10:06:25.707240300Z&lt;/updatedAt&gt;
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>    &lt;type&gt;BUY&lt;/type&gt;
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>&lt;/account-transaction&gt;
+</code></pre></div>
+In practice, the XML code for a moderate project with a few transactions and historical prices often becomes excessively large and complex to navigate confidently. Additionally, relative references such as <code>&lt;security reference="../../../../../../../../../securities/security[2]"/&gt;</code> assume an identical structure between the source and target XML, concerning list of securities. Moreover, this method is -of course- not applicable to binary-coded portfolios.
 
 
 
@@ -2353,7 +2608,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 13, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 14, 2024</span>
   </span>
 
     

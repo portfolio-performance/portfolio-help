@@ -1,21 +1,25 @@
-#Fri Jan 12 18:40:03 CET 2024
-SecurityListView-newsash=341
+#Thu Mar 14 10:27:31 CET 2024
 import-target-portfolio-Portfolio\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
 ExchangeRatesListTab@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:150},{"id"\:"3","width"\:150}]}
-SecurityPriceChartPane=Y2
 StatementOfAssetsView-newsash=200
 name.abuchen.portfolio.ui.views.SecuritiesTable$picked=ace4b28f-3207-4dc2-95fa-edc3936851f9
-IMPORT_NOTESPortfolio\ Transactions=true
 name.abuchen.portfolio.ui.views.AllTransactionsView={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:160},{"id"\:"1","width"\:166},{"id"\:"2","width"\:250},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"account","width"\:120},{"id"\:"9","width"\:120},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
 CSV_EXPORT_PATH=D\:\\tmp
-import-target-account-Account\ Transactions=a8844383-5b6c-4b59-b786-d48ccafd628b
 name.abuchen.portfolio.ui.views.StatementOfAssetsViewer$picked=5626df9e-7f9b-47e2-b7f4-07557fdf6e55
 CSV_IMPORT_PATH=D\:\\OneDrive\\Projects\\PortfolioPerformance\\portfolio-help\\docs\\en\\assets
-HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:129},{"id"\:"1","width"\:169}]}
+AccountListView@bottom5={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:250},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:120},{"id"\:"8","width"\:200},{"id"\:"source","width"\:120}]}
+AccountListView-newsash=200
+AccountListView@top2={"items"\:[{"id"\:"0","width"\:150},{"id"\:"1","width"\:80},{"id"\:"currency","width"\:60},{"id"\:"note","width"\:200}]}
 CurrencyView-newsash=-200
 CurrencyConverterTab={"items"\:[{"id"\:"label","width"\:520},{"id"\:"value","width"\:104}]}
+name.abuchen.portfolio.ui.wizards.datatransfer.CSVImportWizard-encoding=UTF-8
+SecurityListView-newsash=341
+SecurityPriceChartPane=Y2
+IMPORT_NOTESPortfolio\ Transactions=true
+import-target-account-Account\ Transactions=a8844383-5b6c-4b59-b786-d48ccafd628b
+HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:129},{"id"\:"1","width"\:169}]}
 import-target-portfolio-Account\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
+name.abuchen.portfolio.ui.views.panes.TransactionsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:250},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"account","width"\:120},{"id"\:"9","width"\:120},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
 IMPORT_NOTESAccount\ Transactions=true
 AllTransactionsView-newsash=200
-name.abuchen.portfolio.ui.wizards.datatransfer.CSVImportWizard-encoding=UTF-8
 import-target-account-Portfolio\ Transactions=a8844383-5b6c-4b59-b786-d48ccafd628b

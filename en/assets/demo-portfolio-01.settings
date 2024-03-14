@@ -1,6 +1,7 @@
-#Mon Mar 11 09:25:40 CET 2024
+#Wed Mar 13 19:10:00 CET 2024
 SecurityPriceChartPane=Y2
 StatementOfAssetsHistoryView-PICKER$picked=ec4dc660-8854-43ad-80d4-31584fe10e19
 StatementOfAssetsView-newsash=200
 StatementOfAssetsHistoryView-newsash=-200
+name.abuchen.portfolio.ui.views.panes.TransactionsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:168},{"id"\:"1","width"\:80},{"id"\:"2","width"\:250},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"account","width"\:120},{"id"\:"9","width"\:120},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
 name.abuchen.portfolio.ui.views.StatementOfAssetsViewer$picked=5626df9e-7f9b-47e2-b7f4-07557fdf6e55
