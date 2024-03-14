@@ -281,6 +281,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://help.portfolio-performance.info/en/reference/view/accounts/all-transactions/</loc>
+         <lastmod>2024-03-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://help.portfolio-performance.info/en/reference/view/reports/performance/</loc>
          <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
