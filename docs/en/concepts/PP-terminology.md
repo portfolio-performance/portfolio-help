@@ -7,16 +7,21 @@ Fundamental concepts such as account, transaction, reporting period, purchase va
 
 - Actual # quotes: the number of quotes in the historic prices list of a security.
 
+- Amount: The Gross Amount of a transaction or the total amount of money before any taxes and fees.
+
 - Change in Price (period): the difference in historic quotes between the last and first quote of a specified time span, expressed as a percentage. The period may be denoted in years (e.g., 1 year, 2 years, 3 years) or as a date range (From yyyy-mm-dd to yyyy-mm-dd). If the duration is in years, the last date is today, and the first date is today minus x years.
 
 - Change on Previous Day (amount) or Δ amount: the absolute difference between the latest retrieved quote and the previous one (which is most likely the quote from the previous day).
 
 - Change on Previous Day (%) or Δ %: the difference between the latest retrieved quote and the previous one (which is most likely the quote from the previous day), expressed as a percentage.
 
+- Cash account: A financial account for holding and managing money.
+
 - Completeness of historic quotes: the ratio between the actual and expected number of historic quotes of a security, expressed as a percentage.
 
 - Currency: the currency for a security chosen at its creation, which becomes immutable after the initial transaction involving this security.
 
+- Date: The date of a transaction such as Buy or Sell.
 - Date of first historical quote: The first date for which you have historical prices of a security.
 
 - Date of last historical quote: The last date for which you have historical prices of the security. It's important to note that having these dates does not necessarily mean you have all intermediate historical prices.
@@ -35,6 +40,8 @@ Fundamental concepts such as account, transaction, reporting period, purchase va
 
 - Expected # quotes: given the nature and frequency of a security and the calendar in use, PP calculates the expected number of quotes for the time period between the Date of last and first historical quote. Weekend and holidays are taken into account.
 
+- Fees: Costs imposed by a service provider or intermediary for facilitating a transaction.
+
 - Inactive: A security can be set to active or inactive. If set to inactive, the security will not appear in buy or sell dialogs, and historical prices will not be updated automatically.
 
 - ISIN: *International Securities Identification Number*. This is a unique twelve-digit code that is assigned to every security in the world. Mostly used by European brokers & banks.
@@ -45,19 +52,31 @@ Fundamental concepts such as account, transaction, reporting period, purchase va
 
 - Net Transaction value: the total sum of costs of a transaction, including the taxes and fees.
 
+- Note: Each security and transaction can be accompanied by a note for additional information or context.
+
+- Offset Account:  In the context of buying or selling stock, the offset account is the account that is used to balance the transaction. When a security is purchased, the security account is increased, and the offset account, typically a cash account, is decreased to reflect the outflow of cash. Conversely, when a security is sold, the security account is decreased, and the offset account is increased to reflect the inflow of cash.
+
 - Purchase Value: the summed transaction value of each buy (+) and sell (-) transaction of a security, taken into account the [reporting period](reporting-period.md).
+
+- Quote: The most recent price at which a security was traded, also known as the price.
 
 - Quote Feed (historic): data source or provider of the historic quotes: Alpha Vantage, Bitfinex Cryptocurrency Exchange, Binance Crypto Exchange, CoinGecko, EOD Historical Data, Finnhub, Inflation rate - Eurostat (HICP), ECB Statistical Data Warehouse, Kraken Cryptocurrency Exchange, PWP Leeway UG, Twelve Data, Quandl, Table on website, VIA/CS Funds, Yahoo Finance, Yahoo Finance (Adjusted Close), JSON, no automatic download.
 
 - Quote Feed (latest): data source or provider of the latest quotes (same list as above) or could be set as "same as historical quotes".
 
+- Security: A tradable financial asset such as stock, bonds, bitcoin, gold, ...
+
 - Source: data source used in `File > New Security` Search. Possible source are: [Yahoo Finance](https://finance.yahoo.com/) provides financial news and data including stock quotes, press releases, and financial reports. [CoinGecko](https://www.coingecko.com/) is a website with real-time information on most cryptocurrencies. [Portfolio Report](https://www.portfolio-report.net/search) is an open source project that aims to provide centralized portfolio performance data.
+
+- Shares: Units of ownership in a company or a financial asset. In the context of PP it refers to the number of shares one owns.
 
 - Symbol: the abbreviation (ticker) used by the data source.
 
-- Target Currency: 
+- Target Currency:
 
-- Type: can be Share, Bond, Cryptocurrency, Aktie (German for stock or share), Währung (=German for currency), Futures, etf, fonds (= funds).
+- Taxes: Charges imposed by government authorities on certain financial activities.
+
+- Type: In the context of the Security Creation Wizard: Share, Bond, Cryptocurrency, Aktie (German for stock or share), Währung (=German for currency), Futures, etf, fonds (= funds). In the context of the All Transaction table: Buy, Sell, Delivery (Inbound or Outbound), Dividend, Deposit, Removal, Interest, Interest Charge, Fees, Fees Refund, Taxes, and Taxes Refund.
 
 - URL (historic quotes): the URL that should be provided, if the choice in Quote Feed is set to Table on website or JSON.
 

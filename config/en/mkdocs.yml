@@ -32,8 +32,9 @@ theme:
   features:
     - content.code.annotate 
     - content.code.copy
+    - navigation.expand
     - navigation.indexes
-    - navigation.
+    - navigation.tabs
     - content.action.edit
   logo: assets/images/logo.svg
   favicon: assets/images/favicon.png
@@ -96,7 +97,6 @@ markdown_extensions:
   - tables
 
 nav:
-  - About this manual: index.md
   - Getting started:
       - Getting started: getting-started/index.md
       - Installation: getting-started/installation.md
@@ -158,6 +158,8 @@ nav:
           - Securities:
               - All Securities: reference/view/securities/all-securities.md
               - Context Menu: reference/view/securities/context-menu.md
+          - Accounts:
+              - All Transactions: reference/view/accounts/all-transactions.md
           - Reports:
               - Statement of Assets:
                 - Statement of Assets: reference/view/reports/statement/index.md
@@ -173,4 +175,5 @@ nav:
           - Check for Updates: reference/help/check-updates.md
           - About Portfolio Performance: reference/help/about.md
           - Trouble-shooting: reference/help/trouble-shooting.md
+  - About: index.md
 

@@ -1,9 +1,6 @@
 ---
 title: About this manual
 ---
-
-# About this Manual
-
 The *Portfolio Performance (PP)* manual consists of four chapters which are derived from a popular [documentation authoring framework](https://diataxis.fr/). The documentation is structured along two axes: practical versus theoretical knowledge and learning versus doing.
 
 ![](images/documentation-framework.svg)

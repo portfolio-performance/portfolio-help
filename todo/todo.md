@@ -144,3 +144,7 @@ Historical prices: many of the presets don't seem to function?
 ### 2024-02-29
 - importing dividends with different currencies is not intuitive concerning the requirement of Gross Amount and the check between value and Exchange Rate (see file > import > dividends)
 - specifying the content of a sample-portfolio.xml (cfr kommer.xml)
+
+### 2024-03-14
+- changing the page heading and moving menu item About to the right of the menu bar.
+- All Transactions view: the last column = "Source"? As in Quote Feed Source?
