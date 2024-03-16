@@ -2740,8 +2740,9 @@
         <price t="2024-03-12" v="2170000000"/>
         <price t="2024-03-13" v="2164000000"/>
         <price t="2024-03-14" v="2158000000"/>
+        <price t="2024-03-15" v="2181000000"/>
       </prices>
-      <latest t="2024-03-14" v="2158000000">
+      <latest t="2024-03-15" v="2181000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3895,8 +3896,9 @@
         <price t="2024-03-12" v="1435000000"/>
         <price t="2024-03-13" v="1435500000"/>
         <price t="2024-03-14" v="1353500000"/>
+        <price t="2024-03-15" v="1351000000"/>
       </prices>
-      <latest t="2024-03-14" v="1353500000">
+      <latest t="2024-03-15" v="1351000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -6502,9 +6504,10 @@
         <price t="2024-03-11" v="56042000000"/>
         <price t="2024-03-12" v="57914000000"/>
         <price t="2024-03-13" v="57355000000"/>
-        <price t="2024-03-14" v="57093500000"/>
+        <price t="2024-03-14" v="57045000000"/>
+        <price t="2024-03-15" v="49095500000"/>
       </prices>
-      <latest t="2024-03-14" v="57045000000">
+      <latest t="2024-03-15" v="49246000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -7195,6 +7198,11 @@
           <configurations>
             <config>
               <uuid>PaymentsViewModel</uuid>
+              <name></name>
+              <data></data>
+            </config>
+            <config>
+              <uuid>AllTransactionsView</uuid>
               <name></name>
               <data></data>
             </config>
