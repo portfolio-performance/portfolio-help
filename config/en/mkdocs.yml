@@ -124,27 +124,6 @@ nav:
           - Money-weighted return: concepts/performance/money-weighted.md
           - Time-weighted return: concepts/performance/time-weighted.md
       - Historical prices: concepts/historical-prices.md
-  - How-to:
-      - How-to: how-to/index.md
-      - Downloading historical prices:
-          - Downloading historical prices:  how-to/downloading-historical-prices/index.md
-          - Alpha Vantage: how-to/downloading-historical-prices/alpha-vantage.md
-          - EODHistorical Data: how-to/downloading-historical-prices/eodhd.md
-          - Yahoo Finance: how-to/downloading-historical-prices/yahoo-finance.md
-          - Portfolio Report: how-to/downloading-historical-prices/portfolioreport.md
-          - CSV File: how-to/downloading-historical-prices/csv-file.md
-          - JSON: how-to/downloading-historical-prices/json.md
-          - Table on Website: how-to/downloading-historical-prices/table-website.md
-      #- Importing CSV-files: how-to/importing.md
-      - Handling a choice dividend: how-to/handling-choice-dividend.md
-      - Import fund data from Morningstar: how-to/morningstar.md
-      - Hack data file to add default Quote Feed: how-to/quote-feed.md
-      - Copy securities between portfolios: how-to/copy-securities.md
-      - Recording a spin-off operation: how-to/recording-spin-off.md
-      - Recording a stock split operation: how-to/recording-stock-split.md
-      - Insolvency: how-to/insolvency.md
-      - Retrieving gold prices: how-to/gold-prices.md
-      - Benchmarking your portfolio: how-to/benchmarking.md
   - Reference manual:
       - Reference manual: reference/index.md
       - Overview: reference/menu.md
@@ -175,5 +154,26 @@ nav:
           - Check for Updates: reference/help/check-updates.md
           - About Portfolio Performance: reference/help/about.md
           - Trouble-shooting: reference/help/trouble-shooting.md
-  - About: index.md
+  - How-to:
+      - How-to: how-to/index.md
+      - Downloading historical prices:
+          - Downloading historical prices:  how-to/downloading-historical-prices/index.md
+          - Alpha Vantage: how-to/downloading-historical-prices/alpha-vantage.md
+          - EODHistorical Data: how-to/downloading-historical-prices/eodhd.md
+          - Yahoo Finance: how-to/downloading-historical-prices/yahoo-finance.md
+          - Portfolio Report: how-to/downloading-historical-prices/portfolioreport.md
+          - CSV File: how-to/downloading-historical-prices/csv-file.md
+          - JSON: how-to/downloading-historical-prices/json.md
+          - Table on Website: how-to/downloading-historical-prices/table-website.md
+      #- Importing CSV-files: how-to/importing.md
+      - Handling a choice dividend: how-to/handling-choice-dividend.md
+      - Import fund data from Morningstar: how-to/morningstar.md
+      - Hack data file to add default Quote Feed: how-to/quote-feed.md
+      - Copy securities between portfolios: how-to/copy-securities.md
+      - Recording a spin-off operation: how-to/recording-spin-off.md
+      - Recording a stock split operation: how-to/recording-stock-split.md
+      - Insolvency: how-to/insolvency.md
+      - Retrieving gold prices: how-to/gold-prices.md
+      - Benchmarking your portfolio: how-to/benchmarking.md
+  - About: about.md
 
