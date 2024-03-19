@@ -15,7 +15,7 @@ You can quickly create a PP file using a wizard to guide you through the setup p
 
 - **Step 2**
 
-    Your portfolio must contain at least one security [account](../concepts/account.md) and one associated reference (deposit) account.
+    Your portfolio must contain at least one security [account](../reference/view/accounts/index.md) and one associated reference (deposit) account.
 
     Figure: Adding security and reference accounts to the portfolio.{class=pp-figure}
 

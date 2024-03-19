@@ -115,7 +115,7 @@ nav:
       - Basic concepts: concepts/index.md
       - PP-terminology: concepts/PP-terminology.md
       - Financial terminology: concepts/financial-terminology.md
-      - Account: concepts/account.md
+      - System overview: concepts/system-overview.md
       - Transaction: concepts/transaction.md
       - Reporting period: concepts/reporting-period.md
       - Purchase value: concepts/purchase-value.md
@@ -138,6 +138,9 @@ nav:
               - All Securities: reference/view/securities/all-securities.md
               - Context Menu: reference/view/securities/context-menu.md
           - Accounts:
+              - Accounts: reference/view/accounts/index.md
+              - Deposit Account: reference/view/accounts/deposit-account.md
+              - Security Account: reference/view/accounts/security-account.md
               - All Transactions: reference/view/accounts/all-transactions.md
           - Reports:
               - Statement of Assets:
@@ -149,6 +152,7 @@ nav:
                 - Chart: reference/view/reports/performance/performance-chart.md
           - General Data:
             - Settings: reference/view/settings.md
+            - Currencies: reference/view/currencies.md
       - Online Menu: reference/online.md
       - Help Menu:
           - Check for Updates: reference/help/check-updates.md
