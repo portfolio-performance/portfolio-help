@@ -1,5 +1,5 @@
 <client>
-  <version>58</version>
+  <version>59</version>
   <baseCurrency>EUR</baseCurrency>
   <securities>
     <security>
@@ -6064,8 +6064,107 @@
         <price t="2023-10-24" v="6746000000"/>
         <price t="2023-10-25" v="6784000000"/>
         <price t="2023-10-26" v="6750000000"/>
+        <price t="2023-10-27" v="6770000000"/>
+        <price t="2023-10-30" v="6876000000"/>
+        <price t="2023-10-31" v="6848000000"/>
+        <price t="2023-11-01" v="6934000000"/>
+        <price t="2023-11-02" v="6784000000"/>
+        <price t="2023-11-03" v="6822000000"/>
+        <price t="2023-11-06" v="6734000000"/>
+        <price t="2023-11-07" v="6730000000"/>
+        <price t="2023-11-08" v="6896000000"/>
+        <price t="2023-11-09" v="7000000000"/>
+        <price t="2023-11-10" v="7014000000"/>
+        <price t="2023-11-13" v="7074000000"/>
+        <price t="2023-11-14" v="7280000000"/>
+        <price t="2023-11-15" v="7158000000"/>
+        <price t="2023-11-16" v="7082000000"/>
+        <price t="2023-11-17" v="7128000000"/>
+        <price t="2023-11-20" v="7098000000"/>
+        <price t="2023-11-21" v="7200000000"/>
+        <price t="2023-11-22" v="7234000000"/>
+        <price t="2023-11-23" v="7208000000"/>
+        <price t="2023-11-24" v="7240000000"/>
+        <price t="2023-11-27" v="7254000000"/>
+        <price t="2023-11-28" v="7332000000"/>
+        <price t="2023-11-29" v="7410000000"/>
+        <price t="2023-11-30" v="7480000000"/>
+        <price t="2023-12-01" v="7554000000"/>
+        <price t="2023-12-04" v="7522000000"/>
+        <price t="2023-12-05" v="7568000000"/>
+        <price t="2023-12-06" v="7602000000"/>
+        <price t="2023-12-07" v="7736000000"/>
+        <price t="2023-12-08" v="7820000000"/>
+        <price t="2023-12-11" v="7864000000"/>
+        <price t="2023-12-12" v="7992000000"/>
+        <price t="2023-12-13" v="7996000000"/>
+        <price t="2023-12-14" v="8126000000"/>
+        <price t="2023-12-15" v="8178000000"/>
+        <price t="2023-12-18" v="8050000000"/>
+        <price t="2023-12-19" v="8138000000"/>
+        <price t="2023-12-20" v="8136000000"/>
+        <price t="2023-12-21" v="8110000000"/>
+        <price t="2023-12-22" v="8138000000"/>
+        <price t="2023-12-27" v="8112000000"/>
+        <price t="2023-12-28" v="8086000000"/>
+        <price t="2023-12-29" v="8094000000"/>
+        <price t="2024-01-02" v="8058000000"/>
+        <price t="2024-01-03" v="7892000000"/>
+        <price t="2024-01-04" v="8044000000"/>
+        <price t="2024-01-05" v="8118000000"/>
+        <price t="2024-01-08" v="8248000000"/>
+        <price t="2024-01-09" v="8334000000"/>
+        <price t="2024-01-10" v="8526000000"/>
+        <price t="2024-01-11" v="8452000000"/>
+        <price t="2024-01-12" v="8494000000"/>
+        <price t="2024-01-15" v="8444000000"/>
+        <price t="2024-01-16" v="8416000000"/>
+        <price t="2024-01-17" v="8374000000"/>
+        <price t="2024-01-18" v="8382000000"/>
+        <price t="2024-01-19" v="8300000000"/>
+        <price t="2024-01-22" v="8432000000"/>
+        <price t="2024-01-23" v="8190000000"/>
+        <price t="2024-01-24" v="8298000000"/>
+        <price t="2024-01-25" v="8366000000"/>
+        <price t="2024-01-26" v="8332000000"/>
+        <price t="2024-01-29" v="8534000000"/>
+        <price t="2024-01-30" v="8746000000"/>
+        <price t="2024-01-31" v="8588000000"/>
+        <price t="2024-02-01" v="8524000000"/>
+        <price t="2024-02-02" v="8590000000"/>
+        <price t="2024-02-05" v="8562000000"/>
+        <price t="2024-02-06" v="8640000000"/>
+        <price t="2024-02-07" v="8672000000"/>
+        <price t="2024-02-08" v="8482000000"/>
+        <price t="2024-02-09" v="8364000000"/>
+        <price t="2024-02-12" v="8380000000"/>
+        <price t="2024-02-13" v="8326000000"/>
+        <price t="2024-02-14" v="8236000000"/>
+        <price t="2024-02-15" v="8268000000"/>
+        <price t="2024-02-16" v="8532000000"/>
+        <price t="2024-02-19" v="8580000000"/>
+        <price t="2024-02-20" v="8768000000"/>
+        <price t="2024-02-21" v="8864000000"/>
+        <price t="2024-02-22" v="8572000000"/>
+        <price t="2024-02-23" v="8478000000"/>
+        <price t="2024-02-26" v="8612000000"/>
+        <price t="2024-02-27" v="8682000000"/>
+        <price t="2024-02-28" v="8844000000"/>
+        <price t="2024-02-29" v="8970000000"/>
+        <price t="2024-03-01" v="8988000000"/>
+        <price t="2024-03-04" v="8926000000"/>
+        <price t="2024-03-05" v="8800000000"/>
+        <price t="2024-03-06" v="8778000000"/>
+        <price t="2024-03-07" v="8966000000"/>
+        <price t="2024-03-08" v="9008000000"/>
+        <price t="2024-03-11" v="8920000000"/>
+        <price t="2024-03-12" v="9174000000"/>
+        <price t="2024-03-13" v="9278000000"/>
+        <price t="2024-03-14" v="9258000000"/>
+        <price t="2024-03-15" v="9304000000"/>
+        <price t="2024-03-18" v="9238000000"/>
       </prices>
-      <latest t="2023-10-26" v="6750000000">
+      <latest t="2024-03-18" v="9238000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -6075,7 +6174,7 @@
       </attributes>
       <events/>
       <property type="FEED" name="PORTFOLIO-REPORT-MARKET">XETR</property>
-      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;HEI&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2023-10-26&quot;}]</property>
+      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;HEI&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-03-18&quot;}]</property>
       <isRetired>false</isRetired>
       <updatedAt>2023-10-06T08:19:49.965958Z</updatedAt>
     </security>
@@ -8619,8 +8718,106 @@
         <price t="2023-10-24" v="53956000000"/>
         <price t="2023-10-25" v="52114000000"/>
         <price t="2023-10-26" v="51428000000"/>
+        <price t="2023-10-27" v="50812000000"/>
+        <price t="2023-10-30" v="52694000000"/>
+        <price t="2023-10-31" v="53206000000"/>
+        <price t="2023-11-01" v="54450000000"/>
+        <price t="2023-11-02" v="55871000000"/>
+        <price t="2023-11-03" v="56366000000"/>
+        <price t="2023-11-06" v="56545000000"/>
+        <price t="2023-11-07" v="58520000000"/>
+        <price t="2023-11-08" v="58531000000"/>
+        <price t="2023-11-09" v="57774000000"/>
+        <price t="2023-11-10" v="59722000000"/>
+        <price t="2023-11-13" v="59034000000"/>
+        <price t="2023-11-14" v="60433000000"/>
+        <price t="2023-11-15" v="59531000000"/>
+        <price t="2023-11-16" v="60206000000"/>
+        <price t="2023-11-17" v="60266000000"/>
+        <price t="2023-11-20" v="61270000000"/>
+        <price t="2023-11-21" v="61099000000"/>
+        <price t="2023-11-22" v="61972000000"/>
+        <price t="2023-11-24" v="61943000000"/>
+        <price t="2023-11-27" v="61927000000"/>
+        <price t="2023-11-28" v="62332000000"/>
+        <price t="2023-11-29" v="61739000000"/>
+        <price t="2023-11-30" v="61101000000"/>
+        <price t="2023-12-01" v="61247000000"/>
+        <price t="2023-12-04" v="60456000000"/>
+        <price t="2023-12-05" v="60222000000"/>
+        <price t="2023-12-06" v="59570000000"/>
+        <price t="2023-12-07" v="60878000000"/>
+        <price t="2023-12-08" v="61001000000"/>
+        <price t="2023-12-11" v="62520000000"/>
+        <price t="2023-12-12" v="63366000000"/>
+        <price t="2023-12-13" v="62426000000"/>
+        <price t="2023-12-14" v="58464000000"/>
+        <price t="2023-12-15" v="58468000000"/>
+        <price t="2023-12-18" v="59913000000"/>
+        <price t="2023-12-19" v="60464000000"/>
+        <price t="2023-12-20" v="59606000000"/>
+        <price t="2023-12-21" v="60014000000"/>
+        <price t="2023-12-22" v="59875000000"/>
+        <price t="2023-12-26" v="59826000000"/>
+        <price t="2023-12-27" v="59608000000"/>
+        <price t="2023-12-28" v="59552000000"/>
+        <price t="2023-12-29" v="59660000000"/>
+        <price t="2024-01-02" v="58007000000"/>
+        <price t="2024-01-03" v="57179000000"/>
+        <price t="2024-01-04" v="56705000000"/>
+        <price t="2024-01-05" v="56460000000"/>
+        <price t="2024-01-08" v="58055000000"/>
+        <price t="2024-01-09" v="58620000000"/>
+        <price t="2024-01-10" v="59103000000"/>
+        <price t="2024-01-11" v="59749000000"/>
+        <price t="2024-01-12" v="59654000000"/>
+        <price t="2024-01-16" v="59768000000"/>
+        <price t="2024-01-17" v="59610000000"/>
+        <price t="2024-01-18" v="59370000000"/>
+        <price t="2024-01-19" v="61155000000"/>
+        <price t="2024-01-22" v="60359000000"/>
+        <price t="2024-01-23" v="59718000000"/>
+        <price t="2024-01-24" v="60648000000"/>
+        <price t="2024-01-25" v="62258000000"/>
+        <price t="2024-01-26" v="61393000000"/>
+        <price t="2024-01-29" v="63023000000"/>
+        <price t="2024-01-30" v="62796000000"/>
+        <price t="2024-01-31" v="61778000000"/>
+        <price t="2024-02-01" v="62791000000"/>
+        <price t="2024-02-02" v="63476000000"/>
+        <price t="2024-02-05" v="63050000000"/>
+        <price t="2024-02-06" v="60714000000"/>
+        <price t="2024-02-07" v="61585000000"/>
+        <price t="2024-02-08" v="61586000000"/>
+        <price t="2024-02-09" v="62721000000"/>
+        <price t="2024-02-12" v="61184000000"/>
+        <price t="2024-02-13" v="60189000000"/>
+        <price t="2024-02-14" v="60466000000"/>
+        <price t="2024-02-15" v="59044000000"/>
+        <price t="2024-02-16" v="54666000000"/>
+        <price t="2024-02-20" v="54191000000"/>
+        <price t="2024-02-21" v="53852000000"/>
+        <price t="2024-02-22" v="53757000000"/>
+        <price t="2024-02-23" v="55344000000"/>
+        <price t="2024-02-26" v="56048000000"/>
+        <price t="2024-02-27" v="55249000000"/>
+        <price t="2024-02-28" v="55182000000"/>
+        <price t="2024-02-29" v="56028000000"/>
+        <price t="2024-03-01" v="57093000000"/>
+        <price t="2024-03-04" v="56794000000"/>
+        <price t="2024-03-05" v="54484000000"/>
+        <price t="2024-03-06" v="54309000000"/>
+        <price t="2024-03-07" v="55604000000"/>
+        <price t="2024-03-08" v="55169000000"/>
+        <price t="2024-03-11" v="56042000000"/>
+        <price t="2024-03-12" v="57914000000"/>
+        <price t="2024-03-13" v="57355000000"/>
+        <price t="2024-03-14" v="57045000000"/>
+        <price t="2024-03-15" v="49246000000"/>
+        <price t="2024-03-18" v="51386000000"/>
+        <price t="2024-03-19" v="51934000000"/>
       </prices>
-      <latest t="2023-10-26" v="51428000000">
+      <latest t="2024-03-19" v="51934000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -8681,10 +8878,33 @@
         <price t="2023-10-25" v="9343500000"/>
         <price t="2023-10-26" v="9343500000"/>
         <price t="2023-10-27" v="9343500000"/>
+        <price t="2024-02-16" v="9609900000"/>
+        <price t="2024-02-19" v="9613000000"/>
+        <price t="2024-02-20" v="9628000000"/>
+        <price t="2024-02-21" v="9610000000"/>
+        <price t="2024-02-22" v="9611100000"/>
+        <price t="2024-02-23" v="9635000000"/>
+        <price t="2024-02-26" v="9639800000"/>
+        <price t="2024-02-27" v="9630600000"/>
+        <price t="2024-02-28" v="9616300000"/>
+        <price t="2024-02-29" v="9588600000"/>
+        <price t="2024-03-01" v="9620000000"/>
+        <price t="2024-03-04" v="9620000000"/>
+        <price t="2024-03-05" v="9657000000"/>
+        <price t="2024-03-06" v="9637000000"/>
+        <price t="2024-03-07" v="9637000000"/>
+        <price t="2024-03-08" v="9667000000"/>
+        <price t="2024-03-11" v="9667000000"/>
+        <price t="2024-03-12" v="9667000000"/>
+        <price t="2024-03-13" v="9667000000"/>
+        <price t="2024-03-14" v="9647000000"/>
+        <price t="2024-03-15" v="9630000000"/>
+        <price t="2024-03-18" v="9623900000"/>
+        <price t="2024-03-19" v="9620100000"/>
       </prices>
-      <latest t="2023-10-27" v="9343500000">
-        <high>9343500000</high>
-        <low>9343500000</low>
+      <latest t="2024-03-19" v="9620100000">
+        <high>9620100000</high>
+        <low>9619000000</low>
         <volume>0</volume>
       </latest>
       <attributes>
@@ -8704,6 +8924,16 @@
       <note>For deposits in EUR</note>
       <isRetired>false</isRetired>
       <transactions>
+        <account-transaction>
+          <uuid>57c0b1db-1249-4af1-9bb6-fe422c124278</uuid>
+          <date>2020-12-13T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>296912</amount>
+          <shares>0</shares>
+          <note></note>
+          <updatedAt>2024-03-19T18:55:57.342934100Z</updatedAt>
+          <type>DEPOSIT</type>
+        </account-transaction>
         <account-transaction>
           <uuid>7d43a9ab-4cac-4717-b81f-d8ff406553ea</uuid>
           <date>2020-12-14T00:00</date>
@@ -8725,7 +8955,7 @@
                   <security reference="../../../../../../../../../securities/security"/>
                   <crossEntry class="buysell" reference="../../../.."/>
                   <shares>5000000000</shares>
-                  <note>First purchase ever!</note>
+                  <note></note>
                   <units>
                     <unit type="FEE">
                       <amount currency="EUR" amount="1783"/>
@@ -8734,7 +8964,7 @@
                       <amount currency="EUR" amount="1029"/>
                     </unit>
                   </units>
-                  <updatedAt>2023-10-04T09:36:34.757346800Z</updatedAt>
+                  <updatedAt>2024-03-19T18:55:49.985276400Z</updatedAt>
                   <type>BUY</type>
                 </portfolio-transaction>
                 <portfolio-transaction>
@@ -8755,13 +8985,13 @@
                       <security reference="../../../../../../../../../../../securities/security[2]"/>
                       <crossEntry class="buysell" reference="../.."/>
                       <shares>0</shares>
-                      <note>Purchase via EUR deposit account</note>
-                      <updatedAt>2023-10-04T16:25:58.890579900Z</updatedAt>
+                      <note></note>
+                      <updatedAt>2024-03-19T18:55:38.066215100Z</updatedAt>
                       <type>BUY</type>
                     </accountTransaction>
                   </crossEntry>
                   <shares>1000000000</shares>
-                  <note>Purchase via EUR deposit account</note>
+                  <note></note>
                   <units>
                     <unit type="FEE">
                       <amount currency="EUR" amount="3037"/>
@@ -8775,7 +9005,7 @@
                       <exchangeRate>1.1045</exchangeRate>
                     </unit>
                   </units>
-                  <updatedAt>2023-10-04T16:25:58.890579900Z</updatedAt>
+                  <updatedAt>2024-03-19T18:55:38.066215100Z</updatedAt>
                   <type>BUY</type>
                 </portfolio-transaction>
                 <portfolio-transaction>
@@ -8796,13 +9026,13 @@
                       <security reference="../../../../../../../../../../../securities/security[3]"/>
                       <crossEntry class="buysell" reference="../.."/>
                       <shares>0</shares>
-                      <note>Accrued interest (8.01 EUR) booked as extra tax</note>
-                      <updatedAt>2023-10-04T17:08:32.626786600Z</updatedAt>
+                      <note></note>
+                      <updatedAt>2024-03-19T18:55:15.524617400Z</updatedAt>
                       <type>BUY</type>
                     </accountTransaction>
                   </crossEntry>
                   <shares>5000000000</shares>
-                  <note>Accrued interest (8.01 EUR) booked as extra tax</note>
+                  <note></note>
                   <units>
                     <unit type="FEE">
                       <amount currency="EUR" amount="2850"/>
@@ -8811,7 +9041,7 @@
                       <amount currency="EUR" amount="1353"/>
                     </unit>
                   </units>
-                  <updatedAt>2023-10-04T17:08:32.626786600Z</updatedAt>
+                  <updatedAt>2024-03-19T18:55:15.524617400Z</updatedAt>
                   <type>BUY</type>
                 </portfolio-transaction>
                 <portfolio-transaction>
@@ -8832,13 +9062,13 @@
                       <security reference="../../../../../../../../../../../securities/security"/>
                       <crossEntry class="buysell" reference="../.."/>
                       <shares>0</shares>
-                      <note>Second purchase of this security</note>
-                      <updatedAt>2023-10-05T07:05:55.610045300Z</updatedAt>
+                      <note></note>
+                      <updatedAt>2024-03-19T18:55:09.619767700Z</updatedAt>
                       <type>BUY</type>
                     </accountTransaction>
                   </crossEntry>
                   <shares>3000000000</shares>
-                  <note>Second purchase of this security</note>
+                  <note></note>
                   <units>
                     <unit type="FEE">
                       <amount currency="EUR" amount="700"/>
@@ -8847,7 +9077,7 @@
                       <amount currency="EUR" amount="400"/>
                     </unit>
                   </units>
-                  <updatedAt>2023-10-05T07:05:55.610045300Z</updatedAt>
+                  <updatedAt>2024-03-19T18:55:09.619767700Z</updatedAt>
                   <type>BUY</type>
                 </portfolio-transaction>
                 <portfolio-transaction>
@@ -8895,62 +9125,52 @@
             <accountTransaction reference="../.."/>
           </crossEntry>
           <shares>0</shares>
-          <note>First purchase ever!</note>
-          <updatedAt>2023-10-04T09:36:34.757346800Z</updatedAt>
+          <note></note>
+          <updatedAt>2024-03-19T18:55:49.985276400Z</updatedAt>
           <type>BUY</type>
         </account-transaction>
         <account-transaction>
-          <uuid>57c0b1db-1249-4af1-9bb6-fe422c124278</uuid>
-          <date>2020-12-14T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>296912</amount>
-          <shares>0</shares>
-          <note>Deposit for purchase of share-1</note>
-          <updatedAt>2023-10-04T09:40:17.102029900Z</updatedAt>
-          <type>DEPOSIT</type>
-        </account-transaction>
-        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/accountTransaction"/>
-        <account-transaction>
           <uuid>458fae7f-85f5-47d1-9230-b2a5d58f3991</uuid>
-          <date>2022-03-29T00:00</date>
+          <date>2022-03-28T00:00</date>
           <currencyCode>EUR</currencyCode>
           <amount>511045</amount>
           <shares>0</shares>
-          <note>Deposit in EUR for purchase share-2</note>
-          <updatedAt>2023-10-04T16:51:22.977288600Z</updatedAt>
+          <note></note>
+          <updatedAt>2024-03-19T18:55:44.127286400Z</updatedAt>
           <type>DEPOSIT</type>
         </account-transaction>
-        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[3]/crossEntry/accountTransaction"/>
+        <account-transaction reference="../account-transaction[2]/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/accountTransaction"/>
+        <account-transaction>
+          <uuid>3e4c1b97-b5a2-4178-b1b4-0581f139da91</uuid>
+          <date>2022-09-28T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>119900</amount>
+          <shares>0</shares>
+          <note></note>
+          <updatedAt>2024-03-19T18:55:29.474476100Z</updatedAt>
+          <type>DEPOSIT</type>
+        </account-transaction>
+        <account-transaction reference="../account-transaction[2]/crossEntry/portfolio/transactions/portfolio-transaction[4]/crossEntry/accountTransaction"/>
+        <account-transaction>
+          <uuid>d89f3be0-9eb9-4f23-bc96-11ea4d2ef35f</uuid>
+          <date>2022-10-26T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>463003</amount>
+          <shares>0</shares>
+          <note></note>
+          <updatedAt>2024-03-19T18:55:01.043651Z</updatedAt>
+          <type>DEPOSIT</type>
+        </account-transaction>
+        <account-transaction reference="../account-transaction[2]/crossEntry/portfolio/transactions/portfolio-transaction[3]/crossEntry/accountTransaction"/>
+        <account-transaction reference="../account-transaction[2]/crossEntry/portfolio/transactions/portfolio-transaction[5]/crossEntry/accountTransaction"/>
         <account-transaction>
           <uuid>bd91b4aa-f26f-4b4f-9d43-7842f80f4952</uuid>
           <date>2023-10-27T00:00</date>
           <currencyCode>EUR</currencyCode>
           <amount>463003</amount>
           <shares>0</shares>
-          <note>Deposit for purchase bond-1</note>
-          <updatedAt>2023-10-05T06:53:13.923708700Z</updatedAt>
-          <type>DEPOSIT</type>
-        </account-transaction>
-        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[4]/crossEntry/accountTransaction"/>
-        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[5]/crossEntry/accountTransaction"/>
-        <account-transaction>
-          <uuid>3e4c1b97-b5a2-4178-b1b4-0581f139da91</uuid>
-          <date>2022-09-29T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>119900</amount>
-          <shares>0</shares>
-          <note>Deposit for additional purchase of share-1</note>
-          <updatedAt>2023-10-05T07:10:28.694779400Z</updatedAt>
-          <type>DEPOSIT</type>
-        </account-transaction>
-        <account-transaction>
-          <uuid>d89f3be0-9eb9-4f23-bc96-11ea4d2ef35f</uuid>
-          <date>2022-10-27T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>463003</amount>
-          <shares>0</shares>
-          <note>Deposit for purchase bond-1</note>
-          <updatedAt>2023-10-05T07:13:38.763105Z</updatedAt>
+          <note></note>
+          <updatedAt>2024-03-19T18:55:22.585350100Z</updatedAt>
           <type>DEPOSIT</type>
         </account-transaction>
       </transactions>
@@ -8984,7 +9204,7 @@
     </account>
   </accounts>
   <portfolios>
-    <portfolio reference="../../accounts/account/transactions/account-transaction/crossEntry/portfolio"/>
+    <portfolio reference="../../accounts/account/transactions/account-transaction[2]/crossEntry/portfolio"/>
     <portfolio>
       <uuid>69ced9b8-88a4-4289-a08c-8a699693ad9e</uuid>
       <name>broker-2</name>
