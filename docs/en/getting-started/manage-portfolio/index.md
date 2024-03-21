@@ -1,9 +1,8 @@
 ---
 title: Manage your portfolio
-lastUpdate: 2023-09-27
 ---
 
-If you've been following the steps outlined in the "Getting Started" chapter, you'll likely have noticed that your portfolio is still devoid of any securities. As of now, you haven't made any purchases. In the chapter [Concepts](../../concepts/transaction.md) we have covered the fundamental transactions of Buy, Sell and receive Dividends. Now, let's explore a possible workflow for effectively managing your investment portfolio.
+If you've been following the steps outlined in the "Getting Started" chapter, you'll likely have noticed that your portfolio is still devoid of any securities. As of now, you haven't made any purchases. In the chapter [Concepts](../../reference/transaction/index.md) we have covered the fundamental transactions of Buy, Sell and receive Dividends. Now, let's explore a possible workflow for effectively managing your investment portfolio.
 
 There are three possible scenarios to consider, each with its own approach. The simplest one, of course, is starting from scratch.
 

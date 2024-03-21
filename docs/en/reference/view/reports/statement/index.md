@@ -18,7 +18,7 @@ The report in Figure 2 displays all the available assets on October 5, 2023, inc
 
 The report displays a total line above and below the assets. With the Presentation option (see Figure 3 bottom), you could add or remove the Total lines. The default setting is above *and* below. Since no taxonomy has been added to the demo portfolio, all assets are listed as `Without classification`.
 
-# Available columns
+## Available columns
 
 Figure: Available columns. {class=align-right}
 
@@ -56,7 +56,7 @@ When you choose to include this column, you'll also need to specify a period, su
 
 `Distance to ATH` (All Time High) is a likewise metric that shows how far the current price is from the highest price in the specified period. For example, the highest price of share-1 in the last year was 77.4 EUR. The current price is 71.96 EUR. So the &Delta; ATH 1 year (Distance to ATH for a 1 year period) is equal to (71.96 - 77.4)/77.4 or -7.03%. 
 
- # Available views
+## Available views
 
 Using the `Reset Columns` option in Figure 3, you can revert to the default arrangement of columns. It's advisable to keep this layout as the `Standard` view, which is represented by the first button at the top (see Figure 1). By clicking the triangle icon next to the button, you can access options to rename, duplicate, or delete the current view.
 

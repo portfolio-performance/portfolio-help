@@ -4,7 +4,7 @@ lastUpdate: 2023-09-24
 ---
 Figure: Transaction menu. {class="align-right "}
 
-![](images/transaction-types.png)
+![](./images/transaction-types.png)
 
 A financial transaction is an agreement between a buyer and seller to exchange goods, services, or assets for payment. In case of PP, the exchange is about securities. Transactions are the core of PP. You can divide them broadly into security and deposit transactions (see figure 1).
 
@@ -17,7 +17,7 @@ Security transfer ... and Transfer between accounts ... aren't real transactions
 
 Figure: Transaction types. {class="pp-figure"}
 
-![](../images/info-transaction-types.svg)
+![](./images/info-transaction-types.svg)
 
 Buy and sell transactions are the most common. When you buy a security, it increases the value of the Security Account (shown in green) and decreases the balance in the Deposit Account (shown in red). Conversely, when you sell a security, it has the opposite effect.
 

@@ -2,7 +2,7 @@
 title: Types of Accounts
 ---
 # Types of Accounts
-An account is a collection of [transactions](../../../concepts/transaction.md). These transactions could include buy and sell transactions of securities (shares, etc.) for a Securities account or withdrawals and deposits of money for a Deposit account. Each account has a default currency attached. As part of the installation process, you have already created at least one Security account and one Deposit account.
+An account is a collection of [transactions](../../transaction/index.md). These transactions could include buy and sell transactions of securities (shares, etc.) for a Securities account or withdrawals and deposits of money for a Deposit account. Each account has a default currency attached. As part of the installation process, you have already created at least one Security account and one Deposit account.
 
 Portfolio Performance (PP) has two main types of accounts: [Deposit](./deposit-account.md) and [Securities](./security-account.md) accounts. They are described quite well in the [Guide on Getting Started](https://forum.portfolio-performance.info/t/guide-on-getting-started/5390) by Thomas (Contributor); you will need to scroll quite far down. Other related terms are Reference account, Offset account, and Cash account.
 

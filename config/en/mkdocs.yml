@@ -116,7 +116,6 @@ nav:
       - PP-terminology: concepts/PP-terminology.md
       - Financial terminology: concepts/financial-terminology.md
       - System overview: concepts/system-overview.md
-      - Transaction: concepts/transaction.md
       - Reporting period: concepts/reporting-period.md
       - Purchase value: concepts/purchase-value.md
       - Performance:
@@ -154,6 +153,8 @@ nav:
           - General Data:
             - Settings: reference/view/general-data/settings.md
             - Currencies: reference/view/general-data/currencies.md
+      - Transaction Menu:
+          - Transaction: reference/transaction/index.md
       - Online Menu: reference/online.md
       - Help Menu:
           - Check for Updates: reference/help/check-updates.md

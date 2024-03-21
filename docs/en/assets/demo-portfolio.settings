@@ -1,4 +1,4 @@
-#Wed Mar 20 21:09:15 CET 2024
+#Thu Mar 21 13:47:40 CET 2024
 ExchangeRatesListTab@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:164},{"id"\:"1","width"\:160},{"id"\:"2","width"\:224},{"id"\:"3","width"\:270}]}
 StatementOfAssetsView-newsash=200
 PerformanceView@2Earnings={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:100},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:250},{"id"\:"6","width"\:100},{"id"\:"7","width"\:100},{"id"\:"note","width"\:200}]}
@@ -13,7 +13,7 @@ AccountListView@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:162},{"
 CurrencyView-newsash=-200
 CurrencyConverterTab={"items"\:[{"id"\:"label","width"\:520},{"id"\:"value","width"\:104}]}
 filter-redired-accounts=false
-SecurityListView-newsash=200
+SecurityListView-newsash=381
 PerformanceView-newsash=200
 AttributeListTab@v2={"items"\:[{"id"\:"0","width"\:250},{"id"\:"1","width"\:150},{"id"\:"2","width"\:150},{"id"\:"3","width"\:100}]}
 PerformanceView@byaccounts2={"items"\:[{"id"\:"0","width"\:400},{"id"\:"1","width"\:80},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80}]}

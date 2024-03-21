@@ -13,10 +13,6 @@ Figure: Making a provision for the Heidelberg buy transaction.{class="pp-figure"
 
 ![](../../images/mnu-transaction-deposit-heidelberg.png)
 
-![](../../images/mnu-transaction-deposit-heidelberg.png)
-
-![](../../images/mnu-transaction-deposit-heidelberg.png)
-
 Please be aware that a deposit contributes to certain performance metrics. Additionally, note that each security purchase corresponds to a reduction in a deposit account. If the account balance is insufficient, the deposit account's balance may become negative.
 
 # Transfer between two currencies
