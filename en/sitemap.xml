@@ -46,11 +46,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://help.portfolio-performance.info/en/concepts/transaction/</loc>
-         <lastmod>2024-03-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://help.portfolio-performance.info/en/concepts/performance/</loc>
          <lastmod>2024-03-21</lastmod>
          <changefreq>daily</changefreq>
@@ -171,6 +166,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://help.portfolio-performance.info/en/how-to/recording-merger/</loc>
+         <lastmod>2024-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://help.portfolio-performance.info/en/how-to/recording-spin-off/</loc>
          <lastmod>2024-03-21</lastmod>
          <changefreq>daily</changefreq>
@@ -277,6 +277,11 @@
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/reference/help/trouble-shooting/</loc>
+         <lastmod>2024-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://help.portfolio-performance.info/en/reference/transaction/</loc>
          <lastmod>2024-03-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
