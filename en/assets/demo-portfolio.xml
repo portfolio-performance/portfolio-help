@@ -6163,8 +6163,9 @@
         <price t="2024-03-14" v="9258000000"/>
         <price t="2024-03-15" v="9304000000"/>
         <price t="2024-03-18" v="9238000000"/>
+        <price t="2024-03-19" v="9360000000"/>
       </prices>
-      <latest t="2024-03-18" v="9238000000">
+      <latest t="2024-03-19" v="9360000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -6174,7 +6175,7 @@
       </attributes>
       <events/>
       <property type="FEED" name="PORTFOLIO-REPORT-MARKET">XETR</property>
-      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;HEI&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-03-18&quot;}]</property>
+      <property type="FEED" name="PORTFOLIO-REPORT-MARKETS">[{&quot;marketCode&quot;:&quot;XETR&quot;,&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;symbol&quot;:&quot;HEI&quot;,&quot;firstPriceDate&quot;:&quot;2000-01-03&quot;,&quot;lastPriceDate&quot;:&quot;2024-03-19&quot;}]</property>
       <isRetired>false</isRetired>
       <updatedAt>2023-10-06T08:19:49.965958Z</updatedAt>
     </security>
@@ -8815,9 +8816,10 @@
         <price t="2024-03-14" v="57045000000"/>
         <price t="2024-03-15" v="49246000000"/>
         <price t="2024-03-18" v="51386000000"/>
-        <price t="2024-03-19" v="51934000000"/>
+        <price t="2024-03-19" v="52119000000"/>
+        <price t="2024-03-20" v="51941490000"/>
       </prices>
-      <latest t="2024-03-19" v="51934000000">
+      <latest t="2024-03-20" v="51974500000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -8901,10 +8903,11 @@
         <price t="2024-03-15" v="9630000000"/>
         <price t="2024-03-18" v="9623900000"/>
         <price t="2024-03-19" v="9620100000"/>
+        <price t="2024-03-20" v="9600000000"/>
       </prices>
-      <latest t="2024-03-19" v="9620100000">
-        <high>9620100000</high>
-        <low>9619000000</low>
+      <latest t="2024-03-20" v="9600000000">
+        <high>9624500000</high>
+        <low>9600000000</low>
         <volume>0</volume>
       </latest>
       <attributes>
@@ -8921,7 +8924,7 @@
       <uuid>fd9ff5a2-76b7-4117-b203-c66288644e0b</uuid>
       <name>broker-1 (EUR)</name>
       <currencyCode>EUR</currencyCode>
-      <note>For deposits in EUR</note>
+      <note></note>
       <isRetired>false</isRetired>
       <transactions>
         <account-transaction>
@@ -9177,7 +9180,7 @@
       <attributes>
         <map/>
       </attributes>
-      <updatedAt>2023-09-23T08:11:05.442227100Z</updatedAt>
+      <updatedAt>2024-03-19T18:56:53.783675800Z</updatedAt>
     </account>
     <account>
       <uuid>912ea105-1b32-43e1-b470-25156076266e</uuid>
@@ -9194,13 +9197,13 @@
       <uuid>0b29dbc3-a17b-4664-8104-e505fe64f566</uuid>
       <name>broker-1 (USD)</name>
       <currencyCode>USD</currencyCode>
-      <note>For deposits in USD</note>
+      <note></note>
       <isRetired>false</isRetired>
       <transactions/>
       <attributes>
         <map/>
       </attributes>
-      <updatedAt>2023-09-27T19:23:14.585834400Z</updatedAt>
+      <updatedAt>2024-03-19T18:56:57.376596200Z</updatedAt>
     </account>
   </accounts>
   <portfolios>
@@ -9555,7 +9558,7 @@
             <config>
               <uuid>2be3493c-23dc-4d4e-9e01-6437b1d0e74e</uuid>
               <name>Standard</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:300},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:60},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;6&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:200}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:212},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:129},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:145},{&quot;id&quot;:&quot;6&quot;,&quot;width&quot;:155},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:200}]}</data>
             </config>
           </configurations>
         </config-set>
