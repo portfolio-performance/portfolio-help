@@ -27,7 +27,7 @@ If you find yourself needing a custom layout regularly, you can duplicate the st
 
 With the Search box you can filter the list of visible securities. For example, entering "DE" in the Search box will only display share-1 and share-2 because their ticker symbol contains the string "DE".
 
-The Filter icon is used as a more categorical filter. Available options are: Only active instruments, Only securities, Only exchange rates, Shares held &ne; 0, Shares held = 0, and Securities: Limit price exceeded. For the latter, you need to create a new attribute of type “limit price” in the [settings](../settings.md) of the portfolio (menu View > Settings). Then you can add this column to the table and enter some values.
+The Filter icon is used as a more categorical filter. Available options are: Only active instruments, Only securities, Only exchange rates, Shares held &ne; 0, Shares held = 0, and Securities: Limit price exceeded. For the latter, you need to create a new attribute of type “limit price” in the [settings](../general-data/settings.md) of the portfolio (menu View > Settings). Then you can add this column to the table and enter some values.
 
 The table displayed in the current view can be exported as a CSV file, preserving the number of rows and columns along with their (custom) column headings.
 
@@ -90,7 +90,7 @@ With Configuration chart icon (gear at the top right) you set numerous additiona
     - High/Low: A green up-pointing arrow (high) and a red down-pointing arrow (low) are added to the chart at the positions where the security reaches it highest or lowest quote.
     - Purchase Value (FIFO): A pink step-line is super-imposed on the graph, representing the [purchase value](../../../concepts/purchase-value.md) at that moment in time. The purchase value is calculated using the First-in, First-out method.
     - Purchase (moving average): Similar to the FIFO method, a pink step-line is added to the graph, illustrating the purchase value at each moment in time. However, in this case, the calculation method follows the [moving average](../../../concepts/purchase-value.md) principle. 
-    - Show limits: before enabling this option, one has to create a new [Security Attribute](../settings.md#attributes-securities) of type Limit Price.  You should also add this attribute as an [Additional Attribute](../../file/new.md#security-master-data) to your security. Enter as limit for example `> 17` (see Figure 6). An orange horizontal bar will appear at the value of 17.
+    - Show limits: before enabling this option, one has to create a new [Security Attribute](../general-data/settings.md#attributes-securities) of type Limit Price.  You should also add this attribute as an [Additional Attribute](../../file/new.md#security-master-data) to your security. Enter as limit for example `> 17` (see Figure 6). An orange horizontal bar will appear at the value of 17.
 
         Figure: Chart with limit price indication. {pp-figure}
 

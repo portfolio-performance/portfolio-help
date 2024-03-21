@@ -1,13 +1,29 @@
-#Mon Mar 11 10:47:48 CET 2024
-PerformanceView-newsash=200
-PerformanceView@byaccounts2={"items"\:[{"id"\:"0","width"\:400},{"id"\:"1","width"\:80},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80}]}
-SecurityPriceChartPane=Y2
-StatementOfAssetsHistoryView-PICKER$picked=fd2dbf32-1ac6-4ee9-8ef3-49976976a189
+#Wed Mar 20 21:09:15 CET 2024
+ExchangeRatesListTab@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:164},{"id"\:"1","width"\:160},{"id"\:"2","width"\:224},{"id"\:"3","width"\:270}]}
 StatementOfAssetsView-newsash=200
 PerformanceView@2Earnings={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:100},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:250},{"id"\:"6","width"\:100},{"id"\:"7","width"\:100},{"id"\:"note","width"\:200}]}
+name.abuchen.portfolio.ui.views.SecuritiesTable$picked=c8e3140b-f8c7-4ba7-84bd-d95031ca362d
 PerformanceView@2Taxes={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:100},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:250},{"id"\:"6","width"\:100},{"id"\:"7","width"\:100},{"id"\:"note","width"\:200}]}
 name.abuchen.portfolio.ui.views.StatementOfAssetsViewer$picked=2be3493c-23dc-4d4e-9e01-6437b1d0e74e
 DashboardView-newsash=-200
+AccountListView@bottom5={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:145},{"id"\:"1","width"\:86},{"id"\:"2","width"\:105},{"id"\:"3","width"\:110},{"id"\:"4","width"\:118},{"id"\:"5","width"\:82},{"id"\:"6","width"\:112},{"id"\:"7","width"\:133},{"id"\:"8","width"\:296},{"id"\:"source","width"\:120}]}
 PerformanceView-calculation@v2={"items"\:[{"id"\:"label","width"\:350},{"id"\:"value","width"\:80},{"id"\:"forex","width"\:80}]}
+AccountListView-newsash=415
+AccountListView@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:162},{"id"\:"1","width"\:90},{"id"\:"currency","width"\:97},{"id"\:"note","width"\:200}]}
+CurrencyView-newsash=-200
+CurrencyConverterTab={"items"\:[{"id"\:"label","width"\:520},{"id"\:"value","width"\:104}]}
+filter-redired-accounts=false
+SecurityListView-newsash=200
+PerformanceView-newsash=200
+AttributeListTab@v2={"items"\:[{"id"\:"0","width"\:250},{"id"\:"1","width"\:150},{"id"\:"2","width"\:150},{"id"\:"3","width"\:100}]}
+PerformanceView@byaccounts2={"items"\:[{"id"\:"0","width"\:400},{"id"\:"1","width"\:80},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80}]}
+SecurityPriceChartPane=Y2
+StatementOfAssetsHistoryView-PICKER$picked=fd2dbf32-1ac6-4ee9-8ef3-49976976a189
+SettingsView-newsash=200
+BookmarksListTab@bottom={"items"\:[{"id"\:"0","width"\:278},{"id"\:"1","width"\:500}]}
+PortfolioListView@top2={"items"\:[{"id"\:"0","width"\:171},{"id"\:"1","width"\:197},{"id"\:"volume","width"\:257},{"id"\:"note","width"\:225}]}
+HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:147},{"id"\:"1","width"\:148}]}
 StatementOfAssetsHistoryView-newsash=-200
 PerformanceView@2Fees={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:100},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:250},{"id"\:"6","width"\:100},{"id"\:"7","width"\:100},{"id"\:"note","width"\:200}]}
+name.abuchen.portfolio.ui.views.panes.TransactionsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:171},{"id"\:"1","width"\:80},{"id"\:"2","width"\:129},{"id"\:"3","width"\:92},{"id"\:"4","width"\:99},{"id"\:"5","width"\:118},{"id"\:"6","width"\:97},{"id"\:"7","width"\:98},{"id"\:"8","width"\:194},{"id"\:"account","width"\:168},{"id"\:"9","width"\:176},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
+PortfolioListView-newsash=310

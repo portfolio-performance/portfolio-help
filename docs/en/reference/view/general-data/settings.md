@@ -9,7 +9,7 @@ title: Settings
 
     Figure: Defining additional attributes.{class=pp-figure}
 
-    ![](images/settings-bookmarks.png)
+    ![](../images/settings-bookmarks.png)
 
     The bookmarks defined in the settings panel serve to streamline this process. You can then `Open in Browser` any security by right-clicking on that security or transaction. The required attribute for that website will be automatically embedded in the URL, guiding you to the appropriate webpage on the financial site.
 
@@ -19,7 +19,7 @@ title: Settings
 
     Figure: Context menu of the bookmarks page.{class=align-right style="width:50%"}
 
-    ![](images/bookmarks-context-menu.svg)
+    ![](../images/bookmarks-context-menu.svg)
 
     The available placeholders are listed in the context menu (accessible via right-click) on the bookmarks page under the "Insert replacement" option (see figure 2): {isin}, {name}, {wkn}, {tickersymbol}, and {tickersymbolprefix}. In the ticker format XXX.YY (for instance, DTE.DE), XXX corresponds to {tickersymbolprefix}, and xxx.YY represents {tickersymbol}. For some websites, you may need only the {tickersymbolprefix}.
 
@@ -44,11 +44,11 @@ title: Settings
 
     Figure: Defining additional attributes.{class=pp-figure}
 
-    ![](images/settings-securities-attributes.png)
+    ![](../images/settings-securities-attributes.png)
 
     You can create new custom attributes for yourself with the `New Attribute with field type` icon (top right). Clicking on it will display a subpanel with the available data types (see Figure 2). For example, the existing `Àctive` attribute is probably of type `Yes/no`, while the name attribute should be of type `Text`.
 
-    These additional attributes can be made will be visible in any table view concerning securities and in the panel [Additional Attributes](../file/new.md#additional-attributes) of a Security. These attributes cannot be used in calculations, but you can sort the list with them.
+    These additional attributes can be made will be visible in any table view concerning securities and in the panel [Additional Attributes](../../file/new.md#additional-attributes) of a Security. These attributes cannot be used in calculations, but you can sort the list with them.
 
 - # Attributes: Deposit Accounts
 - # Attributes: Securities Accounts

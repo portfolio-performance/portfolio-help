@@ -132,6 +132,7 @@ nav:
           - Save: reference/file/save.md
           - Import: reference/file/import.md
           - Export: reference/file/export.md
+          - Currency: reference/file/currency.md
       - View Menu:
           - Options: reference/view/options.md
           - Securities:
@@ -151,8 +152,8 @@ nav:
                 - Performance: reference/view/reports/performance/index.md
                 - Chart: reference/view/reports/performance/performance-chart.md
           - General Data:
-            - Settings: reference/view/settings.md
-            - Currencies: reference/view/currencies.md
+            - Settings: reference/view/general-data/settings.md
+            - Currencies: reference/view/general-data/currencies.md
       - Online Menu: reference/online.md
       - Help Menu:
           - Check for Updates: reference/help/check-updates.md
