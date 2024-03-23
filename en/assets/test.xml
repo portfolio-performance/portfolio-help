@@ -3318,9 +3318,10 @@
         <price t="2024-03-18" v="338070000000"/>
         <price t="2024-03-19" v="339339990000"/>
         <price t="2024-03-20" v="341489990000"/>
-        <price t="2024-03-21" v="342763990000"/>
+        <price t="2024-03-21" v="343470000000"/>
+        <price t="2024-03-22" v="343073000000"/>
       </prices>
-      <latest t="2024-03-21" v="344329000000">
+      <latest t="2024-03-22" v="343013000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3445,6 +3446,17 @@
         <map/>
       </attributes>
       <updatedAt>2023-06-07T17:58:03.601398500Z</updatedAt>
+    </account>
+    <account>
+      <uuid>e2db289e-bc82-45a5-80bd-6a6c233e4067</uuid>
+      <name>No Name</name>
+      <currencyCode>EUR</currencyCode>
+      <isRetired>false</isRetired>
+      <transactions/>
+      <attributes>
+        <map/>
+      </attributes>
+      <updatedAt>2024-03-22T09:05:24.570538700Z</updatedAt>
     </account>
   </accounts>
   <portfolios>
