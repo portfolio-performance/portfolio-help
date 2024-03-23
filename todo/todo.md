@@ -149,3 +149,6 @@ Historical prices: many of the presets don't seem to function?
 - changing the page heading and moving menu item About to the right of the menu bar.
 - All Transactions view: the last column = "Source"? As in Quote Feed Source?
 
+### 2024-03-22
+- The transaction list of a deposit account will NOT color the text of the notes in green/red. In all transactions and other lists, they are colored.
+

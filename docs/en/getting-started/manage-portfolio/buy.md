@@ -38,7 +38,7 @@ The typical flow for entering this information is likely to be `Shares * Quote (
 
 Figure: Calculation flow between Shares and Debit Note.
 
-![](../../images/info-transaction-calculation-flow.svg){.pp-figure}
+![](../../reference/transaction/images/info-transaction-calculation-flow.svg){.pp-figure}
 
 - Changing the *Debit note* (afterward) will modify the Gross Value, and consequently, the Quote Price will be adjusted. The number of shares remains unchanged.
 - Changing the *Gross Value* afterward will alter the Debit Note and the Quote Price. Fees, taxes, and the number of shares are unaffected.

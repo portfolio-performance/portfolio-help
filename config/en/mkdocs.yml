@@ -110,7 +110,7 @@ nav:
           - Recording a delivery: getting-started/manage-portfolio/delivery.md
           - Dividend payment: getting-started/manage-portfolio/dividend.md 
           - Bonds: getting-started/manage-portfolio/bonds.md
-          - Measure Performance: getting-started/measure-performance.md
+      - Measure Performance: getting-started/measure-performance.md
   - Basic concepts:
       - Basic concepts: concepts/index.md
       - PP-terminology: concepts/PP-terminology.md
