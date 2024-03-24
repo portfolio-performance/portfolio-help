@@ -155,6 +155,8 @@ nav:
             - Currencies: reference/view/general-data/currencies.md
       - Transaction Menu:
           - Transaction: reference/transaction/index.md
+          - Buy-Sell: reference/transaction/buy-sell.md
+          - Delivery (Inbound-Outbound): reference/transaction/delivery.md
       - Online Menu: reference/online.md
       - Help Menu:
           - Check for Updates: reference/help/check-updates.md
