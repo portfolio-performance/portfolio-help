@@ -1,4 +1,4 @@
-#Sat Mar 23 14:40:45 CET 2024
+#Sat Mar 23 17:44:44 CET 2024
 ExchangeRatesListTab@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:150},{"id"\:"3","width"\:150}]}
 StatementOfAssetsView-newsash=-16
 PerformanceView@2Earnings={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:100},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:250},{"id"\:"6","width"\:100},{"id"\:"7","width"\:100},{"id"\:"note","width"\:200}]}
@@ -12,7 +12,7 @@ name.abuchen.portfolio.ui.views.StatementOfAssetsViewer$picked=1175c086-9559-463
 CSV_IMPORT_PATH=D\:\\OneDrive\\Desktop
 DashboardView-newsash=-200
 AccountListView@bottom5={"items"\:[{"id"\:"1","width"\:178},{"id"\:"4","width"\:144},{"id"\:"7","width"\:209},{"id"\:"8","sortDirection"\:128,"width"\:200}]}
-AccountListView-newsash=616
+AccountListView-newsash=355
 PerformanceView-calculation@v2={"items"\:[{"id"\:"label","width"\:350},{"id"\:"value","width"\:80},{"id"\:"forex","width"\:80}]}
 AccountListView@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:284},{"id"\:"1","width"\:80},{"id"\:"currency","width"\:60},{"id"\:"note","width"\:200}]}
 CurrencyView-newsash=-200
@@ -29,7 +29,7 @@ SettingsView-newsash=200
 StatementOfAssetsHistoryView-PICKER$picked=ec4dc660-8854-43ad-80d4-31584fe10e19
 BookmarksListTab@bottom={"items"\:[{"id"\:"0","width"\:150},{"id"\:"1","width"\:500}]}
 performance-chart-aggregation-period=
-PortfolioListView@top2={"items"\:[{"id"\:"0","width"\:185},{"id"\:"1","width"\:160},{"id"\:"volume","width"\:100},{"id"\:"note","width"\:200}]}
+PortfolioListView@top2={"items"\:[{"id"\:"0","width"\:214},{"id"\:"1","width"\:160},{"id"\:"volume","width"\:100},{"id"\:"note","width"\:200}]}
 PerformanceChartView-newsash=-200
 ReturnsVolatilityChartView-PICKER$picked=6c2d3073-1d95-4f1f-b51f-03dfac0891dd
 HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:187},{"id"\:"1","width"\:80}]}

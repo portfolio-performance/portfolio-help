@@ -236,6 +236,40 @@
                   <updatedAt>2024-03-18T15:36:43.968416900Z</updatedAt>
                   <type>BUY</type>
                 </portfolio-transaction>
+                <portfolio-transaction>
+                  <uuid>082cf97a-ca13-4030-8897-f2a210221600</uuid>
+                  <date>2024-03-23T15:14:54.259957400</date>
+                  <currencyCode>EUR</currencyCode>
+                  <amount>15300</amount>
+                  <security reference="../../../../../../../../../securities/security"/>
+                  <crossEntry class="buysell">
+                    <portfolio reference="../../../.."/>
+                    <portfolioTransaction reference="../.."/>
+                    <account reference="../../../../../../../.."/>
+                    <accountTransaction>
+                      <uuid>d5d4fe74-90c6-49db-b92c-812247f91866</uuid>
+                      <date>2024-03-23T15:14:54.259957400</date>
+                      <currencyCode>EUR</currencyCode>
+                      <amount>15300</amount>
+                      <security reference="../../../../../../../../../../../securities/security"/>
+                      <crossEntry class="buysell" reference="../.."/>
+                      <shares>0</shares>
+                      <updatedAt>2024-03-23T14:53:11.934091400Z</updatedAt>
+                      <type>BUY</type>
+                    </accountTransaction>
+                  </crossEntry>
+                  <shares>500000000</shares>
+                  <units>
+                    <unit type="FEE">
+                      <amount currency="EUR" amount="5000"/>
+                    </unit>
+                    <unit type="TAX">
+                      <amount currency="EUR" amount="300"/>
+                    </unit>
+                  </units>
+                  <updatedAt>2024-03-23T14:53:11.934091400Z</updatedAt>
+                  <type>BUY</type>
+                </portfolio-transaction>
               </transactions>
               <attributes>
                 <map/>
@@ -282,6 +316,7 @@
           <type>DIVIDENDS</type>
         </account-transaction>
         <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/accountTransaction"/>
+        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[4]/crossEntry/accountTransaction"/>
       </transactions>
       <attributes>
         <map/>
@@ -289,9 +324,31 @@
       <updatedAt>2023-06-07T17:58:03.601398500Z</updatedAt>
     </account>
     <account reference="../account/transactions/account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[3]/crossEntry/account"/>
+    <account>
+      <uuid>df7c5660-2732-45ef-a2cb-4f835756c091</uuid>
+      <name>No Name</name>
+      <currencyCode>EUR</currencyCode>
+      <isRetired>false</isRetired>
+      <transactions/>
+      <attributes>
+        <map/>
+      </attributes>
+      <updatedAt>2024-03-23T13:32:59.146816800Z</updatedAt>
+    </account>
   </accounts>
   <portfolios>
     <portfolio reference="../../accounts/account/transactions/account-transaction/crossEntry/portfolio"/>
+    <portfolio>
+      <uuid>736e0fca-aede-4c57-9209-11b9f6d72612</uuid>
+      <name>No Name</name>
+      <isRetired>false</isRetired>
+      <referenceAccount reference="../../../accounts/account"/>
+      <transactions/>
+      <attributes>
+        <map/>
+      </attributes>
+      <updatedAt>2024-03-23T13:34:52.344205300Z</updatedAt>
+    </portfolio>
   </portfolios>
   <plans/>
   <taxonomies/>

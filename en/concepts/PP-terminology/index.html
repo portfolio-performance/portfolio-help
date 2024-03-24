@@ -1978,6 +1978,10 @@
           
         
       
+        
+      
+        
+      
     
     
       
@@ -2005,6 +2009,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
@@ -2014,6 +2023,48 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/transaction/buy-sell/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Buy-Sell
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/transaction/delivery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Delivery (Inbound-Outbound)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -2738,6 +2789,9 @@
 <p>Amount: The Gross Amount of a transaction or the total amount of money before any taxes and fees.</p>
 </li>
 <li>
+<p>Buy: transaction resulting in the acquisition of securities, where cash is withdrawn from a deposit account to purchase the desired stocks.</p>
+</li>
+<li>
 <p>Change in Price (period): the difference in historic quotes between the last and first quote of a specified time span, expressed as a percentage. The period may be denoted in years (e.g., 1 year, 2 years, 3 years) or as a date range (From yyyy-mm-dd to yyyy-mm-dd). If the duration is in years, the last date is today, and the first date is today minus x years.</p>
 </li>
 <li>
@@ -2768,6 +2822,12 @@
 <p>Date of latest quote: the most recent date on which the current market value or price of a financial instrument, such as a stock, bond, or commodity, was publicly provided or updated.</p>
 </li>
 <li>
+<p>Delivery (Inbound): a transaction where shares of a security are acquired without the need for a prior deposit and withdrawal of funds (comparable to a buy without a withdrawal).</p>
+</li>
+<li>
+<p>Delivery (Outbound): a transaction where shares of a security are removed from the security account without a resulting deposit in a cash account (comparable to a sell without a deposit).</p>
+</li>
+<li>
 <p>Distance to SMA (days): a metric that measures the difference between the current price (quote) of a share and the average price of that share over a specified number of past days (5, 20, 30, 38, 50, 90, 100, or 200 days), expressed as a percentage. The acronym "SMA" stands for "Simple Moving Average". For example, the average price of security for the last 5 daily quotes is (100 + 98 + 99 + 97 + 96)/5 = 98. The Distance to SMA (5 days) is (100-98)/98 = 2.04%.  </p>
 </li>
 <li>
@@ -2775,6 +2835,9 @@
 </li>
 <li>
 <p>Exchange: a security may be traded on more than one exchange. For example, the NVIDIA stock is traded on Nasdaq (symbol NVDA, exchange NMS) or XETRA (symbol NVD.DE, exchange GER), and many more exchanges.</p>
+</li>
+<li>
+<p>Exchange rate: the value of one currency in terms of another currency, determining the rate at which they can be exchanged.</p>
 </li>
 <li>
 <p>Ex-date: used in stock split; date when a stock exchange first trades the (split) shares at the adjusted price.</p>
@@ -2825,6 +2888,9 @@
 <p>Security: A tradable financial asset such as stock, bonds, bitcoin, gold, ...</p>
 </li>
 <li>
+<p>Sell: transaction resulting in the removal of securities, and where cash is deposited in a deposit account as the equivalent value of the securities. </p>
+</li>
+<li>
 <p>Source: data source used in <code>File &gt; New Security</code> Search. Possible source are: <a href="https://finance.yahoo.com/">Yahoo Finance</a> provides financial news and data including stock quotes, press releases, and financial reports. <a href="https://www.coingecko.com/">CoinGecko</a> is a website with real-time information on most cryptocurrencies. <a href="https://www.portfolio-report.net/search">Portfolio Report</a> is an open source project that aims to provide centralized portfolio performance data.</p>
 </li>
 <li>
@@ -2838,6 +2904,12 @@
 </li>
 <li>
 <p>Taxes: Charges imposed by government authorities on certain financial activities.</p>
+</li>
+<li>
+<p>Transaction: an operation that alters the state of a portfolio.</p>
+</li>
+<li>
+<p>Transaction type: classification of a transaction based on its nature and purpose within the portfolio, e.g. Buy, Sell, Dividend, ...  </p>
 </li>
 <li>
 <p>Type: In the context of the Security Creation Wizard: Share, Bond, Cryptocurrency, Aktie (German for stock or share), Währung (=German for currency), Futures, etf, fonds (= funds). In the context of the All Transaction table: Buy, Sell, Delivery (Inbound or Outbound), Dividend, Deposit, Removal, Interest, Interest Charge, Fees, Fees Refund, Taxes, and Taxes Refund.</p>
@@ -2875,7 +2947,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 23, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 24, 2024</span>
   </span>
 
     
