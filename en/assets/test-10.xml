@@ -7,7 +7,12 @@
       <name>share-1</name>
       <currencyCode>EUR</currencyCode>
       <feed>MANUAL</feed>
-      <prices/>
+      <prices>
+        <price t="2023-01-01" v="1000000000"/>
+        <price t="2023-05-01" v="1100000000"/>
+        <price t="2023-08-01" v="1200000000"/>
+        <price t="2024-01-01" v="1500000000"/>
+      </prices>
       <attributes>
         <map/>
       </attributes>
@@ -31,9 +36,9 @@
       <transactions>
         <account-transaction>
           <uuid>0a0c21f6-397d-438a-adca-920874c1a4a7</uuid>
-          <date>2024-03-21T00:00</date>
+          <date>2023-01-01T00:00</date>
           <currencyCode>EUR</currencyCode>
-          <amount>100</amount>
+          <amount>10000</amount>
           <security reference="../../../../../securities/security"/>
           <crossEntry class="buysell">
             <portfolio>
@@ -44,71 +49,21 @@
               <transactions>
                 <portfolio-transaction>
                   <uuid>4499aa96-ab9a-4ef4-b95d-4ba37fdb1358</uuid>
-                  <date>2024-03-21T00:00</date>
+                  <date>2023-01-01T00:00</date>
                   <currencyCode>EUR</currencyCode>
-                  <amount>100</amount>
+                  <amount>10000</amount>
                   <security reference="../../../../../../../../../securities/security"/>
                   <crossEntry class="buysell" reference="../../../.."/>
-                  <shares>100000000</shares>
+                  <shares>1000000000</shares>
                   <note>01</note>
-                  <updatedAt>2024-03-21T20:29:14.340594400Z</updatedAt>
+                  <updatedAt>2024-03-26T13:56:36.699791300Z</updatedAt>
                   <type>BUY</type>
                 </portfolio-transaction>
                 <portfolio-transaction>
-                  <uuid>2f9d953e-4127-4e2b-b4d1-2fb9527a114c</uuid>
-                  <date>2024-03-21T00:00</date>
+                  <uuid>ee8ef676-31b1-4e80-909a-91a715800e54</uuid>
+                  <date>2023-03-01T00:00</date>
                   <currencyCode>EUR</currencyCode>
-                  <amount>100</amount>
-                  <security reference="../../../../../../../../../securities/security"/>
-                  <crossEntry class="buysell">
-                    <portfolio reference="../../../.."/>
-                    <portfolioTransaction reference="../.."/>
-                    <account reference="../../../../../../../.."/>
-                    <accountTransaction>
-                      <uuid>cc121d12-9af3-46b5-9545-6baaf4ce0809</uuid>
-                      <date>2024-03-21T00:00</date>
-                      <currencyCode>EUR</currencyCode>
-                      <amount>100</amount>
-                      <security reference="../../../../../../../../../../../securities/security"/>
-                      <crossEntry class="buysell" reference="../.."/>
-                      <shares>0</shares>
-                      <note>02</note>
-                      <updatedAt>2024-03-21T20:29:20.189623300Z</updatedAt>
-                      <type>SELL</type>
-                    </accountTransaction>
-                  </crossEntry>
-                  <shares>100000000</shares>
-                  <note>02</note>
-                  <updatedAt>2024-03-21T20:29:20.189623300Z</updatedAt>
-                  <type>SELL</type>
-                </portfolio-transaction>
-                <portfolio-transaction>
-                  <uuid>26a3e205-3234-419a-a266-950d74953678</uuid>
-                  <date>2024-03-21T00:00</date>
-                  <currencyCode>EUR</currencyCode>
-                  <amount>100</amount>
-                  <security reference="../../../../../../../../../securities/security"/>
-                  <shares>100000000</shares>
-                  <note>03</note>
-                  <updatedAt>2024-03-21T20:29:31.324845300Z</updatedAt>
-                  <type>DELIVERY_INBOUND</type>
-                </portfolio-transaction>
-                <portfolio-transaction>
-                  <uuid>cc5521c0-66d9-4f7e-a176-245b4c568440</uuid>
-                  <date>2024-03-21T00:00</date>
-                  <currencyCode>EUR</currencyCode>
-                  <amount>100</amount>
-                  <security reference="../../../../../../../../../securities/security"/>
-                  <shares>100000000</shares>
-                  <note>04</note>
-                  <updatedAt>2024-03-21T20:29:35.989718700Z</updatedAt>
-                  <type>DELIVERY_OUTBOUND</type>
-                </portfolio-transaction>
-                <portfolio-transaction>
-                  <uuid>1b3fd98f-76ab-48e4-a383-7de51fa95efc</uuid>
-                  <date>2024-03-21T00:00</date>
-                  <currencyCode>EUR</currencyCode>
-                  <amount>100</amount>
+                  <amount>3200</amount>
                   <security reference="../../../../../../../../../securities/security"/>
                   <crossEntry class="portfolio-transfer">
                     <portfolioFrom reference="../../../.."/>
@@ -122,34 +77,7 @@
                         <name>deposit-account-3 (EUR)</name>
                         <currencyCode>EUR</currencyCode>
                         <isRetired>false</isRetired>
-                        <transactions>
-                          <account-transaction>
-                            <uuid>511f8064-ec28-45ac-8d7e-1a01451c1d36</uuid>
-                            <date>2024-03-21T00:00</date>
-                            <currencyCode>EUR</currencyCode>
-                            <amount>100</amount>
-                            <crossEntry class="account-transfer">
-                              <accountFrom reference="../../../../../../../../../../../../.."/>
-                              <transactionFrom>
-                                <uuid>2147f885-a5e8-432f-bd01-9aab5f28681b</uuid>
-                                <date>2024-03-21T00:00</date>
-                                <currencyCode>EUR</currencyCode>
-                                <amount>100</amount>
-                                <crossEntry class="account-transfer" reference="../.."/>
-                                <shares>0</shares>
-                                <note>15</note>
-                                <updatedAt>2024-03-21T20:36:39.012640900Z</updatedAt>
-                                <type>TRANSFER_OUT</type>
-                              </transactionFrom>
-                              <accountTo reference="../../../.."/>
-                              <transactionTo reference="../.."/>
-                            </crossEntry>
-                            <shares>0</shares>
-                            <note>15</note>
-                            <updatedAt>2024-03-21T20:36:39.012640900Z</updatedAt>
-                            <type>TRANSFER_IN</type>
-                          </account-transaction>
-                        </transactions>
+                        <transactions/>
                         <attributes>
                           <map/>
                         </attributes>
@@ -157,15 +85,14 @@
                       </referenceAccount>
                       <transactions>
                         <portfolio-transaction>
-                          <uuid>11cc8a36-7592-477d-8547-cd96386c4c70</uuid>
-                          <date>2024-03-21T00:00</date>
+                          <uuid>4a2c2368-1a4b-44f0-95ca-76d0b68b3b43</uuid>
+                          <date>2023-03-01T00:00</date>
                           <currencyCode>EUR</currencyCode>
-                          <amount>100</amount>
+                          <amount>3200</amount>
                           <security reference="../../../../../../../../../../../../../securities/security"/>
                           <crossEntry class="portfolio-transfer" reference="../../../.."/>
-                          <shares>100000000</shares>
-                          <note>14</note>
-                          <updatedAt>2024-03-21T20:36:11.820858400Z</updatedAt>
+                          <shares>400000000</shares>
+                          <updatedAt>2024-03-28T08:15:10.825131700Z</updatedAt>
                           <type>TRANSFER_IN</type>
                         </portfolio-transaction>
                       </transactions>
@@ -176,9 +103,8 @@
                     </portfolioTo>
                     <transactionTo reference="../portfolioTo/transactions/portfolio-transaction"/>
                   </crossEntry>
-                  <shares>100000000</shares>
-                  <note>14</note>
-                  <updatedAt>2024-03-21T20:36:11.820858400Z</updatedAt>
+                  <shares>400000000</shares>
+                  <updatedAt>2024-03-28T08:15:10.825131700Z</updatedAt>
                   <type>TRANSFER_OUT</type>
                 </portfolio-transaction>
               </transactions>
@@ -193,113 +119,16 @@
           </crossEntry>
           <shares>0</shares>
           <note>01</note>
-          <updatedAt>2024-03-21T20:29:14.340594400Z</updatedAt>
+          <updatedAt>2024-03-26T13:56:36.699791300Z</updatedAt>
           <type>BUY</type>
         </account-transaction>
-        <account-transaction>
-          <uuid>370397c4-bae8-4730-888e-8530528996ce</uuid>
-          <date>2024-03-21T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>100</amount>
-          <security reference="../../../../../securities/security"/>
-          <shares>100000000</shares>
-          <note>05</note>
-          <updatedAt>2024-03-21T20:29:46.069066Z</updatedAt>
-          <type>DIVIDENDS</type>
-        </account-transaction>
-        <account-transaction>
-          <uuid>21d2beb2-b429-4425-9d70-6441d62ff7b4</uuid>
-          <date>2024-03-21T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>100</amount>
-          <security reference="../../../../../securities/security"/>
-          <shares>0</shares>
-          <note>11</note>
-          <updatedAt>2024-03-21T20:31:31.405110700Z</updatedAt>
-          <type>FEES_REFUND</type>
-        </account-transaction>
-        <account-transaction>
-          <uuid>b99d4a25-937d-4d8d-a0ea-d8373af60d3c</uuid>
-          <date>2024-03-21T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>100</amount>
-          <shares>0</shares>
-          <note>08</note>
-          <updatedAt>2024-03-23T11:18:25.619099900Z</updatedAt>
-          <type>INTEREST</type>
-        </account-transaction>
-        <account-transaction>
-          <uuid>41bf3de7-7259-43ec-9985-e8ad8bae5b23</uuid>
-          <date>2024-03-21T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>1000</amount>
-          <shares>0</shares>
-          <note>09</note>
-          <updatedAt>2024-03-21T20:31:16.164522Z</updatedAt>
-          <type>INTEREST_CHARGE</type>
-        </account-transaction>
-        <account-transaction>
-          <uuid>af999ba9-752b-44b1-8e7a-d8fd083845fd</uuid>
-          <date>2024-03-21T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>100</amount>
-          <security reference="../../../../../securities/security"/>
-          <shares>0</shares>
-          <note>10</note>
-          <updatedAt>2024-03-21T20:31:26.196988900Z</updatedAt>
-          <type>FEES</type>
-        </account-transaction>
-        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/accountTransaction"/>
-        <account-transaction>
-          <uuid>9d425c23-d532-4393-93de-1832ebff8087</uuid>
-          <date>2024-03-21T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>100</amount>
-          <security reference="../../../../../securities/security"/>
-          <shares>0</shares>
-          <note>12</note>
-          <updatedAt>2024-03-21T20:31:40.045049900Z</updatedAt>
-          <type>TAXES</type>
-        </account-transaction>
-        <account-transaction>
-          <uuid>7fd6c618-402d-4969-ae62-a4e32694f92d</uuid>
-          <date>2024-03-21T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>100</amount>
-          <security reference="../../../../../securities/security"/>
-          <shares>0</shares>
-          <note>13</note>
-          <updatedAt>2024-03-21T20:31:43.933099700Z</updatedAt>
-          <type>TAX_REFUND</type>
-        </account-transaction>
-        <account-transaction>
-          <uuid>ab660645-702a-4fae-9c83-240e1fe01700</uuid>
-          <date>2024-03-21T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>100</amount>
-          <shares>0</shares>
-          <note>06</note>
-          <updatedAt>2024-03-21T20:30:56.060910100Z</updatedAt>
-          <type>DEPOSIT</type>
-        </account-transaction>
-        <account-transaction>
-          <uuid>c2f77429-ec3f-4dcf-9db7-0d50f1dbef7c</uuid>
-          <date>2024-03-21T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>100</amount>
-          <shares>0</shares>
-          <note>07</note>
-          <updatedAt>2024-03-21T20:31:02.172866100Z</updatedAt>
-          <type>REMOVAL</type>
-        </account-transaction>
-        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[5]/crossEntry/portfolioTo/referenceAccount/transactions/account-transaction/crossEntry/transactionFrom"/>
       </transactions>
       <attributes>
         <map/>
       </attributes>
       <updatedAt>2024-03-23T13:38:03.129025700Z</updatedAt>
     </account>
-    <account reference="../account/transactions/account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[5]/crossEntry/portfolioTo/referenceAccount"/>
+    <account reference="../account/transactions/account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/portfolioTo/referenceAccount"/>
     <account>
       <uuid>e463efd0-ef65-4a2f-9b3a-09cc9f7a31b1</uuid>
       <name>deposit-account-2 (USD)</name>
@@ -314,7 +143,7 @@
   </accounts>
   <portfolios>
     <portfolio reference="../../accounts/account/transactions/account-transaction/crossEntry/portfolio"/>
-    <portfolio reference="../../accounts/account/transactions/account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[5]/crossEntry/portfolioTo"/>
+    <portfolio reference="../../accounts/account/transactions/account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/portfolioTo"/>
   </portfolios>
   <plans/>
   <taxonomies/>
@@ -685,6 +514,11 @@
               <name></name>
               <data>L5Y0</data>
             </config>
+            <config>
+              <uuid></uuid>
+              <name></name>
+              <data>F2023-09-01_2024-03-27</data>
+            </config>
           </configurations>
         </config-set>
       </entry>
@@ -700,7 +534,7 @@
             <config>
               <uuid>1175c086-9559-4631-844a-6c75735ab171</uuid>
               <name>test view</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:300},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:60},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;6&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:200}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:300},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:115},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:83},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:133},{&quot;id&quot;:&quot;6&quot;,&quot;width&quot;:97},{&quot;id&quot;:&quot;ttwror&quot;,&quot;option&quot;:&quot;L5Y0&quot;,&quot;width&quot;:160},{&quot;id&quot;:&quot;delta&quot;,&quot;option&quot;:&quot;L5Y0&quot;,&quot;sortDirection&quot;:1024,&quot;width&quot;:334},{&quot;id&quot;:&quot;delta&quot;,&quot;option&quot;:&quot;F2023-09-01_2024-03-27&quot;,&quot;width&quot;:375}]}</data>
             </config>
           </configurations>
         </config-set>
@@ -708,13 +542,40 @@
       <entry>
         <string>client-filter-definitions</string>
         <config-set>
-          <configurations/>
+          <configurations>
+            <config>
+              <uuid>5a9ab3cf-d798-4931-a4a0-47d849bf92c0</uuid>
+              <name>deposit-account-1 (EUR), security-account-2</name>
+              <data>a8844383-5b6c-4b59-b786-d48ccafd628b,6f94ed45-f61f-4fd7-930c-fa6a741480b0</data>
+            </config>
+            <config>
+              <uuid>3a541445-c64d-427c-8ed9-7a6e2b9ce775</uuid>
+              <name>security-account-1, security-account-2</name>
+              <data>ccd0ccf0-d4cd-4c16-8316-2b8727eb514d,6f94ed45-f61f-4fd7-930c-fa6a741480b0</data>
+            </config>
+            <config>
+              <uuid>ee32cd7d-226a-4bc1-873a-147287518dae</uuid>
+              <name>security-account-1, security-account-2</name>
+              <data>ccd0ccf0-d4cd-4c16-8316-2b8727eb514d,6f94ed45-f61f-4fd7-930c-fa6a741480b0</data>
+            </config>
+          </configurations>
         </config-set>
       </entry>
       <entry>
         <string>client-filter-selection</string>
         <config-set>
-          <configurations/>
+          <configurations>
+            <config>
+              <uuid>HoldingsPieChartView</uuid>
+              <name></name>
+              <data>ee32cd7d-226a-4bc1-873a-147287518dae</data>
+            </config>
+            <config>
+              <uuid>StatementOfAssetsView</uuid>
+              <name></name>
+              <data>3a541445-c64d-427c-8ed9-7a6e2b9ce775</data>
+            </config>
+          </configurations>
         </config-set>
       </entry>
     </configurationSets>

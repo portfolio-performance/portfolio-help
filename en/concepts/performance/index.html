@@ -1979,6 +1979,8 @@
       
         
       
+        
+      
     
     
       
@@ -2055,6 +2057,27 @@
   
   <span class="md-ellipsis">
     Delivery (Inbound-Outbound)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/transaction/security-transfer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security transfer
   </span>
   
 
@@ -2804,20 +2827,20 @@
 
 
 <h1 id="performance-measurement">Performance Measurement</h1>
-<p>The measurement of the performance of a financial portfolio is based on the concept of return: the increase or decrease of value over a specific period. For example, your portfolio starts at 100 EUR and grows to 120 EUR by the end of the period, resulting in a performance of + 20%. Equation 1 offers two versions of the base formula; also named the Simple Rate of Return (ROR).</p>
-<p>$$\mathrm{r = \frac{(MVE - MVB)}{MVB} \quad \Leftrightarrow \quad 1 + r = \frac{MVE}{MVB} \quad \Leftrightarrow \quad MVE = MVB \times (1 + r) \quad (Eq  1)}$$</p>
+<p>The measurement of the performance of a financial portfolio is based on the concept of return: the increase or decrease of value over a specific period. For example, your portfolio starts at 100 EUR and grows to 104 EUR by the end of the period, resulting in a performance of + 4%. Equation 1 offers two versions of the base formula; also named the Simple Rate of Return (ROR).</p>
+<p>$$\mathrm{r = \frac{(MVE - MVB)}{MVB} \quad \Leftrightarrow \quad r = \frac{MVE}{MVB} -1 \quad \Leftrightarrow \quad MVE = MVB \times (1 + r) \quad (Eq  1)}$$</p>
 <p>where MVE = the market value of the portfolio at the end of the reporting period, and MVB = the market value of the portfolio at the beginning of the period. Please note that:</p>
 <ul>
-<li>The rate of return percentage applies to the entire period (3 years, 6 months, ...) and is not an annual rate.</li>
-<li>There are no additional transactions within this specified period.</li>
+<li>The rate of return percentage applies to the entire period between MVE and MVB (3 years, 6 months, ...). It is <em>not</em> an annual rate.</li>
+<li>There are no additional transactions within this specified period. The MVE is solely influenced by the MVB and time.</li>
 </ul>
-<p>To address these concerns, PP employs two distinct approaches to calculate the rate of return when additional transactions occur within the reporting period: the money-weighted or time-weighted rate of return. It also differentiates between measuring performance on the portfolio, security, or trade level.</p>
+<p>To address the above concerns, PP employs two distinct approaches to calculate the rate of return when additional transactions occur within the reporting period: the money-weighted or time-weighted rate of return. It also differentiates between measuring performance on the portfolio, security, or trade level.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The simple Rate of Return (ROR) isn't adequate for describing the performance of a portfolio when transactions occur in the reporting period. For instance, suppose your portfolio already contains one share valued at 100 EUR at the beginning of the year (MVB=100); an empty portfolio would pose even more problems due to dividing by zero in Equation 1. Thanks to the favorable  track record of the company issuing the share, its price increases to 104 EUR per share at the end of the year. Let's now compare the following scenarios:</p>
+<p>The simple Rate of Return (ROR) isn't adequate for describing the performance of a portfolio when transactions occur in the reporting period. Let's take the example from above. Your portfolio already contains one share valued at 100 EUR at the beginning of the year (MVB=100). Thanks to the favorable  track record of the company issuing the share, its price increases to 104 EUR per share at the end of the year. Let's now compare the following scenarios:</p>
 <ul>
-<li><strong>No additional transactions</strong>: you do nothing. According to Equation 1, r = (104-100)/100 = 4%. This seems intuitive correct. You gained 4 EUR, which is 4% of the initial value.</li>
-<li><strong>Additional transactions</strong>: you acquire  a second share at 100 EUR; right at the beginning of the year. MVB is still 100 EUR; while MVE becomes 2 * 104 = 208 EUR. The performance becomes a staggering 108% or (208-100)/100. This does not feel OK. You know that the growth rate of the company's share is 4%. Certainly, your total investment of 200€ has gained 8 EUR or 4% on 200 EUR; but not on the MVB of 100 EUR. The additional transaction has distorted the simple rate of return formula.</li>
+<li><strong>No additional transactions</strong>: You take no actions throughout the year. According to Equation 1, r = (104-100)/100 = 4%. This seems intuitive correct. You gained 4 EUR, which is 4% of the initial value.</li>
+<li><strong>Additional transactions</strong>: you acquire  a second share at 100 EUR; right at the beginning of the year. MVB is still 100 EUR; while MVE becomes 2 * 104 = 208 EUR. The performance becomes a staggering 108% or (208-100)/100. This does not feel OK. You <em>know</em> that the growth rate of the company's share is 4%. Certainly, your total investment of 200€ has gained 8 EUR or 4% on 200 EUR; but not on the MVB of 100 EUR. The additional transaction has distorted the simple rate of return formula.</li>
 </ul>
 </div>
 <h2 id="the-money-weighted-rate-of-return">The money-weighted rate of return</h2>
@@ -2848,7 +2871,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 24, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 31, 2024</span>
   </span>
 
     

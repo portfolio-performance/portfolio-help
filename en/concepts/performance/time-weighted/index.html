@@ -1088,6 +1088,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ttwor-at-securities-account-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      TTWOR at securities account level
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2061,6 +2070,8 @@
       
         
       
+        
+      
     
     
       
@@ -2137,6 +2148,27 @@
   
   <span class="md-ellipsis">
     Delivery (Inbound-Outbound)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/transaction/security-transfer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security transfer
   </span>
   
 
@@ -2886,6 +2918,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ttwor-at-securities-account-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      TTWOR at securities account level
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2910,25 +2951,22 @@
 
 
 <h1 id="time-weighted-rate-of-return">Time-Weighted Rate of Return</h1>
-<p>The calculation of the time-weighted rate of return starts with dividing the reporting period into distinct holding periods. For each holding period (HP), a return value is calculated and then compounded into an overall return.</p>
-<p>To minimize the computational effort, <strong>older methods</strong> utilized larger holding periods (PP uses days). A natural marker could be the dates of each cash flow. A holding period starts at period start or immediately before a cash flow and ends just before the following cash flow or the period end (see Figure 1). Note that for a 3 years reporting period, HP1 starts just before CFin1 with market value = 0 EUR. For a 2 years period, HP1 start at the period start with a market value of 177.94 EUR. Also notice that market value at the end of period 1 (MVE1) is the same as the market value at the beginning of period 2 (MVB2).</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Holding periods in demo-portfolio.</figcaption><img alt="" src="../images/info-ttwror-example-visualisation.svg"></figure></p>
-<p>For each holding period, the return rate is computed using Equation 1.</p>
-<p>$$\mathrm{r = \frac{MVE_t + CFout_t}{MVE_{t-1} + CFin_t} - 1 \qquad \text{(Eq 1)}}$$</p>
-<p>where $MVE_t$ = the market value of the portfolio at the end of holding period <em>t</em>, $MVE_{t-1}$ is the market value of the previous holding period.  $CFin_t$ is the incoming (positive) cash flow, and $CFout_t$ is the outgoing (negative) cashflow in that period.</p>
-<p>The return rate is thus corrected for the cashflow, occurring in that period. If there is a difference between the nominator and denominator in Equation 1, it should be caused solely by the gain or loss of the portfolio, independent of the cash flows. Without the correction, the return of HP2 should be: 264.57/160.26 or 65% while in reality the absolute gain of 104 EUR is mostly the result of the incoming cashflow of 84 EUR. The same reasoning holds for an outgoing cash flow. The uncorrected return underestimates the real return because money has left the portfolio. </p>
-<p>Please note that for each holding period, you require the market value of the portfolio <em>twice</em>: once at the end of the previous holding period and once at the end of the current one. A cashflow can be positive (inbound transfer) or negative (outbound transfer); assuming that fresh money is added at the beginning of the day (and hence is available to generate return) and removed at the end of the day.</p>
-<p>After calculating the return rates of each period, they are compounded with the following formula.</p>
+<p>The calculation of the time-weighted rate of return starts with dividing the reporting period into distinct holding periods. For each holding period (HP), a return value is calculated (Eq 1) and then compounded into an overall return (Eq 2).</p>
+<p>$$\mathrm{r = \frac{MVE}{MVB + CFin - CFout} - 1 \qquad \text{(Eq 1)}}$$</p>
+<p>where MVE = the market value of the portfolio at the end of the holding period, MVB is the market value at the beginning of the holding period. This is the same value as the MVE of the previous holding period. CFin is the incoming (positive) cash flow, and CFout is the outgoing (negative) cashflow in that period.</p>
 <p>$$\mathrm{r = [(1 + r_1) \times (1 + r_2) \times (1 + r_3) \cdots (1 + r_{n-1}) \times (1 + r_n)] - 1 \qquad \text{Eq  (2)}}$$</p>
 <p>where $r_t$ is the return rate from holding period <em>t</em>.</p>
+<p>To minimize the computational effort, <strong>older methods</strong> utilized larger holding periods (PP uses days). A natural marker could be the dates of each cash flow. A holding period starts at period start or immediately before a cash flow and ends just before the following cash flow or the period end (see Figure 1). Note that for a 3 years reporting period, HP1 starts just before CFin1 with market value = 0 EUR. For a 2 years period, HP1 start at the period start with a market value of 177.94 EUR. Also notice that market value at the end of period 1 (MVE1) is the same as the market value at the beginning of period 2 (MVB2).</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Holding periods in demo-portfolio.</figcaption><img alt="" src="../images/info-ttwror-example-visualisation.svg"></figure></p>
+<p>The return rate is thus corrected for the cashflow, occurring in that period. If there is a difference between the nominator and denominator in Equation 1, it should be caused solely by the gain or loss of the portfolio, independent of the cash flows. Without the correction, the return of HP2 should be: 264.57/160.26 or 65% while in reality the absolute gain of 104 EUR is mostly the result of the incoming cashflow of 84 EUR. The same reasoning holds for an outgoing cash flow. The uncorrected return underestimates the real return because money has left the portfolio. </p>
+<p>Please note that for each holding period, you require the market value of the portfolio <em>twice</em>: once at the end of the previous holding period and once at the end of the current one. A cashflow can be positive (inbound transfer) or negative (outbound transfer); assuming that fresh money is added at the beginning of the day (and hence is available to generate return) and removed at the end of the day.</p>
 <h2 id="ttwror-at-portfolio-level">TTWROR at portfolio level</h2>
-<p>Our <a href="../../../assets/demo-portfolio-03.xml">demo-portfolio-03.xml</a> only has three cash flows (see Figure 1). The dividend payment and the sale are deposited into a cash account and are evaluated in the market value at the period's end. The market value of the whole portfolio is indeed the sum of the values of all deposit and securities accounts. To determine the value of a security, the (historical) closing price is taken. </p>
-<p>For each period, you need $\mathrm{MVE_{t-1}}$ and the current $\mathrm{MVE_{t}}$ period. Because the market value is determined at the end of the trading day (closing price), $\mathrm{MVE_{t-1}}$ is also the value immediately before the cashflow at the beginning of the day.</p>
+<p>Our <a href="../../../assets/demo-portfolio-03.xml">demo-portfolio-03.xml</a> portfolio contains one deposit account and two securities accounts with two shares. Only three transactions, e.g. deposits (CFin) are important to calculate the performance of the whole portfolio (see Figure 1). The dividend payment and the sale are deposited into a cash account and don't represent a CFin or CFout of the portfolio. They are evaluated in the market value at the period's end. </p>
+<p>For each period, you need MVB or $\mathrm{MVE_{t-1}}$ and the current $\mathrm{MVE_{t}}$ period. Because the market value is determined at the end of the trading day (closing price), $\mathrm{MVE_{t-1}}$ is also the value immediately before the cashflow at the beginning of the day.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>One could argue that, as we are required to add the cash flow $CFin_t$ to $MVE_{t-1}$ (as per Equation 1), an alternative approach is to consider the market value of $MVE_{t}$, which already includes this cash flow $CFin_t$. However, it's important to note that throughout the day, market forces may cause fluctuations in the original $MVE_{t-1}$, and these variations should be excluded when determining the market value at the beginning of the day, just before the cash flow.</p>
 </div>
-<p>Manually calculating these portfolio market values can be a tedious task. It involves multiplying the number of shares for each security by the historical price and then correcting for cash flows, including fees and taxes.</p>
 <h3 id="manual-calculation">Manual calculation</h3>
 <p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Manual calculation of cumulative and annual TTWROR (3 years period).</figcaption><img alt="" src="../images/info-ttwror-manual-calculation.png"></figure></p>
 <p>As can be seen in Figure 1 and 2 [<a href="../../../assets/demo-portfolio-03-calculation.xlsx">download workbook</a>], the market value at the beginning of the HP1 is zero EUR (immediately before CF1) and 160.26 at the end (immediately before the next cash flow). There was one inbound positive cashflow of 155 EUR, necessary for buying 10 shares of <code>share-1</code>. The return of this period = 160.26/(0 +155) = 3.39%. Thus, eliminating the effect of the incoming cash flow, your portfolio has grown with 3.39% during this holding period of 364 days.</p>
@@ -2936,14 +2974,17 @@
 <h3 id="exporting-data-from-pp">Exporting data from PP</h3>
 <p>Since computer time is inexpensive nowadays, there's no need to define long holding periods to minimize manual computation. Therefore, PP employs a single day as the holding period. You can easily export a CSV-file with the daily portfolio values. Select the menu <code>View &gt; Reports &gt; Performance &gt; Chart</code> and click the icon (top right) <code>Export Data as CSV</code>. Choose <code>Export Entire Portfolio</code> (see Figure 3 for an abbreviated example). <code>Delta in %</code> corresponds with the computed return <em>r</em> in figure 2. The <code>Cumulative Performance in %</code> is the cumulative TTWROR in Figure 2, but as you can see it is calculated daily.</p>
 <p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  CSV-file from Export Data as CSV (3 years period).</figcaption><img alt="" src="../images/info-ttwror-export-data-from-pp.png"></figure></p>
-<p>The calculation is analogous to the explanation for manual calculation using longer holding periods. Before <code>2021-01-15</code>, all values are zero, as the first transaction occurred on that day.
-Note however that the performance for <code>2021-01-15</code>is negative in Figure 3 and positive in Figure 2. This is the result of the daily calculation approach. The performance is indeed negative for that single day; due to fees and taxes: 150/(0+155) = -2.90%. The performance in Figure 3 is the performance for the entire HP1. Compounding the daily returns will lead by 2023-01-13 (the day before the following cash flow) to the calculated 3.39% in Figure 2.</p>
+<p>The calculation is analogous to the explanation for manual calculation using longer holding periods. Before <code>2021-01-15</code>, all values are zero, as the first transaction occurred on that day. Note however that the performance for <code>2021-01-15</code>is negative in Figure 3 and positive in Figure 2. This is the result of the daily calculation approach. The performance is indeed negative for that single day; due to fees and taxes. The market value of <code>share-1</code> is 150 EUR, but you have paid 155 EUR: 150/(0+155) = -2.90%. The performance in Figure 3 is the performance for the entire HP1. Compounding the daily returns will lead by 2023-01-13 (the day before the following cash flow) to the calculated 3.39% in Figure 2.</p>
+<p>The TTWOR for the whole portfolio over all holding periods is 44.16% in both calculations.</p>
 <h2 id="ttwror-at-security-level">TTWROR at security level</h2>
 <p>Understanding the calculation for a single security should not pose any problems by now. In PP you can retrieve these values through the menu <code>View &gt; Reports &gt; Performance &gt; Securities</code>. However, these values are not displayed by default and should be made available with the <code>Show or Hide columns</code> icon (top right).</p>
 <p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Cumulative and annual TTWROR for securities - share-2.</figcaption><img alt="" src="../images/info-ttwror-securities-calculation.png"></figure></p>
-<p>For the manual calculation, you need to define the holding periods. Luckily, there are less. For <code>share-2</code> one HP suffices: from just before the buying date until the end of the reporting period. The market value of <code>share-2</code> at the beginning of the holding period is 0 EUR and at the end 111.76 (8 shares at 13.97 EUR/share). You purchased these 8 shares at 8 EUR/share. Fees were 2 EUR and taxes one EUR. Taxes however are <strong>NOT</strong> considered in the calculation of TTWROR. So, the total value of CFin = 66 EUR. The TTWROR is thus equal to 111.76/(0 + 66)= 69.33%.</p>
-<p>The calculation for <code>share-1</code> is more complex (2 buy, 1 sale, 1 dividend transaction). Figure 5 lists all the data.</p>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5.  Cumulative and annual TTWROR for securities - share-1.</figcaption><img alt="" src="../images/info-ttwror-securities-calculation-share-1-3yrs.png"></figure></p>
+<p>For the manual calculation, you need to define the holding periods. For <code>share-2</code> one HP suffices: from just before the buying date until the end of the reporting period. The market value of <code>share-2</code> at the beginning of the holding period is 0 EUR and at the end 111.76 (8 shares at 13.97 EUR/share). You purchased these 8 shares at 8 EUR/share with 2 EUR fees. Taxes, however are <strong>NOT</strong> included in the performance calculation (see <a href="../money-weighted/#irr-at-security-level">IRR for an explanation</a>). So, the total value of CFin = 66 EUR. The TTWROR is thus equal to 111.76/(0 + 66)= 69.33%.</p>
+<p>The manual calculation for <code>share-1</code> is more complex (2 buy, 1 sale, 1 dividend transaction). Figure 5 lists all the data.</p>
+<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5.  Cumulative and annual TTWROR for securities - share-1 (3 years period).</figcaption><img alt="" src="../images/info-ttwror-securities-calculation-share-1-3yrs.png"></figure></p>
+<h2 id="ttwor-at-securities-account-level">TTWOR at securities account level</h2>
+<p>A portfolio can consist of various securities and deposit accounts. To compute and exhibit the performance of each account separately, navigate to <code>View &gt; Reports &gt; Performance &gt; Chart</code> in the menu. In Figure 8, the graphs depict the performance of the securities account labeled as <code>broker-A</code>, both pre and post-tax. Hovering the mouse over the graph reveals the corresponding values; for instance, on April 9, 2023, the performance of broker-A was 64.24% after taxes and 71.76% before taxes.</p>
+<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6.  Performance of security account with and without taxes. </figcaption><img alt="" src="../images/info-ttwor-securities-account.png"></figure></p>
 
 
 
@@ -2964,7 +3005,7 @@ Note however that the performance for <code>2021-01-15</code>is negative in Figu
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 24, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 31, 2024</span>
   </span>
 
     
