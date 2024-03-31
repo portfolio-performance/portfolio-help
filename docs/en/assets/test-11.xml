@@ -8,10 +8,11 @@
       <currencyCode>EUR</currencyCode>
       <feed>MANUAL</feed>
       <prices>
-        <price t="2023-01-01" v="1000000000"/>
-        <price t="2023-05-01" v="1100000000"/>
-        <price t="2023-08-01" v="1200000000"/>
-        <price t="2024-01-01" v="1500000000"/>
+        <price t="2024-01-01" v="1000000000"/>
+        <price t="2024-01-02" v="1000000000"/>
+        <price t="2024-01-03" v="1000000000"/>
+        <price t="2024-01-04" v="1000000000"/>
+        <price t="2024-01-05" v="1100000000"/>
       </prices>
       <attributes>
         <map/>
@@ -36,9 +37,9 @@
       <transactions>
         <account-transaction>
           <uuid>0a0c21f6-397d-438a-adca-920874c1a4a7</uuid>
-          <date>2023-01-01T00:00</date>
+          <date>2024-01-04T00:00</date>
           <currencyCode>EUR</currencyCode>
-          <amount>10000</amount>
+          <amount>8000</amount>
           <security reference="../../../../../securities/security"/>
           <crossEntry class="buysell">
             <portfolio>
@@ -49,69 +50,21 @@
               <transactions>
                 <portfolio-transaction>
                   <uuid>4499aa96-ab9a-4ef4-b95d-4ba37fdb1358</uuid>
-                  <date>2023-01-01T00:00</date>
+                  <date>2024-01-04T00:00</date>
                   <currencyCode>EUR</currencyCode>
-                  <amount>10000</amount>
+                  <amount>8000</amount>
                   <security reference="../../../../../../../../../securities/security"/>
                   <crossEntry class="buysell" reference="../../../.."/>
-                  <shares>1000000000</shares>
+                  <shares>800000000</shares>
                   <note>01</note>
-                  <updatedAt>2024-03-26T13:56:36.699791300Z</updatedAt>
+                  <updatedAt>2024-03-29T16:05:35.524219800Z</updatedAt>
                   <type>BUY</type>
-                </portfolio-transaction>
-                <portfolio-transaction>
-                  <uuid>ee8ef676-31b1-4e80-909a-91a715800e54</uuid>
-                  <date>2023-03-01T00:00</date>
-                  <currencyCode>EUR</currencyCode>
-                  <amount>3200</amount>
-                  <security reference="../../../../../../../../../securities/security"/>
-                  <crossEntry class="portfolio-transfer">
-                    <portfolioFrom reference="../../../.."/>
-                    <transactionFrom reference="../.."/>
-                    <portfolioTo>
-                      <uuid>6f94ed45-f61f-4fd7-930c-fa6a741480b0</uuid>
-                      <name>security-account-2</name>
-                      <isRetired>false</isRetired>
-                      <referenceAccount>
-                        <uuid>65224035-5310-48d9-abab-e16b2bc08104</uuid>
-                        <name>deposit-account-3 (EUR)</name>
-                        <currencyCode>EUR</currencyCode>
-                        <isRetired>false</isRetired>
-                        <transactions/>
-                        <attributes>
-                          <map/>
-                        </attributes>
-                        <updatedAt>2024-03-23T13:38:46.161048700Z</updatedAt>
-                      </referenceAccount>
-                      <transactions>
-                        <portfolio-transaction>
-                          <uuid>4a2c2368-1a4b-44f0-95ca-76d0b68b3b43</uuid>
-                          <date>2023-03-01T00:00</date>
-                          <currencyCode>EUR</currencyCode>
-                          <amount>3200</amount>
-                          <security reference="../../../../../../../../../../../../../securities/security"/>
-                          <crossEntry class="portfolio-transfer" reference="../../../.."/>
-                          <shares>400000000</shares>
-                          <updatedAt>2024-03-28T08:15:10.825131700Z</updatedAt>
-                          <type>TRANSFER_IN</type>
-                        </portfolio-transaction>
-                      </transactions>
-                      <attributes>
-                        <map/>
-                      </attributes>
-                      <updatedAt>2024-03-22T10:34:37.119724200Z</updatedAt>
-                    </portfolioTo>
-                    <transactionTo reference="../portfolioTo/transactions/portfolio-transaction"/>
-                  </crossEntry>
-                  <shares>400000000</shares>
-                  <updatedAt>2024-03-28T08:15:10.825131700Z</updatedAt>
-                  <type>TRANSFER_OUT</type>
                 </portfolio-transaction>
               </transactions>
               <attributes>
                 <map/>
               </attributes>
-              <updatedAt>2024-03-22T10:34:26.639678500Z</updatedAt>
+              <updatedAt>2024-03-29T16:06:07.328054Z</updatedAt>
             </portfolio>
             <portfolioTransaction reference="../portfolio/transactions/portfolio-transaction"/>
             <account reference="../../../.."/>
@@ -119,8 +72,17 @@
           </crossEntry>
           <shares>0</shares>
           <note>01</note>
-          <updatedAt>2024-03-26T13:56:36.699791300Z</updatedAt>
+          <updatedAt>2024-03-29T16:05:35.524219800Z</updatedAt>
           <type>BUY</type>
+        </account-transaction>
+        <account-transaction>
+          <uuid>a7f8f334-753d-42f9-abee-692bd80846b8</uuid>
+          <date>2024-01-02T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>10000</amount>
+          <shares>0</shares>
+          <updatedAt>2024-03-29T16:05:17.947918400Z</updatedAt>
+          <type>DEPOSIT</type>
         </account-transaction>
       </transactions>
       <attributes>
@@ -128,7 +90,6 @@
       </attributes>
       <updatedAt>2024-03-23T13:38:03.129025700Z</updatedAt>
     </account>
-    <account reference="../account/transactions/account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/portfolioTo/referenceAccount"/>
     <account>
       <uuid>e463efd0-ef65-4a2f-9b3a-09cc9f7a31b1</uuid>
       <name>deposit-account-2 (USD)</name>
@@ -143,7 +104,17 @@
   </accounts>
   <portfolios>
     <portfolio reference="../../accounts/account/transactions/account-transaction/crossEntry/portfolio"/>
-    <portfolio reference="../../accounts/account/transactions/account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[2]/crossEntry/portfolioTo"/>
+    <portfolio>
+      <uuid>6f94ed45-f61f-4fd7-930c-fa6a741480b0</uuid>
+      <name>child</name>
+      <isRetired>false</isRetired>
+      <referenceAccount reference="../../../accounts/account"/>
+      <transactions/>
+      <attributes>
+        <map/>
+      </attributes>
+      <updatedAt>2024-03-29T16:05:52.496624300Z</updatedAt>
+    </portfolio>
   </portfolios>
   <plans/>
   <taxonomies/>
@@ -266,6 +237,10 @@
               <configuration/>
             </widget>
           </widgets>
+        </column>
+        <column>
+          <weight>1</weight>
+          <widgets/>
         </column>
       </columns>
     </dashboard>
@@ -451,7 +426,7 @@
             <config>
               <uuid>3580a087-a144-41e6-b45e-351eb5535064</uuid>
               <name>Standard</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:87},{&quot;id&quot;:&quot;name&quot;,&quot;width&quot;:114},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:235},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:228},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:103},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:104},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:120},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:160},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:130},{&quot;id&quot;:&quot;izf&quot;,&quot;sortDirection&quot;:128,&quot;width&quot;:177},{&quot;id&quot;:&quot;delta&quot;,&quot;width&quot;:143}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:87},{&quot;id&quot;:&quot;name&quot;,&quot;width&quot;:114},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:235},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:228},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:103},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:104},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:120},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:160},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:130},{&quot;id&quot;:&quot;izf&quot;,&quot;sortDirection&quot;:128,&quot;width&quot;:177},{&quot;id&quot;:&quot;delta&quot;,&quot;width&quot;:143},{&quot;id&quot;:&quot;twror&quot;,&quot;width&quot;:111}]}</data>
             </config>
           </configurations>
         </config-set>
@@ -463,7 +438,7 @@
             <config>
               <uuid>7600e16d-0168-49d1-aadb-18c66a64bc8f</uuid>
               <name>Standard</name>
-              <data>Securitye11ee537-a363-4166-a9dd-f950ad8e1a9b;#e279bb;SOLID;false;2,[b]Securitydb4362cf-a2eb-4edc-878c-ac398c5f5e0a;#ff8000;SOLID;false;2</data>
+              <data>Client-totals;#000000;SOLID;false;2,Security82f2d1cb-66d6-41de-91d8-4daf1021e58d;#e2b579;SOLID;false;2,Accounta8844383-5b6c-4b59-b786-d48ccafd628b;#79e28b;SOLID;false;2</data>
             </config>
           </configurations>
         </config-set>
@@ -487,37 +462,12 @@
             <config>
               <uuid></uuid>
               <name></name>
-              <data>F2023-12-31_2024-01-04</data>
-            </config>
-            <config>
-              <uuid></uuid>
-              <name></name>
-              <data>L1Y0</data>
-            </config>
-            <config>
-              <uuid></uuid>
-              <name></name>
-              <data>F2023-12-31_2024-04-01</data>
-            </config>
-            <config>
-              <uuid></uuid>
-              <name></name>
-              <data>F2022-12-31_2024-01-01</data>
-            </config>
-            <config>
-              <uuid></uuid>
-              <name></name>
-              <data>F2023-01-01_2024-01-01</data>
-            </config>
-            <config>
-              <uuid></uuid>
-              <name></name>
               <data>L5Y0</data>
             </config>
             <config>
               <uuid></uuid>
               <name></name>
-              <data>F2023-09-01_2024-03-27</data>
+              <data>F2024-01-01_2024-01-05</data>
             </config>
           </configurations>
         </config-set>
@@ -534,7 +484,7 @@
             <config>
               <uuid>1175c086-9559-4631-844a-6c75735ab171</uuid>
               <name>test view</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:300},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:115},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:83},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:133},{&quot;id&quot;:&quot;6&quot;,&quot;width&quot;:97},{&quot;id&quot;:&quot;ttwror&quot;,&quot;option&quot;:&quot;L5Y0&quot;,&quot;width&quot;:160},{&quot;id&quot;:&quot;delta&quot;,&quot;option&quot;:&quot;L5Y0&quot;,&quot;sortDirection&quot;:1024,&quot;width&quot;:334},{&quot;id&quot;:&quot;delta&quot;,&quot;option&quot;:&quot;F2023-09-01_2024-03-27&quot;,&quot;width&quot;:375}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:66},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:265},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:142},{&quot;id&quot;:&quot;delta&quot;,&quot;option&quot;:&quot;F2023-01-01_2024-01-01&quot;,&quot;width&quot;:369},{&quot;id&quot;:&quot;irr&quot;,&quot;option&quot;:&quot;F2023-01-01_2024-01-01&quot;,&quot;width&quot;:325},{&quot;id&quot;:&quot;delta&quot;,&quot;option&quot;:&quot;F2023-09-01_2024-01-01&quot;,&quot;width&quot;:80}]}</data>
             </config>
           </configurations>
         </config-set>
@@ -574,6 +524,11 @@
               <uuid>StatementOfAssetsView</uuid>
               <name></name>
               <data>3a541445-c64d-427c-8ed9-7a6e2b9ce775</data>
+            </config>
+            <config>
+              <uuid>PaymentsViewModel</uuid>
+              <name></name>
+              <data></data>
             </config>
           </configurations>
         </config-set>

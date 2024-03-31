@@ -2744,8 +2744,15 @@
         <price t="2024-03-15" v="2181000000"/>
         <price t="2024-03-18" v="2168500000"/>
         <price t="2024-03-19" v="2190500000"/>
+        <price t="2024-03-20" v="2188000000"/>
+        <price t="2024-03-21" v="2193000000"/>
+        <price t="2024-03-22" v="2185500000"/>
+        <price t="2024-03-25" v="2204500000"/>
+        <price t="2024-03-26" v="2222000000"/>
+        <price t="2024-03-27" v="2240500000"/>
+        <price t="2024-03-28" v="2250000000"/>
       </prices>
-      <latest t="2024-03-19" v="2190500000">
+      <latest t="2024-03-28" v="2250000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3907,8 +3914,15 @@
         <price t="2024-03-15" v="1351000000"/>
         <price t="2024-03-18" v="1346500000"/>
         <price t="2024-03-19" v="1331500000"/>
+        <price t="2024-03-20" v="1336000000"/>
+        <price t="2024-03-21" v="1360000000"/>
+        <price t="2024-03-22" v="1368500000"/>
+        <price t="2024-03-25" v="1371500000"/>
+        <price t="2024-03-26" v="1379500000"/>
+        <price t="2024-03-27" v="1383000000"/>
+        <price t="2024-03-28" v="1380500000"/>
       </prices>
-      <latest t="2024-03-19" v="1331500000">
+      <latest t="2024-03-28" v="1380500000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -4465,7 +4479,7 @@
             <config>
               <uuid>7600e16d-0168-49d1-aadb-18c66a64bc8f</uuid>
               <name>Standard</name>
-              <data>Accounta8844383-5b6c-4b59-b786-d48ccafd628b;#e2ca79;SOLID;false;2,[b]Security963a0be6-6b6b-4e28-8a0f-b55d45f05f9b;#ca79e2;SOLID;false;2,Security0152978e-2ea2-436f-b07a-0333b988ea8b;#e27991;SOLID;false;2</data>
+              <data>Portfolioccd0ccf0-d4cd-4c16-8316-2b8727eb514d;#e2797c;SOLID;false;2,Portfolio-PreTaxccd0ccf0-d4cd-4c16-8316-2b8727eb514d;#df79e2;SOLID;false;2</data>
             </config>
           </configurations>
         </config-set>
@@ -4536,7 +4550,7 @@
             <config>
               <uuid>5626df9e-7f9b-47e2-b7f4-07557fdf6e55</uuid>
               <name>Standard</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:300},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:121},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:112},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:222},{&quot;id&quot;:&quot;6&quot;,&quot;width&quot;:239},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:200}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:66},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:199},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:76},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:68},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:117},{&quot;id&quot;:&quot;6&quot;,&quot;width&quot;:121},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:115},{&quot;id&quot;:&quot;irr&quot;,&quot;option&quot;:&quot;F2020-06-12_2023-06-12&quot;,&quot;width&quot;:373}]}</data>
             </config>
           </configurations>
         </config-set>

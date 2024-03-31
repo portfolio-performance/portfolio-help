@@ -42,7 +42,7 @@ Step 3 differs depending on the selected type of import. For the historical quot
 
 ### 1. Historical Quotes import
 
-To import the historical quotes of a security, only two columns in the CSV file are required: a date and the corresponding quote. There are no optional fields. The name of the security needs to be provided as a separate step.
+To import historical quotes for a security, you only need two columns in the CSV file: one for the date and another for the corresponding quote. These are *required* fields.  No *optional* fields are allowed. The security's name must be provided in a separate step. You cannot proceed to the next step if any of the required fields are missing.
 
 *Table 1: Source data for the import of Historical Quotes.*
 ```
@@ -194,7 +194,7 @@ Figure: Result of import from above. {class=pp-figure}
 !!! Important
     If you have transactions with securities in different currencies, it is good practice to explicitly add the `Security Account` and `Cash Account` to the CSV-file. As the `Date` is a required field, pay attention to the default date format (YYYY-MM-DD). 
 
-This type of import requires three fields: Shares, Date, Value. The optional fields are the same as above; except that the optional Offset Account field is replaced with Offset Securities Account.
+This type of import requires three fields: Shares, Date, Value. The optional fields are the same as above; except that the optional Offset Account field is replaced with Offset Securities Account. The selection of required fields may seem somewhat arbitrary. For transactions like buy and sell, a security identification is essential (such as name, ISIN, etc.). However, for an interest payment, the 'Shares' field is not necessary.
 
 Because the number of shares is a required field, one would assume that simple deposit of removal transactions are not allowed; but they are. The number of shares is then ignored.
 
