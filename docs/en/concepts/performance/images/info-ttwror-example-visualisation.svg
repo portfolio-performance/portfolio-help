@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="1457.7725"
-   height="617.20361"
-   viewBox="0 0 385.70229 163.30179"
+   width="1400"
+   height="617.20355"
+   viewBox="0 0 370.41666 163.30177"
    version="1.1"
    id="svg8"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
@@ -21,9 +21,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.1876326"
-     inkscape:cx="900.11001"
-     inkscape:cy="206.29275"
+     inkscape:zoom="1.4370354"
+     inkscape:cx="153.09295"
+     inkscape:cy="273.47968"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
@@ -43,8 +43,8 @@
        type="xygrid"
        id="grid833"
        dotted="false"
-       originx="-282.24436"
-       originy="-99.376887"
+       originx="-315.49399"
+       originy="-99.376884"
        units="px"
        spacingx="5.2916667"
        spacingy="5.2916667"
@@ -68,7 +68,7 @@
        preserveAspectRatio="xMidYMid">
       <path
          transform="scale(0.5)"
-         style="fill:#ffff00;fill-rule:evenodd;stroke:#ffff00;stroke-width:1pt;stroke-opacity:1.0;fill-opacity:1.0"
+         style="fill:#ffff00;fill-opacity:1;fill-rule:evenodd;stroke:#ffff00;stroke-width:1pt;stroke-opacity:1"
          d="m 6,0 c -3,1 -7,3 -9,5 0,0 0,-4 2,-5 -2,-1 -2,-5 -2,-5 2,2 6,4 9,5 z"
          id="path13" />
     </marker>
@@ -142,14 +142,14 @@
      inkscape:label="background"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="matrix(0.97266247,0,0,1.0227819,-74.408597,-30.206771)"
+     transform="matrix(0.97266247,0,0,1.0227819,-83.205897,-30.206771)"
      style="display:inline;stroke-width:1.0026">
     <rect
        style="fill:#1e2129;fill-opacity:1;stroke:none;stroke-width:1.32636;stroke-dasharray:7.95816, 1.32636;stroke-dashoffset:2.65271;-inkscape-stroke:none"
        id="rect1"
-       width="396.54279"
+       width="380.82755"
        height="159.66432"
-       x="76.499916"
+       x="85.544472"
        y="29.533932"
        ry="3.7199935e-16" />
   </g>
@@ -157,7 +157,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="lines"
-     transform="translate(-74.677152,-26.293465)">
+     transform="translate(-83.474452,-26.293465)">
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
@@ -168,7 +168,7 @@
          style="line-height:1.25;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
          x="192.93115"
          y="77.655602"
-         id="tspan3">Holding Period 1</tspan></text>
+         id="tspan3">Holding Period 2</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
@@ -201,17 +201,17 @@
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-       x="441.19635"
+       x="429.14703"
        y="91.758446"
        id="text17"><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-         x="441.19635"
+         x="429.14703"
          y="91.758446"
          id="tspan17">Market Value</tspan><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-         x="441.19635"
+         x="429.14703"
          y="96.697342"
          id="tspan33">426.82 €</tspan></text>
     <text
@@ -287,7 +287,7 @@
          style="line-height:1.25;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
          x="286.46329"
          y="77.655602"
-         id="tspan4">Holding Period 2</tspan></text>
+         id="tspan4">Holding Period 3</tspan></text>
     <path
        style="fill:none;stroke:#f9f9f9;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.23334, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Stop);marker-end:url(#Stop)"
        d="M 139.86611,83.148392 H 245.48495"
@@ -302,7 +302,7 @@
          style="line-height:1.25;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
          x="384.15594"
          y="77.655602"
-         id="tspan5">Holding Period 3</tspan></text>
+         id="tspan5">Holding Period 4</tspan></text>
     <path
        style="fill:none;stroke:#f9f9f9;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.23333, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Stop);marker-end:url(#marker2)"
        d="m 245.81073,83.148395 h 81.44014"
@@ -324,13 +324,13 @@
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-       x="437.88431"
-       y="36.508923"
+       x="429.33212"
+       y="36.299744"
        id="text16"><tspan
          sodipodi:role="line"
          style="line-height:1.25;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-         x="437.88431"
-         y="36.508923"
+         x="429.33212"
+         y="36.299744"
          id="tspan19">2023-06-12</tspan></text>
     <text
        xml:space="preserve"
@@ -350,13 +350,13 @@
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-       x="90.238579"
-       y="36.508923"
+       x="104.20181"
+       y="36.299744"
        id="text1"><tspan
          sodipodi:role="line"
          style="line-height:1.25;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-         x="90.238579"
-         y="36.508923"
+         x="104.20181"
+         y="36.299744"
          id="tspan1">2020-06-12</tspan></text>
     <text
        xml:space="preserve"
@@ -379,7 +379,7 @@
          style="line-height:1.25;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
          x="332.67285"
          y="53.260521"
-         id="tspan7">2021-09-30</tspan></text>
+         id="tspan7">2022-09-30</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
@@ -394,13 +394,13 @@
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-       x="437.88431"
-       y="139.08766"
+       x="430.9364"
+       y="138.52054"
        id="text18"><tspan
          sodipodi:role="line"
          style="line-height:1.25;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-         x="437.88431"
-         y="139.08766"
+         x="430.9364"
+         y="138.52054"
          id="tspan18">2023-06-12</tspan></text>
     <text
        xml:space="preserve"
@@ -420,12 +420,12 @@
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-       x="197.85995"
+       x="208.68642"
        y="139.08766"
        id="text22"><tspan
          sodipodi:role="line"
          style="line-height:1.25;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-         x="197.85995"
+         x="208.68642"
          y="139.08766"
          id="tspan22">2021-06-12</tspan></text>
     <text
@@ -476,17 +476,17 @@
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-       x="197.85995"
+       x="212.18871"
        y="175.30174"
        id="text34"><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-         x="197.85995"
+         x="212.18871"
          y="175.30174"
          id="tspan29">Market Value</tspan><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-         x="197.85995"
+         x="212.18871"
          y="180.24065"
          id="tspan34">177.94 €</tspan></text>
     <text
@@ -508,17 +508,17 @@
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-       x="441.19635"
+       x="429.14703"
        y="175.52452"
        id="text12"><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-         x="441.19635"
+         x="429.14703"
          y="175.52452"
          id="tspan10">Market Value</tspan><tspan
          sodipodi:role="line"
          style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
-         x="441.19635"
+         x="429.14703"
          y="180.46342"
          id="tspan11">426.82 €</tspan></text>
     <text
@@ -537,5 +537,20 @@
          x="326.67584"
          y="180.46342"
          id="tspan13">264.57 €</tspan></text>
+    <path
+       style="fill:none;stroke:#f9f9f9;stroke-width:0.529169;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.23334, 0.529169;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Stop);marker-end:url(#Stop)"
+       d="m 90.44625,83.148392 h 49.55641"
+       id="path3" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+       x="117.90852"
+       y="77.655602"
+       id="text14"><tspan
+         sodipodi:role="line"
+         style="line-height:1.25;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="117.90852"
+         y="77.655602"
+         id="tspan14">Holding Period 1</tspan></text>
   </g>
 </svg>

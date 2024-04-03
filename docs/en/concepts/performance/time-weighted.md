@@ -3,19 +3,19 @@ title: Time-Weighted Rate of Return
 Todo: TTWROR at security level
 ---
 # Time-Weighted Rate of Return
-The calculation of the time-weighted rate of return starts with dividing the reporting period into distinct holding periods. For each holding period (HP), a return value is calculated (Eq 1) and then compounded into an overall return (Eq 2).
+The calculation of the time-weighted rate of return starts with dividing the reporting period into distinct holding periods. For each holding period (HP), a growth rate is calculated (Eq 1) and then compounded into an overall return (Eq 2).
 
-$$\mathrm{r = \frac{MVE}{MVB + CFin - CFout} - 1 \qquad \text{(Eq 1)}}$$
+$$\mathrm{1 + r = \frac{MVE + CFout}{MVB + CFin} \qquad \text{(Eq 1)}}$$
 
-where MVE = the market value of the portfolio at the end of the holding period, MVB is the market value at the beginning of the holding period. This is the same value as the MVE of the previous holding period. CFin is the incoming (positive) cash flow, and CFout is the outgoing (negative) cashflow in that period.
+where MVE = the market value of the portfolio at the end of the holding period, MVB is the market value at the beginning of the holding period. This is the same value as the MVE of the previous holding period. CFin is the incoming cash flow, and CFout is the outgoing cashflow in that period.
 
 $$\mathrm{r = [(1 + r_1) \times (1 + r_2) \times (1 + r_3) \cdots (1 + r_{n-1}) \times (1 + r_n)] - 1 \qquad \text{Eq  (2)}}$$
 
 where $r_t$ is the return rate from holding period *t*.
 
-To minimize the computational effort, **older methods** utilized larger holding periods (PP uses days). A natural marker could be the dates of each cash flow. A holding period starts at period start or immediately before a cash flow and ends just before the following cash flow or the period end (see Figure 1). Note that for a 3 years reporting period, HP1 starts just before CFin1 with market value = 0 EUR. For a 2 years period, HP1 start at the period start with a market value of 177.94 EUR. Also notice that market value at the end of period 1 (MVE1) is the same as the market value at the beginning of period 2 (MVB2).
+To minimize the computational effort, **older methods** utilized larger holding periods (PP uses days). A natural marker could be the dates of each cash flow. A holding period starts at the reporting period start or immediately before a cash flow and ends just before the following cash flow or the period end (see Figure 1). Note that for a 3 years reporting period, HP1 starts at the beginning of the period and ends just before CFin1 with market value = 0 EUR. For a 2 years period, HP1 start at the period start with a market value of 177.94 EUR. Also notice that market value at the end of period 1 (MVE1) is the same as the market value at the beginning of period 2 (MVB2); see [demo-portfolio-03.xml](../../assets/demo-portfolio-03.xml).
 
-Figure: Holding periods in demo-portfolio.{class=pp-figure}
+Figure: Holding periods at portfolio level (3 Cashflows).{class=pp-figure}
 
 ![](images/info-ttwror-example-visualisation.svg)
 

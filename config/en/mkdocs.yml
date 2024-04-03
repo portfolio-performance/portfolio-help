@@ -158,6 +158,7 @@ nav:
           - Buy-Sell: reference/transaction/buy-sell.md
           - Delivery (Inbound-Outbound): reference/transaction/delivery.md
           - Security transfer: reference/transaction/security-transfer.md
+          - Dividend: reference/transaction/dividend.md
       - Online Menu: reference/online.md
       - Help Menu:
           - Check for Updates: reference/help/check-updates.md
@@ -184,5 +185,6 @@ nav:
       - Insolvency: how-to/insolvency.md
       - Retrieving gold prices: how-to/gold-prices.md
       - Benchmarking your portfolio: how-to/benchmarking.md
+      - Importing GBX priced securities: how-to/import-gbx.md
   - About: about.md
 

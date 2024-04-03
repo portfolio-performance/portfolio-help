@@ -71,6 +71,7 @@ It is worth getting the list of all the securities you want to use across all Se
 YF's portfolio tools can be helpful here as it is possible to create a list of securities by searching for each one and adding it to a portfolio. You can create a view of that portfolio showing the information needed above. See example below:
 
 Figure: Example Yahoo! Finance portfolio view. {class=pp-figure}
+
 ![](./images/image8.png)
 
 
@@ -84,7 +85,7 @@ The name "Transaction Currency" may confuse. When you actually buy and sell, you
 
 Figure: Example Securities CSV import created from a copy/paste from Yahoo! Finance. {class=pp-figure}
 
-![](./media/image4.png){width="6.267716535433071in" height="1.7916666666666667in"}
+![](images/image4.png)
 
 
 ### Importing

@@ -5,6 +5,8 @@ todo: target currency
 
 Fundamental concepts such as account, transaction, reporting period, purchase value, and performance are described in a separate chapter (see sidebar). Below is an alphabetical list containing descriptions of all attributes, also referred to as fields or columns, used in various sections within PP.
 
+- Absolute performance: a performance measure that assesses the overall gain or loss of an investment over a specific period; = (Market value at end of period + Sell/outbound deliveries + Dividends) - (Taxes + Fees + Initial valuation + Buy/inbound deliveries). Synonym: total return.
+
 - Actual # quotes: the number of quotes in the historic prices list of a security.
 
 - Amount: The Gross Amount of a transaction or the total amount of money before any taxes and fees.
@@ -72,6 +74,8 @@ Fundamental concepts such as account, transaction, reporting period, purchase va
 - Quote Feed (historic): data source or provider of the historic quotes: Alpha Vantage, Bitfinex Cryptocurrency Exchange, Binance Crypto Exchange, CoinGecko, EOD Historical Data, Finnhub, Inflation rate - Eurostat (HICP), ECB Statistical Data Warehouse, Kraken Cryptocurrency Exchange, PWP Leeway UG, Twelve Data, Quandl, Table on website, VIA/CS Funds, Yahoo Finance, Yahoo Finance (Adjusted Close), JSON, no automatic download.
 
 - Quote Feed (latest): data source or provider of the latest quotes (same list as above) or could be set as "same as historical quotes".
+
+- Rate of return: the percentage change in the value of an asset over a given period of time.
 
 - Security: A tradable financial asset such as stock, bonds, bitcoin, gold, ...
 
