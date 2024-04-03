@@ -4467,7 +4467,7 @@
             <config>
               <uuid>3580a087-a144-41e6-b45e-351eb5535064</uuid>
               <name>Standard</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:87},{&quot;id&quot;:&quot;name&quot;,&quot;width&quot;:106},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:68},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:127},{&quot;id&quot;:&quot;izf&quot;,&quot;sortDirection&quot;:128,&quot;width&quot;:120},{&quot;id&quot;:&quot;twror&quot;,&quot;width&quot;:134},{&quot;id&quot;:&quot;ttwror_pa&quot;,&quot;width&quot;:144},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:194},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:188},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:72}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:87},{&quot;id&quot;:&quot;name&quot;,&quot;width&quot;:106},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:68},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:127},{&quot;id&quot;:&quot;izf&quot;,&quot;width&quot;:120},{&quot;id&quot;:&quot;twror&quot;,&quot;sortDirection&quot;:1024,&quot;width&quot;:134},{&quot;id&quot;:&quot;ttwror_pa&quot;,&quot;width&quot;:144},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:194},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:188},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:72}]}</data>
             </config>
           </configurations>
         </config-set>
@@ -4479,7 +4479,7 @@
             <config>
               <uuid>7600e16d-0168-49d1-aadb-18c66a64bc8f</uuid>
               <name>Standard</name>
-              <data>Portfolioccd0ccf0-d4cd-4c16-8316-2b8727eb514d;#e2797c;SOLID;false;2,Portfolio-PreTaxccd0ccf0-d4cd-4c16-8316-2b8727eb514d;#df79e2;SOLID;false;2</data>
+              <data>Portfolioccd0ccf0-d4cd-4c16-8316-2b8727eb514d;#c0c0c0;SOLID;false;2,Portfolio-PreTaxccd0ccf0-d4cd-4c16-8316-2b8727eb514d;#ff8000;SOLID;false;2</data>
             </config>
           </configurations>
         </config-set>
