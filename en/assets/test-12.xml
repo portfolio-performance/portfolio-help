@@ -10,6 +10,7 @@
       <prices>
         <price t="2023-12-31" v="1000000000"/>
         <price t="2024-01-05" v="1100000000"/>
+        <price t="2024-01-15" v="1000000000"/>
       </prices>
       <attributes>
         <map/>
@@ -34,9 +35,9 @@
       <transactions>
         <account-transaction>
           <uuid>fef38f2e-af6e-4fc6-ab15-7d0e3af2b1a7</uuid>
-          <date>2024-01-03T00:00</date>
+          <date>2024-01-08T00:00</date>
           <currencyCode>EUR</currencyCode>
-          <amount>300</amount>
+          <amount>200</amount>
           <security reference="../../../../../securities/security"/>
           <shares>1000000000</shares>
           <units>
@@ -44,11 +45,79 @@
               <amount currency="EUR" amount="100"/>
             </unit>
             <unit type="TAX">
-              <amount currency="EUR" amount="100"/>
+              <amount currency="EUR" amount="200"/>
             </unit>
           </units>
-          <updatedAt>2024-04-01T19:53:20.904669300Z</updatedAt>
+          <updatedAt>2024-04-03T18:53:08.987212700Z</updatedAt>
           <type>DIVIDENDS</type>
+        </account-transaction>
+        <account-transaction>
+          <uuid>cb0f5131-c10d-483e-b1b7-1024b2cbb571</uuid>
+          <date>2024-01-04T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>2200</amount>
+          <security reference="../../../../../securities/security"/>
+          <crossEntry class="buysell">
+            <portfolio>
+              <uuid>ccd0ccf0-d4cd-4c16-8316-2b8727eb514d</uuid>
+              <name>security-account-1</name>
+              <isRetired>false</isRetired>
+              <referenceAccount reference="../../../../.."/>
+              <transactions>
+                <portfolio-transaction>
+                  <uuid>fe11586e-1973-48ae-95b0-f02aa9e980f9</uuid>
+                  <date>2023-12-31T00:00</date>
+                  <currencyCode>EUR</currencyCode>
+                  <amount>10000</amount>
+                  <security reference="../../../../../../../../../securities/security"/>
+                  <shares>1000000000</shares>
+                  <updatedAt>2024-04-01T19:29:20.738672900Z</updatedAt>
+                  <type>DELIVERY_INBOUND</type>
+                </portfolio-transaction>
+                <portfolio-transaction>
+                  <uuid>2d09ce0a-aadc-48c5-aa0d-76206fd4c348</uuid>
+                  <date>2024-01-03T00:00</date>
+                  <currencyCode>EUR</currencyCode>
+                  <amount>3000</amount>
+                  <security reference="../../../../../../../../../securities/security"/>
+                  <shares>300000000</shares>
+                  <updatedAt>2024-04-03T18:30:23.609385100Z</updatedAt>
+                  <type>DELIVERY_INBOUND</type>
+                </portfolio-transaction>
+                <portfolio-transaction>
+                  <uuid>868c2cb2-0702-4171-ab9e-2f2df4e1babf</uuid>
+                  <date>2024-01-05T00:00</date>
+                  <currencyCode>EUR</currencyCode>
+                  <amount>2000</amount>
+                  <security reference="../../../../../../../../../securities/security"/>
+                  <shares>200000000</shares>
+                  <updatedAt>2024-04-03T18:37:18.169570800Z</updatedAt>
+                  <type>DELIVERY_OUTBOUND</type>
+                </portfolio-transaction>
+                <portfolio-transaction>
+                  <uuid>43a76e34-a4d8-4fd5-8644-2a461d2d137f</uuid>
+                  <date>2024-01-04T00:00</date>
+                  <currencyCode>EUR</currencyCode>
+                  <amount>2200</amount>
+                  <security reference="../../../../../../../../../securities/security"/>
+                  <crossEntry class="buysell" reference="../../../.."/>
+                  <shares>200000000</shares>
+                  <updatedAt>2024-04-03T18:45:00.273099800Z</updatedAt>
+                  <type>BUY</type>
+                </portfolio-transaction>
+              </transactions>
+              <attributes>
+                <map/>
+              </attributes>
+              <updatedAt>2024-03-29T16:06:07.328054Z</updatedAt>
+            </portfolio>
+            <portfolioTransaction reference="../portfolio/transactions/portfolio-transaction[4]"/>
+            <account reference="../../../.."/>
+            <accountTransaction reference="../.."/>
+          </crossEntry>
+          <shares>0</shares>
+          <updatedAt>2024-04-03T18:45:00.273099800Z</updatedAt>
+          <type>BUY</type>
         </account-transaction>
       </transactions>
       <attributes>
@@ -58,28 +127,7 @@
     </account>
   </accounts>
   <portfolios>
-    <portfolio>
-      <uuid>ccd0ccf0-d4cd-4c16-8316-2b8727eb514d</uuid>
-      <name>security-account-1</name>
-      <isRetired>false</isRetired>
-      <referenceAccount reference="../../../accounts/account"/>
-      <transactions>
-        <portfolio-transaction>
-          <uuid>fe11586e-1973-48ae-95b0-f02aa9e980f9</uuid>
-          <date>2023-12-31T00:00</date>
-          <currencyCode>EUR</currencyCode>
-          <amount>10000</amount>
-          <security reference="../../../../../securities/security"/>
-          <shares>1000000000</shares>
-          <updatedAt>2024-04-01T19:29:20.738672900Z</updatedAt>
-          <type>DELIVERY_INBOUND</type>
-        </portfolio-transaction>
-      </transactions>
-      <attributes>
-        <map/>
-      </attributes>
-      <updatedAt>2024-03-29T16:06:07.328054Z</updatedAt>
-    </portfolio>
+    <portfolio reference="../../accounts/account/transactions/account-transaction[2]/crossEntry/portfolio"/>
   </portfolios>
   <plans/>
   <taxonomies/>
@@ -429,6 +477,11 @@
               <uuid></uuid>
               <name></name>
               <data>F2023-12-31_2024-01-05</data>
+            </config>
+            <config>
+              <uuid></uuid>
+              <name></name>
+              <data>F2024-01-01_2024-01-15</data>
             </config>
           </configurations>
         </config-set>
