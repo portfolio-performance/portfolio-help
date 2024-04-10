@@ -1,4 +1,4 @@
-#Mon Apr 01 10:38:22 CEST 2024
+#Tue Apr 09 21:49:49 CEST 2024
 SecurityEventsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:120},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:300}]}
 StatementOfAssetsView-newsash=420
 PerformanceView@2Earnings={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:100},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:250},{"id"\:"6","width"\:100},{"id"\:"7","width"\:100},{"id"\:"note","width"\:200}]}
@@ -21,9 +21,9 @@ SecurityPriceChartPane=Y3
 BookmarksListTab@bottom={"items"\:[{"id"\:"0","width"\:150},{"id"\:"1","width"\:500}]}
 IMPORT_NOTESPortfolio\ Transactions=true
 performance-chart-aggregation-period=
-PerformanceChartView-newsash=-5
+PerformanceChartView-newsash=-74
 ReturnsVolatilityChartView-PICKER$picked=6c2d3073-1d95-4f1f-b51f-03dfac0891dd
-HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:149},{"id"\:"1","width"\:150}]}
+HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:237},{"id"\:"1","width"\:152}]}
 import-target-portfolio-Account\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
 name.abuchen.portfolio.ui.views.panes.TransactionsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:153},{"id"\:"1","width"\:95},{"id"\:"2","width"\:101},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:194},{"id"\:"account","width"\:164},{"id"\:"9","width"\:151},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
 StatementOfAssetsHistoryView-newsash=295
@@ -31,7 +31,7 @@ PortfolioListView-newsash=299
 import-target-portfolio-Portfolio\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
 CalculationLineItemPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"9","width"\:120},{"id"\:"note","width"\:200}]}
 name.abuchen.portfolio.ui.views.SecuritiesTable$picked=ace4b28f-3207-4dc2-95fa-edc3936851f9
-name.abuchen.portfolio.ui.views.AllTransactionsView={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:167},{"id"\:"1","width"\:172},{"id"\:"2","width"\:250},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"account","width"\:120},{"id"\:"9","width"\:120},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
+name.abuchen.portfolio.ui.views.AllTransactionsView={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:180},{"id"\:"1","width"\:155},{"id"\:"2","width"\:115},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:196},{"id"\:"account","width"\:177},{"id"\:"9","width"\:187},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
 PerformanceView@2Taxes={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:100},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:250},{"id"\:"6","width"\:100},{"id"\:"7","width"\:100},{"id"\:"note","width"\:200}]}
 SecuritiesPerformanceView-newsash=266
 CSV_IMPORT_PATH=D\:\\tmp
@@ -46,5 +46,5 @@ import-target-account-Account\ Transactions=a8844383-5b6c-4b59-b786-d48ccafd628b
 PortfolioListView@top2={"items"\:[{"id"\:"0","width"\:171},{"id"\:"1","width"\:182},{"id"\:"volume","width"\:255},{"id"\:"note","width"\:200}]}
 PerformanceView@2Fees={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:100},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:250},{"id"\:"6","width"\:100},{"id"\:"7","width"\:100},{"id"\:"note","width"\:200}]}
 IMPORT_NOTESAccount\ Transactions=true
-AllTransactionsView-newsash=200
+AllTransactionsView-newsash=328
 import-target-account-Portfolio\ Transactions=a8844383-5b6c-4b59-b786-d48ccafd628b

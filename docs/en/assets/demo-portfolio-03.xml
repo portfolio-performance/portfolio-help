@@ -2751,8 +2751,14 @@
         <price t="2024-03-26" v="2222000000"/>
         <price t="2024-03-27" v="2240500000"/>
         <price t="2024-03-28" v="2250000000"/>
+        <price t="2024-04-02" v="2233000000"/>
+        <price t="2024-04-03" v="2228000000"/>
+        <price t="2024-04-04" v="2228000000"/>
+        <price t="2024-04-05" v="2200000000"/>
+        <price t="2024-04-08" v="2206000000"/>
+        <price t="2024-04-09" v="2214000000"/>
       </prices>
-      <latest t="2024-03-28" v="2250000000">
+      <latest t="2024-04-09" v="2221000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3921,8 +3927,14 @@
         <price t="2024-03-26" v="1379500000"/>
         <price t="2024-03-27" v="1383000000"/>
         <price t="2024-03-28" v="1380500000"/>
+        <price t="2024-04-02" v="1340000000"/>
+        <price t="2024-04-03" v="1353000000"/>
+        <price t="2024-04-04" v="1344500000"/>
+        <price t="2024-04-05" v="1307500000"/>
+        <price t="2024-04-08" v="1325000000"/>
+        <price t="2024-04-09" v="1329000000"/>
       </prices>
-      <latest t="2024-03-28" v="1380500000">
+      <latest t="2024-04-09" v="1327000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -4479,7 +4491,7 @@
             <config>
               <uuid>7600e16d-0168-49d1-aadb-18c66a64bc8f</uuid>
               <name>Standard</name>
-              <data>Portfolioccd0ccf0-d4cd-4c16-8316-2b8727eb514d;#c0c0c0;SOLID;false;2,Portfolio-PreTaxccd0ccf0-d4cd-4c16-8316-2b8727eb514d;#ff8000;SOLID;false;2</data>
+              <data>Client-totals;#ff8000;SOLID;false;2,Security0152978e-2ea2-436f-b07a-0333b988ea8b;#ffffff;SOLID;false;2,Security245661d8-6510-40d7-96cc-3f05f7a679ad;#ffff00;SOLID;false;2</data>
             </config>
           </configurations>
         </config-set>

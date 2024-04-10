@@ -21,20 +21,20 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4370354"
-     inkscape:cx="153.09295"
-     inkscape:cy="273.47968"
+     inkscape:zoom="0.92295309"
+     inkscape:cx="666.88113"
+     inkscape:cy="327.7523"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer3"
      inkscape:document-rotation="0"
      showgrid="true"
      units="px"
      inkscape:pagecheckerboard="false"
-     inkscape:window-width="3840"
-     inkscape:window-height="2054"
-     inkscape:window-x="2869"
-     inkscape:window-y="-11"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1907"
+     inkscape:window-height="2041"
+     inkscape:window-x="2880"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
      showborder="true"
      inkscape:showpageshadow="false"
      inkscape:deskcolor="#d1d1d1"
@@ -126,6 +126,42 @@
          d="M 0,4 V -4"
          id="path2" />
     </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="marker2-8"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:#f9f9f9;fill-opacity:1.0;stroke:#f9f9f9;stroke-width:1;stroke-opacity:1.0"
+         d="M 0,4 V -4"
+         id="path2-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Stop-4"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Stop-4"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:#f9f9f9;fill-opacity:1.0;stroke:#f9f9f9;stroke-width:1;stroke-opacity:1.0"
+         d="M 0,4 V -4"
+         id="path35-2" />
+    </marker>
   </defs>
   <metadata
      id="metadata5">
@@ -143,7 +179,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="matrix(0.97266247,0,0,1.0227819,-83.205897,-30.206771)"
-     style="display:inline;stroke-width:1.0026">
+     style="display:none;stroke-width:1.0026">
     <rect
        style="fill:#1e2129;fill-opacity:1;stroke:none;stroke-width:1.32636;stroke-dasharray:7.95816, 1.32636;stroke-dashoffset:2.65271;-inkscape-stroke:none"
        id="rect1"
@@ -157,7 +193,8 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="lines"
-     transform="translate(-83.474452,-26.293465)">
+     transform="translate(-83.474452,-26.293465)"
+     style="display:none">
     <text
        xml:space="preserve"
        style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
@@ -523,6 +560,22 @@
          id="tspan11">426.82 €</tspan></text>
     <text
        xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+       x="368.93613"
+       y="133.01633"
+       id="text12-5"><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="368.93613"
+         y="133.01633"
+         id="tspan10-4">Market Value</tspan><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="368.93613"
+         y="137.95523"
+         id="tspan11-13">426.82 €</tspan></text>
+    <text
+       xml:space="preserve"
        style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
        x="326.67584"
        y="175.52452"
@@ -552,5 +605,252 @@
          x="117.90852"
          y="77.655602"
          id="tspan14">Holding Period 1</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="demo-potfolio-3"
+     style="display:inline">
+    <rect
+       style="display:inline;fill:#1e2129;fill-opacity:1;stroke:none;stroke-width:1.32293;stroke-dasharray:7.93752, 1.32293;stroke-dashoffset:2.64583;-inkscape-stroke:none"
+       id="rect1-7"
+       width="293.27142"
+       height="56.697758"
+       x="31.668205"
+       y="55.419357"
+       ry="1.320992e-16"
+       inkscape:export-filename="TTWROR-manual-calculation-demo-3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+       x="299.45963"
+       y="72.18457"
+       id="text18-7"
+       inkscape:export-filename="TTWROR-manual-calculation-demo-3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         style="line-height:1.25;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="0"
+         y="0"
+         id="tspan18-3">2023-06-12</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+       x="56.208626"
+       y="72.18457"
+       id="text22-4"><tspan
+         sodipodi:role="line"
+         style="line-height:1.25;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="0"
+         y="0"
+         id="tspan22-1">2021-06-12</tspan></text>
+    <path
+       style="display:inline;fill:none;stroke:#f9f9f9;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.23334, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Stop-4);marker-end:url(#marker2-8)"
+       d="M 54.939493,75.671749 H 102.78227"
+       id="path23-0" />
+    <path
+       style="display:inline;fill:none;stroke:#f9f9f9;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.23333, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Stop-4);marker-end:url(#marker2-8)"
+       d="m 102.89029,75.671749 h 81.44013"
+       id="path25-0" />
+    <path
+       style="display:inline;fill:none;stroke:#f9f9f9;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.23333, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Stop-4);marker-end:url(#Stop-4)"
+       d="M 184.28609,75.671749 H 298.35614"
+       id="path26-6" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+       x="54.84544"
+       y="89.814613"
+       id="text34-4"><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="0"
+         y="0"
+         id="tspan34-5">177.94 €</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+       x="103.52728"
+       y="89.814613"
+       id="text9-4"><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="0"
+         y="0"
+         id="tspan9-9">160.26 €</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+       x="184.43021"
+       y="89.814613"
+       id="text13-8"><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="0"
+         y="0"
+         id="tspan13-2">264.57 €</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+       x="102.76131"
+       y="96.769882"
+       id="text13-8-3"><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="102.76131"
+         y="96.769882"
+         id="tspan13-2-0">+</tspan><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="102.76131"
+         y="101.70879"
+         id="tspan61">84 €</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+       x="183.7424"
+       y="96.769882"
+       id="text13-8-2"><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="183.7424"
+         y="96.769882"
+         id="tspan13-2-6">+</tspan><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="183.7424"
+         y="101.70879"
+         id="tspan62">67 €</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+       x="299.4205"
+       y="89.814613"
+       id="text12-2"><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="0"
+         y="0"
+         id="tspan11-6">426.82 €</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+       x="103.68206"
+       y="72.18457"
+       id="text3-6"><tspan
+         sodipodi:role="line"
+         style="line-height:1.25;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="103.68206"
+         y="72.18457"
+         id="tspan2-6">2022-01-14</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+       x="184.90398"
+       y="72.182159"
+       id="text7-3"><tspan
+         sodipodi:role="line"
+         style="line-height:1.25;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="184.90398"
+         y="72.182159"
+         id="tspan7-1">2022-09-30</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffff00;stroke:none;stroke-width:0.264583"
+       x="78.731339"
+       y="89.988091"
+       id="text64"><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#ffff00;stroke:none;stroke-width:0.264583"
+         x="78.731339"
+         y="89.988091"
+         id="tspan64"> (- 9.94%)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffff00;stroke:none;stroke-width:0.264583"
+       x="142.36626"
+       y="89.988091"
+       id="text65"><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#ffff00;stroke:none;stroke-width:0.264583"
+         x="142.36626"
+         y="89.988091"
+         id="tspan65"> (+ 8.31%)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffff00;stroke:none;stroke-width:0.264583"
+       x="241.83253"
+       y="89.988091"
+       id="text66"><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#ffff00;stroke:none;stroke-width:0.264583"
+         x="241.83253"
+         y="89.988091"
+         id="tspan66"> (+ 28.73%)</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g60"
+     inkscape:label="simplified-example"
+     style="display:none">
+    <rect
+       style="display:inline;fill:#1e2129;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-dasharray:7.93752, 1.32292;stroke-dashoffset:2.64583;-inkscape-stroke:none"
+       id="rect42"
+       width="261.4191"
+       height="26.502489"
+       x="44.188194"
+       y="64.256996"
+       ry="6.1747729e-17"
+       inkscape:export-filename="TTWROR-manual-calculation.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#f9f9f9;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.23334, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Stop-4);marker-end:url(#marker2-8)"
+       d="M 54.939493,75.671749 H 102.78227"
+       id="path44" />
+    <path
+       style="fill:none;stroke:#f9f9f9;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.23333, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Stop-4);marker-end:url(#marker2-8)"
+       d="m 102.89029,75.671749 h 81.44013"
+       id="path45" />
+    <path
+       style="fill:none;stroke:#f9f9f9;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.23333, 0.529167;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Stop-4);marker-end:url(#Stop-4)"
+       d="M 184.28609,75.671749 H 298.35614"
+       id="path47" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+       x="79.01281"
+       y="83.267761"
+       id="text51"><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="79.01281"
+         y="83.267761"
+         id="tspan51">10%</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+       x="143.76228"
+       y="83.267761"
+       id="text52"><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="143.76228"
+         y="83.267761"
+         id="tspan52"> 5%</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+       x="241.47304"
+       y="83.267761"
+       id="text53"><tspan
+         sodipodi:role="line"
+         style="line-height:1;text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.264583"
+         x="241.47304"
+         y="83.267761"
+         id="tspan53"> 10%</tspan></text>
   </g>
 </svg>
