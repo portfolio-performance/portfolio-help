@@ -159,6 +159,7 @@ nav:
           - Delivery (Inbound-Outbound): reference/transaction/delivery.md
           - Security transfer: reference/transaction/security-transfer.md
           - Dividend: reference/transaction/dividend.md
+          - Deposit-removal: reference/transaction/deposit-removal.md
       - Online Menu: reference/online.md
       - Help Menu:
           - Check for Updates: reference/help/check-updates.md
