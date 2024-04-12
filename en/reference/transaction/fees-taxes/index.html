@@ -12,10 +12,10 @@
         <meta name="author" content="Andreas Buchen, et. al.">
       
       
-        <link rel="canonical" href="https://help.portfolio-performance.info/en/reference/transaction/interest-interest-charge/">
+        <link rel="canonical" href="https://help.portfolio-performance.info/en/reference/transaction/fees-taxes/">
       
       
-        <link rel="prev" href="../deposit-removal/">
+        <link rel="prev" href="../interest/">
       
       
         <link rel="next" href="../../online/">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Interest - Interest Charge - Portfolio Performance Manual</title>
+        <title>Fees - Fees refund - Portfolio Performance Manual</title>
       
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Interest - Interest Charge
+              Fees - Fees refund
             
           </span>
         </div>
@@ -1984,6 +1984,8 @@
       
         
       
+        
+      
     
     
       
@@ -2036,7 +2038,7 @@
         
   
   <span class="md-ellipsis">
-    Buy-Sell
+    Buy & Sell
   </span>
   
 
@@ -2120,7 +2122,28 @@
         
   
   <span class="md-ellipsis">
-    Deposit-removal
+    Deposit & removal (withdrawal)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interest & Interest charge
   </span>
   
 
@@ -2148,7 +2171,7 @@
         
   
   <span class="md-ellipsis">
-    Interest-Interest charge
+    Fees & taxes
   </span>
   
 
@@ -2885,7 +2908,7 @@
                   
 
   
-    <a href="https://github.com/portfolio-performance/portfolio-help/tree/master/docs/en/reference/transaction/interest-interest-charge.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/portfolio-performance/portfolio-help/tree/master/docs/en/reference/transaction/fees-taxes.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -2893,18 +2916,12 @@
   
 
 
-  <h1>Interest-Interest charge</h1>
+  <h1>Fees & taxes</h1>
 
-<p>Interest is the compensation received for lending money, such as depositing funds into a cash account. It reflects a traditional bank arrangement where you may earn monthly or yearly interest on the funds held in the account. The transaction is initiated by the credit note from the bank. Taxes can be withheld from the interest payment. Conversely, an interest charge is a fee incurred for borrowing money. When your (physical) cash account becomes negative (indicating borrowing), you pay a fee, which constitutes a debit operation for the bank.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Interest and Interest Charge transaction. </figcaption><img alt="" src="../images/interest-interest-charge.svg"></figure></p>
-<p>The result of the interest and interest charge transaction is an increase or decrease of the balance of the selected cash account (see Figure 2).</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Result of interest and interest charge transaction on balance.</figcaption><img alt="" src="../images/interest-interest-charge-balance.png"></figure></p>
-<p>There could also be an effect on the performance of the portfolio. The net result on both interest transactions of Figure 1 is an earning of 3 EUR. For a reporting period of 1 year (2024) and based on the data from Figure 2, this gives:</p>
-<ul>
-<li>TTWROR: <code>r = 603 / 600 = 0.50%</code></li>
-<li>IRR: <code>603 = 600 x (1 + IRR)^(305/365) for IRR = 0.60%</code></li>
-</ul>
-<p>Please note that the 600 EUR deposit is considered by PP as a (performance neutral) cash inflow but the interest and interest charge transactions are not. They only affect the balance of the deposit account and therefore also the MVE of the portfolio.</p>
+<p>Fees and taxes are typically reconciled at the time of <a href="../buy-sell/">purchasing or selling</a> securities. However, there are instances when it may be necessary to record them at a different time. The dialog boxes in Figure 1 demonstrate that the same input data is required: the <code>name of the security</code>, the <code>name of the deposit account</code>, the <code>transaction date</code>, and the <code>amount</code> (debit or credit note).</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Fees, Fees Refund, Taxes, and Tax Refund transactions. </figcaption><img alt="" src="../images/fees-taxes.svg"></figure></p>
+<p>You can choose for a deposit account with a currency different from that of the security account. An additional input box for the exchange currency will be displayed (refer to Figure 2).</p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Using different currencies for securities and deposit account.</figcaption><img alt="" src="../images/fees-taxes-2-currencies.svg"></figure></p>
 
 
 

@@ -311,7 +311,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://help.portfolio-performance.info/en/reference/transaction/interest-interest-charge/</loc>
+         <loc>https://help.portfolio-performance.info/en/reference/transaction/fees-taxes/</loc>
+         <lastmod>2024-04-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://help.portfolio-performance.info/en/reference/transaction/interest/</loc>
          <lastmod>2024-04-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
