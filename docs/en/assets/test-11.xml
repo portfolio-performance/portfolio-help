@@ -34,62 +34,76 @@
       <isRetired>false</isRetired>
       <transactions>
         <account-transaction>
-          <uuid>e01a92ce-0ca4-4443-8d23-5181b1461029</uuid>
+          <uuid>4ec80782-b182-4b39-bfdd-45d419d1da64</uuid>
+          <date>2023-01-01T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>60000</amount>
+          <shares>0</shares>
+          <updatedAt>2024-04-11T12:44:49.014640900Z</updatedAt>
+          <type>DEPOSIT</type>
+        </account-transaction>
+        <account-transaction>
+          <uuid>f8a5e700-1729-4f8d-8d56-e3feec0e22f3</uuid>
+          <date>2023-02-01T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>500</amount>
+          <shares>0</shares>
+          <updatedAt>2024-04-11T12:42:42.420805Z</updatedAt>
+          <type>INTEREST</type>
+        </account-transaction>
+        <account-transaction>
+          <uuid>d137f9aa-5963-4407-b815-1bae42cd6333</uuid>
+          <date>2023-03-01T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>500</amount>
+          <shares>0</shares>
+          <updatedAt>2024-04-11T12:45:56.924757Z</updatedAt>
+          <type>INTEREST</type>
+        </account-transaction>
+        <account-transaction>
+          <uuid>b9889a40-6e26-4e7e-b509-f53dee981ee2</uuid>
+          <date>2023-04-01T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>500</amount>
+          <shares>0</shares>
+          <updatedAt>2024-04-11T13:03:40.416964100Z</updatedAt>
+          <type>INTEREST</type>
+        </account-transaction>
+        <account-transaction>
+          <uuid>d6a36d2a-082b-401f-8931-d9a0ac8bd417</uuid>
+          <date>2023-05-01T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>500</amount>
+          <shares>0</shares>
+          <updatedAt>2024-04-11T13:03:46.112353100Z</updatedAt>
+          <type>INTEREST</type>
+        </account-transaction>
+        <account-transaction>
+          <uuid>6c0c4191-411c-40e3-92cf-8d33e079903c</uuid>
           <date>2023-06-01T00:00</date>
           <currencyCode>EUR</currencyCode>
-          <amount>100000</amount>
-          <security reference="../../../../../securities/security"/>
-          <crossEntry class="buysell">
-            <portfolio>
-              <uuid>ccd0ccf0-d4cd-4c16-8316-2b8727eb514d</uuid>
-              <name>security-account-1</name>
-              <isRetired>false</isRetired>
-              <referenceAccount reference="../../../../.."/>
-              <transactions>
-                <portfolio-transaction>
-                  <uuid>8c1facce-be77-443c-9d7c-9b8bfc2dd2d0</uuid>
-                  <date>2023-06-01T00:00</date>
-                  <currencyCode>EUR</currencyCode>
-                  <amount>100000</amount>
-                  <security reference="../../../../../../../../../securities/security"/>
-                  <crossEntry class="buysell" reference="../../../.."/>
-                  <shares>10000000000</shares>
-                  <updatedAt>2024-03-31T20:15:58.836822400Z</updatedAt>
-                  <type>BUY</type>
-                </portfolio-transaction>
-              </transactions>
-              <attributes>
-                <map/>
-              </attributes>
-              <updatedAt>2024-03-29T16:06:07.328054Z</updatedAt>
-            </portfolio>
-            <portfolioTransaction reference="../portfolio/transactions/portfolio-transaction"/>
-            <account reference="../../../.."/>
-            <accountTransaction reference="../.."/>
-          </crossEntry>
+          <amount>500</amount>
           <shares>0</shares>
-          <updatedAt>2024-03-31T20:15:58.836822400Z</updatedAt>
-          <type>BUY</type>
+          <updatedAt>2024-04-11T13:03:52.367697400Z</updatedAt>
+          <type>INTEREST</type>
         </account-transaction>
         <account-transaction>
-          <uuid>37ab1d18-6301-4f3c-96aa-31490f398821</uuid>
-          <date>2023-06-10T00:00</date>
+          <uuid>95d66763-d1af-4f01-a1d6-ea6fcabff002</uuid>
+          <date>2023-07-01T00:00</date>
           <currencyCode>EUR</currencyCode>
-          <amount>20000</amount>
-          <security reference="../../../../../securities/security"/>
+          <amount>500</amount>
           <shares>0</shares>
-          <updatedAt>2024-03-31T20:17:26.716978500Z</updatedAt>
-          <type>FEES_REFUND</type>
+          <updatedAt>2024-04-11T13:04:02.359849500Z</updatedAt>
+          <type>INTEREST</type>
         </account-transaction>
         <account-transaction>
-          <uuid>7d295440-1f53-4b02-87c0-62edb9df9296</uuid>
-          <date>2023-06-20T00:00</date>
+          <uuid>25797741-808c-4ed2-95ce-cb3e87db03c8</uuid>
+          <date>2024-04-11T00:00</date>
           <currencyCode>EUR</currencyCode>
-          <amount>10000</amount>
-          <security reference="../../../../../securities/security"/>
+          <amount>400</amount>
           <shares>0</shares>
-          <updatedAt>2024-03-31T20:18:32.692830Z</updatedAt>
-          <type>FEES</type>
+          <updatedAt>2024-04-11T13:18:28.146527Z</updatedAt>
+          <type>INTEREST_CHARGE</type>
         </account-transaction>
       </transactions>
       <attributes>
@@ -110,7 +124,17 @@
     </account>
   </accounts>
   <portfolios>
-    <portfolio reference="../../accounts/account/transactions/account-transaction/crossEntry/portfolio"/>
+    <portfolio>
+      <uuid>ccd0ccf0-d4cd-4c16-8316-2b8727eb514d</uuid>
+      <name>security-account-1</name>
+      <isRetired>false</isRetired>
+      <referenceAccount reference="../../../accounts/account"/>
+      <transactions/>
+      <attributes>
+        <map/>
+      </attributes>
+      <updatedAt>2024-03-29T16:06:07.328054Z</updatedAt>
+    </portfolio>
   </portfolios>
   <plans/>
   <taxonomies/>
@@ -474,6 +498,26 @@
               <uuid></uuid>
               <name></name>
               <data>F2023-05-31_2023-06-30</data>
+            </config>
+            <config>
+              <uuid></uuid>
+              <name></name>
+              <data>L3Y0</data>
+            </config>
+            <config>
+              <uuid></uuid>
+              <name></name>
+              <data>L2Y0</data>
+            </config>
+            <config>
+              <uuid></uuid>
+              <name></name>
+              <data>F2022-12-31_2023-12-31</data>
+            </config>
+            <config>
+              <uuid></uuid>
+              <name></name>
+              <data>F2023-01-01_2023-12-31</data>
             </config>
           </configurations>
         </config-set>
