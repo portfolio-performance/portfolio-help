@@ -3018,7 +3018,23 @@
 
   <h1>Delivery (Inbound-Outbound)</h1>
 
-<p>A Delivery (Inbound/Outbound) transaction resembles a Buy/Sell transaction, except that there is <em>NO</em>* deposit or withdrawal from a deposit account involved. In a Delivery Outbound transaction, the securities simply disappear and are no longer visible in the securities account. In contrast, with an inbound delivery, it's as if the securities are acquired by magic, without any prior cash transaction. This scenario could occur, for instance, when inheriting securities (you got the stock 'for free'). Moreover, a Delivery (Inbound) transaction becomes necessary when setting up your portfolio at a later date than the original purchases, without you being able to register all past transactions. In such cases, the securities are recorded as acquired without a deposit.</p>
+<p>A delivery involves the addition or removal of securities from a securities account, without requiring a deposit transaction. Drawing a comparison between Inbound and Outbound deliveries and Deposit and Withdrawal (removal) transactions can provide clarity.</p>
+<p>Both types of transactions involve the transfer of assets (money), but they impact different types of accounts. Deposit and withdrawal transactions only affect cash accounts. When a deposit is made, the cash account increases, and conversely, it decreases when a withdrawal is made. Similarly, Inbound and Outbound deliveries involve the addition or removal of securities from a securities account. In both cases, whether it's cash or securities, assets are either added to or withdrawn from an account.</p>
+<p>Delivery transactions can be particularly useful in the following scenarios:</p>
+<ol>
+<li>
+<p><strong>Portfolio Reconstruction</strong>: You're trying to reconstruct a portfolio based on historical data but lack specific transaction details such as prices, fees, or even dates.</p>
+</li>
+<li>
+<p><strong>Inheritance and gifts</strong>: If you inherit securities or receive them as a gift, you may not have all the historic details and probably only has info about the current market price. A delivery at the current date and price could be a solution.</p>
+</li>
+<li>
+<p><strong>Currency Considerations</strong>: If the security is in a currency for which no cash account exists in the portfolio, a delivery transaction can be used to add the security to the portfolio.</p>
+</li>
+<li>
+<p><strong>Corporate Actions</strong>: Certain corporate actions like stock splits, mergers, or acquisitions can sometimes be more easily implemented with deliveries vs buy/sell.</p>
+</li>
+</ol>
 <p><figure pp-figure="" id="_figure-1"><figcaption>Figure 1.  Delivery (Inbound) and Delivery (Outbound) transaction - one currency.</figcaption><img alt="" src="../images/delivery-same-currency.svg"></figure></p>
 <h2 id="one-currency">One currency</h2>
 <p>Each security account is paired with a corresponding cash account, which is automatically added upon creation. Since security-account-1 is linked to a cash account denominated in EUR, EUR is suggested as the default currency in Figure 1. The currency designation in the box (EUR) can be modified; the text to the right provides a description of the currency (Euro).</p>
