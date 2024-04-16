@@ -149,6 +149,7 @@ nav:
                 - Holdings: reference/view/reports/statement/holdings.md
               - Performance:  
                 - Performance: reference/view/reports/performance/index.md
+                - Calculation: reference/view/reports/performance/calculation.md
                 - Chart: reference/view/reports/performance/performance-chart.md
           - General Data:
             - Settings: reference/view/general-data/settings.md
