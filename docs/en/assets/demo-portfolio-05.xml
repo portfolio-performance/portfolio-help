@@ -2761,8 +2761,10 @@
         <price t="2024-04-11" v="2121000000"/>
         <price t="2024-04-12" v="2118000000"/>
         <price t="2024-04-15" v="2113000000"/>
+        <price t="2024-04-16" v="2083000000"/>
+        <price t="2024-04-17" v="2092000000"/>
       </prices>
-      <latest t="2024-04-15" v="2113000000">
+      <latest t="2024-04-17" v="2096000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3941,8 +3943,10 @@
         <price t="2024-04-11" v="1334500000"/>
         <price t="2024-04-12" v="1302500000"/>
         <price t="2024-04-15" v="1282000000"/>
+        <price t="2024-04-16" v="1245500000"/>
+        <price t="2024-04-17" v="1234000000"/>
       </prices>
-      <latest t="2024-04-15" v="1282000000">
+      <latest t="2024-04-17" v="1247500000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -4150,7 +4154,7 @@
               <attributes>
                 <map/>
               </attributes>
-              <updatedAt>2024-04-14T08:12:39.690266900Z</updatedAt>
+              <updatedAt>2024-04-16T07:23:15.363487400Z</updatedAt>
             </portfolio>
             <portfolioTransaction reference="../portfolio/transactions/portfolio-transaction"/>
             <account reference="../../../.."/>
@@ -4277,8 +4281,18 @@
                   <security reference="../../../../../../../../../securities/security[3]"/>
                   <crossEntry class="buysell" reference="../../../.."/>
                   <shares>500000000</shares>
-                  <updatedAt>2024-04-14T09:48:32.277437100Z</updatedAt>
+                  <updatedAt>2024-04-16T08:20:06.542941900Z</updatedAt>
                   <type>BUY</type>
+                </portfolio-transaction>
+                <portfolio-transaction>
+                  <uuid>f6c93eb9-22d1-4d08-b28a-05409b0be0eb</uuid>
+                  <date>2023-07-01T00:00</date>
+                  <currencyCode>USD</currencyCode>
+                  <amount>10000</amount>
+                  <security reference="../../../../../../../../../securities/security[4]"/>
+                  <shares>500000000</shares>
+                  <updatedAt>2024-04-16T07:49:54.281433500Z</updatedAt>
+                  <type>DELIVERY_INBOUND</type>
                 </portfolio-transaction>
               </transactions>
               <attributes>
@@ -4291,7 +4305,7 @@
             <accountTransaction reference="../.."/>
           </crossEntry>
           <shares>0</shares>
-          <updatedAt>2024-04-14T09:48:32.277437100Z</updatedAt>
+          <updatedAt>2024-04-16T08:20:06.542941900Z</updatedAt>
           <type>BUY</type>
         </account-transaction>
         <account-transaction>
@@ -4711,7 +4725,7 @@
             <config>
               <uuid>5626df9e-7f9b-47e2-b7f4-07557fdf6e55</uuid>
               <name>Standard</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:300},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:99},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:130},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:236},{&quot;id&quot;:&quot;6&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:200}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:268},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:105},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:138},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:236},{&quot;id&quot;:&quot;6&quot;,&quot;width&quot;:156},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:200}]}</data>
             </config>
           </configurations>
         </config-set>

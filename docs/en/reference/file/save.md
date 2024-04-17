@@ -1,16 +1,30 @@
 ---
-title: Save - Save As
+title: Save - Save As - Save All
 ---
 
-# File &#10095; Save - Save As - Save All
+# File &rsaquo; Save - Save As - Save All
 
-With the menu `File > Save`, you can save your portfolio in an XML-file (eXtensible Markup Language) format using the existing name. It's equivalent to choosing `File > Save As`, with the latter having the added flexibility to change the name and file type. Six file formats are available. `File > Save All` will of course save all open projects.
+## Save
+
+Figure: File format picker.{class=align-right style="width:20%"}
+
+![](./images/pick-file-format.png)
+
+With the menu `File > Save`, you can save your portfolio, using its existing name and file format without any further interference. If the file hasn't been saved before, a `Pick the file format` dialog box will appear (see Figure 1), presenting three choices. These options will be explained in the subsequent section. After selecting the file format, you can proceed as if you had started with the `File > Save As` option from the menu.
+
+## Save As
+
+The `File > Save As` option offers the three file format choices as submenus. In the subsequent step, you can input the file name and designate the file location. This option allows you to create a new copy of a previously saved file in a different file format and/or with a different name, leaving the original file intact.
+
+## Save All
+
+If more than one portfolio is open, the aforementioned commands will solely save the active portfolio. Utilize the `Save All` option to save all open files simultaneously. 
 
 Figure: Dialog after closing app with two updated portfolios.{class=pp-figure}
 
 ![](./images/app-close.png)
 
-Closing a portfolio that has been modified since opening will trigger a dialog `'xxx.xml is modified. Do you want to save the changes?`. Closing the application with multiple updated project will prompt the dialog from Figure 1.
+Closing a portfolio that has been modified since opening will trigger a dialog `'xxx.xml is modified. Do you want to save the changes?`. Closing the application with multiple updated projects will prompt the dialog from Figure 2.
 
 ## XML format
 
@@ -32,7 +46,7 @@ All data of your portfolio is stored in one XML-file (eXtensible Markup Language
 - `<settings>`: Contains various settings, including bookmarks and attribute types.
 - `<configurationSets>`: Stores configuration sets with specific data.
 
-Below you can see the xml code for the buying transaction in Figure 2.
+Below you can see the xml code for the buying transaction in Figure 3.
 
 Figure: Example of a buying transaction.{class=pp-figure}
 
@@ -67,22 +81,20 @@ This single buying transaction is represented with the following XML code.
 ```
 As you can see, there is nearly a one-to-one relationship between the input form of the buy transaction and the XML. Please note that -internally- PP works with nano units (10^9) for the number of shares and hecto units (10^2) for the price.
 
-## XML compressed format
+The PortfolioPerformance mobile app, introduced in February 2024, does not support the XML file format.
 
-With this option the XML file is compressed and stored as a ZIP file.The compression ratio is quite high (around 1:10). Subsequently, you can directly open the ZIP file in PP without the need to extract the XML from the ZIP archive beforehand.
 
-## XML AES-128/256 Encrypted
+## Password protected (AES-256)
 
-Saving the project in the AES-128 format (Advanced Encryption Standard) will use a key of 128 bits (= 16 bytes or characters) to encrypt your data. In order to generate this key, PP needs a password that is at least 6 characters. However, a password that is longer and more complex will have more entropy, which means it is harder to guess. A password with at least 128 bits of entropy will produce a key that is as secure as AES-128 encryption. However, most passwords do not have that much entropy, because they are based on words, names, dates, or personal information that can be easily guessed or found out. Therefore, you should use a password that is as long and as random as possible, and avoid using common or simple passwords.
+AES-256 encryption is a method of securing your data by converting it into a code that can only be accessed with a unique key. This encryption technique uses a 256-bit key, which is a string of 256 zeros and ones, to encrypt and decrypt the data. When data is encrypted using AES-256, it is transformed into a random sequence of characters that is unreadable without the key. In order to generate this key, PP needs a password that is at least 6 characters. However, a password that is longer and more complex will have more randomness and unpredictability, which means it is harder to guess.
 
-Since AES-256 uses a key of 256 bits, it's more secure.
-
-Figure: Saving a portfolio with AES-128 encryption needs a password.{class=pp-figure}
+Figure: Saving a portfolio with AES-256 encryption needs a password.{class=pp-figure}
 
 ![](./images/mnu-save-encrypted.png)
 
-Distinguishing an encrypted file from a regular one is possible by examining the file extension. Encrypted files have the extension .portfolio, while other formats are represented by XML or ZIP extensions.
 
-## Binary & Binary password protected
+## Binary
 
-An XML file is a human-readable file format (see above for an example). A binary format is more compact and efficient. More info is available in [Issue #2363](https://github.com/portfolio-performance/portfolio/issues/2363); watch for example the comparison in opening speed of a 720 securities & 1.3 MB historical prices project.
+An XML file is a human-readable file format (see above for an example). A binary format is more compact and efficient and therefore a file can be opened and saved much faster. However, it is no longer human-readable. More info is available in [Issue #2363](https://github.com/portfolio-performance/portfolio/issues/2363); watch for example the comparison in opening speed of a 720 securities & 1.3 MB historical prices project.
+
+Distinguishing a password-protected or binary file from a regular XML file one is possible by examining the file extension. Encrypted and binary files have the extension .portfolio instead of XML.

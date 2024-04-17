@@ -19,23 +19,22 @@ File
 │   ├── Clear List
 ├── Save Ctrl+S
 ├── Save as... Ctrl+S
-│   ├── XML
-│   ├── XML compressed
-│   ├── AES-128 encrypted
-│   ├── AES-256 encrypted
+│   ├── Password protected (AES-256)
 │   ├── Binary
-│   ├── Binary password protected
+│   ├── XML
 ├── Save All
 ├── Currency >
 │   ├── EUR (Euro)
-│   ├── USD (UnitedStates dollar)
+│   ├── USD (United States dollar)
 │   ├── A - D >
 │   │   ├── AED (United Arab Emirates dirham)
 │   │   ├── ...
 │   │   ├── DZD (Algerian dinar)
 │   └── E - I >
 │   ├── ...
-├── Sanity Check...
+├── Tools 
+│   ├── Sanity Check...
+│   ├── Fix: Restore ...
 ├── Import
 │   ├── PDF Bank Documents
 │   ├── CSV files (comma-separated values)
@@ -63,16 +62,16 @@ View
 │   ├── Hide information pane ... Ctrl+L
 │   ├── Discreet Mode
 ├── Securities
-├── All Securities
+├── ├── All Securities
 ├── Accounts
-├── Deposit Accounts
-├── Securities Accounts
-├── Investment Plans
-├── All transactions
+├── ├── Deposit Accounts
+├── ├── Securities Accounts
+├── ├── Investment Plans
+├── ├──All transactions
 ├── Reports
 │   ├── Statement of Assets
-│       ├── Chart
-│       ├── Holdings
+|   |   |── Chart
+|   |   ├── Holdings
 │   ├── Performance
 │       ├── Calculation
 │       ├── Chart
@@ -92,6 +91,7 @@ Transaction
 ├── Sell ...
 ├── Delivery (Inbound) ...
 ├── Delivery (Outbound) ...
+├── Security  transfer ...
 ├── Dividend ...
 ├── Deposit ...
 ├── Removal ...
@@ -124,7 +124,7 @@ Help
 ├── Join translation teams
 ├── Source Code on Github
 ├── How-Tos
-├── Faq
+├── FAQ
 ├── Show Error Log
 ├── Save Error Log ...
 └── Debug: Reset GUI ...
