@@ -33,6 +33,9 @@ sudo apt install openjdk-17-jre
 
 Die präferierte Option ist der [Windows-Installer](https://www.portfolio-performance.info). Damit wird PP (üblicherweise) in das Verzeichnis **C:\Users\{Benutzername}\AppData\Local\Programs\PortfolioPerformance** installiert wird. Diese Installation kann dann im Anschluss über die Online Aktualisierung einfach aktualisiert werden.
 
+Wichtig in diesem Zusammenhang:
+Bitte nicht erschrecken sollte euch der Windows Defender die Installation von Portfolio Performance blockieren. Der Grund hierfür ist die nicht vorhandene Signatur von Microsoft, Zertifikate sind sehr teuer, daher wurde bisher darauf verzichtet.
+
 ## Workspace Verzeichnis
 
 Im *Workspace* Verzeichnis speichert PP temporäre Informationen wie die aktuelle Fenstergröße, die zuletzt geöffneten Dateien und Verzeichnisse und andere Laufzeitinformationen.
