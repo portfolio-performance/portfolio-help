@@ -15,7 +15,25 @@ Im Arbeitsbereich zeigt *Portfolio Performance* jetzt die (noch leere) Vermögen
 
 ## Portfoliodatei speichern
 
-Das gerade angelegte Portfolio speicherst du über `Datei > Speichern unter ...` als Portfoliodatei im XML-Format im Dateisystem deines Computers ab. Klicke `Speichern`. 
+Das gerade angelegte Portfolio speicherst du über `Datei > Speichern unter ...` als Portfoliodatei im Dateisystem deines Computers ab.
+
+Hiefür stehen dir 4 Möglichkeiten zur Auswahl:
+
+* Passwortgeschützt (AES-256)
+* Binär
+* XML
+* XML komprimiert
+
+Klicke `Speichern`. 
+
+Eines der ersten beiden Formate (beides Binär Dateien) ist zwingend für die gleichzeitige Nutzung der Portfolio Performance App.
+
+Tipp:
+Sollte die Performance im Programm spürbar nachlassen, empfiehlt sich ein Wechsel vom XML-Format auf Binär, die Datei wird wesentlich kleiner und die Geschwindigeit verbessert sich.
+
+Ein Wechsel des Dateiformats ist zu jeder Zeit in alle Richtungen möglich. Dazu musst du deine Portfolio Datei öffnen und erneut `Datei > Speichern unter ...` auswählen.
+
+
 
 Die Portfoliodatei wird dich lange begleiten, also passe gut darauf auf und wähle einen Ort, den du regelmäßig sicherst. Die Portfoliodatei wird am Anfang der Arbeit mit *Portfolio Performance* geöffnet und beim Abschluss gespeichert.
 
