@@ -151,6 +151,7 @@ nav:
                 - Performance: reference/view/reports/performance/index.md
                 - Calculation: reference/view/reports/performance/calculation.md
                 - Chart: reference/view/reports/performance/performance-chart.md
+                - Payments: reference/view/reports/performance/payments.md
           - General Data:
             - Settings: reference/view/general-data/settings.md
             - Currencies: reference/view/general-data/currencies.md

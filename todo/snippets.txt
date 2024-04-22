@@ -20,3 +20,7 @@ HTML entities
 right-pointing caret: &rsaquo;
 ampersand: &amp;
 less than: &lt;
+sigma: &sum; or &#8721;
+
+
+start-up parameter: PortfolioPerformance.exe -nl de_DE
