@@ -31,14 +31,18 @@ sudo apt install openjdk-17-jre
 
 ## Windows
 
-Die präferierte Option ist der [Windows-Installer](https://www.portfolio-performance.info). Damit wird PP (üblicherweise) in das Verzeichnis **C:\Users\{Benutzername}\AppData\Local\Programs\PortfolioPerformance** installiert wird. Diese Installation kann dann im Anschluss über die Online Aktualisierung einfach aktualisiert werden.
+Die präferierte Option ist der [Windows-Installer](https://www.portfolio-performance.info). Damit wird Portfolio Performance (üblicherweise) in das Verzeichnis **C:\Users\{Benutzername}\AppData\Local\Programs\PortfolioPerformance** installiert wird. Diese Installation kann dann im Anschluss über die Online Aktualisierung einfach aktualisiert werden.
 
-Wichtig in diesem Zusammenhang:
-Bitte nicht erschrecken sollte euch der Windows Defender die Installation von Portfolio Performance blockieren. Der Grund hierfür ist die nicht vorhandene Signatur von Microsoft, Zertifikate sind sehr teuer, daher wurde bisher darauf verzichtet.
+## Windows Defender und Virenprogramme
+
+Wichtig zu beachten ist, dass der Windows Defender die Installation von Portfolio Performance möglicherweise blockiert. Dies geschieht aufgrund des Fehlens einer Microsoft-Signatur.
+Zertifikate sind kostenintensiv, weshalb bisher darauf verzichtet wurde, eine solche zu erwerben.
+Sollte euer Virenscanner euch eine Warnung anzeigen und das Programm in Quarantäne verschieben, geschieht das aufgrund eines Missverständnisses. Viele Virenscanner arbeiten mit einer Heuristik, um gegebenenfalls zukünftige Bedrohungen zu finden.
+Wen ihr betroffen seid, könnt ihr entweder manuell das Programm aus der Quarantäne nehmen, oder ihr schickt die Datei an den Hersteller eures Antivirenprogramms.
 
 ## Workspace Verzeichnis
 
-Im *Workspace* Verzeichnis speichert PP temporäre Informationen wie die aktuelle Fenstergröße, die zuletzt geöffneten Dateien und Verzeichnisse und andere Laufzeitinformationen.
+Im *Workspace* Verzeichnis speichert Portfolio Performance temporäre Informationen wie die aktuelle Fenstergröße, die zuletzt geöffneten Dateien und Verzeichnisse und andere Laufzeitinformationen.
 
 Das Workspace Verzeichnis liegt:
 
