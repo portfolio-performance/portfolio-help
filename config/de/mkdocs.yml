@@ -100,7 +100,7 @@ markdown_extensions:
   #   permalink: true
 
 nav:
-  - Über dieses Handbuch: index.md
+  - Erste Schritte: index.md
   - 'Erste Schritte':
       - 'Portfoliodatei anlegen': intro-neue-portfoliodatei-anlegen.md
       - 'Wertpapiere anlegen': intro-wertpapiere-anlegen.md
@@ -112,5 +112,5 @@ nav:
       - Konten: konten_anlegen.md
       - Kursdaten: kursdaten_laden.md
       - Buchungen: buchungen_erfassen.md
-  - Lizenz: license.md
+  - Über Portfolio Performance: ueber.md
 
