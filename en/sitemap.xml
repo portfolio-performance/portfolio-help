@@ -186,7 +186,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://help.portfolio-performance.info/en/how-to/test/</loc>
+         <loc>https://help.portfolio-performance.info/en/how-to/temp/</loc>
          <lastmod>2024-04-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -377,6 +377,11 @@
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/reference/view/reports/performance/performance-chart/</loc>
+         <lastmod>2024-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://help.portfolio-performance.info/en/reference/view/reports/performance/trades/</loc>
          <lastmod>2024-04-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
