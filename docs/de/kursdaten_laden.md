@@ -6,7 +6,7 @@ title: Kursdaten laden
 
 Historische Kurse sind extrem wichtig um eine Performance berechnen zu können. Wenn man nicht weiß wieviel ein Wertpapier vor einem Jahr wert war, dann helfen auch schicke Formeln nicht weiter. Allerdings ist es nicht einfach an gute und gleichzeitig kostenlose historische Kurse heranzukommen.
 
-Die erste Anlaufstelle ist [Yahoo Finance](#yahoo-finance): sofern Yahoo Finance das Wertpapier kennt und auch Kurse hat, kann man bequem anhand des Tickers den Download direkt in PP konfigurieren. Allerdings ist die Abdeckung für deutsche Fonds oder ETFs nicht so prickelnd. Eine weitere Möglichkeit ist [AlphaVantage](#alphavantage): ebenfalls mit viel Gewicht auf den amerikanischen Markt. Allerdings erlaubt das kostenlose API nur wenige Aufrufe pro Minute.
+Die erste Anlaufstelle ist [Yahoo Finance](#yahoo-finance): sofern Yahoo Finance das Wertpapier kennt und auch Kurse hat, kann man bequem anhand des Tickers den Download direkt in *Portfolio Performance* konfigurieren. Allerdings ist die Abdeckung für deutsche Fonds oder ETFs nicht so prickelnd. Eine weitere Möglichkeit ist [AlphaVantage](#alphavantage): ebenfalls mit viel Gewicht auf den amerikanischen Markt. Allerdings erlaubt das kostenlose API nur wenige Aufrufe pro Minute.
 
 Wenn diese zwei automatischen Quellen keine historischen Kurse bieten, muss man zu "halbautomatischen" Lösungen greifen. Die erste Möglichkeit ist eine URL zu hinterlegen auf der nach einer [Tabelle mit Kursinformationen](#tabelle-auf-einer-webseite) gesucht wird. Neben der Schwierigkeit überhaupt die passende Seite zu finden, kann es auch sein, dass die URLs sich immer wieder ändert so dass man mit Markos [dynamische Kursdaten-URLs](#dynamische-kursdaten-urls) zusammenbauen muss.
 
@@ -20,9 +20,9 @@ Und schließlich bleiben die manuellen Lösungen: die Kursdaten [per CSV-Datei](
 
 ### Allgemeines
 
-Falls historische Kurse vorliegen, können sie einfach als CSV-Datei importiert werden. Dazu die Daten in einer Tabelle auflisten, die einzelnen Werte durch ein Komma, Tabstopp oder besser Semikolon trennen und als CSV-Datei speichern. Bei Kurswerte im Format EURO,Cent verbietet sich der Komma-Separator. 
+Falls historische Kurse vorliegen, können sie einfach als CSV-Datei importiert werden. Dazu die Daten in einer Tabelle auflisten, die einzelnen Werte durch ein Komma, Tabstopp oder besser Semikolon trennen und als CSV-Datei speichern. Bei Kurswerte im Format EURO,Cent verbietet sich der Komma-Separator.
 
-![grafik](https://user-images.githubusercontent.com/82599585/116431429-134f2e00-a848-11eb-937a-8bdb0ab967ef.png) 
+![grafik](https://user-images.githubusercontent.com/82599585/116431429-134f2e00-a848-11eb-937a-8bdb0ab967ef.png)
 
 Dazu eignet sich ein Tabellenkalkulationsprogram bestens, so dass man sich nicht um die weitere Formatierung kümmern muss.
 
@@ -36,21 +36,21 @@ Dann wird die Datei als CSV-Datei gespeichert.
 
 Mit Rechtsklick auf das Wertpapier --> Kurse --> CSV-Datei importieren das CSV-Import Fenster öffnen.
 
-![grafik](https://user-images.githubusercontent.com/82599585/116431840-6e812080-a848-11eb-95ed-f2c1c3e9e7dc.png) 
- 
+![grafik](https://user-images.githubusercontent.com/82599585/116431840-6e812080-a848-11eb-95ed-f2c1c3e9e7dc.png)
+
 Portfolio Performance zeigt nun grün hinterlegt, welche Spalten als Datum und Kurs identifiziert wurden. Ein Häckchen zeigt ob eine Spaltenüberschrift vorhanden ist.
 
-![grafik](https://user-images.githubusercontent.com/82599585/116431887-79d44c00-a848-11eb-8a40-dd845bd7830e.png) 
- 
+![grafik](https://user-images.githubusercontent.com/82599585/116431887-79d44c00-a848-11eb-8a40-dd845bd7830e.png)
+
 Mit Doppelklick auf die entsprechende Stelle kann die Spaltenzuteilung geändert werden. Werden mehrere Kursspalten ausgewählt, wird der Wert der Letzten? eingelesen.
 
 ![grafik](https://user-images.githubusercontent.com/82599585/116431930-83f64a80-a848-11eb-873a-10df00c85ca8.png)
 
-Ein Klick auf ok und die Daten sind sichtbar. 
+Ein Klick auf ok und die Daten sind sichtbar.
 
 ![grafik](https://user-images.githubusercontent.com/82599585/116431984-8fe20c80-a848-11eb-823f-4af73b74ec4e.png)
- 
-Daten, die von online Seiten stammen bereiten mitunter Enkodierungs-Probleme. Dann kann das Format nicht gelesen werden. Abhilfe schafft hier der Versuch die Enkodierungseinstellung zu ändern. UTF-8 ist neben windows-1252 ein gängiges Format. 
+
+Daten, die von online Seiten stammen bereiten mitunter Enkodierungs-Probleme. Dann kann das Format nicht gelesen werden. Abhilfe schafft hier der Versuch die Enkodierungseinstellung zu ändern. UTF-8 ist neben windows-1252 ein gängiges Format.
 
 ![grafik](https://user-images.githubusercontent.com/82599585/116432053-9d979200-a848-11eb-93d7-ef3e288a87d3.png)
 
@@ -149,14 +149,13 @@ Ein zweites Beispiel sind die [LBMA/GOLD](https://www.quandl.com/data/LBMA/GOLD-
 
 **$.dataset.data[*][0]** extrahiert das Datum.
 
-**$.dataset.data[*][6]** extrahiert das 7. Element (JsonPath fängt mit 0 an zu zählen). Von den **column_names** Attribut wissen wir, dass das 7. Element als **EURO (PM)** bezeichnet ist, also das Nachmittags Fixing in Euro. 
+**$.dataset.data[*][6]** extrahiert das 7. Element (JsonPath fängt mit 0 an zu zählen). Von den **column_names** Attribut wissen wir, dass das 7. Element als **EURO (PM)** bezeichnet ist, also das Nachmittags Fixing in Euro.
 
 Der Entwickler von JsonPath hat eine [kleine Anwendung](http://jsonpath.herokuapp.com) gebaut, mit der man interaktiv die JsonPath Ausdrücke testen kann. Die Anwendung scheint keine großen JSON Dokumente zu vertragen, darum macht es Sinn mit nur ein paar wenigen Kursen die Ausdrücke zu testen.
 
-
 ## Dynamische Kursdaten-URLs
 
-Manche Seiten verteilen die Daten auf mehrere Requests. Wenn eines der Macros in der URL gefunden wird, wird die URL dynamisch zusammengesetzt und PP macht solange Aufrufe bis keine weiteren Kurse mehr gefunden werden.
+Manche Seiten verteilen die Daten auf mehrere Requests. Wenn eines der Macros in der URL gefunden wird, wird die URL dynamisch zusammengesetzt und *Portfolio Performance* macht solange Aufrufe bis keine weiteren Kurse mehr gefunden werden.
 
 In einer URL dürfen mehrere Marcos verwendet werden. Allerdings dürfen ```DATE``` und ```PAGE``` nicht gemeinsam verwendet werden, weil beide unterschiedliche Iterationen von URLs generieren.
 
@@ -180,12 +179,13 @@ https://example.com/data?waehrung={CURRENCY}
 Das Datumsformat folgt den Regeln des [DateTimeFormatter](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html) aus Java. Die wichtigsten Symbole sind ```y``` für das Jahr, ```M``` für den Monat im Jahr und ```d``` für den Tag im Monat.
 
 Beispiele:
+
 ```
 https://example.com/data?month={DATE:yyyy-MM}
 https://example.com/data?datum={DATE:yyyy-MM-32}
 ```
 
-Wenn die identische URL mehrfach generiert wird, dann macht PP nur eine einzige Abfrage. Nehmen wir das Datumsformat aus dem letzten Beispiel: ```{DATE:yyyy-MM-32}``` Der Tag ist statisch auf 32 gesetzt. Es wird für jeden Tag in einem Monat die identische URL generiert, aber nur eine Abfrage zum Server gemacht.
+Wenn die identische URL mehrfach generiert wird, dann macht *Portfolio Performance* nur eine einzige Abfrage. Nehmen wir das Datumsformat aus dem letzten Beispiel: ```{DATE:yyyy-MM-32}``` Der Tag ist statisch auf 32 gesetzt. Es wird für jeden Tag in einem Monat die identische URL generiert, aber nur eine Abfrage zum Server gemacht.
 
 Das Marco ```DATE``` darf in einer URL mehrfach auftauchen. Es wird dann das gleiche Datum verwendet. So kann man zum Beispiel mit ```{DATE:yyyy-MM-01}``` und ```{DATE:yyyy-MM-31}``` vom Monatsersten bis zum Monatsletzten selektieren.
 
@@ -213,7 +213,6 @@ https://example.com/data?page={PAGE}
 
 #### TICKER
 
-
 ```TICKER``` ersetzt das Ticker Symbol des Wertpapiers in der URL.
 
 ```
@@ -225,7 +224,7 @@ https://example.com/data?ticker={TICKER}
 ```TODAY:<format>:<delta>``` ersetzt das aktuelle Datum in der URL.
 
 * ```<format>``` ist das Datumsformat nach den Regeln des [DateTimeFormatter](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html) aus Java. Die wichtigsten Symbole sind ```y``` für das Jahr, ```M``` für den Monat im Jahr und ```d``` für den Tag im Monat.
-* ```<delta>``` ist eine Zeitspanne basierend auf den ISO-8601 Regeln wie in [Java](https://docs.oracle.com/javase/8/docs/api/java/time/Period.html#parse-java.lang.CharSequence-) implementiert. Die Zeitspanne kann optional mit einem Minuszeichen beginnen - dann wird sie vom aktuellen Datum abgezogen. Dann folgt ein ```P``` (für period) und anschliessend eine Zahl und ein Suffix - z.B. einem ```Y``` für Jahre, ```M``` für Monate, ```W``` für Wochen und einem ```D``` für Tage.
+* ```<delta>``` ist eine Zeitspanne basierend auf den ISO-8601 Regeln wie in [Java](https://docs.oracle.com/javase/8/docs/api/java/time/Period.html#parse-java.lang.CharSequence-) implementiert. Die Zeitspanne kann optional mit einem Minuszeichen beginnen - dann wird sie vom aktuellen Datum abgezogen. Dann folgt ein ```P``` (für period) und anschliessend eine Zahl und ein Suffix - z. B. einem ```Y``` für Jahre, ```M``` für Monate, ```W``` für Wochen und einem ```D``` für Tage.
 
 ```
 // aktuelles Datum im ISO Format
