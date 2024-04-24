@@ -888,21 +888,21 @@
 
 
 <h1 id="buchungen-erfassen">Buchungen erfassen</h1>
-<p>Für die Berechnung der Performance braucht Portfolio Performance die historischen Buchungen.</p>
+<p>Für die Berechnung der Performance braucht <em>Portfolio Performance</em> die historischen Buchungen.</p>
 <h2 id="unterstutzte-buchungstypen">Unterstützte Buchungstypen</h2>
-<p>Folgende Typen von Buchungen werden von PP unterstützt:</p>
+<p>Folgende Typen von Buchungen werden von <em>Portfolio Performance</em> unterstützt:</p>
 <h3 id="wertpapier-kauf-verkauf">Wertpapier: Kauf / Verkauf</h3>
-<p>Mit einem Kauf wird ein Wertpapier mit der angegebenen Stückzahl dem Depot zugeführt und zur selben Zeit das angegebene Konto mit dem Betrag belastet. Käufe und Verkäufe sind - bis auf die erfassten Steuern und Gebühren - performanceneutrale Buchungen, denn zunächst wird nur Geld in Aktien umgewandelt. Erst mit einer Kursänderung kommt es zu einer Performance.</p>
-<p>Für Kauf- und Verkaufsbuchungen kann - wie für alle Wertpapierbuchungen - eine <strong>Uhrzeit</strong> erfasst werden, z.B. die Handelszeit an der Börse. Die Uhrzeit hat nur informativen Charakter, da die Peformance nur für ganze Tage berechnet wird.  Wenn man als Uhrzeit <em>00:00</em> erfasst, wird die Uhrzeit nicht in der Liste der Buchungen angezeigt (Idee: nur so viel Informationen wie notwendig anzeigen).</p>
+<p>Mit einem Kauf wird ein Wertpapier mit der angegebenen Stückzahl dem Depot zugeführt und zur selben Zeit das angegebene Konto mit dem Betrag belastet. Käufe und Verkäufe sind - bis auf die erfassten Steuern und Gebühren - performance-neutrale Buchungen, denn zunächst wird nur Geld in Aktien umgewandelt. Erst mit einer Kursänderung kommt es zu einer Performance.</p>
+<p>Für Kauf- und Verkaufsbuchungen kann - wie für alle Wertpapierbuchungen - eine <strong>Uhrzeit</strong> erfasst werden, z. B. die Handelszeit an der Börse. Die Uhrzeit hat nur informativen Charakter, da die Performance nur für ganze Tage berechnet wird. Wenn man als Uhrzeit <em>00:00</em> erfasst, wird die Uhrzeit nicht in der Liste der Buchungen angezeigt (Idee: nur so viel Informationen wie notwendig anzeigen).</p>
 <h3 id="wertpapier-einlieferung-auslieferung">Wertpapier: Einlieferung / Auslieferung</h3>
-<p>Einlieferungen und Auslieferungen sind das Pendant zu Käufen und Verkäufen aber <strong>ohne</strong> eine Buchung auf dem Verrechnungskonto. Es gibt zwei typische Anwendungsfälle für diesen Buchungstyp: man bekommt Wertpapiere in sein Depot übertragen oder man möchte das Depot in PP abbilden ohne das Verrechnungskonto pflegen zu müssen.</p>
-<p>Einlieferungen und Auslieferungen sind performanceneutral bis auf die ggf. erfassten Steuern und Gebühren.</p>
+<p>Einlieferungen und Auslieferungen sind das Pendant zu Käufen und Verkäufen, aber <strong>ohne</strong> eine Buchung auf dem Verrechnungskonto. Es gibt zwei typische Anwendungsfälle für diesen Buchungstyp: man bekommt Wertpapiere in sein Depot übertragen oder man möchte das Depot in <em>Portfolio Performance</em> abbilden ohne das Verrechnungskonto pflegen zu müssen.</p>
+<p>Einlieferungen und Auslieferungen sind performance-neutral bis auf die ggf. erfassten Steuern und Gebühren.</p>
 <h3 id="wertpapier-umbuchung">Wertpapier: Umbuchung</h3>
-<p>Ein Umbuchung bucht die angegebene Stückzahl an Wertpapieren von einem Depot in ein anderes Depot um.</p>
-<p>Ein Umbuchung hat zunächst mal keine Auswirkung auf die Performance. Allerdings werden Umbuchungen dann relevant wenn man sich nur Teile der Datei anschaut, z.B. die Performance nur für eines der Depots. Dann wird als Einstandswert des Wertpapieres der Wert der Umbuchung herangezogen.</p>
+<p>Eine Umbuchung bucht die angegebene Stückzahl an Wertpapieren von einem Depot in ein anderes Depot um.</p>
+<p>Eine Umbuchung hat zunächst mal keine Auswirkung auf die Performance. Allerdings werden Umbuchungen dann relevant, wenn man sich nur Teile der Datei anschaut, z. B. die Performance nur für eines der Depots. Dann wird als Einstandswert des Wertpapiers der Wert der Umbuchung herangezogen.</p>
 <h3 id="wertpapier-dividende">Wertpapier: Dividende</h3>
-<p>Mit einer Dividende kann man - wer hätte das gedacht - Dividenden zu Wertpapiere erfassen - oder besser gesagt: jegliche performancerelevante Ausschüttung. Eine Dividendenbuchung muss zwingend auf einem Konto erfasst werden.</p>
-<p>Optional kann man die Stückzahl eingeben auf die sich die Dividende bezieht. Dieser Wert wird bisher nur genutzt um Dividende pro Anteil in der Liste der Buchungen anzuzeigen.</p>
+<p>Mit einer Dividende kann man - wer hätte das gedacht - Dividenden zu Wertpapieren erfassen - oder besser gesagt: jegliche performance-relevante Ausschüttung. Eine Dividendenbuchung muss zwingend auf einem Konto erfasst werden.</p>
+<p>Optional kann man die Stückzahl eingeben, auf die sich die Dividende bezieht. Dieser Wert wird bisher nur genutzt, um Dividende pro Anteil in der Liste der Buchungen anzuzeigen.</p>
 <h2 id="buchungen-importieren">Buchungen importieren</h2>
 
 

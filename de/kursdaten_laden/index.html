@@ -1093,30 +1093,30 @@
 
 <h1 id="kursdaten-laden">Kursdaten laden</h1>
 <p>Historische Kurse sind extrem wichtig um eine Performance berechnen zu können. Wenn man nicht weiß wieviel ein Wertpapier vor einem Jahr wert war, dann helfen auch schicke Formeln nicht weiter. Allerdings ist es nicht einfach an gute und gleichzeitig kostenlose historische Kurse heranzukommen.</p>
-<p>Die erste Anlaufstelle ist <a href="#yahoo-finance">Yahoo Finance</a>: sofern Yahoo Finance das Wertpapier kennt und auch Kurse hat, kann man bequem anhand des Tickers den Download direkt in PP konfigurieren. Allerdings ist die Abdeckung für deutsche Fonds oder ETFs nicht so prickelnd. Eine weitere Möglichkeit ist <a href="#alphavantage">AlphaVantage</a>: ebenfalls mit viel Gewicht auf den amerikanischen Markt. Allerdings erlaubt das kostenlose API nur wenige Aufrufe pro Minute.</p>
+<p>Die erste Anlaufstelle ist <a href="#yahoo-finance">Yahoo Finance</a>: sofern Yahoo Finance das Wertpapier kennt und auch Kurse hat, kann man bequem anhand des Tickers den Download direkt in <em>Portfolio Performance</em> konfigurieren. Allerdings ist die Abdeckung für deutsche Fonds oder ETFs nicht so prickelnd. Eine weitere Möglichkeit ist <a href="#alphavantage">AlphaVantage</a>: ebenfalls mit viel Gewicht auf den amerikanischen Markt. Allerdings erlaubt das kostenlose API nur wenige Aufrufe pro Minute.</p>
 <p>Wenn diese zwei automatischen Quellen keine historischen Kurse bieten, muss man zu "halbautomatischen" Lösungen greifen. Die erste Möglichkeit ist eine URL zu hinterlegen auf der nach einer <a href="#tabelle-auf-einer-webseite">Tabelle mit Kursinformationen</a> gesucht wird. Neben der Schwierigkeit überhaupt die passende Seite zu finden, kann es auch sein, dass die URLs sich immer wieder ändert so dass man mit Markos <a href="#dynamische-kursdaten-urls">dynamische Kursdaten-URLs</a> zusammenbauen muss.</p>
 <p>Und schließlich bleiben die manuellen Lösungen: die Kursdaten <a href="#comman-separated-values-csv">per CSV-Datei</a> zu importieren oder manuell im Programm selbst zu erfassen.</p>
 <p><a href="https://forum.portfolio-performance.info/t/quellen-fuer-historische-kurse/46"><i class="fa fa-comments-o" aria-hidden="true"></i> Forum: Quellen für historische Kurse</a></p>
 <h2 id="comman-separated-values-csv">Comman-separated Values (CSV)</h2>
 <p><a href="https://de.wikipedia.org/wiki/CSV_(Dateiformat)">CSV</a> steht für <em>Comma Separated Values</em>, also Werte die durch ein Komma getrennt werden.</p>
 <h3 id="allgemeines">Allgemeines</h3>
-<p>Falls historische Kurse vorliegen, können sie einfach als CSV-Datei importiert werden. Dazu die Daten in einer Tabelle auflisten, die einzelnen Werte durch ein Komma, Tabstopp oder besser Semikolon trennen und als CSV-Datei speichern. Bei Kurswerte im Format EURO,Cent verbietet sich der Komma-Separator. </p>
-<p><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431429-134f2e00-a848-11eb-937a-8bdb0ab967ef.png"> </p>
+<p>Falls historische Kurse vorliegen, können sie einfach als CSV-Datei importiert werden. Dazu die Daten in einer Tabelle auflisten, die einzelnen Werte durch ein Komma, Tabstopp oder besser Semikolon trennen und als CSV-Datei speichern. Bei Kurswerte im Format EURO,Cent verbietet sich der Komma-Separator.</p>
+<p><figure id="_figure-1"><figcaption>Figure 1.  grafik</figcaption><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431429-134f2e00-a848-11eb-937a-8bdb0ab967ef.png"></figure></p>
 <p>Dazu eignet sich ein Tabellenkalkulationsprogram bestens, so dass man sich nicht um die weitere Formatierung kümmern muss.</p>
-<p><figure id="_figure-1"><figcaption>Figure 1.  grafik</figcaption><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431458-1a763c00-a848-11eb-994b-dfb4a472f721.png"></figure></p>
+<p><figure id="_figure-2"><figcaption>Figure 2.  grafik</figcaption><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431458-1a763c00-a848-11eb-994b-dfb4a472f721.png"></figure></p>
 <p>Dann wird die Datei als CSV-Datei gespeichert.</p>
-<p><figure id="_figure-2"><figcaption>Figure 2.  grafik</figcaption><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431530-28c45800-a848-11eb-9084-4576d0af24cd.png"></figure></p>
+<p><figure id="_figure-3"><figcaption>Figure 3.  grafik</figcaption><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431530-28c45800-a848-11eb-9084-4576d0af24cd.png"></figure></p>
 <h3 id="csv-daten-importieren">CSV Daten importieren</h3>
 <p>Mit Rechtsklick auf das Wertpapier --&gt; Kurse --&gt; CSV-Datei importieren das CSV-Import Fenster öffnen.</p>
-<p><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431840-6e812080-a848-11eb-95ed-f2c1c3e9e7dc.png"> </p>
+<p><figure id="_figure-4"><figcaption>Figure 4.  grafik</figcaption><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431840-6e812080-a848-11eb-95ed-f2c1c3e9e7dc.png"></figure></p>
 <p>Portfolio Performance zeigt nun grün hinterlegt, welche Spalten als Datum und Kurs identifiziert wurden. Ein Häckchen zeigt ob eine Spaltenüberschrift vorhanden ist.</p>
-<p><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431887-79d44c00-a848-11eb-8a40-dd845bd7830e.png"> </p>
+<p><figure id="_figure-5"><figcaption>Figure 5.  grafik</figcaption><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431887-79d44c00-a848-11eb-8a40-dd845bd7830e.png"></figure></p>
 <p>Mit Doppelklick auf die entsprechende Stelle kann die Spaltenzuteilung geändert werden. Werden mehrere Kursspalten ausgewählt, wird der Wert der Letzten? eingelesen.</p>
-<p><figure id="_figure-3"><figcaption>Figure 3.  grafik</figcaption><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431930-83f64a80-a848-11eb-873a-10df00c85ca8.png"></figure></p>
-<p>Ein Klick auf ok und die Daten sind sichtbar. </p>
-<p><figure id="_figure-4"><figcaption>Figure 4.  grafik</figcaption><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431984-8fe20c80-a848-11eb-823f-4af73b74ec4e.png"></figure></p>
-<p>Daten, die von online Seiten stammen bereiten mitunter Enkodierungs-Probleme. Dann kann das Format nicht gelesen werden. Abhilfe schafft hier der Versuch die Enkodierungseinstellung zu ändern. UTF-8 ist neben windows-1252 ein gängiges Format. </p>
-<p><figure id="_figure-5"><figcaption>Figure 5.  grafik</figcaption><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116432053-9d979200-a848-11eb-93d7-ef3e288a87d3.png"></figure></p>
+<p><figure id="_figure-6"><figcaption>Figure 6.  grafik</figcaption><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431930-83f64a80-a848-11eb-873a-10df00c85ca8.png"></figure></p>
+<p>Ein Klick auf ok und die Daten sind sichtbar.</p>
+<p><figure id="_figure-7"><figcaption>Figure 7.  grafik</figcaption><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116431984-8fe20c80-a848-11eb-823f-4af73b74ec4e.png"></figure></p>
+<p>Daten, die von online Seiten stammen bereiten mitunter Enkodierungs-Probleme. Dann kann das Format nicht gelesen werden. Abhilfe schafft hier der Versuch die Enkodierungseinstellung zu ändern. UTF-8 ist neben windows-1252 ein gängiges Format.</p>
+<p><figure id="_figure-8"><figcaption>Figure 8.  grafik</figcaption><img alt="grafik" src="https://user-images.githubusercontent.com/82599585/116432053-9d979200-a848-11eb-93d7-ef3e288a87d3.png"></figure></p>
 <h2 id="yahoo-finance">Yahoo Finance</h2>
 <h2 id="alphavantage">AlphaVantage</h2>
 <h2 id="tabelle-auf-einer-webseite">Tabelle auf einer Webseite</h2>
@@ -1195,10 +1195,10 @@
 <a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="p">}</span>
 </code></pre></div>
 <p><strong>$.dataset.data[*][0]</strong> extrahiert das Datum.</p>
-<p><strong>$.dataset.data[*][6]</strong> extrahiert das 7. Element (JsonPath fängt mit 0 an zu zählen). Von den <strong>column_names</strong> Attribut wissen wir, dass das 7. Element als <strong>EURO (PM)</strong> bezeichnet ist, also das Nachmittags Fixing in Euro. </p>
+<p><strong>$.dataset.data[*][6]</strong> extrahiert das 7. Element (JsonPath fängt mit 0 an zu zählen). Von den <strong>column_names</strong> Attribut wissen wir, dass das 7. Element als <strong>EURO (PM)</strong> bezeichnet ist, also das Nachmittags Fixing in Euro.</p>
 <p>Der Entwickler von JsonPath hat eine <a href="http://jsonpath.herokuapp.com">kleine Anwendung</a> gebaut, mit der man interaktiv die JsonPath Ausdrücke testen kann. Die Anwendung scheint keine großen JSON Dokumente zu vertragen, darum macht es Sinn mit nur ein paar wenigen Kursen die Ausdrücke zu testen.</p>
 <h2 id="dynamische-kursdaten-urls">Dynamische Kursdaten-URLs</h2>
-<p>Manche Seiten verteilen die Daten auf mehrere Requests. Wenn eines der Macros in der URL gefunden wird, wird die URL dynamisch zusammengesetzt und PP macht solange Aufrufe bis keine weiteren Kurse mehr gefunden werden.</p>
+<p>Manche Seiten verteilen die Daten auf mehrere Requests. Wenn eines der Macros in der URL gefunden wird, wird die URL dynamisch zusammengesetzt und <em>Portfolio Performance</em> macht solange Aufrufe bis keine weiteren Kurse mehr gefunden werden.</p>
 <p>In einer URL dürfen mehrere Marcos verwendet werden. Allerdings dürfen <code>DATE</code> und <code>PAGE</code> nicht gemeinsam verwendet werden, weil beide unterschiedliche Iterationen von URLs generieren.</p>
 <p><a href="https://forum.portfolio-performance.info/t/dynamische-kursdaten-urls/2929/1"><i class="fa fa-comments-o" aria-hidden="true"></i> Forum: Dynamische Kursdaten-URLs</a></p>
 <h4 id="currency">CURRENCY</h4>
@@ -1212,11 +1212,11 @@
 <li>wenn historische <strong>Kurse existieren</strong>, dann wird vom letzten Kursdatum vorwärts bis zum aktuellen Datum eine URL generiert.</li>
 </ul>
 <p>Das Datumsformat folgt den Regeln des <a href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a> aus Java. Die wichtigsten Symbole sind <code>y</code> für das Jahr, <code>M</code> für den Monat im Jahr und <code>d</code> für den Tag im Monat.</p>
-<p>Beispiele:
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>https://example.com/data?month={DATE:yyyy-MM}
+<p>Beispiele:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>https://example.com/data?month={DATE:yyyy-MM}
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>https://example.com/data?datum={DATE:yyyy-MM-32}
 </code></pre></div>
-<p>Wenn die identische URL mehrfach generiert wird, dann macht PP nur eine einzige Abfrage. Nehmen wir das Datumsformat aus dem letzten Beispiel: <code>{DATE:yyyy-MM-32}</code> Der Tag ist statisch auf 32 gesetzt. Es wird für jeden Tag in einem Monat die identische URL generiert, aber nur eine Abfrage zum Server gemacht.</p>
+<p>Wenn die identische URL mehrfach generiert wird, dann macht <em>Portfolio Performance</em> nur eine einzige Abfrage. Nehmen wir das Datumsformat aus dem letzten Beispiel: <code>{DATE:yyyy-MM-32}</code> Der Tag ist statisch auf 32 gesetzt. Es wird für jeden Tag in einem Monat die identische URL generiert, aber nur eine Abfrage zum Server gemacht.</p>
 <p>Das Marco <code>DATE</code> darf in einer URL mehrfach auftauchen. Es wird dann das gleiche Datum verwendet. So kann man zum Beispiel mit <code>{DATE:yyyy-MM-01}</code> und <code>{DATE:yyyy-MM-31}</code> vom Monatsersten bis zum Monatsletzten selektieren.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tipp</p>
@@ -1242,7 +1242,7 @@
 <p><code>TODAY:&lt;format&gt;:&lt;delta&gt;</code> ersetzt das aktuelle Datum in der URL.</p>
 <ul>
 <li><code>&lt;format&gt;</code> ist das Datumsformat nach den Regeln des <a href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a> aus Java. Die wichtigsten Symbole sind <code>y</code> für das Jahr, <code>M</code> für den Monat im Jahr und <code>d</code> für den Tag im Monat.</li>
-<li><code>&lt;delta&gt;</code> ist eine Zeitspanne basierend auf den ISO-8601 Regeln wie in <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html#parse-java.lang.CharSequence-">Java</a> implementiert. Die Zeitspanne kann optional mit einem Minuszeichen beginnen - dann wird sie vom aktuellen Datum abgezogen. Dann folgt ein <code>P</code> (für period) und anschliessend eine Zahl und ein Suffix - z.B. einem <code>Y</code> für Jahre, <code>M</code> für Monate, <code>W</code> für Wochen und einem <code>D</code> für Tage.</li>
+<li><code>&lt;delta&gt;</code> ist eine Zeitspanne basierend auf den ISO-8601 Regeln wie in <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Period.html#parse-java.lang.CharSequence-">Java</a> implementiert. Die Zeitspanne kann optional mit einem Minuszeichen beginnen - dann wird sie vom aktuellen Datum abgezogen. Dann folgt ein <code>P</code> (für period) und anschliessend eine Zahl und ein Suffix - z. B. einem <code>Y</code> für Jahre, <code>M</code> für Monate, <code>W</code> für Wochen und einem <code>D</code> für Tage.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>// aktuelles Datum im ISO Format
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>https://example.com/data?datum={TODAY}

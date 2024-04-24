@@ -840,13 +840,13 @@
 
 
 <h1 id="wahrungen">Währungen</h1>
-<p>Portfolio Performance unterstützt Konten und Wertpapiere in Fremdwährungen.</p>
+<p><em>Portfolio Performance</em> unterstützt Konten und Wertpapiere in Fremdwährungen.</p>
 <ul>
 <li>Die <strong>Berichtswährung</strong> stellt man unter <em>Berichte -&gt; Vermögensaufstellung</em> oben rechts in der Werkzeugleiste ein.</li>
 <li>Beträge in der Berichtswährung werden üblicherweise ohne Währungskürzel dargestellt (damit die Ansichten nicht unnötig viele Informationen darstellen).</li>
-<li>Konten und Wertpapiere können in einer Fremdwährung geführt werden. In einem Portfolio können Wertpapiere unterschiedlichster Währung existieren. Ein Wertpapiere ohne Währung wird als <em>Aktienindex</em> interpretiert und kann entsprechend nicht gekauft werden.</li>
+<li>Konten und Wertpapiere können in einer Fremdwährung geführt werden. In einem Portfolio können Wertpapiere unterschiedlichster Währung existieren. Ein Wertpapier ohne Währung wird als <em>Aktienindex</em> interpretiert und kann entsprechend nicht gekauft werden.</li>
 <li>Neben den Wechselkursen der <a href="#referenzwechselkurse-der-europaischen-zentralbank">Europäischen Zentralbank</a> kann man auch <a href="#benutzerdefinierte-wechselkurse">benutzerdefinierte Wechselkurse</a> anlegen und - anlog zu Wertpapieren - aus den üblichen Quellen mit Kursen versorgen.</li>
-<li>Standardmässig rechnet PP bei monetären Beträgen mit 2 Nachkommastellen und bei Wechselkursen mit 4 Nachkommastellen. Wenn der Wechselkurse invertiert wird, rechnet PP mit 10 Nachkommastellen.</li>
+<li>Standardmäßig rechnet <em>Portfolio Performance</em> bei monetären Beträgen mit 2 Nachkommastellen und bei Wechselkursen mit 4 Nachkommastellen. Wenn der Wechselkurse invertiert wird, rechnet <em>Portfolio Performance</em> mit 10 Nachkommastellen.</li>
 <li>Wechselkurse können in <a href="#notierung">Mengennotierung oder Preisnotierung</a> dargestellt werden.</li>
 <li>Beträge in einer Buchung werden - wenn möglich - mit dem Wechselkurs aus der Buchung selbst umgerechnet.</li>
 </ul>
@@ -873,10 +873,10 @@ Preisnotierung üblich ist, insbesondere auch in der Schweiz. <a href="https://d
 "Für einen US-Dollar muss man 0,89 Euro bezahlen."</p>
 </div>
 <h2 id="wahrungsrechner">Währungsrechner</h2>
-<p>Mit dem Währungsrechner unter <em>Allgemeine Daten -&gt; Währungen -&gt; Währungsrechner</em> kann man nachvollziehen welche Wechselkurse PP für eine Umrechnung verwendet.</p>
-<p>In diesem Beispiel wird der <em>Dirham</em> aus den Vereinige Arabische Emiraten zunächst in <em>US Doller</em> und anschliessend in <em>Euro</em> umgerechnet.</p>
+<p>Mit dem Währungsrechner unter <em>Allgemeine Daten -&gt; Währungen -&gt; Währungsrechner</em> kann man nachvollziehen, welche Wechselkurse <em>Portfolio Performance</em> für eine Umrechnung verwendet.</p>
+<p>In diesem Beispiel wird der <em>Dirham</em> aus den Vereinige Arabische Emiraten zunächst in <em>US Doller</em> und anschließend in <em>Euro</em> umgerechnet.</p>
 <p><figure id="_figure-2"><figcaption>Figure 2.  Währungsrechner</figcaption><a href="../images/assets/waehrungsrechner.png"><img alt="Währungsrechner" src="../images/assets/waehrungsrechner.png" width="471" style="max-width: 471px;" class="screenshot"></a></figure></p>
-<p>PP gewichtet Wechselkurse und nutzt zur Umrechnung den Wechselkurs mit dem niedrigsten Gewicht:</p>
+<p><em>Portfolio Performance</em> gewichtet Wechselkurse und nutzt zur Umrechnung den Wechselkurs mit dem niedrigsten Gewicht:</p>
 <ul>
 <li>Benutzerdefinierte Wechselkurse haben ein Gewicht von 1</li>
 <li>Wechselkurse der EZB haben ein Gewicht von 2</li>
@@ -885,13 +885,13 @@ Preisnotierung üblich ist, insbesondere auch in der Schweiz. <a href="https://d
 </ul>
 <p>Mit diesen Gewichten wird sichergestellt, dass benutzerdefinierte Wechselkurse von denen der Europäischen Zentralbank genutzt werden. Andrerseits wird ein Wechselkurs der Europäischen Zentralbank dem Umkehrkurs eines benutzerdefinierten Wechselkurses vorgezogen. Ein direkter Wechselkurs wird einer Kette von Wechselkursen vorgezogen die zu der gleichen Umrechnung führen würden.</p>
 <h2 id="referenzwechselkurse-der-europaischen-zentralbank">Referenzwechselkurse der Europäischen Zentralbank</h2>
-<p>PP lädt automatisch beim Start die <a href="https://www.ecb.europa.eu/stats/exchange/eurofxref/html/index.en.html">Referenzwechselkurse der Europäischen Zentralbank (EZB)</a>. Damit kennt PP die Wechselkurse aller wichtigen Währungen vom US Dollar über den japanischen Yen, das britischen Pfund bis zum Schweizer Franken.</p>
+<p><em>Portfolio Performance</em> lädt automatisch beim Start die <a href="https://www.ecb.europa.eu/stats/exchange/eurofxref/html/index.en.html">Referenzwechselkurse der Europäischen Zentralbank (EZB)</a>. Damit kennt <em>Portfolio Performance</em> die Wechselkurse aller wichtigen Währungen vom US Dollar über den japanischen Yen, das britischen Pfund bis zum Schweizer Franken.</p>
 <p>Laut Webseite werden die Wechselkurse der EZB gegen 16 Uhr aktualisiert:</p>
 <blockquote>
 <p>The reference rates are usually updated around 16:00 CET on every working day, except on TARGET closing days. They are based on a regular daily concertation procedure between central banks across Europe, which normally takes place at 14:15 CET. <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">Quelle</a></p>
 </blockquote>
 <h2 id="benutzerdefinierte-wechselkurse">Benutzerdefinierte Wechselkurse</h2>
-<p>Benutzerdefinierte Wechselkurse sind in PP nichts anderes als Wertpapiere, die neben der eigenen Währung auch noch eine Zielwährung haben. Die Kurse werden zur Umrechnung der Beträge verwendet. Wechselkurse können über die gleichen Mechanismen wie <a href="../kursdaten_laden/">Kurse geladen</a> werden, z.B. von Yahoo Finance oder per CSV Import.</p>
+<p>Benutzerdefinierte Wechselkurse sind in <em>Portfolio Performance</em> nichts anderes als Wertpapiere, die neben der eigenen Währung auch noch eine Zielwährung haben. Die Kurse werden zur Umrechnung der Beträge verwendet. Wechselkurse können über die gleichen Mechanismen wie <a href="../kursdaten_laden/">Kurse geladen</a> werden, z.B. von Yahoo Finance oder per CSV Import.</p>
 <p>Benutzerdefinierte Wechselkurse erstellt man mit dem Dialog <em>Wertpapiere -&gt; Neuen Wechselkurs anlegen...</em>.</p>
 <p><figure id="_figure-3"><figcaption>Figure 3.  Wechselkurs anlegen</figcaption><a href="../images/assets/wechselkurs_anlegen.png"><img alt="Wechselkurs anlegen" src="../images/assets/wechselkurs_anlegen.png" width="654" style="max-width: 654px;" class="screenshot"></a></figure></p>
 <p>Neben der Währung ("Basiswährung") gibt man die Zielwährung des Wechselkurses ein.</p>
@@ -900,7 +900,7 @@ Preisnotierung üblich ist, insbesondere auch in der Schweiz. <a href="https://d
 <p><figure id="_figure-5"><figcaption>Figure 5.  Wechselkurse laden</figcaption><a href="../images/assets/wechselkurse_laden.png"><img alt="Wechselkurse laden" src="../images/assets/wechselkurse_laden.png" width="538" style="max-width: 538px;" class="screenshot"></a></figure></p>
 <p>Alternativ kann man die Wechselkurse auch per CSV importieren: <em>Datei -&gt; Importieren... -&gt; CSV Dateien</em>. Die CSV-Datei für den Kurs Euro nach Vietnamesischer Dong kann man z.B. per Google Sheets erstellen. Dazu nutzt man einfach die Funktion <code>GoogleFinance</code> für Euro und Dong <code>CURRENCY:EURVND</code> in etwa so für das letzte Jahr:</p>
 <p><figure id="_figure-6"><figcaption>Figure 6.  Wechselkurs in Google Sheet laden</figcaption><a href="../images/assets/wechselkurs_googlesheet.png"><img alt="Wechselkurs in Google Sheet laden" src="../images/assets/wechselkurs_googlesheet.png" width="519" style="max-width: 519px;" class="screenshot"></a></figure></p>
-<p>Die Google Sheets-Datei lädt man dann als CSV herunter und importiert sie danach ganz normal mit dem CSV-Import in Portfolio Performance.</p>
+<p>Die Google Sheets-Datei lädt man dann als CSV herunter und importiert sie danach ganz normal mit dem CSV-Import in <em>Portfolio Performance</em>.</p>
 <p><figure id="_figure-7"><figcaption>Figure 7.  Wechselkurs in Google Sheet laden</figcaption><a href="../images/assets/wechselkurs_googlesheet_export.png"><img alt="Wechselkurs in Google Sheet laden" src="../images/assets/wechselkurs_googlesheet_export.png" width="617" style="max-width: 617px;" class="screenshot"></a></figure></p>
 
 
