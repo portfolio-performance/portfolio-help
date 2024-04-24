@@ -19,16 +19,36 @@ theme:
   name: 'material'
   custom_dir: '../../overrides/'
   palette:
-    primary: 'light green'
-    accent: 'amber'
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   features:
     - content.code.annotate 
+    - content.code.copy
+    - navigation.expand
+    - navigation.indexes
+    - navigation.tabs
+    - content.action.edit
   logo: 'assets/images/logo.svg'
   favicon: 'assets/images/favicon.png'
   language: 'de'
 
 extra_css:
-  - 'assets/stylesheets/extra.css'
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/katex.js 
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
 
 extra:
   alternate:  
@@ -54,6 +74,14 @@ extra:
 plugins:
   - search:
       lang: de
+  - caption:
+      figure:
+        caption_prefix: 'Figure {index}. '
+        position: top
+        markdown_identifier: 'Figure:'
+      table:
+        position: top
+  - git-revision-date-localized
 
 markdown_extensions:
   - admonition
@@ -62,11 +90,17 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - toc:
-      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  #- toc:
+  #   permalink: true
 
 nav:
-  - Überblick: index.md
+  - Über dieses Handbuch: index.md
   - 'Erste Schritte':
       - 'Portfoliodatei anlegen': intro-neue-portfoliodatei-anlegen.md
       - 'Wertpapiere anlegen': intro-wertpapiere-anlegen.md
