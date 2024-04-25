@@ -101,6 +101,7 @@ markdown_extensions:
 
 nav:
   - Erste Schritte: index.md
+  - Über dieses Handbuch: index.md
   - 'Erste Schritte':
       - 'Portfoliodatei anlegen': intro-neue-portfoliodatei-anlegen.md
       - 'Wertpapiere anlegen': intro-wertpapiere-anlegen.md
