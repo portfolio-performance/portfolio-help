@@ -76,9 +76,9 @@ plugins:
       lang: de
   - caption:
       figure:
-        caption_prefix: 'Figure {index}. '
+        caption_prefix: 'Abbildung {index}. '
         position: top
-        markdown_identifier: 'Figure:'
+        markdown_identifier: 'Abbildung:'
       table:
         position: top
   - git-revision-date-localized
@@ -113,9 +113,31 @@ nav:
       - Referenzhandbuch: referenzhandbuch/index.md
   - How to:
       - How-to: how-to/index.md
-      - Installation: how-to/installation.md
-      - Währungen: how-to/waehrungen.md
-      - Konten: how-to/konten_anlegen.md
-      - Kursdaten: how-to/kursdaten_laden.md
-      - Buchungen: how-to/buchungen_erfassen.md
+      - Quellen für historische Kurse:
+          - Historische Kurse: how-to/historische-aktienkurse/index.md
+          - Alpha Vantage: how-to/historische-aktienkurse/alpha-vantage.md
+          - EODHistorical Data: how-to/historische-aktienkurse/eodhd.md
+          - Yahoo Finance: how-to/historische-aktienkurse/yahoo-finance.md
+          - Portfolio Report: how-to/historische-aktienkurse/portfolioreport.md
+          - CSV File: how-to/historische-aktienkurse/csv-file.md
+          - JSON: how-to/historische-aktienkurse/json.md
+          - Tabelle auf einer Webseite: how-to/historische-aktienkurse/table-website.md
+      #- Installation: how-to/historische-aktienkurse/installation.md
+      #- Währungen: how-to/historische-aktienkurse/waehrungen.md
+      #- Konten: how-to/historische-aktienkurse/konten_anlegen.md
+      #- Kursdaten: how-to/historische-aktienkurse/kursdaten_laden.md
+      #- Buchungen: how-to/historische-aktienkurse/buchungen_erfassen.md
+      - Handhabung Wahldividende: how-to/wahldividenden.md
+      - Handhabung Spin Off: how-to/spin-off.md
+      - Handhabung Spinn Off: how-to/spin-off.md
+      - Aktien Splitt: how-to/aktien-splitt.md
+      - Portfolio Auswerten: how-to/bewertung.md
+      - Gold Preise: how-to/gold-preise.md
+      - GBX Daten importieren: how-to/import-gbx.md
+      - Insolvenz: how-to/insolvenzen.md
+      - Morningstar: how-to/morningstar.md
+      - Beispiel Portfolio: how-to/reconstruct-sample-portfolio.md
+      - Wertpapiere kopieren: how-to/wertpapiere-kopieren.md
+      - xml bearbeiten: how-to/xml bearbeiten.md
+      - Zusammenschluss zweier Firmen: how-to/zusammenschluss-zweier-firmen.md
   - Über Portfolio Performance: ueber.md
