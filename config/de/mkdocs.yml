@@ -100,18 +100,22 @@ markdown_extensions:
   #   permalink: true
 
 nav:
-  - Erste Schritte: index.md
-  - Über dieses Handbuch: index.md
-  - 'Erste Schritte':
-      - 'Portfoliodatei anlegen': intro-neue-portfoliodatei-anlegen.md
-      - 'Wertpapiere anlegen': intro-wertpapiere-anlegen.md
-      - 'Bestände aufbauen': intro-bestaende-erstmalig-aufbauen.md
-      
-  - 'Weiterführende Themen':
-      - Installation: installation.md
-      - Währungen: waehrungen.md
-      - Konten: konten_anlegen.md
-      - Kursdaten: kursdaten_laden.md
-      - Buchungen: buchungen_erfassen.md
+  - Intro: 
+      - Intro: index.md
+  - Erste Schritte:
+      - Erste Schritte: erste-schritte/index.md
+      - Portfoliodatei anlegen: erste-schritte/intro-neue-portfoliodatei-anlegen.md
+      - Wertpapiere anlegen: erste-schritte/intro-wertpapiere-anlegen.md
+      - Bestände aufbauen: erste-schritte/intro-bestaende-erstmalig-aufbauen.md
+  - Grundlagen:
+      - Grundlagen: grundlagen/index.md
+  - Referenzhandbuch: 
+      - Referenzhandbuch: referenzhandbuch/index.md
+  - How to:
+      - How-to: how-to/index.md
+      - Installation: how-to/installation.md
+      - Währungen: how-to/waehrungen.md
+      - Konten: how-to/konten_anlegen.md
+      - Kursdaten: how-to/kursdaten_laden.md
+      - Buchungen: how-to/buchungen_erfassen.md
   - Über Portfolio Performance: ueber.md
-
