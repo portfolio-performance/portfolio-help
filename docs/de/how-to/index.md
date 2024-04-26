@@ -16,3 +16,5 @@ Die Anleitungen sind kein Ersatz für die Übungen, die eine umfassendere und p�
 
 
 Wir haben auch einige Tipps und Tricks hinzugefügt, von denen viele ursprünglich im [Portfolio Performance Forum](https://forum.portfolio-performance.info) diskutiert wurden. Erwähnt werden sollte, dass ein Großteil der Informationen nur auf Deutsch und Englisch behandelt wird, allerdings kannst du die automatische Übersetzung deines Browsers benutzten.
+
+
