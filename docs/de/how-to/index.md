@@ -5,7 +5,7 @@ title: How-to
 
 Figure: Documentation framework.{class=align-right style="width:50%"}
 
-![](../images/documentation-framework.svg)
+![](../images/doku-framework.svg)
 
 
 Dieser Abschnitt des Handbuchs soll dir helfen, alle Merkmale und Funktionen von Portfolio Performance in einer realen Arbeitsumgebung zu nutzen.  Im Gegensatz zum Abschnitt "Erste Schritte", der allgemeiner gehalten ist und vereinfachte Beispiele verwendet, zeigt dir der Abschnitt "Anleitungen", wie du das Programm in einer realen Umgebung mit realen Daten nutzen kannst.
