@@ -6,13 +6,17 @@ In diesem Schritt vollziehst du alle Transaktionen in deinem Depot nach, die zum
 
 Portfolio Performance bietet *Kauf, Verkauf, Einlieferung* und *Auslieferung* für die Buchung von Transaktionen an. Wo ist der Unterschied? 
 
-Abbildung: Kauf - Zugang im Depot, belastet Verrechnungskonto.{class=align-center style="width:70%"}
+Abbildung: Kauf - Zugang im Depot, belastet 
+Verrechnungskonto.{class=align-center style="width:80%"}
 
 ![](images/kauf.png)
 
-Abbildung: Einlieferung - nur Zugang im Depot.{class=align-center style="width:70%"}
+
+Abbildung: Einlieferung - nur Zugang im Depot.{class=align-center style="width:80%"}
 
 ![](images/einlieferung.png)
+
+
 
 
 Bei einem *Kauf* bucht *Portfolio Performance* den Kauf als Zugang im Depot, und belastet dazu das zugehörige Verrechnungskonto. 

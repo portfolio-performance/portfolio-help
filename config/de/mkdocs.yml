@@ -76,9 +76,9 @@ plugins:
       lang: de
   - caption:
       figure:
-        caption_prefix: 'Figure {index}. '
+        caption_prefix: 'Abbildung {index}. '
         position: top
-        markdown_identifier: 'Figure:'
+        markdown_identifier: 'Abbildung:'
       table:
         position: top
   - git-revision-date-localized

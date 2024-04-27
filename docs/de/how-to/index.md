@@ -3,7 +3,7 @@ title: How-to
 ---
 
 
-Figure: Documentation framework.{class=align-right style="width:50%"}
+Abbildung: Documentation framework.{class=align-right style="width:50%"}
 
 ![](../images/doku-framework.svg)
 
