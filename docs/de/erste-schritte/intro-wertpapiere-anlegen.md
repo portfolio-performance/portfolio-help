@@ -6,8 +6,11 @@ Deshalb stellst du hier deine persönliche Liste der für dich relevanten Wertpa
 
 ## Wertpapiere zum Portfolio hinzufügen
 
-<img src="../images/assets/wertpapier-anlegen.gif" alt="neues Wertpapier zum Portfolio hinzufügen" />
-<figcaption>Bild: neues Wertpapier zum Portfolio hinzufügen</figcaption>
+
+Abbildung: neues Wertpapier zum Portfolio hinzufügen.{class=align-center}
+
+![](images/wertpapier-anlegen.gif)
+
 
 Um neue Wertepapiere zum Portfolio hinzuzufügen, wählst du `Wertpapiere > alle Wertpapiere` links in der Navigationsleiste und klicken dann auf das `+` Zeichen ***ganz rechts oben neben dem Feld Suchen*** , dann `Neues Wertpapier`wählen. Anmerkung: Es gibt auch ein kleines `+` Zeichen links über "alle Wertpapiere", das ist aber nicht das richtige.
 
@@ -17,8 +20,10 @@ Dabei ergänzt *Portfolio Performance* die Stammdaten, aktuelle und historische 
 
 ## Wertpapiernamen anpassen
 
-<img src="../images/assets/wertpapier-liste.png" alt="Die Wertpapierliste" />
-<figcaption>Bild: Die Wertpapierliste nach dem Hinzufügen von Wertpapieren</figcaption>
+Abbildung: Die Wertpapierliste nach dem Hinzufügen von Wertpapieren.{class=align-center}
+
+![](images/wertpapier-liste.png)
+
 
 So sieht die Wertpapierliste aus, nachdem du eine Reihe von Wertpapieren hinzugefügt hast.
 
@@ -26,7 +31,8 @@ In diesem Fall sind die von *Portfolio Performance* vorgeschlagenen Namen der We
 
 ## Die fertige Wertpapierliste
 
-<img src="../images/assets/wertpapier-liste-komplett.png" alt="Wertpapierliste komplett" />
-<figcaption>Bild: Die fertige Wertpapierliste</figcaption>
+Abbildung: Die fertige Wertpapierliste.{class=align-center}
+
+![](images/wertpapier-liste-komplett.png)
 
 Die fertige Wertpapierliste enthält die ausgewählten Wertpapiere mit den Stammdaten sowie den letzten Kursen und Kursbewegungen zum Vortag. Bei Auswahl eines Wertpapiers zeigt *Portfolio Performance* im unteren Teil den Kursverlauf und den aktuellen Kurs an.

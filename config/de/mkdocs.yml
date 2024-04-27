@@ -102,8 +102,10 @@ markdown_extensions:
 nav:
   - Intro: 
       - Intro: index.md
+      - Doku Framework: doku-framework.md
   - Erste Schritte:
       - Erste Schritte: erste-schritte/index.md
+      - Installation: erste-schritte/installation.md
       - Portfoliodatei anlegen: erste-schritte/intro-neue-portfoliodatei-anlegen.md
       - Wertpapiere anlegen: erste-schritte/intro-wertpapiere-anlegen.md
       - Bestände aufbauen: erste-schritte/intro-bestaende-erstmalig-aufbauen.md
@@ -122,14 +124,10 @@ nav:
           - CSV File: how-to/historische-aktienkurse/csv-file.md
           - JSON: how-to/historische-aktienkurse/json.md
           - Tabelle auf einer Webseite: how-to/historische-aktienkurse/table-website.md
-      #- Installation: how-to/historische-aktienkurse/installation.md
       #- Währungen: how-to/historische-aktienkurse/waehrungen.md
       #- Konten: how-to/historische-aktienkurse/konten_anlegen.md
       #- Kursdaten: how-to/historische-aktienkurse/kursdaten_laden.md
       #- Buchungen: how-to/historische-aktienkurse/buchungen_erfassen.md
-      - Handhabung Wahldividende: how-to/wahldividenden.md
-      - Handhabung Spin Off: how-to/spin-off.md
-      - Handhabung Spinn Off: how-to/spin-off.md
       - Aktien Splitt: how-to/aktien-splitt.md
       - Portfolio Auswerten: how-to/bewertung.md
       - Gold Preise: how-to/gold-preise.md
