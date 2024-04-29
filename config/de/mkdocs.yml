@@ -111,6 +111,16 @@ nav:
       - Bestände aufbauen: erste-schritte/intro-bestaende-erstmalig-aufbauen.md
   - Grundlagen:
       - Grundlagen: grundlagen/index.md
+      - Portfolio Performance Terminilogy:  grundlagen/portfolio-performance-terminologie.md
+      - Finanz Termininologie: grundlagen/finanz-termininologie.md
+      - Program Übersicht: grundlagen/portfolio-performance-uebersicht.md
+      - Berichtszeitraum: grundlagen/berichtszeitraum.md
+      - Verkaufserlös: grundlagen/verkaufserloes.md
+      - Performance:
+        - Performance: grundlagen/performance/index.md
+        - Geldgeichtete Renendite: grundlagen/performance/geld-gewichtet.md
+        - Zeitgewichtete Rendite: grundlagen/performance/zeit-gewichtet.md
+      - Historische Kurse: grundlagen/historische-kurse.md
   - Referenzhandbuch: 
       - Referenzhandbuch: referenzhandbuch/index.md
   - How to:
