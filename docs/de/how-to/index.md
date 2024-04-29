@@ -10,6 +10,13 @@ Abbildung: Documentation framework.{class=align-right style="width:50%"}
 
 
 
+Abbildung: Documentation framework.{class=align-right style="width:50%"}
+
+![](images/documentation-framework.svg)
+
+
+
+
 Dieser Abschnitt des Handbuchs soll dir helfen, alle Merkmale und Funktionen von Portfolio Performance in einer realen Arbeitsumgebung zu nutzen.  Im Gegensatz zum Abschnitt "Erste Schritte", der allgemeiner gehalten ist und vereinfachte Beispiele verwendet, zeigt dir der Abschnitt "Anleitungen", wie du das Programm in einer realen Umgebung mit realen Daten nutzen kannst.
 
 Der Abschnitt "How-to" behandelt Themen wie [Importieren von Aktiendaten](./reference/file/import.md), [Reinvestieren von Dividenden](./handling-choice-dividend.md), Erfassen von [Aktiensplits](./recording-stock-split.md) und [Spin-offs](./recording-spin-off.md), [Herunterladen von historischen Daten](./downloading-historical-prices/index.md) aus verschiedenen Quellen und vieles mehr.
