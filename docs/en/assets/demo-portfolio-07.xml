@@ -6497,7 +6497,7 @@
         <price t="2024-04-23" v="40757000000"/>
         <price t="2024-04-24" v="40904000000"/>
       </prices>
-      <latest t="2024-04-24" v="40904000000">
+      <latest t="2024-04-24" v="40906000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -7098,7 +7098,7 @@
             <config>
               <uuid>3580a087-a144-41e6-b45e-351eb5535064</uuid>
               <name>Standard</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:87},{&quot;id&quot;:&quot;name&quot;,&quot;width&quot;:106},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:68},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:127},{&quot;id&quot;:&quot;izf&quot;,&quot;width&quot;:120},{&quot;id&quot;:&quot;twror&quot;,&quot;sortDirection&quot;:1024,&quot;width&quot;:134},{&quot;id&quot;:&quot;ttwror_pa&quot;,&quot;width&quot;:144},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:194},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:188},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:72}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;name&quot;,&quot;sortDirection&quot;:128,&quot;width&quot;:118},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:187},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:180},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:139},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:113},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:129},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:139},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:93},{&quot;id&quot;:&quot;twror&quot;,&quot;width&quot;:123},{&quot;id&quot;:&quot;izf&quot;,&quot;width&quot;:119},{&quot;id&quot;:&quot;delta&quot;,&quot;width&quot;:128}]}</data>
             </config>
           </configurations>
         </config-set>
@@ -7170,6 +7170,11 @@
               <uuid></uuid>
               <name></name>
               <data>F2023-06-11_2023-06-12</data>
+            </config>
+            <config>
+              <uuid></uuid>
+              <name></name>
+              <data>S2021-01-01</data>
             </config>
           </configurations>
         </config-set>

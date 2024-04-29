@@ -151,6 +151,7 @@ nav:
                 - Performance: reference/view/reports/performance/index.md
                 - Calculation: reference/view/reports/performance/calculation.md
                 - Chart: reference/view/reports/performance/performance-chart.md
+                - Securities: reference/view/reports/performance/securities.md
                 - Payments: reference/view/reports/performance/payments.md
                 - Trades: reference/view/reports/performance/trades.md
           - General Data:

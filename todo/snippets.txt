@@ -23,4 +23,7 @@ less than: &lt;
 sigma: &sum; or &#8721;
 
 
-start-up parameter: PortfolioPerformance.exe -nl de_DE
+start-up parameter:
+PortfolioPerformance.exe -nl de_DE
+or 
+PortfolioPerformance -nl en_EN
