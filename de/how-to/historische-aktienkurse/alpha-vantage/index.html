@@ -1409,7 +1409,45 @@
 
   <h1>Alpha Vantage</h1>
 
-
+<p>Alpha Vantage bietet Echtzeit- und historische Kursdaten über APIs und Tabellen. Du kannst einen <a href="https://www.alphavantage.co/support/">kostenlosen API-Schlüssel</a> anfordern, der die meisten Datensätze für bis zu 25 Anfragen pro Tag abdeckt. Echtzeit-Kurse und andere Daten sind jedoch kostenpflichtig.</p>
+<p>Die <a href="https://www.alphavantage.co/documentation/">API-Dokumentation</a> ist sehr gut beschrieben und enthält viele Beispiele. Diese Beispiele können im Browser mit einem mitgelieferten Demo-API-Schlüssel ausgeführt werden. Wenn du deine eigenen Abfragen ausführen möchtest, benötigst du einen persönlichen API-Schlüssel.</p>
+<p>Herunterladen der historischen NVIDIA-Preise.</p>
+<p><code>https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&amp;symbol=NVDA&amp;apikey=my_API_key</code></p>
+<p>Die Antwort enthält einige Metadaten und die letzten 100 historischen Kurse, die im Browserfenster angezeigt werden. Wenn du alle verfügbaren historischen Kurse haben möchtest, verwende die Option "outputsize=full".</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    "Meta Data": {
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        "1. Information": "Daily Prices (open, high, low, close) and Volumes",
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        "2. Symbol": "NVDA",
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        "3. Last Refreshed": "2024-01-25",
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        "4. Output Size": "Compact",
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        "5. Time Zone": "US/Eastern"
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    },
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    "Time Series (Daily)": {
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        "2024-01-25": {
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>            "1. open": "623.5000",
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            "2. high": "627.1900",
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>            "3. low": "608.5000",
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>            "4. close": "616.1700",
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>            "5. volume": "48277684"
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        },
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        "2024-01-24": {
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>            "1. open": "603.0400",
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>            "2. high": "628.4900",
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>            "3. low": "599.3800",
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>            "4. close": "613.6200",
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>            "5. volume": "55706870"
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>        }
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    }
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>}
+</code></pre></div>
+<div class="admonition hinweis">
+<p class="admonition-title">Hinweis</p>
+<p>Seit Januar 2024 hat Alpha Vantage einige Parameter geändert und Portfolio Performance's JSON Quote Feed ist für diese URL nicht mehr funktionsfähig. Die folgenden JSON-Pfade "Pfad zum Datum" und "Pfad zum Abschluss" führen zu einem Fehler, auch wenn sie laut [JSONPath Online Evaluator] (https://jsonpath.com/) ein gültiger JSON-Pfad sind.</p>
+<ul>
+<li>Pfad zu Datum: <code>$.[Time Series (Daily)].*~</code></li>
+<li>Pfad zu Kurs : <code>$.[Time Series (Daily)].[*].[4. close]</code></li>
+</ul>
+</div>
 
 
 

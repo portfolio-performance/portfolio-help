@@ -81,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#datenimport-via-api" class="md-skip">
+          Zum Inhalt
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1024,6 +1029,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    JSON
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1033,6 +1049,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#datenimport-via-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datenimport via API
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1386,6 +1428,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#datenimport-via-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datenimport via API
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1409,7 +1468,95 @@
 
   <h1>JSON</h1>
 
-
+<h2 id="datenimport-via-api">Datenimport via API</h2>
+<p>Finanzwebsiten stellen ihre Daten, z. B. historische Kurse, in der Regel über eine Schnittstelle (API) zur Verfügung. Um auf diese historischen Kurse über die API zuzugreifen, können Benutzer HTTP-Anfragen an bestimmte API-Endpunkte senden und dabei Parameter wie Datumsbereiche, Aktiensymbole und andere relevante Filter angeben. Der API-Endpunkt (=Server) verarbeitet diese Anfragen, ruft die angeforderten historischen Kursdaten aus seiner Datenbank ab und gibt die Informationen in einem strukturierten Format, häufig JSON oder XML, zurück.</p>
+<p>Als Beispiel dient die folgende <a href="https://eodhd.com/api/eod/AAPL?from=2024-01-15&amp;to=2024-01-17&amp;period=d&amp;api_token=demo&amp;fmt=json">URL</a>, um die historischen Kurse von Apple zwischen 2024-01-15 und 2024-01-17 von der Website <code>eod historical data</code> abzufragen.</p>
+<p><code>https://eodhd.com/api/eod/AAPL?from=2024-01-15&amp;to=2024-01-17&amp;period=d&amp;api_token=demo&amp;fmt=json</code></p>
+<p>Mit Stand vom Januar 2024 ist der bereitgestellte Demo-API-Token oder -Schlüssel noch gültig. Sollte er in Zukunft nicht mehr funktionieren, brauchst du einen <a href="../eodhd/">kostenlosen API-Schlüssel</a>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">[</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="nt">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-01-16"</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="nt">"open"</span><span class="p">:</span><span class="w"> </span><span class="mf">182.16</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="nt">"high"</span><span class="p">:</span><span class="w"> </span><span class="mf">184.26</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">        </span><span class="nt">"low"</span><span class="p">:</span><span class="w"> </span><span class="mf">180.93</span><span class="p">,</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">        </span><span class="nt">"close"</span><span class="p">:</span><span class="w"> </span><span class="mf">183.63</span><span class="p">,</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="nt">"adjusted_close"</span><span class="p">:</span><span class="w"> </span><span class="mf">183.63</span><span class="p">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="nt">"volume"</span><span class="p">:</span><span class="w"> </span><span class="mi">65603000</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="nt">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-01-17"</span><span class="p">,</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="nt">"open"</span><span class="p">:</span><span class="w"> </span><span class="mf">181.27</span><span class="p">,</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">        </span><span class="nt">"high"</span><span class="p">:</span><span class="w"> </span><span class="mf">182.93</span><span class="p">,</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="nt">"low"</span><span class="p">:</span><span class="w"> </span><span class="mf">180.3</span><span class="p">,</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="nt">"close"</span><span class="p">:</span><span class="w"> </span><span class="mf">182.68</span><span class="p">,</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="nt">"adjusted_close"</span><span class="p">:</span><span class="w"> </span><span class="mf">182.68</span><span class="p">,</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">        </span><span class="nt">"volume"</span><span class="p">:</span><span class="w"> </span><span class="mi">47317400</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="p">]</span>
+</code></pre></div>
+<p>Eine JSON-Antwort kann zwei Arten von Elementen enthalten: Listen und Objekte. Eine Liste ist eine geordnete Sammlung von Elementen zwischen [ ]. Auf diese kann über ihre Position zugegriffen werden. Ein Objekt ist eine ungeordnete Sammlung von Schlüssel-Werte-Paaren zwischen { }. Ein Schlüssel ist ein eindeutiger Identifikator für einen Wert, und ein Wert kann eine beliebige Art von Daten sein, z. B. eine Zahl, eine Zeichenkette, ein Boolescher Wert, eine Liste oder ein Objekt. Eine JSON-Antwort ist eine hierarchische Struktur, d. h. eine Liste kann andere Listen oder Objekte enthalten, und ein Objekt kann andere Listen oder Objekte enthalten.</p>
+<p>Um auf einen bestimmten Wert innerhalb dieser hierarchischen Struktur zuzugreifen, musst du den Pfad von der Wurzel zum Element angeben. Um auf ein Element in einer Liste zuzugreifen, musst du seinen Index verwenden, der eine Zahl ist, die seine Position in der Liste angibt. Der Index beginnt bei 0 für das erste Element. Um auf ein Element von einem Objekt aus zuzugreifen, musst du seinen Schlüssel verwenden, der eine Zeichenkette ist, die seinen Namen im Objekt angibt. Der Schlüssel wird in doppelte Anführungszeichen " " eingeschlossen.</p>
+<p>Eine Abfragesprache wie <em>JSONPath</em> (von Portfolio Performance verwendet) stellt die Wurzel der JSON-Antwort mit einem $-Symbol dar. Um die Elemente im Pfad zu trennen, musst du einen Punkt verwenden. Um zum Beispiel auf den Schlusskurs des zweiten Tages zuzugreifen, musst du den Pfad <code>$[1].close</code> verwenden. Das bedeutet, dass du mit der Wurzel $ beginnst, dann zum zweiten Element in der Liste <code>$[1]</code> gehst, das ein Objekt ist, und dann zum Wert mit dem Schlüssel "close" im Objekt <code>$[1].close</code> gehst, das eine Zahl ist.</p>
+<p>Du brauchst diesen JSON-Pfad, um den JSON Quote Feed Provider von Portfolio Performance zu vervollständigen. Verwende  die folgenden Parameter, um die historischen Kurse abzurufen (siehe auch Abbildung 1). Eine Erklärung der Bedeutung der verschiedenen Kursnotierungen findest du unter <a href="../../Konzepte/historische-kurse.md">Konzepte &gt; Historische Kurse</a>.</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Abbildung 1.  Server Antwort mit Kursdaten im json Format (=2D.DE).</figcaption><img alt="" src="../images/o2-json-parameter.png"></figure></p>
+<ul>
+<li>Kurs-URL: <code>https://www.ls-tc.de/_rpc/json/instrument/chart/dataForInstrument?container=chart1&amp;instrumentId=41717&amp;marketId=1&amp;quotetype=mid&amp;series=intraday%2Chistory%2Cflags&amp;type=&amp;localeId=2</code></li>
+<li>Pfad zu Datum: <code>$.series.history.data[*][0]</code></li>
+<li>Pfad zu Kurs: <code>$.series.history.data[*][1]</code></li>
+</ul>
+<p>Versuchen wir es mit einem etwas komplizierteren Beispiel. 
+Die folgende URL ermöglicht den Abruf der beiden jüngsten Tageskurse von NVIDIA aus Yahoo Finance (klicken Sie auf den folgenden Link, um das Ergebnis zu sehen).</p>
+<p><a href="https://query1.finance.yahoo.com/v8/finance/chart/NVDA?interval=1d&amp;range=2d">https://query1.finance.yahoo.com/v8/finance/chart/NVDA?interval=1d&amp;range=5d</a></p>
+<p>Die Antwort von Yahoo-Server ist ein langes JSON-Dokument mit allen historischen Kursen der letzten 2 Tage. 
+Die Ausgabe wurde aus Gründen der Übersichtlichkeit umstrukturiert und gekürzt (scrollen Sie nach unten, um die Kurse zu sehen).</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">"chart"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">"result"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="p">{</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">          </span><span class="nt">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w"> </span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">          </span><span class="nt">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NVDA"</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="nt">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1705415400</span><span class="p">,</span><span class="w"> </span><span class="mi">1705501800</span><span class="p">],</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="nt">"indicators"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">          </span><span class="nt">"quote"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">              </span><span class="nt">"close"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">563.82</span><span class="p">,</span><span class="w"> </span><span class="mf">560.53</span><span class="p">],</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">              </span><span class="nt">"open"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">550.17</span><span class="p">,</span><span class="w"> </span><span class="mf">563.46</span><span class="p">],</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">              </span><span class="nt">"high"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">568.34</span><span class="p">,</span><span class="w"> </span><span class="mf">564.71</span><span class="p">],</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">              </span><span class="nt">"low"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">549</span><span class="p">,</span><span class="w"> </span><span class="mf">547.40</span><span class="p">],</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">              </span><span class="nt">"volume"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">44958000</span><span class="p">,</span><span class="w"> </span><span class="mi">47439400</span><span class="p">]</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">          </span><span class="nt">"adjclose"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">              </span><span class="nt">"adjclose"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">563.82</span><span class="p">,</span><span class="w"> </span><span class="mf">560.53</span><span class="p">]</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">          </span><span class="p">]</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">      </span><span class="p">}</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">    </span><span class="p">],</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">    </span><span class="nt">"error"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="p">}</span>
+</code></pre></div>
+<p>Die JSON-Antwort von oben ist ein Objekt, das von { } umgeben ist. 
+Es enthält Metadaten des Wertpapiers, Unix-Zeitstempel der beiden abgerufenen Daten und die verschiedenen Kurswerte. Du brauchst einen JSON-Pfad, um die verschiedenen Werte abzurufen:</p>
+<ul>
+<li>Fehler Code: <code>$.chart.error</code></li>
+<li>Metainformation der Aktie: <code>$.chart.result[0].meta</code>.  Das Ergebnis kommt in einem Arry, selbst wenn es sich nur um eine Aktie handelt, denn man hätte auch 2 und mehr Aktien abfragen können.</li>
+<li>Symbol (): <code>$.chart.result[0].meta.symbol</code></li>
+<li>Abgefragtes Datum: <code>$.chart.result[0].timestamp[*]</code>. Das * dient als Platzhalter, um alle Variablen lesen zu können</li>
+<li>Zweites date: <code>$.chart.result[0].timestamp[1]</code></li>
+<li>Alle vefügbaren Kurse (incl adjusted quotes): <code>$.chart.result[0].indicators</code></li>
+<li>Alle nicht bereinigten Kurses: <code>$.chart.result[0].indicators.quote[0]</code></li>
+<li>Schluss Kurse: <code>$.chart.result[0].indicators.quote[0].close</code></li>
+<li>Schlusskurs vom ersten Tag: <code>$.chart.result[0].indicators.quote[0].close[0]</code></li>
+</ul>
+<p>Wenn du das üben möchtest, nutzt du am besten <a href="https://jsonpath.com/">JSONPath Online Evaluator</a>. Kopiere die JSON Antort in die Eingabe Maske. Ein weiteres praktisches Tool <a href="https://jsonpathfinder.com/">JSONPath Finder</a>.</p>
+<p>Mit den oben genannten Informationen sollte es ein Leichtes sein, Kurse mit JSON ab zu rufen.</p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Abbildung 2.  JSON Kursdaten Parameter.</figcaption><img alt="" src="../images/json-yahoo-parameter.png"></figure></p>
+<p>Bei den meisten Diensten muss man sich registrieren um einen API-Schlüssel zu erhalten, eine eindeutige Kennung, die den Nutzer authentifiziert und den Zugang zum Dienst ermöglicht. Zwar bieten zahlreiche Finanzdienste scheinbar kostenlose API-Schlüssel an, doch erweisen sich ihre Nutzungsbedingungen und langfristigen Verpflichtungen oft als unzureichend. Portfolio Performance hat aus Kompatibilitätsgründen mehrere dieser Dienste in seiner Liste der Kursqeuellen-Anbieter behalten; z.B. Alpha Vantage, eodhd, .... In der Regel empfiehlt es sich Portfolio Report und Yahoo Finance für ein typisches Portfolio zu nutzen.</p>
 
 
 

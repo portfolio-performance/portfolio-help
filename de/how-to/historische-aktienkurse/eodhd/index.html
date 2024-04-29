@@ -1409,7 +1409,45 @@
 
   <h1>EODHistorical Data</h1>
 
-
+<p>Die Website <a href="https://eodhd.com/">EODHD</a> (End of Day Historical Data) bietet umfassende Informationen über alle US-Aktien, ETFs und Investmentfonds. Darüber hinaus umfasst die Plattform historische Daten für Nicht-US-Börsen, die hauptsächlich bis zum 3. Januar 2000 zurückreichen.</p>
+<p>Ein [kostenloser API-Token] (https://eodhd.com/register) kann einfach durch Angabe deiner E-Mail-Adresse angefordert werden. Der Token ist beschränkt auf 20 API-Anfragen pro Tag.Es können jedoch nur historische Kurse aus dem letzten Jahr abgerufen werden.</p>
+<p>Du kannst den API-Token mit der automatischen Kursabfrage von Portfolio Performance nutzen. Füge den Token in den Einstellungen ein (Hilfe &gt; Einstellungen &gt; API-Schlüssel) und wähle EOD Historical Data als Kurslieferant.</p>
+<p>Wenn du spezielle Anforderungen hast, dann kannst du auch die JSON Kursabfrage verwenden (siehe <a href="https://eodhd.com/financial-apis/api-for-historical-data-and-volumes/">API Dokumentation</a> für einige Anwendungsfälle). Die folgende Anfrage ruft zum Beispiel die historischen Apple-Kurse des <strong>Monats Januar 2000</strong> ab.</p>
+<p><em>Kurs URL</em></p>
+<p><code>https://eodhd.com/api/eod/AAPL?from=2000-01-01&amp;to=2000-01-31&amp;period=d&amp;api_token=demo&amp;fmt=json</code></p>
+<p><em>Pfad zu Datum</em> = <code>$.[*].date</code> and <em>Pfad zu Kurs</em> = $.[*].close</p>
+<p>Gibst du die Adresse in einen Browser ein, erhälst du folgendes (gekürztes) JSON.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>[
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    {
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        "date": "2000-12-01",
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        "open": 17.0016,
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        "high": 17.5,
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        "low": 16.8112,
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        "close": 17.0632,
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        "adjusted_close": 0.2583,
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        "volume": 385705600
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    },
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    {
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        "date": "2000-12-04",
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        "open": 17.1864,
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        "high": 17.1864,
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        "low": 16.436,
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        "close": 16.688,
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        "adjusted_close": 0.2526,
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        "volume": 371520800
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    },
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    {
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        "date": "2000-12-05",
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>        "open": 16.94,
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>        "high": 17.4384,
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>        "low": 16.3744,
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>        "close": 17.0016,
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>        "adjusted_close": 0.2574,
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>        "volume": 613978400
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    }
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>]
+</code></pre></div>
+<p>Hierbei handelt es sich um ein Array von Objekten, auf das von der Basis mit <code>$.[*]</code> zugegriffen wird. Der JSON-Pfad zum Datum wird mit <code>$.[*].date</code> und zum Schlusskurs mit <code>$.[*].close</code> gebildet.</p>
 
 
 
