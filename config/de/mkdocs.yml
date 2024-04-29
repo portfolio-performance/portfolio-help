@@ -124,22 +124,14 @@ nav:
           - CSV File: how-to/historische-aktienkurse/csv-file.md
           - JSON: how-to/historische-aktienkurse/json.md
           - Tabelle auf einer Webseite: how-to/historische-aktienkurse/table-website.md
-
-
       #- Installation: how-to/historische-aktienkurse/installation.md
-
       #- Währungen: how-to/historische-aktienkurse/waehrungen.md
       #- Konten: how-to/historische-aktienkurse/konten_anlegen.md
       #- Kursdaten: how-to/historische-aktienkurse/kursdaten_laden.md
       #- Buchungen: how-to/historische-aktienkurse/buchungen_erfassen.md
-
-      #- Wahldividende: how-to/wahldividenden.md
-      #- Aktien Spin Off: how-to/spin-off.md
-
-      #- Handhabung Wahldividende: how-to/wahldividenden.md
-      #- Handhabung Spin Off: how-to/spin-off.md
-      #- Handhabung Spinn Off: how-to/spin-off.md
-
+      - Handhabung Wahldividende: how-to/wahldividenden.md
+      - Handhabung Spin Off: how-to/spin-off.md
+      - Handhabung Spinn Off: how-to/spin-off.md
       - Aktien Splitt: how-to/aktien-splitt.md
       - Portfolio Auswerten: how-to/bewertung.md
       - Gold Preise: how-to/gold-preise.md
