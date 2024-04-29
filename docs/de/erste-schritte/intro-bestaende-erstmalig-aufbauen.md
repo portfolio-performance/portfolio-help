@@ -6,18 +6,18 @@ In diesem Schritt vollziehst du alle Transaktionen in deinem Depot nach, die zum
 
 Portfolio Performance bietet *Kauf, Verkauf, Einlieferung* und *Auslieferung* für die Buchung von Transaktionen an. Wo ist der Unterschied? 
 
-<table> 
-<tr>
-<td>
-<img src="../images/assets/kauf.png" alt="Kauf" style="zoom:50%;" />
-<figcaption>Bild: Kauf - Zugang im Depot, belastet Verrechnungskonto</figcaption>
-</td>
-<td>
-<img src="../images/assets/einlieferung.png" alt="Einlieferung" style="zoom:50%;" />
-<figcaption>Bild: Einlieferung - nur Zugang im Depot</figcaption>
-</td>
-</tr> 
-</table>
+Abbildung: Kauf - Zugang im Depot, belastet 
+Verrechnungskonto.{class=align-center style="width:80%"}
+
+![](images/kauf.png)
+
+
+Abbildung: Einlieferung - nur Zugang im Depot.{class=align-center style="width:80%"}
+
+![](images/einlieferung.png)
+
+
+
 
 Bei einem *Kauf* bucht *Portfolio Performance* den Kauf als Zugang im Depot, und belastet dazu das zugehörige Verrechnungskonto. 
 
@@ -59,13 +59,18 @@ Damit hast du einen sauberen Aufsetzpunkt für die Buchung der Transaktionen nac
 
 ## Depot: Transaktionen buchen
 
-<img src="../images/assets/kaeufe-usw-buchen.png" alt="Depot Wertpapier für Kauf etc. auswählen" />
-<figcaption>Bild: Wertpapier für Kauf, Verkauf, Einlieferung usw. auswählen</figcaption>
+
+Abbildung: Wertpapier für Kauf, Verkauf, Einlieferung usw. auswählen.{class=align-center style="width:100"}
+
+![](images/kaeufe-usw-buchen.png)
+
 
 In der linken Navigationsleiste wählst du `Alle Wertpapiere`. Jetzt kannst du das Wertpapier in der Wertpapier-Übersicht auswählen und mit der rechten Maustaste `Kauf ...`, `Einlieferung ...` usw. das entsprechende Eingabefenster öffnen. 
 
-<img src="../images/assets/kauf-buchen.png" alt="Depot Kauf von Wertpapieren buchen" />
-<figcaption>Bild: Kauf von Wertpapieren im Depot buchen</figcaption>
+
+Abbildung: Kauf von Wertpapieren im Depot buchen.{class=align-center style="width:100"}
+
+![](images/kauf-buchen.png)
 
 Gib Datum, Stück, Kurs, Gebühren und ggf. Steuern ein und klicke `Speichern`. 
 
@@ -73,15 +78,18 @@ Für viele Online-Banken und -Broker kannst du PDF-Wertpapierabrechnungen schnel
 
 ## Verrechnungskonto: Transaktionen buchen
 
-<img src="../images/assets/einlage-usw-buchen.png" alt="Verrechnungskonto Transaktionen buchen" />
-<figcaption>Bild: Einlagen, Entnahmen usw. für das Verrechnungskonto buchen</figcaption>
+
+Abbildung: Einlagen, Entnahmen usw. für das Verrechnungskonto buchen.{class=align-center style="width:100"}
+
+![](images/einlage-usw-buchen.png)
 
 In der linken Navigationsleiste wählst du `Konten`. Jetzt kannst du das Konto in der Konten-Übersicht auswählen und mit der rechten Maustaste `Einlage ...`, `Zinsen ...` usw. das entsprechende Eingabefenster öffnen. 
 
 ## Buchungen überprüfen und editieren
 
-<img src="../images/assets/alle-buchungen-anzeigen.png" alt="alle Buchungen anzeigen" />
-<figcaption>Bild: Alle Buchungen für das Musterportfolio anzeigen</figcaption>
 
+Abbildung: Alle Buchungen für das Musterportfolio anzeigen.{class=align-center style="width:100"}
+
+![](images/alle-buchungen-anzeigen.png)
 
 Du kannst deine Buchungen über die Navigationsleiste `Alle Buchungen` anzeigen, hier ist sind alle gebuchten Käufe, Verkäufe, Einlagen usw. in einer Liste aufgeführt. Bei einem Eingabefehler kannst du die Buchung hier auch editieren und korrigieren (rechte Maustaste `Buchung editieren`) oder eine fehlerhafte Buchung löschen (rechte Maustaste `Löschen`). 
