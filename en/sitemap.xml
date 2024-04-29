@@ -381,6 +381,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://help.portfolio-performance.info/en/reference/view/reports/performance/securities/</loc>
+         <lastmod>2024-04-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://help.portfolio-performance.info/en/reference/view/reports/performance/trades/</loc>
          <lastmod>2024-04-29</lastmod>
          <changefreq>daily</changefreq>
