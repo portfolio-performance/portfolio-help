@@ -4,8 +4,12 @@ Im ersten Schritt erstellst du in *Portfolio Performance* deine neue Portfolioda
 
 ## Hauptwährung, Depot und Verrechnungskonto anlegen
 
-<img src="../images/assets/neu-portfolio.gif" alt="Grundlegende Portfoliodaten eingeben" />
-<figcaption>Bild: Grundlegende Portfoliodaten eingeben</figcaption>
+
+Abbildung: Grundlegende Portfoliodaten eingeben.{class=align-center}
+
+![](images/neu-portfolio.gif)
+
+
 
 Über `Datei > Neu > Datei` richtest du das Portfolio erstmalig ein. Als Erstes wählst du _Euro_ als die Hauptwährung, die als Standard für neue Konten, Depots und Wertpapiere verwendet wird. Klicke `Weiter`.
 
