@@ -35,12 +35,12 @@ Die präferierte Option ist der [Windows-Installer](https://www.portfolio-perfor
 
 ## Windows Defender und Virenprogramme
 
+
 Wichtig zu beachten ist, dass der Windows Defender die Installation von Portfolio Performance möglicherweise blockiert. Dies geschieht aufgrund des Fehlens einer Microsoft-Signatur.
 Zertifikate sind kostenintensiv, weshalb bisher darauf verzichtet wurde, eine solche zu erwerben.
 Sollte euer Virenscanner euch eine Warnung anzeigen und das Programm in Quarantäne verschieben, geschieht das aufgrund eines Missverständnisses. Viele Virenscanner arbeiten mit einer Heuristik, um gegebenenfalls zukünftige Bedrohungen zu finden.
 Wen ihr betroffen seid, könnt ihr entweder manuell das Programm aus der Quarantäne nehmen, oder ihr schickt die Datei an den Hersteller eures Antivirenprogramms.
 
-## Workspace-Verzeichnis
 
 Im *Workspace* Verzeichnis speichert Portfolio Performance temporäre Informationen wie die aktuelle Fenstergröße, die zuletzt geöffneten Dateien und Verzeichnisse und andere Laufzeitinformationen.
 
