@@ -2,7 +2,7 @@
 title: Download einer csv Datei
 ---
 
-In Portfolio Performance ist das Importieren von historischen Kursen aus einer CSV-Datei ein einfacher Vorgang über das Menü [`Datei > Importieren > CSV-Dateien`] (../../reference/file/import.md#historical-quotes-import). Für diesen Vorgang benötigst du natürlich eine Datei, die die entsprechenden Daten enthält.
+In Portfolio Performance ist das Importieren von historischen Kursen aus einer CSV-Datei ein einfacher Vorgang über das Menü `Datei > Importieren > CSV-Dateien`. Für diesen Vorgang benötigst du natürlich eine Datei, die die entsprechenden Daten enthält.
 
 Eine csv-Datei ist eine kommagetrennte Textdatei, in der tabellarische Daten gespeichert werden. Jede Zeile in der Datei stellt einen Datensatz dar, und jede Spalte steht für ein Feld. Eine typische CSV-Datei mit historischen Kursen enthält zum Beispiel zwei Spalten (Datum und Kurs) und mehrere Zeilen, eine für jedes Datum mit dem entsprechenden historischen Kurs. Eine csv-Datei kann mit einer Tabellenkalkulationssoftware geöffnet und bearbeitet werden. Der Import in Portfolio Performance funktioniert damit ganz leicht.
 
