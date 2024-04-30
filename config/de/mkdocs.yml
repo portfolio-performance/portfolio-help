@@ -118,7 +118,7 @@ nav:
       - Verkaufserlös: grundlagen/verkaufserloes.md
       - Performance:
         - Performance: grundlagen/performance/index.md
-        - Geldgeichtete Renendite: grundlagen/performance/geld-gewichtet.md
+        - Geldgewichtete Renendite: grundlagen/performance/geld-gewichtet.md
         - Zeitgewichtete Rendite: grundlagen/performance/zeit-gewichtet.md
       - Historische Kurse: grundlagen/historische-kurse.md
   - Referenzhandbuch: 
