@@ -56,12 +56,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://help.portfolio-performance.info/de/erste-schritte/manage-portfolio/auslieferung/</loc>
+         <lastmod>2024-04-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://help.portfolio-performance.info/de/erste-schritte/manage-portfolio/auszahlung/</loc>
+         <lastmod>2024-04-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://help.portfolio-performance.info/de/erste-schritte/manage-portfolio/dividende/</loc>
          <lastmod>2024-04-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://help.portfolio-performance.info/de/erste-schritte/manage-portfolio/ein-auslieferung/</loc>
+         <loc>https://help.portfolio-performance.info/de/erste-schritte/manage-portfolio/einlieferung/</loc>
          <lastmod>2024-04-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
