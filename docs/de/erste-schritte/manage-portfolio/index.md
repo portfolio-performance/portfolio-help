@@ -1,3 +1,3 @@
 ---
-title: Manage your portfolio
+title: Verwaltung deines Portfolios
 ---
