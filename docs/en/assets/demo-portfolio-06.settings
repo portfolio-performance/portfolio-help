@@ -1,4 +1,4 @@
-#Mon Apr 22 11:57:48 CEST 2024
+#Fri Apr 26 21:27:24 CEST 2024
 SecurityEventsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:120},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:300}]}
 StatementOfAssetsView-newsash=420
 PerformanceView@2Earnings={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:153},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:153},{"id"\:"6","width"\:170},{"id"\:"7","width"\:232},{"id"\:"note","width"\:200}]}
@@ -16,7 +16,7 @@ CurrencyConverterTab={"items"\:[{"id"\:"label","width"\:520},{"id"\:"value","wid
 InvestmentPlanListView@top={"items"\:[{"id"\:"0","width"\:100},{"id"\:"1","width"\:250},{"id"\:"2","width"\:120},{"id"\:"3","width"\:120},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"9","width"\:80},{"id"\:"10","width"\:80}]}
 class\ name.abuchen.portfolio.ui.dialogs.EditClientFilterDialog={"items"\:[{"id"\:"0","width"\:510}]}
 PaymentsView-tab=1
-PerformanceView-newsash=302
+PerformanceView-newsash=83
 PerformanceChartView-PICKER$picked=7600e16d-0168-49d1-aadb-18c66a64bc8f
 Model@bottom=true
 PerformanceView@byaccounts2={"items"\:[{"id"\:"0","width"\:400},{"id"\:"1","width"\:118},{"id"\:"2","width"\:96},{"id"\:"3","width"\:147},{"id"\:"4","width"\:103},{"id"\:"5","width"\:96}]}
@@ -36,13 +36,13 @@ name.abuchen.portfolio.ui.views.panes.TransactionsPane={"items"\:[{"id"\:"0","so
 import-target-portfolio-Account\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
 PortfolioListView-newsash=299
 import-target-portfolio-Portfolio\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
-CalculationLineItemPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"9","width"\:120},{"id"\:"note","width"\:200}]}
+CalculationLineItemPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:157},{"id"\:"1","width"\:163},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:142},{"id"\:"8","width"\:105},{"id"\:"9","width"\:120},{"id"\:"note","width"\:200}]}
 ExchangeRatesListTab@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:150},{"id"\:"3","width"\:150}]}
 TabularDataSourceDateTypeSecuritySharesAmountFeesTaxesTotalCash\ Account=100,60,220,60,60,60,60,60,220
 name.abuchen.portfolio.ui.views.SecuritiesTable$picked=ace4b28f-3207-4dc2-95fa-edc3936851f9
 name.abuchen.portfolio.ui.views.AllTransactionsView={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:180},{"id"\:"1","width"\:200},{"id"\:"2","width"\:115},{"id"\:"3","width"\:80},{"id"\:"4","width"\:134},{"id"\:"5","width"\:148},{"id"\:"6","width"\:113},{"id"\:"7","width"\:127},{"id"\:"8","width"\:196},{"id"\:"account","width"\:299},{"id"\:"9","width"\:187},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
 PerformanceView@2Taxes={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:154},{"id"\:"1","width"\:122},{"id"\:"2","width"\:116},{"id"\:"3","width"\:106},{"id"\:"4","width"\:120},{"id"\:"5","width"\:153},{"id"\:"6","width"\:223},{"id"\:"7","width"\:246},{"id"\:"note","width"\:200}]}
-SecuritiesPerformanceView-newsash=406
+SecuritiesPerformanceView-newsash=290
 CSV_IMPORT_PATH=D\:\\tmp
 DashboardView-newsash=-200
 AccountListView-newsash=538
