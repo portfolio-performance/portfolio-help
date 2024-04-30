@@ -1,3 +1,3 @@
 ---
-title: Recording a Buy transaction
+title: Wertpapierkauf
 ---

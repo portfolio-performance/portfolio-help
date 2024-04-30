@@ -1,3 +1,3 @@
 ---
-title: Dividend
+title: Dividenden
 ---
