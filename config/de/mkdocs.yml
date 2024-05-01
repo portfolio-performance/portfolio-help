@@ -109,6 +109,17 @@ nav:
       - Portfoliodatei anlegen: erste-schritte/intro-neue-portfoliodatei-anlegen.md
       - Wertpapiere anlegen: erste-schritte/intro-wertpapiere-anlegen.md
       - Bestände aufbauen: erste-schritte/intro-bestaende-erstmalig-aufbauen.md
+      - Verwalten deines Portfolios:
+        - Verwalten deines Portfolios: erste-schritte/manage-portfolio/index.md
+        - Einzahlungen: erste-schritte/manage-portfolio/einzahlung.md
+        - Auszahlungen: erste-schritte/manage-portfolio/auszahlung.md
+        - Wertpapier Kauf: erste-schritte/manage-portfolio/kauf.md
+        - Wertpapier Verkauf: erste-schritte/manage-portfolio/verkauf.md
+        - Einlieferung: erste-schritte/manage-portfolio/einlieferung.md
+        - Auslieferung: erste-schritte/manage-portfolio/auslieferung.md
+        - Dividenden: erste-schritte/manage-portfolio/dividende.md
+        - Anleihen: erste-schritte/manage-portfolio/anleihen.md
+      - Auswerten deines Portfolios: erste-schritte/performance-messen.md
   - Grundlagen:
       - Grundlagen: grundlagen/index.md
       - Portfolio Performance Terminilogy:  grundlagen/portfolio-performance-terminologie.md
@@ -118,7 +129,7 @@ nav:
       - Verkaufserlös: grundlagen/verkaufserloes.md
       - Performance:
         - Performance: grundlagen/performance/index.md
-        - Geldgeichtete Renendite: grundlagen/performance/geld-gewichtet.md
+        - Geldgewichtete Rendite: grundlagen/performance/geld-gewichtet.md
         - Zeitgewichtete Rendite: grundlagen/performance/zeit-gewichtet.md
       - Historische Kurse: grundlagen/historische-kurse.md
   - Referenzhandbuch: 

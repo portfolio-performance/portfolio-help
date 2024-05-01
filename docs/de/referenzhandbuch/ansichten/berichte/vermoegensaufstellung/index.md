@@ -1,0 +1,4 @@
+---
+title: Statement of Assets
+---
+
