@@ -193,5 +193,6 @@ nav:
       - Retrieving gold prices: how-to/gold-prices.md
       - Benchmarking your portfolio: how-to/benchmarking.md
       - Importing GBX priced securities: how-to/import-gbx.md
+      - Inspecting the source code: how-to/inspect-source-code.md
   - About: about.md
 

@@ -1,6 +1,6 @@
 ---
 title: Performance
-TODO: Risk indicators
+TODO: Configuring the dashboard
 ---
 Key performance and risk indicators are summarized in a dashboard, along with a calculation widget. The dashboard can be accessed through the menu `View > Reports > Performance` or with the sidebar (see figure 1).
 
@@ -64,15 +64,49 @@ The TTWOR for that day is given by Eq. 1 or `(459.31 - 155.84)/455.84 = 0.76%`.
 Equation 3 can be used to calculate the Absolute Change of the last day. It's obvious that the value equals `3.47 EUR = 459.31 EUR - 155.84 EUR`.
 
 
-
-
 ## Risk indicators
+
+Risk refers to the possibility of losing some or all of the invested capital or not achieving the expected return from your investment. Several indicators are provided to measure the risk.
+
 ### Maximum Drawdown
+Maximum drawdown (MDD) refers to the largest peak-to-trough decline in the performance of a portfolio or investment over a specific period, typically expressed as a percentage. It measures the extent of loss incurred from the highest point to the lowest point before a new peak is reached.
+
+With `View > Reports > Performance > Chart` you can create a graph of the cumulative performance of your portfolio, accounts, or specific securities. Figure 1 displays the portfolio performance for the reporting period 2020 - 2023.
+
+Figure: Cumulative performance of portfolio with indication of Maximum Drawdown .{class=pp-figure}
+
+![](./images/performance-mdd.svg)
+
+
+The largest drawdown occurs between August 18, 2021 and March  8, 2022.  Cumulative performance dropped from 22.04% to - 4.12% (see Figure 2). The MDD for the reporting period of Jun 12, 2020 till June 12, 2023 is 21.44% (see Figure 1). Hovering with the mouse over the value (the label displays the reporting period) will reveal the dates.
+
 ### Maximum Drawdown Duration
+
+The MDD Duration is the worst or longest amount of time an investment has been between peaks. 
+This is 292 days or between August 18, 2021 and June 6, 2022. The longest recovery period (duration from a low to a peak) is 90 days or between March 8, 2022 and June 6, 2022.
+
 ### Volatility
+Volatility in portfolio performance refers to the degree of variability in the returns of a portfolio over time. It is a measure of the risk or uncertainty associated with the portfolio's future performance. A portfolio with high volatility will have returns that fluctuate widely over time, while a portfolio with low volatility will have returns that are more consistent.
+
+The volatility of Figure 2 is 31.33% (see Figure 1).
+
+The volatility is calculated using the "accumulated" data series. Therefore performance-neutral transactions have no impact. Weekend and public holidays are ignored. The formula is standard deviation of returns divided by the average of the returns.
+
 ### Semivariance
+Semivariance only looks at the negative fluctuations of an asset. The value is 22.63% (see Figure 1). Performance-neutral transactions have no impact. Weekends and public holidays are ignored. Hovering over this value with the mouse gives some additional info.
 
-By default, the dashboard contains three widgets (panels): `Key Indicators`, `Risk Indicators`, and `Calculation`. Right mouse click on an empty space of the canvas lets you add more widgets (see later).
+If the negative and positive fluctuations are equal, then the following holds: 
 
-!!! note
-	The key and risk indicators consider the whole portfolio by default. However, you can narrow down the calculation to specific accounts or securities by right-clicking the indicator label and choosing a different data series.
+Volatility (v) = Semi-variance (s) x square root (2) 
+
+If the current data set is evenly distributed, then the semivariance should be: 
+
+s = v / sqrt(2) = 31.33% / sqrt(2) = 22.15% 
+
+Compare that with the actual semivariance: 
+22.15% < 22.63% 
+evenly distributed < actual semivariance 
+
+## Configuring the dashboard
+
+By default, the dashboard contains three widgets (panels): `Key Indicators`, `Risk Indicators`, and `Calculation`. Right mouse click on an empty space of the canvas lets you manage the widgets, e.g. adding a widget. Right clicking an indicator label lets you manage the specific indicator; e.g. change the data series or reporting period. (see later).
