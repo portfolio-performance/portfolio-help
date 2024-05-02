@@ -3155,6 +3155,66 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Configuring the dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statement-of-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statement of Assets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-widgets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance widgets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-indicators_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk indicators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#earnings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earnings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trades
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -3223,19 +3283,135 @@
 This is 292 days or between August 18, 2021 and June 6, 2022. The longest recovery period (duration from a low to a peak) is 90 days or between March 8, 2022 and June 6, 2022.</p>
 <h3 id="volatility">Volatility</h3>
 <p>Volatility in portfolio performance refers to the degree of variability in the returns of a portfolio over time. It is a measure of the risk or uncertainty associated with the portfolio's future performance. A portfolio with high volatility will have returns that fluctuate widely over time, while a portfolio with low volatility will have returns that are more consistent.</p>
-<p>The volatility of Figure 2 is 31.33% (see Figure 1).</p>
-<p>The volatility is calculated using the "accumulated" data series. Therefore performance-neutral transactions have no impact. Weekend and public holidays are ignored. The formula is standard deviation of returns divided by the average of the returns.</p>
+<p>The volatility shown in Figure 2 is 31.33% (refer to Figure 1). It represents the standard deviation of daily returns during the reporting period. To be precise, it is calculated by taking the natural logarithm of (1 + daily return) and then multiplying it by the square root of the total number of days in the reporting period. Notably, weekends and holidays are excluded from this calculation. An efficient method to obtain all the daily returns is by exporting the return/volatility chart as a CSV file.</p>
 <h3 id="semivariance">Semivariance</h3>
-<p>Semivariance only looks at the negative fluctuations of an asset. The value is 22.63% (see Figure 1). Performance-neutral transactions have no impact. Weekends and public holidays are ignored. Hovering over this value with the mouse gives some additional info.</p>
-<p>If the negative and positive fluctuations are equal, then the following holds: </p>
-<p>Volatility (v) = Semi-variance (s) x square root (2) </p>
-<p>If the current data set is evenly distributed, then the semivariance should be: </p>
-<p>s = v / sqrt(2) = 31.33% / sqrt(2) = 22.15% </p>
-<p>Compare that with the actual semivariance: 
-22.15% &lt; 22.63% 
-evenly distributed &lt; actual semivariance </p>
+<p>The Semivariance exclusively considers the negative fluctuations of an investment. The semivariance value is 22.63% (refer to Figure 1), with weekends and public holidays disregarded. Hovering over this value with the mouse provides additional information.</p>
+<p>In instances where negative and positive fluctuations are balanced, the formula Volatility (v) = Semi-variance (s) x sqrt(2) applies. For a dataset evenly distributed as depicted in Figure 2, the semivariance would be calculated as follows: <code>s = v / sqrt(2) = 31.33% / sqrt(2) = 22.15%</code>.</p>
+<p>Given that the actual semivariance is slightly lower than the estimated semivariance (22.15% &lt; 22.63%), it suggests that the returns are not symmetrically distributed, and the negative returns slightly outnumber the positive ones.</p>
 <h2 id="configuring-the-dashboard">Configuring the dashboard</h2>
-<p>By default, the dashboard contains three widgets (panels): <code>Key Indicators</code>, <code>Risk Indicators</code>, and <code>Calculation</code>. Right mouse click on an empty space of the canvas lets you manage the widgets, e.g. adding a widget. Right clicking an indicator label lets you manage the specific indicator; e.g. change the data series or reporting period. (see later).</p>
+<p>By default, the Performance dashboard contains three columns: <code>Key Indicators</code>, <code>Risk Indicators</code>, and <code>Calculation</code> (see Figure 1).  Each column can contain several configurable widgets: data blocks comprising a label and a numerical value or diagram; e.g. Absolute Change or a Performance chart.  Right mouse click on an <em>empty space</em> in a column lets you manage the widgets, e.g. adding a widget. Right clicking the <em>widget label</em> lets you manage the specific widget; e.g. change the data series or reporting period. (see later).</p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Yearly Overview dashboard.</figcaption><img alt="" src="images/performance-dashboard.svg"></figure></p>
+<p>Widgets are a very powerful tool to customize the dashboard to your liking. A thorough introduction is given in a <a href="https://youtu.be/_-9iC7UqLsw">YouTube video by Finanzkoch</a> (German spoken but English subtitles are possible). A <a href="https://forum.portfolio-performance.info/t/beispiele-fur-auswertungen-grafiken-und-berichte/5367/118">list of very nice dashboards</a> by fellow investors can be found at the forum.</p>
+<p><figure class="align-right" style="width:30%" id="_figure-4"><figcaption>Figure 4.  Creating a new dashboard. </figcaption><img alt="" src="images/dashboard-add-new.png"></figure></p>
+<p>The best way to experiment is by creating a new (empty) dashboard (see Figure 3). Click on the icon <code>New dashboard</code> at the left of the reporting period. You can choose between a blank dashboard, key indicators (= the default dashboard), and Earnings (see Figure 4). To remove a dashboard from the menu, click the arrow next to the name and choose <code>Delete</code>. You can move the dashboard to the first in the list (bring to front), rename the dashboard, or make a duplicate of the selected dashboard.</p>
+<p>A dashboard contains one or more columns; the dashboard of Figure 3 contains 6 columns.  You cannot see the borders of the column. Delete a column by right-clicking in the area. You can add a new column with the configure dashboard gear icon (top right). If there is already at least one column, you can also right-click in a column area and choose <code>New column on the left</code>,  <code>New column on the right</code>, or <code>Duplicate column</code> (see Figure 5). With <code>Column width</code> you can increase or decrease (step wise) the column width of the selected column. Of course, the width of the other columns is affected since the total width of the windows stays the same. With the Option <code>Apply to All</code>, you can set the reporting period and the data series for all widgets in the dashboard.</p>
+<p>The <code>New Widget</code> option reveals a submenu featuring six categories of widgets (refer to Figure 5). Below is a description of each widget. Right-clicking on the widget label will reveal a context menu. Most widgets feature options such as <code>Edit label</code>, <code>Delete</code>, and <code>Height</code>. You can drag and drop widgets within and between columns. Press the CTRL key (Windows) to duplicate instead of moving.</p>
+<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5.  New Widget menu with overview of all available widgets. </figcaption><img alt="" src="images/performance-dashboard-new-widget.svg"></figure></p>
+<h3 id="common">Common</h3>
+<ul>
+<li><em>Heading</em>: A single line text field.</li>
+<li><em>Description</em>: A multi-line text field with a smaller font.</li>
+<li>
+<p><em>Current date</em>: The text "Current Date", followed by the system date of the computer in the language and format, set in Help &gt; Preferences &gt; Presentation &gt; Language.</p>
+</li>
+<li>
+<p><em>Exchange rate</em>: An exchange rate in the format XXX/YYY number. Right-click to choose the specific exchange rate, e.g. EUR/USD.</p>
+</li>
+<li>
+<p><em>Trading activity</em>: A graph depicting time (per year and per month) is plotted on the X-axis, while the count of trades is represented on the Y-axis. With the context menu, you can add or remove the Y-axis, change the reporting period (by default the period of the dashboard is taken), or change the trading type (by default buy, sell, delivery inbound, and delivery outbound), and the filter (by default the entire portfolio).</p>
+</li>
+<li>
+<p><em>Securities: Limit price exceeded</em>: You can set a limit price per security in the security master data (<a href="../../securities/all-securities/#main-pane-list-all-securities">see how-to</a>). If the current price (as of today; independent of the reporting period) of the security exceeds the limit price, the name of the security, the current price and the limit will be displayed, as well as displaying shares with dates <code>only in the past</code> or <code>only in the future</code>.</p>
+</li>
+<li>
+<p><em>Securities: Date reached</em>: As with limit price (see above), you can link a "special" date to a security as an additional attribute. This widget will exhibit the text <code>Securities: Date reached (xxx)</code>, where xxx represents the count of securities for which today's date exceeds the date set for the security. Additionally, a list of share names and dates will be provided. This list can be sorted from the context menu.</p>
+</li>
+<li>
+<p><em>Securities: Latest Price</em>. This is a single line widget with the current price of a security; which can be chosen from the context menu. The label will mention the name of the selected security.</p>
+</li>
+<li>
+<p><em>Website</em>: A textbox containing the content of a website; specified by an URL in the context menu. Anchors are allowed; for example <code>https://help.portfolio-performance.info/en/concepts/performance/#the-money-weighted-rate-of-return</code>. The height of the widget can be increased with the context menu.</p>
+</li>
+<li>
+<p>Security: Distance from ATH: The difference of the current price with the All Time High (ATH) price of the security, measured in %. The security should be specified with the context menu.</p>
+</li>
+<li>
+<p>Vertical spacer: This widget produces an invisible rectangle that occupies space. It is used to visually separate widgets (vertically). Hovering over the widget with the mouse will reveal its label. With right-click, you can change its height.</p>
+</li>
+</ul>
+<h3 id="statement-of-assets">Statement of Assets</h3>
+<p>All widgets, except the last three, are single line text widgets. </p>
+<ul>
+<li>
+<p><em>Total</em>: The market Value of the asset at the end of the reporting period.  The asset and the reporting period can be specified with the context menu.</p>
+</li>
+<li>
+<p><em>Absolute change</em>, <em>Delta (for reporting period)</em>, <em>Delta (since first transaction)</em> : <a href="./#absolute-change">see above</a> for definition of these terms.</p>
+</li>
+<li>
+<p><em>Performance-neutral transfers</em>: these transfers are explained in <a href="calculation/#main-pane">View &gt; Reports &gt; Performance &gt; Calculation</a>.</p>
+</li>
+<li>
+<p><em>Invested Capital (for reporting period)</em> and <em>Invested Capital (since first transaction)</em>: The Invested capital in a portfolio of stocks refers to the total amount of money that has been invested in the portfolio.</p>
+</li>
+<li>
+<p><em>Ratio</em>: This widget computes the proportion between two assets; for instance, Share 1 / Entire Portfolio.</p>
+</li>
+<li>
+<p><em>Statement of Assets - Chart</em>: This widget produces a mini version of <a href="../statement/statement-chart/">View &gt; Reports &gt; Statement of Assets &gt; Chart</a>. If multiple chart view are defined, they can be selected with the context menu.</p>
+</li>
+<li>
+<p><em>Statement of Assets - Holdings</em>: Pie chart which is a mini version of <a href="../statement/holdings/">View &gt; Reports &gt; Statement of Assets &gt; Holdings</a>.</p>
+</li>
+<li>
+<p><em>Taxonomies</em>: Pie chart illustrating the proportional distribution of the taxonomy categories. </p>
+</li>
+</ul>
+<h3 id="performance-widgets">Performance widgets</h3>
+<p>The first three widgets are single line text; representing the common performance indicators. </p>
+<ul>
+<li>
+<p><em>True Time-Weighted Rate of Return (cumulative)</em>, <em>True Time-Weighted Rate of Return (annualized)</em>, and <em>Internal Rate of Return (IRR)</em> are the <a href="../../../../concepts/performance/">known</a> single line performance indicators. The data series and reporting period can be selected in the context menu.</p>
+</li>
+<li>
+<p><em>Performance Calculation</em>: A fully collapsed table, similar to <a href="calculation/">View &gt; Reports &gt; Performance &gt; Calculation</a>; first panel. The categories cannot be expanded.</p>
+</li>
+<li>
+<p><em>Performance Chart</em>: This widget produces a mini version of <a href="performance-chart/">View &gt; Reports &gt; Performance &gt; Chart</a>. With the <code>Aggregation</code> context menu, one could set the level of detail (daily, weekly, monthly, quarterly, or yearly).</p>
+</li>
+<li>
+<p><em>Monthly returns in a heat map</em>: A heatmap is a graphical representation of data that uses color-coding to visualize the performance of different stocks in a portfolio. A heatmap typically consists of a table or matrix, with each cell representing the monthly performance of a selected asset. The color of each cell corresponds to the performance of that stock. </p>
+</li>
+<li>
+<p><em>Yearly returns in a heatmap</em>: Each cell in the heatmap represents one year.</p>
+</li>
+<li>
+<p>Portfolio Tax Rate: The ratio of taxes / (realized and unrealized capital gains + earnings - fees).</p>
+</li>
+<li>
+<p>Portfolio Fee Rate: The ratio of Fees / (realized and unrealized capital gains + earnings).</p>
+</li>
+</ul>
+<h3 id="risk-indicators_1">Risk indicators</h3>
+<p>All four widgets are single line text widgets, representing the common risk indicators: <code>Maximum Drawdown</code>, <code>Max Drawdown Duration</code>, <code>Volatility</code>, and <code>Semivariance</code>. See <a href="./#maximum-drawdown">above</a> for an explanation.</p>
+<h3 id="earnings">Earnings</h3>
+<ul>
+<li>
+<p><em>Transactions overview</em>: A table displaying the monthly earnings, comprising dividends, interest, or both individually. The year can be adjusted using a spin button located at the top of the widget.</p>
+</li>
+<li>
+<p><em>Monthly earnings</em>:  A table displaying the monthly earnings. The year should be set with the context menu.</p>
+</li>
+<li><em>Earnings per month</em>, <em>Earnings per quarter</em>, and <em>Earnings per year</em>: Graphical representation of the earnings per month, quarter or per year. </li>
+</ul>
+<h3 id="trades">Trades</h3>
+<ul>
+<li>
+<p><em>Number of trades with profit/loss</em>: A single-line widget presenting the total number of trades in grey color, along with an upward-pointing green arrow + counter indicating the number of trades with profit, and a downward-pointing red arrow indicating the number of trades with loss.</p>
+</li>
+<li>
+<p><em>Trades Profit/loss</em>: The total net value of the trades in the reporting period. Green color used for profits, red for loss. Assets and reporting period could be set with the context menu.</p>
+</li>
+<li>
+<p><em>Average holding period</em>: The average holding period is calculated as follows: All trades are included that were in the portfolio at some point within the selected reporting period. The holding period of each security is the difference between the time of purchase and sale. Immediate sales are assumed for positions currently held. The position weight is calculated from the purchase price of the position relative to the total number of all purchase prices. The Average holding period is the sum of the products "holding period x percentage position weight" across all positions. The metric could be displayed in days or in years.</p>
+</li>
+<li>
+<p><em>Portfolio Turnover Rate</em>: The Portfolio Turnover Rate measures how much (in money) of the portfolio was "replaced" throughout the holding period, as a fraction of the average portfolio value. A turnover of 100% means that all money invested in the portfolio is since then replaced.</p>
+</li>
+<li>
+<p><em>Monthly investments</em>, <em>Monthly fees</em>, and <em>Monthly taxes</em>: A table illustrating the total amount of investments, fees, or taxes. The rows correspond to the years, while the columns represent the months, making each cell a monthly record within a year.</p>
+</li>
+</ul>
 
 
 
