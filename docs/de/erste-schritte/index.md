@@ -14,7 +14,7 @@ Du kannst entweder eine der vorkompilierten Installationsdateien verwenden oder 
 Dein erster Schritt besteht natürlich darin, eine neue Portfoliodatei mit deinen Konten zu erstellen. Die Portfoliodatei enthält alle Wertpapiere, Konten, Depots, Buchungen, Klassifizierungen, usw.
 
 
-# [Wertpapier anlgen](intro-wertpapiere-anlegen.md)
+# [Wertpapier anlegen](intro-wertpapiere-anlegen.md)
 Du legst die für dich interessanten Wertpapiere in der Wertpapierliste an. Stammdaten und historische Kurse werden von Portfolio Performance automatisch ergänzt und aktualisiert.
 
 
