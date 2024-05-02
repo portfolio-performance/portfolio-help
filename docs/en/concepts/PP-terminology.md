@@ -103,6 +103,8 @@ Fundamental concepts such as account, transaction, reporting period, purchase va
 
 - Watchlist: manual grouping of securities.
 
+- Widget: A data block comprising a label and a numerical value or diagram, designed for placement on a dashboard.
+
 - WKN: *Wertpapierkennnummer*. A German six-digit alphanumeric code for the identification of a security, now replaced by the ISIN code.
 
  
