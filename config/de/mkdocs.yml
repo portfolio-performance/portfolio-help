@@ -11,7 +11,7 @@ site_url: 'https://help.portfolio-performance.info/de/'
 
 repo_name: 'portfolio-performance/portfolio-help'
 repo_url: 'https://github.com/portfolio-performance/portfolio-help'
-edit_uri: 'blob/master/docs/'
+edit_uri: 'tree/master/docs/de'
 
 copyright: 'Dieses Werk ist lizenziert unter <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.'
 
