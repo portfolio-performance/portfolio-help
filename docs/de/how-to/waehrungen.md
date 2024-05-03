@@ -16,7 +16,9 @@ title: Währungen
 
 Die verfügbaren Wechselkurse finden sich unter *Allgemeine Daten -> Währungen -> Wechselkurse*.
 
-<a href="../images/assets/liste_waehrungen.png"><img alt="Allgemeine Daten - Währungen - Wechselkurse" src="../images/assets/liste_waehrungen.png" width="670" style="max-width: 670px;" class="screenshot"/></a>
+Abbildung: Allgemeine Daten - Währungen - Wechselkurse.{class=align-center style="width:70%"}
+
+![](images/liste_waehrungen.png)
 
 ## Notierung
 
@@ -47,7 +49,10 @@ Mit dem Währungsrechner unter *Allgemeine Daten -> Währungen -> Währungsrechn
 
 In diesem Beispiel wird der *Dirham* aus den Vereinige Arabische Emiraten zunächst in *US Doller* und anschließend in *Euro* umgerechnet.
 
-<a href="../images/assets/waehrungsrechner.png"><img alt="Währungsrechner" src="../images/assets/waehrungsrechner.png" width="471" style="max-width: 471px;" class="screenshot"/></a>
+
+Abbildung: Währungsrechner.{class=align-center style="width:70%"}
+
+![](images/waehrungsrechner.png)
 
 *Portfolio Performance* gewichtet Wechselkurse und nutzt zur Umrechnung den Wechselkurs mit dem niedrigsten Gewicht:
 
@@ -72,21 +77,35 @@ Benutzerdefinierte Wechselkurse sind in *Portfolio Performance* nichts anderes a
 
 Benutzerdefinierte Wechselkurse erstellt man mit dem Dialog *Wertpapiere -> Neuen Wechselkurs anlegen...*.
 
-<a href="../images/assets/wechselkurs_anlegen.png"><img alt="Wechselkurs anlegen" src="../images/assets/wechselkurs_anlegen.png" width="654" style="max-width: 654px;" class="screenshot"/></a>
+Abbildung: Wechselkurs anlegen.{class=align-center style="width:70%"}
+
+![](images/wechselkurs_anlegen.png)
 
 Neben der Währung ("Basiswährung") gibt man die Zielwährung des Wechselkurses ein.
 
-<a href="../images/assets/config_waehrungen.png"><img alt="Wechselkurs editieren" src="../images/assets/config_waehrungen.png" width="538" style="max-width: 538px;" class="screenshot"/></a>
+
+Abbildung: Wechselkurs editieren.{class=align-center style="width:70%"}
+
+![](images/config_waehrungen.png)
+
 
 Um Kurse von **Yahoo Finance** zu laden, verwendet man ein Symbol aus der Basiswährung und Zielwährung mit dem Suffix **=X**. Für die Umrechnung von EUR (Euro) in den Vietnamesischen Dong (VND) heißt das Symbol entsprechnd ```EURVND=X```.
 
-<a href="../images/assets/wechselkurse_laden.png"><img alt="Wechselkurse laden" src="../images/assets/wechselkurse_laden.png" width="538" style="max-width: 538px;" class="screenshot"/></a>
+
+Abbildung: Wechselkurse laden.{class=align-center style="width:70%"}
+
+![](images/wechselkurs_anlegen.png)
+
 
 Alternativ kann man die Wechselkurse auch per CSV importieren: *Datei -> Importieren... -> CSV Dateien*. Die CSV-Datei für den Kurs Euro nach Vietnamesischer Dong kann man z.B. per Google Sheets erstellen. Dazu nutzt man einfach die Funktion ```GoogleFinance``` für Euro und Dong ```CURRENCY:EURVND``` in etwa so für das letzte Jahr:
 
-<a href="../images/assets/wechselkurs_googlesheet.png"><img alt="Wechselkurs in Google Sheet laden" src="../images/assets/wechselkurs_googlesheet.png" width="519" style="max-width: 519px;" class="screenshot"/></a>
+
+Abbildung: Wechselkurs in Google Sheet laden.{class=align-center style="width:70%"}
+
+![](images/wechselkurs_googlesheet.png)
 
 Die Google Sheets-Datei lädt man dann als CSV herunter und importiert sie danach ganz normal mit dem CSV-Import in *Portfolio Performance*.
 
-<a href="../images/assets/wechselkurs_googlesheet_export.png"><img alt="Wechselkurs in Google Sheet laden" src="../images/assets/wechselkurs_googlesheet_export.png" width="617" style="max-width: 617px;" class="screenshot"/></a>
+Abbildung: Speichern aus Googe Sheet.{class=align-center style="width:70%"}
 
+![](images/wechselkurs_googlesheet_export.png)
