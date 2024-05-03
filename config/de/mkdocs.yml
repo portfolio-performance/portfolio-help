@@ -190,7 +190,11 @@ nav:
           - Tabelle auf einer Webseite: how-to/historische-aktienkurse/table-website.md
       - Handhabung Wahldividende: how-to/wahldividenden.md
       - Handhabung Spin-Off: how-to/spin-off.md
+      - Währungen: how-to/waehrungen.md
+      - Konten anlegen: how-to/konten_anlegen.md
       - Aktien Splitt: how-to/aktien-splitt.md
+      - Kursdaten laden: how-to/kursdaten_laden.md
+      - Buchungen erfassen: how-to/buchungen_erfassen.md
       - Portfolio Auswerten: how-to/bewertung.md
       - Gold Preise: how-to/gold-preise.md
       - GBX Daten importieren: how-to/import-gbx.md
