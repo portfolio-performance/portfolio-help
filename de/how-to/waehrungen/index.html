@@ -3284,7 +3284,7 @@
 <li>Beträge in einer Buchung werden - wenn möglich - mit dem Wechselkurs aus der Buchung selbst umgerechnet.</li>
 </ul>
 <p>Die verfügbaren Wechselkurse finden sich unter <em>Allgemeine Daten -&gt; Währungen -&gt; Wechselkurse</em>.</p>
-<p><figure id="_figure-1"><figcaption>Abbildung 1.  Allgemeine Daten - Währungen - Wechselkurse</figcaption><a href="../images/assets/liste_waehrungen.png"><img alt="Allgemeine Daten - Währungen - Wechselkurse" src="../images/assets/liste_waehrungen.png" width="670" style="max-width: 670px;" class="screenshot"></a></figure></p>
+<p><figure class="align-center" style="width:70%" id="_figure-1"><figcaption>Abbildung 1.  Allgemeine Daten - Währungen - Wechselkurse.</figcaption><img alt="" src="../images/liste_waehrungen.png"></figure></p>
 <h2 id="notierung">Notierung</h2>
 <p>In den Einstellungen kann man zwischen <strong>Mengennotierung</strong> und <strong>Preisnotierung</strong> umstellen.</p>
 <blockquote>
@@ -3308,7 +3308,7 @@ Preisnotierung üblich ist, insbesondere auch in der Schweiz. <a href="https://d
 <h2 id="wahrungsrechner">Währungsrechner</h2>
 <p>Mit dem Währungsrechner unter <em>Allgemeine Daten -&gt; Währungen -&gt; Währungsrechner</em> kann man nachvollziehen, welche Wechselkurse <em>Portfolio Performance</em> für eine Umrechnung verwendet.</p>
 <p>In diesem Beispiel wird der <em>Dirham</em> aus den Vereinige Arabische Emiraten zunächst in <em>US Doller</em> und anschließend in <em>Euro</em> umgerechnet.</p>
-<p><figure id="_figure-2"><figcaption>Abbildung 2.  Währungsrechner</figcaption><a href="../images/assets/waehrungsrechner.png"><img alt="Währungsrechner" src="../images/assets/waehrungsrechner.png" width="471" style="max-width: 471px;" class="screenshot"></a></figure></p>
+<p><figure class="align-center" style="width:70%" id="_figure-2"><figcaption>Abbildung 2.  Währungsrechner.</figcaption><img alt="" src="../images/waehrungsrechner.png"></figure></p>
 <p><em>Portfolio Performance</em> gewichtet Wechselkurse und nutzt zur Umrechnung den Wechselkurs mit dem niedrigsten Gewicht:</p>
 <ul>
 <li>Benutzerdefinierte Wechselkurse haben ein Gewicht von 1</li>
@@ -3326,15 +3326,15 @@ Preisnotierung üblich ist, insbesondere auch in der Schweiz. <a href="https://d
 <h2 id="benutzerdefinierte-wechselkurse">Benutzerdefinierte Wechselkurse</h2>
 <p>Benutzerdefinierte Wechselkurse sind in <em>Portfolio Performance</em> nichts anderes als Wertpapiere, die neben der eigenen Währung auch noch eine Zielwährung haben. Die Kurse werden zur Umrechnung der Beträge verwendet. Wechselkurse können über die gleichen Mechanismen wie <a href="../kursdaten_laden/">Kurse geladen</a> werden, z.B. von Yahoo Finance oder per CSV Import.</p>
 <p>Benutzerdefinierte Wechselkurse erstellt man mit dem Dialog <em>Wertpapiere -&gt; Neuen Wechselkurs anlegen...</em>.</p>
-<p><figure id="_figure-3"><figcaption>Abbildung 3.  Wechselkurs anlegen</figcaption><a href="../images/assets/wechselkurs_anlegen.png"><img alt="Wechselkurs anlegen" src="../images/assets/wechselkurs_anlegen.png" width="654" style="max-width: 654px;" class="screenshot"></a></figure></p>
+<p><figure class="align-center" style="width:70%" id="_figure-3"><figcaption>Abbildung 3.  Wechselkurs anlegen.</figcaption><img alt="" src="../images/wechselkurs_anlegen.png"></figure></p>
 <p>Neben der Währung ("Basiswährung") gibt man die Zielwährung des Wechselkurses ein.</p>
-<p><figure id="_figure-4"><figcaption>Abbildung 4.  Wechselkurs editieren</figcaption><a href="../images/assets/config_waehrungen.png"><img alt="Wechselkurs editieren" src="../images/assets/config_waehrungen.png" width="538" style="max-width: 538px;" class="screenshot"></a></figure></p>
+<p><figure class="align-center" style="width:70%" id="_figure-4"><figcaption>Abbildung 4.  Wechselkurs editieren.</figcaption><img alt="" src="../images/config_waehrungen.png"></figure></p>
 <p>Um Kurse von <strong>Yahoo Finance</strong> zu laden, verwendet man ein Symbol aus der Basiswährung und Zielwährung mit dem Suffix <strong>=X</strong>. Für die Umrechnung von EUR (Euro) in den Vietnamesischen Dong (VND) heißt das Symbol entsprechnd <code>EURVND=X</code>.</p>
-<p><figure id="_figure-5"><figcaption>Abbildung 5.  Wechselkurse laden</figcaption><a href="../images/assets/wechselkurse_laden.png"><img alt="Wechselkurse laden" src="../images/assets/wechselkurse_laden.png" width="538" style="max-width: 538px;" class="screenshot"></a></figure></p>
+<p><figure class="align-center" style="width:70%" id="_figure-5"><figcaption>Abbildung 5.  Wechselkurse laden.</figcaption><img alt="" src="../images/wechselkurs_anlegen.png"></figure></p>
 <p>Alternativ kann man die Wechselkurse auch per CSV importieren: <em>Datei -&gt; Importieren... -&gt; CSV Dateien</em>. Die CSV-Datei für den Kurs Euro nach Vietnamesischer Dong kann man z.B. per Google Sheets erstellen. Dazu nutzt man einfach die Funktion <code>GoogleFinance</code> für Euro und Dong <code>CURRENCY:EURVND</code> in etwa so für das letzte Jahr:</p>
-<p><figure id="_figure-6"><figcaption>Abbildung 6.  Wechselkurs in Google Sheet laden</figcaption><a href="../images/assets/wechselkurs_googlesheet.png"><img alt="Wechselkurs in Google Sheet laden" src="../images/assets/wechselkurs_googlesheet.png" width="519" style="max-width: 519px;" class="screenshot"></a></figure></p>
+<p><figure class="align-center" style="width:70%" id="_figure-6"><figcaption>Abbildung 6.  Wechselkurs in Google Sheet laden.</figcaption><img alt="" src="../images/wechselkurs_googlesheet.png"></figure></p>
 <p>Die Google Sheets-Datei lädt man dann als CSV herunter und importiert sie danach ganz normal mit dem CSV-Import in <em>Portfolio Performance</em>.</p>
-<p><figure id="_figure-7"><figcaption>Abbildung 7.  Wechselkurs in Google Sheet laden</figcaption><a href="../images/assets/wechselkurs_googlesheet_export.png"><img alt="Wechselkurs in Google Sheet laden" src="../images/assets/wechselkurs_googlesheet_export.png" width="617" style="max-width: 617px;" class="screenshot"></a></figure></p>
+<p><figure class="align-center" style="width:70%" id="_figure-7"><figcaption>Abbildung 7.  Speichern aus Googe Sheet.</figcaption><img alt="" src="../images/wechselkurs_googlesheet_export.png"></figure></p>
 
 
 
