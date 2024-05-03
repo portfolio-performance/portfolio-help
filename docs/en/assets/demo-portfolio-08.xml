@@ -2772,8 +2772,9 @@
         <price t="2024-04-26" v="2185000000"/>
         <price t="2024-04-29" v="2179000000"/>
         <price t="2024-04-30" v="2149000000"/>
+        <price t="2024-05-02" v="2173000000"/>
       </prices>
-      <latest t="2024-04-30" v="2149000000">
+      <latest t="2024-05-02" v="2172000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -2781,14 +2782,17 @@
       <attributes>
         <map>
           <entry>
-            <string>135b7a79-cf82-4597-9457-5d741f05c9c5</string>
-            <long>2070000000</long>
+            <string>3c6f03c8-2f1f-4fc0-b5d9-9d5423235167</string>
+            <limitPrice>
+              <operator>GREATER</operator>
+              <value>2000000000</value>
+            </limitPrice>
           </entry>
         </map>
       </attributes>
       <events/>
       <isRetired>false</isRetired>
-      <updatedAt>2024-01-18T13:46:24.345115800Z</updatedAt>
+      <updatedAt>2024-05-02T11:58:34.409498400Z</updatedAt>
     </security>
     <security>
       <uuid>245661d8-6510-40d7-96cc-3f05f7a679ad</uuid>
@@ -3963,18 +3967,24 @@
         <price t="2024-04-26" v="1261000000"/>
         <price t="2024-04-29" v="1255000000"/>
         <price t="2024-04-30" v="1241000000"/>
+        <price t="2024-05-02" v="1246000000"/>
       </prices>
-      <latest t="2024-04-30" v="1241000000">
+      <latest t="2024-05-02" v="1240500000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
       </latest>
       <attributes>
-        <map/>
+        <map>
+          <entry>
+            <string>d66fef7c-34a7-48e1-aecb-09248a39a76d</string>
+            <local-date>2023-07-01</local-date>
+          </entry>
+        </map>
       </attributes>
       <events/>
       <isRetired>false</isRetired>
-      <updatedAt>2023-06-12T18:37:20.042953800Z</updatedAt>
+      <updatedAt>2024-05-02T12:10:13.987413400Z</updatedAt>
     </security>
   </securities>
   <watchlists/>
@@ -4314,19 +4324,270 @@
         <column>
           <weight>1</weight>
           <widgets>
-            <widget type="DESCRIPTION">
-              <label>&lt;strong&gt;New dashboard&lt;/strong&gt;
-
-* This dashboard currently has a two-column layout.
-* Remove this introduction by right-clicking on this text.
-* Add columns or widgets by right-clicking on the empty space.
-* Rearrange widgets by clicking and dragging them with your mouse.</label>
+            <widget type="DISTANCE_TO_ATH">
+              <label>Security: Distance from ATH, share-1</label>
+              <configuration>
+                <entry>
+                  <string>DATA_SERIES</string>
+                  <string>Security0152978e-2ea2-436f-b07a-0333b988ea8b</string>
+                </entry>
+              </configuration>
+            </widget>
+            <widget type="LIMIT_EXCEEDED">
+              <label>Securities: Limit price exceeded</label>
+              <configuration/>
+            </widget>
+            <widget type="VERTICAL_SPACEER">
+              <label>Vertical Spacer</label>
+              <configuration/>
+            </widget>
+            <widget type="LATEST_SECURITY_PRICE">
+              <label>Security: Latest Price, share-1</label>
+              <configuration>
+                <entry>
+                  <string>DATA_SERIES</string>
+                  <string>Security0152978e-2ea2-436f-b07a-0333b988ea8b</string>
+                </entry>
+              </configuration>
+            </widget>
+            <widget type="DISTANCE_TO_ATH">
+              <label>Security: Distance from ATH, share-1</label>
+              <configuration>
+                <entry>
+                  <string>DATA_SERIES</string>
+                  <string>Security0152978e-2ea2-436f-b07a-0333b988ea8b</string>
+                </entry>
+              </configuration>
+            </widget>
+            <widget type="ACTIVITY_CHART">
+              <label>Trading activity</label>
+              <configuration>
+                <entry>
+                  <string>SHOW_Y_AXIS</string>
+                  <string>false</string>
+                </entry>
+              </configuration>
+            </widget>
+            <widget type="FOLLOW_UP">
+              <label>Securities: Date reached</label>
+              <configuration>
+                <entry>
+                  <string>REPORTING_PERIOD</string>
+                  <string>FUTURE</string>
+                </entry>
+              </configuration>
             </widget>
           </widgets>
         </column>
         <column>
           <weight>1</weight>
-          <widgets/>
+          <widgets>
+            <widget type="HEADING">
+              <label>Statement of assets</label>
+            </widget>
+            <widget type="TOTAL_SUM">
+              <label>Total, share-1</label>
+              <configuration>
+                <entry>
+                  <string>DATA_SERIES</string>
+                  <string>Security0152978e-2ea2-436f-b07a-0333b988ea8b</string>
+                </entry>
+              </configuration>
+            </widget>
+            <widget type="ABSOLUTE_CHANGE">
+              <label>Absolute Change</label>
+              <configuration/>
+            </widget>
+            <widget type="DELTA">
+              <label>Delta (for reporting period)</label>
+              <configuration>
+                <entry>
+                  <string>REPORTING_PERIOD</string>
+                  <string>F2022-06-12_2023-06-12</string>
+                </entry>
+              </configuration>
+            </widget>
+            <widget type="ABSOLUTE_DELTA">
+              <label>Delta (since first transaction)</label>
+              <configuration/>
+            </widget>
+            <widget type="SAVINGS">
+              <label>Performance-neutral transfers</label>
+              <configuration/>
+            </widget>
+            <widget type="INVESTED_CAPITAL">
+              <label>Invested Capital (for reporting period)</label>
+              <configuration/>
+            </widget>
+            <widget type="ABSOLUTE_INVESTED_CAPITAL">
+              <label>Invested capital (since first transaction)</label>
+              <configuration/>
+            </widget>
+            <widget type="RATIO">
+              <label>Ratio, Entire portfolio / share-1</label>
+              <configuration>
+                <entry>
+                  <string>SECONDARY_DATA_SERIES</string>
+                  <string>Security0152978e-2ea2-436f-b07a-0333b988ea8b</string>
+                </entry>
+              </configuration>
+            </widget>
+            <widget type="ASSET_CHART">
+              <label>Statement of Assets - Chart</label>
+              <configuration>
+                <entry>
+                  <string>CONFIG_UUID</string>
+                  <string>ec4dc660-8854-43ad-80d4-31584fe10e19</string>
+                </entry>
+              </configuration>
+            </widget>
+            <widget type="HOLDINGS_CHART">
+              <label>Statement of Assets - Holdings</label>
+              <configuration/>
+            </widget>
+            <widget type="TAXONOMY_CHART">
+              <label>Taxonomies</label>
+              <configuration/>
+            </widget>
+          </widgets>
+        </column>
+        <column>
+          <weight>1</weight>
+          <widgets>
+            <widget type="TTWROR">
+              <label>True Time-Weighted Rate of Return (cumulative)</label>
+              <configuration/>
+            </widget>
+            <widget type="CALCULATION">
+              <label>Performance Calculation</label>
+              <configuration/>
+            </widget>
+            <widget type="CHART">
+              <label>Performance Chart</label>
+              <configuration/>
+            </widget>
+            <widget type="HEATMAP">
+              <label>Monthly returns in a heat map, share-1</label>
+              <configuration>
+                <entry>
+                  <string>DATA_SERIES</string>
+                  <string>Security0152978e-2ea2-436f-b07a-0333b988ea8b</string>
+                </entry>
+                <entry>
+                  <string>LAYOUT</string>
+                  <string>SUM,GEOMETRIC_MEAN</string>
+                </entry>
+              </configuration>
+            </widget>
+            <widget type="HEATMAP_YEARLY">
+              <label>Yearly returns in a heat map</label>
+              <configuration>
+                <entry>
+                  <string>LAYOUT</string>
+                  <string>SUM</string>
+                </entry>
+                <entry>
+                  <string>COLOR_SCHEMA</string>
+                  <string>GREEN_WHITE_RED</string>
+                </entry>
+              </configuration>
+            </widget>
+            <widget type="PORTFOLIO_TAX_RATE">
+              <label>Portfolio Tax Rate</label>
+              <configuration/>
+            </widget>
+            <widget type="PORTFOLIO_FEE_RATE">
+              <label>Portfolio Fee Rate</label>
+              <configuration/>
+            </widget>
+          </widgets>
+        </column>
+        <column>
+          <weight>1</weight>
+          <widgets>
+            <widget type="HEADING">
+              <label>Risk indicators</label>
+            </widget>
+            <widget type="MAXDRAWDOWN">
+              <label>Maximum Drawdown</label>
+              <configuration/>
+            </widget>
+            <widget type="MAXDRAWDOWNDURATION">
+              <label>Max Drawdown Duration</label>
+              <configuration/>
+            </widget>
+            <widget type="VOLATILITY">
+              <label>Volatility</label>
+              <configuration/>
+            </widget>
+            <widget type="SEMIVOLATILITY">
+              <label>Semivariance</label>
+              <configuration/>
+            </widget>
+          </widgets>
+        </column>
+        <column>
+          <weight>1</weight>
+          <widgets>
+            <widget type="EARNINGS">
+              <label>Transactions overview</label>
+              <configuration>
+                <entry>
+                  <string>START_YEAR</string>
+                  <string>2020</string>
+                </entry>
+              </configuration>
+            </widget>
+            <widget type="HEATMAP_EARNINGS">
+              <label>Monthly earnings</label>
+              <configuration/>
+            </widget>
+            <widget type="EARNINGS_PER_YEAR_CHART">
+              <label>Earnings per year</label>
+              <configuration/>
+            </widget>
+            <widget type="EARNINGS_PER_QUARTER_CHART">
+              <label>Earnings per quarter</label>
+              <configuration/>
+            </widget>
+            <widget type="EARNINGS_PER_MONTH_CHART">
+              <label>Earnings per month</label>
+              <configuration/>
+            </widget>
+          </widgets>
+        </column>
+        <column>
+          <weight>1</weight>
+          <widgets>
+            <widget type="TRADES_BASIC_STATISTICS">
+              <label>Number of trades (with profit/with loss)</label>
+              <configuration/>
+            </widget>
+            <widget type="TRADES_PROFIT_LOSS">
+              <label>Trades Profit/Loss</label>
+              <configuration/>
+            </widget>
+            <widget type="TRADES_AVERAGE_HOLDING_PERIOD">
+              <label>Average holding period</label>
+              <configuration/>
+            </widget>
+            <widget type="TRADES_TURNOVER_RATIO">
+              <label>Portfolio Turnover Rate</label>
+              <configuration/>
+            </widget>
+            <widget type="HEATMAP_INVESTMENTS">
+              <label>Monthly investments</label>
+              <configuration/>
+            </widget>
+            <widget type="HEATMAP_TAXES">
+              <label>Monthly taxes</label>
+              <configuration/>
+            </widget>
+            <widget type="HEATMAP_FEES">
+              <label>Monthly fees</label>
+              <configuration/>
+            </widget>
+          </widgets>
         </column>
       </columns>
     </dashboard>
@@ -4334,7 +4595,7 @@
   <properties>
     <entry>
       <string>security-chart-details</string>
-      <string>SCALING_LINEAR,INVESTMENT,DIVIDENDS,SHOW_MAIN_HORIZONTAL_LINES</string>
+      <string>SCALING_LINEAR,INVESTMENT,DIVIDENDS,SHOW_LIMITS,SHOW_MAIN_HORIZONTAL_LINES</string>
     </entry>
   </properties>
   <settings>
@@ -4480,12 +4741,21 @@
         <converterClass>name.abuchen.portfolio.model.AttributeType$PercentConverter</converterClass>
       </attribute-type>
       <attribute-type>
-        <id>135b7a79-cf82-4597-9457-5d741f05c9c5</id>
-        <name>Limit</name>
-        <columnLabel>Limit</columnLabel>
+        <id>3c6f03c8-2f1f-4fc0-b5d9-9d5423235167</id>
+        <name>myLimit</name>
+        <columnLabel>My Limit</columnLabel>
         <target>name.abuchen.portfolio.model.Security</target>
-        <type>java.lang.Long</type>
-        <converterClass>name.abuchen.portfolio.model.AttributeType$QuoteConverter</converterClass>
+        <type>name.abuchen.portfolio.model.LimitPrice</type>
+        <converterClass>name.abuchen.portfolio.model.AttributeType$LimitPriceConverter</converterClass>
+        <properties/>
+      </attribute-type>
+      <attribute-type>
+        <id>d66fef7c-34a7-48e1-aecb-09248a39a76d</id>
+        <name>myDate</name>
+        <columnLabel>myDate</columnLabel>
+        <target>name.abuchen.portfolio.model.Security</target>
+        <type>java.time.LocalDate</type>
+        <converterClass>name.abuchen.portfolio.model.AttributeType$DateConverter</converterClass>
       </attribute-type>
     </attributeTypes>
     <configurationSets>
@@ -4496,7 +4766,7 @@
             <config>
               <uuid>ec4dc660-8854-43ad-80d4-31584fe10e19</uuid>
               <name>Standard</name>
-              <data>Client-totals;#000000;SOLID;false;2,Client-transferals;#808080;SOLID;false;2</data>
+              <data>Client-transferals;#00ff40;SOLID;false;2,Client-totals;#ffff80;DASH;false;2</data>
             </config>
           </configurations>
         </config-set>
@@ -4544,7 +4814,7 @@
             <config>
               <uuid>ace4b28f-3207-4dc2-95fa-edc3936851f9</uuid>
               <name>Standard</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;sortDirection&quot;:128,&quot;width&quot;:400},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:200},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:100},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:111},{&quot;id&quot;:&quot;7&quot;,&quot;width&quot;:97},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:102},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:136},{&quot;id&quot;:&quot;9&quot;,&quot;width&quot;:164},{&quot;id&quot;:&quot;10&quot;,&quot;width&quot;:171},{&quot;id&quot;:&quot;q-date-first-historic&quot;,&quot;width&quot;:167},{&quot;id&quot;:&quot;attribute$135b7a79-cf82-4597-9457-5d741f05c9c5&quot;,&quot;width&quot;:80}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;sortDirection&quot;:128,&quot;width&quot;:400},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:200},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:100},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:111},{&quot;id&quot;:&quot;7&quot;,&quot;width&quot;:97},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:102},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:136},{&quot;id&quot;:&quot;9&quot;,&quot;width&quot;:164},{&quot;id&quot;:&quot;10&quot;,&quot;width&quot;:171},{&quot;id&quot;:&quot;q-date-first-historic&quot;,&quot;width&quot;:167}]}</data>
             </config>
           </configurations>
         </config-set>

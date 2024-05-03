@@ -2,7 +2,7 @@
 title: Performance
 ---
 # Performance Measurement
-The measurement of the performance of a financial portfolio is based on the concept of return: the increase or decrease of value over a specific period. For example, your portfolio starts at 100 EUR and grows to 104 EUR by the end of the period, resulting in a performance of + 4%. Equation 1 offers two versions of the base formula; also named the Simple Rate of Return (ROR).
+The measurement of the performance of a financial portfolio is based on the concept of return: the increase or decrease of value over a specific period. For example, your portfolio starts at 100 EUR and grows to 104 EUR by the end of the period, resulting in a performance of + 4%. Equation 1 offers three versions of the base formula; also named the Simple Rate of Return (ROR).
 
 $$\mathrm{r = \frac{(MVE - MVB)}{MVB} \quad \Leftrightarrow \quad r = \frac{MVE}{MVB} -1 \quad \Leftrightarrow \quad MVE = MVB \times (1 + r) \quad (Eq  1)}$$
 

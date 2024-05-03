@@ -4,19 +4,19 @@ title: Money weighted rate of return
 # The money-weighted rate of return
 The money-weighted rate of return is in fact identical to the Internal Rate of Return (IRR) technique used in project management. This calculation considers both the timing (when) and the amount (how much) of the cash flows within the reporting period. A cash flow is any amount of money that is added to or withdrawn from a portfolio. The base formula for the IRR calculation is:
 
-$$\mathrm{MVE = MVB \times (1 + IRR)^{\frac{RD_1}{365}} + \sum_{t=1} ^{n}CF_t \times (1+IRR)^{\frac{RD_t}{365}} \qquad \text{(Eq 1)}}$$
+$$\mathrm{MVE = MVB \times (1 + IRR)^{\frac{RD}{365}} + \sum_{t=1} ^{n}CF_t \times (1+IRR)^{\frac{RD_t}{365}} \qquad \text{(Eq 1)}}$$
 
-where *n* = the number of cash flows in the reporting period, $CF_t$ = cash flow at time *t* within the period, and $RD_t$ = the number of remaining days within the period. For MVB, the $RD_1$ equals the entire period, represented in days. To annualize the return rate, you need to divide the remaining days by 365. To calculate the periodic return rate, divide by the number of days of the period.
+where *n* = the number of cash flows in the reporting period, $CF_t$ = cash flow at time *t* within the period, and $RD_t$ = the number of remaining days within the period. For MVB, $RD$ equals the entire period, represented in days. To annualize the return rate, you need to divide the remaining days by 365. To calculate the periodic return rate (for the entire period), divide by the number of days of the period.
 
-Equation 1 closely resembles the calculation of Future Value. In Figure 1, assuming a 10% interest on your investments, the 1000 EUR capital will grow to 1331 EUR in three years. Additional cashflows of 500 EUR and 1000 EUR in the following years will result in 605 EUR and 1100 EUR respectively. The Future Value of the total investment will then be 3036 EUR in three years.
+Equation 1 closely resembles the calculation of Future Value. In Figure 1, assuming a 10% interest on your investments, the initial 1000 EUR capital will grow to 1331 EUR in three years. Additional cashflows of 500 EUR and 1000 EUR in the following years will result in 605 EUR and 1100 EUR respectively. The Future Value of the total investment will then be 3036 EUR in three years.
 
 Figure: Visualization of Future Value calculation.{class=pp-figure}
 
 ![](images/info-irr-future-value.svg) 
 
-Calculating IRR is in fact the inverse of calculating the future value (FV) of an investment. You don't know the interest rate or IRR, but you do know the MVB, the MVE, and the intermittent cashflows.
+Calculating IRR is in fact the inverse of calculating the future value (FV) of an investment. You don't know the interest rate or IRR, but you do know the MVB, the MVE, and the intermittent cashflows. According to Eq. 1 (assuming year as time unit):
 
-`3036 EUR = 1000 EUR x (1 + IRR)^3 + 500 EUR x (1 + IRR)^2 + 1000 EUR x (1 + IRR)`
+`3036 EUR = 1000 EUR x (1 + IRR)^3 + 500 EUR x (1 + IRR)^2 + 1000 EUR x (1 + IRR)^1`
 
 Since PP uses days as standard period, we need to divide the remaining number of days that the cash flow could influence the performance by 365 to obtain a decimal representation of the yearly period. $\mathrm{CF_t \times (1+IRR)^{\frac{RD_t}{365}}}$ is thus the expected future value of the cash flow CF at time *t* by the the end of the period with an annual interest rate = IRR. Please note that in the absence of any cash flows, Equation 1 resembles the simple return formula [MVE = MVB x (1 + r)](./index.md).
 
@@ -46,13 +46,13 @@ Figure: Graph of historical quotes and transactions of share-2. {class=pp-figure
 
 ![](images/info-irr-example-share-2.png)
 
-Assume that only the deposit (155 EUR) and the purchase of share-1 has taken place. However, as far as the investment unit *Portfolio* concerns, there is only one cash inflow of 155 EUR into a deposit account. The fact that a purchase is accomplished with this deposit is from a performance of the portfolio viewpoint irrelevant. The positive or negative impact of this choice will be obvious in the MVE.  The calculation of the IRR should be straightforward.
+Assume that *only*  two transactions have occurred: the deposit (155 EUR) and the purchase of `share-1`. However, from the perspective of the Portfolio, there is only one cash inflow of 155 EUR into a deposit account. Whether this deposit is used for a purchase is irrelevant in assessing the portfolio's performance. The positive or negative impact of this choice will be evident in the MVE. Calculating the IRR in this context should be straightforward.
 
 - MVB = 0 EUR at 2020-06-12. The period length is three years or 1095 days.
 - First cash inflow on January 15, 2021. This deposit will remain in the portfolio (be it as a purchase of share-1) for an additional 878 days until MVE at 2023-06-12.
 - MVE = 10 shares at quote 19.006 EUR; in total 190.06 EUR. The deposit account is empty.
 
-Plugging in these values into Equation 1 gives: `190 EUR = 0 EUR x (1+IRR)^1095/365 + 155 EUR x (1+IRR)^878/365` Since MVB = 0, we can derive the IRR directly: `IRR = (190.06/155)^(365/878) - 1` or 8.85%
+Plugging in these values into Equation 1 gives: `190 EUR = 0 EUR x (1+IRR)^1095/365 + 155 EUR x (1+IRR)^878/365` Since MVB = 0, we can derive the IRR directly: `IRR = (190.06/155)^(365/878) - 1` or 8.85%.
 
 In order to generate a MVE of 190.06 EUR, the initial cash flow CF1 of 155 EUR must grow at 8.85% per year for 2.41 years or 878 remaining days.
 
@@ -78,7 +78,7 @@ Figure: IRR-calculation for three buy-transactions. {class=pp-figure}
 ### Example 3: buy - dividend - sell transactions
 Whether dividend payments and selling securities should be considered as cash flows depends on the context. In demo-portfolio-03, the outcomes of dividend and selling transactions are deposited in a cash account, which is part of the portfolio. Consequently, there isn't any 'external' cash flow. For example, selling shares will decrease the security account of the portfolio but increase the deposit account. There isn't any cash flowing out of the portfolio. Note also that the cash account is included in the portfolio valuation at the end of the period (MVE), meaning that the value of MVE already incorporates dividends and sales. 
 
-If the dividend payment is "consumed" (you bought yourself a nice meal from it), resulting in an external cash flow (withdrawal), this transaction should be recorded in PP as a cash flow. Similarly, if you choose to reinvest the dividend or the proceeds from a sale, it necessitates recording a new transaction in PP.
+If the dividend payment is "consumed" (you bought yourself a coffee from it), resulting in an external cash flow (withdrawal), this transaction should be recorded in PP as a removal. Similarly, if you choose to reinvest the dividend or the proceeds from a sale, it necessitates recording a new transaction in PP.
 
 As evident in Figure 5, MVE comprises the paid dividend and the outcome of the sale transaction (both held in a deposit account), in addition to the valuation on the end date of the remaining shares from the portfolio. This aligns with what PP displays in the calculation tab.  The MVE is the total of all deposit and securities accounts.
 
@@ -88,27 +88,26 @@ Figure: IRR-calculation for buy-sell-dividend transactions. {class=pp-figure}
 
 If you should like to consider the dividend and sale as a cash flow, then you should change the transaction date to the holding period end date. Indeed, before the end date, these payments essentially remain dormant on the cash account, without actively contributing to the portfolio. As the number of remaining days in the period reaches zero, the formula will simplify to the face value of the dividend and sale.
 
-`155 x 1.2^(878/365) + 111.76 x 1.2^(514/365) + 67 * 1.2^(255/365) + 20 x 1.2^0 + 105 x 1.2^0 = MVE (but without dividend and sale)`
+`MVE = 426.82 = 155 x 1.2^(878/365) + 84 x 1.2^(514/365) + 67 x 1.2^(255/365)`
 
 ### Example 4: MVB > 0
 In the previous examples, all transactions took place within the reporting period. This isn't always the case. It is very important to distinguish the following cases:
 
-  + $CF_t$ occurs before the beginning of the reporting period (MVB date).  PP will calculate the value of $CF_t$ through historic quotes at time *t*. The holding period is the entire reporting period.
+  1. $CF_t$ occurs before the beginning of the reporting period (MVB date).  PP will calculate the value of $CF_t$ through historic quotes at time *t*. The market value of the investment at time *t* is used in the calculation, not the purchase value. The holding period is the entire reporting period.
 
-  + $CF_t$ occurs after the beginning but before the end of the reporting period. The value of $CF_t$ is known through the transaction data. The holding period is the number of remaining days from time *t* until the end of the reporting period.
+  2. $CF_t$ occurs after the beginning but before the end of the reporting period. The value of $CF_t$ is known through the transaction data. The holding period is the number of remaining days from time *t* until the end of the reporting period.
 
-  + $CF_t$ falls after the end of the reporting period. $CF_t$ does not contribute to MVE and is omitted from the calculation of IRR for that reporting period.
+  3. $CF_t$ falls after the end of the reporting period. $CF_t$ does not contribute to MVE and is omitted from the calculation of IRR for that reporting period.
 
- Consider a scenario where the holding period is only two years (from 2021-06-12 to 2023-06-12), or 730 days. Since the first buy of `share-1` occurs outside of this period (item 1 from above), the quoted price of `share-1` at the beginning of the period is used rather than the actual buying price.
+ Consider a scenario where the holding period is only *two* years (from 2021-06-12 to 2023-06-12), or 730 days. Since the first buy of `share-1` occurs outside of this period (item 1 from above), the quoted price of `share-1` at the beginning of the period is used rather than the actual buying price.
 
-- MVB = 177.94 EUR, representing 10 shares of `share-1` at the closing price of 17.794 EUR on June 11, 2021 (= the closing price from the day before the buying transaction).
+- MVB = 177.94 EUR, representing 10 shares of `share-1` at the closing price of 17.794 EUR on June 11, 2021 (= the closing price from the day before the start of the period).
 - Additional buys: two additional buys within the reporting period with respective remaining days of 514 and 255 days and known buying transaction price. Remember, the dividend and sale will be valuated at end date in the MVE.
 - MVE = 426.82 EUR, including 125 EUR on the cash account from dividend and sale.
 
 The resulting formula with IRR = 17.63% is:
 
-`177.94 x 1.18^(730/365) + 84 x 1.18^(514/365) + 67 x 1.18^(255/365)
-= MVE (including dividend and sale)`
+`MVE = 426.82 EUR = 177.94 x 1.18^(730/365) + 84 x 1.18^(514/365) + 67 x 1.18^(255/365)`
 
 Figure: IRR-calculation for a 2 year holding period (MVB > 0).{class=pp-figure}
 
@@ -117,15 +116,17 @@ Figure: IRR-calculation for a 2 year holding period (MVB > 0).{class=pp-figure}
 
 ## IRR at security level
 
-The value of IRR, calculated at portfolio level, doesn't say much about the performance of a specific security. For example, the IRR of demo-portfolio-03 (3 years reporting period) is 20.28% (see Figure 6). The security IRR of `share-2` is 112.53%. A glance at Figure 7 should make it evident why: the security is purchased at the lowest price of the entire period. You can obtain the IRR for each security separately using the menu `View > Reports > Securities`. The calculation closely resembles that of the portfolio. However, the following deviates from the portfolio calculation.
+The value of IRR, calculated at portfolio level, doesn't say much about the performance of a specific security. For example, the IRR of demo-portfolio-03 (3 years reporting period) is 20.28% (see Figure 6). The security IRR of `share-2` is 112.53% (see Figure 8 at the top). A quick look at Figure 4 should clarify why: the security is acquired at the lowest price throughout the entire period.
+
+You can obtain the IRR for each security separately using the menu `View > Reports > Securities`. The calculation closely resembles that of the portfolio. However, the following deviates from the portfolio calculation.
 
 Figure: IRR-calculation for individual securities.{class=pp-figure}
 
 ![](images/info-irr-calculation-securities.png)
 
-- The most appropriate cash flow to consider when calculating the security's IRR appears to be the debited amount of the transaction, which encompasses the gross value plus taxes and fees. However, it's important to note that taxes are excluded from the calculation of security IRR. This exclusion is justified as taxes are not directly associated with a specific security, they are imposed by the government (sometimes collected at later dates), and are beyond the investor's control. Unlike fees, which can be influenced to some extent, taxes cannot. Therefore, the cash flow to consider for the calculation is the debit note of the transaction minus taxes.
+- The most appropriate cash flow to consider when calculating the security's IRR appears to be the debited amount of the transaction, which encompasses the gross value plus taxes and fees. However, it's important to note that taxes are *excluded* from the calculation of security IRR. This exclusion is justified as taxes are not directly associated with a specific security, they are imposed by the government (sometimes collected at later dates), and are beyond the investor's control. Unlike fees, which can be influenced to some extent, taxes cannot. Therefore, the cash flow to consider for the security IRR calculation is the debit note of the transaction minus taxes.
 
-- In contrast to the Portfolio IRR, dividends and sale results are treated as leaving the portfolio at the transaction date in Security IRR calculations. Selling the security (at a good or bad time) and paying dividends will impact the performance of the security. As a result, deposit accounts are not included in the Security IRR calculation.
+- In contrast to the portfolio IRR, dividends and sale results are treated as a cashflows; leaving the "security" at the transaction date in Security IRR calculations. Selling the security (at a good or bad time) and paying dividends will impact the performance of the security. As a result, deposit accounts are *not* included in the Security IRR calculation.
 
 - With a multi-transaction security, the purchase price and value could be somewhat tricky to obtain. For instance, the remaining 10 shares of `share-1` are the outcome of two purchase transactions and one sell transaction. Following the FIFO principle (First In, First Out), these 10 shares consist of the 5 remaining shares from the first buy and the 5 shares from the second buy. This results in an average price of 15.50 EUR (see example 6).
 
