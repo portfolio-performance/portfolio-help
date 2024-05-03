@@ -34,18 +34,17 @@ Damit du dein Wertpapier-Portfolio mit *Portfolio Performance* verfolgen, bewert
 Die Portfolio-Datei enthält alle Wertpapiere, Konten, Depots, Buchungen, Klassifizierungen etc..
 
 - Du erstellst eine neue Portfolio-Datei und legst darin deine Depots und zugehörigen Verrechnungskonten an.
-- [mehr dazu...](intro-neue-portfoliodatei-anlegen.md)
+- [mehr dazu...](erste-schritte/intro-neue-portfoliodatei-anlegen.md)
 
 ### Wertpapiere anlegen
 
 - Du legst die für dich interessanten Wertpapiere in der Wertpapierliste an.
 - Stammdaten und historische Kursverläufe werden von *Portfolio Performance* automatisch ergänzt und aktualisiert.
-- [mehr dazu ...](intro-wertpapiere-anlegen.md)
-
+- [mehr dazu ...](erste-schritte/intro-wertpapiere-anlegen.md)
 ### Bestände aufbauen
 
 - Du befüllst Depot und Verrechnungskonto erstmalig mit Beständen und/oder historischen Transaktionen.
-- [mehr dazu ...](intro-bestaende-erstmalig-aufbauen.md)
+- [mehr dazu ...](erste-schritte/intro-bestaende-erstmalig-aufbauen.md)
 
 ### Berichte zur Vermögensaufstellung und Performance abrufen
 
@@ -67,11 +66,11 @@ Die Portfolio-Datei enthält alle Wertpapiere, Konten, Depots, Buchungen, Klassi
 
 ## Weiterführende Themen
 
-* [Installation](installation.md)
-* [Währungen](waehrungen.md)
-* [Konten anlegen](konten_anlegen.md)
-* [Kursdaten laden](kursdaten_laden.md)
-* [Buchungen erfassen](buchungen_erfassen.md)
+* [Installation](erste-schritte/installation.md)
+* [Währungen](how-to/waehrungen.md)
+* [Konten anlegen](how-to/konten_anlegen.md)
+* [Kursdaten laden](how-to/kursdaten_laden.md)
+* [Buchungen erfassen](how-to/buchungen_erfassen.md)
 
 ## Mithelfen...
 
