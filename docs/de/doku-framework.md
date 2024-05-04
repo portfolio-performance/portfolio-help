@@ -9,7 +9,7 @@ Die Dokumentation ist entlang zweier Achsen strukturiert: Theorie und Praxis sow
 ![](../images/doku-framework.svg)
 
 - [Erste Schritte](index.md)
-Wenn du neu in PP bist, wird dir dieses Kapitel den Einstieg erleichtern.
+Wenn du neu in Pürtfolio Performance bist, wird dir dieses Kapitel den Einstieg erleichtern.
 Es behandelt alles von der Installation über die Erstellung eines neuen Portfolios, den Import von Wertpapieren und Transaktionsdaten bis hin zur Auswertung Ihres gesamten Portfolios.
 
 - [Grundlagen](../grundlagen/index.md)
