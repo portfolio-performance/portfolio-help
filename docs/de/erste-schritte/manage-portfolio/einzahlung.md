@@ -16,7 +16,7 @@ Bitte beachten Sie, dass eine Einlage zu bestimmten Performance-Kennzahlen beitr
 
 # Umbuchung zwischen unterschiedlichen Währungen
 
-Du kannst Geld zwischen zwei Konten überweisen, unabhängig davon, ob sie dieselbe Währung haben oder nicht. In Fällen, in denen die Konten unterschiedliche Währungen haben (siehe Abbildung 2), schlägt PP automatisch einen Wechselkurs vor, der auf der [EZB-Website](https://data.ecb.europa.eu/currency-converter) basiert.
+Du kannst Geld zwischen zwei Konten überweisen, unabhängig davon, ob sie dieselbe Währung haben oder nicht. In Fällen, in denen die Konten unterschiedliche Währungen haben (siehe Abbildung 2), schlägt Portfolio Performance automatisch einen Wechselkurs vor, der auf der [EZB-Website](https://data.ecb.europa.eu/currency-converter) basiert.
 
 Abbildung: Umbuchung mit vorgeschlagenem EZB Wechselkurs.{class=align-center style="width:100%"}
 
