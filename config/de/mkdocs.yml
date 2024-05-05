@@ -144,6 +144,7 @@ nav:
             - Alle Wertpapiere: referenzhandbuch/ansichten/wertpapiere/alle-wertpapiere.md
             - Kontextmenü: referenzhandbuch/ansichten/wertpapiere/kontext-menue.md
           - Stammdaten:
+            - Stammdaten: referenzhandbuch/ansichten/stammdaten/index.md
             - Konten: referenzhandbuch/ansichten/stammdaten/konten.md
             - Depots: referenzhandbuch/ansichten/stammdaten/depots.md
             - Sparpläne: referenzhandbuch/ansichten/stammdaten/sparplaene.md
