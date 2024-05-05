@@ -54,7 +54,7 @@ Clicking on the first icon (crosshair) of the reporting period menu displays a l
  
 With the second icon (Measure distance) you can determine the exact number of days between two points on the chart. It also displays the difference in historical price and the corresponding percentage between the two points.
 
-Figure: Context menu of the graph.{class=align-right style="width:30%"}
+Figure: Context menu of the graph.{class=align-right style="width:20%"}
 
 ![](./images/mnu-all-securities-bottom-graph-context-menu.png)
 
@@ -66,7 +66,7 @@ Both options can also be accessed by the context menu (right-click on the graph)
 - Scroll up, down, left, right: navigate on the y-axis to the top (up) or bottom (down) or in the x-axis to an earlier time (left) or later time periods (right)
 - Save diagram: Allows you to save the graph as an image in PNG or JPG format.
 
-Figure: Context menu of the graph.{class=align-right style="width:30%"}
+Figure: Configure chart (gear icon).{class=align-right style="width:15%"}
 
 ![](./images/mnu-all-securities-bottom-graph-configuration.png)
 
@@ -80,7 +80,7 @@ With Configuration chart icon (gear at the top right) you set numerous additiona
 <span style="clear: both;"></span>
 
 - Market trend: An additional horizontal axis is displayed.
-    - Market trend: In addition to the standard horizontal axis that displays historical prices of the security, there is an extra horizontal axis intersecting the y-axis. This additional axis is positioned at the average market price for the selected reporting period. It provides a reference point, allowing you to compare individual prices on the graph to the average market price during the specified period. 
+    - Market trend line: An additional horizontal reference line is added to the graph, intersecting the Y-axis at the first quoted price of the selected reporting period. This line serves as a reference point, enabling you to compare individual prices on the graph to this initial quote. The area where the historical prices fall below the market trend line is lightly shaded, emphasizing the relatively poor performance compared to the first quoted price of the reporting period.
     - Market trend vs. Purchase Value: The additional horizontal axis intersects at the level of the purchase price of this security. 
 - Marking: Additional symbols can be incorporated onto the graph to convey specific information or highlight key data points.
     - Investments: Buy (delivery inbound) and sell (delivery outbound) transactions are marked by respectively a green up-pointing triangle and a red/orange down-pointing triangle.
