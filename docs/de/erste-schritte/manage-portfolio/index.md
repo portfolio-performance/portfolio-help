@@ -7,7 +7,7 @@ Wenn du die im Kapitel "Erste Schritte" beschriebenen Schritte befolgt hast, wir
 Es gibt drei mögliche Szenarien, die man in Betracht ziehen kann, wobei jedes seinen eigenen Ansatz hat. Am einfachsten ist es natürlich, ganz von vorne anzufangen.
 
 1. Du fängst bei Null an.
-   Du beginnst deine Investitionsreise mit einem leeren Portfolio. Neben elementaren strategischen Entscheidungen über Anlageziele, Risikotoleranz und Zeithorizont musst du deinen Broker oder deine Bank beauftragen, einige Wertpapiere zu erwerben. Anschließend kannst du diese Transaktionen in PP eingeben.
+   Du beginnst deine Investitionsreise mit einem leeren Portfolio. Neben elementaren strategischen Entscheidungen über Anlageziele, Risikotoleranz und Zeithorizont musst du deinen Broker oder deine Bank beauftragen, einige Wertpapiere zu erwerben. Anschließend kannst du diese Transaktionen in Portfolio Performanceeingeben.
 
 2. Rekonstruktion deines aktuellen Portfolios auf der  Grundlage früherer Transaktionen.
     Du hast bereits einige Investitionen in der (fernen) Vergangenheit getätigt, daher musst du dein aktuelles Portfolio auf der Grundlage von früheren Broker- oder Bankauszügen rekonstruieren. Wahrscheinlich benötigst du einige Finanzdaten, z. B. historische Kurse oder Fusionsdaten. Je nachdem, wie weit du zurückgehen möchtest, kann dies eine sehr anspruchsvolle Aufgabe werden.

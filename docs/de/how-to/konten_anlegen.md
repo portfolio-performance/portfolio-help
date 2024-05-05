@@ -18,7 +18,11 @@ Im ersten Schritt ist es ratsam, Spalten unter Stammdaten – Konten anzulegen, 
 
 Dazu unter "Allgemeine Daten – Einstellungen" auf den Reiter "Attribute: Konten" klicken.
 
-<a href="../images/assets/accounts/manage_attributes.png"><img alt="Allgemeine Date - Einstellungen - Attribute: Konten" src="../images/assets/accounts/manage_attributes.png" width="670" style="max-width: 670px;" class="screenshot"/></a>
+
+Abbildung: Individuelle Attribute.{class=align-center style="width:90%"}
+
+![](images/manage_attributes.png)
+
 
 Linksklick auf das Pluszeichen rechts oben im Fenster und aus der Liste der angebotenen Optionen die gewünschten Attribute hinzufügen.
 
@@ -51,13 +55,18 @@ Durch einen Doppelklick auf ein Feld lassen sich die gewünschten Daten (Kontoar
 
 In diesem Beispiel sieht, dass dann wie folgt aus:
 
-<a href="../images/assets/accounts/account_list.png"><img alt="Stammdaten - Konten" src="../images/assets/accounts/account_list.png" width="670" style="max-width: 670px;" class="screenshot"/></a>
+Abbildung: Stammdaten - Konten.{class=align-center style="width:90%"}
+
+![](images/account_list.png)
 
 Eine Spaltensortierung durch Anklicken des Spaltennamens (z. B. Kontoart, Zinssatz, Fälligkeit, Anzahl Tage bis zur Fälligkeit etc.) erstellt so eine einfache Übersicht absteigend nach Zinssatz oder Fälligkeit.
 
 Buchungen können auf diesen Konten über einen Rechtsklick auf das entsprechende Konto vorgenommen werden oder über den Import von PDF oder CSV Dateien.
 
-<a href="../images/assets/accounts/account_list_context_menu.png"><img alt="Stammdaten - Konten - Kontextmenü" src="../images/assets/accounts/account_list_context_menu.png" width="670" style="max-width: 670px;" class="screenshot"/></a>
+
+Abbildung: Konto - Kontextmenü.{class=align-center style="width:90%"}
+
+![](images/account_list_context_menu.png)
 
 Sofern es sich um ein Depotverrechnungskonto handelt, muss es unter "Stammdaten – Depots" in der Spalte "Referenzkonto" einem Depot noch zugeordnet werden.
 
