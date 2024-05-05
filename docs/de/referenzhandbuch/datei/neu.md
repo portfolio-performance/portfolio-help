@@ -1,5 +1,6 @@
 ---
 title: Datei > Neu
+todo: Wertpapier, Kryptowährung, Wechselkurs, Verbraucherpreisindex, Klassifizierung, Watchliste beschreiben
 ---
 # Datei &#10095; Neu
 
