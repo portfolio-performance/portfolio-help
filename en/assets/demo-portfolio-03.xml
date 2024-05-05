@@ -2772,8 +2772,10 @@
         <price t="2024-04-26" v="2185000000"/>
         <price t="2024-04-29" v="2179000000"/>
         <price t="2024-04-30" v="2149000000"/>
+        <price t="2024-05-02" v="2173000000"/>
+        <price t="2024-05-03" v="2166000000"/>
       </prices>
-      <latest t="2024-04-30" v="2149000000">
+      <latest t="2024-05-03" v="2166000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3963,8 +3965,10 @@
         <price t="2024-04-26" v="1261000000"/>
         <price t="2024-04-29" v="1255000000"/>
         <price t="2024-04-30" v="1241000000"/>
+        <price t="2024-05-02" v="1243500000"/>
+        <price t="2024-05-03" v="1241500000"/>
       </prices>
-      <latest t="2024-04-30" v="1241000000">
+      <latest t="2024-05-03" v="1241500000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -4499,7 +4503,7 @@
             <config>
               <uuid>3580a087-a144-41e6-b45e-351eb5535064</uuid>
               <name>Standard</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;name&quot;,&quot;width&quot;:121},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:196},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:184},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:75},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:104},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;sortDirection&quot;:1024,&quot;width&quot;:118},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:145},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:66},{&quot;id&quot;:&quot;twror&quot;,&quot;width&quot;:123},{&quot;id&quot;:&quot;izf&quot;,&quot;width&quot;:128},{&quot;id&quot;:&quot;delta&quot;,&quot;width&quot;:105}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;name&quot;,&quot;sortDirection&quot;:128,&quot;width&quot;:121},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:220},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:184},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:75},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:104},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:118},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:145},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:66},{&quot;id&quot;:&quot;twror&quot;,&quot;width&quot;:123},{&quot;id&quot;:&quot;izf&quot;,&quot;width&quot;:128},{&quot;id&quot;:&quot;delta&quot;,&quot;width&quot;:105}]}</data>
             </config>
           </configurations>
         </config-set>
@@ -4511,7 +4515,7 @@
             <config>
               <uuid>7600e16d-0168-49d1-aadb-18c66a64bc8f</uuid>
               <name>Standard</name>
-              <data>Client-totals;#ff8000;SOLID;false;2</data>
+              <data>Security0152978e-2ea2-436f-b07a-0333b988ea8b;#e279a6;SOLID;false;2,[b]Security0152978e-2ea2-436f-b07a-0333b988ea8b;#a079e2;SOLID;false;2</data>
             </config>
           </configurations>
         </config-set>

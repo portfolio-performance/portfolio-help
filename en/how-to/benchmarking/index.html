@@ -2965,6 +2965,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#comparing-to-the-benchmark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparing to the benchmark
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3085,6 +3094,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#comparing-to-the-benchmark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparing to the benchmark
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3127,7 +3145,15 @@
 <li>Within the configuration options, you can add or remove <code>time series</code> and <code>benchmarks</code>.</li>
 <li>It's important to note that securities must have a market value, meaning they have been purchased, in order to be used as a time series. Benchmarks only require historical prices. Since we cannot buy stock of an index, we need to use the benchmark option for it.</li>
 </ol>
-<p>Please take note that the historical prices for the displayed securities differ notably: roughly 5000 USD for the S&amp;P index, and approximately 500 USD for both the iShares ETF and Vanguard index fund. Despite this discrepancy, the curves overlap, indicating that the vertical value axis of the graph is represented in percentages (not USD). This percentage is calculated from the initial historical price of March 10, 2014 for each benchmark separately.</p>
+<p>Please take note that the historical prices for the displayed securities differ notably: roughly 5000 USD for the S&amp;P index, and approximately 500 USD for both the iShares ETF and Vanguard index fund. Despite this discrepancy, the curves overlap, indicating that the vertical value axis of the graph represents the performance (not USD). The chart is indeed a performance chart.</p>
+<h2 id="comparing-to-the-benchmark">Comparing to the benchmark</h2>
+<p>Naturally, you'd want to compare the performance of your portfolio or that of an individual security against one of the benchmarks. You may also wish to evaluate your track record of buying and selling by comparing it with the unbiased historical prices of a specific security.</p>
+<p>Figure 2 compares the performance of <code>Share-1 (Benchmark)</code> with the <code>actual Share-1</code> in the portfolio. See above for adding both indices to the performance chart. The reporting period spans 3 years, commencing from May 5, 2021.</p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Benchmark of SP 500 index with two replicating funds. </figcaption><img alt="" src="../images/benchmark-chart-share-1.png"></figure></p>
+<p>The historical price of share-1 was 16.412 EUR/share on 2021-05-05. Therefore, the Market Value Begin (MVB) for the <code>actual share-1</code> is 164.12 EUR (10 shares) and for the benchmark, it is 16.412 EUR (1 share). You can always export the performance chart as <a href="../../concepts/performance/time-weighted/#exporting-data-from-pp">CSV-file</a> to obtain precise numerical data.</p>
+<p>After some initial fluctuation, the quote price dropped to 16.026 EUR/share on 2022-01-13 (the day before the second purchase). Using <a href="../../concepts/performance/time-weighted/">Equation 1</a> of the section on Time-Weighted Rate of Return, this results in a performance of - 2.35% for both indices.</p>
+<p>From that point onwards, the two indices begin to diverge. The benchmark solely utilizes historical prices, while the performance of the <code>actual Share-1</code> takes into account both inbound and outbound transfers. For instance, on January 14, 2022 (date of purchase), the quoted price was 15.962 EUR/share. Consequently, the daily performance of the benchmark was calculated as 15.962/16.026 = -0.40%, leading to a cumulative performance of -2.74%. Meanwhile, the daily performance of the <code>actual Share-1</code> was calculated as follows: MVB = 10 x 16.026 = 160.26 EUR; MVE = 15 x 15.962 = 239.43 EUR. The purchase value of 5 additional shares was 83 EUR (inclusive of 3 EUR in fees). According to <a href="../../concepts/performance/time-weighted/">Equation 1</a> of Time-Weighted Rate of Return, the daily performance of the actual share-1 is -1.57% (versus -0.40% for the benchmark), giving a cumulative performance of -3.89%.</p>
+<p>The most significant divergence occurs when a dividend is paid on December 15, 2022. The performance of the actual Share-1 benefits from this additional outbound transfer, resulting in a significant increase in the daily performance of around 9%.</p>
 
 
 
