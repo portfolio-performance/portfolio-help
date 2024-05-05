@@ -29,4 +29,25 @@ To display a graph similar to Figure 1, follow these steps:
 3. Within the configuration options, you can add or remove `time series` and `benchmarks`.
 4. It's important to note that securities must have a market value, meaning they have been purchased, in order to be used as a time series. Benchmarks only require historical prices. Since we cannot buy stock of an index, we need to use the benchmark option for it.
 
-Please take note that the historical prices for the displayed securities differ notably: roughly 5000 USD for the S&P index, and approximately 500 USD for both the iShares ETF and Vanguard index fund. Despite this discrepancy, the curves overlap, indicating that the vertical value axis of the graph is represented in percentages (not USD). This percentage is calculated from the initial historical price of March 10, 2014 for each benchmark separately.
+Please take note that the historical prices for the displayed securities differ notably: roughly 5000 USD for the S&P index, and approximately 500 USD for both the iShares ETF and Vanguard index fund. Despite this discrepancy, the curves overlap, indicating that the vertical value axis of the graph represents the performance (not USD). The chart is indeed a performance chart.
+
+## Comparing to the benchmark
+
+Naturally, you'd want to compare the performance of your portfolio or that of an individual security against one of the benchmarks. You may also wish to evaluate your track record of buying and selling by comparing it with the unbiased historical prices of a specific security.
+
+Figure 2 compares the performance of `Share-1 (Benchmark)` with the `actual Share-1` in the portfolio. See above for adding both indices to the performance chart. The reporting period spans 3 years, commencing from May 5, 2021.
+
+Figure: Benchmark of SP 500 index with two replicating funds. {class=pp-figure}
+
+![](images/benchmark-chart-share-1.png)
+
+
+The historical price of share-1 was 16.412 EUR/share on 2021-05-05. Therefore, the Market Value Begin (MVB) for the `actual share-1` is 164.12 EUR (10 shares) and for the benchmark, it is 16.412 EUR (1 share). You can always export the performance chart as [CSV-file](../concepts/performance/time-weighted.md#exporting-data-from-pp) to obtain precise numerical data.
+
+After some initial fluctuation, the quote price dropped to 16.026 EUR/share on 2022-01-13 (the day before the second purchase). Using [Equation 1](../concepts/performance/time-weighted.md) of the section on Time-Weighted Rate of Return, this results in a performance of - 2.35% for both indices.
+
+From that point onwards, the two indices begin to diverge. The benchmark solely utilizes historical prices, while the performance of the `actual Share-1` takes into account both inbound and outbound transfers. For instance, on January 14, 2022 (date of purchase), the quoted price was 15.962 EUR/share. Consequently, the daily performance of the benchmark was calculated as 15.962/16.026 = -0.40%, leading to a cumulative performance of -2.74%. Meanwhile, the daily performance of the `actual Share-1` was calculated as follows: MVB = 10 x 16.026 = 160.26 EUR; MVE = 15 x 15.962 = 239.43 EUR. The purchase value of 5 additional shares was 83 EUR (inclusive of 3 EUR in fees). According to [Equation 1](../concepts/performance/time-weighted.md) of Time-Weighted Rate of Return, the daily performance of the actual share-1 is -1.57% (versus -0.40% for the benchmark), giving a cumulative performance of -3.89%.
+
+The most significant divergence occurs when a dividend is paid on December 15, 2022. The performance of the actual Share-1 benefits from this additional outbound transfer, resulting in a significant increase in the daily performance of around 9%.
+
+

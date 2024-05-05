@@ -1,4 +1,4 @@
-#Tue Apr 30 14:56:14 CEST 2024
+#Sun May 05 18:33:51 CEST 2024
 SecurityEventsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:120},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:300}]}
 StatementOfAssetsView-newsash=420
 PerformanceView@2Earnings={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:100},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:250},{"id"\:"6","width"\:100},{"id"\:"7","width"\:100},{"id"\:"note","width"\:200}]}
@@ -17,13 +17,13 @@ PerformanceChartView-PICKER$picked=7600e16d-0168-49d1-aadb-18c66a64bc8f
 PerformanceView@byaccounts2={"items"\:[{"id"\:"0","width"\:400},{"id"\:"1","width"\:80},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80}]}
 TransactionsTab@v3={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:185},{"id"\:"1","width"\:150},{"id"\:"2","width"\:250},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:120},{"id"\:"9","width"\:200}]}
 TradeDetailsView-newsash=200
-SecurityPriceChartPane=Y1
+SecurityPriceChartPane=Y3
 SettingsView-newsash=200
 StatementOfAssetsHistoryView-PICKER$picked=ec4dc660-8854-43ad-80d4-31584fe10e19
 BookmarksListTab@bottom={"items"\:[{"id"\:"0","width"\:150},{"id"\:"1","width"\:500}]}
 IMPORT_NOTESPortfolio\ Transactions=true
 performance-chart-aggregation-period=
-PerformanceChartView-newsash=-21
+PerformanceChartView-newsash=348
 ReturnsVolatilityChartView-PICKER$picked=6c2d3073-1d95-4f1f-b51f-03dfac0891dd
 HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:237},{"id"\:"1","width"\:152}]}
 StatementOfAssetsHistoryView-newsash=295
@@ -39,7 +39,7 @@ SecuritiesPerformanceView-newsash=495
 CSV_IMPORT_PATH=D\:\\tmp
 DashboardView-newsash=-200
 AccountListView-newsash=538
-SecurityListView-newsash=250
+SecurityListView-newsash=568
 AttributeListTab@v2={"items"\:[{"id"\:"0","width"\:250},{"id"\:"1","width"\:150},{"id"\:"2","width"\:150},{"id"\:"3","width"\:100}]}
 SecuritiesPerformanceView@trades@SINGLE_SECURITY={"items"\:[{"id"\:"start","sortDirection"\:1024,"width"\:155},{"id"\:"end","width"\:153},{"id"\:"tx","width"\:156},{"id"\:"shares","width"\:114},{"id"\:"entryvalue","width"\:145},{"id"\:"exitvalue","width"\:143},{"id"\:"pl","width"\:136},{"id"\:"gpl","width"\:172},{"id"\:"holdingperiod","width"\:203},{"id"\:"irr","width"\:101}]}
 HoldingsPieChartView-newsash=-200
