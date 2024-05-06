@@ -1,0 +1,61 @@
+
+.screenshot {
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(0, 0, 0, 0.05);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 10px;
+}
+
+.hidden {
+	display: none;
+ }
+
+ /* code box ``` code ``` will have a larger height */
+.md-typeset pre > code {
+    max-height: 15rem;
+}
+
+/* sets the default figure caption to larger width; so that wrapping will less occur */
+.md-typeset figcaption{
+	text-align: left;
+	margin: 0;
+	max-width: 40rem;
+}
+
+/* add {class=pp-figure} in markdown */
+figure.pp-figure {
+	margin: 0; 
+}
+
+/* add {class=align-left} in markdown */
+figure.align-left {
+	float: left;
+	margin-top: 0;
+	margin-right: 10px;
+	width: 30%;
+ }
+
+/* add {class=align-right} in markdown */ 
+figure.align-right {
+	float: right;
+	margin-top: 0;
+	margin-left: 10px;
+	width: 30%;
+ }
+
+ /* makes caption small font */ 
+ .align-right .align-left figcaption {
+	text-align: left;
+	margin-left: 0px;
+    font-size:small;
+ }
+
+
+ 
+
+
+
+
