@@ -30,11 +30,33 @@ figure.align-right {
 	width: 30%;
  }
 
+ figure.align-right-all {
+	float: right;
+	margin-top: 0;
+	margin-left: 10px;
+	width: 30%;
+	text-align: left;
+	margin-left: 0px;
+    font-size:small;
+	clear: both;
+ }
+
  figure.align-left {
 	float: left;
 	margin-top: 0;
 	margin-left: 10px;
 	width: 30%;
+ }
+
+ figure.align-left-all {
+	float: left;
+	margin-top: 0;
+	margin-left: 10px;
+	width: 30%;
+	text-align: left;
+	margin-left: 0px;
+ 	font-size:small;
+	clear: both;
  }
 
  .align-right figcaption {
@@ -47,6 +69,12 @@ figure.align-right {
 	text-align: right;
 	margin-left: 0px;
     font-size:small;
+ }
+
+ .align-center figcaption {
+	text-align: left;
+	margin-left: 0px;
+	font-size:small;
  }
 
  .md-typeset pre > code {
