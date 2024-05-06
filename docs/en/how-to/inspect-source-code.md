@@ -12,7 +12,7 @@ The performance dashboard (View > Reports > Performance) displays several indice
 
 Upon trying this on your portfolio, you get different results. So, you decide to inspect the source code.
 
-1. Navigate to the GitHub source code: https://github.com/portfolio-performance/portfolio. The software is written in Java and structured in several modules.
+1. Navigate to the GitHub source code: [https://github.com/portfolio-performance/portfolio](https://github.com/portfolio-performance/portfolio). The software is written in Java and structured in several modules.
 2. Use the search bar at the very top of the window to search in the repository: `portfolio-performance/portfolio`. Enter a relevant search term, such as "volatility," to find the source code where this term is mentioned. Scroll through the different modules to get the feeling. It will be rather evident why `volatility` appears in these modules.
 
     Figure: Result of the Saerch 'Volatility' in the github repo of PP. {class=pp-figure}
