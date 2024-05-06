@@ -2774,8 +2774,9 @@
         <price t="2024-04-30" v="2149000000"/>
         <price t="2024-05-02" v="2173000000"/>
         <price t="2024-05-03" v="2166000000"/>
+        <price t="2024-05-06" v="2162000000"/>
       </prices>
-      <latest t="2024-05-03" v="2166000000">
+      <latest t="2024-05-06" v="2162000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3967,8 +3968,9 @@
         <price t="2024-04-30" v="1241000000"/>
         <price t="2024-05-02" v="1243500000"/>
         <price t="2024-05-03" v="1241500000"/>
+        <price t="2024-05-06" v="1242500000"/>
       </prices>
-      <latest t="2024-05-03" v="1241500000">
+      <latest t="2024-05-06" v="1242500000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -4313,6 +4315,55 @@
         </column>
       </columns>
     </dashboard>
+    <dashboard name="Benchmark">
+      <columns>
+        <column>
+          <weight>1</weight>
+          <widgets>
+            <widget type="CHART">
+              <label>Performance Chart</label>
+              <configuration>
+                <entry>
+                  <string>CONFIG_UUID</string>
+                  <string>69cff468-3eb7-413a-aa63-51726c5415e5</string>
+                </entry>
+                <entry>
+                  <string>HEIGHT</string>
+                  <string>420</string>
+                </entry>
+              </configuration>
+            </widget>
+          </widgets>
+        </column>
+        <column>
+          <weight>1</weight>
+          <widgets>
+            <widget type="TTWROR">
+              <label>True Time-Weighted Rate of Return (cumulative), share-1 (Benchmark)</label>
+              <configuration>
+                <entry>
+                  <string>DATA_SERIES</string>
+                  <string>[b]Security0152978e-2ea2-436f-b07a-0333b988ea8b</string>
+                </entry>
+              </configuration>
+            </widget>
+            <widget type="TTWROR">
+              <label>True Time-Weighted Rate of Return (cumulative), share-1</label>
+              <configuration>
+                <entry>
+                  <string>DATA_SERIES</string>
+                  <string>Security0152978e-2ea2-436f-b07a-0333b988ea8b</string>
+                </entry>
+              </configuration>
+            </widget>
+            <widget type="CALCULATION">
+              <label>Performance Calculation</label>
+              <configuration/>
+            </widget>
+          </widgets>
+        </column>
+      </columns>
+    </dashboard>
   </dashboards>
   <properties>
     <entry>
@@ -4516,6 +4567,11 @@
               <uuid>7600e16d-0168-49d1-aadb-18c66a64bc8f</uuid>
               <name>Standard</name>
               <data>Security0152978e-2ea2-436f-b07a-0333b988ea8b;#e279a6;SOLID;false;2,[b]Security0152978e-2ea2-436f-b07a-0333b988ea8b;#a079e2;SOLID;false;2</data>
+            </config>
+            <config>
+              <uuid>69cff468-3eb7-413a-aa63-51726c5415e5</uuid>
+              <name>benchmark</name>
+              <data>Security0152978e-2ea2-436f-b07a-0333b988ea8b;#e279a6;SOLID;false;2,[b]Security0152978e-2ea2-436f-b07a-0333b988ea8b;#00ff40;SOLID;false;2</data>
             </config>
           </configurations>
         </config-set>
