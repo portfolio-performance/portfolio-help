@@ -1,5 +1,5 @@
 ---
-title: Securitu context menu
+title: Security context menu
 ---
 
 Figure: Context menu of a selected security.{class=align-right style="width:30%"}
