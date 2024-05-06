@@ -30,8 +30,21 @@ figure.align-right {
 	width: 30%;
  }
 
+ figure.align-left {
+	float: left;
+	margin-top: 0;
+	margin-left: 10px;
+	width: 30%;
+ }
+
  .align-right figcaption {
 	text-align: left;
+	margin-left: 0px;
+    font-size:small;
+ }
+
+ .align-left figcaption {
+	text-align: right;
 	margin-left: 0px;
     font-size:small;
  }
