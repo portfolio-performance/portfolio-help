@@ -35,7 +35,7 @@ Please take note that the historical prices for the displayed securities differ 
 
 Naturally, you'd want to compare the performance of your portfolio or that of an individual security against one of the benchmarks. You may also wish to evaluate your track record of buying and selling by comparing it with the unbiased historical prices of a specific security.
 
-Figure 2 compares the performance of `Share-1 (Benchmark)` with the `actual Share-1` in the portfolio. See above for adding both indices to the performance chart. The reporting period spans 3 years, commencing from May 5, 2021.
+Figure 2 compares the performance of `Share-1 (Benchmark)` with the `actual Share-1` in the portfolio in the main pane. See above for adding both indices to the performance chart. The information pane contains the chart of `share-1` with the buy, dividend, and sell transaction indicated. The reporting period spans 3 years for both panes, commencing from May 5, 2021. 
 
 Figure: Benchmark of SP 500 index with two replicating funds. {class=pp-figure}
 
@@ -49,5 +49,11 @@ After some initial fluctuation, the quote price dropped to 16.026 EUR/share on 2
 From that point onwards, the two indices begin to diverge. The benchmark solely utilizes historical prices, while the performance of the `actual Share-1` takes into account both inbound and outbound transfers. For instance, on January 14, 2022 (date of purchase), the quoted price was 15.962 EUR/share. Consequently, the daily performance of the benchmark was calculated as 15.962/16.026 = -0.40%, leading to a cumulative performance of -2.74%. Meanwhile, the daily performance of the `actual Share-1` was calculated as follows: MVB = 10 x 16.026 = 160.26 EUR; MVE = 15 x 15.962 = 239.43 EUR. The purchase value of 5 additional shares was 83 EUR (inclusive of 3 EUR in fees). According to [Equation 1](../concepts/performance/time-weighted.md) of Time-Weighted Rate of Return, the daily performance of the actual share-1 is -1.57% (versus -0.40% for the benchmark), giving a cumulative performance of -3.89%.
 
 The most significant divergence occurs when a dividend is paid on December 15, 2022. The performance of the actual Share-1 benefits from this additional outbound transfer, resulting in a significant increase in the daily performance of around 9%.
+
+As discussed above, the numerical values of both indices can be retrieved from the CSV-file. The [View > Report > Securities](../reference/view/reports/performance/securities.md) table, however, does not contain the `share-1 (Benchmark)` info because no transactions are associated with it. It is possible to display the performance graph and the TTWROR value of the benchmark as a [widget](../reference/view/reports/performance/index.md#performance-widgets).
+
+Figure: Dashboard with performance chart and TTWROR widgets. {class=pp-figure}
+
+![](images/benchmark-widget.png)
 
 
