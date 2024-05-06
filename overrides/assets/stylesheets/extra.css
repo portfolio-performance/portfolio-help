@@ -13,16 +13,32 @@
 	display: none;
  }
 
-figure.pp-figure {
-	margin: 0; 
+ /* code box ``` code ``` will have a larger height */
+.md-typeset pre > code {
+    max-height: 15rem;
 }
 
+/* sets the default figure caption to larger width; so that wrapping will less occur */
 .md-typeset figcaption{
 	text-align: left;
 	margin: 0;
 	max-width: 40rem;
 }
 
+/* add {class=pp-figure} in markdown */
+figure.pp-figure {
+	margin: 0; 
+}
+
+/* add {class=align-left} in markdown */
+figure.align-left {
+	float: left;
+	margin-top: 0;
+	margin-right: 10px;
+	width: 30%;
+ }
+
+/* add {class=align-right} in markdown */ 
 figure.align-right {
 	float: right;
 	margin-top: 0;
@@ -30,14 +46,16 @@ figure.align-right {
 	width: 30%;
  }
 
- .align-right figcaption {
+ /* makes caption small font */ 
+ .align-right .align-left figcaption {
 	text-align: left;
 	margin-left: 0px;
     font-size:small;
  }
 
- .md-typeset pre > code {
-    max-height: 15rem;
-}
+
+ 
+
+
 
 

@@ -50,7 +50,7 @@ From that point onwards, the two indices begin to diverge. The benchmark solely 
 
 The most significant divergence occurs when a dividend is paid on December 15, 2022. The performance of the actual Share-1 benefits from this additional outbound transfer, resulting in a significant increase in the daily performance of around 9%.
 
-As discussed above, the numerical values of both indices can be retrieved from the CSV-file. The [View > Report > Securities](../reference/view/reports/performance/securities.md) table, however, does not contain the `share-1 (Benchmark)` info because no transactions are associated with it. It is possible to display the performance graph and the TTWROR value of the benchmark as a [widget](../reference/view/reports/performance/index.md#performance-widgets).
+As previously mentioned, the numerical values for both indices can be obtained from the CSV file. However, the Securities table under [View > Report > Securities](../reference/view/reports/performance/securities.md) does not include information on `share-1 (Benchmark)` due to the absence of associated transactions. Nevertheless, it is feasible to present the benchmark's performance graph and the TTWROR value as a widget.
 
 Figure: Dashboard with performance chart and TTWROR widgets. {class=pp-figure}
 

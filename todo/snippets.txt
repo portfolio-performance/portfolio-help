@@ -1,9 +1,5 @@
-<figure class="inline end" markdown>
-  ![](images/transaction-types.png)
-  <figcaption>Figure 1: Transaction menu</figcaption>
-</figure>
-
-To align right use the following code
+*Figure*
+To align right and set size use the following code
 
 Figure: Context menu of the bookmarks page.{class=align-right style="width:50%"}
 
@@ -11,6 +7,12 @@ Figure: Context menu of the bookmarks page.{class=align-right style="width:50%"}
 
 You can overrule the default width =30% 
 
+*Adding clear*
+<br style="clear:both;">
+
+Text will continu below the left or right aligned figure
+
+*Color text*
 <span style="color:blue">some *blue* text</span>.
 
 
