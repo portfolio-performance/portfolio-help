@@ -3039,13 +3039,16 @@
 <p>Absolute performance: a performance measure that assesses the overall gain or loss of an investment over a specific period; = (Market value at end of period + Sell/outbound deliveries + Dividends) - (Taxes + Fees + Initial valuation + Buy/inbound deliveries). Synonym: total return.</p>
 </li>
 <li>
+<p>Account: Repository or container for storing financial information, such as cash transactions.</p>
+</li>
+<li>
 <p>Actual # quotes: the number of quotes in the historic prices list of a security.</p>
 </li>
 <li>
 <p>Amount: The Gross Amount of a transaction or the total amount of money before any taxes and fees.</p>
 </li>
 <li>
-<p>Buy: transaction resulting in the acquisition of securities, where cash is withdrawn from a deposit account to purchase the desired stocks.</p>
+<p>Buy: transaction resulting in the acquisition of securities, where cash is withdrawn from a deposit account to purchase the desired stock.</p>
 </li>
 <li>
 <p>Change in Price (period): the difference in historic quotes between the last and first quote of a specified time span, expressed as a percentage. The period may be denoted in years (e.g., 1 year, 2 years, 3 years) or as a date range (From yyyy-mm-dd to yyyy-mm-dd). If the duration is in years, the last date is today, and the first date is today minus x years.</p>
@@ -3084,6 +3087,12 @@
 <p>Delivery (Outbound): a transaction where shares of a security are removed from the security account without a resulting deposit in a cash account (comparable to a sell without a deposit).</p>
 </li>
 <li>
+<p>Deposit: Putting money in a deposit or cash account.</p>
+</li>
+<li>
+<p>Deposit account: Repository or container for storing deposit/withdrawals and balances. Also named <code>Cash account</code>.</p>
+</li>
+<li>
 <p>Distance to SMA (days): a metric that measures the difference between the current price (quote) of a share and the average price of that share over a specified number of past days (5, 20, 30, 38, 50, 90, 100, or 200 days), expressed as a percentage. The acronym "SMA" stands for "Simple Moving Average". For example, the average price of security for the last 5 daily quotes is (100 + 98 + 99 + 97 + 96)/5 = 98. The Distance to SMA (5 days) is (100-98)/98 = 2.04%.  </p>
 </li>
 <li>
@@ -3108,6 +3117,9 @@
 <p>Fees: Costs imposed by a service provider or intermediary for facilitating a transaction.</p>
 </li>
 <li>
+<p>Gross Amount: Utilized when importing data, indicating the overall worth of a transaction, exclusive of fees and taxes. Gross Amount = shares x quote price or Value - fees - taxes. Also referred to as the <code>Amount</code> within the <code>All Transactions</code> view. This terminology may seem counterintuitive, as traditionally the gross value of an entity (such as your salary) is inclusive of taxes.</p>
+</li>
+<li>
 <p>Inactive: A security can be set to active or inactive. If set to inactive, the security will not appear in buy or sell dialogs, and historical prices will not be updated automatically.</p>
 </li>
 <li>
@@ -3117,10 +3129,16 @@
 <p>Latest Quote: the most recent quote of a security. You can refresh these values to the latest information using the menu option <code>Online &gt; Update Quotes</code>.</p>
 </li>
 <li>
+<p>Maximum Drawdown: Refers to the largest peak-to-trough decline in the performance of a portfolio or investment over a specific period, typically expressed as a percentage. It measures the extent of loss incurred from the highest point to the lowest point before a new peak is reached.</p>
+</li>
+<li>
+<p>Maximum Drawdown Duration: The worst or longest amount of time an investment has been between peaks.</p>
+</li>
+<li>
 <p>Name: the full name of the security according to the data source (see below) from which it is retrieved, e.g. Yahoo Finance.</p>
 </li>
 <li>
-<p>Net Transaction value: the total sum of costs of a transaction, including the taxes and fees.</p>
+<p>Net Transaction value: the total sum of costs of a transaction, including the taxes and fees. This terminology may seem counterintuitive, as traditionally the net value of an entity (such as your salary) excludes taxes. (Net) Transaction Value = Gross Amount + Fees + Taxes. Also referred to as <code>Value</code> or <code>Debit Note</code> in the Buy transaction input form.</p>
 </li>
 <li>
 <p>Note: Each security and transaction can be accompanied by a note for additional information or context.</p>
@@ -3144,10 +3162,22 @@
 <p>Rate of return: the percentage change in the value of an asset over a given period of time.</p>
 </li>
 <li>
+<p>Removal: Also named Withdrawal. Taking money out of a deposit account.</p>
+</li>
+<li>
+<p>Risk: Refers to the possibility of losing some or all of the invested capital or not achieving the expected return from your investment.</p>
+</li>
+<li>
 <p>Security: A tradable financial asset such as stock, bonds, bitcoin, gold, ...</p>
 </li>
 <li>
+<p>Security account: Repository or container for storing securities.</p>
+</li>
+<li>
 <p>Sell: transaction resulting in the removal of securities, and where cash is deposited in a deposit account as the equivalent value of the securities. </p>
+</li>
+<li>
+<p>Semivariance: The variance of the negative fluctuations of an investment.</p>
 </li>
 <li>
 <p>Source: data source used in <code>File &gt; New Security</code> Search. Possible source are: <a href="https://finance.yahoo.com/">Yahoo Finance</a> provides financial news and data including stock quotes, press releases, and financial reports. <a href="https://www.coingecko.com/">CoinGecko</a> is a website with real-time information on most cryptocurrencies. <a href="https://www.portfolio-report.net/search">Portfolio Report</a> is an open source project that aims to provide centralized portfolio performance data.</p>
@@ -3178,6 +3208,12 @@
 </li>
 <li>
 <p>URL (latest quotes): see above but for the latest quote provider.</p>
+</li>
+<li>
+<p>Value: Utilized when importing data, indicating the overall worth of a transaction, inclusive of fees and taxes. Value = Gross amount + fees + taxes. Also referred to as the <code>Net Transaction Value</code> within the <code>All Transactions</code> view. This terminology may seem counterintuitive, as traditionally the net value of an entity (such as your salary) excludes taxes.</p>
+</li>
+<li>
+<p>Volatility: Refers to the degree of variability in the returns of a portfolio over time. It is a measure of the risk or uncertainty associated with the portfolio's future performance.</p>
 </li>
 <li>
 <p>Watchlist: manual grouping of securities.</p>
