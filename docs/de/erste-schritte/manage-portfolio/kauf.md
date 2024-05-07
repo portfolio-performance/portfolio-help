@@ -7,13 +7,13 @@ Wenn du eine Abrechnung von deiner Bank oder deinem Makler erhältst, in der ein
 
 Die Transaktion in Abbildung 1 betrifft nur eine Währung. Sowohl das Wertpapier, als auch das Referenzkonto verwenden die gleiche Währung (EUR).  Es ist keine Währungsumrechnung erforderlich.
 
-Abbildung: Kaufabrechnung über Wertpapierkauf.{class=align-center style="width: 90%"}
+Abbildung: Kaufabrechnung über Wertpapierkauf.{class=pp-figure style="width: 90%"}
 
 ![](images/info-bank-note-share-heidelberg.svg)
 
 Mit dieser Abrechnung kannst du eine Transaktion in Portfolio Performance anlegen. Abbildung 2 zeigt die Eingabemaske für die Buchungsinformationen. Das Wertpapier (Heidelberg Materials) ist in EUR notiert und die Transaktion wird über das Wertpapierkonto „Broker-1“ und das Depotkonto „Broker-1 (EUR)“ abgewickelt. Das Beispiel eines [Wertpapier verkaufs](verkauf.md) beinhaltet eine komplexere Konfiguration mit einem in USD notierten Wertpapier, aber die Transaktion wird über ein Depotkonto in EUR abgewickelt.
 
-Abbildung: Kauf eines Wertpapiers in Euro über ein Euro Konto.{class=align-center style="width: 90%"}
+Abbildung: Kauf eines Wertpapiers in Euro über ein Euro Konto.{class=pp-figure style="width: 90%"}
 
 ![](images/mnu-transaction-buy-share-heidelberg.png)
 
@@ -42,7 +42,7 @@ Der typische Ablauf für die Eingabe dieser Informationen lautet
 
 Wenn du nachträglich Änderungen vornimmst, gibt es ein paar Besonderheiten zu beachten.(Siehe Abbildung 3)
 
-Abbildung: Ablauf zwischen Stücke und Belastung.{class=align-center style="width: 100%"}
+Abbildung: Ablauf zwischen Stücke und Belastung.{class=pp-figure style="width: 100%"}
 
 ![](images/info-transaktions-berechnung.svg)
 
@@ -55,17 +55,17 @@ Wenn du Aktien in einer Fremdwährung kaufen willst, gibt es zwei Möglichkeiten
 
 Abbildung 4 zeigt die Abrechnung der Bank über den Kauf von Wertpapieren in US Dollar. Da Steuern und Gebühren in EUR abgerechnet werden müssen (da es sich um eine europäische Bank handelt) und die Basiswährung des Portfolios für die Vermögensaufstellung ebenfalls EUR ist, wird der Gesamtbetrag in USD ebenfalls in EUR umgerechnet.
 
-Abbildung: Abrechnung eines Kaufs in US Währungen.{class=align-center style="width: 100%"}
+Abbildung: Abrechnung eines Kaufs in US Währungen.{class=pp-figure style="width: 100%"}
 
 ![](images/info-bank-note-share-adobe.svg)
 
 Aus der Abrechnung geht nicht eindeutig hervor, welches Einlagenkonto (EUR oder USD) verwendet wurde. Die Erfassung dieser Transaktion in Portfolio Performance ist jedoch recht einfach. Abbildung 5 zeigt die Transaktion, die mit einem USD-Einlagenkonto durchgeführt wurde. Abbildung 6 ist etwas komplexer, da ein EUR-Einlagenkonto verwendet wird; daher muss eine Umrechnung vorgenommen werden (EUR --> USD).
 
-Abbildung: Kauf eines Wertpapiers in US Dollar mit einem Fremdwährungskonto.{class=align-center style="width: 60%"}
+Abbildung: Kauf eines Wertpapiers in US Dollar mit einem Fremdwährungskonto.{class=pp-figure style="width: 60%"}
 
 ![](images/mnu-transaction-buy-share-adobe-usd-account.png)
 
-Abbildung: Kauf eines Wertpapiers in US Dollar mit einem.{class=align-center style="width: 60%"}
+Abbildung: Kauf eines Wertpapiers in US Dollar mit einem.{class=pp-figure style="width: 60%"}
 
 ![](images/mnu-transaction-buy-share-adobe-EUR-account.png)
 

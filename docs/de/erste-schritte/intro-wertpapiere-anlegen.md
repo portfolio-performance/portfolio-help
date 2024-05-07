@@ -7,7 +7,7 @@ Deshalb stellst du hier deine persönliche Liste der für dich relevanten Wertpa
 ## Wertpapiere zum Portfolio hinzufügen
 
 
-Abbildung: neues Wertpapier zum Portfolio hinzufügen.{class=align-center}
+Abbildung: neues Wertpapier zum Portfolio hinzufügen.{class=pp-figure}
 
 ![](images/wertpapier-anlegen.gif)
 
@@ -20,7 +20,7 @@ Dabei ergänzt *Portfolio Performance* die Stammdaten, aktuelle und historische 
 
 ## Wertpapiernamen anpassen
 
-Abbildung: Die Wertpapierliste nach dem Hinzufügen von Wertpapieren.{class=align-center}
+Abbildung: Die Wertpapierliste nach dem Hinzufügen von Wertpapieren.{class=pp-figure}
 
 ![](images/wertpapier-liste.png)
 
@@ -31,7 +31,7 @@ In diesem Fall sind die von *Portfolio Performance* vorgeschlagenen Namen der We
 
 ## Die fertige Wertpapierliste
 
-Abbildung: Die fertige Wertpapierliste.{class=align-center}
+Abbildung: Die fertige Wertpapierliste.{class=pp-figure}
 
 ![](images/wertpapier-liste-komplett.png)
 

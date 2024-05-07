@@ -10,7 +10,7 @@ Es sollte möglich sein, diese Informationen von der Website abzurufen. Portfoli
 
 ARIVA.DE ist eine deutsche Website, die Finanzinformationen und Nachrichten sowie Aktienkurse, Marktindizes, Rohstoffe, Währungen, Fonds, Zertifikate, Anleihen und mehr bietet.
 
-Abbildung: Historische Kurse auf ARIVA.DE.{class=align-center style="width:80%"}
+Abbildung: Historische Kurse auf ARIVA.DE.{class=pp-figure style="width:80%"}
 
 ![](images/website-ariva.png)
 
@@ -22,7 +22,7 @@ Wenn Sie diese URL in das Feld Kurs-URL in Abbildung 2 eingeben, werden die Kurs
 Die Verwendung dieser Methode zum Anhängen der historischen Kurse ist nur wirksam, wenn Sie die Kurse regelmäßig aktualisieren, indem Sie das Portfolio öffnen.
 Bitte beachte, dass du andere Monate auswählen kannst, das bitet sich unter anderem an wenn man Kurs Lücken stopfen möchte.
 
-Abbildung: Historische Kurse von Ariva.de.{class=align-center style="width:80%"}
+Abbildung: Historische Kurse von Ariva.de.{class=pp-figure style="width:80%"}
 
 ![](images/tabelle-ariva.png)
 
@@ -35,7 +35,7 @@ Die oben beschriebene Methode funktioniert nicht immer. Einige Websites verwende
 Auf der Website Finanzen.net beispielsweise wird unter der Standard-URL `https://www.finanzen.net/historische-kurse/nvidia` nur der Kurs des aktuellen Tages angezeigt, so dass für die Anzeige anderer Zeiträume die Eingabe des Anfangs- und Enddatums erforderlich ist. In solchen Fällen könnte ein manueller Abruf benutzt werden, um diese Daten zu erfassen.
 
 
-Abbildung: Manueller Abruf.{class=align-center style="width:80%"}
+Abbildung: Manueller Abruf.{class=pp-figure style="width:80%"}
 
 ![](images/kurs-import-von-html.png)
 

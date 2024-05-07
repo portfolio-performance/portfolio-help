@@ -12,7 +12,7 @@ Du kannst Portfolio Report verwenden, um Wertpapiere anzulegen oder um historisc
 - Öffnen Portfolio Performance und positioniere, wenn möglich, beide Fenster nebeneinander, wie in Abbildung 2 dargestellt.
 - Nutze die Suche oben rechts (siehe Abbildung 1), um nach dem gewünschten Wertpapier zu suchen (Name, ISIN oder WKN).
 
-Abbildung: Suchergebnis in Portfolio Report.{class=align-center style="width:70%"}
+Abbildung: Suchergebnis in Portfolio Report.{class=pp-figure style="width:70%"}
 
 ![](images/portfolio-report-basf.png)
 
@@ -22,7 +22,7 @@ Zur Zeit sind nur Wertpapiere, die auf XETRA (Deutsche Börse) gehandelt werden,
 
 - Ziehen Sie die große blaue Schaltfläche `Add to Portfolio Performance` auf das Fenster von PP (= klicken, halten und fallen lassen). Das funktiert am besten, wenn die beiden Anwendungen nebeneinander auf dem Bildschirm platziert sind (siehe Abbildung 2). Ansonsten musst du die Schaltfläche auf das PP-Symbol in der Taskleiste ziehen.
 
-Abbildung: Mit Portfolio Report ein Wertpapier anlegen.{class=align-center style="width:90%"}
+Abbildung: Mit Portfolio Report ein Wertpapier anlegen.{class=pp-figure style="width:90%"}
 
 ![](images/performance-report-geteilter-bildschrim.png)
 
@@ -30,11 +30,11 @@ Abbildung: Mit Portfolio Report ein Wertpapier anlegen.{class=align-center style
 
     Es ist wichtig zu beachten, dass durch die Verknüpfung mit Portfolio Report die Felder `ISIN` und `WKN` nicht mehr geändert werden können. Wenn du diese Felder aktualisieren möchtest, musst du die "Entkoppeln"-Schaltfläche verwenden, um die Verbindung zu Portfolio Report wieder auf zu heben. Leider wird dadurch auch die Kursquelle der historischen Kurse entfernt.
 
-Abbildung: Neues Wertpapier mit Portfolio Report angelegt.{class=align-center style="width:50%"}
+Abbildung: Neues Wertpapier mit Portfolio Report angelegt.{class=pp-figure style="width:50%"}
 
 ![](images/neues-wertpapier-mit-portfolio-report.png)
 
-Abbildung: Historische Kurse von Portfolio Report.{class=align-center style="width:50%"}
+Abbildung: Historische Kurse von Portfolio Report.{class=pp-figure style="width:50%"}
 
 ![](images/historische-kurse-portfolio-report.png)
 
