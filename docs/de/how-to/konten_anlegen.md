@@ -19,7 +19,7 @@ Im ersten Schritt ist es ratsam, Spalten unter Stammdaten – Konten anzulegen, 
 Dazu unter "Allgemeine Daten – Einstellungen" auf den Reiter "Attribute: Konten" klicken.
 
 
-Abbildung: Individuelle Attribute.{class=align-center style="width:90%"}
+Abbildung: Individuelle Attribute.{class=pp-figure style="width:90%"}
 
 ![](images/manage_attributes.png)
 
@@ -55,7 +55,7 @@ Durch einen Doppelklick auf ein Feld lassen sich die gewünschten Daten (Kontoar
 
 In diesem Beispiel sieht, dass dann wie folgt aus:
 
-Abbildung: Stammdaten - Konten.{class=align-center style="width:90%"}
+Abbildung: Stammdaten - Konten.{class=pp-figure style="width:90%"}
 
 ![](images/account_list.png)
 
@@ -64,7 +64,7 @@ Eine Spaltensortierung durch Anklicken des Spaltennamens (z. B. Kontoart, Zinssa
 Buchungen können auf diesen Konten über einen Rechtsklick auf das entsprechende Konto vorgenommen werden oder über den Import von PDF oder CSV Dateien.
 
 
-Abbildung: Konto - Kontextmenü.{class=align-center style="width:90%"}
+Abbildung: Konto - Kontextmenü.{class=pp-figure style="width:90%"}
 
 ![](images/account_list_context_menu.png)
 

@@ -8,7 +8,7 @@ Um eine Einzahlung in einer bestimmten Währung zu veranlassen, navigierst du zu
 
 Die Erfassung einer Einzahlung ist ein einfacher Vorgang (siehe Abbildung 1). Gib das Einzahlungskonto, das Transaktionsdatum, den Betrag und optional eine Notiz dazu ein.
 
-Abbildung: Einzahlung für den Kauf von Apple Aktien.{class=align-center style="width:100%"}
+Abbildung: Einzahlung für den Kauf von Apple Aktien.{class=pp-figure style="width:100%"}
 
 ![](../images/einlage.png)
 
@@ -18,6 +18,6 @@ Bitte beachten Sie, dass eine Einlage zu bestimmten Performance-Kennzahlen beitr
 
 Du kannst Geld zwischen zwei Konten überweisen, unabhängig davon, ob sie dieselbe Währung haben oder nicht. In Fällen, in denen die Konten unterschiedliche Währungen haben (siehe Abbildung 2), schlägt Portfolio Performance automatisch einen Wechselkurs vor, der auf der [EZB-Website](https://data.ecb.europa.eu/currency-converter) basiert.
 
-Abbildung: Umbuchung mit vorgeschlagenem EZB Wechselkurs.{class=align-center style="width:100%"}
+Abbildung: Umbuchung mit vorgeschlagenem EZB Wechselkurs.{class=pp-figure style="width:100%"}
 
 ![](../images/umbuchung-ungleiche-waehrung.png)

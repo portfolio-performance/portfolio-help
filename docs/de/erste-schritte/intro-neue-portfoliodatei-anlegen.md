@@ -5,7 +5,7 @@ Im ersten Schritt erstellst du in *Portfolio Performance* deine neue Portfolioda
 ## Hauptwährung, Depot und Verrechnungskonto anlegen
 
 
-Abbildung: Grundlegende Portfoliodaten eingeben.{class=align-center}
+Abbildung: Grundlegende Portfoliodaten eingeben.{class=pp-figure}
 
 ![](images/neu-portfolio.gif)
 

@@ -16,7 +16,7 @@ title: Währungen
 
 Die verfügbaren Wechselkurse finden sich unter *Allgemeine Daten -> Währungen -> Wechselkurse*.
 
-Abbildung: Allgemeine Daten - Währungen - Wechselkurse.{class=align-center style="width:70%"}
+Abbildung: Allgemeine Daten - Währungen - Wechselkurse.{class=pp-figure style="width:70%"}
 
 ![](images/liste_waehrungen.png)
 
@@ -50,7 +50,7 @@ Mit dem Währungsrechner unter *Allgemeine Daten -> Währungen -> Währungsrechn
 In diesem Beispiel wird der *Dirham* aus den Vereinige Arabische Emiraten zunächst in *US Doller* und anschließend in *Euro* umgerechnet.
 
 
-Abbildung: Währungsrechner.{class=align-center style="width:70%"}
+Abbildung: Währungsrechner.{class=pp-figure style="width:70%"}
 
 ![](images/waehrungsrechner.png)
 
@@ -77,14 +77,14 @@ Benutzerdefinierte Wechselkurse sind in *Portfolio Performance* nichts anderes a
 
 Benutzerdefinierte Wechselkurse erstellt man mit dem Dialog *Wertpapiere -> Neuen Wechselkurs anlegen...*.
 
-Abbildung: Wechselkurs anlegen.{class=align-center style="width:70%"}
+Abbildung: Wechselkurs anlegen.{class=pp-figure style="width:70%"}
 
 ![](images/wechselkurs_anlegen.png)
 
 Neben der Währung ("Basiswährung") gibt man die Zielwährung des Wechselkurses ein.
 
 
-Abbildung: Wechselkurs editieren.{class=align-center style="width:70%"}
+Abbildung: Wechselkurs editieren.{class=pp-figure style="width:70%"}
 
 ![](images/config_waehrungen.png)
 
@@ -92,7 +92,7 @@ Abbildung: Wechselkurs editieren.{class=align-center style="width:70%"}
 Um Kurse von **Yahoo Finance** zu laden, verwendet man ein Symbol aus der Basiswährung und Zielwährung mit dem Suffix **=X**. Für die Umrechnung von EUR (Euro) in den Vietnamesischen Dong (VND) heißt das Symbol entsprechnd ```EURVND=X```.
 
 
-Abbildung: Wechselkurse laden.{class=align-center style="width:70%"}
+Abbildung: Wechselkurse laden.{class=pp-figure style="width:70%"}
 
 ![](images/wechselkurs_anlegen.png)
 
@@ -100,12 +100,12 @@ Abbildung: Wechselkurse laden.{class=align-center style="width:70%"}
 Alternativ kann man die Wechselkurse auch per CSV importieren: *Datei -> Importieren... -> CSV Dateien*. Die CSV-Datei für den Kurs Euro nach Vietnamesischer Dong kann man z.B. per Google Sheets erstellen. Dazu nutzt man einfach die Funktion ```GoogleFinance``` für Euro und Dong ```CURRENCY:EURVND``` in etwa so für das letzte Jahr:
 
 
-Abbildung: Wechselkurs in Google Sheet laden.{class=align-center style="width:70%"}
+Abbildung: Wechselkurs in Google Sheet laden.{class=pp-figure style="width:70%"}
 
 ![](images/wechselkurs_googlesheet.png)
 
 Die Google Sheets-Datei lädt man dann als CSV herunter und importiert sie danach ganz normal mit dem CSV-Import in *Portfolio Performance*.
 
-Abbildung: Speichern aus Googe Sheet.{class=align-center style="width:70%"}
+Abbildung: Speichern aus Googe Sheet.{class=pp-figure style="width:70%"}
 
 ![](images/wechselkurs_googlesheet_export.png)
