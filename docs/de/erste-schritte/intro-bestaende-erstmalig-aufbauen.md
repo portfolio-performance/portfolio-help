@@ -7,12 +7,12 @@ In diesem Schritt vollziehst du alle Transaktionen in deinem Depot nach, die zum
 Portfolio Performance bietet *Kauf, Verkauf, Einlieferung* und *Auslieferung* für die Buchung von Transaktionen an. Wo ist der Unterschied? 
 
 Abbildung: Kauf - Zugang im Depot, belastet 
-Verrechnungskonto.{class=align-center style="width:80%"}
+Verrechnungskonto.{class=pp-figure style="width:80%"}
 
 ![](images/kauf.png)
 
 
-Abbildung: Einlieferung - nur Zugang im Depot.{class=align-center style="width:80%"}
+Abbildung: Einlieferung - nur Zugang im Depot.{class=pp-figure style="width:80%"}
 
 ![](images/einlieferung.png)
 
@@ -60,7 +60,7 @@ Damit hast du einen sauberen Aufsetzpunkt für die Buchung der Transaktionen nac
 ## Depot: Transaktionen buchen
 
 
-Abbildung: Wertpapier für Kauf, Verkauf, Einlieferung usw. auswählen.{class=align-center style="width:100"}
+Abbildung: Wertpapier für Kauf, Verkauf, Einlieferung usw. auswählen.{class=pp-figure style="width:100"}
 
 ![](images/kaeufe-usw-buchen.png)
 
@@ -68,7 +68,7 @@ Abbildung: Wertpapier für Kauf, Verkauf, Einlieferung usw. auswählen.{class=al
 In der linken Navigationsleiste wählst du `Alle Wertpapiere`. Jetzt kannst du das Wertpapier in der Wertpapier-Übersicht auswählen und mit der rechten Maustaste `Kauf ...`, `Einlieferung ...` usw. das entsprechende Eingabefenster öffnen. 
 
 
-Abbildung: Kauf von Wertpapieren im Depot buchen.{class=align-center style="width:100"}
+Abbildung: Kauf von Wertpapieren im Depot buchen.{class=pp-figure style="width:100"}
 
 ![](images/kauf-buchen.png)
 
@@ -79,7 +79,7 @@ Für viele Online-Banken und -Broker kannst du PDF-Wertpapierabrechnungen schnel
 ## Verrechnungskonto: Transaktionen buchen
 
 
-Abbildung: Einlagen, Entnahmen usw. für das Verrechnungskonto buchen.{class=align-center style="width:100"}
+Abbildung: Einlagen, Entnahmen usw. für das Verrechnungskonto buchen.{class=pp-figure style="width:100"}
 
 ![](images/einlage-usw-buchen.png)
 
@@ -88,7 +88,7 @@ In der linken Navigationsleiste wählst du `Konten`. Jetzt kannst du das Konto i
 ## Buchungen überprüfen und editieren
 
 
-Abbildung: Alle Buchungen für das Musterportfolio anzeigen.{class=align-center style="width:100"}
+Abbildung: Alle Buchungen für das Musterportfolio anzeigen.{class=pp-figure style="width:100"}
 
 ![](images/alle-buchungen-anzeigen.png)
 
