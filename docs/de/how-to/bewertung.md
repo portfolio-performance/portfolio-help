@@ -1,3 +1,3 @@
 ---
-title: Auswertung deines Portfolios
+title: Auswerten deines Portfolios
 ---

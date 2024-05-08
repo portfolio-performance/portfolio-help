@@ -1,4 +1,4 @@
 ---
-title: Entnahme
+title: Einlage und Entnahme
 ---
 

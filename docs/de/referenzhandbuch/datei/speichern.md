@@ -1,3 +1,3 @@
 ---
-title: Speichern - Speichern unter - Alle speichernl
+title: Speichern - Speichern unter - Alle speichern
 ---
