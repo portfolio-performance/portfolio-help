@@ -3466,7 +3466,7 @@
 <h1 id="wahrungen">Währungen</h1>
 <p><em>Portfolio Performance</em> unterstützt Konten und Wertpapiere in Fremdwährungen.</p>
 <ul>
-<li>Die <strong>Berichtswährung</strong> stellt man unter <em>Berichte -&gt; Vermögensaufstellung</em> oben rechts in der Werkzeugleiste ein.</li>
+<li>Die <strong>Berichtswährung</strong> stellt man unter <em>Berichte → Vermögensaufstellung</em> oben rechts in der Werkzeugleiste ein.</li>
 <li>Beträge in der Berichtswährung werden üblicherweise ohne Währungskürzel dargestellt (damit die Ansichten nicht unnötig viele Informationen darstellen).</li>
 <li>Konten und Wertpapiere können in einer Fremdwährung geführt werden. In einem Portfolio können Wertpapiere unterschiedlichster Währung existieren. Ein Wertpapier ohne Währung wird als <em>Aktienindex</em> interpretiert und kann entsprechend nicht gekauft werden.</li>
 <li>Neben den Wechselkursen der <a href="#referenzwechselkurse-der-europaischen-zentralbank">Europäischen Zentralbank</a> kann man auch <a href="#benutzerdefinierte-wechselkurse">benutzerdefinierte Wechselkurse</a> anlegen und - anlog zu Wertpapieren - aus den üblichen Quellen mit Kursen versorgen.</li>
@@ -3474,7 +3474,7 @@
 <li>Wechselkurse können in <a href="#notierung">Mengennotierung oder Preisnotierung</a> dargestellt werden.</li>
 <li>Beträge in einer Buchung werden - wenn möglich - mit dem Wechselkurs aus der Buchung selbst umgerechnet.</li>
 </ul>
-<p>Die verfügbaren Wechselkurse finden sich unter <em>Allgemeine Daten -&gt; Währungen -&gt; Wechselkurse</em>.</p>
+<p>Die verfügbaren Wechselkurse finden sich unter <em>Allgemeine Daten --&gt; Währungen --&gt; Wechselkurse</em>.</p>
 <p><figure class="pp-figure" style="width:70%" id="_figure-1"><figcaption>Abbildung 1.  Allgemeine Daten - Währungen - Wechselkurse.</figcaption><img alt="" src="../images/liste_waehrungen.png"></figure></p>
 <h2 id="notierung">Notierung</h2>
 <p>In den Einstellungen kann man zwischen <strong>Mengennotierung</strong> und <strong>Preisnotierung</strong> umstellen.</p>
@@ -3486,7 +3486,7 @@ gibt die Preisnotierung den Preis einer Einheit der ausländischen
 Währung in Einheiten der inländischen Währung an (Euro je Dollar
 aus europäischer Sicht).</p>
 <p>In der Eurozone, Großbritannien, Australien und Neuseeland wird heute
-mehrheitlich die Mengennotierung verwendet, während ansonsten die
+Mehrheitlich die Mengennotierung verwendet, während ansonsten die
 Preisnotierung üblich ist, insbesondere auch in der Schweiz. <a href="https://de.wikipedia.org/wiki/Wechselkurs">Quelle</a></p>
 </blockquote>
 <div class="admonition example">
@@ -3497,19 +3497,19 @@ Preisnotierung üblich ist, insbesondere auch in der Schweiz. <a href="https://d
 "Für einen US-Dollar muss man 0,89 Euro bezahlen."</p>
 </div>
 <h2 id="wahrungsrechner">Währungsrechner</h2>
-<p>Mit dem Währungsrechner unter <em>Allgemeine Daten -&gt; Währungen -&gt; Währungsrechner</em> kann man nachvollziehen, welche Wechselkurse <em>Portfolio Performance</em> für eine Umrechnung verwendet.</p>
-<p>In diesem Beispiel wird der <em>Dirham</em> aus den Vereinige Arabische Emiraten zunächst in <em>US Doller</em> und anschließend in <em>Euro</em> umgerechnet.</p>
+<p>Mit dem Währungsrechner unter <em>Allgemeine Daten --&gt; Währungen --&gt; Währungsrechner</em> kann man nachvollziehen, welche Wechselkurse <em>Portfolio Performance</em> für eine Umrechnung verwendet.</p>
+<p>In diesem Beispiel wird der <em>Dirham</em> aus den Vereinige Arabische Emiraten zunächst in <em>US-Dollar</em> und anschließend in <em>Euro</em> umgerechnet.</p>
 <p><figure class="pp-figure" style="width:70%" id="_figure-2"><figcaption>Abbildung 2.  Währungsrechner.</figcaption><img alt="" src="../images/waehrungsrechner.png"></figure></p>
 <p><em>Portfolio Performance</em> gewichtet Wechselkurse und nutzt zur Umrechnung den Wechselkurs mit dem niedrigsten Gewicht:</p>
 <ul>
 <li>Benutzerdefinierte Wechselkurse haben ein Gewicht von 1</li>
 <li>Wechselkurse der EZB haben ein Gewicht von 2</li>
 <li>Invertierte Wechselkurse (Umkehrkurs) zählen zu dem Gewicht +2 hinzu</li>
-<li>Eine Kette von Wechselkursen (z.B. USD -&gt; EUR -&gt; CHD) zählt eine Gewicht von +1 hinzu</li>
+<li>Eine Kette von Wechselkursen (z.B. USD -&gt; EUR -&gt; CHD) zählt ein Gewicht von +1 hinzu</li>
 </ul>
-<p>Mit diesen Gewichten wird sichergestellt, dass benutzerdefinierte Wechselkurse von denen der Europäischen Zentralbank genutzt werden. Andrerseits wird ein Wechselkurs der Europäischen Zentralbank dem Umkehrkurs eines benutzerdefinierten Wechselkurses vorgezogen. Ein direkter Wechselkurs wird einer Kette von Wechselkursen vorgezogen die zu der gleichen Umrechnung führen würden.</p>
+<p>Mit diesen Gewichten wird sichergestellt, dass benutzerdefinierte Wechselkurse von denen der Europäischen Zentralbank genutzt werden. Andrerseits wird ein Wechselkurs der Europäischen Zentralbank dem Umkehrkurs eines benutzerdefinierten Wechselkurses vorgezogen. Ein direkter Wechselkurs wird einer Kette von Wechselkursen vorgezogen, die zu der gleichen Umrechnung führen würden.</p>
 <h2 id="referenzwechselkurse-der-europaischen-zentralbank">Referenzwechselkurse der Europäischen Zentralbank</h2>
-<p><em>Portfolio Performance</em> lädt automatisch beim Start die <a href="https://www.ecb.europa.eu/stats/exchange/eurofxref/html/index.en.html">Referenzwechselkurse der Europäischen Zentralbank (EZB)</a>. Damit kennt <em>Portfolio Performance</em> die Wechselkurse aller wichtigen Währungen vom US Dollar über den japanischen Yen, das britischen Pfund bis zum Schweizer Franken.</p>
+<p><em>Portfolio Performance</em> lädt automatisch beim Start die <a href="https://www.ecb.europa.eu/stats/exchange/eurofxref/html/index.en.html">Referenzwechselkurse der Europäischen Zentralbank (EZB)</a>. Damit kennt <em>Portfolio Performance</em> die Wechselkurse aller wichtigen Währungen vom US-Dollar über den japanischen Yen, das britischen Pfund bis zum Schweizer Franken.</p>
 <p>Laut Webseite werden die Wechselkurse der EZB gegen 16 Uhr aktualisiert:</p>
 <blockquote>
 <p>The reference rates are usually updated around 16:00 CET on every working day, except on TARGET closing days. They are based on a regular daily concertation procedure between central banks across Europe, which normally takes place at 14:15 CET. <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">Quelle</a></p>
@@ -3520,9 +3520,9 @@ Preisnotierung üblich ist, insbesondere auch in der Schweiz. <a href="https://d
 <p><figure class="pp-figure" style="width:70%" id="_figure-3"><figcaption>Abbildung 3.  Wechselkurs anlegen.</figcaption><img alt="" src="../images/wechselkurs_anlegen.png"></figure></p>
 <p>Neben der Währung ("Basiswährung") gibt man die Zielwährung des Wechselkurses ein.</p>
 <p><figure class="pp-figure" style="width:70%" id="_figure-4"><figcaption>Abbildung 4.  Wechselkurs editieren.</figcaption><img alt="" src="../images/config_waehrungen.png"></figure></p>
-<p>Um Kurse von <strong>Yahoo Finance</strong> zu laden, verwendet man ein Symbol aus der Basiswährung und Zielwährung mit dem Suffix <strong>=X</strong>. Für die Umrechnung von EUR (Euro) in den Vietnamesischen Dong (VND) heißt das Symbol entsprechnd <code>EURVND=X</code>.</p>
+<p>Um Kurse von <strong>Yahoo Finance</strong> zu laden, verwendet man ein Symbol aus der Basiswährung und Zielwährung mit dem Suffix <strong>=X</strong>. Für die Umrechnung von EUR (Euro) in den Vietnamesischen Dong (VND) heißt das Symbol entsprechend <code>EURVND=X</code>.</p>
 <p><figure class="pp-figure" style="width:70%" id="_figure-5"><figcaption>Abbildung 5.  Wechselkurse laden.</figcaption><img alt="" src="../images/wechselkurs_anlegen.png"></figure></p>
-<p>Alternativ kann man die Wechselkurse auch per CSV importieren: <em>Datei -&gt; Importieren... -&gt; CSV Dateien</em>. Die CSV-Datei für den Kurs Euro nach Vietnamesischer Dong kann man z.B. per Google Sheets erstellen. Dazu nutzt man einfach die Funktion <code>GoogleFinance</code> für Euro und Dong <code>CURRENCY:EURVND</code> in etwa so für das letzte Jahr:</p>
+<p>Alternativ kann man die Wechselkurse auch per CSV importieren: <em>Datei --&gt; Importieren... --&gt; CSV-Dateien</em>. Die CSV-Datei für den Kurs Euro nach Vietnamesischer Dong kann man z.B. per Google Sheets erstellen. Dazu nutzt man einfach die Funktion <code>GoogleFinance</code> für Euro und Dong <code>CURRENCY:EURVND</code> in etwa so für das letzte Jahr:</p>
 <p><figure class="pp-figure" style="width:70%" id="_figure-6"><figcaption>Abbildung 6.  Wechselkurs in Google Sheet laden.</figcaption><img alt="" src="../images/wechselkurs_googlesheet.png"></figure></p>
 <p>Die Google Sheets-Datei lädt man dann als CSV herunter und importiert sie danach ganz normal mit dem CSV-Import in <em>Portfolio Performance</em>.</p>
 <p><figure class="pp-figure" style="width:70%" id="_figure-7"><figcaption>Abbildung 7.  Speichern aus Googe Sheet.</figcaption><img alt="" src="../images/wechselkurs_googlesheet_export.png"></figure></p>
@@ -3546,7 +3546,7 @@ Preisnotierung üblich ist, insbesondere auch in der Schweiz. <a href="https://d
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 8, 2024</span>
   </span>
 
     

@@ -3406,10 +3406,10 @@
   <h1>JSON</h1>
 
 <h2 id="datenimport-via-api">Datenimport via API</h2>
-<p>Finanzwebsiten stellen ihre Daten, z. B. historische Kurse, in der Regel über eine Schnittstelle (API) zur Verfügung. Um auf diese historischen Kurse über die API zuzugreifen, können Benutzer HTTP-Anfragen an bestimmte API-Endpunkte senden und dabei Parameter wie Datumsbereiche, Aktiensymbole und andere relevante Filter angeben. Der API-Endpunkt (=Server) verarbeitet diese Anfragen, ruft die angeforderten historischen Kursdaten aus seiner Datenbank ab und gibt die Informationen in einem strukturierten Format, häufig JSON oder XML, zurück.</p>
+<p>Finanzwebseiten stellen ihre Daten, z. B. historische Kurse, in der Regel über eine Schnittstelle (API) zur Verfügung. Um auf diese historischen Kurse über die API zuzugreifen, können Benutzer HTTP-Anfragen an bestimmte API-Endpunkte senden und dabei Parameter wie Datumsbereiche, Aktiensymbole und andere relevante Filter angeben. Der API-Endpunkt (=Server) verarbeitet diese Anfragen, ruft die angeforderten historischen Kursdaten aus seiner Datenbank ab und gibt die Informationen in einem strukturierten Format, häufig JSON oder XML, zurück.</p>
 <p>Als Beispiel dient die folgende <a href="https://eodhd.com/api/eod/AAPL?from=2024-01-15&amp;to=2024-01-17&amp;period=d&amp;api_token=demo&amp;fmt=json">URL</a>, um die historischen Kurse von Apple zwischen 2024-01-15 und 2024-01-17 von der Website <code>eod historical data</code> abzufragen.</p>
 <p><code>https://eodhd.com/api/eod/AAPL?from=2024-01-15&amp;to=2024-01-17&amp;period=d&amp;api_token=demo&amp;fmt=json</code></p>
-<p>Mit Stand vom Januar 2024 ist der bereitgestellte Demo-API-Token oder -Schlüssel noch gültig. Sollte er in Zukunft nicht mehr funktionieren, brauchst du einen <a href="../eodhd/">kostenlosen API-Schlüssel</a>.</p>
+<p>Mit Stand vom Januar 2024 ist der bereitgestellte Demo-API-Token oder -Schlüssel noch gültig. Sollte er in Zukunft nicht mehr funktionieren, brauchst Du einen <a href="../eodhd/">kostenlosen API-Schlüssel</a>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">[</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="p">{</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="nt">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-01-16"</span><span class="p">,</span>
@@ -3432,10 +3432,10 @@
 <a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="p">]</span>
 </code></pre></div>
 <p>Eine JSON-Antwort kann zwei Arten von Elementen enthalten: Listen und Objekte. Eine Liste ist eine geordnete Sammlung von Elementen zwischen [ ]. Auf diese kann über ihre Position zugegriffen werden. Ein Objekt ist eine ungeordnete Sammlung von Schlüssel-Werte-Paaren zwischen { }. Ein Schlüssel ist ein eindeutiger Identifikator für einen Wert, und ein Wert kann eine beliebige Art von Daten sein, z. B. eine Zahl, eine Zeichenkette, ein Boolescher Wert, eine Liste oder ein Objekt. Eine JSON-Antwort ist eine hierarchische Struktur, d. h. eine Liste kann andere Listen oder Objekte enthalten, und ein Objekt kann andere Listen oder Objekte enthalten.</p>
-<p>Um auf einen bestimmten Wert innerhalb dieser hierarchischen Struktur zuzugreifen, musst du den Pfad von der Wurzel zum Element angeben. Um auf ein Element in einer Liste zuzugreifen, musst du seinen Index verwenden, der eine Zahl ist, die seine Position in der Liste angibt. Der Index beginnt bei 0 für das erste Element. Um auf ein Element von einem Objekt aus zuzugreifen, musst du seinen Schlüssel verwenden, der eine Zeichenkette ist, die seinen Namen im Objekt angibt. Der Schlüssel wird in doppelte Anführungszeichen " " eingeschlossen.</p>
-<p>Eine Abfragesprache wie <em>JSONPath</em> (von Portfolio Performance verwendet) stellt die Wurzel der JSON-Antwort mit einem $-Symbol dar. Um die Elemente im Pfad zu trennen, musst du einen Punkt verwenden. Um zum Beispiel auf den Schlusskurs des zweiten Tages zuzugreifen, musst du den Pfad <code>$[1].close</code> verwenden. Das bedeutet, dass du mit der Wurzel $ beginnst, dann zum zweiten Element in der Liste <code>$[1]</code> gehst, das ein Objekt ist, und dann zum Wert mit dem Schlüssel "close" im Objekt <code>$[1].close</code> gehst, das eine Zahl ist.</p>
-<p>Du brauchst diesen JSON-Pfad, um den JSON Quote Feed Provider von Portfolio Performance zu vervollständigen. Verwende  die folgenden Parameter, um die historischen Kurse abzurufen (siehe auch Abbildung 1). Eine Erklärung der Bedeutung der verschiedenen Kursnotierungen findest du unter <a href="../../Konzepte/historische-kurse.md">Konzepte &gt; Historische Kurse</a>.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Abbildung 1.  Server Antwort mit Kursdaten im json Format (=2D.DE).</figcaption><img alt="" src="../images/o2-json-parameter.png"></figure></p>
+<p>Um auf einen bestimmten Wert innerhalb dieser hierarchischen Struktur zuzugreifen, musst Du den Pfad von der Wurzel zum Element angeben. Um auf ein Element in einer Liste zuzugreifen, musst Du seinen Index verwenden, der eine Zahl ist, die seine Position in der Liste angibt. Der Index beginnt bei 0 für das erste Element. Um auf ein Element von einem Objekt aus zuzugreifen, musst Du seinen Schlüssel verwenden, der eine Zeichenkette ist, die seinen Namen im Objekt angibt. Der Schlüssel wird in doppelte Anführungszeichen "" eingeschlossen.</p>
+<p>Eine Abfragesprache wie <em>JSONPath</em> (von Portfolio Performance verwendet) stellt die Wurzel der JSON-Antwort mit einem $-Symbol dar. Um die Elemente im Pfad zu trennen, musst Du einen Punkt verwenden. Um zum Beispiel auf den Schlusskurs des zweiten Tages zuzugreifen, musst Du den Pfad <code>$[1].close</code> verwenden. Das bedeutet, dass Du mit der Wurzel $ beginnst, dann zum zweiten Element in der Liste <code>$[1]</code> gehst, das ein Objekt ist, und dann zum Wert mit dem Schlüssel "close" im Objekt <code>$[1].close</code> gehst, das eine Zahl ist.</p>
+<p>Du brauchst diesen JSON-Pfad, um den JSON Quote Feed Provider von Portfolio Performance zu vervollständigen. Verwende  die folgenden Parameter, um die historischen Kurse abzurufen (siehe auch Abbildung 1). Eine Erklärung der Bedeutung der verschiedenen Kursnotierungen findest Du unter <a href="../../Konzepte/historische-kurse.md">Konzepte &gt; Historische Kurse</a>.</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Abbildung 1.  Server Antwort mit Kursdaten im JSON-Format (=2D.DE).</figcaption><img alt="" src="../images/o2-json-parameter.png"></figure></p>
 <ul>
 <li>Kurs-URL: <code>https://www.ls-tc.de/_rpc/json/instrument/chart/dataForInstrument?container=chart1&amp;instrumentId=41717&amp;marketId=1&amp;quotetype=mid&amp;series=intraday%2Chistory%2Cflags&amp;type=&amp;localeId=2</code></li>
 <li>Pfad zu Datum: <code>$.series.history.data[*][0]</code></li>
@@ -3481,19 +3481,19 @@ Die Ausgabe wurde aus Gründen der Übersichtlichkeit umstrukturiert und gekürz
 Es enthält Metadaten des Wertpapiers, Unix-Zeitstempel der beiden abgerufenen Daten und die verschiedenen Kurswerte. Du brauchst einen JSON-Pfad, um die verschiedenen Werte abzurufen:</p>
 <ul>
 <li>Fehler Code: <code>$.chart.error</code></li>
-<li>Metainformation der Aktie: <code>$.chart.result[0].meta</code>.  Das Ergebnis kommt in einem Arry, selbst wenn es sich nur um eine Aktie handelt, denn man hätte auch 2 und mehr Aktien abfragen können.</li>
+<li>Metainformation der Aktie: <code>$.chart.result[0].meta</code>.  Das Ergebnis kommt in einem Array, selbst wenn es sich nur um eine Aktie handelt, denn man hätte auch 2 und mehr Aktien abfragen können.</li>
 <li>Symbol (): <code>$.chart.result[0].meta.symbol</code></li>
 <li>Abgefragtes Datum: <code>$.chart.result[0].timestamp[*]</code>. Das * dient als Platzhalter, um alle Variablen lesen zu können</li>
-<li>Zweites date: <code>$.chart.result[0].timestamp[1]</code></li>
-<li>Alle vefügbaren Kurse (incl adjusted quotes): <code>$.chart.result[0].indicators</code></li>
+<li>Zweites Datum: <code>$.chart.result[0].timestamp[1]</code></li>
+<li>Alle verfügbaren Kurse (inkl. bereinigter Kurse): <code>$.chart.result[0].indicators</code></li>
 <li>Alle nicht bereinigten Kurses: <code>$.chart.result[0].indicators.quote[0]</code></li>
-<li>Schluss Kurse: <code>$.chart.result[0].indicators.quote[0].close</code></li>
+<li>Schlusskurse: <code>$.chart.result[0].indicators.quote[0].close</code></li>
 <li>Schlusskurs vom ersten Tag: <code>$.chart.result[0].indicators.quote[0].close[0]</code></li>
 </ul>
-<p>Wenn du das üben möchtest, nutzt du am besten <a href="https://jsonpath.com/">JSONPath Online Evaluator</a>. Kopiere die JSON Antort in die Eingabe Maske. Ein weiteres praktisches Tool <a href="https://jsonpathfinder.com/">JSONPath Finder</a>.</p>
-<p>Mit den oben genannten Informationen sollte es ein Leichtes sein, Kurse mit JSON ab zu rufen.</p>
+<p>Wenn Du das üben möchtest, nutzt Du am besten <a href="https://jsonpath.com/">JSONPath Online Evaluator</a>. Kopiere die JSON-Antwort in die Eingabemaske. Ein weiteres praktisches Tool <a href="https://jsonpathfinder.com/">JSONPath Finder</a>.</p>
+<p>Mit den oben genannten Informationen sollte es ein Leichtes sein, Kurse mit JSON abzurufen.</p>
 <p><figure class="pp-figure" id="_figure-2"><figcaption>Abbildung 2.  JSON Kursdaten Parameter.</figcaption><img alt="" src="../images/json-yahoo-parameter.png"></figure></p>
-<p>Bei den meisten Diensten muss man sich registrieren um einen API-Schlüssel zu erhalten, eine eindeutige Kennung, die den Nutzer authentifiziert und den Zugang zum Dienst ermöglicht. Zwar bieten zahlreiche Finanzdienste scheinbar kostenlose API-Schlüssel an, doch erweisen sich ihre Nutzungsbedingungen und langfristigen Verpflichtungen oft als unzureichend. Portfolio Performance hat aus Kompatibilitätsgründen mehrere dieser Dienste in seiner Liste der Kursqeuellen-Anbieter behalten; z.B. Alpha Vantage, eodhd, .... In der Regel empfiehlt es sich Portfolio Report und Yahoo Finance für ein typisches Portfolio zu nutzen.</p>
+<p>Bei den meisten Diensten muss man sich registrieren, um einen API-Schlüssel zu erhalten, eine eindeutige Kennung, die den Nutzer authentifiziert und den Zugang zum Dienst ermöglicht. Zwar bieten zahlreiche Finanzdienste scheinbar kostenlose API-Schlüssel an, doch erweisen sich ihre Nutzungsbedingungen und langfristigen Verpflichtungen oft als unzureichend. Portfolio Performance hat aus Kompatibilitätsgründen mehrere dieser Dienste in seiner Liste der Kursquellen-Anbieter behalten; z.B. Alpha Vantage, eodhd, .... In der Regel empfiehlt es sich, Portfolio Report und Yahoo Finance für ein typisches Portfolio zu nutzen.</p>
 
 
 
@@ -3514,7 +3514,7 @@ Es enthält Metadaten des Wertpapiers, Unix-Zeitstempel der beiden abgerufenen D
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 8, 2024</span>
   </span>
 
     

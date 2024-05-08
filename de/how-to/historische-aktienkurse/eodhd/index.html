@@ -3346,14 +3346,14 @@
 
   <h1>EODHistorical Data</h1>
 
-<p>Die Website <a href="https://eodhd.com/">EODHD</a> (End of Day Historical Data) bietet umfassende Informationen über alle US-Aktien, ETFs und Investmentfonds. Darüber hinaus umfasst die Plattform historische Daten für Nicht-US-Börsen, die hauptsächlich bis zum 3. Januar 2000 zurückreichen.</p>
-<p>Ein [kostenloser API-Token] (https://eodhd.com/register) kann einfach durch Angabe deiner E-Mail-Adresse angefordert werden. Der Token ist beschränkt auf 20 API-Anfragen pro Tag.Es können jedoch nur historische Kurse aus dem letzten Jahr abgerufen werden.</p>
+<p>Die Website <a href="https://eodhd.com/">EODHD</a> (End of Day Historical Data) bietet umfassende Informationen über alle US-Aktien, ETFs und Investmentfonds. Darüber hinaus umfasst die Plattform historische Daten für nicht US-Börsen, die hauptsächlich bis zum 3. Januar 2000 zurückreichen.</p>
+<p>Ein [kostenloser API-Token] (https://eodhd.com/register) kann einfach durch Angabe Deiner E-Mail-Adresse angefordert werden. Der Token ist beschränkt auf 20 API-Anfragen pro Tag. Es können jedoch nur historische Kurse aus dem letzten Jahr abgerufen werden.</p>
 <p>Du kannst den API-Token mit der automatischen Kursabfrage von Portfolio Performance nutzen. Füge den Token in den Einstellungen ein (Hilfe &gt; Einstellungen &gt; API-Schlüssel) und wähle EOD Historical Data als Kurslieferant.</p>
-<p>Wenn du spezielle Anforderungen hast, dann kannst du auch die JSON Kursabfrage verwenden (siehe <a href="https://eodhd.com/financial-apis/api-for-historical-data-and-volumes/">API Dokumentation</a> für einige Anwendungsfälle). Die folgende Anfrage ruft zum Beispiel die historischen Apple-Kurse des <strong>Monats Januar 2000</strong> ab.</p>
+<p>Wenn Du spezielle Anforderungen hast, dann kannst Du auch die JSON Kursabfrage verwenden (siehe <a href="https://eodhd.com/financial-apis/api-for-historical-data-and-volumes/">API Dokumentation</a> für einige Anwendungsfälle). Die folgende Anfrage ruft zum Beispiel die historischen Apple-Kurse des <strong>Monats Januar 2000</strong> ab.</p>
 <p><em>Kurs URL</em></p>
 <p><code>https://eodhd.com/api/eod/AAPL?from=2000-01-01&amp;to=2000-01-31&amp;period=d&amp;api_token=demo&amp;fmt=json</code></p>
-<p><em>Pfad zu Datum</em> = <code>$.[*].date</code> and <em>Pfad zu Kurs</em> = $.[*].close</p>
-<p>Gibst du die Adresse in einen Browser ein, erhälst du folgendes (gekürztes) JSON.</p>
+<p><em>Pfad zu Datum</em> = <code>$.[*].date</code> und <em>Pfad zu Kurs</em> = $.[*].close</p>
+<p>Gibst Du die Adresse in einen Browser ein, erhältst Du folgendes (gekürztes) JSON.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>[
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    {
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        "date": "2000-12-01",
@@ -3405,7 +3405,7 @@
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 8, 2024</span>
   </span>
 
     

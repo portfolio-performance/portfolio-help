@@ -3347,7 +3347,7 @@
         <li class="md-nav__item">
   <a href="#etf-tracker" class="md-nav__link">
     <span class="md-ellipsis">
-      ETF tracker
+      ETF Tracker
     </span>
   </a>
   
@@ -3397,11 +3397,12 @@
   <h1>Historische Kurse</h1>
 
 <p><figure class="align-right" style="width:40%" id="_figure-1"><figcaption>Abbildung 1.  Documentation Framework.</figcaption><img alt="" src="images/historische-kursquellen.png"></figure></p>
-<p>Die Suche nach guten und aktuellen, sowie kostenlosen Kursquellen kann eine Herausforderung sein. Die Liste der Datenquellen in Portfolio Performance umfasst die folgenden Optionen (siehe Abbildung 1): <a href="alpha-vantage/">Alpha Vantage</a>, <a href="eodhd/">EOD Historical Data</a>, Finnhub, Leeway, Twelve Data, <a href="portfolioreport/">Portfolio Report</a>, Quandl, und <a href="yahoo-finance/">Yahoo Finance</a>. Die übrigen Alternativen sind auf Bitcoins und andere statistische Daten zugeschnitten.</p>
+<p>Die Suche nach guten und aktuellen sowie kostenlosen Kursquellen kann eine Herausforderung sein. Die Liste der Datenquellen in Portfolio Performance umfasst die folgenden Optionen (siehe Abbildung 1): <a href="alpha-vantage/">Alpha Vantage</a>, <a href="eodhd/">EOD Historical Data</a>, Finnhub, Leeway, Twelve Data, <a href="portfolioreport/">Portfolio Report</a>, Quandl, und <a href="yahoo-finance/">Yahoo Finance</a>. 
+Weitere Optionen sind <code>Tabelle auf einer Webseite</code> sowie `JSON. Mit diesen Quellen lassen sich auch exotische Kurse herunterladen.</p>
 <p>Leider sind die Nutzungsbedingungen für viele dieser Optionen im Laufe der Zeit immer restriktiver geworden. Sie sind hier hauptsächlich aus Kompatibilitätsgründen aufgeführt. In der Praxis können nur <a href="portfolioreport/">Portfolio Report</a> und <a href="yahoo-finance/">Yahoo Finance</a> oder JSON für ein typisches Portfolio empfohlen werden.</p>
 <p>Einige spezifische Anwendungsfälle werden im Folgenden erörtert. Viele weitere sind im <a href="https://forum.portfolio-performance.info/t/quellen-fur-historische-kurse/46">Forum</a> beschrieben.</p>
 <h2 id="sehr-alte-historische-kurse">Sehr alte historische Kurse</h2>
-<p>Die meisten Finanzdienste bieten in der Regel historische Kurse für einen begrenzten Zeitraum an, z. B. für das letzte Jahr oder seit einem bestimmten Datum. Wenn du jedoch zu den Glücklichen gehörst, die bereits in den 1980er Jahren Apple-Aktien gekauft haben, kannst du deine Performance von Anfang an verfolgen.</p>
+<p>Die meisten Finanzdienste bieten in der Regel historische Kurse für einen begrenzten Zeitraum an, z. B. für das letzte Jahr oder seit einem bestimmten Datum. Wenn Du jedoch zu den Glücklichen gehörst, die bereits in den 1980er Jahren Apple-Aktien gekauft haben, kannst Du Deine Performance von Anfang an verfolgen.</p>
 <div class="admonition anmerkung">
 <p class="admonition-title">Anmerkung</p>
 <p>Apple ging am 12. Dezember 1980 zum ersten Mal an die Börse und eröffnete mit einem Kurs von 22 $ pro Aktie.</p>
@@ -3412,23 +3413,23 @@
 <p>Die Wahl von <a href="yahoo-finance/">Yahoo Finance</a> als Kurs-Feed-Anbieter bringt dich nicht sehr weit: Es werden nur 3 Monate historischer Kurse heruntergeladen, beginnend mit dem heutigen Tag.</p>
 </li>
 <li>
-<p>Wenn du den <a href="json/">JSON Quote Provider</a> wählst, kannst du den gewünschten Zeitraum für die Kurse angeben. Mit der folgenden URL wird beispielsweise versucht, die Kursdaten der letzten 30 Jahre herunterzuladen:</p>
+<p>Wenn Du den <a href="json/">JSON Quote Provider</a> wählst, kannst Du den gewünschten Zeitraum für die Kurse angeben. Mit der folgenden URL wird beispielsweise versucht, die Kursdaten der letzten 30 Jahre herunterzuladen:</p>
 <p><code>https://query1.finance.yahoo.com/v8/finance/chart/NVDA?interval=1d&amp;range=30y</code></p>
-<p>Du wirst keine Daten für die letzten 30 Jahre erhalten, aber du bekommst Daten bis 1991, also etwa 25 Jahre historische Kurse.</p>
+<p>Du wirst keine Daten für die letzten 30 Jahre erhalten, aber Du bekommst Daten bis 1991, also etwa 25 Jahre historische Kurse.</p>
 </li>
 <li>
-<p>Normalerweise erhälst du historische Kurse auf den Webseiten der Unternehmen. Überraschenderweise bietet die Apple-Webseite nicht die Möglichkeit, historische Daten herunterzuladen, du kannst nur einige Preise nachschlagen. Alternativ kannst du auf <a href="https://investor.apple.com/dividend-history/default.aspx">dividend and split</a> Informationen zugreifen. Auf der Website von <a href="https://www.nasdaq.com/market-activity/stocks/aapl/historical">NASDAQ</a> kannst du eine CSV-Datei herunterladen, die nur 10 Jahre in die Vergangenheit zurückreicht.</p>
+<p>Normalerweise erhältst Du historische Kurse auf den Webseiten der Unternehmen. Überraschenderweise bietet die Apple-Webseite nicht die Möglichkeit, historische Daten herunterzuladen, Du kannst nur einige Preise nachschlagen. Alternativ kannst Du auf <a href="https://investor.apple.com/dividend-history/default.aspx">dividend and split</a> Informationen zugreifen. Auf der Website der <a href="https://www.nasdaq.com/market-activity/stocks/aapl/historical">NASDAQ</a> kannst Du eine CSV-Datei herunterladen, die nur 10 Jahre in die Vergangenheit zurückreicht.</p>
 </li>
 <li>
-<p>Da es sich um eine sehr bekannte Aktie handelt, kannst du im Internet natürlich auch umfangreichere Daten finden. Zum Beispiel bietet <a href="https://www.kaggle.com/datasets/meetnagadia/apple-stock-price-from-19802021">Kaggle</a> eine CSV-Datei der Apple-Aktienkurse von 1980 bis 2021. Du könntest diese Datei herunterladen, sie in die historischen Kurse importieren und die fehlenden Daten von Yahoo Finance ergänzen lassen.</p>
+<p>Da es sich um eine sehr bekannte Aktie handelt, kannst Du im Internet natürlich auch umfangreichere Daten finden. Zum Beispiel bietet <a href="https://www.kaggle.com/datasets/meetnagadia/apple-stock-price-from-19802021">Kaggle</a> eine CSV-Datei der Apple-Aktienkurse von 1980 bis 2021. Du könntest diese Datei herunterladen, sie in die historischen Kurse importieren und die fehlenden Daten von Yahoo Finance ergänzen lassen.</p>
 </li>
 </ol>
 <h2 id="investmentfonds">Investmentfonds</h2>
-<p>Angenommen, du möchtest den <code>Sustainable Health Care Fund</code> (ISIN: lu0114720955) des in Europa ansässigen <a href="https://www.fidelity.lu/funds/factsheet/LU0114720955">Fidelity Funds</a> verfolgen. Bei <a href="https://finance.yahoo.com/quote/FJ2U.F/history?p=FJ2U.F">Yahoo Finance</a> findest du nur den letzten Kurs.</p>
+<p>Angenommen, Du möchtest den <code>Sustainable Health Care Fund</code> (ISIN: lu0114720955) des in Europa ansässigen <a href="https://www.fidelity.lu/funds/factsheet/LU0114720955">Fidelity Funds</a> verfolgen. Bei <a href="https://finance.yahoo.com/quote/FJ2U.F/history?p=FJ2U.F">Yahoo Finance</a> findest Du nur den letzten Kurs.</p>
 <p><a href="https://www.investing.com/funds/lu0114720955">Investing.com</a> leistet etwas bessere Arbeit und bietet historische Daten seit der Auflegung des Fonds (2000-09-01). Du kannst diese Daten als CSV-Datei herunterladen; siehe Abschnitt <a href="csv-file/">Herunterladen von historischen Kursen &gt; CSV-Datei</a>.</p>
 <p>Die umfangreichste Website für Investmentfonds ist natürlich Morningstar.
 Am besten nutzt ihr dazu die europäische Webseite: https://www.morningstar.co.uk/uk/funds/snapshot/snapshot.aspx?id=F0GBR04EBS&amp;tab=13</p>
-<h2 id="etf-tracker">ETF tracker</h2>
+<h2 id="etf-tracker">ETF Tracker</h2>
 <h2 id="bonds">Bonds</h2>
 <h2 id="gold">Gold</h2>
 
@@ -3451,7 +3452,7 @@ Am besten nutzt ihr dazu die europäische Webseite: https://www.morningstar.co.u
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 8, 2024</span>
   </span>
 
     
