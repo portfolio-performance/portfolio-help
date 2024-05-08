@@ -10,7 +10,7 @@ Als Beispiel dient die folgende [URL](https://eodhd.com/api/eod/AAPL?from=2024-0
 
 `https://eodhd.com/api/eod/AAPL?from=2024-01-15&to=2024-01-17&period=d&api_token=demo&fmt=json`
 
-Mit Stand vom Januar 2024 ist der bereitgestellte Demo-API-Token oder -Schlüssel noch gültig. Sollte er in Zukunft nicht mehr funktionieren, brauchst Du einen [kostenlosen API-Schlüssel](./eodhd.md).
+Mit Stand vom Januar 2024 ist der bereitgestellte Demo-API-Token noch gültig. Sollte er in Zukunft nicht mehr funktionieren, brauchst Du einen [kostenlosen API-Schlüssel](eodhd.md).
 
 ``` JSON
 [
@@ -42,7 +42,7 @@ Um auf einen bestimmten Wert innerhalb dieser hierarchischen Struktur zuzugreife
 
 Eine Abfragesprache wie *JSONPath* (von Portfolio Performance verwendet) stellt die Wurzel der JSON-Antwort mit einem $-Symbol dar. Um die Elemente im Pfad zu trennen, musst Du einen Punkt verwenden. Um zum Beispiel auf den Schlusskurs des zweiten Tages zuzugreifen, musst Du den Pfad ``$[1].close`` verwenden. Das bedeutet, dass Du mit der Wurzel $ beginnst, dann zum zweiten Element in der Liste ``$[1]`` gehst, das ein Objekt ist, und dann zum Wert mit dem Schlüssel "close" im Objekt ``$[1].close`` gehst, das eine Zahl ist.
 
-Du brauchst diesen JSON-Pfad, um den JSON Quote Feed Provider von Portfolio Performance zu vervollständigen. Verwende  die folgenden Parameter, um die historischen Kurse abzurufen (siehe auch Abbildung 1). Eine Erklärung der Bedeutung der verschiedenen Kursnotierungen findest Du unter [Konzepte > Historische Kurse](../../Konzepte/historische-kurse.md).
+Du brauchst diesen JSON-Pfad, um den JSON Quote Feed Provider von Portfolio Performance zu vervollständigen. Verwende  die folgenden Parameter, um die historischen Kurse abzurufen (siehe auch Abbildung 1). Eine Erklärung der Bedeutung der verschiedenen Kursnotierungen findest Du unter Grundlagen > [Historische Kurse](../../grundlagen/historische-kurse.md).
 
 Abbildung: Server Antwort mit Kursdaten im JSON-Format (=2D.DE).{class=pp-figure}
 

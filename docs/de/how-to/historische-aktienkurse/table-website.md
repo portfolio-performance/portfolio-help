@@ -43,6 +43,6 @@ Abbildung: Manueller Abruf.{class=pp-figure style="width:80%"}
 - Klicke mit der rechten Maustaste auf die Tabelle und wähle "Seitenquelltext" aus dem Kontextmenü.
 - Markiere den gesamten Text mit der Tastenkombination Strg + A.
 - Kopiere den Text mit dem Tastaturkürzel Strg + C.
-- Navigiere zum Dialogfeld in Abbildung 3; siehe [Ansicht Alle Wertpapiere](../../reference/view/securities/all-securities.md#bottom-panel).
+- Navigiere zum Dialogfeld Historische Kurse; siehe [Alle Wertpapiere](../../referenzhandbuch/ansichten/wertpapiere/alle-wertpapiere.md) Abbildung 7.
 - Füge den Text (Strg + V) in den markierten Bereich ein.
 - Klicke auf `Weiter` und dann auf `Fertigstellen`.
