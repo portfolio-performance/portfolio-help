@@ -6,7 +6,7 @@ title: Konten anlegen
 
 *Portfolio Performance* nutzt Konten, um Bargeldbestände abzubilden. Mit ein paar Handgriffen kann man Konten für verschiedene Zwecke verwenden, zum Beispiel für:
 
-* Depotverrechnungskonto
+* Depotverrechnungskonto bzw. Referenzkonto
 * Termingeld
 * Kündigungsgeld
 * Tagesgeld
@@ -14,7 +14,7 @@ title: Konten anlegen
 
 ## Allgemeine Einstellungen für alle Kontoarten
 
-Im ersten Schritt ist es ratsam, Spalten unter Stammdaten – Konten anzulegen, die für die o.g. Kontoarten sinnvoll wären (z. B. für Termingeldkonten ein Zinssatz, Anlagebeginn, Fälligkeit, Restlaufzeit in Tagen).
+Im ersten Schritt ist es ratsam,  verschiedene Spalten unter Stammdaten –-> Konten anzulegen, die für die o.g. Kontoarten sinnvoll wären (z. B. für Termingeldkonten: Zinssatz, Anlagebeginn, Fälligkeit, Restlaufzeit in Tagen).
 
 Dazu unter "Allgemeine Daten – Einstellungen" auf den Reiter "Attribute: Konten" klicken.
 
@@ -39,7 +39,7 @@ Beispielsweise könnten das folgende Attribut sein:
 
 * **Datum**: für die Eingabe von Anlagebeginn, Fälligkeitsdatum und ggf. einer Deadline für die Kündigung eines Termingeldes
 
-    Sofern ein Datum für den Anlagebeginn sowie eines für die Fälligkeit der Anlage eingegeben werden soll, muss Datum zweimal als Attribut hinzugefügt werden und entsprechend beschriftet (Anlagebeginn / Fälligkeit) werden. Für die Einrichtung einer weiteren Spalte für ein Kündigungsdatum einfach ein weiteres Mal über das Pluszeichen das Attribut Datum hinzufügen und beschreiben.
+    Sofern ein Datum für den Anlagebeginn sowie eines für die Fälligkeit der Anlage eingegeben werden soll, muss `Datum` zweimal als Attribut hinzugefügt werden und entsprechend beschriftet (Anlagebeginn / Fälligkeit) werden. Für die Einrichtung einer weiteren Spalte für ein Kündigungsdatum einfach ein weiteres Mal über das Pluszeichen das Attribut Datum hinzufügen und beschreiben.
 
 ## Konten anlegen
 
@@ -53,7 +53,7 @@ In der Übersicht "Konten" unter "Stammdaten" werden neue Konten durch Linksklic
 
 Durch einen Doppelklick auf ein Feld lassen sich die gewünschten Daten (Kontoart, Bankname, Zinssatz, Anlagebeginn, Fälligkeit) eingeben. Damit eine Restlaufzeit von *Portfolio Performance* automatisch angezeigt werden kann, muss das Datum im lokalen Format angegeben werden, z. B. DD.MM.JJJJ.
 
-In diesem Beispiel sieht, dass dann wie folgt aus:
+In diesem Beispiel sieht das dann wie folgt aus:
 
 Abbildung: Stammdaten - Konten.{class=pp-figure style="width:90%"}
 
@@ -70,4 +70,4 @@ Abbildung: Konto - Kontextmenü.{class=pp-figure style="width:90%"}
 
 Sofern es sich um ein Depotverrechnungskonto handelt, muss es unter "Stammdaten – Depots" in der Spalte "Referenzkonto" einem Depot noch zugeordnet werden.
 
-Es können mehrere Verrechnungskonten in unterschiedlichen Währungen für dass selbe Depot geführt werden. Dazu unter "Stammdaten - Konten" die entsprechenden Konten anlegen, Kontowährung für jedes Verrechnungskonto auswählen und jedes dieser Konten demselben Depot unter "Stammdaten - Depots" zuordnen.
+Es können mehrere Verrechnungskonten in unterschiedlichen Währungen für dasselbe Depot geführt werden. Dazu unter "Stammdaten - Konten" die entsprechenden Konten anlegen, Kontowährung für jedes Verrechnungskonto auswählen und jedes dieser Konten demselben Depot unter "Stammdaten - Depots" zuordnen.

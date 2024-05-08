@@ -2,7 +2,7 @@
 title: Einzahlung
 ---
 
-Um eine Einzahlung in einer bestimmten Währung zu veranlassen, navigierst du zum entsprechenden Konto. `Stammdaten > Konto`. Vergewissere dich, dass das gewählte Konto dieselbe Währung hat wie die Einzahlung. Um Geldbeträge zwischen Konten zu transferieren, sei es in der gleichen Währung oder in verschiedenen Währungen (unter Verwendung der von der [EZB](https://data.ecb.europa.eu/currency-converter) bereitgestellten Wechselkurse), benutzt du `Kontextmenü > Umbuchung`.
+Um eine Einzahlung in einer bestimmten Währung zu veranlassen, navigierst Du zum entsprechenden Konto. `Stammdaten > Konto`. Vergewissere Dich, dass das gewählte Konto dieselbe Währung hat wie die Einzahlung. Um Geldbeträge zwischen Konten zu transferieren, sei es in der gleichen Währung oder in verschiedenen Währungen (unter Verwendung der von der [EZB](https://data.ecb.europa.eu/currency-converter) bereitgestellten Wechselkurse), benutzt Du `Kontextmenü > Umbuchung`.
 
 # Einzahlung buchen
 
@@ -12,7 +12,7 @@ Abbildung: Einzahlung für den Kauf von Apple Aktien.{class=pp-figure style="wid
 
 ![](../images/einlage.png)
 
-Bitte beachten Sie, dass eine Einlage zu bestimmten Performance-Kennzahlen beiträgt. Außerdem ist zu beachten, dass jeder Wertpapierkauf zu einer Verringerung des Kontostandes führt. Wenn der Kontostand nicht ausreicht, kann dein Konto ins Minus rutschen.
+Bitte beachten Sie, dass eine Einlage zu bestimmten Performance-Kennzahlen beiträgt. Außerdem ist zu beachten, dass jeder Wertpapierkauf zu einer Verringerung des Kontostandes führt. Wenn der Kontostand nicht ausreicht, kann Dein Konto ins Minus rutschen.
 
 # Umbuchung zwischen unterschiedlichen Währungen
 

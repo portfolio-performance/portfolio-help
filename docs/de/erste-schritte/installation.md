@@ -6,7 +6,7 @@ title: Installation
 
 Komprimierte Datei laden, auspacken und per Doppelklick starten.
 
-Die XML/Portfolio Datei mit den eigenen Daten (Wertpapiere, Depots und Konten, Buchungen) speichert man am besten irgendwo unter *Eigene Dokumente*.
+Die XML/Portfolio-Datei mit den eigenen Daten (Wertpapiere, Depots und Konten, Buchungen) speichert man am besten irgendwo unter *Eigene Dokumente*.
 
 ## macOS
 
@@ -16,7 +16,7 @@ Die XML/Portfolio Datei mit den eigenen Daten (Wertpapiere, Depots und Konten, B
 
 ## Linux
 
-Die präferierte Option ist [Portfolio Performance von Flathub](https://flathub.org/apps/info.portfolio_performance.PortfolioPerformance) zu installieren.
+Die präferierte Option ist, [Portfolio Performance von Flathub](https://flathub.org/apps/info.portfolio_performance.PortfolioPerformance) zu installieren.
 
 Alternativ kannst Du *Portfolio Performance* auch manuell installieren:
 
@@ -31,15 +31,15 @@ sudo apt install openjdk-17-jre
 
 ## Windows
 
-Die präferierte Option ist der [Windows-Installer](https://www.portfolio-performance.info). Damit wird Portfolio Performance (üblicherweise) in das Verzeichnis **C:\Users\{Benutzername}\AppData\Local\Programs\PortfolioPerformance** installiert wird. Diese Installation kann dann im Anschluss über die Online Aktualisierung einfach aktualisiert werden.
+Die präferierte Option ist der [Windows-Installer](https://www.portfolio-performance.info). Damit wird Portfolio Performance (üblicherweise) in das Verzeichnis **C:\Users\{Benutzername}\AppData\Local\Programs\PortfolioPerformance** installiert. Diese Installation kann dann im Anschluss über die Online-Aktualisierung einfach aktualisiert werden.
 
 ## Windows Defender und Virenprogramme
 
 
 Wichtig zu beachten ist, dass der Windows Defender die Installation von Portfolio Performance möglicherweise blockiert. Dies geschieht aufgrund des Fehlens einer Microsoft-Signatur.
 Zertifikate sind kostenintensiv, weshalb bisher darauf verzichtet wurde, eine solche zu erwerben.
-Sollte euer Virenscanner euch eine Warnung anzeigen und das Programm in Quarantäne verschieben, geschieht das aufgrund eines Missverständnisses. Viele Virenscanner arbeiten mit einer Heuristik, um gegebenenfalls zukünftige Bedrohungen zu finden.
-Wen ihr betroffen seid, könnt ihr entweder manuell das Programm aus der Quarantäne nehmen, oder ihr schickt die Datei an den Hersteller eures Antivirenprogramms.
+Sollte Euer Virenscanner Euch eine Warnung anzeigen und das Programm in Quarantäne verschieben, geschieht das aufgrund eines Missverständnisses. Viele Virenscanner arbeiten mit einer Heuristik, um gegebenenfalls zukünftige Bedrohungen zu finden.
+Wenn ihr betroffen seid, könnt ihr entweder manuell das Programm aus der Quarantäne nehmen oder ihr schickt die Datei an den Hersteller Eures Antivirenprogramms.
 
 
 Im *Workspace* Verzeichnis speichert Portfolio Performance temporäre Informationen wie die aktuelle Fenstergröße, die zuletzt geöffneten Dateien und Verzeichnisse und andere Laufzeitinformationen.
@@ -55,4 +55,4 @@ Das Workspace-Verzeichnis liegt:
     Das "Library" Verzeichnis ist ein verstecktes Verzeichnis. Am einfachsten ist es im Finder über das Menü *Gehe zu* -> *Gehe zum Ordner...* den Ordner "~/Library/" (ohne Anführungszeichen) zu öffnen.
 
 !!! note "Windows"
-    Das "LOCALAPPDATA" Verzeichnis ist ein verstecktes Verzeichnis. Am einfachsten ist es, die Tastenkombination [Windows] + [R] zu drücken und im "Ausführen"-Fenster "%localappdata%" (ohne Anführungszeichen) eingeben.
+    Das "LOCALAPPDATA" Verzeichnis ist ein verstecktes Verzeichnis. Am einfachsten ist es, die Tastenkombination [Windows] + [R] zu drücken und im "Ausführen"-Fenster "%localappdata%" (ohne Anführungszeichen) einzugeben.

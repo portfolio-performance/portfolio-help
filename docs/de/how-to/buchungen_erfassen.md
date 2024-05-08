@@ -18,7 +18,7 @@ Für Kauf- und Verkaufsbuchungen kann - wie für alle Wertpapierbuchungen - eine
 
 ### Wertpapier: Einlieferung / Auslieferung
 
-Einlieferungen und Auslieferungen sind das Pendant zu Käufen und Verkäufen, aber **ohne** eine Buchung auf dem Verrechnungskonto. Es gibt zwei typische Anwendungsfälle für diesen Buchungstyp: man bekommt Wertpapiere in sein Depot übertragen oder man möchte das Depot in *Portfolio Performance* abbilden ohne das Verrechnungskonto pflegen zu müssen.
+Einlieferungen und Auslieferungen sind das Pendant zu Käufen und Verkäufen, aber **ohne** eine Buchung auf dem Verrechnungskonto. Es gibt zwei typische Anwendungsfälle für diesen Buchungstyp: man bekommt Wertpapiere in sein Depot übertragen oder man möchte das Depot in *Portfolio Performance* abbilden, ohne das Verrechnungskonto pflegen zu müssen.
 
 Einlieferungen und Auslieferungen sind performance-neutral bis auf die ggf. erfassten Steuern und Gebühren.
 

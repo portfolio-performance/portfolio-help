@@ -1,4 +1,4 @@
 ---
-title: Statement of Assets
+title: Vermögensübersicht
 ---
 
