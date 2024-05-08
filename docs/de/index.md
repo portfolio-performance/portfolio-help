@@ -10,12 +10,12 @@ Seit Anfang 2012 gibt es [Portfolio Performance](https://portfolio-performance.i
 
 ## Was ist Portfolio Performance?
 
-*Portfolio Performance* ist ein einfaches und leistungsfähiges Tool für die Pflege deines Wertpapier-Portfolios. Mit *Portfolio Performance* kannst du,
+*Portfolio Performance* ist ein einfaches und leistungsfähiges Tool für die Pflege Deines Wertpapier-Portfolios. Mit *Portfolio Performance* kannst Du:
 
-- die Zusammensetzung und Entwicklung deines Wertpapier-Portfolios mit aussagekräftigen Übersichten, Kennzahlen und Diagrammen verfolgen.
-- historische Kursverläufe der Wertpapiere und deine Käufe und Verkäufe nachverfolgen.
-- die Wertpapiere im Portfolio nach deinem Bedarf klassifizieren und die Zusammensetzung visualisieren, z. B. nach Anlageklassen und Regionen.
-- die Portfolio Strategie mit deiner geplanten Asset Allocation definieren, verfolgen und im Rebalancing sicherstellen.
+- die Zusammensetzung und Entwicklung Deines Wertpapier-Portfolios mit aussagekräftigen Übersichten, Kennzahlen und Diagrammen verfolgen.
+- historische Kursverläufe der Wertpapiere und Deine Käufe und Verkäufe nachverfolgen.
+- die Wertpapiere im Portfolio nach Deinem Bedarf klassifizieren und die Zusammensetzung visualisieren, z. B. nach Anlageklassen und Regionen.
+- die Portfoliostrategie mit Deiner geplanten Asset Allocation definieren, verfolgen und im Rebalancing sicherstellen.
 - eine übergreifende Sicht über mehrere Depots und Verrechnungskonten herstellen.
 - die Abrechnungen von Online-Banken und -Brokern schnell und bequem zu importieren.
 
@@ -57,7 +57,7 @@ Die Portfolio-Datei enthält alle Wertpapiere, Konten, Depots, Buchungen, Klassi
 
 ### Portfolio Strategie definieren und Rebalancing durchführen
 
-- Du bildest deine eigene Portfolio Strategie mit Soll-Werten für verschiedene Anteilsklassen ab.
+- Du bildest deine eigene Portfoliostrategie mit Soll-Werten für verschiedene Anteilsklassen ab.
 - Du kannst einen Soll-Ist-Vergleich machen und ein Rebalancing durchführen.
 
 ### Das Portfolio auf dem aktuellen Stand halten
@@ -74,4 +74,4 @@ Die Portfolio-Datei enthält alle Wertpapiere, Konten, Depots, Buchungen, Klassi
 
 ## Mithelfen...
 
-Wie Ihr leicht sehen könnt, gibt es noch viele weiße Seiten in diesem Handbuch. Einige Fragen decken die [Frequently Asked Questions (FAQ)](https://forum.portfolio-performance.info/t/faq-haeufig-gestellte-fragen/1721) im Forum ab. Wer sich berufen fühlt, ist herzlich eingeladen an diesem Handbuch mitzuschreiben: auf jeder Seite gibt es oben rechts einen kleinen Stift um die Seite direkt auf [Github](https://github.com/portfolio-performance/portfolio-help) zu bearbeiten. Meldet Euch bei Interesse auch im Forum! [Vielen Dank an alle, die bisher schon mitgeholfen haben.](https://github.com/portfolio-performance/portfolio-help/graphs/contributors)
+Wie Ihr leicht sehen könnt, gibt es noch viele weiße Seiten in diesem Handbuch. Einige Fragen decken die [Frequently Asked Questions (FAQ)](https://forum.portfolio-performance.info/t/faq-haeufig-gestellte-fragen/1721) im Forum ab. Wer sich berufen fühlt, ist herzlich eingeladen, an diesem Handbuch mitzuschreiben: auf jeder Seite gibt es oben rechts einen kleinen Stift, um die Seite direkt auf [Github](https://github.com/portfolio-performance/portfolio-help) zu bearbeiten. Meldet euch bei Interesse auch im Forum! [Vielen Dank an alle, die bisher schon mitgeholfen haben.](https://github.com/portfolio-performance/portfolio-help/graphs/contributors)

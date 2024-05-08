@@ -4,7 +4,7 @@ title: Yahoo Finance
 
 [Yahoo Finance](https://finance.yahoo.com/) bietet eine breite Palette von Tools und Finanzdaten, einschließlich historischer und Echtzeit-Aktienkurse, interaktiver Diagramme und aktueller Nachrichten, die ein breites Spektrum von Finanzmärkten abdecken.
 
-Abbildung: Website von Yahoo Finance mit Historischen Kursen der Deutschen Telekom.{class=pp-figure}
+Abbildung: Website von Yahoo Finance mit historischen Kursen der Deutschen Telekom.{class=pp-figure}
 
 ![](images/yahoo-website-telekom.png)
 

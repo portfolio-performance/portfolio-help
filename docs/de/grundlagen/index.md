@@ -1,5 +1,3 @@
 ---
 Title: Grundprinzip
 ---
-# Basic concepts
-

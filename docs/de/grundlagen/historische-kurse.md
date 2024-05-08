@@ -1,3 +1,3 @@
 ---
-title: Historical Prices
+title: Historische Kurse
 ---

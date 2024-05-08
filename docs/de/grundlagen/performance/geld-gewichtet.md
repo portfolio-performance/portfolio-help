@@ -1,3 +1,3 @@
 ---
-title: Money weighted rate of return
+title: Geld gewichtete Rendite
 ---

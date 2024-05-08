@@ -4,13 +4,13 @@ title: Alpha Vantage
 
 Alpha Vantage bietet Echtzeit- und historische Kursdaten über APIs und Tabellen. Du kannst einen [kostenlosen API-Schlüssel](https://www.alphavantage.co/support/) anfordern, der die meisten Datensätze für bis zu 25 Anfragen pro Tag abdeckt. Echtzeit-Kurse und andere Daten sind jedoch kostenpflichtig.
 
-Die [API-Dokumentation](https://www.alphavantage.co/documentation/) ist sehr gut beschrieben und enthält viele Beispiele. Diese Beispiele können im Browser mit einem mitgelieferten Demo-API-Schlüssel ausgeführt werden. Wenn du deine eigenen Abfragen ausführen möchtest, benötigst du einen persönlichen API-Schlüssel.
+Die [API-Dokumentation](https://www.alphavantage.co/documentation/) ist sehr gut beschrieben und enthält viele Beispiele. Diese Beispiele können im Browser mit einem mitgelieferten Demo-API-Schlüssel ausgeführt werden. Wenn Du Deine eigenen Abfragen ausführen möchtest, benötigst Du einen persönlichen API-Schlüssel.
 
 Herunterladen der historischen NVIDIA-Preise.
 
 `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=NVDA&apikey=my_API_key`
 
-Die Antwort enthält einige Metadaten und die letzten 100 historischen Kurse, die im Browserfenster angezeigt werden. Wenn du alle verfügbaren historischen Kurse haben möchtest, verwende die Option "outputsize=full".
+Die Antwort enthält einige Metadaten und die letzten 100 historischen Kurse, die im Browserfenster angezeigt werden. Wenn Du alle verfügbaren historischen Kurse haben möchtest, verwende die Option "outputsize=full".
 
 ```
 {

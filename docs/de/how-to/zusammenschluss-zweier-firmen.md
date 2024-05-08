@@ -1,3 +1,3 @@
 ---
-title: Zusammenschluss zweier Firmen
+title: Zusammenschluss (Fusion)zweier Firmen
 ---

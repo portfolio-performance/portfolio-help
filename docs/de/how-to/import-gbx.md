@@ -1,3 +1,3 @@
 ---
-title: Wie man des csv import für gbx Kurse nutzen kann
+title: Wie man den csv import für gbx Kurse nutzen kann
 --- 
