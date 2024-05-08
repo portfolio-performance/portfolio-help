@@ -11,6 +11,7 @@
     - [Contributing rules](#contributing-rules)
 - [Style guide](#style-guide)
     - [Navigation](#navigation)
+    - [Images and videos](images-and-videos)
     - [Figure captions](#figure-captions)
     - [Formulas or mathematical symbols](#formulas-or-mathematical-symbols)
 
