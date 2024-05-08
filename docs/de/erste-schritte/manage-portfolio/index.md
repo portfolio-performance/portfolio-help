@@ -1,17 +1,17 @@
 ---
-title: Verwaltung deines Portfolios
+title: Verwaltung Deines Portfolios
 ---
 
-Wenn du die im Kapitel "Erste Schritte" beschriebenen Schritte befolgt hast, wirst du wahrscheinlich festgestellt haben, dass dein Portfolio noch keine Wertpapiere enthält. Bis jetzt hast du noch keine Käufe getätigt. Im [Referenzhandbuch](../../referenzhandbuch/index.md) findest du die grundlegenden Transaktionen: Kaufen, Verkaufen und Dividende erhalten. Lass uns nun einen möglichen Arbeitsablauf für die effektive Verwaltung deines Anlageportfolios untersuchen.
+Wenn Du die im Kapitel "Erste Schritte" beschriebenen Schritte befolgt hast, wirst Du wahrscheinlich festgestellt haben, dass Dein Portfolio noch keine Wertpapiere enthält. Bis jetzt hast Du noch keine Käufe getätigt. Im [Referenzhandbuch](../../referenzhandbuch/index.md) findest Du die grundlegenden Transaktionen: Kaufen, Verkaufen und Dividende erhalten. Lass uns nun einen möglichen Arbeitsablauf für die effektive Verwaltung Deines Anlageportfolios untersuchen.
 
 Es gibt drei mögliche Szenarien, die man in Betracht ziehen kann, wobei jedes seinen eigenen Ansatz hat. Am einfachsten ist es natürlich, ganz von vorne anzufangen.
 
-1. Du fängst bei Null an.
-   Du beginnst deine Investitionsreise mit einem leeren Portfolio. Neben elementaren strategischen Entscheidungen über Anlageziele, Risikotoleranz und Zeithorizont musst du deinen Broker oder deine Bank beauftragen, einige Wertpapiere zu erwerben. Anschließend kannst du diese Transaktionen in Portfolio Performanceeingeben.
+1. Du fängst bei null an.
+   Du beginnst Deine Investitionsreise mit einem leeren Portfolio. Neben elementaren strategischen Entscheidungen über Anlageziele, Risikotoleranz und Zeithorizont musst Du Deinen Broker oder Deine Bank beauftragen, einige Wertpapiere zu erwerben. Anschließend kannst Du diese Transaktionen in Portfolio Performance eingeben.
 
-2. Rekonstruktion deines aktuellen Portfolios auf der  Grundlage früherer Transaktionen.
-    Du hast bereits einige Investitionen in der (fernen) Vergangenheit getätigt, daher musst du dein aktuelles Portfolio auf der Grundlage von früheren Broker- oder Bankauszügen rekonstruieren. Wahrscheinlich benötigst du einige Finanzdaten, z. B. historische Kurse oder Fusionsdaten. Je nachdem, wie weit du zurückgehen möchtest, kann dies eine sehr anspruchsvolle Aufgabe werden.
+2. Rekonstruktion Deines aktuellen Portfolios auf der Grundlage früherer Transaktionen.
+    Du hast bereits einige Investitionen in der (fernen) Vergangenheit getätigt, daher musst Du Dein aktuelles Portfolio auf der Grundlage von früheren Broker- oder Bankauszügen rekonstruieren. Wahrscheinlich benötigst Du einige Finanzdaten, z. B. historische Kurse oder Fusionsdaten. Je nachdem, wie weit Du zurückgehen möchtest, kann dies eine sehr anspruchsvolle Aufgabe werden.
 
 
 3. Beginn des Portfoliomanagements heute. 
-    Wenn du heute mit der Verwaltung deines Portfolios beginnst, musst du deine aktuelle finanzielle Situation einschätzen. Beginne mit der Liste deiner Wertpapiere und trage für jedes von ihnen eine Kauftransaktion zum heutigen Zeitpunkt ein. Dabei gehen natürlich einige wertvolle Informationen verloren, und die Performanceberechnungen spiegeln nicht die tatsächliche Wertentwicklung deines Vermögens wider.
+    Wenn Du heute mit der Verwaltung Deines Portfolios beginnst, musst Du Deine aktuelle finanzielle Situation einschätzen. Beginne mit der Liste Deiner Wertpapiere und trage für jedes von ihnen eine Kauftransaktion zum heutigen Zeitpunkt ein. Dabei gehen natürlich einige wertvolle Informationen verloren, und die Performanceberechnungen spiegeln nicht die tatsächliche Wertentwicklung Deines Vermögens wider.
