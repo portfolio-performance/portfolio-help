@@ -3,20 +3,24 @@
 ## Contents
 
 
-  - [Writing setup](#writing-setup)
+- [Setup](#setup)
     - [Source files of the Portfolio Performance Manual](#source-files-of-the-portfolio-performance-manual)
     - [MkDocs & Material for MkDocs](#mkdocs--material-for-mkdocs)
-  - [Navigation](#navigation)
-  - [Style guide](#style-guide)
+    - [Plugin](#plugins)
+    - [Version control](#version-control)
+    - [Contributing rules](#contributing-rules)
+- [Style guide](#style-guide)
+    - [Navigation](#navigation)
     - [Figure captions](#figure-captions)
+    - [Formulas or mathematical symbols](#formulas-or-mathematical-symbols)
 
-## Writing setup
+## Setup
 
-The Portfolio Performance Manual is written in Markdown language and build with the open-source MkDocs static site generator and the Material for MkDocs framework.
+The Portfolio Performance Manual is written in Markdown language and built with the open-source MkDocs static site generator and the Material for MkDocs framework.
 
 ### Source files of the Portfolio Performance Manual
 
-The Markdown source files of the manual can be retrieved from [https://github.com/portfolio-performance/portfolio-help](https://github.com/portfolio-performance/portfolio-help). In order to contribute to the manual, you need to fork the repository and clone this repo locally; see [Github docs](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) for a detailed workflow. The directory structure of the manual looks like:
+The Markdown source files of the manual can be retrieved from [https://github.com/portfolio-performance/portfolio-help](https://github.com/portfolio-performance/portfolio-help). To contribute to the manual, you need to fork the repository and clone this repo locally; see [Github docs](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) for a detailed workflow. The directory structure of the manual looks like this:
 
 ```
 .
@@ -58,7 +62,7 @@ The Markdown source files of the manual can be retrieved from [https://github.co
 
 At present, the manual is available in two languages: English (en) and German (de). All documentation pages should be stored within these directories; including images and assets (e.g. demo-portfolio.xml). Each language is a separate version and contributors translate the content manually.
 
-Use your favorite (Markdown) text editor to make corrections to the (local) source files. Upon finishing, create a Pull Request to the maintainer of the PP manual. If accepted, your changes will be visible within minutes. 
+Use your favourite (Markdown) text editor to make corrections to the (local) source files. Upon finishing, create a Pull Request to the maintainer of the PP manual. If accepted, your changes will be visible within minutes. 
 
 ### MkDocs & Material for MkDocs
 Only if you need to view your changes locally and within the integrated Materials framework, you need to install both Python modules: [MkDocs installation](https://www.mkdocs.org/user-guide/installation/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/).
@@ -72,7 +76,7 @@ Two plugins are specified in the requirements.txt
 - mkdocs-caption == 0.0.9
 - mkdocs-git-revision-date-localized-plugin == 1.2.1
 
-The `mkdocs-caption` is needed to insert numbered figure captions in pages. The second plugin will add 'Last update: month, day, year' at the bottom of each page. 
+The `mkdocs-caption` is needed to insert numbered figure captions on pages. The second plugin will add 'Last update: month, day, year' at the bottom of each page. 
 
 ### Version control
 Since the PP manual is being maintained in GitHub, version control is already in place. Please pay special attention to the following:
@@ -85,10 +89,20 @@ The PP manual uses many screenshots to clarify concepts. Sooner or later, these 
 
 If you later need this file to recreate the screenshots, you can easily retrieve them with `git checkout` from the respective commit.
 
-## Navigation
+### Contributing rules
+
+
+- Please familiarise yourself with the current manual and ensure adherence to the referenced style guide below. 
+-  Before submitting your changes via a pull request, meticulously proofread and edit your text. Check for any spelling and grammar errors, and ensure that your writing is clear and concise.
+
+## Style guide
+
+A documentation style guide is a set of standards for document writing, ensuring consistency in style and formatting. Numerous comprehensive style guides are available. Below, we describe only a few style rules that are specific to the PP manual. For all other situations, we recommend consulting the [Microsoft Writing Style Guide]((https://learn.microsoft.com/en-us/style-guide/welcome/)), which covers topics such as capitalization of words, numbers, and the choice between active and passive voice.
+
+### Navigation
 The manual is organized into three levels of navigation: the top menu, left sidebar, and right sidebar.
 
-- The top menu displays the primary sections of the manual, such as `About`, `Getting started`, and `Basic concepts` 
+- The top menu displays the primary sections of the manual, such as `About`, `Getting Started`, and `Basic Concepts` 
 
    Figure: Top-level menu. {pp-figure}
 
@@ -110,9 +124,15 @@ nav:
       - ...
 ```
 
-## Style guide
+### Images and videos
 
-A documentation style guide is a set of standards for document writing, ensuring consistency in style and formatting. Numerous comprehensive style guides are available. Below, we describe only a few style rules that are specific to the PP manual. For all other situations, we recommend consulting the [Microsoft Writing Style Guide]((https://learn.microsoft.com/en-us/style-guide/welcome/)), which covers topics such as capitalization of words, numbers, and the choice between active and passive voice.
+Images and videos are stored in subfolders named `images` at the level of the document. This means that there could be several `images` folders. However, this seems a better solution than one single image folder: better scalability, contextual meaning, and easier linking. Attention should be given to possible duplication of images. The naming convention follows the Kebab case, where spaces are replaced with hyphens. Additionally, the image names indicate their purpose, source or origin. For instance, "mnu-transaction-buy.png" is a screenshot, produced from the top-level menu `Transaction > Buy`.
+
+If you want to annotate a screenshot with text, arrows, boxes, and more, use an SVG file and embed the screenshot as a background image. For example, in Inkscape, you can easily paste the screenshot from the clipboard onto the canvas and then save the resulting image as an SVG.
+
+Consider using the existing demo files located in the Assets folder. Ensure that screenshots do not include any confidential (financial) data. Check that the desktop background or any open file lists do not reveal private information. Preferably, utilise the dark mode of PP unless readability is compromised.
+
+ Adjust the resolution of images based on their content; for instance, small pop-up menus may require lower resolution compared to larger screenshots. Minimize unnecessary details in screenshots to reduce the likelihood of future updates. Aim for a minimum resolution of Full HD (1080p) for videos.
 
 ### Figure captions
 
@@ -127,9 +147,6 @@ Figure: Example of Deposit Accounts. {class="pp-figure"}
 ```
 The figure caption is written after `Figure:`. You can add a class to the figure with {myclass}. The reference to the figure is plain Markdown syntax.
 
-Images are stored in subfolders named `images` at level of the document. This means that there could be several `images` folders. However, this seems a better solution than one single image folder: better scalability, contextual meaning, easier linking. Attention should be given to possible duplication of images. The naming convention follows Kebab case, where spaces are replaced with hyphens. Additionally, the image names provide an indication of their source or origin. For instance, "mnu-transaction-buy.png" is a screenshot, produced from the top-level menu `Transaction > Buy`.
-
-If you want to annotate a screenshot with text, arrows, boxes, and more, use an SVG file and embed the screenshot as a background image. For example, in Inkscape, you can easily paste the screenshot from the clipboard onto the canvas and then save the resulting image as an SVG.
 
 ### Formulas or mathematical symbols
 
