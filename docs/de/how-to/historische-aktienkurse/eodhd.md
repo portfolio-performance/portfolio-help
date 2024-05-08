@@ -2,21 +2,21 @@
 title: EODHD
 ---
 
-Die Website [EODHD](https://eodhd.com/) (End of Day Historical Data) bietet umfassende Informationen über alle US-Aktien, ETFs und Investmentfonds. Darüber hinaus umfasst die Plattform historische Daten für Nicht-US-Börsen, die hauptsächlich bis zum 3. Januar 2000 zurückreichen.
+Die Website [EODHD](https://eodhd.com/) (End of Day Historical Data) bietet umfassende Informationen über alle US-Aktien, ETFs und Investmentfonds. Darüber hinaus umfasst die Plattform historische Daten für nicht US-Börsen, die hauptsächlich bis zum 3. Januar 2000 zurückreichen.
 
-Ein [kostenloser API-Token] (https://eodhd.com/register) kann einfach durch Angabe deiner E-Mail-Adresse angefordert werden. Der Token ist beschränkt auf 20 API-Anfragen pro Tag.Es können jedoch nur historische Kurse aus dem letzten Jahr abgerufen werden.
+Ein [kostenloser API-Token] (https://eodhd.com/register) kann einfach durch Angabe Deiner E-Mail-Adresse angefordert werden. Der Token ist beschränkt auf 20 API-Anfragen pro Tag. Es können jedoch nur historische Kurse aus dem letzten Jahr abgerufen werden.
 
 Du kannst den API-Token mit der automatischen Kursabfrage von Portfolio Performance nutzen. Füge den Token in den Einstellungen ein (Hilfe > Einstellungen > API-Schlüssel) und wähle EOD Historical Data als Kurslieferant.
 
-Wenn du spezielle Anforderungen hast, dann kannst du auch die JSON Kursabfrage verwenden (siehe [API Dokumentation](https://eodhd.com/financial-apis/api-for-historical-data-and-volumes/) für einige Anwendungsfälle). Die folgende Anfrage ruft zum Beispiel die historischen Apple-Kurse des **Monats Januar 2000** ab.
+Wenn Du spezielle Anforderungen hast, dann kannst Du auch die JSON Kursabfrage verwenden (siehe [API Dokumentation](https://eodhd.com/financial-apis/api-for-historical-data-and-volumes/) für einige Anwendungsfälle). Die folgende Anfrage ruft zum Beispiel die historischen Apple-Kurse des **Monats Januar 2000** ab.
 
 *Kurs URL*
 
 `https://eodhd.com/api/eod/AAPL?from=2000-01-01&to=2000-01-31&period=d&api_token=demo&fmt=json`
 
-*Pfad zu Datum* = `$.[*].date` and *Pfad zu Kurs* = $.[*].close
+*Pfad zu Datum* = `$.[*].date` und *Pfad zu Kurs* = $.[*].close
 
-Gibst du die Adresse in einen Browser ein, erhälst du folgendes (gekürztes) JSON.
+Gibst Du die Adresse in einen Browser ein, erhältst Du folgendes (gekürztes) JSON.
 
 ```
 [

@@ -1,3 +1,3 @@
 ---
-title: Financial terminology
+title: Finanzterminologie
 ---
