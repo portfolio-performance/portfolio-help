@@ -1,8 +1,9 @@
 ---
 title: Menü
+todo: Menu Diagramm muss noch erstellt und eingefügt werden
 ---
 
-![](./images/menu-system.svg)
+
 ```
 File
 ├── New
