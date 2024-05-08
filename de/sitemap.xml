@@ -201,11 +201,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://help.portfolio-performance.info/de/how-to/temp/</loc>
-         <lastmod>2024-05-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://help.portfolio-performance.info/de/how-to/waehrungen/</loc>
          <lastmod>2024-05-08</lastmod>
          <changefreq>daily</changefreq>
@@ -242,11 +237,6 @@
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/de/how-to/historische-aktienkurse/csv-file/</loc>
-         <lastmod>2024-05-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://help.portfolio-performance.info/de/how-to/historische-aktienkurse/download-historische-kurse/</loc>
          <lastmod>2024-05-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
