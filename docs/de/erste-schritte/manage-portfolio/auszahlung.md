@@ -13,7 +13,7 @@ Die Erfassung einer Entnahme ist ein einfacher Vorgang (siehe Abbildung 1). Gib 
 
 Abbildung: Buchung einer Entnahme.{class=pp-figure style="width:100%"}
 
-![](/images/entnahme.png)
+![](images/entnahme.png)
 
 Bitte beachte, dass eine Entnahme Einfluss auf Deine Depotauswertung haben kann. Außerdem solltest Du schauen, dass Dein Konto nicht ins Negative läuft, denn das würde bedeuten, es handelt sich um einen Kredit. Zwar kann Portfolio Performance auch damit umgehen, wird aber in einem anderen Abschnitt behandelt.
 
