@@ -90,15 +90,9 @@ The PP manual uses many screenshots to clarify concepts. Sooner or later, these 
 
 If you later need this file to recreate the screenshots, you can easily retrieve them with `git checkout` from the respective commit.
 
-### Contributing rules
-
-
-- Please familiarise yourself with the current manual and ensure adherence to the referenced style guide below. 
--  Before submitting your changes via a pull request, meticulously proofread and edit your text. Check for any spelling and grammar errors, and ensure that your writing is clear and concise.
-
 ## Style guide
 
-A documentation style guide is a set of standards for document writing, ensuring consistency in style and formatting. Numerous comprehensive style guides are available. Below, we describe only a few style rules that are specific to the PP manual. For all other situations, we recommend consulting the [Microsoft Writing Style Guide]((https://learn.microsoft.com/en-us/style-guide/welcome/)), which covers topics such as capitalization of words, numbers, and the choice between active and passive voice.
+A documentation style guide is a set of standards for document writing, ensuring consistency in style and formatting. Numerous comprehensive style guides are available. Below, we describe only a few style rules that are specific to the PP manual. For all other situations, we recommend consulting the [Microsoft Writing Style Guide]((https://learn.microsoft.com/en-us/style-guide/welcome/)), which covers topics such as the capitalization of words, numbers, and the choice between active and passive voice.
 
 ### Navigation
 The manual is organized into three levels of navigation: the top menu, left sidebar, and right sidebar.
@@ -124,6 +118,15 @@ nav:
       - Installation: getting-started/installation.md
       - ...
 ```
+- If you wish to deviate from the title provided in the Yaml configuration file, insert a `Heading-1` title at the top of the page.
+- Employ `Heading-2` and `Heading-3` titles for each new topic within a page. These titles will feature as entries in the Table of Contents (on the right-hand side) and can be referenced for sub-sections on a webpage.
+
+### Spelling and Grammar
+
+- Before submitting your changes via a pull request, meticulously proofread and edit your text. Check for any spelling and grammar errors, ensuring your writing is clear and concise. Utilize an AI tool, if necessary, to enhance your writing.
+- Maintain consistency in spelling. Some examples are provided below.
+- Capitalise keywords, menus, and field names from PortfolioPerformance, such as `Security Account`, `Gross Amount`, and `Transfer between Accounts`.
+- Enclose instructions like `Accounts --> Cash Account --> right click` and similar information, such as formulas, dates, and share names, within backticks. 
 
 ### Images and videos
 
