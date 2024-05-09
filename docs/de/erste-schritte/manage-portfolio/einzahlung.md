@@ -10,9 +10,9 @@ Die Erfassung einer Einzahlung ist ein einfacher Vorgang (siehe Abbildung 1). Gi
 
 Abbildung: Einzahlung für den Kauf von Apple Aktien.{class=pp-figure style="width:100%"}
 
-![](../images/einlage.png)
+![](images/einlage.png)
 
-Bitte beachten Sie, dass eine Einlage zu bestimmten Performance-Kennzahlen beiträgt. Außerdem ist zu beachten, dass jeder Wertpapierkauf zu einer Verringerung des Kontostandes führt. Wenn der Kontostand nicht ausreicht, kann Dein Konto ins Minus rutschen.
+Bitte beachte, dass eine Einlage zu bestimmten Performance-Kennzahlen beiträgt. Außerdem ist zu beachten, dass jeder Wertpapierkauf zu einer Verringerung des Kontostandes führt. Wenn der Kontostand nicht ausreicht, kann Dein Konto ins Minus rutschen.
 
 # Umbuchung zwischen unterschiedlichen Währungen
 
@@ -20,4 +20,4 @@ Du kannst Geld zwischen zwei Konten überweisen, unabhängig davon, ob sie diese
 
 Abbildung: Umbuchung mit vorgeschlagenem EZB Wechselkurs.{class=pp-figure style="width:100%"}
 
-![](../images/umbuchung-ungleiche-waehrung.png)
+![](images/umbuchung-ungleiche-waehrung.png)
