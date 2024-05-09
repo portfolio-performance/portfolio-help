@@ -571,7 +571,7 @@
             <config>
               <uuid>7600e16d-0168-49d1-aadb-18c66a64bc8f</uuid>
               <name>Standard</name>
-              <data>Client-totals;#000000;SOLID;false;2,Security0152978e-2ea2-436f-b07a-0333b988ea8b;#e2797c;SOLID;false;2,Portfolioccd0ccf0-d4cd-4c16-8316-2b8727eb514d;#e279a6;SOLID;false;2,Account-PreTaxa8844383-5b6c-4b59-b786-d48ccafd628b;#e279d0;SOLID;false;2,Accounta8844383-5b6c-4b59-b786-d48ccafd628b;#e2797c;SOLID;false;2</data>
+              <data>Client-totals;#000000;SOLID;false;2,Security0152978e-2ea2-436f-b07a-0333b988ea8b;#e2797c;SOLID;false;2,Portfolioccd0ccf0-d4cd-4c16-8316-2b8727eb514d;#e279a6;SOLID;false;2,Account-PreTaxa8844383-5b6c-4b59-b786-d48ccafd628b;#e279d0;SOLID;false;2,Accounta8844383-5b6c-4b59-b786-d48ccafd628b;#e2797c;SOLID;false;2,Portfolio-PreTaxccd0ccf0-d4cd-4c16-8316-2b8727eb514d;#ca79e2;SOLID;false;2</data>
             </config>
           </configurations>
         </config-set>
@@ -601,6 +601,11 @@
               <uuid></uuid>
               <name></name>
               <data>F2024-03-31_2024-04-30</data>
+            </config>
+            <config>
+              <uuid></uuid>
+              <name></name>
+              <data>F2024-03-31_2024-04-13</data>
             </config>
           </configurations>
         </config-set>
