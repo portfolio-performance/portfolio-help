@@ -764,8 +764,17 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Wertpapier Kauf
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -776,6 +785,41 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#transaktion-mit-einheitlicher-wahrung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transaktion mit einheitlicher Währung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transaktion-mit-2-wahrungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transaktion mit 2 Währungen
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3329,8 +3373,32 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#transaktion-mit-einheitlicher-wahrung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transaktion mit einheitlicher Währung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transaktion-mit-2-wahrungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transaktion mit 2 Währungen
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -3353,8 +3421,10 @@
   
 
 
+  <h1>Wertpapier Kauf</h1>
+
 <p>Wenn Du eine Abrechnung von Deiner Bank oder Deinem Makler erhältst, in der eine Transaktion beschrieben wird, wie in Abbildung 1 dargestellt, musst Du diese Transaktion in Portfolio Performance erfassen. Solltest Du lediglich einen Ausdruck der Transaktion erhalten, so musst Du die Buchung manuell anlegen. Stellt Dir Deine Bank oder Broker ein PDF zur Verfügung, so kannst Du es <a href="../../../referenzhandbuch/datei/import/">importieren</a>.</p>
-<h1 id="transaktion-mit-einheitlicher-wahrung">Transaktion mit einheitlicher Währung</h1>
+<h2 id="transaktion-mit-einheitlicher-wahrung">Transaktion mit einheitlicher Währung</h2>
 <p>Die Transaktion in Abbildung 1 betrifft nur eine Währung. Sowohl das Wertpapier als auch das Referenzkonto verwenden die gleiche Währung (EUR).  Es ist keine Währungsumrechnung erforderlich.</p>
 <p><figure class="pp-figure" style="width: 90%" id="_figure-1"><figcaption>Abbildung 1.  Kaufabrechnung über Wertpapierkauf.</figcaption><img alt="" src="../images/info-bank-note-share-heidelberg.svg"></figure></p>
 <p>Mit dieser Abrechnung kannst Du eine Transaktion in Portfolio Performance anlegen. Abbildung 2 zeigt die Eingabemaske für die Buchungsinformationen. Das Wertpapier (Heidelberg Materials) ist in EUR notiert und die Transaktion wird über das Wertpapierkonto „Broker-1“ und das Depotkonto „Broker-1 (EUR)“ abgewickelt. Das Beispiel eines <a href="../verkauf/">Wertpapierverkaufs</a> beinhaltet eine komplexere Konfiguration mit einem in USD notierten Wertpapier, aber die Transaktion wird über ein Depotkonto in EUR abgewickelt.</p>
@@ -3398,7 +3468,7 @@
 <p>Eine nachträgliche Änderung des <em>Kaufpreises</em> führt zu einer Änderung der Belastung und des Kurses. Gebühren, Steuern und die Anzahl der Aktien bleiben davon unberührt.</p>
 </li>
 </ul>
-<h1 id="transaktion-mit-2-wahrungen">Transaktion mit 2 Währungen</h1>
+<h2 id="transaktion-mit-2-wahrungen">Transaktion mit 2 Währungen</h2>
 <p>Wenn Du Aktien in einer Fremdwährung kaufen willst, gibt es zwei Möglichkeiten. Entweder Du hast den erforderlichen Betrag in der Fremdwährung auf einem Depotkonto. Oder Du musst zuerst eine <a href="../einzahlung/">Einzahlung</a> in Heimatwährung buchen, gefolgt von einer <a href="../einzahlung/#umbuchung-zwischen-unterschiedlichen-w%C3%A4hrungen">Umbuchung</a> in Fremdwährung. </p>
 <p>Abbildung 4 zeigt die Abrechnung der Bank über den Kauf von Wertpapieren in US-Dollar. Da Steuern und Gebühren in EUR abgerechnet werden müssen (da es sich um eine europäische Bank handelt) und die Basiswährung des Portfolios für die Vermögensaufstellung ebenfalls EUR ist, wird der Gesamtbetrag in USD ebenfalls in EUR umgerechnet.</p>
 <p><figure class="pp-figure" style="width: 100%" id="_figure-4"><figcaption>Abbildung 4.  Abrechnung eines Kaufs in US-Währung.</figcaption><img alt="" src="../images/info-bank-note-share-adobe.svg"></figure></p>
@@ -3427,7 +3497,7 @@
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 9, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 10, 2024</span>
   </span>
 
     
