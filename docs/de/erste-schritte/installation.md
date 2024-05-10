@@ -41,6 +41,7 @@ Zertifikate sind kostenintensiv, weshalb bisher darauf verzichtet wurde, eine so
 Sollte Euer Virenscanner Euch eine Warnung anzeigen und das Programm in Quarantäne verschieben, geschieht das aufgrund eines Missverständnisses. Viele Virenscanner arbeiten mit einer Heuristik, um gegebenenfalls zukünftige Bedrohungen zu finden.
 Wenn ihr betroffen seid, könnt ihr entweder manuell das Programm aus der Quarantäne nehmen oder ihr schickt die Datei an den Hersteller Eures Antivirenprogramms.
 
+## Workspace Verzeichnis
 
 Im *Workspace* Verzeichnis speichert Portfolio Performance temporäre Informationen wie die aktuelle Fenstergröße, die zuletzt geöffneten Dateien und Verzeichnisse und andere Laufzeitinformationen.
 
