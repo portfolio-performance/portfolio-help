@@ -4,7 +4,7 @@ title: Einzahlung
 
 Um eine Einzahlung in einer bestimmten Währung zu veranlassen, navigierst Du zum entsprechenden Konto. `Stammdaten > Konto`. Vergewissere Dich, dass das gewählte Konto dieselbe Währung hat wie die Einzahlung. Um Geldbeträge zwischen Konten zu transferieren, sei es in der gleichen Währung oder in verschiedenen Währungen (unter Verwendung der von der [EZB](https://data.ecb.europa.eu/currency-converter) bereitgestellten Wechselkurse), benutzt Du `Kontextmenü > Umbuchung`.
 
-# Einzahlung buchen
+## Einzahlung buchen
 
 Die Erfassung einer Einzahlung ist ein einfacher Vorgang (siehe Abbildung 1). Gib das Einzahlungskonto, das Transaktionsdatum, den Betrag und optional eine Notiz dazu ein.
 
@@ -14,7 +14,7 @@ Abbildung: Einzahlung für den Kauf von Apple Aktien.{class=pp-figure style="wid
 
 Bitte beachte, dass eine Einlage zu bestimmten Performance-Kennzahlen beiträgt. Außerdem ist zu beachten, dass jeder Wertpapierkauf zu einer Verringerung des Kontostandes führt. Wenn der Kontostand nicht ausreicht, kann Dein Konto ins Minus rutschen.
 
-# Umbuchung zwischen unterschiedlichen Währungen
+## Umbuchung zwischen unterschiedlichen Währungen
 
 Du kannst Geld zwischen zwei Konten überweisen, unabhängig davon, ob sie dieselbe Währung haben oder nicht. In Fällen, in denen die Konten unterschiedliche Währungen haben (siehe Abbildung 2), schlägt Portfolio Performance automatisch einen Wechselkurs vor, der auf der [EZB-Website](https://data.ecb.europa.eu/currency-converter) basiert.
 

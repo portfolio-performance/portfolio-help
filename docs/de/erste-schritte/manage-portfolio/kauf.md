@@ -4,7 +4,7 @@ title: Wertpapierkauf
 
 Wenn Du eine Abrechnung von Deiner Bank oder Deinem Makler erhältst, in der eine Transaktion beschrieben wird, wie in Abbildung 1 dargestellt, musst Du diese Transaktion in Portfolio Performance erfassen. Solltest Du lediglich einen Ausdruck der Transaktion erhalten, so musst Du die Buchung manuell anlegen. Stellt Dir Deine Bank oder Broker ein PDF zur Verfügung, so kannst Du es [importieren](../../referenzhandbuch/datei/import.md).
 
-# Transaktion mit einheitlicher Währung
+## Transaktion mit einheitlicher Währung
 
 Die Transaktion in Abbildung 1 betrifft nur eine Währung. Sowohl das Wertpapier als auch das Referenzkonto verwenden die gleiche Währung (EUR).  Es ist keine Währungsumrechnung erforderlich.
 
@@ -51,7 +51,7 @@ Abbildung: Ablauf zwischen Stücke und Belastung.{class=pp-figure style="width: 
 
 - Eine nachträgliche Änderung des *Kaufpreises* führt zu einer Änderung der Belastung und des Kurses. Gebühren, Steuern und die Anzahl der Aktien bleiben davon unberührt.
 
-# Transaktion mit 2 Währungen
+## Transaktion mit 2 Währungen
 Wenn Du Aktien in einer Fremdwährung kaufen willst, gibt es zwei Möglichkeiten. Entweder Du hast den erforderlichen Betrag in der Fremdwährung auf einem Depotkonto. Oder Du musst zuerst eine [Einzahlung](einzahlung.md) in Heimatwährung buchen, gefolgt von einer [Umbuchung](einzahlung.md#umbuchung-zwischen-unterschiedlichen-währungen) in Fremdwährung. 
 
 Abbildung 4 zeigt die Abrechnung der Bank über den Kauf von Wertpapieren in US-Dollar. Da Steuern und Gebühren in EUR abgerechnet werden müssen (da es sich um eine europäische Bank handelt) und die Basiswährung des Portfolios für die Vermögensaufstellung ebenfalls EUR ist, wird der Gesamtbetrag in USD ebenfalls in EUR umgerechnet.
