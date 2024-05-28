@@ -26,7 +26,7 @@
     
     
       
-        <title>Performance - Portfolio Performance Handbuch</title>
+        <title>Wertentwicklung - Portfolio Performance Handbuch</title>
       
     
     
@@ -81,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#wertentwicklung-messen" class="md-skip">
+          Zum Inhalt
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -110,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Performance
+              Wertentwicklung
             
           </span>
         </div>
@@ -3314,6 +3319,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#geldgewichtete-rendite-izf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geldgewichtete Rendite (IZF)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zeitgewichtete-rendite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zeitgewichtete Rendite
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -3336,9 +3369,36 @@
   
 
 
-  <h1>Performance</h1>
-
-
+<h1 id="wertentwicklung-messen">Wertentwicklung messen</h1>
+<p>Die Messung der Wertentwicklung eines Finanzportfolios basiert auf dem Konzept der Rendite: die Wertsteigerung oder -minderung über einen bestimmten Zeitraum. Ein Beispiel: Dein Portfolio beginnt bei 100 EUR und wächst bis zum Ende des Zeitraums auf 104 EUR an, was einer Wertentwicklung von + 4 % entspricht. Das Beispiel zeigt Dir 3 Varianten, mit denen sich die Rendite (engl. ROR) (Rate of Return), also der Wertzuwachs berechnen lässt.</p>
+<p>$$\mathrm{ = \frac{(MVE - MVB)}{MVB} \quad \Leftrightarrow \quad r = \frac{MVE}{MVB} -1 \quad \Leftrightarrow \quad MVE = MVB \times (1 + r) \quad (Eq  1)}$$</p>
+<p>MVE entspricht dem Marktwert (Ertrag) am Ende des Berichtszeitraums, während MVB (Aufwand) dem Wert Deines Portfolios zu Beginn des gleichen Zeitraums entspricht.</p>
+<ul>
+<li>Der Prozentsatz von r (Rendite) gilt für den gesamten Zeitraum zwischen MVE und MVB (z.B. 3 Jahre, 6 Monate, ...). Es handelt sich <em>nicht</em> um einen annullierten Prozentwert.</li>
+<li>Innerhalb dieses Zeitraums gibt es keine weiteren Transaktionen. Der MVE wird ausschließlich durch den MVB und die Zeit beeinflusst.</li>
+</ul>
+<p>Portfolio Performance verwendet zwei verschiedene Methoden, um die Rendite zu berechnen, wenn innerhalb des Berichtszeitraums zusätzliche Transaktionen stattfinden: geldgewichtet oder zeitgewichtet. Zusätzlich wird die Wertentwicklung auf Portfolio-, Wertpapier- oder Handelsebene (Zuflüsse/Abflüsse) unterschieden.</p>
+<div class="admonition wichtig">
+<p class="admonition-title">Wichtig</p>
+<p>Die einfache Rendite (Rate of Return, ROR) reicht nicht aus, um die Wertentwicklung Deines Portfolios richtig zu erfassen, sobald Transaktionen während des Berichtszeitraums stattgefunden haben. Nehmen wir das Beispiel von oben. Dein Portfolio enthält eine Aktie, die zu Beginn des Jahres bei 100 EUR stand (MVB=100). Dank des positiven Kursverlaufs stieg der Kurs am Ende des Jahres auf 104 EUR pro Aktie. Vergleichen wir nun die folgenden Szenarien:</p>
+<ul>
+<li>
+<p><strong>Keine zusätzlichen Buchungen</strong>: Du hast weder Käufe noch Verkäufe getätigt. Nach Gleichung 1 gilt: <code>r = (104-100)/100 = 0.04 -&gt; 4%</code>. Dies scheint intuitiv richtig zu sein. Du hast 4 EUR Buchgewinn, was 4 % des ursprünglichen Wertes entspricht.</p>
+</li>
+<li>
+<p><strong>Weitere Buchungen</strong>: Du kaufst zu Beginn des Jahres eine weitere Aktie zu einem Kurs von 100 EUR. Der MVB beträgt immer noch 100 EUR, während der MVE jetzt zu <code>2 * 104 = 208</code> wird. Die Wertentwicklung beträgt somit sagenhafte 108 % bzw. <code>(208-100)/100</code>. Das fühlt sich aber nicht richtig an. Du <em>weißt</em>, dass die Wachstumsrate der Aktie des Unternehmens 4 % betrug. Natürlich hat Deine Gesamtinvestition von 200 € 8 EUR bzw. 4 % Rendite erzielt. Aber nicht auf die MVB von 100 EUR. Die zusätzliche Transaktion hat die einfache Renditeformel verfälscht.</p>
+</li>
+</ul>
+</div>
+<h2 id="geldgewichtete-rendite-izf">Geldgewichtete Rendite (IZF)</h2>
+<p>(engl. Money Weighted Rate of Return)</p>
+<p>Die geldgewichtete bzw. Kapital gewichtete Rendite (IZF) verwendet die im Projektmanagement übliche Methode der <strong>einfachen Renditeberechnung</strong>. Bei dieser Berechnung werden sowohl der Zeitpunkt (wann) als auch der Betrag (wie viel) der Mittel, die innerhalb des Berichtszeitraums in das Portfolio fließen oder es verlassen, berücksichtigt.</p>
+<p>Wenn Du Dir noch nicht sicher bist, ob Du das Prinzip der geldgewichteten Rendite verstanden hast, kannst Du <a href="geld-gewichtet/">hier</a> noch weiter ins Detail gehen. Die Formeln und Beispiele, die von einer einfachen Einzelaktienanlage bis hin zu mehreren Buchungen einschließlich Dividenden reichen, werden ausführlich erläutert. Die Beispiele basieren auf unserem Demo-Portfolio. Somit bist Du in der Lage, alle Berechnungen selbst nachzuvollziehen und nach Belieben zu verändern.</p>
+<h2 id="zeitgewichtete-rendite">Zeitgewichtete Rendite</h2>
+<p>(engl. Time Weighted Rate of Return)</p>
+<p>Die zeitgewichtete Rendite (auch TTWROR) wird nicht durch den Anlagebetrag beeinflusst. Ob Du 1 EUR oder 100 EUR investierst, Du wirst die gleiche zeitgewichtete Rendite erzielen. Der Berichtszeitraum wird in mehrere Halteperioden unterteilt, und für jede Halteperiode wird ein Renditewert berechnet und dann zu einer Gesamtrendite zusammengefasst. Jede Periode hat das gleiche Gewicht, daher der Name zeitgewichtete Rendite. Bei dieser Methode wird die Wertentwicklung anhand der einfachen Renditen ohne Berücksichtigung des Gesamtinvestitionsbetrags berechnet.</p>
+<p>Da auch dieses Thema samt Berechnung nicht ganz trivial ist, haben wir Dir <a href="zeit-gewichtet/">hier</a> anhand des Kommer Portfolios wieder einige Beispiele gebaut, mit deren Hilfe Du in die Thematik einsteigen kannst.</p>
+<p>Zum Thema Renditeberechnung findest Du heute viele gute Videos auf den gängigen Plattformen.</p>
 
 
 
@@ -3359,7 +3419,7 @@
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 27, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 28, 2024</span>
   </span>
 
     
