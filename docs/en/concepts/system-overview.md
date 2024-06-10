@@ -4,6 +4,8 @@ title: System overview
 
 The name PortfolioPerformance (PP) captures its purpose very well: managing an investment portfolio from a performance perspective. This focus contrasts with many proprietary broker apps, which primarily facilitate the technical execution of orders. The following text outlines the principal components (see figure 1). Follow the links to obtain more information about each component. An [example](system-overview-example.md) with a simple portfolio can be found in a separate text.
 
+## Components
+
 Figure: System overview with components and relations.{class=pp-figure}
 
 ![](images/system-overview-components.svg)
@@ -21,6 +23,8 @@ Performance is directly influenced by the [reporting period](./reporting-period.
 [Historical prices](../how-to/downloading-historical-prices/) of securities significantly impact the market value and, consequently, the performance of the portfolio, security accounts, individual securities, and trades. It is clear that when a security's price is higher at the end of a trade compared to its price at the beginning, a profitable trade has been made. This price increase results in a capital gain, which directly contributes to the overall performance and value of the portfolio.
 
 Last but not least, performance is directly dependent on the portfolio and transactions. *Without* any transactions within the reporting period, the basic performance equation simplifies to IRR = TTWROR = (MVE/MVB) - 1. If the MVE is greater than MVB, a profit has been made, resulting in a positive performance. Conversely, if MVE is less than MVB, the portfolio is worth less at the end of the reporting period than at the beginning, leading to a negative performance.
+
+## Transactions
 
 Things become more complicated when [transactions](../reference/transaction/index.md) occur during the reporting period. There are 13 types of transactions, each generating cash flows into and out of the portfolio, account, or security. Figure 2 illustrates all transaction types between the four major components: the portfolio (represented by a dashed blue line), deposit (cash) accounts in both EUR and USD, three securities (two of which are quoted in USD), and collected into two security accounts (orange and blue dashed lines). Security-2 (USD) is present in both accounts.
 
@@ -45,6 +49,9 @@ Suppose that you transfer 100 EUR at the very beginning of the reporting period 
 A [*buy* transaction](../reference/transaction/buy-sell.md) closely mirrors a delivery inbound, except that the cash flow originates from inside the portfolio rather than from outside. From the perspective of the cash account, this resembles a cash outflow. The security and security account receive a cash inflow. For a discussion about fees and taxes, please refer to the earlier text.
 
 A *sell* transaction will result in a cash inflow into a deposit account (47 USD) because the 50 USD capital sell is reduced by taxes and fees.
+
+!!! Note
+    In terms of performance, a Buy/Sell versus Delivery Inbound/Outbound transaction can produce significantly different results. Only when a buy transaction is accompanied by a deposit transaction on the same day and for the same amount, there is no difference in performance between buy versus delivery. However, when a buy transaction is not accompanied by a corresponding deposit transaction, the cash balance in the relevant account will be reduced (and potentially become negative), which can have a negative impact on the market value at the end (MVE) of the account. 
 
 A [*dividend*](../reference/transaction/dividend.md) can be viewed as a type of sell transaction. In Figure 2, the capital (5 shares) of security-2 (USD) will provide you with a dividend (gross amount) of 10 USD (5 shares x 2 USD/share). The fees are deducted, resulting in a security and security account outflow of 9 USD. After deducting the taxes and converting the remaining 7 USD to EUR, a +6.3 EUR cash inflow is received by deposit-account-1 (EUR).
 
