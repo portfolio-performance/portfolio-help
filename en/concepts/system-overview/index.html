@@ -81,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#components" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -859,6 +864,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    System overview
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -868,6 +884,41 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transactions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3010,6 +3061,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transactions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3034,6 +3111,7 @@
   <h1>System overview</h1>
 
 <p>The name PortfolioPerformance (PP) captures its purpose very well: managing an investment portfolio from a performance perspective. This focus contrasts with many proprietary broker apps, which primarily facilitate the technical execution of orders. The following text outlines the principal components (see figure 1). Follow the links to obtain more information about each component. An <a href="../system-overview-example/">example</a> with a simple portfolio can be found in a separate text.</p>
+<h2 id="components">Components</h2>
 <p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  System overview with components and relations.</figcaption><img alt="" src="../images/system-overview-components.svg"></figure></p>
 <p>Performance is a multi-layered concept. Not only are there several different methods to calculate it, such as <a href="../performance/money-weighted/">money-weighted (IRR)</a> and <a href="../performance/time-weighted/">time-weighted (TTWROR)</a> rates of return, but you can also calculate performance at various levels: the <a href="../../reference/view/reports/performance/">portfolio as a whole</a>, a security or deposit account, an <a href="../../reference/view/reports/performance/securities/">individual security</a>, or a single <a href="../../reference/view/reports/performance/trades/">trade</a>. In its simplest form, without any transactions, the performance of a portfolio can be represented by the following equation (please refer to the links provided earlier for more detailed information):</p>
 <p>$$\mathrm{r = \frac{(MVE - MVB)}{MVB} \quad (Eq  1)}$$</p>
@@ -3042,6 +3120,7 @@
 <p><a href="../../reference/view/general-data/currencies/">Currency exchange rates</a> have a more indirect influence and come into play whenever a transaction involves currency conversion. This includes transfers between different currency cash accounts and transactions such as buys, sells, and dividends in multiple currencies. For example, buying securities that are quoted in USD may require you to convert Euros to USD at a certain exchange rate. Upon selling these securities, you may need to convert the USD back to Euros. Fluctuations in the exchange rate between the time of purchase and the time of sale can result in a profit or a loss, as the value of the USD in terms of Euros may have changed.</p>
 <p><a href="../how-to/downloading-historical-prices/">Historical prices</a> of securities significantly impact the market value and, consequently, the performance of the portfolio, security accounts, individual securities, and trades. It is clear that when a security's price is higher at the end of a trade compared to its price at the beginning, a profitable trade has been made. This price increase results in a capital gain, which directly contributes to the overall performance and value of the portfolio.</p>
 <p>Last but not least, performance is directly dependent on the portfolio and transactions. <em>Without</em> any transactions within the reporting period, the basic performance equation simplifies to IRR = TTWROR = (MVE/MVB) - 1. If the MVE is greater than MVB, a profit has been made, resulting in a positive performance. Conversely, if MVE is less than MVB, the portfolio is worth less at the end of the reporting period than at the beginning, leading to a negative performance.</p>
+<h2 id="transactions">Transactions</h2>
 <p>Things become more complicated when <a href="../../reference/transaction/">transactions</a> occur during the reporting period. There are 13 types of transactions, each generating cash flows into and out of the portfolio, account, or security. Figure 2 illustrates all transaction types between the four major components: the portfolio (represented by a dashed blue line), deposit (cash) accounts in both EUR and USD, three securities (two of which are quoted in USD), and collected into two security accounts (orange and blue dashed lines). Security-2 (USD) is present in both accounts.</p>
 <p>Transactions are represented by arrows. They generate cash outflows (red circle) or cash inflows (green circle). The numbers next to the circles represent the magnitude of the cash flow, based on a hypothetical example of a buy or sell of 5 shares at 10 EUR/USD per share, resulting in a capital inflow of 50 EUR/USD. Fees and taxes are always set at 1 and 2 EUR respectively. A dividend of 2 USD is paid per share; an exchange rate of 0.9 EUR/USD is used.</p>
 <p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Overview of all transaction types with associated cash flows at portfolio, account and security level. </figcaption><img alt="" src="../images/system-overview-cashflows.svg"></figure></p>
@@ -3053,6 +3132,10 @@
 <p>Suppose that you transfer 100 EUR at the very beginning of the reporting period at a conversion rate of 1.1 EUR/USD, giving you a deposit of 90.91 USD. The exchange rate changed to 0.9 EUR/USD at the end of the reporting period. Because the performance calculation is done in the currency of the portfolio, e.g., EUR, that 90.91 USD is valued at 81.82 EUR at the period end, resulting in a loss of about 18 EUR due to currency loss.</p>
 <p>A <a href="../../reference/transaction/buy-sell/"><em>buy</em> transaction</a> closely mirrors a delivery inbound, except that the cash flow originates from inside the portfolio rather than from outside. From the perspective of the cash account, this resembles a cash outflow. The security and security account receive a cash inflow. For a discussion about fees and taxes, please refer to the earlier text.</p>
 <p>A <em>sell</em> transaction will result in a cash inflow into a deposit account (47 USD) because the 50 USD capital sell is reduced by taxes and fees.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In terms of performance, a Buy/Sell versus Delivery Inbound/Outbound transaction can produce significantly different results. Only when a buy transaction is accompanied by a deposit transaction on the same day and for the same amount, there is no difference in performance between buy versus delivery. However, when a buy transaction is not accompanied by a corresponding deposit transaction, the cash balance in the relevant account will be reduced (and potentially become negative), which can have a negative impact on the market value at the end (MVE) of the account. </p>
+</div>
 <p>A <a href="../../reference/transaction/dividend/"><em>dividend</em></a> can be viewed as a type of sell transaction. In Figure 2, the capital (5 shares) of security-2 (USD) will provide you with a dividend (gross amount) of 10 USD (5 shares x 2 USD/share). The fees are deducted, resulting in a security and security account outflow of 9 USD. After deducting the taxes and converting the remaining 7 USD to EUR, a +6.3 EUR cash inflow is received by deposit-account-1 (EUR).</p>
 <p>The separate <em>fees</em>, <em>fees refund</em>, <em>taxes</em>, and <em>taxes refund</em> transactions follow the same rules as outlined above. Therefore, it makes no difference whether you record taxes and fees as part of one buy, sell, or delivery transaction, or whether you split them off into a separate transaction.</p>
 <p>A special case is made by the <em>interest</em> and <em>interest charge</em> transactions. Although they do increase or decrease the cash balance of the deposit account, they do <strong>not</strong> generate any cash inflow or outflow. Just as the capital of a security can increase or decrease as a result of changing quotes (capital gain or loss), the balance of a deposit account can change due to interest.</p>
