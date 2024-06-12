@@ -23,6 +23,7 @@ right-pointing caret: &rsaquo;
 ampersand: &amp;
 less than: &lt;
 sigma: &sum; or &#8721;
+non-breaking space: &nbsp;
 
 
 start-up parameter:
