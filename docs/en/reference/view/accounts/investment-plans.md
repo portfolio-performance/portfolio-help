@@ -74,4 +74,4 @@ You can edit or delete some or all of the generated transactions without affecti
 
 If the most recently generated transaction is deleted, the `Last Execution` field in the main pane will also be cleared.
 
-The chart menu in the Investment Plans view is identical to the chart menu in the [All Securities menu](../../../reference/view/securities/all-securities/#chart-menu). The same applies to the Historical Prices.
+The chart menu in the Investment Plans view is identical to the chart menu in the [All Securities menu](../../../reference/view/securities/all-securities.md/#chart-menu). The same applies to the Historical Prices.
