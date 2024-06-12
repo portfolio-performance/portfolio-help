@@ -63,6 +63,8 @@ Fundamental concepts such as account, transaction, reporting period, purchase va
 
 - Inactive: A security can be set to active or inactive. If set to inactive, the security will not appear in buy or sell dialogs, and historical prices will not be updated automatically.
 
+- Investment plan: An automated method to facilitate periodic deposits or withdrawals (removal) of funds from a deposit account or the investment in a specific security (through buy or inbound delivery transactions).
+
 - ISIN: *International Securities Identification Number*. This is a unique twelve-digit code that is assigned to every security in the world. Mostly used by European brokers & banks.
 
 - Latest Quote: the most recent quote of a security. You can refresh these values to the latest information using the menu option `Online > Update Quotes`.
