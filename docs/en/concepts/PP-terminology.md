@@ -47,6 +47,8 @@ Fundamental concepts such as account, transaction, reporting period, purchase va
 
 - Distance to ATH (period): a metric that shows how far the current price is from the highest price in the specified period (1 year, 2 years, 3 years or a date range From yyyy-mm-dd to yyyy-mm-dd). For example, the highest price of a security in the last year was 77.4 EUR. The current price is 71.96 EUR. So the Distance to ATH for a 1 year period is equal to (71.96 - 77.4)/77.4 or -7.03%.
 
+- Dividend: the distribution of a company’s earnings to its shareholders.
+
 - Exchange: a security may be traded on more than one exchange. For example, the NVIDIA stock is traded on Nasdaq (symbol NVDA, exchange NMS) or XETRA (symbol NVD.DE, exchange GER), and many more exchanges.
 
 - Exchange rate: the value of one currency in terms of another currency, determining the rate at which they can be exchanged.
@@ -61,9 +63,13 @@ Fundamental concepts such as account, transaction, reporting period, purchase va
 
 - Gross Amount: Utilized when importing data, indicating the overall worth of a transaction, exclusive of fees and taxes. Gross Amount = shares x quote price or Value - fees - taxes. Also referred to as the `Amount` within the `All Transactions` view. This terminology may seem counterintuitive, as traditionally the gross value of an entity (such as your salary) is inclusive of taxes.
 
+- Historical prices: collection of closing quotes of a security; mostly daily.
+
 - Inactive: A security can be set to active or inactive. If set to inactive, the security will not appear in buy or sell dialogs, and historical prices will not be updated automatically.
 
-- Investment plan: An automated method to facilitate periodic deposits or withdrawals (removal) of funds from a deposit account or the investment in a specific security (through buy or inbound delivery transactions).
+- Interest: the cost of borrowing money or the return earned on an investment; typically expressed as a percentage of the principal, which is the amount of money borrowed or invested.
+
+- Investment plan: An automated method to facilitate periodic transactions, such as deposits, withdrawals, interest payments, or purchases.
 
 - ISIN: *International Securities Identification Number*. This is a unique twelve-digit code that is assigned to every security in the world. Mostly used by European brokers & banks.
 
@@ -93,6 +99,8 @@ Fundamental concepts such as account, transaction, reporting period, purchase va
 
 - Removal: Also named Withdrawal. Taking money out of a deposit account.
 
+- Reporting period: Time period that is used to calculate the performance of a security, account, or portfolio.
+
 - Risk: Refers to the possibility of losing some or all of the invested capital or not achieving the expected return from your investment.
 
 - Security: A tradable financial asset such as stock, bonds, bitcoin, gold, ...
@@ -112,6 +120,8 @@ Fundamental concepts such as account, transaction, reporting period, purchase va
 - Target Currency:
 
 - Taxes: Charges imposed by government authorities on certain financial activities.
+
+- Trade: The purchase and/or selling of a security. An open trade is created for each buying transaction and converted to a closed trade upon selling.
 
 - Transaction: an operation that alters the state of a portfolio.
 
