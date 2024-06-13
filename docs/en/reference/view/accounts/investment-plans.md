@@ -2,15 +2,16 @@
 title: Investment Plans
 ---
 
-An investment plan is an automated method to facilitate periodic deposits or withdrawals (removal) of funds from a deposit account or the investment in a specific security (through buy or inbound delivery transactions). It allows you to systematically invest or withdraw funds at regular intervals with minimal manual input.
+An investment plan is an automated method to facilitate periodic transactions, such as deposits, withdrawals, interest payments, or purchases. It allows you to systematically invest or withdraw funds at regular intervals with minimal manual input.
+
 
 ## Types of investment plans
 
-Figure: Three investment plans in main pane and generated transactions of plan-3 in information pane. {class=pp-figure}
+Figure: Four investment plans in the main pane and generated transactions of plan-3 in the information pane. {class=pp-figure}
 
 ![](images/investment-plans.png)
 
-There are three main types of investment plans: deposit, removal (withdrawal), and Security Purchase/Delivery (as illustrated in Figure&nbsp;1). A deposit plan will increase the balance of a cash account, while a removal plan will decrease it. On the other hand, a Security Purchase/Delivery plan involves both decreasing your deposit account (to fund the purchase of securities) and increasing your security account (as you acquire new securities). To create a new plan, simply click the 'New Plan' :octicons-feed-plus-16: button, located at the top right corner of the interface (as shown in Figure 1).
+There are four main types of investment plans: deposit, removal (withdrawal), Interest and Security Purchase/Delivery (as illustrated in Figure&nbsp;1). A deposit and interest plan will increase the balance of a cash account, while a removal plan will decrease it. On the other hand, a Security Purchase/Delivery plan involves both decreasing your deposit account (to fund the purchase of securities) and increasing your security account (as you acquire new securities). To create a new plan, simply click the 'New Plan' :octicons-feed-plus-16: button, located at the top right corner of the interface (as shown in Figure 1).
 
 ### Deposit Investment Plan
 
@@ -44,13 +45,29 @@ It's important to note the distinction between purchase and delivery when select
 
 The following fields/columns are displayed in the main pane (see Figure 1): `Name`, `Security`, `Securities Account`, `Cash Account`, `Start Date`, `Last Execution`, `Next Execution`, `Interval`, `Auto-Generate`, `Amount`, and `Fees`. Most fields are self-explanatory. The `Auto-Generate` field is automatically set when the `Create transactions automatically when opening the file` option is selected during the initial creation of the plan. Two additional fields, `Notes` and `Attributes`, can be added using the `Show or Hide` button (gear symbol at the top right). For information on how to manipulate individual columns, please refer to the [All Transactions section](../accounts/all-transactions.md/#settings) in the manual.
 
+### Interest Plan
+
+Figure: Interest Plan. {class=pp-figure}
+
+![](images/investment-plan-interest.png)
+
+The Interest Plan bears similarity to the Deposit Plan as it also generates a deposit in the specified Cash Account. Moreover, it allows for tax deductions. The transactions under this plan are classified as `Interest`, ensuring they are not included in cash flows when calculating performance. (see [System Overview section](../../../concepts/system-overview.md#transactions))
+
+
 ## Managing Investment plans
 
 The main pane of Figure 1 displays a comprehensive list of all investment plans in the portfolio. By using the context menu, which can be accessed by right-clicking a plan, you have the ability to generate transactions, modify the selected investment plan, or remove it entirely.
 
 ### Generate Transactions
 
--  If the option to `Create transactions automatically when opening the file` was selected during the creation of the plan, the transactions will be automatically generated the next time the file is opened.
+Figure: Message box at opening of portfolio. {class=align-right style="width:50%"}
+
+![](images/investment-plan-auto-generate.png)
+
+-  If the option to `Create transactions automatically when opening the file` was selected during the creation of the plan, the transactions will be automatically generated the next time the file is opened. A message box,  similar to the one shown in Figure 6, will be displayed upon opening the portfolio.
+
+<br style="clear:both;">
+
 - Selecting the `Generate Transactions` command will instantly create all feasible transactions, subject to the specified date constraints.  
 - Deposit, withdrawal (removal), or Purchase/Delivery transactions are generated from the start date. If the start date falls on a holiday (see Help > Preferences > Calendar) or weekend, the transaction will be moved to the next working day.
 - The `Last Execution` column will display the most recent date on which the transaction-generating algorithm was executed. The `Next Execution` column will indicate the earliest future date on which a transaction is scheduled to occur, based on the frequency and last execution date.
