@@ -1665,6 +1665,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#interest-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interest Plan
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3202,6 +3211,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#interest-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interest Plan
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3283,10 +3301,10 @@
 
   <h1>Investment Plans</h1>
 
-<p>An investment plan is an automated method to facilitate periodic deposits or withdrawals (removal) of funds from a deposit account or the investment in a specific security (through buy or inbound delivery transactions). It allows you to systematically invest or withdraw funds at regular intervals with minimal manual input.</p>
+<p>An investment plan is an automated method to facilitate periodic transactions, such as deposits, withdrawals, interest payments, or purchases. It allows you to systematically invest or withdraw funds at regular intervals with minimal manual input.</p>
 <h2 id="types-of-investment-plans">Types of investment plans</h2>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Three investment plans in main pane and generated transactions of plan-3 in information pane. </figcaption><img alt="" src="../images/investment-plans.png"></figure></p>
-<p>There are three main types of investment plans: deposit, removal (withdrawal), and Security Purchase/Delivery (as illustrated in Figure 1). A deposit plan will increase the balance of a cash account, while a removal plan will decrease it. On the other hand, a Security Purchase/Delivery plan involves both decreasing your deposit account (to fund the purchase of securities) and increasing your security account (as you acquire new securities). To create a new plan, simply click the 'New Plan' <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0Zm1.062 4.312a1 1 0 1 0-2 0v2.75h-2.75a1 1 0 0 0 0 2h2.75v2.75a1 1 0 1 0 2 0v-2.75h2.75a1 1 0 1 0 0-2h-2.75Z"></path></svg></span> button, located at the top right corner of the interface (as shown in Figure 1).</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Four investment plans in the main pane and generated transactions of plan-3 in the information pane. </figcaption><img alt="" src="../images/investment-plans.png"></figure></p>
+<p>There are four main types of investment plans: deposit, removal (withdrawal), Interest and Security Purchase/Delivery (as illustrated in Figure 1). A deposit and interest plan will increase the balance of a cash account, while a removal plan will decrease it. On the other hand, a Security Purchase/Delivery plan involves both decreasing your deposit account (to fund the purchase of securities) and increasing your security account (as you acquire new securities). To create a new plan, simply click the 'New Plan' <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0Zm1.062 4.312a1 1 0 1 0-2 0v2.75h-2.75a1 1 0 0 0 0 2h2.75v2.75a1 1 0 1 0 2 0v-2.75h2.75a1 1 0 1 0 0-2h-2.75Z"></path></svg></span> button, located at the top right corner of the interface (as shown in Figure 1).</p>
 <h3 id="deposit-investment-plan">Deposit Investment Plan</h3>
 <p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Deposit Investment Plan. </figcaption><img alt="" src="../images/investment-plan-deposit.png"></figure></p>
 <p>With a deposit investment plan, you can regularly deposit a specified amount of money into a designated cash account. To set up a deposit plan, you will need to provide a descriptive name (such as <code>plan-1</code>), the name of the cash account, the amount of money to be deposited, the starting date of the plan, and the frequency (interval) of the deposits (ranging from every month to every 12 months). The starting date could also be in the past or the future.</p>
@@ -3300,11 +3318,18 @@
 <p>With a Security Purchase/Delivery investment plan, you can regularly acquire a specified security using funds from a designated cash account. As shown in Figure 4, you will need to provide a descriptive name for the plan (such as <code>plan-3</code>), the name of the security account and the specific security to be acquired, the name of the cash account from which the funds will be withdrawn, the starting date of the plan, the frequency of the purchases, the amount to be invested each time, and any associated fees.</p>
 <p>It's important to note the distinction between purchase and delivery when selecting the cash account. If you want to acquire the security through delivery, you should use the <code>(Inbound Delivery)</code> option. On the other hand, if you want to purchase the security, you should use the name of an existing cash account from which the funds will be withdrawn.</p>
 <p>The following fields/columns are displayed in the main pane (see Figure 1): <code>Name</code>, <code>Security</code>, <code>Securities Account</code>, <code>Cash Account</code>, <code>Start Date</code>, <code>Last Execution</code>, <code>Next Execution</code>, <code>Interval</code>, <code>Auto-Generate</code>, <code>Amount</code>, and <code>Fees</code>. Most fields are self-explanatory. The <code>Auto-Generate</code> field is automatically set when the <code>Create transactions automatically when opening the file</code> option is selected during the initial creation of the plan. Two additional fields, <code>Notes</code> and <code>Attributes</code>, can be added using the <code>Show or Hide</code> button (gear symbol at the top right). For information on how to manipulate individual columns, please refer to the <a href="../all-transactions/#settings">All Transactions section</a> in the manual.</p>
+<h3 id="interest-plan">Interest Plan</h3>
+<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5.  Interest Plan. </figcaption><img alt="" src="../images/investment-plan-interest.png"></figure></p>
+<p>The Interest Plan bears similarity to the Deposit Plan as it also generates a deposit in the specified Cash Account. Moreover, it allows for tax deductions. The transactions under this plan are classified as <code>Interest</code>, ensuring they are not included in cash flows when calculating performance. (see <a href="../../../../concepts/system-overview/#transactions">System Overview section</a>)</p>
 <h2 id="managing-investment-plans">Managing Investment plans</h2>
 <p>The main pane of Figure 1 displays a comprehensive list of all investment plans in the portfolio. By using the context menu, which can be accessed by right-clicking a plan, you have the ability to generate transactions, modify the selected investment plan, or remove it entirely.</p>
 <h3 id="generate-transactions">Generate Transactions</h3>
+<p><figure class="align-right" style="width:50%" id="_figure-6"><figcaption>Figure 6.  Message box at opening of portfolio. </figcaption><img alt="" src="../images/investment-plan-auto-generate.png"></figure></p>
 <ul>
-<li>If the option to <code>Create transactions automatically when opening the file</code> was selected during the creation of the plan, the transactions will be automatically generated the next time the file is opened.</li>
+<li>If the option to <code>Create transactions automatically when opening the file</code> was selected during the creation of the plan, the transactions will be automatically generated the next time the file is opened. A message box,  similar to the one shown in Figure 6, will be displayed upon opening the portfolio.</li>
+</ul>
+<p><br style="clear:both;"></p>
+<ul>
 <li>Selecting the <code>Generate Transactions</code> command will instantly create all feasible transactions, subject to the specified date constraints.  </li>
 <li>Deposit, withdrawal (removal), or Purchase/Delivery transactions are generated from the start date. If the start date falls on a holiday (see Help &gt; Preferences &gt; Calendar) or weekend, the transaction will be moved to the next working day.</li>
 <li>The <code>Last Execution</code> column will display the most recent date on which the transaction-generating algorithm was executed. The <code>Next Execution</code> column will indicate the earliest future date on which a transaction is scheduled to occur, based on the frequency and last execution date.</li>
@@ -3345,7 +3370,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 12, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 13, 2024</span>
   </span>
 
     
