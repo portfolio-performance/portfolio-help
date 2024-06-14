@@ -2,47 +2,61 @@
 title: Using Portfolio Report
 ---
 
-Portfolio Report (PR) is an open-source project that works closely together with the Portfolio Performance app. Its primary goal is to enhance Portfolio Performance by supplying master data, including name, ISIN, WKN, and ticker symbol, as well as historical prices for selected securities.
+Portfolio Report (PR) is an open-source project that works closely together with the Portfolio Performance (PP) app. Its primary goal is to enhance PP by providing master data for securities, including name, ISIN, WKN, and ticker symbol, as well as historical prices in various currencies.
 
-You can use PR to create securities or to provide historical prices for already existing securities.
+PR allows you to look up information about securities, such as symbols, industries, and historical prices. Furthermore, it enables the creation of securities within PP from PR and the provision of historical prices for securities that already exist in PP.
 
-## Creating new securities with PR
+## Looking up information
 
-- Navigate to the Portfolio Report website [https://www.portfolio-report.net/](https://www.portfolio-report.net/)
-- Open the PP app and, if possible, position both windows side by side on the computer screen, as illustrated in Figure 2.
-- Utilize the Search box located at the top right (refer to Figure 1) to search for the desired security using its name, ISIN, or WKN.
+When you navigate to the Portfolio Report website [https://www.portfolio-report.net/](https://www.portfolio-report.net/), you will be presented with the following simple but efficient search form (see Figure 1).
 
-    Figure: Search Result{class=pp-figure}
+Figure: Portfolio Report website. {class=pp-figure}
 
-    ![](../images/portfolio-report-search-result.png)
+![](images/portfolio-report-website.png)
 
-    If the security is in PR's database, the name (e.g *BASF S NA O.N.*), ISIN (*DE000BASF111*), and WKN (*BASF11*) are displayed, together with a logo of the security (*We create chemistry*) and some extra information such as the trading market (*XETRA*), the currency (*EUR*), the ticker symbol on the specified trading market (*BAS*), the availability of prices (*2000-01-03 - 2024-01-12*), the country (*Germany*) and the industry sector (*Materials*) of the company. On a second tab `Prices`, you can find the historical prices of the security.
+In the first box of the search form, you can enter the ISIN, WKN, Symbol, or the full name of the security. Please refer to [Basic concepts > PP-terminology](../../concepts/PP-terminology.md) for a definition of each term. Note that the use of wildcards, such as 'Amaz*', is not permitted for name searches. On the other hand, one word in the name suffices. For example, searching for `Group` will produce Cimic Group, NN Group, IBI Group, ... Searching for `col` will show Colruyt and Coca Cola Co.
 
-    For now, only securities that are traded on XETRA (Deutsche Börse) are available in PR. Also, only historical prices (i.e. closing prices after the end of trading) are provided, not current prices (i.e. during trading on a marketplace).
+Specifying the security type (share, fund, crypto, or bond) is not necessary, as the default search setting (blank or *) includes all categories.
 
-- Drag (= click, hold, and drop) the big blue button `Add to Portfolio Performance` upon the window of PP. This is -of course- very easy if the two applications are placed next to each other on the screen (see Figure 2). Otherwise, you need to drag the button upon the PP icon in the taskbar.
+When you retrieve the historical prices of a security, you have the option to select the currency in which the quotes are displayed with the `Prices` dropdown. Please note that the prices are always retrieved from the XETRA (Frankfurt) exchange market and that this price (in EUR) is converted through the [exchange rates of the ECB](../../reference/view/general-data/currencies.md).
 
-    Figure: Using Portfolio Report to create a security.{class=pp-figure}
+Figure: Search Result{class=pp-figure}
 
-    ![](../images/portfolio-report-drag-drop.svg)
+![](images/portfolio-report-search-result.png)
 
-- You can verify the successful addition of the newly created security by checking the master data tab. A message stating `Linked to Portfolio Report` should be visible (see Figure 3). Additionally, on the Historical Quotes tab, the Quote Feed should be populated with the correct information.
+
+## Creating new securities in PP with PR
+
+- Navigate to the [Portfolio Report website](https://www.portfolio-report.net/); start the PP app and, if possible, position both windows side by side on the computer screen, as illustrated in Figure 2.
+- Utilize the Search box located at the top right (refer to Figure 3) to search for the desired security using its name, ISIN, or WKN.
+
+    If the security is in PR's database, the name (e.g *Amazon.com Inc.*), ISIN (*US0231351067*), and eventually WKN are displayed, together with a logo of the security (white arrow on blue background) and some extra information such as the trading market (*XETRA*), the currency (*EUR*), the ticker symbol on the specified trading market (*AMZ*), the country (*United States of America (US)*) and eventually the industry sector of the company. On multiple tabs (1, 2, 3, etc.), you can view the historical prices of the security. By default, only the 10 most recent prices are shown. However, using the drop-down menu on the right, you can adjust the number of prices displayed per page, with options ranging from 10, 30, 100, to 300.
+
+    Only securities that are traded on XETRA (Deutsche Börse) are available within PR. Historical prices, specifically closing prices after the end of trading, are provided. Current prices, which are prices during trading on a marketplace, are not available.
+
+- Drag (= click, hold, and drop) the big blue button `Add to Portfolio Performance` upon the open window of PP. This is -of course- very easy if the two applications are placed next to each other on the screen (see Figure 2). Otherwise, you need to drag the button upon the PP icon in the taskbar.
+
+    Figure: Using Portfolio Report to create a security in Portfolio Performance.{class=pp-figure}
+
+    ![](./images/portfolio-report-drag-drop.svg)
+
+- You can verify the successful addition of the newly created security by checking the master data tab. A message stating `Linked to Portfolio Report` should be visible (see Figure 4). Additionally, on the Historical Quotes tab, the Quote Feed should be populated with the correct information.
 
     It's important to note that due to the association with PR, the fields `ISIN`, and `WKN` become unmodifiable. If there is a need to update these fields, you must use the "Unlink" button to detach the security. Unfortunately, this also removes the Quote Feed of the Historical Quotes.
 
     Figure: Master data and historical prices of newly created security. {class=pp-figure}
 
-    ![](../images/portfolio-report-created-security.svg)
+    ![](./images/portfolio-report-created-security.svg)
 
 ## Linking an existing security with PR
 
 It's also possible to link an existing security to PR; in particular to gain access to its quote feed of historical prices.
 
 - Navigate to the [Portfolio Report website](https://www.portfolio-report.net/) and search for the desired security.
-- Copy the URL of the webpage. It should start with `https://www.portfolio-report.net/securities/`, followed by an identifier such as `be525a0ebdef4921b261aa2498a6949e`. This is the internal code that PR assigns to this security. You can find this URL in the address bar or at the bottom of the screen, as shown in Figure 2.
-- In PP, select the desired security in the `All Securities` list; right-click and choose `Link to Portfolio Report`. Additionally, you must manually add the Quote Feed by selecting Portfolio Report as the Quote Feed and configuring the appropriate market place (e.g., XETRA). 
+- Copy the URL of the webpage. It should start with `https://www.portfolio-report.net/securities/`, followed by an identifier such as `8761e2dd-873a-4f1c-99c5-65939819eed9`. This is the internal code that PR assigns to this security. You can find this URL in the address bar or at the bottom of the screen when hovering over the big blue button `Add to Portfolio Performance`.
+- In PP, select the desired security in the `All Securities` list; right-click and choose `Link to Portfolio Report`. Additionally, you must manually set  Portfolio Report as the Quote Feed.
 
-## Retrieving historical quotes from PR
+## Privacy rules
 
 Whenever PP initiates an update, such as through the menu `Online > Update Quotes` a request is sent to the PR website. Portfolio Report only receives information that is technically necessary, including:
 
