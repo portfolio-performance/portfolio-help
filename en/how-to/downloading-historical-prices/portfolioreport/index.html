@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creating-new-securities-with-pr" class="md-skip">
+        <a href="#looking-up-information" class="md-skip">
           Skip to content
         </a>
       
@@ -2711,9 +2711,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-new-securities-with-pr" class="md-nav__link">
+  <a href="#looking-up-information" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating new securities with PR
+      Looking up information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-new-securities-in-pp-with-pr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating new securities in PP with PR
     </span>
   </a>
   
@@ -2729,9 +2738,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#retrieving-historical-quotes-from-pr" class="md-nav__link">
+  <a href="#privacy-rules" class="md-nav__link">
     <span class="md-ellipsis">
-      Retrieving historical quotes from PR
+      Privacy rules
     </span>
   </a>
   
@@ -3100,9 +3109,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-new-securities-with-pr" class="md-nav__link">
+  <a href="#looking-up-information" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating new securities with PR
+      Looking up information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-new-securities-in-pp-with-pr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating new securities in PP with PR
     </span>
   </a>
   
@@ -3118,9 +3136,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#retrieving-historical-quotes-from-pr" class="md-nav__link">
+  <a href="#privacy-rules" class="md-nav__link">
     <span class="md-ellipsis">
-      Retrieving historical quotes from PR
+      Privacy rules
     </span>
   </a>
   
@@ -3151,36 +3169,41 @@
 
   <h1>Portfolio Report</h1>
 
-<p>Portfolio Report (PR) is an open-source project that works closely together with the Portfolio Performance app. Its primary goal is to enhance Portfolio Performance by supplying master data, including name, ISIN, WKN, and ticker symbol, as well as historical prices for selected securities.</p>
-<p>You can use PR to create securities or to provide historical prices for already existing securities.</p>
-<h2 id="creating-new-securities-with-pr">Creating new securities with PR</h2>
+<p>Portfolio Report (PR) is an open-source project that works closely together with the Portfolio Performance (PP) app. Its primary goal is to enhance PP by providing master data for securities, including name, ISIN, WKN, and ticker symbol, as well as historical prices in various currencies.</p>
+<p>PR allows you to look up information about securities, such as symbols, industries, and historical prices. Furthermore, it enables the creation of securities within PP from PR and the provision of historical prices for securities that already exist in PP.</p>
+<h2 id="looking-up-information">Looking up information</h2>
+<p>When you navigate to the Portfolio Report website <a href="https://www.portfolio-report.net/">https://www.portfolio-report.net/</a>, you will be presented with the following simple but efficient search form (see Figure 1).</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Portfolio Report website. </figcaption><img alt="" src="../images/portfolio-report-website.png"></figure></p>
+<p>In the first box of the search form, you can enter the ISIN, WKN, Symbol, or the full name of the security. Please refer to <a href="../../../concepts/PP-terminology/">Basic concepts &gt; PP-terminology</a> for a definition of each term. Note that the use of wildcards, such as 'Amaz*', is not permitted for name searches. On the other hand, one word in the name suffices. For example, searching for <code>Group</code> will produce Cimic Group, NN Group, IBI Group, ... Searching for <code>col</code> will show Colruyt and Coca Cola Co.</p>
+<p>Specifying the security type (share, fund, crypto, or bond) is not necessary, as the default search setting (blank or *) includes all categories.</p>
+<p>When you retrieve the historical prices of a security, you have the option to select the currency in which the quotes are displayed with the <code>Prices</code> dropdown. Please note that the prices are always retrieved from the XETRA (Frankfurt) exchange market and that this price (in EUR) is converted through the <a href="../../../reference/view/general-data/currencies/">exchange rates of the ECB</a>.</p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Search Result</figcaption><img alt="" src="../images/portfolio-report-search-result.png"></figure></p>
+<h2 id="creating-new-securities-in-pp-with-pr">Creating new securities in PP with PR</h2>
 <ul>
-<li>Navigate to the Portfolio Report website <a href="https://www.portfolio-report.net/">https://www.portfolio-report.net/</a></li>
-<li>Open the PP app and, if possible, position both windows side by side on the computer screen, as illustrated in Figure 2.</li>
+<li>Navigate to the <a href="https://www.portfolio-report.net/">Portfolio Report website</a>; start the PP app and, if possible, position both windows side by side on the computer screen, as illustrated in Figure 2.</li>
 <li>
-<p>Utilize the Search box located at the top right (refer to Figure 1) to search for the desired security using its name, ISIN, or WKN.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Search Result</figcaption><img alt="" src="../../images/portfolio-report-search-result.png"></figure></p>
-<p>If the security is in PR's database, the name (e.g <em>BASF S NA O.N.</em>), ISIN (<em>DE000BASF111</em>), and WKN (<em>BASF11</em>) are displayed, together with a logo of the security (<em>We create chemistry</em>) and some extra information such as the trading market (<em>XETRA</em>), the currency (<em>EUR</em>), the ticker symbol on the specified trading market (<em>BAS</em>), the availability of prices (<em>2000-01-03 - 2024-01-12</em>), the country (<em>Germany</em>) and the industry sector (<em>Materials</em>) of the company. On a second tab <code>Prices</code>, you can find the historical prices of the security.</p>
-<p>For now, only securities that are traded on XETRA (Deutsche Börse) are available in PR. Also, only historical prices (i.e. closing prices after the end of trading) are provided, not current prices (i.e. during trading on a marketplace).</p>
+<p>Utilize the Search box located at the top right (refer to Figure 3) to search for the desired security using its name, ISIN, or WKN.</p>
+<p>If the security is in PR's database, the name (e.g <em>Amazon.com Inc.</em>), ISIN (<em>US0231351067</em>), and eventually WKN are displayed, together with a logo of the security (white arrow on blue background) and some extra information such as the trading market (<em>XETRA</em>), the currency (<em>EUR</em>), the ticker symbol on the specified trading market (<em>AMZ</em>), the country (<em>United States of America (US)</em>) and eventually the industry sector of the company. On multiple tabs (1, 2, 3, etc.), you can view the historical prices of the security. By default, only the 10 most recent prices are shown. However, using the drop-down menu on the right, you can adjust the number of prices displayed per page, with options ranging from 10, 30, 100, to 300.</p>
+<p>Only securities that are traded on XETRA (Deutsche Börse) are available within PR. Historical prices, specifically closing prices after the end of trading, are provided. Current prices, which are prices during trading on a marketplace, are not available.</p>
 </li>
 <li>
-<p>Drag (= click, hold, and drop) the big blue button <code>Add to Portfolio Performance</code> upon the window of PP. This is -of course- very easy if the two applications are placed next to each other on the screen (see Figure 2). Otherwise, you need to drag the button upon the PP icon in the taskbar.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Using Portfolio Report to create a security.</figcaption><img alt="" src="../../images/portfolio-report-drag-drop.svg"></figure></p>
+<p>Drag (= click, hold, and drop) the big blue button <code>Add to Portfolio Performance</code> upon the open window of PP. This is -of course- very easy if the two applications are placed next to each other on the screen (see Figure 2). Otherwise, you need to drag the button upon the PP icon in the taskbar.</p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Using Portfolio Report to create a security in Portfolio Performance.</figcaption><img alt="" src="../images/portfolio-report-drag-drop.svg"></figure></p>
 </li>
 <li>
-<p>You can verify the successful addition of the newly created security by checking the master data tab. A message stating <code>Linked to Portfolio Report</code> should be visible (see Figure 3). Additionally, on the Historical Quotes tab, the Quote Feed should be populated with the correct information.</p>
+<p>You can verify the successful addition of the newly created security by checking the master data tab. A message stating <code>Linked to Portfolio Report</code> should be visible (see Figure 4). Additionally, on the Historical Quotes tab, the Quote Feed should be populated with the correct information.</p>
 <p>It's important to note that due to the association with PR, the fields <code>ISIN</code>, and <code>WKN</code> become unmodifiable. If there is a need to update these fields, you must use the "Unlink" button to detach the security. Unfortunately, this also removes the Quote Feed of the Historical Quotes.</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Master data and historical prices of newly created security. </figcaption><img alt="" src="../../images/portfolio-report-created-security.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Master data and historical prices of newly created security. </figcaption><img alt="" src="../images/portfolio-report-created-security.svg"></figure></p>
 </li>
 </ul>
 <h2 id="linking-an-existing-security-with-pr">Linking an existing security with PR</h2>
 <p>It's also possible to link an existing security to PR; in particular to gain access to its quote feed of historical prices.</p>
 <ul>
 <li>Navigate to the <a href="https://www.portfolio-report.net/">Portfolio Report website</a> and search for the desired security.</li>
-<li>Copy the URL of the webpage. It should start with <code>https://www.portfolio-report.net/securities/</code>, followed by an identifier such as <code>be525a0ebdef4921b261aa2498a6949e</code>. This is the internal code that PR assigns to this security. You can find this URL in the address bar or at the bottom of the screen, as shown in Figure 2.</li>
-<li>In PP, select the desired security in the <code>All Securities</code> list; right-click and choose <code>Link to Portfolio Report</code>. Additionally, you must manually add the Quote Feed by selecting Portfolio Report as the Quote Feed and configuring the appropriate market place (e.g., XETRA). </li>
+<li>Copy the URL of the webpage. It should start with <code>https://www.portfolio-report.net/securities/</code>, followed by an identifier such as <code>8761e2dd-873a-4f1c-99c5-65939819eed9</code>. This is the internal code that PR assigns to this security. You can find this URL in the address bar or at the bottom of the screen when hovering over the big blue button <code>Add to Portfolio Performance</code>.</li>
+<li>In PP, select the desired security in the <code>All Securities</code> list; right-click and choose <code>Link to Portfolio Report</code>. Additionally, you must manually set  Portfolio Report as the Quote Feed.</li>
 </ul>
-<h2 id="retrieving-historical-quotes-from-pr">Retrieving historical quotes from PR</h2>
+<h2 id="privacy-rules">Privacy rules</h2>
 <p>Whenever PP initiates an update, such as through the menu <code>Online &gt; Update Quotes</code> a request is sent to the PR website. Portfolio Report only receives information that is technically necessary, including:</p>
 <ul>
 <li>Identification details of the security, the marketplace and, if applicable, the period.</li>
@@ -3209,7 +3232,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 1, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 14, 2024</span>
   </span>
 
     
