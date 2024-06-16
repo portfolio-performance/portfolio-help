@@ -2,17 +2,12 @@
 title: Reference Manual
 ---
 
-The Reference manual is structured around the User Interface (UI) of the program, probably the easiest and quickest way for users, developers, or contributors to find relevant information. Figure 1 shows a typical opening screen of a small portfolio, e.g. [demo-portfolio-04](../assets/demo-portfolio-04.xml). An overview of the menu and all sub menus is given [here](./menu.md).
+The Reference manual is structured around the User Interface (UI) of the program, probably the easiest and quickest way for users, developers, or contributors to find relevant information. Figure 1 illustrates a typical opening screen of Portfolio Performance, featuring two open portfolios: `demo-portfolio-03.xml` and the built-in `kommer` portfolio.
 
-Figure: Opening screen of the Portfolio Performance program.{class=pp-figure}
+The structure of the Reference part of the manual is mirrored from the menu with top-level sections named `File`, `View`, `Transaction`, ... As can be seen in the sidebar of this page or from the hamburger menu if you are reading this from a small/mobile screen, the `File` section is subdivided into pages such as `New`, `Save`, `Import`, ...
 
-![](./images/components-UI.svg)
+Figure: Typical opening screen of the Portfolio Performance program.{class=pp-figure}
 
-Figure 1 illustrates the outcome of selecting the `All Transactions` view, accessible either through the sidebar or the menu `View > All Transactions`. The last Buy transaction for `share-3` is selected, prompting the display of a chart showing the historical quotes of `share-3` in the information pane. The following UI elements can be distinguished:
+![](../how-to/images/components-UI.svg)
 
-- **Menu bar** containing five elements: File, View, Transaction, Online, Help. This menu bar is *not* context sensitive. An expanded image of all menus and submenus [[available here]](menu.md) will provide you with a comprehensive understanding of the program's functionalities.
-- **Open projects**: you can open multiple projects simultaneously. The highlighted project is visible below. Projects marked with a star (*) preceding their name has been changed and should be saved before closing. It is possible to display two projects [side by side](../how-to/copy-securities.md) in the UI.
--  The **Sidebar** serves as a convenient shortcut for accessing various views within the project. All available options can also be accessed through the `View` menu. It's important to note that the list in the sidebar mirrors the options available in the `View` menu, providing a one-to-one translation of the available views. The chosen view dictates the content displayed in the adjacent top and bottom panes. Next to the options `Securities` and `Taxonomies`, a very small (green) icon will let you add new elements.
-- **Main pane**: in the example of Figure 1, the main pane contains the `All Transactions` view. This is a list of all the transactions that you have made with your portfolio, such as deposits, withdrawals, buys, and sells. The default columns, such as `date`, `type`, `security`, ..., are initially visible. However, you have the flexibility to modify them using the Settings (cog) icon located in the top-right corner. Please, note that the icons in the top-right corner are specific to this view and may not necessarily appear in other views.
-- The **Information pane** follows the selection of the main pane. For example, selecting `share-1` in the main pane will display the chart of this share in the information pane.
-- **Divider bar**: the area occupied by the top and bottom panes can be adjusted using the divider bar. You can drag the divider bar all the way to the top or bottom. It is not possible to completely hide a pane; except for the `Currencies` and `Settings` options.
+ An image of all menus and submenus expanded is [[available here]](../how-to/menu.md).
