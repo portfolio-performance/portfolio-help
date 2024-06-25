@@ -184,6 +184,7 @@ nav:
         - Fehlerprotokoll: referenzhandbuch/hilfe/fehlerprotokoll.md
   - How to:
       - How-to: how-to/index.md
+      - Benutzeroberfläche: how-to/benutzeroberflaeche.md
       - Quellen für historische Kurse:
           - Historische Kurse: how-to/historische-aktienkurse/index.md
           - Alpha Vantage: how-to/historische-aktienkurse/alpha-vantage.md
