@@ -6,7 +6,7 @@ To assess your portfolio's performance, start by examining the Dashboard. Key pe
 
 Figure: Dashboard with key performance indicators - 2-year reporting period.{class=pp-figure}
 
-![Performance Dashboard](../reference/view/images/performance-dashboard-2yrs.png)
+![Performance Dashboard](../reference/view/reports/performance/images/performance-dashboard-2yrs.png)
 
 To follow along with the text and Figure 2, download the [demo-portfolio-03 file](../assets/demo-portfolio-03.xml). We begin by examining the Calculation Widget (on the right side).
 

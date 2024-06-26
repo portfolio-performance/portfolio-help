@@ -6,7 +6,7 @@ Key performance and risk indicators are summarized in a dashboard, along with a 
 
 Figure: Dashboard with key performance and risk indicators and calculation widget.{class=pp-figure}
 
-![](../../images/performance-dashboard-3yrs.png)
+![](./images/performance-dashboard-3yrs.png)
 
 Please note that the performance and risk indicators are always calculated for the entire portfolio and for a specific [reporting period](../../../../concepts/reporting-period.md). By default, this is one year from today. You can change the period by selecting a different one or create a new one in the drop-down (top-right). In Figure 1, the reporting period is `from Jun 12, 2020 till Jun 12, 2023`. For the performance key indicators, the color green indicates a profit, while red signifies a loss. 
 
@@ -183,7 +183,16 @@ The first three widgets are single line text; representing the common performanc
 
 ### Risk indicators
 
-All four widgets are single line text widgets, representing the common risk indicators: `Maximum Drawdown`, `Max Drawdown Duration`, `Volatility`, and `Semivariance`. See [above](index.md#maximum-drawdown) for an explanation.
+All five widgets are single line text widgets, representing common risk indicators. See [above](index.md#maximum-drawdown) for an explanation of `Maximum Drawdown`, `Max Drawdown Duration`, `Volatility`, and `Semivariance`.
+
+
+Figure: Setting the risk-free return from the context menu. {class=align-right style="width:30%"}
+
+![](images/sharpe-set-risk-free.png
+)
+The `Sharpe ratio` is a financial metric that measures the performance of a portfolio compared to a risk-free asset, taking into account the portfolio's risk. It is calculated by subtracting the risk-free return from the portfolio's return, such as the Internal Rate of Return (IRR), and then dividing the result by the standard deviation of the portfolio's return, which is a measure of its volatility.
+
+The risk-free return is set by default to 0%, but this can be adjusted through the context menu to reflect your current risk-free rate. As the ratio is based on volatility, complete historical prices are required. Without complete prices, the calculated volatility may be underestimated.
 
 ### Earnings
 
