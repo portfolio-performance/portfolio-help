@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#view-accounts-deposit-accounts" class="md-skip">
+        <a href="#main-pane" class="md-skip">
           Skip to content
         </a>
       
@@ -1551,8 +1551,17 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Deposit Account
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1563,6 +1572,50 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-pane" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main pane
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information-pane" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information pane
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshoot-balance-discrepancy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshoot Balance Discrepancy
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3062,8 +3115,41 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-pane" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main pane
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information-pane" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information pane
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshoot-balance-discrepancy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshoot Balance Discrepancy
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -3086,19 +3172,30 @@
   
 
 
-<h1 id="view-accounts-deposit-accounts">View › Accounts › Deposit Accounts</h1>
+  <h1>Deposit Account</h1>
+
 <p>A deposit account serves as a central hub for managing cash flow within the portfolio, allowing users to allocate funds for investment activities and track incoming and outgoing cash transactions. One can visualize it as a list, akin to a shopping list, where transactions such as withdrawals and deposits of digital money are recorded. There can be many deposit accounts within one portfolio, for example, for different currencies that are traded. As part of the installation process, at least one security account and one deposit account have already been created.</p>
 <p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Example of Deposit Accounts. </figcaption><img alt="" src="../images/sb-accounts-deposit-accounts.png"></figure></p>
-<p>In Figure 1 (main pane), there are three deposit accounts named <code>Broker-1 (EUR)</code>, <code>Broker-1 (USD)</code>, and <code>broker-2 (EUR)</code>. Based on their names, it can be inferred that these accounts likely represent two cash accounts held at <code>Broker-1</code> (in EUR &amp; USD) and one cash account in EUR with <code>Broker-2</code>. It may appear somewhat redundant to add "EUR" and "USD" in the name of the account because you also need to specify the currency for each deposit account (see the third column in Figure 1). On the other hand, in many dialogs (for example when buying a security) you need to specify the deposit account. The added currency in the name of the deposit account will help you then choosing the correct one.</p>
-<p>Of course, you can use other names depending on your needs. For example, if you want to keep all your dividends and taxes in a separate account, you could name it <code>Dividends</code> and <code>Taxes</code>. If you receive dividends in both EUR and USD, then you need also two deposit accounts.</p>
+<h2 id="main-pane">Main pane</h2>
+<p>In Figure 1 (main pane), there are four deposit accounts. It may seem unnecessary to include the currency in the name of an account, as the currency is already specified for each deposit account in the third column of Figure 1. However, including the currency in the name of the deposit account can be helpful in situations where you need to select a deposit account from a list, such as when buying a security. In these cases, having the currency clearly displayed in the name of the account can help you quickly and accurately choose the correct one.</p>
+<p>You can use different names for accounts depending on your preferences and needs. For example, if you wish to keep your dividends and taxes separate, you could create two accounts named <code>Dividends</code>" and <code>Taxes</code>.</p>
 <p><figure class="align-right" style="width:20%" id="_figure-2"><figcaption>Figure 2.  Add account. </figcaption><img alt="" src="../images/create-new-account.png"></figure></p>
-<p>To create a new deposit account, click on the green + icon located at the top right (refer to Figure 2). Then, select the option <code>Add account</code>. Since you're in the Deposit Account view, a new deposit account named <code>No Name</code> will be created with the default currency of the portfolio. Remember to change the currency if needed by double-clicking on the currency field (e.g., EUR) and selecting another currency from the dropdown menu. While navigating the currency list, you can use the first letter of the desired currency for faster navigation. Initially, the balance of the newly created deposit account will be zero.</p>
+<p>To create a new deposit account, click on the green + icon located at the top right (refer to Figure 2). Then, select the option <code>Add account</code>. Since you're in the Deposit Account view, a new deposit account named <code>No Name</code> will be created with the default currency of the portfolio. To rename the account, simply double-click on the Name field and enter the desired name. Remember also to change the currency if needed by double-clicking on the currency field (e.g., EUR) and selecting another currency from the dropdown menu. While navigating the currency list, you can use the first letter of the desired currency for faster navigation. Initially, the balance of the newly created deposit account will be zero.</p>
 <p>A deposit account can be negative. However, good practice requires that you first add a deposit of a large enough sum to cover the subsequent buy transactions, just as you would do with a real broker.</p>
-<p>To deactivate an account, right-click on the account and choose <code>Deactivate account</code> from the context menu. The account name will appear greyed out and will no longer be visible in the list of deposit accounts when making a deposit transaction. With the Filter icon (top right), you an hide inactive accounts.</p>
-<p>Using the Show or Hide columns option (accessible via the gear icon at the top right), you can customize the view by hiding or adding columns. Available columns include: Cash account (name), Balance, Currency, Notes, and Attributes. Additionally, you can hide or rename a column through the context menu.</p>
+<p>To deactivate an account, right-click on the account and choose <code>Deactivate account</code> from the context menu. The account name will appear greyed out and will no longer be visible in the list of deposit accounts when making a deposit transaction. With the Filter icon (top right), you can hide inactive accounts.</p>
+<p>You can delete a deposit account using the context menu. However, it is important to note that you can only delete an account if there are no transactions associated with it.</p>
+<p>If you want to delete an account that has transactions, you will need to first delete the transactions that are linked to that account. Once all transactions have been removed, you can then delete the account itself.</p>
+<p>Using the Show or Hide columns option (accessible via the <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2699.svg" title=":gear:"> gear icon at the top right), you can customize the view by hiding or adding columns. The available columns for display include: <code>Cash account</code>, <code>Balance</code>, <code>Currency</code>, <code>Note</code>, and <code>Attributes</code>. See also <a href="../../../../how-to/user-interface/">How-to &gt; User Interface</a> for more detailed information about handling the table.</p>
+<h2 id="information-pane">Information pane</h2>
 <p>The information pane at the bottom displays the transactions of the selected deposit account in the main pane. It consists of two tabs: Transactions and Account balance chart. The Transactions tab displays fields such as date, type, amount, and balance of each transaction. The Account Balance chart provides a graphical representation of the account balance. Due to fewer data points compared to a historical prices graph, the chart may appear more blocked. Figure 3 illustrates the balance of the <code>Broker-1 (EUR)</code> account, where the early spikes are the result from deposits followed by purchases on the next day.</p>
 <p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Example of the Account Balance Chart. </figcaption><img alt="" src="../images/sb-accounts-deposit-accounts-balance-chart.png"></figure></p>
-<p>The context menu, accessed by right-clicking on the chart, offers the same options as many other charts; for example, you can refer to the <a href="../../securities/all-securities/#chart-menu">chart menu of the <code>All Securities</code> info pane</a> for more information.</p>
+<p>The context menu, accessed by right-clicking on the chart, offers the same options as many other charts; for example, you can refer to the <a href="../../securities/all-securities/#chart-menu">chart menu of the <code>All Securities</code> info pane</a> for more information. There are no other configuration settings.</p>
+<h2 id="troubleshoot-balance-discrepancy">Troubleshoot Balance Discrepancy</h2>
+<p>If you notice any discrepancies in a deposit account between the calculated balance of PP and the actual balance of the bank/broker, you can use the context menu to troubleshoot the issue. To do so, right-click on the account in the main pane and select "Troubleshoot Balance Discrepancy" from the menu.</p>
+<p>This will open a dialog box displaying the calculated monthly balances for the selected deposit account. In the "Expected balance" column, you can enter the balance that you expect according to your bank account statement. Portfolio Performance (PP) will then use the calculated difference to try to identify any transactions that may be causing the discrepancy. For example, PP may find transactions that were made to a different account or are dated in the future.</p>
+<video width="100%" controls>
+  <source src="../images/troubleshoot-balance-discrepancy.mp4" type="video/mp4">
+</source></video>
 
 
 
@@ -3119,7 +3216,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 19, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 26, 2024</span>
   </span>
 
     
