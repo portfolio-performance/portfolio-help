@@ -1,4 +1,4 @@
-#Mon May 06 09:48:10 CEST 2024
+#Thu Jun 20 23:05:23 CEST 2024
 SecurityEventsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:120},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:300}]}
 StatementOfAssetsView-newsash=420
 PerformanceView@2Earnings={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:100},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:250},{"id"\:"6","width"\:100},{"id"\:"7","width"\:100},{"id"\:"note","width"\:200}]}
@@ -29,7 +29,7 @@ HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:237},{
 StatementOfAssetsHistoryView-newsash=295
 name.abuchen.portfolio.ui.views.panes.TransactionsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:153},{"id"\:"1","width"\:95},{"id"\:"2","width"\:101},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:194},{"id"\:"account","width"\:164},{"id"\:"9","width"\:151},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
 import-target-portfolio-Account\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
-PortfolioListView-newsash=299
+PortfolioListView-newsash=1566
 import-target-portfolio-Portfolio\ Transactions=ccd0ccf0-d4cd-4c16-8316-2b8727eb514d
 CalculationLineItemPane={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:170},{"id"\:"1","width"\:110},{"id"\:"2","width"\:80},{"id"\:"3","width"\:85},{"id"\:"4","width"\:139},{"id"\:"5","width"\:133},{"id"\:"6","width"\:287},{"id"\:"7","width"\:97},{"id"\:"8","width"\:86},{"id"\:"9","width"\:183}]}
 name.abuchen.portfolio.ui.views.SecuritiesTable$picked=ace4b28f-3207-4dc2-95fa-edc3936851f9
