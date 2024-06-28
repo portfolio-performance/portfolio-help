@@ -1,9 +1,9 @@
-#Wed Apr 10 21:45:22 CEST 2024
+#Fri Jun 28 18:08:06 CEST 2024
 ExchangeRatesListTab@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:150},{"id"\:"3","width"\:150}]}
 StatementOfAssetsView-newsash=-16
 PerformanceView@2Earnings={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:100},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:250},{"id"\:"6","width"\:100},{"id"\:"7","width"\:100},{"id"\:"note","width"\:200}]}
 name.abuchen.portfolio.ui.views.SecuritiesTable$picked=ace4b28f-3207-4dc2-95fa-edc3936851f9
-name.abuchen.portfolio.ui.views.AllTransactionsView={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:155},{"id"\:"1","width"\:80},{"id"\:"2","width"\:146},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"account","width"\:120},{"id"\:"9","width"\:120},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
+name.abuchen.portfolio.ui.views.AllTransactionsView={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:155},{"id"\:"1","width"\:220},{"id"\:"2","width"\:146},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:80},{"id"\:"account","width"\:120},{"id"\:"9","width"\:120},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
 PerformanceView@2Taxes={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:100},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:250},{"id"\:"6","width"\:100},{"id"\:"7","width"\:100},{"id"\:"note","width"\:200}]}
 ReturnsVolatilityChartView-newsash=-200
 SecuritiesPerformanceView-newsash=200
@@ -19,7 +19,7 @@ CurrencyView-newsash=-200
 ReturnsVolatilityChartView-risk-metric=VOLATILITY
 CurrencyConverterTab={"items"\:[{"id"\:"label","width"\:520},{"id"\:"value","width"\:104}]}
 name.abuchen.portfolio.ui.wizards.datatransfer.CSVImportWizard-encoding=UTF-8
-SecurityListView-newsash=366
+SecurityListView-newsash=284
 PerformanceView-newsash=200
 AttributeListTab@v2={"items"\:[{"id"\:"0","width"\:250},{"id"\:"1","width"\:150},{"id"\:"2","width"\:150},{"id"\:"3","width"\:100}]}
 PerformanceChartView-PICKER$picked=7600e16d-0168-49d1-aadb-18c66a64bc8f
@@ -40,5 +40,5 @@ HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:187},{"
 name.abuchen.portfolio.ui.views.panes.TransactionsPane={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:135},{"id"\:"1","width"\:173},{"id"\:"2","width"\:105},{"id"\:"3","width"\:66},{"id"\:"4","width"\:64},{"id"\:"5","width"\:98},{"id"\:"6","width"\:49},{"id"\:"7","width"\:70},{"id"\:"8","width"\:188},{"id"\:"account","width"\:192},{"id"\:"9","width"\:231}]}
 StatementOfAssetsHistoryView-newsash=-27
 PerformanceView@2Fees={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:100},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:250},{"id"\:"6","width"\:100},{"id"\:"7","width"\:100},{"id"\:"note","width"\:200}]}
-AllTransactionsView-newsash=316
-PortfolioListView-newsash=520
+AllTransactionsView-newsash=262
+PortfolioListView-newsash=429

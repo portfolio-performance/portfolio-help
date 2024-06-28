@@ -2772,8 +2772,30 @@
         <price t="2024-04-26" v="2185000000"/>
         <price t="2024-04-29" v="2179000000"/>
         <price t="2024-04-30" v="2149000000"/>
+        <price t="2024-05-02" v="2173000000"/>
+        <price t="2024-05-03" v="2166000000"/>
+        <price t="2024-05-06" v="2174000000"/>
+        <price t="2024-05-07" v="2172000000"/>
+        <price t="2024-05-08" v="2164000000"/>
+        <price t="2024-05-09" v="2190000000"/>
+        <price t="2024-05-10" v="2197000000"/>
+        <price t="2024-05-13" v="2201000000"/>
+        <price t="2024-05-14" v="2201000000"/>
+        <price t="2024-05-15" v="2212000000"/>
+        <price t="2024-05-16" v="2189000000"/>
+        <price t="2024-05-17" v="2200000000"/>
+        <price t="2024-05-20" v="2221000000"/>
+        <price t="2024-05-21" v="2213000000"/>
+        <price t="2024-05-22" v="2211000000"/>
+        <price t="2024-05-23" v="2177000000"/>
+        <price t="2024-05-24" v="2176000000"/>
+        <price t="2024-05-27" v="2176000000"/>
+        <price t="2024-05-28" v="2172000000"/>
+        <price t="2024-05-29" v="2162000000"/>
+        <price t="2024-05-30" v="2201000000"/>
+        <price t="2024-05-31" v="2229000000"/>
       </prices>
-      <latest t="2024-04-30" v="2149000000">
+      <latest t="2024-05-31" v="2229000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -3963,8 +3985,30 @@
         <price t="2024-04-26" v="1261000000"/>
         <price t="2024-04-29" v="1255000000"/>
         <price t="2024-04-30" v="1241000000"/>
+        <price t="2024-05-02" v="1243500000"/>
+        <price t="2024-05-03" v="1241500000"/>
+        <price t="2024-05-06" v="1246500000"/>
+        <price t="2024-05-07" v="1145000000"/>
+        <price t="2024-05-08" v="1149000000"/>
+        <price t="2024-05-09" v="1164000000"/>
+        <price t="2024-05-10" v="1163500000"/>
+        <price t="2024-05-13" v="1163000000"/>
+        <price t="2024-05-14" v="1165000000"/>
+        <price t="2024-05-15" v="1177500000"/>
+        <price t="2024-05-16" v="1184000000"/>
+        <price t="2024-05-17" v="1208000000"/>
+        <price t="2024-05-20" v="1215500000"/>
+        <price t="2024-05-21" v="1200000000"/>
+        <price t="2024-05-22" v="1200500000"/>
+        <price t="2024-05-23" v="1220500000"/>
+        <price t="2024-05-24" v="1200500000"/>
+        <price t="2024-05-27" v="1215000000"/>
+        <price t="2024-05-28" v="1206000000"/>
+        <price t="2024-05-29" v="1178500000"/>
+        <price t="2024-05-30" v="1167000000"/>
+        <price t="2024-05-31" v="1159000000"/>
       </prices>
-      <latest t="2024-04-30" v="1241000000">
+      <latest t="2024-05-31" v="1159000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -4309,6 +4353,55 @@
         </column>
       </columns>
     </dashboard>
+    <dashboard name="Benchmark">
+      <columns>
+        <column>
+          <weight>1</weight>
+          <widgets>
+            <widget type="CHART">
+              <label>Performance Chart</label>
+              <configuration>
+                <entry>
+                  <string>CONFIG_UUID</string>
+                  <string>69cff468-3eb7-413a-aa63-51726c5415e5</string>
+                </entry>
+                <entry>
+                  <string>HEIGHT</string>
+                  <string>420</string>
+                </entry>
+              </configuration>
+            </widget>
+          </widgets>
+        </column>
+        <column>
+          <weight>1</weight>
+          <widgets>
+            <widget type="TTWROR">
+              <label>True Time-Weighted Rate of Return (cumulative), share-1 (Benchmark)</label>
+              <configuration>
+                <entry>
+                  <string>DATA_SERIES</string>
+                  <string>[b]Security0152978e-2ea2-436f-b07a-0333b988ea8b</string>
+                </entry>
+              </configuration>
+            </widget>
+            <widget type="TTWROR">
+              <label>True Time-Weighted Rate of Return (cumulative), share-1</label>
+              <configuration>
+                <entry>
+                  <string>DATA_SERIES</string>
+                  <string>Security0152978e-2ea2-436f-b07a-0333b988ea8b</string>
+                </entry>
+              </configuration>
+            </widget>
+            <widget type="CALCULATION">
+              <label>Performance Calculation</label>
+              <configuration/>
+            </widget>
+          </widgets>
+        </column>
+      </columns>
+    </dashboard>
   </dashboards>
   <properties>
     <entry>
@@ -4499,7 +4592,7 @@
             <config>
               <uuid>3580a087-a144-41e6-b45e-351eb5535064</uuid>
               <name>Standard</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;name&quot;,&quot;width&quot;:121},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:196},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:184},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:75},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:104},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;sortDirection&quot;:1024,&quot;width&quot;:118},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:145},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:66},{&quot;id&quot;:&quot;twror&quot;,&quot;width&quot;:123},{&quot;id&quot;:&quot;izf&quot;,&quot;width&quot;:128},{&quot;id&quot;:&quot;delta&quot;,&quot;width&quot;:105}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;name&quot;,&quot;sortDirection&quot;:128,&quot;width&quot;:121},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:220},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:184},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:75},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:104},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:118},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:145},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:66},{&quot;id&quot;:&quot;twror&quot;,&quot;width&quot;:123},{&quot;id&quot;:&quot;izf&quot;,&quot;width&quot;:128},{&quot;id&quot;:&quot;delta&quot;,&quot;width&quot;:105}]}</data>
             </config>
           </configurations>
         </config-set>
@@ -4511,7 +4604,12 @@
             <config>
               <uuid>7600e16d-0168-49d1-aadb-18c66a64bc8f</uuid>
               <name>Standard</name>
-              <data>Client-totals;#ff8000;SOLID;false;2</data>
+              <data>Security0152978e-2ea2-436f-b07a-0333b988ea8b;#e279a6;SOLID;false;2,[b]Security0152978e-2ea2-436f-b07a-0333b988ea8b;#a079e2;SOLID;false;2</data>
+            </config>
+            <config>
+              <uuid>69cff468-3eb7-413a-aa63-51726c5415e5</uuid>
+              <name>benchmark</name>
+              <data>Security0152978e-2ea2-436f-b07a-0333b988ea8b;#e279a6;SOLID;false;2,[b]Security0152978e-2ea2-436f-b07a-0333b988ea8b;#00ff40;SOLID;false;2</data>
             </config>
           </configurations>
         </config-set>

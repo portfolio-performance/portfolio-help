@@ -1,5 +1,5 @@
 <client>
-  <version>59</version>
+  <version>62</version>
   <baseCurrency>EUR</baseCurrency>
   <securities>
     <security>
@@ -63,7 +63,7 @@
                   <uuid>ee8ef676-31b1-4e80-909a-91a715800e54</uuid>
                   <date>2023-03-01T00:00</date>
                   <currencyCode>EUR</currencyCode>
-                  <amount>3200</amount>
+                  <amount>3000</amount>
                   <security reference="../../../../../../../../../securities/security"/>
                   <crossEntry class="portfolio-transfer">
                     <portfolioFrom reference="../../../.."/>
@@ -88,11 +88,11 @@
                           <uuid>4a2c2368-1a4b-44f0-95ca-76d0b68b3b43</uuid>
                           <date>2023-03-01T00:00</date>
                           <currencyCode>EUR</currencyCode>
-                          <amount>3200</amount>
+                          <amount>3000</amount>
                           <security reference="../../../../../../../../../../../../../securities/security"/>
                           <crossEntry class="portfolio-transfer" reference="../../../.."/>
-                          <shares>400000000</shares>
-                          <updatedAt>2024-03-28T08:15:10.825131700Z</updatedAt>
+                          <shares>300000000</shares>
+                          <updatedAt>2024-06-28T16:07:21.467369400Z</updatedAt>
                           <type>TRANSFER_IN</type>
                         </portfolio-transaction>
                       </transactions>
@@ -103,8 +103,8 @@
                     </portfolioTo>
                     <transactionTo reference="../portfolioTo/transactions/portfolio-transaction"/>
                   </crossEntry>
-                  <shares>400000000</shares>
-                  <updatedAt>2024-03-28T08:15:10.825131700Z</updatedAt>
+                  <shares>300000000</shares>
+                  <updatedAt>2024-06-28T16:07:21.467369400Z</updatedAt>
                   <type>TRANSFER_OUT</type>
                 </portfolio-transaction>
               </transactions>
@@ -534,7 +534,7 @@
             <config>
               <uuid>1175c086-9559-4631-844a-6c75735ab171</uuid>
               <name>test view</name>
-              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:300},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:115},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:83},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:133},{&quot;id&quot;:&quot;6&quot;,&quot;width&quot;:97},{&quot;id&quot;:&quot;ttwror&quot;,&quot;option&quot;:&quot;L5Y0&quot;,&quot;width&quot;:160},{&quot;id&quot;:&quot;delta&quot;,&quot;option&quot;:&quot;L5Y0&quot;,&quot;sortDirection&quot;:1024,&quot;width&quot;:334},{&quot;id&quot;:&quot;delta&quot;,&quot;option&quot;:&quot;F2023-09-01_2024-03-27&quot;,&quot;width&quot;:375}]}</data>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:214},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:115},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:83},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:133},{&quot;id&quot;:&quot;6&quot;,&quot;width&quot;:97},{&quot;id&quot;:&quot;delta&quot;,&quot;option&quot;:&quot;F2023-01-01_2024-01-01&quot;,&quot;width&quot;:387},{&quot;id&quot;:&quot;irr&quot;,&quot;option&quot;:&quot;F2023-01-01_2024-01-01&quot;,&quot;width&quot;:338}]}</data>
             </config>
           </configurations>
         </config-set>
