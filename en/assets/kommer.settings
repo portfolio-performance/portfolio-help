@@ -1,5 +1,6 @@
-#Mon Jun 17 20:13:47 CEST 2024
+#Wed Jun 26 20:08:54 CEST 2024
 ReBalancingViewer-assetclasses={"items"\:[{"id"\:"txname","width"\:400},{"id"\:"weight","width"\:70},{"id"\:"desiredAllocation","width"\:70},{"id"\:"used-for-rebalancing","width"\:40},{"id"\:"targetvalue","width"\:100},{"id"\:"act%","width"\:60},{"id"\:"amGV%","width"\:60},{"id"\:"act","width"\:100},{"id"\:"delta%","width"\:60},{"id"\:"delta%indicator","width"\:60},{"id"\:"delta","width"\:100},{"id"\:"rebalanceAmount","width"\:100},{"id"\:"quote","width"\:60},{"id"\:"deltashares","width"\:100}]}
+TroubleshootBalanceDiscrepancyDialog-balance@Vxy11={"items"\:[{"id"\:"date","sortDirection"\:1024,"width"\:100},{"id"\:"value","width"\:120},{"id"\:"delta","width"\:120},{"id"\:"expected","width"\:120}]}
 ExchangeRatesListTab@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:150},{"id"\:"3","width"\:150}]}
 StatementOfAssetsView-newsash=200
 name.abuchen.portfolio.ui.views.SecuritiesTable$picked=cb645d68-1166-407b-b902-7fe1e3c58e9e
@@ -7,11 +8,12 @@ StatementOfAssetsViewer=assetclasses
 name.abuchen.portfolio.ui.views.AllTransactionsView={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:163},{"id"\:"1","width"\:101},{"id"\:"2","width"\:471},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:206},{"id"\:"account","width"\:195},{"id"\:"9","width"\:146},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
 PaymentsView-year=2022
 name.abuchen.portfolio.ui.views.StatementOfAssetsViewer$picked=6c528024-05df-4f02-9ca0-ded4a4395556
-AccountListView@bottom5={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:250},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:120},{"id"\:"8","width"\:200},{"id"\:"source","width"\:120}]}
-AccountListView-newsash=200
-AccountListView@top2={"items"\:[{"id"\:"0","width"\:294},{"id"\:"1","width"\:149},{"id"\:"currency","width"\:107},{"id"\:"note","width"\:200}]}
+AccountListView@bottom5={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:166},{"id"\:"1","width"\:100},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:493},{"id"\:"5","width"\:80},{"id"\:"6","width"\:145},{"id"\:"7","width"\:165},{"id"\:"8","width"\:200},{"id"\:"source","width"\:120}]}
+AccountListView-newsash=367
+AccountListView@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:294},{"id"\:"1","width"\:149},{"id"\:"currency","width"\:107},{"id"\:"note","width"\:200}]}
 CurrencyView-newsash=-200
 CurrencyConverterTab={"items"\:[{"id"\:"label","width"\:520},{"id"\:"value","width"\:104}]}
+filter-redired-accounts=false
 PaymentsView-tab=2
 SecurityListView-newsash=200
 AttributeListTab@v2={"items"\:[{"id"\:"0","width"\:250},{"id"\:"1","width"\:150},{"id"\:"2","width"\:150},{"id"\:"3","width"\:100}]}
