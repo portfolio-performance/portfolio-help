@@ -162,7 +162,7 @@ nav:
           - Transaction: reference/transaction/index.md
           - Buy & Sell: reference/transaction/buy-sell.md
           - Delivery (Inbound-Outbound): reference/transaction/delivery.md
-          - Security transfer: reference/transaction/security-transfer.md
+          - Transfer: reference/transaction/transfer.md
           - Dividend: reference/transaction/dividend.md
           - Deposit & removal (withdrawal): reference/transaction/deposit-removal.md
           - Interest & Interest charge: reference/transaction/interest.md
