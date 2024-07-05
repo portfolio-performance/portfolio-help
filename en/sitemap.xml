@@ -291,6 +291,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://help.portfolio-performance.info/en/reference/help/preferences/</loc>
+         <lastmod>2024-07-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://help.portfolio-performance.info/en/reference/help/trouble-shooting/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
