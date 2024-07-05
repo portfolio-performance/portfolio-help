@@ -1,4 +1,4 @@
-#Fri Apr 12 22:03:10 CEST 2024
+#Fri Jun 28 21:07:16 CEST 2024
 StatementOfAssetsView-newsash=-16
 PerformanceView@2Earnings={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:178},{"id"\:"1","width"\:157},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:101},{"id"\:"6","width"\:230},{"id"\:"7","width"\:267},{"id"\:"note","width"\:200}]}
 CSV_EXPORT_PATH=D\:\\tmp
@@ -17,17 +17,17 @@ PerformanceChartView-PICKER$picked=7600e16d-0168-49d1-aadb-18c66a64bc8f
 PerformanceView@byaccounts2={"items"\:[{"id"\:"0","width"\:400},{"id"\:"1","width"\:80},{"id"\:"2","width"\:80},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80}]}
 TransactionsTab@v3={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:250},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:120},{"id"\:"9","width"\:200}]}
 TradeDetailsView-newsash=334
-SecurityPriceChartPane=Y1
-SettingsView-newsash=200
 StatementOfAssetsHistoryView-PICKER$picked=ec4dc660-8854-43ad-80d4-31584fe10e19
+SettingsView-newsash=200
+SecurityPriceChartPane=Y1
 BookmarksListTab@bottom={"items"\:[{"id"\:"0","width"\:150},{"id"\:"1","width"\:500}]}
 performance-chart-aggregation-period=
 PerformanceChartView-newsash=-200
 ReturnsVolatilityChartView-PICKER$picked=6c2d3073-1d95-4f1f-b51f-03dfac0891dd
 HistoricalPricesPane={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:187},{"id"\:"1","width"\:80}]}
-name.abuchen.portfolio.ui.views.panes.TransactionsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:135},{"id"\:"1","width"\:173},{"id"\:"2","width"\:105},{"id"\:"3","width"\:91},{"id"\:"4","width"\:93},{"id"\:"5","width"\:137},{"id"\:"6","width"\:49},{"id"\:"7","width"\:70},{"id"\:"8","width"\:188},{"id"\:"account","width"\:192},{"id"\:"9","width"\:231}]}
 StatementOfAssetsHistoryView-newsash=-27
-PortfolioListView-newsash=520
+name.abuchen.portfolio.ui.views.panes.TransactionsPane={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:135},{"id"\:"1","width"\:173},{"id"\:"2","width"\:105},{"id"\:"3","width"\:91},{"id"\:"4","width"\:93},{"id"\:"5","width"\:137},{"id"\:"6","width"\:49},{"id"\:"7","width"\:70},{"id"\:"8","width"\:188},{"id"\:"account","width"\:192},{"id"\:"9","width"\:231}]}
+PortfolioListView-newsash=399
 ExchangeRatesListTab@top2={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:80},{"id"\:"1","width"\:80},{"id"\:"2","width"\:150},{"id"\:"3","width"\:150}]}
 name.abuchen.portfolio.ui.views.SecuritiesTable$picked=ace4b28f-3207-4dc2-95fa-edc3936851f9
 name.abuchen.portfolio.ui.views.AllTransactionsView={"items"\:[{"id"\:"0","sortDirection"\:128,"width"\:140},{"id"\:"1","width"\:214},{"id"\:"2","width"\:132},{"id"\:"3","width"\:80},{"id"\:"4","width"\:80},{"id"\:"5","width"\:80},{"id"\:"6","width"\:80},{"id"\:"7","width"\:80},{"id"\:"8","width"\:99},{"id"\:"account","width"\:240},{"id"\:"9","width"\:244},{"id"\:"10","width"\:200},{"id"\:"source","width"\:200}]}
@@ -35,7 +35,7 @@ PerformanceView@2Taxes={"items"\:[{"id"\:"0","sortDirection"\:1024,"width"\:100}
 SecuritiesPerformanceView-newsash=200
 CSV_IMPORT_PATH=D\:\\OneDrive\\Desktop
 DashboardView-newsash=-200
-AccountListView-newsash=570
+AccountListView-newsash=401
 CurrencyView-newsash=-200
 SecurityListView-newsash=366
 AttributeListTab@v2={"items"\:[{"id"\:"0","width"\:250},{"id"\:"1","width"\:150},{"id"\:"2","width"\:150},{"id"\:"3","width"\:100}]}

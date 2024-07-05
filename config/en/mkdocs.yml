@@ -169,8 +169,9 @@ nav:
           - Fees & taxes: reference/transaction/fees-taxes.md
       - Online Menu: reference/online.md
       - Help Menu:
-          - Check for Updates: reference/help/check-updates.md
           - About Portfolio Performance: reference/help/about.md
+          - Preferences : reference/help/preferences.md          
+          - Check for Updates: reference/help/check-updates.md
           - Trouble-shooting: reference/help/trouble-shooting.md
   - How-to:
       - How-to: how-to/index.md
