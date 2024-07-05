@@ -23,7 +23,7 @@ By selecting the `General` menu item in the sidebar of the `Preferences dialog b
 
 - `Store Gui settings next to Portfolio Performance file`: The Graphical User Interface (GUI) settings influence several aspects of the look and feel of the PP program such as the width of columns or size of windows (e.g. main pane vs information pane) and others. These settings are stored in a separate file, that can be located:
 
-    - In the same folder as the portfolio file (option is checked). The name of the file is <span style="font-variant: small-caps;">[name-of-portfolio].settings</span> ; e.g. `demo-portfolio-03.settings`.
+    - In the same folder as the portfolio file (option is checked). The name of the file is <span style="font-variant: small-caps;">[name-of-portfolio].settings</span>; e.g. `demo-portfolio-03.settings`.
     
     - In a subfolder of the workspace folder of the PP application (option is unchecked). The name is a unique random string with the extension "txt", e.g.`prf_c4c742f0f7312d48355beadb57dc4a09.txt`. This file is invisible by default. The location of the workspace folder is:
 
