@@ -155,6 +155,8 @@ nav:
                 - Securities: reference/view/reports/performance/securities.md
                 - Payments: reference/view/reports/performance/payments.md
                 - Trades: reference/view/reports/performance/trades.md
+          - Taxonomies:
+            - Taxonomies: reference/view/taxonomies/index.md
           - General Data:
             - Settings: reference/view/general-data/settings.md
             - Currencies: reference/view/general-data/currencies.md
