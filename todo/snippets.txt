@@ -25,6 +25,8 @@ less than: &lt;
 sigma: &sum; or &#8721;
 non-breaking space: &nbsp;
 down-pointing triangle :material-triangle-small-down:
+plus in circle :octicons-plus-circle-24: 
+use <spa></span> to change the color
 
 start-up parameter:
 PortfolioPerformance.exe -nl de_DE

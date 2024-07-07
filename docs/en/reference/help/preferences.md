@@ -17,7 +17,7 @@ Figure: The General option of the menu of View > Settings. {class=align-right st
 
 By selecting the `General` menu item in the sidebar of the `Preferences dialog box` (see Figure 1),  you will be presented with four options: 
 
-- `Automatically update quotes after opening a file`: Each security can have an external data source assigned for [downloading historical quotes](../../how-to/downloading-historical-prices/). You can start the download process manually through the [Online menu](../online.md) or enable the option to automatically download historical quotes upon opening the portfolio.
+- `Automatically update quotes after opening a file`: Each security can have an external data source assigned for [downloading historical quotes](../../how-to/downloading-historical-prices/index.md). You can start the download process manually through the [Online menu](../online.md) or enable the option to automatically download historical quotes upon opening the portfolio.
 
 <br style="clear:left;">
 
