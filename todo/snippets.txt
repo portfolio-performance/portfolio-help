@@ -27,6 +27,9 @@ non-breaking space: &nbsp;
 down-pointing triangle :material-triangle-small-down:
 plus in circle :octicons-plus-circle-24: 
 use <spa></span> to change the color
+gear :gear:
+export CVS  :material-upload:
+Filter :material-filter:
 
 start-up parameter:
 PortfolioPerformance.exe -nl de_DE

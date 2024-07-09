@@ -154,3 +154,7 @@ Historical prices: many of the presets don't seem to function?
 
 ### 2024-05-31
 - For share-1, the historical quotes in security master data are set to "No automatic quote download". Then, a few historical prices are added manually (not for every day in the holding period). In the chart view, PP displays some unexisting prices; it seems that some kind of linear estimation is used. (observed while working on system-overview.md). Solved by deleting latest price in context menu. After that however, the option isn't any longer available.
+
+### 2024-07-08
+- Field Category key in Definition view of Taxonomies?
+- Expected return? This row is currently not used in the calculation ....

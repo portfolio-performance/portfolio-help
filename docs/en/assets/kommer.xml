@@ -2560,9 +2560,11 @@
         <price t="2024-07-02" v="1816406050000"/>
         <price t="2024-07-03" v="1837452930000"/>
         <price t="2024-07-04" v="1845048050000"/>
-        <price t="2024-07-05" v="1860043950000"/>
+        <price t="2024-07-05" v="1847544920000"/>
+        <price t="2024-07-08" v="1847205080000"/>
+        <price t="2024-07-09" v="1837060940000"/>
       </prices>
-      <latest t="2024-07-05" v="1860067000000">
+      <latest t="2024-07-09" v="1823619000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -5111,8 +5113,10 @@
         <price t="2024-07-01" v="3916951950000"/>
         <price t="2024-07-02" v="3933185160000"/>
         <price t="2024-07-03" v="3930800000000"/>
+        <price t="2024-07-05" v="3937587110000"/>
+        <price t="2024-07-08" v="3934478910000"/>
       </prices>
-      <latest t="2024-07-03" v="3930800000000">
+      <latest t="2024-07-09" v="3939072000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -7661,8 +7665,10 @@
         <price t="2024-07-01" v="1787930080000"/>
         <price t="2024-07-02" v="1802875980000"/>
         <price t="2024-07-03" v="1818830080000"/>
+        <price t="2024-07-05" v="1835275980000"/>
+        <price t="2024-07-08" v="1840374020000"/>
       </prices>
-      <latest t="2024-07-03" v="1818830000000">
+      <latest t="2024-07-09" v="1841856200000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -9085,8 +9091,10 @@
         <price t="2024-07-02" v="3207500000"/>
         <price t="2024-07-03" v="3228500000"/>
         <price t="2024-07-04" v="3248500000"/>
+        <price t="2024-07-05" v="3243000000"/>
+        <price t="2024-07-08" v="3239500000"/>
       </prices>
-      <latest t="2024-07-04" v="3248500000">
+      <latest t="2024-07-08" v="3239500000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -9123,7 +9131,484 @@
           </entry>
         </map>
       </attributes>
-      <events/>
+      <events>
+        <dividendEvent>
+          <date>2024-05-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2024-05-30</paymentDate>
+          <amount currency="EUR" amount="38"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2024-02-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2024-02-28</paymentDate>
+          <amount currency="EUR" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-11-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-11-29</paymentDate>
+          <amount currency="EUR" amount="12"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-08-17</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-08-31</paymentDate>
+          <amount currency="EUR" amount="31"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-05-19</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-05-30</paymentDate>
+          <amount currency="EUR" amount="34"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-02-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-02-28</paymentDate>
+          <amount currency="EUR" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-11-17</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-11-30</paymentDate>
+          <amount currency="EUR" amount="12"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-08-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-08-24</paymentDate>
+          <amount currency="EUR" amount="28"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-05-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-05-25</paymentDate>
+          <amount currency="EUR" amount="31"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-02-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-02-24</paymentDate>
+          <amount currency="EUR" amount="7"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-11-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-11-24</paymentDate>
+          <amount currency="EUR" amount="15"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-08-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-08-25</paymentDate>
+          <amount currency="EUR" amount="20"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-05-13</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-05-26</paymentDate>
+          <amount currency="EUR" amount="27"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-02-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-02-24</paymentDate>
+          <amount currency="EUR" amount="6"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-11-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-11-25</paymentDate>
+          <amount currency="EUR" amount="8"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-08-13</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-08-26</paymentDate>
+          <amount currency="EUR" amount="16"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-05-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-05-27</paymentDate>
+          <amount currency="EUR" amount="19"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-02-13</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-02-26</paymentDate>
+          <amount currency="EUR" amount="7"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-11-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-11-27</paymentDate>
+          <amount currency="EUR" amount="13"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-08-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-08-30</paymentDate>
+          <amount currency="EUR" amount="28"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-05-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-05-31</paymentDate>
+          <amount currency="EUR" amount="29"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-02-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-02-27</paymentDate>
+          <amount currency="EUR" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-11-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-11-28</paymentDate>
+          <amount currency="EUR" amount="11"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-08-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-08-30</paymentDate>
+          <amount currency="EUR" amount="25"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-05-17</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-05-31</paymentDate>
+          <amount currency="EUR" amount="27"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-02-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-02-28</paymentDate>
+          <amount currency="EUR" amount="6"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-11-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-11-30</paymentDate>
+          <amount currency="EUR" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-08-10</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-08-31</paymentDate>
+          <amount currency="EUR" amount="26"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-05-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-05-31</paymentDate>
+          <amount currency="EUR" amount="24"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-02-09</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-02-28</paymentDate>
+          <amount currency="EUR" amount="5"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-11-10</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-11-28</paymentDate>
+          <amount currency="EUR" amount="10"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-08-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-08-30</paymentDate>
+          <amount currency="EUR" amount="23"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-05-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-05-31</paymentDate>
+          <amount currency="EUR" amount="26"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-02-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-02-29</paymentDate>
+          <amount currency="EUR" amount="6"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-11-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-11-27</paymentDate>
+          <amount currency="EUR" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-07-30</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-08-20</paymentDate>
+          <amount currency="EUR" amount="31"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-04-30</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-05-21</paymentDate>
+          <amount currency="EUR" amount="16"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-01-29</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-02-19</paymentDate>
+          <amount currency="EUR" amount="4"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-10-30</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-11-20</paymentDate>
+          <amount currency="EUR" amount="7"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-07-23</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-08-13</paymentDate>
+          <amount currency="EUR" amount="30"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-04-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-05-07</paymentDate>
+          <amount currency="EUR" amount="12"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-01-29</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-02-19</paymentDate>
+          <amount currency="EUR" amount="5"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-10-23</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-11-13</paymentDate>
+          <amount currency="EUR" amount="7"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-07-24</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-08-14</paymentDate>
+          <amount currency="EUR" amount="27"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-04-24</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-05-15</paymentDate>
+          <amount currency="EUR" amount="11"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-01-23</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-02-13</paymentDate>
+          <amount currency="EUR" amount="6"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2012-10-24</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2012-11-14</paymentDate>
+          <amount currency="EUR" amount="8"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2012-07-25</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2012-08-15</paymentDate>
+          <amount currency="EUR" amount="29"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2012-04-25</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2012-05-16</paymentDate>
+          <amount currency="EUR" amount="12"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2012-01-25</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2012-02-22</paymentDate>
+          <amount currency="EUR" amount="7"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2011-10-26</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2011-11-23</paymentDate>
+          <amount currency="EUR" amount="6"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2011-07-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2011-08-24</paymentDate>
+          <amount currency="EUR" amount="28"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2011-04-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2011-05-25</paymentDate>
+          <amount currency="EUR" amount="11"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2011-01-26</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2011-02-23</paymentDate>
+          <amount currency="EUR" amount="6"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2010-10-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2010-11-24</paymentDate>
+          <amount currency="EUR" amount="5"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2010-07-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2010-08-25</paymentDate>
+          <amount currency="EUR" amount="1"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2010-06-23</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2010-07-21</paymentDate>
+          <amount currency="EUR" amount="23"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2010-04-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2010-05-26</paymentDate>
+          <amount currency="EUR" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2010-01-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2010-02-24</paymentDate>
+          <amount currency="EUR" amount="5"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2009-10-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2009-11-25</paymentDate>
+          <amount currency="EUR" amount="4"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2009-07-29</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2009-08-26</paymentDate>
+          <amount currency="EUR" amount="24"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2009-04-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2009-05-27</paymentDate>
+          <amount currency="EUR" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2009-01-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2009-02-25</paymentDate>
+          <amount currency="EUR" amount="6"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2008-10-29</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2008-11-26</paymentDate>
+          <amount currency="EUR" amount="7"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2008-07-30</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2008-08-27</paymentDate>
+          <amount currency="EUR" amount="32"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2008-04-30</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2008-05-28</paymentDate>
+          <amount currency="EUR" amount="13"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2008-01-30</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2008-02-27</paymentDate>
+          <amount currency="EUR" amount="5"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2007-10-31</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2007-11-28</paymentDate>
+          <amount currency="EUR" amount="7"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+      </events>
       <isRetired>false</isRetired>
       <updatedAt>2024-02-16T07:17:00.710442Z</updatedAt>
     </security>
@@ -10540,8 +11025,10 @@
         <price t="2024-07-02" v="9392000000"/>
         <price t="2024-07-03" v="9408000000"/>
         <price t="2024-07-04" v="9417000000"/>
+        <price t="2024-07-05" v="9431000000"/>
+        <price t="2024-07-08" v="9457000000"/>
       </prices>
-      <latest t="2024-07-04" v="9417000000">
+      <latest t="2024-07-08" v="9457000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -10578,7 +11065,512 @@
           </entry>
         </map>
       </attributes>
-      <events/>
+      <events>
+        <dividendEvent>
+          <date>2024-06-13</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2024-06-26</paymentDate>
+          <amount currency="USD" amount="21"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2024-03-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2024-03-27</paymentDate>
+          <amount currency="USD" amount="21"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-12-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-12-29</paymentDate>
+          <amount currency="USD" amount="22"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-09-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-09-27</paymentDate>
+          <amount currency="USD" amount="21"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-06-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-06-28</paymentDate>
+          <amount currency="USD" amount="22"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-03-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-03-29</paymentDate>
+          <amount currency="USD" amount="20"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-12-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-12-30</paymentDate>
+          <amount currency="USD" amount="21"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-09-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-09-28</paymentDate>
+          <amount currency="USD" amount="22"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-06-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-06-29</paymentDate>
+          <amount currency="USD" amount="20"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-03-17</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-03-30</paymentDate>
+          <amount currency="USD" amount="18"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-12-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-12-31</paymentDate>
+          <amount currency="USD" amount="17"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-09-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-09-29</paymentDate>
+          <amount currency="USD" amount="17"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-06-17</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-06-30</paymentDate>
+          <amount currency="USD" amount="17"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-03-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-03-24</paymentDate>
+          <amount currency="USD" amount="17"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-12-10</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-12-23</paymentDate>
+          <amount currency="USD" amount="17"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-09-17</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-09-30</paymentDate>
+          <amount currency="USD" amount="17"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-06-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-06-24</paymentDate>
+          <amount currency="USD" amount="19"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-03-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-03-25</paymentDate>
+          <amount currency="USD" amount="21"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-12-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-12-27</paymentDate>
+          <amount currency="USD" amount="19"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-09-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-09-25</paymentDate>
+          <amount currency="USD" amount="18"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-06-13</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-06-26</paymentDate>
+          <amount currency="USD" amount="18"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-03-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-03-27</paymentDate>
+          <amount currency="USD" amount="19"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-12-13</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-12-28</paymentDate>
+          <amount currency="USD" amount="18"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-09-13</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-09-26</paymentDate>
+          <amount currency="USD" amount="18"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-06-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-06-27</paymentDate>
+          <amount currency="USD" amount="18"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-03-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-03-28</paymentDate>
+          <amount currency="USD" amount="15"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-12-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-12-29</paymentDate>
+          <amount currency="USD" amount="16"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-09-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-09-29</paymentDate>
+          <amount currency="USD" amount="17"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-06-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-06-30</paymentDate>
+          <amount currency="USD" amount="17"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-03-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-03-31</paymentDate>
+          <amount currency="USD" amount="14"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-12-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-12-30</paymentDate>
+          <amount currency="USD" amount="15"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-09-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-09-30</paymentDate>
+          <amount currency="USD" amount="15"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-06-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-06-29</paymentDate>
+          <amount currency="USD" amount="16"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-03-10</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-03-29</paymentDate>
+          <amount currency="USD" amount="15"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-12-10</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-12-30</paymentDate>
+          <amount currency="USD" amount="19"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-08-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-09-17</paymentDate>
+          <amount currency="USD" amount="13"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-05-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-06-18</paymentDate>
+          <amount currency="USD" amount="14"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-02-26</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-03-19</paymentDate>
+          <amount currency="USD" amount="14"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-11-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-12-18</paymentDate>
+          <amount currency="USD" amount="15"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-08-20</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-09-10</paymentDate>
+          <amount currency="USD" amount="13"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-05-21</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-06-11</paymentDate>
+          <amount currency="USD" amount="11"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-02-26</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-03-19</paymentDate>
+          <amount currency="USD" amount="12"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-11-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-12-18</paymentDate>
+          <amount currency="USD" amount="12"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-08-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-09-18</paymentDate>
+          <amount currency="USD" amount="12"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-05-29</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-06-19</paymentDate>
+          <amount currency="USD" amount="13"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-02-20</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-03-13</paymentDate>
+          <amount currency="USD" amount="14"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2012-11-21</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2012-12-12</paymentDate>
+          <amount currency="USD" amount="11"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2012-08-22</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2012-09-12</paymentDate>
+          <amount currency="USD" amount="10"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2012-05-23</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2012-06-13</paymentDate>
+          <amount currency="USD" amount="10"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2012-02-22</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2012-03-21</paymentDate>
+          <amount currency="USD" amount="10"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2011-11-23</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2011-12-21</paymentDate>
+          <amount currency="USD" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2011-08-24</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2011-09-21</paymentDate>
+          <amount currency="USD" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2011-05-25</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2011-06-22</paymentDate>
+          <amount currency="USD" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2011-02-23</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2011-03-23</paymentDate>
+          <amount currency="USD" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2010-11-24</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2010-12-22</paymentDate>
+          <amount currency="USD" amount="6"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2010-08-25</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2010-09-22</paymentDate>
+          <amount currency="USD" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2010-05-26</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2010-06-23</paymentDate>
+          <amount currency="USD" amount="7"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2010-02-24</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2010-03-24</paymentDate>
+          <amount currency="USD" amount="7"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2009-11-25</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2009-12-23</paymentDate>
+          <amount currency="USD" amount="8"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2009-08-26</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2009-09-23</paymentDate>
+          <amount currency="USD" amount="7"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2009-05-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2009-06-24</paymentDate>
+          <amount currency="USD" amount="8"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2009-02-25</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2009-03-25</paymentDate>
+          <amount currency="USD" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2008-11-26</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2008-12-24</paymentDate>
+          <amount currency="USD" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2008-08-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2008-09-24</paymentDate>
+          <amount currency="USD" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2008-05-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2008-06-25</paymentDate>
+          <amount currency="USD" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2008-02-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2008-03-26</paymentDate>
+          <amount currency="USD" amount="10"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2007-11-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2007-12-24</paymentDate>
+          <amount currency="USD" amount="13"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2007-08-29</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2007-09-26</paymentDate>
+          <amount currency="USD" amount="8"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2007-05-30</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2007-06-27</paymentDate>
+          <amount currency="USD" amount="8"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2007-02-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2007-03-28</paymentDate>
+          <amount currency="USD" amount="7"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2006-11-29</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2006-12-28</paymentDate>
+          <amount currency="USD" amount="8"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2006-08-30</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2006-09-28</paymentDate>
+          <amount currency="USD" amount="6"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+      </events>
       <isRetired>false</isRetired>
       <updatedAt>2024-02-16T07:17:00.710442Z</updatedAt>
     </security>
@@ -11995,8 +12987,10 @@
         <price t="2024-07-02" v="6187000000"/>
         <price t="2024-07-03" v="6221000000"/>
         <price t="2024-07-04" v="6270000000"/>
+        <price t="2024-07-05" v="6248000000"/>
+        <price t="2024-07-08" v="6228000000"/>
       </prices>
-      <latest t="2024-07-04" v="6270000000">
+      <latest t="2024-07-08" v="6228000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -12033,7 +13027,15 @@
           </entry>
         </map>
       </attributes>
-      <events/>
+      <events>
+        <dividendEvent>
+          <date>2023-12-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-12-14</paymentDate>
+          <amount currency="USD" amount="116"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+      </events>
       <isRetired>false</isRetired>
       <updatedAt>2024-06-15T13:42:19.398259Z</updatedAt>
     </security>
@@ -13450,8 +14452,10 @@
         <price t="2024-07-02" v="3933900000"/>
         <price t="2024-07-03" v="3978500000"/>
         <price t="2024-07-04" v="3988100000"/>
+        <price t="2024-07-05" v="3979100000"/>
+        <price t="2024-07-08" v="3995400000"/>
       </prices>
-      <latest t="2024-07-04" v="3988100000">
+      <latest t="2024-07-08" v="3995400000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -13488,7 +14492,526 @@
           </entry>
         </map>
       </attributes>
-      <events/>
+      <events>
+        <dividendEvent>
+          <date>2024-06-13</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2024-06-26</paymentDate>
+          <amount currency="USD" amount="28"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2024-03-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2024-03-27</paymentDate>
+          <amount currency="USD" amount="12"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-12-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-12-29</paymentDate>
+          <amount currency="USD" amount="13"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-09-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-09-27</paymentDate>
+          <amount currency="USD" amount="42"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-06-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-06-28</paymentDate>
+          <amount currency="USD" amount="24"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-03-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-03-29</paymentDate>
+          <amount currency="USD" amount="11"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-12-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-12-30</paymentDate>
+          <amount currency="USD" amount="14"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-09-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-09-28</paymentDate>
+          <amount currency="USD" amount="48"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-06-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-06-29</paymentDate>
+          <amount currency="USD" amount="27"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-03-17</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-03-30</paymentDate>
+          <amount currency="USD" amount="15"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-12-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-12-31</paymentDate>
+          <amount currency="USD" amount="18"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-09-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-09-29</paymentDate>
+          <amount currency="USD" amount="40"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-06-17</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-06-30</paymentDate>
+          <amount currency="USD" amount="24"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-03-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-03-24</paymentDate>
+          <amount currency="USD" amount="15"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-12-10</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-12-23</paymentDate>
+          <amount currency="USD" amount="11"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-09-17</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-09-30</paymentDate>
+          <amount currency="USD" amount="37"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-06-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-06-24</paymentDate>
+          <amount currency="USD" amount="16"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-03-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-03-25</paymentDate>
+          <amount currency="USD" amount="9"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-12-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-12-27</paymentDate>
+          <amount currency="USD" amount="8"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-09-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-09-25</paymentDate>
+          <amount currency="USD" amount="42"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-06-13</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-06-26</paymentDate>
+          <amount currency="USD" amount="16"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-03-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-03-27</paymentDate>
+          <amount currency="USD" amount="10"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-12-13</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-12-28</paymentDate>
+          <amount currency="USD" amount="8"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-09-13</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-09-26</paymentDate>
+          <amount currency="USD" amount="41"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-06-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-06-27</paymentDate>
+          <amount currency="USD" amount="15"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-03-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-03-28</paymentDate>
+          <amount currency="USD" amount="10"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-12-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-12-29</paymentDate>
+          <amount currency="USD" amount="4"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-09-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-09-29</paymentDate>
+          <amount currency="USD" amount="39"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-06-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-06-30</paymentDate>
+          <amount currency="USD" amount="12"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-03-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-03-31</paymentDate>
+          <amount currency="USD" amount="7"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-12-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-12-30</paymentDate>
+          <amount currency="USD" amount="6"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-09-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-09-30</paymentDate>
+          <amount currency="USD" amount="33"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-06-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-06-29</paymentDate>
+          <amount currency="USD" amount="11"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-03-10</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-03-29</paymentDate>
+          <amount currency="USD" amount="8"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-12-10</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-12-30</paymentDate>
+          <amount currency="USD" amount="13"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-08-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-09-17</paymentDate>
+          <amount currency="USD" amount="38"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-05-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-06-18</paymentDate>
+          <amount currency="USD" amount="11"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-02-26</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-03-19</paymentDate>
+          <amount currency="USD" amount="8"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-11-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-12-18</paymentDate>
+          <amount currency="USD" amount="14"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-08-20</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-09-10</paymentDate>
+          <amount currency="USD" amount="38"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-05-21</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-06-11</paymentDate>
+          <amount currency="USD" amount="21"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-02-26</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-03-19</paymentDate>
+          <amount currency="USD" amount="5"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-11-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-12-18</paymentDate>
+          <amount currency="USD" amount="13"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-08-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-09-18</paymentDate>
+          <amount currency="USD" amount="24"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-05-29</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-06-19</paymentDate>
+          <amount currency="USD" amount="18"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-02-20</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-03-13</paymentDate>
+          <amount currency="USD" amount="8"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2012-11-21</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2012-12-12</paymentDate>
+          <amount currency="USD" amount="14"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2012-08-22</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2012-09-12</paymentDate>
+          <amount currency="USD" amount="38"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2012-05-23</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2012-06-13</paymentDate>
+          <amount currency="USD" amount="15"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2012-02-22</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2012-03-21</paymentDate>
+          <amount currency="USD" amount="5"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2011-11-23</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2011-12-21</paymentDate>
+          <amount currency="USD" amount="20"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2011-08-24</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2011-09-21</paymentDate>
+          <amount currency="USD" amount="32"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2011-05-25</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2011-06-22</paymentDate>
+          <amount currency="USD" amount="23"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2011-02-23</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2011-03-23</paymentDate>
+          <amount currency="USD" amount="5"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2010-11-24</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2010-12-22</paymentDate>
+          <amount currency="USD" amount="13"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2010-08-25</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2010-09-22</paymentDate>
+          <amount currency="USD" amount="25"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2010-05-26</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2010-06-23</paymentDate>
+          <amount currency="USD" amount="16"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2010-02-24</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2010-03-24</paymentDate>
+          <amount currency="USD" amount="7"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2009-11-25</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2009-12-23</paymentDate>
+          <amount currency="USD" amount="7"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2009-08-26</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2009-09-23</paymentDate>
+          <amount currency="USD" amount="18"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2009-05-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2009-06-24</paymentDate>
+          <amount currency="USD" amount="14"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2009-02-25</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2009-03-25</paymentDate>
+          <amount currency="USD" amount="6"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2008-11-26</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2008-12-24</paymentDate>
+          <amount currency="USD" amount="14"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2008-08-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2008-09-24</paymentDate>
+          <amount currency="USD" amount="31"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2008-05-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2008-06-25</paymentDate>
+          <amount currency="USD" amount="25"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2008-02-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2008-03-26</paymentDate>
+          <amount currency="USD" amount="5"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2007-11-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2007-12-24</paymentDate>
+          <amount currency="USD" amount="12"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2007-08-29</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2007-09-26</paymentDate>
+          <amount currency="USD" amount="22"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2007-05-30</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2007-06-27</paymentDate>
+          <amount currency="USD" amount="18"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2007-02-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2007-03-28</paymentDate>
+          <amount currency="USD" amount="4"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2006-11-29</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2006-12-28</paymentDate>
+          <amount currency="USD" amount="7"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2006-08-30</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2006-09-28</paymentDate>
+          <amount currency="USD" amount="20"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2006-05-31</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2006-06-30</paymentDate>
+          <amount currency="USD" amount="14"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2006-02-22</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2006-03-23</paymentDate>
+          <amount currency="USD" amount="5"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+      </events>
       <isRetired>false</isRetired>
       <updatedAt>2024-02-16T07:17:00.710442Z</updatedAt>
     </security>
@@ -14909,8 +16432,10 @@
         <price t="2024-07-02" v="10904000000"/>
         <price t="2024-07-03" v="10949500000"/>
         <price t="2024-07-04" v="10935000000"/>
+        <price t="2024-07-05" v="10980500000"/>
+        <price t="2024-07-08" v="11010500000"/>
       </prices>
-      <latest t="2024-07-04" v="10935000000">
+      <latest t="2024-07-08" v="11010500000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -14947,7 +16472,225 @@
           </entry>
         </map>
       </attributes>
-      <events/>
+      <events>
+        <dividendEvent>
+          <date>2024-01-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2024-01-24</paymentDate>
+          <amount currency="EUR" amount="92"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-07-13</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-07-26</paymentDate>
+          <amount currency="EUR" amount="69"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-01-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-01-25</paymentDate>
+          <amount currency="EUR" amount="41"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-07-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-07-27</paymentDate>
+          <amount currency="EUR" amount="17"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-01-13</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-01-26</paymentDate>
+          <amount currency="EUR" amount="13"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-07-15</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-07-28</paymentDate>
+          <amount currency="EUR" amount="13"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-01-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-01-27</paymentDate>
+          <amount currency="EUR" amount="18"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-07-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-07-29</paymentDate>
+          <amount currency="EUR" amount="25"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-01-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-01-29</paymentDate>
+          <amount currency="EUR" amount="38"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-07-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-07-24</paymentDate>
+          <amount currency="EUR" amount="44"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-01-17</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-01-30</paymentDate>
+          <amount currency="EUR" amount="41"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-07-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-07-25</paymentDate>
+          <amount currency="EUR" amount="41"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-01-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-01-31</paymentDate>
+          <amount currency="EUR" amount="40"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-07-13</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-07-31</paymentDate>
+          <amount currency="EUR" amount="41"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-01-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-01-27</paymentDate>
+          <amount currency="EUR" amount="45"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-07-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-07-29</paymentDate>
+          <amount currency="EUR" amount="53"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-01-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-01-27</paymentDate>
+          <amount currency="EUR" amount="63"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-06-25</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-07-16</paymentDate>
+          <amount currency="EUR" amount="75"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-12-18</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-01-08</paymentDate>
+          <amount currency="EUR" amount="88"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-06-25</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-07-16</paymentDate>
+          <amount currency="EUR" amount="116"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-12-18</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-01-08</paymentDate>
+          <amount currency="EUR" amount="111"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-06-26</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-07-17</paymentDate>
+          <amount currency="EUR" amount="115"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2012-12-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-01-16</paymentDate>
+          <amount currency="EUR" amount="145"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2012-06-20</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2012-07-11</paymentDate>
+          <amount currency="EUR" amount="140"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2011-12-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2012-01-25</paymentDate>
+          <amount currency="EUR" amount="159"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2011-06-22</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2011-07-20</paymentDate>
+          <amount currency="EUR" amount="131"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2010-12-29</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2011-01-25</paymentDate>
+          <amount currency="EUR" amount="145"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2010-06-23</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2010-07-21</paymentDate>
+          <amount currency="EUR" amount="33"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2010-05-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2010-06-09</paymentDate>
+          <amount currency="EUR" amount="114"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2009-12-30</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2010-01-27</paymentDate>
+          <amount currency="EUR" amount="157"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2009-06-24</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2009-07-22</paymentDate>
+          <amount currency="EUR" amount="55"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+      </events>
       <isRetired>false</isRetired>
       <updatedAt>2024-02-16T07:17:00.710443Z</updatedAt>
     </security>
@@ -16359,8 +18102,10 @@
         <price t="2024-07-02" v="644800000"/>
         <price t="2024-07-03" v="644300000"/>
         <price t="2024-07-04" v="642800000"/>
+        <price t="2024-07-05" v="647900000"/>
+        <price t="2024-07-08" v="639300000"/>
       </prices>
-      <latest t="2024-07-04" v="642800000">
+      <latest t="2024-07-08" v="639300000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -20860,9 +22605,13 @@
         <price t="2024-07-02" v="5781435064794"/>
         <price t="2024-07-03" v="5593411747676"/>
         <price t="2024-07-04" v="5275713098064"/>
+        <price t="2024-07-05" v="5234882970665"/>
+        <price t="2024-07-06" v="5386505781681"/>
+        <price t="2024-07-07" v="5162601626016"/>
+        <price t="2024-07-08" v="5233511622249"/>
       </prices>
       <latestFeed>MANUAL</latestFeed>
-      <latest t="2024-07-04" v="5275713098064">
+      <latest t="2024-07-08" v="5233511622249">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -23413,8 +25162,10 @@
         <price t="2024-07-01" v="19720000000"/>
         <price t="2024-07-02" v="20000000000"/>
         <price t="2024-07-03" v="19759000000"/>
+        <price t="2024-07-05" v="20000000000"/>
+        <price t="2024-07-08" v="19929000000"/>
       </prices>
-      <latest t="2024-07-03" v="19759000000">
+      <latest t="2024-07-09" v="20005000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -29668,8 +31419,10 @@
         <price t="2024-07-02" v="6473000000"/>
         <price t="2024-07-03" v="6530000000"/>
         <price t="2024-07-04" v="6594000000"/>
+        <price t="2024-07-05" v="6547000000"/>
+        <price t="2024-07-08" v="6539000000"/>
       </prices>
-      <latest t="2024-07-04" v="6594000000">
+      <latest t="2024-07-08" v="6539000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -29677,7 +31430,211 @@
       <attributes>
         <map/>
       </attributes>
-      <events/>
+      <events>
+        <dividendEvent>
+          <date>2024-05-09</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2024-05-14</paymentDate>
+          <amount currency="EUR" amount="530"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-05-04</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-05-08</paymentDate>
+          <amount currency="EUR" amount="520"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-05-02</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-05-04</paymentDate>
+          <amount currency="EUR" amount="500"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-04-01</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-04-07</paymentDate>
+          <amount currency="EUR" amount="135"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-07-09</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-07-13</paymentDate>
+          <amount currency="EUR" amount="90"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-05-23</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-05-27</paymentDate>
+          <amount currency="EUR" amount="325"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-04-06</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-04-10</paymentDate>
+          <amount currency="EUR" amount="365"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-03-30</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-04-03</paymentDate>
+          <amount currency="EUR" amount="325"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-04-07</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-04-07</paymentDate>
+          <amount currency="EUR" amount="325"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-04-02</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-04-02</paymentDate>
+          <amount currency="EUR" amount="245"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-04-10</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-04-10</paymentDate>
+          <amount currency="EUR" amount="225"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-04-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-04-11</paymentDate>
+          <amount currency="EUR" amount="220"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2012-04-05</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2012-04-05</paymentDate>
+          <amount currency="EUR" amount="220"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2011-04-14</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2011-04-14</paymentDate>
+          <amount currency="EUR" amount="185"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2009-04-09</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2009-04-09</paymentDate>
+          <amount currency="EUR" amount="60"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2008-04-10</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2008-04-10</paymentDate>
+          <amount currency="EUR" amount="200"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2007-04-05</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2007-04-05</paymentDate>
+          <amount currency="EUR" amount="150"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2006-04-13</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2006-04-13</paymentDate>
+          <amount currency="EUR" amount="150"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2005-04-07</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2005-04-07</paymentDate>
+          <amount currency="EUR" amount="150"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2004-04-08</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2004-04-08</paymentDate>
+          <amount currency="EUR" amount="150"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2003-04-10</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2003-04-10</paymentDate>
+          <amount currency="EUR" amount="150"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2002-04-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2002-04-11</paymentDate>
+          <amount currency="EUR" amount="100"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2001-04-12</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2001-04-12</paymentDate>
+          <amount currency="EUR" amount="235"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2000-04-20</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2000-04-20</paymentDate>
+          <amount currency="EUR" amount="235"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>1999-05-19</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>1999-05-19</paymentDate>
+          <amount currency="EUR" amount="235"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>1998-05-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>1998-05-28</paymentDate>
+          <amount currency="EUR" amount="79"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>1997-05-30</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>1997-05-30</paymentDate>
+          <amount currency="EUR" amount="56"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>1995-05-26</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>1995-05-26</paymentDate>
+          <amount currency="EUR" amount="59"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>1994-05-19</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>1994-05-19</paymentDate>
+          <amount currency="EUR" amount="40"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+      </events>
       <isRetired>false</isRetired>
       <updatedAt>2024-05-21T21:21:38.985174Z</updatedAt>
     </security>
@@ -30347,8 +32304,10 @@
         <price t="2024-07-02" v="3668000000"/>
         <price t="2024-07-03" v="3622000000"/>
         <price t="2024-07-04" v="3650000000"/>
+        <price t="2024-07-05" v="3636000000"/>
+        <price t="2024-07-08" v="3613000000"/>
       </prices>
-      <latest t="2024-07-04" v="3650000000">
+      <latest t="2024-07-08" v="3613000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -30356,7 +32315,22 @@
       <attributes>
         <map/>
       </attributes>
-      <events/>
+      <events>
+        <dividendEvent>
+          <date>2024-05-16</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2024-05-21</paymentDate>
+          <amount currency="EUR" amount="190"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-06-22</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-06-26</paymentDate>
+          <amount currency="EUR" amount="130"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+      </events>
       <isRetired>false</isRetired>
       <updatedAt>2024-05-21T21:28:58.267969Z</updatedAt>
     </security>
@@ -30991,8 +32965,10 @@
         <price t="2024-07-02" v="11370000000"/>
         <price t="2024-07-03" v="11660000000"/>
         <price t="2024-07-04" v="11772000000"/>
+        <price t="2024-07-05" v="11744000000"/>
+        <price t="2024-07-08" v="11880000000"/>
       </prices>
-      <latest t="2024-07-04" v="11772000000">
+      <latest t="2024-07-08" v="11880000000">
         <high>-1</high>
         <low>-1</low>
         <volume>-1</volume>
@@ -31000,7 +32976,337 @@
       <attributes>
         <map/>
       </attributes>
-      <events/>
+      <events>
+        <dividendEvent>
+          <date>2024-06-11</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2024-06-28</paymentDate>
+          <amount currency="USD" amount="1"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2024-03-05</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2024-03-27</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-12-05</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-12-28</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-09-06</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-09-28</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-06-07</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-06-30</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2023-03-07</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2023-03-29</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-11-30</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-12-22</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-09-07</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-09-29</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-06-08</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-07-01</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2022-03-02</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2022-03-24</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-12-01</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-12-23</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-08-31</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-09-23</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-06-09</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-07-01</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2021-03-09</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2021-03-31</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-12-03</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-12-29</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-09-01</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-09-24</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-06-04</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-06-26</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2020-02-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2020-03-20</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-11-27</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-12-20</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-08-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-09-20</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-05-30</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-06-21</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2019-02-28</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2019-03-22</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-11-29</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-12-21</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-08-29</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-09-21</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-05-23</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-06-15</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2018-02-22</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2018-03-16</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-11-22</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-12-15</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-08-22</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-09-18</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-05-19</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-06-14</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2017-02-22</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2017-03-17</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-11-23</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-12-19</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-08-23</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-09-16</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-05-24</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-06-20</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2016-02-29</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2016-03-23</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-11-18</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-12-14</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-08-18</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-09-11</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-05-19</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-06-12</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2015-02-24</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2015-03-19</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-11-19</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-12-15</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-08-19</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-09-12</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-05-20</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-06-13</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2014-02-25</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2014-03-20</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-11-19</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-12-13</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-08-20</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-09-13</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-05-21</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-06-14</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2013-02-26</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2013-03-21</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+        <dividendEvent>
+          <date>2012-11-20</date>
+          <type>DIVIDEND_PAYMENT</type>
+          <paymentDate>2012-12-14</paymentDate>
+          <amount currency="USD" amount="0"/>
+          <source>divvydiary.com</source>
+        </dividendEvent>
+      </events>
       <isRetired>false</isRetired>
       <updatedAt>2024-05-21T21:30:50.444690Z</updatedAt>
     </security>
@@ -31332,6 +33638,32 @@
                     </unit>
                   </units>
                   <updatedAt>2024-05-21T21:37:46.696941Z</updatedAt>
+                  <type>BUY</type>
+                </portfolio-transaction>
+                <portfolio-transaction>
+                  <uuid>6eee4874-1724-40b6-8682-543756c9f906</uuid>
+                  <date>2023-07-08T00:00</date>
+                  <currencyCode>EUR</currencyCode>
+                  <amount>64060</amount>
+                  <security reference="../../../../../../../../../securities/security[15]"/>
+                  <crossEntry class="buysell">
+                    <portfolio reference="../../../.."/>
+                    <portfolioTransaction reference="../.."/>
+                    <account reference="../../../../../../../.."/>
+                    <accountTransaction>
+                      <uuid>fc4decbe-c821-4f31-865e-0d237fe5ea97</uuid>
+                      <date>2023-07-08T00:00</date>
+                      <currencyCode>EUR</currencyCode>
+                      <amount>64060</amount>
+                      <security reference="../../../../../../../../../../../securities/security[15]"/>
+                      <crossEntry class="buysell" reference="../.."/>
+                      <shares>0</shares>
+                      <updatedAt>2024-07-08T13:53:41.323505500Z</updatedAt>
+                      <type>BUY</type>
+                    </accountTransaction>
+                  </crossEntry>
+                  <shares>2000000000</shares>
+                  <updatedAt>2024-07-08T13:53:41.323505500Z</updatedAt>
                   <type>BUY</type>
                 </portfolio-transaction>
               </transactions>
@@ -32579,6 +34911,7 @@
           <updatedAt>2024-05-21T22:03:39.812620Z</updatedAt>
           <type>DIVIDENDS</type>
         </account-transaction>
+        <account-transaction reference="../account-transaction[2]/crossEntry/portfolio/transactions/portfolio-transaction[10]/crossEntry/accountTransaction"/>
       </transactions>
       <attributes>
         <map/>
@@ -34858,7 +37191,7 @@
                       </assignment>
                     </assignments>
                     <weight>10000</weight>
-                    <rank>0</rank>
+                    <rank>2</rank>
                     <data>
                       <entry>
                         <string>ISO3166-1-Alpha-2</string>
@@ -34882,7 +37215,7 @@
                     <children/>
                     <assignments/>
                     <weight>10000</weight>
-                    <rank>0</rank>
+                    <rank>3</rank>
                     <data>
                       <entry>
                         <string>ISO3166-1-Alpha-2</string>
@@ -34912,7 +37245,7 @@
                       </assignment>
                     </assignments>
                     <weight>10000</weight>
-                    <rank>0</rank>
+                    <rank>4</rank>
                     <data>
                       <entry>
                         <string>ISO3166-1-Alpha-2</string>
@@ -34936,7 +37269,7 @@
                     <children/>
                     <assignments/>
                     <weight>10000</weight>
-                    <rank>0</rank>
+                    <rank>5</rank>
                     <data>
                       <entry>
                         <string>ISO3166-1-Alpha-2</string>
@@ -34976,7 +37309,7 @@
                       </assignment>
                     </assignments>
                     <weight>10000</weight>
-                    <rank>0</rank>
+                    <rank>6</rank>
                     <data>
                       <entry>
                         <string>ISO3166-1-Alpha-2</string>
@@ -34993,7 +37326,13 @@
                     </data>
                   </classification>
                 </children>
-                <assignments/>
+                <assignments>
+                  <assignment>
+                    <investmentVehicle class="security" reference="../../../../../../../../../../securities/security"/>
+                    <weight>10000</weight>
+                    <rank>1</rank>
+                  </assignment>
+                </assignments>
                 <weight>10000</weight>
                 <rank>0</rank>
                 <data>
@@ -35180,7 +37519,7 @@
                 </children>
                 <assignments/>
                 <weight>10000</weight>
-                <rank>0</rank>
+                <rank>1</rank>
                 <data>
                   <entry>
                     <string>portfolioClassificationKey</string>
@@ -35817,7 +38156,7 @@
                 </children>
                 <assignments/>
                 <weight>10000</weight>
-                <rank>0</rank>
+                <rank>2</rank>
                 <data>
                   <entry>
                     <string>portfolioClassificationKey</string>
@@ -36176,7 +38515,7 @@
                 </children>
                 <assignments/>
                 <weight>10000</weight>
-                <rank>0</rank>
+                <rank>3</rank>
                 <data>
                   <entry>
                     <string>portfolioClassificationKey</string>
@@ -36531,7 +38870,13 @@
                     <color>#b6decd</color>
                     <parent reference="../../.."/>
                     <children/>
-                    <assignments/>
+                    <assignments>
+                      <assignment>
+                        <investmentVehicle class="security" reference="../../../../../../../../../../../../securities/security[2]"/>
+                        <weight>10000</weight>
+                        <rank>0</rank>
+                      </assignment>
+                    </assignments>
                     <weight>10000</weight>
                     <rank>0</rank>
                     <data>
@@ -42210,6 +44555,62 @@
         </data>
       </root>
     </taxonomy>
+    <taxonomy>
+      <id>13d33be2-ed0b-4921-a5e3-8a72b76f0653</id>
+      <name>myTaxonomy</name>
+      <root>
+        <id>ea26bcc3-1ff5-4cd7-96cb-6a08b5ed0c49</id>
+        <name>myTaxonomy</name>
+        <color>#ebd1f3</color>
+        <children>
+          <classification>
+            <id>51499eeb-ec83-4dec-b0e5-e89f12e215d0</id>
+            <name>Base Currency</name>
+            <color>#00ff00</color>
+            <parent reference="../../.."/>
+            <children/>
+            <assignments>
+              <assignment>
+                <investmentVehicle class="security" reference="../../../../../../../../securities/security[15]"/>
+                <weight>10000</weight>
+                <rank>0</rank>
+              </assignment>
+              <assignment>
+                <investmentVehicle class="security" reference="../../../../../../../../securities/security[14]"/>
+                <weight>10000</weight>
+                <rank>1</rank>
+              </assignment>
+            </assignments>
+            <weight>3000</weight>
+            <rank>0</rank>
+          </classification>
+          <classification>
+            <id>e95c2f8b-881a-4a8d-80c8-bcf903c8fce5</id>
+            <name>Foreign Currencies</name>
+            <color>#ff0000</color>
+            <parent reference="../../.."/>
+            <children/>
+            <assignments>
+              <assignment>
+                <investmentVehicle class="security" reference="../../../../../../../../securities/security[13]"/>
+                <weight>10000</weight>
+                <rank>0</rank>
+              </assignment>
+              <assignment>
+                <investmentVehicle class="security" reference="../../../../../../../../securities/security[16]"/>
+                <weight>10000</weight>
+                <rank>1</rank>
+              </assignment>
+            </assignments>
+            <weight>7000</weight>
+            <rank>1</rank>
+          </classification>
+        </children>
+        <assignments/>
+        <weight>10000</weight>
+        <rank>0</rank>
+      </root>
+    </taxonomy>
   </taxonomies>
   <dashboards>
     <dashboard name="Dashboard">
@@ -42996,6 +45397,11 @@
               <uuid>PaymentsViewModel</uuid>
               <name></name>
               <data></data>
+            </config>
+            <config>
+              <uuid>TaxonomyView-13d33be2-ed0b-4921-a5e3-8a72b76f0653</uuid>
+              <name></name>
+              <data>dc6fac85-6c6e-47f1-a968-2b5b84d90997</data>
             </config>
           </configurations>
         </config-set>
