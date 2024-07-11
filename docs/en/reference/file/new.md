@@ -52,11 +52,17 @@ At the bottom of Figure 3, you can add a personal `note` for this security.
 
 - ### **Taxonomies**
 
-    A taxonomy serves as a classification system for your securities. For instance, the existing `Type of Security` taxonomy allows you to classify your securities into categories such as stock, Equity Fund, Exchange Traded Fund (ETF), Bond, Stock Option, Index, or Currency. It is essential to set the correct type in the `Taxonomies` panel when adding or editing the security (refer to Figure 3).
+    A taxonomy serves as a classification system for your securities. Taxonomies typically group securities based on shared characteristics such as industry, sector, geographical region, market capitalization, or asset class. For instance, the existing `Asset Classes` taxonomy allows you to classify your securities into categories such as *Cash*, *Equity*, *Debt*, *Real Estate*, or *Commodity*.
 
-    Other valuable presets include Industries, aligned with the Global Industry Classification Standard (GICS), regions (up to country level), and assets (cash, equity, debt, and more).
+    When you first open the Taxonomies panel (shown in Figure 4) in a new portfolio, it will be empty. To start using taxonomies, you'll need to create one or more for your portfolio. In Figure 4, four taxonomies are visible: Asset Classes, Asset Allocation, Industries (GICS, Sectors), and Regions. These taxonomies also appear under the View menu.
 
-    To access these taxonomies, navigate to the `Left sidebar > Taxonomies` (see Figure 6). Click on the `+ button` to view all presets or create your custom taxonomy.
+    Figure: Taxonomies panel. {class=pp-figure}
+
+    ![](../view/taxonomies/images/taxonomies-assign-security.png)
+    
+    To assign a security to a taxonomy category, click the `New Category` button below the taxonomy. A drop-down menu will appear, listing all possible categories along with a weight input box. You can assign a security to multiple taxonomies. It's also possible to assign multiple categories of one taxonomy, as long as the combined weight doesn't exceed 100%. If the weight is not displayed next to the category (see Figure 4), then it is set to 100%. Click the minus button (-) next to the category to remove it from the taxonomy assignment. The above actions can also be done (more easily) in the Taxonomies View.
+
+    For detailed instructions on how to create, manage, and use taxonomies, see section [Reference > View > Taxonomies](../view/taxonomies/index.md) in the manual.
 
 - ### **Historical Quotes**
 
@@ -82,27 +88,51 @@ At the bottom of Figure 3, you can add a personal `note` for this security.
     The Latest Quote panel is very similar to the Historical Quotes panel. Here, you can configure values for **real-time values** such as Latest Price, Latest Trade, Day's High, Day's Low, and Volume. 
  
 ## Cryptocurrency
-Specifically for adding and managing cryptocurrency-related information within the portfolio.
+
+Figure: Create new crypotocurrency.{class=align-right style="width:30%"}
+
+![](images/new-cryptocurrency.png)
+
+ A cryptocurrency is a digital asset based on a blockchain system. There are thousands of different cryptocurrencies on the market, the best known of which is Bitcoin. Unlike traditional assets, there is no tangible or intangible value backing a cryptocurrency. Instead, its value is determined solely by market demand and what investors are willing to pay for it.
+
+In PP, cryptocurrencies are treated like any other security, such as stocks. You can buy and sell cryptocurrencies, but you cannot have a deposit account denominated in a cryptocurrency.
+
+The popular [CoinGecko website](https://www.coingecko.com/) is the source of the cryptocurrencies, listed in Figure 7. You can use the Search box to look-up a specific cryptocurrency in this very long list. If the crypto you need is not listed, you should create a new [empty security](#security); remember cryptos are no different from securities in PP. However, you will need to find a way to retrieve historical price data for this new crypto security.
 
 ## Exchange Rate
 
-Used for handling exchange rate information, which is crucial for portfolios involving multiple currencies.
+Figure: Create new exchange rate. {class=align-right style="width:30%"}
+
+![](images/new-exchange-rate.png)
+
+PP uses exchange rates from the [European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html). You can find the list of about 40 available exchange rates under the [View > Currencies menu](../view/general-data/currencies.md). In some rare cases, you may require an exchange rate that is not included in the available list.
+
+To create a custom exchange rate, use the `File > New > Exchange rate` menu. You will need to provide a quote provider, such as a JSON source or webpage, for the currency you want to add. Once you've created the custom exchange rate, it will be added to the currencies list with the name `Security based exchange rate provider` in the `Provider` column.
+
 
 ## Consumer Price Index
 
-For incorporating consumer price index data, providing a macroeconomic indicators for financial analysis.
+Figure: Create new consumer price index.{class=align-right style="width:30%"}
+
+![](images/new-consumer-price-index.png)
+
+The Harmonised Indices of Consumer Prices (HICP) are retrieved from the [Eurostat website](https://ec.europa.eu/eurostat/databrowser/view/teicp000/default/table?lang=en) and represent the monthly inflation rate of consumer goods and services purchased by households in the euro area. The HICP is "harmonised" because all countries in the European Union use the same methodology to calculate it. The baseline of 100 is set for the year 2015.
+
+After selecting the country, a security named [name of country] (HICP) is created with a [First of month](../help/preferences.md#calendar) calendar and the `Eurostat - Harmonised Indices of Consumer Prices (HICP)` as the Quote Feed provider. 
+
+Being an index, however, these data series aren't normally used as a regular security (buy or sell). They can serve as a [benchmark](../../how-to/benchmarking.md) for your other investments. 
 
 ## Taxonomy
 
-Used for managing classifications or categorizations of assets based on a defined taxonomy.
+To create a new taxonomy, select `File > New > Taxonomy` from the menu. This will open the `New Taxonomy` input box, where you can name the taxonomy and choose whether to create a new empty structure or use a predefined template, such as Asset Classes or Industries (GICS). For more information on creating and managing taxonomies, see the section on [Taxonomies](../view/taxonomies/index.md) in the Reference manual.
 
 ## Watchlist
 
-Figure: Create new watchlist.{class=align-right style="width:50%"}
+Figure: Two watchlists.{class=align-right style="width:50%"}
 
 ![](images/mnu-file-new-watchlist.png)
 
-A watchlist is a manual grouping of securities. To create a new list, navigate to `File > New > Watchlist` in the menu. Once created, it will appear under the `All Securities` heading. You can create as many watchlists as you want; in Figure 6, two lists are created with the names `Indexes` and `New Watchlist`.
+A watchlist is a manual grouping of securities. To create a new list, navigate to `File > New > Watchlist` in the menu. Once created, it will appear under the `All Securities` heading. You can create an unlimited number of watchlists in PP. For example, Figure 6 shows two watchlists named `Asia` and `Indices`, with the latter containing four securities indices such as the DAX and Dow Jones.
 
 Using the context menu (right-click on a list), you can rename, delete, or move (up) the watchlist (refer to Figure 6). Adding securities to the watchlist is a manual process done by dragging one or more securities from the `All Securities` view to the watchlist. To remove a security from the watchlist, right-click the security and choose 'Remove from *Your_Watchlist*'.
 
