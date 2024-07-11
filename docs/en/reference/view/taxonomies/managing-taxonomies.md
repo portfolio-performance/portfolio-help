@@ -11,7 +11,7 @@ Figure: Adding taxonomies. {class=pp-figure}
 
 ## Adding a new taxonomy
 
-Click the green plus button <span style="color:green">:octicons-plus-circle-16:</span> to add a new taxonomy. You can then utilize one of the [predefined templates](index.md) or create a new taxonomy (see Figure 1), which can be based on one of the existing templates. Choose `Empty taxonomy` if you want to start from scratch and define all categories and sub-categories yourself. Give the new taxonomy a descriptive name. Two taxonomies can have the same name, which is, of course, not ideal. Click "OK" to add the taxonomy in the sidebar.
+Click the green plus button <span style="color:green">:octicons-plus-circle-16:</span> or use the `File > New > Taxonomy` menu to add a new taxonomy to your portfolio. You can then utilize one of the [predefined templates](index.md) or create a new taxonomy (see Figure 1), which can be based on one of the existing templates. Choose `Empty taxonomy` if you want to start from scratch and define all categories and sub-categories yourself. Give the new taxonomy a descriptive name. Two taxonomies can have the same name, which is, of course, not ideal. Click "OK" to add the taxonomy in the sidebar.
 
 The context menu of the taxonomies list allows you to rename, copy, or delete existing taxonomies. You can also rearrange the order of items in the list using the the `Move up` or `Move down` options.
 
@@ -24,7 +24,7 @@ Figure: Main pane of a taxonomy. {class=pp-figure}
 
 ![](images/taxonomies-edit-classification.png)
 
-In Figure 2, both lists are expanded. The `myTaxonomy` list contains two categories `Base currency` and `Foreign currencies` with appropriate securities assigned. The list `Without Classification` contains all unassigned securities. Please note that you **cannot** assign a security to more than one category.
+In Figure 2, both lists are expanded. The `myTaxonomy` list contains two categories `Base currency` and `Foreign currencies` with appropriate securities assigned. The list `Without Classification` contains all unassigned securities. Please note that you **can** assign a security to more than one category. The weight however should add up to 100%.
 
 Figure: Context menu. {class=align-right style="width:20%"}
 
@@ -40,16 +40,14 @@ To expand a category list, click the :fontawesome-solid-angle-right: icon to the
 
 Taxonomies are created to classify assets into categories, allowing you, as a portfolio manager, to have a clear understanding of your portfolio's structure. To achieve this, securities must be added or assigned to appropriate categories and subcategories, comparable to adding a tag to a document for grouping purposes.
 
-Figure: Context menu. {class=align-right style="width:50%"}
-
-![](images/taxonomies-assign-security.png)
-
 Securities can be assigned to a category in three ways:
 
 - **Drag & Drop**: Select the security from the 'Unclassified' list and drag it to the correct category or subcategory within your taxonomy at the top. If a category is collapsed and thus not visible, dragging the security over the parent category will highlight it with a light blue background and a black line underneath. After a moment, the category will automatically expand. You can then drop the security into the desired category or repeat the process for a deeper categorization. If your taxonomy contains many categories and/or assets, it may be more efficient to expand the entire taxonomy beforehand.
 
 - **Context menu**: Right-click on a category within your taxonomy and select `Assign` from the context menu. A list of available assets will appear, from which you can choose the appropriate security to assign to that category.
 
-<br style="clear:left;">
+Figure: Taxonomies panel in Security Data window. {class=align-right style="width:50%"}
 
-- **Edit the security**: Only available for securities (no indexes, deposit accounts, ...). Right-click a security in whatever view. This can be the `Without Classification` list or even the `All Securities` view. Choose `Edit` from the context menu. In the tab `Taxonomies`, you can add the security to one or more taxonomies. As shown in Figure 4, the Daimler Truck security is added to a few predefined taxonomies, but also to the Base Currency category of our newly created MyTaxonomy.
+![](images/taxonomies-assign-security.png)
+
+- **Edit the security**: This method is only available for securities and can't be used for indexes and deposit accounts. Right-click a security in any view where it appears. This can be the `Without Classification` list or even the `All Securities` view. Choose `Edit` from the context menu. In the tab `Taxonomies`, you can add the security to one or more taxonomies. As shown in Figure 4, the Daimler Truck security is added to a few predefined taxonomies, but also to the Base Currency category of our newly created MyTaxonomy. See [Reference > File > New](../../file/new.md#taxonomies) for further information.
