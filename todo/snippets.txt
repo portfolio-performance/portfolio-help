@@ -23,7 +23,10 @@ right-pointing caret: &rsaquo;
 ampersand: &amp;
 less than: &lt;
 sigma: &sum; or &#8721;
+
 non-breaking space: &nbsp;
+For Windows, you can use the code Alt+255; this works also in `code`
+
 down-pointing triangle :material-triangle-small-down:
 plus in circle :octicons-plus-circle-24: 
 use <spa></span> to change the color
@@ -35,3 +38,17 @@ start-up parameter:
 PortfolioPerformance.exe -nl de_DE
 or 
 PortfolioPerformance -nl en_EN
+
+# Latex/katex
+
+newline: \\\ in latex formula
+two linebreaks: \\\~\\\
+
+# Code (backticks)
+Use `text` backticks to format text as code
+Use
+```
+line 1
+line 2
+```
+to place code-formatted text in multiple lines. Use Alt+255 (Windows) to insert space.
