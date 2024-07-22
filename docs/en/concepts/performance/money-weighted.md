@@ -17,7 +17,7 @@ Figure: Visualisation of Future Value calculation.{class=pp-figure}
 
 ![](images/info-irr-future-value.svg) 
 
-Calculating IRR is in fact the inverse of calculating the future value (FV) of an investment. You don't know the interest rate or IRR, but you do know the MVB, the MVE, and the intermittent cashflows. According to Equation:
+Calculating IRR is the inverse of calculating the future value (FV) of an investment. You don't know the interest rate or IRR, but you do know the MVB, the MVE, and the intermittent cashflows. According to Equation:
 
 `1000 * (1 + IRR)^(3x365/365) + 500 * (1 + IRR)^(2x365/365) + 1000 * (1 + IRR)^(365/365) = 3036`
 
