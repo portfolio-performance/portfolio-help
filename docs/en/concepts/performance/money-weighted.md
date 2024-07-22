@@ -12,6 +12,7 @@ where *n* = the number of cash flows in the reporting period, CF<sub>t</sub> = t
 
 Equation 1 closely resembles the calculation of Future Value. In Figure 1, assuming a 10% interest on your investments, the initial 1000 EUR capital will grow to a future value of 1331 EUR in three years. Additional cashflows of 500 EUR and 1000 EUR in the following years will result in 605 EUR and 1100 EUR respectively. The total Future Value of the investment will then be 3036 EUR in three years.
 
+
 Figure: Visualisation of Future Value calculation.{class=pp-figure}
 
 ![](images/info-irr-future-value.svg) 
