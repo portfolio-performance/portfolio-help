@@ -38,7 +38,7 @@ In most financial management handbooks, calculating the time-weighted rate of re
         - HP2: cash inflow of 20: `[136.5/(110+20)]-1=5%`.
         - HP3: cash outflow of -30: `[117.15/(136.5-30)]-1`.
         
-        Please note that the formula for the cash outflow is a slightly different than the one given in Equation 2 (see ... for an explanation). 
+        Please note that the formula for the cash outflow is slightly different than the one given in Equation 2 (see [TTWROR at security level](./time-weighted.md#ttwror-at-security-level) for an explanation). 
         
         
 ## Implementation in PP
@@ -74,10 +74,10 @@ The MVB of the HP3 is the same as the MVE of HP2 or 264.57 EUR. There is a cash 
 
 It's important to emphasize that the timing of the cash flows is not considered in this calculation. It doesn't matter whether HP1 is short or long. Additionally, the performance is calculated independently of the size of the cash flow, with the cash inflow being added to the beginning Market Value of the Portfolio (MVB). This approach contrasts with the money-weighted rate of return calculation, where both timing and size of cash flows are taken into account.
 
-For each period, you need MVB or MVE<sup>t-1</sup> and the current MVE<sup>t</sup> period. Because the market value is determined at the end of the trading day (closing price), MVE<sup>t-1</sup> is also the value immediately before the cashflow at the beginning of the day.
+For each period, you need MVB or MVE<sub>t-1</sub> and the current MVE<sub>t</sub> period. Because the market value is determined at the end of the trading day (closing price), MVE<sub>t-1</sub> is also the value immediately before the cashflow at the beginning of the day.
 
 !!! Note
-    One could argue that, as we are required to add the cash flow CFin to MVE<sup>t-1</sup> (as per Equation 1), an alternative approach is to consider the market value of MVE<sup>t</sup>, which already includes this cash flow CFin<sup>t</sup>. However, it's important to note that throughout the day, market forces may cause fluctuations in the original MVE<sup>t-1</sup>, and these variations should be excluded when determining the market value at the beginning of the day, just before the cash flow.
+    One could argue that, as we are required to add the cash flow CFin to MVE<sub>t-1</sub> (as per Equation 1), an alternative approach is to consider the market value of MVE<sub>t</sub>, which already includes this cash flow CFin<sub>t</sub>. However, it's important to note that throughout the day, market forces may cause fluctuations in the original MVE<sub>t-1</sub>, and these variations should be excluded when determining the market value at the beginning of the day, just before the cash flow.
 
 ### Exporting data from PP
 
@@ -94,34 +94,47 @@ The calculation is analogous to the explanation of the manual calculation. Note 
 The previous section describes the performance of the whole portfolio, including deposit accounts. Understanding the performance calculation for a single security should not pose any problems by now. The same principles are applied. However, there are quite a few differences qua approach. 
 
 1. Focusing on a single security ensures that other assets, such as deposit accounts, are not included in the calculation.
-2. Conversely, transactions such as dividends and sales are now incorporated into the performance calculation. Since the proceeds from a sale or dividend are deposited into a cash account, money exits the system and is thus factored into the calculation.
+2. Conversely, transactions such as dividends and sales are now incorporated into the performance calculation. Since the proceeds from a sale or dividend are deposited into a cash account, money exits the system from the perspective of the security and is thus factored into the calculation.
 3. Special provisions are made for taxes. These are not included in the calculation; see [IRR for an explanation](./money-weighted.md#irr-at-security-level).
 
-In PP you can retrieve the total IRR and TTWROR through the menu `View > Reports > Performance > Securities`. However, these values are not displayed by default and should be made available with the `Show or Hide columns` icon (top right).
+In PP you can retrieve the IRR and TTWROR of a security through the menu `View > Reports > Performance > Securities`. However, these values are not displayed by default and should be made available with the :gear: `Show or Hide columns` icon (top right).
 
-Figure: Total and annual TTWROR for securities (2 years period). {class=pp-figure}
+Figure: Periodic and annual TTWROR for securities (2 years period). {class=pp-figure}
 
 ![](images/info-ttwror-securities-calculation.png)
 
-The chart from the menu `View > Reports > Performance > Chart` can exhibit multiple time series (click the Gear icon). In Figure 6, the cumulative TTWROR for the entire portfolio is depicted, along with individual graphs for `share-1` and `share-2` over a 2-year reporting period, starting from June 12, 2021. As share-2 was acquired on September 30, 2022, its performance until that date registers as zero (indicated by the horizontal yellow line). From that point onward, the performance of the portfolio diverges from that of share-1 due to the notably successful yet relatively minor contribution of share-2 within the overall portfolio. As can be seen, the total TTWROR or the last cumulative performance of the portfolio is 25.58%, as calculated in figure 4.
+The chart from the menu `View > Reports > Performance > Chart` can exhibit multiple time series (click the Gear icon). In Figure 6, the cumulative TTWROR for the entire portfolio is depicted, along with individual graphs for `share-1` and `share-2` over a 2-year reporting period, starting from June 12, 2021. As `share-2` was acquired on September 30, 2022, its performance until that date registers as zero (indicated by the horizontal yellow line). From that point onward, the performance of the portfolio diverges from that of `share-1` due to the notably successful yet relatively minor contribution of `share-2` within the overall portfolio. As can be seen, the periodic TTWROR of the entire portfolio or the last cumulative performance of the portfolio is 25.58%, as calculated in Figure 4.
 
 Figure: Graph of the cumulative performance of portfolio, share-1, and share-2 (2 years period).{class=pp-figure}
 
 ![](images/TTWROR-chart-portfolio-shares.png)
 
-For the manual calculation, you need to define the holding periods. This is fairly easy for `share-2`. One holding period should suffice: from just before the buying date until the end of the reporting period. The MVB of `share-2` at the beginning of the holding period (just before the buy) is 0 EUR. The MVE equals 111.76. The buy-transaction cost (taxes excluded) is 66 EUR. The TTWROR is thus equal to 111.76/(0 + 66)= 69.33%. Check Figure 6, orange line ending just below 70%.
+For the manual calculation, you need to define the holding periods. This is fairly easy for `share-2`. One holding period should suffice: from just before the buying date until the end of the reporting period. The MVB of `share-2` at the beginning of the holding period (just before the buy) is 0 EUR. The MVE equals 111.76. The buy-transaction cost (taxes excluded) is 66 EUR. The TTWROR is thus equal to `111.76/(0 + 66) = 69.33%`. You can see this in Figure 6, where the orange line ends just below 70%.
 
-The manual calculation for `share-1` is more complex due to the involvement of multiple transactions: 2 purchases (one within the reporting period), 1 sale, and 1 dividend transaction). The best approach to understand the problem is to draw a timeline, as depicted in Figure 3. The table below summarizes all the relevant info and is based on the CSV-export of the *daily* data (market value, daily rate of return, and cumulative rate of return) from the graph in Figure 6 (click the :material-upload: up-pointing arrow at the top-right). 
+The manual calculation for `share-1` is more complex due to the involvement of multiple transactions, especially outflow transactions such as dividends and sales. The best approach to understanding the problem is to draw a timeline, as depicted in Figure 3 or Figure 8. The table below summarises all the relevant info and is based on the CSV export of the *daily* data (market value, daily rate of return, and cumulative rate of return) from the graph in Figure 6 (click the :material-upload: up-pointing arrow at the top-right). 
 
 Figure: Manual calculation of (cumulative) performance of share-1.{class=pp-figure}
 
 ![](images/TTWROR-manual-calculation-demo-3-excel-share-1.png)
 
-The first holding period starts at the period start (2021-06-12) and ends just before the buy-transaction (of `share-1`). HP2 starts just before the purchase with the result that MVE of HP1 is equal to MVB of HP2.
+Note that Figure 7 illustrates two distinct methods for defining holding periods. The first method, previously discussed, defines a holding period from immediately before a cash flow (or the start of the reporting period) until just before the next cash flow (or the end of the reporting period). In this case, the calculated TTWROR is 19.71%, which is higher than the PP indicator of 14.98% (see Figure 5). However, this method is inappropriate for this particular scenario due to the presence of cash outflows.
 
-The return rate of HP1 is straight-forward. `r = [(160.26 + 0)/(177.94 + 0)] - 1 = -9.94%`. HP2 contains a cash inflow (buy). `r = [(287.49 + 0)/(160.26 + 83)] - 1 = 6.43%`. Comparing with the data from Figure 4, you will notice that taxes are not included in the cash inflow.
+The reason is that, as shown in Equation 1, outflows are added to the Market Value End (MVE), while inflows are added to the Market Value Begin (MVB). Figure 8 presents a simplified example for clarification.
 
-HP3 & HP4 are special cases and split into the day of the transaction itself and the remaining period. Why? Take a close look at Equation 2. The MVE is increased with the cash outflow to neutralize the effect of this outflow. The MVE date of the third holding period is however April 11, 2023, while the dividend is disbursed on December 12, 2022. Although an imperfect solution, one approach could involve modifying the formula and add the dividend to the MVB (which is at the correct date). But, remember that PP records inflows at the beginning of the trading day and outflows at the end of the day. While the difference for the dividend payment is relatively minor (e.g., 287.49 versus 283.47), it is more significant for the selling transaction (e.g., 339 versus 224). By splitting the holding period into two sub-periods, this issue is resolved, enabling the retention of the original formula in Equation 1.
+The reporting period spans 8 days, with a cash inflow (buy) on D1 and a cash outflow (sell) on D5, resulting in two holding periods. The MVB and MVE are displayed below. Note that MVB<sub>t</sub> = MVE<sub>t-1</sub> and that MVE<sub>t</sub> = quote x #shares for that day.
+
+
+Figure: Simplified example.{class=pp-figure}
+
+![](images/TTWROR-example-simplifying.png)
+
+According to Equation 1, `1 + r = (MVE + CFout)/(MVB + CFin)` or for day 1: `(1000+0)/(0+1000)`; which results in a performance of zero. Note that, since MVB<sub>t</sub> = MVE<sub>t-1</sub>, the terms in the numerator and denominator cancel out, leaving the simplified formula for the return of the first holding period (HP1) as: `1 + r = (1010 / 1000), or r = 10%`.
+
+However, this method cannot be applied to HP2, because the cash outflow (510 EUR) is added to the MVE of the selling date. The numerator of day 55 isn't equal to the denominator of day 6. The correct simplified formula for HP2 is thus separating the performance calculation for the transaction date from the following days, as is done in Figure 7 (lower part). If the first method was used, then the cash outflow would be added to the MVE of day 8; which is of course not the selling date.
+
+Transferring this method to Figure 7, the return rate of HP1 is straight-forward. `r = [(160.26 + 0)/(177.94 + 0)] - 1 = -9.94%`. HP2 contains a cash inflow (buy), which causes no problems: `r = [(287.49 + 0)/(160.26 + 83)] - 1 = 6.43%`.
+
+HP3 and HP4 are special cases as they contain cash outflows. They are split into the day of the transaction itself and the remaining period. The MVE is increased with the cash outflow to neutralize the effect of this outflow. The MVE date of the third holding period is April 11, 2023, while the dividend is disbursed on December 12, 2022. Although an imperfect solution, one approach could involve modifying the formula to subtract the dividend from the MVB, which is at the correct date. However, remember that PP records inflows at the beginning of the trading day and outflows at the end of the day. While the difference for the dividend payment is relatively minor (e.g., 287.49 versus 283.47), it is more significant for the selling transaction (e.g., 339 versus 224). By splitting the holding period into two sub-periods, this issue is resolved, enabling the retention of the original formula in Equation 1.
 
 ## TTWROR p.a.
 
