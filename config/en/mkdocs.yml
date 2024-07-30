@@ -89,6 +89,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -111,6 +113,7 @@ nav:
           - Dividend payment: getting-started/manage-portfolio/dividend.md 
           - Bonds: getting-started/manage-portfolio/bonds.md
       - Measure Performance: getting-started/measure-performance.md
+      - Classifying assets: getting-started/classify-assets.md
   - Basic concepts:
       - Basic concepts: concepts/index.md
       - PP-terminology: concepts/PP-terminology.md
