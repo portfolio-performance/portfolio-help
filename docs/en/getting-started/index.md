@@ -22,7 +22,7 @@ Performance and risk are crucial. Various views and tools can be used to evaluat
 ## [Classifying your assets](./classify-assets.md)
 To reduce risk, you probably want to diversify your portfolio by region, type, asset, ... Using taxonomies will help you visualize and calculate the amount of diversification.
 
-## Define portfolio strategy and carry out rebalancing
+## [Define portfolio strategy and rebalancing](./rebalancing.md)
 You map your own portfolio strategy with target values for different share classes.
 You can make a target/actual comparison and perform a rebalancing
 

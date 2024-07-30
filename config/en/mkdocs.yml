@@ -114,6 +114,7 @@ nav:
           - Bonds: getting-started/manage-portfolio/bonds.md
       - Measure Performance: getting-started/measure-performance.md
       - Classifying assets: getting-started/classify-assets.md
+      - Define portfolio and rebalancing: getting-started/rebalancing.md
   - Basic concepts:
       - Basic concepts: concepts/index.md
       - PP-terminology: concepts/PP-terminology.md
