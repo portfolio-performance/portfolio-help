@@ -96,6 +96,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://help.portfolio-performance.info/en/getting-started/rebalancing/</loc>
+         <lastmod>2024-07-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://help.portfolio-performance.info/en/getting-started/manage-portfolio/</loc>
          <lastmod>2024-07-30</lastmod>
          <changefreq>daily</changefreq>

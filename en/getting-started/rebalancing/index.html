@@ -12,28 +12,28 @@
         <meta name="author" content="Andreas Buchen, et. al.">
       
       
-        <link rel="canonical" href="https://help.portfolio-performance.info/en/how-to/downloading-historical-prices/csv-file/">
+        <link rel="canonical" href="https://help.portfolio-performance.info/en/getting-started/rebalancing/">
       
       
-        <link rel="prev" href="../portfolioreport/">
+        <link rel="prev" href="../classify-assets/">
       
       
-        <link rel="next" href="../json/">
+        <link rel="next" href="../../concepts/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.9">
     
     
       
-        <title>Downloading a CSV file - Portfolio Performance Manual</title>
+        <title>Define portfolio strategy and rebalancing - Portfolio Performance Manual</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.f2e4d321.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f2e4d321.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -54,9 +54,9 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -81,11 +81,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#yahoo-finance" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -96,9 +91,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Portfolio Performance Manual" class="md-header__button md-logo" aria-label="Portfolio Performance Manual" data-md-component="logo">
+    <a href="../.." title="Portfolio Performance Manual" class="md-header__button md-logo" aria-label="Portfolio Performance Manual" data-md-component="logo">
       
-  <img src="../../../assets/images/logo.svg" alt="logo">
+  <img src="../../assets/images/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -115,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Downloading a CSV file
+              Define portfolio strategy and rebalancing
             
           </span>
         </div>
@@ -241,11 +236,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../getting-started/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -265,7 +262,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../concepts/" class="md-tabs__link">
+        <a href="../../concepts/" class="md-tabs__link">
           
   
     
@@ -285,7 +282,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../reference/" class="md-tabs__link">
+        <a href="../../reference/" class="md-tabs__link">
           
   
     
@@ -301,13 +298,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../how-to/" class="md-tabs__link">
           
   
     
@@ -325,7 +320,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../about/" class="md-tabs__link">
+      <a href="../../about/" class="md-tabs__link">
         
   
     
@@ -359,9 +354,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Portfolio Performance Manual" class="md-nav__button md-logo" aria-label="Portfolio Performance Manual" data-md-component="logo">
+    <a href="../.." title="Portfolio Performance Manual" class="md-nav__button md-logo" aria-label="Portfolio Performance Manual" data-md-component="logo">
       
-  <img src="../../../assets/images/logo.svg" alt="logo">
+  <img src="../../assets/images/logo.svg" alt="logo">
 
     </a>
     Portfolio Performance Manual
@@ -380,6 +375,8 @@
       
   
   
+    
+  
   
   
     
@@ -406,21 +403,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../getting-started/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -431,13 +429,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Getting started
@@ -453,7 +451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -474,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/create-portfolio/" class="md-nav__link">
+      <a href="../create-portfolio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -495,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/adding-securities/" class="md-nav__link">
+      <a href="../adding-securities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -551,7 +549,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../getting-started/manage-portfolio/" class="md-nav__link ">
+            <a href="../manage-portfolio/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -584,7 +582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/manage-portfolio/deposit/" class="md-nav__link">
+      <a href="../manage-portfolio/deposit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -605,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/manage-portfolio/buy/" class="md-nav__link">
+      <a href="../manage-portfolio/buy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -626,7 +624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/manage-portfolio/sell/" class="md-nav__link">
+      <a href="../manage-portfolio/sell/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -647,7 +645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/manage-portfolio/delivery/" class="md-nav__link">
+      <a href="../manage-portfolio/delivery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -668,7 +666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/manage-portfolio/dividend/" class="md-nav__link">
+      <a href="../manage-portfolio/dividend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -689,7 +687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/manage-portfolio/bonds/" class="md-nav__link">
+      <a href="../manage-portfolio/bonds/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -718,7 +716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/measure-performance/" class="md-nav__link">
+      <a href="../measure-performance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -739,7 +737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/classify-assets/" class="md-nav__link">
+      <a href="../classify-assets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -757,10 +755,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../getting-started/rebalancing/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -769,6 +774,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -825,7 +831,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../concepts/" class="md-nav__link ">
+            <a href="../../concepts/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -858,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../concepts/PP-terminology/" class="md-nav__link">
+      <a href="../../concepts/PP-terminology/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -879,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../concepts/financial-terminology/" class="md-nav__link">
+      <a href="../../concepts/financial-terminology/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -900,7 +906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../concepts/system-overview/" class="md-nav__link">
+      <a href="../../concepts/system-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -921,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../concepts/reporting-period/" class="md-nav__link">
+      <a href="../../concepts/reporting-period/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -942,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../concepts/purchase-value/" class="md-nav__link">
+      <a href="../../concepts/purchase-value/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -990,7 +996,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../concepts/performance/" class="md-nav__link ">
+            <a href="../../concepts/performance/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1023,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../concepts/performance/money-weighted/" class="md-nav__link">
+      <a href="../../concepts/performance/money-weighted/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1044,7 +1050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../concepts/performance/time-weighted/" class="md-nav__link">
+      <a href="../../concepts/performance/time-weighted/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1073,7 +1079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../concepts/historical-prices/" class="md-nav__link">
+      <a href="../../concepts/historical-prices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1136,7 +1142,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../reference/" class="md-nav__link ">
+            <a href="../../reference/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1169,7 +1175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../menu/" class="md-nav__link">
+      <a href="../../how-to/menu/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1242,7 +1248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/file/new/" class="md-nav__link">
+      <a href="../../reference/file/new/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1263,7 +1269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/file/save/" class="md-nav__link">
+      <a href="../../reference/file/save/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1284,7 +1290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/file/import/" class="md-nav__link">
+      <a href="../../reference/file/import/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1305,7 +1311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/file/export/" class="md-nav__link">
+      <a href="../../reference/file/export/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1326,7 +1332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/file/currency/" class="md-nav__link">
+      <a href="../../reference/file/currency/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1409,7 +1415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/options/" class="md-nav__link">
+      <a href="../../reference/view/options/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1476,7 +1482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/securities/all-securities/" class="md-nav__link">
+      <a href="../../reference/view/securities/all-securities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1497,7 +1503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/securities/context-menu/" class="md-nav__link">
+      <a href="../../reference/view/securities/context-menu/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1557,7 +1563,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../reference/view/accounts/" class="md-nav__link ">
+            <a href="../../reference/view/accounts/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1590,7 +1596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/accounts/deposit-account/" class="md-nav__link">
+      <a href="../../reference/view/accounts/deposit-account/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1611,7 +1617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/accounts/security-account/" class="md-nav__link">
+      <a href="../../reference/view/accounts/security-account/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1632,7 +1638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/accounts/investment-plans/" class="md-nav__link">
+      <a href="../../reference/view/accounts/investment-plans/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1653,7 +1659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/accounts/all-transactions/" class="md-nav__link">
+      <a href="../../reference/view/accounts/all-transactions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1755,7 +1761,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../reference/view/reports/statement/" class="md-nav__link ">
+            <a href="../../reference/view/reports/statement/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1788,7 +1794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/reports/statement/statement-chart/" class="md-nav__link">
+      <a href="../../reference/view/reports/statement/statement-chart/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1809,7 +1815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/reports/statement/holdings/" class="md-nav__link">
+      <a href="../../reference/view/reports/statement/holdings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1871,7 +1877,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../reference/view/reports/performance/" class="md-nav__link ">
+            <a href="../../reference/view/reports/performance/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1904,7 +1910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/reports/performance/calculation/" class="md-nav__link">
+      <a href="../../reference/view/reports/performance/calculation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1925,7 +1931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/reports/performance/performance-chart/" class="md-nav__link">
+      <a href="../../reference/view/reports/performance/performance-chart/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1946,7 +1952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/reports/performance/securities/" class="md-nav__link">
+      <a href="../../reference/view/reports/performance/securities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1967,7 +1973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/reports/performance/payments/" class="md-nav__link">
+      <a href="../../reference/view/reports/performance/payments/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1988,7 +1994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/reports/performance/trades/" class="md-nav__link">
+      <a href="../../reference/view/reports/performance/trades/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2052,7 +2058,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../reference/view/taxonomies/" class="md-nav__link ">
+            <a href="../../reference/view/taxonomies/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2085,7 +2091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/taxonomies/managing-taxonomies/" class="md-nav__link">
+      <a href="../../reference/view/taxonomies/managing-taxonomies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2106,7 +2112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/taxonomies/using-taxonomies/" class="md-nav__link">
+      <a href="../../reference/view/taxonomies/using-taxonomies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2181,7 +2187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/general-data/settings/" class="md-nav__link">
+      <a href="../../reference/view/general-data/settings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2202,7 +2208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/view/general-data/currencies/" class="md-nav__link">
+      <a href="../../reference/view/general-data/currencies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2276,7 +2282,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../reference/transaction/" class="md-nav__link ">
+            <a href="../../reference/transaction/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2309,7 +2315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/transaction/buy-sell/" class="md-nav__link">
+      <a href="../../reference/transaction/buy-sell/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2330,7 +2336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/transaction/delivery/" class="md-nav__link">
+      <a href="../../reference/transaction/delivery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2351,7 +2357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/transaction/transfer/" class="md-nav__link">
+      <a href="../../reference/transaction/transfer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2372,7 +2378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/transaction/dividend/" class="md-nav__link">
+      <a href="../../reference/transaction/dividend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2393,7 +2399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/transaction/deposit-removal/" class="md-nav__link">
+      <a href="../../reference/transaction/deposit-removal/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2414,7 +2420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/transaction/interest/" class="md-nav__link">
+      <a href="../../reference/transaction/interest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2435,7 +2441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/transaction/fees-taxes/" class="md-nav__link">
+      <a href="../../reference/transaction/fees-taxes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2464,7 +2470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/online/" class="md-nav__link">
+      <a href="../../reference/online/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2535,7 +2541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/help/about/" class="md-nav__link">
+      <a href="../../reference/help/about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2556,7 +2562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/help/preferences/" class="md-nav__link">
+      <a href="../../reference/help/preferences/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2577,7 +2583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/help/check-updates/" class="md-nav__link">
+      <a href="../../reference/help/check-updates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2598,7 +2604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference/help/trouble-shooting/" class="md-nav__link">
+      <a href="../../reference/help/trouble-shooting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2631,8 +2637,6 @@
       
   
   
-    
-  
   
   
     
@@ -2671,22 +2675,21 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../how-to/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2697,13 +2700,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             How-to
@@ -2719,7 +2722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user-interface/" class="md-nav__link">
+      <a href="../../how-to/user-interface/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2737,8 +2740,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2768,16 +2769,18 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../how-to/downloading-historical-prices/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2794,7 +2797,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_3">
             <span class="md-nav__icon md-icon"></span>
             Downloading historical prices
@@ -2810,7 +2813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../alpha-vantage/" class="md-nav__link">
+      <a href="../../how-to/downloading-historical-prices/alpha-vantage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2831,7 +2834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../eodhd/" class="md-nav__link">
+      <a href="../../how-to/downloading-historical-prices/eodhd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2852,7 +2855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../yahoo-finance/" class="md-nav__link">
+      <a href="../../how-to/downloading-historical-prices/yahoo-finance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2873,7 +2876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../portfolioreport/" class="md-nav__link">
+      <a href="../../how-to/downloading-historical-prices/portfolioreport/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2891,28 +2894,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    CSV File
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../how-to/downloading-historical-prices/csv-file/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2921,42 +2906,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#yahoo-finance" class="md-nav__link">
-    <span class="md-ellipsis">
-      Yahoo Finance
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#investingcom" class="md-nav__link">
-    <span class="md-ellipsis">
-      Investing.com
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2969,7 +2918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../json/" class="md-nav__link">
+      <a href="../../how-to/downloading-historical-prices/json/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2990,7 +2939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../table-website/" class="md-nav__link">
+      <a href="../../how-to/downloading-historical-prices/table-website/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3019,7 +2968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../handling-choice-dividend/" class="md-nav__link">
+      <a href="../../how-to/handling-choice-dividend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3040,7 +2989,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../morningstar/" class="md-nav__link">
+      <a href="../../how-to/morningstar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3061,7 +3010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../quote-feed/" class="md-nav__link">
+      <a href="../../how-to/quote-feed/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3082,7 +3031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../copy-securities/" class="md-nav__link">
+      <a href="../../how-to/copy-securities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3103,7 +3052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../recording-spin-off/" class="md-nav__link">
+      <a href="../../how-to/recording-spin-off/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3124,7 +3073,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../recording-stock-split/" class="md-nav__link">
+      <a href="../../how-to/recording-stock-split/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3145,7 +3094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../insolvency/" class="md-nav__link">
+      <a href="../../how-to/insolvency/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3166,7 +3115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gold-prices/" class="md-nav__link">
+      <a href="../../how-to/gold-prices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3187,7 +3136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../benchmarking/" class="md-nav__link">
+      <a href="../../how-to/benchmarking/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3208,7 +3157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../import-gbx/" class="md-nav__link">
+      <a href="../../how-to/import-gbx/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3229,7 +3178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../inspect-source-code/" class="md-nav__link">
+      <a href="../../how-to/inspect-source-code/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3257,7 +3206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../about/" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3288,32 +3237,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#yahoo-finance" class="md-nav__link">
-    <span class="md-ellipsis">
-      Yahoo Finance
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#investingcom" class="md-nav__link">
-    <span class="md-ellipsis">
-      Investing.com
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -3327,7 +3250,7 @@
                   
 
   
-    <a href="https://github.com/portfolio-performance/portfolio-help/tree/master/docs/en/how-to/downloading-historical-prices/csv-file.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/portfolio-performance/portfolio-help/tree/master/docs/en/getting-started/rebalancing.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -3335,22 +3258,14 @@
   
 
 
-  <h1>CSV File</h1>
+  <h1>Define portfolio and rebalancing</h1>
 
-<p>In PP, importing historical prices from a CSV file is a straightforward process through the menu <a href="../../../reference/file/import/#historical-quotes-import"><code>File &gt; Import &gt; CSV Files</code></a>. Naturally, you would require a file containing the relevant quotes for this operation.</p>
-<p>A csv file is a comma-separated values file, which is a text file that stores tabular data. Each row in the file represents a record, and each column represents a field. For example, a typical historical quotes CSV file will contain two columns (date and quote) and several rows, one for each date with its corresponding historical quote. A csv file can be opened and edited by spreadsheet software and easily imported into PP.</p>
-<p>Each website may have a distinct approach for downloading a CSV file of the historical data. Typically, you need to navigate to the desired security and locate the download link on that webpage. Many websites require (free) registration for downloading, Yahoo Finance being an exception.</p>
-<p>It's important to note that this method provides a snapshot of historical prices. To obtain the quotes of tomorrow, you should repeat the process. In practice, you need to combine this approach with one of the automatic quote download methods. Remember that you can <a href="../../../reference/file/images/mnu-file-import-reload-quotes.png">keep the existing historical quotes</a> in PP, even if you change the quote provider to automatic download.  For example, in both scenarios below, after importing the CSV file, you can set the Quote Feed Provider to the <a href="../table-website/">Table on Website</a> method for daily updates of historical prices.</p>
-<h2 id="yahoo-finance">Yahoo Finance</h2>
-<p>After navigating to <a href="https://finance.yahoo.com">Yahoo Finance</a>, you can enter the name "NVIDIA" in the Search box at the top of the screen (see Figure 1). Select the Historical Prices tab in the middle of the screen. From there, you can specify the Time Period and frequency before downloading a CSV file containing historical prices. Import this CSV file into Portfolio Performance using the menu <code>File &gt; Import &gt; CSV Files</code>, choosing the Historical Prices option and assign it to the correct security.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Webpage from finance.yahoo.com to download the historical prices of NVIDIA.</figcaption><img alt="" src="../images/yahoo-finance-webpage.png"></figure></p>
-<p>Hovering over the download link, you may have noticed the URL endpoint: <code>https://query1.finance.yahoo.com/v7/finance/download/NVDA?period1=1674359406&amp;period2=1705895406&amp;interval=1d&amp;events=history&amp;includeAdjustedClose=true</code> (see Figure 1 at the bottom of the image).</p>
-<p>This is the request you send to the Yahoo server. It contains the ticker symbol of the security (NVDA), the time period expressed as Unix timestamps or the number of seconds that have elapsed since January 1, 1970, the frequency or interval (1d), the type of info you want (events=history), and the Adjusted Close price. The CSV file contains 7 columns: Date, Open, High, Low, Close, Volume, and Adj Close.</p>
-<p>You can change this URL to obtain different results. For example, the following URL will retrieve the last three months of prices (same columns):</p>
-<p><code>https://query1.finance.yahoo.com/v7/finance/download/NVDA?range=3mo&amp;interval=1d</code></p>
-<h2 id="investingcom">Investing.com</h2>
-<p>Investing.com is a comprehensive financial website providing real-time quotes, financial news, analysis, and tools for investors. You can localize its content for more than 30 countries including several European languages.</p>
-<p>Clicking the Search box will display your recent searches and popular ones. You can enter the name, ticker, or ISIN of the security you're interested in. A graphical overview of the quote history (1 month) is presented. Click <code>Historical Data</code> to see the table. For downloading or changing the period, registration with your email address is required (free). All data are available, but there is a limit of 20 years that you can download in one pass.</p>
+<p>By defining a strategy and goal, investors can avoid emotional reactions to market fluctuations and stay focused on their long-term plans. You can use <a href="../../reference/view/taxonomies/">taxonomies</a> (see also the previous section in this Getting Started chapter) and <a href="../../reference/view/taxonomies/using-taxonomies/#rebalancing-view">rebalancing</a> to achieve this.</p>
+<p>Rebalancing is a strategy of bringing a portfolio that has deviated away from one's target asset allocation back into line <a href="https://en.wikipedia.org/wiki/Rebalancing_investments">Wikipedia</a>. This target can be set in the rebalancing view of a taxonomy (see Figure 1).</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Rebalancing view. </figcaption><img alt="" src="../../reference/view/taxonomies/images/taxonomies-rebalancing.png"></figure></p>
+<p>The first step is to set the allocation goal for each category. For example, in Figure 1, the (rather counterintuitive) target allocation for the Foreign Currencies category is set to 70%, leaving 30% for the Base Currency category. You can enter or change the allocation percentage by double-clicking the cell, and the target value will be immediately adjusted.</p>
+<p>The Rebalance (Amount) and Rebalance (Shares) columns show the amount and number of shares you need to sell (negative number) or buy (positive number) to reach the target value. Naturally, it isn't always possible to buy or sell a fractional number of shares.</p>
+<p>Please note that the sum of the allocation percentages across categories does not need to be 100%, although it is advisable. Colour coding will draw your attention to any discrepancies if the sum isn't 100%.</p>
 
 
 
@@ -3371,7 +3286,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 1, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 30, 2024</span>
   </span>
 
     
@@ -3481,12 +3396,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.code.copy", "navigation.expand", "navigation.indexes", "navigation.tabs", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "navigation.expand", "navigation.indexes", "navigation.tabs", "content.action.edit"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
-        <script src="../../../assets/javascripts/katex.js"></script>
+        <script src="../../assets/javascripts/katex.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       
