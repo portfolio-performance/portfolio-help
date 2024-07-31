@@ -24,7 +24,7 @@ To reduce risk, you probably want to diversify your portfolio by region, type, a
 
 ## [Define portfolio strategy and rebalancing](./rebalancing.md)
 You map your own portfolio strategy with target values for different share classes.
-You can make a target/actual comparison and perform a rebalancing
+You can make a target/actual comparison and perform a rebalancing.
 
-## Keeping the portfolio up-to-date
-You book new purchases, sales and dividends as well as any costs and taxes incurred. This can be done quickly and easily by importing the bank's PDF statements, or manually
+## [Keeping the portfolio up-to-date](./updating-portfolio.md)
+You book new purchases, sales, and dividends as well as any costs and taxes incurred. This can be done quickly and easily by importing the bank's PDF statements, or manually.

@@ -115,6 +115,7 @@ nav:
       - Measure Performance: getting-started/measure-performance.md
       - Classifying assets: getting-started/classify-assets.md
       - Define portfolio and rebalancing: getting-started/rebalancing.md
+      - Keeping the portfolio up-to-date: getting-started/updating-portfolio.md
   - Basic concepts:
       - Basic concepts: concepts/index.md
       - PP-terminology: concepts/PP-terminology.md
