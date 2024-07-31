@@ -6,11 +6,10 @@ In PP you can enter your data (buy, sell, dividends, historical quotes, … ) ma
 
 Figure: Menu File > Import.{class=pp-figure}
 
-![](./images/mnu-file-import.png)
+![](../images/mnu-file-import.png)
 
 There are two primary data sources: PDF documents and CSV files. Some brokers or banks may present this information in a proprietary format. Templates for major banks or brokers are available.
 
-## PDF Bank Documents
 
 ## CSV files (comma-separated values)
 
@@ -30,7 +29,7 @@ In **step 2** of the wizard, you need to select the appropriate import type or t
 
 Figure: Saving the mapping configuration.{class=align-right style="width:50%"}
 
-![](./images/mnu-file-import-step-2-template.png)
+![](../images/mnu-file-import-step-2-template.png)
 
 - *Save Configuration* (Gear icon): To save the current mapping, click on the gear icon to the right of "Type of data." A list of `Built-in configurations` will be displayed, such as comDirect, Consorsbank, etc. (see Figure 3). Using the option `Save current configuration` will save your current mapping configuration as a custom template. This template will be available under `User-specific Configurations`, for example, `test (Account Transactions)` (see Figure 2). You can delete, export, and import configurations. The export function uses a JSON format.
 
@@ -56,7 +55,7 @@ Please note that the date in Table 1 is in the format `YYYY-MM-DD`. By double-cl
 
 Figure: Importing Historical Quotes (step 2).{class=pp-figure}
 
-![](./images/mnu-file-import-step-2.png)
+![](../images/mnu-file-import-step-2.png)
 
 In Figure 3, the `Next` and `Finish` buttons are greyed out because not all necessary information is available. The message at the top, "Unmapped required field(s): Quote," provides a clue. For this type of import, two fields are required: `Date` and `Quote`. However, the CSV file uses the headings `Date` and `Price`. The field `Price` should be mapped to the internal `Quote` field. Double-click on the column and select the appropriate mapping field, e.g. `Quote`. The `Next` and `Finish` buttons will then become available.
 
@@ -64,11 +63,11 @@ In step 3 of the wizard, you can select the security that the prices will be add
 
 Figure: Importing Historical Quotes (step 3).{class=pp-figure}
 
-![](./images/mnu-file-import-step-3-historical-prices.png)
+![](../images/mnu-file-import-step-3-historical-prices.png)
 
 ### 2. Securities import
 
-Use this type to create new securities from a CSV file. There are no required fields. The optional fields include `Ticker Symbol`, `Security Name`, `WKN`, `ISIN`, `Currency`, `Date of Quote`, `Note`, and `Quote`. It is evident that at least one of the first four fields should be mapped. Refer to the [glossary](../../concepts/PP-terminology.md) for the meaning of these terms. See Table 2 for an example of the CSV-file.
+Use this type to create new securities from a CSV file. There are no required fields. The optional fields include `Ticker Symbol`, `Security Name`, `WKN`, `ISIN`, `Currency`, `Date of Quote`, `Note`, and `Quote`. It is evident that at least one of the first four fields should be mapped. Refer to the [glossary](../../../concepts/PP-terminology.md) for the meaning of these terms. See Table 2 for an example of the CSV-file.
 
 *Table 2: Source data for the import of Historical Prices.*
 ```
@@ -80,13 +79,13 @@ Two securities will be added to the portfolio; e.g. BASF and NVIDIA. The ISIN co
 
 Figure: Importing securities (Step 2).{class=pp-figure}
 
-![](./images/mnu-file-import-securities-step-2.png)
+![](../images/mnu-file-import-securities-step-2.png)
 
 The field `Currency` is not recognized by PP; in fact it should be named `Transaction Currency`. You should map it manually. In step 3 (below), you can observe that the status of both securities contains a green check mark, indicating that the import will be successful. Click Finish.
 
 Figure: Importing securities (Step 3).{class=pp-figure}
 
-![](./images/mnu-file-import-securities-step-3.png)
+![](../images/mnu-file-import-securities-step-3.png)
 
 The securities are now created and appear in the `All Securities list`. It does not make sense to add or change the cash or security account because there is no associated buy or sell transaction. The security is only created in the `All Securities` list. Please note that several other fields such as Calendar, Additional Attributes, and Taxonomies cannot be added through CSV-import. The Quote Feed for the Historical Prices could partially be added in the following step (see Figure 7).
 
@@ -94,7 +93,7 @@ After the securities are created, an additional step allows you to search for a 
 
 Figure: Importing securities (Step 4).{class=pp-figure}
 
-![](./images/mnu-file-import-securities-step-4.png)
+![](../images/mnu-file-import-securities-step-4.png)
 
 Only securities listed on XETRA (Deutsche Börse) and analyzed by the Portfolio Report are eligible for an automatic Quote Feed. The BASF security in Figure 7 meets these criteria and can therefore receive an automatic quote feed. However, the NVIDIA security is not listed on XETRA in USD, so automatic quotes should be obtained through another candidate provider e.g. Yahoo Finance.
 
@@ -114,7 +113,7 @@ If multiple currencies in the same Buy transaction are involved, then another ty
 
 Figure: Importing securities (Step 4).{class=pp-figure}
 
-![](./images/mnu-file-import-securities-account-step-2.png)
+![](../images/mnu-file-import-securities-account-step-2.png)
 
 
 ### 4. Account Transactions import
@@ -135,17 +134,17 @@ If the Cash and Securities account are not provided in the CSV file, the value f
 
 Figure: Importing account transactions - content CSV file{class=pp-figure}
 
-![](./images/mnu-file-import-account-transactions-csv-file.png)
+![](../images/mnu-file-import-account-transactions-csv-file.png)
 
 Figure 9 displays the content of a sample CSV file. Four transactions are described. Note that the Cash account of the first transaction is not provided. The default account from the top panel is taken in that case.
 
 Figure: Importing account transactions - content CSV file{class=pp-figure}
 
-![](./images/mnu-file-import-account-transactions-step-2.png)
+![](../images/mnu-file-import-account-transactions-step-2.png)
 
 Figure: Importing account transactions - content CSV file{class=pp-figure}
 
-![](./images/mnu-file-import-account-transactions-step-3.png)
+![](../images/mnu-file-import-account-transactions-step-3.png)
 
 #### Dividend transaction
 
@@ -175,7 +174,7 @@ In this instance, we are receiving a dividend payment for three shares, with a `
 
 Figure: Step 1 of the Import wizard: type dividends. {class=pp-figure}
 
-![](./images/mnu-file-import-portfolio-account-transactions-dividend-step-1.png)
+![](../images/mnu-file-import-portfolio-account-transactions-dividend-step-1.png)
 
 The necessity of the `Gross Amount` field is not apparent, particularly as it is not utilized in the subsequent section. However, the Portfolio Performance (PP) software verifies the values within this field, ensuring that the following calculation holds true: `Gross Amount` multiplied by the `Exchange Rate` equals the `Value`. If the numbers do not correspond, an error message will be displayed, preventing progression to the next step.
 
@@ -186,7 +185,7 @@ Upon importing the CSV file detailed above and selecting the `Account Transactio
 
 Figure: Result of import from above. {class=pp-figure}
 
-![](images/mnu-file-import-portfolio-account-transactions-dividend-result.png)
+![](../images/mnu-file-import-portfolio-account-transactions-dividend-result.png)
 
 
 ### 5. Portfolio Transactions import
@@ -216,12 +215,11 @@ Because the `(Net) Value` field is required, it makes no sense to add the `Gross
 
 Figure: Result of import from above. {class=pp-figure}
 
-![](images/mnu-file-import-portfolio-account-transactions-result.svg)
+![](../images/mnu-file-import-portfolio-account-transactions-result.svg)
 
 Figure 13 displays the first step of the Import wizard. Be sure that the type Portfolio Transactions is selected in step 1; otherwise an error will occur in step 2.  
 
 Figure: Result of import from above. {class=pp-figure}
 
-![](images/mnu-file-import-portfolio-transactions.png)
-
+![](../images/mnu-file-import-portfolio-transactions.png)
 

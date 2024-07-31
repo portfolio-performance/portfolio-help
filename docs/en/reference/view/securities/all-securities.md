@@ -138,7 +138,7 @@ Figure: Context menu of Historical Quotes in the information pane.{class=pp-figu
     
     - Search for suppliers of historical prices ...: displays the first step of the [File > New](../../file/new.md#file-❯-new) wizard.
     
-    - Import from CSV file ...: This command is equivalent with the [File > Import](../../file/import.md) menu. The CSV file must contain at least two columns.
+    - Import from CSV file ...: This command is equivalent with the [File > Import](../../file/import/csv-import.md) menu. The CSV file must contain at least two columns.
     
     <a name="import-html-table"></a>
 
