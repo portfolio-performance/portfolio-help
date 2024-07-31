@@ -1306,16 +1306,105 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../reference/file/import.md" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../reference/file/import/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Import
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3_3" id="__nav_3_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Import
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/file/import/csv-import/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSV-file
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/file/import/pdf-import/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PDF document
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3363,7 +3452,7 @@
 <p>In PP, importing historical prices from a CSV file is a straightforward process through the menu <a href="../../../reference/file/import/csv-import/#historical-quotes-import"><code>File &gt; Import &gt; CSV Files</code></a>. Naturally, you would require a file containing the relevant quotes for this operation.</p>
 <p>A csv file is a comma-separated values file, which is a text file that stores tabular data. Each row in the file represents a record, and each column represents a field. For example, a typical historical quotes CSV file will contain two columns (date and quote) and several rows, one for each date with its corresponding historical quote. A csv file can be opened and edited by spreadsheet software and easily imported into PP.</p>
 <p>Each website may have a distinct approach for downloading a CSV file of the historical data. Typically, you need to navigate to the desired security and locate the download link on that webpage. Many websites require (free) registration for downloading, Yahoo Finance being an exception.</p>
-<p>It's important to note that this method provides a snapshot of historical prices. To obtain the quotes of tomorrow, you should repeat the process. In practice, you need to combine this approach with one of the automatic quote download methods. Remember that you can <a href="../../../reference/file/images/mnu-file-import-reload-quotes.png">keep the existing historical quotes</a> in PP, even if you change the quote provider to automatic download.  For example, in both scenarios below, after importing the CSV file, you can set the Quote Feed Provider to the <a href="../table-website/">Table on Website</a> method for daily updates of historical prices.</p>
+<p>It's important to note that this method provides a snapshot of historical prices. To obtain the quotes of tomorrow, you should repeat the process. In practice, you need to combine this approach with one of the automatic quote download methods. Remember that you can <a href="../../../reference/file/import/images/mnu-file-import-reload-quotes.png">keep the existing historical quotes</a> in PP, even if you change the quote provider to automatic download.  For example, in both scenarios below, after importing the CSV file, you can set the Quote Feed Provider to the <a href="../table-website/">Table on Website</a> method for daily updates of historical prices.</p>
 <h2 id="yahoo-finance">Yahoo Finance</h2>
 <p>After navigating to <a href="https://finance.yahoo.com">Yahoo Finance</a>, you can enter the name "NVIDIA" in the Search box at the top of the screen (see Figure 1). Select the Historical Prices tab in the middle of the screen. From there, you can specify the Time Period and frequency before downloading a CSV file containing historical prices. Import this CSV file into Portfolio Performance using the menu <code>File &gt; Import &gt; CSV Files</code>, choosing the Historical Prices option and assign it to the correct security.</p>
 <p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Webpage from finance.yahoo.com to download the historical prices of NVIDIA.</figcaption><img alt="" src="../images/yahoo-finance-webpage.png"></figure></p>
