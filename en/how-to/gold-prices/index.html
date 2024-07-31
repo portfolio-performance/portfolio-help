@@ -1307,7 +1307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/file/import/" class="md-nav__link">
+      <a href="../../reference/file/import.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3386,7 +3386,7 @@
 <p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Ariva.de website (translated) with historical gold prices . </figcaption><img alt="" src="../images/gold-ariva.de-website.png"></figure></p>
 <p>You can also replace the Quote Feed URL by one of the previous months (e.g. <code>https://www.ariva.de/goldpreis_gold-kurs/kurse/historische-kurse?go=1&amp;boerse_id=172&amp;month=2024-02-29</code>). When importing the data, PP will ask if you want to keep the existing historical prices. By choosing to keep the previous data, you can maintain a continuous record of gold prices for all the months you have downloaded.</p>
 <p>But, perhaps the better method is to use a <a href="https://help.portfolio-performance.info/de/kursdaten_laden/#dynamische-kursdaten-urls">dynamic data URLs</a>. Replace the <code>month=2024-02-29</code> in the URL from above in the macro version <code>month={DATE:yyyy-MM-32}</code>. This macro will iterate through all previous months (going back to 2003) and send a request for each month until there is no data available. If you start from scratch, this process can take some time and will put a significant load on the ariva.de web server.</p>
-<p>Another option to obtain historical gold prices is to register for a free account. Then you can download the historical prices as a CSV file, which can be <a href="../../reference/file/import/#csv-files-comma-separated-values">imported</a> into Portfolio Performance (PP).</p>
+<p>Another option to obtain historical gold prices is to register for a free account. Then you can download the historical prices as a CSV file, which can be <a href="../../reference/file/import/csv-import/#csv-files-comma-separated-values">imported</a> into Portfolio Performance (PP).</p>
 <h2 id="london-bullion-market-association-lbma">London Bullion Market Association (LBMA)</h2>
 <p>The <a href="https://www.lbma.org.uk/prices-and-data/precious-metal-prices#/table">London Bullion Market</a> is the world's largest and most significant market for trading gold and silver. You can retrieve the prices for gold, silver, platinum and palladium per year, going back to 1968, in USD, GBP, and EUR. There are two auctions per day (AM and PM). The data can be displayed as a graph or table per year.</p>
 <p>Unfortunately, this table could not be parsed by PP (as it does not contain the necessary keywords such as <code>Close</code>). However, as User <a href="https://forum.portfolio-performance.info/t/wo-kann-ich-aktuelle-und-historische-gold-und-silberkurse-laden/14/49">ristretto</a> pointed out, you can retrieve the prices through the JSON <code>Quote Feed</code> (see <a href="../downloading-historical-prices/json/">How-to &gt; Downloading Historical Prices</a>). The <code>Feed URL</code> is <code>https://prices.lbma.org.uk/json/gold_pm.json</code> for the PM auction. The three prices under the "v" (value) key represent USD, GBP, and EUR, respectively. Please note that in 1968, there is no price available in EUR.</p>
@@ -3500,7 +3500,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 9, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 31, 2024</span>
   </span>
 
     
