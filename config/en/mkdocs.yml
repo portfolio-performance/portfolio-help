@@ -134,7 +134,10 @@ nav:
       - File Menu:
           - New: reference/file/new.md
           - Save: reference/file/save.md
-          - Import: reference/file/import.md
+          - Import:
+            - Import: reference/file/import/index.md
+            - CSV-file: reference/file/import/csv-import.md
+            - PDF document: reference/file/import/pdf-import.md
           - Export: reference/file/export.md
           - Currency: reference/file/currency.md
       - View Menu:

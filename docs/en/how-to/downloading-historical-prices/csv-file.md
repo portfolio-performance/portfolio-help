@@ -7,7 +7,7 @@ A csv file is a comma-separated values file, which is a text file that stores ta
 
 Each website may have a distinct approach for downloading a CSV file of the historical data. Typically, you need to navigate to the desired security and locate the download link on that webpage. Many websites require (free) registration for downloading, Yahoo Finance being an exception.
 
-It's important to note that this method provides a snapshot of historical prices. To obtain the quotes of tomorrow, you should repeat the process. In practice, you need to combine this approach with one of the automatic quote download methods. Remember that you can [keep the existing historical quotes](../../reference/file/images/mnu-file-import-reload-quotes.png) in PP, even if you change the quote provider to automatic download.  For example, in both scenarios below, after importing the CSV file, you can set the Quote Feed Provider to the [Table on Website](./table-website.md) method for daily updates of historical prices.
+It's important to note that this method provides a snapshot of historical prices. To obtain the quotes of tomorrow, you should repeat the process. In practice, you need to combine this approach with one of the automatic quote download methods. Remember that you can [keep the existing historical quotes](../../reference/file/import/images/mnu-file-import-reload-quotes.png) in PP, even if you change the quote provider to automatic download.  For example, in both scenarios below, after importing the CSV file, you can set the Quote Feed Provider to the [Table on Website](./table-website.md) method for daily updates of historical prices.
 
 ## Yahoo Finance
 
