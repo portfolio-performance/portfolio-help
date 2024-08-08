@@ -51,5 +51,5 @@ Leave all other information intact, especially amounts, dates, and security name
 6. **Wait for a reply** from the developer. When the importer is finished, it will be added to the next update of PP.
 
 <video width="100%"  controls>
-  <source src="../../../assets/videos/PP-request-importer.mp4" type="video/mp4">
+  <source src="../images/PP-request-importer.mp4" type="video/mp4">
 </video>
