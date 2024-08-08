@@ -26,7 +26,7 @@
     
     
       
-        <title>PDF document - Portfolio Performance Manual</title>
+        <title>Importing PDF documents - Portfolio Performance Manual</title>
       
     
     
@@ -81,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#checking-the-existence-of-the-importer" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -110,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PDF document
+              Importing PDF documents
             
           </span>
         </div>
@@ -1393,6 +1398,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PDF document
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1402,6 +1418,50 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#checking-the-existence-of-the-importer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking the Existence of the Importer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-a-pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importing a PDF
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requesting-a-new-importer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requesting a New Importer
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3349,6 +3409,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#checking-the-existence-of-the-importer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking the Existence of the Importer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-a-pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importing a PDF
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requesting-a-new-importer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requesting a New Importer
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3372,7 +3467,37 @@
 
   <h1>PDF document</h1>
 
-
+<p>Banks and brokers often provide transaction statements (buy, sell, dividend, etc.) for your convenience on paper or in PDF format. PP can read PDF documents from more than 90 banks and brokers and import the described transactions. The PDF in Figure 1 describes a (fictitious) buy transaction from an Australian broker. If you want to follow along with the example, you can <a href="../../../../assets/SelfwealthBuy01.pdf">download</a> the PDF document.</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Buy statement from SelfWealth of 25 pcs of Beta SP500 YieldMax. </figcaption><img alt="" src="../images/testPDF-buy.png"></figure></p>
+<h2 id="checking-the-existence-of-the-importer">Checking the Existence of the Importer</h2>
+<p>PP must "know" some details about the PDF document from your bank or broker. For example, the type of transaction in Figure 1 is identified by the title "Buy Confirmation," and the ticker symbol (UMAX) is indicated under the column header "Security Code." PP must recognise these details for each transaction to extract the necessary content from the PDF. Therefore, for each supported bank or broker, PP has developed a specific importer (parser) with knowledge of the different <a href="../../../transaction/">transaction types</a>. To develop these importers, PP relies on information provided by its users (see <a href="./#requesting-a-new-importer">Requesting a New Importer</a>).</p>
+<p>To verify if your bank or broker is supported, try to import a PDF document (see next section). The import wizard will either recognise it automatically or display an error message listing all the banks/brokers it has tried. You can also search the <a href="https://forum.portfolio-performance.info/c/english/">forum</a> using the term <code>PDF import</code> or <code>PDF import [name-of-your-bank-or-broker]</code> to see if an importer for your institution is available or if there are any issues with it. If the importer exists, you can move on to the next section. Otherwise, you need to first request a new importer (see <a href="./#requesting-a-new-importer">Requesting a New Importer</a>).</p>
+<h2 id="importing-a-pdf">Importing a PDF</h2>
+<p>Use the menu File &gt; Import &gt; Import PDF Bank Documents or the shortcut key CTRL+I, P, and navigate to the PDF document on your local system. You can select more than one PDF document. If a document is recognised by PP (i.e., an importer exists for the bank or broker of this document), an Import Transaction dialog box, such as in Figure 2, is displayed.</p>
+<p>In this particular case, there is a small problem and the import operation could not be fully executed. The error message at the bottom provides an indication: the cash account <code>Call Money Account</code> from the demo Kommer portfolio is used for the cash handling of the transaction, but this deposit account is in EUR while the transaction currency is AUD. Selecting (or creating) an AUD deposit account will fix the problem. Please note that in Figure 2, two operations are scheduled: (1) the buy transaction, and (2) the creation of the security <code>Beta S&amp;P500 Yieldmax</code>. If this security already exists in the portfolio, then the import wizard will use the existing security.</p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Imported transaction from PDF of Figure 1. </figcaption><img alt="" src="../images/testPDF-buy-import.png"></figure></p>
+<p><figure class="align-right" style="width:60%" id="_figure-3"><figcaption>Figure 3.  Search for suppliers of historical prices (example available at Portfolio Report). </figcaption><img alt="" src="../images/testPDF-buy-create-security.png"></figure></p>
+<p>In the case of a new security, a <code>Search for suppliers of historical prices</code> box is displayed. If the security is listed on <a href="../../../../how-to/downloading-historical-prices/portfolioreport/">Portfolio Report</a>, then the historical prices could be automatically added. Otherwise, the security is created, but you will need to manually edit the data source to <a href="../../../../how-to/downloading-historical-prices/">download the historical prices</a>.</p>
+<p><br style="clear:both;"></p>
+<h2 id="requesting-a-new-importer">Requesting a New Importer</h2>
+<p>If PP doesn't have a PDF importer for your bank/broker or for the specific type of transaction you need, you can request the development of this importer. Since PP developers don't have access to every bank or broker, you — as a user — must provide some sample PDF documents with real but anonymised examples of transactions with that specific bank or broker. The following text describes all the necessary steps:</p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Extracted text from testPDF. </figcaption><img alt="" src="../images/pdf-import-extract-text.png"></figure></p>
+<ol>
+<li><strong>Collect the PDFs</strong> of each transaction that you would like to import into your PP portfolio. Probably, you should provide an example of a buy, sell, and dividend transaction. Don't use PDFs that are converted to PDF from a browser or self-scanned paper notes but only the original documents from the bank or broker.</li>
+<li><strong>Convert these PDFs to text documents, one by one.</strong> Use the parser from PP, which can be found at <code>File &gt; Import &gt; Debug: Extract Text from PDF</code>.</li>
+<li>
+<p><strong>Replace (anonymise) personal information</strong> in the extracted text, such as your name, address, and account number. You can do this by double-clicking on a word (e.g., your name) in the text. The text will be selected and replaced with random characters. 
+Leave all other information intact, especially amounts, dates, and security names. The following strings cannot be anonymised automatically: currencies (EUR, etc.), ISIN, and text groups containing the following characters: hyphen(-), period(.), comma(,), colon(:), apostrophe('), and slash(/). Do not delete or add anything manually.</p>
+</li>
+<li>
+<p><strong>Copy the extracted and anonymised text</strong> to the clipboard or save the file. You will need it later in the request form.</p>
+</li>
+<li>If there isn't already an importer for your needs, <strong>create a new thread</strong> in the <a href="https://forum.portfolio-performance.info/c/english/16">forum</a> with the name <code>PDF Import from [your bank or broker]</code>. Otherwise, post a reply in an existing thread. Add the extracted text for all transactions, one by one. Ensure that these text fragments are within <code>triple quotes</code>, so that it is formatted as code. If your transaction is in a foreign language, please provide some guidance about the translation of the used terms.</li>
+<li><strong>Wait for a reply</strong> from the developer. When the importer is finished, it will be added to the next update of PP.</li>
+</ol>
+<video width="100%" controls>
+  <source src="../../../assets/videos/PP-request-importer.mp4" type="video/mp4">
+</source></video>
 
 
 
@@ -3393,7 +3518,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 31, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 8, 2024</span>
   </span>
 
     
