@@ -16,7 +16,7 @@ To verify if your bank or broker is supported, try to import a PDF document (see
 
 ## Importing a PDF
 
-Use the menu File > Import > Import PDF Bank Documents or the shortcut key CTRL+I, P, and navigate to the PDF document on your local system. You can select more than one PDF document. If a document is recognised by PP (i.e., an importer exists for the bank or broker of this document), an Import Transaction dialog box, such as in Figure 2, is displayed.
+Use the menu `File > Import > Import PDF Bank Documents` or the shortcut key `CTRL+I, P`, and navigate to the PDF document on your local system. You can select *more than one* PDF document. If a document is recognised by PP (i.e., an importer exists for the bank or broker of this document), an `Import Transaction` dialog box, such as in Figure 2, is displayed.
 
 In this particular case, there is a small problem and the import operation could not be fully executed. The error message at the bottom provides an indication: the cash account `Call Money Account` from the demo Kommer portfolio is used for the cash handling of the transaction, but this deposit account is in EUR while the transaction currency is AUD. Selecting (or creating) an AUD deposit account will fix the problem. Please note that in Figure 2, two operations are scheduled: (1) the buy transaction, and (2) the creation of the security `Beta S&P500 Yieldmax`. If this security already exists in the portfolio, then the import wizard will use the existing security.
 
@@ -29,7 +29,7 @@ Figure: Search for suppliers of historical prices (example available at Portfoli
 
 ![](images/testPDF-buy-create-security.png)
 
-In the case of a new security, a `Search for suppliers of historical prices` box is displayed. If the security is listed on [Portfolio Report](../../../how-to/downloading-historical-prices/portfolioreport.md), then the historical prices could be automatically added. Otherwise, the security is created, but you will need to manually edit the data source to [download the historical prices](../../../how-to/downloading-historical-prices/index.md).
+In case of a new security, a `Search for suppliers of historical prices` box is displayed. If the security is listed on [Portfolio Report](../../../how-to/downloading-historical-prices/portfolioreport.md), then the historical prices could be automatically added. Otherwise, the security is created, but you will need to manually edit the data source to [download the historical prices](../../../how-to/downloading-historical-prices/index.md).
 
 <br style="clear:both;">
 
@@ -41,9 +41,9 @@ Figure: Extracted text from testPDF. {class=pp-figure}
 
 ![](images/pdf-import-extract-text.png)
 
-1. **Collect the PDFs** of each transaction that you would like to import into your PP portfolio. Probably, you should provide an example of a buy, sell, and dividend transaction. Don't use PDFs that are converted to PDF from a browser or self-scanned paper notes but only the original documents from the bank or broker.
+1. **Collect the PDF** of each transaction that you would like to import into your PP portfolio. Probably, you should provide an example of a buy, sell, and dividend transaction. Don't use PDFs that are converted to PDF from a browser or self-scanned paper notes but only the original documents from the bank or broker.
 2. **Convert these PDFs to text documents, one by one.** Use the parser from PP, which can be found at `File > Import > Debug: Extract Text from PDF`.
-3. **Replace (anonymise) personal information** in the extracted text, such as your name, address, and account number. You can do this by double-clicking on a word (e.g., your name) in the text. The text will be selected and replaced with random characters. 
+3. **Replace (anonymise) personal information** in the extracted text, such as your name, address, and account number. You can do this by double-clicking on a word, e.g., your name. The text will be selected and replaced with random characters. Personal info can occur at multiple places within the document. 
 Leave all other information intact, especially amounts, dates, and security names. The following strings cannot be anonymised automatically: currencies (EUR, etc.), ISIN, and text groups containing the following characters: hyphen(-), period(.), comma(,), colon(:), apostrophe('), and slash(/). Do not delete or add anything manually.
      
 4. **Copy the extracted and anonymised text** to the clipboard or save the file. You will need it later in the request form.
