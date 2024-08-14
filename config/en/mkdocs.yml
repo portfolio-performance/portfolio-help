@@ -188,6 +188,7 @@ nav:
   - How-to:
       - How-to: how-to/index.md
       - User Interface: how-to/user-interface.md
+      - Requesting a new PDF Importer: how-to/requesting-new-importer.md
       - Downloading historical prices:
           - Downloading historical prices:  how-to/downloading-historical-prices/index.md
           - Alpha Vantage: how-to/downloading-historical-prices/alpha-vantage.md
