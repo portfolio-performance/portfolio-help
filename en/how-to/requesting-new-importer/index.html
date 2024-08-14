@@ -12,13 +12,13 @@
         <meta name="author" content="Andreas Buchen, et. al.">
       
       
-        <link rel="canonical" href="https://help.portfolio-performance.info/en/how-to/quote-feed/">
+        <link rel="canonical" href="https://help.portfolio-performance.info/en/how-to/requesting-new-importer/">
       
       
-        <link rel="prev" href="../morningstar/">
+        <link rel="prev" href="../user-interface/">
       
       
-        <link rel="next" href="../copy-securities/">
+        <link rel="next" href="../downloading-historical-prices/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Hack data file to add default Quote Feed - Portfolio Performance Manual</title>
+        <title>Requesting a new PDF Importer - Portfolio Performance Manual</title>
       
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Hack data file to add default Quote Feed
+              Requesting a new PDF Importer
             
           </span>
         </div>
@@ -2846,10 +2846,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../requesting-new-importer/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -2858,6 +2865,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -3134,17 +3142,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../quote-feed/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3153,7 +3154,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -3385,7 +3385,7 @@
                   
 
   
-    <a href="https://github.com/portfolio-performance/portfolio-help/tree/master/docs/en/how-to/quote-feed.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/portfolio-performance/portfolio-help/tree/master/docs/en/how-to/requesting-new-importer.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -3393,37 +3393,34 @@
   
 
 
-  <h1>Hack data file to add default Quote Feed</h1>
+  <h1>Requesting a new PDF Importer</h1>
 
-<p>Adding securities through the GUI adds a Quote Feed but this is not supported by csv imports. You can hack the XML file directly with a text editor using a replace to add the Quote Feed.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This is totally not supported and can break your data file so backup your data file and test the changes.</p>
-</div>
-<p>When the data file is updated it will look similar to the following with a YAHOO feed:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">client</span><span class="p">&gt;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  <span class="p">&lt;</span><span class="nt">version</span><span class="p">&gt;</span>51<span class="p">&lt;/</span><span class="nt">version</span><span class="p">&gt;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  <span class="p">&lt;</span><span class="nt">baseCurrency</span><span class="p">&gt;</span>AUD<span class="p">&lt;/</span><span class="nt">baseCurrency</span><span class="p">&gt;</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  <span class="p">&lt;</span><span class="nt">securities</span><span class="p">&gt;</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">&lt;</span><span class="nt">security</span><span class="p">&gt;</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>      <span class="p">&lt;</span><span class="nt">uuid</span><span class="p">&gt;</span>831d8a3e-7025-4b0f-b6ca-3ef5bf727eb4<span class="p">&lt;/</span><span class="nt">uuid</span><span class="p">&gt;</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>      <span class="p">&lt;</span><span class="nt">name</span><span class="p">&gt;</span>REA Group Ltd<span class="p">&lt;/</span><span class="nt">name</span><span class="p">&gt;</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>      <span class="p">&lt;</span><span class="nt">currencyCode</span><span class="p">&gt;</span>AUD<span class="p">&lt;/</span><span class="nt">currencyCode</span><span class="p">&gt;</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>      <span class="p">&lt;</span><span class="nt">tickerSymbol</span><span class="p">&gt;</span>REA.AX<span class="p">&lt;/</span><span class="nt">tickerSymbol</span><span class="p">&gt;</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>      <span class="p">&lt;</span><span class="nt">feed</span><span class="p">&gt;</span>YAHOO<span class="p">&lt;/</span><span class="nt">feed</span><span class="p">&gt;</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>      <span class="p">&lt;</span><span class="nt">prices</span><span class="p">&gt;</span>
-</code></pre></div>
-<p>Use the text editor to search and replace:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;/</span><span class="nt">tickerSymbol</span><span class="p">&gt;</span> 
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>     <span class="p">&lt;</span><span class="nt">prices</span><span class="p">&gt;</span>
-</code></pre></div>
-<p>with</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;/</span><span class="nt">tickerSymbol</span><span class="p">&gt;</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>      <span class="p">&lt;</span><span class="nt">feed</span><span class="p">&gt;</span>YAHOO<span class="p">&lt;/</span><span class="nt">feed</span><span class="p">&gt;</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>      <span class="p">&lt;</span><span class="nt">prices</span><span class="p">&gt;</span>
-</code></pre></div>
-<p>Any text editor that will work with end of line characters will work. For example, the image below shows the <a href="https://notepad-plus-plus.org/">np++</a> Extended interface which uses a \n as new-line and the groups of 4 spaces are important:</p>
-<p><figure id="_figure-1"><figcaption>Figure 1.  Example of np++ replace to add the Quote Feed</figcaption><img alt="Example of np++ replace to add the Quote Feed" class="pp-figure" src="../images/quote-feed.png"></figure></p>
+<p>If PP doesn't have a PDF importer for your bank or broker, or for the specific type of transaction you need, you can request the development of this importer. Since PP developers don't have access to every bank or broker, you — as a user — must provide some sample PDF documents with <strong>real</strong> but <strong>anonymised</strong> examples of transactions with that specific bank or broker. The following text outlines all the necessary steps. You can also watch the <a href="./#video-request-importer">accompanying video</a> at the bottom.</p>
+<ol>
+<li>
+<p><strong>Collect a PDF document</strong> of each transaction that you would like to import into your PP portfolio. Probably, you should provide an example of a buy, sell, and dividend transaction. Don't use PDFs that are converted to PDF from a browser or self-scanned paper notes but only the original documents from the bank or broker.</p>
+</li>
+<li>
+<p><strong>Convert these PDFs to text documents, one by one.</strong> Use the parser from PP, which can be found at <code>File &gt; Import &gt; Debug: Extract Text from PDF</code> (see Figure 1).</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Menu File &gt; Import.</figcaption><img alt="" src="../../reference/file/import/images/mnu-file-import.png"></figure></p>
+<p>You can use <a href="../../en/assets/PDF-Debug%20Testfile%20-%20Selfwealth-buy.pdf">this sample (fictitious) PDF document</a> for testing. The extracted text will appear in the textbox below the instructions (see Figure 2). </p>
+</li>
+<li>
+<p><strong>Replace (anonymise) personal information</strong> in the extracted text, such as your name, address, and account number. You can do this by double-clicking on a word, e.g., your name. The text will be selected and replaced with random characters.</p>
+<p>Personal info can occur at multiple places within the document. </p>
+<p>Leave all other information intact, especially amounts, dates, and security names. The following strings cannot be anonymised automatically: currencies (EUR, etc.), ISIN, and text groups containing the following characters: hyphen(-), period(.), comma(,), colon(:), apostrophe('), and slash(/). Do not delete or add anything manually.</p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Extracted text from testPDF. </figcaption><img alt="" src="../images/pdf-import-extract-text.png"></figure></p>
+</li>
+<li>
+<p><strong>Copy the extracted and anonymised text</strong> to the clipboard or save the file. You will need it later in the request form of the PP forum.</p>
+</li>
+<li>If there isn't already an importer for your needs, <strong>create a new thread</strong> in the <a href="https://forum.portfolio-performance.info/c/english/16">forum</a> with the name <code>PDF Import from [your bank or broker]</code>. Otherwise, post a reply in an existing thread, for example <a href="https://forum.portfolio-performance.info/t/pdf-import-from-selfwealth/17399">PDF import from SelfWealth</a>. Add the extracted text for all transactions, one by one. Ensure that these text fragments are within <code>triple quotes</code>, so that it is formatted as code. If your transaction is in a foreign language, please provide some guidance about the translation of the used terms.</li>
+<li><strong>Wait for a reply</strong> from the developer. When the importer is finished, it will be added to the next update of PP.</li>
+</ol>
+<p><a name="video-request-importer"></a></p>
+<video width="100%" controls>
+  <source src="../../assets/videos/request-importer/PP-request-importer.mp4" type="video/mp4">
+</source></video>
 
 
 
@@ -3444,7 +3441,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 3, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 14, 2024</span>
   </span>
 
     

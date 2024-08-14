@@ -2844,6 +2844,8 @@
       
         
       
+        
+      
     
     
       
@@ -2914,6 +2916,27 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../../how-to/requesting-new-importer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requesting a new PDF Importer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -2947,7 +2970,7 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
         
           
           
@@ -2963,14 +2986,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
             <span class="md-nav__icon md-icon"></span>
             Downloading historical prices
           </label>
@@ -3480,24 +3503,7 @@
 <p>In case of a new security, a <code>Search for suppliers of historical prices</code> box is displayed. If the security is listed on <a href="../../../../how-to/downloading-historical-prices/portfolioreport/">Portfolio Report</a>, then the historical prices could be automatically added. Otherwise, the security is created, but you will need to manually edit the data source to <a href="../../../../how-to/downloading-historical-prices/">download the historical prices</a>.</p>
 <p><br style="clear:both;"></p>
 <h2 id="requesting-a-new-importer">Requesting a New Importer</h2>
-<p>If PP doesn't have a PDF importer for your bank/broker or for the specific type of transaction you need, you can request the development of this importer. Since PP developers don't have access to every bank or broker, you — as a user — must provide some sample PDF documents with real but anonymised examples of transactions with that specific bank or broker. The following text describes all the necessary steps:</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Extracted text from testPDF. </figcaption><img alt="" src="../images/pdf-import-extract-text.png"></figure></p>
-<ol>
-<li><strong>Collect the PDF</strong> of each transaction that you would like to import into your PP portfolio. Probably, you should provide an example of a buy, sell, and dividend transaction. Don't use PDFs that are converted to PDF from a browser or self-scanned paper notes but only the original documents from the bank or broker.</li>
-<li><strong>Convert these PDFs to text documents, one by one.</strong> Use the parser from PP, which can be found at <code>File &gt; Import &gt; Debug: Extract Text from PDF</code>.</li>
-<li>
-<p><strong>Replace (anonymise) personal information</strong> in the extracted text, such as your name, address, and account number. You can do this by double-clicking on a word, e.g., your name. The text will be selected and replaced with random characters. Personal info can occur at multiple places within the document. 
-Leave all other information intact, especially amounts, dates, and security names. The following strings cannot be anonymised automatically: currencies (EUR, etc.), ISIN, and text groups containing the following characters: hyphen(-), period(.), comma(,), colon(:), apostrophe('), and slash(/). Do not delete or add anything manually.</p>
-</li>
-<li>
-<p><strong>Copy the extracted and anonymised text</strong> to the clipboard or save the file. You will need it later in the request form.</p>
-</li>
-<li>If there isn't already an importer for your needs, <strong>create a new thread</strong> in the <a href="https://forum.portfolio-performance.info/c/english/16">forum</a> with the name <code>PDF Import from [your bank or broker]</code>. Otherwise, post a reply in an existing thread. Add the extracted text for all transactions, one by one. Ensure that these text fragments are within <code>triple quotes</code>, so that it is formatted as code. If your transaction is in a foreign language, please provide some guidance about the translation of the used terms.</li>
-<li><strong>Wait for a reply</strong> from the developer. When the importer is finished, it will be added to the next update of PP.</li>
-</ol>
-<video width="100%" controls>
-  <source src="../images/PP-request-importer.mp4" type="video/mp4">
-</source></video>
+<p>If PP doesn't have a PDF importer for your bank/broker or for the specific type of transaction you need, you can request the development of this importer. More info can be found at <a href="../../../../how-to/requesting-new-importer/">How-to &gt; Requesting a new PDF Importer</a>.</p>
 
 
 
@@ -3518,7 +3524,7 @@ Leave all other information intact, especially amounts, dates, and security name
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 13, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 14, 2024</span>
   </span>
 
     
