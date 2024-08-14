@@ -1,8 +1,8 @@
 ---
-title: Requesting a new PDF Importer
+title: Troubleshooting / Request for a new PDF importer
 ---
 
-If PP doesn't have a PDF importer for your bank or broker, or for the specific type of transaction you need, you can request the development of this importer. Since PP developers don't have access to every bank or broker, you — as a user — must provide some sample PDF documents with **real** but **anonymised** examples of transactions with that specific bank or broker. The following text outlines all the necessary steps. You can also watch the [accompanying video](./requesting-new-importer.md#video-request-importer) at the bottom.
+If Portfolio Performance doesn't have a PDF importer for your bank or broker, or for the specific type of transaction you need, you can request the development of this importer. Since Portfolio Performance developers don't have access to every bank or broker, you — as a user — must provide some sample PDF documents with **real** but **anonymised** examples of transactions with that specific bank or broker. The following text outlines all the necessary steps. You can also watch the [accompanying video](./requesting-new-importer.md#video-request-importer) at the bottom.
 
 1. **Collect a PDF document** of each transaction that you would like to import into your PP portfolio. Probably, you should provide an example of a buy, sell, and dividend transaction. Don't use PDFs that are converted to PDF from a browser or self-scanned paper notes but only the original documents from the bank or broker.
 
