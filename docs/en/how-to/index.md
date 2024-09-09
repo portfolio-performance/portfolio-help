@@ -1,18 +1,29 @@
 ---
 title: How-to
 ---
+The *how-to* section demonstrates the features and functions of the *Portfolio Performance* program in a real-world context. Check the sidebar (or click the <span style="color:red">:material-menu:</span> menu if it is collapsed) to view all topics. A brief summary of each topic, listed in alphabetical order, is provided below.
 
+- [Benchmarking your portfolio](./benchmarking.md): Benchmarking involves comparing your portfolio's performance against financial indexes like the *S&P 500*. This section explains how to find and add indexes from sources like Yahoo Finance and investing.com. It also covers displaying benchmarks in performance charts and comparing your portfolio's performance to these benchmarks.
 
-Figure: Documentation framework.{class="align-right" style="width:50%"}
+- [Copy securities between portfolios](./copy-securities.md): This page explains how to transfer securities between different portfolios in the Portfolio Performance software. It covers methods like *Drag & Drop*, *Exporting & Importing*, and *Copy and Paste* (with intermediate CSV-file). The page also discusses the complexities of copying between XML files.
 
-![](../images/documentation-framework.svg)
+- [Downloading Historical Prices](./downloading-historical-prices/index.md) provides various methods and sources for obtaining historical stock prices. Most securities are covered by [Portfolio Report](downloading-historical-prices/portfolioreport.md) or [Yahoo Finance](downloading-historical-prices/yahoo-finance.md). In some cases, more sophisticated methods may be required, such as downloading from a [CSV File](downloading-historical-prices/csv-file.md), utilizing a [JSON Quote Feed Provider](downloading-historical-prices/json.md) to fetch data, or scraping a [table on a website](downloading-historical-prices/table-website.md). There are many other sources such as  [Alpha Vantage](downloading-historical-prices/alpha-vantage.md), [EODHD](downloading-historical-prices/eodhd.md), and [Morningstar ](downloading-historical-prices/morningstar.md).
 
-The how-to section covers topics such as [importing stock data](../reference/file/import/csv-import.md), [reinvesting dividends](./handling-choice-dividend.md), recording [stock splits](./recording-stock-split.md) and [spin-offs](./recording-spin-off.md), [downloading historical data](./downloading-historical-prices/index.md) from various sources, and many more. Check the sidebar or click the <span style="color:red">:material-menu:</span> menu to view all topics.
+- [Handling Choice Dividends](handling-choice-dividend.md) focuses on choice dividends where shareholders can choose between cash or stock payments. It includes practical methods for booking these transactions in Portfolio Performance.
 
-This how-to section is designed to help you use all features and functions of the *Portfolio Performance* program in a real working context.  Unlike the "Getting-started" section, which is more general and uses simplified examples, the how-to section shows you how to handle the program in a real environment with real data.
+- [Import GBX Priced Securities](import-gbx.md) is a short guide for importing transactions and securities priced in GBX (pence). It emphasizes creating securities with the correct currency and preparing transaction data for import as CSV files.
 
-The how-to section is not a substitute for the tutorials, which provide a more comprehensive and pedagogical introduction to the program. Nor is it a substitute for the basic concepts and the reference manual sections, which explain the theoretical foundations and the technical details of the program. The how-to section is meant to complement these other sections by providing practical guidance and tips for using the program effectively.
+- [Inspecting Source Code](inspect-source-code.md) provides instructions on examining the Portfolio Performance source code on GitHub to understand calculation methods, such as the volatility indicator.
 
+- Recording a [Merger](recording-merger.md), [Spin-Off](recording-spin-off.md), or [Stock Split](recording-stock-split.md) is quite common in portfolio management. These pages discuss various methods, applied to some real examples such as the Amazon stock split, the Daimler Truck Holding AG spin-off, and the Unipol Gruppo's merger. The section about [Insolvency](insolvency.md) explains how to handle securities of insolvent companies, including disabling automatic quote updates, deleting historical prices, and manually adjusting security values.
 
-We have added also some tips and tricks, with many of them initially discussed on the [PP forum](https://forum.portfolio-performance.info). It's worth noting that a significant portion of the information on the forum is in German, but you can utilize your browser's Translate function to comprehend it in your preferred language.
+- Importing PDF-bank notes can be a significant time-saver. [Requesting a New PDF Importer](requesting-new-importer.md) provides guidance for specific bank or broker transactions, including how to extract and anonymize PDF text, submit requests on the PP forum, and wait for developer integration.
+
+- [Retrieving gold and other precious metals prices](./gold-prices.md): This page discusses various methods to invest in gold, including physical gold, ETFs, and shares of gold mining companies. It explains how to download historical gold prices from websites like Ariva.de, LBMA, and Gold.org.
+
+- [User Interface Overview](user-interface.md)
+Describes the elements of the PP user interface, such as the menu bar, sidebar, dual-pane layouts, tables within the main pane, and keyboard shortcuts for essential functions.
+
+Most tips and tricks are initially discussed on the [PP forum](https://forum.portfolio-performance.info). Regularly checking this forum will provide you with valuable insights into the PP program. It's worth noting that a significant portion of the information on the forum is in German, but you can use your browser's translation function to understand it in your preferred language.
+
 

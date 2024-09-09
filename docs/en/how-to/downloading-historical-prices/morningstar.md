@@ -36,6 +36,6 @@ Path to Date = $.TimeSeries.Security[*].HistoryDetail[*].EndDate
 Path to Close = $.TimeSeries.Security[*].HistoryDetail[*].Value
 ```
 
-![Example of JSON provider for historical quotes](images/morningstar.png){.pp-figure}
+![Example of JSON provider for historical quotes](../images/morningstar.png){.pp-figure}
 
 Always worth double-checking the displayed values against the Morningstar chart.

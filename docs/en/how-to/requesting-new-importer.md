@@ -12,7 +12,7 @@ If Portfolio Performance doesn't have a PDF importer for your bank or broker, or
 
     ![](../reference/file/import/images/mnu-file-import.png)
 
-    You can use [this sample (fictitious) PDF document](../../en/assets/PDF-Debug%20Testfile%20-%20Selfwealth-buy.pdf) for testing. The extracted text will appear in the textbox below the instructions (see Figure 2). 
+    You can use [this sample (fictitious) PDF document](../assets/SelfwealthBuy01.pdf) for testing. The extracted text will appear in the textbox below the instructions (see Figure 2).
 
 3. **Replace (anonymise) personal information** in the extracted text, such as your name, address, and account number. You can do this by double-clicking on a word, e.g., your name. The text will be selected and replaced with random characters.
 

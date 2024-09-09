@@ -187,8 +187,8 @@ nav:
           - Trouble-shooting: reference/help/trouble-shooting.md
   - How-to:
       - How-to: how-to/index.md
-      - User Interface: how-to/user-interface.md
-      - Troubleshooting / Request for a new PDF importer: how-to/requesting-new-importer.md
+      - Benchmarking your portfolio: how-to/benchmarking.md
+      - Copy securities between portfolios: how-to/copy-securities.md
       - Downloading historical prices:
           - Downloading historical prices:  how-to/downloading-historical-prices/index.md
           - Alpha Vantage: how-to/downloading-historical-prices/alpha-vantage.md
@@ -198,17 +198,16 @@ nav:
           - CSV File: how-to/downloading-historical-prices/csv-file.md
           - JSON: how-to/downloading-historical-prices/json.md
           - Table on Website: how-to/downloading-historical-prices/table-website.md
-      #- Importing CSV-files: how-to/importing.md
+          - Import fund data from Morningstar: how-to/downloading-historical-prices/morningstar.md
       - Handling a choice dividend: how-to/handling-choice-dividend.md
-      - Import fund data from Morningstar: how-to/morningstar.md
-      - Hack data file to add default Quote Feed: how-to/quote-feed.md
-      - Copy securities between portfolios: how-to/copy-securities.md
-      - Recording a spin-off operation: how-to/recording-spin-off.md
-      - Recording a stock split operation: how-to/recording-stock-split.md
-      - Insolvency: how-to/insolvency.md
-      - Retrieving gold prices: how-to/gold-prices.md
-      - Benchmarking your portfolio: how-to/benchmarking.md
       - Importing GBX priced securities: how-to/import-gbx.md
       - Inspecting the source code: how-to/inspect-source-code.md
+      - Recording a spin-off operation: how-to/recording-spin-off.md
+      - Recording a stock split operation: how-to/recording-stock-split.md
+      - Recording a merger: how-to/recording-merger.md
+      - Recording insolvency: how-to/insolvency.md
+      - Request for a new PDF importer: how-to/requesting-new-importer.md
+      - Retrieving gold prices: how-to/gold-prices.md
+      - User Interface: how-to/user-interface.md
   - About: about.md
 

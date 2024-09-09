@@ -66,7 +66,7 @@ At the bottom of Figure 3, you can add a personal `note` for this security.
 
 - ### **Historical Quotes**
 
-    For evaluating your portfolio, you need the current & historical prices of the security. In this panel (see Figure 4) you can set the data source of the `Quote Feed`. As `Provider`, you can choose between several alternatives: Yahoo Finance, Alpha Vantage, Quandl, ... (see Figure 5). You can even refer to a webpage (e.g. from an investor site) that contains these historical data; an example is given in [Import fund data from Morningstar](../../how-to/morningstar.md). Or you can create them yourself and import the quotes from a csv-file. 
+    For evaluating your portfolio, you need the current & historical prices of the security. In this panel (see Figure 4) you can set the data source of the `Quote Feed`. As `Provider`, you can choose between several alternatives: Yahoo Finance, Alpha Vantage, Quandl, ... (see Figure 5). You can even refer to a webpage (e.g. from an investor site) that contains these historical data; an example is given in [Import fund data from Morningstar](../../how-to/downloading-historical-prices/morningstar.md). Or you can create them yourself and import the quotes from a csv-file. 
     
     Figure: Historical quotes panel.{class=pp-figure}
 
