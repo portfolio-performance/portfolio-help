@@ -14,7 +14,7 @@ If you have some special requirements, you can also use the JSON Quote Feed Prov
 
 `https://eodhd.com/api/eod/AAPL?from=2000-01-01&to=2000-01-31&period=d&api_token=demo&fmt=json`
 
-*Path to Date* = `$.[*].date` and *Path to Close* = $.[*].close
+*Path to Date* = `$[*].date` and *Path to Close* = $[*].close
 
 Entering the URL in a browser will display the following (abbreviated) JSON.
 ```
@@ -49,4 +49,4 @@ Entering the URL in a browser will display the following (abbreviated) JSON.
 ]
 ```
 
-This is an array of objects; accessed from the root with `$.[*]`. The JSON path to the date is formed by `$.[*].date` and to the closing price with `$.[*].close`.
+This is an array of objects; accessed from the root with `$[*]`. The JSON path to the date is formed by `$[*].date` and to the closing price with `$[*].close`.

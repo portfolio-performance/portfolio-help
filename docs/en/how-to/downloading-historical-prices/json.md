@@ -50,11 +50,11 @@ Figure: Server response from JSON Quote Feed Provider (EODHD). {class=pp-figure}
 
 
 - Feed URL: `https://eodhd.com/api/eod/AAPL?from=2024-01-15&to=2024-01-17&period=d&api_token=demo&fmt=json`
-- Path to Date: `$.[*].date`
-- Path to Close: `$.[*].close`
-- Path to Day's Low: `$.[*].low`
-- Path to Day's High: `$.[*].high`
-- Path to Volume: `$.[*].volume`
+- Path to Date: `$[*].date`
+- Path to Close: `$[*].close`
+- Path to Day's Low: `$[*].low`
+- Path to Day's High: `$[*].high`
+- Path to Volume: `$[*].volume`
 
 
 Let's try a more complicated example. The following endpoint URL enables the retrieval of NVIDIA's two most recent daily quotes from Yahoo Finance (click the following link to see the result).
