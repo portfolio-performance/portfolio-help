@@ -10,7 +10,7 @@ If Portfolio Performance doesn't have a PDF importer for your bank or broker, or
 
     Figure: Menu File > Import.{class=pp-figure}
 
-    ![](../reference/file/import/images/mnu-file-import.png)
+    ![](./images/mnuFile-import-debug.png)
 
     You can use [this sample (fictitious) PDF document](../assets/SelfwealthBuy01.pdf) for testing. The extracted text will appear in the textbox below the instructions (see Figure 2).
 
