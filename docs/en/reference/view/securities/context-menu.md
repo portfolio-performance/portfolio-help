@@ -6,7 +6,15 @@ Figure: Context menu of a selected security.{class=align-right style="width:30%"
 
 ![](images/mnu-context.png)
 
-The context menu of a security contains several additional options that are not available within the `view menu`. You can access the context menu by selecting a security or a security view (e.g., securities account) and right-clicking. A pop-up, as shown in Figure 1, will be displayed.
+The context menu of a security contains several additional options that are not available within the `view menu`. You can access the context menu by selecting a security or a security view (e.g., securities account) and right-clicking. A pop-up, as shown in Figure 1, will be displayed. The menu items Buy, Sell, Dividend, Tax Refund, Delivery (Inbound & Outbound) are already available in the [Transaction menu](../../transaction/index.md). Other items such as Events could be accessed in other views.
+
+## Documented elsewere
+
+Several menu items do also appear in other menu's or views and are already documented in other sections of the documentation.
+- Buy, Sell, Dividend, Tax Refund, Delivery (Inbound), Delivery (Outbound) appear and are documented in the [Transaction menu](../../transaction/index.md).
+- The Transfer item appear under the slightly different label `Security transfer ...`, also in the the [Transaction menu](../../transaction/index.md).
+- New Plan ... is covered in the sidebar menu Accounts > Investment plans and is documented in [ Reference > View > Accounts > Investment Plans](../../view/accounts/investment-plans.md).
+
 
 ## Stock split ...
 
@@ -53,6 +61,32 @@ Figure: Result of Split stock wizard (Amazon). {class=pp-figure}
 ![](images/split-stock-amazon-adjusted-PP.png)
 
 Please note the difference between this chart and Figure 2. The rise in 2023 and 2024 is clearly visible, with prices before June 6, 2022 aligning with the adjusted prices. For example, the Buy transaction on January 3, 2022, of one share at approximately 3,400 USD is now shown as a Buy transaction of 20 shares at around 170 USD each.
+
+## Event
+
+An event is a kind of note that could be attached to a specific security on a particular date. They can be displayed on the historical price chart of that security. They are automatically inserted to mark occurences of stock split or dividend announcements, but can also be used for important stock news.
+
+Events are generated automatically upon a stock split operation or a dividend announcement. Additionally, you can create your own custom event notes via the context menu of a security (see Figure 1) or the context menu in the Events tab of the information pane.
+
+Figure: Adding an event. {class=pp-figure}
+
+![](images/mnu-context-event-add.png)
+
+When creating a custom event, you need to provide the security name (from the drop-down list), the date, and free text. This text can be quite long, but since it will be displayed on the chart, it is recommended to keep it concise—just a few words.
+
+In addition to appearing on the historical prices chart, you can view all events associated with a security in the Events tab of the information pane for the selected security (see Figure 8).
+
+Figure: Event types. {class=pp-figure}
+
+![](images/mnu-context-event-types.png)
+
+The Events table contains five columns: `Date`, `Type`, `Payment Date`, `Amount`, and `Details`. The event types include:
+- `Stock Split`: Automatically generated after a stock split operation (see [above](context-menu.md#stock-split-))
+- `Dividend announcement`: Automatically retrieved by connecting to the web service of (see how-to > Dividend announcements) for more details.
+- `Note`: Manually created custom notes (see above).
+
+Using the context menu (right-click) in the Events table, you can delete one or multiple selected events. To edit an event, you have to double-click the field `Date` or `Details`. The other fields are non-editable.
+
 
 
 
