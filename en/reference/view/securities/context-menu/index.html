@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#stock-split" class="md-skip">
+        <a href="#documented-elsewere" class="md-skip">
           Skip to content
         </a>
       
@@ -1654,9 +1654,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#documented-elsewere" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documented elsewere
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#stock-split" class="md-nav__link">
     <span class="md-ellipsis">
       Stock split ...
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event
     </span>
   </a>
   
@@ -3421,9 +3439,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#documented-elsewere" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documented elsewere
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#stock-split" class="md-nav__link">
     <span class="md-ellipsis">
       Stock split ...
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event
     </span>
   </a>
   
@@ -3455,7 +3491,12 @@
   <h1>Context Menu</h1>
 
 <p><figure class="align-right" style="width:30%" id="_figure-1"><figcaption>Figure 1.  Context menu of a selected security.</figcaption><img alt="" src="../images/mnu-context.png"></figure></p>
-<p>The context menu of a security contains several additional options that are not available within the <code>view menu</code>. You can access the context menu by selecting a security or a security view (e.g., securities account) and right-clicking. A pop-up, as shown in Figure 1, will be displayed.</p>
+<p>The context menu of a security contains several additional options that are not available within the <code>view menu</code>. You can access the context menu by selecting a security or a security view (e.g., securities account) and right-clicking. A pop-up, as shown in Figure 1, will be displayed. The menu items Buy, Sell, Dividend, Tax Refund, Delivery (Inbound &amp; Outbound) are already available in the <a href="../../../transaction/">Transaction menu</a>. Other items such as Events could be accessed in other views.</p>
+<h2 id="documented-elsewere">Documented elsewere</h2>
+<p>Several menu items do also appear in other menu's or views and are already documented in other sections of the documentation.
+- Buy, Sell, Dividend, Tax Refund, Delivery (Inbound), Delivery (Outbound) appear and are documented in the <a href="../../../transaction/">Transaction menu</a>.
+- The Transfer item appear under the slightly different label <code>Security transfer ...</code>, also in the the <a href="../../../transaction/">Transaction menu</a>.
+- New Plan ... is covered in the sidebar menu Accounts &gt; Investment plans and is documented in <a href="../../accounts/investment-plans/"> Reference &gt; View &gt; Accounts &gt; Investment Plans</a>.</p>
 <h2 id="stock-split">Stock split ...</h2>
 <p>A stock split is a corporate action where a company adjusts the number of its outstanding shares, either by increasing or decreasing them, while keeping the overall market value of the company unchanged. In a <strong>forward</strong> stock split, e.g. 5-for-1, the number of shares increases and the price per share decreases proportionally. In a <strong>reverse</strong> stock split, e.g. 1-for-5, the number of shares decreases and the price per share increases proportionally. Regardless of the type, the total value of an investor’s holdings remains the same.</p>
 <p>For example, by early 2022, Amazon's stock had risen to approximately 3,000 USD per share, a price too high for most investors (see Figure 2). To address this, Amazon approved a 20-for-1 stock split, which took effect on June 6, 2022. In this split, each existing share of the company's stock was divided into 20 new shares, with each new share worth one-twentieth of the original share price.</p>
@@ -3474,6 +3515,18 @@
 <p>In the chart view of the historical prices, a small vertical line with the split ratio at the bottom will indicate the Stock split. With the <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2699.svg" title=":gear:"> menu <code>Configure Chart &gt; Marking &gt; Events</code> you can toggle this line. You can also delete the event in the Events tab in the bottom panel; see <a href="../all-securities/#chart-menu">Events</a>. This will remove the marker in the chart but will <strong>NOT</strong> remove the split from the transactions and historical prices.</p>
 <p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6.  Result of Split stock wizard (Amazon). </figcaption><img alt="" src="../images/split-stock-amazon-adjusted-PP.png"></figure></p>
 <p>Please note the difference between this chart and Figure 2. The rise in 2023 and 2024 is clearly visible, with prices before June 6, 2022 aligning with the adjusted prices. For example, the Buy transaction on January 3, 2022, of one share at approximately 3,400 USD is now shown as a Buy transaction of 20 shares at around 170 USD each.</p>
+<h2 id="event">Event</h2>
+<p>An event is a kind of note that could be attached to a specific security on a particular date. They can be displayed on the historical price chart of that security. They are automatically inserted to mark occurences of stock split or dividend announcements, but can also be used for important stock news.</p>
+<p>Events are generated automatically upon a stock split operation or a dividend announcement. Additionally, you can create your own custom event notes via the context menu of a security (see Figure 1) or the context menu in the Events tab of the information pane.</p>
+<p><figure class="pp-figure" id="_figure-7"><figcaption>Figure 7.  Adding an event. </figcaption><img alt="" src="../images/mnu-context-event-add.png"></figure></p>
+<p>When creating a custom event, you need to provide the security name (from the drop-down list), the date, and free text. This text can be quite long, but since it will be displayed on the chart, it is recommended to keep it concise—just a few words.</p>
+<p>In addition to appearing on the historical prices chart, you can view all events associated with a security in the Events tab of the information pane for the selected security (see Figure 8).</p>
+<p><figure class="pp-figure" id="_figure-8"><figcaption>Figure 8.  Event types. </figcaption><img alt="" src="../images/mnu-context-event-types.png"></figure></p>
+<p>The Events table contains five columns: <code>Date</code>, <code>Type</code>, <code>Payment Date</code>, <code>Amount</code>, and <code>Details</code>. The event types include:
+- <code>Stock Split</code>: Automatically generated after a stock split operation (see <a href="./#stock-split-">above</a>)
+- <code>Dividend announcement</code>: Automatically retrieved by connecting to the web service of (see how-to &gt; Dividend announcements) for more details.
+- <code>Note</code>: Manually created custom notes (see above).</p>
+<p>Using the context menu (right-click) in the Events table, you can delete one or multiple selected events. To edit an event, you have to double-click the field <code>Date</code> or <code>Details</code>. The other fields are non-editable.</p>
 
 
 
@@ -3494,7 +3547,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 16, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 20, 2024</span>
   </span>
 
     
