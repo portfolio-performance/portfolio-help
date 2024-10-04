@@ -31,9 +31,22 @@ Click the column heading to sort the table in ascending (&and;) or descending (&
 
 ## Shortcuts
 
-- View
-    - Show/hide sidebar: Ctrl+K (Windows)/ Cmd+K (Mac)
-    - Show/hide information pane: Ctrl+L
-- File
-    - Save: Ctrl+S (Windows)/ Cmd+S (Mac)
-    - Quit: Ctrl+Q (Windows)/ Cmd+Q (Mac)
+Use **Ctrl** (Windows) or **Cmd** (Mac). Sequential shortcuts are written as Ctrl+I, P; for example, press Ctrl+I, release, and then press P.
+
+- Navigating the UI
+    - Ctrl+F: Jump to the **Search** box in listviews such as All Securtites, All Transactions, Trades, Taxonomies, ...
+    - Ctrl+K: Show/hide sidebar (= left region with the View menu items) 
+    - Ctrl+L: Show/hide information pane at the bottom of the screen. The information displays additional information of the selected item in the main pane (top).
+
+- File operations
+    - Ctrl+S: Saves the current portfolio under the existing name.
+    - Ctrl+Q: Closes the PP program, prompting you to save any unsaved changes to files.
+    - Ctrl+I, P: [Import](../reference/file/import/pdf-import.md) PDF Bank documents.
+    - Ctrl+I, C: Import CSV files (comma-separated values).
+    - Ctrl+Shft+S: Export selected items (such as an account) from the current portfolio as a CSV file.
+
+- [Updating prices](../reference/online.md#update-quotes)
+    - Ctrl+U, K: Update the historical prices (quotes) of all securities.
+    - Ctrl+U, A: Update the historical prices of the active securities.
+    - Ctrl+U, T: Update the historical prices of the selected security.
+    - Ctrl + E: Edit the selected security in the All securities list.
