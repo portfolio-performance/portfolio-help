@@ -13,6 +13,8 @@ The Reports > Performance > Securities menu contains a main pane (top) and an in
 
 The first Filter group (top right) allows you to narrow down the securities list to `shares` &ne; `0` or `shares = 0`. The latter filter will display only those shares that have been completely sold, where the number of purchased shares has dropped to zero. Without either of these filters, all shares, regardless of quantity, are displayed. The second filter group is also detailed in the [Performance > Calculation menu](calculation.md#main-pane), allowing you to choose either the entire portfolio or specific individual accounts.
 
+The top and/or bottom sum line displays the total of columns such as Purchase Value, Market Value, paid Dividends, and others, including fees (see below to add this column), but only for the filtered securities. Using the **Settings** :gear: icon, you can choose to display the sum at the top, bottom, both, or not at all.
+
 The `Export as CSV file` option will save the current table, including only the visible columns, as a CSV file.
 
 The `Show or Hide columns` icon provides access to the entire (lengthy) list of available fields that can be displayed.
@@ -52,8 +54,6 @@ Figure: Available fields Securities. {class=align-right style="width:30%"}
 
     With a single purchase, such as with `share-2`, there is no difference between the two methods. The `Purchase Value` (default column) and `Purchase Value (Moving Average)` will be the same: 67 EUR. However, the difference becomes evident at the time of sales with a multiple purchase stock, such as `share-1`. The default FIFO method calculation amounts to 177.50 EUR (refer above for calculation details). The (simple) moving average methodis calculated as follows: initially 10 shares at 15.5 EUR/share (inclusive of fees and taxes) and later 5 shares at 20 EUR/share, resulting in [(10 x 15.5) + (5 x 20)] / (10 + 5) = 17 EUR/share. The remaining 10 shares after the sale are valued at 170 EUR.
 
-&nbsp;
-
 - Purchase Price (moving average): The price does *not* include fees and taxes. The calculation becomes: [(10 x 15) + (5 x 19.20)] / (10 + 5) = 16.40 EUR/share. 
 - Fees & Taxes: This is the total amount of paid fees and taxes.
 - ISIN, Symbol, WKN, Note: see [Reference > File > New Master data](../../../file/new.md#security-master-data). 
@@ -71,23 +71,27 @@ Figure: Available fields Securities. {class=align-right style="width:30%"}
     - Capital Gains % (FIFO, current holdings): Same as above, but as percentage: (Market value - Purchase value (FIFO))/ Purchase value (FIFO). 
     - Capital Gains (moving average, current holdings): Same as above, but the moving average purchase value is utilized. For `share-1`: 190.06 - 170 = 20.06
     - Capital Gains % (moving average, current holdings): Same as above, but as percentage: (Market value - Purchase value (moving average))/ Purchase value (moving average).
-    - Absolute Performance %: The absolute performance (see above), but expressed as percentage. 
+    - Absolute Performance %: The absolute performance (see above), but expressed as percentage.
+
 - Capital Gains: for a more detailed explanation of `capital gains`; see section on [Reports > Performance > Calculation](calculation.md#calculation--other-detail-panels).
+
     - Realized Gains: Hovering over the value displays a popup with more info. For example, the realized gain of `share-1` is 37 EUR. The five shares are sold for the gross value of 112 EUR; while the purchase value (without fees and taxes) was 75 EUR. The realized gain is thus 37 EUR. () 
 
-    Figure: Realized gains for share-1. {class=pp-figure}
+        Figure: Realized gains for share-1. {class=pp-figure}
 
-    ![](./images/securities-popup-realized-gains.png)
+        ![](./images/securities-popup-realized-gains.png)
 
     - Currency gains / Realized Gains: If a foreign currency security is sold, currency gains could occur. For example, an investment of 100 USD on 2022-04-01 was worth 90.48 EUR; due to the USD/EUR = 0.9048 exchange rate. Selling this investment on 2024-04-26 would realize 93.34 EUR; only because the exchange rate has increased to USD/EUR = 0.9334. Without even any change in quote price, this investment should have a currency gain of 2.86 EUR.  
     - Unrealized gains: The unrealized gains come from securities that are not yet sold. `share-2` hasn't been changed since the first purchase. So, the realized gains are zero EUR. The share has been purchased on September 2022 for 64 EUR (without taxes and fees). At the end of the reporting period (June 12, 2023) the market value is 11.76 EUR. The unrealized gains are 47.76 EUR. 
     - Currency gains / Unrealized Gains: same as above, except for unrealize gains.
-- Risk indicators:
-    - Maximum Drawdown (MDD): A measure of the maximum loss that an investment has experienced during the reporting period; peak value - lowest value of the security. For share-1, this is 28.98%: 339 EUR on 2023-04-11 147 on 2021-01-30-- see https://www.investopedia.com/terms/m/maximum-drawdown-mdd.asp
+
+- Risk indicators (see [View > reports > Performance](../performance/index.md) for more info on these conepts):
+
+    - Maximum Drawdown (MDD): A measure of the maximum loss that an investment has experienced during the reporting period; peak value - lowest value of the security. For share-1, this is 28.98%: 339 EUR on 2023-04-11 147 on 2021-01-30-- see article on [Investopedia](https://www.investopedia.com/terms/m/maximum-drawdown-mdd.asp)
     If an investment never lost a penny, the maximum drawdown would be zero. The worst possible maximum drawdown would be -100%, meaning the investment is completely worthless.
     - Max Drawdown Duration: the worst (the maximum/longest) amount of time an investment has seen between peaks (equity highs)
-    - Volatility
-    - Semivariance:
+    - Volatility: Volatility in portfolio performance refers to the degree of variability in the returns of a portfolio over time.
+    - Semivariance: The Semivariance exclusively considers the negative fluctuations of an investment. 
 
 
 
