@@ -43,9 +43,9 @@ The `Common` option in Figure 2 will display some additional info.
 
 - Total: the total value of the portfolio valuated over time.
 
-- Transferals: each Deposit or Removal is represented by a very small spike (positive or negative) on the day that the transferal was made.
+- Transferals (instanced and accumalated): Each transferal, whether a deposit/removal or delivery inbound/outbound, is represented by a small spike (positive or negative) on the day the transferal was made (instance). The accumulated version is represented by a block diagram, showing the cumulative net value of all transferals over time.
 
-With securities, you can make a graph of each separate or combination of securities in your portfolio, for example share-1 or share-1 + bond-1.
+With `Securities`, you can make a graph of each separate or combination of securities in your portfolio, for example only `share-1` or the combination of `share-1` and `share-2`.
 
 In the default configuration, the `Standard` view only includes two data series: Total and Transferals. However, you have extensive customization options, as mentioned earlier. Using the dropdown menu, you can `Duplicate`, `Rename`, or `Delete` this view. You can also create a new view by clicking on the New icon, located in the top right corner between the Standard and Period options. Similar to the existing one, you can duplicate, rename, or delete your newly created view. If you wish to have this view as the leftmost view, select the `Bring to front` option from the dropdown menu.
 
