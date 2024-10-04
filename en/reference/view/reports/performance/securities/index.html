@@ -3507,6 +3507,7 @@
 <h2 id="main-pane">Main Pane</h2>
 <p>The Reports &gt; Performance &gt; Securities menu contains a main pane (top) and an information pane (bottom) of the selected security from the main pane. Performance calculation is always dependent on the chosen Reporting Period, which could be set with the drop-down at the top-right. </p>
 <p>The first Filter group (top right) allows you to narrow down the securities list to <code>shares</code> ≠ <code>0</code> or <code>shares = 0</code>. The latter filter will display only those shares that have been completely sold, where the number of purchased shares has dropped to zero. Without either of these filters, all shares, regardless of quantity, are displayed. The second filter group is also detailed in the <a href="../calculation/#main-pane">Performance &gt; Calculation menu</a>, allowing you to choose either the entire portfolio or specific individual accounts.</p>
+<p>The top and/or bottom sum line displays the total of columns such as Purchase Value, Market Value, paid Dividends, and others, including fees (see below to add this column), but only for the filtered securities. Using the <strong>Settings</strong> <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2699.svg" title=":gear:"> icon, you can choose to display the sum at the top, bottom, both, or not at all.</p>
 <p>The <code>Export as CSV file</code> option will save the current table, including only the visible columns, as a CSV file.</p>
 <p>The <code>Show or Hide columns</code> icon provides access to the entire (lengthy) list of available fields that can be displayed.</p>
 <h3 id="visible-columns">Visible columns</h3>
@@ -3539,10 +3540,9 @@
 <p>In the moving average method, no assumptions are made regarding which securities will be used upon a sale. It could be the first purchased, the last, or some randomly chosen shares. The weighted average price of the stock is calculated. As new stock is purchased, this weighted average moves towards the price of the newly purchased stock.</p>
 <p>With a single purchase, such as with <code>share-2</code>, there is no difference between the two methods. The <code>Purchase Value</code> (default column) and <code>Purchase Value (Moving Average)</code> will be the same: 67 EUR. However, the difference becomes evident at the time of sales with a multiple purchase stock, such as <code>share-1</code>. The default FIFO method calculation amounts to 177.50 EUR (refer above for calculation details). The (simple) moving average methodis calculated as follows: initially 10 shares at 15.5 EUR/share (inclusive of fees and taxes) and later 5 shares at 20 EUR/share, resulting in [(10 x 15.5) + (5 x 20)] / (10 + 5) = 17 EUR/share. The remaining 10 shares after the sale are valued at 170 EUR.</p>
 </li>
-</ul>
-<p> </p>
-<ul>
-<li>Purchase Price (moving average): The price does <em>not</em> include fees and taxes. The calculation becomes: [(10 x 15) + (5 x 19.20)] / (10 + 5) = 16.40 EUR/share. </li>
+<li>
+<p>Purchase Price (moving average): The price does <em>not</em> include fees and taxes. The calculation becomes: [(10 x 15) + (5 x 19.20)] / (10 + 5) = 16.40 EUR/share. </p>
+</li>
 <li>Fees &amp; Taxes: This is the total amount of paid fees and taxes.</li>
 <li>
 <p>ISIN, Symbol, WKN, Note: see <a href="../../../../file/new/#security-master-data">Reference &gt; File &gt; New Master data</a>. </p>
@@ -3558,31 +3558,39 @@
 <li>Periodicity: The periodicity is estimated, based on the payments during the reporting period. <code>share-2</code> has no dividend payments; so the value is <code>none</code>. And, because, there is only 1 dividend payment for <code>share-1</code>, it is for the time being <code>unknown</code>. If there are multiple payments, the periodicity could be <code>anual</code>, <code>semi-anual</code>, <code>quarterly</code> or <code>monthly</code>.</li>
 </ul>
 </li>
-<li>Performance: By default, the TTWROR (cumulative), IRR, and Absolute Performance % is displayed.<ul>
+<li>
+<p>Performance: By default, the TTWROR (cumulative), IRR, and Absolute Performance % is displayed.</p>
+<ul>
 <li>TTWROR (annualized): see section on Performance calculation.</li>
 <li>Capital Gains (FIFO, current holdings): For the securities in the portfolio at the end of the reporting period (current holdings) = Market value - Purchase value (FIFO). For <code>share-1</code>: 190.06 - 177.50 = 12.56 EUR. </li>
 <li>Capital Gains % (FIFO, current holdings): Same as above, but as percentage: (Market value - Purchase value (FIFO))/ Purchase value (FIFO). </li>
 <li>Capital Gains (moving average, current holdings): Same as above, but the moving average purchase value is utilized. For <code>share-1</code>: 190.06 - 170 = 20.06</li>
 <li>Capital Gains % (moving average, current holdings): Same as above, but as percentage: (Market value - Purchase value (moving average))/ Purchase value (moving average).</li>
-<li>Absolute Performance %: The absolute performance (see above), but expressed as percentage. </li>
+<li>Absolute Performance %: The absolute performance (see above), but expressed as percentage.</li>
 </ul>
 </li>
 <li>
 <p>Capital Gains: for a more detailed explanation of <code>capital gains</code>; see section on <a href="../calculation/#calculation--other-detail-panels">Reports &gt; Performance &gt; Calculation</a>.</p>
 <ul>
-<li>Realized Gains: Hovering over the value displays a popup with more info. For example, the realized gain of <code>share-1</code> is 37 EUR. The five shares are sold for the gross value of 112 EUR; while the purchase value (without fees and taxes) was 75 EUR. The realized gain is thus 37 EUR. () </li>
-</ul>
+<li>
+<p>Realized Gains: Hovering over the value displays a popup with more info. For example, the realized gain of <code>share-1</code> is 37 EUR. The five shares are sold for the gross value of 112 EUR; while the purchase value (without fees and taxes) was 75 EUR. The realized gain is thus 37 EUR. () </p>
 <p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Realized gains for share-1. </figcaption><img alt="" src="../images/securities-popup-realized-gains.png"></figure></p>
-<ul>
-<li>Currency gains / Realized Gains: If a foreign currency security is sold, currency gains could occur. For example, an investment of 100 USD on 2022-04-01 was worth 90.48 EUR; due to the USD/EUR = 0.9048 exchange rate. Selling this investment on 2024-04-26 would realize 93.34 EUR; only because the exchange rate has increased to USD/EUR = 0.9334. Without even any change in quote price, this investment should have a currency gain of 2.86 EUR.  </li>
+</li>
+<li>
+<p>Currency gains / Realized Gains: If a foreign currency security is sold, currency gains could occur. For example, an investment of 100 USD on 2022-04-01 was worth 90.48 EUR; due to the USD/EUR = 0.9048 exchange rate. Selling this investment on 2024-04-26 would realize 93.34 EUR; only because the exchange rate has increased to USD/EUR = 0.9334. Without even any change in quote price, this investment should have a currency gain of 2.86 EUR.  </p>
+</li>
 <li>Unrealized gains: The unrealized gains come from securities that are not yet sold. <code>share-2</code> hasn't been changed since the first purchase. So, the realized gains are zero EUR. The share has been purchased on September 2022 for 64 EUR (without taxes and fees). At the end of the reporting period (June 12, 2023) the market value is 11.76 EUR. The unrealized gains are 47.76 EUR. </li>
 <li>Currency gains / Unrealized Gains: same as above, except for unrealize gains.</li>
-<li>Risk indicators:</li>
-<li>Maximum Drawdown (MDD): A measure of the maximum loss that an investment has experienced during the reporting period; peak value - lowest value of the security. For share-1, this is 28.98%: 339 EUR on 2023-04-11 147 on 2021-01-30-- see https://www.investopedia.com/terms/m/maximum-drawdown-mdd.asp
+</ul>
+</li>
+<li>
+<p>Risk indicators (see <a href="../">View &gt; reports &gt; Performance</a> for more info on these conepts):</p>
+<ul>
+<li>Maximum Drawdown (MDD): A measure of the maximum loss that an investment has experienced during the reporting period; peak value - lowest value of the security. For share-1, this is 28.98%: 339 EUR on 2023-04-11 147 on 2021-01-30-- see article on <a href="https://www.investopedia.com/terms/m/maximum-drawdown-mdd.asp">Investopedia</a>
 If an investment never lost a penny, the maximum drawdown would be zero. The worst possible maximum drawdown would be -100%, meaning the investment is completely worthless.</li>
 <li>Max Drawdown Duration: the worst (the maximum/longest) amount of time an investment has seen between peaks (equity highs)</li>
-<li>Volatility</li>
-<li>Semivariance:</li>
+<li>Volatility: Volatility in portfolio performance refers to the degree of variability in the returns of a portfolio over time.</li>
+<li>Semivariance: The Semivariance exclusively considers the negative fluctuations of an investment. </li>
 </ul>
 </li>
 </ul>
@@ -3610,7 +3618,7 @@ If an investment never lost a penny, the maximum drawdown would be zero. The wor
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 29, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 4, 2024</span>
   </span>
 
     
