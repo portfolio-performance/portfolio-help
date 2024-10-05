@@ -199,6 +199,7 @@ nav:
           - JSON: how-to/downloading-historical-prices/json.md
           - Table on Website: how-to/downloading-historical-prices/table-website.md
           - Import fund data from Morningstar: how-to/downloading-historical-prices/morningstar.md
+          - Indian ETF's: how-to/downloading-historical-prices/indian.md
       - Handling a choice dividend: how-to/handling-choice-dividend.md
       - Importing GBX priced securities: how-to/import-gbx.md
       - Inspecting the source code: how-to/inspect-source-code.md

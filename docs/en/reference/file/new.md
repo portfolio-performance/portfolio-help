@@ -1,6 +1,5 @@
 ---
 title: File > New
-todo: describe crypto, exchange Rate, Consumer Price Index, Taxonomy, Watchlist
 ---
 # File &#10095; New
 
