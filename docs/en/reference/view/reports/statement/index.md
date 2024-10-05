@@ -54,7 +54,7 @@ When you choose to include this column, you'll also need to specify a period, su
 2. Calculate the difference of today's price with the average price = 71.96 - 72.88 = -0.92 EUR.
 3. Divide this difference by the average price and convert to a percentage = -0.92/72.88 = -1.26%. The current price (October 5) is 1.26% lower than the average price of the last 5 days.
 
-`Distance to ATH` (All Time High) is a likewise metric that shows how far the current price is from the highest price in the specified period. For example, the highest price of share-1 in the last year was 77.4 EUR. The current price is 71.96 EUR. So the &Delta; ATH 1 year (Distance to ATH for a 1 year period) is equal to (71.96 - 77.4)/77.4 or -7.03%. 
+`Distance from ATH` (All Time High) is a likewise metric that shows how far the current price is from the highest price in the specified period. For example, the highest price of `share-1` last year (October 4, 2023-2024) was 26.91 EUR on September 16, 2024. The current price is 26.29 EUR (Oct 4, 2024). So the &Delta; ATH 1 year (Distance to ATH for a 1 year period) is equal to (26.29 - 26.91)/26.91 or -2.30%. You can view the exact price and date of the all-time high (ATH) by hovering over the field.
 
 ## Available views
 
