@@ -55,6 +55,7 @@ It's also possible to link an existing security to PR; in particular to gain acc
 - Navigate to the [Portfolio Report website](https://www.portfolio-report.net/) and search for the desired security.
 - Copy the URL of the webpage. It should start with `https://www.portfolio-report.net/securities/`, followed by an identifier such as `8761e2dd-873a-4f1c-99c5-65939819eed9`. This is the internal code that PR assigns to this security. You can find this URL in the address bar or at the bottom of the screen when hovering over the big blue button `Add to Portfolio Performance`.
 - In PP, select the desired security in the `All Securities` list; right-click and choose `Link to Portfolio Report`. Additionally, you must manually set  Portfolio Report as the Quote Feed.
+- Securities that no longer exist in Portfolio Report are automatically unlinked.
 
 ## Privacy rules
 
