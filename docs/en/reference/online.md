@@ -21,9 +21,8 @@ Figure: Inactive setting in the Security Master Data tab.{class=pp-figure}
 
 This command will update only the active securities.
 
-## Update quotes (selected security)
+## Update quotes (xxx instruments selected)
 
 In a table view such as All Securities, one can select one or more securities. For a consecutive selection, click the first row, press Shift, and click the last row. For a non-consecutive selection, use the Ctrl key.
 
-Even though the menu mentions "selected security", the update will be performed on all selected securities.
-
+The menu will display an indication of the number of selected securities.
