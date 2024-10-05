@@ -7,11 +7,15 @@ Using the menu `View > Reports > Statement of Assets > Chart` or the sidebar, yo
 
 The x-axis represents time. You can select the desired reporting period using the dropdown menu in the top-right corner. By default, the periods of 1 year, 2 years, 3 years, 4 years, 6 years, and the previous day are available. Additionally, you have the option to create a custom time period using the 'New' feature; see [Reporting Period](../../../../concepts/reporting-period.md) for a description. Unlike the performance chart (found under [View > Reports > Performance > Chart](../performance/performance-chart.md)), you cannot adjust the time interval in this chart, as it is fixed at 1 day.
 
+## Axes
+
 The y-axis displays the total value of your assets, denominated in the portfolio's default currency. Larger numbers are condensed by adding 'k', where 1k equals 1000 units of the portfolio currency. You can adjust the scale of this axis by scrolling with the middle mouse button. Hold the mouse position at the value (e.g. 4k) where you want to increase or decrease the scale around.
 
 Figure: Chart of the Total value of the demo portfolio.{class=pp-figure}
 
 ![](./images/sb-reports-chart.svg)
+
+## Canvas
 
 The canvas is a graphical representation of one or more data series. A data series typically comprises a set of paired data points presented in a table format, such as dates and their corresponding values. By default, two data series are displayed: 'Transferals' (primarily deposits) and 'Total' (see below for an explanation of all possible data series). When you left-click the canvas and hold the mouse down on a specific day, for example, March 28, 2022, a dialog box will appear, displaying detailed values for all data series on that day.
 
@@ -23,7 +27,9 @@ Right-clicking on the chart canvas provides additional options (see Figure 1).
 - Various navigation options with their respective shortcut keys, such as Zoom In (Ctrl+Arrow Up), Scroll Up (Arrow Up), and more.
 - Save diagram: This feature allows you to save the visible chart as a PNG or JPG image on your computer.
 
-Right-clicking on the legend icons (for example, the blue and red squares from Figure 1) will give you access to additional formatting options. For all types of data series and their legend entries, you can modify the `Color`, `Position` (Send backwards, Send to back or Bring forward, and Bring to Front), and `Sort` (A-Z or Z-A). The latter two options will reorganize the legend entries accordingly. In the case of a line-type data series like the Total value, you can also adjust the `Line Style` (solid, dash, dot, ...), and the `Show Area` option (which fills the area below the data series). In addition, you have the option to either hide (where the legend entry remains visible, but the data series is not displayed on the chart) or remove the series altogether (both the legend and data series are removed from the chart). 
+## Legend
+
+Right-clicking on the legend icons (for example, the blue and red squares from Figure 1) will give you access to additional formatting options. For all types of data series and their legend entries, you can modify the `Color`, `Position` (Send backwards, Send to back or Bring forward, and Bring to Front), and `Sort` (A-Z or Z-A). The latter two options will reorganize the legend entries accordingly. In the case of a line-type data series like the Total value, you can also adjust the `Line Style` (solid, dash, dot, ...), and the `Show Area` option (which fills the area below the data series). In addition, you have the option to either hide (where the legend entry remains visible but is crossed out, and the data series is not displayed on the chart) or remove it entirely (both the legend and the data series are completely removed from the chart). You can also hide or reveal a data series by double-clicking on the corresponding legend icon.
 
 Figure: Data series for chart.{class=align-right}
 
