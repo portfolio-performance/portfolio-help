@@ -12,24 +12,24 @@ PP currently supports stock splits via work-around; see the [discussion on the f
 
 This change is destructive. It is not easily undone. If necessary, an improperly executed split can be corrected by executing a split with an inverse ratio. But perhaps a better approach is to create a backup copy of the portfolio file.
 
-In the description of the Stock Split process in the [Reference Manual](../reference/view/securities/context-menu.md#stock-split), the example of the Amazon 20-for-1 stock split on June 6, 2022 is used. Please review this section first.
+In the description of the Stock Split process in the Reference Manual, the example of the Amazon 20-for-1 stock split on June 6, 2022 is used. Please review this section first for details about [how to use the built-in stock split function](../reference/view/securities/context-menu.md#stock-split) of PP.
 
-In Figure 1, the share price evolution over the last five years is depicted. Very noticeable, there is a massive drop on between June 3 and 6, 2022. On those dates, the closing prices were `$ 2447` and `$ 124.79`, respectively (but remember, you own 20 times more shares). Assume that you have purchased one (pricy) share on January 3, 2022 for the amount of `$ 3408`.
+In Figure 1, the share price evolution over the last five years is depicted. Very noticeable, there is a massive drop between June 3 and 6, 2022. On those dates, the closing prices were `$ 2447` and `$ 124.79`, respectively (but remember, you own 20 times more shares).
 
-Figure: Historical Quotes chart of Amazon (unadjusted prices). {class=pp-figure}
+Figure: Historical Quotes chart of Amazon (unadjusted prices - chart from PP). {class=pp-figure}
 
 ![](../reference/view/securities/images/split-stock-amazon-unadjusted-PP.png)
 
 
 Quite some confusion arises when you compare this chart with those from most other financial websites; for example, the 5-year chart from [investing.com](https://www.investing.com/equities/amazon-com-inc) looks very different.
 
-Figure: Historical Quotes chart of Amazon (adjusted prices). {class=pp-figure}
+Figure: Historical Quotes chart of Amazon (adjusted prices - chart from investing.com). {class=pp-figure}
 
-![](../reference/view/securities/images/split-stock-amazon-adjusted-investing-com.png)
+![](./images/split-stock-amazon-adjusted-investing.png)
 
-Both charts span an identical five-year period. But, while your purchase price was `$ 3408`, it appears to be priced around `$ 150` around January 2022. This discrepancy arises because financial websites typically "adjust" all historical prices after a stock split. This adjustment involves recalculating the historical prices before the split, just as the PP's Stock Split function does.
+Both charts span a five-year period. But, while your purchase price around January 2022 was `$ 3408` (Figure 1), it appears to be priced around `$ 150` (Figure 2), according to [investing.com](https://www.investing.com/equities/amazon-com-inc). This discrepancy arises because financial websites typically "adjust" all historical prices after a stock split. This adjustment involves recalculating the historical prices before the split, just as the PP's Stock Split function does.
 
-Figure: Historical Quotes chart of Amazon (adjusted prices). {class=pp-figure}
+Figure: Historical Quotes chart of Amazon (adjusted prices - chart from PP). {class=pp-figure}
 
 ![](../reference/view/securities/images/split-stock-amazon-adjusted-PP.png)
 
@@ -44,7 +44,7 @@ Figure: Historical Quotes chart of Amazon (adjusted prices). {class=pp-figure}
 
 - It's crucial to recognize that the historical transactions *and* prices are permanently altered. This means that PP's records of past transactions will no longer accurately reflect the actual transactions as documented in your paper files. Over time, this may complicate the reconstruction of a security's history.
 
-- A notable challenge arises when a split results in fractional shares, as seen in the case of Prosus' split announcement on September 14, 2023, with a ratio of 2.1796-for-1. In this scenario, 10 existing shares would be split into 21.796 shares. While PP can handle fractional shares, most brokers or banks cannot. Typically, they would adapt to this particular situation by issuing 21 new shares and providing compensation for the fractional share (0.796 shares in this case). Consequently, after the split, you'll need to record this compensation, which essentially involves executing a sell transaction of the fraction. Managing this process becomes notably more complex if you've made multiple purchases at different prices throughout the security's history.
+- A notable challenge arises when a split results in fractional shares, as seen in the case of Prosus' split announcement on September 14, 2023, with a ratio of 2.1796-for-1. In this scenario, 10 existing shares would be split into 21.796 shares. While PP can handle fractional shares, most brokers or banks cannot. Typically, they would adapt to this particular situation by issuing 21 new shares and providing compensation for the fractional share (0.796 shares in this case). Consequently, after the split, you'll need to record this compensation, which essentially involves executing a sell transaction of the fraction.
 
 ## Use of sell-buy-back operation
 
@@ -54,33 +54,23 @@ An alternative method that keeps the historical prices and transactions intact i
 - Simultaneously, on the same date, acquire a new quantity of shares equivalent to the theoretical outcome of the split (old quantity x split ratio). Ensure that the total purchase amount matches the selling value determined earlier.
 - Round down the new share quantity to the nearest whole number. If there is a remainder, sell it at the same price as described in step 2.
 
-Let's apply this workflow to the PROSUS split (2.1796-for-1) from above. Assume that you have bought 5 shares on 2022-01-03 on XETRA for 68.60 EUR per share and another 5 on 2023-01-03 for 73.90 EUR. The closing price on XETRA on 2023-09-13 was 64.11 EUR.
+Let's apply this workflow to a simplified example (see Figure 4). On 1 January 2021, you owned one share priced at 100 EUR. This price remained essentially unchanged until 31 December 2021. On 1 January 2022, a 10-for-1 stock split occured, resulting in 10 shares. The price at the end of the day was 11 EUR. By the end of the year, the price had increased to 13 EUR per share, giving your portfolio a market value of 130 EUR.
 
-1. Selling old shares:
-    - You have a total of 10 shares (5 bought on 2022-01-03 and 5 bought on 2023-01-03).
-    - The closing price on XETRA on 2023-09-13 was 64.11 EUR.
-    - Total selling value = 10 shares * 64.11 EUR/share = 641.10 EUR.
+Figure: Simplified example of sell-back-back stock split. {class=pp-figure}
 
-2. Purchasing new shares:
-    - The split ratio is 2.1796-for-1.
-    - The theoretical new amount of shares = 10 shares * 2.1796 = 21.796 shares.
-    - The total purchase value must be the same as the selling value: 641.10 EUR.
-    - Buy 21.796 shares for 641.10/21.796 or 29.41 EUR/share
+![](./images/stock-split-sell-buy-back-method.svg)
 
-3. Selling the remaining fraction:
-    - Round down to the nearest integer: 21 shares.
-    - Fractional share remaining after rounding down = 21.796 - 21 = 0.796 shares.
-    - Sell the remaining fraction at the acquiring price, which is 29.41 EUR/share.
-    - Value of the remaining fraction = 0.796 shares * 29.41 EUR/share = 23.41 EUR.
+The performance calculation for the built-in stock split function is quite straightforward. Due to the retroactive nature of the split function, the original purchase of 1 share at 100 EUR/share (MVB) is adjusted to reflect the purchase of 10 shares at 10 EUR/share. At the end of the two-year reporting period, you still own 10 shares, but their total value has increased to 130 EUR (MVE). Using the formulas from the [money-weighted (IRR)](../concepts/performance/money-weighted.md) and [time-weighted (TTWROR)](../concepts/performance/time-weighted.md) section:
 
-In Figure 4 a comparison of the two methods (built-in function vs sell-buy-back) is made. As can be seen, the price range is 15 - 50 for the built-in split and 20 - 100 for the sell-buy-back method. The original buying prices are preserved in the latter case. Of course, the graph wouldn't look as nice for the Amazon 20-for-1 split.
+- IRR: `130 = 100 * (1 + IRR)^2` or `IRR = SQRT(130/100) - 1` = 14.0157%.
+- TTWROR: `= (130/100) - 1` or TTWROR = 30%
 
-Figure: Comparison of the two methods (Prosus example).{class=pp-figure}
+When using the sell-buy-back method, you need to include supplementary transactions after the initial purchase. At the split date (2022-01-01), you sell 1 share at the price of 110 EUR/share and buy 10 shares at the price of 11 EUR/share. 
 
-![](./images/stock-split-comparison-2-methods.svg)
+- IRR: `130 = 100 * (1 + IRR)^(730/365) - 100 * (1 + IRR)^(365/365) + 100 * (1 + IRR)^(365/365)`. Because the last two terms cancel each other out, the formula simplifies to that of the built-in split, and `IRR = SQRT(130/100) - 1` or 14.0157%. It is crucial that the buy and sell transactions occur on the same day;  otherwise the second and third term are not equal. Suppose that you sell the 1 share on December 31 instead of January 1. The formula from above becomes `130 = 100 x (1+IRR)^(730/365) - 100 x (1+IRR)^(366/365) + 100 x (1+IRR)^(365/365)` or `IRR = 14.0355%` slightly higher than the result of the built-in function. Note that the negative second term has a slightly larger exponent, which means the IRR must be marginally higher to yield the MVE of 130 EUR.
+- TTWROR `= ((110/100) x (130/110)) - 1` or `(1.1 x 1.1818) - 1 = 30%`. The exact selling date is unimportant for the TTWROR calculation.
 
-Please note that the security performance (top-right) is practically the same for built-in split vs sell-buy-back: IRR is respectively -6.05% vs -6.11%. The small difference is caused by the selling of the fraction (0.796 share) at a bad time (29.41 vs 29.54 EUR) in case of the sell-buy-back method.
+!!! note
+    For the buy and sell transactions, we used the share price immediately before the split.  However, according to the IRR and TWROR formulas mentioned earlier, the specific price used is not crucial, as long as the same price is applied for both the sell and buy transactions. The advantage of using the price from just before the split is that the closed trade (from the sell transaction) accurately reflects the share’s real performance up to the split.
 
-The Trades Performance view gives additional info. Because we haven't solved the fractional share problem in the built-in split method, there is only one open trade: purchased 21.796 shares (2 x 10,898) and not sold yet. Remember that in your real bank account, you only have 21 shares. We haven't compensated for the fractional shares, which would be much more difficult in the built-in split method.
-
-Let's compare with the sell-buy-back method. The open trade represents the 21 shares purchased on 2023-09-14. This trade has a positive performance (IRR = 1.03%). Prices have been increased since then. The previous period (the closed trade) however was negative (IRR= -8.40%). This puts the overall negative security performance of -6.11 in perspective. The IRR of the small closed trade of selling the 0.796 fraction is NaN (Not a Number). Because this trade is purchased and sold at the same price on the same day, the performance could not be calculated.
+    Please note that in the [View > Reports > Performance > Trades](../reference/view/reports/performance/trades.md) view, all reported performances are independent of the reporting period, but reflect the real holding periods of the trades. For example, the end date of the holding period is today; not the ending date of the reporting period.

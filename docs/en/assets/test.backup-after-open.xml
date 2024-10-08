@@ -9,10 +9,10 @@
       <tickerSymbol></tickerSymbol>
       <feed>MANUAL</feed>
       <prices>
-        <price t="2021-01-01" v="10000000000"/>
-        <price t="2021-12-31" v="11000000000"/>
-        <price t="2022-01-01" v="1100000000"/>
-        <price t="2023-01-01" v="1300000000"/>
+        <price t="2020-01-01" v="10000000000"/>
+        <price t="2020-12-31" v="11000000000"/>
+        <price t="2021-01-01" v="1100000000"/>
+        <price t="2022-01-01" v="1300000000"/>
       </prices>
       <attributes>
         <map/>
@@ -26,21 +26,6 @@
       </events>
       <isRetired>false</isRetired>
       <updatedAt>2024-10-06T09:30:00.517050900Z</updatedAt>
-    </security>
-    <security>
-      <uuid>46f2a45f-07dc-4a6e-b01f-207324111ac8</uuid>
-      <name>Siemens</name>
-      <currencyCode>EUR</currencyCode>
-      <feed>GENERIC-JSON</feed>
-      <feedURL>https://www.nseindia.com/api/historical/cm/equity?symbol=SIEMENS&amp;from=07-06-2024&amp;to=07-10-2024</feedURL>
-      <prices/>
-      <attributes>
-        <map/>
-      </attributes>
-      <property type="FEED" name="GENERIC-JSON-DATE">$.data[*].CH_TIMESTAMP</property>
-      <property type="FEED" name="GENERIC-JSON-CLOSE">$.data[*].CH_CLOSING_PRICE</property>
-      <isRetired>false</isRetired>
-      <updatedAt>2024-10-07T18:51:06.265580600Z</updatedAt>
     </security>
   </securities>
   <watchlists>
@@ -82,32 +67,32 @@
       <transactions>
         <portfolio-transaction>
           <uuid>561e50f4-7088-42d3-8fa8-965bc8055bc4</uuid>
-          <date>2020-07-01T00:00</date>
+          <date>2020-01-01T00:00</date>
           <currencyCode>EUR</currencyCode>
           <amount>10000</amount>
           <security reference="../../../../../securities/security"/>
           <shares>100000000</shares>
-          <updatedAt>2024-10-07T15:46:05.811492400Z</updatedAt>
+          <updatedAt>2024-10-06T09:50:12.077406800Z</updatedAt>
           <type>DELIVERY_INBOUND</type>
         </portfolio-transaction>
         <portfolio-transaction>
           <uuid>5416412c-1064-4d05-aa16-4d3eb17b8611</uuid>
-          <date>2022-01-01T00:00</date>
+          <date>2020-12-31T00:00</date>
           <currencyCode>EUR</currencyCode>
           <amount>11000</amount>
           <security reference="../../../../../securities/security"/>
           <shares>100000000</shares>
-          <updatedAt>2024-10-07T17:40:38.254937400Z</updatedAt>
+          <updatedAt>2024-10-06T09:53:56.622352Z</updatedAt>
           <type>DELIVERY_OUTBOUND</type>
         </portfolio-transaction>
         <portfolio-transaction>
           <uuid>5b0f4675-e27c-477c-b43a-2a36585238e7</uuid>
-          <date>2022-01-01T00:00</date>
+          <date>2021-01-01T00:00</date>
           <currencyCode>EUR</currencyCode>
           <amount>11000</amount>
           <security reference="../../../../../securities/security"/>
-          <shares>1100000000</shares>
-          <updatedAt>2024-10-07T17:40:19.257730900Z</updatedAt>
+          <shares>1000000000</shares>
+          <updatedAt>2024-10-06T09:54:39.332211Z</updatedAt>
           <type>DELIVERY_INBOUND</type>
         </portfolio-transaction>
       </transactions>
@@ -181,10 +166,6 @@
                   <string>T1</string>
                 </entry>
               </configuration>
-            </widget>
-            <widget type="TRADES_AVERAGE_HOLDING_PERIOD">
-              <label>Average holding period</label>
-              <configuration/>
             </widget>
           </widgets>
         </column>
@@ -464,7 +445,27 @@
             <config>
               <uuid></uuid>
               <name></name>
+              <data>F2023-12-31_2024-01-04</data>
+            </config>
+            <config>
+              <uuid></uuid>
+              <name></name>
               <data>L1Y0</data>
+            </config>
+            <config>
+              <uuid></uuid>
+              <name></name>
+              <data>F2023-12-31_2024-04-01</data>
+            </config>
+            <config>
+              <uuid></uuid>
+              <name></name>
+              <data>F2022-12-31_2024-01-01</data>
+            </config>
+            <config>
+              <uuid></uuid>
+              <name></name>
+              <data>F2023-01-01_2024-01-01</data>
             </config>
             <config>
               <uuid></uuid>
@@ -474,17 +475,12 @@
             <config>
               <uuid></uuid>
               <name></name>
-              <data>F2021-01-01_2023-01-01</data>
+              <data>F2019-12-31_2022-01-01</data>
             </config>
             <config>
               <uuid></uuid>
               <name></name>
-              <data>F2020-12-31_2023-01-01</data>
-            </config>
-            <config>
-              <uuid></uuid>
-              <name></name>
-              <data>F2020-12-31_2022-12-31</data>
+              <data>F2020-01-01_2022-01-01</data>
             </config>
           </configurations>
         </config-set>

@@ -158,3 +158,6 @@ Historical prices: many of the presets don't seem to function?
 ### 2024-07-08
 - Field Category key in Definition view of Taxonomies?
 - Expected return? This row is currently not used in the calculation ....
+
+### 2024-10-05
+- with missing historical prices: the line in the chart between the two known prices is "misleading" (increasing or decreasing) in stead of staying at the last known historical price. For example, two known prices (100 & 200 EUR at jan 1, 2023 & 2024), the line for the year 2023 is increasing from 100 to 200, even though (I think) the price that is taken for calculations in that period is the last known price, e.g. 100 EUR.
