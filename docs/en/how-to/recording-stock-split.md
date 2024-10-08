@@ -29,13 +29,13 @@ Figure: Historical Quotes chart of Amazon (adjusted prices - chart from investin
 
 Both charts span a five-year period. But, while your purchase price around January 2022 was `$ 3408` (Figure 1), it appears to be priced around `$ 150` (Figure 2), according to [investing.com](https://www.investing.com/equities/amazon-com-inc). This discrepancy arises because financial websites typically "adjust" all historical prices after a stock split. This adjustment involves recalculating the historical prices before the split, just as the PP's Stock Split function does.
 
-Figure: Historical Quotes chart of Amazon (adjusted prices - chart from PP). {class=pp-figure}
+Figure: Historical Quotes chart of Amazon (adjusted prices after stock split - chart from PP). {class=pp-figure}
 
 ![](../reference/view/securities/images/split-stock-amazon-adjusted-PP.png)
 
 !!! Important
 
-    The "regular" Yahoo Finance Close Price is already adjusted for splits. The *Adjusted close* price is en surplus adjusted for splits and dividend and/or capital gain distributions.
+    The *regular* Yahoo Finance Close Price is already adjusted for splits. The *Adjusted close* price is en surplus adjusted for splits and dividend and/or capital gain distributions.
 
 
 **Some considerations**
