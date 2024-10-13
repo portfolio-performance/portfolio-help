@@ -3495,67 +3495,80 @@
 
   <h1>Trades</h1>
 
-<p>A trade refers to the act of buying or selling a financial security, such as a stock or bond. In PP, this can be executed through buy/sell transactions as well as through Inbound or Outbound Deliveries.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  The Reports &gt; Performance &gt; Trades view. </figcaption><img alt="" src="../images/trades-overview.png"></figure></p>
-<p>In the <code>Reports &gt; Performance &gt; Trades</code> menu, an open trade is constructed by consolidating all buy/Inbound Delivery transactions associated with a particular security. Hence, an open trade may encompass several buy transactions. Conversely, each sell or outbound delivery transaction generates one individual closed trade. For example, in Figure 1, <code>share-1</code> is characterized by one sell transaction, depicted by the first closed trade (row 1), and two buy transactions, consolidated into the open trade (row 2).</p>
+<p>A trade occurs whenever you buy or sell a financial security through a <code>Buy</code> or <code>Sell</code> transaction or an <code>Inbound</code> or <code>Outbound Delivery</code>. All trades are listed in the <code>Reports &gt; Performance &gt; Trades</code> view. There are two kinds of trades:</p>
+<ul>
+<li>
+<p><strong>Open Trade</strong>: An open trade is initiated with the first <code>Buy</code> or <code>Inbound Delivery</code> transaction for a security. The <code>Start Date</code> is set to the date of this initial transaction, while the <code>End Date</code> remains open as no <code>Sell</code> or <code>Outbound Delivery</code> has occurred yet. Subsequent purchases of the same security are added to <em>this</em> open trade, updating the number of shares and performance indicators such as Entry Value and Profit/Loss. Thus, an open trade can include multiple purchases.</p>
+</li>
+<li>
+<p><strong>Closed Trade</strong>: A closed trade is generated with <em>each</em> <code>Sell</code> or <code>Outbound Delivery</code> transaction of a security. If you sell a specific security on three different dates, three separate closed trades will be created, each identified by their respective buy and sell dates. Selling a security can affect the <code>Start Date</code> of the associated open trade, as the system uses the FIFO (First In, First Out) methodology. If all shares from a specific purchase are sold, the <code>Start Date</code> of the open trade will shift to the date of the next purchase.</p>
+</li>
+</ul>
+<p>For example, in Figure 1, <code>share-1</code> has two associated trades, characterized by one sell transaction, depicted by the first closed trade (row 1), and two buy transactions, consolidated into the open trade (row 2).</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  The Reports &gt; Performance &gt; Trades view. </figcaption><img alt="" src="../images/trades-overview.svg"></figure></p>
 <p>With the <code>Filter</code> menu, you can limit the list of trades to <code>Only open trades</code> or <code>Only closed trades</code>. If neither is selected in this group, all trades are displayed. In the second group, you can choose between <code>Only profitable trades</code> or <code>Only lossmaking trades</code>; essentially the green colored versus the red colored rows.</p>
 <p>The <code>Export as CSV</code> icon contains one export, named <code>Trades</code> which represents the table from Figure 1. Fields added or removed with the <code>Settings</code> icon will also be added or removed in the CSV-file. Most of the available fields are already shown in Figure 1.</p>
 <h2 id="available-columns">Available columns</h2>
 <ul>
-<li><em>Name</em>: The trades are named by the name of the security that is traded (e.g. share-1). You can rename the trade by double-clicking the name.</li>
-<li><em>Start date</em>: The date of the first buy/Inbound delivery transaction.</li>
-<li><em>End date</em>: Either the selling date of the security or <code>(open)</code> if there are still securities left in the portfolio.</li>
+<li><em>Name</em>: The trades are named by the name of the security that is traded (e.g. <code>share-1</code>). You can rename the trade by double-clicking the name.</li>
+<li><em>Start date</em>: The date of the first buy/Inbound delivery transaction. If all shares from a particular purchase are sold (following the FIFO method), the start date will update to the date of the next purchase.</li>
+<li><em>End date</em>: This is either the date when the security is sold or marked as (open) if the position is still active. Once all shares are sold, the open trade will be removed from the list.</li>
 <li>
-<p><em># transactions</em>: The number of transactions in a trade is typically one (buy) or two (buy + sell). Hovering over the cell near the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2v6Z"></path></svg></span> icon will trigger a pop-up displaying additional information. From Figure 2, it can be deduced that 5 shares of <code>share-1</code> were sold on April 12, 2023. Hovering over the open trade (row 2) will reveal that 5 shares were purchased on January 15, 2021, and another 5 on January 14, 2022. Here, you can observe the FIFO principle in action. The five sold shares are subtracted from the first purchase, which initially consisted of 10 shares.</p>
+<p><em># transactions</em>: The number of transactions in a trade is typically one (only one buy transaction) or two (buy + sell). Hovering over the cell near the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2v6Z"></path></svg></span> icon will trigger a pop-up displaying additional information. From Figure 2, it can be deduced that 5 shares of <code>share-1</code> were sold on April 12, 2023. Hovering over the open trade (row 2) will reveal that 5 shares were purchased on January 15, 2021, and another 5 on January 14, 2022. Here, you can observe the FIFO principle in action. The five sold shares are subtracted from the first purchase, which initially consisted of 10 shares.</p>
 <p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Info overlay closed trade share-1. </figcaption><img alt="" src="../images/trades-info-overlay.png"></figure></p>
 </li>
 <li>
 <p><em>Shares</em>: The number of shares in the trade.</p>
 </li>
 <li>
-<p><em>Entry value</em>: This represents the Net Transaction Value (NTV) of the trade, which includes fees and taxes. For an open trade with a single buy transaction, this is the NTV of the purchase. For example, if 3 shares of share-3 are bought at 413.64 USD per share with 50 USD in fees and taxes, the Net Transaction Value after conversion at a rate of 0.9384 USD/EUR is 1211.40 EUR.
-    For a single buy/sell trade like share-2, the Net Transaction Value of the original purchase (67 EUR) is distributed over the open trade of 5 shares (41.88 EUR = 67/8 * 5) and the closed trade of 3 shares (25.13 EUR).</p>
-<p>The situation is more complex with the multiple buy/sell trade of share-1. The entry value (161.50 EUR) of the open trade is formed by 5 shares from the first purchase and 5 from the second, following the FIFO principle. The original Net Transaction Value of the purchase of 10 shares on January 15, 2021, was 155 EUR. The second purchase of 5 shares had a net transaction value of 84 EUR. Combined, 161.50 EUR equals (155/2 + 84).</p>
+<p><em>Entry value</em>: This represents the Net Transaction Value (NTV) of the trade, which includes fees and taxes. You can find this value in Figure 1, in the top panel's last column. For an open trade with no sell transaction, this is the NTV of the purchase. For example, the purchase of <code>share-3</code> is accomplished by a single purchase with NTV of 1211.40 EUR; including (foreign) taxes and fees. For a buy + sell trade like <code>share-2</code>, the Net Transaction Value of the original purchase (67 EUR for 8 shares) is distributed over the open trade of the remaining 5 shares (41.88 EUR = 5/8 * 67 EUR) and the closed trade of 3 shares (25.13 EUR = 3/8 * 67 EUR).</p>
+<p>The situation is more complex with the 2 buy + 1 sell trade of <code>share-1</code>.  The original Net Transaction Value of the purchase of 10 shares on January 15, 2021, was 155 EUR. The second purchase of 5 shares had a net transaction value of 84 EUR. The entry value of the remaining 5 shares in the open trade (161.50 EUR) is formed by 5 shares from the first purchase and 5 from the second, following the FIFO principle in the sell transaction. The 5 shares that were sold came from the first purchase. The NTV of the open trade becomes then: (5/10 * 155 EUR) + (5/5 * 84 EUR) or 161.50 EUR.</p>
 </li>
 <li>
-<p><em>Entry value (per share)</em>: Enable this column by using the Settings (gear) icon. The value can be easily calculated by dividing the Entry value by the number of shares.</p>
+<p><em>Entry value (per share)</em>: Enable this column by using the Settings <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2699.svg" title=":gear:"> (gear) icon. The value can be easily calculated by dividing the Entry value by the number of shares.</p>
 </li>
-<li><em>Exit value</em>: For open trades, this is the market value, which equals the number of shares multiplied by the current quote price. For example, the current quote price of <code>share-2</code> is 12.405 EUR/share. The exit value is 5 x 12.405 = 62.03 EUR. For closed trades, the exit value is the Net Transaction Value of the sale. For instance, if <code>share-2</code> was sold on April 15, 2024, for 3 shares x 12.48 EUR/share minus fees &amp; taxes (4 EUR), the exit value is 34.46 EUR.</li>
+<li><em>Exit value</em>: For open trades, this is the market value, which equals the number of shares multiplied by the current quote price. For example, the current quote price (Oct 11, 2024) of <code>share-2</code> is 11.645 EUR/share. The exit value is 5 x 11.645 = 58.23 EUR. For a closed trade, the exit value is the Net Transaction Value of the sale. For instance, <code>share-2</code> was sold on April 15, 2024: 3 shares x 12.48 EUR/share minus fees &amp; taxes (4 EUR). The exit value is thus 34.46 EUR.</li>
 <li><em>Exit value (per share)</em>: Similar to Entry value (per share); as described above.</li>
 <li><em>Profit/Loss</em>: The profit/loss is the difference between the Exit value and the Entry value. Green numbers indicate a profit, while red numbers indicate a loss.</li>
 <li><em>Gross Profit/Loss</em>: This equals the value of the previous column plus taxes and fees. Because for closed trades, the taxes and fees of the sell transaction are included in the Gross Profit/Loss column, this field cannot be calculated for the open trades. </li>
 <li>
-<p><em>Holding period (days)</em>: For single purchase closed trades, it equals the number of days between the End and the start date. For open trades, it is the difference between today and the Start date. This calculation does not consider weekends, holidays or any other calendar.</p>
+<p><em>Holding period (days)</em>: For a single purchase closed trade, it equals the number of days between the End and the start date. For open trades, it is the difference between <strong>today</strong> and the Start date. This calculation does <em>not</em> consider weekends, holidays or any other calendar.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For multiple purchase trades, the holding period is an average, weighted by the number of shares. For example, assuming today is 2024-04-22, then the holding period for the first purchase in Figure 2 is: (2024-04-22 - 2021-01-15) = 1193 days and for the second buy 829 days. The weighted average is [(5 x 1193) + (5 x 829)]/10 = 1011 days.</p>
+<p>For multiple purchase trades, the holding period is an average, weighted by the number of shares. For example, assuming today is 2024-10-13, then the holding period of <code>share-1</code> for the first purchase in Figure 2 is: (2024-10-13 - 2021-01-15) = 1367 days and for the second purchase (2024-10-13 - 2022-01-14) = 1003 days. The weighted average is [(5 x 1367) + (5 x 1003)]/10 = 1185 days.</p>
 </div>
 </li>
 <li>
-<p><em>Latest Trade</em>: Enable this column using the Settings (gear) icon. It typically contains either the End Date for closed trades or the Start date for open trades. An exception is an open trade with multiple buy transactions, in which case the date of the last transaction is used.</p>
+<p><em>Latest Trade</em>: Enable this column using the Settings <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2699.svg" title=":gear:"> (gear) icon. It typically contains either the End Date for closed trades or the Start date for open trades. An exception is an open trade with multiple buy transactions, in which case the date of the last transaction is used.</p>
 </li>
 <li><em>IRR</em>: The Internal Rate of Return; for detailed calculation, refer to the following section.</li>
-<li><em>Return</em>: This actually represents the True Time-Weighted Rate of Return (TTWROR); for further explanation, see below. This column is not visible by default; use the Settings (gear) icon to display it.</li>
-<li><em>Note</em>: The note associated with the security.</li>
+<li><em>Return</em>: Enable this column using the Settings <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2699.svg" title=":gear:"> (gear) icon. The Return is calculated as: <code>(Exit Value/Entry Value) -1</code>. This serves as an indicator of the trade's performance (see below for more details).</li>
+<li><em>Note</em>: The note associated with the security. You cannot have a separate note for each trade.</li>
 </ul>
 <p>Additionally, the following columns can be made visible using the Settings (gear) icon: <code>Securities Account</code>, <code>ISIN</code>, <code>Symbol</code>, and <code>WKN</code>. Explanation of these fields can be found at the description of the <a href="../../../../file/new/#security-master-data">master data</a> of the security.</p>
 <h2 id="performance-calculation">Performance calculation</h2>
-<p>The IRR and Return column represent the performance of the open or closed trade. Please note that you cannot set a Reporting period explicitly. The Reporting period of a trade is always between today and the start date of the trade. The column Holding period (days) gives an indication of the number of days between these two dates.</p>
+<p>The IRR and Return column represent the performance of the open or closed trades. Please note that you cannot set a Reporting period explicitly. The Reporting period of a trade is always between today and the start date of the trade. The column Holding period (days) gives an indication of the number of days between these two dates.</p>
 <p>In the section <a href="../../../../../concepts/performance/money-weighted/#irr-at-trade-level">Reference &gt; Basic concepts &gt; Performance &gt; Money-weighted return</a> an extensive calculation of the IRR of open and closed trades is given (using the same example of <code>share-1</code> as above).</p>
 <p>In summary, given the <a href="../../../../../concepts/performance/money-weighted/">IRR equation</a>: $\mathrm{MVE = MVB \times (1 + IRR)^{\frac{RD_1}{365}} + \sum_{t=1} ^{n}CF_t \times (1+IRR)^{\frac{RD_t}{365}} \qquad \text{(Eq 1)}}$</p>
 <ul>
 <li>
-<p>Closed trade (share-1): 105 EUR = 77.50 EUR x (1 + IRR)^(817/365). An IRR of 14.53% will solve this equation exactly. To reach an Exit value of 105 EUR, it would require an initial Entry value of 77.50 EUR to grow at a compound annual interest rate (IRR) of 14.53%, over a period of 817 days.</p>
+<p>Closed trade (<code>share-1</code>): <code>105 EUR = 0 + 77.50 EUR * (1 + IRR)^(817/365)</code>. An IRR of 14.53% will solve this equation exactly. To reach an Exit value of 105 EUR, it would require an initial Entry value of 77.50 EUR to grow at a compound annual interest rate (IRR) of 14.53%, over a period of 817 days. The MVB of a trade is always zero, because the trade starts with the first purchase or cash flow. </p>
 </li>
 <li>
-<p>Open trade (share-1): The open trade has two cashflows (buy). Hovering over the Transactions cell will reveal the data (see Figure 2). The holding period for the first buy is 1193 days = (2024-04-22 - 2021-01-15) and for the second buy 829 days = (2024-04-22 - 2022-01-14). The IRR equation becomes: 216.10 EUR = 77.50 EUR x (1 + IRR)^(1193/365) + 84 EUR x (1 + IRR)^(829/365) or 11.12%. Please note that the holding periods and Exit value will change upon trying this example on a later date.</p>
+<p>Open trade (<code>share-1</code>): The open trade has two cashflows (buy). Hovering over the Transactions cell will reveal the data (see Figure 2). Assuming today is 2024-10-13:</p>
+<ul>
+<li>First purchase: 5 remaining shares, bought at 77.50 EUR (=5/10 * 155 EUR), held for 1367 days (<code>2024-10-13 - 2021-01-15</code>).</li>
+<li>Second purchase: 5 shares bought for 84 EUR, held for 1003 days (<code>2024-10-13 - 2022-01-14</code>).</li>
+</ul>
+<p>The IRR equation becomes: <code>271.40 EUR = 0 + 77.50 * (1 + IRR)^(1367/365) + 84 * (1 + IRR)^(1003/365)</code> or 11.12%. Please note that the holding periods and Exit value will change upon trying this example on a later date.</p>
 </li>
 </ul>
-<p>The Return column is in fact a simple return or the <a href="../../../../../concepts/performance/time-weighted/#time-weighted-rate-of-return">TTWROR</a> with a single subperiod. It is the result of Exit value/Entry value or Profit/loss/Entry value.</p>
+<p>The Return column is a <a href="../../../../../concepts/performance/">simple measure of performance</a>: <code>Exit Value/Entry Value) -1</code>.</p>
 <ul>
-<li>Closed trade (share-1): r = 105 EUR/77.50 EUR = 35.48%</li>
-<li>Open trade (share-1): r = 216.10 EUR/161.50 EUR = 33.81% </li>
+<li>Closed trade (share-1): r = (105 EUR/77.50 EUR) - 1 = 35.48%</li>
+<li>Open trade (share-1): r = (271.40 EUR/161.50 EUR) - 1 = 68.05%</li>
 </ul>
+<p>For a single purchase trade, such as the open trade of share-3, the Internal Rate of Return (IRR), the Time-Weighted Rate of Return per annum (TTWROR p.a.), and the simple Return are identical. For example the <em>periodical</em> simple return of <code>share-3</code> is -5.74%. The <em>annualized</em> IRR is -11.24%. You can annualize a periodical return r with the <a href="../../../../../concepts/performance/time-weighted/#ttwror-pa">formula</a>: <code>((1 + r)^(365/HP)) - 1</code>; where HP is the holding period. For example, the periodical return of -5.74% for a holding period of 181 days has an annualized value of <code>((1 - 0.0574)^(365/181)) - 1</code> or -11.24%, which is exactly the IRR. </p>
 
 
 
@@ -3576,7 +3589,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 22, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 13, 2024</span>
   </span>
 
     

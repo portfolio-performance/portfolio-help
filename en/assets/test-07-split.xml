@@ -2768,32 +2768,6 @@
                   <type>BUY</type>
                 </portfolio-transaction>
                 <portfolio-transaction>
-                  <uuid>d90240a1-8dcd-40b0-87ad-69d52e3d94c4</uuid>
-                  <date>2023-09-14T00:00</date>
-                  <currencyCode>EUR</currencyCode>
-                  <amount>2341</amount>
-                  <security reference="../../../../../../../../../securities/security"/>
-                  <crossEntry class="buysell">
-                    <portfolio reference="../../../.."/>
-                    <portfolioTransaction reference="../.."/>
-                    <account reference="../../../../../../../.."/>
-                    <accountTransaction>
-                      <uuid>c834289f-f76f-4cfd-865d-a4e1ae370637</uuid>
-                      <date>2023-09-14T00:00</date>
-                      <currencyCode>EUR</currencyCode>
-                      <amount>2341</amount>
-                      <security reference="../../../../../../../../../../../securities/security"/>
-                      <crossEntry class="buysell" reference="../.."/>
-                      <shares>0</shares>
-                      <updatedAt>2024-02-13T08:40:46.205249800Z</updatedAt>
-                      <type>SELL</type>
-                    </accountTransaction>
-                  </crossEntry>
-                  <shares>79600000</shares>
-                  <updatedAt>2024-02-13T08:40:46.205249800Z</updatedAt>
-                  <type>SELL</type>
-                </portfolio-transaction>
-                <portfolio-transaction>
                   <uuid>9951730c-575c-4b3d-bd3e-1aad3438edf1</uuid>
                   <date>2022-01-03T00:00</date>
                   <currencyCode>EUR</currencyCode>
@@ -2838,7 +2812,6 @@
         <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[4]/crossEntry/accountTransaction"/>
         <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[5]/crossEntry/accountTransaction"/>
         <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[6]/crossEntry/accountTransaction"/>
-        <account-transaction reference="../account-transaction/crossEntry/portfolio/transactions/portfolio-transaction[7]/crossEntry/accountTransaction"/>
         <account-transaction>
           <uuid>db63c1b7-1b39-4311-bf5a-85b646d492b9</uuid>
           <date>2022-01-01T00:00</date>

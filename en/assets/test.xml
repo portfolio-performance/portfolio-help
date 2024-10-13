@@ -9,10 +9,11 @@
       <tickerSymbol></tickerSymbol>
       <feed>MANUAL</feed>
       <prices>
+        <price t="2020-07-01" v="10000000000"/>
         <price t="2021-01-01" v="10000000000"/>
         <price t="2021-12-31" v="11000000000"/>
         <price t="2022-01-01" v="1100000000"/>
-        <price t="2023-01-01" v="1300000000"/>
+        <price t="2022-12-31" v="1300000000"/>
       </prices>
       <attributes>
         <map/>
@@ -26,21 +27,6 @@
       </events>
       <isRetired>false</isRetired>
       <updatedAt>2024-10-06T09:30:00.517050900Z</updatedAt>
-    </security>
-    <security>
-      <uuid>46f2a45f-07dc-4a6e-b01f-207324111ac8</uuid>
-      <name>Siemens</name>
-      <currencyCode>EUR</currencyCode>
-      <feed>GENERIC-JSON</feed>
-      <feedURL>https://www.nseindia.com/api/historical/cm/equity?symbol=SIEMENS&amp;from=07-06-2024&amp;to=07-10-2024</feedURL>
-      <prices/>
-      <attributes>
-        <map/>
-      </attributes>
-      <property type="FEED" name="GENERIC-JSON-DATE">$.data[*].CH_TIMESTAMP</property>
-      <property type="FEED" name="GENERIC-JSON-CLOSE">$.data[*].CH_CLOSING_PRICE</property>
-      <isRetired>false</isRetired>
-      <updatedAt>2024-10-07T18:51:06.265580600Z</updatedAt>
     </security>
   </securities>
   <watchlists>
@@ -87,27 +73,27 @@
           <amount>10000</amount>
           <security reference="../../../../../securities/security"/>
           <shares>100000000</shares>
-          <updatedAt>2024-10-07T15:46:05.811492400Z</updatedAt>
+          <updatedAt>2024-10-08T08:33:13.968147400Z</updatedAt>
           <type>DELIVERY_INBOUND</type>
         </portfolio-transaction>
         <portfolio-transaction>
           <uuid>5416412c-1064-4d05-aa16-4d3eb17b8611</uuid>
-          <date>2022-01-01T00:00</date>
+          <date>2021-12-31T00:00</date>
           <currencyCode>EUR</currencyCode>
           <amount>11000</amount>
           <security reference="../../../../../securities/security"/>
           <shares>100000000</shares>
-          <updatedAt>2024-10-07T17:40:38.254937400Z</updatedAt>
+          <updatedAt>2024-10-08T09:12:45.770071400Z</updatedAt>
           <type>DELIVERY_OUTBOUND</type>
         </portfolio-transaction>
         <portfolio-transaction>
-          <uuid>5b0f4675-e27c-477c-b43a-2a36585238e7</uuid>
+          <uuid>3b82a560-4436-40b4-a463-414f6b220de5</uuid>
           <date>2022-01-01T00:00</date>
           <currencyCode>EUR</currencyCode>
           <amount>11000</amount>
           <security reference="../../../../../securities/security"/>
-          <shares>1100000000</shares>
-          <updatedAt>2024-10-07T17:40:19.257730900Z</updatedAt>
+          <shares>1000000000</shares>
+          <updatedAt>2024-10-08T08:34:53.232412900Z</updatedAt>
           <type>DELIVERY_INBOUND</type>
         </portfolio-transaction>
       </transactions>
@@ -404,7 +390,7 @@
             <config>
               <uuid>ec4dc660-8854-43ad-80d4-31584fe10e19</uuid>
               <name>Standard</name>
-              <data>Client-absolute_delta_all_records;#ff8040;SOLID;false;2,Client-absolute_delta;#c0c0c0;SOLID;false;2</data>
+              <data>Client-absolute_delta_all_records;#ff8040;SOLID;false;2;true,Client-absolute_delta;#c0c0c0;SOLID;false;2;true</data>
             </config>
           </configurations>
         </config-set>
@@ -440,7 +426,7 @@
             <config>
               <uuid>7600e16d-0168-49d1-aadb-18c66a64bc8f</uuid>
               <name>Standard</name>
-              <data>Securitye11ee537-a363-4166-a9dd-f950ad8e1a9b;#e279bb;SOLID;false;2,[b]Securitydb4362cf-a2eb-4edc-878c-ac398c5f5e0a;#ff8000;SOLID;false;2</data>
+              <data>Client-totals;#000000;SOLID;false;2;true</data>
             </config>
           </configurations>
         </config-set>
@@ -470,16 +456,6 @@
               <uuid></uuid>
               <name></name>
               <data>L5Y0</data>
-            </config>
-            <config>
-              <uuid></uuid>
-              <name></name>
-              <data>F2021-01-01_2023-01-01</data>
-            </config>
-            <config>
-              <uuid></uuid>
-              <name></name>
-              <data>F2020-12-31_2023-01-01</data>
             </config>
             <config>
               <uuid></uuid>
