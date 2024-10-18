@@ -2969,6 +2969,72 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#beispiel-onvista-api-stand-03082024" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beispiel Onvista API (Stand: 03.08.2024)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Beispiel Onvista API (Stand: 03.08.2024)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url-aufbau" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL Aufbau
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url-ermitteln" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL ermitteln
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-antwort-einsehen" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON Antwort einsehen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beispiel JSON
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Beispiel JSON">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eingabe-in-portfolio-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eingabe in Portfolio Performance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3403,6 +3469,72 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#beispiel-onvista-api-stand-03082024" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beispiel Onvista API (Stand: 03.08.2024)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Beispiel Onvista API (Stand: 03.08.2024)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url-aufbau" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL Aufbau
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url-ermitteln" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL ermitteln
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-antwort-einsehen" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON Antwort einsehen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beispiel JSON
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Beispiel JSON">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eingabe-in-portfolio-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eingabe in Portfolio Performance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3517,6 +3649,193 @@ Es enthält Metadaten des Wertpapiers, Unix-Zeitstempel der beiden abgerufenen D
 <p>Mit den oben genannten Informationen sollte es ein Leichtes sein, Kurse mit JSON abzurufen.</p>
 <p><figure class="pp-figure" id="_figure-2"><figcaption>Abbildung 2.  JSON Kursdaten Parameter.</figcaption><img alt="" src="../images/json-yahoo-parameter.png"></figure></p>
 <p>Bei den meisten Diensten muss man sich registrieren, um einen API-Schlüssel zu erhalten, eine eindeutige Kennung, die den Nutzer authentifiziert und den Zugang zum Dienst ermöglicht. Zwar bieten zahlreiche Finanzdienste scheinbar kostenlose API-Schlüssel an, doch erweisen sich ihre Nutzungsbedingungen und langfristigen Verpflichtungen oft als unzureichend. Portfolio Performance hat aus Kompatibilitätsgründen mehrere dieser Dienste in seiner Liste der Kursquellen-Anbieter behalten; z.B. Alpha Vantage, eodhd, .... In der Regel empfiehlt es sich, Portfolio Report und Yahoo Finance für ein typisches Portfolio zu nutzen.</p>
+<h2 id="beispiel-onvista-api-stand-03082024">Beispiel Onvista API (Stand: 03.08.2024)</h2>
+<p>Onvista (https://www.onvista.de/) hat ein breites Spektrum an Assets und dazu auch sehr lang vorgehaltene historische Daten. 
+Wer historische Daten von vor 10 Jahren und mehr benötigt (bspw. für das Tracken von Rentenversicherunge etc.),
+hat hier große Chancen fündig zu werden.</p>
+<p>Auf der Seite eines Assets kann man aktuell unter <code>Alle Kurse</code> ganz unten unter <code>Historische Kurse zu XYZ</code> 
+historische Daten von einem Monat direkt einsehen. Längere Zeiträume müssen als CSV Datei runter geladen werden.</p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Abbildung 3.  Alle Kurse anzeigen Onvista </figcaption><img alt="" src="../images/screenshot_onvista_json_alle_kurse.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Abbildung 4.  Historische Kursdaten Onvista </figcaption><img alt="" src="../images/screenshot_onvista_json_historische_Daten.png"></figure></p>
+<p>In der Filterauswahl über der Tabelle ist es möglich den jeweiligen Handelsplatz auszuwählen, 
+das Startdatum festzulegen und den Zeitraum, der betrachtet werden soll. Sobald mehr als ein Monat ausgewählt wird,
+erscheint statt der Kursliste ein Download Button und man muss eine CSV runter laden. 
+Ein automatisierter CSV Import von einer URL ist über Portfolio Performance aktuell nicht möglich. 
+Da aber im Hintergrund des Download-Mechanismuses ein Call gegen die Onvista API (HTTP) stattfindet, 
+welcher ein JSON object zurückliefert, kann die Call-URL und das zurückgegebene JSON für einen automatisierten Import 
+genutzt werden.</p>
+<p>Beispiel-Url:
+<a href="https://api.onvista.de/api/v1/instruments/FUND/6278016/eod_history?idNotation=35420185&amp;range=M1&amp;startDate=2024-07-03&amp;withEarnings=true">https://api.onvista.de/api/v1/instruments/FUND/6278016/eod_history?idNotation=35420185&amp;range=M1&amp;startDate=2024-07-03&amp;withEarnings=true</a>).</p>
+<h3 id="url-aufbau">URL Aufbau</h3>
+<p>Die URL unterscheidet sich, je nachdem was man in der Filterauswahl über der Tabelle ausgewählt hat.</p>
+<p>Die wichtigen Parts sind:</p>
+<ul>
+<li>Der Wert hinter <code>/FUND/</code> (hier: <code>6278016</code>) in der URI, stellt das zu exportierende Asset dar. </li>
+<li>Der Parameter <code>idNotation</code> (hier: <code>35420185</code>) bestimmt den Handelsplatz. </li>
+<li>Der Parameter <code>range</code> (hier: <code>M1</code>) gibt den Betrachtungszeitraum an (Dauer).</li>
+<li>Der Parameter <code>startDate</code> (hier: <code>2024-07-03</code>) gibt das Startdatum der Kurse an. </li>
+</ul>
+<p>Die weiteren Parameter sind für den Import unerheblich. </p>
+<h3 id="url-ermitteln">URL ermitteln</h3>
+<p>Um den größtmöglichen historischen Zeitraum zu beziehen, stellt man bei <code>Dauer</code> den Wert <code>max.</code> ein. 
+Das Startdatum springt dann automatisch auf den Anfang der Unix Epoche <code>01.01.1970</code>. 
+Anschließend wählt man den gewünschten Handelsplatz oder probiert einige Handelsplätze durch und wählt den mit der 
+längsten Historie oder der besten Datenqualität. Dazu lädt man sich die Dateien zunächst exemplarisch runter und öffnet 
+sie in Excel oder ähnlichem.</p>
+<p>Um nun an die URL des Calls zu kommen, kann man die Developer Tools der jeweiligen Browser nutzen. Im Chrome kann die 
+Developer Toolbar über die Taste <code>F12</code> oder die Tastenkombination <code>Strg+Shift+I</code> geöffnet werden (alternativ über das 
+Browsermenü unter <code>Weitere Tool -&gt; Developer Tools</code>).</p>
+<p>In den Developer Tools wählt man nun den <code>Netzwerk</code> Tab und stellt den Filter <code>Fetch/XHR</code> ein. Außerdem stellt man beim 
+Textfilter <code>eod_history?</code> ein. Zudem löscht man zuvor am besten einmal alle bestehenden Calls mittels des
+<code>Clear Nework Logs</code>-Button. 
+So bekommt man beim Ausführen des Downloads nur die Calls angezeigt, die zum Download der
+CSV gehören. Nach dem erneuten Ausführen des Downloads, kann man den Download Call dann in Log-Liste sehen. </p>
+<p><figure class="pp-figure" id="_figure-5"><figcaption>Abbildung 5.  Onvista API Call Developer Tools  </figcaption><img alt="" src="../images/screenshot_onvista_json_developer_tools.png"></figure></p>
+<p>Durch Anklicken des Calls, kann man den Call genauer betrachten und sich die URL aus den Call-Details
+kopieren. Den Teil <code>&amp;withEarnings=true</code> kann man dabei auslassen. </p>
+<p><figure class="pp-figure" id="_figure-6"><figcaption>Abbildung 6.  Onvista JSON URL mittels Developer Tools beziehen </figcaption><img alt="" src="../images/screenshot_onvista_json_developer_tools_details.png"></figure></p>
+<p>Diese Url kann nun in Portfolio Performance als Kurs-Url eingetragen werden.</p>
+<p><figure class="pp-figure" id="_figure-7"><figcaption>Abbildung 7.  Onvista JSON in Call Details </figcaption><img alt="" src="../images/screenshot_onvista_json_settings_pp.png"></figure></p>
+<h3 id="json-antwort-einsehen">JSON Antwort einsehen</h3>
+<p>Um die oben erläuterten JSON Pfade zu ermitteln, kann man die URL auch einfach in der Browser Adressbar eingeben und 
+man bekommt das JSON direkt im Browser angezeigt. Alternativ ist es auch im Tab <code>Response</code> in den Call-Details zu finden.</p>
+<p><figure class="pp-figure" id="_figure-8"><figcaption>Abbildung 8.  Onvista JSON in Call Details </figcaption><img alt="" src="../images/screenshot_onvista_json_developer_tools_details_json.png"></figure></p>
+<h3 id="beispiel-json">Beispiel JSON</h3>
+<p>Hier ein gekürztes Beispiel des gelieferten Onvista API JSONs:</p>
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">"expires"</span><span class="p">:</span><span class="w"> </span><span class="mi">1722542222119</span><span class="p">,</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nt">"entityType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FUND"</span><span class="p">,</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">"entityValue"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11680838"</span><span class="p">,</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nt">"market"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Frankfurt"</span><span class="p">,</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nt">"codeMarket"</span><span class="p">:</span><span class="w"> </span><span class="s2">"_FRA"</span><span class="p">,</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nt">"nameExchange"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Frankfurt"</span><span class="p">,</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="nt">"codeExchange"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FRA"</span><span class="p">,</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="nt">"idNotation"</span><span class="p">:</span><span class="w"> </span><span class="mi">15911132</span><span class="p">,</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="nt">"isoCountry"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DE"</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">  </span><span class="nt">"idInstrument"</span><span class="p">:</span><span class="w"> </span><span class="mi">11680838</span><span class="p">,</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">  </span><span class="nt">"idNotation"</span><span class="p">:</span><span class="w"> </span><span class="mi">15911132</span><span class="p">,</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">  </span><span class="nt">"isoCurrency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EUR"</span><span class="p">,</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">  </span><span class="nt">"unitType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"STK"</span><span class="p">,</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">  </span><span class="nt">"datetimeStartAvailableHistory"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2006-10-20T00:00:00.000+00:00"</span><span class="p">,</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">  </span><span class="nt">"datetimeEndAvailableHistory"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-07-31T23:59:59.000+00:00"</span><span class="p">,</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">  </span><span class="nt">"idTradingSchedule"</span><span class="p">:</span><span class="w"> </span><span class="mi">66</span><span class="p">,</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">  </span><span class="nt">"datetimeLast"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="mi">1719835200</span><span class="p">,</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">    </span><span class="mi">1719921600</span><span class="p">,</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">    </span><span class="mi">1720008000</span><span class="p">,</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">    </span><span class="mi">1720094400</span><span class="p">,</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">    </span><span class="mi">1720180800</span><span class="p">,</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">    </span><span class="mi">1720440000</span><span class="p">,</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">    </span><span class="mi">1720526400</span><span class="p">,</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">    </span><span class="mi">1720612800</span><span class="p">,</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">    </span><span class="mi">1720699200</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">  </span><span class="nt">"first"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="w">    </span><span class="mf">2107.229</span><span class="p">,</span>
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">    </span><span class="mf">2106.275</span><span class="p">,</span>
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="w">    </span><span class="mf">2119.345</span><span class="p">,</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="w">    </span><span class="mf">2126.186</span><span class="p">,</span>
+<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a><span class="w">    </span><span class="mf">2114.754</span><span class="p">,</span>
+<a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a><span class="w">    </span><span class="mf">2116.483</span><span class="p">,</span>
+<a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a><span class="w">    </span><span class="mf">2125.949</span><span class="p">,</span>
+<a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a><span class="w">    </span><span class="mf">2133.487</span><span class="p">,</span>
+<a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a><span class="w">    </span><span class="mf">2152.971</span>
+<a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a><span class="w">  </span><span class="nt">"last"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a><span class="w">    </span><span class="mf">2109.383</span><span class="p">,</span>
+<a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a><span class="w">    </span><span class="mf">2114.109</span><span class="p">,</span>
+<a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a><span class="w">    </span><span class="mf">2123.822</span><span class="p">,</span>
+<a id="__codelineno-2-46" name="__codelineno-2-46" href="#__codelineno-2-46"></a><span class="w">    </span><span class="mf">2115.041</span><span class="p">,</span>
+<a id="__codelineno-2-47" name="__codelineno-2-47" href="#__codelineno-2-47"></a><span class="w">    </span><span class="mf">2119.793</span><span class="p">,</span>
+<a id="__codelineno-2-48" name="__codelineno-2-48" href="#__codelineno-2-48"></a><span class="w">    </span><span class="mf">2131.636</span><span class="p">,</span>
+<a id="__codelineno-2-49" name="__codelineno-2-49" href="#__codelineno-2-49"></a><span class="w">    </span><span class="mf">2133.645</span><span class="p">,</span>
+<a id="__codelineno-2-50" name="__codelineno-2-50" href="#__codelineno-2-50"></a><span class="w">    </span><span class="mf">2143.027</span><span class="p">,</span>
+<a id="__codelineno-2-51" name="__codelineno-2-51" href="#__codelineno-2-51"></a><span class="w">    </span><span class="mf">2132.029</span>
+<a id="__codelineno-2-52" name="__codelineno-2-52" href="#__codelineno-2-52"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-2-53" name="__codelineno-2-53" href="#__codelineno-2-53"></a><span class="w">  </span><span class="nt">"high"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-2-54" name="__codelineno-2-54" href="#__codelineno-2-54"></a><span class="w">    </span><span class="mf">2109.777</span><span class="p">,</span>
+<a id="__codelineno-2-55" name="__codelineno-2-55" href="#__codelineno-2-55"></a><span class="w">    </span><span class="mf">2114.109</span><span class="p">,</span>
+<a id="__codelineno-2-56" name="__codelineno-2-56" href="#__codelineno-2-56"></a><span class="w">    </span><span class="mf">2123.822</span><span class="p">,</span>
+<a id="__codelineno-2-57" name="__codelineno-2-57" href="#__codelineno-2-57"></a><span class="w">    </span><span class="mf">2126.186</span><span class="p">,</span>
+<a id="__codelineno-2-58" name="__codelineno-2-58" href="#__codelineno-2-58"></a><span class="w">    </span><span class="mf">2119.793</span><span class="p">,</span>
+<a id="__codelineno-2-59" name="__codelineno-2-59" href="#__codelineno-2-59"></a><span class="w">    </span><span class="mf">2134.405</span><span class="p">,</span>
+<a id="__codelineno-2-60" name="__codelineno-2-60" href="#__codelineno-2-60"></a><span class="w">    </span><span class="mf">2138.599</span><span class="p">,</span>
+<a id="__codelineno-2-61" name="__codelineno-2-61" href="#__codelineno-2-61"></a><span class="w">    </span><span class="mf">2143.078</span><span class="p">,</span>
+<a id="__codelineno-2-62" name="__codelineno-2-62" href="#__codelineno-2-62"></a><span class="w">    </span><span class="mf">2154.079</span>
+<a id="__codelineno-2-63" name="__codelineno-2-63" href="#__codelineno-2-63"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-2-64" name="__codelineno-2-64" href="#__codelineno-2-64"></a><span class="w">  </span><span class="nt">"low"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-2-65" name="__codelineno-2-65" href="#__codelineno-2-65"></a><span class="w">    </span><span class="mf">2102.052</span><span class="p">,</span>
+<a id="__codelineno-2-66" name="__codelineno-2-66" href="#__codelineno-2-66"></a><span class="w">    </span><span class="mf">2098.794</span><span class="p">,</span>
+<a id="__codelineno-2-67" name="__codelineno-2-67" href="#__codelineno-2-67"></a><span class="w">    </span><span class="mf">2110.312</span><span class="p">,</span>
+<a id="__codelineno-2-68" name="__codelineno-2-68" href="#__codelineno-2-68"></a><span class="w">    </span><span class="mf">2114.702</span><span class="p">,</span>
+<a id="__codelineno-2-69" name="__codelineno-2-69" href="#__codelineno-2-69"></a><span class="w">    </span><span class="mf">2112.632</span><span class="p">,</span>
+<a id="__codelineno-2-70" name="__codelineno-2-70" href="#__codelineno-2-70"></a><span class="w">    </span><span class="mf">2116.483</span><span class="p">,</span>
+<a id="__codelineno-2-71" name="__codelineno-2-71" href="#__codelineno-2-71"></a><span class="w">    </span><span class="mf">2125.949</span><span class="p">,</span>
+<a id="__codelineno-2-72" name="__codelineno-2-72" href="#__codelineno-2-72"></a><span class="w">    </span><span class="mf">2133.487</span><span class="p">,</span>
+<a id="__codelineno-2-73" name="__codelineno-2-73" href="#__codelineno-2-73"></a><span class="w">    </span><span class="mf">2132.029</span>
+<a id="__codelineno-2-74" name="__codelineno-2-74" href="#__codelineno-2-74"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-2-75" name="__codelineno-2-75" href="#__codelineno-2-75"></a><span class="w">  </span><span class="nt">"volume"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-2-76" name="__codelineno-2-76" href="#__codelineno-2-76"></a><span class="w">    </span><span class="mf">0.0</span><span class="p">,</span>
+<a id="__codelineno-2-77" name="__codelineno-2-77" href="#__codelineno-2-77"></a><span class="w">    </span><span class="mf">0.0</span><span class="p">,</span>
+<a id="__codelineno-2-78" name="__codelineno-2-78" href="#__codelineno-2-78"></a><span class="w">    </span><span class="mf">0.0</span><span class="p">,</span>
+<a id="__codelineno-2-79" name="__codelineno-2-79" href="#__codelineno-2-79"></a><span class="w">    </span><span class="mf">0.0</span><span class="p">,</span>
+<a id="__codelineno-2-80" name="__codelineno-2-80" href="#__codelineno-2-80"></a><span class="w">    </span><span class="mf">0.0</span><span class="p">,</span>
+<a id="__codelineno-2-81" name="__codelineno-2-81" href="#__codelineno-2-81"></a><span class="w">    </span><span class="mf">0.0</span><span class="p">,</span>
+<a id="__codelineno-2-82" name="__codelineno-2-82" href="#__codelineno-2-82"></a><span class="w">    </span><span class="mf">0.0</span><span class="p">,</span>
+<a id="__codelineno-2-83" name="__codelineno-2-83" href="#__codelineno-2-83"></a><span class="w">    </span><span class="mf">0.0</span><span class="p">,</span>
+<a id="__codelineno-2-84" name="__codelineno-2-84" href="#__codelineno-2-84"></a><span class="w">    </span><span class="mf">40.0</span>
+<a id="__codelineno-2-85" name="__codelineno-2-85" href="#__codelineno-2-85"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-2-86" name="__codelineno-2-86" href="#__codelineno-2-86"></a><span class="w">  </span><span class="nt">"numberPrices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-2-87" name="__codelineno-2-87" href="#__codelineno-2-87"></a><span class="w">    </span><span class="mi">23</span><span class="p">,</span>
+<a id="__codelineno-2-88" name="__codelineno-2-88" href="#__codelineno-2-88"></a><span class="w">    </span><span class="mi">27</span><span class="p">,</span>
+<a id="__codelineno-2-89" name="__codelineno-2-89" href="#__codelineno-2-89"></a><span class="w">    </span><span class="mi">23</span><span class="p">,</span>
+<a id="__codelineno-2-90" name="__codelineno-2-90" href="#__codelineno-2-90"></a><span class="w">    </span><span class="mi">18</span><span class="p">,</span>
+<a id="__codelineno-2-91" name="__codelineno-2-91" href="#__codelineno-2-91"></a><span class="w">    </span><span class="mi">22</span><span class="p">,</span>
+<a id="__codelineno-2-92" name="__codelineno-2-92" href="#__codelineno-2-92"></a><span class="w">    </span><span class="mi">23</span><span class="p">,</span>
+<a id="__codelineno-2-93" name="__codelineno-2-93" href="#__codelineno-2-93"></a><span class="w">    </span><span class="mi">20</span><span class="p">,</span>
+<a id="__codelineno-2-94" name="__codelineno-2-94" href="#__codelineno-2-94"></a><span class="w">    </span><span class="mi">28</span><span class="p">,</span>
+<a id="__codelineno-2-95" name="__codelineno-2-95" href="#__codelineno-2-95"></a><span class="w">    </span><span class="mi">1</span>
+<a id="__codelineno-2-96" name="__codelineno-2-96" href="#__codelineno-2-96"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-2-97" name="__codelineno-2-97" href="#__codelineno-2-97"></a><span class="w">  </span><span class="nt">"displayUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EUR"</span>
+<a id="__codelineno-2-98" name="__codelineno-2-98" href="#__codelineno-2-98"></a><span class="p">}</span>
+</code></pre></div>
+Aus der Struktur ergeben sich folgenden Eingaben in Portfolio Performance:
+<table>
+<thead>
+<tr>
+<th>Feld Portfolio Performance</th>
+<th>JSON Pfad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pfad zum Datum</td>
+<td><code>$.datetimeLast[*]</code></td>
+</tr>
+<tr>
+<td>Pfad zum Kurs</td>
+<td><code>$.last.*</code></td>
+</tr>
+<tr>
+<td>Pfad zum Tagestief</td>
+<td><code>$.low.*</code></td>
+</tr>
+<tr>
+<td>Pfad zum Tageshoch</td>
+<td><code>$.high.*</code></td>
+</tr>
+<tr>
+<td>Pfad zum Volumen</td>
+<td><code>$.volume.*</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="eingabe-in-portfolio-performance">Eingabe in Portfolio Performance</h4>
+<p>Wenn man die URL, den Datums- und den Kurs-Pfad angegeben hat, sollte Portfolio Performance bereits Kursdaten laden und 
+im Dialogfenster unten anzeigen. Die anderen Felder sind nicht zwingend notwendig. </p>
+<p><figure class="pp-figure" id="_figure-9"><figcaption>Abbildung 9.  Finale Settings Portfolio Performance Onvista JSON </figcaption><img alt="" src="../images/screenshot_onvista_json_settings_pp_final.png"></figure></p>
 
 
 
@@ -3537,7 +3856,7 @@ Es enthält Metadaten des Wertpapiers, Unix-Zeitstempel der beiden abgerufenen D
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">9. Mai 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">3. August 2024</span>
   </span>
 
     
