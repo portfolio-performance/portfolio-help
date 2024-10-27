@@ -14,4 +14,4 @@ The first step is to set the allocation goal for each category. For example, in 
 
 The Rebalance (Amount) and Rebalance (Shares) columns show the amount and number of shares you need to sell (negative number) or buy (positive number) to reach the target value. Naturally, it isn't always possible to buy or sell a fractional number of shares.
 
-Please note that the sum of the allocation percentages across categories does not need to be 100%, although it is advisable. Colour coding will draw your attention to any discrepancies if the sum isn't 100%.
+Please note that the sum of the allocation percentages across categories does not need to be 100%, although it is advisable. Color coding will draw your attention to any discrepancies if the sum isn't 100%.
