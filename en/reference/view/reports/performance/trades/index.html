@@ -3525,7 +3525,7 @@
 <p>The situation is more complex with the 2 buy + 1 sell trade of <code>share-1</code>.  The original Net Transaction Value of the purchase of 10 shares on January 15, 2021, was 155 EUR. The second purchase of 5 shares had a net transaction value of 84 EUR. The entry value of the remaining 5 shares in the open trade (161.50 EUR) is formed by 5 shares from the first purchase and 5 from the second, following the FIFO principle in the sell transaction. The 5 shares that were sold came from the first purchase. The NTV of the open trade becomes then: (5/10 * 155 EUR) + (5/5 * 84 EUR) or 161.50 EUR.</p>
 </li>
 <li>
-<p><em>Entry value (per share)</em>: Enable this column by using the Settings <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2699.svg" title=":gear:"> (gear) icon. The value can be easily calculated by dividing the Entry value by the number of shares.</p>
+<p><em>Entry value (per share)</em>: Enable this column by using the Settings <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"> (gear) icon. The value can be easily calculated by dividing the Entry value by the number of shares.</p>
 </li>
 <li><em>Exit value</em>: For open trades, this is the market value, which equals the number of shares multiplied by the current quote price. For example, the current quote price (Oct 11, 2024) of <code>share-2</code> is 11.645 EUR/share. The exit value is 5 x 11.645 = 58.23 EUR. For a closed trade, the exit value is the Net Transaction Value of the sale. For instance, <code>share-2</code> was sold on April 15, 2024: 3 shares x 12.48 EUR/share minus fees &amp; taxes (4 EUR). The exit value is thus 34.46 EUR.</li>
 <li><em>Exit value (per share)</em>: Similar to Entry value (per share); as described above.</li>
@@ -3539,10 +3539,10 @@
 </div>
 </li>
 <li>
-<p><em>Latest Trade</em>: Enable this column using the Settings <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2699.svg" title=":gear:"> (gear) icon. It typically contains either the End Date for closed trades or the Start date for open trades. An exception is an open trade with multiple buy transactions, in which case the date of the last transaction is used.</p>
+<p><em>Latest Trade</em>: Enable this column using the Settings <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"> (gear) icon. It typically contains either the End Date for closed trades or the Start date for open trades. An exception is an open trade with multiple buy transactions, in which case the date of the last transaction is used.</p>
 </li>
 <li><em>IRR</em>: The Internal Rate of Return; for detailed calculation, refer to the following section.</li>
-<li><em>Return</em>: Enable this column using the Settings <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2699.svg" title=":gear:"> (gear) icon. The Return is calculated as: <code>(Exit Value/Entry Value) -1</code>. This serves as an indicator of the trade's performance (see below for more details).</li>
+<li><em>Return</em>: Enable this column using the Settings <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"> (gear) icon. The Return is calculated as: <code>(Exit Value/Entry Value) -1</code>. This serves as an indicator of the trade's performance (see below for more details).</li>
 <li><em>Note</em>: The note associated with the security. You cannot have a separate note for each trade.</li>
 </ul>
 <p>Additionally, the following columns can be made visible using the Settings (gear) icon: <code>Securities Account</code>, <code>ISIN</code>, <code>Symbol</code>, and <code>WKN</code>. Explanation of these fields can be found at the description of the <a href="../../../../file/new/#security-master-data">master data</a> of the security.</p>
