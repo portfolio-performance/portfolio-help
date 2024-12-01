@@ -20,6 +20,20 @@ You can also download the Windows - Installer (setup.exe). On Windows 11, you ge
 
 # MacOS
 
+- You can install the application manually by downloading the MacOS - Intel or MacOS - Silicon package, depending on your mac computer type.
+   1. The following file appears in your downloads folder: PortfolioPerformance-0.72.2-aarch64.dmg (MacOs - Silicon). A DMG (Disk Image) file is a specialized file format developed by Apple for distributing software and storing data on macOS.
+   2. Double-click the DMG file to mount it. A virtual disk will appear in Finder (see Figure 3).
+   3. Drag and drop the icon PortfolioPerformance on the Application icon.
+   4. After installation, you can delete the DMG file.
+
+Figure: MacOS installation window. {class=pp-figure}
+
+![](images/installation-macos-dmg.png)
+
+- The easiest way to install Portfolio Performance is with a package installer such as Brew or MacPorts:
+   - Brew: `brew install --cask portfolioperformance`
+   - MacPorts: `sudo port install portfolio-performance`
+
 # Linux
 
 The preferred option is to install Portfolio Performance on Linux is using from [Flathub](https://flathub.org/apps/info.portfolio_performance.PortfolioPerformance).
