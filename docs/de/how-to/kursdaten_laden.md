@@ -14,7 +14,7 @@ Und schließlich bleiben die manuellen Lösungen: die Kursdaten [per CSV-Datei](
 
 [<i class="fa fa-comments-o" aria-hidden="true"></i> Forum: Quellen für historische Kurse](https://forum.portfolio-performance.info/t/quellen-fuer-historische-kurse/46)
 
-## Comman-separated Values (CSV)
+## Comma-separated Values (CSV)
 
 [CSV](https://de.wikipedia.org/wiki/CSV_(Dateiformat)) steht für *Comma Separated Values*, also Werte die durch ein Komma getrennt werden.
 
