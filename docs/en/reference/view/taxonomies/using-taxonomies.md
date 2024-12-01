@@ -14,7 +14,7 @@ By default, the definition view displays a table with the five columns:
 
 - **Weight**: The weight represents the proportion or percentage that a security can contribute to its total value. A weight of 100% indicates that all securities are included in calculating the total value. This field is used in the Rebalancing view.
 
-- **Color**: Each category is automatically assigned a colour. You can change the colour using the context menu.
+- **Color**: Each category is automatically assigned a color. You can change the color using the context menu.
 
 - **Actual Value**: The market value of a security on the current day. For a category, this is the summed market value of all securities assigned to that category. For example, as of 2024-07-08, the market value of Daimler Trucks is 20 shares x 36.36 EUR = 727.20 EUR, and for Mercedes: 10 shares x 65.47 EUR = 654.70 EUR. Thus, the total value for the category is 727.20 EUR + 654.70 EUR = 1381.90 EUR. Please note that there is a significant number of unassigned securities in `myTaxonomy`.Foreign securities (e.g. Amazon) are calculated in the base currency.
 
@@ -58,7 +58,7 @@ Figure: Pie chart of the portfolio + zoomed-in variants. {class=pp-figure}
 
 ![](images/taxonomies-pie-chart.svg)
 
-The pie chart representing the entire portfolio in Figure 3 appears simple and incomplete because not all securities are assigned to categories within `myTaxonomy`. From Figure 1, it can be inferred that approximately 28% of the securities are assigned, represented by the purple-coloured segment.
+The pie chart representing the entire portfolio in Figure 3 appears simple and incomplete because not all securities are assigned to categories within `myTaxonomy`. From Figure 1, it can be inferred that approximately 28% of the securities are assigned, represented by the purple-colored segment.
 
 By clicking on a segment of the pie chart, you can zoom in on that particular part. The second pie chart displayed in the middle of Figure 3 shows the categories within `myTaxonomy`, such as Base Currency and Foreign Currencies. The third pie chart specifically focuses on the `Base Currency` category.
 
@@ -86,7 +86,7 @@ Figure: Stacked chart of the portfolio. {class=pp-figure}
 
 ![](images/taxonomies-stacked-chart.png)
 
-A stacked chart is a type of chart that displays data as a series of coloured lines, where each line represents a category. The position of the line on the y-axis corresponds to cumulative value of the category. The lines are stacked on top of each other to show the total value of all categories combined, which is 100%. By default, the categories are stacked from large to small, with the largest category at the bottom of the chart. The order of stacking can be adjusted using the :gear: icon, allowing bars to be stacked based on magnitude or according to their position in the taxonomy list.
+A stacked chart is a type of chart that displays data as a series of colored lines, where each line represents a category. The position of the line on the y-axis corresponds to cumulative value of the category. The lines are stacked on top of each other to show the total value of all categories combined, which is 100%. By default, the categories are stacked from large to small, with the largest category at the bottom of the chart. The order of stacking can be adjusted using the :gear: icon, allowing bars to be stacked based on magnitude or according to their position in the taxonomy list.
 
 Both the stacked and stacked area charts plot time on the X-axis, set by the selected reporting period (default=1 year).
 
