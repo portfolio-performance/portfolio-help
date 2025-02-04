@@ -2,7 +2,7 @@
 title: Installation
 lastUpdate: 2023-09-11
 TODO: difference between windows installer & zip + adding how to install on macOS
-TODO: explain third box in figure 3, the meaning of asc extension, and question windows 32 bits or 64 bits?
+TODO: explain third box in figure 3, the meaning of asc extension, and question windows 32 bits or 64 bits
 ---
 
 PP is available for MacOS, Windows and Linux. You need to download it and do some installation steps. The easiest way to download and install the latest version of PP is by using one of the installer files at the [homepage](https://www.portfolio-performance.info/) (see fig 1). A link to the release notes of this latest version is also provided. 

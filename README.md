@@ -1,6 +1,6 @@
 # Portfolio Performance Manual
 
-Visit the manual at https://help.portfolio-performance.info
+Visit the manual at [https://help.portfolio-performance.info/en](https://help.portfolio-performance.info/en/) (English version) or [https://help.portfolio-performance.info/de](https://help.portfolio-performance.info/de/) (German version).
 
 ## Setup
 
