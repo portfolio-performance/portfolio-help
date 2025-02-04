@@ -25,7 +25,7 @@ Figure 2 illustrates the effect of all 15 transaction types on the deposit and s
 
 - All transaction types, except delivery and security transfer (see above), will affect the deposit account. These effects could manifest as inflows (green color) or outflows (red color).
 
-- The coloring scheme might be a bit confusing. In the image on the left side of Figure 2, which represents the `All Securities` view, a buy transaction results in an outflow from the deposit account, yet it's depicted in green. Conversely, a transfer (from one security/deposit account to another) is depicted in red.
+- The coloring scheme might be a bit confusing. In the image on the left side of Figure 2 (from the `All Securities` view), a buy transaction results in an outflow from the deposit account; yet it's depicted in green. Conversely, a transfer (from one security/deposit account to another) is depicted in red.
 
 - With the exception of interest, all transaction types are associated with a specific security, such as a share. Interest, on the other hand, is only linked to a deposit account. One implication of this is that interest on bonds should be recorded as a dividend in PP if you wish to maintain the connection with the bond.
 
