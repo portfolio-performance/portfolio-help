@@ -1,4 +1,4 @@
 root = true
 
-[*]
+[*.{md,txt,js,css,html,py,java}]
 end_of_line = lf
