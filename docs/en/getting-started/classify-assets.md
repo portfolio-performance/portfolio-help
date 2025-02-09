@@ -38,7 +38,3 @@ Select one of the chart icons on top to visualise the taxonomy and gain a sense 
 === "Stacked area chart"
 
     ![](../reference/view/taxonomies/images/taxonomies-stacked-area-chart.png)
-
-=== "Donut chart"
-
-    ![](../reference/view/taxonomies/images/taxonomies-donut-chart.png)
