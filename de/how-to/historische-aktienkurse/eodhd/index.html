@@ -3370,12 +3370,12 @@
   <h1>EODHistorical Data</h1>
 
 <p>Die Website <a href="https://eodhd.com/">EODHD</a> (End of Day Historical Data) bietet umfassende Informationen über alle US-Aktien, ETFs und Investmentfonds. Darüber hinaus umfasst die Plattform historische Daten für nicht US-Börsen, die hauptsächlich bis zum 3. Januar 2000 zurückreichen.</p>
-<p>Ein [kostenloser API-Token] (https://eodhd.com/register) kann einfach durch Angabe Deiner E-Mail-Adresse angefordert werden. Der Token ist beschränkt auf 20 API-Anfragen pro Tag. Es können jedoch nur historische Kurse aus dem letzten Jahr abgerufen werden.</p>
+<p>Ein <a href="https://eodhd.com/register">kostenloser API-Token</a> kann einfach durch Angabe Deiner E-Mail-Adresse angefordert werden. Der Token ist beschränkt auf 20 API-Anfragen pro Tag. Es können jedoch nur historische Kurse aus dem letzten Jahr abgerufen werden.</p>
 <p>Du kannst den API-Token mit der automatischen Kursabfrage von Portfolio Performance nutzen. Füge den Token in den Einstellungen ein (Hilfe &gt; Einstellungen &gt; API-Schlüssel) und wähle EOD Historical Data als Kurslieferant.</p>
 <p>Wenn Du spezielle Anforderungen hast, dann kannst Du auch die JSON Kursabfrage verwenden (siehe <a href="https://eodhd.com/financial-apis/api-for-historical-data-and-volumes/">API Dokumentation</a> für einige Anwendungsfälle). Die folgende Anfrage ruft zum Beispiel die historischen Apple-Kurse des <strong>Monats Januar 2000</strong> ab.</p>
 <p><em>Kurs URL</em></p>
 <p><code>https://eodhd.com/api/eod/AAPL?from=2000-01-01&amp;to=2000-01-31&amp;period=d&amp;api_token=demo&amp;fmt=json</code></p>
-<p><em>Pfad zu Datum</em> = <code>$.[*].date</code> und <em>Pfad zu Kurs</em> = $.[*].close</p>
+<p><em>Pfad zu Datum</em> = <code>$[*].date</code> und <em>Pfad zu Kurs</em> = <code>$[*].close</code></p>
 <p>Gibst Du die Adresse in einen Browser ein, erhältst Du folgendes (gekürztes) JSON.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>[
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    {
@@ -3407,7 +3407,7 @@
 <a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    }
 <a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>]
 </code></pre></div>
-<p>Hierbei handelt es sich um ein Array von Objekten, auf das von der Basis mit <code>$.[*]</code> zugegriffen wird. Der JSON-Pfad zum Datum wird mit <code>$.[*].date</code> und zum Schlusskurs mit <code>$.[*].close</code> gebildet.</p>
+<p>Hierbei handelt es sich um ein Array von Objekten, auf das von der Basis mit <code>$[*]</code> zugegriffen wird. Der JSON-Pfad zum Datum wird mit <code>$[*].date</code> und zum Schlusskurs mit <code>$[*].close</code> gebildet.</p>
 
 
 
