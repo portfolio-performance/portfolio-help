@@ -13,5 +13,5 @@ There are three possible scenarios to consider, each with its own approach. The 
    You have already made some investments in the (far) past, and you need to reconstruct your current portfolio based on past broker or bank statements. Probably, you also need some financial data, such as historical prices or merger data. Depending on how far you would go back, this can be a very challenging task.
 
 3. Beginning your portfolio management today with an initial valuation.
-   Starting your portfolio management from today involves assessing your current financial situation. Start with the list of your securities and enter for each of them a buy transaction as of today. Of course, you loose some valuable info and the performance calculations aren't reflecting the real performance of your assets.
+   Starting your portfolio management from today involves assessing your current financial situation. Start with the list of your securities and enter for each of them a buy transaction as of today. Of course, you lose some valuable info and the performance calculations aren't reflecting the real performance of your assets.
    

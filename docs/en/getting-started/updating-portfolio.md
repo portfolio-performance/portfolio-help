@@ -2,7 +2,7 @@
 title: Keeping the portfolio up-to-date
 ---
 
-The synchronisation between your physical and digital (PP) portfolio is crucial for making informed decisions. The status of your physical portfolio —such as market value, balance total, and cash flows— should mirror your digital (PP) portfolio to ensure accurate decision-making. For instance, the rebalancing feature (see [previous section](./rebalancing.md)) provides suggestions to buy or sell stocks based on the recorded holdings in your digital portfolio.
+The synchronisation between your physical and digital (PP) portfolio is crucial for making informed decisions. The status of your physical portfolio — such as market value, balance total, and cash flows — should mirror your digital (PP) portfolio to ensure accurate decision-making. For instance, the rebalancing feature (see [previous section](./rebalancing.md)) provides suggestions to buy or sell stocks based on the recorded holdings in your digital portfolio.
 
 After making physical transactions with your broker or bank, you need to update your PP portfolio. This can be done manually or automatically:
 
