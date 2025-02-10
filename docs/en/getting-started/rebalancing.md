@@ -4,7 +4,7 @@ title: Define portfolio strategy and rebalancing
 
 By defining a strategy and goal, investors can avoid emotional reactions to market fluctuations and stay focused on their long-term plans. You can use [taxonomies](../reference/view/taxonomies/index.md) (see also the previous section in this Getting Started chapter) and [rebalancing](../reference/view/taxonomies/using-taxonomies.md#rebalancing-view) to achieve this.
 
-Rebalancing is a strategy of bringing a portfolio that has deviated away from one's target asset allocation back into line [Wikipedia](https://en.wikipedia.org/wiki/Rebalancing_investments). This target can be set in the rebalancing view of a taxonomy (see Figure 1).
+Rebalancing is a strategy of bringing a portfolio that has deviated away from one's target asset allocation back into line [(Wikipedia)](https://en.wikipedia.org/wiki/Rebalancing_investments). This target can be set in the rebalancing view of a taxonomy (see Figure 1).
 
 Figure: Rebalancing view. {class=pp-figure}
 
