@@ -76,13 +76,13 @@ Figure: Importing securities (Step 2).{class=pp-figure}
 
 ![](./images/mnu-file-import-securities-step-2.png)
 
-In step 3 (below), you can observe that the status of both securities contains a green check mark, indicating that the import will be successful. If the securities should already exist, nothing will appear. Click Finish.
+In step 3 (below), you can observe that the status of both securities contains a green check mark, indicating that the import will be successful. If the securities already exist, nothing will appear. Click Finish.
 
 Figure: Importing securities (Step 3).{class=pp-figure}
 
 ![](./images/mnu-file-import-securities-step-3.png)
 
-The securities are now created and appear in the `All Securities list`. Although the cash and security account options are provided in Figure 6, it does not make sense to add or change the cash or security account here. The securities are only created in the `All Securities` list, no transactions are yet in place. Please note that several other fields such as Calendar, Additional Attributes, and Taxonomies cannot be added through CSV-import. The Quote Feed for the Historical Prices could partially be added in the following step (see Figure 7).
+The securities are now created and appear in the `All Securities` list. Although the cash and security account options are provided in Figure 6, it does not make sense to add or change the cash or security account here. The securities are only created in the `All Securities` list, no transactions are yet in place. Please note that several other fields such as Calendar, Additional Attributes, and Taxonomies cannot be added through CSV-import. The Quote Feed for the Historical Prices could partially be added in the following step (see Figure 7).
 
 Figure: Importing securities (Step 4).{class=align-right style = "width:30%"}
 
