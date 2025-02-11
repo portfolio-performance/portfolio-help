@@ -3,7 +3,7 @@ title: Time-Weighted Rate of Return
 ---
 # Time-Weighted Rate of Return
 
-The Time-Weighted Rate of Return (TWR) gives each time period equal weight in the calculation of the return rate, regardless of the amount of money invested during those periods. . In contrast, the Money-Weighted Rate of Return (MWROR) method assigns greater weight to periods with more money invested, taking into account the size and timing of cash flows.
+The Time-Weighted Rate of Return (TWR) gives each time period equal weight in the calculation of the return rate, regardless of the amount of money invested during those periods. In contrast, the Money-Weighted Rate of Return (MWROR) method assigns greater weight to periods with more money invested, taking into account the size and timing of cash flows.
 
 ## General Method
 
@@ -45,7 +45,7 @@ In most financial management handbooks, calculating the time-weighted rate of re
 
 In the classical method described above, an asset valuation is required at each cash flow. You need to know the value of the portfolio or asset just before each cash flow. However, there are instances when this isn't feasible, and only monthly or quarterly valuations are available. These valuations may or may not coincide with the cash flows. In such cases, an approximation can be used. However, when a valuation is available just before each cash flow, a True Time-Weighted Rate Of Return (TTWROR) could be calculated. The term is coined to differentiate this method from the approximations mentioned above.
 
-In the past, when computing power was expensive, it made sense to create longer holding periods to ease the computational burden, particularly for the required valuations at each cash flow. Today, this is no longer the case, and software like PP can calculate the market value of investments practically in real time. As an in-between solution,PP creates valuations of the different components on a daily basis, regardless of whether there is a cash flow. Therefore, the holding periods all have equal durations of one day.
+In the past, when computing power was expensive, it made sense to create longer holding periods to ease the computational burden, particularly for the required valuations at each cash flow. Today, this is no longer the case, and software like PP can calculate the market value of investments practically in real time. As an in-between solution, PP creates valuations of the different components on a daily basis, regardless of whether there is a cash flow. Therefore, the holding periods all have equal durations of one day.
 
 With daily valuations, it makes sense to assume that cash inflows occur at the very start of the day. The money is immediately available to invest during the day. Consequently, there will never be a portfolio with an MVB of 0, because cash inflows are added immediately to the portfolio. PP also assumes that cash outflows occur at the very end of the day, just before valuation. Thus, it makes sense to reflect this in Equation 1: inflows are added to the MVB, and outflows are added to the MVE.
 
