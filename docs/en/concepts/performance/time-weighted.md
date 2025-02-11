@@ -3,13 +3,13 @@ title: Time-Weighted Rate of Return
 ---
 # Time-Weighted Rate of Return
 
-The Time-Weighted Rate of Return (TWR) gives each time period equal weight in the calculation of the return rate, regardless of the amount of money invested during those periods. . In contrast, the Money-Weighted Rate of Return (MWROR) method assigns greater weight to periods with more money invested, taking into account the size and timing of cash flows.
+The Time-Weighted Rate of Return (TWR) treats each time period equally when calculating the return rate, regardless of the amount invested during those periods. In contrast, the Money-Weighted Rate of Return (MWROR) gives more weight to periods with larger investments, factoring in both the size and timing of cash flows.
 
 ## General Method
 
 In most financial management handbooks, calculating the time-weighted rate of return for a reporting period is described as a three-step process:
 
-1. Divide the reporting period into **subperiods** based on cash flow dates: A subperiod runs from just before a cash flow until just before the next cash flow or the end of the reporting period. As such, the sub-periods are likely to have unequal durations.
+1. Divide the reporting period into **subperiods** based on cash flow dates: A subperiod runs from the start of the reporting period or from just before a cash flow until just before the next cash flow or the end of the reporting period. As such, the sub-periods are likely to have unequal durations.
 
 2. Calculate the sub-period **growth rates** using Equation 1:
     
@@ -24,28 +24,28 @@ In most financial management handbooks, calculating the time-weighted rate of re
     where *n* is the number of holding periods and r<sub>t</sub> is the return rate for holding period *t*.
 
     !!! Note
-        Figure 1 depicts a simplified example with three holding periods and *known* performances (10%, 5%, and 10%), which is, of course, not the case in the real world.
+        Figure 1 depicts a simplified example with three holding periods and *known* performances (10%, 5%, and 10%), along with one incoming cashflow (20) and one outgoing cashflow (-30). In reality, however, actual returns are unknown; only the intermediate valuations of the portfolio are available.
 
         Figure: Portfolio with 1 Deposit and 1 Withdrawal (Removal) transaction and thus 3 holding periods.{class=pp-figure}
 
         ![](images/TTWROR-manual-calculation.svg)
 
-        What is the TWR of this portfolio? According to Equation 2, this should be: `[(1+0.1)*(1+0.05)*(1+0.1)]-1 = 27.05%`. Please note, that this is *not* an annualized return but a return for the entire period. The durations of the holding periods could differ but no information about durations is provided. Secondly, the sequence of the returns does not matter; (5%, 10%,10%) gives the same result. Lastly, the size and timing of the cash flows do not impact the result. If there were no cash flows, the intermediate values would be: `100*1.1= 110; 110*1.05= 115.5`, and `115.5*1.1= 127.5`, or the starting value `100*1.275`.
+        What is the TWR of this portfolio? According to Equation 2, this should be: `[(1+0.1)*(1+0.05)*(1+0.1)]-1 = 27.05%`. Please note, that this is *not* an annualized return but a return for the entire period. The durations of the holding periods could differ but no information about durations is provided. Secondly, the sequence of the returns does not matter; (5%, 10%,10%) gives the same result. Lastly, the size and timing of the cash flows do not impact the result. If there were no cash flows for example, the intermediate values would be: `100*1.1= 110; 110*1.05= 115.5`, and `115.5*1.1= 127.5`. This is excatly the same result as starting with a MVB = 100 and a performance of 27,50% or the starting value `100*1.275`.
 
         However, since there are cash flows, Equation 1 could be used to calculate the holding period returns (instead of assuming they were given):
         
         - HP1: no cash flow: `(110/100)-1 = 10%`.
-        - HP2: cash inflow of 20: `[136.5/(110+20)]-1=5%`.
-        - HP3: cash outflow of -30: `[117.15/(136.5-30)]-1`.
+        - HP2: cash inflow of 20: `[136.5/(110+20)]-1 = 5%`.
+        - HP3: cash outflow of -30: `[117.15/(136.5-30)]-1 = 10.33%` .
         
         Please note that the formula for the cash outflow is slightly different than the one given in Equation 2 (see [TTWROR at security level](./time-weighted.md#ttwror-at-security-level) for an explanation). 
         
         
 ## Implementation in PP
 
-In the classical method described above, an asset valuation is required at each cash flow. You need to know the value of the portfolio or asset just before each cash flow. However, there are instances when this isn't feasible, and only monthly or quarterly valuations are available. These valuations may or may not coincide with the cash flows. In such cases, an approximation can be used. However, when a valuation is available just before each cash flow, a True Time-Weighted Rate Of Return (TTWROR) could be calculated. The term is coined to differentiate this method from the approximations mentioned above.
+In the classical method described above, an asset valuation is required at each cash flow. You need to know the value of the portfolio or asset just before each cash flow. However, there are instances when this isn't feasible, and only monthly or quarterly valuations are available. These valuations may or may not coincide with the cash flows. In such cases, an approximation can be used. However, when a valuation is available just before each cash flow, a *True* Time-Weighted Rate Of Return (TTWROR) could be calculated. The term is coined to differentiate this method from the approximations mentioned above.
 
-In the past, when computing power was expensive, it made sense to create longer holding periods to ease the computational burden, particularly for the required valuations at each cash flow. Today, this is no longer the case, and software like PP can calculate the market value of investments practically in real time. As an in-between solution,PP creates valuations of the different components on a daily basis, regardless of whether there is a cash flow. Therefore, the holding periods all have equal durations of one day.
+In the past, when computing power was expensive, it made sense to create longer holding periods to ease the computational burden, particularly for the required valuations at each cash flow. Today, this is no longer the case, and software like PP can calculate the market value of investments practically in real time. As an in-between solution, PP creates valuations of the different components on a daily basis, regardless of whether there is a cash flow. Therefore, the holding periods all have equal durations of one day.
 
 With daily valuations, it makes sense to assume that cash inflows occur at the very start of the day. The money is immediately available to invest during the day. Consequently, there will never be a portfolio with an MVB of 0, because cash inflows are added immediately to the portfolio. PP also assumes that cash outflows occur at the very end of the day, just before valuation. Thus, it makes sense to reflect this in Equation 1: inflows are added to the MVB, and outflows are added to the MVE.
 
@@ -60,21 +60,21 @@ The relevant cash flows for the performance calculation at portfolio level are: 
 
     ![](images/demo-portfolio-03-info.svg)
 
-We will use a **2-year reporting period** starting from June 12, 2021 in the following examples. Since the initial purchase of `share-1` for 155 EUR occurred outside of this reporting period, there are only two cash flows that impact the performance. By June 12, the market value of `share-1` (MVB) was increased to 177.94 EUR; see the first chart in Figure 2. 
+We will use a **2-year reporting period** starting from June 12, 2021 in the following examples. Since the initial purchase of `share-1` for 155 EUR occurred outside of this reporting period, there are only two cash flows that impact the performance. By June 12, 2021 the market value of `share-1` (MVB) was increased to 177.94 EUR; see the first chart in Figure 2. 
 
 Figure: Portfolio from demo-portfolio-3.xml (2 years reporting period).{class=pp-figure}
 
 ![](images/TTWROR-manual-calculation-demo-portfolio-03.svg)
 
-If there aren't any cashflows in a holding period such as in HP1, one can use the [simple rate of return](index.md) formula: `r = MVE/MVB - 1 = 160.26/177.94 - 1 = - 0.0994` or - 9.94%.
+If there aren't any cashflows in a holding period such as in HP1, one can use the [simple rate of return](index.md) formula: `r = MVE/MVB - 1 = 160.26/177.94 - 1 = - 0.0994` or - 9.94% for HP1.
 
-The second holding period however starts just before a cash inflow (+ 84 EUR). The MVE is 264.57 EUR. According to Equation 1 the rate of return `r = 264.57 / (160.26 + 84)` or 8.31%. By adding the cash inflow to the denominator, the influence of this cash flow on performance is neutralized.
+The second holding period however starts just before a cash inflow (+ 84 EUR). The MVE is 264.57 EUR. According to Equation 1 the rate of return `r = 264.57 + 0 / (160.26 + 84)` or 8.31%. By adding the cash inflow to the denominator, the influence of this cash flow on performance is neutralized.
 
 The MVB of the HP3 is the same as the MVE of HP2 or 264.57 EUR. There is a cash inflow of 67 EUR and the MVE = 426.82 EUR. The performance `r = 426.82 / (264.57 + 67)` or 28.73%.
 
 It's important to emphasize that the timing of the cash flows is not considered in this calculation. It doesn't matter whether HP1 is short or long. Additionally, the performance is calculated independently of the size of the cash flow, with the cash inflow being added to the beginning Market Value of the Portfolio (MVB). This approach contrasts with the money-weighted rate of return calculation, where both timing and size of cash flows are taken into account.
 
-For each period, you need MVB or MVE<sub>t-1</sub> and the current MVE<sub>t</sub> period. Because the market value is determined at the end of the trading day (closing price), MVE<sub>t-1</sub> is also the value immediately before the cashflow at the beginning of the day.
+For each period, you need MVB<sub>t</sub> (or MVE<sub>t-1</sub>) and the MVE<sub>t</sub> period. Because the market value is determined at the end of the trading day (closing price), MVE<sub>t-1</sub> is also the value immediately before the cashflow at the beginning of the day.
 
 !!! Note
     One could argue that, as we are required to add the cash flow CFin to MVE<sub>t-1</sub> (as per Equation 1), an alternative approach is to consider the market value of MVE<sub>t</sub>, which already includes this cash flow CFin<sub>t</sub>. However, it's important to note that throughout the day, market forces may cause fluctuations in the original MVE<sub>t-1</sub>, and these variations should be excluded when determining the market value at the beginning of the day, just before the cash flow.
@@ -103,7 +103,7 @@ Figure: Periodic and annual TTWROR for securities (2 years period). {class=pp-fi
 
 ![](images/info-ttwror-securities-calculation.png)
 
-The chart from the menu `View > Reports > Performance > Chart` can exhibit multiple time series (click the Gear icon). In Figure 6, the cumulative TTWROR for the entire portfolio is depicted, along with individual graphs for `share-1` and `share-2` over a 2-year reporting period, starting from June 12, 2021. As `share-2` was acquired on September 30, 2022, its performance until that date registers as zero (indicated by the horizontal yellow line). From that point onward, the performance of the portfolio diverges from that of `share-1` due to the notably successful yet relatively minor contribution of `share-2` within the overall portfolio. As can be seen, the periodic TTWROR of the entire portfolio or the last cumulative performance of the portfolio is 25.58%, as calculated in Figure 4.
+The chart from the menu `View > Reports > Performance > Chart` can exhibit multiple time series (click the Gear icon). In Figure 6, the cumulative TTWROR for the entire portfolio is depicted, along with individual graphs for `share-1` and `share-2` over a 2-year reporting period, starting from June 12, 2021. As `share-2` was acquired on September 30, 2022, its performance until that date registers as zero (indicated by the horizontal orange line). From that point onward, the performance of the portfolio diverges from that of `share-1` due to the notably successful yet relatively minor contribution of `share-2` within the overall portfolio. As can be seen, the periodic TTWROR of the entire portfolio or the last cumulative performance of the portfolio is 25.58%, as calculated in Figure 4.
 
 Figure: Graph of the cumulative performance of portfolio, share-1, and share-2 (2 years period).{class=pp-figure}
 
@@ -128,7 +128,7 @@ Figure: Simplified example.{class=pp-figure}
 
 ![](images/TTWROR-example-simplifying.png)
 
-According to Equation 1, `1 + r = (MVE + CFout)/(MVB + CFin)` or for day 1: `(1000+0)/(0+1000)`; which results in a performance of zero. Note that, since MVB<sub>t</sub> = MVE<sub>t-1</sub>, the terms in the numerator and denominator cancel out, leaving the simplified formula for the return of the first holding period (HP1) as: `1 + r = (1010 / 1000), or r = 10%`.
+According to Equation 1, `1 + r = (MVE + CFout)/(MVB + CFin)` or for day 1: `(1000+0)/(0+1000)`; which results in a performance of zero. Note that, since MVB<sub>t</sub> = MVE<sub>t-1</sub>, the terms in the numerator and denominator cancel out, leaving the simplified formula for the return of the first holding period (HP1) as: `1 + r = (1010 / 1000), or r = 1%`.
 
 However, this method cannot be applied to HP2, because the cash outflow (510 EUR) is added to the MVE of the selling date. The numerator of day 55 isn't equal to the denominator of day 6. The correct simplified formula for HP2 is thus separating the performance calculation for the transaction date from the following days, as is done in Figure 7 (lower part). If the first method was used, then the cash outflow would be added to the MVE of day 8; which is of course not the selling date.
 
