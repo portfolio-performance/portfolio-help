@@ -1,5 +1,11 @@
 {
    "githubPullRequests.ignoredPullRequestBranches": [
       "master"
+   ],
+   "cSpell.words": [
+      "subperiod",
+      "subperiods",
+      "TTWROR",
+      "TWROR"
    ]
 }
