@@ -1,9 +1,9 @@
 ---
 title: Historical Prices
 ---
-To calculate performance, PP requires two types of historical prices: the historical quotes of securities and in case of foreign investments, the historical exchange rates for currencies.
+To calculate performance, PP may need two types of historical prices: historical security quotes and, in the case of foreign investments, historical exchange rates.
 
-You can find the historical exchange rates under the menu View > General Data. These exchange rates are retrieved from [The European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) (ECB) and go back until the year 1999 when the EUR was introduced on the financial markets. They are in fact reference rates and will probably differ slightly from the real transaction rates that your broker or bank will use.
+You can find the historical exchange rates under the menu `View > General Data > Currencies`. These exchange rates are retrieved from [The European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) (ECB) and go back until the year 1999 when the EUR was introduced on the financial markets. They are in fact reference rates and will probably differ slightly from the real transaction rates that your broker or bank will use.
 
 Securities are traded on exchange markets such as NASDAQ or XETRA, where buyers and sellers agree on a price. Historical quotes are the prices of securities at different points in time. The `Close` price is the last price of the security at the end of the trading day. Other types are the `Open` quote, the first price of the security at the start of the trading day, the `Low` and `High`quotes, which are the lowest and highest price of the security during the trading day. The `Latest` quote is the most recent price of the security available from the exchange market. The latest quote may not be the same as the close price.
 
