@@ -131,8 +131,10 @@ Figure: Two watchlists.{class=align-right style="width:50%"}
 
 ![](images/mnu-file-new-watchlist.png)
 
-A watchlist is a manual grouping of securities. To create a new list, navigate to `File > New > Watchlist` in the menu. Once created, it will appear under the `All Securities` heading. You can create an unlimited number of watchlists in PP. For example, Figure 6 shows two watchlists named `Asia` and `Indices`, with the latter containing four securities indices such as the DAX and Dow Jones.
+A watchlist is a manual grouping of securities. To create a new list, navigate to `File > New > Watchlist` in the menu. Once created, it will appear under the `All Securities` heading. For example, Figure 10 shows two watchlists named `Indices` and `Asia`, with the first containing four securities indices such as the DAX and Dow Jones. You can create an unlimited number of watchlists in PP.
 
-Using the context menu (right-click on a list), you can rename, delete, or move (up) the watchlist (refer to Figure 6). Adding securities to the watchlist is a manual process done by dragging one or more securities from the `All Securities` view to the watchlist. To remove a security from the watchlist, right-click the security and choose 'Remove from *Your_Watchlist*'.
+Using the context menu of a watchlist (right-click on a list), you can rename, delete, or move the watchlist within the sidebar. Deleting a watchlist does not actually delete the securities in it; only the list is removed from the sidebar.
 
-Watchlists inherit the view from `All Securities`. Changing the view in one watchlist will also change the view in all other watchlists, including the `All Securities` view.
+Adding securities to a watchlist is a manual process; simply drag one or more securities from the `All Securities` view and drop them onto the watchlist.  To remove a security from the watchlist, right-click the security and choose 'Remove from *Your_Watchlist*'. This action does not delete the security; it only removes it from the watchlist. The security will remain available in the `All Securities` view. For the other menu options, see [Context Menu](../view/securities/context-menu.md).
+
+Watchlists inherit the view settings from `All Securities`, sharing the same columns and their configurations, such as width, column names, and sorting order. Changes made to the view in one watchlist will apply to all other watchlists, including `All Securities`. However, filtering settings such as `Shares held = 0` are remembered individually for each watchlist.
