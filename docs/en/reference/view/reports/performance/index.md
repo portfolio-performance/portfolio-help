@@ -128,11 +128,13 @@ Figure: New Widget menu with overview of all available widgets. {class=pp-figure
  
  - *Exchange rate*: An exchange rate in the format XXX/YYY number. Right-click to choose the specific exchange rate, e.g. EUR/USD.
  
- - *Trading activity*: A graph depicting time (per year and per month) is plotted on the X-axis, while the count of trades is represented on the Y-axis. With the context menu, you can add or remove the Y-axis, change the reporting period (by default the period of the dashboard is taken), or change the trading type (by default buy, sell, delivery inbound, and delivery outbound), and the filter (by default the entire portfolio).
+ - :material-chart-box-outline:*Trading activity*: A graph depicting time (per year and per month) is plotted on the X-axis, while the count of trades is represented on the Y-axis. With the context menu, you can add or remove the Y-axis, change the reporting period (by default the period of the dashboard is taken), or change the trading type (by default buy, sell, delivery inbound, and delivery outbound), and the filter (by default the entire portfolio).
  
  - *Securities: Limit price exceeded*: You can set a limit price per security in the security master data ([see how-to](../../../view/securities/all-securities.md#main-pane-list-all-securities)). If the current price (as of today; independent of the reporting period) of the security exceeds the limit price, the name of the security, the current price and the limit will be displayed, as well as displaying shares with dates `only in the past` or `only in the future`.
  
  - *Securities: Date reached*: As with limit price (see above), you can link a "special" date to a security as an additional attribute. This widget will exhibit the text `Securities: Date reached (xxx)`, where xxx represents the count of securities for which today's date exceeds the date set for the security. Additionally, a list of share names and dates will be provided. This list can be sorted from the context menu.
+
+ - *Securities: Events*: An event is a kind of note that could be attached to a specific security on a particular date such as stock split, dividend payment, and note. This widget will display the event date, the type, the name of the security, and a description of the event.  
  
  - *Securities: Latest Price*. This is a single line widget with the current price of a security; which can be chosen from the context menu. The label will mention the name of the selected security.
 
