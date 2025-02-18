@@ -2049,17 +2049,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Chart
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -2069,82 +2058,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#calculation-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      Calculation method
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Calculation method">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#simplified-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Simplified example
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#complex-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Complex example
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#user-interface" class="md-nav__link">
-    <span class="md-ellipsis">
-      User interface
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="User interface">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#new-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      New features
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -3491,71 +3404,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#calculation-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      Calculation method
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Calculation method">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#simplified-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Simplified example
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#complex-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Complex example
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#user-interface" class="md-nav__link">
-    <span class="md-ellipsis">
-      User interface
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="User interface">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#new-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      New features
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -3578,132 +3426,25 @@
 
 
 <h1 id="performance-chart">Performance › Chart</h1>
-<p>With the menu <code>View &gt; Reports &gt; Performance &gt; Chart</code> or the sidebar, you can generate a graphical representation of the relative performance of your assets over time.</p>
-<p>The x-axis represents time, and you can select the desired time period using the dropdown menu in the top-right corner. By default, the periods of 1 year, 2 years, 3 years, 4 years, 6 years (from today), and the previous day are available. Additionally, you have the option to create a custom time period using the 'New' feature; see <a href="../../../../../concepts/reporting-period/">Reporting Period</a> for a description.</p>
-<p>The y-axis displays the cumulative performance as a percentage from the beginning of the reporting period; indicating how much the asset value has increased or decreased compared to the previous period (daily, weekly, monthly, quarterly, or yearly). For a daily report, the formula could be written as:</p>
-<p>$$\mathrm {r_{daily} = {\frac{MVE + CF_{out}}{MVB + CF_{in}} - 1 {\qquad \text{(Eq 1)}}}}$$</p>
-<p>and</p>
-<p>$$\mathrm {r_{cum} = [(1 + r_1) \times (1 + r_2) \times ... \times (1 + r_n)] - 1 {\qquad \text{(Eq 2)}}}$$</p>
-<p>where MVE = the market value of the asset at the end of day, MVB = the market value at the beginning of the day (or the end of the previous day).  CF<sub>in</sub> and CF<sub>out</sub> represent the net incoming or outgoing cashflows for the day. When a stock pays a dividend, that's an outgoing cashflow from the stock's perspective. In fact, the MVE should be increased by this amount. Should this stock be sold on the day, you would receive the MVE + dividend! A deposit (for buying the stock) is a cash inflow. Paying the associated fees is also a cash inflow, as they are paid externally to the stock. The MVB, which is initially zero, should be increased by these sums. One does not acquire magically the stock for nothing.</p>
-<p>Taxes are usually <strong>NOT</strong>** considered as cash inflows because they represent a mandatory payment to the government. Investors have little control over taxation and the performance of their investment should ideally remain unaffected by it. In contrast, fees typically represent upfront costs incurred during the buying or selling of stocks. Taxes on investments, however, typically come into play upon selling the investment, exerting their impact on performance more noticeably at the conclusion of the investment cycle.</p>
-<h2 id="calculation-method">Calculation method</h2>
-<h3 id="simplified-example">Simplified example</h3>
-<p>Let's start with a <em>very simplified example</em> without cashflows (see Figure 1). You purchased 10 shares on January 1, 2023. The quote of share-1 fluctuates between 9 and 17.</p>
+<p>Using the <code>View &gt; Reports &gt; Performance &gt; Chart</code> menu or the sidebar menu, you can generate a graphical representation of your assets’ relative performance over time (see Figure 1). The x-axis represents time. You can select the desired reporting period using the dropdown menu in the top-right corner. By default, reporting periods of 1, 2, and 3 years are available. Additionally, you have the option to create a custom time period using the <code>New</code> feature. See <a href="../../../../../concepts/reporting-period/">Reporting Period</a> for a description.</p>
+<p>The y-axis represents cumulative performance as a percentage, starting from 0% at the beginning of the reporting period. It indicates the total increase or decrease in asset value compared to the previous period, which can be daily, weekly, monthly, quarterly, or yearly. The performance over a longer period is calculated by compounding the daily returns.</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  The daily performance chart of individual shares and the entire portfolio for a custom 2-year reporting period. </figcaption><img alt="" src="../images/performance-chart.png"></figure></p>
+<p>For a detailed explanation of how cumulative performance is calculated, see the section on <a href="../../../../../concepts/performance/time-weighted/">time-weighted performance</a>. Since <code>share-2</code> was not purchased until September 30, 2022, its performance remains zero up to that date, implying that the performance of <code>share-1</code>and the portfolio are identical until then.</p>
+<p>The user interface of the Performance Chart is similar to the chart interface of <a href="../../statement/statement-chart/">View &gt; Reports &gt; Statement of Assets &gt; Chart</a>. For example, the context menu is identical. We cover only the differences in this section; see link above for the common features.</p>
+<p>The <code>Configure chart</code> icon (<img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"> top right) provides an additional type of data series, called <code>Add benchmark ...</code> (see Figure 3). A benchmark is a security used solely for its historical prices to calculate daily and cumulative performance. Typically, a security with no purchase has a performance of zero. Therefore, a benchmark can be seen as a security with a single share, hypothetically purchased at the start of the reporting period. Naturally, this security does not affect overall portfolio performance.</p>
+<p>The graph in Figure 2 misleadingly suggests a gradual performance increase in the first and second quarters of 2022. Since a line graph connects consecutive (quarterly) data points, it visually implies a continuous change in performance, even though only two data points have been calculated. You can verify this by left-clicking on the chart canvas within a quarter and moving the cursor left or right to change dates. The performance remains unchanged within each quarter.</p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Quarterly performance chart of share-1 and its benchmark. </figcaption><img alt="" src="../images/performance-chart-quarterly.svg"></figure></p>
+<p>As can be seen in Figure 3, the increase in Q1 is not linear at all, but with ups and downs. Note that the performance starts at 0% because a new reporting period is selected (January 1 to March 31). </p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Daily Performance chart of the first quarter of 2022. </figcaption><img alt="" src="../images/performance-chart-quarter-1-detail.png"></figure></p>
+<p>The graphs in Figure 2 &amp; 3 also shows that the performance starts to diverge between <code>share-1</code> and its benchmark from Quarter 1, 2022 on. This occurs due to the first purchase of <code>share-1</code> on 2022-01-14. Remember that PP always calculates daily performance: <code>1 + r = (MVE + CFOut)/(MVB + CFIn)</code> <a href="../../../../../concepts/performance/money-weighted/">(Equation 1)</a>. The quarterly performance is just a compounding of daily performances.</p>
 <ul>
-<li>
-<p>Jan 1: the market value of your asset at the beginning of the day is zero (MVB = 0). You haven't purchased any stock yet. The market value at the end of the day MVE = 90; you have purchased 10 shares a 9 per share.  For that, you made a deposit or CF<sub>in</sub> = 90. There are no fees or other cash flows. According to equation 1, the <code>daily performance = [(0 + 90)/90] - 1</code> = 0. The cumulative performance is also <code>(1 + 0) - 1 = 0</code>.</p>
-</li>
-<li>
-<p>From Jan 2 until 1 until March 31, the daily performance remains at zero because there are no incoming or outgoing cashflows and MVB = MVE e.g. <code>(90/90) - 1 = 0</code>. The performance is solely driven by the historical prices.</p>
-</li>
-<li>
-<p>On April 1, the price increases from 9 to 15 per share. Thus, MVB = 90 and MVE = 150 and the <code>daily performance = (150/90) - 1 = 0.6667</code> or 66.67%. The cumulative performance from the beginning of the reporting period is also <code>[(1+0) x (1+0) x ... x (1+0.6667)] - 1 = 0.6667</code> or 67.67%. </p>
-</li>
-<li>
-<p>On July 1, the price drops to 14 per share. The daily performance for that day is <code>(140/150) - 1 = -0.0667</code> or -6.67%. The cumulative performance however becomes <br><br>
-<code>[(1+0) x (1+0) x ... x (1+0.6667) x (1+0) x ... x (1-0.0667)] - 1 = (1.6667 x 0.933) - 1 = 0.5555</code> or 55.55%. </p>
-</li>
+<li>2022-01-13 (day before the purchase): historical price of <code>share-1</code> increased from 16.016 EUR/share to 16.026 EUR/share. The daily performance of <code>share-1 (benchmark)</code> is thus (16.026 / 16.016) -1 = 0.0624%. This is the same performance as for the existing investment of 10 shares of <code>share-1</code>: ((160.26 + 0) / (160.16 + 0)) - 1 = 0.0624%. For days without cash flows, <code>share-1</code> and its benchmark have the same daily performance.</li>
+<li>2022-01-14: the historical price drops from 16.026 to 15.962 EUR/share. The daily performance of <code>share-1 (benchmark)</code> decreases to (16.026 / 15.962) -1 = 0.040%. However, since an additional 5 shares are purchased on this day for 83 EUR (5 x 16 EUR/share + 3 EUR fees), the MVE of this security becomes 15 shares x 15.962 EUR/share = 239,43 EUR and the  daily performance = (( 239,43 + 0) / (160.26 + 83)) - 1 = -1.574%. Due to the fees, the benchmark has a better performance than the actual investment of 15 shares.</li>
+<li>Please note that the performance as can be read from Figure 3 is the cumulative performance, and as such different from the daily performance as calculated above. For the cumulative performance, you need to compound the daily performances. For the benchmark: r14 = (1+r1)x(1+r2)x ... (1+r12)x(1+0.0624%)x(1-1,574%) = -2.07%. </li>
+<li>The dividend payment on 2002-12-15 of 30 EUR (inclusive taxes) causes the second divergence. The historical prices decrease from 19.166 EUR/share to 18.898 EUR/share. So, the performance of the benchmark on december 15 is (18.898/19.166) - 1 = -1.40%. The performance of <code>share-1</code> is ((15 * 18.898) + 30) / (15 * 19.166) = 9.04%.</li>
+<li>The sell transaction occurred on 2023-04-12: 5 shares at 22.4 EUR/share minus 5 EUR fees or 107 EUR. The performance of the benchmark at the time of the sell transaction on 2023-04-12 is (22.40/22,60) - 1 = -0,88%. The performance of <code>share-1</code> is ((10 * 22.40) + 107) / (15 * 22,60) = 2,36%.  </li>
 </ul>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Simplified example to calculate the performance (%) without cashflows. </figcaption><img alt="" src="../images/simplified-example-1.png"></figure></p>
-<h3 id="complex-example">Complex example</h3>
-<p>Now, let's introduce some complexity as depicted in Figure 2. The initial purchase includes both fees and taxes. On May 1, a dividend is paid. Subsequently, there are additional taxes or fees along with refunds.</p>
-<ul>
-<li>
-<p>Jan 1: the performance drops from 0% on December 31 to -6.25% on Jan 1. As in the previous example, MVB = 0 and MVE = 90. However, there are <em>two</em> CF<sub>in</sub>: a deposit and a fee payment. Taxes are not taken into account. According to Eq 1, the <code>daily r = [90/(0 + 90 + 6)] - 1 = -0.0625</code> or 6.25%. The cumulative performance is the same <code>(1 - 0.0625) - 1 = -0.0625</code> </p>
-</li>
-<li>
-<p>From Jan 2 until 1 until March 31: the daily performance becomes zero and the cumulative performance remains at -6.25% (see above for an explanation).</p>
-</li>
-<li>
-<p>On April 1, the historical quote increases to 15 per share. There are no additional cashflows. The <code>daily performance = (150/90) - 1 = 0.6667</code> or 66.67%. The cumulative performance becomes: <code>[(1-0.0625) x (1 - 0) x ... x (1 + 0.6667)] - 1 = 0.5625</code> or 56.25%.</p>
-</li>
-<li>
-<p>A dividend is paid on May 1. This represents a CF<sub>out</sub>. Only the net value of this cashflow (8) is taken into Eq 1, giving the <code>daily performance = [(150 + 8)/(150] - 1 = 0.0533</code> or 5.26%. Because most daily performances are zero, I will leave them out in the formula for the cumulative performance = <code>[(1-0.0625) x (1 + 0.6667) x (1 + 0.0533)] - 1 = 0.6458</code> or 64.58%.</p>
-</li>
-<li>
-<p>July 1, historical price decreases to 14 per share. The daily performance becomes <code>(140/150) - 1 = - 0.06667</code>. The cumulative performance decreases to <code>[(1-0.0625) x (1 + 0.6667) x (1 + 0.0533) x (1 - 0.0667)] - 1 = 0.5360</code> or 53.60%.</p>
-</li>
-<li>
-<p>The taxes (50) on Aug 1 have no effect on the daily or cumulative performance, which remains at 53.60%.</p>
-</li>
-<li>
-<p>The fee or CF<sub>in</sub> on Sept 1 does have an effect. The daily performance = <code>[140/(140 + 20)] - 1 = - 0.125</code>. The cumulative performance decreases to <code>[(1-0.0625) x (1 + 0.6667) x (1 + 0.0533) x (1 - 0.0667) x (1 - 0.125)] - 1 = 0.3440</code> or 34.40%.</p>
-</li>
-</ul>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Simplified example to calculate the performance (%) with cashflows. </figcaption><img alt="" src="../images/simplified-example-2.png"></figure></p>
-<h2 id="user-interface">User interface</h2>
-<p>The user interface of <code>View &gt; Reports &gt; Performance &gt; Chart</code> is quite comparable to the chart interface of <a href="../../statement/statement-chart/">View &gt; Reports &gt; Statement of Assets &gt; Chart</a>. We cover only the differences in this section; see link above for the common features.</p>
-<h3 id="new-features">New features</h3>
-<p>The gear icon (top right) provides an additional type of data series, called <code>Add benchmark ...</code> (see Figure 3).  A benchmark is a security from which only the historical prices are taken to calculate the daily and cumulative performance. Figure 3 displays two benchmarks are displayed: the MSCI World index and share-1 (benchmark). For more information on indexes and benchmarking, refer to <a href="../../../../../how-to/benchmarking/">How-to &gt; Benchmarking your portfolio</a>.</p>
-<p>Please note that the share-1 (benchmark) graph is identical to the one in Figure 1, where cash flows such as dividends and fees were not taken into account. Since the daily historical prices of the MSCI World index exhibit slight daily variations, the resulting curve appears somewhat more irregular.</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Adding a benchmark to the performance chart. </figcaption><img alt="" src="../images/benchmark.png"></figure></p>
-<p><figure class="align-right" style="width:30%" id="_figure-4"><figcaption>Figure 4.  Export CSV. </figcaption><img alt="" src="../images/export-csv.png"></figure></p>
-<p>In addition to the <code>Export chart data</code> and <code>Save diagram</code>, already available in Statements of Assets chart, the 'Export data as CSV' button, located in the top right corner, enables you to export each data series or benchmark separately as a CSV file. Only the series that are currently displayed on the chart can be exported. For example, to validate the calculations discussed previously, you can display and export the share-1 data series. In the exported CSV file, you will find the numerical daily and cumulative performance values for each day.</p>
-<p>Another addition to the Statement of Assets chart, is the 'Interval' drop-down with choices: daily, weekly, monthly, quarterly, or yearly. In the previous examples, we computed the daily (cumulative) performances. Exporting share-1 data series as csv-file with a quarterly time interval will produce the following table.</p>
-<table>
-<thead>
-<tr>
-<th>Date</th>
-<th style="text-align: right;">Value</th>
-<th style="text-align: right;">Cfin</th>
-<th style="text-align: right;">Cfout</th>
-<th style="text-align: right;">Daily %</th>
-<th style="text-align: right;">Cumulative %</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2022-12-31</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr>
-<td>2023-03-31</td>
-<td style="text-align: right;">90</td>
-<td style="text-align: right;">96</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">-6.25</td>
-<td style="text-align: right;">-6.25</td>
-</tr>
-<tr>
-<td>2023-06-30</td>
-<td style="text-align: right;">150</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">75.56</td>
-<td style="text-align: right;">64.58</td>
-</tr>
-<tr>
-<td>2023-09-30</td>
-<td style="text-align: right;">140</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">-18.33</td>
-<td style="text-align: right;">34.41</td>
-</tr>
-<tr>
-<td>2023-12-31</td>
-<td style="text-align: right;">120</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">-14.29</td>
-<td style="text-align: right;">15.21</td>
-</tr>
-<tr>
-<td>2024-01-01</td>
-<td style="text-align: right;">170</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">41.67</td>
-<td style="text-align: right;">63.21</td>
-</tr>
-</tbody>
-</table>
-<p>To calculate the performance of the second quarter, you need to know the values of MVB, MVE, CFin, and CFout. MVB is the market value of share-1 on March 31, which is 90 (see Figure 1). MVE is the market value on June 30, which is 150. If you look closely at the transaction list of Figure 2, you will notice that there is only one CFout: dividend minus fees on May 1 (8). There are two CFin: deposit and fee on Jan 1 (96) and another fee on September 1 (20). The second quarter only contains the CFin. Following Eq 1, the quarterly performance (of quater 2) is: <code>[(150 + 8)/90] - 1 = 0.7555</code> or 75.56%. The cumulative performance is<code>[(1 - 0.0625) x (1 + 0.7556)] - 1 = 0.6458</code> or 64.58%.</p>
-<p>Please, refer to <a href="../../statement/statement-chart/">View &gt; Reports &gt; Statement of Assets &gt; Chart</a> for a description of the other features such as zooming, adding data series, context menu of the canvas and legend, and others.</p>
+<p>Please refer to <a href="../../statement/statement-chart/">View &gt; Reports &gt; Statement of Assets &gt; Chart</a> for a description of the other features such as zooming, adding data series, context menu of the canvas and legend, and others.</p>
 
 
 
@@ -3724,7 +3465,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 9, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 18, 2025</span>
   </span>
 
     
