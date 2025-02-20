@@ -3701,24 +3701,28 @@
 
 <hr>
 <h2 id="preferences">Preferences</h2>
-<p>There are two distinct sections within the PP software where you can customize the User Interface (UI) and the overall behavior of the program: the <code>View &gt; Settings</code> menu and the <code>Help &gt; Preferences</code> menu.</p>
+<p>There are two distinct sections within the PP software where you can customize the User Interface (UI) and the overall behavior of the program: the <code>View &gt; Settings</code> menu and the <code>Help &gt; Preferences</code> menu (Windows) or the <code>Portfolio Performance &gt; Settings</code> app menu (Mac).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The menu bar on Windows and Mac differs slightly. On macOS, the menu bar is always located at the very top of the screen. Additionally, Mac programs have two extra menus: the Apple menu () at the top left and the app menu (e.g., <code>Portfolio Performance</code>), which appears as the second menu from the left. The app menu typically contains options such as settings, check for updates, services, and options to hide or quit the program.</p>
+</div>
 <p><figure class="align-right" style="width:50%" id="_figure-1"><figcaption>Figure 1.  The General option of the menu of View &gt; Settings. </figcaption><img alt="" src="../images/settings-general.png"></figure></p>
-<p>The preference settings have system-wide implications and will be applied to all portfolios managed by PP. The Preferences window features a sidebar, as illustrated in Figure 1, which is further divided into six submenus. </p>
+<p>The preference settings have system-wide implications and will be applied to all portfolios managed by PP. The Settings window features a sidebar, as illustrated in Figure 1, which is further divided into six submenus: <code>General</code>, <code>Presentation</code>, <code>Calendar</code>, <code>API Keys</code>, <code>Proxy</code>, and <code>Updates</code>. </p>
 <h2 id="general">General</h2>
-<p>By selecting the <code>General</code> menu item in the sidebar of the <code>Preferences dialog box</code> (see Figure 1),  you will be presented with four options: </p>
-<ul>
-<li><code>Automatically update quotes after opening a file</code>: Each security can have an external data source assigned for <a href="../../../how-to/downloading-historical-prices/">downloading historical quotes</a>. You can start the download process manually through the <a href="../../online/">Online menu</a> or enable the option to automatically download historical quotes upon opening the portfolio.</li>
-</ul>
-<p><br style="clear:left;"></p>
+<p>By selecting the <code>General</code> menu item in the sidebar of the <code>Settings dialog box</code> (see Figure 1),  you will be presented with four options: </p>
+<p><br style="clear:both;"></p>
 <ul>
 <li>
-<p><code>Store Gui settings next to Portfolio Performance file</code>: The Graphical User Interface (GUI) settings influence several aspects of the look and feel of the PP program such as the width of columns or size of windows (e.g. main pane vs information pane) and others. These settings are stored in a separate file, that can be located:</p>
+<p><code>Automatically update quotes after opening a file</code>: Each security can have an external data source assigned for <a href="../../../how-to/downloading-historical-prices/">downloading historical quotes</a>. You can start the download process manually through the <a href="../../online/">Online menu</a> or enable the option to automatically download historical quotes upon opening the portfolio.</p>
+</li>
+<li>
+<p><code>Store Gui settings next to Portfolio Performance file</code>: The Graphical User Interface (GUI) settings influence several aspects of the look and feel of the PP program such as the width of columns or size of windows (e.g. main pane vs information pane) and others. These settings are stored in a separate file. This file is located:</p>
 <ul>
 <li>
 <p>In the same folder as the portfolio file (option is checked). The name of the file is <span style="font-variant: small-caps;">[name-of-portfolio].settings</span>; e.g. <code>demo-portfolio-03.settings</code>.</p>
 </li>
 <li>
-<p>In a subfolder of the workspace folder of the PP application (option is unchecked). The name is a unique random string with the extension "txt", e.g.<code>prf_c4c742f0f7312d48355beadb57dc4a09.txt</code>. This file is invisible by default. The location of the workspace folder is:</p>
+<p>If the option is unchecked, then the settings file is located in a subfolder of the workspace folder of the PP application. The name is a unique random string with the extension "txt", e.g.<code>prf_c4c742f0f7312d48355beadb57dc4a09.txt</code>. This file is invisible by default. The location of the workspace folder is:</p>
 <ul>
 <li>macOS: <code>~/Library/Application Support/name.abuchen.portfolio.product/workspace</code></li>
 <li>Windows: <code>%LOCALAPPDATA%\PortfolioPerformance\workspace</code></li>
@@ -3727,7 +3731,7 @@
 </li>
 </ul>
 <p>You need to search in the subfolder: <code>.metadata\.plugins\name.abuchen.portfolio.ui</code>.</p>
-<p>The location of your settings file is critical when transferring your portfolio to another computer. If the settings file is stored adjacent to the portfolio, the process is simplified; you only need to copy both files to the new location. However, if the settings file is stored within the workspace folder, it will not be automatically regenerated when installing the PP application on the new computer. In this case, you must manually copy the file from the old computer and paste it into the corresponding location on the new computer to ensure proper configuration.</p>
+<p>The location of your settings file is critical when transferring your portfolio to another computer. If the settings file is stored adjacent to the source portfolio file, the process is simplified; you only need to copy both files to the new location. However, if the setting files is stored within the workspace folder, it will not be automatically regenerated when installing the PP application on the new computer. In this case, you must manually copy the file from the old computer and paste it into the corresponding location on the new computer to ensure proper configuration.</p>
 </li>
 <li>
 <p><code>Enable experimental features</code>: This feature is only intended for developers or "bold" users who wish to test out new experimental features, such as a new file format</p>
@@ -3739,18 +3743,17 @@
 <h3 id="presets">Presets</h3>
 <p>There is only one preset to configure, which is determining the time value for newly entered data, such as the time of a buying transaction. The default setting is <code>Start of day</code> (= <code>00:00</code>). Alternatively, you can select <code>Current time</code>, which will use the time from your computer clock for new entries.</p>
 <h3 id="backups">Backups</h3>
-<p><figure class="align-right" style="width:30%" id="_figure-2"><figcaption>Figure 2.  Settings for the backup of the data files. </figcaption><img alt="" src="../images/settings-backup.png"></figure></p>
+<p><figure class="align-right" style="width:40%" id="_figure-2"><figcaption>Figure 2.  Settings for the backup of the data files. </figcaption><img alt="" src="../images/settings-backup.png"></figure></p>
 <p>The first option enables an automatic backup of your portfolio, creating a copy just before the previous version is overwritten (saved) with the current one. This serves as a safeguard in case you unintentionally modify elements within your portfolio and need to revert to its previous state.</p>
 <p>You have three choices for the backup location:</p>
-<p><br style="clear:left;"></p>
 <ul>
 <li><code>Next to data file</code>: The backup is saved in the same folder as the original portfolio with the text <code>.backup</code>, appended to the name; for example <code>myPortfolio.backup.xml</code>.</li>
-<li><code>Selected directory</code>: The backup is saved in the folder location specified below. This could be a completely different directory or drive.</li>
-<li><code>Directory Next to data file</code>: The backup is saved in a folder at the same level as the portfolio file. The name of the folder is specified below (e.g. <code>backups</code>, as shown in Figure 2).</li>
+<li><code>Selected directory</code>: The backup is saved in the folder location next to Backup location. This could be a completely different directory or drive. Use the Browse button to select the appropriate folder (see Figure 2).</li>
+<li><code>Directory Next to data file</code>: The backup is saved in a folder at the same level as the portfolio file. The name of the folder is specified below (e.g. <code>backups</code>, as shown in Figure 2); the Browse button however is disabled.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In fact, turning on the backup option will create a file such as <code>myPortfolio.backup-after-open.xml</code> right after opening your portfolio. This file will contain the state of your original portfolio.</p>
+<p>In fact, turning on the backup option will create a file such as <code>myPortfolio.backup-after-open.xml</code> right after opening your portfolio. This file will contain the state of your original portfolio, before any changes.</p>
 </div>
 <ul>
 <li><code>Autosave copy every X minutes</code>: You can specify the number of minutes in the provided text field. With this option enabled, the current state of the portfolio file will be saved automatically every X minutes. Any existing autosave file will be overwritten. To disable this feature, enter zero (0) minutes. The autosave file will be named <code>[name-of-portfolio].autosave.[extension]</code> and stored in the same folder as the original portfolio.</li>
@@ -3758,7 +3761,7 @@
 <h2 id="presentation">Presentation</h2>
 <ul>
 <li>
-<p><code>Use indirect quotation for exchange rates</code>: Each portfolio has a single base currency, which is set during the <a href="../../../getting-started/create-portfolio/">creation of the portfolio</a> and can be modified later in the <a href="../../view/reports/statement/">Statements of Assets</a> view. When conducting a transaction involving a foreign currency (foreign relative to the base currency), an exchange rate must be applied. With indirect quotation, the exchange rate indicates how much of the foreign currency is required to purchase one unit of the base currency. On the other hand, direct quotation specifies how much of the base currency is needed to acquire one unit of the foreign currency.</p>
+<p><code>Use indirect quotation for exchange rates</code>: Each portfolio has a single base currency, set during the <a href="../../../getting-started/create-portfolio/">creation of the portfolio</a> and adjustable later in the <a href="../../view/reports/statement/">Statements of Assets</a> view. When conducting a transaction involving a foreign currency (foreign relative to the base currency), an exchange rate must be applied. With indirect quotation, the exchange rate indicates how much of the foreign currency is required to purchase one unit of the base currency. On the other hand, direct quotation specifies how much of the base currency is needed to acquire one unit of the foreign currency.</p>
 <p>For instance, if your base currency is EUR, the exchange rate with USD would be represented as follows:</p>
 <ul>
 <li>
@@ -3776,7 +3779,7 @@
 </ul>
 <h3 id="language">Language</h3>
 <p><figure class="align-right" style="width:30%" id="_figure-3"><figcaption>Figure 3.  Settings for the language, country, and Java Locale. </figcaption><img alt="" src="../images/settings-language.png"></figure></p>
-<p>Using the language drop-down menu, you can modify the user-interface language of the PP software, such as the menus and dialogs.. 13 different languages are available: Deutsch (German), English, Español (Spanish), Français (French), Italiano (Italian), Nederlands (Dutch), Português (Portuguese), čeština (Czech), русский (Russian), Slovenská (Slovak), Polskie (Polish), 中文 (Chinese), and Dansk (Danish).</p>
+<p>Using the language drop-down menu, you can modify the user-interface language of the PP software, such as the menus and dialogs. Thirteen different languages are available: Deutsch (German), English, Español (Spanish), Français (French), Italiano (Italian), Nederlands (Dutch), Português (Portuguese), čeština (Czech), русский (Russian), Slovenská (Slovak), Polskie (Polish), 中文 (Chinese), and Dansk (Danish).</p>
 <p>The selected language will also affect the available country options. For instance, the Dutch language is spoken in seven countries: Aruba, Belgium, Carribean Netherlands, Curraçao, Sint Maarten, and Suriname.</p>
 <p>If English is selected as the UI language, several countries, including an option for Europe and World, can be chosen. The combination of language and country determines the Java Locale. For example, selecting the language "Dutch" and the country "Belgium" will result in the Java locale "nl_BE". Choosing "English" and "Europe" will produce the Java locale "en_150".</p>
 <p>The Java Locale is responsible for formatting dates, currency, decimal and grouping separators, and the first day of the week. For example, the combination of English and Belgium produces the Java locale "en_BE", which in turn displays a date like "03 Oct 2024 15:49" (English language but Belgian notation) with Monday as the first day of the week, and a comma (,) as the decimal separator and a dot as the grouping symbol.</p>
@@ -3789,12 +3792,12 @@
 <p>In this section, you can adjust the display precision for the number of shares (default is rounded to 1 decimal place) and the display precision for calculated quotes (default=2). Keep in mind that the changes will only be visible with decimal numbers (which need to be rounded to the specified number of digits after the decimal point) in read-only views, such as the Statement of Assets view. On input forms, like a buy-input form, you can still enter a more precise number with additional decimal places.</p>
 <h2 id="calendar">Calendar</h2>
 <p>A calendar specifies the holidays (of your stock exchange) or the non-trading days for a selected year.  Calendars play an essential role in calculations, certain chart views, and investment plans within PP. For instance, if the start date of a monthly <a href="../../view/accounts/investment-plans/">investment plan</a> falls on a holiday, the transaction will be moved to the next working day.</p>
-<p>PP offers 13 different stock exchange calendars. These include the Australian Stock Exchange (ASX), Euronext, German stock exchanges (DE), IBOV Sao Paulo Stock Exchange (Brazil), ISE Italian Stock Exchange (ISE), London Stock Exchange (LSE), Moscow Exchange (MICEX-RTS), New York Stock Exchange (NYSE), Swiss Exchange (SIX), Toronto Stock Exchange (TSE), and Vienna Stock Exchange (VSE). There are also 4 more generic calendars:</p>
+<p>PP offers 14 different stock exchange calendars. These include the Australian Stock Exchange (ASX), Euronext, German stock exchanges (DE), IBOV Sao Paulo Stock Exchange (Brazil), ISE Italian Stock Exchange (ISE), London Stock Exchange (LSE), Moscow Exchange (MICEX-RTS), New York Stock Exchange (NYSE), Santiago Stock Exchange (SSE), Swiss Exchange (SIX), Toronto Stock Exchange (TSE), and Vienna Stock Exchange (VSE). There are also 4 more generic calendars:</p>
 <ul>
 <li>(None): Every day of the year, from January 1 to December 31, is considered a trading day.</li>
 <li>Default Calendar: Specifies seven quasi-universal holidays, such as New Year's Day. </li>
 <li>First of the Month: this calendar will mark every first of the month day, e.g. Jan 1, Feb 1, ... as a trading day, excluding all other days. This calendar can be used in combination with the <a href="../../../concepts/reporting-period/">reporting period</a> to define a period starting from the first of the month.</li>
-<li>TARGET2 (Eurozone banking day): Holidays for the Trans-European Automated Real-time Gross settlement Express Transfer (TARGET):  a system that allows the European banks to transfer money between each other instantly. </li>
+<li>TARGET2 (Eurozone banking day): Holidays for the Trans-European Automated Real-time Gross settlement Express Transfer (TARGET), a system that allows the European banks to transfer money between each other instantly. </li>
 </ul>
 <p>When you select a calendar from the drop-down list, it will display the corresponding holidays for the chosen calendar and year.</p>
 <div class="admonition note">
@@ -3807,8 +3810,9 @@
 <h2 id="proxy">Proxy</h2>
 <p>Downloading historical prices requires accessing an external web server such as Yahoo Finance. Using a proxy server can hide your IP address, making your online activity more anonymous. In a corporate environment, proxies are often used to enforce internet usage policies, monitor employee activity, and ensure compliance with regulatory requirements.  </p>
 <h2 id="updates">Updates</h2>
-<p>PP is regularly maintained and updated. To manually check for updates, you can visit the <a href="https://www.portfolio-performance.info/en/">homepage</a>. The version number (e.g., 0.69.0) is displayed above the download links. Additionally, you can find the <a href="https://github.com/portfolio-performance/portfolio">latest release</a> on GitHub.</p>
+<p>PP is regularly maintained and updated. To manually check for updates, you can visit the <a href="https://www.portfolio-performance.info/en/">homepage</a>. The version number (e.g., 0.74.0) is displayed above the download links. Additionally, you can find the <a href="https://github.com/portfolio-performance/portfolio">latest release</a> on GitHub.</p>
 <p>By enabling the <code>Check for updates on Start</code> option in the Settings section, PP will automatically check, download, and install the latest version (if necessary) upon launch. The update process is carried out from the URL <code>https://updates.portfolio-performance.info/portfolio</code>.</p>
+<p>On Mac, you can find this option in the app Menu Portfolio Performance.</p>
 
 
 
@@ -3829,7 +3833,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 9, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 20, 2025</span>
   </span>
 
     
