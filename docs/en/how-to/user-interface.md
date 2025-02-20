@@ -31,7 +31,7 @@ Click the column heading to sort the table in ascending (&and;) or descending (&
 
 ## Shortcuts
 
-Use **Ctrl** (Windows) or **Cmd** (Mac). Sequential shortcuts are written as Ctrl+I, P; for example, press Ctrl+I, release, and then press P.
+Use **Ctrl** (Windows) or **Cmd** (Mac). Sequential shortcuts are written as Ctrl+I, P or Cmd+I, P; for example, press Ctrl+I or Cmd+I, release, and then press P.
 
 **Ctrl+G / Cmd+G**: Cmd+G is a collective shortcut that brings together approximately 40 different commands, such as View > All Securities, View > All Transactions, and View > Reports > Statement of Assets. The shortcut opens a command palette displaying all available commands. Starting to type will filter the list, bringing you to the relevant command within the group. For example, typing “FE” will show the commands “Fees” and “Fees Refund.”
 
@@ -41,7 +41,8 @@ Use **Ctrl** (Windows) or **Cmd** (Mac). Sequential shortcuts are written as Ctr
 - **Ctrl+L / Cmd+L**: Show/hide information pane at the bottom of the screen. The information displays additional details of the selected item in the main pane (top).  
 
 ### File operations  
-- **Ctrl+N / Cmd+N**: Creates a new taxonomy, watchlist, consumer price index, cryptocurrency, exchange rate, or instrument (see [File > New](../reference/file/new.md)) 
+- **Ctrl+N / Cmd+N**: Creates a new taxonomy, watchlist, consumer price index, cryptocurrency, exchange rate, or instrument (see [File > New](../reference/file/new.md))
+- **Ctrl+O / Cmd+O**: Displays the File > Open dialog box.   
 - **Ctrl+S / Cmd+S**: Saves the current portfolio under the existing name.  
 - **Ctrl+Q / Cmd+Q**: Closes the PP program, prompting you to save any unsaved changes to files.  
 - **Ctrl+I, P / Cmd+I, P**: [Import](../reference/file/import/pdf-import.md) PDF Bank documents.  
