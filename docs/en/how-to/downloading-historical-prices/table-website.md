@@ -37,7 +37,7 @@ Figure: Manual scraping. {class=pp-figure}
 - Right-click on the table and choose `Page Source` from the context menu.
 - Highlight all text using the shortcut Ctrl + A.
 - Copy the text with the shortcut Ctrl + C.
-- Navigate to the dialog box in Figure 3; refer to [All Securities view](../../reference/view/securities/all-securities.md#bottom-panel).
+- Navigate to the dialog box in Figure 3; refer to [All Securities view](../../reference/view/securities/all-securities.md#information-pane).
 - Paste the text (Ctrl + V) in the highlighted zone.
 - Click on Next and then Finish.
 

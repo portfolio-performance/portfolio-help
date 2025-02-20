@@ -10,7 +10,7 @@ Figure: Drop-down list for selecting the reporting period. {class= pp-figure}
 The reporting period can significantly influence performance and can be easily manipulated to support a particular viewpoint. Consider, for instance, the price trend of the Amazon share depicted in Figure 2. Depending on the reporting period, you have a massive loss, a massive gain, or a moderate loss.
 
 !!! Note
-    Use the equations in [Basic Concepts > Performance](./performance/index.md) to calculate the performance indices. If you want to check the numbers in PP, use the Kommer portfolio. Add Amazon as a [benchmark](../reference/view/reports/performance/performance-chart.md#new-features) to the performance chart and set the appropriate reporting period e.g. 2022. Don't forget to switch the portfolio currency to USD to have the performance calculations in USD.
+    Use the equations in [Basic Concepts > Performance](./performance/index.md) to calculate the performance indices. If you want to check the numbers in PP, use the Kommer portfolio. Add Amazon as a [benchmark](../reference/view/reports/performance/performance-chart.md) to the performance chart and set the appropriate reporting period e.g. 2022. Don't forget to switch the portfolio currency to USD to have the performance calculations in USD.
 
 - 2022: `TTWROR = IRR = (84/166.72)-1 = -49.62%`
 - 2023: `TTWROR = IRR = (151.94/84)-1 = +80.88%`

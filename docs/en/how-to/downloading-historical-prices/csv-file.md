@@ -1,7 +1,7 @@
 ---
 title: Downloading a CSV file
 ---
-In PP, importing historical prices from a CSV file is a straightforward process through the menu [`File > Import > CSV Files`](../../reference/file/import/csv-import.md#historical-quotes-import). Naturally, you would require a file containing the relevant quotes for this operation.
+In PP, importing historical prices from a CSV file is a straightforward process through the menu [`File > Import > CSV Files`](../../reference/file/import/csv-import.md#1-historical-quotes-import). Naturally, you would require a file containing the relevant quotes for this operation.
 
 A csv file is a comma-separated values file, which is a text file that stores tabular data. Each row in the file represents a record, and each column represents a field. For example, a typical historical quotes CSV file will contain two columns (date and quote) and several rows, one for each date with its corresponding historical quote. A csv file can be opened and edited by spreadsheet software and easily imported into PP.
 

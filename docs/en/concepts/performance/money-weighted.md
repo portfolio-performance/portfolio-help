@@ -61,7 +61,7 @@ Figure: Defining all possible cash flows within a portfolio.{class=pp-figure}
 
 ## <span style="color:orange">IRR at portfolio level</span>
 
-The following examples will calculate the IRR for an entire portfolio. You can find this performance indicator in the `View > Reports > Performance` dashboard. The resulting IRR can not be extrapolated to an individual account or security. It's the performance of the whole portfolio. Refer to the following sections to calculate the IRR of a [specific security](#irr-on-security-level) or [trade](#irr-on-trade-level). We use the [demo-portfolio-03](../../assets/demo-portfolio-03.xml) for all examples.
+The following examples will calculate the IRR for an entire portfolio. You can find this performance indicator in the `View > Reports > Performance` dashboard. The resulting IRR can not be extrapolated to an individual account or security. It's the performance of the whole portfolio. Refer to the following sections to calculate the IRR of a [specific security](#irr-at-security-level) or [trade](#irr-at-trade-level). We use the [demo-portfolio-03](../../assets/demo-portfolio-03.xml) for all examples.
 
 ### **Example 1**: one deposit + buy transaction
 
@@ -111,7 +111,7 @@ MVB           CF1                    CF2                    CF3             MVE
 
 Figure 5 illustrates the calculation in Excel ([download workbook](../../assets/demo-portfolio-03-calculation.xlsx)). The initial cash flow of 155 EUR will have grown to 219.68 EUR, if the holding period was 878 days and the yearly interest rate was 15.60%. The second buy will increase from 84 EUR to 103.03 EUR. The profit of `share-2` appears smaller due to the smaller amount of holding days. The calculation of IRR can be simulated in Excel using the `Data > Goal Seek method` (see Figure 4). The method tries to set the value of the calculated MVE (cell F11) to the observed MVE (manual input) by iteratively changing the value of IRR (cell F3), until a match (15.60%) is found.
 
-Please note that the individual calculated end values of the shares do not necessarily correspond with the observed individual end values. Compare for example the expected and observed value of `share-2`. The observed value (cell J9) is much higher. Only the sum of the whole portfolio match and the same calculated IRR is applied to all shares. PP can - of course- also calculate the IRR for individual securities; see below to calculate the performance of [individual securities](#irr-on-security-level) and [trades](#irr-on-trade-level).
+Please note that the individual calculated end values of the shares do not necessarily correspond with the observed individual end values. Compare for example the expected and observed value of `share-2`. The observed value (cell J9) is much higher. Only the sum of the whole portfolio match and the same calculated IRR is applied to all shares. PP can - of course- also calculate the IRR for individual securities; see below to calculate the performance of [individual securities](#irr-at-security-level) and [trades](#irr-at-trade-level).
 
 Figure: IRR-calculation for three buy-transactions. {class=pp-figure}
 

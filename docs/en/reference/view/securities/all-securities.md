@@ -130,13 +130,13 @@ Figure: Context menu of Historical Quotes in the information pane.{class=pp-figu
 
 - Quotes: this heading conceals several additional options (see Figure 6). Many of these options can also be executed from another context, e.g. menu.
 
-    - Update quotes online: Shortcut for the [menu Online > Update quotes (selected security)](../../online.md#update-quotes-selected-security).
+    - Update quotes online: Shortcut for the [menu Online > Update quotes (selected security)](../../online.md#update-quotes-xxx-instruments-selected).
     
     - Debug: Show server response: If the security is linked to an online data provider, you can view the HTTP response from that server.
     
     - Configure online update ...: this option will display the Securities attributes form with the Historical Quotes tab selected; see [File > New](../../file/new.md#historical-quotes).
     
-    - Search for suppliers of historical prices ...: displays the first step of the [File > New](../../file/new.md#file-❯-new) wizard.
+    - Search for suppliers of historical prices ...: displays the first step of the [File > New](../../file/new.md) wizard.
     
     - Import from CSV file ...: This command is equivalent with the [File > Import](../../file/import/csv-import.md) menu. The CSV file must contain at least two columns.
     

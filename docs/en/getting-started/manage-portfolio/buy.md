@@ -45,7 +45,7 @@ Figure: Calculation flow between Shares and Debit Note.
 
 # Transaction with two currencies
 
-If you want to purchase shares in a foreign currency, there are two options. Either you have the required amount in the foreign currency in a deposit account. Or, you'll need to [make a deposit](deposit.md#MakingaDeposit) or [convert](deposit.md#transferbetweentwocurrencies) another currency into the foreign currency first.
+If you want to purchase shares in a foreign currency, there are two options. Either you have the required amount in the foreign currency in a deposit account. Or, you'll need to [make a deposit](deposit.md#making-a-deposit) or [convert](deposit.md#transfer-between-two-currencies) another currency into the foreign currency first.
 
 Figure 4 displays the bank's paper note regarding the purchase of USD shares. Since taxes and fees need to be settled in EUR (due to it being a European bank), and the portfolio's base currency for reporting is also EUR, the total amount in USD is also converted to EUR.
 

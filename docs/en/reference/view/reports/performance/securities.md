@@ -73,7 +73,7 @@ Figure: Available fields Securities. {class=align-right style="width:30%"}
     - Capital Gains % (moving average, current holdings): Same as above, but as percentage: (Market value - Purchase value (moving average))/ Purchase value (moving average).
     - Absolute Performance %: The absolute performance (see above), but expressed as percentage.
 
-- Capital Gains: for a more detailed explanation of `capital gains`; see section on [Reports > Performance > Calculation](calculation.md#calculation--other-detail-panels).
+- Capital Gains: for a more detailed explanation of `capital gains`; see section on [Reports > Performance > Calculation](calculation.md#).
 
     - Realized Gains: Hovering over the value displays a popup with more info. For example, the realized gain of `share-1` is 37 EUR. The five shares are sold for the gross value of 112 EUR; while the purchase value (without fees and taxes) was 75 EUR. The realized gain is thus 37 EUR. () 
 

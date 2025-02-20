@@ -81,7 +81,7 @@ Figure: Event types. {class=pp-figure}
 ![](images/mnu-context-event-types.png)
 
 The Events table contains five columns: `Date`, `Type`, `Payment Date`, `Amount`, and `Details`. The event types include:
-- `Stock Split`: Automatically generated after a stock split operation (see [above](context-menu.md#stock-split-))
+- `Stock Split`: Automatically generated after a stock split operation (see [above](context-menu.md)
 - `Dividend announcement`: Automatically retrieved by connecting to the web service of (see how-to > Dividend announcements) for more details.
 - `Note`: Manually created custom notes (see above).
 
