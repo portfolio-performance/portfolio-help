@@ -31,28 +31,6 @@ Click the column heading to sort the table in ascending (&and;) or descending (&
 
 ## Shortcuts
 
-Use **Ctrl** (Windows) or **Cmd** (Mac). Sequential shortcuts are written as Ctrl+I, P or Cmd+I, P; for example, press Ctrl+I or Cmd+I, release, and then press P.
+The sidebar contains most menu items from the `View` menu, making it a convenient way to execute commands. You can show or hide the sidebar with the first menu item of the view menu Options.
 
-**Ctrl+G / Cmd+G**: Cmd+G is a collective shortcut that brings together approximately 40 different commands, such as View > All Securities, View > All Transactions, and View > Reports > Statement of Assets. The shortcut opens a command palette displaying all available commands. Starting to type will filter the list, bringing you to the relevant command within the group. For example, typing “FE” will show the commands “Fees” and “Fees Refund.”
-
-### Navigating the UI  
-- **Ctrl+F / Cmd+F**: Jump to the **Search** box in list views such as All Securities, All Transactions, Trades, Taxonomies, ...  
-- **Ctrl+K / Cmd+K**: Show/hide sidebar (= left region with the View menu items).  
-- **Ctrl+L / Cmd+L**: Show/hide information pane at the bottom of the screen. The information displays additional details of the selected item in the main pane (top).  
-
-### File operations  
-- **Ctrl+N / Cmd+N**: Creates a new taxonomy, watchlist, consumer price index, cryptocurrency, exchange rate, or instrument (see [File > New](../reference/file/new.md))
-- **Ctrl+O / Cmd+O**: Displays the File > Open dialog box.   
-- **Ctrl+S / Cmd+S**: Saves the current portfolio under the existing name.  
-- **Ctrl+Q / Cmd+Q**: Closes the PP program, prompting you to save any unsaved changes to files.  
-- **Ctrl+I, P / Cmd+I, P**: [Import](../reference/file/import/pdf-import.md) PDF Bank documents.  
-- **Ctrl+I, C / Cmd+I, C**: Import CSV files (comma-separated values).  
-- **Ctrl+Shift+S / Cmd+Shift+S**: Export selected items (such as an account) from the current portfolio as a CSV file.  
-
-### [Updating prices](../reference/online.md#update-quotes)  
-- **Ctrl+U, K / Cmd+U, K**: Update the historical prices (quotes) of all securities.  
-- **Ctrl+U, A / Cmd+U, A**: Update the historical prices of the active securities.  
-- **Ctrl+U, T / Cmd+U, T**: Update the historical prices of the selected security.  
-- **Ctrl+E / Cmd+E**: Edit the selected security in the All Securities list.  
-
-This Markdown format ensures proper headings, bold formatting, and linking. Let me know if you need any modifications! 🚀
+There are also many keyboard shortcuts. For example, Ctrl+K (Windows) or Cmd+K (Mac) toggles the sidebar. A [complete overview](shortcuts.md) of all shortcuts is available.
