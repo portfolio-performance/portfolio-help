@@ -1975,6 +1975,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configure-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure chart
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3494,6 +3503,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configure-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure chart
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3518,30 +3536,53 @@
 
 
 <h1 id="statement-of-assets-chart">Statement of Assets › Chart</h1>
-<p>Using the menu <code>View &gt; Reports &gt; Statement of Assets &gt; Chart</code> or the sidebar, you can generate a graphical representation of the value of your assets over time.</p>
-<p>The x-axis represents time. You can select the desired reporting period using the dropdown menu in the top-right corner. By default, the periods of 1 year, 2 years, 3 years, 4 years, 6 years, and the previous day are available. Additionally, you have the option to create a custom time period using the 'New' feature; see <a href="../../../../../concepts/reporting-period/">Reporting Period</a> for a description. Unlike the performance chart (found under <a href="../../performance/performance-chart/">View &gt; Reports &gt; Performance &gt; Chart</a>), you cannot adjust the time interval in this chart, as it is fixed at 1 day.</p>
+<p>Using the menu <code>View &gt; Reports &gt; Statement of Assets &gt; Chart</code> or the sidebar, you can generate a graphical representation of the <em>value</em> of your assets over time. It is similar to the other chart below (<code>View &gt; Reports &gt; Performance &gt; Chart</code>), but instead of showing asset values, that chart displays the <em>performance</em> over time.</p>
+<p>You can select the desired reporting period using the dropdown menu in the top-right corner. By default, the periods of one, two, or three years are available. Additionally, you have the option to create a custom time period using the <code>New</code> feature or <code>Manage</code>the existing periods; see <a href="../../../../../concepts/reporting-period/">Reporting Period</a> for a description.</p>
+<p>The default <code>Standard</code> View has a time period of one year, displays two data series (Total and Transferals; see below) in black and grey, and shows the Y-axis starting from zero near the bottom of the chart. All of these features can be customized. It is generally good practice to first create a new view using the <code>New View</code> button (top right). This new view initially duplicates the default Standard View, allowing you to customize it as needed. Using the drop-down menu to the right of the view name, you can duplicate, rename, or delete a view. If the Standard View is deleted, it will be automatically recreated with its default settings.</p>
+<p>With the <code>Export data as CSV</code> button, you create a comma-separated Values (CSV) file of the data of the visible chart or export the chart as an image. The <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"> Gear icon is discussed below.</p>
 <h2 id="axes">Axes</h2>
-<p>The y-axis displays the total value of your assets, denominated in the portfolio's default currency. Larger numbers are condensed by adding 'k', where 1k equals 1000 units of the portfolio currency. You can adjust the scale of this axis by scrolling with the middle mouse button. Hold the mouse position at the value (e.g. 4k) where you want to increase or decrease the scale around.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Chart of the Total value of the demo portfolio.</figcaption><img alt="" src="../images/sb-reports-chart.svg"></figure></p>
-<h2 id="canvas">Canvas</h2>
-<p>The canvas is a graphical representation of one or more data series. A data series typically comprises a set of paired data points presented in a table format, such as dates and their corresponding values. By default, two data series are displayed: 'Transferals' (primarily deposits) and 'Total' (see below for an explanation of all possible data series). When you left-click the canvas and hold the mouse down on a specific day, for example, March 28, 2022, a dialog box will appear, displaying detailed values for all data series on that day.</p>
-<p>Right-clicking on the chart canvas provides additional options (see Figure 1).</p>
+<p>The x-axis represents time.  Unlike the performance chart (found under <a href="../../performance/performance-chart/">View &gt; Reports &gt; Performance &gt; Chart</a>), the timeseries are always displayed at a daily interval.</p>
+<p>The y-axis displays the total value of your assets, denominated in the portfolio's default currency. Larger numbers are condensed by adding 'k' or 'm', where 1k equals 1000 units of the portfolio currency and 1m is one million. You can use the arrow keys on your keyboard or use the context menu to scroll in the chart (see Figure 1).</p>
 <ul>
-<li>Crosshair: Upon selecting this option, a large crosshair will appear above the chart when you left-click the canvas. The origin is centered at the mouse position of the click, facilitating easier reading of the exact value of a specific point within the data series.</li>
-<li>Measure distance: Select this option if you want to determine the exact number of days between two points on the chart. It also displays the difference in value and the corresponding percentage between the two points.</li>
-<li>Original size: Pressing the "O" key, which is a shortcut for "Original size", will reset the chart to its maximum visibility, reverting any zoom in or out adjustments that have been made.</li>
-<li>Various navigation options with their respective shortcut keys, such as Zoom In (Ctrl+Arrow Up), Scroll Up (Arrow Up), and more.</li>
-<li>Save diagram: This feature allows you to save the visible chart as a PNG or JPG image on your computer.</li>
+<li>Press the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m12.354 8.854 5.792 5.792a.5.5 0 0 1-.353.854H6.207a.5.5 0 0 1-.353-.854l5.792-5.792a.5.5 0 0 1 .708 0Z"></path></svg></span> Arrow Up key on your keyboard to scroll up, shifting the view to higher values (e.g., from 0–500 to 100–600 in Figure 1), or the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M11.646 15.146 5.854 9.354a.5.5 0 0 1 .353-.854h11.586a.5.5 0 0 1 .353.854l-5.793 5.792a.5.5 0 0 1-.707 0Z"></path></svg></span> Arrow Down key to move to lower values.</li>
+<li>Use the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m8.854 11.646 5.792-5.792a.5.5 0 0 1 .854.353v11.586a.5.5 0 0 1-.854.353l-5.792-5.792a.5.5 0 0 1 0-.708Z"></path></svg></span> Arrow Left key to view an earlier time frame and the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708Z"></path></svg></span> Arrow Right key to see a later period.</li>
 </ul>
-<h2 id="legend">Legend</h2>
-<p>Right-clicking on the legend icons (for example, the blue and red squares from Figure 1) will give you access to additional formatting options. For all types of data series and their legend entries, you can modify the <code>Color</code>, <code>Position</code> (Send backwards, Send to back or Bring forward, and Bring to Front), and <code>Sort</code> (A-Z or Z-A). The latter two options will reorganize the legend entries accordingly. In the case of a line-type data series like the Total value, you can also adjust the <code>Line Style</code> (solid, dash, dot, ...), and the <code>Show Area</code> option (which fills the area below the data series). In addition, you have the option to either hide (where the legend entry remains visible but is crossed out, and the data series is not displayed on the chart) or remove it entirely (both the legend and the data series are completely removed from the chart). You can also hide or reveal a data series by double-clicking on the corresponding legend icon.</p>
-<p><figure class="align-right" id="_figure-2"><figcaption>Figure 2.  Data series for chart.</figcaption><img alt="" src="../images/sb-reports-chart-gear-add-dataseries.png"></figure></p>
-<p>Using the gear icon located at the top right, you can reveal additional data series on the chart. Once a data series is added to the chart, it will no longer be visible in the list of Figure 2. Remember that in the demo-portfolio, we have two brokers; where broker-1 has two deposit accounts (EUR and USD). Broker-2 has only one EUR-deposit account. </p>
-<p>With the <code>Accounts and Portfolios</code> option, you can choose to display specific combinations of accounts, such as broker-1 along with its USD deposit account. Select the appropriate option and hold Ctrl to add more selections. Once you've added a data series, it will no longer appear in the list of available data series in Figure 2, but you'll find it checked in the gear menu. You can remove a data series from the chart by unchecking it in the gear menu or by deleting it from the legend (as explained above).</p>
-<p>The <code>Common</code> option in Figure 2 will display some additional info.</p>
+<p>Hold Ctrl or (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M6 2a4 4 0 0 1 4 4v2h4V6a4 4 0 0 1 4-4 4 4 0 0 1 4 4 4 4 0 0 1-4 4h-2v4h2a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4v-2h-4v2a4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4h2v-4H6a4 4 0 0 1-4-4 4 4 0 0 1 4-4m10 16a2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2h-2v2m-2-8h-4v4h4v-4m-8 6a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2v-2H6M8 6a2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2h2V6m10 2a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2v2h2Z"></path></svg></span> Cmd on macOS) while using the arrow keys to zoom in or out. </p>
 <ul>
 <li>
-<p>Delta (for reporting period or since first transaction): represents how much the portfolio's value has increased or decreased from the beginning of the reporting period until the end or from the first transaction until the end of the period. This Delta will fluctuate around zero, for example for the first transaction day the delta will be zero. The chapter on <a href="../../../../../concepts/reporting-period/">Reporting Period</a> explains that the valuation of a portfolio can differ according to the selected <code>Reporting Period</code>.</p>
+<p>With Ctrl+Arrow Left (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M6 2a4 4 0 0 1 4 4v2h4V6a4 4 0 0 1 4-4 4 4 0 0 1 4 4 4 4 0 0 1-4 4h-2v4h2a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4v-2h-4v2a4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4h2v-4H6a4 4 0 0 1-4-4 4 4 0 0 1 4-4m10 16a2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2h-2v2m-2-8h-4v4h4v-4m-8 6a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2v-2H6M8 6a2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2h2V6m10 2a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2v2h2Z"></path></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m8.854 11.646 5.792-5.792a.5.5 0 0 1 .854.353v11.586a.5.5 0 0 1-.854.353l-5.792-5.792a.5.5 0 0 1 0-.708Z"></path></svg></span>), you zoom in on the X-axis (showing smaller time periods: Years &gt; Quarters &gt; Months &gt; ...). Ctrl+Arrow Right (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M6 2a4 4 0 0 1 4 4v2h4V6a4 4 0 0 1 4-4 4 4 0 0 1 4 4 4 4 0 0 1-4 4h-2v4h2a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4v-2h-4v2a4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4h2v-4H6a4 4 0 0 1-4-4 4 4 0 0 1 4-4m10 16a2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2h-2v2m-2-8h-4v4h4v-4m-8 6a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2v-2H6M8 6a2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2h2V6m10 2a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2v2h2Z"></path></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m15.146 12.354-5.792 5.792a.5.5 0 0 1-.854-.353V6.207a.5.5 0 0 1 .854-.353l5.792 5.792a.5.5 0 0 1 0 .708Z"></path></svg></span>) displays larger periods.</p>
+</li>
+<li>
+<p>Ctrl+Arrow Up (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M6 2a4 4 0 0 1 4 4v2h4V6a4 4 0 0 1 4-4 4 4 0 0 1 4 4 4 4 0 0 1-4 4h-2v4h2a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4v-2h-4v2a4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4h2v-4H6a4 4 0 0 1-4-4 4 4 0 0 1 4-4m10 16a2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2h-2v2m-2-8h-4v4h4v-4m-8 6a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2v-2H6M8 6a2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2h2V6m10 2a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2v2h2Z"></path></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m12.354 8.854 5.792 5.792a.5.5 0 0 1-.353.854H6.207a.5.5 0 0 1-.353-.854l5.792-5.792a.5.5 0 0 1 .708 0Z"></path></svg></span>) zooms in on the y-axis. The boundaries (e.g. 0 - 500) are reduced to lesser values (e.g. 100 - 400). Ctrl+Arrow Down (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M6 2a4 4 0 0 1 4 4v2h4V6a4 4 0 0 1 4-4 4 4 0 0 1 4 4 4 4 0 0 1-4 4h-2v4h2a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4v-2h-4v2a4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4h2v-4H6a4 4 0 0 1-4-4 4 4 0 0 1 4-4m10 16a2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2h-2v2m-2-8h-4v4h4v-4m-8 6a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2v-2H6M8 6a2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2h2V6m10 2a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2v2h2Z"></path></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M11.646 15.146 5.854 9.354a.5.5 0 0 1 .353-.854h11.586a.5.5 0 0 1 .353.854l-5.793 5.792a.5.5 0 0 1-.707 0Z"></path></svg></span>) zooms out on the y-axis, expanding the boundaries.</p>
+</li>
+</ul>
+<p>You can also adjust the scale of the Y-axis by scrolling with the middle mouse button. Hold the mouse cursor at the vertical position in the chart, where you want to increase or decrease the scale around. This can be useful for zooming in on a specific data point in the graph.</p>
+<p>Use the 0 (zero) key to reset the chart to its original scale.</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Chart of the Total value of the demo portfolio.</figcaption><img alt="" src="../images/sb-reports-chart.svg"></figure></p>
+<h2 id="canvas">Canvas</h2>
+<p>The canvas is a graphical representation of one or more data series. A data series typically comprises a set of paired data points presented in a table format, such as dates and their corresponding values. By default, two data series are displayed: <code>Transferals</code> (primarily deposits) and <code>Total</code> (see below for an explanation of all possible data series). When you left-click the canvas and hold the mouse down on a specific day, for example, January 14, 2022, a tooltip window will appear, displaying detailed values for all selected data series on that day.</p>
+<p>Right-clicking on the chart canvas displays the context menu, providing additional options (see Figure 1).</p>
+<ul>
+<li>Crosshair: Upon selecting this option, a large crosshair will appear on top of the chart after left-clicking the canvas (see Figure 1). The origin is set at the mouse position of the click. As long as the option is activated, you can reposition the origin. The crosshair facilitates easier reading of the exact value of a specific point within the data series.</li>
+<li>Measure distance: Select this option if you want to determine the exact difference in time and value between two points on the chart. Click and drag a line between two points. The tooltip, e.g. <code>201 | 37.10 +19.63%</code> indicates a difference of 201 days with a value increase of 37.10 EUR or +19.63% between the two points.</li>
+<li>Original size: Pressing the O (zero) key will reset the chart to its maximum visibility, reverting any zoom in or out adjustments that have been made.</li>
+<li>Various navigation options with their respective shortcut keys, such as Zoom In, Scroll Up, and more (see above).</li>
+<li>Save diagram: This feature allows you to save the <em>visible</em> chart as a PNG or JPG image on your computer.</li>
+</ul>
+<h2 id="legend">Legend</h2>
+<p>Right-clicking on the legend icons (for example, the blue or orange square from Figure 1) will give you access to additional formatting options (see Figure 1). For all types of data series and their legend entries, you can modify the <code>Color</code>, <code>Position</code> (Send backwards, Send to back or Bring forward, and Bring to Front), and <code>Sort</code> (A-Z or Z-A). The latter two options will reorganize the legend entries from left to right accordingly. In the case of a line-type data series like the Total value, you can also adjust the <code>Line Style</code> (solid, dash, dot, ...), and the <code>Show Area</code> option (which fills the area below the data series). In addition, you have the option to either hide (where the legend entry remains visible but is crossed out, and the data series is not displayed on the chart) or remove it entirely (both the legend and the data series are completely removed from the chart). You can also hide or reveal a data series by double-clicking on the corresponding legend icon.</p>
+<h2 id="configure-chart">Configure chart</h2>
+<p><figure class="align-right" id="_figure-2"><figcaption>Figure 2.  Configure menu.</figcaption><img alt="" src="../images/sb-reports-chart-gear.png"></figure></p>
+<p>Using the <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"> gear icon located at the top right (see Figure 1), you can see the data series that are displayed in the graph, such as Total and Transferals. Once a data series is added to the chart, it will appear in the menu (see Figure 2) but will disappear in the list of available data series (see Figure 3).</p>
+<p>Portfolio Performance offers two additional charts: the Performance chart (under <code>View &gt; Reports &gt; Performance &gt; Chart</code>) and the Historical Returns and Volatility chart (under <code>View &gt; Reports &gt; Performance &gt; Return/Volatility</code>). The <code>Copy from</code> option adds the data series from these chart views to your current chart. The <code>Replace by</code> option works similarly but removes the existing data series before adding the new ones.</p>
+<p>The actual data of the chart is configured with the <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"> menu options <code>Add data series ...</code> and <code>Add derived data series ...</code>. A data series is a set of paired data points such as a date and the total portfolio value. A Derived data series is calculated or derived from the original data series such as <code>Invested capital</code>, <code>Taxes and Fees</code>, <code>Dividends</code>, etc. These derived data series are listed in the right panel of Figure 3 and under the heading <code>Common</code> (left panel).</p>
+<p>With the <code>Accounts and Portfolios</code> option, you can choose to display specific combinations of accounts, such as the <em>security account</em> <code>broker-A</code> or the <em>deposit account</em> <code>broker-A (EUR)</code> or the combination. At the bottom of Figure 2, a list of individual securities is provided. Select the appropriate option and hold Ctrl (Cmd) to add more selections. Once you've added a data series, it will no longer appear in the list of available data series in Figure 3, but you'll find it checked in the gear menu. You can remove a data series from the chart by unchecking it in the gear menu or by deleting it from the legend (as explained above).</p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Data series (left) and Derived data series (right).</figcaption><img alt="" src="../images/sb-reports-chart-dataseries.svg"></figure></p>
+<p>With the <code>Accounts and Portfolios</code> option, you can choose to display specific combinations of accounts, such as the security account <code>broker-A</code> or the deposit account <code>broker-A (EUR)</code> or the combination. At the bottom of Figure 2, you can also select individual securities. Hold Ctrl (Cmd) to add more selections. Once you've added a data series, it will no longer appear in the list of available data series in Figure 3, but you'll find it checked in the gear menu. You can remove a data series from the chart by unchecking it in the gear menu or by deleting it from the legend (as explained above).</p>
+<p>Please note that the derived data series are available in both the left and right panels of Figure 3. However, the data in the left panel always represent the entire portfolio, while the right panel allows for a breakdown into sub components. For example, the fees shown in the left panel reflect all fees paid within the portfolio, whereas in the right panel, they can be split by the originating account or security.</p>
+<ul>
+<li>
+<p>Delta (for the reporting period or since the first transaction) represents the change in an asset's value from the start to the end of the reporting period or from the first transaction to the end of the period. This Delta will fluctuate around zero, for example for the first transaction day the delta will be zero. The chapter on <a href="../../../../../concepts/reporting-period/">Reporting Period</a> explains that the valuation of a portfolio can differ according to the selected <code>Reporting Period</code>.</p>
 </li>
 <li>
 <p>Dividends, Earnings (= dividends + interests), Fees, Interest, Interest Charge, and Taxes are available in both accumulated and 'instance' versions. For example, an 'instanced' dividend will be represented as a spike, whereas the accumulated version will display a graph that steadily increases as dividends accumulate over time. These fields are described in <a href="../../../../transaction/">Transactions</a> and are recorded as part of each transaction.</p>
@@ -3553,11 +3594,9 @@
 <p>Total: the total value of the portfolio valuated over time.</p>
 </li>
 <li>
-<p>Transferals (instanced and accumalated): Each transferal, whether a deposit/removal or delivery inbound/outbound, is represented by a small spike (positive or negative) on the day the transferal was made (instance). The accumulated version is represented by a block diagram, showing the cumulative net value of all transferals over time.</p>
+<p>Transferals (instanced and accumulated): Each transferal, whether a deposit/removal or delivery inbound/outbound, is represented by a small spike (positive or negative) on the day the transferal was made (instance). The accumulated version is represented by a block diagram, showing the cumulative net value of all transferals over time.</p>
 </li>
 </ul>
-<p>With <code>Securities</code>, you can make a graph of each separate or combination of securities in your portfolio, for example only <code>share-1</code> or the combination of <code>share-1</code> and <code>share-2</code>.</p>
-<p>In the default configuration, the <code>Standard</code> view only includes two data series: Total and Transferals. However, you have extensive customization options, as mentioned earlier. Using the dropdown menu, you can <code>Duplicate</code>, <code>Rename</code>, or <code>Delete</code> this view. You can also create a new view by clicking on the New icon, located in the top right corner between the Standard and Period options. Similar to the existing one, you can duplicate, rename, or delete your newly created view. If you wish to have this view as the leftmost view, select the <code>Bring to front</code> option from the dropdown menu.</p>
 
 
 
@@ -3578,7 +3617,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 9, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2025</span>
   </span>
 
     
