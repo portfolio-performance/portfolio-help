@@ -2,9 +2,9 @@
 title: Booking management fees
 ---
 
-In addition of transactions fees, some brokers apply management fees, typically an annual percent of the portfolio value. In such cases, you see a reduction in the number of shares that you own as the broker sells a small amount of your shares as fees.
+In addition to transaction fees, some brokers charge management fees, typically an annual percentage of the portfolio’s value. In such cases, the broker deducts these fees by selling a small portion of your shares, reducing the total number you own.
 
-This is therefore essentially a sell transaction followed by a fee transaction. This can be booked in a single transaction through an [*Outbound Delivery*](../reference/transaction/delivery.md) selling the shares and applying the fees on the sold value in the same transaction, **giving a total outbound delivery amount of 0**. 
+This is essentially a sell transaction followed by a fee transaction. These can be booked in a single transaction through an [*Outbound Delivery*](../reference/transaction/delivery.md) where the shares are sold and the fees are applied to the sold value within the same transaction. This results in a **total outbound delivery amount of 0**. 
 
 Figure: Outbound Delivery used to book the fee transaction. {class= pp-figure}
 
@@ -15,8 +15,8 @@ To accurately book those fees, it is important that your broker details the numb
 !!! Note
     This can be done in an [*Outbound Delivery*](../reference/transaction/delivery.md) and not in a [*Sell*](../reference/transaction/buy-sell.md) as Sell transaction in Portfolio Performance can not have a final null value.
 
-!!! info "Practical use"
-	This is therefore with this methodology that fees on *Unités de Comptes* of French *assurances-vies* can be booked.
+!!! info "🇫🇷 Practical use for French products"
+	This is with this methodology that fees on securities in French *assurances-vies* can be booked.
 
 ### Example
 In this example, let's consider that 0.5671 shares of `stock-A` are owned through a broker applying an annual 0.75 % management fees, taken 4 times a year : 0.75 % / 4 = 0.1875 % fees applied each quarter, on December 19, March 18, June 17 and Septembre 18.
@@ -29,7 +29,7 @@ Figure: Several fees transactions booked as Outbound Delivery. {class= pp-figure
 
 ![](images/fees-on-shares-transactions-list.png)
 
-The [Performance Chart](../reference/view/reports/performance/performance-chart.md) shows us the impact that those fees have : compared to the price performance of `stock-A`, our `stock-A` performance is indeed 0.75 % less than than its benchmark over a year.
+The [Performance Chart](../reference/view/reports/performance/performance-chart.md) illustrates the impact of these fees : compared to the price performance of `stock-A`, our `stock-A` performance is 0.75 % lower than its benchmark over a year.
 
 Figure: Difference in performance due to the management fees. {class= pp-figure}
 
@@ -44,6 +44,6 @@ This could also be done by separating the Sell and the Fee transactions by using
 
 but this creates two transactions and forces to use a cash account.
 
-Figure: List of transaction with this second method. {class= pp-figure}
+Figure: List of transactions on the cash account with this second method. {class= pp-figure}
 
 ![](images/fees-on-shares-second-method.png)
