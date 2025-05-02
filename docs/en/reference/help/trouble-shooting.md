@@ -1,12 +1,12 @@
 ---
 title: Trouble shooting
 ---
-On rare occasions, the PP app may not function properly or even crash. Beneath the Help menu, three options can assist in such instances.
+On rare occasions, the Portfolio Performance app may not function properly or even crash. Beneath the Help menu, three options can assist in such instances.
 
 
 ## Show Error Log
 
-Every time the program starts, it creates a log-file. You can view this log file from within the PP app in a separate window with the command `Help > Show Error Log`. Double-clicking the message will display the entire text. If there were no errors, this will be a minimal log (see Figure 1).
+Every time the program starts, it creates a log-file. You can view this log file from within the Portfolio Performance app in a separate window with the command `Help > Show Error Log`. Double-clicking the message will display the entire text. If there were no errors, this will be a minimal log (see Figure 1).
 
 Figure: Log after successful start-up. {class=pp-figure}
 
@@ -73,7 +73,7 @@ Figure: Successful reset of UI. {class=pp-figure}
 
 The Reset UI function will NOT delete any created views or custom reporting periods, nor will it reset the Recent Files list, as these parameters are saved separately.
 
-However, it does reset the position and size of the PP application window on your monitor and does not restore open files from the moment of closing. Additionally, it sets the main and information panes to their initial values. In essence, as the name implies, it resets the Graphical User Interface (GUI/UI).
+However, it does reset the position and size of the Portfolio Performance application window on your monitor and does not restore open files from the moment of closing. Additionally, it sets the main and information panes to their initial values. In essence, as the name implies, it resets the Graphical User Interface (GUI/UI).
 
 In the event of unexpected errors, initiating a Reset UI could be your initial troubleshooting step, as it minimally disrupts your workflow.
 

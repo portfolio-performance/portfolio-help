@@ -17,13 +17,13 @@ The *how-to* section demonstrates the features and functions of the *Portfolio P
 
 - Recording a [Merger](recording-merger.md), [Spin-Off](recording-spin-off.md), or [Stock Split](recording-stock-split.md) is quite common in portfolio management. These pages discuss various methods, applied to some real examples such as the Amazon stock split, the Daimler Truck Holding AG spin-off, and the Unipol Gruppo's merger. The section about [Insolvency](insolvency.md) explains how to handle securities of insolvent companies, including disabling automatic quote updates, deleting historical prices, and manually adjusting security values.
 
-- Importing PDF-bank notes can be a significant time-saver. [Requesting a New PDF Importer](requesting-new-importer.md) provides guidance for specific bank or broker transactions, including how to extract and anonymize PDF text, submit requests on the PP forum, and wait for developer integration.
+- Importing PDF-bank notes can be a significant time-saver. [Requesting a New PDF Importer](requesting-new-importer.md) provides guidance for specific bank or broker transactions, including how to extract and anonymize PDF text, submit requests on the Portfolio Performance forum, and wait for developer integration.
 
 - [Retrieving gold and other precious metals prices](./gold-prices.md): This page discusses various methods to invest in gold, including physical gold, ETFs, and shares of gold mining companies. It explains how to download historical gold prices from websites like Ariva.de, LBMA, and Gold.org.
 
 - [User Interface Overview](user-interface.md)
-Describes the elements of the PP user interface, such as the menu bar, sidebar, dual-pane layouts, tables within the main pane, and keyboard shortcuts for essential functions.
+Describes the elements of the Portfolio Performance user interface, such as the menu bar, sidebar, dual-pane layouts, tables within the main pane, and keyboard shortcuts for essential functions.
 
-Most tips and tricks are initially discussed on the [PP forum](https://forum.portfolio-performance.info). Regularly checking this forum will provide you with valuable insights into the PP program. It's worth noting that a significant portion of the information on the forum is in German, but you can use your browser's translation function to understand it in your preferred language.
+Most tips and tricks are initially discussed on the [Portfolio Performance forum](https://forum.portfolio-performance.info). Regularly checking this forum will provide you with valuable insights into the Portfolio Performance program. It's worth noting that a significant portion of the information on the forum is in German, but you can use your browser's translation function to understand it in your preferred language.
 
 

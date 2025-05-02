@@ -6,7 +6,7 @@ Figure: Data sources Historical Quotes.{class=align-right style="width:40%"}
 
 ![](../../reference/file/images/quote-feeds.png)
 
-Finding accurate and up-to-date but free data sources for historical prices can be challenging. The list of data sources in PP includes the following options (see Figure 1): [Alpha Vantage](alpha-vantage.md), [EOD Historical Data](eodhd.md), Finnhub, Leeway, Twelve Data, [Portfolio Report](portfolioreport.md), Quandl, and [Yahoo Finance](yahoo-finance.md). The remaining alternatives are tailored for bitcoins and other statistical data.
+Finding accurate and up-to-date but free data sources for historical prices can be challenging. The list of data sources in Portfolio Performance includes the following options (see Figure 1): [Alpha Vantage](alpha-vantage.md), [EOD Historical Data](eodhd.md), Finnhub, Leeway, Twelve Data, [Portfolio Report](portfolioreport.md), Quandl, and [Yahoo Finance](yahoo-finance.md). The remaining alternatives are tailored for bitcoins and other statistical data.
 
 Unfortunately, the terms of use for many of these options have become increasingly restrictive over time. They are included here mainly for compatibility reasons. In practical terms, only [Portfolio Report](portfolioreport.md) and [Yahoo Finance](yahoo-finance.md) or JSON could be recommended for a typical portfolio.
 

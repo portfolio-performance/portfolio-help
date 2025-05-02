@@ -52,7 +52,7 @@ From Figure 3, you may notice that the cash flow into or out of a security is re
 - **With taxes only (152 EUR)**: Fees are not taken into account; only taxes are. Although fees are also quite variable, they are more inherent to the purchase than taxes as they should reflect the real cost for the broker to carry out the transaction. Including taxes but disregarding fees is somewhat contradictory.
 - **Without fees and taxes (150 EUR)**: This is the value that the 10 shares were worth at the time of purchase. If the security (account) is worth more or less in the future, this is the number to compare with. In this view, fees and taxes should not be taken into account in performance calculations.
 
-It turns out that PP takes an in-between stance. For the calculation of the performance of the whole portfolio, fees and taxes are included (e.g., 155 EUR). For the performance at the security and security account level, only fees are included, and taxes are left out.
+It turns out that Portfolio Performance takes an in-between stance. For the calculation of the performance of the whole portfolio, fees and taxes are included (e.g., 155 EUR). For the performance at the security and security account level, only fees are included, and taxes are left out.
 
 
 Figure: Defining all possible cash flows within a portfolio.{class=pp-figure}
@@ -75,7 +75,7 @@ MVB*(1+IRR)^(RD/365) + CF1*(1+IRR)^(RD1/365) = MVE
 
 It's clear that `IRR=0` will satisfy the equation because one (1+0) to any power equals one. Therefore, the performance of the deposit account, and consequently the portfolio, remains zero, even after multiple deposits. This is because deposits increase both the deposit account and the MVE of the portfolio, ensuring that Equation 1 remains balanced with an IRR = 0.
 
-PP has a specific term for these kinds of cash flows or transfers: `Performance Neutral Transfers`; see, for example, the [Performance Calculation Widget](../../reference/view/reports/performance/calculation.md). A deposit is 'Performance Neutral' because the transfer of money affects the MVE and the account by the same amount. A deposit account does not receive any interest or incur any costs. A deposited amount will stay unchanged in the account until the end of the period. The effect on performance (e.g. IRR) is zero.
+Portfolio Performance has a specific term for these kinds of cash flows or transfers: `Performance Neutral Transfers`; see, for example, the [Performance Calculation Widget](../../reference/view/reports/performance/calculation.md). A deposit is 'Performance Neutral' because the transfer of money affects the MVE and the account by the same amount. A deposit account does not receive any interest or incur any costs. A deposited amount will stay unchanged in the account until the end of the period. The effect on performance (e.g. IRR) is zero.
 
 What will happen if a **buy transaction** is added, similar to the second transaction in Figure 2? The result is twofold:
 
@@ -111,7 +111,7 @@ MVB           CF1                    CF2                    CF3             MVE
 
 Figure 5 illustrates the calculation in Excel ([download workbook](../../assets/demo-portfolio-03-calculation.xlsx)). The initial cash flow of 155 EUR will have grown to 219.68 EUR, if the holding period was 878 days and the yearly interest rate was 15.60%. The second buy will increase from 84 EUR to 103.03 EUR. The profit of `share-2` appears smaller due to the smaller amount of holding days. The calculation of IRR can be simulated in Excel using the `Data > Goal Seek method` (see Figure 4). The method tries to set the value of the calculated MVE (cell F11) to the observed MVE (manual input) by iteratively changing the value of IRR (cell F3), until a match (15.60%) is found.
 
-Please note that the individual calculated end values of the shares do not necessarily correspond with the observed individual end values. Compare for example the expected and observed value of `share-2`. The observed value (cell J9) is much higher. Only the sum of the whole portfolio match and the same calculated IRR is applied to all shares. PP can - of course- also calculate the IRR for individual securities; see below to calculate the performance of [individual securities](#irr-at-security-level) and [trades](#irr-at-trade-level).
+Please note that the individual calculated end values of the shares do not necessarily correspond with the observed individual end values. Compare for example the expected and observed value of `share-2`. The observed value (cell J9) is much higher. Only the sum of the whole portfolio match and the same calculated IRR is applied to all shares. Portfolio Performance can - of course- also calculate the IRR for individual securities; see below to calculate the performance of [individual securities](#irr-at-security-level) and [trades](#irr-at-trade-level).
 
 Figure: IRR-calculation for three buy-transactions. {class=pp-figure}
 
@@ -121,7 +121,7 @@ Figure: IRR-calculation for three buy-transactions. {class=pp-figure}
 
 In PP, the cash proceeds from a selling transaction are deposited into a cash account. A sell transaction is thus the opposite of a buy transaction. The security (account) will be reduced, while the referenced deposit account is increased by the same amount. Both cash flows will cancel each other out.
 
-When a dividend payment is made, the associated deposit account is also increased by the dividend amount. However, it may seem unclear as to where this money originates. Although it appears to come from an external source, PP treats it as if it is generated by the security itself. Without the security, there would be no dividend. When a company pays a dividend to its shareholders, it essentially means that as a shareholder/owner, you are paying yourself a dividend from the company's earnings or profits. As a result, the value of the company, and your shares decrease accordingly.
+When a dividend payment is made, the associated deposit account is also increased by the dividend amount. However, it may seem unclear as to where this money originates. Although it appears to come from an external source, Portfolio Performance treats it as if it is generated by the security itself. Without the security, there would be no dividend. When a company pays a dividend to its shareholders, it essentially means that as a shareholder/owner, you are paying yourself a dividend from the company's earnings or profits. As a result, the value of the company, and your shares decrease accordingly.
 
 However, from the perspective of calculating the portfolio performance, these details are not important. Since no money leaves or enters the portfolio, the performance equation is the same as in Example 2, except that the MVE = 426.82 EUR, including the result of the sell and dividend payment.
 
@@ -140,7 +140,7 @@ However, if the dividend payment or selling transaction is "consumed" (you bough
 ### **Example 4**: MVB > 0
 In the previous examples, all transactions took place within the reporting period. This isn't always the case. It is very important to distinguish the following cases:
 
-  1. CF<sub>t</sub> occurs before the beginning of the reporting period (MVB date).  PP will calculate the value of CF<sub>t</sub> through historic quotes at time *t*. The market value of the investment at time *t* is used in the calculation, not the purchase value. The holding period is the entire reporting period.
+  1. CF<sub>t</sub> occurs before the beginning of the reporting period (MVB date).  Portfolio Performance will calculate the value of CF<sub>t</sub> through historic quotes at time *t*. The market value of the investment at time *t* is used in the calculation, not the purchase value. The holding period is the entire reporting period.
 
   2. CF<sub>t</sub> occurs after the beginning but before the end of the reporting period. The value of CF<sub>t</sub> is known through the transaction data. The holding period is the number of remaining days from time *t* until the end of the reporting period.
 
@@ -237,7 +237,7 @@ A trade is formed by aggregating all buy and sell transactions related to a spec
 !!! Important
     - The performance of a trade is always calculated with the **fees and taxes included**.
     - In contrast with the portfolio and security IRR calculation, you can **not** set a reporting period.  A closed trade has a fixed begin and end date. All open trades have an end date set as of today.
-    - PP follows the **FIFO principle** (First-In; First-Out) to determine which shares will be sold. The 5 shares sold on `2023-04-12` correspond to those acquired on `2021-01-15`, rather than the ones obtained on `2022-01-14`.
+    - Portfolio Performance follows the **FIFO principle** (First-In; First-Out) to determine which shares will be sold. The 5 shares sold on `2023-04-12` correspond to those acquired on `2021-01-15`, rather than the ones obtained on `2022-01-14`.
 
 Figure: IRR-calculation for trades.{class=pp-figure}
 
@@ -260,7 +260,7 @@ MVB x (1 + IRR)^RD/365   =   MVE
 ### **Example 8**: IRR calculation of an open trade
 
 !!! Important
-    PP will always use the current date to calculate an open trade IRR. If you want to follow the previous example, you can try to change the system date on your computer. Restarting PP isn't necessary.
+    Portfolio Performance will always use the current date to calculate an open trade IRR. If you want to follow the previous example, you can try to change the system date on your computer. Restarting Portfolio Performance isn't necessary.
 
 Assume that today is 2023-06-12. The open trade involving `share-2` is rather simple. Referring to Figure 2, these shares were acquired for a net value of 64 EUR + 3 EUR fees and taxes on `2022-09-30`, which was 255 days ago, assuming that today's date is June 12, 2023. The current value is 111.76 EUR, resulting in `67 * (1 + IRR)^255/365 = 111.7 ` or `IRR = 108%`.
 
@@ -268,7 +268,7 @@ The open trade involving `share-1` is a special case. Since it is an open trade,
 
 The trade consists of shares that were bought in 2021 and in 2022. Five shares are from 2021. The cash flow of these shares is thus 77.5 EUR (see also paragraph above). Today, they are valuated at 95.03 EUR. The remaining 5 shares are from `2022-01-04` with a cash flow of 5 x 16 EUR/share + 4 EUR fees and taxes (see Figure 1). These 5 shares are also 95.03 EUR worth today (`2023-06-12`).
 
-This corresponds with PP (see Figure 9 above): the exit value is 190.06 = 2 x 95.03 EUR and the entry value is 77.5 + 84 = 161.50 EUR. Inserting these values in Equation 1 will give a solution with `IRR=9.16%`:
+This corresponds with Portfolio Performance (see Figure 9 above): the exit value is 190.06 = 2 x 95.03 EUR and the entry value is 77.5 + 84 = 161.50 EUR. Inserting these values in Equation 1 will give a solution with `IRR=9.16%`:
 
 `77.5*(1+IRR)^(878/365) + 84*(1+IRR)^(514/365) = 190.06`
 

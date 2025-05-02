@@ -25,7 +25,7 @@ Figure: Available columns. {class=align-right}
 ![](./images/sb-reports-statement-gear-icon.png)
 The default columns that are displayed are `Shares`, `Name`, `Symbol`, `Quote`, `Market Value`, `Share in %`, and `Note`. Many more columns/fields are available (see Figure 3). While the column headings are mostly self-explanatory, a few of them may require further clarification. You can customize the default columns using the gear icon located in the top-right corner (see Figure 2).
 
-The abbreviation "MA" that follows Purchase Price/Value stands for "Moving Average" but in fact it should be better called WA or "Weighted Average". As mentioned in the discussion about [Purchase Value](../../../../concepts/purchase-value.md), PP uses the FIFO (First-in, First-out) method to calculate prices and values. "Moving/weighted average", however, is another commonly used method.
+The abbreviation "MA" that follows Purchase Price/Value stands for "Moving Average" but in fact it should be better called WA or "Weighted Average". As mentioned in the discussion about [Purchase Value](../../../../concepts/purchase-value.md), Portfolio Performance uses the FIFO (First-in, First-out) method to calculate prices and values. "Moving/weighted average", however, is another commonly used method.
 
 The Purchase Price and the Purchase Price (MA) of `share-1` are respectively 44.41 EUR and 51.61 EUR; a rather big difference. Why? From Figure 2:
 

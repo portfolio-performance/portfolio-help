@@ -63,7 +63,7 @@ The Markdown source files of the manual can be retrieved from [https://github.co
 
 At present, the manual is available in two languages: English (en) and German (de). All documentation pages should be stored within these directories; including images and assets (e.g. demo-portfolio.xml). Each language is a separate version and contributors translate the content manually.
 
-Use your favourite (Markdown) text editor to make corrections to the (local) source files. Upon finishing, create a Pull Request to the maintainer of the PP manual. If accepted, your changes will be visible within minutes. 
+Use your favourite (Markdown) text editor to make corrections to the (local) source files. Upon finishing, create a Pull Request to the maintainer of the Portfolio Performance manual. If accepted, your changes will be visible within minutes. 
 
 ### MkDocs & Material for MkDocs
 Only if you need to view your changes locally and within the integrated Materials framework, you need to install both Python modules: [MkDocs installation](https://www.mkdocs.org/user-guide/installation/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/).
@@ -80,19 +80,19 @@ Two plugins are specified in the requirements.txt
 The `mkdocs-caption` is needed to insert numbered figure captions on pages. The second plugin will add 'Last update: month, day, year' at the bottom of each page. 
 
 ### Version control
-Since the PP manual is being maintained in GitHub, version control is already in place. Please pay special attention to the following:
+Since the Portfolio Performance manual is being maintained in GitHub, version control is already in place. Please pay special attention to the following:
 
 Commit Frequency: Try to make changes to only one page of the manual per commit. Try not to improve multiple pages all at once. If the changes are very small, scattered, and mostly stylistic or grammatical changes, you can include them in one commit with a customized message.
 
 Commit Message: To assist other team members or your future self, a clear commit message is necessary. Preferably, use a verb (adding, updating, deleting, ...) in combination with the page name with the .md extension; for example, `adding buy.md`. More info can be given in the description (leave one blank line).
 
-The PP manual uses many screenshots to clarify concepts. Sooner or later, these images will need to be updated. It is important to have then a correct PP source file, including the correct transactions. In the Assets folder, there is a `demo-portfolio.xml` file (which is also under version control). Ensure that with each commit, this demo file is in the correct state. For example, on the page `buy.md`, some securities are purchased on a certain date at a certain price, etc. These details are usually visible in the screenshot. Therefore, make sure that these details are included in `demo-portfolio.xml`. Also, avoid adding changes that you will only need later. The demo file should exactly reflect the environment in which this manual page was created or modified.
+The Portfolio Performance manual uses many screenshots to clarify concepts. Sooner or later, these images will need to be updated. It is important to have then a correct Portfolio Performance source file, including the correct transactions. In the Assets folder, there is a `demo-portfolio.xml` file (which is also under version control). Ensure that with each commit, this demo file is in the correct state. For example, on the page `buy.md`, some securities are purchased on a certain date at a certain price, etc. These details are usually visible in the screenshot. Therefore, make sure that these details are included in `demo-portfolio.xml`. Also, avoid adding changes that you will only need later. The demo file should exactly reflect the environment in which this manual page was created or modified.
 
 If you later need this file to recreate the screenshots, you can easily retrieve them with `git checkout` from the respective commit.
 
 ## Style guide
 
-A documentation style guide is a set of standards for document writing, ensuring consistency in style and formatting. Numerous comprehensive style guides are available. Below, we describe only a few style rules that are specific to the PP manual. For all other situations, we recommend consulting the [Microsoft Writing Style Guide]((https://learn.microsoft.com/en-us/style-guide/welcome/)), which covers topics such as the capitalization of words, numbers, and the choice between active and passive voice.
+A documentation style guide is a set of standards for document writing, ensuring consistency in style and formatting. Numerous comprehensive style guides are available. Below, we describe only a few style rules that are specific to the Portfolio Performance manual. For all other situations, we recommend consulting the [Microsoft Writing Style Guide]((https://learn.microsoft.com/en-us/style-guide/welcome/)), which covers topics such as the capitalization of words, numbers, and the choice between active and passive voice.
 
 ### Navigation
 The manual is organized into three levels of navigation: the top menu, left sidebar, and right sidebar.
@@ -134,7 +134,7 @@ Images and videos are stored in subfolders named `images` at the level of the do
 
 If you want to annotate a screenshot with text, arrows, boxes, and more, use an SVG file and embed the screenshot as a background image. For example, in Inkscape, you can easily paste the screenshot from the clipboard onto the canvas and then save the resulting image as an SVG.
 
-Consider using the existing demo files located in the Assets folder. Ensure that screenshots do not include any confidential (financial) data. Check that the desktop background or any open file lists do not reveal private information. Preferably, utilise the dark mode of PP unless readability is compromised.
+Consider using the existing demo files located in the Assets folder. Ensure that screenshots do not include any confidential (financial) data. Check that the desktop background or any open file lists do not reveal private information. Preferably, utilise the dark mode of Portfolio Performance unless readability is compromised.
 
  Adjust the resolution of images based on their content; for instance, small pop-up menus may require lower resolution compared to larger screenshots. Minimize unnecessary details in screenshots to reduce the likelihood of future updates. Aim for a minimum resolution of Full HD (1080p) for videos.
 

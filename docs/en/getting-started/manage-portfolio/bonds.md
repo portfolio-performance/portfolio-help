@@ -2,7 +2,7 @@
 title: Managing bonds
 ---
 
-A bond is a financial instrument that represents a debt obligation. When an entity, such as a government or corporation, issues a bond, they are borrowing money from investors. In return, they promise to pay back the principal amount along with periodic interest payments over a specified period [[1](https://www.investopedia.com/articles/bonds/08/bond-market-basics.asp)]. Bonds are not well-supported in PP but with a few simple workarounds mentioned in the [German forum](https://forum.portfolio-performance.info/t/verbuchung-von-anleihen/1537/43), you could manage them effectively. 
+A bond is a financial instrument that represents a debt obligation. When an entity, such as a government or corporation, issues a bond, they are borrowing money from investors. In return, they promise to pay back the principal amount along with periodic interest payments over a specified period [[1](https://www.investopedia.com/articles/bonds/08/bond-market-basics.asp)]. Bonds are not well-supported in Portfolio Performance but with a few simple workarounds mentioned in the [German forum](https://forum.portfolio-performance.info/t/verbuchung-von-anleihen/1537/43), you could manage them effectively. 
 
 # Adding the bond as a security.
 
@@ -14,7 +14,7 @@ Figure: Banknote of buying a bond.{pp-figure}
 
 
 
-Before you can add the buying transaction, you must [create the security](../adding-securities.md) in the Securities account. Searching for the ISIN in PP does not yield any results, and searching by name returns the tradable Volkswagen shares. Therefore, you'll need to create an empty instrument and manually input the information for the bond. Historical bond prices aren't particularly crucial since the bond will ultimately be redeemed at 100% upon maturity.  However, -if necessary- they can be [downloaded in table format](../../how-to/downloading-historical-prices/table-website.md) from for example the [ariva.de website ](https://www.ariva.de/XS1972547696/kurse/historische-kurse?go=1&boerse_id=1&month=&clean_bezug=1). It's important to note that bond prices in historical records are typically expressed as percentages, ranging from 0 to 100%, rather than in a specific currency like EUR, as is common for shares.
+Before you can add the buying transaction, you must [create the security](../adding-securities.md) in the Securities account. Searching for the ISIN in Portfolio Performance does not yield any results, and searching by name returns the tradable Volkswagen shares. Therefore, you'll need to create an empty instrument and manually input the information for the bond. Historical bond prices aren't particularly crucial since the bond will ultimately be redeemed at 100% upon maturity.  However, -if necessary- they can be [downloaded in table format](../../how-to/downloading-historical-prices/table-website.md) from for example the [ariva.de website ](https://www.ariva.de/XS1972547696/kurse/historische-kurse?go=1&boerse_id=1&month=&clean_bezug=1). It's important to note that bond prices in historical records are typically expressed as percentages, ranging from 0 to 100%, rather than in a specific currency like EUR, as is common for shares.
 
 # Recording the buy transaction
 

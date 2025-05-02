@@ -17,7 +17,7 @@ Please be aware that a deposit contributes to certain performance metrics. Addit
 
 # Transfer between two currencies
 
-You can transfer funds between two accounts, whether they share the same currency or not. In cases where the accounts have different currencies (see Figure 2), PP will automatically suggest an exchange rate based on the [ECB website](https://data.ecb.europa.eu/currency-converter).
+You can transfer funds between two accounts, whether they share the same currency or not. In cases where the accounts have different currencies (see Figure 2), Portfolio Performance will automatically suggest an exchange rate based on the [ECB website](https://data.ecb.europa.eu/currency-converter).
 
 Figure: Converting from EUR to USD.{class="pp-figure"}
 

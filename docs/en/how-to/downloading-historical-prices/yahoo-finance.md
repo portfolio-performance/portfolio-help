@@ -19,11 +19,11 @@ Figure: Data sources Historical Quotes.{class=align-right style="width:40%"}
 
 ![](./images/yahoo-finance-historical-quotes-aapl.png)
 
-PP has a predefined Quote Feed provider for Yahoo Finance and Yahoo Finance (Adjusted Close). Please note that the Day's High, Day's Low, and Volume info is not retrieved in both cases.
+Portfolio Performance has a predefined Quote Feed provider for Yahoo Finance and Yahoo Finance (Adjusted Close). Please note that the Day's High, Day's Low, and Volume info is not retrieved in both cases.
 
 To retrieve the historical quotes of `Apple`, enter the ticker symbol (AAPL) in the Security Master Data (see Figure 1, top left) and select Yahoo Finance as the Quote Feed Provider within the Historical Quotes tab. A list of 30 quotes, starting from today will appear.
 
-In the background, PP initiates the following query (becomes visible in the event of an error, for example with ticker symbol DTE.XX).
+In the background, Portfolio Performance initiates the following query (becomes visible in the event of an error, for example with ticker symbol DTE.XX).
 
 `https://query1.finance.yahoo.com/v8/finance/chart/AAPL?range=3mo&interval=1d`
 

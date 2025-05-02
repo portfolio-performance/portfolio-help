@@ -19,4 +19,4 @@ There could also be an effect on the performance of the portfolio. The net resul
 - TTWROR: `r = 603 / 600 = 0.50%`
 - IRR: `603 = 600 x (1 + IRR)^(305/365) for IRR = 0.60%`
 
-Please note that the 600 EUR deposit is considered by PP as a (performance neutral) cash inflow but the interest and interest charge transactions are not. They only affect the balance of the deposit account and therefore also the MVE of the portfolio.
+Please note that the 600 EUR deposit is considered by Portfolio Performance as a (performance neutral) cash inflow but the interest and interest charge transactions are not. They only affect the balance of the deposit account and therefore also the MVE of the portfolio.

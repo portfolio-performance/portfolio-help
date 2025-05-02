@@ -57,7 +57,7 @@ Fundamental concepts such as account, transaction, reporting period, purchase va
 
 - Ex-dividend date: shareholders who owned their shares at least one full business day before the ex-dividend date will be entitled to receive a dividend. Sometimes also called the ex-date (see above).
 
-- Expected # quotes: given the nature and frequency of a security and the calendar in use, PP calculates the expected number of quotes for the time period between the Date of last and first historical quote. Weekend and holidays are taken into account.
+- Expected # quotes: given the nature and frequency of a security and the calendar in use, Portfolio Performance calculates the expected number of quotes for the time period between the Date of last and first historical quote. Weekend and holidays are taken into account.
 
 - Fees: Costs imposed by a service provider or intermediary for facilitating a transaction.
 
@@ -113,7 +113,7 @@ Fundamental concepts such as account, transaction, reporting period, purchase va
 
 - Source: data source used in `File > New Security` Search. Possible source are: [Yahoo Finance](https://finance.yahoo.com/) provides financial news and data including stock quotes, press releases, and financial reports. [CoinGecko](https://www.coingecko.com/) is a website with real-time information on most cryptocurrencies. [Portfolio Report](https://www.portfolio-report.net/search) is an open source project that aims to provide centralized portfolio performance data.
 
-- Shares: Units of ownership in a company or a financial asset. In the context of PP it refers to the number of shares one owns.
+- Shares: Units of ownership in a company or a financial asset. In the context of Portfolio Performance it refers to the number of shares one owns.
 
 - Symbol: the abbreviation (ticker) used by the data source.
 

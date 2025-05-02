@@ -11,7 +11,7 @@ Figure: Quote evolution of the Daimler Truck Holding and Mercedes-Benz Group. {c
 
 ![](images/compare-daimler-mercedes.png)
 
-To record a spin-off in Portfolio Performance (PP), a suggested workflow, deduced from an [in-depth discussion](https://forum.portfolio-performance.info/t/wie-bilde-ich-korrekt-einen-spin-off-ab/4677/20) on the PP forum, involves the following steps:
+To record a spin-off in Portfolio Performance (PP), a suggested workflow, deduced from an [in-depth discussion](https://forum.portfolio-performance.info/t/wie-bilde-ich-korrekt-einen-spin-off-ab/4677/20) on the Portfolio Performance forum, involves the following steps:
 
 1. Change the name of the security Daimler AG into Mercedes-Benz AG and create a new security Daimler Truck Holding AG in your portfolio.
 

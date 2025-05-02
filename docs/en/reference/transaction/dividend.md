@@ -26,7 +26,7 @@ Figure: Dividend dialog box for same and different currency payments. {class=pp-
 
 The directly visible effect of a dividend registration is the increase in balance of the designated deposit account.  Take the following very simple project. Ten pieces of share-1 are purchased on January 1th, 2024 for 10 EUR/share. The reporting period runs to April 1, 2024 at which time share-1 quote has increased to 11 EUR/share.
 
-The balance of the deposit account is zero EUR. The portfolio TTWROR = 10% and IRR = 46.56%. An in-depth explanation of the performance calculation in PP is given in [Concepts > Performance](../../concepts/performance/index.md).
+The balance of the deposit account is zero EUR. The portfolio TTWROR = 10% and IRR = 46.56%. An in-depth explanation of the performance calculation in Portfolio Performance is given in [Concepts > Performance](../../concepts/performance/index.md).
 
 - TTWROR: one holding period; MVB=0; MVE= 110; CF= 100. r = (110/(0+100))-1 = 10%
 - IRR: because MVB = 0 and buy transaction was at the very beginning of the reporting period (remaining days = 91)

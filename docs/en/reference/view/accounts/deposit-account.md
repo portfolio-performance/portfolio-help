@@ -43,9 +43,9 @@ The context menu, accessed by right-clicking on the chart, offers the same optio
 
 ## Troubleshoot Balance Discrepancy
 
-If you notice any discrepancies in a deposit account between the calculated balance of PP and the actual balance of the bank/broker, you can use the context menu to troubleshoot the issue. To do so, right-click on the account in the main pane and select "Troubleshoot Balance Discrepancy" from the menu.
+If you notice any discrepancies in a deposit account between the calculated balance of Portfolio Performance and the actual balance of the bank/broker, you can use the context menu to troubleshoot the issue. To do so, right-click on the account in the main pane and select "Troubleshoot Balance Discrepancy" from the menu.
 
-This will open a dialog box displaying the calculated monthly balances for the selected deposit account. In the "Expected balance" column, you can enter the balance that you expect according to your bank account statement. Portfolio Performance (PP) will then use the calculated difference to try to identify any transactions that may be causing the discrepancy. For example, PP may find transactions that were made to a different account or are dated in the future.
+This will open a dialog box displaying the calculated monthly balances for the selected deposit account. In the "Expected balance" column, you can enter the balance that you expect according to your bank account statement. Portfolio Performance (PP) will then use the calculated difference to try to identify any transactions that may be causing the discrepancy. For example, Portfolio Performance may find transactions that were made to a different account or are dated in the future.
 
 <video width="100%"  controls>
   <source src="../images/troubleshoot-balance-discrepancy.mp4" type="video/mp4">

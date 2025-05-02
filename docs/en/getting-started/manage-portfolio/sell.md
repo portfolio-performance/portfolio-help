@@ -29,7 +29,7 @@ Figure: Multiple transaction on the same security.{class=pp-figure}
 
 ![](../../images/sb-all-securities-bottom-transactions-heidelberg.png)
 
-Do those shares come from the first or second series that you purchased, or from a combination of both? For the actual sale, it doesn't matter. In the example from Figure 2, 40 shares were sold at a price of 72.48 EUR. But how are the remaining shares valued? PP follows the **FIFO principle** (First In, First Out). So, the 40 shares that are sold come entirely from the first purchase. What remains are 10 shares from the first batch and 30 shares from the second batch. Another possibility would be LIFO (Last In, First Out). In that case, 10 shares from the first batch would remain, and none from the second batch. Does this make a difference? In this particular case, the stock is valued lower in the FIFO approach.
+Do those shares come from the first or second series that you purchased, or from a combination of both? For the actual sale, it doesn't matter. In the example from Figure 2, 40 shares were sold at a price of 72.48 EUR. But how are the remaining shares valued? Portfolio Performance follows the **FIFO principle** (First In, First Out). So, the 40 shares that are sold come entirely from the first purchase. What remains are 10 shares from the first batch and 30 shares from the second batch. Another possibility would be LIFO (Last In, First Out). In that case, 10 shares from the first batch would remain, and none from the second batch. Does this make a difference? In this particular case, the stock is valued lower in the FIFO approach.
 
 `FIFO`: average price of the remaining 40 shares = ((10 * 58.82) + (30 * 39.60)) / 40 = 44.05 EUR
 

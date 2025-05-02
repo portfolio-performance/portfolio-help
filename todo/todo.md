@@ -57,7 +57,7 @@ Some customizations are possible. Still need to figure out how to style a right-
 Before I used the markdown extension [markdown-captions](https://github.com/evidlo/markdown_captions)
 
 ### 2023-09-18 (info)
-There was a question about a kind of styleguide for the PP manual. Maybe we can use the APA styleguide as reference. For example, the caption of a figure should be placed on top of the figure with label Figure 1. Normally the caption itself should be at the next line in bold or italic.
+There was a question about a kind of styleguide for the Portfolio Performance manual. Maybe we can use the APA styleguide as reference. For example, the caption of a figure should be placed on top of the figure with label Figure 1. Normally the caption itself should be at the next line in bold or italic.
 Partially implemented it with the mkdocs-caption plugin.
 
 ### 2023-09-19
@@ -118,7 +118,7 @@ Suggestions from Flywire.
 Adding the Last Update date in the front matter is indeed duplicating Git functionality. Replaced it with mkdocs-git-revision-date-localized-plugin. This plugin will add "Last update: localized date" at the bottom of each page.
 
 In-depth text and video about writing good documentation: [https://documentation.divio.com/](https://documentation.divio.com/)
-PP handbook should be structured around 2 axes (practical vs theoretical and useful for learning vs useful for working).
+Portfolio Performance handbook should be structured around 2 axes (practical vs theoretical and useful for learning vs useful for working).
 This gives 4 chapters: Tutorials (practical-learning), How-to (practical-working), explanation (theoretical-learning), and reference (theoretical-working).
 The current structure goes in the right direction: getting-started = tutorial, common procedure and tips & tricks = how-to, basic concepts = explanation.
 The section reference seems to be missing.
@@ -153,7 +153,7 @@ Historical prices: many of the presets don't seem to function?
 - The transaction list of a deposit account will NOT color the text of the notes in green/red. In all transactions and other lists, they are colored.
 
 ### 2024-05-31
-- For share-1, the historical quotes in security master data are set to "No automatic quote download". Then, a few historical prices are added manually (not for every day in the holding period). In the chart view, PP displays some unexisting prices; it seems that some kind of linear estimation is used. (observed while working on system-overview.md). Solved by deleting latest price in context menu. After that however, the option isn't any longer available.
+- For share-1, the historical quotes in security master data are set to "No automatic quote download". Then, a few historical prices are added manually (not for every day in the holding period). In the chart view, Portfolio Performance displays some unexisting prices; it seems that some kind of linear estimation is used. (observed while working on system-overview.md). Solved by deleting latest price in context menu. After that however, the option isn't any longer available.
 
 ### 2024-07-08
 - Field Category key in Definition view of Taxonomies?

@@ -15,7 +15,7 @@ In PortfolioPerformance (PP), a transaction represents an operation that alters 
 - Taxes/Taxes Refund: Taxes are settled by withdrawing funds from a deposit account; conversely, a tax refund results in a deposit into the account. 
 
 !!! Note
-    In theory, PP could suffice with 8 transaction types: trade, delivery, deposit, fees, taxes, interest, transfer, and dividend. Each transaction could be expressed with a positive or negative value, for example: sell or trade(-) and buy or trade (+).
+    In theory, Portfolio Performance could suffice with 8 transaction types: trade, delivery, deposit, fees, taxes, interest, transfer, and dividend. Each transaction could be expressed with a positive or negative value, for example: sell or trade(-) and buy or trade (+).
     
     In fact, this is suggested by the fact, that the type of a transaction could be changed in a table such as `All Transactions` by double clicking on the keyword (e.g. Buy) and choosing the alternative from the drop down (sell, delivery inbound, delivery outbound). This technique doesn't work with fees and taxes.    
 
@@ -27,7 +27,7 @@ Figure 2 illustrates the effect of all 15 transaction types on the deposit and s
 
 - The coloring scheme might be a bit confusing. In the image on the left side of Figure 2 (from the `All Securities` view), a buy transaction results in an outflow from the deposit account; yet it's depicted in green. Conversely, a transfer (from one security/deposit account to another) is depicted in red.
 
-- With the exception of interest, all transaction types are associated with a specific security, such as a share. Interest, on the other hand, is only linked to a deposit account. One implication of this is that interest on bonds should be recorded as a dividend in PP if you wish to maintain the connection with the bond.
+- With the exception of interest, all transaction types are associated with a specific security, such as a share. Interest, on the other hand, is only linked to a deposit account. One implication of this is that interest on bonds should be recorded as a dividend in Portfolio Performance if you wish to maintain the connection with the bond.
 
 Figure: All 15 transaction types with their effect.{class=pp-figure}
 

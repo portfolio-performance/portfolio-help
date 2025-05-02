@@ -3,11 +3,11 @@ title: Creating your portfolio
 ---
 # Creating your portfolio
 
-You can quickly create a PP file using a wizard to guide you through the setup process. There are five steps, but only the first two are mandatory. Start with the menu `File > New > File` to create a new portfolio file.
+You can quickly create a Portfolio Performance file using a wizard to guide you through the setup process. There are five steps, but only the first two are mandatory. Start with the menu `File > New > File` to create a new portfolio file.
 
 - **Step 1**
     
-    First, you need to select the default currency for the portfolio (see figure 1). You can always change the currency for individual securities. PP supports almost every possible currency: from AED (United Arab Emirates Dirham) to ZWL (Zimbabwean dollar).
+    First, you need to select the default currency for the portfolio (see figure 1). You can always change the currency for individual securities. Portfolio Performance supports almost every possible currency: from AED (United Arab Emirates Dirham) to ZWL (Zimbabwean dollar).
 
     Figure: Selecting the default currency for the portfolio.{class=pp-figure}
 
@@ -24,7 +24,7 @@ You can quickly create a PP file using a wizard to guide you through the setup p
     When at least one security account with a reference account has been created, the `Finish` button becomes available. Don't worry about the next steps if you don't understand what they are about.
 
     !!! note
-        If you have an existing portfolio, PP supports importing CSV files to quickly add securities, buy and sell transactions, and payments. See [this tutorial](https://forum.portfolio-performance.info/t/import-csv-file/17123) for importing a portfolio and dividends.
+        If you have an existing portfolio, Portfolio Performance supports importing CSV files to quickly add securities, buy and sell transactions, and payments. See [this tutorial](https://forum.portfolio-performance.info/t/import-csv-file/17123) for importing a portfolio and dividends.
 
 - **Step 3**
 

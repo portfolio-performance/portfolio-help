@@ -19,7 +19,7 @@ The second tab in Figure 1 displays the Currency Converter (see figure 2). With 
 
 Since EUR/USD = 1.0370, it follows that USD/EUR = 0.9643. Which quotation would you prefer? This depends a bit on your domestic currency (the one you use every day) and your preference for multiplication or division.
 
-As a result, there are two types of quotation: direct (or price) quotation versus indirect (or quantity) quotation. By default, PP assumes the latter one, but you can change the quotation type with the menu `Help > Preferences > Presentation` menu.
+As a result, there are two types of quotation: direct (or price) quotation versus indirect (or quantity) quotation. By default, Portfolio Performance assumes the latter one, but you can change the quotation type with the menu `Help > Preferences > Presentation` menu.
 
 - An indirect quote expresses the amount of foreign currency required to buy or sell one unit of the domestic currency. The price of the domestic currency is expressed in terms of a foreign currency. For a citizen of the European Community, the quotation EUR/USD = 1.0370 is an indirect quotation.
 - In a direct quote, the foreign currency is the base currency, while the domestic currency is the counter currency. For a citizen of the European Community, the quotation USD/EUR = 0.9643 is a direct quotation.

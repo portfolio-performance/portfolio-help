@@ -4,7 +4,7 @@ title: Importing a CSV file
 
 # Importing a CSV file
 
-PP employs a wizard to lead you through the import process, consisting of three steps. At each step, you are required to furnish additional information.
+Portfolio Performance employs a wizard to lead you through the import process, consisting of three steps. At each step, you are required to furnish additional information.
 
 **Step 1**. Start with the menu `File > Import > CSV files (comma-separated values)`, navigate to the correct folder and select the appropriate CSV file. Only files with the extension `CSV` are displayed.
 
@@ -14,13 +14,13 @@ Figure: Import types. {class=align-right}
 
 ![](images/import-types.png)
 
-In **step 2** of the wizard, you need to select the appropriate import type or template by clicking on the drop down box (see Figure 3). PP distinguishes between 5 types of import: `Account Transactions`, `Portfolio Transactions`, `Securities`, `Historical Quotes`, and `Securities Account` (see Figure 1). These templates are discussed in detail below. You also need to decide about the following options.
+In **step 2** of the wizard, you need to select the appropriate import type or template by clicking on the drop down box (see Figure 3). Portfolio Performance distinguishes between 5 types of import: `Account Transactions`, `Portfolio Transactions`, `Securities`, `Historical Quotes`, and `Securities Account` (see Figure 1). These templates are discussed in detail below. You also need to decide about the following options.
 
-- *Delimiter*: PP will probably choose the correct delimiter; in this case a semicolon. Other possibilities include comma and the tab symbol.
+- *Delimiter*: Portfolio Performance will probably choose the correct delimiter; in this case a semicolon. Other possibilities include comma and the tab symbol.
 - *Encoding*: "strange" characters in the output table indicate a mismatch between the chosen encoding and the source file encoding. There are numerous possibilities, and the correct choice depends on the application used to create the file. A good choice is likely `UTF-8` or `Windows-1250`. 
 - *First line contains header*: enable this option if the first line of your CSV contains field  labels.
 - *Skip lines*: sometimes the CSV-file contains irrelevant information in the first few lines. You can skip them with this option.
-- *Mapping fields*: PP needs to determine the corresponding columns for its internal fields. If PP recognizes a field, it will be indicated by a message `-> 'Field'` in the second row of the output; otherwise, a message `Double click here` will appear (see Figure 3). To associate a column with an internal PP field, double-click on the second line. You can then choose from the available fields. If you don't want to associate a field, select the `---` option. PP will then ignore this column. To change the format of a column, e.g. Date format of a date, double-click on the name in the second line.
+- *Mapping fields*: Portfolio Performance needs to determine the corresponding columns for its internal fields. If Portfolio Performance recognizes a field, it will be indicated by a message `-> 'Field'` in the second row of the output; otherwise, a message `Double click here` will appear (see Figure 3). To associate a column with an internal Portfolio Performance field, double-click on the second line. You can then choose from the available fields. If you don't want to associate a field, select the `---` option. Portfolio Performance will then ignore this column. To change the format of a column, e.g. Date format of a date, double-click on the name in the second line.
 
 Figure: Saving the mapping configuration.{class=align-right style="width:50%"}
 
@@ -190,7 +190,7 @@ Because the number of shares is a required field, one would assume that simple d
 
 The acceptable values for the field `Type` are: `Deposit`, `Removal`, `Interest`, `Interest Charge`, `Dividend`, `Fees`, `Fees Refund`, `Taxes`, `Tax Refund`, `Buy`, `Sell`, `Transfer (Inbound)`, and `Transfer (Outbound)`. The default value of Type is `Sell`.
 
-Suppose that you wish to import two portfolio transactions: a sell of 2 shares of BASF in EUR and a buy of 3 shares NVIDIA in USD. Since we are using the EUR cash account in both cases, the transaction in USD must be converted into EUR. In this case, PP will handle this automatically because the NVIDIA security is listed in USD and the security account in EUR. Alternatively, you can designate the `Currency Gross Amount` column as `USD`. However, a more efficient workflow may involve defining the `Cash Account`, and eventually the `Securities Account`. This prevents the import from defaulting to standard accounts, such as `broker-A` and `broker-A (EUR)` in this case.
+Suppose that you wish to import two portfolio transactions: a sell of 2 shares of BASF in EUR and a buy of 3 shares NVIDIA in USD. Since we are using the EUR cash account in both cases, the transaction in USD must be converted into EUR. In this case, Portfolio Performance will handle this automatically because the NVIDIA security is listed in USD and the security account in EUR. Alternatively, you can designate the `Currency Gross Amount` column as `USD`. However, a more efficient workflow may involve defining the `Cash Account`, and eventually the `Securities Account`. This prevents the import from defaulting to standard accounts, such as `broker-A` and `broker-A (EUR)` in this case.
 
 Figure 15 displays the `Mapped to Field` dialog box is shown (accessible via double-clicking the Value column). It's advisable to confirm that the selected format aligns with your language settings, especially if you use a comma as the decimal point as in this example.
 
