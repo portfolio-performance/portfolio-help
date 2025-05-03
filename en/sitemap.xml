@@ -16,17 +16,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://help.portfolio-performance.info/en/concepts/PP-terminology/</loc>
-         <lastmod>2025-05-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://help.portfolio-performance.info/en/concepts/financial-terminology/</loc>
          <lastmod>2025-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/concepts/historical-prices/</loc>
+         <lastmod>2025-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://help.portfolio-performance.info/en/concepts/portfolio-performance-terminology/</loc>
          <lastmod>2025-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
