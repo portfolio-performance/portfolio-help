@@ -1,7 +1,7 @@
 ---
 Preferences
 ---
-There are two distinct sections within the PP software where you can customize the User Interface (UI) and the overall behavior of the program: the `View > Settings` menu and the `Help > Preferences` menu (Windows) or the `Portfolio Performance > Settings` app menu (Mac).
+There are two distinct sections within the Portfolio Performance software where you can customize the User Interface (UI) and the overall behavior of the program: the `View > Settings` menu and the `Help > Preferences` menu (Windows) or the `Portfolio Performance > Settings` app menu (Mac).
 
 !!! Note
     The menu bar on Windows and Mac differs slightly. On macOS, the menu bar is always located at the very top of the screen. Additionally, Mac programs have two extra menus: the Apple menu () at the top left and the app menu (e.g., `Portfolio Performance`), which appears as the second menu from the left. The app menu typically contains options such as settings, check for updates, services, and options to hide or quit the program.
@@ -20,11 +20,11 @@ By selecting the `General` menu item in the sidebar of the `Settings dialog box`
 
 - `Automatically update quotes after opening a file`: Each security can have an external data source assigned for [downloading historical quotes](../../how-to/downloading-historical-prices/index.md). You can start the download process manually through the [Online menu](../online.md) or enable the option to automatically download historical quotes upon opening the portfolio.
 
-- `Store Gui settings next to Portfolio Performance file`: The Graphical User Interface (GUI) settings influence several aspects of the look and feel of the PP program such as the width of columns or size of windows (e.g. main pane vs information pane) and others. These settings are stored in a separate file. This file is located:
+- `Store Gui settings next to Portfolio Performance file`: The Graphical User Interface (GUI) settings influence several aspects of the look and feel of the Portfolio Performance program such as the width of columns or size of windows (e.g. main pane vs information pane) and others. These settings are stored in a separate file. This file is located:
 
     - In the same folder as the portfolio file (option is checked). The name of the file is <span style="font-variant: small-caps;">[name-of-portfolio].settings</span>; e.g. `demo-portfolio-03.settings`.
     
-    - If the option is unchecked, then the settings file is located in a subfolder of the workspace folder of the PP application. The name is a unique random string with the extension "txt", e.g.`prf_c4c742f0f7312d48355beadb57dc4a09.txt`. This file is invisible by default. The location of the workspace folder is:
+    - If the option is unchecked, then the settings file is located in a subfolder of the workspace folder of the Portfolio Performance application. The name is a unique random string with the extension "txt", e.g.`prf_c4c742f0f7312d48355beadb57dc4a09.txt`. This file is invisible by default. The location of the workspace folder is:
 
         - macOS: `~/Library/Application Support/name.abuchen.portfolio.product/workspace`
         - Windows: `%LOCALAPPDATA%\PortfolioPerformance\workspace`
@@ -32,7 +32,7 @@ By selecting the `General` menu item in the sidebar of the `Settings dialog box`
 
     You need to search in the subfolder: `.metadata\.plugins\name.abuchen.portfolio.ui`.
 
-    The location of your settings file is critical when transferring your portfolio to another computer. If the settings file is stored adjacent to the source portfolio file, the process is simplified; you only need to copy both files to the new location. However, if the setting files is stored within the workspace folder, it will not be automatically regenerated when installing the PP application on the new computer. In this case, you must manually copy the file from the old computer and paste it into the corresponding location on the new computer to ensure proper configuration.
+    The location of your settings file is critical when transferring your portfolio to another computer. If the settings file is stored adjacent to the source portfolio file, the process is simplified; you only need to copy both files to the new location. However, if the setting files is stored within the workspace folder, it will not be automatically regenerated when installing the Portfolio Performance application on the new computer. In this case, you must manually copy the file from the old computer and paste it into the corresponding location on the new computer to ensure proper configuration.
     
 - `Enable experimental features`: This feature is only intended for developers or "bold" users who wish to test out new experimental features, such as a new file format
 
@@ -71,7 +71,7 @@ You have three choices for the backup location:
         
     - **Direct quotation**: 1.0729 EUR/USD (1.0729 units of the base currency are needed for one unit of the foreign currency)
 
-- `Always display currency code for monetary values`:  If this option is unchecked, PP will show the currency code (e.g., USD) only when the currency differs from the base currency, resulting in a cleaner and less cluttered view.
+- `Always display currency code for monetary values`:  If this option is unchecked, Portfolio Performance will show the currency code (e.g., USD) only when the currency differs from the base currency, resulting in a cleaner and less cluttered view.
 - `Add "p.a." to annualized return rates`: The Internal Rate of Return (IRR) is, by definition, an annualized return rate. The True-Time Weighted Rate of Return (TTWROR) is calculated per reporting period (and thus, possibly unannualized). Enabling this option will consistently append the suffix "p.a." to indicate when the return rate is annualized.
 
 ### Language
@@ -80,7 +80,7 @@ Figure: Settings for the language, country, and Java Locale. {class=align-right 
 
 ![](images/settings-language.png)
 
-Using the language drop-down menu, you can modify the user-interface language of the PP software, such as the menus and dialogs. Thirteen different languages are available: Deutsch (German), English, Español (Spanish), Français (French), Italiano (Italian), Nederlands (Dutch), Português (Portuguese), čeština (Czech), русский (Russian), Slovenská (Slovak), Polskie (Polish), 中文 (Chinese), and Dansk (Danish).
+Using the language drop-down menu, you can modify the user-interface language of the Portfolio Performance software, such as the menus and dialogs. Thirteen different languages are available: Deutsch (German), English, Español (Spanish), Français (French), Italiano (Italian), Nederlands (Dutch), Português (Portuguese), čeština (Czech), русский (Russian), Slovenská (Slovak), Polskie (Polish), 中文 (Chinese), and Dansk (Danish).
 
 The selected language will also affect the available country options. For instance, the Dutch language is spoken in seven countries: Aruba, Belgium, Carribean Netherlands, Curraçao, Sint Maarten, and Suriname.
 
@@ -108,7 +108,7 @@ In this section, you can adjust the display precision for the number of shares (
 
 A calendar specifies the holidays (of your stock exchange) or the non-trading days for a selected year.  Calendars play an essential role in calculations, certain chart views, and investment plans within PP. For instance, if the start date of a monthly [investment plan](../view/accounts/investment-plans.md) falls on a holiday, the transaction will be moved to the next working day.
 
-PP offers 14 different stock exchange calendars. These include the Australian Stock Exchange (ASX), Euronext, German stock exchanges (DE), IBOV Sao Paulo Stock Exchange (Brazil), ISE Italian Stock Exchange (ISE), London Stock Exchange (LSE), Moscow Exchange (MICEX-RTS), New York Stock Exchange (NYSE), Santiago Stock Exchange (SSE), Swiss Exchange (SIX), Toronto Stock Exchange (TSE), and Vienna Stock Exchange (VSE). There are also 4 more generic calendars:
+Portfolio Performance offers 14 different stock exchange calendars. These include the Australian Stock Exchange (ASX), Euronext, German stock exchanges (DE), IBOV Sao Paulo Stock Exchange (Brazil), ISE Italian Stock Exchange (ISE), London Stock Exchange (LSE), Moscow Exchange (MICEX-RTS), New York Stock Exchange (NYSE), Santiago Stock Exchange (SSE), Swiss Exchange (SIX), Toronto Stock Exchange (TSE), and Vienna Stock Exchange (VSE). There are also 4 more generic calendars:
 
 - (None): Every day of the year, from January 1 to December 31, is considered a trading day.
 - Default Calendar: Specifies seven quasi-universal holidays, such as New Year's Day. 
@@ -118,7 +118,7 @@ PP offers 14 different stock exchange calendars. These include the Australian St
 When you select a calendar from the drop-down list, it will display the corresponding holidays for the chosen calendar and year.
 
 !!! Note
-    Any changes made to the calendar settings will only take effect after restarting the PP program. 
+    Any changes made to the calendar settings will only take effect after restarting the Portfolio Performance program. 
 
 ## API keys
 
@@ -133,8 +133,8 @@ Downloading historical prices requires accessing an external web server such as 
 
 ## Updates
 
-PP is regularly maintained and updated. To manually check for updates, you can visit the [homepage](https://www.portfolio-performance.info/en/). The version number (e.g., 0.74.0) is displayed above the download links. Additionally, you can find the [latest release](https://github.com/portfolio-performance/portfolio) on GitHub.
+Portfolio Performance is regularly maintained and updated. To manually check for updates, you can visit the [homepage](https://www.portfolio-performance.info/en/). The version number (e.g., 0.74.0) is displayed above the download links. Additionally, you can find the [latest release](https://github.com/portfolio-performance/portfolio) on GitHub.
 
-By enabling the `Check for updates on Start` option in the Settings section, PP will automatically check, download, and install the latest version (if necessary) upon launch. The update process is carried out from the URL `https://updates.portfolio-performance.info/portfolio`.
+By enabling the `Check for updates on Start` option in the Settings section, Portfolio Performance will automatically check, download, and install the latest version (if necessary) upon launch. The update process is carried out from the URL `https://updates.portfolio-performance.info/portfolio`.
 
 On Mac, you can find this option in the app Menu Portfolio Performance.

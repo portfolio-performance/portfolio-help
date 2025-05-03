@@ -2,7 +2,7 @@
 title: Help > About Portfolio Performance
 todo: platform choice implications
 ---
-Detailed information about the PP program could be found in the menu `Help > About Portfolio Performance`. The top panel contains the version, e.g. 0.67.0 from december 2023, the platform and the Java version it runs on. The platform could be Windows (win32, x86_64), Linux, or macOS; see [Installation](../../getting-started/installation.md). The PP program is built with the Java programming language. The most recent Long Term Support (LTS) version of the OpenJDK (Java Development Kit) is obtained through [Azul.com](https://www.azul.com/downloads/?package=jdk#zulu). From the copyright info, you learn that the author `Andreas Buchen` started development back in 2012.
+Detailed information about the Portfolio Performance program could be found in the menu `Help > About Portfolio Performance`. The top panel contains the version, e.g. 0.67.0 from december 2023, the platform and the Java version it runs on. The platform could be Windows (win32, x86_64), Linux, or macOS; see [Installation](../../getting-started/installation.md). The Portfolio Performance program is built with the Java programming language. The most recent Long Term Support (LTS) version of the OpenJDK (Java Development Kit) is obtained through [Azul.com](https://www.azul.com/downloads/?package=jdk#zulu). From the copyright info, you learn that the author `Andreas Buchen` started development back in 2012.
 
 Figure: The About Portfolio Performance panel.{class=pp-figure}
 
@@ -16,7 +16,7 @@ The bottom panel contains links to the used (open source) software, code contrib
 
 [Apache Software Foundation](https://apache.org/): Several libraries are used; for example to extract text and metadata from PDF documents, and to perform HTTP requests and handle responses (e.g. communicate with Portfolio Report). 
 
-[SWT Chart Project](https://github.com/eclipse/swtchart/wiki): The Eclipse SWTChart software is used to create the line and pie charts in the app. PP uses the Standard Widget Toolkit (SWT) which is a graphical user interface (GUI) library that allows Java developers to create native-looking applications for different platforms. You enable this library in `Help > Preferences > General`.
+[SWT Chart Project](https://github.com/eclipse/swtchart/wiki): The Eclipse SWTChart software is used to create the line and pie charts in the app. Portfolio Performance uses the Standard Widget Toolkit (SWT) which is a graphical user interface (GUI) library that allows Java developers to create native-looking applications for different platforms. You enable this library in `Help > Preferences > General`.
 
 [Tree Map Library](https://github.com/smurf667/treemaplib): Treemaps represent a distinct visualization technique for illustrating hierarchical data by using a series of nested rectangles. This kind of map is used in the Taxonomies menu.
 
@@ -34,7 +34,7 @@ The bottom panel contains links to the used (open source) software, code contrib
 
 [XStream](https://github.com/x-stream/xstream): A Java library that allows you to serialize and deserialize Java objects to and from XML or JSON.
 
-[OpenJDK](https://openjdk.org/): Running a Java program on for example a Windows machine requires that the Java Development Kit (JDK) is installed on that computer. PP uses the JDK provided by Azul.com.
+[OpenJDK](https://openjdk.org/): Running a Java program on for example a Windows machine requires that the Java Development Kit (JDK) is installed on that computer. Portfolio Performance uses the JDK provided by Azul.com.
 
 ## Code Contributors
 
@@ -42,14 +42,14 @@ A link to the Github pages of each of the 159 contributors is given. A graphical
 
 ## Translators
 
-PP has been translated into Spanish, Dutch, Portuguese, Brazilian Portuguese, French, Italian, Czech, Russian, Slovak, Polish, Chinese (simplified), Chinese (traditional), and Danish.
+Portfolio Performance has been translated into Spanish, Dutch, Portuguese, Brazilian Portuguese, French, Italian, Czech, Russian, Slovak, Polish, Chinese (simplified), Chinese (traditional), and Danish.
 
 ## Writers
 The two main sources of documentation for the program are the Forum ([German](https://forum.portfolio-performance.info/c/deutsch/10) - [English](https://forum.portfolio-performance.info/c/english/10)) and the Handbook ([German](https://help.portfolio-performance.info/de/) - [English](https://help.portfolio-performance.info/en/)).
 
 ## Installation Details
 
-Clicking on this tab will generate a very long and detailed description of the environment PP is running in (OS, Java and Eclipse components, paths to log-files, ...).
+Clicking on this tab will generate a very long and detailed description of the environment Portfolio Performance is running in (OS, Java and Eclipse components, paths to log-files, ...).
 
 
 

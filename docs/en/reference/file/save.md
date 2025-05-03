@@ -79,14 +79,14 @@ This single buying transaction is represented with the following XML code.
 </transactions>
 
 ```
-As you can see, there is nearly a one-to-one relationship between the input form of the buy transaction and the XML. Please note that -internally- PP works with nano units (10^9) for the number of shares and hecto units (10^2) for the price.
+As you can see, there is nearly a one-to-one relationship between the input form of the buy transaction and the XML. Please note that -internally- Portfolio Performance works with nano units (10^9) for the number of shares and hecto units (10^2) for the price.
 
 The PortfolioPerformance mobile app, introduced in February 2024, does not support the XML file format.
 
 
 ## Password protected (AES-256)
 
-AES-256 encryption is a method of securing your data by converting it into a code that can only be accessed with a unique key. This encryption technique uses a 256-bit key, which is a string of 256 zeros and ones, to encrypt and decrypt the data. When data is encrypted using AES-256, it is transformed into a random sequence of characters that is unreadable without the key. In order to generate this key, PP needs a password that is at least 6 characters. However, a password that is longer and more complex will have more randomness and unpredictability, which means it is harder to guess.
+AES-256 encryption is a method of securing your data by converting it into a code that can only be accessed with a unique key. This encryption technique uses a 256-bit key, which is a string of 256 zeros and ones, to encrypt and decrypt the data. When data is encrypted using AES-256, it is transformed into a random sequence of characters that is unreadable without the key. In order to generate this key, Portfolio Performance needs a password that is at least 6 characters. However, a password that is longer and more complex will have more randomness and unpredictability, which means it is harder to guess.
 
 Figure: Saving a portfolio with AES-256 encryption needs a password.{class=pp-figure}
 

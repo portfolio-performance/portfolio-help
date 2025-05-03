@@ -16,7 +16,7 @@ Use **Ctrl** (Windows) or **Cmd** (Mac). Sequential shortcuts are written as Ctr
 - **Ctrl+N / Cmd+N**: Creates a new taxonomy, watchlist, consumer price index, cryptocurrency, exchange rate, or instrument (see [File > New](../reference/file/new.md))
 - **Ctrl+O / Cmd+O**: Displays the File > Open dialog box.   
 - **Ctrl+S / Cmd+S**: Saves the current portfolio under the existing name.  
-- **Ctrl+Q / Cmd+Q**: Closes the PP program, prompting you to save any unsaved changes to files.  
+- **Ctrl+Q / Cmd+Q**: Closes the Portfolio Performance program, prompting you to save any unsaved changes to files.  
 - **Ctrl+I, P / Cmd+I, P**: [Import](../reference/file/import/pdf-import.md) PDF Bank documents.  
 - **Ctrl+I, C / Cmd+I, C**: Import CSV files (comma-separated values).  
 - **Ctrl+Shift+S / Cmd+Shift+S**: Export selected items (such as an account) from the current portfolio as a CSV file.  

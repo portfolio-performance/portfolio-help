@@ -3,7 +3,7 @@ title: File > New
 ---
 # File &#10095; New
 
-With the `File > New` menu you can create the different assets PP can manage.
+With the `File > New` menu you can create the different assets Portfolio Performance can manage.
 
 Figure: File > New submenu.{class=pp-figure}
 
@@ -104,7 +104,7 @@ Figure: Create new exchange rate. {class=align-right style="width:30%"}
 
 ![](images/new-exchange-rate.png)
 
-PP uses exchange rates from the [European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html). You can find the list of about 40 available exchange rates under the [View > Currencies menu](../view/general-data/currencies.md). In some rare cases, you may require an exchange rate that is not included in the available list.
+Portfolio Performance uses exchange rates from the [European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html). You can find the list of about 40 available exchange rates under the [View > Currencies menu](../view/general-data/currencies.md). In some rare cases, you may require an exchange rate that is not included in the available list.
 
 To create a custom exchange rate, use the `File > New > Exchange rate` menu. You will need to provide a quote provider, such as a JSON source or webpage, for the currency you want to add. Once you've created the custom exchange rate, it will be added to the currencies list with the name `Security based exchange rate provider` in the `Provider` column.
 

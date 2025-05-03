@@ -14,7 +14,7 @@ Regarding Eq 1, please note that:
 - There are *no* additional transactions within the specified period. The MVE is solely influenced by the MVB and time.
 - The equation can be applied to calculate the performance of the entire portfolio, a specific (security or deposit) account, an individual security, or a particular trade.
 
-To address the above concerns, PP employs two distinct approaches to calculate the rate of return when additional transactions occur within the reporting period: the money-weighted or time-weighted rate of return. It also differentiates between measuring performance on the portfolio, security, or trade level.
+To address the above concerns, Portfolio Performance employs two distinct approaches to calculate the rate of return when additional transactions occur within the reporting period: the money-weighted or time-weighted rate of return. It also differentiates between measuring performance on the portfolio, security, or trade level.
 
 !!! Note
     The simple Rate of Return (ROR) isn't adequate for describing the performance of a portfolio when transactions occur in the reporting period. Let's take the example from above. Your portfolio already contains one share valued at 100 EUR at the beginning of the year (MVB=100). Due to the favorable track record of the company issuing the shares, its price has increased to 104 EUR per share by the end of the year. Let's now compare the following scenarios:

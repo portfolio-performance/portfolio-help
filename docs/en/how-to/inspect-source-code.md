@@ -2,9 +2,9 @@
 title: Inspecting the source code
 ---
 
-While using the PP program, you may sometimes encounter results that you don't fully understand. PP already goes a long way to explain its calculations and results by offering intermediate results, popovers with detailed information, and possibilities to export the data in various forms to further analyze with other tools, such as Excel.
+While using the Portfolio Performance program, you may sometimes encounter results that you don't fully understand. Portfolio Performance already goes a long way to explain its calculations and results by offering intermediate results, popovers with detailed information, and possibilities to export the data in various forms to further analyze with other tools, such as Excel.
 
-Another possibility is to inspect the source code or the XML-file. The beauty of open-source software like PP is that the source code is readily available. Inspecting the code offers a unique insight into how things are measured and calculated.
+Another possibility is to inspect the source code or the XML-file. The beauty of open-source software like Portfolio Performance is that the source code is readily available. Inspecting the code offers a unique insight into how things are measured and calculated.
 
 ## Example 1: How is the volatility indicator calculated?
 

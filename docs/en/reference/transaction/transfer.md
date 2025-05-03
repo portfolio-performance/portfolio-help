@@ -29,7 +29,7 @@ Figure: Security transfer dialog box.{class=pp-figure }
 
 With three drop-down boxes, you can select the security (`share-1`), as well as the source (`security-account-1`)and target (`security-account-2`) security account; see Figure 2. Several checks are conducted; for instance, you cannot transfer a security that is unavailable or insufficiently available in the source account. You also need to provide the date of the transfer, the number of shares, and the quote price.
 
-Although it's technically one transaction, behind the scenes, PP creates two "virtual" transactions (refer to Figure 3; information pane). The security transfer is divided into a Transfer (Outbound) of 3 shares from `security-account-1`, followed by a Transfer (Inbound) into `security-account-2`. However, both transactions are considered as a single entity. Editing one of them will trigger the Security Transfer dialog. Deleting one transaction will also remove the other.
+Although it's technically one transaction, behind the scenes, Portfolio Performance creates two "virtual" transactions (refer to Figure 3; information pane). The security transfer is divided into a Transfer (Outbound) of 3 shares from `security-account-1`, followed by a Transfer (Inbound) into `security-account-2`. However, both transactions are considered as a single entity. Editing one of them will trigger the Security Transfer dialog. Deleting one transaction will also remove the other.
 
 Figure: Result of the Security Transfer transaction.{class=pp-figure}
 

@@ -112,12 +112,12 @@ The JSON response from above is an object, surrounded by { }. It contains meta d
 
 If you want to practice, you can use the [JSONPath Online Evaluator](https://jsonpath.com/). Copy the JSON result from the URL endpoint into the input window. Another practical tool is the [JSONPath Finder](https://jsonpathfinder.com/).
 
-With the above information, it should be easy to provide the JSON Quote Feed provider of PP with the correct input.
+With the above information, it should be easy to provide the JSON Quote Feed provider of Portfolio Performance with the correct input.
 
 Figure: JSON Quote Feed provider parameters. {class=pp-figure}
 
 ![](images/json-yahoo-parameters.png)
 
 
-For most services, one needs to register and obtain an API key, which is a unique identifier that authenticates the user and grants access to the service. While numerous financial services provide seemingly free API keys, their terms of use and long-term commitment often prove inadequate. PP has, for compatibility reasons, maintained several of these services in its list of Quote Feed providers; e.g. Alpha Vantage, eodhd, .... Although once considered excellent solutions, they have changed their offerings and are no longer as useful as free services. In practical terms, only Portfolio Report and Yahoo Finance can be recommended for a typical portfolio.
+For most services, one needs to register and obtain an API key, which is a unique identifier that authenticates the user and grants access to the service. While numerous financial services provide seemingly free API keys, their terms of use and long-term commitment often prove inadequate. Portfolio Performance has, for compatibility reasons, maintained several of these services in its list of Quote Feed providers; e.g. Alpha Vantage, eodhd, .... Although once considered excellent solutions, they have changed their offerings and are no longer as useful as free services. In practical terms, only Portfolio Report and Yahoo Finance can be recommended for a typical portfolio.
 

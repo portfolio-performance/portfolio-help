@@ -4,7 +4,7 @@ title: Troubleshooting / Request for a new PDF importer
 
 If Portfolio Performance doesn't have a PDF importer for your bank or broker, or for the specific type of transaction you need, you can request the development of this importer. Since Portfolio Performance developers don't have access to every bank or broker, you — as a user — must provide some sample PDF documents with **real** but **anonymised** examples of transactions with that specific bank or broker. The following text outlines all the necessary steps. You can also watch the [accompanying video](./requesting-new-importer.md#video-request-importer) at the bottom.
 
-1. **Collect a PDF document** of each transaction that you would like to import into your PP portfolio. Probably, you should provide an example of a buy, sell, and dividend transaction. Don't use PDFs that are converted to PDF from a browser or self-scanned paper notes but only the original documents from the bank or broker.
+1. **Collect a PDF document** of each transaction that you would like to import into your Portfolio Performance portfolio. Probably, you should provide an example of a buy, sell, and dividend transaction. Don't use PDFs that are converted to PDF from a browser or self-scanned paper notes but only the original documents from the bank or broker.
 
 2. **Convert these PDFs to text documents, one by one.** Use the parser from PP, which can be found at `File > Import > Debug: Extract Text from PDF` (see Figure 1).
 
@@ -24,7 +24,7 @@ If Portfolio Performance doesn't have a PDF importer for your bank or broker, or
 
     ![](images/pdf-import-extract-text.png)
      
-4. **Copy the extracted and anonymised text** to the clipboard or save the file. You will need it later in the request form of the PP forum.
+4. **Copy the extracted and anonymised text** to the clipboard or save the file. You will need it later in the request form of the Portfolio Performance forum.
 5. If there isn't already an importer for your needs, **create a new thread** in the [forum](https://forum.portfolio-performance.info/c/english/16) with the name `PDF Import from [your bank or broker]`. Otherwise, post a reply in an existing thread, for example [PDF import from SelfWealth](https://forum.portfolio-performance.info/t/pdf-import-from-selfwealth/17399). Add the extracted text for all transactions, one by one. Ensure that these text fragments are within ```triple quotes```, so that it is formatted as code. If your transaction is in a foreign language, please provide some guidance about the translation of the used terms.
 6. **Wait for a reply** from the developer. When the importer is finished, it will be added to the next update of PP.
 

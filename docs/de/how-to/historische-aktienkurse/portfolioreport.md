@@ -20,7 +20,7 @@ Wenn das Wertpapier in der PR-Datenbank enthalten ist, werden der Name (z.B. *BA
 
 Zurzeit sind nur Wertpapiere, die auf XETRA (Deutsche Börse) gehandelt werden, in Portfolio Report verfügbar. Außerdem werden nur historische Kurse (d.h. Schlusskurse nach Handelsende) bereitgestellt, keine aktuellen Kurse (d.h. während des Handels auf einem Marktplatz).
 
-- Ziehen Sie die große blaue Schaltfläche `Add to Portfolio Performance` auf das Fenster von PP (= klicken, halten und fallen lassen). Das funktioniert am besten, wenn die beiden Anwendungen nebeneinander auf dem Bildschirm platziert sind (siehe Abbildung 2). Ansonsten musst Du die Schaltfläche auf das PP-Symbol in der Taskleiste ziehen.
+- Ziehen Sie die große blaue Schaltfläche `Add to Portfolio Performance` auf das Fenster von Portfolio Performance (= klicken, halten und fallen lassen). Das funktioniert am besten, wenn die beiden Anwendungen nebeneinander auf dem Bildschirm platziert sind (siehe Abbildung 2). Ansonsten musst Du die Schaltfläche auf das Portfolio Performance Symbol in der Taskleiste ziehen.
 
 Abbildung: Mit Portfolio Report ein Wertpapier anlegen.{class=pp-figure style="width:90%"}
 

@@ -11,7 +11,7 @@ A taxonomy is a tool for categorizing and evaluating the investments within your
 
 Taxonomies typically group securities based on shared characteristics such as industry, sector, geographical region, market capitalization, or asset class. By organizing your investments in this manner, you can more easily identify risks and opportunities such as overrepresentation or underrepresentation in a specific segment.
 
-PP offers several predefined and widely recognised taxonomies or templates. You can also create your own custom taxonomy.
+Portfolio Performance offers several predefined and widely recognised taxonomies or templates. You can also create your own custom taxonomy.
 
 - **Asset Classes**: The following classes are distinguished: Cash, Equity, Debt, Real Estate, and Commodity.
 

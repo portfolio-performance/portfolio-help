@@ -6,7 +6,7 @@ hide:
 ---
 # About Portfolio Performance
 
-PP is an Eclipse-based desktop application written in Java. This open-source project started in 2012 and has been [updated](https://github.com/portfolio-performance/portfolio/releases) numerous times. With PP, you can:
+Portfolio Performance is an Eclipse-based desktop application written in Java. This open-source project started in 2012 and has been [updated](https://github.com/portfolio-performance/portfolio/releases) numerous times. With PP, you can:
 
 - Monitor the composition and development of your securities portfolio with meaningful overviews, key figures, and charts.
 - Track the historical price development of securities and your purchases and sales.
@@ -15,7 +15,7 @@ PP is an Eclipse-based desktop application written in Java. This open-source pro
 - Create an overview across multiple securities accounts and clearing accounts.
 - Import statements from online banks and brokers quickly and conveniently.
 
-Why choose yet another application? While you can simulate some of these calculations with Excel or rely on your broker for information, they often provide incorrect results. They are typically based solely on absolute figures at the beginning and end of a reporting period and do not properly include purchases and sales or variable reporting periods. PP calculates performance accurately using True-Time Weighted Rate of Return and Internal Rate of Return, taking into account the purchases and sales at their respective execution date.
+Why choose yet another application? While you can simulate some of these calculations with Excel or rely on your broker for information, they often provide incorrect results. They are typically based solely on absolute figures at the beginning and end of a reporting period and do not properly include purchases and sales or variable reporting periods. Portfolio Performance calculates performance accurately using True-Time Weighted Rate of Return and Internal Rate of Return, taking into account the purchases and sales at their respective execution date.
 
 # Other Information Sources
 

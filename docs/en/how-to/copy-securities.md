@@ -55,7 +55,7 @@ At times, it may be simpler to manually copy and paste the desired transactions,
 2. To select all transactions, move the cursor above the top row, click, press and hold SHIFT (Windows), and then click on the last row. This action will select all rows between the first and last.
 3. For a non-contiguous selection, click the first row, press and hold CTRL (Windows), and click on the following rows accordingly.
 4. Once all desired rows are selected, press CTRL+C (Windows) to copy the content to the clipboard.
-5. Navigate to a spreadsheet or text editor and paste the content. PP uses the TAB-code as a list separator.
+5. Navigate to a spreadsheet or text editor and paste the content. Portfolio Performance uses the TAB-code as a list separator.
 6. Unfortunately, the header isn't copied along with the data. Therefore, you should either map the fields during the importing process (you can use a [template](../reference/file/import/csv-import.md) for that) or manually add them to the pasted content.
 7. You still have to save the file with extension CSV and import it.
 

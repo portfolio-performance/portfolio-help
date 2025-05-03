@@ -2,9 +2,9 @@
 title: Using Portfolio Report
 ---
 
-Portfolio Report (PR) is an open-source project that works closely together with the Portfolio Performance (PP) app. Its primary goal is to enhance PP by providing master data for securities, including name, ISIN, WKN, and ticker symbol, as well as historical prices in various currencies.
+Portfolio Report (PR) is an open-source project that works closely together with the Portfolio Performance (PP) app. Its primary goal is to enhance Portfolio Performance by providing master data for securities, including name, ISIN, WKN, and ticker symbol, as well as historical prices in various currencies.
 
-PR allows you to look up information about securities, such as symbols, industries, and historical prices. Furthermore, it enables the creation of securities within PP from PR and the provision of historical prices for securities that already exist in PP.
+PR allows you to look up information about securities, such as symbols, industries, and historical prices. Furthermore, it enables the creation of securities within Portfolio Performance from PR and the provision of historical prices for securities that already exist in PP.
 
 ## Looking up information
 
@@ -25,16 +25,16 @@ Figure: Search Result{class=pp-figure}
 ![](images/portfolio-report-search-result.png)
 
 
-## Creating new securities in PP with PR
+## Creating new securities in Portfolio Performance with PR
 
-- Navigate to the [Portfolio Report website](https://www.portfolio-report.net/); start the PP app and, if possible, position both windows side by side on the computer screen, as illustrated in Figure 2.
+- Navigate to the [Portfolio Report website](https://www.portfolio-report.net/); start the Portfolio Performance app and, if possible, position both windows side by side on the computer screen, as illustrated in Figure 2.
 - Utilize the Search box located at the top right (refer to Figure 3) to search for the desired security using its name, ISIN, or WKN.
 
     If the security is in PR's database, the name (e.g *Amazon.com Inc.*), ISIN (*US0231351067*), and eventually WKN are displayed, together with a logo of the security (white arrow on blue background) and some extra information such as the trading market (*XETRA*), the currency (*EUR*), the ticker symbol on the specified trading market (*AMZ*), the country (*United States of America (US)*) and eventually the industry sector of the company. On multiple tabs (1, 2, 3, etc.), you can view the historical prices of the security. By default, only the 10 most recent prices are shown. However, using the drop-down menu on the right, you can adjust the number of prices displayed per page, with options ranging from 10, 30, 100, to 300.
 
     Only securities that are traded on XETRA (Deutsche Börse) are available within PR. Historical prices, specifically closing prices after the end of trading, are provided. Current prices, which are prices during trading on a marketplace, are not available.
 
-- Drag (= click, hold, and drop) the big blue button `Add to Portfolio Performance` upon the open window of PP. This is -of course- very easy if the two applications are placed next to each other on the screen (see Figure 2). Otherwise, you need to drag the button upon the PP icon in the taskbar.
+- Drag (= click, hold, and drop) the big blue button `Add to Portfolio Performance` upon the open window of PP. This is -of course- very easy if the two applications are placed next to each other on the screen (see Figure 2). Otherwise, you need to drag the button upon the Portfolio Performance icon in the taskbar.
 
     Figure: Using Portfolio Report to create a security in Portfolio Performance.{class=pp-figure}
 
@@ -59,7 +59,7 @@ It's also possible to link an existing security to PR; in particular to gain acc
 
 ## Privacy rules
 
-Whenever PP initiates an update, such as through the menu `Online > Update Quotes` a request is sent to the PR website. Portfolio Report only receives information that is technically necessary, including:
+Whenever Portfolio Performance initiates an update, such as through the menu `Online > Update Quotes` a request is sent to the PR website. Portfolio Report only receives information that is technically necessary, including:
 
 - Identification details of the security, the marketplace and, if applicable, the period.
 - The version number of the requesting Portfolio Performance app.

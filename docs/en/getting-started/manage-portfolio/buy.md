@@ -53,7 +53,7 @@ Figure: Paper note of a Buy transaction of a share in a foreign currency.{class=
 
 ![](../../images/info-bank-note-share-adobe.svg)
 
-From the note, it isn't quite clear which deposit account (EUR or USD) is used. Recording this transaction in PP however is quite straightforward. Figure 5 shows the transaction done with a USD deposit account. Figure 6 is a little more complex because a EUR deposit account is used; so a conversion should be made (EUR --> USD).
+From the note, it isn't quite clear which deposit account (EUR or USD) is used. Recording this transaction in Portfolio Performance however is quite straightforward. Figure 5 shows the transaction done with a USD deposit account. Figure 6 is a little more complex because a EUR deposit account is used; so a conversion should be made (EUR --> USD).
 
 Figure: Buy transaction of a USD security with a USD deposit account.{class="pp-figure"}
 
@@ -64,7 +64,7 @@ Figure: Buy transaction of a USD security with a EUR deposit account.{class="pp-
 ![](../../images/mnu-transaction-buy-share-adobe-EUR-account.png)
 
 
-The quote price and the USD/EUR exchange rate are automatically filled in based on the entered date. However, please note that real-time prices are not available. The entry form in PP also provides the additional option to record fees and taxes in the foreign currency. 
+The quote price and the USD/EUR exchange rate are automatically filled in based on the entered date. However, please note that real-time prices are not available. The entry form in Portfolio Performance also provides the additional option to record fees and taxes in the foreign currency. 
 
 Remember: good practice requires making a deposit beforehand, either in USD (for the transaction in Figure 5) or in EUR (Figure 6). Failing to do so will result in a negative balance.
 

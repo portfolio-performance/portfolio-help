@@ -48,7 +48,7 @@ Figure: Available fields Securities. {class=align-right style="width:30%"}
 
 ![](./images/securities-available-columns.png)
 
-- Purchase Value (Moving Average): By default, PP employs the FIFO method to value the stock inventory. Under this method, upon sale, the stock that was first purchased will also be the first sold, leaving the more recent purchases as the remaining stock. In a rising market, this means the most expensive shares remain and performance appears to be more favorable, especially when compared to the LIFO method.
+- Purchase Value (Moving Average): By default, Portfolio Performance employs the FIFO method to value the stock inventory. Under this method, upon sale, the stock that was first purchased will also be the first sold, leaving the more recent purchases as the remaining stock. In a rising market, this means the most expensive shares remain and performance appears to be more favorable, especially when compared to the LIFO method.
 
     In the moving average method, no assumptions are made regarding which securities will be used upon a sale. It could be the first purchased, the last, or some randomly chosen shares. The weighted average price of the stock is calculated. As new stock is purchased, this weighted average moves towards the price of the newly purchased stock.
 
@@ -101,7 +101,7 @@ The only cashflows that matter from a portfolio perspective are the deposit/remo
 
 From a security (account) perspective, the performance of a security is influenced by the value (price) of Buy or Sell transactions or the equivalent Inbound or Outbound Deliveries. The payment of a dividend is considered as a cash inflow into the security (increasing the performance), as are Fees refunds. Paying fees on security transactions however will decrease the performance and will reduce the cash flow as a result of the Buy/Sell or Inbound/Outbound Delivery.
 
-Taxes are an exception. In PP they are considered as performance neutral, when viewed from the security perspective. 
+Taxes are an exception. In Portfolio Performance they are considered as performance neutral, when viewed from the security perspective. 
 
 
 

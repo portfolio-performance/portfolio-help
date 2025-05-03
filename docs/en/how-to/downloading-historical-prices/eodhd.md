@@ -6,7 +6,7 @@ The [EODHD](https://eodhd.com/) (End of Day Historical Data) website provides co
 
 A [free API-token](https://eodhd.com/register) can be easily obtained by providing your email address. The token comes with a usage limit of 20 API requests per day. However, only historical quotes from the last year could be retrieved.
 
-You can use the API-token with the automatic Quote Feed of PP from within PP works just fine. Enter the token in the Settings (Help > Preferences > API Keys) and choose EOD Historical Data as Quote Feed Provider.
+You can use the API-token with the automatic Quote Feed of Portfolio Performance from within Portfolio Performance works just fine. Enter the token in the Settings (Help > Preferences > API Keys) and choose EOD Historical Data as Quote Feed Provider.
 
 If you have some special requirements, you can also use the JSON Quote Feed Provider (see [API documentation](https://eodhd.com/financial-apis/api-for-historical-data-and-volumes/) for some use cases). For example, the following request will retrieve the Apple historical prices from the **month January 2000**.
 

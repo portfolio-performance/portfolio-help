@@ -4,7 +4,7 @@ title: Table on Website
 
 Stock exchanges like NASDAQ publish historical and real-time quotations for the shares traded on their platforms.  Financial websites such as ariva.de offer a broader range. These historical prices are typically contained in a table with headings such as Date, Open, Close, ...
 
-Scraping this information from the website should be possible. PP offers two methods: automatic and manual scraping.
+Scraping this information from the website should be possible. Portfolio Performance offers two methods: automatic and manual scraping.
 
 ## Automatic scraping
 

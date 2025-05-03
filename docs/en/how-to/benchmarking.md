@@ -69,9 +69,9 @@ The most significant divergence occurs when a dividend is paid on December 15, 2
 
     ![](images/benchmark-kommer-01.svg)
     
-    The start of the period in both cases is before the first available historical price. Both starting dates are well before the earliest historical price (December 10, 2021: the split-off introduction date). Since it is impossible to calculate the performance of the Daimler share before this date, PP assumes the initial performance to match the portfolio’s performance, making the (later) comparison easy. For the 3-year period, this is 3.53%, and for the 5-year period, it is 25.73%.
+    The start of the period in both cases is before the first available historical price. Both starting dates are well before the earliest historical price (December 10, 2021: the split-off introduction date). Since it is impossible to calculate the performance of the Daimler share before this date, Portfolio Performance assumes the initial performance to match the portfolio’s performance, making the (later) comparison easy. For the 3-year period, this is 3.53%, and for the 5-year period, it is 25.73%.
 
-    When historical prices *are available* from the start of the reporting period, PP assumes an initial performance of 0% for both the entire portfolio and the security. From that point, performance is calculated using the available historical prices.
+    When historical prices *are available* from the start of the reporting period, Portfolio Performance assumes an initial performance of 0% for both the entire portfolio and the security. From that point, performance is calculated using the available historical prices.
    
     Figure: Benchmark of Daimler Truck Holding AG with reporting period of 5 years. {class=pp-figure}
 

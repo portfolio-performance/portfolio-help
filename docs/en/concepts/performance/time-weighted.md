@@ -28,7 +28,7 @@ In most financial management handbooks, calculating the time-weighted rate of re
     
     $$\mathrm{1 + r = \frac{MVE}{MVB + CF} \qquad \text{(Eq 1)}}$$
 
-    where MVE = the market value of the asset at the end of the holding period, MVB is the market value at the beginning of the holding period (which is the same value as the MVE of the previous holding period). CF is the incoming cash flow (positive number), or the outgoing cash flow (negative number) in that period. Eq 1 assumes that cash flows occur at the start of the period. As you will see later, PP treats incoming cash flows (*CFin*) as occurring at the start of the day, while outgoing cash flows (*CFout*) are considered to occur at the end of the trading day.
+    where MVE = the market value of the asset at the end of the holding period, MVB is the market value at the beginning of the holding period (which is the same value as the MVE of the previous holding period). CF is the incoming cash flow (positive number), or the outgoing cash flow (negative number) in that period. Eq 1 assumes that cash flows occur at the start of the period. As you will see later, Portfolio Performance treats incoming cash flows (*CFin*) as occurring at the start of the day, while outgoing cash flows (*CFout*) are considered to occur at the end of the trading day.
 
 3. **Compound** the sub-period returns into the overall performance for the reporting period using Equation 2:
 
@@ -40,9 +40,9 @@ In most financial management handbooks, calculating the time-weighted rate of re
 
 For optimal accuracy, the method described above requires an asset valuation just before each cash flow. However, in some cases, this isn’t feasible, and valuations are only available monthly or quarterly. These valuations may or may not coincide with the cash flows. In such cases, the result is only an approximation of the *true* performance. However, when a valuation is available just before each cash flow, a **True** Time-Weighted Rate Of Return (TTWROR) could be calculated. The term is coined to differentiate this method from the approximations mentioned above.
 
-In the past, when computing power was expensive, it made sense to create longer holding periods to ease the computational burden, particularly for the required valuations at each cash flow. Today, this is no longer the case, and software like PP can calculate the market value of investments practically in real time. As such PP calculates the market value of the different components on a *daily* basis, regardless of whether there is a cash flow. Therefore, the holding periods all have equal durations of one day.
+In the past, when computing power was expensive, it made sense to create longer holding periods to ease the computational burden, particularly for the required valuations at each cash flow. Today, this is no longer the case, and software like Portfolio Performance can calculate the market value of investments practically in real time. As such Portfolio Performance calculates the market value of the different components on a *daily* basis, regardless of whether there is a cash flow. Therefore, the holding periods all have equal durations of one day.
 
-With daily valuations, it makes sense to assume that cash *inflows* occur at the very start of the day. The money is immediately available to invest during the day. PP also assumes that cash *outflows* occur at the very end of the day, just before the daily valuation. Thus, it makes sense to reflect this in Equation 1: inflows are added to the MVB as in Eq 1, and outflows are added to the MVE. A cash outflow such as a sell transaction will result in a smaller MVE (money has left the portfolio); so, adding it to MVE will neutralize the effect of this cash flow on the daily performance.
+With daily valuations, it makes sense to assume that cash *inflows* occur at the very start of the day. The money is immediately available to invest during the day. Portfolio Performance also assumes that cash *outflows* occur at the very end of the day, just before the daily valuation. Thus, it makes sense to reflect this in Equation 1: inflows are added to the MVB as in Eq 1, and outflows are added to the MVE. A cash outflow such as a sell transaction will result in a smaller MVE (money has left the portfolio); so, adding it to MVE will neutralize the effect of this cash flow on the daily performance.
 
  $$\mathrm{1 + r = \frac{MVE + CFout}{MVB + CFin} \qquad \text{(Eq 3)}}$$
 
@@ -95,7 +95,7 @@ The previous section describes the performance of the whole portfolio, including
 2. Conversely, transactions such as dividends and sales influence the performance calculation. Since the proceeds from a sale or dividend are deposited into a cash account, money exits the system from the perspective of the security and is thus factored into the calculation.
 3. Special provisions are made for taxes. These are *not* included in the calculation; see [IRR for an explanation](./money-weighted.md#irr-at-security-level).
 
-In PP you can retrieve the IRR and TTWROR of a security through the menu `View > Reports > Performance > Securities` (see Figure 4). However, these values are not displayed by default and should be made available with the :gear: `Show or Hide columns` icon (top right).
+In Portfolio Performance you can retrieve the IRR and TTWROR of a security through the menu `View > Reports > Performance > Securities` (see Figure 4). However, these values are not displayed by default and should be made available with the :gear: `Show or Hide columns` icon (top right).
 
 Figure: Periodic and annual TTWROR for securities (2 years period). {class=pp-figure}
 
@@ -117,7 +117,7 @@ Figure: Manual calculation of (cumulative) performance of share-1.{class=pp-figu
 
 The return rate of HP1 is straight-forward. `r = [(160.26)/(177.94 + 0)] - 1 = -9.94%`. HP2 contains a cash inflow (buy): `r = [(287.49)/(160.26 + 83)] - 1 = 6.43%`.
 
-HP3 and HP4 are special cases as they contain cash outflows. The return rate for HP3 is `r = [(339)/(287.49 - 30)] - 1 = 31.66%` and for HP4 `r = [(190.06)/(339 - 107)] - 1 = -18.08%`. The total TTWROR for the entire reporting period is 14,80%; which is slightly less than the reported TTWROR from PP in Figure 4 (14,98%). This small difference is caused by the fact that in Eq 1assumes that all transactions are carried out at the beginning of the trading date, while Eq 3 assumes that cash outflows occur at the end of the trading day. Because the market value of a share can fluctuate during the day, these fluctuations can cause small differences between eq 1 and 3. 
+HP3 and HP4 are special cases as they contain cash outflows. The return rate for HP3 is `r = [(339)/(287.49 - 30)] - 1 = 31.66%` and for HP4 `r = [(190.06)/(339 - 107)] - 1 = -18.08%`. The total TTWROR for the entire reporting period is 14,80%; which is slightly less than the reported TTWROR from Portfolio Performance in Figure 4 (14,98%). This small difference is caused by the fact that in Eq 1assumes that all transactions are carried out at the beginning of the trading date, while Eq 3 assumes that cash outflows occur at the end of the trading day. Because the market value of a share can fluctuate during the day, these fluctuations can cause small differences between eq 1 and 3. 
 
 ## TTWROR p.a.
 

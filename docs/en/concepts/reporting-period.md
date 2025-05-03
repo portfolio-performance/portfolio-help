@@ -1,7 +1,7 @@
 ---
 title: Reporting period
 ---
-The reporting period refers to the specific timeframe used when reporting on the performance of your portfolio. For instance, the performance indicators depicted in Figure 1 are computed over a one-year period, starting from the current date. Other reports and charts, such as those concerning return/volatility and securities performance, also consider this reporting period. It's essential to understand that *every* performance calculation is based on a reporting period, even if one hasn't been explicitly defined. By default, it is set in PP to one year from the current date.
+The reporting period refers to the specific timeframe used when reporting on the performance of your portfolio. For instance, the performance indicators depicted in Figure 1 are computed over a one-year period, starting from the current date. Other reports and charts, such as those concerning return/volatility and securities performance, also consider this reporting period. It's essential to understand that *every* performance calculation is based on a reporting period, even if one hasn't been explicitly defined. By default, it is set in Portfolio Performance to one year from the current date.
 
 Figure: Drop-down list for selecting the reporting period. {class= pp-figure}
 
@@ -32,7 +32,7 @@ Figure: Possible custom periods for reporting (the current day is July 4, 2024).
 ![](images/reporting-period-new.png)
 
 - `Last xxx years yyyy months`: From the current day minus the number of years and months. The standard periods of `1`` year`, `2 years`, `3 years` could be recreated with this option. With this syntax, however, you could create a custom period, such as a `1.5 years` period.
-- `Last xxx days`:  A day refers to a calendar day. Note that in Figure 3, the last xxx days are already pre-populated. PP recognizes that the current year 2024 is a leap year with February 29 and therefore automatically sets the number of days to 366.
+- `Last xxx days`:  A day refers to a calendar day. Note that in Figure 3, the last xxx days are already pre-populated. Portfolio Performance recognizes that the current year 2024 is a leap year with February 29 and therefore automatically sets the number of days to 366.
 - `Last xxx trading days`: A trading day refers to a regular business day on which financial markets are open for trading. Weekends and days from the [selected calendar](../reference/help/preferences.md#calendar) are excluded. The calendar to be utilized can be specified in the `Help > Preferences > Calendar` menu. Are there 256 trading days in 2024? In Figure 3, the `Default` calendar was selected, which includes seven holidays: New Year, Easter Monday, Christmas Eve, and four others. In the selected period, there are 262 non-weekend days. Out of the seven holidays, six (excluding Christmas Eve 2023) fall on a weekday. Therefore, there are a total of 256 trading days in the year.
 - `From xxx (excl.) until yyy`: A period between two dates, whereby the first day is not included (starts at the end of that day).
 - `Since xxx (excl)`: from the given date (excluded) until today (included).

@@ -6,9 +6,9 @@ title: How to use the CSV Import functions for GBX priced securities?
 The following *how-to* is based on a discussion *[Getting started: Cash vs Deposit/Reference accounts](https://forum.portfolio-performance.info/t/getting-started-cash-vs-deposit-reference-accounts/27365/20)* in the English language forum.
 
 ## Introduction
-Portfolio Performance (PP from now on) supports importing of different currencies when importing transactions and movements on cash/deposit accounts. Before reading this guide, you should refer to the main guide on importing which covers things which we will not duplicate here.
+Portfolio Performance (Portfolio Performance from now on) supports importing of different currencies when importing transactions and movements on cash/deposit accounts. Before reading this guide, you should refer to the main guide on importing which covers things which we will not duplicate here.
 
-This guide is mainly about the peculiar situations which can arise from the UK market habit of pricing some securities (in particular funds) in pence (GBX in PP language) rather than pounds (GBP). This causes complications because our accounts (Securities accounts where we hold the actual securities and Cash accounts used to show money deposited for purchases and obtained from sales of securities) will be in GBP. GBP and GBX are different currencies in the eyes of PP (and many other portfolio tools). So there is actually a conversion which is treated as a currency exchange by PP that needs to happen -- it's a special case.
+This guide is mainly about the peculiar situations which can arise from the UK market habit of pricing some securities (in particular funds) in pence (GBX in Portfolio Performance language) rather than pounds (GBP). This causes complications because our accounts (Securities accounts where we hold the actual securities and Cash accounts used to show money deposited for purchases and obtained from sales of securities) will be in GBP. GBP and GBX are different currencies in the eyes of Portfolio Performance (and many other portfolio tools). So there is actually a conversion which is treated as a currency exchange by Portfolio Performance that needs to happen -- it's a special case.
 
 The importer does a lot well, but has limitations and is at times more helpful or less helpful when it comes to error messages. The process needed to make this work is not always intuitive. It is also possible to successfully import and then find later that the transactions are not actually correct.
 
@@ -16,7 +16,7 @@ The main guide on importing now helps a great deal. It is possible to figure out
 
 ## The Basics
 
-If you have a securities account (and probably an associated cash/deposit account) in pounds (GBP), and you need to import anything which was handled in pence, *you are doing a currency conversion during the import.* The exchange rate is always the same (i.e. 1 GBP = 100 GBX), but it is still a conversion which PP will not handle automatically unless you tell it the currency and exchange rate.
+If you have a securities account (and probably an associated cash/deposit account) in pounds (GBP), and you need to import anything which was handled in pence, *you are doing a currency conversion during the import.* The exchange rate is always the same (i.e. 1 GBP = 100 GBX), but it is still a conversion which Portfolio Performance will not handle automatically unless you tell it the currency and exchange rate.
 
 This is NOT a guide about importing GBP and GBX transactions into accounts operated in another currency (e.g. Euros or USD). Some of this information may still be useful in such cases, but it has been written, checked and tested to cover a specific scenario.
 
@@ -35,7 +35,7 @@ For now, we will cover the import assuming the use of spreadsheets in the right 
 
 It is better to create your Securities FIRST in PP.
 
-If you import transactions where a security does not yet exist, PP will create the security. But it will create it with a currency of GBP if the Securities account is in GBP.
+If you import transactions where a security does not yet exist, Portfolio Performance will create the security. But it will create it with a currency of GBP if the Securities account is in GBP.
 
 You cannot change the currency of a security once you have imported transactions against it and it also creates other extra work. So this is best avoided.
 
@@ -77,11 +77,11 @@ Figure: Example Yahoo! Finance portfolio view. {class=pp-figure}
 
 Unfortunately the YF export function does **not** respect the view you created. Instead, select the data from your browser and then copy and paste into a spreadsheet. When pasting, select to paste as text only.
 
-If using this route it will be necessary to change YF's symbol for pence (GBp) to PP's symbol (GBX). But a simple (but remember case-sensitive) Find/Replace can do that. In the example below, the column names have been changed to match what is required by PP and GBp has been replaced by GBX.
+If using this route it will be necessary to change YF's symbol for pence (GBp) to PP's symbol (GBX). But a simple (but remember case-sensitive) Find/Replace can do that. In the example below, the column names have been changed to match what is required by Portfolio Performance and GBp has been replaced by GBX.
 
-It is worth reiterating a point made in the main Import guide. The currency column should be named "Transaction Currency". This is despite PP calling it "Currency" in the Import wizard. If you label the column "Currency" it will not be automatically selected for import (you will see that the column is not green in the Import Wizard). It is simple to select the column heading in the Import Wizard however if needed.
+It is worth reiterating a point made in the main Import guide. The currency column should be named "Transaction Currency". This is despite Portfolio Performance calling it "Currency" in the Import wizard. If you label the column "Currency" it will not be automatically selected for import (you will see that the column is not green in the Import Wizard). It is simple to select the column heading in the Import Wizard however if needed.
 
-The name "Transaction Currency" may confuse. When you actually buy and sell, your broker platform will probably do everything in GBP not GBX, so it may seem odd that the Transaction Currency is being defined here in GBX. What is really meant is the denomination of the security for pricing/quotes. PP needs to understand what currency the price/quote it receives from a provider is in.
+The name "Transaction Currency" may confuse. When you actually buy and sell, your broker platform will probably do everything in GBP not GBX, so it may seem odd that the Transaction Currency is being defined here in GBX. What is really meant is the denomination of the security for pricing/quotes. Portfolio Performance needs to understand what currency the price/quote it receives from a provider is in.
 
 Figure: Example Securities CSV import created from a copy/paste from Yahoo! Finance. {class=pp-figure}
 
@@ -92,9 +92,9 @@ Figure: Example Securities CSV import created from a copy/paste from Yahoo! Fina
 
 Follow the main guide to importing Securities.
 
-Make sure that all the columns of your data are highlighted green in PP when you start the Import Wizard. Various issues (such as invisible characters present in the column name of the CSV) can mean that PP will not automatically detect the right column name mapping. If this happens, double click where it says "Double click here" and select the correct field name from the dropdown.
+Make sure that all the columns of your data are highlighted green in Portfolio Performance when you start the Import Wizard. Various issues (such as invisible characters present in the column name of the CSV) can mean that Portfolio Performance will not automatically detect the right column name mapping. If this happens, double click where it says "Double click here" and select the correct field name from the dropdown.
 
-As discussed in the main guide, although PP will search for providers of historical quotes (prices) it probably will not find many and will not select YF as the source.
+As discussed in the main guide, although Portfolio Performance will search for providers of historical quotes (prices) it probably will not find many and will not select YF as the source.
 
 You can select historical pricing providers later manually after importing the securities. You may wish to delay this step until after you have checked and imported some transaction data so that you know you are happy that your Securities have been created correctly.
 
@@ -118,7 +118,7 @@ In these examples, the transaction currency is GBP. So the Value, Fees and Taxes
 
 The objective here is to ensure that your CSV of portfolio transactions is consistent and has the correct currency units and exchange rates before importing.
 
-It is necessary because data exported from broker platforms is very unlikely to be exactly right for PP import and additional data will be needed.
+It is necessary because data exported from broker platforms is very unlikely to be exactly right for Portfolio Performance import and additional data will be needed.
 
 Figure: Example Portfolio Transactions import data. {class=pp-figure}
 
@@ -126,7 +126,7 @@ Figure: Example Portfolio Transactions import data. {class=pp-figure}
 
 In the example above we have the following columns:
 
-Date -- the transaction date. Here we have formatted in the PP default date and time format. It can also be just in YYYY-MM-DD format. This can be changed by using a "Custom" number format if using Excel and entering YYYY-MM-DD as the format. The date can be in other formats, but then you will need to choose the right format in the import wizard which is slower and is easy to forget leading to incorrect dates being imported. Essential.
+Date -- the transaction date. Here we have formatted in the Portfolio Performance default date and time format. It can also be just in YYYY-MM-DD format. This can be changed by using a "Custom" number format if using Excel and entering YYYY-MM-DD as the format. The date can be in other formats, but then you will need to choose the right format in the import wizard which is slower and is easy to forget leading to incorrect dates being imported. Essential.
 
 Securities Account -- this helps avoid errors from overlooking the selection of the correct Securities Account in the Import Wizard. It is essential if you want to import transactions into more than one account in the same import, otherwise it is optional.
 
@@ -150,23 +150,23 @@ Ticker Symbol -- the unique ticker symbol used to identify the security. In this
 
 Follow the main guide to importing portfolio transactions.
 
-When you click "Next" after the first wizard screen, PP will show you which transactions have loaded (green tick) and which may have failed (white cross in a red circle and struck through) in the "Status" column as shown below (Status is abbreviated to S. because of the column width).
+When you click "Next" after the first wizard screen, Portfolio Performance will show you which transactions have loaded (green tick) and which may have failed (white cross in a red circle and struck through) in the "Status" column as shown below (Status is abbreviated to S. because of the column width).
 
 Figure: Import showing two incorrect transactions and a transaction where no security exists. {class=pp-figure}
 
 ![](./images/image3.png)
 
-In the above example, two transactions are marked as errors. The security (iShares Global Inflation Linked Govt...) is actually priced in GBP, but I changed the currency of the security in PP to GBX before this import to illustrate the error.
+In the above example, two transactions are marked as errors. The security (iShares Global Inflation Linked Govt...) is actually priced in GBP, but I changed the currency of the security in Portfolio Performance to GBX before this import to illustrate the error.
 
-Because the import CSV (see earlier) does not have an exchange rate for transactions on this security, PP does not know how to convert from the transaction currency (GBP) to the security currency (GBX).
+Because the import CSV (see earlier) does not have an exchange rate for transactions on this security, Portfolio Performance does not know how to convert from the transaction currency (GBP) to the security currency (GBX).
 
-Also note the last line of this import screen showing a Type of transaction "Security". This is there because I did not create this security in PP before importing transactions for it (you will notice it was missing from the Securities import example earlier). PP is smart enough to create the security when you first import a transaction. If it is a GBP security this is helpful and a timesaver.
+Also note the last line of this import screen showing a Type of transaction "Security". This is there because I did not create this security in Portfolio Performance before importing transactions for it (you will notice it was missing from the Securities import example earlier). Portfolio Performance is smart enough to create the security when you first import a transaction. If it is a GBP security this is helpful and a timesaver.
 
-BUT, if the security is a GBX priced security, this will cause a problem because PP will create the security with GBP as the currency (it defaults to the currency of the Securities account). You should therefore cancel the import and fix the problem by creating the security before re-attempting the import.
+BUT, if the security is a GBX priced security, this will cause a problem because Portfolio Performance will create the security with GBP as the currency (it defaults to the currency of the Securities account). You should therefore cancel the import and fix the problem by creating the security before re-attempting the import.
 
 If you do not do this, then you will need to delete any transactions for the problem security, delete the security, recreate the security with a currency of GBX and then import again.
 
-You ***can*** use the same transactions CSV import file because PP will ignore any transactions already loaded from that file showing these as errors.
+You ***can*** use the same transactions CSV import file because Portfolio Performance will ignore any transactions already loaded from that file showing these as errors.
 
 Alternatively, delete all transactions and reload everything again. It is not slower and perhaps safer to know you started from a blank slate. That way, any errors shown will be real errors and you avoid the risk of missing real errors because you are expecting some errors for duplicate transactions.
 

@@ -5,7 +5,7 @@ TODO: difference between windows installer & zip + adding how to install on macO
 TODO: explain third box in figure 3, the meaning of asc extension, and question windows 32 bits or 64 bits
 ---
 
-PP is available for MacOS, Windows and Linux. You need to download it and do some installation steps. The easiest way to download and install the latest version of PP is by using one of the installer files at the [homepage](https://www.portfolio-performance.info/) (see fig 1). A link to the release notes of this latest version is also provided. 
+Portfolio Performance is available for MacOS, Windows and Linux. You need to download it and do some installation steps. The easiest way to download and install the latest version of Portfolio Performance is by using one of the installer files at the [homepage](https://www.portfolio-performance.info/) (see fig 1). A link to the release notes of this latest version is also provided. 
 
 ![Homepage with download links for various packages (2023-09-03)](images/installation-download.png){.pp-figure}
 
@@ -38,7 +38,7 @@ Figure: MacOS installation window. {class=pp-figure}
 
 The preferred option is to install Portfolio Performance on Linux is using from [Flathub](https://flathub.org/apps/info.portfolio_performance.PortfolioPerformance).
 
-Alternatively, you can install PP manually:
+Alternatively, you can install Portfolio Performance manually:
 
 * Portfolio Performance currently (March 2023) requires Java 17. If not already available (example for Debian-related systems, such as Ubuntu):
 ```
