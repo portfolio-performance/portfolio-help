@@ -1,5 +1,22 @@
 ---
 title: Currencies
+lastUpdate: 2025-05-03
+description: Viewing historical exchange rates and using the currency converter in Portfolio Performance.
+authors:
+    - name: Portfolio Performance Team
+    - name: Nirus2000
+version: 1.0
+slug: currencies
+tags:
+    - Portfolio Management
+    - Investment Analysis
+    - Glossary
+    - Portfolio Performance
+changes:
+    - date: 2025-05-03
+      author: Nirus2000
+      description:
+        - Adding YAML Source
 ---
 Historical exchange rates and a Currency Converter can be found under the menu `View > General Data > Currencies`. More than 5O currency combinations such as EUR/USD (see Figure 1) are provided. These exchange rates are retrieved from [The European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) (ECB) and go back until the year 1999 when the EUR was introduced on the financial markets. They are in fact reference rates and will probably differ slightly from the real transaction rates that your broker or bank will use. Only a chart can be displayed; no numerical data. The context menu of the chart is described [elsewhere](../../view/securities/all-securities.md#chart-menu).
 
