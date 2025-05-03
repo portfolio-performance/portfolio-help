@@ -23,6 +23,8 @@ changes:
 
 ## What is Portfolio Performance?
 
+Since the beginning of 2012, [Portfolio Performance](https://portfolio-performance.info) has been available to calculate the performance of an overall portfolio – across various depots and accounts – based on the True-Time Weighted Rate of Return and the internal rate of return.
+
 *Portfolio Performance* is a simple and powerful tool for managing your securities portfolio. With *Portfolio Performance*, you can:
 
 - track the composition and development of your securities portfolio with meaningful overviews, key figures, and charts.
@@ -31,10 +33,6 @@ changes:
 - define and track your portfolio strategy with your planned asset allocation and ensure rebalancing.
 - create a comprehensive view across multiple depots and clearing accounts.
 - quickly and conveniently import statements from online banks and brokers.
-
-# About This Handbook
-
-Since the beginning of 2012, [Portfolio Performance](https://portfolio-performance.info) has been available to calculate the performance of an overall portfolio – across various depots and accounts – based on the True-Time Weighted Rate of Return and the internal rate of return.
 
 *Portfolio Performance* (PP) itself tries to remain as simple and intuitive as possible. However, explanations are sometimes necessary – as shown by the many similar questions in the [forum](https://forum.portfolio-performance.info). This "handbook" is intended to guide you through the first steps with *Portfolio Performance*, explain basic concepts, and document the features that require explanation.
 
