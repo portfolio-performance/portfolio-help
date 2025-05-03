@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Manual of Portfolio Performance">
+        <meta name="description" content="Guide to installing Portfolio Performance on Windows, macOS, and Linux – including installation files, package managers, and Flatpak.">
       
       
         <meta name="author" content="Andreas Buchen, et. al.">
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#windows" class="md-skip">
+        <a href="#version-number-in-file-names" class="md-skip">
           Skip to content
         </a>
       
@@ -3448,42 +3448,95 @@
   
 
 
-<p>Portfolio Performance is available for MacOS, Windows and Linux. You need to download it and do some installation steps. The easiest way to download and install the latest version of Portfolio Performance is by using one of the installer files at the <a href="https://www.portfolio-performance.info/">homepage</a> (see fig 1). A link to the release notes of this latest version is also provided. </p>
-<p><figure id="_figure-1"><figcaption>Figure 1.  Homepage with download links for various packages (2023-09-03)</figcaption><img alt="Homepage with download links for various packages (2023-09-03)" class="pp-figure" src="../images/installation-download.png"></figure></p>
+<p>Portfolio Performance is available for macOS, Windows, and Linux. You can download the application in various ways as described below. The easiest way to get the latest version is usually via the installation files linked on the <a href="https://www.portfolio-performance.info/">homepage</a>. There you will also find a link to the release notes.</p>
+<h1 id="version-number-in-file-names">Version Number in File Names</h1>
+<p>In the file names of the installers and ZIP files, you will typically find a version number in the format <code>X.X.X</code>. The first number (<code>X</code>) represents the major version; larger changes or new core features may lead to an increase here. The second number (<code>XX</code>) denotes a minor version, which usually includes new features or improvements. The third number (<code>X</code>) indicates a patch version, which mostly contains bug fixes and minor improvements.</p>
 <h1 id="windows">Windows</h1>
-<p>You can download the compressed <em>Zip-file</em> and extract it in a directory at your choice. Even a portable USB-stick (about 250 MB free space) is fine (run from stick).</p>
-<p>You can also download the Windows - Installer (setup.exe). On Windows 11, you get a security warning about the dangers of running an exe-file. After that, double clicking on this file, will start the installation. You can change the destination folder. By default, the c:\user directory is taken. You need about 200 MB of free space (see figure 2).</p>
-<p><figure id="_figure-2"><figcaption>Figure 2.  Windows Installer dialog box.</figcaption><img alt="Windows Installer dialog box." class="pp-figure" src="../images/installation-win-installer-path.png"></figure></p>
-<ul>
-<li>Windows: you can download the compressed Zip-file and extract it in a directory at your choice. Even an USB-stick (about 250 MB free space) is fine (run from stick). You can also download the installer file (setup.exe). On Windows 11, you get a security warning about the dangers to run a exe-file. Double clicking on this file, will start the installation. You need about 200 MB of free space.</li>
+<p>There are two main ways to install Portfolio Performance on Windows: via the installer or a ZIP file.</p>
+<p><strong>Windows Installer (setup.exe):</strong></p>
+<ol>
+<li>Download the Windows Installer (e.g., <code>PortfolioPerformance-X.X.X-setup.exe</code>) from the <a href="https://www.portfolio-performance.info/">homepage</a>.</li>
+<li>On Windows 11, you may see a security warning about running an executable file. Click "More info" and then "Run anyway" to proceed.</li>
+<li>Double-click the downloaded <code>.exe</code> file to start the installation process.</li>
+<li>You can change the destination folder during installation. By default, it installs in the user directory (e.g., <code>C:\Users\&lt;YourUsername&gt;\Portfolio Performance</code>).</li>
+<li>The installation requires approximately 200 MB of free disk space.</li>
+</ol>
+<p><strong>ZIP File:</strong></p>
+<ol>
+<li>Download the compressed ZIP file from the <a href="https://www.portfolio-performance.info/">homepage</a>.</li>
+<li>Choose a directory on your computer or even a portable USB drive (with at least 250 MB of free space) to extract the contents of the ZIP file.</li>
+<li>After extraction, you can run Portfolio Performance by double-clicking the executable file in the extracted folder. This method allows you to run Portfolio Performance without a traditional installation, making it portable.</li>
+</ol>
+<p><strong>Regarding 32-bit vs. 64-bit Windows:</strong> The Portfolio Performance installers and ZIP files available on the homepage are generally designed to work on both 64-bit versions of Windows. <strong>Please note that support and maintenance for 32-bit versions of Windows has been discontinued.</strong> The application itself is based on Java, which handles the underlying system architecture. If you encounter any issues, ensure that you have a compatible Java version installed (usually the latest recommended version).</p>
+<h1 id="macos">macOS</h1>
+<p>You can install Portfolio Performance on macOS either manually via a DMG file or using package managers like Brew or MacPorts.</p>
+<p><strong>Manual Installation (DMG File):</strong></p>
+<ol>
+<li>Visit the <a href="https://www.portfolio-performance.info/">homepage</a> and download the appropriate macOS package for your Mac:<ul>
+<li><strong>macOS - Intel:</strong> For Macs with Intel processors.</li>
+<li><strong>macOS - Silicon (aarch64):</strong> For Macs with Apple Silicon processors (M1, M2, etc.).</li>
 </ul>
-<h1 id="macos">MacOS</h1>
+</li>
+<li>The downloaded file is a DMG (Disk Image) file, typically named like <code>PortfolioPerformance-0.XX.X-aarch64.dmg</code> (for Apple Silicon) or <code>PortfolioPerformance-0.XX.X-x86_64.dmg</code> (for Intel). A DMG file is a standard macOS format for distributing software.</li>
+<li>Double-click the DMG file to mount it. A virtual drive containing the Portfolio Performance application will appear in Finder.</li>
+<li>Drag the <strong>PortfolioPerformance</strong> icon from the mounted drive to the <strong>Applications</strong> folder. This will copy the application to your system.</li>
+<li>After copying, you can eject the virtual drive by clicking the eject icon in the Finder sidebar or by right-clicking on it and selecting "Eject". You can also delete the downloaded DMG file to save disk space.</li>
+</ol>
+<p><strong>Installation with Package Managers:</strong></p>
+<p>If you have a package manager like Brew or MacPorts installed on your Mac, you can use it to easily install Portfolio Performance:</p>
 <ul>
-<li>You can install the application manually by downloading the MacOS - Intel or MacOS - Silicon package, depending on your mac computer type.</li>
-<li>The following file appears in your downloads folder: PortfolioPerformance-0.72.2-aarch64.dmg (MacOs - Silicon). A DMG (Disk Image) file is a specialized file format developed by Apple for distributing software and storing data on macOS.</li>
-<li>Double-click the DMG file to mount it. A virtual disk will appear in Finder (see Figure 3).</li>
-<li>Drag and drop the icon PortfolioPerformance on the Application icon.</li>
-<li>After installation, you can delete the DMG file.</li>
-</ul>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  MacOS installation window. </figcaption><img alt="" src="../images/installation-macos-dmg.png"></figure></p>
-<ul>
-<li>The easiest way to install Portfolio Performance is with a package installer such as Brew or MacPorts:</li>
-<li>Brew: <code>brew install --cask portfolioperformance</code></li>
-<li>MacPorts: <code>sudo port install portfolio-performance</code></li>
-</ul>
-<h1 id="linux">Linux</h1>
-<p>The preferred option is to install Portfolio Performance on Linux is using from <a href="https://flathub.org/apps/info.portfolio_performance.PortfolioPerformance">Flathub</a>.</p>
-<p>Alternatively, you can install Portfolio Performance manually:</p>
-<ul>
-<li>Portfolio Performance currently (March 2023) requires Java 17. If not already available (example for Debian-related systems, such as Ubuntu):
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt install openjdk-17-jre
+<li><strong>Brew:</strong> Open Terminal and run the command:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>brew<span class="w"> </span>install<span class="w"> </span>--cask<span class="w"> </span>portfolioperformance
 </code></pre></div></li>
-<li><a href="https://www.portfolio-performance.info">Download</a> and unpack the GZIP archive (either for x86_64 or aarch64) to a suitable location, e.g. /opt</li>
+<li><strong>MacPorts:</strong> Open Terminal and run the command:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>port<span class="w"> </span>install<span class="w"> </span>portfolio-performance
+</code></pre></div>
+    You may be asked for your administrator password.</li>
 </ul>
-<h1 id="github">Github</h1>
-<p>The installer files are in fact stored in the <a href="https://github.com/portfolio-performance/portfolio/releases">author's github repository</a>. So, you can also download the program from this repository. If you ever should need a previous version, this is also the place to be (click on the version number at the left side).</p>
-<p><figure id="_figure-4"><figcaption>Figure 4.  Github repository for downloading (previous) releases</figcaption><img alt="Github repository for downloading (previous) releases" class="pp-figure" src="../images/installation-download-github.svg"></figure></p>
-<p>You can edit and compile the source code; see <a href="https://github.com/portfolio-performance/portfolio/blob/master/CONTRIBUTING.md#project-setup">Contributing to Portfolio Performance</a>.</p>
+<p>These package managers handle the download and installation of Portfolio Performance, as well as any necessary dependencies.</p>
+<h1 id="linux">Linux</h1>
+<p>The recommended method for installing Portfolio Performance on Linux is via Flatpak from <a href="https://flathub.org/apps/info.portfolio_performance.PortfolioPerformance">Flathub</a>.</p>
+<p><strong>Installation via Flatpak (Recommended):</strong></p>
+<ol>
+<li>Ensure that Flatpak is installed on your Linux system. If not, you can find installation instructions for your distribution on the <a href="https://flatpak.org/setup/">Flatpak website</a>.</li>
+<li>Open a terminal and run the following command to install Portfolio Performance from Flathub:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>flatpak<span class="w"> </span>install<span class="w"> </span>flathub<span class="w"> </span>info.portfolio_performance.PortfolioPerformance
+</code></pre></div>
+    Follow the prompts to complete the installation.</li>
+</ol>
+<p><strong>Manual Installation:</strong></p>
+<ol>
+<li>Portfolio Performance requires (as of March 2024) Java 21. Check if it is already installed on your system. For Debian-based systems like Ubuntu, you can install it with the following command:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>openjdk-21-jre
+</code></pre></div>
+    For other distributions, use the appropriate package manager (e.g., <code>yum</code> for Fedora/CentOS, <code>pacman</code> for Arch Linux).</li>
+<li>Go to the <a href="https://www.portfolio-performance.info">Portfolio Performance Download page</a> and download the GZIP archive for your system architecture (either <code>x86_64</code> for 64-bit or <code>aarch64</code> for ARM64).</li>
+<li>Extract the downloaded GZIP archive to a suitable location, e.g., <code>/opt/portfolio-performance</code>. You can do this via the terminal:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>tar<span class="w"> </span>-xzf<span class="w"> </span>PortfolioPerformance-*.tar.gz<span class="w"> </span>-C<span class="w"> </span>/opt/
+</code></pre></div>
+    (Replace <code>PortfolioPerformance-*.tar.gz</code> with the actual file name).</li>
+<li>To run Portfolio Performance, navigate to the extracted directory in the terminal and execute the main application file (usually a shell script named <code>PortfolioPerformance</code> or similar). You might want to create a desktop shortcut for easier access.</li>
+</ol>
+<h1 id="github">GitHub</h1>
+<p>The installation files for Portfolio Performance are also available in the author's <a href="https://github.com/portfolio-performance/portfolio/releases">GitHub repository</a>. This can be useful if you need to download a specific older version of the application. Simply click on the desired version number on the left side to access the download links.</p>
+<p>If you are interested in contributing to the development of Portfolio Performance, you can find instructions on how to edit and compile the source code in the <a href="https://github.com/portfolio-performance/portfolio/blob/master/CONTRIBUTING.md#project-setup">Contributing rules</a>.</p>
+<h1 id="workspace-directory">Workspace Directory</h1>
+<p>The <em>Workspace</em> directory stores temporary information such as the current window size, the last opened files and directories, and other runtime information.</p>
+<p>The Workspace directory is located:</p>
+<ul>
+<li>on macOS: <strong>~/Library/Application Support/name.abuchen.portfolio.product/workspace</strong></li>
+<li>on Windows: <strong>%LOCALAPPDATA%\PortfolioPerformance\workspace</strong> where <code>%LOCALAPPDATA%</code> usually points to <strong>C:\Users\{Username}\AppData\Local</strong></li>
+<li>on Linux: <strong>~/.PortfolioPerformance/workspace</strong></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">macOS</p>
+<p>The "Library" directory is a hidden directory. The easiest way to open it in Finder is via the menu <em>Go</em> -&gt; <em>Go to Folder...</em> and enter <code>~/Library/</code> (without quotes).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Windows</p>
+<p>The "LOCALAPPDATA" directory is a hidden directory. The easiest way to open it is to press the [Windows] + [R] keys and enter <code>%localappdata%</code> (without quotes) in the "Run" window.</p>
+</div>
 
 
 
@@ -3504,7 +3557,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 2, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 3, 2025</span>
   </span>
 
     
