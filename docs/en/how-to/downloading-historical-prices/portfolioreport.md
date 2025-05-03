@@ -14,7 +14,7 @@ Figure: Portfolio Report website. {class=pp-figure}
 
 ![](images/portfolio-report-website.png)
 
-In the first box of the search form, you can enter the ISIN, WKN, Symbol, or the full name of the security. Please refer to [Basic concepts > PP-terminology](../../concepts/PP-terminology.md) for a definition of each term. Note that the use of wildcards, such as 'Amaz*', is not permitted for name searches. On the other hand, one word in the name suffices. For example, searching for `Group` will produce Cimic Group, NN Group, IBI Group, ... Searching for `col` will show Colruyt and Coca Cola Co.
+In the first box of the search form, you can enter the ISIN, WKN, Symbol, or the full name of the security. Please refer to [Basic concepts > Porfolio Performance terminology](../../concepts/portfolio-performance-terminology.md) for a definition of each term. Note that the use of wildcards, such as 'Amaz*', is not permitted for name searches. On the other hand, one word in the name suffices. For example, searching for `Group` will produce Cimic Group, NN Group, IBI Group, ... Searching for `col` will show Colruyt and Coca Cola Co.
 
 Specifying the security type (share, fund, crypto, or bond) is not necessary, as the default search setting (blank or *) includes all categories.
 

@@ -7,7 +7,7 @@ A dividend is the payment of a part of the company's profit to its shareholders.
 
 ## Example NN Group
 
-For example, the Dutch financial services company, [NN Group](https://www.nn-group.com/investors/share-information/dividend-policy-and-dividend-history.htm) provided its shareholders with the option to receive the interim dividend for 2023 of 1.12 EUR per share, either in cash or in shares. The [ex-dividend date](../concepts/PP-terminology.md) was set on August 31, 2023, with the dividend payment scheduled for September 25, 2023. The reference share price was determined at 36.2513 EUR by taking the average of five daily historical prices between 12 and 18 September 2023 on Euronext Amsterdam between 12 and 18 September 2023.
+For example, the Dutch financial services company, [NN Group](https://www.nn-group.com/investors/share-information/dividend-policy-and-dividend-history.htm) provided its shareholders with the option to receive the interim dividend for 2023 of 1.12 EUR per share, either in cash or in shares. The [ex-dividend date](../concepts/portfolio-performance-terminology.md) was set on August 31, 2023, with the dividend payment scheduled for September 25, 2023. The reference share price was determined at 36.2513 EUR by taking the average of five daily historical prices between 12 and 18 September 2023 on Euronext Amsterdam between 12 and 18 September 2023.
 
 With this reference price the distribution ratio was established at 1-for-32.37 shares. Indeed, to receive one share of 36.2513 EUR, you need 32.37 shares x 1.12 EUR dividend.
 

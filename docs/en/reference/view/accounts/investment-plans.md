@@ -51,7 +51,7 @@ Figure: Interest Plan. {class=pp-figure}
 
 ![](images/investment-plan-interest.png)
 
-The Interest Plan bears similarity to the Deposit Plan as it also generates a deposit in the specified Cash Account. Moreover, it allows for tax deductions. The transactions under this plan are classified as `Interest`, ensuring they are not included in cash flows when calculating performance. (see [System Overview section](../../../concepts/system-overview.md#transactions))
+The Interest Plan bears similarity to the Deposit Plan as it also generates a deposit in the specified Cash Account. Moreover, it allows for tax deductions. The transactions under this plan are classified as `Interest`, ensuring they are not included in cash flows when calculating performance. (see [System Overview section](../../../concepts/system-overview/index.md#transactions))
 
 
 ## Managing Investment plans

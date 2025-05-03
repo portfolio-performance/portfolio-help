@@ -18,24 +18,24 @@ To track, evaluate, and manage your securities, Portfolio Performance needs the 
 ## [Installation](installation.md)
 You can either use one of the pre-compiled installation files or compile the complete application yourself. Portfolio Performance is available for macOS, Windows, and Linux.
 
-## [Creating a Portfolio File](intro-neue-portfoliodatei-anlegen.md)
+## [Creating a Portfolio File](create-portfolio.md)
 Your first step is, of course, to create a new portfolio file with your accounts. The portfolio file contains all securities, accounts, depots, transactions, classifications, etc.
 
-## [Creating a Security](intro-wertpapiere-anlegen.md)
+## [Creating a Security](adding-securities.md)
 You create the securities you are interested in in the security list. Master data and historical prices are automatically added and updated by Portfolio Performance.
 
 ## [Managing Your Portfolio](manage-portfolio/index.md)
 So far, you have created your portfolio file with a list of favorite securities. Now it's time to buy and sell some of these securities, receive dividends, and set up a savings plan.
 
-## [Evaluating Your Portfolio](performance-messen.md)
+## [Evaluating Your Portfolio](measure-performance.md)
 Performance and risk assessment are important, so Portfolio Performance offers several ways to evaluate and track them.
 
-## Classifying Asset Allocations
+## [Classifying Asset Allocations](classify-assets.md)
 With your own structure, you map the weighting of asset allocations, e.g., by region and/or asset class.
 
-## Defining a Portfolio Strategy and Performing Rebalancing
+## [Defining a Portfolio Strategy and Performing Rebalancing](rebalancing.md)
 You map your own portfolio strategy with target values for different asset classes.
 You can make a target-actual comparison and perform rebalancing.
 
-## Keeping the Portfolio Up to Date
+## [Keeping the Portfolio Up to Date](updating-portfolio.md)
 You book new purchases, sales, and dividends, as well as all incurred costs and taxes. This is quick and easy by importing the bank's PDF statements or by manually maintaining the data.
