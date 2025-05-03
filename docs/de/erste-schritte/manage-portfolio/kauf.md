@@ -22,7 +22,7 @@ Abbildung: Kauf eines Wertpapiers in Euro über ein Euro Konto.{class=pp-figure 
 
 - **Depot**: Wähle aus dem Dropdown-Menü, oder lasse es vorausgefüllt, wenn Du von einem Depot aus Deine Transaktion pflegen möchtest.
 
-- **Konto**: Wähle aus dem Dropdown-Menü oder lass das Feld mit dem [Konto](../../referenzhandbuch/ansichten/stammdaten/konten.md) des Wertpapiers vorausgefüllt. Wenn die Währung des gewählten Referenzkontos von der Währung des Wertpapiers abweicht, musst Du den Bruttobetrag samt Gebühren und Steuern umrechnen, wofür ein Wechselkurs erforderlich ist. Siehe Beispiel [Verkauf von Wertpapieren](verkauf.md).
+- **Konto**: Wähle aus dem Dropdown-Menü oder lass das Feld mit dem Konto des Wertpapiers vorausgefüllt. Wenn die Währung des gewählten Referenzkontos von der Währung des Wertpapiers abweicht, musst Du den Bruttobetrag samt Gebühren und Steuern umrechnen, wofür ein Wechselkurs erforderlich ist. Siehe Beispiel [Verkauf von Wertpapieren](verkauf.md).
 
 - **Datum der Transaktion**: Du kannst das Datum aus dem Kalender auswählen oder es manuell eingeben (Format = JJJJ-MM-TT). Auf der rechten Seite (00:00) kannst Du die Transaktionszeit eingeben. Die Wahl zwischen 12- oder 24-Stunden-Format wird durch die Menüeinstellung `Hilfe > Einstellungen > Sprache > Land` bestimmt. Das Vereinigte Königreich verwendet beispielsweise das 12-Stunden-Format (mit AM und PM), während Belgien ein 24-Stunden-Format verwendet.
 
@@ -52,7 +52,7 @@ Abbildung: Ablauf zwischen Stücke und Belastung.{class=pp-figure style="width: 
 - Eine nachträgliche Änderung des *Kaufpreises* führt zu einer Änderung der Belastung und des Kurses. Gebühren, Steuern und die Anzahl der Aktien bleiben davon unberührt.
 
 ## Transaktion mit 2 Währungen
-Wenn Du Aktien in einer Fremdwährung kaufen willst, gibt es zwei Möglichkeiten. Entweder Du hast den erforderlichen Betrag in der Fremdwährung auf einem Depotkonto. Oder Du musst zuerst eine [Einzahlung](einzahlung.md) in Heimatwährung buchen, gefolgt von einer [Umbuchung](einzahlung.md#umbuchung-zwischen-unterschiedlichen-währungen) in Fremdwährung. 
+Wenn Du Aktien in einer Fremdwährung kaufen willst, gibt es zwei Möglichkeiten. Entweder Du hast den erforderlichen Betrag in der Fremdwährung auf einem Depotkonto. Oder Du musst zuerst eine [Einzahlung](einzahlung.md) in Heimatwährung buchen, gefolgt von einer Umbuchung in Fremdwährung. 
 
 Abbildung 4 zeigt die Abrechnung der Bank über den Kauf von Wertpapieren in US-Dollar. Da Steuern und Gebühren in EUR abgerechnet werden müssen (da es sich um eine europäische Bank handelt) und die Basiswährung des Portfolios für die Vermögensaufstellung ebenfalls EUR ist, wird der Gesamtbetrag in USD ebenfalls in EUR umgerechnet.
 

@@ -3,37 +3,66 @@ name: CI
 on:
   push:
     branches:
-    - master
+      - master
+  pull_request:
+    branches:
+      - master
+    types: [opened, synchronize, reopened]
 
 jobs:
-  build-deploy:
+  build-and-deploy-documentation:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v3
+    # Step 1: Checkout the code
+    - uses: actions/checkout@v4
       with:
         fetch-depth: 0
+
+    # Step 2: Set up Python
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: 3.11
-    - name: Caching dependencies
+
+    # Step 3: Cache Python dependencies
+    - name: Cache Python dependencies
       uses: actions/cache@v3
       with:
-        key: ${{ github.ref }}
+        key: ${{ runner.os }}-python-${{ hashFiles('requirements.txt') }}
         path: .cache
-    - name: Install dependencies
+
+    # Step 4: Install Python dependencies
+    - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: Build English
+        pip install requests
+
+    # Step 5: Validate internal links in Markdown
+    - name: Validate internal links in Markdown
+      run: python .github/scripts/validate_internal_links.py
+
+    # Step 6: Validate image links in Markdown
+    - name: Validate image links in Markdown
+      run: python .github/scripts/validate_images.py
+
+    # Step 7: Build English Documentation
+    - name: Build English Documentation
       run: mkdocs build -f config/en/mkdocs.yml
-    - name: Build German
+
+    # Step 8: Build German Documentation
+    - name: Build German Documentation
       run: mkdocs build -f config/de/mkdocs.yml
+
+    # Step 9: Copy common root files (including legacy redirects)
     - name: Copy common root files (including legacy redirects)
       run: cp -R docs/root/* site
-    - name: Deploy
+
+    # Step 10: Deploy to GitHub Pages
+    - name: Deploy to GitHub Pages
+      if: github.ref == 'refs/heads/master' && success()
       uses: peaceiris/actions-gh-pages@v3
-      if: success()
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./site

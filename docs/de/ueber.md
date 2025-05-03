@@ -42,7 +42,7 @@ Es steht auch ein aktives [Diskussionsforum](https://forum.portfolio-performance
 
 # Lizenz
 
-Dieses Handbuch ist unter einer [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Lizenz](http://creativecommons.org/licenses/by-nc-sa/4.0/) lizenziert. Der [Quellcode](https://github.com/portfolio-performance/portfolio) von [Portfolio Performance](https://www.portfolio-performance.info) ist unter der [Eclipse Public License 1.0](https://github.com/portfolio-performance/portfolio/blob/master/LICENSE) lizenziert.
+Dieses Handbuch ist unter einer [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Lizenz](https://creativecommons.org/licenses/by-nc-sa/4.0/) lizenziert. Der [Quellcode](https://github.com/portfolio-performance/portfolio) von [Portfolio Performance](https://www.portfolio-performance.info) ist unter der [Eclipse Public License 1.0](https://github.com/portfolio-performance/portfolio/blob/master/LICENSE) lizenziert.
 
 Vielen Dank an alle [Mitwirkenden](https://github.com/portfolio-performance/portfolio-help/graphs/contributors)!
 

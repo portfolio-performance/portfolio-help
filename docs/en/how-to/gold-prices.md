@@ -18,7 +18,7 @@ Figure: Ariva.de website (translated) with historical gold prices . {class= pp-f
 
 You can also replace the Quote Feed URL by one of the previous months (e.g. `https://www.ariva.de/goldpreis_gold-kurs/kurse/historische-kurse?go=1&boerse_id=172&month=2024-02-29`). When importing the data, Portfolio Performance will ask if you want to keep the existing historical prices. By choosing to keep the previous data, you can maintain a continuous record of gold prices for all the months you have downloaded.
 
-But, perhaps the better method is to use a [dynamic data URLs](https://help.portfolio-performance.info/de/kursdaten_laden/#dynamische-kursdaten-urls). Replace the `month=2024-02-29` in the URL from above in the macro version `month={DATE:yyyy-MM-32}`. This macro will iterate through all previous months (going back to 2003) and send a request for each month until there is no data available. If you start from scratch, this process can take some time and will put a significant load on the ariva.de web server.
+But, perhaps the better method is to use a dynamic data URLs. Replace the `month=2024-02-29` in the URL from above in the macro version `month={DATE:yyyy-MM-32}`. This macro will iterate through all previous months (going back to 2003) and send a request for each month until there is no data available. If you start from scratch, this process can take some time and will put a significant load on the ariva.de web server.
 
 Another option to obtain historical gold prices is to register for a free account. Then you can download the historical prices as a CSV file, which can be [imported](../reference/file/import/csv-import.md#importing-a-csv-file) into Portfolio Performance (PP).
 

@@ -1,0 +1,6 @@
+# Known problematic URLs (block bots, rate limit or unreliable)
+
+https://investor.apple.com/dividend-history/default.aspx
+https://www.investing.com/equities/amazon-com-inc
+https://group.mercedes-benz.com/documents/investors/annual-meeting/daimler-ir-egm-2021-spinoffhivedownreport.pdf
+https://www.coingecko.com/

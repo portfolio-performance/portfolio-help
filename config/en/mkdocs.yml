@@ -13,7 +13,7 @@ repo_name: portfolio-performance/portfolio-help
 repo_url: https://github.com/portfolio-performance/portfolio-help
 edit_uri: tree/master/docs/en/
 
-copyright: This work is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+copyright: 'This work is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.'
 
 theme:
   name: material
@@ -30,7 +30,7 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
-    - content.code.annotate 
+    - content.code.annotate
     - content.code.copy
     - navigation.expand
     - navigation.indexes
@@ -45,7 +45,7 @@ extra_css:
   - assets/stylesheets/extra.css
 
 extra_javascript:
-  - assets/javascripts/katex.js 
+  - assets/javascripts/katex.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
 
@@ -80,7 +80,11 @@ plugins:
         markdown_identifier: 'Figure:'
       table:
         position: top
-  - git-revision-date-localized
+  - git-revision-date-localized:
+      type: date
+      custom_format: "%B %d, %Y"
+      timezone: Europe/Berlin
+      locale: en
 
 markdown_extensions:
   - admonition
@@ -99,7 +103,7 @@ markdown_extensions:
   - tables
 
 nav:
-  - Introduction: 
+  - Introduction:
       - Introduction: index.md
   - Getting started:
       - Getting started: getting-started/index.md
@@ -109,10 +113,10 @@ nav:
       - Managing your portfolio:
           - Managing your portfolio: getting-started/manage-portfolio/index.md
           - Making a Deposit: getting-started/manage-portfolio/deposit.md
-          - Buying securities: getting-started/manage-portfolio/buy.md 
-          - Selling securities: getting-started/manage-portfolio/sell.md 
+          - Buying securities: getting-started/manage-portfolio/buy.md
+          - Selling securities: getting-started/manage-portfolio/sell.md
           - Recording a delivery: getting-started/manage-portfolio/delivery.md
-          - Dividend payment: getting-started/manage-portfolio/dividend.md 
+          - Dividend payment: getting-started/manage-portfolio/dividend.md
           - Bonds: getting-started/manage-portfolio/bonds.md
       - Measure Performance: getting-started/measure-performance.md
       - Classifying assets: getting-started/classify-assets.md

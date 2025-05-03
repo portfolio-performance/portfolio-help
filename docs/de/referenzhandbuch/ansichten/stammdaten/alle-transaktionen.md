@@ -1,4 +1,0 @@
----
-title: Alle Transaktionen
----
-

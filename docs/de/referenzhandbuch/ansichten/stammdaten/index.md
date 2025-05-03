@@ -1,3 +1,0 @@
----
-title: Übersicht der Stammdaten
----
