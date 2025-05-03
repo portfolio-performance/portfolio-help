@@ -18,7 +18,7 @@ changes:
       description:
         - YAML-Quelle hinzugefügt
 todo: Alle links erstellen und referenzen bilden
-----
+---
 
 Der Name PortfolioPerformance (PP) beschreibt seinen Zweck sehr gut: die Verwaltung eines Investmentportfolios aus einer Performance-Perspektive. Dieser Fokus unterscheidet sich von vielen proprietären Broker-Apps, die primär die technische Ausführung von Aufträgen erleichtern. Der folgende Text umreißt die wichtigsten Komponenten. Folgen Sie den Links, um weitere Informationen zu jeder Komponente zu erhalten.
 
