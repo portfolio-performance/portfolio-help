@@ -49,6 +49,8 @@ Transaktionen werden durch Pfeile dargestellt. Sie generieren Cash-Outflows (rot
 
 Abbildung: Übersicht aller Transaktionstypen mit zugehörigen Cashflows auf Portfolio-, Konto- und Wertpapierebene.{class=pp-figure}
 
+![](images/system-uebersicht-zahlungsstroeme.svg)
+
 Ein [*Einzahlung*](https://www.google.com/search?q=../reference/transaction/deposit-removal.md) generiert zwei Cash-Inflows: einen auf Portfolioebene und einen auf Ebene des Einlagenkontos. Diese Transaktion führt zu einem Inflow, da Geld auf das Einlagenkonto und somit auch in das Portfolio eingebracht wird. Andererseits erzeugt eine [*Abhebung*](https://www.google.com/search?q=../reference/transaction/deposit-removal.md) zwei Cash-Outflows und entzieht Geld von einem Cash-Konto und dem Portfolio.
 
 Ein [*Zugang Lieferung*](https://www.google.com/search?q=../reference/transaction/delivery.md) fügt einem Wertpapier Anteile hinzu und erhöht somit das Kapital des Wertpapiers (Anteile x historischer Kurs) **und** des Wertpapierkontos. Umgekehrt verringert ein [*Abgang Lieferung*](https://www.google.com/search?q=../reference/transaction/delivery.md) das Kapital, indem Anteile vom Wertpapier entfernt werden, was zu einem Cash-Outflow führt.
