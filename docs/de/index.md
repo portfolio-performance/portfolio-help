@@ -20,7 +20,7 @@ changes:
         - Basis Struktur implementiert
 ---
 
-# Was ist Portfolio Performance?
+## Was ist Portfolio Performance?
 
 Seit Anfang 2012 gibt es [Portfolio Performance](https://portfolio-performance.info), um die Performance eines Gesamtportfolios zu berechnen - über verschiedene Depots und Konten hinweg - anhand von True-Time Weighted Rate of Return und internem Zinsfuß.
 
@@ -53,7 +53,7 @@ ist eine detaillierte und technische Beschreibung aller Funktionen und Elemente 
 - [How-to](how-to/index.md)
 In diesem Kapitel findest du Schritt-für-Schritt-Beschreibungen gängiger Verfahren, einschließlich Datenimport, Dividendenbuchung, Suche nach historischen Kursen und mehr. Es werden auch einige Tipps & Tricks sowie Sonderfälle beschrieben.
 
-# Mithelfen...
+## Mithelfen...
 
 Wie Ihr leicht sehen könnt, gibt es noch viele weiße Seiten in diesem Handbuch. 
 Meldet euch bei Interesse auch im Forum! [Vielen Dank an alle, die bisher schon mitgeholfen haben.](https://github.com/portfolio-performance/portfolio-help/graphs/contributors)
