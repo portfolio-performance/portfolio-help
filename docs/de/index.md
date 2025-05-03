@@ -1,13 +1,12 @@
 ---
 title: Einleitung
-template: home.html
 lastUpdate: 2025-05-03
 description: Dieses Handbuch führt in Portfolio Performance ein, erklärt Portfolioverwaltung, Performance-Berechnung (TWRR, interner Zinsfuß) und erste Schritte (Portfolio-Datei, Wertpapiere, Import). Es betont die Vorteile gegenüber Excel und ruft zur Mitarbeit auf. Struktur basiert auf Diataxis (Erste Schritte, Grundlagen, How-to, Referenz).
 authors:
     - name: Portfolio Performance Team
     - name: Nirus2000
 version: 1.0
-slug: system-overview
+slug: einleitung
 tags:
     - Portfolio Management
     - Investment Analysis

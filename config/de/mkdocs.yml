@@ -101,8 +101,8 @@ markdown_extensions:
   - tables
  
 nav:
-  - Intro: 
-      - Intro: index.md
+  - Einleitung: 
+      - Einleitung: index.md
   - Erste Schritte:
       - Erste Schritte: erste-schritte/index.md
       - Installation: erste-schritte/installation.md
