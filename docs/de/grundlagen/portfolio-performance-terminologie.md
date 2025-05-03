@@ -1,166 +1,156 @@
 ---
-title: Portfolio Performance Terminologie
-todo: Vermögensaufstellung, Diagramme, Bestand, Performance, Berechnung,Wertpapiere, Zahlungen, Trades,Einstellungen, Währungen
+title: Portfolio Performance Begriffsübersicht
+lastUpdate: 2025-05-03
+description: Ein alphabetisches Glossar wichtiger Begriffe und Konzepte in Portfolio Performance, das Nutzern hilft, Felder, Kennzahlen und Funktionen der Anwendung besser zu verstehen.
+authors:
+    - name: Portfolio Performance Team
+    - name: Nirus2000
+version: 1.0
+slug: begriffsuebersicht
+tags:
+    - Portfoliomanagement
+    - Investmentanalyse
+    - Glossar
+    - Portfolio Performance
+changes:
+    - date: 2025-05-03
+      author: Nirus2000
+      description:
+        - Erste Version der Seite "Portfolio Performance Begriffsübersicht".
+        - Bietet klare Definitionen von Attributen, Feldern und Konzepten innerhalb der Anwendung.
+todo: Bestandsübersicht, Diagramme, Bestände, Performance, Berechnung, Wertpapiere, Zahlungen, Trades, Einstellungen, Währungen
 ---
 
-Grundlegende Konzepte wie Konten, Buchungen, Berichtszeiträume, Einstandspreis und Wertentwicklung werden in eigenen Kapiteln genauer beschrieben (siehe Seitenleiste). Nachfolgend findest Du eine Liste mit Beschreibungen aller Attribute, die auch als Felder oder Spalten bezeichnet werden und in verschiedenen Abschnitten von Portfolio Performance verwendet werden. Buchungsarten sowie Feldwertbeschreibungen findest Du hier auch.
-
+Diese Seite bietet einen Überblick über grundlegende Konzepte und Begriffe, die in **Portfolio Performance** verwendet werden.  
+Zentrale Konzepte wie Konten, Buchungen, Berichtszeiträume, Einstandspreise und Performance werden in eigenen Kapiteln erläutert (siehe Seitenleiste).  
+Im Folgenden findest du ein Glossar, das alle Attribute (auch *Felder* oder *Spalten* genannt) beschreibt, die in verschiedenen Bereichen von Portfolio Performance vorkommen.  
+Außerdem werden Buchungstypen und Feldwerte erklärt.
 
 ## Datenqualität
 
-Diese Spalten findest Du nur unter `Wertpapiere` --> `Alle Wertpapiere`
+Diese Spalten findest du unter `Wertpapiere` → `Alle Wertpapiere`:
 
-- Tatsächliche # Kurse: Beschreibt die  Anzahl an gespeicherten historischen Kursen.
-
-- Erwartete # Kurse: Beschreibt die Anzahl an erwarteten historischen Kursen, basierend auf Deinen Kalendereinstellungen.
-
-- Fehlende # Kurse: Berechnete Differenz zwischen gespeicherten und erwarteten historischen Kursen, basierend auf Deinen Kalendereinstellungen.
-
-- Datum des letzten historischen Kurses: Über diesen Wert erfährst Du, wann der letzte historische Kurs heruntergeladen wurde.
-
-- Datum des ersten historischen Kurses: Über diesen Wert erfährst Du, wann der erste historische Kurs heruntergeladen wurde.
-
-- Vollständigkeit der historischen Kurse: Beschreibt die Vollständigkeit Deiner historischen Kurse. Kleine Abweichungen entstehen durch regionale Feiertage.
-
-- Absolute Performance: Entspricht einer wertorientierten Kennzahl, die den Gesamtgewinn oder -verlust einer Investition über einen bestimmten Zeitraum bewertet; = `(Marktwert am Ende des Zeitraums + Verkauf/Einlieferungen + Dividenden) - (Steuern + Gebühren + Anfangsbewertung + Kauf/ Einlieferungen)`. Synonym: Gesamtrendite.
+- **Tatsächliche # Kurse**: Anzahl der gespeicherten historischen Kurse.
+- **Erwartete # Kurse**: Erwartete Anzahl historischer Kurse, basierend auf deinen Kalendereinstellungen.
+- **Fehlende # Kurse**: Differenz zwischen gespeicherten und erwarteten historischen Kursen.
+- **Datum des letzten historischen Kurses**: Datum des zuletzt heruntergeladenen historischen Kurses.
+- **Datum des ersten historischen Kurses**: Datum des ersten heruntergeladenen historischen Kurses.
+- **Vollständigkeit der historischen Kurse**: Beschreibt die Vollständigkeit deiner historischen Kursdaten. Geringe Abweichungen können durch regionale Feiertage entstehen.
+- **Absolute Performance**: Wertbasierte Kennzahl zur Bewertung von Gewinn oder Verlust einer Anlage über einen Zeitraum:  
+`(Marktwert am Ende + Verkäufe/Zuflüsse + Dividenden) - (Steuern + Gebühren + Startwert + Käufe/Zuflüsse)`  
+**Synonym:** Gesamtrendite.
 
 ## Stammdaten
-Der zentrale Sammelpunkt Deiner Konten, Depots, Sparplänen sowie einer Übersicht aller Buchungen,
-findest Du in der Navigationsleiste auf der linken Seite.
 
-- Konten: Hier werden Buchungen aus Geschäftsvorfällen respektive Zahlungsvorgängen gespeichert.
+Der zentrale Bereich für deine Konten, Depots, Sparpläne und eine Übersicht aller Buchungen befindet sich in der Navigationsleiste.
 
-- Depot: Hier findest Du Deine im Besitz befindlichen Wertpapiere.
-
-- Referenzkonto: Im Zusammenhang mit dem Kauf oder Verkauf von Aktien ist das Referenzkonto das Gegenkonto, das zum Ausgleich der Transaktion verwendet wird. Beim Kauf eines Wertpapiers wird der Wert des Depots erhöht und das Referenzkonto belastet, um den Abfluss von Barmitteln widerzuspiegeln. Umgekehrt wird beim Verkauf eines Wertpapiers der Wert des Depots vermindert und der Wert des Referenzkontos erhöht, um den Zufluss von Barmitteln widerzuspiegeln. Grundsätzlich kannst Du gegen jedes in Portfolio Performance gepflegte Konto buchen.
-
-- Sparpläne: Gibt Dir einen Überblick über Deine Sparpläne, samt Ausführung, Intervall und der Möglichkeit Buchungen automatisch zu erzeugen.
-
-- Buchungen: Sämtlich in Portfolio Performance getätigte Buchungen sind hier depotübergreifend zusammengefasst. Die Liste kann gefiltert werden.
+- **Konten**: Speichern Buchungen im Zusammenhang mit Geschäftsvorfällen oder Zahlungsbewegungen.
+- **Depot (Wertpapierdepot)**: Enthält die Wertpapiere, die du aktuell besitzt.
+- **Referenzkonto**: Konto zur Abwicklung von Buchungen. Beispiel: Beim Kauf eines Wertpapiers steigt der Depotbestand, das Referenzkonto wird belastet. Beim Verkauf sinkt der Depotbestand, das Referenzkonto wird gutgeschrieben.
+- **Sparpläne**: Übersicht deiner Sparpläne, ihrer Ausführungsintervalle und Optionen zur Automatisierung von Buchungen.
+- **Buchungen**: Konsolidierte Ansicht aller Buchungen über alle Konten hinweg. Die Liste ist filterbar.
 
 ## Buchungstypen
 
-Findest Du systematisch z.B. im Kontextmenü für Konten und Depots sowie bei Wertpapieren. 
+Diese findest du häufig im Kontextmenü von Konten, Depots und Wertpapieren.
 
-- Einlieferung: Dieser Buchungstyp beschreibt den Erwerb eines Finanzinstruments ohne Verrechnung mit Deinem Referenzkonto.
-
-- Auslieferung: Dieser Buchungstyp beschreibt den Verkauf eines Finanzinstruments ohne Verrechnung mit Deinem Referenzkonto.
-
-- Umbuchung: Mit diesem Buchungstyp tauschst Du das Depot Deiner Finanzprodukte. Im abgebenden Depot entsteht eine Buchung (Ausgang), im aufnehmenden Depot eine Buchung (Eingang).
-
-- Einlage: Du führst von außen Portfolio Performance Geld zu. Beispielsweise um im Nachgang ein Finanzinstrument zu erwerben oder um Zinsen auf einem Tagesgeldkonto zu überwachen. Einlagen wirken sich auf Deine Portfolio-Werteentwicklung aus.
-
-- Entnahme: Hier entnimmst Du Geld bzw. Barmittel. Da Du Geld von Portfolio Performance abziehst, wirkt sich eine Entnahme auf Deine Portfolio-Wertentwicklung aus.
-
-- Kauf: Transaktion respektive Buchung, die zum Erwerb eines Finanzproduktes führt, wobei Geld von einem Referenzkonto abgebucht wird, um das gewünschte Instrument zu kaufen.
-
-- Verkauf: Transaktion, bei der die Wertpapiere einem Depot entnommen werden und Geld auf einem Gegenkonto als Gegenwert der Wertpapiere hinterlegt wird.
-
-- Dividende
-
-- Zins
-
-- Zinsbelastung
-
-- Steuern: Eine Geldleistung an den Staat ohne Anspruch auf individuelle Gegenleistung.
-
-- Steuerrückerstattung
-
-- Aktiensplitt
-
-- Gebühren: Sind Kosten, die von einem Dienstleister oder Vermittler für die Durchführung einer Transaktion erhoben werden.
-
-- Gebührenerstattung
+- **Einlieferung**: Zugang eines Wertpapiers ohne Abwicklung über das Referenzkonto.
+- **Auslieferung**: Abgang eines Wertpapiers ohne Abwicklung über das Referenzkonto.
+- **Umbuchung**: Verschiebt ein Wertpapier zwischen Depots. Erstellt eine Ausbuchung im Quell-Depot und eine Einbuchung im Ziel-Depot.
+- **Einzahlung**: Fügt Geld zu Portfolio Performance hinzu, z. B. zum Kauf von Wertpapieren oder zur Zinsüberwachung.
+- **Auszahlung**: Entnimmt Geld. Wirkt sich auf die Portfolio-Performance aus.
+- **Kauf**: Erwerb eines Finanzprodukts, Belastung des Referenzkontos.
+- **Verkauf**: Verkauf von Wertpapieren, Gutschrift auf das Gegenkonto.
+- **Dividende**
+- **Zinsen**
+- **Zinsbelastung**
+- **Steuern**: Zahlung an den Staat ohne direkte Gegenleistung.
+- **Steuererstattung**
+- **Aktien-Split**
+- **Gebühren**: Kosten, die von Dienstleistern oder Brokern für die Durchführung von Transaktionen erhoben werden.
+- **Gebührenerstattung**
 
 ## Konfigurierbare Spalten
 
-- Kursänderung (Zeitraum): Benennt die Differenz der historischen Kurse zwischen dem letzten und dem ersten Kurs einer bestimmten Zeitspanne, ausgedrückt in Prozent. Der Zeitraum kann unterschiedlich definiert werden. Gibst Du Zeitraum in Jahren an, so ist das letzte Datum heute und das erste Datum ist heute minus gewählte Jahre. Diese Spalte ist nur unter `Wertpapiere` --> `Alle Wertpaiere verfügbar`
-
-- Kursänderung zum Vortag (Betrag) oder Δ-Betrag: Beschreibt die absolute Differenz zwischen dem zuletzt abgerufenen Kurs und dem vorhergehenden Kurs (welcher höchstwahrscheinlich der Kurs des Vortages ist).
-
-- Kursänderung zum Vortag (%) oder Δ-Betrag: Beschreibt die absolute Differenz zwischen dem zuletzt abgerufenen Kurs und dem vorhergehenden Kurs (welcher höchstwahrscheinlich der Kurs des Vortages ist).
-
-- Kurs: Der letzte Kurs, zu dem ein Wertpapier gehandelt wurde, auch bekannt als Preis.
-
-- Abstand zu SMA (Tage): Eine Kennzahl, welche die Differenz zwischen dem aktuellen</br><br> Preis (Kurs) einer Aktie und dem Durchschnittspreis dieser Aktie über eine bestimmte Anzahl vergangener Tage (5, 20, 30, 38, 50, 90, 100 oder 200 Tage) misst, ausgedrückt in Prozent. Das Akronym „SMA“ steht für „Simple Moving Average“. Der Durchschnittspreis des Wertpapiers für die letzten 5 täglichen Notierungen ist beispielsweise </br><br>`(100 + 98 + 99 + 97 + 96)/5 = 98`. Der Abstand zum SMA (5 Tage) beträgt `(100-98)/98 = 2,04 %`.
-
-- Abstand vom ATH: Eine Metrik, die angibt, wie weit der aktuelle Kurs vom höchsten Kurs im angegebenen Zeitraum (1 Jahr, 2 Jahre, 3 Jahre oder ein Datumsbereich von </br><br> jjjj-mm-tt bis jjjj-mm-tt) entfernt ist. Beispiel: Der höchste Kurs eines Wertpapiers im letzten Jahr war 77,4 EUR. Der aktuelle Kurs liegt bei 71,96 EUR. Der Abstand zum ATH für einen Zeitraum von 1 Jahr berechnet sich wie folgt</br><br> `(71,96 - 77,4)/77,4` oder `-7,03 %`.
-
-- Einstandspreis: Entspricht dem summierten Transaktionswert aller Käufe (+) </br><br>und Verkäufe (-) eines Wertpapiers unter Berücksichtigung des [Berichtszeitraums](berichtszeitraum.md).
+- **Kursveränderung (Zeitraum)**: Prozentuale Differenz zwischen dem letzten und ersten Kurs über einen gewählten Zeitraum.
+- **Kursveränderung Vortag (Betrag)** oder **Δ Betrag**: Absolute Differenz zwischen dem zuletzt abgerufenen Kurs und dem vorherigen.
+- **Kursveränderung Vortag (%)** oder **Δ %**: Prozentuale Differenz zwischen dem zuletzt abgerufenen Kurs und dem vorherigen.
+- **Kurs**: Letzter gehandelte Kurs eines Wertpapiers.
+- **Abstand zur GD (Tage)**: Prozentuale Differenz zwischen aktuellem Kurs und gleitendem Durchschnitt (GD) über X Tage.
+- **Abstand zum Allzeithoch (ATH)**: Zeigt an, wie weit der aktuelle Kurs vom höchsten Kurs innerhalb eines definierten Zeitraums entfernt ist.
+- **Einstandspreis**: Kumulierte Transaktionswerte aller Käufe (+) und Verkäufe (-) eines Wertpapiers im Berichtszeitraum.
 
 ## Wertpapiere
 
-- Währung: Beim anlegen eines Wertpapiers hast Du die Möglichkeit, eine Währung zu wählen und zu speichern. Sobald eine Buchung zu diesem Wertpapier vorliegt, kann die Währung des Wertpapiers nicht mehr geändert werden.
+- **Währung**: Die beim Anlegen eines Wertpapiers zugewiesene Währung. Sobald Buchungen existieren, kann die Währung nicht mehr geändert werden.
+- **Datum**: Datum einer Buchung.
 
-- Datum: Beschreibt den Zeitpunkt einer Buchung.
+## Wertpapiere hinzufügen
 
-## Aktien anlegen
-- Wertpapier: Ein handelbares Finanzinstrument wie Aktien, Anleihen, Kryptowährungen, Edelmetalle, ...
-
-- Börsenplatz: Ein Wertpapier kann an mehr als einer Börse gehandelt werden. Die NVIDIA-Aktie wird beispielsweise an der Nasdaq (Symbol NVDA, Börse NMS) oder XETRA (Symbol NVD.DE, Börse GER) und an vielen anderen Börsen gehandelt.
-
-- Name: Wird im ersten Moment vom Anbieter des Kurses übernommen und kann komplett angepasst werden.
+- **Wertpapier**: Ein handelbares Finanzinstrument wie Aktien, Anleihen, Kryptowährungen, Edelmetalle etc.
+- **Börse**: Ein Wertpapier kann an mehreren Börsen gehandelt werden (z. B. NVIDIA: NASDAQ [NVDA] oder XETRA [NVD.DE]).
+- **Name**: Wird zunächst vom Datenanbieter übernommen, kann aber angepasst werden.
 
 ## Wechselkurse
 
-- Inaktiv: Ein Wertpapier kann auf aktiv oder inaktiv gesetzt werden. Wenn es inaktiv ist, erscheint das Wertpapier nicht in den Kauf- oder Verkaufsdialogen, und die historischen Kurse werden nicht automatisch aktualisiert.
+- **Inaktiv**: Ein Wertpapier kann als inaktiv markiert werden; es erscheint nicht mehr in Buchungsdialogen und historische Kurse werden nicht mehr aktualisiert.
+- **ISIN (Internationale Wertpapierkennnummer)**: Eine eindeutige, weltweit verwendete 12-stellige Kennung (insbesondere bei europäischen Brokern).
+- **WKN (Wertpapierkennnummer)**: Eine 6-stellige deutsche Kennung (weitgehend durch ISIN ersetzt).
 
-- ISIN (*Internationale Wertpapier-Identifikationsnummer*): Ist ein einzigartiger zwölfstelliger Code, der jedem Wertpapier in der Welt zugewiesen wird. Wird vor allem von europäischen Brokern und Banken verwendet.
+## Einzahlungen und Abhebungen
 
-- WKN (*Wertpapierkennnummer*): Ist ein in Deutschland genutzter sechsstelliger alphanumerischer Code zur Identifizierung eines Wertpapiers, der mittlerweile durch den ISIN-Code ersetzt wurde.
+- **Einzahlung**: Hinzufügen von Geldern zu Portfolio Performance für eine spätere Verwendung, z. B. um Wertpapiere zu kaufen oder Zinsen zu überwachen.
+- **Abhebung**: Entnahme von Geldern oder Bargeld. Dies beeinflusst die Performance des Portfolios.
 
-## Käufe
+## Dividenden und Zinsen
 
-- Belastung: Entspricht der Gesamtsumme der Kosten einer Transaktion, einschließlich der Steuern und Gebühren. Diese Terminologie mag kontraintuitiv erscheinen, da man traditionell dazu neigt, eher Gesamtkosten oder Bruttowert zu benutzen.
+- **Dividende**: Auszahlung von Gewinnen durch das Unternehmen an die Aktionäre. Diese wird dem Referenzkonto gutgeschrieben.
+- **Zinsen**: Betrag, den Sie aus Kapitalanlagen (z. B. Anleihen oder Bankguthaben) erhalten.
+- **Zinsbelastung**: Kosten für geliehenes Kapital (z. B. Kredit- oder Darlehenszinsen).
 
-## Allgemeines
+## Steuern und Rückerstattungen
 
-- Notiz: Zu jedem Wertpapier und jeder Transaktion kann eine Notiz mit zusätzlichen Informationen oder Zusammenhängen hinzugefügt werden. Werden Buchungen mit dem PDF Importer angelegt, so wird das Notizfeld automatisch gefüllt, bleibt aber dennoch änderbar.
+- **Steuern**: Zahlungen an den Staat ohne direkte Gegenleistung.
+- **Steuerrückerstattung**: Rückerstattung von bereits gezahlten Steuern.
 
-- Stücke: Beschreibt die Anzahl der in Deinem Besitz befindlichen Wertpapiere. Dezimale Stücke werden auch Bruchstücke genannt.
+## Gebühren und Gebührenrückerstattung
 
-- Symbol (Ticker): Dient unter anderem zur Identifikation eines Wertpapiers, oftmals auch in Verbindung mit einem Punkt gefolgt von einem Börsenplatzkürzel.
+- **Gebühren**: Kosten, die von Dienstleistern oder Brokern für die Ausführung von Transaktionen erhoben werden.
+- **Gebührenrückerstattung**: Rückerstattung von zuvor gezahlten Gebühren.
 
-- Zielwährung: Wird benutzt, um den Umrechnungsfaktor für einen Devisenwechsel zu definieren.
+## Käufe und Verkäufe
 
-- Ereignis: Gibt Dir die Möglichkeit, ein Geschehen zu dokumentieren, was später sowohl im Chart als auch in der Detailansicht sichtbar ist. Aktiensplitts werden auf die gleiche Weise dokumentiert.
+- **Belastung**: Gesamtkosten einer Kaufbuchung inklusive Steuern und Gebühren.
+- **Erlös**: Gesamtbetrag, der bei einer Verkaufstransaktion erzielt wird, abzüglich Steuern und Gebühren. Dieser Betrag wird dem Referenzkonto gutgeschrieben.
 
-- Watchlist: Erstell Dir Deine eigene Liste von Wertpapieren und passe das Layout Deinen Wünschen an.
+## Allgemein
 
-- Widget: Mit Diagrammen und Kennzahlen, die Du selbst definierst, erstellst Du Dir eigene Ansichten, um Dein Portfolio nach Deinen Wünschen zu analysieren, vergleichen und auszuwerten.
+- **Notiz**: Ermöglicht das Hinzufügen von Kommentaren zu Wertpapieren oder Buchungen. Wird beim PDF-Import automatisch ausgefüllt, ist aber editierbar.
+- **Stückzahl**: Die Anzahl der gehaltenen Wertpapiere. Dezimalstücke nennt man Bruchstücke (Fractional Shares).
+- **Symbol (Ticker)**: Kennung eines Wertpapiers, meist kombiniert mit Börsencode.
+- **Zielwährung**: Dient zur Definition von Umrechnungskursen bei Währungswechseln.
+- **Ereignis**: Ermöglicht das Dokumentieren von Ereignissen, die in Diagrammen und Detailansichten sichtbar sind (z. B. Aktien-Splits).
+- **Beobachtungsliste**: Erstelle eine benutzerdefinierte Liste von Wertpapieren mit konfigurierbarem Layout.
+- **Widget**: Baue eigene Dashboards mit Diagrammen und Kennzahlen zur Analyse, zum Vergleich und zur Bewertung deines Portfolios.
+- **Wechselkurs**: Wert einer Währung im Verhältnis zu einer anderen.
 
-- Wechselkurs: Der Wert einer Währung in Bezug auf eine andere Währung, der den Kurs bestimmt, zu dem sie umgetauscht werden können.
+## Kurslieferanten
 
-- Ex-Tag: Ist an Börsen der Handelstag, an welchem der Aktienkurs einer Aktie um die Dividende oder das Bezugsrecht gekürzt wird.
-
-- Ex-Dividende: Bedeutet, dass an diesem Tag ein Kursabschlag in Höhe der festgelegten Dividende vorgenommen wurde.
-
-## Kurslieferant
-
-- Kurslieferant (historisch): Datenquelle oder Anbieter der historischen Kurse: Alpha Vantage, Bitfinex Cryptocurrency Exchange, Binance Crypto Exchange, CoinGecko, EOD Historical Data, Finnhub, Inflationsrate - Eurostat (HICP), ECB Statistical Data Warehouse, Kraken Cryptocurrency Exchange, PWP Leeway UG, Twelve Data, Quandl, Tabelle auf Webseite, VIA/CS Funds, Yahoo Finance, Yahoo Finance (Adjusted Close), JSON, kein automatischer Download.
-
-- Kurslieferant (aktueller Kurs): Kurslieferant oder Anbieter der neuesten Kurse (gleiche Liste wie oben). Alternative kannst Du auch „wie historische Kurse“ nutzen.
-
-- URL (historisch): Zeigt die hinterlegte Adresse, von der Du momentan Deine Kurse beziehst. Gilt für `Tabelle von einer Webseite` sowie `JSON`.
-
-- URL (aktueller Kurs): Zeigt die hinterlegte Adresse, von der Du momentan Deine Kurse beziehst. Gilt für `Tabelle von einer Webseite` sowie `JSON`.
-
-- Rendite: Wird als Prozentwert ausgegeben und beschreibt die Veränderung über einen definierten Zeitraum.
+- **Kurslieferant (Historisch)**: Datenquellen für historische Kurse (Alpha Vantage, Bitfinex, Binance, CoinGecko, EOD Historical Data, Finnhub, Eurostat HICP, EZB SDW, Kraken, PWP Leeway UG, Twelve Data, Quandl, Tabelle von Webseite, VIA/CS Fonds, Yahoo Finance, JSON oder keine).
+- **Kurslieferant (Aktuell)**: Datenquelle für aktuelle Kurse (gleiche Liste wie oben). Alternativ „gleich wie historische Kurse“ verwenden.
+- **URL (Historisch)**: Quell-URL zum Herunterladen historischer Kurse.
+- **URL (Aktuell)**: Quell-URL für aktuelle Kurse.
+- **Rendite**: Prozentuale Veränderung über einen definierten Zeitraum.
 
 ## Risikokennzahlen
 
-- Risikokennzahlen: Geben Dir die Möglichkeit, Deine Investition quantitativ gegen die Ungewissheit eines Ereignisses zu bewerten, zum Beispiel einen Totalverlust.
-
-- Maximaler Drawdown (maximaler Wertverlust): Bezieht sich auf den größten Rückgang der Wertentwicklung eines Portfolios oder einer Anlage von einem Höchststand bis zum Tiefststand über einen bestimmten Zeitraum, in der Regel ausgedrückt als Prozentsatz.  Er misst das Ausmaß des Verlusts, der vom höchsten Punkt bis zum niedrigsten Punkt entsteht, bevor ein neuer Höchststand erreicht wird.
-
-- Maximale Drawdown-Duration: Beschreibt die Zeit, die eine Investition zwischen zwei Höchstständen hatte.
-
-- Semivolantilität ist ein Indikator für die negative Abweichung Deiner Rendite.
-
-- Volatilität ist ein Indikator ähnlich der Semivolantilität, allerdings werden hier sowohl die positiven als auch die negativen Abweichungen Deiner Rendite berücksichtigt.
+- **Risikokennzahlen**: Ermöglichen die quantitative Bewertung der Unsicherheit einer Anlage (z. B. Risiko des Totalverlusts).
+- **Maximaler Drawdown**: Der größte Rückgang vom Höchststand zum Tiefpunkt im Portfoliowert innerhalb eines Zeitraums.
+- **Dauer maximaler Drawdown**: Zeitraum zwischen zwei Höchstständen.
+- **Semivolatilität**: Indikator für das Verlustrisiko (negative Renditeabweichungen).
+- **Volatilität**: Indikator, der sowohl positive als auch negative Renditeabweichungen berücksichtigt.
 
 ## Allgemeine Daten
 
-- Währungen: Gibt Dir einen Überblick über die offiziellen Wechselkurse der Europäischen Zentralbank sowie einen Währungsrechner.
-
-- Einstellungen: Hier kannst Du Dir eigene Attribute erstellen und somit weitere Spalten definieren. Alternativ kannst Du Dir dort auch Bookmarks anlegen.
+- **Währungen**: Übersicht über EZB-Referenzkurse und einen Währungsrechner.
+- **Einstellungen**: Ermöglicht das Anlegen eigener Attribute (zusätzlicher Spalten) oder Lesezeichen.
