@@ -1,10 +1,27 @@
 ---
-title: System overview
----
+title: System overview example
+lastUpdate: 2025-05-03
+description: Overview of the Portfolio Performance system components, detailing how transactions, performance calculations, and other factors influence the portfolio’s overall performance.
+authors:
+    - name: Portfolio Performance Team
+    - name: Nirus2000
+version: 1.0
+slug: system-overview
+tags:
+    - Portfolio Management
+    - Investment Analysis
+    - Glossary
+    - Portfolio Performance
+changes:
+    - date: 2025-05-03
+      author: Nirus2000
+      description:
+        - Adding YAML Source
+----
 
 The name PortfolioPerformance (PP) captures its purpose very well: managing an investment portfolio from a performance perspective. This focus contrasts with many proprietary broker apps, which primarily facilitate the technical execution of orders. The following text outlines the principal components. Follow the links to obtain more information about each component.
 
-The portfolio has one [Securities Account](../reference/view/accounts/security-account.md) (broker-A) and two [Deposit Accounts](../reference/view/accounts/index.md) (in EUR and USD). The balance of the deposit accounts is the end balance on March 5, 2024. Three shares with their historical prices have been added ([All Securities](../reference/view/securities/all-securities.md)). Only share-1 and share-2 have associated transactions and thus participate in the performance calculation. The [historical prices](../how-to/downloading-historical-prices/index.md) are part of the [master security data](../reference/file/new.md#historical-quotes). The Exchange Rates are provided in [View > General Data](../reference/view/general-data/currencies.md).
+The portfolio has one [Securities Account](../reference/view/accounts/security-account.md) (broker-A) and two [Deposit Accounts](../reference/view/accounts/index.md) (in EUR and USD). The balance of the deposit accounts is the end balance on March 5, 2024. Three shares with their historical prices have been added ([All Securities](../reference/view/securities/all-securities.md)). Only share-1 and share-2 have associated transactions and thus participate in the performance calculation. The [historical prices](../how-to/downloading-historical-prices/index.md) are part of the [master security data](../reference/file/new.md#historical-quotes). The Exchange Rates are provided in [View > General Data > Currencies](../reference/view/general-data/currencies.md).
 
 Figure: Portfolio Performance components and their relationships. {class=pp-figure}
 
@@ -40,4 +57,3 @@ Performance is calculated on a daily basis. To compute it, you need the market v
     * share-1: There are 5 share-1 left. So, the MVE of share-1 is 5 x 12 = 60 EUR. But, 5 shares were sold: 5 x 12 minus fees = 55 EUR. The daily performance is [(60 + 55)/110] - 1 = 4.55%. The cumulative performance of share-1 is [(1-0.0291)x(1+0)x(1+0)x(1+0.23)x (1+0.0455)] - 1= 24.85%.
     * Share-2: Profits too from a capital gain. The MVE becomes 5 x 15 = 75 or 69.13 EUR. The daily performance is (69.13/59.93) - 1 = 15.35%. The cumulative performance of share-1 is [(1+0)x(1+0)x(1-0.0132)x(1-0.1360)x(1+0.1535)] - 1= -1.65%; slightly negative, due to the capital loss on March 4.
     * Portfolio: The MVE of the portfolio = 60 (share-1) + 69.13 (share-2) + 177 (deposit account in EUR) + (3.10 USD x 0.9217 = 2.86) or 308.99 EUR.  The daily performance is thus (308.99/300.79) - 1 = 0.0273 or 2.73%. The cumulative performance is [(1-0.0167)x(1+0)x(1-0.0094)x(1+0.0293)x(1+0.0273)] - 1 = 3.00%. 
-
