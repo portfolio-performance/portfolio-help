@@ -75,7 +75,7 @@ plugins:
       lang: de
   - caption:
       figure:
-        caption_prefix: 'Abbildung {index}. '
+        caption_prefix: 'Abbildung {index}.'
         position: top
         markdown_identifier: 'Abbildung:'
       table:
@@ -123,10 +123,12 @@ nav:
       - Auswerten deines Portfolios: erste-schritte/performance-messen.md
   - Grundlagen:
       - Grundlagen: grundlagen/index.md
-      - Portfolio Performance Terminologie:  grundlagen/portfolio-performance-terminologie.md
+      - Portfolio Performance Terminologie: grundlagen/portfolio-performance-terminologie.md
       - Finanz Terminologie: grundlagen/finanz-terminologie.md
       - Systemübersicht: grundlagen/system-uebersicht.md
-        - Beispiel: grundlagen/system-uebersicht-beispiel.md
+      - Systemübersicht:
+        - Systemübersicht: grundlagen/system-uebersicht/index.md
+        - Beispiel: grundlagen/system-uebersicht/system-uebersicht-beispiel.md
       - Berichtszeitraum: grundlagen/berichtszeitraum.md
       - Einstandspreis: grundlagen/einstandspreis.md
       - Performance:
@@ -134,10 +136,10 @@ nav:
         - Geldgewichtete Rendite: grundlagen/performance/geld-gewichtet.md
         - Zeitgewichtete Rendite: grundlagen/performance/zeit-gewichtet.md
       - Historische Kurse: grundlagen/historische-kurse.md
-  - Referenzhandbuch: 
+  - Referenzhandbuch:
       - Referenzhandbuch: referenzhandbuch/index.md
       - Übersicht: referenzhandbuch/menue.md
-      - Datei: 
+      - Datei:
         - Neu: referenzhandbuch/datei/neu.md
         - Speichern: referenzhandbuch/datei/speichern.md
         - Importieren: referenzhandbuch/datei/import.md
