@@ -20,7 +20,7 @@ changes:
         - Basis Struktur implementiert
 ---
 
-## Was ist Portfolio Performance?
+# Was ist Portfolio Performance?
 
 Seit Anfang 2012 gibt es [Portfolio Performance](https://portfolio-performance.info), um die Performance eines Gesamtportfolios zu berechnen - über verschiedene Depots und Konten hinweg - anhand von True-Time Weighted Rate of Return und internem Zinsfuß.
 
@@ -53,24 +53,7 @@ ist eine detaillierte und technische Beschreibung aller Funktionen und Elemente 
 - [How-to](how-to/index.md)
 In diesem Kapitel findest du Schritt-für-Schritt-Beschreibungen gängiger Verfahren, einschließlich Datenimport, Dividendenbuchung, Suche nach historischen Kursen und mehr. Es werden auch einige Tipps & Tricks sowie Sonderfälle beschrieben.
 
-# Über dieses Handbuch
-
-Seit Anfang 2012 gibt es [Portfolio Performance](https://portfolio-performance.info), um die Performance eines Gesamtportfolios zu berechnen - über verschiedene Depots und Konten hinweg - anhand von True-Time Weighted Rate of Return und internem Zinsfuß.
-
-*Portfolio Performance* (PP) selber versucht so einfach und intuitiv zu bleiben wie es nur geht. Aber ohne Erklärungen geht es nicht immer - viele ähnliche Fragen im [Forum](https://forum.portfolio-performance.info) zeigen das. Dieses "Handbuch" soll Euch bei den ersten Schritten mit *Portfolio Performance* begleiten, grundlegende Konzepte erklären und die erklärungsbedürftigen Features dokumentieren.
-
-## Was ist Portfolio Performance?
-
-*Portfolio Performance* ist ein einfaches und leistungsfähiges Tool für die Pflege Deines Wertpapier-Portfolios. Mit *Portfolio Performance* kannst Du:
-
-- die Zusammensetzung und Entwicklung Deines Wertpapier-Portfolios mit aussagekräftigen Übersichten, Kennzahlen und Diagrammen verfolgen.
-- historische Kursverläufe der Wertpapiere und Deine Käufe und Verkäufe nachverfolgen.
-- die Wertpapiere im Portfolio nach Deinem Bedarf klassifizieren und die Zusammensetzung visualisieren, z. B. nach Anlageklassen und Regionen.
-- die Portfoliostrategie mit Deiner geplanten Asset Allocation definieren, verfolgen und im Rebalancing sicherstellen.
-- eine übergreifende Sicht über mehrere Depots und Verrechnungskonten herstellen.
-- die Abrechnungen von Online-Banken und -Brokern schnell und bequem zu importieren.
-
-## Mithelfen...
+# Mithelfen...
 
 Wie Ihr leicht sehen könnt, gibt es noch viele weiße Seiten in diesem Handbuch. 
 Meldet euch bei Interesse auch im Forum! [Vielen Dank an alle, die bisher schon mitgeholfen haben.](https://github.com/portfolio-performance/portfolio-help/graphs/contributors)
