@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3522,7 +3588,7 @@
 <p>In the first scenario, if the security is in the same currency as the deposit account, the transaction is straightforward. The buyer or seller simply pays or receives the equivalent amount corresponding to the value of the security, and the corresponding amount is debited or credited from or to their deposit account.</p>
 <p>In the second scenario, if the security is not in the same currency as the deposit account, a currency conversion becomes necessary. This need for currency conversion can also arise if your broker or bank charges you taxes and fees in your local currency, while you're utilizing a deposit account denominated in the foreign currency of the security.</p>
 <h2 id="one-currency">One currency</h2>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Buy and Sell transaction with one currency. </figcaption><img alt="" src="../images/buy-sell-same-currency.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Buy and Sell transaction with one currency. </figcaption><img alt="" src="../images/buy-sell-same-currency.svg"></figure></p>
 <p>In Figure 1, both the security and the deposit account are denominated in EUR. Consequently, no currency conversion is required, given that fees and taxes are also in EUR for this particular broker. The fields <code>Security</code>, <code>Securities Account</code>, <code>Deposit Account</code>, <code>Shares</code>, and <code>Debit Note</code> are mandatory. An error message will be displayed at the top until all conditions are fulfilled, as depicted in Figure 1.</p>
 <p>You can navigate through these fields using the Tab key on your keyboard or by using the mouse.</p>
 <ul>
@@ -3549,7 +3615,7 @@
 </li>
 </ul>
 <p>The typical flow for entering this information is likely to be <code>Shares * Quote (price) &gt;&gt; Gross Value + Fees + Taxes &gt;&gt; Debit Note</code>. There are a few nuances if you make changes afterward (see Figure 3).</p>
-<p><figure id="_figure-2"><figcaption>Figure 2.  Calculation flow between Shares and Debit Note.</figcaption><img alt="" class="pp-figure" src="../images/info-transaction-calculation-flow.svg"></figure></p>
+<p><figure id="_figure-2"><figcaption>Figure 2. Calculation flow between Shares and Debit Note.</figcaption><img alt="" class="pp-figure" src="../images/info-transaction-calculation-flow.svg"></figure></p>
 <ul>
 <li>Changing the <em>Debit note</em> (afterward) will modify the Gross Value, and consequently, the Quote Price will be adjusted. The number of shares remains unchanged.</li>
 <li>Changing the <em>Gross Value</em> afterward will alter the Debit Note and the Quote Price. Fees, taxes, and the number of shares are unaffected.</li>
@@ -3557,7 +3623,7 @@
 <p>Clicking the "Save" button will update the portfolio accordingly. If you select "Save &amp; New," it will not only update the portfolio but also prompt a new buy/sell dialog box for further transactions.</p>
 <h2 id="two-currencies">Two currencies</h2>
 <p>Sometimes, the currency of the security may differ from the currency of the deposit account being used. In such cases, an <a href="../../view/general-data/currencies/">exchange rate</a> is automatically generated for the pre-filled date. This exchange rate is sourced daily from the ECB (European Central Bank) and does not consider the time of day. It's important to note that altering the date afterward will also result in a change in the exchange rate, regardless of whether the exchange rate was retrieved automatically or manually entered.</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Buy and Sell transaction with two currencies. </figcaption><img alt="" src="../images/buy-sell-different-currency.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Buy and Sell transaction with two currencies. </figcaption><img alt="" src="../images/buy-sell-different-currency.svg"></figure></p>
 <p>It's important to note that the Quote price and the (first) Gross Amount are always expressed in the currency of the traded security (for example, EUR in Figure 2). On the other hand, the debit note is always expressed in the currency of the deposit (as it represents the actual payment). Fees and taxes, however, can be entered in either the currency of the security (on the left side) or the currency of the deposit account (on the right side), or even in both currencies simultaneously.</p>
 
 

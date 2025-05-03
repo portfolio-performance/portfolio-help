@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://help.portfolio-performance.info/en/concepts/reporting-period/">
       
       
-        <link rel="prev" href="../system-overview/">
+        <link rel="prev" href="../system-overview/system-overview-example/">
       
       
         <link rel="next" href="../purchase-value/">
@@ -920,16 +920,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3442,7 +3508,7 @@
   <h1>Reporting period</h1>
 
 <p>The reporting period refers to the specific timeframe used when reporting on the performance of your portfolio. For instance, the performance indicators depicted in Figure 1 are computed over a one-year period, starting from the current date. Other reports and charts, such as those concerning return/volatility and securities performance, also consider this reporting period. It's essential to understand that <em>every</em> performance calculation is based on a reporting period, even if one hasn't been explicitly defined. By default, it is set in Portfolio Performance to one year from the current date.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Drop-down list for selecting the reporting period. </figcaption><img alt="" src="../images/reporting-period-performance.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Drop-down list for selecting the reporting period. </figcaption><img alt="" src="../images/reporting-period-performance.svg"></figure></p>
 <p>The reporting period can significantly influence performance and can be easily manipulated to support a particular viewpoint. Consider, for instance, the price trend of the Amazon share depicted in Figure 2. Depending on the reporting period, you have a massive loss, a massive gain, or a moderate loss.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3453,11 +3519,11 @@
 <li>2023: <code>TTWROR = IRR = (151.94/84)-1 = +80.88%</code></li>
 <li>2022-2023: <code>TTWROR = IRR = (151.94/166.72)-1 = -8.87% or -4.53% p.a.</code></li>
 </ul>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Historical prices in USD for Amazon (period 2022 - 2023). </figcaption><img alt="" src="../images/reporting-period-amazon.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Historical prices in USD for Amazon (period 2022 - 2023). </figcaption><img alt="" src="../images/reporting-period-amazon.svg"></figure></p>
 <p>You can set the reporting period with the drop-down <span style="font-variant: small-caps;">period</span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M8 9h8l-4 7"></path></svg></span> in the top-right corner of the window (see Figure 1). The available options are: <code>1 year</code>, <code>2 years</code>, <code>3 years</code>, <code>New ...</code>, and <code>Manage ...</code>.  With this last option, you can delete or reorder the available periods.</p>
 <p>The 1, 2, or 3-year period is always calculated from the current day and extends from the end of the current day to the end of the day one, two, or three years earlier. For instance, if today is July 4, 2024, then a reporting period of 1 year will extend from the closing time of July 4, 2023, to the closing time of July 4, 2024.  The market value at the beginning (MVB) of this period reflects the portfolio's status at the end of July 4, 2023, while MVE represents the portfolio's status at the end of July 4, 2024 (see for example Figure 3). Concerning the <a href="../performance/money-weighted/">IRR calculation equation</a>, transactions made on the first date, e.g. July 4, 2023, should not be included in the equation, as they are already accounted for in the MVB of the period. Conversely, transactions on the last day of the period should be included in the equation, as they influence the MVE, even if for a very brief period. In the example mentioned above however, as the <code>year 2022</code> period extends from December 31, 2021, to December 31, 2022, a purchase made on January 1, 2022, should be regarded as a cash inflow.</p>
 <p>With the <code>New</code> submenu, you can create custom periods. The choice options in Figure 3 are rather self-explanatory. You cannot give a custom name to this period as they are predefined and named by PP: for example <code>Last 10 trading days</code> or <code>2023</code> for the year 2023.</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Possible custom periods for reporting (the current day is July 4, 2024). </figcaption><img alt="" src="../images/reporting-period-new.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Possible custom periods for reporting (the current day is July 4, 2024). </figcaption><img alt="" src="../images/reporting-period-new.png"></figure></p>
 <ul>
 <li><code>Last xxx years yyyy months</code>: From the current day minus the number of years and months. The standard periods of <code>1`` year</code>, <code>2 years</code>, <code>3 years</code> could be recreated with this option. With this syntax, however, you could create a custom period, such as a <code>1.5 years</code> period.</li>
 <li><code>Last xxx days</code>:  A day refers to a calendar day. Note that in Figure 3, the last xxx days are already pre-populated. Portfolio Performance recognizes that the current year 2024 is a leap year with February 29 and therefore automatically sets the number of days to 366.</li>

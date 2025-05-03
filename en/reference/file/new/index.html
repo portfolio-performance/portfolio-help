@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3716,15 +3782,15 @@
 
 <h1 id="file-new">File ❯ New</h1>
 <p>With the <code>File &gt; New</code> menu you can create the different assets Portfolio Performance can manage.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  File &gt; New submenu.</figcaption><img alt="" src="../images/mnu-new.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. File &gt; New submenu.</figcaption><img alt="" src="../images/mnu-new.png"></figure></p>
 <h2 id="portfolio-file">Portfolio (File)</h2>
 <p>The option <code>File &gt; New &gt; File</code> initiates a wizard for creating a new portfolio. Within the wizard, you need to set the base currency of the portfolio, create a security and deposit account (mandatory), add additional deposit accounts, and include securities and taxonomies (optional). A detailed explanation of the wizard can be found in <a href="../../../getting-started/create-portfolio/">Getting Started &gt; Creating a Portfolio File</a>.</p>
 <h2 id="security">Security</h2>
 <p>The menu option <code>File &gt; New &gt; Security</code> is self-explaining: it allows you to create a new security. This can also be done at other locations within the UI; for example as part of the portfolio creation wizard (see above), or with the little green icon next to Securities in the sidebar or in the <code>All Securities</code>view.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  File &gt; New &gt; Security menu.</figcaption><img alt="" src="../images/mnu-file-new-security.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. File &gt; New &gt; Security menu.</figcaption><img alt="" src="../images/mnu-file-new-security.png"></figure></p>
 <p>You can either choose to create a new empty instrument (e.g. security) or to search for an existing one.  You can type (part of) the security name in the search box. Choosing from the drop-down box <code>All</code>, you can search for shares or bonds or both. After clicking the Search button, the list below will be populated with possible target instruments. The following fields are displayed for each instrument and will be used upon selecting the security: <code>Name</code>, <code>Symbol</code>, <code>ISIN</code>, <code>WKN</code>, <code>Type</code>, <code>Exchange</code>, <code>Currency</code>, and <code>Source</code> (see <a href="../../concepts/PP-terminology.md">Basic concepts &gt; PP-terminology</a> for a definition of each term).</p>
 <p>Once the correct security has been selected, proceed to the next step by clicking on the Apply button. Some information such as name, symbol and historical quotes will already be filled in, based on the selected data source. You should always check the info, especially the stock market. All the info can be changed; even the name. Alternatively, one may initiate the process with an empty security (see Figure 3) and manually input the required information.</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Input panel for the creation of a security.</figcaption><img alt="" src="../images/securities-master-data.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Input panel for the creation of a security.</figcaption><img alt="" src="../images/securities-master-data.svg"></figure></p>
 <p>While only the <code>name</code> is obligatory, there are several other fields that need attention. They are grouped into 5 sub panels, marked with a yellow line in Figure 3.</p>
 <ul>
 <li>
@@ -3746,16 +3812,16 @@
 <h3 id="taxonomies"><strong>Taxonomies</strong></h3>
 <p>A taxonomy serves as a classification system for your securities. Taxonomies typically group securities based on shared characteristics such as industry, sector, geographical region, market capitalization, or asset class. For instance, the existing <code>Asset Classes</code> taxonomy allows you to classify your securities into categories such as <em>Cash</em>, <em>Equity</em>, <em>Debt</em>, <em>Real Estate</em>, or <em>Commodity</em>.</p>
 <p>When you first open the Taxonomies panel (shown in Figure 4) in a new portfolio, it will be empty. To start using taxonomies, you'll need to create one or more for your portfolio. In Figure 4, four taxonomies are visible: Asset Classes, Asset Allocation, Industries (GICS, Sectors), and Regions. These taxonomies also appear under the View menu.</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Taxonomies panel. </figcaption><img alt="" src="../../view/taxonomies/images/taxonomies-assign-security.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. Taxonomies panel. </figcaption><img alt="" src="../../view/taxonomies/images/taxonomies-assign-security.png"></figure></p>
 <p>To assign a security to a taxonomy category, click the <code>New Category</code> button below the taxonomy. A drop-down menu will appear, listing all possible categories along with a weight input box. You can assign a security to multiple taxonomies. It's also possible to assign multiple categories of one taxonomy, as long as the combined weight doesn't exceed 100%. If the weight is not displayed next to the category (see Figure 4), then it is set to 100%. Click the minus button (-) next to the category to remove it from the taxonomy assignment. The above actions can also be done (more easily) in the Taxonomies View.</p>
 <p>For detailed instructions on how to create, manage, and use taxonomies, see section <a href="../../view/taxonomies/">Reference &gt; View &gt; Taxonomies</a> in the manual.</p>
 </li>
 <li>
 <h3 id="historical-quotes"><strong>Historical Quotes</strong></h3>
 <p>For evaluating your portfolio, you need the current &amp; historical prices of the security. In this panel (see Figure 4) you can set the data source of the <code>Quote Feed</code>. As <code>Provider</code>, you can choose between several alternatives: Yahoo Finance, Alpha Vantage, Quandl, ... (see Figure 5). You can even refer to a webpage (e.g. from an investor site) that contains these historical data; an example is given in <a href="../../../how-to/downloading-historical-prices/morningstar/">Import fund data from Morningstar</a>. Or you can create them yourself and import the quotes from a csv-file. </p>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5.  Historical quotes panel.</figcaption><img alt="" src="../images/historical-quotes.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5. Historical quotes panel.</figcaption><img alt="" src="../images/historical-quotes.png"></figure></p>
 <p>Depending upon the chosen provider, you may need to input additional information. If the provider is a website, you need to specify a URL. If the provider covers more than one <code>Exchange</code>, you need to select the correct one.</p>
-<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6.  Historical quotes panel.</figcaption><img alt="" src="../images/quote-feeds.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6. Historical quotes panel.</figcaption><img alt="" src="../images/quote-feeds.png"></figure></p>
 <p>Downloading historical prices for large-cap (big companies) stocks is relatively straightforward. However, obtaining data for less common stocks, mutual funds, bonds, bitcoin, etc., can sometimes be more challenging. We explore these topics in depth in <a href="../../../how-to/downloading-historical-prices/">Downloading Historical Prices</a> in the how-to section.   </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3768,23 +3834,23 @@
 </li>
 </ul>
 <h2 id="cryptocurrency">Cryptocurrency</h2>
-<p><figure class="align-right" style="width:30%" id="_figure-7"><figcaption>Figure 7.  Create new crypotocurrency.</figcaption><img alt="" src="../images/new-cryptocurrency.png"></figure></p>
+<p><figure class="align-right" style="width:30%" id="_figure-7"><figcaption>Figure 7. Create new crypotocurrency.</figcaption><img alt="" src="../images/new-cryptocurrency.png"></figure></p>
 <p>A cryptocurrency is a digital asset based on a blockchain system. There are thousands of different cryptocurrencies on the market, the best known of which is Bitcoin. Unlike traditional assets, there is no tangible or intangible value backing a cryptocurrency. Instead, its value is determined solely by market demand and what investors are willing to pay for it.</p>
 <p>In PP, cryptocurrencies are treated like any other security, such as stocks. You can buy and sell cryptocurrencies, but you cannot have a deposit account denominated in a cryptocurrency.</p>
 <p>The popular <a href="https://www.coingecko.com/">CoinGecko website</a> is the source of the cryptocurrencies, listed in Figure 7. You can use the Search box to look-up a specific cryptocurrency in this very long list. If the crypto you need is not listed, you should create a new <a href="#security">empty security</a>; remember cryptos are no different from securities in PP. However, you will need to find a way to retrieve historical price data for this new crypto security.</p>
 <h2 id="exchange-rate">Exchange Rate</h2>
-<p><figure class="align-right" style="width:30%" id="_figure-8"><figcaption>Figure 8.  Create new exchange rate. </figcaption><img alt="" src="../images/new-exchange-rate.png"></figure></p>
+<p><figure class="align-right" style="width:30%" id="_figure-8"><figcaption>Figure 8. Create new exchange rate. </figcaption><img alt="" src="../images/new-exchange-rate.png"></figure></p>
 <p>Portfolio Performance uses exchange rates from the <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">European Central Bank</a>. You can find the list of about 40 available exchange rates under the <a href="../../view/general-data/currencies/">View &gt; Currencies menu</a>. In some rare cases, you may require an exchange rate that is not included in the available list.</p>
 <p>To create a custom exchange rate, use the <code>File &gt; New &gt; Exchange rate</code> menu. You will need to provide a quote provider, such as a JSON source or webpage, for the currency you want to add. Once you've created the custom exchange rate, it will be added to the currencies list with the name <code>Security based exchange rate provider</code> in the <code>Provider</code> column.</p>
 <h2 id="consumer-price-index">Consumer Price Index</h2>
-<p><figure class="align-right" style="width:30%" id="_figure-9"><figcaption>Figure 9.  Create new consumer price index.</figcaption><img alt="" src="../images/new-consumer-price-index.png"></figure></p>
+<p><figure class="align-right" style="width:30%" id="_figure-9"><figcaption>Figure 9. Create new consumer price index.</figcaption><img alt="" src="../images/new-consumer-price-index.png"></figure></p>
 <p>The Harmonised Indices of Consumer Prices (HICP) are retrieved from the <a href="https://ec.europa.eu/eurostat/databrowser/view/teicp000/default/table?lang=en">Eurostat website</a> and represent the monthly inflation rate of consumer goods and services purchased by households in the euro area. The HICP is "harmonised" because all countries in the European Union use the same methodology to calculate it. The baseline of 100 is set for the year 2015.</p>
 <p>After selecting the country, a security named [name of country] (HICP) is created with a <a href="../../help/preferences/#calendar">First of month</a> calendar and the <code>Eurostat - Harmonised Indices of Consumer Prices (HICP)</code> as the Quote Feed provider. </p>
 <p>Being an index, however, these data series aren't normally used as a regular security (buy or sell). They can serve as a <a href="../../../how-to/benchmarking/">benchmark</a> for your other investments. </p>
 <h2 id="taxonomy">Taxonomy</h2>
 <p>To create a new taxonomy, select <code>File &gt; New &gt; Taxonomy</code> from the menu. This will open the <code>New Taxonomy</code> input box, where you can name the taxonomy and choose whether to create a new empty structure or use a predefined template, such as Asset Classes or Industries (GICS). For more information on creating and managing taxonomies, see the section on <a href="../../view/taxonomies/">Taxonomies</a> in the Reference manual.</p>
 <h2 id="watchlist">Watchlist</h2>
-<p><figure class="align-right" style="width:50%" id="_figure-10"><figcaption>Figure 10.  Two watchlists.</figcaption><img alt="" src="../images/mnu-file-new-watchlist.png"></figure></p>
+<p><figure class="align-right" style="width:50%" id="_figure-10"><figcaption>Figure 10. Two watchlists.</figcaption><img alt="" src="../images/mnu-file-new-watchlist.png"></figure></p>
 <p>A watchlist is a manual grouping of securities. To create a new list, navigate to <code>File &gt; New &gt; Watchlist</code> in the menu. Once created, it will appear under the <code>All Securities</code> heading. For example, Figure 10 shows two watchlists named <code>Indices</code> and <code>Asia</code>, with the first containing four securities indices such as the DAX and Dow Jones. You can create an unlimited number of watchlists in PP.</p>
 <p>Using the context menu of a watchlist (right-click on a list), you can rename, delete, or move the watchlist within the sidebar. Deleting a watchlist does not actually delete the securities in it; only the list is removed from the sidebar.</p>
 <p>Adding securities to a watchlist is a manual process; simply drag one or more securities from the <code>All Securities</code> view and drop them onto the watchlist.  To remove a security from the watchlist, right-click the security and choose 'Remove from <em>Your_Watchlist</em>'. This action does not delete the security; it only removes it from the watchlist. The security will remain available in the <code>All Securities</code> view. For the other menu options, see <a href="../../view/securities/context-menu/">Context Menu</a>.</p>

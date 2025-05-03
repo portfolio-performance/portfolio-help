@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3522,15 +3588,15 @@
 <p>Scraping this information from the website should be possible. Portfolio Performance offers two methods: automatic and manual scraping.</p>
 <h2 id="automatic-scraping">Automatic scraping</h2>
 <p>ARIVA.DE is a German website that provides financial information and news, such as stock prices, market indices, commodities, currencies, funds, certificates, bonds, and more.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Historical prices on ARIVA.DE (English translation)</figcaption><img alt="" src="../images/table-website-arriva-de.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Historical prices on ARIVA.DE (English translation)</figcaption><img alt="" src="../images/table-website-arriva-de.png"></figure></p>
 <p>The URL for the webpage of Figure 1 is:
 <code>https://www.ariva.de/nvidia-aktie/kurse/historische-kurse</code>.  Inputting this URL in the Feed URL field of Figure 2 will result in the quotes of the current month being downloaded. 
 Using this method to append the historical quotes will only be effective when you regularly update the quotes by opening the portfolio or using the Online menu. Please note that you could select a different month, which could be a solution if you skipped one or several months.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Historical prices on ARIVA.DE (English translation)</figcaption><img alt="" src="../images/table-website-PP-arriva-de.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Historical prices on ARIVA.DE (English translation)</figcaption><img alt="" src="../images/table-website-PP-arriva-de.png"></figure></p>
 <p>For some reason, the Volume info isn't retrieved, and neither are the High &amp; Low quote from the Bourserama URL: <code>https://www.boursorama.com/cours/historique/NVDA</code>. Please be aware that this link will provide monthly quotes, even though daily quotes are displayed on the screen.</p>
 <h2 id="manual-scraping">Manual scraping</h2>
 <p>The above mentioned method doesn't always work. Some websites use JavaScript or other technologies to build the tables on the clients machine. For example, at the Finanzen.net website, the default URL <code>https://www.finanzen.net/historische-kurse/nvidia</code> will only display the current day's quote, requiring input of the start and end date to view other periods. In such cases, manual scraping could be employed to capture this data.</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Manual scraping. </figcaption><img alt="" src="../../../reference/view/images/contxt-mnu-all-securities-bottom-panel-hist-quotes-import-html-table.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Manual scraping. </figcaption><img alt="" src="../../../reference/view/images/contxt-mnu-all-securities-bottom-panel-hist-quotes-import-html-table.png"></figure></p>
 <ul>
 <li>Present the data in the preferred download format.</li>
 <li>Right-click on the table and choose <code>Page Source</code> from the context menu.</li>

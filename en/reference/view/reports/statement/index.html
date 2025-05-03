@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3466,13 +3532,13 @@
 
 <h1 id="statement-of-assets">Statement of Assets</h1>
 <p>The <code>Statement of Assets</code> report provides a snapshot of your portfolio's assets (securities, accounts) at a specific point in time. The default date is the current day. You can choose a different date with the "Time machine"; the calendar icon at the top right. Figure 1 lists all transactions of the demo-portfolio up to October 5, 2023. Figure 2 displays the Statement of Assets report as of this date.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  List of All transactions of demo portfolio (2023-10-05)</figcaption><img alt="" src="../../../../images/sb-all-transactions.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. List of All transactions of demo portfolio (2023-10-05)</figcaption><img alt="" src="../../../../images/sb-all-transactions.png"></figure></p>
 <p>In addition to the purchase of <code>share-1</code>, <code>share-2</code>, and <code>bond-1</code>, there is also a sale of a portion of <code>share-1</code>. In this latter transaction, no deposit is made, and the proceeds from the sale remain in the deposit account.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Statement of Assets report of demo portfolio (2023-10-05)</figcaption><img alt="" src="images/sb-reports-statement.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Statement of Assets report of demo portfolio (2023-10-05)</figcaption><img alt="" src="images/sb-reports-statement.png"></figure></p>
 <p>The report in Figure 2 displays all the available assets on October 5, 2023, including the deposit account with the result of the sale of <code>share-1</code>. The securities are valued at their market prices based on the closing quotes from the previous day, which is -in this case- October 4, 2023. <code>Share-2</code> is handled in USD. The conversion to EUR is based on the exchange rate provided by the ECB on October 4, 2023 (closing previous day).</p>
 <p>The report displays a total line above and below the assets. With the Presentation option (see Figure 3 bottom), you could add or remove the Total lines. The default setting is above <em>and</em> below. Since no taxonomy has been added to the demo portfolio, all assets are listed as <code>Without classification</code>.</p>
 <h2 id="available-columns">Available columns</h2>
-<p><figure class="align-right" id="_figure-3"><figcaption>Figure 3.  Available columns. </figcaption><img alt="" src="images/sb-reports-statement-gear-icon.png">
+<p><figure class="align-right" id="_figure-3"><figcaption>Figure 3. Available columns. </figcaption><img alt="" src="images/sb-reports-statement-gear-icon.png">
 The default columns that are displayed are </figure><code>Shares</code>, <code>Name</code>, <code>Symbol</code>, <code>Quote</code>, <code>Market Value</code>, <code>Share in %</code>, and <code>Note</code>. Many more columns/fields are available (see Figure 3). While the column headings are mostly self-explanatory, a few of them may require further clarification. You can customize the default columns using the gear icon located in the top-right corner (see Figure 2).</p>
 <p>The abbreviation "MA" that follows Purchase Price/Value stands for "Moving Average" but in fact it should be better called WA or "Weighted Average". As mentioned in the discussion about <a href="../../../../concepts/purchase-value/">Purchase Value</a>, Portfolio Performance uses the FIFO (First-in, First-out) method to calculate prices and values. "Moving/weighted average", however, is another commonly used method.</p>
 <p>The Purchase Price and the Purchase Price (MA) of <code>share-1</code> are respectively 44.41 EUR and 51.61 EUR; a rather big difference. Why? From Figure 2:</p>

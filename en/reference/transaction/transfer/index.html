@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3540,21 +3606,21 @@
 <h2 id="transfer-between-accounts">Transfer between Accounts</h2>
 <p>You can transfer money between deposit accounts of the same currency or different currencies. In Figure 1, for example, 100 EUR is transferred from <code>deposit-account-1 (EUR)</code> to <code>deposit-account-2 (USD)</code>. Given the exchange rate of 1.0696 EUR/USD, this will result in a deposit of 106.96 USD in the latter account.</p>
 <p>The exchange rate is automatically retrieved from the <a href="../../view/general-data/currencies/">ECB</a> for the specified date, but it can be manually overridden if necessary.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Transfer between EUR- and USD-deposit account. </figcaption><img alt="" src="../images/transfer-between-dep-accounts.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Transfer between EUR- and USD-deposit account. </figcaption><img alt="" src="../images/transfer-between-dep-accounts.png"></figure></p>
 <h2 id="security-transfer">Security Transfer</h2>
 <p>As the name suggests, this transaction involves transferring a specified number of shares from one security account to another. It is only accessible in the menu when the portfolio includes more than one security account. The topic <a href="../../view/accounts/security-account/#one-or-more-security-accounts">Reference &gt; View &gt; Accounts &gt; Securities Accounts</a> summarizes some arguments for portfolios with only one security account or multiple accounts.</p>
 <p>There are various scenarios where security transfers might be necessary. For instance, if you have multiple brokers each with their respective securities accounts, you might need to transfer a security between them, mirroring real-life scenarios where you move a security from one broker to another.</p>
 <p>Another common scenario involves making provisions for the future, such as reserving some of your stocks for your children. While keeping the stocks in your portfolio, you may transfer a portion from the <em>parent</em> account to a <em>child</em> account. This segregation ensures that selling stocks from the parent account doesn't impact the performance of the child account, enabling separate performance tracking.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Security transfer dialog box.</figcaption><img alt="" src="../images/security-transfer.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Security transfer dialog box.</figcaption><img alt="" src="../images/security-transfer.png"></figure></p>
 <p>With three drop-down boxes, you can select the security (<code>share-1</code>), as well as the source (<code>security-account-1</code>)and target (<code>security-account-2</code>) security account; see Figure 2. Several checks are conducted; for instance, you cannot transfer a security that is unavailable or insufficiently available in the source account. You also need to provide the date of the transfer, the number of shares, and the quote price.</p>
 <p>Although it's technically one transaction, behind the scenes, Portfolio Performance creates two "virtual" transactions (refer to Figure 3; information pane). The security transfer is divided into a Transfer (Outbound) of 3 shares from <code>security-account-1</code>, followed by a Transfer (Inbound) into <code>security-account-2</code>. However, both transactions are considered as a single entity. Editing one of them will trigger the Security Transfer dialog. Deleting one transaction will also remove the other.</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Result of the Security Transfer transaction.</figcaption><img alt="" src="../images/security-transfer-result.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Result of the Security Transfer transaction.</figcaption><img alt="" src="../images/security-transfer-result.png"></figure></p>
 <p>A consequence of the Security Transfer transaction is the creation of two open trades, as depicted in Figure 4. The second trade covers the remaining 7 shares in <code>security-account-1</code>, while the first trade comprises the four transferred shares in <code>security-account-2</code>. Both trades are recorded as starting from the date of the original security purchase. While it could be argued that the second trade should start from the date of the transfer, this is not the case. Additionally, both trades share the same buying price, although an argument could be made to use the quote price of the transfer instead. It should be noted that the date and quote price entered with the Security Transfer do not appear to be utilized in this process.</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Resulting trades from the Security Transfer transaction.</figcaption><img alt="" src="../images/security-transfer-result-trades.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. Resulting trades from the Security Transfer transaction.</figcaption><img alt="" src="../images/security-transfer-result-trades.png"></figure></p>
 <h2 id="setting-the-quote-price">Setting the quote price</h2>
 <p>Why is a quote price required? What price should you enter: the purchase price, the historical price at the transfer date, zero? Why can't you <em>just</em> transfer the shares from one account to another? The short answer is performance tracking.</p>
 <p>Considering the scenario from above, transferring 3 shares (see figure 2). The stock is purchased at 10 EUR per share on Jan 1, 2023. The historical price at the time of transfer was 12 EUR/share, although you transferred it at 10 EUR/share (see Figure 3). Today (2024-01-01), the price has risen to 15 EUR per share. What is the performance of both security accounts for the reporting period 2023-01-01 until 2024-01-01? Remember, the reporting period spans from the end of the first day (e.g. 2023-01-01) to the end of the last day.</p>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5.  Absolute performance and IRR of source and target accounts (quote price transfer = 10 EUR). </figcaption><img alt="" src="../images/security-transfer-performance.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5. Absolute performance and IRR of source and target accounts (quote price transfer = 10 EUR). </figcaption><img alt="" src="../images/security-transfer-performance.svg"></figure></p>
 <p>The formula for <a href="../../view/reports/performance/#absolute-change">absolute performance</a> is: <strong>MVE - MVB + CFout - CFin</strong>, where MVE = Market Value at the End (of the reporting period), MVB = Market Value at the Beginning, CFout = cash flows out of the account, and CFin = cash flows into the account. The absolute performance of an account is the difference between the beginning and end value of that account, but corrected for the in- and outflows.</p>
 <ol>
 <li>

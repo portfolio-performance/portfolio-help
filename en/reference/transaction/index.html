@@ -917,16 +917,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3433,7 +3499,7 @@
 
   <h1>Transaction</h1>
 
-<p><figure class="align-right" style="width:30%" id="_figure-1"><figcaption>Figure 1.  Transaction menu. </figcaption><img alt="" src="images/transaction-types.png"></figure></p>
+<p><figure class="align-right" style="width:30%" id="_figure-1"><figcaption>Figure 1. Transaction menu. </figcaption><img alt="" src="images/transaction-types.png"></figure></p>
 <p>In PortfolioPerformance (PP), a transaction represents an operation that alters the state of a portfolio; for example, a deposit will increase a deposit account. As depicted in Figure 1, there are 15 transaction types. <code>Security transfer ...</code> and <code>Transfer between accounts ...</code> deviate slightly from the others and only appear when there is more than one security and/or deposit account. The transactions can be grouped into pairs of operations that have opposite effects:</p>
 <ul>
 <li>Buy/sell: Buying an asset will increase the value of a security account and decrease a deposit account, whereas selling an asset will have the reverse effect.</li>
@@ -3463,7 +3529,7 @@
 <p>With the exception of interest, all transaction types are associated with a specific security, such as a share. Interest, on the other hand, is only linked to a deposit account. One implication of this is that interest on bonds should be recorded as a dividend in Portfolio Performance if you wish to maintain the connection with the bond.</p>
 </li>
 </ul>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  All 15 transaction types with their effect.</figcaption><img alt="" src="images/info-transaction-types.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. All 15 transaction types with their effect.</figcaption><img alt="" src="images/info-transaction-types.svg"></figure></p>
 
 
 

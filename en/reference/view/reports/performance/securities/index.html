@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3549,7 +3615,7 @@
   <h1>Securities</h1>
 
 <p>While the Reports &gt; Performance menu gives you the most important key performance indicators on portfolio level such as IRR and TTWROR, the Reports &gt; Performance &gt; Securities menu provides you with much more detail on security level. However, it's important to understand the difference; especially in terms of cashflows (see section on performance).</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Overview of Performance &gt; Reports &gt; Securities. </figcaption><img alt="" src="../images/securities-overview.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Overview of Performance &gt; Reports &gt; Securities. </figcaption><img alt="" src="../images/securities-overview.svg"></figure></p>
 <h2 id="main-pane">Main Pane</h2>
 <p>The Reports &gt; Performance &gt; Securities menu contains a main pane (top) and an information pane (bottom) of the selected security from the main pane. Performance calculation is always dependent on the chosen Reporting Period, which could be set with the drop-down at the top-right. </p>
 <p>The first Filter group (top right) allows you to narrow down the securities list to <code>shares</code> ≠ <code>0</code> or <code>shares = 0</code>. The latter filter will display only those shares that have been completely sold, where the number of purchased shares has dropped to zero. Without either of these filters, all shares, regardless of quantity, are displayed. The second filter group is also detailed in the <a href="../calculation/#main-pane">Performance &gt; Calculation menu</a>, allowing you to choose either the entire portfolio or specific individual accounts.</p>
@@ -3564,7 +3630,7 @@
 <p>Purchase value: The small icon preceding the heading name indicates that this concept deviates from the more common <code>Bying price</code>. When hovering over the column heading with the mouse, a small popup will appear, explaining the meaning of the concept. The purchase value of the available shares (at valuation time) is calculated using the FIFO (First-in/First-Out) method and includes transaction fees and taxes.
     For <code>share-2</code> in Figure 1, this calculation is relatively straightforward. On September 30, 2022, eight shares were purchased at a quoted price of 16 EUR/share, totaling 67 EUR, which includes 3 EUR of transaction fees and taxes.</p>
 <p>Hovering over the purchase value of <code>share-1</code> will display a transaction history (refer to Figure 2), which is more complex. On January 15, 2021, ten shares were purchased for 155 EUR (including fees and taxes). Of these 10 shares, 5 remain after the sale on April 12, 2023, valued at 77.50 EUR (half of the original 155 EUR). A second purchase of 5 shares was made on January 14, 2022, for 84 EUR, bringing the total purchase value to 161.50 EUR at the time of valuation.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Purchase Value. </figcaption><img alt="" src="../images/securities-popup-purchase-value.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Purchase Value. </figcaption><img alt="" src="../images/securities-popup-purchase-value.png"></figure></p>
 </li>
 <li>
 <p>Purchase price: As with the Purchase Value, this is the calculated buying price, taking into account multiple purchases and sales. For example, the five remaining shares of <code>share-1</code> from the first purchase were priced at 15 EUR excluding fees and taxes. The second purchase of 5 shares was priced at 16 EUR (excl fees and taxes). The <em>weighted</em> average purchase price is [(5 x 15) + (5 x 16)]/10 = 15.50 EUR.</p>
@@ -3579,7 +3645,7 @@
 </ul>
 <h3 id="available-columns">Available columns</h3>
 <p>In addition to the default visible columns described above, several other fields can be added (see Figure 3).</p>
-<p><figure class="align-right" style="width:30%" id="_figure-3"><figcaption>Figure 3.  Available fields Securities. </figcaption><img alt="" src="../images/securities-available-columns.png"></figure></p>
+<p><figure class="align-right" style="width:30%" id="_figure-3"><figcaption>Figure 3. Available fields Securities. </figcaption><img alt="" src="../images/securities-available-columns.png"></figure></p>
 <ul>
 <li>
 <p>Purchase Value (Moving Average): By default, Portfolio Performance employs the FIFO method to value the stock inventory. Under this method, upon sale, the stock that was first purchased will also be the first sold, leaving the more recent purchases as the remaining stock. In a rising market, this means the most expensive shares remain and performance appears to be more favorable, especially when compared to the LIFO method.</p>
@@ -3620,7 +3686,7 @@
 <ul>
 <li>
 <p>Realized Gains: Hovering over the value displays a popup with more info. For example, the realized gain of <code>share-1</code> is 37 EUR. The five shares are sold for the gross value of 112 EUR; while the purchase value (without fees and taxes) was 75 EUR. The realized gain is thus 37 EUR. () </p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Realized gains for share-1. </figcaption><img alt="" src="../images/securities-popup-realized-gains.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. Realized gains for share-1. </figcaption><img alt="" src="../images/securities-popup-realized-gains.png"></figure></p>
 </li>
 <li>
 <p>Currency gains / Realized Gains: If a foreign currency security is sold, currency gains could occur. For example, an investment of 100 USD on 2022-04-01 was worth 90.48 EUR; due to the USD/EUR = 0.9048 exchange rate. Selling this investment on 2024-04-26 would realize 93.34 EUR; only because the exchange rate has increased to USD/EUR = 0.9334. Without even any change in quote price, this investment should have a currency gain of 2.86 EUR.  </p>

@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3605,7 +3671,7 @@
 <p>The menu <code>File &gt; Export</code> has only two options: CSV files (comma-separated values) and Portfolio Performance XML.</p>
 <h2 id="csv-files-comma-separated-values">CSV files (comma-separated values)</h2>
 <p>Selecting the "CSV Files" option will reveal an additional panel for specifying the type of information to be exported. The exported CSV file utilizes the UTF-8 encoding, a universal and widely used method for converting text to bytes. This encoding can represent any character in the Unicode standard, encompassing over 140,000 characters from various languages and scripts. The importance of the encoding becomes apparent when importing the CSV file. Most programs, such as Excel, can accurately recognize the encoding. However, for PP's Import function, it's crucial to choose the correct encoding.</p>
-<p><figure pp-figure="" id="_figure-1"><figcaption>Figure 1.  Export CSV file dialog from demo-portfolio-04.xml.</figcaption><img alt="" src="../images/export-csv-file.png"></figure></p>
+<p><figure pp-figure="" id="_figure-1"><figcaption>Figure 1. Export CSV file dialog from demo-portfolio-04.xml.</figcaption><img alt="" src="../images/export-csv-file.png"></figure></p>
 <p>As you can see, there are two deposit accounts (EUR and USD) and one security account (Broker-A) in Figure 1. The USD deposit account is used for share-3, which is expressed in USD.</p>
 <p>If you have securities in a different currency than the portfolio base currency such as in Figure 1, you can convert the historical quotes to the base currency by checking <code>Convert all quotes of securities to portfolio base currency</code>. Please note that this option does not convert the purchase prices, fees, ... that might be expressed in another currency.</p>
 <h3 id="account-transactions">Account Transactions</h3>

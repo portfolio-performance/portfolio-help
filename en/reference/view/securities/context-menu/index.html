@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3536,7 +3602,7 @@
 
   <h1>Context Menu</h1>
 
-<p><figure class="align-right" style="width:30%" id="_figure-1"><figcaption>Figure 1.  Context menu of a selected security.</figcaption><img alt="" src="../images/mnu-context.png"></figure></p>
+<p><figure class="align-right" style="width:30%" id="_figure-1"><figcaption>Figure 1. Context menu of a selected security.</figcaption><img alt="" src="../images/mnu-context.png"></figure></p>
 <p>The context menu of a security contains several additional options that are not available within the <code>view menu</code>. You can access the context menu by selecting a security or a security view (e.g., securities account) and right-clicking. A pop-up, as shown in Figure 1, will be displayed. The menu items Buy, Sell, Dividend, Tax Refund, Delivery (Inbound &amp; Outbound) are already available in the <a href="../../../transaction/">Transaction menu</a>. Other items such as Events could be accessed in other views.</p>
 <h2 id="documented-elsewere">Documented elsewere</h2>
 <p>Several menu items do also appear in other menu's or views and are already documented in other sections of the documentation.
@@ -3546,28 +3612,28 @@
 <h2 id="stock-split">Stock split ...</h2>
 <p>A stock split is a corporate action where a company adjusts the number of its outstanding shares, either by increasing or decreasing them, while keeping the overall market value of the company unchanged. In a <strong>forward</strong> stock split, e.g. 5-for-1, the number of shares increases and the price per share decreases proportionally. In a <strong>reverse</strong> stock split, e.g. 1-for-5, the number of shares decreases and the price per share increases proportionally. Regardless of the type, the total value of an investor’s holdings remains the same.</p>
 <p>For example, by early 2022, Amazon's stock had risen to approximately 3,000 USD per share, a price too high for most investors (see Figure 2). To address this, Amazon approved a 20-for-1 stock split, which took effect on June 6, 2022. In this split, each existing share of the company's stock was divided into 20 new shares, with each new share worth one-twentieth of the original share price.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Historical prices of Amazon.</figcaption><img alt="" src="../images/split-stock-amazon-unadjusted-PP.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Historical prices of Amazon.</figcaption><img alt="" src="../images/split-stock-amazon-unadjusted-PP.png"></figure></p>
 <p>The resulting graph of the historical prices (see Figure 2) is unattractive and difficult to interpret; for instance, it’s unclear by how much the stock rises in 2023-2024. Portfolio Performance currently handles stock splits in the same manner as most financial services, but this approach has some disadvantages (see the <a href="https://forum.portfolio-performance.info/t/aktiensplit-buchen/11758">forum discussion</a>). Essentially, it retroactively assumes that the shares have <em>always</em> been split. In the case of the 20-for-1 stock split mentioned earlier, the historical share prices before June 6, 2022, are adjusted to one-twentieth of their original value, while the quantity of shares in transactions is multiplied by 20; hereby breaking the link with the <em>real</em> figures on paper notes. For more detailed information and background, please refer to <a href="../../../../how-to/recording-stock-split/">How-to &gt; Recording Stock Split</a>.</p>
 <p>Selecting the Stock Split option will initiate a wizard that will guide you through three steps to execute the split. In <strong>Step 1</strong> you select the security, and define the split date and the split ratio.</p>
 <p>You can use the drop-down menu to select the security if it's not already filled in. The Ex-date (execution date) is the date when the stock exchange first trades the split shares at the adjusted price. For instance, in case of the Amazon split, the Ex-date would be June 6, 2022. Additionally, you'll need to specify the split ratio, such as 20-for-1. A reverse split would be 1-for-20. It's worth noting that these ratios can also be decimal numbers.</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Split stock wizard - step 1. </figcaption><img alt="" src="../images/split-stock-wizard-step-1.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Split stock wizard - step 1. </figcaption><img alt="" src="../images/split-stock-wizard-step-1.png"></figure></p>
 <p><strong>Step 2</strong> will show you the impact of this stock split on each transaction (buy, sell, delivery). The result is that the number of shares in your possesion will be changed, according to the split ratio. You can skip this step and maintain the transactions unchanged by unchecking the <code>Convert transactions</code> option. If there aren't any transactions, this step has no effect.</p>
 <p>As can be seen in Figure 2 and 4, there was only one buy transaction on January 3, 2022 (before the split date) of one share. Thus, from Janary 3, 2022 on, you will have 20 shares in your account, given that the default <code>Convert transactions</code> is checked.</p>
 <p>The historical prices can be adjusted in the the following step.</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Split stock wizard - step 2. </figcaption><img alt="" src="../images/split-stock-wizard-step-2.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. Split stock wizard - step 2. </figcaption><img alt="" src="../images/split-stock-wizard-step-2.png"></figure></p>
 <p><strong>Step 3</strong> will show you the converted historical prices. If you don't want to change the historical prices, uncheck <code>Convert historical quotes</code>. It's important to note that only prices before the split date will be changed; e.g. Quote (new). Prices after the split will naturally be automatically adjusted correctly by the exchange market.</p>
 <p>The conversion is simple math. For example, on June 3 the old price was 2443 USD. The new price will be 1/20 or 122 USD.</p>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5.  Split stock wizard - step 3. </figcaption><img alt="" src="../images/split-stock-wizard-step-3.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5. Split stock wizard - step 3. </figcaption><img alt="" src="../images/split-stock-wizard-step-3.png"></figure></p>
 <p>In the chart view of the historical prices, a small vertical line with the split ratio at the bottom will indicate the Stock split. With the <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"> menu <code>Configure Chart &gt; Marking &gt; Events</code> you can toggle this line. You can also delete the event in the Events tab in the bottom panel; see <a href="../all-securities/#chart-menu">Events</a>. This will remove the marker in the chart but will <strong>NOT</strong> remove the split from the transactions and historical prices.</p>
-<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6.  Result of Split stock wizard (Amazon). </figcaption><img alt="" src="../images/split-stock-amazon-adjusted-PP.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6. Result of Split stock wizard (Amazon). </figcaption><img alt="" src="../images/split-stock-amazon-adjusted-PP.png"></figure></p>
 <p>Please note the difference between this chart and Figure 2. The rise in 2023 and 2024 is clearly visible, with prices before June 6, 2022 aligning with the adjusted prices. For example, the Buy transaction on January 3, 2022, of one share at approximately 3,400 USD is now shown as a Buy transaction of 20 shares at around 170 USD each.</p>
 <h2 id="event">Event</h2>
 <p>An event is a kind of note that could be attached to a specific security on a particular date. They can be displayed on the historical price chart of that security. They are automatically inserted to mark occurences of stock split or dividend announcements, but can also be used for important stock news.</p>
 <p>Events are generated automatically upon a stock split operation or a dividend announcement. Additionally, you can create your own custom event notes via the context menu of a security (see Figure 1) or the context menu in the Events tab of the information pane.</p>
-<p><figure class="pp-figure" id="_figure-7"><figcaption>Figure 7.  Adding an event. </figcaption><img alt="" src="../images/mnu-context-event-add.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-7"><figcaption>Figure 7. Adding an event. </figcaption><img alt="" src="../images/mnu-context-event-add.png"></figure></p>
 <p>When creating a custom event, you need to provide the security name (from the drop-down list), the date, and free text. This text can be quite long, but since it will be displayed on the chart, it is recommended to keep it concise—just a few words.</p>
 <p>In addition to appearing on the historical prices chart, you can view all events associated with a security in the Events tab of the information pane for the selected security (see Figure 8).</p>
-<p><figure class="pp-figure" id="_figure-8"><figcaption>Figure 8.  Event types. </figcaption><img alt="" src="../images/mnu-context-event-types.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-8"><figcaption>Figure 8. Event types. </figcaption><img alt="" src="../images/mnu-context-event-types.png"></figure></p>
 <p>The Events table contains five columns: <code>Date</code>, <code>Type</code>, <code>Payment Date</code>, <code>Amount</code>, and <code>Details</code>. The event types include:
 - <code>Stock Split</code>: Automatically generated after a stock split operation (see <a href="./">above</a>
 - <code>Dividend announcement</code>: Automatically retrieved by connecting to the web service of (see how-to &gt; Dividend announcements) for more details.

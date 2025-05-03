@@ -935,16 +935,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3451,7 +3517,7 @@
 <p>A bond is a financial instrument that represents a debt obligation. When an entity, such as a government or corporation, issues a bond, they are borrowing money from investors. In return, they promise to pay back the principal amount along with periodic interest payments over a specified period [<a href="https://www.investopedia.com/articles/bonds/08/bond-market-basics.asp">1</a>]. Bonds are not well-supported in Portfolio Performance but with a few simple workarounds mentioned in the <a href="https://forum.portfolio-performance.info/t/verbuchung-von-anleihen/1537/43">German forum</a>, you could manage them effectively. </p>
 <h1 id="adding-the-bond-as-a-security">Adding the bond as a security.</h1>
 <p>Let's assume you've purchased a Volkswagen bond. You received the following banknote as shown in Figure 1.</p>
-<p><figure pp-figure="" id="_figure-1"><figcaption>Figure 1.  Banknote of buying a bond.</figcaption><img alt="" src="../../../images/info-bank-note-bond-vw.svg"></figure></p>
+<p><figure pp-figure="" id="_figure-1"><figcaption>Figure 1. Banknote of buying a bond.</figcaption><img alt="" src="../../../images/info-bank-note-bond-vw.svg"></figure></p>
 <p>Before you can add the buying transaction, you must <a href="../../adding-securities/">create the security</a> in the Securities account. Searching for the ISIN in Portfolio Performance does not yield any results, and searching by name returns the tradable Volkswagen shares. Therefore, you'll need to create an empty instrument and manually input the information for the bond. Historical bond prices aren't particularly crucial since the bond will ultimately be redeemed at 100% upon maturity.  However, -if necessary- they can be <a href="../../../how-to/downloading-historical-prices/table-website/">downloaded in table format</a> from for example the <a href="https://www.ariva.de/XS1972547696/kurse/historische-kurse?go=1&amp;boerse_id=1&amp;month=&amp;clean_bezug=1">ariva.de website </a>. It's important to note that bond prices in historical records are typically expressed as percentages, ranging from 0 to 100%, rather than in a specific currency like EUR, as is common for shares.</p>
 <h1 id="recording-the-buy-transaction">Recording the buy transaction</h1>
 <p>Since historical prices are represented as numbers from 0 to 100, you can use this format also for the buying price. At maturity date, the bond will value 5000 EUR with a price of 100%. In terms of <code>shares</code> and <code>quotes</code>, this means that you will receive the value of 50 shares x 100 EUR. However, you buy the security at 91.76% (see banknote in Figure 1). The Gross Value becomes 50 x 91.76 EUR = 4588 EUR. Fees and taxes can be registered as usual.</p>
@@ -3460,11 +3526,11 @@
 <ol>
 <li>
 <p>Adapt the buying price. In case of the example in Figure 1, the buying price becomes 4596  EUR (=4588 + 8.01). The quote price becomes 91.92 EUR of 91.92% (=4596/50). The disadvantage of this method is that the price evolution and the performance calculation is not correct.</p>
-<p><figure id="_figure-2"><figcaption>Figure 2.  Workaround with adaptation of quote price to incorporate accrued interest.</figcaption><img alt="" pp-figure="pp-figure" src="../../../images/mnu-transaction-buy-bond-vw-1.png"></figure></p>
+<p><figure id="_figure-2"><figcaption>Figure 2. Workaround with adaptation of quote price to incorporate accrued interest.</figcaption><img alt="" pp-figure="pp-figure" src="../../../images/mnu-transaction-buy-bond-vw-1.png"></figure></p>
 </li>
 <li>
 <p>To maintain a precise record of the purchase price, you could record the accrued interest as an additional <code>tax</code> (see Figure 3). The quote price is correct and the correct amount will be withdrawn from the deposit account.  The 'false' taxes could be corrected at the first interest payment with a <code>Tax refund</code> transaction.</p>
-<p><figure pp-figure="" id="_figure-3"><figcaption>Figure 3.  Workaround with adding accrued interest to taxes.</figcaption><img alt="" src="../../../images/mnu-transaction-buy-bond-vw-2.png"></figure></p>
+<p><figure pp-figure="" id="_figure-3"><figcaption>Figure 3. Workaround with adding accrued interest to taxes.</figcaption><img alt="" src="../../../images/mnu-transaction-buy-bond-vw-2.png"></figure></p>
 </li>
 <li>
 <p>The buy transaction of the bond security is recorded without the accrued interest. To handle the accrued interest, you transfer the correct amount (8.01 EUR), from the deposit account associated with the security to a separate deposit account. During the first interest payment, the accrued interest amount then is transferred back to the original deposit account associated with the security. </p>
@@ -3476,7 +3542,7 @@
 <ol>
 <li>
 <p>The accrued interest is fully booked as a dividend (see Figure 4). The accrued interest (for the seller) on the purchase date (8.01 EUR) has already been accounted for in the recorded purchase price.</p>
-<p><figure id="_figure-4"><figcaption>Figure 4.  Interest payment 2.25% of 5000 EUR.</figcaption><img alt="" src="../../../images/mnu-transaction-dividend-vw-1.png"></figure></p>
+<p><figure id="_figure-4"><figcaption>Figure 4. Interest payment 2.25% of 5000 EUR.</figcaption><img alt="" src="../../../images/mnu-transaction-dividend-vw-1.png"></figure></p>
 </li>
 <li>
 <p>The interest payment (112.50 EUR) is reduced by the amount that was already recorded as tax on the purchase date (8.01 EUR). With a <code>Tansaction &gt; Tax refund</code> that amount is refunded.</p>

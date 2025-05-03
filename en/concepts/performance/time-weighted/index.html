@@ -925,16 +925,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3639,9 +3705,9 @@
 <p>where MVE = the market value of the asset at the end of the holding period, MVB is the market value at the beginning of the holding period (which is the same value as the MVE of the previous holding period). CFin is the incoming cash flow, and CFout is the outgoing cash flow in that period.</p>
 <h2 id="ttwror-at-portfolio-level">TTWROR at portfolio level</h2>
 <p>The relevant cash flows for the performance calculation at portfolio level are: <code>Deposit</code>, <code>Withdrawal (removal)</code>, <code>Delivery In</code>, and <code>Delivery Out</code>. Refer to the <a href="../money-weighted/#defining-the-cashflows">Defining Cash flows section</a>, and in particular <a href="../images/transaction-cashflows.svg">Figure 3</a> from the chapter about Money-Weighted Rate of Return for detailed information. Please note that the dividend or sale of <code>share-1</code> does not affect <em>portfolio</em> performance, as the proceeds remain within the portfolio in a deposit account. Figure 1 displays the necessary info for calculating the TTWROR of <code>demo-portfolio-03</code>.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Overview of transactions - Deposit (3x), Buy (3x), Dividend, and partial Sell and charts of share-1 and share-2.</figcaption><img alt="" src="../images/demo-portfolio-03-info.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Overview of transactions - Deposit (3x), Buy (3x), Dividend, and partial Sell and charts of share-1 and share-2.</figcaption><img alt="" src="../images/demo-portfolio-03-info.svg"></figure></p>
 <p>We will use a <strong>2-year reporting period</strong> starting from June 12, 2021 in the following examples. Since the initial purchase of <code>share-1</code> for 155 EUR occurred outside of this reporting period, there are only two cash inflows that impact the performance: a deposit of 84 EUR and a deposit of 67 EUR. By June 12, 2021 the market value of the portfolio (MVB) was 177.94 EUR; see Figure 2. </p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Portfolio from demo-portfolio-3.xml (2 years reporting period).</figcaption><img alt="" src="../images/TTWROR-manual-calculation-demo-portfolio-03.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Portfolio from demo-portfolio-3.xml (2 years reporting period).</figcaption><img alt="" src="../images/TTWROR-manual-calculation-demo-portfolio-03.svg"></figure></p>
 <p>If there aren't any cash flows in a holding period such as in HP1, one can use the <a href="../">simple rate of return</a> formula. This is, of course, the same as Eq 1 with no cash flows: <code>r = MVE/MVB - 1 = 160.26/177.94 - 1 = - 0.0994</code> or - 9.94% for HP1. </p>
 <p>The second holding period starts just before the first cash inflow (+ 84 EUR) and ends just before the next one. The MVE is 264.57 EUR. According to Equation 1 the rate of return <code>1 + r = 264.57 / (160.26 + 84)</code> or r = 8.31%. By adding the cash inflow to the denominator, the influence of this cash flow on performance is neutralized.</p>
 <p>The MVB of the HP3 is the same as the MVE of HP2 or 264.57 EUR. There is a cash inflow of 67 EUR and the MVE = 426.82 EUR. The performance <code>1 + r = 426.82 / (264.57 + 67)</code> or r = 28.73%.</p>
@@ -3654,7 +3720,7 @@
 <p>The TTWROR of the whole period is: <code>[(1 - 0.0994) * (1 + 0.0831) * (1 + 0.2873)] - 1 = (0,9006 * 1,0831 * 1,2873) - 1  = 25,58%</code>, which can be verified with the menu <code>View &gt; Reports &gt; Performance</code> </p>
 <h3 id="exporting-data-from-pp">Exporting data from PP</h3>
 <p>You can easily export a CSV-file with the daily portfolio values. Select the menu <code>View &gt; Reports &gt; Performance &gt; Chart</code> and click the icon (top right) <code>Export Data as CSV</code>. Choose <code>Export Entire Portfolio</code> (see Figure 3 for an abbreviated example). The column <code>Delta in %</code> corresponds with the computed rate of return <em>r</em>. The <code>Cumulative Performance in %</code> is the cumulative or total TTWROR, compounding all returns from the previous days.</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Extract of CSV-file from Export Data as CSV (2 years period - portfolio level).</figcaption><img alt="" src="../images/TTWROR-manual-calculation-demo-3-excel.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Extract of CSV-file from Export Data as CSV (2 years period - portfolio level).</figcaption><img alt="" src="../images/TTWROR-manual-calculation-demo-3-excel.png"></figure></p>
 <p>The calculation in Figure 3 is analogous to the explanation of the manual calculation; except for a holding period of one day. Note that the majority of rows from the Excel sheet are hidden. The market value of the portfolio on <code>2021-06-12</code>was 177.94 EUR. At the end of HP1 on <code>2022-01-13</code> it has dropped to 160.26 EUR. On June 14, a deposit (and buy of share-2) was made. The MVB of HP2 however is not 160.26 EUR + 84 EUR = 244.26 EUR; due to the fact that fees and taxes are paid on the transaction and that the portfolio has slightly evolved during the trading day of 2022-01-14. The market value of the portfolio increases in HP2 to 264.57 EUR. And again, due to fees and taxes (see Figure 2), the daily performance on 2022-09-30 is negative. The cumulative performance is calculated according to Equation 2, but now on a <em>daily</em> basis, leading to the same total performance of 25.58% for the entire reporting period.</p>
 <h2 id="ttwror-at-security-level">TTWROR at security level</h2>
 <p>The previous section describes the performance of the whole portfolio, including deposit accounts. Understanding the performance calculation for a single security should not pose any problems by now. The same principles apply. However, there are quite a few differences qua approach. </p>
@@ -3664,12 +3730,12 @@
 <li>Special provisions are made for taxes. These are <em>not</em> included in the calculation; see <a href="../money-weighted/#irr-at-security-level">IRR for an explanation</a>.</li>
 </ol>
 <p>In Portfolio Performance you can retrieve the IRR and TTWROR of a security through the menu <code>View &gt; Reports &gt; Performance &gt; Securities</code> (see Figure 4). However, these values are not displayed by default and should be made available with the <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"> <code>Show or Hide columns</code> icon (top right).</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Periodic and annual TTWROR for securities (2 years period). </figcaption><img alt="" src="../images/info-ttwror-securities-calculation.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. Periodic and annual TTWROR for securities (2 years period). </figcaption><img alt="" src="../images/info-ttwror-securities-calculation.png"></figure></p>
 <p>The chart from the menu <code>View &gt; Reports &gt; Performance &gt; Chart</code> can exhibit multiple time series (click the Gear icon). In Figure 5, the cumulative TTWROR for the entire portfolio is depicted, along with individual performance graphs for <code>share-1</code> and <code>share-2</code> over a 2-year reporting period, starting from June 12, 2021. As <code>share-2</code> was acquired on September 30, 2022, its performance until that date registers as zero (indicated by the horizontal orange line). From that point onward, the performance of the total portfolio diverges from that of <code>share-1</code> due to the notably successful yet relatively minor contribution of <code>share-2</code> within the overall portfolio. As can be seen, the TTWROR of the entire portfolio (black line) ends at 25.58%, as calculated in Figure 3.</p>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5.  Graph of the cumulative performance of portfolio, share-1, and share-2 (2 years period).</figcaption><img alt="" src="../images/TTWROR-chart-portfolio-shares.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5. Graph of the cumulative performance of portfolio, share-1, and share-2 (2 years period).</figcaption><img alt="" src="../images/TTWROR-chart-portfolio-shares.png"></figure></p>
 <p>For the <em>manual</em> calculation, you need to define the holding periods. This is fairly easy for <code>share-2</code>. One holding period should suffice: from just before the buying date until the end of the reporting period. The MVB of <code>share-2</code> at the beginning of the holding period (just before the buy) is 0 EUR. The MVE equals 111.76. The buy-transaction cost is 66 EUR (fees included; taxes excluded). The TTWROR is thus equal to <code>111.76/(0 + 66) = 69.33%</code>. You can see this in Figure 5, where the orange line ends just below 70%.</p>
 <p>The manual calculation for <code>share-1</code> is more complex. The table below (Figure 6) summarizes all the relevant info and is based on the CSV export of the <em>daily</em> data from the graph in Figure 6 (click the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9 16v-6H5l7-7 7 7h-4v6H9m-4 4v-2h14v2H5Z"></path></svg></span> up-pointing arrow at the top-right). </p>
-<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6.  Manual calculation of (cumulative) performance of share-1.</figcaption><img alt="" src="../images/TTWROR-manual-calculation-demo-3-excel-share-1.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6. Manual calculation of (cumulative) performance of share-1.</figcaption><img alt="" src="../images/TTWROR-manual-calculation-demo-3-excel-share-1.png"></figure></p>
 <p>The return rate of HP1 is straight-forward. <code>r = [(160.26)/(177.94 + 0)] - 1 = -9.94%</code>. HP2 contains a cash inflow (buy): <code>r = [(287.49)/(160.26 + 83)] - 1 = 6.43%</code>.</p>
 <p>HP3 and HP4 are special cases as they contain cash outflows. The return rate for HP3 is <code>r = [(339)/(287.49 - 30)] - 1 = 31.66%</code> and for HP4 <code>r = [(190.06)/(339 - 107)] - 1 = -18.08%</code>. The total TTWROR for the entire reporting period is 14,80%; which is slightly less than the reported TTWROR from Portfolio Performance in Figure 4 (14,98%). This small difference is caused by the fact that in Eq 1assumes that all transactions are carried out at the beginning of the trading date, while Eq 3 assumes that cash outflows occur at the end of the trading day. Because the market value of a share can fluctuate during the day, these fluctuations can cause small differences between eq 1 and 3. </p>
 <h2 id="ttwror-pa">TTWROR p.a.</h2>

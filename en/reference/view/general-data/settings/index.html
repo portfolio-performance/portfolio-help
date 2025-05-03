@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3453,11 +3519,11 @@
 <li>
 <h1 id="bookmarks">Bookmarks</h1>
 <p>Most financial websites offer the option to search for a specific security. For instance, by clicking on the search box at <a href="https://www.ariva.de/">https://www.ariva.de/</a>, you can locate a security based on its <code>name</code>, <code>WKN</code>, or <code>ISIN</code>.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Defining additional attributes.</figcaption><img alt="" src="../../images/settings-bookmarks.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Defining additional attributes.</figcaption><img alt="" src="../../images/settings-bookmarks.png"></figure></p>
 <p>The bookmarks defined in the settings panel serve to streamline this process. You can then <code>Open in Browser</code> any security by right-clicking on that security or transaction. The required attribute for that website will be automatically embedded in the URL, guiding you to the appropriate webpage on the financial site.</p>
 <p>The list contains several examples. On the <a href="https://forum.portfolio-performance.info/t/verschiedene-links-fur-im-browser-offnen/629">forum</a>, many more are suggested along with some workarounds.</p>
 <p>Using the <code>New Bookmark</code> icon (top right), you can add custom bookmarks for your personal situation. A line named "New Bookmark" is added to the list with the URL <code>http://example.net/{tickerSymbol}?isin={isin}&amp;wkn={wkn}&amp;name={name}</code> (see Figure 1, last line). Double click name or URL to change the value. You need to inspect the original website to figure out how to form a correct URL. For example, finance.yahoo.com requires a URL like https://finance.yahoo.com/quote/NVDA to retrieve the webpage of NVIDIA. Using the placeholder {tickerSymbol}, the URL will be dynamically populated with the appropriate symbol for the chosen security during runtime.</p>
-<p><figure class="align-right" style="width:50%" id="_figure-2"><figcaption>Figure 2.  Context menu of the bookmarks page.</figcaption><img alt="" src="../../images/bookmarks-context-menu.svg"></figure></p>
+<p><figure class="align-right" style="width:50%" id="_figure-2"><figcaption>Figure 2. Context menu of the bookmarks page.</figcaption><img alt="" src="../../images/bookmarks-context-menu.svg"></figure></p>
 <p>The available placeholders are listed in the context menu (accessible via right-click) on the bookmarks page under the "Insert replacement" option (see figure 2): {isin}, {name}, {wkn}, {tickersymbol}, and {tickersymbolprefix}. In the ticker format XXX.YY (for instance, DTE.DE), XXX corresponds to {tickersymbolprefix}, and xxx.YY represents {tickersymbol}. For some websites, you may need only the {tickersymbolprefix}.</p>
 <p>With this context menu, you can manage the bookmark list.</p>
 <ul>
@@ -3473,7 +3539,7 @@
 <h1 id="attributes-securities">Attributes: Securities</h1>
 <p>New attributes or fields can be defined for Securities (see Figure 2), Deposit Accounts, Security Accounts, and Investment plans.
 Besides the attributes which are already defined in the Security Master data such as Name, ISIN, Quote Feed, ..., Figure 2 contains six additional attributes such as logo, Total Expense Ratio, ....</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Defining additional attributes.</figcaption><img alt="" src="../../images/settings-securities-attributes.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Defining additional attributes.</figcaption><img alt="" src="../../images/settings-securities-attributes.png"></figure></p>
 <p>You can create new custom attributes for yourself with the <code>New Attribute with field type</code> icon (top right). Clicking on it will display a subpanel with the available data types (see Figure 2). For example, the existing <code>Àctive</code> attribute is probably of type <code>Yes/no</code>, while the name attribute should be of type <code>Text</code>.</p>
 <p>These additional attributes can be made will be visible in any table view concerning securities and in the panel <a href="../../../file/new/#additional-attributes">Additional Attributes</a> of a Security. These attributes cannot be used in calculations, but you can sort the list with them.</p>
 </li>

@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3451,14 +3517,14 @@
 <h1 id="performance-chart">Performance › Chart</h1>
 <p>Using the <code>View &gt; Reports &gt; Performance &gt; Chart</code> menu or the sidebar menu, you can generate a graphical representation of your assets’ relative performance over time (see Figure 1). The x-axis represents time. You can select the desired reporting period using the dropdown menu in the top-right corner. By default, reporting periods of 1, 2, and 3 years are available. Additionally, you have the option to create a custom time period using the <code>New</code> feature. See <a href="../../../../../concepts/reporting-period/">Reporting Period</a> for a description.</p>
 <p>The y-axis represents cumulative performance as a percentage, starting from 0% at the beginning of the reporting period. It indicates the total increase or decrease in asset value compared to the previous period, which can be daily, weekly, monthly, quarterly, or yearly. The performance over a longer period is calculated by compounding the daily returns.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  The daily performance chart of individual shares and the entire portfolio for a custom 2-year reporting period. </figcaption><img alt="" src="../images/performance-chart.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. The daily performance chart of individual shares and the entire portfolio for a custom 2-year reporting period. </figcaption><img alt="" src="../images/performance-chart.png"></figure></p>
 <p>For a detailed explanation of how cumulative performance is calculated, see the section on <a href="../../../../../concepts/performance/time-weighted/">time-weighted performance</a>. Since <code>share-2</code> was not purchased until September 30, 2022, its performance remains zero up to that date, implying that the performance of <code>share-1</code>and the portfolio are identical until then.</p>
 <p>The user interface of the Performance Chart is similar to the chart interface of <a href="../../statement/statement-chart/">View &gt; Reports &gt; Statement of Assets &gt; Chart</a>. For example, the context menu is identical. We cover only the differences in this section; see link above for the common features.</p>
 <p>The <code>Configure chart</code> icon (<img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"> top right) provides an additional type of data series, called <code>Add benchmark ...</code> (see Figure 3). A benchmark is a security used solely for its historical prices to calculate daily and cumulative performance. Typically, a security with no purchase has a performance of zero. Therefore, a benchmark can be seen as a security with a single share, hypothetically purchased at the start of the reporting period. Naturally, this security does not affect overall portfolio performance.</p>
 <p>The graph in Figure 2 misleadingly suggests a gradual performance increase in the first and second quarters of 2022. Since a line graph connects consecutive (quarterly) data points, it visually implies a continuous change in performance, even though only two data points have been calculated. You can verify this by left-clicking on the chart canvas within a quarter and moving the cursor left or right to change dates. The performance remains unchanged within each quarter.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Quarterly performance chart of share-1 and its benchmark. </figcaption><img alt="" src="../images/performance-chart-quarterly.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Quarterly performance chart of share-1 and its benchmark. </figcaption><img alt="" src="../images/performance-chart-quarterly.svg"></figure></p>
 <p>As can be seen in Figure 3, the increase in Q1 is not linear at all, but with ups and downs. Note that the performance starts at 0% because a new reporting period is selected (January 1 to March 31). </p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Daily Performance chart of the first quarter of 2022. </figcaption><img alt="" src="../images/performance-chart-quarter-1-detail.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Daily Performance chart of the first quarter of 2022. </figcaption><img alt="" src="../images/performance-chart-quarter-1-detail.png"></figure></p>
 <p>The graphs in Figure 2 &amp; 3 also shows that the performance starts to diverge between <code>share-1</code> and its benchmark from Quarter 1, 2022 on. This occurs due to the first purchase of <code>share-1</code> on 2022-01-14. Remember that Portfolio Performance always calculates daily performance: <code>1 + r = (MVE + CFOut)/(MVB + CFIn)</code> <a href="../../../../../concepts/performance/money-weighted/">(Equation 1)</a>. The quarterly performance is just a compounding of daily performances.</p>
 <ul>
 <li>2022-01-13 (day before the purchase): historical price of <code>share-1</code> increased from 16.016 EUR/share to 16.026 EUR/share. The daily performance of <code>share-1 (benchmark)</code> is thus (16.026 / 16.016) -1 = 0.0624%. This is the same performance as for the existing investment of 10 shares of <code>share-1</code>: ((160.26 + 0) / (160.16 + 0)) - 1 = 0.0624%. For days without cash flows, <code>share-1</code> and its benchmark have the same daily performance.</li>

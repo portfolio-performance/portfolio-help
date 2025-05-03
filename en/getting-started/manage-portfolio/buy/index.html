@@ -935,16 +935,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3451,9 +3517,9 @@
 <p>When you receive a notification from your bank or broker detailing a transaction, as shown in Figure 1, you need to record this transaction in PP. If it's on paper, you must do this manually. Otherwise, you can attempt to <a href="../../../reference/file/import/csv-import/">import</a> the transaction.</p>
 <h1 id="transaction-with-one-currency">Transaction with one currency</h1>
 <p>The transaction in Figure 1 involves only one currency. Both the Security and the Deposit Account use the same currency (EUR). There is no need for currency conversion.</p>
-<p><figure id="_figure-1"><figcaption>Figure 1.  Paper note from your bank regarding your buy transaction.</figcaption><img alt="" class="pp-figure" src="../../../images/info-bank-note-share-heidelberg.svg"></figure></p>
+<p><figure id="_figure-1"><figcaption>Figure 1. Paper note from your bank regarding your buy transaction.</figcaption><img alt="" class="pp-figure" src="../../../images/info-bank-note-share-heidelberg.svg"></figure></p>
 <p>With this note, you can enter the transaction details into PP. Figure 2 displays the input panel for entering the information. The security (Heidelberg Materials) is quoted in EUR and the transaction is handled with the <code>broker-1</code> security account and the <code>broker-1 (EUR)</code> deposit account. The example of the <a href="../sell/">sell transaction</a> involves a more complex setup with a security quoted in USD, but the transaction handled through a deposit account in EUR.</p>
-<p><figure id="_figure-2"><figcaption>Figure 2.  Buying a security (EUR) through a deposit account (EUR).</figcaption><img alt="" class="pp-figure" src="../../../images/mnu-transaction-buy-share-heidelberg.png"></figure></p>
+<p><figure id="_figure-2"><figcaption>Figure 2. Buying a security (EUR) through a deposit account (EUR).</figcaption><img alt="" class="pp-figure" src="../../../images/mnu-transaction-buy-share-heidelberg.png"></figure></p>
 <ul>
 <li><strong>Security</strong> : You can select the security from a drop-down. If a particular security was already chosen before initiating the transaction, this info will be pre-filled. Please note that the currency is automatically filled in because each security has a reference currency, which is set during <a href="../../adding-securities/">creating the security</a>. The list of all available securities can be found in the sidebar under <code>Securities &gt; All Securities</code></li>
 <li><strong>Securities Account</strong> : choose from the drop-down menu or leave it pre-filled if you started from a securities account.</li>
@@ -3478,7 +3544,7 @@
 </li>
 </ul>
 <p>The typical flow for entering this information is likely to be <code>Shares * Quote (price) &gt;&gt; Gross Value + Fees + Taxes &gt;&gt; Debit Note</code>. There are a few nuances if you make changes afterward (see Figure 3).</p>
-<p><figure id="_figure-3"><figcaption>Figure 3.  Calculation flow between Shares and Debit Note.</figcaption><img alt="" class="pp-figure" src="../../../reference/transaction/images/info-transaction-calculation-flow.svg"></figure></p>
+<p><figure id="_figure-3"><figcaption>Figure 3. Calculation flow between Shares and Debit Note.</figcaption><img alt="" class="pp-figure" src="../../../reference/transaction/images/info-transaction-calculation-flow.svg"></figure></p>
 <ul>
 <li>Changing the <em>Debit note</em> (afterward) will modify the Gross Value, and consequently, the Quote Price will be adjusted. The number of shares remains unchanged.</li>
 <li>Changing the <em>Gross Value</em> afterward will alter the Debit Note and the Quote Price. Fees, taxes, and the number of shares are unaffected.</li>
@@ -3486,10 +3552,10 @@
 <h1 id="transaction-with-two-currencies">Transaction with two currencies</h1>
 <p>If you want to purchase shares in a foreign currency, there are two options. Either you have the required amount in the foreign currency in a deposit account. Or, you'll need to <a href="../deposit/#making-a-deposit">make a deposit</a> or <a href="../deposit/#transfer-between-two-currencies">convert</a> another currency into the foreign currency first.</p>
 <p>Figure 4 displays the bank's paper note regarding the purchase of USD shares. Since taxes and fees need to be settled in EUR (due to it being a European bank), and the portfolio's base currency for reporting is also EUR, the total amount in USD is also converted to EUR.</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Paper note of a Buy transaction of a share in a foreign currency.</figcaption><img alt="" src="../../../images/info-bank-note-share-adobe.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. Paper note of a Buy transaction of a share in a foreign currency.</figcaption><img alt="" src="../../../images/info-bank-note-share-adobe.svg"></figure></p>
 <p>From the note, it isn't quite clear which deposit account (EUR or USD) is used. Recording this transaction in Portfolio Performance however is quite straightforward. Figure 5 shows the transaction done with a USD deposit account. Figure 6 is a little more complex because a EUR deposit account is used; so a conversion should be made (EUR --&gt; USD).</p>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5.  Buy transaction of a USD security with a USD deposit account.</figcaption><img alt="" src="../../../images/mnu-transaction-buy-share-adobe-usd-account.png"></figure></p>
-<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6.  Buy transaction of a USD security with a EUR deposit account.</figcaption><img alt="" src="../../../images/mnu-transaction-buy-share-adobe-EUR-account.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5. Buy transaction of a USD security with a USD deposit account.</figcaption><img alt="" src="../../../images/mnu-transaction-buy-share-adobe-usd-account.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6. Buy transaction of a USD security with a EUR deposit account.</figcaption><img alt="" src="../../../images/mnu-transaction-buy-share-adobe-EUR-account.png"></figure></p>
 <p>The quote price and the USD/EUR exchange rate are automatically filled in based on the entered date. However, please note that real-time prices are not available. The entry form in Portfolio Performance also provides the additional option to record fees and taxes in the foreign currency. </p>
 <p>Remember: good practice requires making a deposit beforehand, either in USD (for the transaction in Figure 5) or in EUR (Figure 6). Failing to do so will result in a negative balance.</p>
 

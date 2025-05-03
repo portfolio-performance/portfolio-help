@@ -917,16 +917,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3444,7 +3510,7 @@
 <p>In the context of stock markets, a spin-off refers to the process by which a company separates or "spins off" a portion of its business into a new, independent entity. This new entity becomes a distinct, standalone company with its own management, operations, and often its own publicly traded stock.</p>
 <p>The shareholders of the original company may receive shares in the new entity in proportion to their holdings in the parent company. A distribution ratio determines how many shares of the new entity each shareholder receives for every share held in the original company.</p>
 <p>On December 10, 2021, Daimler AG successfully executed a spin-off, resulting in the establishment of a new entity known as <a href="https://group.mercedes-benz.com/documents/investors/annual-meeting/daimler-ir-egm-2021-spinoffhivedownreport.pdf">Daimler Truck Holding AG</a>. Simultaneously, the former Daimler AG underwent a name change to become Mercedes-Benz Group AG. Consequently, the XETRA stock exchange market now encompasses two distinct securities: ISIN DE0007100000 for Mercedes-Benz (formerly Daimler AG) and ISIN DE000DTR0CK8 for Daimler Truck Holding AG. The distribution ratio for this spin-off was 2:1, signifying that for every two shares of Daimler AG, shareholders received one share of Daimler Truck Holding AG.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Quote evolution of the Daimler Truck Holding and Mercedes-Benz Group. </figcaption><img alt="" src="../images/compare-daimler-mercedes.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Quote evolution of the Daimler Truck Holding and Mercedes-Benz Group. </figcaption><img alt="" src="../images/compare-daimler-mercedes.png"></figure></p>
 <p>To record a spin-off in Portfolio Performance (PP), a suggested workflow, deduced from an <a href="https://forum.portfolio-performance.info/t/wie-bilde-ich-korrekt-einen-spin-off-ab/4677/20">in-depth discussion</a> on the Portfolio Performance forum, involves the following steps:</p>
 <ol>
 <li>
@@ -3460,7 +3526,7 @@
 <p>Use the same deposit account for the dividend and buy transaction. This way the result of the fictitious dividend transaction will be cancelled out by the real purchase transaction. The dividend of n shares x 14€/share = purchase of n/2 shares x 28€/share.</p>
 </li>
 </ol>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Recording the spin-off of Daimler AG.</figcaption><img alt="" src="../images/spin-off-daimler.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Recording the spin-off of Daimler AG.</figcaption><img alt="" src="../images/spin-off-daimler.svg"></figure></p>
 <p>This workflow solves the spin-off problem by simulating a dividend transaction followed by an equivalent purchase for the same amount. However, a drawback is that there is no <em>real</em> dividend, compromising the precision of the dividend overview.  Conversely, from a performance standpoint, treating the spin-off as a dividend makes sense. For example, there was a noticeable decline in the share price of the old Daimler AG, dropping from approximately €90 in mid-November 2021 to €74 on December 10, 2021, suggesting market anticipation of the impending spin-off.</p>
 
 

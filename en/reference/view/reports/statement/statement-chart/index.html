@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3581,7 +3647,7 @@
 </ul>
 <p>You can also adjust the scale of the Y-axis by scrolling with the middle mouse button. Hold the mouse cursor at the vertical position in the chart, where you want to increase or decrease the scale around. This can be useful for zooming in on a specific data point in the graph.</p>
 <p>Use the 0 (zero) key to reset the chart to its original scale.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Chart of the Total value of the demo portfolio.</figcaption><img alt="" src="../images/sb-reports-chart.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Chart of the Total value of the demo portfolio.</figcaption><img alt="" src="../images/sb-reports-chart.svg"></figure></p>
 <h2 id="canvas">Canvas</h2>
 <p>The canvas is a graphical representation of one or more data series. A data series typically comprises a set of paired data points presented in a table format, such as dates and their corresponding values. By default, two data series are displayed: <code>Transferals</code> (primarily deposits) and <code>Total</code> (see below for an explanation of all possible data series). When you left-click the canvas and hold the mouse down on a specific day, for example, January 14, 2022, a tooltip window will appear, displaying detailed values for all selected data series on that day.</p>
 <p>Right-clicking on the chart canvas displays the context menu, providing additional options (see Figure 1).</p>
@@ -3595,12 +3661,12 @@
 <h2 id="legend">Legend</h2>
 <p>Right-clicking on the legend icons (for example, the blue or orange square from Figure 1) will give you access to additional formatting options (see Figure 1). For all types of data series and their legend entries, you can modify the <code>Color</code>, <code>Position</code> (Send backwards, Send to back or Bring forward, and Bring to Front), and <code>Sort</code> (A-Z or Z-A). The latter two options will reorganize the legend entries from left to right accordingly. In the case of a line-type data series like the Total value, you can also adjust the <code>Line Style</code> (solid, dash, dot, ...), and the <code>Show Area</code> option (which fills the area below the data series). In addition, you have the option to either hide (where the legend entry remains visible but is crossed out, and the data series is not displayed on the chart) or remove it entirely (both the legend and the data series are completely removed from the chart). You can also hide or reveal a data series by double-clicking on the corresponding legend icon.</p>
 <h2 id="configure-chart">Configure chart</h2>
-<p><figure class="align-right" id="_figure-2"><figcaption>Figure 2.  Configure menu.</figcaption><img alt="" src="../images/sb-reports-chart-gear.png"></figure></p>
+<p><figure class="align-right" id="_figure-2"><figcaption>Figure 2. Configure menu.</figcaption><img alt="" src="../images/sb-reports-chart-gear.png"></figure></p>
 <p>Using the <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"> gear icon located at the top right (see Figure 1), you can see the data series that are displayed in the graph, such as Total and Transferals. Once a data series is added to the chart, it will appear in the menu (see Figure 2) but will disappear in the list of available data series (see Figure 3).</p>
 <p>Portfolio Performance offers two additional charts: the Performance chart (under <code>View &gt; Reports &gt; Performance &gt; Chart</code>) and the Historical Returns and Volatility chart (under <code>View &gt; Reports &gt; Performance &gt; Return/Volatility</code>). The <code>Copy from</code> option adds the data series from these chart views to your current chart. The <code>Replace by</code> option works similarly but removes the existing data series before adding the new ones.</p>
 <p>The actual data of the chart is configured with the <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"> menu options <code>Add data series ...</code> and <code>Add derived data series ...</code>. A data series is a set of paired data points such as a date and the total portfolio value. A Derived data series is calculated or derived from the original data series such as <code>Invested capital</code>, <code>Taxes and Fees</code>, <code>Dividends</code>, etc. These derived data series are listed in the right panel of Figure 3 and under the heading <code>Common</code> (left panel).</p>
 <p>With the <code>Accounts and Portfolios</code> option, you can choose to display specific combinations of accounts, such as the <em>security account</em> <code>broker-A</code> or the <em>deposit account</em> <code>broker-A (EUR)</code> or the combination. At the bottom of Figure 2, a list of individual securities is provided. Select the appropriate option and hold Ctrl (Cmd) to add more selections. Once you've added a data series, it will no longer appear in the list of available data series in Figure 3, but you'll find it checked in the gear menu. You can remove a data series from the chart by unchecking it in the gear menu or by deleting it from the legend (as explained above).</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Data series (left) and Derived data series (right).</figcaption><img alt="" src="../images/sb-reports-chart-dataseries.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Data series (left) and Derived data series (right).</figcaption><img alt="" src="../images/sb-reports-chart-dataseries.svg"></figure></p>
 <p>With the <code>Accounts and Portfolios</code> option, you can choose to display specific combinations of accounts, such as the security account <code>broker-A</code> or the deposit account <code>broker-A (EUR)</code> or the combination. At the bottom of Figure 2, you can also select individual securities. Hold Ctrl (Cmd) to add more selections. Once you've added a data series, it will no longer appear in the list of available data series in Figure 3, but you'll find it checked in the gear menu. You can remove a data series from the chart by unchecking it in the gear menu or by deleting it from the legend (as explained above).</p>
 <p>Please note that the derived data series are available in both the left and right panels of Figure 3. However, the data in the left panel always represent the entire portfolio, while the right panel allows for a breakdown into sub components. For example, the fees shown in the left panel reflect all fees paid within the portfolio, whereas in the right panel, they can be split by the originating account or security.</p>
 <ul>

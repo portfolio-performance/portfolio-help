@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3530,7 +3596,7 @@
 <p>To access a specific value within this hierarchical structure, you need to specify the path from the root to the element. To access an element from a list, you need to use its index, which is a number that indicates its position in the list. The index starts from 0 for the first element. To access an element from an object, you need to use its key, which is a string that indicates its name in the object. The key is enclosed in double quotes " ".</p>
 <p>A query language such as <em>JSONPath</em> (used by PP) represents the root of the JSON response with a $ symbol. To separate the elements in the path, you need to use a dot. For example, to access the close price on the second day, you need to use the path <code>$[1].close</code>. This means that you start from the root $, then go to the second element in the list <code>$[1]</code>, which is an object, then go to the value with the key "close" in the object <code>$[1].close</code>, which is a number.</p>
 <p>You need this JSON path to complete PP's JSON Quote Feed Provider. Use the following parameters to retrieve the historical quotes (see also Figure 1). For an explanation of the meaning of different quote prices, please check <a href="../../../concepts/historical-prices/">Concepts &gt; Historical Prices</a>.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Server response from JSON Quote Feed Provider (EODHD). </figcaption><img alt="" src="../images/json-eodhd-parameters.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Server response from JSON Quote Feed Provider (EODHD). </figcaption><img alt="" src="../images/json-eodhd-parameters.png"></figure></p>
 <ul>
 <li>Feed URL: <code>https://eodhd.com/api/eod/AAPL?from=2024-01-15&amp;to=2024-01-17&amp;period=d&amp;api_token=demo&amp;fmt=json</code></li>
 <li>Path to Date: <code>$[*].date</code></li>
@@ -3587,7 +3653,7 @@
 </ul>
 <p>If you want to practice, you can use the <a href="https://jsonpath.com/">JSONPath Online Evaluator</a>. Copy the JSON result from the URL endpoint into the input window. Another practical tool is the <a href="https://jsonpathfinder.com/">JSONPath Finder</a>.</p>
 <p>With the above information, it should be easy to provide the JSON Quote Feed provider of Portfolio Performance with the correct input.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  JSON Quote Feed provider parameters. </figcaption><img alt="" src="../images/json-yahoo-parameters.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. JSON Quote Feed provider parameters. </figcaption><img alt="" src="../images/json-yahoo-parameters.png"></figure></p>
 <p>For most services, one needs to register and obtain an API key, which is a unique identifier that authenticates the user and grants access to the service. While numerous financial services provide seemingly free API keys, their terms of use and long-term commitment often prove inadequate. Portfolio Performance has, for compatibility reasons, maintained several of these services in its list of Quote Feed providers; e.g. Alpha Vantage, eodhd, .... Although once considered excellent solutions, they have changed their offerings and are no longer as useful as free services. In practical terms, only Portfolio Report and Yahoo Finance can be recommended for a typical portfolio.</p>
 
 

@@ -41,16 +41,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://help.portfolio-performance.info/en/concepts/system-overview-example/</loc>
-         <lastmod>2025-05-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://help.portfolio-performance.info/en/concepts/system-overview/</loc>
-         <lastmod>2025-05-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://help.portfolio-performance.info/en/concepts/performance/</loc>
          <lastmod>2025-05-03</lastmod>
          <changefreq>daily</changefreq>
@@ -62,6 +52,16 @@
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/en/concepts/performance/time-weighted/</loc>
+         <lastmod>2025-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://help.portfolio-performance.info/en/concepts/system-overview/</loc>
+         <lastmod>2025-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://help.portfolio-performance.info/en/concepts/system-overview/system-overview-example/</loc>
          <lastmod>2025-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>

@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3525,11 +3591,11 @@
 <p>This change is destructive. It is not easily undone. If necessary, an improperly executed split can be corrected by executing a split with an inverse ratio. But perhaps a better approach is to create a backup copy of the portfolio file.</p>
 <p>In the description of the Stock Split process in the Reference Manual, the example of the Amazon 20-for-1 stock split on June 6, 2022 is used. Please review this section first for details about <a href="../../reference/view/securities/context-menu/#stock-split">how to use the built-in stock split function</a> of PP.</p>
 <p>In Figure 1, the share price evolution over the last five years is depicted. Very noticeable, there is a massive drop between June 3 and 6, 2022. On those dates, the closing prices were <code>$ 2447</code> and <code>$ 124.79</code>, respectively (but remember, you own 20 times more shares).</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Historical Quotes chart of Amazon (unadjusted prices - chart from PP). </figcaption><img alt="" src="../../reference/view/securities/images/split-stock-amazon-unadjusted-PP.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Historical Quotes chart of Amazon (unadjusted prices - chart from PP). </figcaption><img alt="" src="../../reference/view/securities/images/split-stock-amazon-unadjusted-PP.png"></figure></p>
 <p>Quite some confusion arises when you compare this chart with those from most other financial websites; for example, the 5-year chart from <a href="https://www.investing.com/equities/amazon-com-inc">investing.com</a> looks very different.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Historical Quotes chart of Amazon (adjusted prices - chart from investing.com). </figcaption><img alt="" src="../images/split-stock-amazon-adjusted-investing.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Historical Quotes chart of Amazon (adjusted prices - chart from investing.com). </figcaption><img alt="" src="../images/split-stock-amazon-adjusted-investing.png"></figure></p>
 <p>Both charts span a five-year period. But, while your purchase price around January 2022 was <code>$ 3408</code> (Figure 1), it appears to be priced around <code>$ 150</code> (Figure 2), according to <a href="https://www.investing.com/equities/amazon-com-inc">investing.com</a>. This discrepancy arises because financial websites typically "adjust" all historical prices after a stock split. This adjustment involves recalculating the historical prices before the split, just as the PP's Stock Split function does.</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Historical Quotes chart of Amazon (adjusted prices after stock split - chart from PP). </figcaption><img alt="" src="../../reference/view/securities/images/split-stock-amazon-adjusted-PP.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Historical Quotes chart of Amazon (adjusted prices after stock split - chart from PP). </figcaption><img alt="" src="../../reference/view/securities/images/split-stock-amazon-adjusted-PP.png"></figure></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>The <em>regular</em> Yahoo Finance Close Price is already adjusted for splits. The <em>Adjusted close</em> price is en surplus adjusted for splits and dividend and/or capital gain distributions.</p>
@@ -3554,7 +3620,7 @@
 <li>Round down the new share quantity to the nearest whole number. If there is a remainder, sell it at the same price as described in step 2.</li>
 </ul>
 <p>Let's apply this workflow to a simplified example (see Figure 4). On 1 January 2021, you owned one share priced at 100 EUR. This price remained essentially unchanged until 31 December 2021. On 1 January 2022, a 10-for-1 stock split occured, resulting in 10 shares. The price at the end of the day was 11 EUR. By the end of the year, the price had increased to 13 EUR per share, giving your portfolio a market value of 130 EUR.</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Simplified example of sell-back-back stock split. </figcaption><img alt="" src="../images/stock-split-sell-buy-back-method.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. Simplified example of sell-back-back stock split. </figcaption><img alt="" src="../images/stock-split-sell-buy-back-method.svg"></figure></p>
 <p>The performance calculation for the built-in stock split function is quite straightforward. Due to the retroactive nature of the split function, the original purchase of 1 share at 100 EUR/share (MVB) is adjusted to reflect the purchase of 10 shares at 10 EUR/share. At the end of the two-year reporting period, you still own 10 shares, but their total value has increased to 130 EUR (MVE). Using the formulas from the <a href="../../concepts/performance/money-weighted/">money-weighted (IRR)</a> and <a href="../../concepts/performance/time-weighted/">time-weighted (TTWROR)</a> section:</p>
 <ul>
 <li>IRR: <code>130 = 100 * (1 + IRR)^2</code> or <code>IRR = SQRT(130/100) - 1</code> = 14.0157%.</li>

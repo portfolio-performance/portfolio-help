@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3596,13 +3662,13 @@
 
 <h1 id="file-save-save-as-save-all">File › Save - Save As - Save All</h1>
 <h2 id="save">Save</h2>
-<p><figure class="align-right" style="width:20%" id="_figure-1"><figcaption>Figure 1.  File format picker.</figcaption><img alt="" src="../images/pick-file-format.png"></figure></p>
+<p><figure class="align-right" style="width:20%" id="_figure-1"><figcaption>Figure 1. File format picker.</figcaption><img alt="" src="../images/pick-file-format.png"></figure></p>
 <p>With the menu <code>File &gt; Save</code>, you can save your portfolio, using its existing name and file format without any further interference. If the file hasn't been saved before, a <code>Pick the file format</code> dialog box will appear (see Figure 1), presenting three choices. These options will be explained in the subsequent section. After selecting the file format, you can proceed as if you had started with the <code>File &gt; Save As</code> option from the menu.</p>
 <h2 id="save-as">Save As</h2>
 <p>The <code>File &gt; Save As</code> option offers the three file format choices as submenus. In the subsequent step, you can input the file name and designate the file location. This option allows you to create a new copy of a previously saved file in a different file format and/or with a different name, leaving the original file intact.</p>
 <h2 id="save-all">Save All</h2>
 <p>If more than one portfolio is open, the aforementioned commands will solely save the active portfolio. Utilize the <code>Save All</code> option to save all open files simultaneously. </p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Dialog after closing app with two updated portfolios.</figcaption><img alt="" src="../images/app-close.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Dialog after closing app with two updated portfolios.</figcaption><img alt="" src="../images/app-close.png"></figure></p>
 <p>Closing a portfolio that has been modified since opening will trigger a dialog <code>'xxx.xml is modified. Do you want to save the changes?</code>. Closing the application with multiple updated projects will prompt the dialog from Figure 2.</p>
 <h2 id="xml-format">XML format</h2>
 <p>All data of your portfolio is stored in one XML-file (eXtensible Markup Language). This is a human-readable file format. For example, the following xml-file <a href="../../../assets/test.xml">test.xml</a> is a very simple portfolio with one security (<code>share-1</code>) and two transactions (one deposit and one buy). You can view the xml-content by opening this file with a text editor (e.g. Notepad++). Here's a brief description of the main elements:</p>
@@ -3631,7 +3697,7 @@
 <li><code>&lt;configurationSets&gt;</code>: Stores configuration sets with specific data.</li>
 </ul>
 <p>Below you can see the xml code for the buying transaction in Figure 3.</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Example of a buying transaction.</figcaption><img alt="" src="../images/mnu-transaction-buy-share-microsoft.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Example of a buying transaction.</figcaption><img alt="" src="../images/mnu-transaction-buy-share-microsoft.png"></figure></p>
 <p>This single buying transaction is represented with the following XML code.</p>
 <p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&lt;transactions&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">   </span><span class="nt">&lt;portfolio-transaction&gt;</span>
@@ -3660,7 +3726,7 @@ As you can see, there is nearly a one-to-one relationship between the input form
 <p>The PortfolioPerformance mobile app, introduced in February 2024, does not support the XML file format.</p>
 <h2 id="password-protected-aes-256">Password protected (AES-256)</h2>
 <p>AES-256 encryption is a method of securing your data by converting it into a code that can only be accessed with a unique key. This encryption technique uses a 256-bit key, which is a string of 256 zeros and ones, to encrypt and decrypt the data. When data is encrypted using AES-256, it is transformed into a random sequence of characters that is unreadable without the key. In order to generate this key, Portfolio Performance needs a password that is at least 6 characters. However, a password that is longer and more complex will have more randomness and unpredictability, which means it is harder to guess.</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Saving a portfolio with AES-256 encryption needs a password.</figcaption><img alt="" src="../images/mnu-save-encrypted.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. Saving a portfolio with AES-256 encryption needs a password.</figcaption><img alt="" src="../images/mnu-save-encrypted.png"></figure></p>
 <h2 id="binary">Binary</h2>
 <p>An XML file is a human-readable file format (see above for an example). A binary format is more compact and efficient and therefore a file can be opened and saved much faster. However, it is no longer human-readable. More info is available in <a href="https://github.com/portfolio-performance/portfolio/issues/2363">Issue #2363</a>; watch for example the comparison in opening speed of a 720 securities &amp; 1.3 MB historical prices project.</p>
 <p>Distinguishing a password-protected or binary file from a regular XML file one is possible by examining the file extension. Encrypted and binary files have the extension .portfolio instead of XML.</p>

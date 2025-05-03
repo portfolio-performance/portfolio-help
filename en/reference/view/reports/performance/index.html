@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3651,7 +3717,7 @@
   <h1>Performance</h1>
 
 <p>Key performance and risk indicators are summarized in a dashboard, along with a calculation widget. The dashboard can be accessed through the menu <code>View &gt; Reports &gt; Performance</code> or with the sidebar (see figure 1).</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Dashboard with key performance and risk indicators and calculation widget.</figcaption><img alt="" src="images/performance-dashboard-3yrs.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Dashboard with key performance and risk indicators and calculation widget.</figcaption><img alt="" src="images/performance-dashboard-3yrs.png"></figure></p>
 <p>Please note that the performance and risk indicators are always calculated for the entire portfolio and for a specific <a href="../../../../concepts/reporting-period/">reporting period</a>. By default, this is one year from today. You can change the period by selecting a different one or create a new one in the drop-down (top-right). In Figure 1, the reporting period is <code>from Jun 12, 2020 till Jun 12, 2023</code>. For the performance key indicators, the color green indicates a profit, while red signifies a loss. </p>
 <h2 id="key-performance-indicators">Key performance indicators</h2>
 <h3 id="true-time-weighted-rate-of-return-cumulative">True Time-Weighted Rate of Return (cumulative)</h3>
@@ -3684,7 +3750,7 @@
 <h3 id="maximum-drawdown">Maximum Drawdown</h3>
 <p>Maximum drawdown (MDD) refers to the largest peak-to-trough decline in the performance of a portfolio or investment over a specific period, typically expressed as a percentage. It measures the extent of loss incurred from the highest point to the lowest point before a new peak is reached.</p>
 <p>With <code>View &gt; Reports &gt; Performance &gt; Chart</code> you can create a graph of the cumulative performance of your portfolio, accounts, or specific securities. Figure 1 displays the portfolio performance for the reporting period 2020 - 2023.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Cumulative performance of portfolio with indication of Maximum Drawdown .</figcaption><img alt="" src="images/performance-mdd.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Cumulative performance of portfolio with indication of Maximum Drawdown .</figcaption><img alt="" src="images/performance-mdd.svg"></figure></p>
 <p>The largest drawdown occurs between August 18, 2021 and March  8, 2022.  Cumulative performance dropped from 22.04% to - 4.12% (see Figure 2). The MDD for the reporting period of Jun 12, 2020 till June 12, 2023 is 21.44% (see Figure 1). Hovering with the mouse over the value (the label displays the reporting period) will reveal the dates.</p>
 <h3 id="maximum-drawdown-duration">Maximum Drawdown Duration</h3>
 <p>The MDD Duration is the worst or longest amount of time an investment has been between peaks. 
@@ -3698,13 +3764,13 @@ This is 292 days or between August 18, 2021 and June 6, 2022. The longest recove
 <p>Given that the actual semivariance is slightly lower than the estimated semivariance (22.15% &lt; 22.63%), it suggests that the returns are not symmetrically distributed, and the negative returns slightly outnumber the positive ones.</p>
 <h2 id="configuring-the-dashboard">Configuring the dashboard</h2>
 <p>By default, the Performance dashboard contains three columns: <code>Key Indicators</code>, <code>Risk Indicators</code>, and <code>Calculation</code> (see Figure 1).  Each column can contain several configurable widgets: data blocks comprising a label and a numerical value or diagram; e.g. Absolute Change or a Performance chart.  Right mouse click on an <em>empty space</em> in a column lets you manage the widgets, e.g. adding a widget. Right clicking the <em>widget label</em> lets you manage the specific widget; e.g. change the data series or reporting period. (see later).</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Yearly Overview dashboard.</figcaption><img alt="" src="images/performance-dashboard.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Yearly Overview dashboard.</figcaption><img alt="" src="images/performance-dashboard.svg"></figure></p>
 <p>Widgets are a very powerful tool to customize the dashboard to your liking. A thorough introduction is given in a <a href="https://youtu.be/_-9iC7UqLsw">YouTube video by Finanzkoch</a> (German spoken but English subtitles are possible). A <a href="https://forum.portfolio-performance.info/t/beispiele-fur-auswertungen-grafiken-und-berichte/5367/118">list of very nice dashboards</a> by fellow investors can be found at the forum.</p>
-<p><figure class="align-right" style="width:30%" id="_figure-4"><figcaption>Figure 4.  Creating a new dashboard. </figcaption><img alt="" src="images/dashboard-add-new.png"></figure></p>
+<p><figure class="align-right" style="width:30%" id="_figure-4"><figcaption>Figure 4. Creating a new dashboard. </figcaption><img alt="" src="images/dashboard-add-new.png"></figure></p>
 <p>The best way to experiment is by creating a new (empty) dashboard (see Figure 3). Click on the icon <code>New dashboard</code> at the left of the reporting period. You can choose between a blank dashboard, key indicators (= the default dashboard), and Earnings (see Figure 4). To remove a dashboard from the menu, click the arrow next to the name and choose <code>Delete</code>. You can move the dashboard to the first in the list (bring to front), rename the dashboard, or make a duplicate of the selected dashboard.</p>
 <p>A dashboard contains one or more columns; the dashboard of Figure 3 contains 6 columns.  You cannot see the borders of the column. Delete a column by right-clicking in the area. You can add a new column with the configure dashboard gear icon (top right). If there is already at least one column, you can also right-click in a column area and choose <code>New column on the left</code>,  <code>New column on the right</code>, or <code>Duplicate column</code> (see Figure 5). With <code>Column width</code> you can increase or decrease (step wise) the column width of the selected column. Of course, the width of the other columns is affected since the total width of the windows stays the same. With the Option <code>Apply to All</code>, you can set the reporting period and the data series for all widgets in the dashboard.</p>
 <p>The <code>New Widget</code> option reveals a submenu featuring six categories of widgets (refer to Figure 5). Below is a description of each widget. Right-clicking on the widget label will reveal a context menu. Most widgets feature options such as <code>Edit label</code>, <code>Delete</code>, and <code>Height</code>. You can drag and drop widgets within and between columns. Press the CTRL key (Windows) to duplicate instead of moving.</p>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5.  New Widget menu with overview of all available widgets. </figcaption><img alt="" src="images/performance-dashboard-new-widget.svg"></figure></p>
+<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5. New Widget menu with overview of all available widgets. </figcaption><img alt="" src="images/performance-dashboard-new-widget.svg"></figure></p>
 <h3 id="common">Common</h3>
 <ul>
 <li><em>Heading</em>: A single line text field.</li>
@@ -3795,7 +3861,7 @@ This is 292 days or between August 18, 2021 and June 6, 2022. The longest recove
 </ul>
 <h3 id="risk-indicators_1">Risk indicators</h3>
 <p>All five widgets are single line text widgets, representing common risk indicators. See <a href="./#maximum-drawdown">above</a> for an explanation of <code>Maximum Drawdown</code>, <code>Max Drawdown Duration</code>, <code>Volatility</code>, and <code>Semivariance</code>.</p>
-<p><figure class="align-right" style="width:30%" id="_figure-6"><figcaption>Figure 6.  Setting the risk-free return from the context menu. </figcaption><img alt="" src="images/sharpe-set-risk-free.png">
+<p><figure class="align-right" style="width:30%" id="_figure-6"><figcaption>Figure 6. Setting the risk-free return from the context menu. </figcaption><img alt="" src="images/sharpe-set-risk-free.png">
 The </figure><code>Sharpe ratio</code> is a financial metric that measures the performance of a portfolio compared to a risk-free asset, taking into account the portfolio's risk. It is calculated by subtracting the risk-free return from the portfolio's return, such as the Internal Rate of Return (IRR), and then dividing the result by the standard deviation of the portfolio's return, which is a measure of its volatility.</p>
 <p>The risk-free return is set by default to 0%, but this can be adjusted through the context menu to reflect your current risk-free rate. As the ratio is based on volatility, complete historical prices are required. Without complete prices, the calculated volatility may be underestimated.</p>
 <h3 id="earnings">Earnings</h3>

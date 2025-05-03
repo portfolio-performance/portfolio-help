@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3621,7 +3687,7 @@
   <h1>Security Account</h1>
 
 <p>The <code>Securities Accounts</code> view provides a <a href="../../../../how-to/user-interface/">dual-pane view</a> of all security accounts within the portfolio. The main pane features a list of all securities accounts, while the information pane presents details about the selected account in the upper panel.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Example of Securities Accounts. </figcaption><img alt="" src="../images/sb-accounts-securities-accounts.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Example of Securities Accounts. </figcaption><img alt="" src="../images/sb-accounts-securities-accounts.png"></figure></p>
 <h2 id="main-pane">Main pane</h2>
 <p>A security account will hold your securities and will be used for trading. Use the data tools icon  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0Zm1.062 4.312a1 1 0 1 0-2 0v2.75h-2.75a1 1 0 0 0 0 2h2.75v2.75a1 1 0 1 0 2 0v-2.75h2.75a1 1 0 1 0 0-2h-2.75Z"></path></svg></span> to add a new account. For each account, the total market value of its assets is displayed as Volume of security deposits. A securities account is most often named after the broker or bank that you use for buying or selling. But other variants are possible. For example, you could collect all your bitcoin investments into a separate account <code>crypto</code> or you can differentiate between your account and that of your partner. </p>
 <p>It is worth noting that, although the portfolio has four deposit accounts (see <a href="../images/sb-accounts-deposit-accounts.png">figure 1</a> in the Deposit Accounts section), only one of them, named <code>Deposit Account</code>, is set as the reference account. This reference account is used for handling trades when no other account is explicitly assigned. The information pane (bottom panel) shows the <code>Statement of Assets</code> view for the selected security account.</p>
@@ -3634,11 +3700,11 @@
 <p>This section presents a table that lists all transactions related to the chosen Securities Account. The table offers in-depth information about each transaction, such as the date, transaction type, security involved, quantity, price, fees, and other pertinent data. See <a href="../all-transactions/">View &gt; Accounts &gt; All Transactions</a> for more information on the available fields and how to customize the table with the data tools.</p>
 <h3 id="chart">Chart</h3>
 <p>The <code>Chart</code> tab presents a specific line graph, displaying the market value over time of the selected account (e.g. Brokerage Account in Figure 2), the invested capital since the first transaction in this securities account, and the delta (difference) between those two.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Chart from Securities Account (information pane). </figcaption><img alt="" src="../images/sb-accounts-securities-accounts-chart.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Chart from Securities Account (information pane). </figcaption><img alt="" src="../images/sb-accounts-securities-accounts-chart.png"></figure></p>
 <p>Clicking on any point in the chart will reveal the actual data of all three time series. With the <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"> data tool, you can also add the <code>Taxes (Accumulated)</code> and <code>Fees (Accumulated)</code> time series to the chart. Please refer to the section on the <a href="../../../../how-to/user-interface/">User Interface</a> for more guidance on customizing the chart.</p>
 <h3 id="holdings">Holdings</h3>
 <p>The Holdings chart from the Securities Account doesn't have any data tools. It's very similar to the portfolio holding chart; see <a href="../../reports/statement/holdings/">View &gt; Reports &gt; Statement of Assets &gt; Holdings</a>. Clicking any part of the chart will reveal some additional information.</p>
-<p><figure id="_figure-3"><figcaption>Figure 3.  Holdings Chart from Securities Account (information pane). {class=pp-figure}c</figcaption><img alt="" src="../images/sb-accounts-securities-accounts-holdings.png"></figure></p>
+<p><figure id="_figure-3"><figcaption>Figure 3. Holdings Chart from Securities Account (information pane). {class=pp-figure}c</figcaption><img alt="" src="../images/sb-accounts-securities-accounts-holdings.png"></figure></p>
 <h2 id="one-or-more-security-accounts">One or more security accounts?</h2>
 <p>Should you create only one security account to hold all your transactions?</p>
 <ul>

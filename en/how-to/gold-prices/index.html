@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3541,7 +3607,7 @@
 <p>The Portfolio Performance forum has a thread <a href="https://forum.portfolio-performance.info/t/wo-kann-ich-aktuelle-und-historische-gold-und-silberkurse-laden/14/49">Wo kann ich aktuelle und historische Gold- und Silberkurse laden?</a>. This section provides a summary and expands upon the information discussed in the thread.</p>
 <h2 id="website-arivade">Website Ariva.de</h2>
 <p>The <code>ariva.de</code> website has a specific page for <a href="https://www.ariva.de/rohstoffe/">commodities</a> such as gold, silver, and others. Downloading the latest gold price is as easy as setting the <a href="../downloading-historical-prices/table-website/">Quote Feed to a webpage</a> <code>https://www.ariva.de/goldpreis_gold-kurs/kurse/historische-kurse</code>. Unfortunately, this method only provides data for the last 30 days. As time progresses, the data will be updated for future days with this method, gradually accumulating several months of gold price history.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Ariva.de website (translated) with historical gold prices . </figcaption><img alt="" src="../images/gold-ariva.de-website.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Ariva.de website (translated) with historical gold prices . </figcaption><img alt="" src="../images/gold-ariva.de-website.png"></figure></p>
 <p>You can also replace the Quote Feed URL by one of the previous months (e.g. <code>https://www.ariva.de/goldpreis_gold-kurs/kurse/historische-kurse?go=1&amp;boerse_id=172&amp;month=2024-02-29</code>). When importing the data, Portfolio Performance will ask if you want to keep the existing historical prices. By choosing to keep the previous data, you can maintain a continuous record of gold prices for all the months you have downloaded.</p>
 <p>But, perhaps the better method is to use a <a href="https://help.portfolio-performance.info/de/kursdaten_laden/#dynamische-kursdaten-urls">dynamic data URLs</a>. Replace the <code>month=2024-02-29</code> in the URL from above in the macro version <code>month={DATE:yyyy-MM-32}</code>. This macro will iterate through all previous months (going back to 2003) and send a request for each month until there is no data available. If you start from scratch, this process can take some time and will put a significant load on the ariva.de web server.</p>
 <p>Another option to obtain historical gold prices is to register for a free account. Then you can download the historical prices as a CSV file, which can be <a href="../../reference/file/import/csv-import/#importing-a-csv-file">imported</a> into Portfolio Performance (PP).</p>
@@ -3571,7 +3637,7 @@
 <a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>]
 </code></pre></div>
 <p>You can discover the JSON Endpoint URL by opening the developers tool panel in the webbrowser, selecting the network tab, and refreshing the chart. The <code>Path to Date</code> is <code>$.*.d</code> and the <code>Date Format</code> is <code>yyyy-MM-dd</code>. The <code>Path to Close</code> is <code>$.*.v[0]</code> for the price in USD. </p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Gold prices through JSON Quote Feed from London Bullion Market.</figcaption><img alt="" src="../images/gold-retrive-json-London-Bullion.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Gold prices through JSON Quote Feed from London Bullion Market.</figcaption><img alt="" src="../images/gold-retrive-json-London-Bullion.png"></figure></p>
 <h2 id="website-goldorg">Website Gold.org</h2>
 <p>The website gold.org offers historical gold prices in different currencies and for various quantities (oz, grams, kg; 1 (troy) ounce = 31.1034768 gr). To access the numerical data, you'll need a workaround. First, open the <a href="https://www.gold.org/goldhub/data/gold-prices">gold prices graph</a>. The server sends a text file (JSON file) containing the data, which is then used to create the graph locally on your computer. This method is more efficient in terms of time and bandwidth.</p>
 <p>To find the URL for the JSON download, follow these steps:</p>
@@ -3581,7 +3647,7 @@
 <li>Look for a change in the network tab of the developer tools window.</li>
 <li>Copy the URL that appears. It should look something like the one shown in Figure 1.</li>
 </ol>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  gold.org website with developer tools visible. </figcaption><img alt="" src="../images/gold-developer-tools.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. gold.org website with developer tools visible. </figcaption><img alt="" src="../images/gold-developer-tools.png"></figure></p>
 <p>The URL should look something like:</p>
 <p><code>https://fsapi.gold.org/api/goldprice/v11/chart/price/usd/oz/1693853240038,1709582076959?cache</code></p>
 <p>Upon entering this URL in your browser, you will see the result displayed below.</p>
@@ -3637,7 +3703,7 @@
 <li>Path to Close: $.chartData.USD[*].[1]</li>
 </ul>
 <p>To extract the date and the price, you need the JSON-path (see Figure 4).</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Quote Feed JSON Provider with Feed URL and Path to Date and Close. </figcaption><img alt="" src="../images/gold-PP-JSON-path.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. Quote Feed JSON Provider with Feed URL and Path to Date and Close. </figcaption><img alt="" src="../images/gold-PP-JSON-path.png"></figure></p>
 
 
 

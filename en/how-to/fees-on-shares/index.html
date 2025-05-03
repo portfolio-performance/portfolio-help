@@ -922,16 +922,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../concepts/system-overview/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../concepts/system-overview/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     System overview
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/system-overview/system-overview-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3520,7 +3586,7 @@
 
 <p>In addition to transaction fees, some brokers charge management fees, typically an annual percentage of the portfolio’s value. In such cases, the broker deducts these fees by selling a small portion of your shares, reducing the total number you own.</p>
 <p>This is essentially a sell transaction followed by a fee transaction. These can be booked in a single transaction through an <a href="../../reference/transaction/delivery/"><em>Outbound Delivery</em></a> where the shares are sold and the fees are applied to the sold value within the same transaction. This results in a <strong>total outbound delivery amount of 0</strong>. </p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Outbound Delivery used to book the fee transaction. </figcaption><img alt="" src="../images/fees-on-shares-outbound.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Outbound Delivery used to book the fee transaction. </figcaption><img alt="" src="../images/fees-on-shares-outbound.png"></figure></p>
 <p>To accurately book those fees, it is important that your broker details the number of sold shares.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3535,9 +3601,9 @@
 <p>The first quaterly fees on <code>stock-A</code> consist in a sell of <code>0.75/100/4 * 0.5671 = 0.001</code> shares, whose sold value is taken as fees.
 And again on March 18 :
 <code>0.75/100/4 * 0.5661 = 0.001</code> shares are sold by the broker and the sold value is taken as fees. Same for the other dates.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Several fees transactions booked as Outbound Delivery. </figcaption><img alt="" src="../images/fees-on-shares-transactions-list.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Several fees transactions booked as Outbound Delivery. </figcaption><img alt="" src="../images/fees-on-shares-transactions-list.png"></figure></p>
 <p>The <a href="../../reference/view/reports/performance/performance-chart/">Performance Chart</a> illustrates the impact of these fees : compared to the price performance of <code>stock-A</code>, our <code>stock-A</code> performance is 0.75 % lower than its benchmark over a year.</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Difference in performance due to the management fees. </figcaption><img alt="" src="../images/fees-on-shares-performance.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Difference in performance due to the management fees. </figcaption><img alt="" src="../images/fees-on-shares-performance.png"></figure></p>
 <h3 id="second-method">Second method</h3>
 <p>This could also be done by separating the Sell and the Fee transactions by using:</p>
 <ol>
@@ -3545,7 +3611,7 @@ And again on March 18 :
 <li>Second a <a href="../../reference/transaction/fees-taxes/"><em>Fees</em></a> transaction on the cash account, related to the sold security.</li>
 </ol>
 <p>but this creates two transactions and forces to use a cash account.</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  List of transactions on the cash account with this second method. </figcaption><img alt="" src="../images/fees-on-shares-second-method.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. List of transactions on the cash account with this second method. </figcaption><img alt="" src="../images/fees-on-shares-second-method.png"></figure></p>
 
 
 
