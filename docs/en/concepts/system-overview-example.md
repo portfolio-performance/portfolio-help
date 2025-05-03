@@ -17,7 +17,7 @@ changes:
       author: Nirus2000
       description:
         - Adding YAML Source
-----
+---
 
 The name PortfolioPerformance (PP) captures its purpose very well: managing an investment portfolio from a performance perspective. This focus contrasts with many proprietary broker apps, which primarily facilitate the technical execution of orders. The following text outlines the principal components. Follow the links to obtain more information about each component.
 
