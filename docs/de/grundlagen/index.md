@@ -6,7 +6,7 @@ Title: Grundkonzept
 
 In diesem Kapitel findest Du eine kurze, knappe, aber klare Erklärung mehrerer grundlegender Konzepte und Prinzipien. Bei der Portfolioperformance dreht sich alles um Zahlen. Es ist leicht, diese Zahlen völlig falsch zu berechnen oder falsch zu interpretieren, wenn Du die zugrunde liegenden Annahmen bzw. Prinzipien nicht verstehst.
 
-- [Finanzterminologie](finanz-termininologie.md): Ein Verständnis der grundlegenden Finanzterminologie ist entscheidend für die optimale Nutzung von Portfolio Performance und diesem Handbuch. Diese Seite enthält einige Links zu empfehlenswerten Seiten.
+- [Finanzterminologie](finanz-terminologie.md): Ein Verständnis der grundlegenden Finanzterminologie ist entscheidend für die optimale Nutzung von Portfolio Performance und diesem Handbuch. Diese Seite enthält einige Links zu empfehlenswerten Seiten.
 
 - [Portfolio Performance Terminologie](portfolio-performance-terminologie.md): Dieses Glossar ist eine einfache, alphabetisch geordnete Liste von Begriffen, Akronymen, Spaltenüberschriften und anderem relevantem Vokabular, das in Portfolio Performance verwendet wird, zusammen mit den jeweiligen Definitionen.
 
