@@ -20,7 +20,7 @@ changes:
         - Basic structure implemented
 ---
 
-# What is Portfolio Performance?
+## What is Portfolio Performance?
 
 Since the beginning of 2012, [Portfolio Performance](https://portfolio-performance.info) has been available to calculate the performance of an overall portfolio – across various depots and accounts – based on the True-Time Weighted Rate of Return and the internal rate of return.
 
@@ -52,7 +52,7 @@ The **Portfolio Performance** (PP) guide consists of four chapters, derived from
 - [How-to](how-to/index.md)
   In this chapter, you will find step-by-step descriptions of common procedures, including data import, dividend posting, searching for historical prices, and more. Some tips & tricks as well as special cases are also described.
 
-# Help Out...
+## Help Out...
 
 As you can easily see, there are still many blank pages in this handbook.
 If you are interested, please also contact us in the forum! [Many thanks to everyone who has helped so far.](https://github.com/portfolio-performance/portfolio-help/graphs/contributors)
