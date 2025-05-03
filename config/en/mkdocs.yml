@@ -118,7 +118,7 @@ nav:
       - Keeping the portfolio up-to-date: getting-started/updating-portfolio.md
   - Basic concepts:
       - Basic concepts: concepts/index.md
-      - PP-terminology: concepts/PP-terminology.md
+      - Portfolio Performance terminology: concepts/portfolio-performance-terminology.md
       - Financial terminology: concepts/financial-terminology.md
       - System overview: concepts/system-overview.md
       - Reporting period: concepts/reporting-period.md
