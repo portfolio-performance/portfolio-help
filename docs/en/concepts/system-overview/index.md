@@ -25,7 +25,7 @@ The name PortfolioPerformance (PP) captures its purpose very well: managing an i
 
 Figure: System overview with components and relations.{class=pp-figure}
 
-![](images/system-overview-components.svg)
+![](../images/system-overview-components.svg)
 
 Performance is a multi-layered concept. Not only are there several different methods to calculate it, such as [money-weighted (IRR)](../performance/money-weighted.md) and [time-weighted (TTWROR)](../performance/time-weighted.md) rates of return, but you can also calculate performance at various levels: the [portfolio as a whole](../../reference/view/reports/performance/index.md), a security or deposit account, an [individual security](../../reference/view/reports/performance/securities.md), or a single [trade](../../reference/view/reports/performance/trades.md). In its simplest form, without any transactions, the performance of a portfolio can be represented by the following equation (please refer to the links provided earlier for more detailed information):
 

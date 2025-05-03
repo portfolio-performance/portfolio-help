@@ -62,7 +62,7 @@ Figure: Importing Historical Quotes (step 3).{class=pp-figure}
 
 ### 2. Securities import
 
-Use this type to create new securities from a CSV file. There are no required fields. The optional fields include `Ticker Symbol`, `Security Name`, `WKN`, `ISIN`, `Currency`, `Date of Quote`, `Note`, and `Quote`. It is evident that at least one of the first four fields should be mapped. Refer to the [glossary](../../../concepts/PP-terminology.md) for the meaning of these terms. See Table 2 for an example of the CSV-file.
+Use this type to create new securities from a CSV file. There are no required fields. The optional fields include `Ticker Symbol`, `Security Name`, `WKN`, `ISIN`, `Currency`, `Date of Quote`, `Note`, and `Quote`. It is evident that at least one of the first four fields should be mapped. Refer to the [glossary](../../../concepts/portfolio-performance-terminology.md) for the meaning of these terms. See Table 2 for an example of the CSV-file.
 
 *Table 2: Source data for the import of Securities.*
 ```

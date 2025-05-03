@@ -25,15 +25,15 @@ Der Name PortfolioPerformance (PP) erfasst seinen Zweck sehr gut: die Verwaltung
 
 Abbildung: Systemübersicht mit Komponenten und Beziehungen.{class=pp-figure}
 
-![](images/system-uebersicht-componenten.svg)
+![](../images/system-uebersicht-componenten.svg)
 
-Performance ist ein vielschichtiges Konzept. Es gibt nicht nur verschiedene Methoden zur Berechnung, wie z. B. den [geldgewichteten (IRR)](../performance/geld-gewichtet.md) und den [zeitgewichteten (TTWROR)](../../performance/zeit-gewichtet.md) Renditesatz, sondern Sie können die Performance auch auf verschiedenen Ebenen berechnen: das [Portfolio als Ganzes](../performance/index.md), ein Wertpapier- oder Verrechnungskonto, ein [einzelnes Wertpapier](../../referenzhandbuch/ansichten/berichte/performance/wertpapiere.md) oder ein einzelner [Trade](../../referenzhandbuch/ansichten/berichte/performance/trades.md). In seiner einfachsten Form, ohne Transaktionen, kann die Performance eines Portfolios durch die folgende Gleichung dargestellt werden (detailliertere Informationen finden Sie in den oben genannten Links):
+Performance ist ein vielschichtiges Konzept. Es gibt nicht nur verschiedene Methoden zur Berechnung, wie z. B. den [geldgewichteten (IRR)](../performance/geld-gewichtet.md) und den [zeitgewichteten (TTWROR)](../performance/zeit-gewichtet.md) Renditesatz, sondern Sie können die Performance auch auf verschiedenen Ebenen berechnen: das [Portfolio als Ganzes](../performance/index.md), ein Wertpapier- oder Verrechnungskonto, ein [einzelnes Wertpapier](../../referenzhandbuch/ansichten/berichte/performance/wertpapiere.md) oder ein einzelner [Trade](../../referenzhandbuch/ansichten/berichte/performance/trades.md). In seiner einfachsten Form, ohne Transaktionen, kann die Performance eines Portfolios durch die folgende Gleichung dargestellt werden (detailliertere Informationen finden Sie in den oben genannten Links):
 
 $$\mathrm{r = \frac{(MVE - MVB)}{MVB} \quad (Gl.  1)}$$
 
 wobei MVE = der Marktwert des Portfolios am Ende des Berichtszeitraums und MVB = der Marktwert des Portfolios am Beginn des Zeitraums ist.
 
-Die Performance wird direkt vom [Berichtszeitraum](berichtszeitraum.md) beeinflusst, der standardmäßig auf ein Jahr ab heute eingestellt ist. Der Berichtszeitraum bestimmt den Wert des Portfolios, des Kontos oder des Wertpapiers am Anfang und am Ende des Zeitraums (z. B. MVB und MVE in den Performancegleichungen). Im Falle des geldgewichteten Renditesatzes (IRR) bestimmt er auch die Restlaufzeit, die ein Cashflow hat, um am Ende des Berichtszeitraums einen Gewinn oder Verlust zu generieren.
+Die Performance wird direkt vom [Berichtszeitraum](../berichtszeitraum.md) beeinflusst, der standardmäßig auf ein Jahr ab heute eingestellt ist. Der Berichtszeitraum bestimmt den Wert des Portfolios, des Kontos oder des Wertpapiers am Anfang und am Ende des Zeitraums (z. B. MVB und MVE in den Performancegleichungen). Im Falle des geldgewichteten Renditesatzes (IRR) bestimmt er auch die Restlaufzeit, die ein Cashflow hat, um am Ende des Berichtszeitraums einen Gewinn oder Verlust zu generieren.
 
 [Wechselkurse](../../referenzhandbuch/ansichten/stammdaten/waehrungen.md) haben einen indirekteren Einfluss und kommen immer dann ins Spiel, wenn eine Transaktion eine Währungsumrechnung beinhaltet. Dazu gehören Überweisungen zwischen verschiedenen Währungskonten und Transaktionen wie Käufe, Verkäufe und Dividenden in verschiedenen Währungen. Beim Kauf von Wertpapieren, die in USD notieren, müssen Sie beispielsweise möglicherweise Euro zu einem bestimmten Wechselkurs in USD umtauschen. Beim Verkauf dieser Wertpapiere müssen Sie möglicherweise den USD wieder in Euro umtauschen. Schwankungen des Wechselkurses zwischen dem Zeitpunkt des Kaufs und dem Zeitpunkt des Verkaufs können zu einem Gewinn oder Verlust führen, da sich der Wert des USD in Euro möglicherweise geändert hat.
 
@@ -49,7 +49,7 @@ Transaktionen werden durch Pfeile dargestellt. Sie generieren Cash-Outflows (rot
 
 Abbildung: Übersicht aller Transaktionstypen mit zugehörigen Cashflows auf Portfolio-, Konto- und Wertpapierebene.{class=pp-figure}
 
-![](images/system-uebersicht-zahlungsstroeme.svg)
+![](../images/system-uebersicht-zahlungsstroeme.svg)
 
 Ein [*Einzahlung*](../../referenzhandbuch/transaktionen/einlage-entnahme.md) generiert zwei Cash-Inflows: einen auf Portfolioebene und einen auf Ebene des Einlagenkontos. Diese Transaktion führt zu einem Inflow, da Geld auf das Einlagenkonto und somit auch in das Portfolio eingebracht wird. Andererseits erzeugt eine [*Abhebung*](../../referenzhandbuch/transaktionen/einlage-entnahme.md) zwei Cash-Outflows und entzieht Geld von einem Cash-Konto und dem Portfolio.
 
