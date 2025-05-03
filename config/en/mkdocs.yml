@@ -99,6 +99,8 @@ markdown_extensions:
   - tables
 
 nav:
+  - Intro: 
+      - Intro: index.md
   - Getting started:
       - Getting started: getting-started/index.md
       - Installation: getting-started/installation.md
