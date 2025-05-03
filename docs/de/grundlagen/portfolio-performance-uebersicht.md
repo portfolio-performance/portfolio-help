@@ -1,4 +1,0 @@
----
-title: Portfolio Performance Übersicht
----
-

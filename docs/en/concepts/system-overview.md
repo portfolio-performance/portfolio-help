@@ -1,5 +1,22 @@
 ---
 title: System overview
+lastUpdate: 2025-05-03
+description: Overview of the Portfolio Performance system components, detailing how transactions, performance calculations, and other factors influence the portfolio’s overall performance.
+authors:
+    - name: Portfolio Performance Team
+    - name: Nirus2000
+version: 1.0
+slug: system-overview
+tags:
+    - Portfolio Management
+    - Investment Analysis
+    - Glossary
+    - Portfolio Performance
+changes:
+    - date: 2025-05-03
+      author: Nirus2000
+      description:
+        - Adding YAML Source
 ---
 
 The name PortfolioPerformance (PP) captures its purpose very well: managing an investment portfolio from a performance perspective. This focus contrasts with many proprietary broker apps, which primarily facilitate the technical execution of orders. The following text outlines the principal components (see figure 1). Follow the links to obtain more information about each component. An [example](system-overview-example.md) with a simple portfolio can be found in a separate text.
