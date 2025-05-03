@@ -3459,7 +3459,7 @@
 <p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Quarterly performance chart of share-1 and its benchmark. </figcaption><img alt="" src="../images/performance-chart-quarterly.svg"></figure></p>
 <p>As can be seen in Figure 3, the increase in Q1 is not linear at all, but with ups and downs. Note that the performance starts at 0% because a new reporting period is selected (January 1 to March 31). </p>
 <p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Daily Performance chart of the first quarter of 2022. </figcaption><img alt="" src="../images/performance-chart-quarter-1-detail.png"></figure></p>
-<p>The graphs in Figure 2 &amp; 3 also shows that the performance starts to diverge between <code>share-1</code> and its benchmark from Quarter 1, 2022 on. This occurs due to the first purchase of <code>share-1</code> on 2022-01-14. Remember that PP always calculates daily performance: <code>1 + r = (MVE + CFOut)/(MVB + CFIn)</code> <a href="../../../../../concepts/performance/money-weighted/">(Equation 1)</a>. The quarterly performance is just a compounding of daily performances.</p>
+<p>The graphs in Figure 2 &amp; 3 also shows that the performance starts to diverge between <code>share-1</code> and its benchmark from Quarter 1, 2022 on. This occurs due to the first purchase of <code>share-1</code> on 2022-01-14. Remember that Portfolio Performance always calculates daily performance: <code>1 + r = (MVE + CFOut)/(MVB + CFIn)</code> <a href="../../../../../concepts/performance/money-weighted/">(Equation 1)</a>. The quarterly performance is just a compounding of daily performances.</p>
 <ul>
 <li>2022-01-13 (day before the purchase): historical price of <code>share-1</code> increased from 16.016 EUR/share to 16.026 EUR/share. The daily performance of <code>share-1 (benchmark)</code> is thus (16.026 / 16.016) -1 = 0.0624%. This is the same performance as for the existing investment of 10 shares of <code>share-1</code>: ((160.26 + 0) / (160.16 + 0)) - 1 = 0.0624%. For days without cash flows, <code>share-1</code> and its benchmark have the same daily performance.</li>
 <li>2022-01-14: the historical price drops from 16.026 to 15.962 EUR/share. The daily performance of <code>share-1 (benchmark)</code> decreases to (16.026 / 15.962) -1 = 0.040%. However, since an additional 5 shares are purchased on this day for 83 EUR (5 x 16 EUR/share + 3 EUR fees), the MVE of this security becomes 15 shares x 15.962 EUR/share = 239,43 EUR and the  daily performance = (( 239,43 + 0) / (160.26 + 83)) - 1 = -1.574%. Due to the fees, the benchmark has a better performance than the actual investment of 15 shares.</li>
@@ -3488,7 +3488,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 18, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 2, 2025</span>
   </span>
 
     

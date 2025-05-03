@@ -3063,9 +3063,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#creating-new-securities-in-pp-with-pr" class="md-nav__link">
+  <a href="#creating-new-securities-in-portfolio-performance-with-pr" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating new securities in PP with PR
+      Creating new securities in Portfolio Performance with PR
     </span>
   </a>
   
@@ -3503,9 +3503,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#creating-new-securities-in-pp-with-pr" class="md-nav__link">
+  <a href="#creating-new-securities-in-portfolio-performance-with-pr" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating new securities in PP with PR
+      Creating new securities in Portfolio Performance with PR
     </span>
   </a>
   
@@ -3554,8 +3554,8 @@
 
   <h1>Portfolio Report</h1>
 
-<p>Portfolio Report (PR) is an open-source project that works closely together with the Portfolio Performance (PP) app. Its primary goal is to enhance PP by providing master data for securities, including name, ISIN, WKN, and ticker symbol, as well as historical prices in various currencies.</p>
-<p>PR allows you to look up information about securities, such as symbols, industries, and historical prices. Furthermore, it enables the creation of securities within PP from PR and the provision of historical prices for securities that already exist in PP.</p>
+<p>Portfolio Report (PR) is an open-source project that works closely together with the Portfolio Performance (PP) app. Its primary goal is to enhance Portfolio Performance by providing master data for securities, including name, ISIN, WKN, and ticker symbol, as well as historical prices in various currencies.</p>
+<p>PR allows you to look up information about securities, such as symbols, industries, and historical prices. Furthermore, it enables the creation of securities within Portfolio Performance from PR and the provision of historical prices for securities that already exist in PP.</p>
 <h2 id="looking-up-information">Looking up information</h2>
 <p>When you navigate to the Portfolio Report website <a href="https://www.portfolio-report.net/">https://www.portfolio-report.net/</a>, you will be presented with the following simple but efficient search form (see Figure 1).</p>
 <p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1.  Portfolio Report website. </figcaption><img alt="" src="../images/portfolio-report-website.png"></figure></p>
@@ -3563,16 +3563,16 @@
 <p>Specifying the security type (share, fund, crypto, or bond) is not necessary, as the default search setting (blank or *) includes all categories.</p>
 <p>When you retrieve the historical prices of a security, you have the option to select the currency in which the quotes are displayed with the <code>Prices</code> dropdown. Please note that the prices are always retrieved from the XETRA (Frankfurt) exchange market and that this price (in EUR) is converted through the <a href="../../../reference/view/general-data/currencies/">exchange rates of the ECB</a>.</p>
 <p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2.  Search Result</figcaption><img alt="" src="../images/portfolio-report-search-result.png"></figure></p>
-<h2 id="creating-new-securities-in-pp-with-pr">Creating new securities in PP with PR</h2>
+<h2 id="creating-new-securities-in-portfolio-performance-with-pr">Creating new securities in Portfolio Performance with PR</h2>
 <ul>
-<li>Navigate to the <a href="https://www.portfolio-report.net/">Portfolio Report website</a>; start the PP app and, if possible, position both windows side by side on the computer screen, as illustrated in Figure 2.</li>
+<li>Navigate to the <a href="https://www.portfolio-report.net/">Portfolio Report website</a>; start the Portfolio Performance app and, if possible, position both windows side by side on the computer screen, as illustrated in Figure 2.</li>
 <li>
 <p>Utilize the Search box located at the top right (refer to Figure 3) to search for the desired security using its name, ISIN, or WKN.</p>
 <p>If the security is in PR's database, the name (e.g <em>Amazon.com Inc.</em>), ISIN (<em>US0231351067</em>), and eventually WKN are displayed, together with a logo of the security (white arrow on blue background) and some extra information such as the trading market (<em>XETRA</em>), the currency (<em>EUR</em>), the ticker symbol on the specified trading market (<em>AMZ</em>), the country (<em>United States of America (US)</em>) and eventually the industry sector of the company. On multiple tabs (1, 2, 3, etc.), you can view the historical prices of the security. By default, only the 10 most recent prices are shown. However, using the drop-down menu on the right, you can adjust the number of prices displayed per page, with options ranging from 10, 30, 100, to 300.</p>
 <p>Only securities that are traded on XETRA (Deutsche Börse) are available within PR. Historical prices, specifically closing prices after the end of trading, are provided. Current prices, which are prices during trading on a marketplace, are not available.</p>
 </li>
 <li>
-<p>Drag (= click, hold, and drop) the big blue button <code>Add to Portfolio Performance</code> upon the open window of PP. This is -of course- very easy if the two applications are placed next to each other on the screen (see Figure 2). Otherwise, you need to drag the button upon the PP icon in the taskbar.</p>
+<p>Drag (= click, hold, and drop) the big blue button <code>Add to Portfolio Performance</code> upon the open window of PP. This is -of course- very easy if the two applications are placed next to each other on the screen (see Figure 2). Otherwise, you need to drag the button upon the Portfolio Performance icon in the taskbar.</p>
 <p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3.  Using Portfolio Report to create a security in Portfolio Performance.</figcaption><img alt="" src="../images/portfolio-report-drag-drop.svg"></figure></p>
 </li>
 <li>
@@ -3590,7 +3590,7 @@
 <li>Securities that no longer exist in Portfolio Report are automatically unlinked.</li>
 </ul>
 <h2 id="privacy-rules">Privacy rules</h2>
-<p>Whenever PP initiates an update, such as through the menu <code>Online &gt; Update Quotes</code> a request is sent to the PR website. Portfolio Report only receives information that is technically necessary, including:</p>
+<p>Whenever Portfolio Performance initiates an update, such as through the menu <code>Online &gt; Update Quotes</code> a request is sent to the PR website. Portfolio Report only receives information that is technically necessary, including:</p>
 <ul>
 <li>Identification details of the security, the marketplace and, if applicable, the period.</li>
 <li>The version number of the requesting Portfolio Performance app.</li>
@@ -3618,7 +3618,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 9, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 2, 2025</span>
   </span>
 
     

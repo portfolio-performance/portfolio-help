@@ -3656,10 +3656,10 @@
 <a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">   </span><span class="nt">&lt;/portfolio-transaction&gt;</span>
 <a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="nt">&lt;/transactions&gt;</span>
 </code></pre></div>
-As you can see, there is nearly a one-to-one relationship between the input form of the buy transaction and the XML. Please note that -internally- PP works with nano units (10^9) for the number of shares and hecto units (10^2) for the price.
+As you can see, there is nearly a one-to-one relationship between the input form of the buy transaction and the XML. Please note that -internally- Portfolio Performance works with nano units (10^9) for the number of shares and hecto units (10^2) for the price.
 <p>The PortfolioPerformance mobile app, introduced in February 2024, does not support the XML file format.</p>
 <h2 id="password-protected-aes-256">Password protected (AES-256)</h2>
-<p>AES-256 encryption is a method of securing your data by converting it into a code that can only be accessed with a unique key. This encryption technique uses a 256-bit key, which is a string of 256 zeros and ones, to encrypt and decrypt the data. When data is encrypted using AES-256, it is transformed into a random sequence of characters that is unreadable without the key. In order to generate this key, PP needs a password that is at least 6 characters. However, a password that is longer and more complex will have more randomness and unpredictability, which means it is harder to guess.</p>
+<p>AES-256 encryption is a method of securing your data by converting it into a code that can only be accessed with a unique key. This encryption technique uses a 256-bit key, which is a string of 256 zeros and ones, to encrypt and decrypt the data. When data is encrypted using AES-256, it is transformed into a random sequence of characters that is unreadable without the key. In order to generate this key, Portfolio Performance needs a password that is at least 6 characters. However, a password that is longer and more complex will have more randomness and unpredictability, which means it is harder to guess.</p>
 <p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4.  Saving a portfolio with AES-256 encryption needs a password.</figcaption><img alt="" src="../images/mnu-save-encrypted.png"></figure></p>
 <h2 id="binary">Binary</h2>
 <p>An XML file is a human-readable file format (see above for an example). A binary format is more compact and efficient and therefore a file can be opened and saved much faster. However, it is no longer human-readable. More info is available in <a href="https://github.com/portfolio-performance/portfolio/issues/2363">Issue #2363</a>; watch for example the comparison in opening speed of a 720 securities &amp; 1.3 MB historical prices project.</p>
@@ -3684,7 +3684,7 @@ As you can see, there is nearly a one-to-one relationship between the input form
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 9, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 2, 2025</span>
   </span>
 
     
