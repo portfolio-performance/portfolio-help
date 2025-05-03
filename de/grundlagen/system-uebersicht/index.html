@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Handbuch für Portfolio Performance Software">
+        <meta name="description" content="Übersicht über die Komponenten des Portfolio Performance Systems, die detailliert beschreibt, wie Transaktionen, Performanceberechnungen und andere Faktoren die Gesamtperformance des Portfolios beeinflussen.">
       
       
         <meta name="author" content="Andreas Buchen, et. al.">
       
       
-        <link rel="canonical" href="https://help.portfolio-performance.info/de/grundlagen/portfolio-performance-uebersicht/">
+        <link rel="canonical" href="https://help.portfolio-performance.info/de/grundlagen/system-uebersicht/">
       
       
         <link rel="prev" href="../finanz-terminologie/">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Portfolio Performance Übersicht - Portfolio Performance Handbuch</title>
+        <title>Systemübersicht - Portfolio Performance Handbuch</title>
       
     
     
@@ -81,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#komponenten" class="md-skip">
+          Zum Inhalt
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -110,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Portfolio Performance Übersicht
+              Systemübersicht
             
           </span>
         </div>
@@ -1034,15 +1039,61 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Systemübersicht
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Programmübersicht
+    Systemübersicht
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#komponenten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Komponenten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transaktionen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transaktionen
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3346,6 +3397,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#komponenten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Komponenten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transaktionen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transaktionen
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3359,7 +3436,7 @@
                   
 
   
-    <a href="https://github.com/portfolio-performance/portfolio-help/tree/master/docs/de/grundlagen/portfolio-performance-uebersicht.md" title="Seite editieren" class="md-content__button md-icon">
+    <a href="https://github.com/portfolio-performance/portfolio-help/tree/master/docs/de/grundlagen/system-uebersicht.md" title="Seite editieren" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -3367,9 +3444,36 @@
   
 
 
-  <h1>Programmübersicht</h1>
+  <h1>Systemübersicht</h1>
 
-
+<p>Der Name PortfolioPerformance (PP) erfasst seinen Zweck sehr gut: die Verwaltung eines Anlageportfolios aus Performance-Sicht. Dieser Fokus steht im Gegensatz zu vielen proprietären Broker-Apps, die primär die technische Ausführung von Aufträgen erleichtern. Der folgende Text umreißt die Hauptkomponenten (siehe Abbildung 1). Folgen Sie den Links, um weitere Informationen zu jeder Komponente zu erhalten. Ein <a href="https://www.google.com/search?q=system-overview-example.md">Beispiel</a> mit einem einfachen Portfolio finden Sie in einem separaten Text.</p>
+<h2 id="komponenten">Komponenten</h2>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Abbildung 1.  Systemübersicht mit Komponenten und Beziehungen.</figcaption><img alt="" src="../images/system-uebersicht-componenten.svg"></figure></p>
+<p>Performance ist ein vielschichtiges Konzept. Es gibt nicht nur verschiedene Methoden zur Berechnung, wie z. B. den <a href="https://www.google.com/search?q=./performance/money-weighted.md">geldgewichteten (IRR)</a> und den <a href="https://www.google.com/search?q=./performance/time-weighted.md">zeitgewichteten (TTWROR)</a> Renditesatz, sondern Sie können die Performance auch auf verschiedenen Ebenen berechnen: das <a href="https://www.google.com/search?q=../reference/view/reports/performance/index.md">Portfolio als Ganzes</a>, ein Wertpapier- oder Verrechnungskonto, ein <a href="https://www.google.com/search?q=../reference/view/reports/performance/securities.md">einzelnes Wertpapier</a> oder ein einzelner <a href="https://www.google.com/search?q=../reference/view/reports/performance/trades.md">Trade</a>. In seiner einfachsten Form, ohne Transaktionen, kann die Performance eines Portfolios durch die folgende Gleichung dargestellt werden (detailliertere Informationen finden Sie in den oben genannten Links):</p>
+<p>$$\mathrm{r = \frac{(MVE - MVB)}{MVB} \quad (Gl.  1)}$$</p>
+<p>wobei MVE = der Marktwert des Portfolios am Ende des Berichtszeitraums und MVB = der Marktwert des Portfolios am Beginn des Zeitraums ist.</p>
+<p>Die Performance wird direkt vom <a href="https://www.google.com/search?q=./reporting-period.md">Berichtszeitraum</a> beeinflusst, der standardmäßig auf ein Jahr ab heute eingestellt ist. Der Berichtszeitraum bestimmt den Wert des Portfolios, des Kontos oder des Wertpapiers am Anfang und am Ende des Zeitraums (z. B. MVB und MVE in den Performancegleichungen). Im Falle des geldgewichteten Renditesatzes (IRR) bestimmt er auch die Restlaufzeit, die ein Cashflow hat, um am Ende des Berichtszeitraums einen Gewinn oder Verlust zu generieren.</p>
+<p><a href="https://www.google.com/search?q=../reference/view/general-data/currencies.md">Wechselkurse</a> haben einen indirekteren Einfluss und kommen immer dann ins Spiel, wenn eine Transaktion eine Währungsumrechnung beinhaltet. Dazu gehören Überweisungen zwischen verschiedenen Währungskonten und Transaktionen wie Käufe, Verkäufe und Dividenden in verschiedenen Währungen. Beim Kauf von Wertpapieren, die in USD notieren, müssen Sie beispielsweise möglicherweise Euro zu einem bestimmten Wechselkurs in USD umtauschen. Beim Verkauf dieser Wertpapiere müssen Sie möglicherweise den USD wieder in Euro umtauschen. Schwankungen des Wechselkurses zwischen dem Zeitpunkt des Kaufs und dem Zeitpunkt des Verkaufs können zu einem Gewinn oder Verlust führen, da sich der Wert des USD in Euro möglicherweise geändert hat.</p>
+<p><a href="https://www.google.com/search?q=../how-to/downloading-historical-prices/index.md">Historische Kurse</a> von Wertpapieren beeinflussen maßgeblich den Marktwert und somit die Performance des Portfolios, der Wertpapierkonten, der einzelnen Wertpapiere und der Trades. Es ist klar, dass ein profitabler Trade erzielt wurde, wenn der Kurs eines Wertpapiers am Ende eines Trades höher ist als zu Beginn. Dieser Kursanstieg führt zu einem Kapitalgewinn, der direkt zur Gesamtperformance und zum Wert des Portfolios beiträgt.</p>
+<p>Nicht zuletzt hängt die Performance direkt vom Portfolio und den Transaktionen ab. <em>Ohne</em> Transaktionen innerhalb des Berichtszeitraums vereinfacht sich die grundlegende Performancegleichung zu IRR = TTWROR = (MVE/MVB) - 1. Wenn MVE größer als MVB ist, wurde ein Gewinn erzielt, was zu einer positiven Performance führt. Umgekehrt, wenn MVE kleiner als MVB ist, ist das Portfolio am Ende des Berichtszeitraums weniger wert als zu Beginn, was zu einer negativen Performance führt.</p>
+<h2 id="transaktionen">Transaktionen</h2>
+<p>Die Dinge werden komplizierter, wenn <a href="https://www.google.com/search?q=../reference/transaction/index.md">Transaktionen</a> während des Berichtszeitraums stattfinden. Es gibt 13 Arten von Transaktionen, die jeweils Cashflows in das und aus dem Portfolio, dem Konto oder dem Wertpapier generieren. Abbildung 2 veranschaulicht alle Transaktionstypen zwischen den vier Hauptkomponenten: dem Portfolio (dargestellt durch eine gestrichelte blaue Linie), Einlagenkonten (Cash) in EUR und USD, drei Wertpapieren (von denen zwei in USD notieren) und zusammengefasst in zwei Wertpapierkonten (orange und blau gestrichelte Linien). Wertpapier-2 (USD) ist in beiden Konten vorhanden.</p>
+<p>Transaktionen werden durch Pfeile dargestellt. Sie generieren Cash-Outflows (roter Kreis) oder Cash-Inflows (grüner Kreis). Die Zahlen neben den Kreisen stellen die Höhe des Cashflows dar, basierend auf einem hypothetischen Beispiel eines Kaufs oder Verkaufs von 5 Aktien zu 10 EUR/USD pro Aktie, was zu einem Kapitalzufluss von 50 EUR/USD führt. Gebühren und Steuern sind immer auf 1 bzw. 2 EUR festgelegt. Eine Dividende von 2 USD pro Aktie wird gezahlt; ein Wechselkurs von 0,9 EUR/USD wird verwendet.</p>
+<p><figure-caption identifier="Abbildung" class="pp-figure">Übersicht aller Transaktionstypen mit zugehörigen Cashflows auf Portfolio-, Konto- und Wertpapierebene.</figure-caption></p>
+<p>Ein <a href="https://www.google.com/search?q=../reference/transaction/deposit-removal.md"><em>Einzahlung</em></a> generiert zwei Cash-Inflows: einen auf Portfolioebene und einen auf Ebene des Einlagenkontos. Diese Transaktion führt zu einem Inflow, da Geld auf das Einlagenkonto und somit auch in das Portfolio eingebracht wird. Andererseits erzeugt eine <a href="https://www.google.com/search?q=../reference/transaction/deposit-removal.md"><em>Abhebung</em></a> zwei Cash-Outflows und entzieht Geld von einem Cash-Konto und dem Portfolio.</p>
+<p>Ein <a href="https://www.google.com/search?q=../reference/transaction/delivery.md"><em>Zugang Lieferung</em></a> fügt einem Wertpapier Anteile hinzu und erhöht somit das Kapital des Wertpapiers (Anteile x historischer Kurs) <strong>und</strong> des Wertpapierkontos. Umgekehrt verringert ein <a href="https://www.google.com/search?q=../reference/transaction/delivery.md"><em>Abgang Lieferung</em></a> das Kapital, indem Anteile vom Wertpapier entfernt werden, was zu einem Cash-Outflow führt.</p>
+<p>Besondere Aufmerksamkeit sollte den <a href="https://www.google.com/search?q=../reference/transaction/fees-taxes.md"><em>Gebühren</em> und <em>Steuern</em></a> gewidmet werden. Der Zugang von 5 Aktien zu 10 EUR pro Aktie erhöht das Kapital um 50 EUR, erfordert aber einen Zufluss von 53 EUR in das Portfolio. Der Cash-Inflow in das Wertpapier beträgt jedoch 51 EUR, da die 1 EUR Gebühr erst nach dem Cashflow an der Wertpapiergrenze abgespalten wird. Um den Cash-Inflow oder -Outflow eines Wertpapiers zu bestimmen, sollten immer die Gebühren berücksichtigt werden. Gebühren werden als intrinsisch für die Transaktion betrachtet, während Steuern nicht als intrinsisch für ein Wertpapier betrachtet werden. Die Erhebung von Steuern variiert stark von Land zu Land, und die Performance eines Wertpapiers sollte nicht davon abhängen. Steuern sind standardmäßig von der Performanceberechnung auf Wertpapierebene ausgeschlossen. Bezüglich der Wertpapierkontoebene bietet Portfolio Performance zwei Möglichkeiten: Kontoperformance <strong>vor</strong> oder <strong>nach</strong> Steuern (Standardberechnung); siehe Menü Ansicht &gt; Berichte &gt; Diagramm &gt; Diagramm konfigurieren &gt; Datenreihe hinzufügen ... Die Standardberechnung <strong>Nach Steuern</strong> ist in Abbildung 2 dargestellt. Beim Überschreiten der Wertpapierkontogrenze (zweiter grüner Kreis) sind die Steuern bereits in der Steuerkomponente des Wertpapiers berücksichtigt. Der Cash-Inflow des Wertpapierkontos beträgt somit 51 EUR. Bei der Berechnung <strong>Vor Steuern</strong> beträgt der Cash-Inflow des Wertpapierkontos 53 EUR, da 2 EUR Steuern erst nach Überschreiten der Wertpapierkontogrenze in die Steuerentität eingezahlt werden.</p>
+<p>Alle anderen Transaktionen sind intern für das Portfolio; sie beeinflussen die Performance des Portfolios nicht. Beispielsweise ist die <em>Übertrag-ab-Transaktion</em> ein Fluss zwischen zwei Einlagenkonten und hat als solche keinen Einfluss auf die Performance des Portfolios, außer wenn es zu einer Währungsumrechnung kommt, wie im Beispiel von Abbildung 2.</p>
+<p>Angenommen, Sie überweisen 100 EUR ganz am Anfang des Berichtszeitraums zu einem Umrechnungskurs von 1,1 EUR/USD und erhalten eine Einzahlung von 90,91 USD. Der Wechselkurs änderte sich am Ende des Berichtszeitraums auf 0,9 EUR/USD. Da die Performanceberechnung in der Währung des Portfolios erfolgt, z. B. EUR, werden diese 90,91 USD am Periodenende mit 81,82 EUR bewertet, was zu einem Verlust von etwa 18 EUR aufgrund von Währungsverlusten führt.</p>
+<p>Ein <a href="https://www.google.com/search?q=../reference/transaction/buy-sell.md"><em>Kauf</em></a> ähnelt stark einem Zugang Lieferung, mit dem Unterschied, dass der Cashflow aus dem Inneren des Portfolios und nicht von außen kommt. Aus Sicht des Cash-Kontos ähnelt dies einem Cash-Outflow. Das Wertpapier und das Wertpapierkonto erhalten einen Cash-Inflow. Eine Erörterung von Gebühren und Steuern finden Sie im vorherigen Text.</p>
+<p>Ein <a href="https://www.google.com/search?q=../reference/transaction/buy-sell.md"><em>Verkauf</em></a> führt zu einem Cash-Inflow auf ein Einlagenkonto (47 USD), da der Kapitalverkauf von 50 USD um Steuern und Gebühren reduziert wird.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In Bezug auf die Performance können eine Kauf-/Verkauf-Transaktion und eine Zugang/Abgang Lieferung zu deutlich unterschiedlichen Ergebnissen führen. Nur wenn eine Kauftransaktion am selben Tag und zum gleichen Betrag von einer Einzahlungstransaktion begleitet wird, gibt es keinen Performanceunterschied zwischen Kauf und Lieferung. Wenn jedoch eine Kauftransaktion nicht von einer entsprechenden Einzahlungstransaktion begleitet wird, wird der Kassenbestand auf dem betreffenden Konto reduziert (und kann potenziell negativ werden), was sich negativ auf den Marktwert am Ende (MVE) des Kontos auswirken kann.</p>
+</div>
+<p>Eine <a href="https://www.google.com/search?q=../reference/transaction/dividend.md"><em>Dividende</em></a> kann als eine Art Verkaufstransaktion betrachtet werden. In Abbildung 2 erhalten Sie für das Kapital (5 Aktien) von Wertpapier-2 (USD) eine Dividende (Bruttobetrag) von 10 USD (5 Aktien x 2 USD/Aktie). Die Gebühren werden abgezogen, was zu einem Outflow von 9 USD für das Wertpapier und das Wertpapierkonto führt. Nach Abzug der Steuern und Umrechnung der verbleibenden 7 USD in EUR wird ein Cash-Inflow von +6,3 EUR auf dem Einlagenkonto-1 (EUR) verbucht.</p>
+<p>Die separaten Transaktionen <em>Gebühren</em>, <em>Gebührenrückerstattung</em>, <em>Steuern</em> und <em>Steuerrückerstattung</em> folgen den gleichen Regeln wie oben beschrieben. Daher macht es keinen Unterschied, ob Sie Steuern und Gebühren als Teil einer Kauf-, Verkaufs- oder Lieferungstransaktion erfassen oder ob Sie sie in separate Transaktionen aufteilen.</p>
+<p>Eine Sonderstellung nehmen die Transaktionen <em>Zinsen</em> und <em>Sollzinsen</em> ein. Obwohl sie den Kassenbestand des Einlagenkontos erhöhen oder verringern, generieren sie <strong>keinen</strong> Cash-Inflow oder -Outflow. So wie das Kapital eines Wertpapiers aufgrund von Kursschwankungen steigen oder fallen kann (Kapitalgewinn oder -verlust), kann sich der Saldo eines Einlagenkontos aufgrund von Zinsen ändern.</p>
 
 
 
@@ -3390,7 +3494,7 @@
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">9. Februar 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">3. Mai 2025</span>
   </span>
 
     
