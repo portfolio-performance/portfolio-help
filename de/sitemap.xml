@@ -121,6 +121,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://help.portfolio-performance.info/de/grundlagen/system-uebersicht-beispiel/</loc>
+         <lastmod>2025-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://help.portfolio-performance.info/de/grundlagen/system-uebersicht/</loc>
          <lastmod>2025-05-03</lastmod>
          <changefreq>daily</changefreq>
@@ -367,6 +372,11 @@
     </url>
     <url>
          <loc>https://help.portfolio-performance.info/de/referenzhandbuch/ansichten/stammdaten/sparplaene/</loc>
+         <lastmod>2025-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://help.portfolio-performance.info/de/referenzhandbuch/ansichten/stammdaten/waehrungen/</loc>
          <lastmod>2025-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
