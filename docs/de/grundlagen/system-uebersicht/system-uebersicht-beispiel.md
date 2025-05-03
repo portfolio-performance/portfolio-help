@@ -26,7 +26,7 @@ Das Portfolio umfasst ein Wertpapierdepot (Broker-A) und zwei Verrechnungskonten
 
 Abbildung: Portfolio Performance Komponenten und ihre Beziehungen. {class=pp-figure}
 
-![](images/system-uebersicht-beispiel.svg)
+![](../images/system-uebersicht-beispiel.svg)
 
 Im Zentrum des Systems stehen die Transaktionen (Alle Transaktionen). In diesem Beispiel sind sechs Transaktionen enthalten.
 

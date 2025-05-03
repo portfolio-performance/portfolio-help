@@ -4,7 +4,7 @@ title: All Transactions
 
 # View &rsaquo; Accounts &rsaquo; All Transactions
 
-The `All Transactions` view displays a table with all the transactions of the portfolio in the main pane, sorted by the transaction's creation time in the portfolio (see Figure 1). The default view presents the columns `Date`, `Type`, `Security`, `Shares`, `Quote`, `Amount`, `Fees`, `Taxes`, `Net Transaction Value`, `Cash Account`, `Offset Account`, `Note`, and `Source` (see the [Glossary](../../../concepts/PP-terminology.md) for a definition of these terms).
+The `All Transactions` view displays a table with all the transactions of the portfolio in the main pane, sorted by the transaction's creation time in the portfolio (see Figure 1). The default view presents the columns `Date`, `Type`, `Security`, `Shares`, `Quote`, `Amount`, `Fees`, `Taxes`, `Net Transaction Value`, `Cash Account`, `Offset Account`, `Note`, and `Source` (see the [Glossary](../../../concepts/portfolio-performance-terminology.md) for a definition of these terms).
 
 Figure: The All Transactions View.{class=pp-figure}
 
@@ -20,7 +20,7 @@ Figure: The Show or Hide columns button (gear).{class=align-right style="width:3
 
 Click the column heading to sort the table in ascending (&and;) or descending (&or;) order based on that column. You can rearrange any column by dragging its header. Drag the divider line between two columns to adjust the with of the left column or double click to best fit. You can rename or hide a column with the context menu (right-click on the column header). Adding, deleting or resetting the columns to their original layout is done with the Show or hide columns icon (gear symbol top right). The default columns are shown in Figure 1; they are also checked in Figure 2. Figure 2 gives a list of all available columns.
 
-As can be seen, all available columns are displayed except `ISIN`, `Symbol`, and ´WKN´, which are typically security related terms (see the [Glossary](../../../concepts/PP-terminology.md)).
+As can be seen, all available columns are displayed except `ISIN`, `Symbol`, and ´WKN´, which are typically security related terms (see the [Glossary](../../../concepts/portfolio-performance-terminology.md)).
 
 ## Search
 

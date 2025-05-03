@@ -27,13 +27,13 @@ Figure: System overview with components and relations.{class=pp-figure}
 
 ![](images/system-overview-components.svg)
 
-Performance is a multi-layered concept. Not only are there several different methods to calculate it, such as [money-weighted (IRR)](./performance/money-weighted.md) and [time-weighted (TTWROR)](./performance/time-weighted.md) rates of return, but you can also calculate performance at various levels: the [portfolio as a whole](../../reference/view/reports/performance/index.md), a security or deposit account, an [individual security](../../reference/view/reports/performance/securities.md), or a single [trade](../../reference/view/reports/performance/trades.md). In its simplest form, without any transactions, the performance of a portfolio can be represented by the following equation (please refer to the links provided earlier for more detailed information):
+Performance is a multi-layered concept. Not only are there several different methods to calculate it, such as [money-weighted (IRR)](../performance/money-weighted.md) and [time-weighted (TTWROR)](../performance/time-weighted.md) rates of return, but you can also calculate performance at various levels: the [portfolio as a whole](../../reference/view/reports/performance/index.md), a security or deposit account, an [individual security](../../reference/view/reports/performance/securities.md), or a single [trade](../../reference/view/reports/performance/trades.md). In its simplest form, without any transactions, the performance of a portfolio can be represented by the following equation (please refer to the links provided earlier for more detailed information):
 
 $$\mathrm{r = \frac{(MVE - MVB)}{MVB} \quad (Eq  1)}$$
 
 where MVE = the market value of the portfolio at the end of the reporting period, and MVB = the market value of the portfolio at the beginning of the period.
 
-Performance is directly influenced by the [reporting period](./reporting-period.md), which is set by default to one year from today. The reporting period determines the value of the portfolio, account, or security at the beginning and end of the period (e.g. MVB and MVE in the performance equations). In the case of the money-weighted rate of return (IRR), it also determines the remaining duration that a cash flow has available to generate a profit or a loss at the end of the reporting period. 
+Performance is directly influenced by the [reporting period](../reporting-period.md), which is set by default to one year from today. The reporting period determines the value of the portfolio, account, or security at the beginning and end of the period (e.g. MVB and MVE in the performance equations). In the case of the money-weighted rate of return (IRR), it also determines the remaining duration that a cash flow has available to generate a profit or a loss at the end of the reporting period. 
 
 [Currency exchange rates](../../reference/view/general-data/currencies.md) have a more indirect influence and come into play whenever a transaction involves currency conversion. This includes transfers between different currency cash accounts and transactions such as buys, sells, and dividends in multiple currencies. For example, buying securities that are quoted in USD may require you to convert Euros to USD at a certain exchange rate. Upon selling these securities, you may need to convert the USD back to Euros. Fluctuations in the exchange rate between the time of purchase and the time of sale can result in a profit or a loss, as the value of the USD in terms of Euros may have changed.
 
@@ -49,7 +49,7 @@ Transactions are represented by arrows. They generate cash outflows (red circle)
 
 Figure: Overview of all transaction types with associated cash flows at portfolio, account and security level. {class=pp-figure}
 
-![](images/system-overview-cashflows.svg)
+![](../images/system-overview-cashflows.svg)
 
 As can be seen, **only four types of transactions** generate a cash flow at the portfolio level: deposit, removal (withdrawal), inbound delivery, and outbound delivery. These transactions will thus influence the performance indicator on the dashboard (View > Reports > Performance); which is a portfolio performance indicator. 
 

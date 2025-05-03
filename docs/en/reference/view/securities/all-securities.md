@@ -19,7 +19,7 @@ Figure: All available columns.{class=align-right style="width:30%"}
 
 The main pane represents essentially a table with all the available securities listed. Click the column heading to sort the table based on that column. You can rearrange any column by dragging its header. Drag the divider line between two columns to adjust the with of the left column. You can rename or hide a column with the context menu (right-click on the column header). Adding, deleting or resetting the columns to their original layout is done with the `Show or hide columns` icon (gear symbol top right). The default columns are shown in Figure 1; they are also checked in Figure 2. Figure 2 gives a list of all available columns.
 
-Refer to the [glossary](../../../concepts/PP-terminology.md) for a definition and short explanation of the columns.  Note that the column heading is sometimes different from the field name e.g. &Delta; amount and that several fields are collapsed into a single category e.g. Data Quality.
+Refer to the [glossary](../../../concepts/portfolio-performance-terminology.md) for a definition and short explanation of the columns.  Note that the column heading is sometimes different from the field name e.g. &Delta; amount and that several fields are collapsed into a single category e.g. Data Quality.
 
 Figure 1 represents the `Standard` view. A view keeps a record of the visible columns, their widths, column headings, and the sorting order of the table. By clicking the triangle icon next to the button, you can access options to duplicate, rename, or delete the current view.
 

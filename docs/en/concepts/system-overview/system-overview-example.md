@@ -25,7 +25,7 @@ The portfolio has one [Securities Account](../../reference/view/accounts/securit
 
 Figure: Portfolio Performance components and their relationships. {class=pp-figure}
 
-![](images/system-overview-example.svg)
+![](../images/system-overview-example.svg)
 
 At the center of the system are the Transactions ([All Transactions](../../reference/view/accounts/all-transactions.md)). There are six transactions involved in this example.
 
