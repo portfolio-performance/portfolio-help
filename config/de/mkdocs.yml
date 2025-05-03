@@ -103,7 +103,6 @@ markdown_extensions:
 nav:
   - Intro: 
       - Intro: index.md
-      - Doku Framework: doku-framework.md
   - Erste Schritte:
       - Erste Schritte: erste-schritte/index.md
       - Installation: erste-schritte/installation.md
