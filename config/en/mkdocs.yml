@@ -22,7 +22,7 @@ theme:
     # Palette toggle for light mode
     - scheme: default
       toggle:
-        icon: material/weather-night 
+        icon: material/weather-night
         name: Switch to dark mode
     # Palette toggle for dark mode
     - scheme: slate
@@ -46,11 +46,11 @@ extra_css:
 
 extra_javascript:
   - assets/javascripts/katex.js 
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
 
 extra:
-  alternate:  
+  alternate:
     - name: English
       link: /en/
       lang: en
@@ -75,7 +75,7 @@ plugins:
       lang: en
   - caption:
       figure:
-        caption_prefix: 'Figure {index}. '
+        caption_prefix: 'Figure {index}.'
         position: top
         markdown_identifier: 'Figure:'
       table:
@@ -120,8 +120,9 @@ nav:
       - Basic concepts: concepts/index.md
       - Portfolio Performance terminology: concepts/portfolio-performance-terminology.md
       - Financial terminology: concepts/financial-terminology.md
-      - System overview: concepts/system-overview.md
-          - Example: concepts/system-overview-example.md
+      - System overview:
+          - System overview: concepts/system-overview/index.md
+          - Example: concepts/system-overview/system-overview-example.md
       - Reporting period: concepts/reporting-period.md
       - Purchase value: concepts/purchase-value.md
       - Performance:
@@ -157,7 +158,7 @@ nav:
                 - Statement of Assets: reference/view/reports/statement/index.md
                 - Chart: reference/view/reports/statement/statement-chart.md
                 - Holdings: reference/view/reports/statement/holdings.md
-              - Performance:  
+              - Performance:
                 - Performance: reference/view/reports/performance/index.md
                 - Calculation: reference/view/reports/performance/calculation.md
                 - Chart: reference/view/reports/performance/performance-chart.md
@@ -183,7 +184,7 @@ nav:
       - Online Menu: reference/online.md
       - Help Menu:
           - About Portfolio Performance: reference/help/about.md
-          - Preferences : reference/help/preferences.md          
+          - Preferences : reference/help/preferences.md
           - Check for Updates: reference/help/check-updates.md
           - Trouble-shooting: reference/help/trouble-shooting.md
   - How-to:
@@ -191,7 +192,7 @@ nav:
       - Benchmarking your portfolio: how-to/benchmarking.md
       - Copy securities between portfolios: how-to/copy-securities.md
       - Downloading historical prices:
-          - Downloading historical prices:  how-to/downloading-historical-prices/index.md
+          - Downloading historical prices: how-to/downloading-historical-prices/index.md
           - Alpha Vantage: how-to/downloading-historical-prices/alpha-vantage.md
           - EODHistorical Data: how-to/downloading-historical-prices/eodhd.md
           - Yahoo Finance: how-to/downloading-historical-prices/yahoo-finance.md
