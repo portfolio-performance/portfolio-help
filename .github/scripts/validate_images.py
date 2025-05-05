@@ -10,6 +10,9 @@ DOCS_DIRS = {
     'en': os.path.join('docs', 'en'),
 }
 
+# Path to disallowed domains file
+DISALLOWED_DOMAINS_FILE = os.path.join('.github', 'ci', 'disallowed_image_domains.txt')
+
 # Timeouts for external image check (in seconds)
 HTTP_TIMEOUT = 3
 
@@ -31,6 +34,21 @@ HEADERS = {
     'X-Requested-With': 'XMLHttpRequest',
     'TE': 'Trailers',
 }
+
+def load_disallowed_domains(file_path):
+    """Load disallowed domains from a text file into a set."""
+    disallowed_domains = set()
+    if os.path.exists(file_path):
+        with open(file_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#"):
+                    disallowed_domains.add(line.lower())
+    return disallowed_domains
+
+def is_disallowed_url(path, disallowed_domains):
+    """Return True if the URL contains any disallowed domain."""
+    return any(domain in path.lower() for domain in disallowed_domains)
 
 def find_markdown_files(base_dirs):
     """Recursively find all markdown files in given directories."""
@@ -109,7 +127,7 @@ def validate_external_image(path, checked_urls):
     checked_urls[path] = 'timeout'
     return 'timeout'
 
-def validate_images(md_files):
+def validate_images(md_files, disallowed_domains):
     """Validate all image references in markdown files."""
     issues = []
     checked_urls = {}
@@ -120,6 +138,12 @@ def validate_images(md_files):
             if path.startswith("http://") or path.startswith("https://"):
                 # Checking external image
                 print(f"🔵 Checking external image {path}")
+
+                if is_disallowed_url(path, disallowed_domains):
+                    description = 'disallowed domain'
+                    issues.append((lang, md_file, line_num, path, description))
+                    print(f"❌ Disallowed domain detected {path}")
+                    continue
 
                 if path in checked_urls:
                     error_desc = checked_urls[path]
@@ -141,12 +165,16 @@ def validate_images(md_files):
 if __name__ == "__main__":
     print("🔍 Scanning markdown files for image references in: " + ", ".join([f"{lang} ({dir})" for lang, dir in DOCS_DIRS.items()]))
 
+    disallowed_domains = load_disallowed_domains(DISALLOWED_DOMAINS_FILE)
+    if disallowed_domains:
+        print(f"ℹ️ Loaded {len(disallowed_domains)} disallowed domains from {DISALLOWED_DOMAINS_FILE}")
+
     md_files = find_markdown_files(DOCS_DIRS)
     if not md_files:
         print("⚠️ No Markdown files found in specified directories.")
         sys.exit(0)
 
-    issues = validate_images(md_files)
+    issues = validate_images(md_files, disallowed_domains)
 
     print("\n🔎 Validation Results:")
 

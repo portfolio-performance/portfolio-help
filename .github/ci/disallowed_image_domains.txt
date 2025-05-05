@@ -1,0 +1,68 @@
+# This file contains a list of disallowed image domains for GitHub Actions
+
+# GitHub
+githubusercontent.com
+github.com
+
+# Social Media Platforms
+facebook.com
+fbcdn.net
+instagram.com
+cdninstagram.com
+linkedin.com
+licdn.com
+pinterest.com
+pinimg.com
+threads.net
+cdnthreads.com
+tumblr.com
+media.tumblr.com
+twitter.com
+pbs.twimg.com
+
+# Video & Streaming Platforms
+vimeo.com
+vimeocdn.com
+youtube.com
+ytimg.com
+googleusercontent.com
+
+# Image & Photo Sharing Platforms
+pixelfed.org
+files.pixelfed.org
+
+# Chat & Messaging Platforms
+discord.com
+discordapp.com
+discordapp.net
+discordcdn.com
+slack.com
+slack-edge.com
+snapchat.com
+sc-cdn.net
+telegram.org
+t.me
+telegra.ph
+telegram-cdn.org
+wechat.com
+wx.qq.com
+
+# Short Video & Entertainment Platforms
+tiktok.com
+bytecdn.com
+tiktokcdn.com
+
+# Forums & Community Platforms
+reddit.com
+redditmedia.com
+redd.it
+
+# Blogging & Publishing Platforms
+medium.com
+cdn-images-1.medium.com
+mastodon.social
+files.mastodon.social
+
+# Other Platforms (General purpose / Multi-use)
+qq.com
+qlogo.cn
