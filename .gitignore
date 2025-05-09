@@ -1,6 +1,8 @@
 site
 old/
-s.bat
 .DS_Store
 test.md
 .idea
+.github/copilot-instructions.md
+.gitignore
+.vscode
