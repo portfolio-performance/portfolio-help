@@ -3568,18 +3568,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#available-columns" class="md-nav__link">
+  <a href="#toolbar" class="md-nav__link">
     <span class="md-ellipsis">
-      Available columns
+      Toolbar
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#available-views" class="md-nav__link">
+  <a href="#available-columns" class="md-nav__link">
     <span class="md-ellipsis">
-      Available views
+      Available columns
     </span>
   </a>
   
@@ -3609,29 +3609,56 @@
 
 
 <h1 id="statement-of-assets">Statement of Assets</h1>
-<p>The <strong>Statement of Assets</strong> report provides a snapshot of your portfolio’s assets (securities and accounts) at a specific point in time. By default, it displays the current day. However, you can select a different date using the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9 10v2H7v-2h2m4 0v2h-2v-2h2m4 0v2h-2v-2h2m2-7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h1V1h2v2h8V1h2v2h1m0 16V8H5v11h14M9 14v2H7v-2h2m4 0v2h-2v-2h2m4 0v2h-2v-2h2Z"></path></svg></span> Time Machine, accessed via the calendar icon at the top right (see Figure 1).</p>
+<p>The <strong>Statement of Assets</strong> report provides a snapshot of your portfolio’s assets (securities and accounts) at a <em>specific</em> point in time. By default, it displays the current day. However, you can select a different date using the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9 10v2H7v-2h2m4 0v2h-2v-2h2m4 0v2h-2v-2h2m2-7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h1V1h2v2h8V1h2v2h1m0 16V8H5v11h14M9 14v2H7v-2h2m4 0v2h-2v-2h2m4 0v2h-2v-2h2Z"></path></svg></span> Time Machine, accessed via the calendar icon at the top right (see Figure 1).</p>
 <p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Statement of Assets report of demo-portfolio-04.xml (two snapshots)</figcaption><img alt="" src="images/sb-reports-statement.svg"></figure></p>
-<p>As shown in Figure 1, the two snapshots of <a href="../../../../assets/portfolios/demo-portfolio-04.xml">demo-portfolio-04.xml</a> differ significantly. On the first snapshot date, <em>only</em> <code>share-1</code> had been purchased. By the second snapshot, all transactions for this portfolio had been completed, including dividend payment. Note that the deposit account <code>broker-A (USD)</code> is not mentioned, even though it exists. This is because its balance is zero USD.</p>
-<p>The toolbar contains the icons: <code>Standard View</code>, <code>New View</code>, <code>Currency</code>, <code>Portfolio Time Machine</code>, <code>Filter Data</code>, <code>Export Data</code>, and <code>Columns</code>. A <a href="../../../../how-to/user-interface/">detailed description</a> is given in the section on User Interface. </p>
-<p>The Currency button should be labeled with the base currency of the portfolio (in this case EUR), but you have the option to choose other currencies, even if your portfolio does not contain any assets in that currency. All calculated fields such as <code>Market Value</code> are then converted to the selected currency. The quote price however stays in the currency that the quote is traded in. </p>
-<p>The report in Figure 1 (bottom half) displays all the available assets on September 12, 2023, including the deposit account with the result of the sale of <code>share-1</code>. The securities are valued at their market prices based on the closing quotes from the previous day, which is -in this case- September 11, 2023. <code>Share-2</code> is handled in USD. The conversion to EUR is based on the exchange rate provided by the ECB (closing previous day).</p>
-<p>The report displays a total line above and below the assets. With the Presentation option of the columns (<img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:">) icon (see Figure 2 bottom), you could add or remove the Total lines. The default setting is above <em>and</em> below. Since no taxonomy has been added to the demo portfolio, all assets are listed as <code>Without classification</code>.</p>
+<p>As shown in Figure 1, the two snapshots of <a href="../../../../assets/portfolios/demo-portfolio-04.xml"><code>demo-portfolio-04.xml</code></a> differ significantly. On the first snapshot date, <em>only</em> <code>share-1</code> had been purchased, meaning this share accounted for 100% of the portfolio's value. By the second snapshot, all transactions for this portfolio had been completed, including the purchase of <code>share-2</code> and <code>share-3</code> (in USD) and a dividend payment. Note that the deposit account <code>broker-A (USD)</code> is not mentioned, even though it exists. This is because its balance is zero USD.</p>
+<h2 id="toolbar">Toolbar</h2>
+<p>The toolbar contains the icons: <span class="twemoji active"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M4 4h16v16H4V4m2 4v10h12V8H6Z"></path></svg></span><code>Standard View</code>, :pp-view-plus: <code>New View</code>, EUR <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></span> <code>Currency</code>,<span class="twemoji active"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9 10v2H7v-2h2m4 0v2h-2v-2h2m4 0v2h-2v-2h2m2-7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h1V1h2v2h8V1h2v2h1m0 16V8H5v11h14M9 14v2H7v-2h2m4 0v2h-2v-2h2m4 0v2h-2v-2h2Z"></path></svg></span><code>Portfolio Time Machine</code>, <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 0 3 7l1.63 1.27L12 14l7.36-5.73L21 7l-9-7m7.37 10.73L12 16.47l-7.38-5.73L3 12l9 7 9-7-1.63-1.27m0 5L12 21.47l-7.38-5.73L3 17l9 7 9-7-1.63-1.27Z"></path></svg></span><code>Filter Data</code>, <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"></path><path d="M11.78 4.72a.749.749 0 1 1-1.06 1.06L8.75 3.811V9.5a.75.75 0 0 1-1.5 0V3.811L5.28 5.78a.749.749 0 1 1-1.06-1.06l3.25-3.25a.749.749 0 0 1 1.06 0l3.25 3.25Z"></path></svg></span><code>Export Data</code>, and <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"><code>Columns</code>. A <a href="../../../../how-to/user-interface/">detailed description</a> is given in the section on User Interface.</p>
+<ul>
+<li>
+<p><span class="twemoji active"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M4 4h16v16H4V4m2 4v10h12V8H6Z"></path></svg></span><code>Standard View</code>: Figure 1 displays the <code>Standard View</code> of the Statements of Assets report, showing the columns <code>Shares</code>, <code>Name</code>, <code>Symbol</code>, <code>Quote</code>, <code>Market Value</code>, <code>Share in %</code>, and <code>Note</code>. A total sum is added at the top and bottom. You can customize this <code>Standard View</code> by adding or removing columns or totals. Using the <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"> <code>Reset Columns</code> option in Figure 2, you can revert to the default arrangement of columns. To rename, duplicate, or delete the current view, click the triangle to the right of the view. If you frequently need a custom layout, you can duplicate the standard view, give it a new name, and tailor it to your preferences. Additionally, there is a <code>New View</code> button available to create a new view based on the default setup.</p>
+</li>
+<li>
+<p>EUR <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></span> <code>Currency</code>: The Currency button is labeled with the base currency of the portfolio (in this case EUR), but you can choose other currencies, even if your portfolio does not contain any assets in that currency. All calculated fields, such as <code>Market Value</code>, are converted to the selected currency. However, the quote price remains in the currency in which the quote is traded.</p>
+</li>
+<li>
+<p><span class="twemoji active"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9 10v2H7v-2h2m4 0v2h-2v-2h2m4 0v2h-2v-2h2m2-7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h1V1h2v2h8V1h2v2h1m0 16V8H5v11h14M9 14v2H7v-2h2m4 0v2h-2v-2h2m4 0v2h-2v-2h2Z"></path></svg></span><code>Portfolio Time Machine</code>: The Portfolio Time Machine icon allows you to set the date used in the calculations. By default, the <code>Market Value</code> of an asset is calculated for the current day <code>Today</code>. You can also choose the <code>Previous trading day</code> or an <code>Other day</code> that you can select from a calendar. The chosen date is <em>not</em> saved with the view. The report in Figure 1 (bottom half) displays all available assets on September 12, 2023, including the deposit account with the result of the sale of <code>share-1</code>. The securities are valued at their market prices based on the closing quotes from the previous day, which is September 11, 2023. <code>Share-2</code> is handled in USD, and the conversion to EUR is based on the exchange rate provided by the ECB (closing previous day).</p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 0 3 7l1.63 1.27L12 14l7.36-5.73L21 7l-9-7m7.37 10.73L12 16.47l-7.38-5.73L3 12l9 7 9-7-1.63-1.27m0 5L12 21.47l-7.38-5.73L3 17l9 7 9-7-1.63-1.27Z"></path></svg></span><code>Filter Data</code>: This option allows you to filter the assets used in the calculations. You can select the entire portfolio, a single security account, or a security account along with its associated deposit account. Additionally, you can create a custom filter to select other accounts.</p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"></path><path d="M11.78 4.72a.749.749 0 1 1-1.06 1.06L8.75 3.811V9.5a.75.75 0 0 1-1.5 0V3.811L5.28 5.78a.749.749 0 1 1-1.06-1.06l3.25-3.25a.749.749 0 0 1 1.06 0l3.25 3.25Z"></path></svg></span><code>Export Data</code>: The table, as displayed with the selected columns and rows, can be exported as a Comma-Separated Value (CSV) file.</p>
+</li>
+<li>
+<p><img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"><code>Columns</code>: This option shows all available columns (see below). The currently visible columns are marked with a checkmark on the left. Using the Presentation option at the bottom of the list (see Figure 2 bottom), you can add or remove the Total lines. The default setting is to display totals above <em>and</em> below. Since no taxonomy has been added to the demo portfolio, all assets are listed as <code>Without classification</code>.</p>
+</li>
+</ul>
 <h2 id="available-columns">Available columns</h2>
 <p><figure class="align-right" id="_figure-2"><figcaption>Figure 2. Available columns. </figcaption><img alt="" src="images/sb-reports-statement-gear-icon.png"></figure></p>
-<p>The default columns that are displayed are <code>Shares</code>, <code>Name</code>, <code>Symbol</code>, <code>Quote</code>, <code>Market Value</code>, <code>Share in %</code>, and <code>Note</code>. Many more columns/fields are available (see Figure 2). While the column headings are mostly self-explanatory, a few of them may require further clarification. You can customize the default columns using the <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"> icon located in the top-right corner (see Figure 1).</p>
-<p>As mentioned in the discussion about <a href="../../../../concepts/purchase-value/">Purchase Value</a>, Portfolio Performance uses the FIFO (First-in, First-out) method to calculate prices and values. "Moving average", however, is another commonly used method. For example, the Purchase Price is a bit different in both methods (taxes and fees included): 16,15 EUR (MA) versus 15,93 EUR (FIFO) at 2023-09-12 but not at 2022-09-01 (15,93 EUR). Why? Let's take a look at the transactions.</p>
+<p>You can customize the default columns using the <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:"> icon located in the top-right corner (see Figure 1). The default columns that are displayed are <code>Shares</code>, <code>Name</code>, <code>Symbol</code>, <code>Quote</code>, <code>Market Value</code>, <code>Share in %</code>, and <code>Note</code>. Many more columns/fields are available (see Figure 2). While the column headings are mostly self-explanatory, a few of them may require further clarification.</p>
+<p><strong>Purchase Price &amp; Value (FIFO &amp; MA)</strong></p>
+<p>As mentioned in the discussion about <a href="../../../../concepts/purchase-value/">Purchase Value</a>, Portfolio Performance uses the FIFO (First-in, First-out) method to calculate prices and values. "Moving average", however, is another commonly used method. For example, in Figure 1, the Purchase Price differs slightly between the two methods (taxes and fees included): 16.15 EUR (MA) versus 15.93 EUR (FIFO) on 2023-09-12, but not on 2022-09-01 (15.93 EUR). Why? Let's take a look at the transactions:</p>
 <ul>
-<li>Purchase of 10 shares at 15.00 EUR on January 15, 2021 for a total amount of 155 EUR (incl fees and taxes).</li>
-<li>Purchase of 5 shares at 16.00 EUR on January 14, 2022 for a total of 84 EUR.</li>
-<li>Sale of 5 shares at 22.40 EUR on April 12, 2023 for a total of 105 EUR.</li>
+<li>Purchase of 10 shares at 15.00 EUR on January 15, 2021, for a total amount of 155 EUR (including fees and taxes).</li>
+<li>Purchase of 5 shares at 16.00 EUR on January 14, 2022, for a total of 84 EUR.</li>
+<li>Sale of 5 shares at 22.40 EUR on April 12, 2023, for a total of 105 EUR.</li>
 </ul>
 <p>What is the Purchase Price of the remaining 10 shares in the portfolio?</p>
 <ul>
-<li>The moving/weighted average method states that the average price of the original 15 shares is (155 + 84)/15 = 15,93 EUR. The remaining 10 shares are valuated at this price.</li>
-<li>The FIFO method asserts that the remaining 10 shares are composed of 5 shares of the first purchase and 5 shares of the second purchase and valuated at (155/2) + 84 = 161,5 EUR. The FIFO average price is thus 161.5/10 = 16.15 EUR.</li>
+<li><em>Moving Average Method</em>: The average price of the original 15 shares is calculated as (155 + 84) / 15 = 15.93 EUR. The remaining 10 shares are valued at this price.</li>
+<li><em>FIFO Method</em>: The remaining 10 shares consist of 5 shares from the first purchase and 5 shares from the second purchase. Their total value is calculated as (155 / 2) + 84 = 161.5 EUR. The FIFO average price is therefore 161.5 / 10 = 16.15 EUR.</li>
 </ul>
-<p>The available fields under <code>Performance</code> and <code>Dividends</code> are discussed in a separate chapter. With the <code>Attributes</code> option, you can add custom fields to the table. These fields are defined in <code>left sidebar &gt; settings &gt; Attributes: Securities</code> and following panels. You can enter a specific attribute value for a security in the <code>Additional attributes</code> panel of the security (see for example, Figure 3 in <a href="../../../../getting-started/adding-securities/">Getting started &gt; Adding securities</a>)</p>
-<p>The <code>Forex</code> (Foreign Exchange) option allows you to view the currency of the quote for each asset and its exchange rate relative to the base currency of the portfolio. The fields labeled as <code>Market value**</code>, <code>Purchase Price**</code>, and <code>Profit/Loss**</code> (with a double *) retain the same meaning as their counterparts in the base currency, but they are presented in the foreign currency. For instance, let's consider <code>share-2</code>, which is traded in USD. In the default view, the Market Value is expressed in EUR (127.96 in Figure 1 bottom half). If you wish to view that value in USD instead, you can achieve this by adding the <code>Market Value**</code> field (see Figure 3).</p>
+<p><strong>Profit/loss</strong></p>
+<p>The <code>Profit/Loss</code> field represents the difference between the (current) <code>Market Value</code> and the <code>Purchase Value</code> (FIFO). For example, in Figure 1, the <code>Market Value</code> of <code>share-1</code> is 205.40 EUR. The calculated <code>Purchase Value</code> (FIFO) of the remaining 10 shares is 10 × 16.15 EUR/share, or 161.50 EUR. Therefore, the profit is 43.90 EUR.</p>
+<p><strong>Performance &amp; Dividends</strong></p>
+<p>The available fields under <code>Performance</code> and <code>Dividends</code> are discussed in a <a href="../performance/">separate chapter</a>.</p>
+<p><strong>Attributes</strong></p>
+<p>With the <code>Attributes</code> option, you can add custom fields to the table. These fields are defined in <code>left sidebar &gt; settings &gt; Attributes: Securities</code> or the menu <code>View &gt; Settings</code>and following panels. You can enter a specific attribute value for a security in the <code>Additional attributes</code> panel of the security (see for example, Figure 3 in <a href="../../../../getting-started/adding-securities/">Getting started &gt; Adding securities</a>)</p>
+<p><strong>Forex</strong></p>
+<p>The <code>Forex</code> (Foreign Exchange) option allows you to view the currency of the quote for each asset and its exchange rate relative to the base currency of the portfolio. The fields labeled as <code>Market Value**</code>, <code>Purchase Price**</code>, and <code>Profit/Loss**</code> (with a double asterisk) retain the same meaning as their counterparts in the base currency (see above), but they are presented in the foreign currency. </p>
+<p>For instance, let's consider <code>share-3</code>, which is traded in USD. In the default view, the <code>Market Value</code> is expressed in EUR (127.96 in Figure 1, bottom half). If you wish to view that value in USD instead, you can achieve this by choosing the <code>Market Value**</code> field (see Figure 3).</p>
+<p><strong>Distance to SMA</strong></p>
 <p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Statement of Assets report of demo-portfolio-04.xml (Market Value **, SMA and ATH)</figcaption><img alt="" src="images/sb-reports-statement-SMA-ATH.png"></figure></p>
 <p>The <code>Distance to SMA</code> is a metric that measures the difference between the current price of a share and the average price of that share over a specified number of past days. The acronym "SMA" presumably represents "Simple Moving Average."</p>
 <p>When you choose to include this column, you'll also need to specify a period, such as 5 days, 20 days, 50 days, or 200 days. Suppose that you want to know the Δ to SMA5 (Distance to SMA for a 5 days period) of <code>share-1</code>. The last 5 available prices (before 2023-09-12) are: 20.43, 20.14, 20.015, 19.942, and 19.868 EUR/share. The calculation is carried out as follows:</p>
@@ -3640,17 +3667,26 @@
 <li>Calculate the difference of today's price with the average price = 20.43 - 20.08 = 0.33 EUR.</li>
 <li>Divide this difference by the average price and convert to a percentage = -0.33/20,43 = 1.62%. The last price is 1.62% higher than the average price of the last 5 days.</li>
 </ol>
-<p><code>Distance from ATH</code> (All Time High) is a likewise metric that shows how far the last price in a reporting period is from the highest price in that period. For example, the highest price of <code>share-1</code> in the year 2022 was 19,766 EUR on November 25, 2022. You can view the exact price and date of the all-time high (ATH) by hovering over the field. The last price in that period was 18.638 EUR/share on december 30. So the Δ ATH for 2022 (Distance to ATH for year 2022) is equal to (18.638 - 19.766)/19.766 or -5,71%.</p>
-<h2 id="available-views">Available views</h2>
-<p>Using the <code>Reset Columns</code> option in Figure 2, you can revert to the default arrangement of columns. It's advisable to keep this layout as the <code>Standard</code> view, which is represented by the first button at the top (see Figure 1). By clicking the triangle icon next to the button, you can access options to rename, duplicate, or delete the current view.</p>
-<p>If you find yourself needing a custom layout regularly, you can duplicate the standard view, give it a new name, and customize it to your preferences. Additionally, there is a <code>New View</code> button available to create a new view based on the default setup.</p>
-<p>The <code>Filter</code> icon located in the top right corner allows you to filter the assets that will be used in the calculations. You have several options:</p>
-<ol>
-<li>You can select the entire portfolio.</li>
-<li>You can choose only one security account.</li>
-<li>You can select the security account along with the associated deposit account.</li>
-</ol>
-<p>Additionally, you have the option to create a custom filter. To do this, you will need to make a selection from all the available assets within the portfolio.</p>
+<p><strong>Distance from ATH</strong></p>
+<p><code>Distance from ATH</code> (All Time High) is a likewise metric that shows how far the last price in a reporting period is from the highest price in that period. You must select this period in a submenu. For example, the highest price of <code>share-1</code> in the year 2022 was 19,766 EUR on November 25, 2022. You can view the exact price and date of the all-time high (ATH) by hovering over the field. The last price in that period was 18.638 EUR/share on december 30, 2022. So the Δ ATH for 2022 (Distance to ATH for year 2022) is equal to (18.638 - 19.766)/19.766 or -5,71%.</p>
+<p><strong>Price Range</strong></p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. Statement of Assets report of demo-portfolio-04.xml (Price Range)</figcaption><img alt="" src="images/sb-reports-statement-price-range.png"></figure></p>
+<p>For this field, you need to specify a reporting period, such as 1, 2, or 3 years, and optionally an evaluation date using the Time Machine.</p>
+<p>The <code>Price Range</code> column displays the current price in relation to the highest and lowest prices of a security within the selected period. However, the current price depends on the chosen time period.</p>
+<p>Figure 4 illustrates the price range for the year 2022, with the evaluation date set to September 12, 2023 (see also Figure 1). In this case, the current price is equal to the last available price/quote from the year 2022, e.g., December 30, 2022. This is NOT the quote price shown in the third column, which is the price at the evaluation date set by the Time Machine, e.g., 2023-09-12. If a more natural period, such as 1 year, is selected, the current price would indeed reflect the latest available quote.</p>
+<p>Hovering over the first (little black) bar of <code>share-1</code> displays a tooltip explaining the calculation of the price range:
+- The highest price in the period (All-Time High) is 19.766 EUR on November 25, 2022.
+- The lowest price in the period is 15.10 EUR on March 8, 2022.
+- The 'current price' is 18.638 EUR, which is the quote price on December 30, 2022.</p>
+<p>Assuming the difference between the highest and lowest prices represents 100%, the relative position of the current price against the lowest price is calculated as follows:</p>
+<p><code>(current price - lowest price) / (highest price - lowest price)</code></p>
+<p>For this example:
+<code>(18.638 - 15.10) / (19.766 - 15.10) = 75.83%</code></p>
+<p>The current price is positioned at 75.83% of the interval between the highest and lowest prices. The little black bar in the column is indeed located at approximately 3/4 of the column width. Alternatively, you can calculate how far the current price is from the highest price:</p>
+<p><code>(current price - highest price) / (highest price - lowest price)</code></p>
+<p>For this example:
+<code>(18.638 - 19.766) / (19.766 - 15.10) = -24.17%</code></p>
+<p>The sum of the absolute values of both indices equals 100%.</p>
 
 
 
@@ -3671,7 +3707,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 5, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 10, 2025</span>
   </span>
 
     
