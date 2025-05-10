@@ -47,6 +47,9 @@ figure.align-right {
     font-size: small;
 }
 
-
+/*colour for the active icons */
+.active {
+	color: orange;
+}
 
 
