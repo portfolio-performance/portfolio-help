@@ -39,9 +39,9 @@ jobs:
         pip install -r requirements.txt
         pip install requests
 
-    # Step 5: Validate internal links in Markdown
-    - name: Validate internal links in Markdown
-      run: python .github/scripts/validate_internal_links.py
+    # Step 5: Validate internal and external links in Markdown
+    - name: Validate internal and external links in Markdown
+      run: python .github/scripts/validate_internal_external_links.py
 
     # Step 6: Validate image links in Markdown
     - name: Validate image links in Markdown
