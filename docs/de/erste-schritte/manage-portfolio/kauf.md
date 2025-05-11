@@ -52,7 +52,7 @@ Abbildung: Ablauf zwischen Stücke und Belastung.{class=pp-figure style="width: 
 - Eine nachträgliche Änderung des *Kaufpreises* führt zu einer Änderung der Belastung und des Kurses. Gebühren, Steuern und die Anzahl der Aktien bleiben davon unberührt.
 
 ## Transaktion mit 2 Währungen
-Wenn Du Aktien in einer Fremdwährung kaufen willst, gibt es zwei Möglichkeiten. Entweder Du hast den erforderlichen Betrag in der Fremdwährung auf einem Depotkonto. Oder Du musst zuerst eine [Einzahlung](einzahlung.md) in Heimatwährung buchen, gefolgt von einer [Umbuchung](einzahlung.md#umbuchung-zwischen-unterschiedlichen-währungen) in Fremdwährung. 
+Wenn Du Aktien in einer Fremdwährung kaufen willst, gibt es zwei Möglichkeiten. Entweder Du hast den erforderlichen Betrag in der Fremdwährung auf einem Depotkonto. Oder Du musst zuerst eine [Einzahlung](einzahlung.md) in Heimatwährung buchen, gefolgt von einer [Umbuchung](einzahlung.md#umbuchung-zwischen-unterschiedlichen-wahrungen) in Fremdwährung. 
 
 Abbildung 4 zeigt die Abrechnung der Bank über den Kauf von Wertpapieren in US-Dollar. Da Steuern und Gebühren in EUR abgerechnet werden müssen (da es sich um eine europäische Bank handelt) und die Basiswährung des Portfolios für die Vermögensaufstellung ebenfalls EUR ist, wird der Gesamtbetrag in USD ebenfalls in EUR umgerechnet.
 
