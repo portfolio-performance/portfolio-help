@@ -35,6 +35,9 @@ jobs:
         pip install -r requirements.txt
         pip install linkchecker
 
+    - name: Validate image links in Markdown
+      run: python .github/scripts/validate_images.py
+
     - name: Build English Documentation
       run: mkdocs build -f config/en/mkdocs.yml
 

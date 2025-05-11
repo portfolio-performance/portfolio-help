@@ -1,0 +1,4 @@
+# This file contains a list of allowed image domains for GitHub Actions
+
+# used for emojis (via the extension)
+cdn.jsdelivr.net
