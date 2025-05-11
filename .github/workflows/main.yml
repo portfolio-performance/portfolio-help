@@ -35,6 +35,9 @@ jobs:
         pip install -r requirements.txt
         pip install linkchecker
 
+    - name: Detect orphan pages
+      run: python .github/scripts/validate_orphan_pages.py
+
     - name: Validate image links in Markdown
       run: python .github/scripts/validate_images.py
 
