@@ -38,6 +38,9 @@ jobs:
     - name: Validate image links in Markdown
       run: python .github/scripts/validate_images.py
 
+    - name: Validate Front Matter Completeness
+      run: python .github/scripts/validate_front_matter_completeness.py
+
     - name: Build English Documentation
       run: mkdocs build -f config/en/mkdocs.yml
 
