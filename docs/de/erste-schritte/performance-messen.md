@@ -9,7 +9,7 @@ Abbildung: Dashboard mit unterschiedlichen Kennzahlen für einen zweijährigen B
 
 ![](../how-to/historische-aktienkurse/images/performance-dashboard-2yrs.png)
 
-Um die hier erwähnten Erklärungen samt Bildern besser zu verstehen, lädst Du Dir am besten das [Demo-Portfolio-03](../../en/assets/demo-portfolio-03.xml) herunter. Starten wir mit dem Widget Performance-Berechnung (auf der rechten Seite) und schauen uns dies etwas genau an.
+Um die hier erwähnten Erklärungen samt Bildern besser zu verstehen, lädst Du Dir am besten das [Demo-Portfolio-03](../../../en/assets/demo-portfolio-03.xml) herunter. Starten wir mit dem Widget Performance-Berechnung (auf der rechten Seite) und schauen uns dies etwas genau an.
 
 ## Performance-Berechnung
 

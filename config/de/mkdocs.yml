@@ -16,13 +16,13 @@ edit_uri: 'tree/master/docs/de'
 copyright: 'Dieses Werk ist lizenziert unter <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.'
 
 theme:
-  name: 'material'
-  custom_dir: '../../overrides/'
+  name: material
+  custom_dir: ../../overrides/
   palette:
     # Palette toggle for light mode
     - scheme: default
       toggle:
-        icon: material/weather-night 
+        icon: material/weather-night
         name: Switch to dark mode
     # Palette toggle for dark mode
     - scheme: slate
@@ -30,27 +30,27 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
-    - content.code.annotate 
+    - content.code.annotate
     - content.code.copy
     - navigation.expand
     - navigation.indexes
     - navigation.tabs
     - content.action.edit
-  logo: 'assets/images/logo.svg'
-  favicon: 'assets/images/favicon.png'
-  language: 'de'
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.png
+  language: de
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
   - assets/stylesheets/extra.css
 
 extra_javascript:
-  - assets/javascripts/katex.js 
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - assets/javascripts/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
 
 extra:
-  alternate:  
+  alternate:
     - name: English
       link: /en/
       lang: en
@@ -59,16 +59,16 @@ extra:
       lang: de
 
   social:
-    - icon: 'material/home'
-      link: 'https://www.portfolio-performance.info'
-    - icon: 'fontawesome/brands/github'
-      link: 'https://github.com/portfolio-performance/portfolio'
-    - icon: 'fontawesome/brands/twitter'
-      link: 'https://twitter.com/portfolioperf'
-    - icon: 'fontawesome/solid/comments'
-      link: 'https://forum.portfolio-performance.info'
-    - icon: 'material/bug'
-      link: 'https://github.com/portfolio-performance/portfolio/issues'
+    - icon: material/home
+      link: https://www.portfolio-performance.info
+    - icon: fontawesome/brands/github
+      link: https://github.com/portfolio-performance/portfolio
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/portfolioperf
+    - icon: fontawesome/solid/comments
+      link: https://forum.portfolio-performance.info
+    - icon: material/bug
+      link: https://github.com/portfolio-performance/portfolio/issues
 
 plugins:
   - search:
@@ -83,7 +83,7 @@ plugins:
   - git-revision-date-localized:
       type: date
       custom_format: "%d. %B %Y"
-      timezone: Europe/Amsterdam
+      timezone: Europe/Berlin
       locale: de
 
 markdown_extensions:
@@ -93,15 +93,17 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
   - md_in_html
   - tables
- 
+
 nav:
-  - Einleitung: 
+  - Einleitung:
       - Einleitung: index.md
   - Erste Schritte:
       - Erste Schritte: erste-schritte/index.md
@@ -155,7 +157,7 @@ nav:
             - Sparpläne: referenzhandbuch/ansichten/stammdaten/sparplaene.md
             - Alle Transaktionen: referenzhandbuch/ansichten/stammdaten/alle-transaktionen.md
           - Berichte:
-            - Vermögensaufstellung: 
+            - Vermögensaufstellung:
               - Vermögensaufstellung: referenzhandbuch/ansichten/berichte/vermoegensaufstellung/index.md
               - Vermögensaufstellung Diagramm: referenzhandbuch/ansichten/berichte/vermoegensaufstellung/vermoegensaufstellung-diagramm.md
               - Bestand: referenzhandbuch/ansichten/berichte/vermoegensaufstellung/bestand.md
@@ -169,7 +171,7 @@ nav:
           - Allgemeine Daten:
             - Einstellungen: referenzhandbuch/allgemeine-daten/einstellungen.md
             - Währungen: referenzhandbuch/allgemeine-daten/waehrungen.md
-      - Transaktionsmenü: 
+      - Transaktionsmenü:
         - Transaktionen: referenzhandbuch/transaktionen/index.md
         - Kauf & Verkauf: referenzhandbuch/transaktionen/kauf-verkauf.md
         - Ein- & Auslieferung: referenzhandbuch/transaktionen/ein-auslieferung.md

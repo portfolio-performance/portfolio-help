@@ -1,4 +1,5 @@
-mkdocs == 1.5.3
-mkdocs-material == 9.5.9
-mkdocs-caption == 1.0.0
-mkdocs-git-revision-date-localized-plugin == 1.2.5
+mkdocs == 1.6.1
+mkdocs-material == 9.6.12
+mkdocs-caption == 1.3.0
+mkdocs-git-revision-date-localized-plugin == 1.4.5
+pymdown-extensions == 10.6

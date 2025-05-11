@@ -10,7 +10,7 @@ Die erste Anlaufstelle ist [Yahoo Finance](#yahoo-finance): sofern Yahoo Finance
 
 Wenn diese zwei automatischen Quellen keine historischen Kurse bieten, muss man zu "halbautomatischen" Lösungen greifen. Die erste Möglichkeit ist eine URL zu hinterlegen auf der nach einer [Tabelle mit Kursinformationen](#tabelle-auf-einer-webseite) gesucht wird. Neben der Schwierigkeit überhaupt die passende Seite zu finden, kann es auch sein, dass die URLs sich immer wieder ändert so dass man mit Markos [dynamische Kursdaten-URLs](#dynamische-kursdaten-urls) zusammenbauen muss.
 
-Und schließlich bleiben die manuellen Lösungen: die Kursdaten [per CSV-Datei](#comman-separated-values-csv) zu importieren oder manuell im Programm selbst zu erfassen.
+Und schließlich bleiben die manuellen Lösungen: die Kursdaten [per CSV-Datei](#comma-separated-values-csv) zu importieren oder manuell im Programm selbst zu erfassen.
 
 [<i class="fa fa-comments-o" aria-hidden="true"></i> Forum: Quellen für historische Kurse](https://forum.portfolio-performance.info/t/quellen-fuer-historische-kurse/46)
 
@@ -22,37 +22,37 @@ Und schließlich bleiben die manuellen Lösungen: die Kursdaten [per CSV-Datei](
 
 Falls historische Kurse vorliegen, können sie einfach als CSV-Datei importiert werden. Dazu die Daten in einer Tabelle auflisten, die einzelnen Werte durch ein Komma, Tabstopp oder besser Semikolon trennen und als CSV-Datei speichern. Bei Kurswerte im Format EURO,Cent verbietet sich der Komma-Separator.
 
-![grafik](https://user-images.githubusercontent.com/82599585/116431429-134f2e00-a848-11eb-937a-8bdb0ab967ef.png)
+![grafik](images/csv_datei.png)
 
 Dazu eignet sich ein Tabellenkalkulationsprogram bestens, so dass man sich nicht um die weitere Formatierung kümmern muss.
 
-![grafik](https://user-images.githubusercontent.com/82599585/116431458-1a763c00-a848-11eb-994b-dfb4a472f721.png)
+![grafik](images/csv_in_tabellenkalkulation.png)
 
 Dann wird die Datei als CSV-Datei gespeichert.
 
-![grafik](https://user-images.githubusercontent.com/82599585/116431530-28c45800-a848-11eb-9084-4576d0af24cd.png)
+![grafik](images/csv_speichern.png)
 
 ### CSV Daten importieren
 
 Mit Rechtsklick auf das Wertpapier --> Kurse --> CSV-Datei importieren das CSV-Import Fenster öffnen.
 
-![grafik](https://user-images.githubusercontent.com/82599585/116431840-6e812080-a848-11eb-95ed-f2c1c3e9e7dc.png)
+![grafik](images/csv_menu_importieren.png)
 
 Portfolio Performance zeigt nun grün hinterlegt, welche Spalten als Datum und Kurs identifiziert wurden. Ein Häckchen zeigt ob eine Spaltenüberschrift vorhanden ist.
 
-![grafik](https://user-images.githubusercontent.com/82599585/116431887-79d44c00-a848-11eb-8a40-dd845bd7830e.png)
+![grafik](images/csv_dialog.png)
 
 Mit Doppelklick auf die entsprechende Stelle kann die Spaltenzuteilung geändert werden. Werden mehrere Kursspalten ausgewählt, wird der Wert der Letzten? eingelesen.
 
-![grafik](https://user-images.githubusercontent.com/82599585/116431930-83f64a80-a848-11eb-873a-10df00c85ca8.png)
+![grafik](images/csv_spalten.png)
 
 Ein Klick auf ok und die Daten sind sichtbar.
 
-![grafik](https://user-images.githubusercontent.com/82599585/116431984-8fe20c80-a848-11eb-823f-4af73b74ec4e.png)
+![grafik](images/csv_success.png)
 
 Daten, die von online Seiten stammen bereiten mitunter Enkodierungs-Probleme. Dann kann das Format nicht gelesen werden. Abhilfe schafft hier der Versuch die Enkodierungseinstellung zu ändern. UTF-8 ist neben windows-1252 ein gängiges Format.
 
-![grafik](https://user-images.githubusercontent.com/82599585/116432053-9d979200-a848-11eb-93d7-ef3e288a87d3.png)
+![grafik](images/csv_encoding.png)
 
 ## Yahoo Finance
 
@@ -62,7 +62,7 @@ Daten, die von online Seiten stammen bereiten mitunter Enkodierungs-Probleme. Da
 
 ## JSON
 
-Der Kurslieferant *JSON* kann mit Hilfe von [JsonPath](https://github.com/json-path/JsonPath/blob/master/README.md) Ausdrücken aus einem JSON (JavaScript Object Notation) Dokument Kurse extrahieren.
+Der Kurslieferant *JSON* kann mit Hilfe von [JSON Path Finder](https://jsonpathfinder.com) Ausdrücken aus einem JSON (JavaScript Object Notation) Dokument Kurse extrahieren.
 
 Es müssen zwei JsonPath Ausdrücke konfiguriert werden: **Pfad zum Datum** und **Pfad zum (Schluss)kurs**. Beide Ausdrücke müssen ein Array zurückgeben. Die Arrays müssen die gleiche Länge habe, d.h. zu jedem Datum gibt es auch einen Kurs und umgekehrt.
 
@@ -104,7 +104,7 @@ Der Pfad zum Datum **$.data[*].date**. '$' steht für das Wurzelelement, mit der
 
 Als Schlusskurs verwenden wir das **close** Attribut und damit den Pfad **$.data[*].close**.
 
-Ein zweites Beispiel sind die [LBMA/GOLD](https://www.quandl.com/data/LBMA/GOLD-Gold-Price-London-Fixing) Kurse von Quandl. Da es einen separaten [Quandl Kurslieferant](#quandl) gibt, kann man Kursinformationen von Quandl natürlich einfacher konfigurieren. Es dient hier als Beispiel für ein weiteres JSON.
+Ein zweites Beispiel sind die [LBMA/GOLD](https://www.quandl.com/data/LBMA/GOLD-Gold-Price-London-Fixing) Kurse von Quandl. Da es einen separaten Quandl Kurslieferant gibt, kann man Kursinformationen von Quandl natürlich einfacher konfigurieren. Es dient hier als Beispiel für ein weiteres JSON.
 
 ```json
 {
@@ -151,7 +151,8 @@ Ein zweites Beispiel sind die [LBMA/GOLD](https://www.quandl.com/data/LBMA/GOLD-
 
 **$.dataset.data[*][6]** extrahiert das 7. Element (JsonPath fängt mit 0 an zu zählen). Von den **column_names** Attribut wissen wir, dass das 7. Element als **EURO (PM)** bezeichnet ist, also das Nachmittags Fixing in Euro.
 
-Der Entwickler von JsonPath hat eine [kleine Anwendung](http://jsonpath.herokuapp.com) gebaut, mit der man interaktiv die JsonPath Ausdrücke testen kann. Die Anwendung scheint keine großen JSON Dokumente zu vertragen, darum macht es Sinn mit nur ein paar wenigen Kursen die Ausdrücke zu testen.
+Mit [JSON Path Finder](https://jsonpathfinder.com) steht jetzt ein praktisches Online-Tool bereit, um JsonPath-Ausdrücke direkt im Browser zu testen. Die Anwendung ermöglicht es, gezielt Abfragen auf JSON-Daten auszuprobieren und das Ergebnis sofort zu sehen.
+Am besten funktioniert das Tool mit kleineren JSON-Beispielen, um die gewünschten Pfade schnell und übersichtlich zu validieren. Ideal also, um JsonPath-Abfragen zu entwickeln, zu verstehen und zu verfeinern.
 
 ## Dynamische Kursdaten-URLs
 
