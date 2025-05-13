@@ -26,7 +26,7 @@ You can type (part of) the security name in the search box, e.g., *NVID*. Using 
 After selecting the appropriate security (and stock market), click the `Apply` button to proceed to the next step. Certain information, such as the name, symbol, and historical quotes, will be pre-filled based on the selected data source. You can modify all this information, including the name, to suit your needs. Please note that, in Figure 3, the currency for the NVIDIA share is set to EUR, which may not apply to your situation.
 
 !!! Note
-    More information about downloading historical prices from several providers, including [Portfolio Report](../how-to/downloading-historical-prices/portfolioreport.md), [Yahoo](../how-to/downloading-historical-prices/yahoo-finance.md), [Morningstar](../how-to/downloading-historical-prices/morningstar.md), and many others, can be found in the section [How-to > Downloading Historical Prices](../how-to/downloading-historical-prices/).
+    More information about downloading historical prices from several providers, including [Portfolio Report](../how-to/downloading-historical-prices/portfolioreport.md), [Yahoo](../how-to/downloading-historical-prices/yahoo-finance.md), [Morningstar](../how-to/downloading-historical-prices/morningstar.md), and many others, can be found in the section [How-to > Downloading Historical Prices](../how-to/downloading-historical-prices/index.md).
 
 Figure: Panel for entering info about the selected security.{class=pp-figure}
 
