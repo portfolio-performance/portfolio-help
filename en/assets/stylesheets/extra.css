@@ -47,9 +47,12 @@ figure.align-right {
     font-size: small;
 }
 
-/*colour for the active icons */
+/*colour for icons */
 .active {
 	color: orange;
+}
+.green {
+	color: #0c6280;
 }
 
 
