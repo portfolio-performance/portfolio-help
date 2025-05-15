@@ -1,6 +1,5 @@
 ---
 title: Performance
-TODO: Configuring the dashboard
 ---
 Key performance and risk indicators are summarized in a dashboard, along with a calculation widget. The dashboard can be accessed through the menu `View > Reports > Performance` or with the sidebar (see figure 1).
 
@@ -164,6 +163,10 @@ All widgets, except the last three, are single line text widgets.
 
 - *Taxonomies*: Pie chart illustrating the proportional distribution of the taxonomy categories. 
 
+- *Taxonomies: TARGET Value: displays two pie charts with the actual and target allocation per category of the selected taxonomy.
+
+- *Actual vs Target Allocation*: Displays a bar chart with the actual and target allocation per category. Left-clicking the chart displays a tooltip showing the deviation (delta).
+- 
 ### Performance widgets
 
 The first three widgets are single line text; representing the common performance indicators. 
@@ -214,9 +217,3 @@ The risk-free return is set by default to 0%, but this can be adjusted through t
 - *Portfolio Turnover Rate*: The Portfolio Turnover Rate measures how much (in money) of the portfolio was "replaced" throughout the holding period, as a fraction of the average portfolio value. A turnover of 100% means that all money invested in the portfolio is since then replaced.
 
 - *Monthly investments*, *Monthly fees*, and *Monthly taxes*: A table illustrating the total amount of investments, fees, or taxes. The rows correspond to the years, while the columns represent the months, making each cell a monthly record within a year.
-
-
-
-
-
-
