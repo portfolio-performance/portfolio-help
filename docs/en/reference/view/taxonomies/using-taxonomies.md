@@ -72,13 +72,26 @@ The donut chart represents the filtered result of the taxonomy. As such, it is t
 
 ## Tree map
 
+A tree map is a type of chart that uses rectangles to visualize data. Each rectangle represents a security, and the size of the rectangle corresponds to the market value of the security. Similar to the donut chart, the tree map reflects the value of the securities. However, in the tree map, the percentage is represented by the area of the rectangles rather than by segments. Each category is also distinguished by a different color. Like the donut chart, you have the option to include the `Without classification` category.
+
 Figure: Tree map of the portfolio. {class=pp-figure}
 
 ![](images/taxonomies-tree-chart.png)
 
-A tree map is a type of chart that uses rectangles to visualize data, where each rectangle represents a category. The size and color of the rectangle correspond to the value of the data. You can zoom in on a specific category by left-clicking on the corresponding rectangle.
+Figure: Gear menu of the tree map. {class=align-right}
 
-Similar to the donut chart, the tree map reflects the content of the data. However, in the tree map, the percentage distribution is represented by the area of the rectangles rather than by segments. Each category is distinguished by a different color. Like the donut chart, you have the option to include the `Without classification` category.
+![](images/taxonomies-tree-chart-menu-gear.png)
+
+
+With the `:gear:` icon, you can pick the base color scheme of the chart (see Figure 6). You can choose between: `Green-Yellow-Red`, `Green-White-Red`, `Green-Grey-Red`, `Blue-Grey-Orange`, and `Yellow-White-Black`. The actual color of the rectangles can be determined by the `Taxonomy` of a security or by the performance of the security.
+
+Choose `Color by Taxonomy` to assign a different color to each category of the taxonomy. Alternatively, select `Color by True-time Weighted Rate of Return (Cumulative)` to assign colors based on the TTWROR performance of the security. For this option, you also need to set the `Reporting Period` (e.g., Current year (YTD) in Figure 5). Securities with negative performance are shaded closer to the third color in the color scheme, while positive performance is shaded closer to the first color. In Figure 5, the color scheme `Blue-Grey-Orange` is used.
+
+The (sub)category name, such as `Commodities`, of the grouped securities can be added using the `Show headlines` option.
+
+Hovering over a security will display a `Category breadcrumb` below the tree chart. For example, in Figure 5, the cursor was positioned over the Mercedes share, showing the breadcrumb path starting at `Asset Allocation Taxonomy > Risk-Based Portfolio Part > Western Europe > Mercedes Benz Group AG`.
+
+You can zoom in on a specific category by left-clicking on the corresponding rectangle in the chart. For instance, selecting the menu `View > Taxonomies > Asset Allocation` in the `kommer.xml` example will display only two categories: `Risk-Based` and `Risk-free portfolio part`. In Figure 5, the `Risk-Based` category was clicked, revealing subcategories such as `USA/North America` (with iShares and Amazon), `Assets Emerging Markets`, and `Western Europe`.
 
 ## Stacked chart
 
