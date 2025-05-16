@@ -1,23 +1,5 @@
 ---
 title: Introduction
-lastUpdate: 2025-05-03
-description: This handbook introduces Portfolio Performance, explains portfolio management, performance calculation (TWRR, internal rate of return), and first steps (portfolio file, securities, import). It emphasizes the advantages over Excel and calls for collaboration. Structure is based on Diataxis (Getting Started, Fundamentals, How-to, Reference).
-authors:
-    - name: Portfolio Performance Team
-    - name: Nirus2000
-version: 1.0
-slug: introduction
-tags:
-    - Portfolio Management
-    - Investment Analysis
-    - Glossary
-    - Portfolio Performance
-changes:
-    - date: 2025-05-03
-      author: Nirus2000
-      description:
-        - Adding YAML source
-        - Basic structure implemented
 ---
 
 ## What is Portfolio Performance?
