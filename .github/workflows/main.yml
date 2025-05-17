@@ -38,6 +38,9 @@ jobs:
     - name: Validate image links in Markdown
       run: python .github/scripts/validate_images.py
 
+    - name: Find unused local Markdown files
+      run: python .github/scripts/find_unuset_markdown_files.py
+
     - name: Build English Documentation
       run: mkdocs build -f config/en/mkdocs.yml
 
