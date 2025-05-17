@@ -1,5 +1,5 @@
 ---
-Preferences
+title: Preferences
 ---
 There are two distinct sections within the Portfolio Performance software where you can customize the User Interface (UI) and the overall behavior of the program: the `View > Settings` menu and the `Help > Preferences` menu (Windows) or the `Portfolio Performance > Settings` app menu (Mac).
 
