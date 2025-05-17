@@ -158,8 +158,9 @@ nav:
               - Context Menu: reference/view/securities/context-menu.md
           - Accounts:
               - Accounts: reference/view/accounts/index.md
-              - Deposit Account: reference/view/accounts/deposit-account.md
-              - Security Account: reference/view/accounts/security-account.md
+              - Deposit Accounts: reference/view/accounts/deposit-account.md
+              - Security Accounts: reference/view/accounts/security-account.md
+              - Grouped Accounts: reference/view/accounts/grouped-accounts.md
               - Investment Plans: reference/view/accounts/investment-plans.md
               - All Transactions: reference/view/accounts/all-transactions.md
           - Reports:
