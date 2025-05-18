@@ -3,15 +3,7 @@ title: About Portfolio Performance
 hide:
     - navigation
     - toc
-lastUpdate: 2025-05-03
 description: Discover Portfolio Performance, an open-source application for managing and analyzing your investment portfolio with accurate performance calculations and insightful overviews.
-authors:
-    - name: Portfolio Performance Team
-    - name: Nirus2000
-version: 1.0
-slug: about
-tags:
-    - Portfolio Performance
 changes:
     - date: 2025-05-03
       author: Nirus2000

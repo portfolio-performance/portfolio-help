@@ -1,17 +1,6 @@
 ---
 title: Systemübersicht
-lastUpdate: 2025-05-03
 description: Übersicht über die Komponenten des Portfolio Performance Systems und deren Einfluss auf die Portfolio-Gesamtperformance durch Transaktionen, Performanceberechnungen und andere Faktoren.
-authors:
-    - name: Portfolio Performance Team
-    - name: Nirus2000
-version: 1.0
-slug: system-uebersicht
-tags:
-    - Portfolio Management
-    - Investmentanalyse
-    - Glossar
-    - Portfolio Performance
 changes:
     - date: 2025-05-03
       author: Nirus2000

@@ -1,12 +1,6 @@
 ---
 title: Getting Started
-lastUpdate: 2025-05-03
 description: Introduction to Portfolio Performance – installation, setup, management, and first analyses.
-authors:
-  - name: Portfolio Performance Team
-  - name: Nirus2000
-version: 1.0
-slug: getting-started
 changes:
   - date: 2025-05-03
     author: Nirus2000

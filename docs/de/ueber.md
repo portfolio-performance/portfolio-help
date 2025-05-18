@@ -3,15 +3,7 @@ title: Über Portfolio Performance
 hide:
     - navigation
     - toc
-lastUpdate: 2025-05-03
 description: Entdecken Sie Portfolio Performance, eine Open-Source-Anwendung zur Verwaltung und Analyse Ihres Anlageportfolios mit präzisen Performance-Berechnungen und aufschlussreichen Übersichten.
-authors:
-    - name: Portfolio Performance Team
-    - name: Nirus2000
-version: 1.0
-slug: ueber
-tags:
-    - Portfolio Performance
 changes:
     - date: 2025-05-03
       author: Nirus2000

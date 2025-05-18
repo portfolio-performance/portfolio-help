@@ -1,17 +1,6 @@
 ---
 title: Systemübersicht Beispiel
-lastUpdate: 2025-05-03
 description: Übersicht über die Systemkomponenten von Portfolio Performance, detailliert wie Transaktionen, Performanceberechnungen und andere Faktoren die Gesamtperformance des Portfolios beeinflussen.
-authors:
-    - name: Portfolio Performance Team
-    - name: Nirus2000
-version: 1.0
-slug: system-uebersicht
-tags:
-    - Portfolio Management
-    - Investmentanalyse
-    - Glossar
-    - Portfolio Performance
 changes:
     - date: 2025-05-03
       author: Nirus2000
