@@ -1,59 +1,130 @@
 ---
 title: Help > About Portfolio Performance
-todo: platform choice implications
+description: Detailed information about the Portfolio Performance program, including version, platform, Java version, key software components, contributors, translators, and installation details.
+changes:
+  - date: 2025-05-18
+    author: Nirus2000
+    description:
+      - Updated to version 0.76.2 (May 2025)
+      - Expanded Key Software Components & Libraries section
+      - Updated contributor and translation info
 ---
-Detailed information about the Portfolio Performance program could be found in the menu `Help > About Portfolio Performance`. The top panel contains the version, e.g. 0.67.0 from december 2023, the platform and the Java version it runs on. The platform could be Windows (win32, x86_64), Linux, or macOS; see [Installation](../../getting-started/installation.md). The Portfolio Performance program is built with the Java programming language. The most recent Long Term Support (LTS) version of the OpenJDK (Java Development Kit) is obtained through [Azul.com](https://www.azul.com/downloads/?package=jdk#zulu). From the copyright info, you learn that the author `Andreas Buchen` started development back in 2012.
 
-Figure: The About Portfolio Performance panel.{class=pp-figure}
+# Help > About Portfolio Performance
 
-![](images/about.png)
+Detailed information about the **Portfolio Performance** program is available under the menu:  
+`Help > About Portfolio Performance`.
 
-The bottom panel contains links to the used (open source) software, code contributors, translators, and Writers. There is also a section about Installation Details.
+---
 
-## Software
+## About Panel Overview
 
-[Eclipse Foundation](https://www.eclipse.org/): Eclipse is a free and open source software development environment that supports various languages, platforms and plugins. It is a very popular and widely used IDE (Integrated Development Environment). Eclipse allows developers to create, test, debug, and deploy applications using a common framework and a rich set of tools. From a user perspective, the choice of a specific IDE is not important. The development platform e.g. Java SDK however is very much.
+Figure: About Portfolio Performance Panel {class="pp-figure"}
 
-[Apache Software Foundation](https://apache.org/): Several libraries are used; for example to extract text and metadata from PDF documents, and to perform HTTP requests and handle responses (e.g. communicate with Portfolio Report). 
+![About Portfolio Performance Panel](./images/about.png)
 
-[SWT Chart Project](https://github.com/eclipse/swtchart/wiki): The Eclipse SWTChart software is used to create the line and pie charts in the app. Portfolio Performance uses the Standard Widget Toolkit (SWT) which is a graphical user interface (GUI) library that allows Java developers to create native-looking applications for different platforms. You enable this library in `Help > Preferences > General`.
+---
 
-[Tree Map Library](https://github.com/smurf667/treemaplib): Treemaps represent a distinct visualization technique for illustrating hierarchical data by using a series of nested rectangles. This kind of map is used in the Taxonomies menu.
+### Top Section
 
-[jsoup Java HTML Parser](https://jsoup.org/): jsoup is a Java library that simplifies working with real-world HTML and XML. It offers an easy-to-use API for URL fetching, data parsing, extraction, and manipulation using DOM API methods, CSS, and xpath selectors. The library is used for example to fetch the historical prices from a table on a financial website.
+- **Version:** 0.76.2 (May 2025)
+- **Platform:** Windows (win32, x86*64), Linux, or macOS  
+  See [Installation](../../getting-started/installation.md) for details.
+- **Java Version:** Version of the Java Runtime Environment (JRE) or Java Development Kit (JDK) used  
+  Portfolio Performance is developed in **Java**. It is recommended to use the latest **Long-Term Support (LTS)** OpenJDK version, available from [Azul Zulu](https://www.azul.com/downloads/?package=jdk#zulu).
+- The project was started in 2012 by **Andreas Buchen**.
 
-[JSON.simple](https://github.com/fangyidong/json-simple): JSON.simple is a simple Java toolkit for JSON. You can use JSON.simple to encode or decode JSON text. This tool is used in the app for downloading historical prices from a JSON data source.
+---
 
-[Protobuf](https://github.com/protocolbuffers/protobuf): Protocol Buffers (a.k.a., protobuf) are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data. The software is used to convert the XML-datastructures of the portfolio file into Java usable data structures.  
+### Bottom Section
 
-[Guava](https://github.com/google/guava): The Guava libraries are intended to complement the core java libraries and make working in the Java language more pleasant and more productive.
+Links to:
+- Open source software used by the program
+- Code contributors
+- Translators
+- Documentation authors
+- [Installation Details](../../getting-started/installation.md)  
+  Detailed information about the environment Portfolio Performance runs in (operating system, Java and Eclipse components, log file paths, etc.)
 
-[JsonPath](https://github.com/json-path/JsonPath): JsonPath is a query language for JSON. It allows to select and extract a sub-section from a JSON document using a simple syntax that is similar to XPath for XML.
+---
 
-[D3.js](https://d3js.org/): D3.js is an abbreviation for Data-Driven Documents and is a JavaScript library to work on data visualization e.g. graphs. 
+## Key Software Components & Libraries
 
-[XStream](https://github.com/x-stream/xstream): A Java library that allows you to serialize and deserialize Java objects to and from XML or JSON.
+Portfolio Performance leverages a robust set of open-source libraries and frameworks to deliver its features, ensure cross-platform compatibility, and provide a native user experience:
 
-[OpenJDK](https://openjdk.org/): Running a Java program on for example a Windows machine requires that the Java Development Kit (JDK) is installed on that computer. Portfolio Performance uses the JDK provided by Azul.com.
+- **[Eclipse Foundation](https://www.eclipse.org/)**  
+  The backbone development platform for Portfolio Performance. Eclipse provides the **Integrated Development Environment (IDE)** and the **Standard Widget Toolkit (SWT)**, a GUI toolkit used to create native-looking graphical interfaces across platforms. SWT enables rendering components that feel consistent on Windows, Linux, and macOS by using the underlying OS widgets.
 
-## Code Contributors
+- **[Apache Software Foundation](https://apache.org/)**  
+  Provides multiple foundational libraries. For example:
 
-A link to the Github pages of each of the 159 contributors is given. A graphical overview of all contributions from 2012 till today can be found at [Github](https://github.com/portfolio-performance/portfolio/graphs/contributors). 
+  - PDF parsing and metadata extraction (allowing Portfolio Performance to handle PDFs for reports or document processing).
+  - HTTP client libraries that manage network communication, including requests to online price data providers and Portfolio Report services.
 
-## Translators
+- **[SWT Chart Project](https://github.com/eclipse/swtchart/wiki)**  
+  Extends SWT with rich charting capabilities. Portfolio Performance uses it to render line charts, pie charts, and other visual financial data representations, ensuring interactive and high-quality graphics.
 
-Portfolio Performance has been translated into Spanish, Dutch, Portuguese, Brazilian Portuguese, French, Italian, Czech, Russian, Slovak, Polish, Chinese (simplified), Chinese (traditional), and Danish.
+- **[Tree Map Library](https://github.com/smurf667/treemaplib)**  
+  Implements treemap visualizations, a space-efficient way to represent hierarchical data with nested rectangles. Used notably in the Taxonomies menu to visualize portfolio asset distribution and classifications.
 
-## Writers
-The two main sources of documentation for the program are the Forum ([German](https://forum.portfolio-performance.info/c/deutsch/10) - [English](https://forum.portfolio-performance.info/c/english/10)) and the Handbook ([German](https://help.portfolio-performance.info/de/) - [English](https://help.portfolio-performance.info/en/)).
+- **[jsoup Java HTML Parser](https://jsoup.org/)**  
+  A powerful, user-friendly HTML and XML parser library. Portfolio Performance uses jsoup to scrape historical price data and other relevant information from financial websites by parsing real-world web pages, even if they are poorly formatted.
+
+- **[JSON.simple](https://github.com/fangyidong/json-simple)**  
+  A lightweight Java toolkit to encode and decode JSON text. Essential for handling data downloads from JSON APIs, such as retrieving historical price feeds and other online data sources.
+
+- **[Protocol Buffers (Protobuf)](https://github.com/protocolbuffers/protobuf)**  
+  Google's efficient, language- and platform-neutral serialization mechanism. Portfolio Performance uses protobuf to convert the portfolio’s XML-based data structures into optimized Java objects for faster access and manipulation.
+
+- **[Guava](https://github.com/google/guava)**  
+  Google's core Java libraries extension. Guava provides immutable collections, caching utilities, advanced concurrency libraries, and other utilities that make the codebase more robust and developer-friendly.
+
+- **[JsonPath](https://github.com/json-path/JsonPath)**  
+  A query language for JSON, inspired by XPath for XML. Portfolio Performance uses JsonPath to extract specific pieces of information efficiently from large JSON documents.
+
+- **[D3.js](https://d3js.org/)**  
+  Although primarily a JavaScript library for creating dynamic, interactive data visualizations on the web, D3.js is used within Portfolio Performance's reporting components (e.g., Portfolio Report) to generate rich, web-based charts and graphs embedded in the app.
+
+- **[XStream](https://github.com/x-stream/xstream)**  
+  Serializes and deserializes Java objects to XML and JSON formats. This library helps Portfolio Performance persist and load complex portfolio data structures seamlessly.
+
+- **[OpenJDK](https://openjdk.org/)**  
+  The open-source Java Development Kit required to run Portfolio Performance. The recommended builds come from [Azul Zulu](https://www.azul.com/downloads/?package=jdk#zulu), ensuring stability and long-term support across platforms.
+
+---
+
+## Contributors
+
+Portfolio Performance is developed and maintained by a large, worldwide community of contributors. Hundreds of developers from around the globe continuously improve the software.  
+A full overview of contributors and their activity since 2012 is available on the [GitHub contributors graph](https://github.com/portfolio-performance/portfolio/graphs/contributors).
+
+Figure: Contributors {class="pp-figure"}
+
+![Contributors](./images/commits-over-time.png)
+
+---
+
+## Translations
+
+Portfolio Performance is localized into many languages including but not limited to:  
+Spanish, Dutch, Portuguese, Brazilian Portuguese, French, Italian, Czech, Russian, Slovak, Polish, Simplified Chinese, Traditional Chinese, Danish, and many more.
+
+You can contribute or join the translation effort via [Join the POEditor Project](https://poeditor.com/join/project?hash=4lYKLpEWOY).
+
+---
+
+## Documentation Authors
+
+The primary sources of documentation are:
+
+- **Forum:** [German](https://forum.portfolio-performance.info/c/deutsch/10) | [English](https://forum.portfolio-performance.info/c/english/16)
+- **Handbook:** [German](https://help.portfolio-performance.info/de/) | [English](https://help.portfolio-performance.info/en/)
+
+---
 
 ## Installation Details
 
-Clicking on this tab will generate a very long and detailed description of the environment Portfolio Performance is running in (OS, Java and Eclipse components, paths to log-files, ...).
+The **Installation Details** tab provides a comprehensive report about the environment Portfolio Performance is running in, including:  
+Operating system details, Java and Eclipse components versions, configuration paths, and locations of log files.
 
-
-
-
-
-
-
+---
