@@ -1,13 +1,6 @@
 ---
 title: Financial terminology
-lastUpdate: 2025-05-03
 description: Overview of financial terminology and useful resources for understanding key financial concepts.
-authors:
-  - name: Portfolio Performance Team
-  - name: Nirus2000
-version: 1.0
-slug: financial-terminology
-tags: [Financial Terminology, Glossary, Resources, Portfolio Performance]
 changes:
   - date: 2025-05-03
     author: Nirus2000

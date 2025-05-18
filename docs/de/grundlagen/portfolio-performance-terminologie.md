@@ -1,17 +1,6 @@
 ---
 title: Portfolio Performance Begriffsübersicht
-lastUpdate: 2025-05-03
 description: Ein alphabetisches Glossar wichtiger Begriffe und Konzepte in Portfolio Performance, das Nutzern hilft, Felder, Kennzahlen und Funktionen der Anwendung besser zu verstehen.
-authors:
-    - name: Portfolio Performance Team
-    - name: Nirus2000
-version: 1.0
-slug: begriffsuebersicht
-tags:
-    - Portfoliomanagement
-    - Investmentanalyse
-    - Glossar
-    - Portfolio Performance
 changes:
     - date: 2025-05-03
       author: Nirus2000

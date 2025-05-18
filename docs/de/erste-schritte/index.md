@@ -1,12 +1,6 @@
 ---
 title: Erste Schritte
-lastUpdate: 2025-05-03
 description: Einführung in Portfolio Performance – Installation, Einrichtung, Verwaltung und erste Auswertungen.
-authors:
-  - name: Portfolio Performance Team
-  - name: Nirus2000
-version: 1.0
-slug: erste-schritte
 changes:
   - date: 2025-05-03
     author: Nirus2000

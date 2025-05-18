@@ -1,17 +1,6 @@
 ---
 title: System overview example
-lastUpdate: 2025-05-03
 description: Overview of the Portfolio Performance system components, detailing how transactions, performance calculations, and other factors influence the portfolio’s overall performance.
-authors:
-    - name: Portfolio Performance Team
-    - name: Nirus2000
-version: 1.0
-slug: system-overview
-tags:
-    - Portfolio Management
-    - Investment Analysis
-    - Glossary
-    - Portfolio Performance
 changes:
     - date: 2025-05-03
       author: Nirus2000
