@@ -38,12 +38,11 @@ Figure: About Portfolio Performance Panel {class="pp-figure"}
 
 ### Bottom Section
 
-Links to:
-- Open source software used by the program
-- Code contributors
-- Translators
-- Documentation authors
-- [Installation Details](../../getting-started/installation.md)  
+- **Software** used by the program
+- **Code contributors**
+- **Translators**
+- Documentation **Writers**
+- **[Installation Details](../../getting-started/installation.md)**  
   Detailed information about the environment Portfolio Performance runs in (operating system, Java and Eclipse components, log file paths, etc.)
 
 ---
