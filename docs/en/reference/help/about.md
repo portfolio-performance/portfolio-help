@@ -40,7 +40,7 @@ Figure: About Portfolio Performance Panel {class="pp-figure"}
 
 - **Software** used by the program
 - **Code contributors**
-- **Translators**
+- [**Translators**](../../help/join-translation-teams.md)
 - Documentation **Writers**
 - **[Installation Details](../../getting-started/installation.md)**  
   Detailed information about the environment Portfolio Performance runs in (operating system, Java and Eclipse components, log file paths, etc.)
