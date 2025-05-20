@@ -1,17 +1,6 @@
 ---
 title: Währungen
-lastUpdate: 2025-05-03
 description: Anzeigen historischer Wechselkurse und Nutzung des Währungsrechners in Portfolio Performance.
-authors:
-    - name: Portfolio Performance Team
-    - name: Nirus2000
-version: 1.0
-slug: waehrungen
-tags:
-    - Portfolio Management
-    - Investmentanalyse
-    - Glossar
-    - Portfolio Performance
 changes:
     - date: 2025-05-03
       author: Nirus2000

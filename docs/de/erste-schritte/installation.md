@@ -1,13 +1,6 @@
 ---
 title: Installation
-lastUpdate: 2025-05-03
 description: Anleitung zur Installation von Portfolio Performance auf Windows, macOS und Linux – inklusive Installationsdateien, Paketmanagern und Flatpak.
-authors:
-  - name: Portfolio Performance Team
-  - name: Nirus2000
-version: 1.0
-slug: installation
-tags: [Installation, Windows, macOS, Linux, Flatpak, Einrichtung, Portfolio Performance]
 changes:
   - date: 2025-05-03
     author: Nirus2000

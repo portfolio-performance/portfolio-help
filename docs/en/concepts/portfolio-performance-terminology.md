@@ -1,17 +1,6 @@
 ---
 title: Portfolio Performance terminology
-lastUpdate: 2025-05-03
 description: An alphabetical glossary of key terms and concepts used within Portfolio Performance, helping users better understand the application's fields, metrics, and functionalities.
-authors:
-    - name: Portfolio Performance Team
-    - name: Nirus2000
-version: 1.0
-slug: terminology
-tags:
-    - Portfolio Management
-    - Investment Analysis
-    - Glossary
-    - Portfolio Performance
 changes:
     - date: 2025-05-03
       author: Nirus2000

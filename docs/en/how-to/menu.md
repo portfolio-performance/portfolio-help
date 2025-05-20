@@ -35,7 +35,7 @@ File
 │   │   ├── DZD (Algerian dinar)
 │   └── E - I >
 │   ├── ...
-├── Tools 
+├── Tools
 │   ├── Sanity Check...
 │   ├── Fix: Restore ...
 ├── Import
@@ -53,7 +53,6 @@ File
 │   ├── Portfolio Performance XML
 ├── Close File
 └── Quit Ctrl+Q
-
 ```
 
 ```
@@ -86,8 +85,8 @@ View
 ├── General Data
 ├── ├── Currencies
 └── ├──Settings
-
 ```
+
 ```
 Transaction
 ├── Buy ...
@@ -105,9 +104,8 @@ Transaction
 ├── Taxes ...
 ├── Taxes Refund ...
 └── Transfer between accounts ...
-
-
 ```
+
 ```
 Online
 ├── Update Quotes ... Ctrl+U, K
@@ -117,19 +115,19 @@ Online
 
 ```
 Help
+├── Welcome
 ├── About Portfolio Performance
 ├── Preferences ...
 ├── Check for Updates ...
 ├── New & Noteworthy
 ├── Changelog
-├── Welcome
+├── Manual
 ├── Forum
+├── How-To's
+├── Report an issue...
 ├── Join translation teams
 ├── Source Code on Github
-├── How-Tos
-├── FAQ
 ├── Show Error Log
 ├── Save Error Log ...
 └── Debug: Reset GUI ...
-
 ```

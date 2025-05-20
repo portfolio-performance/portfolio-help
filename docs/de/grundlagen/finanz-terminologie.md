@@ -1,13 +1,6 @@
 ---
 title: Finanzterminologie
-lastUpdate: 2025-05-03
 description: Übersicht über Finanzterminologie und nützliche Ressourcen zum Verständnis wichtiger finanzieller Konzepte.
-authors:
-  - name: Portfolio Performance Team
-  - name: Nirus2000
-version: 1.0
-slug: finanzterminologie
-tags: [Finanzterminologie, Glossar, Ressourcen, Portfolio Performance]
 changes:
   - date: 2025-05-03
     author: Nirus2000
