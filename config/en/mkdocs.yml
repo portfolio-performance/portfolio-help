@@ -141,7 +141,6 @@ nav:
       - Historical prices: concepts/historical-prices.md
   - Reference manual:
       - Reference manual: reference/index.md
-      - Overview: how-to/menu.md
       - File Menu:
           - New: reference/file/new.md
           - Save: reference/file/save.md
