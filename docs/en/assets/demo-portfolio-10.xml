@@ -1,0 +1,496 @@
+<client>
+  <version>66</version>
+  <baseCurrency>EUR</baseCurrency>
+  <securities>
+    <security>
+      <uuid>3bc336bf-5c38-46c8-a46d-12f7bd837290</uuid>
+      <name>security-1</name>
+      <currencyCode>EUR</currencyCode>
+      <feed>MANUAL</feed>
+      <prices>
+        <price t="2023-01-01" v="9500000000"/>
+        <price t="2024-01-01" v="9500000000"/>
+        <price t="2024-02-01" v="10500000000"/>
+        <price t="2024-03-01" v="10700000000"/>
+        <price t="2024-08-01" v="11000000000"/>
+        <price t="2025-01-01" v="10000000000"/>
+        <price t="2025-02-01" v="10750000000"/>
+        <price t="2025-03-01" v="10800000000"/>
+      </prices>
+      <attributes>
+        <map/>
+      </attributes>
+      <events/>
+      <isRetired>false</isRetired>
+      <updatedAt>2025-05-31T15:26:45.677246500Z</updatedAt>
+    </security>
+  </securities>
+  <watchlists/>
+  <accounts>
+    <account>
+      <uuid>c9a6b195-87c5-4a46-b2c7-4600f6856437</uuid>
+      <name>test</name>
+      <currencyCode>EUR</currencyCode>
+      <isRetired>false</isRetired>
+      <transactions/>
+      <attributes>
+        <map/>
+      </attributes>
+      <updatedAt>2025-05-31T15:26:29.531326100Z</updatedAt>
+    </account>
+  </accounts>
+  <portfolios>
+    <portfolio>
+      <uuid>df0c8120-70fa-4819-bd98-5a76efbc5f13</uuid>
+      <name>test</name>
+      <isRetired>false</isRetired>
+      <referenceAccount reference="../../../accounts/account"/>
+      <transactions>
+        <portfolio-transaction>
+          <uuid>73315afa-dbb7-4ee8-ac54-26a6204b1c66</uuid>
+          <date>2024-01-01T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>950000</amount>
+          <security reference="../../../../../securities/security"/>
+          <shares>10000000000</shares>
+          <updatedAt>2025-05-31T15:30:01.027683400Z</updatedAt>
+          <type>DELIVERY_INBOUND</type>
+        </portfolio-transaction>
+        <portfolio-transaction>
+          <uuid>66f684aa-7819-4e8f-aced-e05f87e8dd18</uuid>
+          <date>2024-02-01T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>2100000</amount>
+          <security reference="../../../../../securities/security"/>
+          <shares>20000000000</shares>
+          <updatedAt>2025-05-31T15:30:12.813640200Z</updatedAt>
+          <type>DELIVERY_INBOUND</type>
+        </portfolio-transaction>
+        <portfolio-transaction>
+          <uuid>ffc5989e-5068-47d8-bbdf-5214b8fd743c</uuid>
+          <date>2024-03-01T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>1070000</amount>
+          <security reference="../../../../../securities/security"/>
+          <shares>10000000000</shares>
+          <updatedAt>2025-05-31T15:30:33.697694500Z</updatedAt>
+          <type>DELIVERY_INBOUND</type>
+        </portfolio-transaction>
+        <portfolio-transaction>
+          <uuid>92c3c312-536f-417d-9b01-f855001e7078</uuid>
+          <date>2024-08-01T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>1650000</amount>
+          <security reference="../../../../../securities/security"/>
+          <shares>15000000000</shares>
+          <updatedAt>2025-05-31T15:35:09.241097900Z</updatedAt>
+          <type>DELIVERY_OUTBOUND</type>
+        </portfolio-transaction>
+        <portfolio-transaction>
+          <uuid>57eabf4d-13a2-43d8-a678-f2c79e46199e</uuid>
+          <date>2025-01-01T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>500000</amount>
+          <security reference="../../../../../securities/security"/>
+          <shares>5000000000</shares>
+          <updatedAt>2025-05-31T15:38:28.452485200Z</updatedAt>
+          <type>DELIVERY_INBOUND</type>
+        </portfolio-transaction>
+        <portfolio-transaction>
+          <uuid>8e13d86f-bcc6-49cf-a104-eb5a25646639</uuid>
+          <date>2025-02-01T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>3225000</amount>
+          <security reference="../../../../../securities/security"/>
+          <shares>30000000000</shares>
+          <updatedAt>2025-05-31T15:38:42.269871900Z</updatedAt>
+          <type>DELIVERY_INBOUND</type>
+        </portfolio-transaction>
+        <portfolio-transaction>
+          <uuid>ff1010c3-9324-40e1-9a36-f6f7b9c9c1bf</uuid>
+          <date>2025-03-01T00:00</date>
+          <currencyCode>EUR</currencyCode>
+          <amount>2160000</amount>
+          <security reference="../../../../../securities/security"/>
+          <shares>20000000000</shares>
+          <updatedAt>2025-05-31T15:41:50.418924300Z</updatedAt>
+          <type>DELIVERY_OUTBOUND</type>
+        </portfolio-transaction>
+      </transactions>
+      <attributes>
+        <map/>
+      </attributes>
+      <updatedAt>2025-06-01T12:34:41.771521200Z</updatedAt>
+    </portfolio>
+  </portfolios>
+  <plans/>
+  <taxonomies/>
+  <dashboards>
+    <dashboard name="Dashboard">
+      <id>6a908143-16e4-4aaa-8003-186c116e2b37</id>
+      <configuration>
+        <entry>
+          <string>REPORTING_PERIOD</string>
+          <string>L1Y0</string>
+        </entry>
+      </configuration>
+      <columns>
+        <column>
+          <weight>1</weight>
+          <widgets>
+            <widget type="HEADING">
+              <label>Key Indicators</label>
+            </widget>
+            <widget type="TTWROR">
+              <label>True Time-Weighted Rate of Return (cumulative)</label>
+              <configuration/>
+            </widget>
+            <widget type="IRR">
+              <label>Internal Rate of Return (IRR)</label>
+              <configuration/>
+            </widget>
+            <widget type="ABSOLUTE_CHANGE">
+              <label>Absolute Change</label>
+              <configuration/>
+            </widget>
+            <widget type="DELTA">
+              <label>Delta (for reporting period)</label>
+              <configuration/>
+            </widget>
+            <widget type="HEADING">
+              <label>Last Day</label>
+            </widget>
+            <widget type="TTWROR">
+              <label>True Time-Weighted Rate of Return (cumulative)</label>
+              <configuration>
+                <entry>
+                  <string>REPORTING_PERIOD</string>
+                  <string>T1</string>
+                </entry>
+              </configuration>
+            </widget>
+            <widget type="ABSOLUTE_CHANGE">
+              <label>Absolute Change</label>
+              <configuration>
+                <entry>
+                  <string>REPORTING_PERIOD</string>
+                  <string>T1</string>
+                </entry>
+              </configuration>
+            </widget>
+          </widgets>
+        </column>
+        <column>
+          <weight>1</weight>
+          <widgets>
+            <widget type="HEADING">
+              <label>Risk Indicators</label>
+            </widget>
+            <widget type="MAXDRAWDOWN">
+              <label>Maximum Drawdown</label>
+              <configuration/>
+            </widget>
+            <widget type="MAXDRAWDOWNDURATION">
+              <label>Max Drawdown Duration</label>
+              <configuration/>
+            </widget>
+            <widget type="VOLATILITY">
+              <label>Volatility</label>
+              <configuration/>
+            </widget>
+            <widget type="SEMIVOLATILITY">
+              <label>Semivariance</label>
+              <configuration/>
+            </widget>
+          </widgets>
+        </column>
+        <column>
+          <weight>1</weight>
+          <widgets>
+            <widget type="HEADING">
+              <label>Calculation</label>
+            </widget>
+            <widget type="CALCULATION">
+              <label>Performance Calculation</label>
+              <configuration/>
+            </widget>
+            <widget type="CALCULATION">
+              <label>Performance Calculation</label>
+              <configuration>
+                <entry>
+                  <string>COST_METHOD</string>
+                  <string>MOVING_AVERAGE</string>
+                </entry>
+              </configuration>
+            </widget>
+          </widgets>
+        </column>
+      </columns>
+    </dashboard>
+    <dashboard name="Dashboard">
+      <id>c07a30b7-abb3-4f8d-a976-69011f488806</id>
+      <columns>
+        <column>
+          <weight>1</weight>
+          <widgets>
+            <widget type="CALCULATION">
+              <label>Performance Calculation</label>
+              <configuration>
+                <entry>
+                  <string>LAYOUT</string>
+                  <string>FULL</string>
+                </entry>
+              </configuration>
+            </widget>
+          </widgets>
+        </column>
+        <column>
+          <weight>1</weight>
+          <widgets>
+            <widget type="CALCULATION">
+              <label>Performance Calculation</label>
+              <configuration>
+                <entry>
+                  <string>COST_METHOD</string>
+                  <string>MOVING_AVERAGE</string>
+                </entry>
+                <entry>
+                  <string>LAYOUT</string>
+                  <string>FULL</string>
+                </entry>
+              </configuration>
+            </widget>
+          </widgets>
+        </column>
+        <column>
+          <weight>1</weight>
+          <widgets/>
+        </column>
+      </columns>
+    </dashboard>
+  </dashboards>
+  <properties>
+    <entry>
+      <string>security-chart-details</string>
+      <string>SCALING_LINEAR,CLOSING,INVESTMENT,EVENTS,FIFOPURCHASE,FLOATINGAVGPURCHASE,SHOW_DATA_DIVESTMENT_INVESTMENT_LABEL,SHOW_MAIN_HORIZONTAL_LINES</string>
+    </entry>
+    <entry>
+      <string>security-name-config</string>
+      <string>NONE</string>
+    </entry>
+  </properties>
+  <settings>
+    <bookmarks>
+      <bookmark>
+        <label>finance.yahoo.com</label>
+        <pattern>https://finance.yahoo.com/quote/{tickerSymbol}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>onvista.de</label>
+        <pattern>https://www.onvista.de/suche.html?SEARCH_VALUE={isin}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>finanzen.net</label>
+        <pattern>https://www.finanzen.net/suchergebnis.asp?frmAktiensucheTextfeld={isin}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>ariva.de</label>
+        <pattern>https://www.ariva.de/{isin}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>justetf.com  (ETF)</label>
+        <pattern>https://www.justetf.com/etf-profile.html?isin={isin}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>fondsweb.com</label>
+        <pattern>https://www.fondsweb.com/{isin}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>morningstar.de</label>
+        <pattern>https://www.morningstar.de/de/funds/SecuritySearchResults.aspx?type=ALL&amp;search={isin}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>extraETF.com (ETF)</label>
+        <pattern>https://extraetf.com/etf-profile/{isin}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>alleaktien.de (Share)</label>
+        <pattern>https://www.alleaktien.de/data/{isin}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>comdirect.de (Share)</label>
+        <pattern>https://www.comdirect.de/inf/aktien/{isin}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>comdirect.de (ETF)</label>
+        <pattern>https://www.comdirect.de/inf/etfs/{isin}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>divvydiary.com</label>
+        <pattern>https://divvydiary.com/symbols/{isin}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>trackingdifferences.com (ETF)</label>
+        <pattern>https://www.trackingdifferences.com/ETF/ISIN/{isin}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>tradingview.com</label>
+        <pattern>https://www.tradingview.com/chart/?symbol=XETR:{tickerSymbolPrefix}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>cnbc.com (Share)</label>
+        <pattern>https://www.cnbc.com/quotes/{tickerSymbolPrefix}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>nasdaq.com (Share)</label>
+        <pattern>https://www.nasdaq.com/market-activity/stocks/{tickerSymbolPrefix}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>aktienfinder.net (Share)</label>
+        <pattern>https://aktienfinder.net/aktien-profil/{isin}</pattern>
+      </bookmark>
+      <bookmark>
+        <label>aktien.guide (Share)</label>
+        <pattern>http://aktien.guide/isin/aktien/{isin}</pattern>
+      </bookmark>
+    </bookmarks>
+    <attributeTypes>
+      <attribute-type>
+        <id>logo</id>
+        <name>Logo</name>
+        <columnLabel>Logo</columnLabel>
+        <target>name.abuchen.portfolio.model.Security</target>
+        <type>java.lang.String</type>
+        <converterClass>name.abuchen.portfolio.model.AttributeType$ImageConverter</converterClass>
+      </attribute-type>
+      <attribute-type>
+        <id>logo</id>
+        <name>Logo</name>
+        <columnLabel>Logo</columnLabel>
+        <target>name.abuchen.portfolio.model.Account</target>
+        <type>java.lang.String</type>
+        <converterClass>name.abuchen.portfolio.model.AttributeType$ImageConverter</converterClass>
+      </attribute-type>
+      <attribute-type>
+        <id>logo</id>
+        <name>Logo</name>
+        <columnLabel>Logo</columnLabel>
+        <target>name.abuchen.portfolio.model.Portfolio</target>
+        <type>java.lang.String</type>
+        <converterClass>name.abuchen.portfolio.model.AttributeType$ImageConverter</converterClass>
+      </attribute-type>
+      <attribute-type>
+        <id>logo</id>
+        <name>Logo</name>
+        <columnLabel>Logo</columnLabel>
+        <target>name.abuchen.portfolio.model.InvestmentPlan</target>
+        <type>java.lang.String</type>
+        <converterClass>name.abuchen.portfolio.model.AttributeType$ImageConverter</converterClass>
+      </attribute-type>
+      <attribute-type>
+        <id>ter</id>
+        <name>Total Expense Ratio (TER)</name>
+        <columnLabel>TER</columnLabel>
+        <source>ter</source>
+        <target>name.abuchen.portfolio.model.Security</target>
+        <type>java.lang.Double</type>
+        <converterClass>name.abuchen.portfolio.model.AttributeType$PercentConverter</converterClass>
+      </attribute-type>
+      <attribute-type>
+        <id>aum</id>
+        <name>Assets under Management</name>
+        <columnLabel>AUM</columnLabel>
+        <target>name.abuchen.portfolio.model.Security</target>
+        <type>java.lang.Long</type>
+        <converterClass>name.abuchen.portfolio.model.AttributeType$AmountPlainConverter</converterClass>
+      </attribute-type>
+      <attribute-type>
+        <id>vendor</id>
+        <name>Vendor</name>
+        <columnLabel>Vendor</columnLabel>
+        <source>vendor</source>
+        <target>name.abuchen.portfolio.model.Security</target>
+        <type>java.lang.String</type>
+        <converterClass>name.abuchen.portfolio.model.AttributeType$StringConverter</converterClass>
+      </attribute-type>
+      <attribute-type>
+        <id>acquisitionFee</id>
+        <name>Acquisition Fee (percentage)</name>
+        <columnLabel>Acquisition Fee</columnLabel>
+        <target>name.abuchen.portfolio.model.Security</target>
+        <type>java.lang.Double</type>
+        <converterClass>name.abuchen.portfolio.model.AttributeType$PercentConverter</converterClass>
+      </attribute-type>
+      <attribute-type>
+        <id>managementFee</id>
+        <name>Management Fee (percentage)</name>
+        <columnLabel>Management Fee</columnLabel>
+        <target>name.abuchen.portfolio.model.Security</target>
+        <type>java.lang.Double</type>
+        <converterClass>name.abuchen.portfolio.model.AttributeType$PercentConverter</converterClass>
+      </attribute-type>
+    </attributeTypes>
+    <configurationSets>
+      <entry>
+        <string>name.abuchen.portfolio.ui.views.SecuritiesPerformanceView</string>
+        <config-set>
+          <configurations>
+            <config>
+              <uuid>1b621dfd-a1aa-49a2-9119-2c92460420d2</uuid>
+              <name>Standard</name>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;shares&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;name&quot;,&quot;sortDirection&quot;:128,&quot;width&quot;:300},{&quot;id&quot;:&quot;quote&quot;,&quot;width&quot;:75},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:60},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:60},{&quot;id&quot;:&quot;mv&quot;,&quot;width&quot;:75},{&quot;id&quot;:&quot;pp&quot;,&quot;width&quot;:75},{&quot;id&quot;:&quot;grosspp&quot;,&quot;width&quot;:75},{&quot;id&quot;:&quot;pv&quot;,&quot;width&quot;:75},{&quot;id&quot;:&quot;sumdiv&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;twror&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;izf&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;delta&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;grossppmvavg&quot;,&quot;width&quot;:148},{&quot;id&quot;:&quot;pvmvavg&quot;,&quot;width&quot;:75},{&quot;id&quot;:&quot;cgMA&quot;,&quot;width&quot;:119},{&quot;id&quot;:&quot;capitalgainsmvavg&quot;,&quot;width&quot;:114}]}</data>
+            </config>
+          </configurations>
+        </config-set>
+      </entry>
+      <entry>
+        <string>name.abuchen.portfolio.ui.views.SecuritiesTable</string>
+        <config-set>
+          <configurations>
+            <config>
+              <uuid>f25b411f-218b-4c1d-bc35-8a1b96c59533</uuid>
+              <name>Standard</name>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;sortDirection&quot;:128,&quot;width&quot;:400},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:200},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:100},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;7&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:60},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;changeonpreviousamount&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;9&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;10&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;q-date-first-historic&quot;,&quot;width&quot;:80}]}</data>
+            </config>
+          </configurations>
+        </config-set>
+      </entry>
+      <entry>
+        <string>reporting-periods</string>
+        <config-set>
+          <configurations/>
+        </config-set>
+      </entry>
+      <entry>
+        <string>name.abuchen.portfolio.ui.views.StatementOfAssetsViewer</string>
+        <config-set>
+          <configurations>
+            <config>
+              <uuid>1b0600a9-2388-441d-99fd-a10a257c3284</uuid>
+              <name>Standard</name>
+              <data>{&quot;items&quot;:[{&quot;id&quot;:&quot;0&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;1&quot;,&quot;width&quot;:300},{&quot;id&quot;:&quot;2&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;4&quot;,&quot;width&quot;:60},{&quot;id&quot;:&quot;5&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;6&quot;,&quot;width&quot;:80},{&quot;id&quot;:&quot;note&quot;,&quot;width&quot;:200}]}</data>
+            </config>
+          </configurations>
+        </config-set>
+      </entry>
+      <entry>
+        <string>client-filter-definitions</string>
+        <config-set>
+          <configurations/>
+        </config-set>
+      </entry>
+      <entry>
+        <string>client-filter-selection</string>
+        <config-set>
+          <configurations>
+            <config>
+              <uuid>PaymentsViewModel</uuid>
+              <name></name>
+              <data></data>
+            </config>
+          </configurations>
+        </config-set>
+      </entry>
+    </configurationSets>
+  </settings>
+</client>
