@@ -139,6 +139,7 @@ nav:
           - Money-weighted return: concepts/performance/money-weighted.md
           - Time-weighted return: concepts/performance/time-weighted.md
       - Historical prices: concepts/historical-prices.md
+      - Acquisition cost methodology: concepts/cost-methodology.md
   - Reference manual:
       - Reference manual: reference/index.md
       - File Menu:
