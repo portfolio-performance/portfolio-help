@@ -1,89 +1,105 @@
 ---
-title: Trouble shooting
+title: Help > Trouble shooting
+description: Troubleshooting guide for Portfolio Performance – viewing logs, resetting the UI, handling update errors, and key file locations for different operating systems.
+changes:
+  - date: 2025-06-14
+    author: Nirus2000
+    description:
+      - Updated images
+      - Add OS informations
 ---
-On rare occasions, the Portfolio Performance app may not function properly or even crash. Beneath the Help menu, three options can assist in such instances.
 
+On rare occasions, the Portfolio Performance app may malfunction or crash. Under the **Help** menu, three key options can assist in such cases.
 
 ## Show Error Log
 
-Every time the program starts, it creates a log-file. You can view this log file from within the Portfolio Performance app in a separate window with the command `Help > Show Error Log`. Double-clicking the message will display the entire text. If there were no errors, this will be a minimal log (see Figure 1).
+Each time the app starts, it generates a log file. You can view this log from within the application via `Help > Show Error Log`. Double-clicking a message displays the full entry. If no error occurred, the log will be minimal:
 
-Figure: Log after successful start-up. {class=pp-figure}
-
+Figure: Log after successful start-up {class="pp-figure"}  
 ![](./images/show-error-log-minimal.png)
 
-If an error is encountered, the log file will list them sequentially. Figure 2 hints at the error (No quotes found). You can double-click on the message to receive more detailed info.
+When errors occur, they are listed sequentially:
 
-Figure: Log after unsuccessful operation. {class=pp-figure}
-
+Figure: Log after unsuccessful operation {class="pp-figure"}  
 ![](./images/show-error-log-multiple-errors.png)
 
-A rather large text file will appear when double-clicking the message (see below). If you can open the portfolio, you need to fix the historical prices source of this security. Otherwise, you need to open the XML-file in a text editor and manually remove the offending data source.
+Double-clicking an error entry opens more detailed information:
 
-Figure: Log after unsuccessful operation. {class=pp-figure}
-
+Figure: Detailed error view {class="pp-figure"}  
 ![](./images/show-error-log-multiple-errors-dbl-click.png)
 
-You can copy this text to the clipboard, for example when seeking help on the [forum](https://forum.portfolio-performance.info/) or you can save the file.
+If the portfolio can still be opened, you should correct the historical price source for the affected security. If not, open the XML file in a text editor and manually remove the faulty data source.
 
-## Save Error Log ...
+You can copy the log text to the clipboard, for example when asking for help in the [forum](https://forum.portfolio-performance.info/), or save it to a file.
 
-As previously mentioned, each time the program starts, it generates a log file. This file is automatically saved in your user directory. For Windows users, it typically resides in: `C:\Users\Your-name\AppData\Local\PortfolioPerformance\workspace\.metadata\`.
+## Save Error Log
 
-To save the latest log to a text file with the extension `.log`, you should use this command. The text file provides more comprehensive information (see below) than the error window depicted in Figure 3, including details about the operating system, the current Java version, and other relevant data.
+The log file is automatically saved in your user directory. Its default location depends on your operating system:
 
+- **Windows**:  
+  `C:\Users\Your-name\AppData\Local\PortfolioPerformance\workspace\.metadata\`
+
+- **macOS**:  
+  `/Users/Your-name/Library/Application Support/name.abuchen.portfolio.ui/workspace/.metadata/`
+
+- **Linux**:  
+  `/home/Your-name/.portfolio-performance/workspace/.metadata/`
+
+To export the current log to a `.log` file, use the command `Help > Save Error Log`.
+
+This version contains more technical details than the in-app error window:
 
 ```
-!SESSION 2024-02-19 11:47:29.300 -----------------------------------------------
-eclipse.buildId=0.67.3.
-java.version=17.0.5
+!SESSION 2025-06-07 14:12:08.240 -----------------------------------------------
+eclipse.buildId=0.76.3.
+java.version=21.0.5
 java.vendor=Azul Systems, Inc.
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
 Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
-This is a continuation of log file C:\Users\your-name\AppData\Local\PortfolioPerformance\workspace\.metadata\.bak_0.log
-Created Time: 2024-02-19 13:18:06.540
+This is a continuation of log file C:\Users\[Your-name]\AppData\Local\PortfolioPerformance\workspace\.metadata\.bak_0.log
+Created Time: 2025-06-07 14:27:55.719
 
-!ENTRY name.abuchen.portfolio 4 0 2024-02-19 13:18:06.540
-!MESSAGE 404 Not Found --> https://query1.finance.yahoo.com/v8/finance/chart/TNET.BR?lang=en-US&region=US&corsDomain=finance.yahoo.com
+!ENTRY name.abuchen.portfolio.ui 4 0 2025-06-07 14:27:55.719
+!MESSAGE Widget is disposed
 !STACK 0
-name.abuchen.portfolio.util.WebAccess$WebAccessException: 404 Not Found --> https://query1.finance.yahoo.com/v8/finance/chart/TNET.BR?lang=en-US&region=US&corsDomain=finance.yahoo.com
-	at name.abuchen.portfolio.util.WebAccess.executeWith(WebAccess.java:222)
-	at name.abuchen.portfolio.util.WebAccess.get(WebAccess.java:182)
-	at name.abuchen.portfolio.online.impl.YahooFinanceQuoteFeed.rpcLatestQuote(YahooFinanceQuoteFeed.java:61)
-	at name.abuchen.portfolio.online.impl.YahooFinanceQuoteFeed.getLatestQuote(YahooFinanceQuoteFeed.java:69)
-	at name.abuchen.portfolio.ui.jobs.UpdateQuotesJob$1.run(UpdateQuotesJob.java:244)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+...
 ```
-It is advisable to include this file when reporting the [issue on GitHub](https://github.com/portfolio-performance/portfolio/issues). Please refrain from using a portfolio containing sensitive information for this purpose.
 
+When reporting issues on [GitHub](https://github.com/portfolio-performance/portfolio/issues), include this log file. Avoid uploading portfolios that contain sensitive data.
 
-## Debug: Reset UI ...
-Choosing this option will simply display the dialog boxes of Figure 1 & 2. As you can see, you need to quit and restart the application after that.
+## Debug: Reset UI
 
-Figure: Reset GUI dialog box. {class=pp-figure}
+The `Help > Debug: Reset UI` option opens a dialog. After confirming, restart the application:
 
+Figure: Reset GUI dialog box {class="pp-figure"}  
 ![](./images/reset-UI.png)
 
-Figure: Successful reset of UI. {class=pp-figure}
-
+Figure: Successful reset confirmation {class="pp-figure"}  
 ![](./images/reset-UI-successful.png)
 
-The Reset UI function will NOT delete any created views or custom reporting periods, nor will it reset the Recent Files list, as these parameters are saved separately.
+Resetting the UI **does not** affect:
 
-However, it does reset the position and size of the Portfolio Performance application window on your monitor and does not restore open files from the moment of closing. Additionally, it sets the main and information panes to their initial values. In essence, as the name implies, it resets the Graphical User Interface (GUI/UI).
+- Created views
+- Custom reporting periods
+- Recent Files list
 
-In the event of unexpected errors, initiating a Reset UI could be your initial troubleshooting step, as it minimally disrupts your workflow.
+It **does** reset:
 
+- Window size and position
+- Visibility/layout of panes
+- Open files (not reopened on restart)
 
-## Updating error
+Use **Reset UI** as a minimal-impact first step when troubleshooting UI issues.
 
-If the program is corrupted or some files are missing, automatic updates are not feasible. An error message (see figure 4) is displayed, and the automatic update is no longer possible.
+## Update Error
 
-The simplest workaround is to delete the program and reinstall it.
+If the installation is corrupted or files are missing, automatic updates may fail. In such cases, an error message will appear:
 
-Figure: Error message upon manual check for updates.{class=pp-figure}
-
+Figure: Update error message {class="pp-figure"}  
 ![](./images/error-on-updating.png)
+
+The recommended solution is to delete and reinstall the application.
