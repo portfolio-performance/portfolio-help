@@ -1,32 +1,48 @@
 ---
 title: Help > Check for Updates ...
+description: Guide on manual and automatic update checks in Portfolio Performance, including update dialogs, relevant links, and settings across platforms.
+changes:
+  - date: 2025-06-14
+    author: Nirus2000
+    description:
+      - Updated images
+      - Fix links
+      - Added detailed instructions on manual and automatic update checks
+      - Added success confirmation after update installation
 ---
 
-After the first installation, you can either check manually for updates or allow the program    to check each time it starts.
+After installation, you can check for updates manually or let the program check automatically on startup.
 
-## Manual check for updates
+## Manual Check for Updates
 
-To manually check for updates, navigate to the menu `Help > Check for Updates ...`. Figure 1 will briefly appear.
+To check manually, select `Help > Check for Updates ...`. A dialog like the one below will briefly appear:
 
-Figure: Checking for updates.{class=pp-figure}
-
+Figure: Checking for updates {class="pp-figure"}  
 ![](images/check-for-updates.png)
 
-Either no updates are available; indicating that your version is up-to-date or figure 2 will be shown; the correct version will of course be different in the future.
+If no updates are available, you will see a confirmation that your version is current. Otherwise, an update dialog will appear (the version shown will vary):
 
-Figure: Checking for updates.{class=pp-figure}
-
+Figure: Update available {class="pp-figure"}  
 ![](images/installation-update-2.png)
 
-To install the most recent version, click `OK`. To cancel the update and stay with the old version, click `Cancel`.
+Click `OK` to install the latest version, or `Cancel` to keep your current version.
 
-There are three links at the top of the panel. [New & Noteworthy](https://forum.portfolio-performance.info/t/new-noteworthy/17945/52) provides detailed information about the changes in the latest version but also about *all* previous releases. The [Change Log](https://github.com/portfolio-performance/portfolio/releases) link leads to the Github page of the project where all (previous) releases are described. The [download link](https://www.portfolio-performance.info/) takes you to the homepage; where you can download the program for the different operating systems (Linux, Windows, macOS); see [Getting Started > Installation](../../getting-started/installation.md).
+At the top of the update panel, there are three useful links:
 
-Below the links, you can find an overview of the changes in the last two releases. At the bottom right, you can enable the automatic check for updates (see below).
+- [New & Noteworthy](https://forum.portfolio-performance.info/t/new-noteworthy/17945/last): Detailed info about the latest and previous releases.
+- [Change Log](https://github.com/portfolio-performance/portfolio/releases): GitHub page listing all releases.
+- [Download](https://www.portfolio-performance.info/): Official homepage with installers for Linux, Windows, and macOS (see [Getting Started > Installation](../../getting-started/installation.md)).
 
-## Automatic check for updates
+Below the links, you’ll find a summary of changes from the last two releases. At the bottom right, you can enable or disable automatic update checks (see next section).
 
-Automatic checking for updates is enabled by default. You can change this setting in the menu `Help > Settings > Updates > Check for updates on start` (see figure 3).
+If the update is accepted and installed successfully, a confirmation will appear:
 
-Figure: Setting for automatic check for updates.{class=pp-figure}
+Figure: Install update successful {class="pp-figure"}  
+![](images/check-for-update-successful.png)
+
+## Automatic Check for Updates
+
+Automatic update checks are enabled by default. To change this, go to `Help > Settings > Updates` and toggle `Check for updates on start`:
+
+Figure: Automatic update check setting {class="pp-figure"}  
 ![](images/automatic-check-for-update.png)
