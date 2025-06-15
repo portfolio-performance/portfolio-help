@@ -15,17 +15,20 @@ On rare occasions, the Portfolio Performance app may malfunction or crash. Under
 
 Each time the app starts, it generates a log file. You can view this log from within the application via `Help > Show Error Log`. Double-clicking a message displays the full entry. If no error occurred, the log will be minimal:
 
-Figure: Log after successful start-up {class="pp-figure"}  
+Figure: Log after successful start-up {class="pp-figure"}
+
 ![](./images/show-error-log-minimal.png)
 
 When errors occur, they are listed sequentially:
 
-Figure: Log after unsuccessful operation {class="pp-figure"}  
+Figure: Log after unsuccessful operation {class="pp-figure"}
+
 ![](./images/show-error-log-multiple-errors.png)
 
 Double-clicking an error entry opens more detailed information:
 
-Figure: Detailed error view {class="pp-figure"}  
+Figure: Detailed error view {class="pp-figure"}
+
 ![](./images/show-error-log-multiple-errors-dbl-click.png)
 
 If the portfolio can still be opened, you should correct the historical price source for the affected security. If not, open the XML file in a text editor and manually remove the faulty data source.
@@ -75,10 +78,12 @@ When reporting issues on [GitHub](https://github.com/portfolio-performance/portf
 
 The `Help > Debug: Reset UI` option opens a dialog. After confirming, restart the application:
 
-Figure: Reset GUI dialog box {class="pp-figure"}  
+Figure: Reset GUI dialog box {class="pp-figure"}
+
 ![](./images/reset-UI.png)
 
-Figure: Successful reset confirmation {class="pp-figure"}  
+Figure: Successful reset confirmation {class="pp-figure"}
+
 ![](./images/reset-UI-successful.png)
 
 Resetting the UI **does not** affect:
@@ -99,7 +104,8 @@ Use **Reset UI** as a minimal-impact first step when troubleshooting UI issues.
 
 If the installation is corrupted or files are missing, automatic updates may fail. In such cases, an error message will appear:
 
-Figure: Update error message {class="pp-figure"}  
+Figure: Update error message {class="pp-figure"}
+
 ![](./images/error-on-updating.png)
 
 The recommended solution is to delete and reinstall the application.

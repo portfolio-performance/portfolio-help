@@ -17,12 +17,14 @@ After installation, you can check for updates manually or let the program check 
 
 To check manually, select `Help > Check for Updates ...`. A dialog like the one below will briefly appear:
 
-Figure: Checking for updates {class="pp-figure"}  
+Figure: Checking for updates {class="pp-figure"}
+
 ![](images/check-for-updates.png)
 
 If no updates are available, you will see a confirmation that your version is current. Otherwise, an update dialog will appear (the version shown will vary):
 
-Figure: Update available {class="pp-figure"}  
+Figure: Update available {class="pp-figure"}
+
 ![](images/installation-update-2.png)
 
 Click `OK` to install the latest version, or `Cancel` to keep your current version.
@@ -37,12 +39,14 @@ Below the links, you’ll find a summary of changes from the last two releases. 
 
 If the update is accepted and installed successfully, a confirmation will appear:
 
-Figure: Install update successful {class="pp-figure"}  
+Figure: Install update successful {class="pp-figure"}
+
 ![](images/check-for-update-successful.png)
 
 ## Automatic Check for Updates
 
 Automatic update checks are enabled by default. To change this, go to `Help > Settings > Updates` and toggle `Check for updates on start`:
 
-Figure: Automatic update check setting {class="pp-figure"}  
+Figure: Automatic update check setting {class="pp-figure"}
+  
 ![](images/automatic-check-for-update.png)
