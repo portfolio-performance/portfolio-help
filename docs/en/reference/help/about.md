@@ -8,9 +8,14 @@ changes:
       - Updated to version 0.76.2 (May 2025)
       - Expanded Key Software Components & Libraries section
       - Updated contributor and translation info
+  - date: 2025-06-14
+    author: Nirus2000
+    description:
+      - Fix headline
+      - Add installation link
 ---
 
-# Help > About Portfolio Performance
+# About Portfolio Performance
 
 Detailed information about the **Portfolio Performance** program is available under the menu:  
 `Help > About Portfolio Performance`.
@@ -123,7 +128,7 @@ The primary sources of documentation are:
 
 ## Installation Details
 
-The **Installation Details** tab provides a comprehensive report about the environment Portfolio Performance is running in, including:  
+The **[Installation Details](../../getting-started/installation.md)** tab provides a comprehensive report about the environment Portfolio Performance is running in, including:  
 Operating system details, Java and Eclipse components versions, configuration paths, and locations of log files.
 
 ---
