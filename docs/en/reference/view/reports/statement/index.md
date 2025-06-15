@@ -116,3 +116,11 @@ For this example:
 `(18.638 - 19.766) / (19.766 - 15.10) = -24.17%`
 
 The sum of the absolute values of both indices equals 100%.
+
+## Multiple charts
+
+The information pane normally displays a chart of the security selected in the top pane. However, you can display multiple securities (see Figure 5). Use the `Shift` key to select adjacent securities, or `Ctrl` (`Cmd` on Mac) to select non-adjacent ones. Markers you have added via the :gear: `Configure Chart` icon - such as dividends, investments (buy, sell), etc. - are no longer displayed, in order to keep the chart clear.
+
+ Figure: Multiple charts in the information pane of the Statement of Assets view. {class=pp-figure}
+
+ ![](./images/sb-reports-statement-chart.mp4)
