@@ -3979,8 +3979,11 @@
 <p>On rare occasions, the Portfolio Performance app may malfunction or crash. Under the <strong>Help</strong> menu, three key options can assist in such cases.</p>
 <h2 id="show-error-log">Show Error Log</h2>
 <p>Each time the app starts, it generates a log file. You can view this log from within the application via <code>Help &gt; Show Error Log</code>. Double-clicking a message displays the full entry. If no error occurred, the log will be minimal:</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Log after successful start-up </figcaption><img alt="" src="../images/show-error-log-minimal.png"></figure></p>
 <p>When errors occur, they are listed sequentially:</p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Log after unsuccessful operation </figcaption><img alt="" src="../images/show-error-log-multiple-errors.png"></figure></p>
 <p>Double-clicking an error entry opens more detailed information:</p>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Detailed error view </figcaption><img alt="" src="../images/show-error-log-multiple-errors-dbl-click.png"></figure></p>
 <p>If the portfolio can still be opened, you should correct the historical price source for the affected security. If not, open the XML file in a text editor and manually remove the faulty data source.</p>
 <p>You can copy the log text to the clipboard, for example when asking for help in the <a href="https://forum.portfolio-performance.info/">forum</a>, or save it to a file.</p>
 <h2 id="save-error-log">Save Error Log</h2>
@@ -4022,6 +4025,8 @@
 <p>When reporting issues on <a href="https://github.com/portfolio-performance/portfolio/issues">GitHub</a>, include this log file. Avoid uploading portfolios that contain sensitive data.</p>
 <h2 id="debug-reset-ui">Debug: Reset UI</h2>
 <p>The <code>Help &gt; Debug: Reset UI</code> option opens a dialog. After confirming, restart the application:</p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. Reset GUI dialog box </figcaption><img alt="" src="../images/reset-UI.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5. Successful reset confirmation </figcaption><img alt="" src="../images/reset-UI-successful.png"></figure></p>
 <p>Resetting the UI <strong>does not</strong> affect:</p>
 <ul>
 <li>Created views</li>
@@ -4037,6 +4042,7 @@
 <p>Use <strong>Reset UI</strong> as a minimal-impact first step when troubleshooting UI issues.</p>
 <h2 id="update-error">Update Error</h2>
 <p>If the installation is corrupted or files are missing, automatic updates may fail. In such cases, an error message will appear:</p>
+<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6. Update error message </figcaption><img alt="" src="../images/error-on-updating.png"></figure></p>
 <p>The recommended solution is to delete and reinstall the application.</p>
 
 
@@ -4058,7 +4064,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 15, 2025 14:02:15">June 15, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 15, 2025 14:41:08">June 15, 2025</span>
   </span>
 
     
