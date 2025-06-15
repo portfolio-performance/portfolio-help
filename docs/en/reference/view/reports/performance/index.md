@@ -163,10 +163,11 @@ All widgets, except the last three, are single line text widgets.
 
 - *Taxonomies*: Pie chart illustrating the proportional distribution of the taxonomy categories. 
 
-- *Taxonomies: TARGET Value: displays two pie charts with the actual and target allocation per category of the selected taxonomy.
+- *Taxonomies: TARGET Value: Displays two pie charts with the actual and target allocation per category of the selected taxonomy.
 
 - *Actual vs Target Allocation*: Displays a bar chart with the actual and target allocation per category. Left-clicking the chart displays a tooltip showing the deviation (delta).
-- 
+- *All time high*: Displays the highest value of the total portfolio (or an alternative data series).
+
 ### Performance widgets
 
 The first three widgets are single line text; representing the common performance indicators. 
@@ -181,20 +182,21 @@ The first three widgets are single line text; representing the common performanc
 
 - *Yearly returns in a heatmap*: Each cell in the heatmap represents one year.
 
-- Portfolio Tax Rate: The ratio of taxes / (realized and unrealized capital gains + earnings - fees).
+- *Portfolio Tax Rate*: The ratio of taxes / (realized and unrealized capital gains + earnings - fees).
 
-- Portfolio Fee Rate: The ratio of Fees / (realized and unrealized capital gains + earnings).
+- *Portfolio Fee Rate*: The ratio of Fees / (realized and unrealized capital gains + earnings).
 
 
 ### Risk indicators
 
-All five widgets are single line text widgets, representing common risk indicators. See [above](index.md#maximum-drawdown) for an explanation of `Maximum Drawdown`, `Max Drawdown Duration`, `Volatility`, and `Semivariance`.
+The following six widgets are single line text widgets, representing common risk indicators. See [the top of this page](index.md#maximum-drawdown) for an explanation of `Maximum Drawdown`, `Current Drawdown`, `Max Drawdown Duration`, `Volatility`, and `Semivariance`.
 
+The :material-chart-line: `Drawdown chart` option will create a widget version of the chart as shown in [Figure 2](./images/performance-mdd.svg).
 
 Figure: Setting the risk-free return from the context menu. {class=align-right style="width:30%"}
 
-![](images/sharpe-set-risk-free.png
-)
+![](images/sharpe-set-risk-free.png)
+
 The `Sharpe ratio` is a financial metric that measures the performance of a portfolio compared to a risk-free asset, taking into account the portfolio's risk. It is calculated by subtracting the risk-free return from the portfolio's return, such as the Internal Rate of Return (IRR), and then dividing the result by the standard deviation of the portfolio's return, which is a measure of its volatility.
 
 The risk-free return is set by default to 0%, but this can be adjusted through the context menu to reflect your current risk-free rate. As the ratio is based on volatility, complete historical prices are required. Without complete prices, the calculated volatility may be underestimated.
