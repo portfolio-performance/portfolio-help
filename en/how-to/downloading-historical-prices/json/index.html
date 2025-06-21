@@ -3493,6 +3493,54 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Import the data with an API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#further-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Further Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#date-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date Format
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date-time-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date Time Zone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#factor-for-quotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factor (for quotes)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -3894,6 +3942,54 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Import the data with an API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#further-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Further Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#date-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date Format
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date-time-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date Time Zone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#factor-for-quotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factor (for quotes)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -4011,6 +4107,13 @@
 <p>With the above information, it should be easy to provide the JSON Quote Feed provider of Portfolio Performance with the correct input.</p>
 <p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. JSON Quote Feed provider parameters. </figcaption><img alt="" src="../images/json-yahoo-parameters.png"></figure></p>
 <p>For most services, one needs to register and obtain an API key, which is a unique identifier that authenticates the user and grants access to the service. While numerous financial services provide seemingly free API keys, their terms of use and long-term commitment often prove inadequate. Portfolio Performance has, for compatibility reasons, maintained several of these services in its list of Quote Feed providers; e.g. Alpha Vantage, eodhd, .... Although once considered excellent solutions, they have changed their offerings and are no longer as useful as free services. In practical terms, only Portfolio Report and Yahoo Finance can be recommended for a typical portfolio.</p>
+<h3 id="further-fields">Further Fields</h3>
+<h4 id="date-format">Date Format</h4>
+<p>Portfolio Performance automatically detects common date formats. This includes ISO date format (e.g. 2025-06-21) and UNIX timestamps (seconds since midnight 1970-01-01, UTC). If an API represents dates another way, it can be described using this field. E.g. for a date in month/day/year format, type in "MM/dd/yyyy". For a complete list of all possible identifier characters see <a href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns">https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns</a>.</p>
+<h4 id="date-time-zone">Date Time Zone</h4>
+<p>If the API provides dates relative to a timezone different of the exchange's timezone, then it is possible that quotes are attributed to the wrong date due to time shift. In this case, you can correct this by supplying time zone information manually. This field accepts fixed offsets like "+01:00", or timezone IDs like "Europe/Berlin" (in this case the offset may change dynamically depending on daylight saving time).</p>
+<h4 id="factor-for-quotes">Factor (for quotes)</h4>
+<p>Some APIs may provide quotes in cents/pennies instead of dollars/pounds/euros. Should this be the case, then this field can be used to provide a conversion factor.</p>
 
 
 
@@ -4031,7 +4134,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 2, 2025 07:25:43">May 2, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 21, 2025 22:37:55">June 21, 2025</span>
   </span>
 
     

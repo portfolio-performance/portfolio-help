@@ -3251,6 +3251,48 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#weitere-angaben" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weitere Angaben
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Weitere Angaben">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#datumsformat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datumsformat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zeitzone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zeitzone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faktor-fur-kurse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Faktor (für Kurse)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3787,6 +3829,48 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#weitere-angaben" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weitere Angaben
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Weitere Angaben">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#datumsformat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datumsformat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zeitzone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zeitzone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faktor-fur-kurse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Faktor (für Kurse)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4094,6 +4178,13 @@ Aus der Struktur ergeben sich folgenden Eingaben in Portfolio Performance:
 <p>Wenn man die URL, den Datums- und den Kurs-Pfad angegeben hat, sollte Portfolio Performance bereits Kursdaten laden und 
 im Dialogfenster unten anzeigen. Die anderen Felder sind nicht zwingend notwendig. </p>
 <p><figure class="pp-figure" id="_figure-9"><figcaption>Abbildung 9. Finale Settings Portfolio Performance Onvista JSON </figcaption><img alt="" src="../images/screenshot_onvista_json_settings_pp_final.png"></figure></p>
+<h3 id="weitere-angaben">Weitere Angaben</h3>
+<h4 id="datumsformat">Datumsformat</h4>
+<p>Portfolio Performance erkennt gängige Arten, ein Datum darzustellen, automatisch. Dazu gehören insbesondere ISO-Datenangaben (z. B. 2025-06-21) und UNIX Timestamps (die Anzahl von Sekunden seit Mitternacht 01.01.1970, UTC). Sollte eine API das Datum auf eine andere Weise darstellen, so kann im Feld "Datumsformat" der korrekte Aufbau angegeben werden. Das deutsche Datumsformat würde z. B. mit "dd.MM.yyyy" beschrieben. Eine vollständige Beschreibung der möglichen Angaben (englisch) gibt es hier: <a href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns">https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns</a>.</p>
+<h4 id="zeitzone">Zeitzone</h4>
+<p>Sollte die API ein Datum relativ zu einer Zeitzone angeben, die anders ist als die Zeitzone der Börse, dann kann es sein, dass die ausgelesenen Kurse aufgrund der Zeitverschiebung dem falschen Tag zugeschrieben werden. Ist dies der Fall, so lässt sich dies über das Feld "Datumszeitzone" korrigieren. Es akzeptiert statische Zeitverschiebungen der Form "+01:00", oder Zeitzonen IDs der Form "Europe/Berlin" (in diesem Fall ändert sich die Zeitverschiebung möglicherweise dynamisch je nach Sommer- oder Normalzeit).</p>
+<h4 id="faktor-fur-kurse">Faktor (für Kurse)</h4>
+<p>Manche APIs geben Kurse möglicherweise in Cent statt in Euro oder Dollar an. In diesem Fall kann in diesem Feld ein Umrechnungsfaktor angegeben werden.</p>
 
 
 
@@ -4114,7 +4205,7 @@ im Dialogfenster unten anzeigen. Die anderen Felder sind nicht zwingend notwendi
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="9. Februar 2025 10:20:04">9. Februar 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="21. Juni 2025 22:37:55">21. Juni 2025</span>
   </span>
 
     
