@@ -121,3 +121,13 @@ Figure: JSON Quote Feed provider parameters. {class=pp-figure}
 
 For most services, one needs to register and obtain an API key, which is a unique identifier that authenticates the user and grants access to the service. While numerous financial services provide seemingly free API keys, their terms of use and long-term commitment often prove inadequate. Portfolio Performance has, for compatibility reasons, maintained several of these services in its list of Quote Feed providers; e.g. Alpha Vantage, eodhd, .... Although once considered excellent solutions, they have changed their offerings and are no longer as useful as free services. In practical terms, only Portfolio Report and Yahoo Finance can be recommended for a typical portfolio.
 
+### Further Fields
+
+#### Date Format
+Portfolio Performance automatically detects common date formats. This includes ISO date format (e.g. 2025-06-21) and UNIX timestamps (seconds since midnight 1970-01-01, UTC). If an API represents dates another way, it can be described using this field. E.g. for a date in month/day/year format, type in "MM/dd/yyyy". For a complete list of all possible identifier characters see [https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns).
+
+#### Date Time Zone
+If the API provides dates relative to a timezone different of the exchange's timezone, then it is possible that quotes are attributed to the wrong date due to time shift. In this case, you can correct this by supplying time zone information manually. This field accepts fixed offsets like "+01:00", or timezone IDs like "Europe/Berlin" (in this case the offset may change dynamically depending on daylight saving time).
+
+#### Factor (for quotes)
+Some APIs may provide quotes in cents/pennies instead of dollars/pounds/euros. Should this be the case, then this field can be used to provide a conversion factor.

@@ -323,3 +323,13 @@ Abbildung: Finale Settings Portfolio Performance Onvista JSON {class="pp-figure"
 ![](images/screenshot_onvista_json_settings_pp_final.png)
 
 
+### Weitere Angaben
+
+#### Datumsformat
+Portfolio Performance erkennt gängige Arten, ein Datum darzustellen, automatisch. Dazu gehören insbesondere ISO-Datenangaben (z. B. 2025-06-21) und UNIX Timestamps (die Anzahl von Sekunden seit Mitternacht 01.01.1970, UTC). Sollte eine API das Datum auf eine andere Weise darstellen, so kann im Feld "Datumsformat" der korrekte Aufbau angegeben werden. Das deutsche Datumsformat würde z. B. mit "dd.MM.yyyy" beschrieben. Eine vollständige Beschreibung der möglichen Angaben (englisch) gibt es hier: [https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns).
+
+#### Zeitzone
+Sollte die API ein Datum relativ zu einer Zeitzone angeben, die anders ist als die Zeitzone der Börse, dann kann es sein, dass die ausgelesenen Kurse aufgrund der Zeitverschiebung dem falschen Tag zugeschrieben werden. Ist dies der Fall, so lässt sich dies über das Feld "Datumszeitzone" korrigieren. Es akzeptiert statische Zeitverschiebungen der Form "+01:00", oder Zeitzonen IDs der Form "Europe/Berlin" (in diesem Fall ändert sich die Zeitverschiebung möglicherweise dynamisch je nach Sommer- oder Normalzeit).
+
+#### Faktor (für Kurse)
+Manche APIs geben Kurse möglicherweise in Cent statt in Euro oder Dollar an. In diesem Fall kann in diesem Feld ein Umrechnungsfaktor angegeben werden.
