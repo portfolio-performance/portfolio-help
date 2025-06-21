@@ -28,7 +28,7 @@ The Reference account of a Security account must be set when creating this accou
 
 ### Offset Account
 
-The offset or counter account, also known as "Gegenkonto" in German, is an essential component when dealing with securities transactions. It acts as the counterpart to the securities account. In other words, for every transaction that occurs in the securities account, an equal and opposite entry is recorded in the offset account.
+The offset or counter account is an essential component when dealing with securities transactions. It acts as the counterpart to the securities account. In other words, for every transaction that occurs in the securities account, an equal and opposite entry is recorded in the offset account.
 
 When you perform actions like buying or selling securities within your securities account, these transactions are balanced by corresponding entries in the offset account. For example, when you buy securities, the purchased securities are added to the securities account, and an equivalent amount of cash is withdrawn from the offset account. This ensures that the overall balance of your accounts remains zero or balanced.
 
