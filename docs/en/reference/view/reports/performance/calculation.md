@@ -18,7 +18,11 @@ The title bar (top right) displays the chosen [Reporting period](../../../../con
     
 Using the `Export Data as CSV` icon, you can save each panel as a CSV file. This is useful for performing calculations, such as comparing `Assets at Start` and `Assets at End`, in a spreadsheet program. The columns in the CSV file match the headings of the panel, such as `Shares`, `Name`, `Symbol`, `Quote`, ....
 
-The `Configure view` icon provides only one option, named `Pre tax`. A check mark is added when selected.
+The `Configure view` icon provides two options :
+
+- `Pre tax` : When selected, the <span style="color:orange">Tax</span> section become null and taxes considererd in <span style="color:orange">Performance neutral Transfer</span> instead. A check mark is added when selected.
+
+- `Cost methodology` : this option impacts the value of <span style="color:orange">Realized</span> and <span style="color:orange">Unrealized Capital Gains</span> based on the cost methodology of your choice. The differences between the two methodologies (FIFO or moving average) is described here : [Acquisition cost methodology](../../../../concepts/cost-methodology.md)
 
 ### Calculation & other detail panels
 
@@ -35,8 +39,8 @@ The calculation panel (see Figure 1) contains the initial and final value of the
 
 - <span style="color:orange">Capital Gains</span>: A capital gain or loss refers to the increase or decrease in the value of a capital asset, such as stocks, bonds, or real estate, between the time it is purchased and the time it is valued *or* sold. In the latter case, the term "Realized Capital Gain" is used. For each security remaining in the portfolio, the absolute gain or loss is calculated. It is important to stress that the gain or loss is expressed in the portfolio's currency; *not* the currency of the asset. If the asset is denominated in a foreign currency, any gain or loss due to fluctuations in the [exchange rate](../../../file/currency.md) is accounted for and indicated in the column `thereof foreign currency gains`. Hovering with the mouse over the value will display a pop-up with a more detailed calculation. For example, take the calculation of `share-3` (see Figure 1 - information pane):
 
-    - Jan 1, 2023: purchase of 5 shares (share-3) at 20 AUD/share = 100 AUD x 0.6372 AUD/EUR (exchange rate on Dec 30, 2022) = 63.72 EUR.
-    - December 31, 2023: valuation of 5 shares at 15 AUD/share = 75 AUD x 0.6149 AUD/EUR (exchange rate on Dec 29, 2023) = 46.12 EUR.
+    - Jan 1, 2023: considering an exchange rate of 1 EUR = 1.5693 AUD (~0.6372 AUD/EUR), purchase of 5 shares (share-3) at 20 AUD/share = 100 AUD x 1/1.5693 = 63.72 EUR.
+    - December 31, 2023: considering an exchange rate of 1 EUR = 1.6263 AUD (~0.6149 AUD/EUR), valuation of 5 shares at 15 AUD/share = 75 AUD x 1/1.6263 = 46.12 EUR.
     - Capital loss = 46.12 - 63.72 = -17.60 EUR.
 
     However, this loss is exacerbated by the change in the exchange rate. The 100 AUD purchased on Jan 1, 2023, were valued at 63.72 EUR, whereas on December 31, 2023, they were valued at only 61.49 EUR. Thus, quote price remaining unchanged, your investment (expressed in EUR) decreased already by -2.23 EUR due to the difference in the exchange rate. The total capital loss of -17.60 EUR is partly caused to the currency exchange loss of -2.23 EUR.
@@ -57,7 +61,7 @@ The calculation panel (see Figure 1) contains the initial and final value of the
 
     ![](images/calculation-taxes-fees.svg)
 
-- <span style="color:orange">Cash Currency Gains</span>: read the following section about Performance neutral transfer first to better understand this topic. Since some deposits and investments are made in a foreign currency, e.g. AUD, cash currency gains or losses could occur. Some of losses are made at sale time. For example,  (see above capital gain). There is also a loss on the remaining deposit since Jan 1, 2023 on the AUD cash account. Since only 100 AUD was needed for the purchase, the remaining 400 AUD remains on the cash account. The loss on this deposit was 400 x (0.6149 - 0.6372) = -8.92 EUR
+- <span style="color:orange">Cash Currency Gains</span>: read the following section about Performance neutral transfer first to better understand this topic. Since some deposits and investments are made in a foreign currency, e.g. AUD, cash currency gains or losses could occur. Some of losses are made at sale time. For example,  (see above capital gain). There is also a loss on the remaining deposit since Jan 1, 2023 on the AUD cash account. Since only 100 AUD was needed for the purchase, the remaining 400 AUD remains on the cash account. The loss on this deposit was 400 x (1/1.6263 - 1/1.5693) = -8.92 EUR
 
 - <span style="color:orange">Performance Neutral Transfers</span>: A transfer refers to money that flows into or out of the portfolio; also named cash flow (CFin and CFout) in our [performance equations](../../../../concepts/performance/index.md).  This could be a deposit or removal (withdrawal) into or out of a deposit account. It could also be a delivery of securities into or out of a securities account. In the example of Figure 1, there is one deposit of 500 AUD at the beginning of 2023. Given an exchange rate of 0.6372 AUD/EUR, this constitutes a neutral transfer of 318.61 EUR.
 
