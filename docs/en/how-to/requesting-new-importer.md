@@ -24,7 +24,8 @@ The following text outlines all the necessary steps. You can also watch the [acc
 
 Collect a **PDF document** of each transaction that you would like to import into your Portfolio Performance portfolio. Ideally, you should provide an example of a **buy**, **sell**, and **dividend** transaction.
 
-> ⚠️ Don't use PDFs that are converted to PDF from a browser or self-scanned paper notes — only the **original documents** from the bank or broker are suitable.
+!!! Failure
+    Don't use PDFs that are converted to PDF from a browser or self-scanned paper notes — only the **original documents** from the bank or broker are suitable.
 
 ---
 
@@ -57,7 +58,8 @@ Replace (anonymise) personal information in the extracted text, such as:
 
 You can do this by double-clicking on a word (e.g., your name). The text will be selected and replaced with random characters.
 
-> 🧠 Personal info may occur at multiple places within the document.
+!!! Warning
+    Personal info may occur at multiple places within the document.
 
 Leave **all other information intact**, especially:
 
@@ -71,7 +73,8 @@ Leave **all other information intact**, especially:
 - ISIN
 - text containing: hyphen (`-`), period (`.`), comma (`,`), colon (`:`), apostrophe (`'`), slash (`/`)
 
-> ❗ Do **not** delete or add anything manually.
+!!! Danger
+    Do **not** delete or add anything manually.
 
 ---
 
@@ -105,9 +108,11 @@ Your extracted PDF debug ...
 ```
 </pre>
 
-<small>ℹ️ Note: Is automatically inserted when extracting</small>
+!!! Note
+    Is automatically inserted when extracting
 
-> 💬 If your transaction is in a foreign language, provide a translation or short explanation of the used terms.
+!!! Tip
+    If your transaction is in a foreign language, provide a translation or short explanation of the used terms.
 
 ---
 
