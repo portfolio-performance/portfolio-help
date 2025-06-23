@@ -50,7 +50,7 @@ Figure: Install update successful {class="pp-figure"}
 ![](images/check-for-update-successful.png)
 
 !!! Tip
-If the update process fails (e.g. due to missing permissions or network issues), you can always download and install the latest version manually from the [official website](https://www.portfolio-performance.info/).
+    If the update process fails (e.g. due to missing permissions or network issues), you can always download and install the latest version manually from the [official website](https://www.portfolio-performance.info/).
 
 ## Automatic Check for Updates
 
@@ -61,7 +61,7 @@ Figure: Automatic update check setting {class="pp-figure"}
 ![](images/automatic-check-for-update.png)
 
 !!! Note
-The automatic check is performed only when the application starts. There is no background download or silent installation.
+    The automatic check is performed only when the application starts. There is no background download or silent installation.
 
-!!! Info
-The update check fetches data from [https://updates.portfolio-performance.info/portfolio](https://updates.portfolio-performance.info/portfolio). If the update check fails, check your internet connection or firewall/proxy settings. Manual updates are always possible via the [download page](https://www.portfolio-performance.info/).
+!!! Info "Technical Info"
+    The update check fetches data from [https://updates.portfolio-performance.info/portfolio](https://updates.portfolio-performance.info/portfolio). If the update check fails, check your internet connection or firewall/proxy settings. Manual updates are always possible via the [download page](https://www.portfolio-performance.info/).
