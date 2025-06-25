@@ -3976,7 +3976,15 @@
 <p><figure class="align-right" style="width:20%" id="_figure-2"><figcaption>Figure 2. Filter menu.</figcaption><img alt="" src="../images/calculation-filter.png"></figure></p>
 <p>The title bar (top right) displays the chosen <a href="../../../../../concepts/reporting-period/">Reporting period</a> (named <code>2023</code>in Figure 1 &amp; 2), and some utility icons. The <code>Filter Data by portfolio and Reference account</code> lets you narrow down the info shown for either the whole portfolio or a specific securities account, alone or with its associated deposit account. By default, it's set to <code>Entire portfolio</code>. You can only pick one filter option. You can also make your own <code>New</code> filter by choosing accounts to combine and giving it a name. They are listed below the defaults. The option <code>Manage...</code> lets you edit or delete custom filters. Just select the filter name and use the right-click menu to add additional accounts or delete the filter. Clicking the triangle reveals the chosen accounts, which you can delete individually. The option <code>remove entries</code> will delete all custom filters.</p>
 <p>Using the <code>Export Data as CSV</code> icon, you can save each panel as a CSV file. This is useful for performing calculations, such as comparing <code>Assets at Start</code> and <code>Assets at End</code>, in a spreadsheet program. The columns in the CSV file match the headings of the panel, such as <code>Shares</code>, <code>Name</code>, <code>Symbol</code>, <code>Quote</code>, ....</p>
-<p>The <code>Configure view</code> icon provides only one option, named <code>Pre tax</code>. A check mark is added when selected.</p>
+<p>The <code>Configure view</code> icon provides two options :</p>
+<ul>
+<li>
+<p><code>Pre tax</code> : When selected, the <span style="color:orange">Tax</span> section become null and taxes considererd in <span style="color:orange">Performance neutral Transfer</span> instead. A check mark is added when selected.</p>
+</li>
+<li>
+<p><code>Cost methodology</code> : this option impacts the value of <span style="color:orange">Realized</span> and <span style="color:orange">Unrealized Capital Gains</span> based on the cost methodology of your choice. The differences between the two methodologies (FIFO or moving average) is described here : <a href="../../../../../concepts/cost-methodology/">Acquisition cost methodology</a></p>
+</li>
+</ul>
 <h3 id="calculation-other-detail-panels">Calculation &amp; other detail panels</h3>
 <p>The calculation panel (see Figure 1) contains the initial and final value of the selected account or portfolio and all the different categories of changes that lead from the former to the latter. You can collapse or expand a single category or all categories at once with the context menu (right-click). A fully collapsed version of this panel is also displayed as a widget in the parent <a href="../">Performance</a> menu. </p>
 <ul>
@@ -3988,11 +3996,11 @@
 <li>
 <p><span style="color:orange">Capital Gains</span>: A capital gain or loss refers to the increase or decrease in the value of a capital asset, such as stocks, bonds, or real estate, between the time it is purchased and the time it is valued <em>or</em> sold. In the latter case, the term "Realized Capital Gain" is used. For each security remaining in the portfolio, the absolute gain or loss is calculated. It is important to stress that the gain or loss is expressed in the portfolio's currency; <em>not</em> the currency of the asset. If the asset is denominated in a foreign currency, any gain or loss due to fluctuations in the <a href="../../../../file/currency/">exchange rate</a> is accounted for and indicated in the column <code>thereof foreign currency gains</code>. Hovering with the mouse over the value will display a pop-up with a more detailed calculation. For example, take the calculation of <code>share-3</code> (see Figure 1 - information pane):</p>
 <ul>
-<li>Jan 1, 2023: purchase of 5 shares (share-3) at 20 AUD/share = 100 AUD x 0.6372 AUD/EUR (exchange rate on Dec 30, 2022) = 63.72 EUR.</li>
-<li>December 31, 2023: valuation of 5 shares at 15 AUD/share = 75 AUD x 0.6149 AUD/EUR (exchange rate on Dec 29, 2023) = 46.12 EUR.</li>
-<li>Capital loss = 63.72 - 46.12 = -17.60 EUR.</li>
+<li>Jan 1, 2023: considering an exchange rate of 1 EUR = 1.5693 AUD (~0.6372 AUD/EUR), purchase of 5 shares (share-3) at 20 AUD/share = 100 AUD x 1/1.5693 = 63.72 EUR.</li>
+<li>December 31, 2023: considering an exchange rate of 1 EUR = 1.6263 AUD (~0.6149 AUD/EUR), valuation of 5 shares at 15 AUD/share = 75 AUD x 1/1.6263 = 46.12 EUR.</li>
+<li>Capital loss = 46.12 - 63.72 = -17.60 EUR.</li>
 </ul>
-<p>However, this loss is exacerbated by the change in the exchange rate. The 100 AUD purchased on Jan 1, 2023, were valued at 63.72 EUR, whereas on December 31, 2023, they were valued at only 61.49 EUR. Thus, quote price remaining unchanged, your investment (expressed in EUR) decreased already by -2.33 EUR due to the difference in the exchange rate. The total capital loss of -17.60 EUR is partly caused to the currency exchange loss of -2.33 EUR.</p>
+<p>However, this loss is exacerbated by the change in the exchange rate. The 100 AUD purchased on Jan 1, 2023, were valued at 63.72 EUR, whereas on December 31, 2023, they were valued at only 61.49 EUR. Thus, quote price remaining unchanged, your investment (expressed in EUR) decreased already by -2.23 EUR due to the difference in the exchange rate. The total capital loss of -17.60 EUR is partly caused to the currency exchange loss of -2.23 EUR.</p>
 </li>
 <li>
 <p><span style="color:orange">Realized Capital Gains</span>: refer to the profit or loss that occurs when an investment is sold for a price different from its original purchase price. The <em>hypothetical</em> capital gains or losses, as described above are then realized. There is only one realized capital gain in Figure 1. On April 12, 2023, 5 shares of <code>share-1</code> are sold for 5 x 22.40 EUR/share = 112 EUR (excluding fees and taxes). At the time of MVB (December 31, 2022), they were valued at 5 x 18.638 EUR/share = 93.19 EUR. The realized capital gain is thus 112 - 93.19 = 18.81 EUR. It's worth noting that <code>share-1</code> was purchased in two batches: 10 shares on January 15, 2021, at 15 EUR/share and 5 shares on January 14, 2022, at 16 EUR/share. Due to the FIFO principle that Portfolio Performance implements, the 5 shares that were sold are those from the first batch of 10. If we had considered a longer reporting period, thus including the initial purchase, the valuation of the sale would have been determined by the purchase price of the initial acquisition, not the second one.</p>
@@ -4007,7 +4015,7 @@
 <p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5. Taxes and Fees panel. </figcaption><img alt="" src="../images/calculation-taxes-fees.svg"></figure></p>
 </li>
 <li>
-<p><span style="color:orange">Cash Currency Gains</span>: read the following section about Performance neutral transfer first to better understand this topic. Since some deposits and investments are made in a foreign currency, e.g. AUD, cash currency gains or losses could occur. Some of losses are made at sale time. For example,  (see above capital gain). There is also a loss on the remaining deposit since Jan 1, 2023 on the AUD cash account. Since only 100 AUD was needed for the purchase, the remaining 400 AUD remains on the cash account. The loss on this deposit was 100 x (0.6372 - 0.6149) = 8.93 EUR</p>
+<p><span style="color:orange">Cash Currency Gains</span>: read the following section about Performance neutral transfer first to better understand this topic. Since some deposits and investments are made in a foreign currency, e.g. AUD, cash currency gains or losses could occur. Some of losses are made at sale time. For example,  (see above capital gain). There is also a loss on the remaining deposit since Jan 1, 2023 on the AUD cash account. Since only 100 AUD was needed for the purchase, the remaining 400 AUD remains on the cash account. The loss on this deposit was 400 x (1/1.6263 - 1/1.5693) = -8.93 EUR</p>
 </li>
 <li>
 <p><span style="color:orange">Performance Neutral Transfers</span>: A transfer refers to money that flows into or out of the portfolio; also named cash flow (CFin and CFout) in our <a href="../../../../../concepts/performance/">performance equations</a>.  This could be a deposit or removal (withdrawal) into or out of a deposit account. It could also be a delivery of securities into or out of a securities account. In the example of Figure 1, there is one deposit of 500 AUD at the beginning of 2023. Given an exchange rate of 0.6372 AUD/EUR, this constitutes a neutral transfer of 318.61 EUR.</p>
@@ -4044,7 +4052,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 2, 2025 07:25:43">May 2, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 25, 2025 08:55:07">June 25, 2025</span>
   </span>
 
     
