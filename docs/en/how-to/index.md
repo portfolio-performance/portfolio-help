@@ -21,7 +21,7 @@ The *how-to* section demonstrates the features and functions of the *Portfolio P
 
 - [Retrieving gold and other precious metals prices](./gold-prices.md): This page discusses various methods to invest in gold, including physical gold, ETFs, and shares of gold mining companies. It explains how to download historical gold prices from websites like Ariva.de, LBMA, and Gold.org.
 
-- [See Future Payments](./see-future.md): Future payments can be entered into portfolio performance but the transactions cannot be seen before the current date. This page shows how using utilities changing the Operating System date to the future allows these payments to be seen.
+- [See Future Payments](./see-future.md): Future payments can be entered into portfolio performance but the transactions cannot be seen before the current date. This page shows a workaround using utilities changing the Operating System date to the future allowing future payments to be seen.
 
 - [User Interface Overview](user-interface.md)
 Describes the elements of the Portfolio Performance user interface, such as the menu bar, sidebar, dual-pane layouts, tables within the main pane, and keyboard shortcuts for essential functions.
