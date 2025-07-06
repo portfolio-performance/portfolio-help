@@ -38,7 +38,7 @@ The `Export as CSV` icon contains one export, named `Trades` which represents th
 - *Exit value*: For open trades, this is the market value, which equals the number of shares multiplied by the current quote price. For example, the current quote price (Oct 11, 2024) of `share-2` is 11.645 EUR/share. The exit value is 5 x 11.645 = 58.23 EUR. For a closed trade, the exit value is the Net Transaction Value of the sale. For instance, `share-2` was sold on April 15, 2024: 3 shares x 12.48 EUR/share minus fees & taxes (4 EUR). The exit value is thus 34.46 EUR.
 - *Exit value (per share)*: Similar to Entry value (per share); as described above.
 - *Profit/Loss*: The profit/loss is the difference between the Exit value and the Entry value. Green numbers indicate a profit, while red numbers indicate a loss.
-- *Gross Profit/Loss*: This equals the value of the previous column plus taxes and fees. Because for closed trades, the taxes and fees of the sell transaction are included in the Gross Profit/Loss column, this field cannot be calculated for the open trades. 
+- *Gross Profit/Loss*: This equals the value of the previous column plus taxes and fees. 
 - *Holding period (days)*: For a single purchase closed trade, it equals the number of days between the End and the start date. For open trades, it is the difference between **today** and the Start date. This calculation does *not* consider weekends, holidays or any other calendar.
 
     !!! Note
