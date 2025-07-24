@@ -148,7 +148,7 @@ Figure: Context menu of Historical Quotes in the information pane.{class=pp-figu
 
         ![](../images/contxt-mnu-all-securities-bottom-panel-hist-quotes-import-html-table.png)
 
-        For example, navigate to [https://www.finanzen.net/historische-kurse/nvidia](https://www.finanzen.net/historische-kurse/nvidia). You could also search for the security at the homepage. Enter a start and end date and a marketplace. NVIDIA is listed on XETRA. Click on Suchen (Search). Right-click the table and select View Page Source in the contaxt menu. Copy and paste everything in the PP.   
+        For example, navigate to [https://www.finanzen.net/historische-kurse/nvidia](https://www.finanzen.net/historische-kurse/nvidia). You could also search for the security at the homepage. Enter a start and end date and a marketplace. NVIDIA is listed on XETRA. Click on Suchen (Search). Right-click the table and select View Page Source in the context menu. Copy and paste everything in the PP.   
     - Create manually: This command is identical with the `Add` option above.
 
     - Export to CSV file ...: This command is identical with the `Export button` (top right).

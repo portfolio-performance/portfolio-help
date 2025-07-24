@@ -100,7 +100,7 @@ The response from the Yahoo server is a lengthy JSON document with all the histo
 
 The JSON response from above is an object, surrounded by { }. It contains meta data of the security, Unix timestamps from the two retrieved dates, and the different quote prices. You need a JSON path to retrieve the different values:
 
-- Error code of the reponse: `$.chart.error`
+- Error code of the response: `$.chart.error`
 - Metadata of the security: `$.chart.result[0].meta`. The result field is an array, even though there is only one element, probably because one can also ask data for multiple securities.
 - Symbol name: `$.chart.result[0].meta.symbol`
 - Requested dates: `$.chart.result[0].timestamp[*]`. The * serves as wildcard, facilitating the retrieval of all values.

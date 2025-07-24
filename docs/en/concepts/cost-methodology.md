@@ -1,7 +1,7 @@
 ---
 title: Cost principle 
 ---
-# Gains and Acquisiton Cost principle : FIFO vs Moving Average
+# Gains and Acquisition Cost principle : FIFO vs Moving Average
 
 To accurately assess realized and unrealized gains after the sale of a security, the sold amount and the remaining market value must be compared against the acquisition cost of the security. While this is straightforward in the case of a single purchase followed by a sale, various definitions and methodologies apply when multiple purchases and sales occur at different prices. Portfolio Performance calculates gains using two methodologies:
 

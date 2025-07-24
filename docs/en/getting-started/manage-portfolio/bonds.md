@@ -50,7 +50,7 @@ A better, albeit somewhat unintuitive, approach is to record the transaction as 
 
     ![](../../images/mnu-transaction-dividend-vw-1.png)
 
-2. The interest payment (112.50 EUR) is reduced by the amount that was already recorded as tax on the purchase date (8.01 EUR). With a `Tansaction > Tax refund` that amount is refunded.
+2. The interest payment (112.50 EUR) is reduced by the amount that was already recorded as tax on the purchase date (8.01 EUR). With a `Transaction > Tax refund` that amount is refunded.
 3. The interest payment is reduced by the amount that was transferred to a separate account. The accrued interest amount then is transferred back to the original deposit account associated with the security.
 
 

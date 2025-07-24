@@ -64,7 +64,7 @@ Figure: Available fields Securities. {class=align-right style="width:30%"}
     - Div%/year: Also named Dividend rate of return per year = dividend payment / share price at time of dividend payment (average per year). The quote price of share-1 on dividend payment date (2022-12-15) was 18.898 EUR/share. The Div%/year = 30/
     - Number of dividend payments: Total number of dividend payments in the reporting period.
     - Date of last dividend payment: Date of the last dividend payment in the reporting period.
-    - Periodicity: The periodicity is estimated, based on the payments during the reporting period. `share-2` has no dividend payments; so the value is `none`. And, because, there is only 1 dividend payment for `share-1`, it is for the time being `unknown`. If there are multiple payments, the periodicity could be `anual`, `semi-anual`, `quarterly` or `monthly`.
+    - Periodicity: The periodicity is estimated, based on the payments during the reporting period. `share-2` has no dividend payments; so the value is `none`. And, because, there is only 1 dividend payment for `share-1`, it is for the time being `unknown`. If there are multiple payments, the periodicity could be `annual`, `semiannual`, `quarterly` or `monthly`.
 - Performance: By default, the TTWROR (cumulative), IRR, and Absolute Performance % is displayed.
     - TTWROR (annualized): see section on Performance calculation.
     - Capital Gains (FIFO, current holdings): For the securities in the portfolio at the end of the reporting period (current holdings) = Market value - Purchase value (FIFO). For `share-1`: 190.06 - 177.50 = 12.56 EUR. 
@@ -85,7 +85,7 @@ Figure: Available fields Securities. {class=align-right style="width:30%"}
     - Unrealized gains: The unrealized gains come from securities that are not yet sold. `share-2` hasn't been changed since the first purchase. So, the realized gains are zero EUR. The share has been purchased on September 2022 for 64 EUR (without taxes and fees). At the end of the reporting period (June 12, 2023) the market value is 11.76 EUR. The unrealized gains are 47.76 EUR. 
     - Currency gains / Unrealized Gains: same as above, except for unrealize gains.
 
-- Risk indicators (see [View > reports > Performance](../performance/index.md) for more info on these conepts):
+- Risk indicators (see [View > reports > Performance](../performance/index.md) for more info on these concepts):
 
     - Maximum Drawdown (MDD): A measure of the maximum loss that an investment has experienced during the reporting period; peak value - lowest value of the security. For share-1, this is 28.98%: 339 EUR on 2023-04-11 147 on 2021-01-30-- see article on [Investopedia](https://www.investopedia.com/terms/m/maximum-drawdown-mdd.asp)
     If an investment never lost a penny, the maximum drawdown would be zero. The worst possible maximum drawdown would be -100%, meaning the investment is completely worthless.

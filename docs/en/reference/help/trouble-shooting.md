@@ -6,7 +6,7 @@ changes:
     author: Nirus2000
     description:
       - Updated images
-      - Add OS informations
+      - Add OS information
 ---
 
 On rare occasions, the Portfolio Performance app may malfunction or crash. Under the **Help** menu, three key options can assist in such cases.
