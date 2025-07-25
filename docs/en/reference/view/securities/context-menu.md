@@ -8,7 +8,7 @@ Figure: Context menu of a selected security.{class=align-right style="width:30%"
 
 The context menu of a security contains several additional options that are not available within the `view menu`. You can access the context menu by selecting a security or a security view (e.g., securities account) and right-clicking. A pop-up, as shown in Figure 1, will be displayed. The menu items Buy, Sell, Dividend, Tax Refund, Delivery (Inbound & Outbound) are already available in the [Transaction menu](../../transaction/index.md). Other items such as Events could be accessed in other views.
 
-## Documented elsewere
+## Documented elsewhere
 
 Several menu items do also appear in other menu's or views and are already documented in other sections of the documentation.
 - Buy, Sell, Dividend, Tax Refund, Delivery (Inbound), Delivery (Outbound) appear and are documented in the [Transaction menu](../../transaction/index.md).
@@ -36,7 +36,7 @@ Figure: Split stock wizard - step 1. {class=pp-figure}
 
 ![](images/split-stock-wizard-step-1.png)
 
-**Step 2** will show you the impact of this stock split on each transaction (buy, sell, delivery). The result is that the number of shares in your possesion will be changed, according to the split ratio. You can skip this step and maintain the transactions unchanged by unchecking the `Convert transactions` option. If there aren't any transactions, this step has no effect.
+**Step 2** will show you the impact of this stock split on each transaction (buy, sell, delivery). The result is that the number of shares in your possession will be changed, according to the split ratio. You can skip this step and maintain the transactions unchanged by unchecking the `Convert transactions` option. If there aren't any transactions, this step has no effect.
 
 As can be seen in Figure 2 and 4, there was only one buy transaction on January 3, 2022 (before the split date) of one share. Thus, from Janary 3, 2022 on, you will have 20 shares in your account, given that the default `Convert transactions` is checked.
 
@@ -64,7 +64,7 @@ Please note the difference between this chart and Figure 2. The rise in 2023 and
 
 ## Event
 
-An event is a kind of note that could be attached to a specific security on a particular date. They can be displayed on the historical price chart of that security. They are automatically inserted to mark occurences of stock split or dividend announcements, but can also be used for important stock news.
+An event is a kind of note that could be attached to a specific security on a particular date. They can be displayed on the historical price chart of that security. They are automatically inserted to mark occurrences of stock split or dividend announcements, but can also be used for important stock news.
 
 Events are generated automatically upon a stock split operation or a dividend announcement. Additionally, you can create your own custom event notes via the context menu of a security (see Figure 1) or the context menu in the Events tab of the information pane.
 

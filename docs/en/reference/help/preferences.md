@@ -82,7 +82,7 @@ Figure: Settings for the language, country, and Java Locale. {class=align-right 
 
 Using the language drop-down menu, you can modify the user-interface language of the Portfolio Performance software, such as the menus and dialogs. Thirteen different languages are available: Deutsch (German), English, Español (Spanish), Français (French), Italiano (Italian), Nederlands (Dutch), Português (Portuguese), čeština (Czech), русский (Russian), Slovenská (Slovak), Polskie (Polish), 中文 (Chinese), and Dansk (Danish).
 
-The selected language will also affect the available country options. For instance, the Dutch language is spoken in seven countries: Aruba, Belgium, Carribean Netherlands, Curraçao, Sint Maarten, and Suriname.
+The selected language will also affect the available country options. For instance, the Dutch language is spoken in seven countries: Aruba, Belgium, Caribbean Netherlands, Curaçao, Netherlands, Sint Maarten, and Suriname.
 
 If English is selected as the UI language, several countries, including an option for Europe and World, can be chosen. The combination of language and country determines the Java Locale. For example, selecting the language "Dutch" and the country "Belgium" will result in the Java locale "nl_BE". Choosing "English" and "Europe" will produce the Java locale "en_150".
 
