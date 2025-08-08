@@ -79,9 +79,6 @@ At the bottom of Figure 3, you can add a personal `note` for this security.
 
     Downloading historical prices for large-cap (big companies) stocks is relatively straightforward. However, obtaining data for less common stocks, mutual funds, bonds, bitcoin, etc., can sometimes be more challenging. We explore these topics in depth in [Downloading Historical Prices](../../how-to/downloading-historical-prices/index.md) in the how-to section.   
 
-    !!! Note
-        An alternative, but convenient method for securities listed on XETRA is to utilize the Portfolio Report website. See [how-to > Using Portfolio Report](../../how-to/downloading-historical-prices/portfolioreport.md) for more info.
-
 - ### **Latest Quote**
 
     The Latest Quote panel is very similar to the Historical Quotes panel. Here, you can configure values for **real-time values** such as Latest Price, Latest Trade, Day's High, Day's Low, and Volume. 

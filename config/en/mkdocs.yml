@@ -207,7 +207,7 @@ nav:
           - Alpha Vantage: how-to/downloading-historical-prices/alpha-vantage.md
           - EODHistorical Data: how-to/downloading-historical-prices/eodhd.md
           - Yahoo Finance: how-to/downloading-historical-prices/yahoo-finance.md
-          - Portfolio Report: how-to/downloading-historical-prices/portfolioreport.md
+          - Portfolio Performance: how-to/downloading-historical-prices/portfolioperformance.md
           - CSV File: how-to/downloading-historical-prices/csv-file.md
           - JSON: how-to/downloading-historical-prices/json.md
           - Table on Website: how-to/downloading-historical-prices/table-website.md

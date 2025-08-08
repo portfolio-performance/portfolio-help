@@ -29,7 +29,7 @@ Figure: Search for suppliers of historical prices (example available at Portfoli
 
 ![](images/testPDF-buy-create-security.png)
 
-In case of a new security, a `Search for suppliers of historical prices` box is displayed. If the security is listed on [Portfolio Report](../../../how-to/downloading-historical-prices/portfolioreport.md), then the historical prices could be automatically added. Otherwise, the security is created, but you will need to manually edit the data source to [download the historical prices](../../../how-to/downloading-historical-prices/index.md).
+In case of a new security, a `Search for suppliers of historical prices` box is displayed. If the security is listed on [Portfolio Performance (built-in)](../../../how-to/downloading-historical-prices/portfolioperformance.md), then the historical prices could be automatically added. Otherwise, the security is created, but you will need to manually edit the data source to [download the historical prices](../../../how-to/downloading-historical-prices/index.md).
 
 <br style="clear:both;">
 

@@ -1,19 +1,6 @@
 ---
 title: Help > Check for Updates ...
 description: Guide on manual and automatic update checks in Portfolio Performance, including update dialogs, relevant links, and settings across platforms.
-changes:
-  - date: 2025-06-14
-    author: Nirus2000
-    description:
-      - Updated images
-      - Fix links
-      - Added detailed instructions on manual and automatic update checks
-      - Added success confirmation after update installation
-  - date: 2025-06-23
-    author: Nirus2000
-    description:
-      - Updated images
-      - Added link to mobile app
 ---
 
 After installation, you can check for updates manually or let the program check automatically on startup.
@@ -22,13 +9,13 @@ After installation, you can check for updates manually or let the program check 
 
 To check manually, select `Help > Check for Updates ...`. A dialog like the one below will briefly appear:
 
-Figure: Checking for updates {class="pp-figure"}
+Figure: Checking for updates. {class="pp-figure"}
 
 ![](images/check-for-updates.png)
 
 If no updates are available, you will see a confirmation that your version is current. Otherwise, an update dialog will appear (the version shown will vary):
 
-Figure: Update available {class="pp-figure"}
+Figure: Update available. {class="pp-figure"}
 
 ![](images/installation-update.png)
 
