@@ -11,7 +11,7 @@ Figure: Main screen after creating a new portfolio.{class=pp-figure}
 
 ![](images/adding-securties-starting-screen.svg)
 
-The :octicons-plus-circle-16:{.green} `Add new investment instrument` button (left and right; see Figure 1)allows you to start adding securities to your portfolio. As you can see in Figure 1, you can add new instruments (stocks, bonds, ...), cryptocurrencies, exchange rates. You can also import securities from a CSV-file or to create a new empty security. This last option allows you to bypass the creation wizard and displays immediately the [Security master data](../reference/file/new.md#security-master-data) dialog box.  You could also use the menu `File > New` menu (see Figure 1).
+The :octicons-plus-circle-16:{.green} `Add new investment instrument` button (left and right; see Figure 1)allows you to start adding securities to your portfolio. As you can see in Figure 1, you can add new instruments (stocks, bonds, ...), cryptocurrencies, exchange rates. You can also import securities from a CSV-file or create a new empty security. This last option allows you to bypass the creation wizard and displays immediately the [Security master data](../reference/file/new.md#security-master-data) dialog box.  You could also use the menu `File > New` menu (see Figure 1).
 
 **New instrument creation wizard**
 
@@ -21,12 +21,12 @@ Figure: Searching and adding new securities to the All Securities list.{class=pp
 
 ![](images/adding-securties-new-security.svg)
 
-You can type (part of) the security name in the search box, e.g., *NVID*. Using the buttons `EUR`, `USD`, `Share`, and/or `Cryptocurrency`, you can limit the search to specific categories. After clicking the `Search` button, the list below will be populated with possible target instruments (see Figure 2). As shown in Figure 2, historical prices are provided by sources such as Portfolio Report and Yahoo, covering many stock markets. The next button allows you to view the actual historical prices.
-
-After selecting the appropriate security (and stock market), click the `Apply` button to proceed to the next step. Certain information, such as the name, symbol, and historical quotes, will be pre-filled based on the selected data source. You can modify all this information, including the name, to suit your needs. Please note that, in Figure 3, the currency for the NVIDIA share is set to EUR, which may not apply to your situation.
+You can type (part of) the security name in the search box, e.g., *NVID*. Using the buttons `EUR`, `USD`, `Share`, and/or `Cryptocurrency`, you can limit the search to specific categories. After clicking the `Search` button, the list above will be populated with possible target instruments (see Figure 2). As shown in Figure 2, historical prices are provided by sources such as the built-in Portfolio Performance data source or Yahoo, covering many stock markets. The next button allows you to view the actual historical prices.
 
 !!! Note
-    More information about downloading historical prices from several providers, including [Portfolio Report](../how-to/downloading-historical-prices/portfolioreport.md), [Yahoo](../how-to/downloading-historical-prices/yahoo-finance.md), [Morningstar](../how-to/downloading-historical-prices/morningstar.md), and many others, can be found in the section [How-to > Downloading Historical Prices](../how-to/downloading-historical-prices/index.md).
+    Most data sources require additional info, such as user credentials. Details about downloading historical prices from various providers, including [Portfolio Performance (built-in)](../how-to/downloading-historical-prices/portfolioperformance.md), [Yahoo](../how-to/downloading-historical-prices/yahoo-finance.md), [Morningstar](../how-to/downloading-historical-prices/morningstar.md), and many others, can be found in the section [How-to > Downloading Historical Prices](../how-to/downloading-historical-prices/index.md).
+
+After selecting the appropriate security (and stock market), click the `Apply` button to proceed to the next step. Certain details, such as the name, symbol, and historical quotes, will be pre-filled based on the selected data source. You can modify all this information, including the name, to suit your needs. Please note that, in Figure 3, the currency for the NVIDIA share is set to EUR, which may not apply to your situation.
 
 Figure: Panel for entering info about the selected security.{class=pp-figure}
 
