@@ -182,6 +182,7 @@ nav:
           - General Data:
             - Settings: reference/view/general-data/settings.md
             - Currencies: reference/view/general-data/currencies.md
+            - Price Update Status: reference/view/general-data/price-update-status.md
       - Transaction Menu:
           - Transaction: reference/transaction/index.md
           - Buy & Sell: reference/transaction/buy-sell.md

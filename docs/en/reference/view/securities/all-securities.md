@@ -130,7 +130,7 @@ Figure: Context menu of Historical Quotes in the information pane.{class=pp-figu
 
 - Quotes: this heading conceals several additional options (see Figure 6). Many of these options can also be executed from another context, e.g. menu.
 
-    - Update quotes online: Shortcut for the [menu Online > Update quotes (selected security)](../../online.md#update-quotes-xxx-instruments-selected).
+    - Update quotes online: Shortcut for the [menu Online > Update quotes (selected security)](../../online.md#update-quotes-no-instrument-selectedxxx-instruments-selected).
     
     - Debug: Show server response: If the security is linked to an online data provider, you can view the HTTP response from that server.
     
