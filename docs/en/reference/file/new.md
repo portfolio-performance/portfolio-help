@@ -1,7 +1,7 @@
 ---
 title: File > New
 ---
-# File &#10095; New
+# File > New
 
 With the `File > New` menu you can create the different assets Portfolio Performance can manage.
 
@@ -15,21 +15,39 @@ The option `File > New > File` initiates a wizard for creating a new portfolio. 
 
 ## Security
 
-The menu option `File > New > Security` is self-explaining: it allows you to create a new security. This can also be done at other locations within the UI; for example as part of the portfolio creation wizard (see above), or with the little green icon next to Securities in the sidebar or in the `All Securities`view.
+The menu option `File > New > Security` is self-explaining: it allows you to create a new security. This can also be done at other locations within the UI; for example as part of the portfolio creation wizard (see above), or with the little green icon next to Securities in the sidebar :octicons-plus-circle-16:{.green} or in the `All Securities`view.
 
 Figure: File > New > Security menu.{class=pp-figure}
 
-![](./images/mnu-file-new-security.png)
+![](images/mnu-file-new-instrument.png)
 
-You can either choose to create a new empty instrument (e.g. security) or to search for an existing one.  You can type (part of) the security name in the search box. Choosing from the drop-down box `All`, you can search for shares or bonds or both. After clicking the Search button, the list below will be populated with possible target instruments. The following fields are displayed for each instrument and will be used upon selecting the security: `Name`, `Symbol`, `ISIN`, `WKN`, `Type`, `Exchange`, `Currency`, and `Source` (see [Basic concepts > Portfolio Performance terminology](../../concepts/portfolio-performance-terminology.md) for a definition of each term).
+You can either create a new empty instrument (bottom left) or search for an existing one.  
+Type (part of) the security name in the search box (e.g. `NVI`) and click on `Search`.  
+Note that the search term is case-insensitive. All instruments containing the search term will be returned (e.g. Veolia eNVIronment).  
 
- Once the correct security has been selected, proceed to the next step by clicking on the Apply button. Some information such as name, symbol and historical quotes will already be filled in, based on the selected data source. You should always check the info, especially the stock market. All the info can be changed; even the name. Alternatively, one may initiate the process with an empty security (see Figure 3) and manually input the required information.
+With the buttons `EUR`, `USD`, `Share`, `Cryptocurrency` or `Commodity`, you can narrow the search results to instruments in the specified currency or type. If multiple result pages are available (e.g. 1/20), you can flip through the results with the `>` or `<` buttons (see Figure 2).  
 
- Figure: Input panel for the creation of a security.{class=pp-figure}
+The following fields are displayed for each instrument:
 
- ![](./images/securities-master-data.svg)
+- name of the instrument, e;g. NVIDIA CORP  
+- type (e.g. share, Exchange-Traded Product (ETP) such as Exchange-Traded Funds (ETF), or commodity such as energy or metals)  
+- the currencies in which the instrument is traded  
+- the ISIN number of the instrument  
+- the providerof the historical prices (CoinGecko, Yahoo Finance, or the built-in Portfolio Performance data source)  
 
- While only the `name` is obligatory, there are several other fields that need attention. They are grouped into 5 sub panels, marked with a yellow line in Figure 3.
+See [Basic concepts > Portfolio Performance terminology](../../concepts/portfolio-performance-terminology.md) for a definition of each term.  
+
+After selecting an instrument, the `Next` button becomes available, allowing you to select the specific exchange (London Stock Exchange (LSE), Deutsche Börse (XETRA), NASDAQ, etc.). Clicking `Next` will show the historical prices of the last three months for verification. In case of a wrong selection, you can always go back one step. Clicking `Apply` will create the instrument with all available historical prices.  
+
+Some information, such as name, currency, symbol, and historical quotes, will already be filled in based on the selected data source. You should always verify this information, especially the stock exchange. All details can be changed — even the name.  
+
+Alternatively, you may start with an empty security (see Figure 3) and manually enter the required information.
+
+Figure: Input panel for the creation of a security.{class=pp-figure}
+
+![](./images/securities-master-data.svg)
+
+While only the `name` is obligatory, there are several other fields that need attention. They are grouped into 5 sub panels, marked with a yellow line in Figure 3.
  
  - ### **Security Master Data**
     
