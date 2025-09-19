@@ -2564,6 +2564,8 @@
       
         
       
+        
+      
     
     
     
@@ -2636,6 +2638,29 @@
   
   <span class="md-ellipsis">
     Currencies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../view/general-data/price-update-status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Price Update Status
     
   </span>
   
@@ -2974,9 +2999,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#update-quotes-xxx-instruments-selected" class="md-nav__link">
+  <a href="#update-quotes-only-held-securities" class="md-nav__link">
     <span class="md-ellipsis">
-      Update quotes (xxx instruments selected)
+      Update quotes (only held securities)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-quotes-no-instrument-selectedxxx-instruments-selected" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update quotes (no instrument selected/xxx instruments selected)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-quotes-watchlist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update quotes (Watchlist)
     </span>
   </a>
   
@@ -3924,9 +3967,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#update-quotes-xxx-instruments-selected" class="md-nav__link">
+  <a href="#update-quotes-only-held-securities" class="md-nav__link">
     <span class="md-ellipsis">
-      Update quotes (xxx instruments selected)
+      Update quotes (only held securities)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-quotes-no-instrument-selectedxxx-instruments-selected" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update quotes (no instrument selected/xxx instruments selected)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-quotes-watchlist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update quotes (Watchlist)
     </span>
   </a>
   
@@ -3959,17 +4020,24 @@
   <h1>Online Menu</h1>
 
 <p>To assess the performance of your portfolio, it's essential to have historical prices or quotes for all securities. You can input these manually or, more conveniently, obtain them through a Quote Feed. This could be in the form of a table on a website or another online data source. With the menu <code>Online</code> these historical prices could be updated.</p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Menu Online.</figcaption><img alt="" src="../mnu-online.png"></figure></p>
 <h2 id="update-quotes">Update quotes</h2>
 <p>For all securities that are connected to an online quote feed provider, this command will trigger a request to the online service for the latest quotes ranging from the first historical quote to the present day.</p>
 <p>Quotes that were previously downloaded but subsequently deleted will be reinstated. However, quotes that have been manually altered after online download or those in the historical prices table that are not available online (e.g., quotes in the distant past) will remain unchanged during this operation.</p>
 <p>A message <code>xxx operations remaining</code> will appear briefly in the left bottom corner of the window, indicating the progress of the updating process. This process is conducted in the background and does not affect other operations.</p>
+<p>If you want more details about the updating process, there is a special <a href="../view/general-data/price-update-status/">Price Update Status</a> view available for inspection.</p>
 <h2 id="update-quotes-only-active-securities">Update quotes (only active securities)</h2>
-<p>Securities could be set to active or inactive in the Security Master Data tab of the Securities Attributes panel.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Inactive setting in the Security Master Data tab.</figcaption><img alt="" src="../file/images/securities-master-data.svg"></figure></p>
-<p>This command will update only the active securities.</p>
-<h2 id="update-quotes-xxx-instruments-selected">Update quotes (xxx instruments selected)</h2>
+<p>Securities could be set to active or inactive in the Security Master Data tab of the Securities Attributes panel (see Figure 2, near the bottom).</p>
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Inactive setting in the Security Master Data tab.</figcaption><img alt="" src="../file/images/securities-master-data.svg"></figure></p>
+<p>This command will update only the securities, with the option <code>Inactive</code>, turned off.</p>
+<h2 id="update-quotes-only-held-securities">Update quotes (only held securities)</h2>
+<p>With this menu, you can restrict price updates to securities you actually possess (hold) or those added to a watchlist (i.e. <em>without</em> recorded purchases).</p>
+<h2 id="update-quotes-no-instrument-selectedxxx-instruments-selected">Update quotes (no instrument selected/xxx instruments selected)</h2>
 <p>In a table view such as All Securities, one can select one or more securities. For a consecutive selection, click the first row, press Shift, and click the last row. For a non-consecutive selection, use the Ctrl key.</p>
-<p>The menu will display an indication of the number of selected securities.</p>
+<p>The menu will display an indication (xxx) of the number of selected securities. Only those securities will be updated.</p>
+<h2 id="update-quotes-watchlist">Update quotes (Watchlist)</h2>
+<p>A <a href="../file/new/#watchlist">watchlist</a> is a manually created group of
+securities. In Figure 1, two watchlists have been set up (named <code>Indices</code> and <code>Asia</code>). With this menu, you can update the historical prices for the securities in these watchlists only.</p>
 
 
 
@@ -3990,7 +4058,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 9, 2025 10:20:04">February 9, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 19, 2025 21:21:52">September 19, 2025</span>
   </span>
 
     
