@@ -19,9 +19,9 @@ Suppose you intend to acquire NVIDIA shares. *Before* proceeding with the purcha
 
 Figure: Searching and adding new securities to the All Securities list.{class=pp-figure}
 
-![](images/adding-securties-new-security.svg)
+![](../reference/file/images/mnu-file-new-instrument.png)
 
-You can type (part of) the security name in the search box, e.g., *NVID*. Using the buttons `EUR`, `USD`, `Share`, and/or `Cryptocurrency`, you can limit the search to specific categories. After clicking the `Search` button, the list above will be populated with possible target instruments (see Figure 2). As shown in Figure 2, historical prices are provided by sources such as the built-in Portfolio Performance data source or Yahoo, covering many stock markets. The next button allows you to view the actual historical prices.
+You can type (part of) the security name in the search box, e.g., *NVI*. Using the buttons `EUR`, `USD`, `Share`, `Cryptocurrency`, `Commodity`, and/or `Provider` you can limit the search to specific categories. After clicking the `Search` button, the list above will be populated with possible target instruments (see Figure 2). As shown in Figure 2, historical prices are provided by sources such as the built-in Portfolio Performance data source or Yahoo, covering many stock markets. The next button allows you to view the actual historical prices.
 
 !!! Note
     Most data sources require additional info, such as user credentials. Details about downloading historical prices from various providers, including [Portfolio Performance (built-in)](../how-to/downloading-historical-prices/portfolioperformance.md), [Yahoo](../how-to/downloading-historical-prices/yahoo-finance.md), [Morningstar](../how-to/downloading-historical-prices/morningstar.md), and many others, can be found in the section [How-to > Downloading Historical Prices](../how-to/downloading-historical-prices/index.md).
