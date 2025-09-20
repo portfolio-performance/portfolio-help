@@ -26,7 +26,7 @@
     
     
       
-        <title>Preferences - Portfolio Performance Manual</title>
+        <title>Settings/Preferences - Portfolio Performance Manual</title>
       
     
     
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Preferences
+              Settings/Preferences
             
           </span>
         </div>
@@ -2963,6 +2963,12 @@
     
       
         
+          
+        
+      
+        
+      
+        
       
         
       
@@ -2986,25 +2992,57 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
-    Help Menu
+    Help & Application Menu
     
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_6">
             <span class="md-nav__icon md-icon"></span>
-            Help Menu
+            Help & Application Menu
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../welcome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3048,7 +3086,7 @@
   
   
   <span class="md-ellipsis">
-    Preferences
+    Settings/Preferences
     
   </span>
   
@@ -3061,7 +3099,7 @@
   
   
   <span class="md-ellipsis">
-    Preferences
+    Settings/Preferences
     
   </span>
   
@@ -3090,6 +3128,15 @@
   
     <nav class="md-nav" aria-label="General">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-quotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update Quotes
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#presets" class="md-nav__link">
@@ -3178,6 +3225,15 @@
   <a href="#proxy" class="md-nav__link">
     <span class="md-ellipsis">
       Proxy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experimental-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Experimental features
     </span>
   </a>
   
@@ -4025,6 +4081,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#update-quotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update Quotes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#presets" class="md-nav__link">
     <span class="md-ellipsis">
       Presets
@@ -4117,6 +4182,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#experimental-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Experimental features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#updates" class="md-nav__link">
     <span class="md-ellipsis">
       Updates
@@ -4149,47 +4223,36 @@
   
 
 
-  <h1>Preferences</h1>
+  <h1>Settings/Preferences</h1>
 
-<p>There are two distinct sections within the Portfolio Performance software where you can customize the User Interface (UI) and the overall behavior of the program: the <code>View &gt; Settings</code> menu and the <code>Help &gt; Preferences</code> menu (Windows) or the <code>Portfolio Performance &gt; Settings</code> app menu (Mac).</p>
+<p>There are two distinct sections within the Portfolio Performance software where you can customize the User Interface (UI) and the overall behavior of the program: (1) the <code>View &gt; Settings</code> menu and (2) the <code>Help &gt; Preferences</code> menu (Windows) or the <code>Portfolio Performance &gt; Settings</code> menu (Mac). </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The menu bar on Windows and Mac differs slightly. On macOS, the menu bar is always located at the very top of the screen. Additionally, Mac programs have two extra menus: the Apple menu () at the top left and the app menu (e.g., <code>Portfolio Performance</code>), which appears as the second menu from the left. The app menu typically contains options such as settings, check for updates, services, and options to hide or quit the program.</p>
+<p>Note that on Windows the option is called <code>Preferences</code> and is located in the <code>Help</code> menu. On macOS, it is called <code>Settings</code> and is located in the Application menu. The menu bar on Windows and Mac differs slightly. On macOS, the menu bar is always located at the very top of the screen. Additionally, Mac programs have two extra menus: the Apple menu () at the top left and the application menu (e.g., <code>Portfolio Performance</code>), which appears as the second menu from the left.</p>
 </div>
 <p><figure class="align-right" style="width:50%" id="_figure-1"><figcaption>Figure 1. The General option of the menu of View &gt; Settings. </figcaption><img alt="" src="../images/settings-general.png"></figure></p>
-<p>The preference settings have system-wide implications and will be applied to all portfolios managed by PP. The Settings window features a sidebar, as illustrated in Figure 1, which is further divided into six submenus: <code>General</code>, <code>Presentation</code>, <code>Calendar</code>, <code>API Keys</code>, <code>Proxy</code>, and <code>Updates</code>. </p>
+<p>The <code>Settings</code>/<code>Preferences</code> from the Application menu (macOS) or Help menu (Windows) have system-wide implications and are applied to all portfolios managed by Portfolio Performance. In contrast, the <code>Settings</code> from the View menu only affect the portfolio in which they were made.</p>
+<p>The global Settings window features a left sidebar, as illustrated in Figure 1, which is further divided into seven submenus: <code>General</code>, <code>Presentation</code>, <code>Calendar</code>, <code>API Keys</code>, <code>Proxy</code>, <code>Experimental Features</code>, and <code>Updates</code>. </p>
 <h2 id="general">General</h2>
-<p>By selecting the <code>General</code> menu item in the sidebar of the <code>Settings dialog box</code> (see Figure 1),  you will be presented with four options: </p>
-<p><br style="clear:both;"></p>
+<p>By selecting the <code>General</code> menu item in the sidebar of the <code>Settings dialog box</code> (see Figure 1),  you will be presented with two options: </p>
 <ul>
 <li>
-<p><code>Automatically update quotes after opening a file</code>: Each security can have an external data source assigned for <a href="../../../how-to/downloading-historical-prices/">downloading historical quotes</a>. You can start the download process manually through the <a href="../../online/">Online menu</a> or enable the option to automatically download historical quotes upon opening the portfolio.</p>
-</li>
-<li>
-<p><code>Store Gui settings next to Portfolio Performance file</code>: The Graphical User Interface (GUI) settings influence several aspects of the look and feel of the Portfolio Performance program such as the width of columns or size of windows (e.g. main pane vs information pane) and others. These settings are stored in a separate file. This file is located:</p>
-<ul>
-<li>
-<p>In the same folder as the portfolio file (option is checked). The name of the file is <span style="font-variant: small-caps;">[name-of-portfolio].settings</span>; e.g. <code>demo-portfolio-03.settings</code>.</p>
-</li>
-<li>
-<p>If the option is unchecked, then the settings file is located in a subfolder of the workspace folder of the Portfolio Performance application. The name is a unique random string with the extension "txt", e.g.<code>prf_c4c742f0f7312d48355beadb57dc4a09.txt</code>. This file is invisible by default. The location of the workspace folder is:</p>
-<ul>
-<li>macOS: <code>~/Library/Application Support/name.abuchen.portfolio.product/workspace</code></li>
-<li>Windows: <code>%LOCALAPPDATA%\PortfolioPerformance\workspace</code></li>
-<li>Linux: <code>~/. PortfolioPerformance/workspace</code></li>
-</ul>
-</li>
-</ul>
-<p>You need to search in the subfolder: <code>.metadata\.plugins\name.abuchen.portfolio.ui</code>.</p>
+<p><code>Store Gui settings next to Portfolio Performance file</code>: The Graphical User Interface (GUI) settings such as the width of columns or size of windows are stored in a separate file. This file is located (1) in the same folder as the portfolio file (if the option is checked). The name of the file is <span style="font-variant: small-caps;">[name-of-portfolio].settings</span>; e.g. <code>demo-portfolio-03.settings</code>. Or (2), if the option is unchecked, in a subfolder of the workspace folder of the Portfolio Performance application. The name is a unique random string with the extension "txt", e.g.<code>prf_c4c742f0f7312d48355beadb57dc4a09.txt</code>. This file is invisible by default. You find the file in a subfolder <code>.metadata\.plugins\name.abuchen.portfolio.ui</code> of the workspace folder:</p>
+<div class="highlight"><pre><span></span><code>- macOS: `~/Library/Application Support/name.abuchen.portfolio.product/workspace`
+- Windows: `%LOCALAPPDATA%\PortfolioPerformance\workspace`
+- Linux: `~/. PortfolioPerformance/workspace`
+</code></pre></div>
 <p>The location of your settings file is critical when transferring your portfolio to another computer. If the settings file is stored adjacent to the source portfolio file, the process is simplified; you only need to copy both files to the new location. However, if the setting files is stored within the workspace folder, it will not be automatically regenerated when installing the Portfolio Performance application on the new computer. In this case, you must manually copy the file from the old computer and paste it into the corresponding location on the new computer to ensure proper configuration.</p>
-</li>
-<li>
-<p><code>Enable experimental features</code>: This feature is only intended for developers or "bold" users who wish to test out new experimental features, such as a new file format</p>
 </li>
 <li>
 <p><code>SWTChart library for pie charts</code>: In certain operating systems, such as Linux, enabling this option is required to accurately display pie charts.</p>
 </li>
 </ul>
+<h3 id="update-quotes">Update Quotes</h3>
+<p><code>Automatically update quotes after opening a file</code>: Each security can have an external data source assigned for <a href="../../../how-to/downloading-historical-prices/">downloading historical quotes</a>. You can start the download process manually through the <a href="../../online/">Online menu</a> or enable the option to automatically download historical quotes upon opening the portfolio.</p>
+<p><code>Update security prices periodically</code>: if set, the latest price will be downloaded every 30 minutes and the older historical prices every 6 hours. These values are hard-coded (see source code at 
+ module name.abuchen.portfolio.ui/src/name/abuchen/portfolio/ui/editor/ClientInput.java)</p>
+<p><code>Update mode</code>: To speed up the update process, you can limit the number of securities that need to be updated. Options include all active securities (where the <code>Active</code> attribute is set) or all securities that are purchased (held). If you have defined <a href="../../file/new/#watchlist">watchlists</a> in your portfolio, you can also limit the update to the securities in a specific watchlist.</p>
 <h3 id="presets">Presets</h3>
 <p>There is only one preset to configure, which is determining the time value for newly entered data, such as the time of a buying transaction. The default setting is <code>Start of day</code> (= <code>00:00</code>). Alternatively, you can select <code>Current time</code>, which will use the time from your computer clock for new entries.</p>
 <h3 id="backups">Backups</h3>
@@ -4258,7 +4321,9 @@
 <p>An API, or Application Programming Interface, is a set of rules and protocols that allows different software applications to communicate with each other. An API key is a unique identifier used to authenticate a user to an application programming interface (API). API keys are used to track and control how the API is being used, prevent abuse, and provide access to specific services or data; see <a href="../../../how-to/downloading-historical-prices/">downloading historical prices</a> for a few examples.</p>
 <p>For example, Alpha Vantage is a popular API that provides access to financial data. To use the Alpha Vantage API, you first need to sign up on their website and obtain an API key. Then, you can issue an HTTP request such as <code>https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&amp;symbol=AAPL&amp;apikey=your_api_key</code>. To avoid having to enter your API key repeatedly, you can save it in the Settings section.</p>
 <h2 id="proxy">Proxy</h2>
-<p>Downloading historical prices requires accessing an external web server such as Yahoo Finance. Using a proxy server can hide your IP address, making your online activity more anonymous. In a corporate environment, proxies are often used to enforce internet usage policies, monitor employee activity, and ensure compliance with regulatory requirements.  </p>
+<p>Downloading historical prices requires accessing an external web server such as Yahoo Finance. Using a proxy server can hide your IP address, making your online activity more anonymous. In a corporate environment, proxies are often used to enforce internet usage policies, monitor employee activity, and ensure compliance with regulatory requirements.</p>
+<h2 id="experimental-features">Experimental features</h2>
+<p><code>Enable experimental features</code>: This feature is only intended for developers or "bold" users who wish to test out new experimental features, such as a new file format</p>
 <h2 id="updates">Updates</h2>
 <p>Portfolio Performance is regularly maintained and updated. To manually check for updates, you can visit the <a href="https://www.portfolio-performance.info/en/">homepage</a>. The version number (e.g., 0.74.0) is displayed above the download links. Additionally, you can find the <a href="https://github.com/portfolio-performance/portfolio">latest release</a> on GitHub.</p>
 <p>By enabling the <code>Check for updates on Start</code> option in the Settings section, Portfolio Performance will automatically check, download, and install the latest version (if necessary) upon launch. The update process is carried out from the URL <code>https://updates.portfolio-performance.info/portfolio</code>.</p>
@@ -4283,7 +4348,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 25, 2025 14:55:41">July 25, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 20, 2025 21:58:20">September 20, 2025</span>
   </span>
 
     
