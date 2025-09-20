@@ -98,9 +98,10 @@ View
 │       ├── Payments
 │       └── Trades
 ├── Taxonomies
-├── General Data
-├── ├── Currencies
-└── ├──Settings
+└── General Data
+    ├── Currencies
+    ├── Settings
+    └── Price Update Status
 ```
 
 ```
@@ -126,6 +127,7 @@ Transaction
 Online
 ├── Update Quotes ... Ctrl+U, K
 ├── Update Quotes (only active securities) ... Ctrl+U, A
+├── Update Quotes (only held securities) ... Ctrl+U, H
 └── Update Quotes (selected security) ... Ctrl+U, T
 ```
 
