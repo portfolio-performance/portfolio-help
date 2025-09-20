@@ -193,9 +193,11 @@ nav:
           - Interest & Interest charge: reference/transaction/interest.md
           - Fees & taxes: reference/transaction/fees-taxes.md
       - Online Menu: reference/online.md
-      - Help Menu:
+      - Help & Application Menu:
+          - Help & Application: reference/help/index.md
+          - Welcome: reference/help/welcome.md
           - About Portfolio Performance: reference/help/about.md
-          - Preferences : reference/help/preferences.md
+          - Settings/Preferences : reference/help/preferences.md
           - Check for Updates: reference/help/check-updates.md
           - Join translation teams: reference/help/join-translation-teams.md
           - Trouble-shooting: reference/help/trouble-shooting.md

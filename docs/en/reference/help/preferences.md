@@ -1,42 +1,42 @@
 ---
-title: Preferences
+title: Settings/Preferences
 ---
-There are two distinct sections within the Portfolio Performance software where you can customize the User Interface (UI) and the overall behavior of the program: the `View > Settings` menu and the `Help > Preferences` menu (Windows) or the `Portfolio Performance > Settings` app menu (Mac).
+There are two distinct sections within the Portfolio Performance software where you can customize the User Interface (UI) and the overall behavior of the program: (1) the `View > Settings` menu and (2) the `Help > Preferences` menu (Windows) or the `Portfolio Performance > Settings` menu (Mac). 
 
 !!! Note
-    The menu bar on Windows and Mac differs slightly. On macOS, the menu bar is always located at the very top of the screen. Additionally, Mac programs have two extra menus: the Apple menu () at the top left and the app menu (e.g., `Portfolio Performance`), which appears as the second menu from the left. The app menu typically contains options such as settings, check for updates, services, and options to hide or quit the program.
+    Note that on Windows the option is called `Preferences` and is located in the `Help` menu. On macOS, it is called `Settings` and is located in the Application menu. The menu bar on Windows and Mac differs slightly. On macOS, the menu bar is always located at the very top of the screen. Additionally, Mac programs have two extra menus: the Apple menu () at the top left and the application menu (e.g., `Portfolio Performance`), which appears as the second menu from the left.
 
 Figure: The General option of the menu of View > Settings. {class=align-right style="width:50%"}
 
 ![](images/settings-general.png)
 
- The preference settings have system-wide implications and will be applied to all portfolios managed by PP. The Settings window features a sidebar, as illustrated in Figure 1, which is further divided into six submenus: `General`, `Presentation`, `Calendar`, `API Keys`, `Proxy`, and `Updates`. 
+The `Settings`/`Preferences` from the Application menu (macOS) or Help menu (Windows) have system-wide implications and are applied to all portfolios managed by Portfolio Performance. In contrast, the `Settings` from the View menu only affect the portfolio in which they were made.
+
+The global Settings window features a left sidebar, as illustrated in Figure 1, which is further divided into seven submenus: `General`, `Presentation`, `Calendar`, `API Keys`, `Proxy`, `Experimental Features`, and `Updates`. 
 
 ## General
 
-By selecting the `General` menu item in the sidebar of the `Settings dialog box` (see Figure 1),  you will be presented with four options: 
+By selecting the `General` menu item in the sidebar of the `Settings dialog box` (see Figure 1),  you will be presented with two options: 
 
-<br style="clear:both;">
-
-- `Automatically update quotes after opening a file`: Each security can have an external data source assigned for [downloading historical quotes](../../how-to/downloading-historical-prices/index.md). You can start the download process manually through the [Online menu](../online.md) or enable the option to automatically download historical quotes upon opening the portfolio.
-
-- `Store Gui settings next to Portfolio Performance file`: The Graphical User Interface (GUI) settings influence several aspects of the look and feel of the Portfolio Performance program such as the width of columns or size of windows (e.g. main pane vs information pane) and others. These settings are stored in a separate file. This file is located:
-
-    - In the same folder as the portfolio file (option is checked). The name of the file is <span style="font-variant: small-caps;">[name-of-portfolio].settings</span>; e.g. `demo-portfolio-03.settings`.
-    
-    - If the option is unchecked, then the settings file is located in a subfolder of the workspace folder of the Portfolio Performance application. The name is a unique random string with the extension "txt", e.g.`prf_c4c742f0f7312d48355beadb57dc4a09.txt`. This file is invisible by default. The location of the workspace folder is:
+- `Store Gui settings next to Portfolio Performance file`: The Graphical User Interface (GUI) settings such as the width of columns or size of windows are stored in a separate file. This file is located (1) in the same folder as the portfolio file (if the option is checked). The name of the file is <span style="font-variant: small-caps;">[name-of-portfolio].settings</span>; e.g. `demo-portfolio-03.settings`. Or (2), if the option is unchecked, in a subfolder of the workspace folder of the Portfolio Performance application. The name is a unique random string with the extension "txt", e.g.`prf_c4c742f0f7312d48355beadb57dc4a09.txt`. This file is invisible by default. You find the file in a subfolder `.metadata\.plugins\name.abuchen.portfolio.ui` of the workspace folder:
 
         - macOS: `~/Library/Application Support/name.abuchen.portfolio.product/workspace`
         - Windows: `%LOCALAPPDATA%\PortfolioPerformance\workspace`
         - Linux: `~/. PortfolioPerformance/workspace`
 
-    You need to search in the subfolder: `.metadata\.plugins\name.abuchen.portfolio.ui`.
-
     The location of your settings file is critical when transferring your portfolio to another computer. If the settings file is stored adjacent to the source portfolio file, the process is simplified; you only need to copy both files to the new location. However, if the setting files is stored within the workspace folder, it will not be automatically regenerated when installing the Portfolio Performance application on the new computer. In this case, you must manually copy the file from the old computer and paste it into the corresponding location on the new computer to ensure proper configuration.
-    
-- `Enable experimental features`: This feature is only intended for developers or "bold" users who wish to test out new experimental features, such as a new file format
 
 - `SWTChart library for pie charts`: In certain operating systems, such as Linux, enabling this option is required to accurately display pie charts.
+
+### Update Quotes
+
+`Automatically update quotes after opening a file`: Each security can have an external data source assigned for [downloading historical quotes](../../how-to/downloading-historical-prices/index.md). You can start the download process manually through the [Online menu](../online.md) or enable the option to automatically download historical quotes upon opening the portfolio.
+
+`Update security prices periodically`: if set, the latest price will be downloaded every 30 minutes and the older historical prices every 6 hours. These values are hard-coded (see source code at 
+ module name.abuchen.portfolio.ui/src/name/abuchen/portfolio/ui/editor/ClientInput.java)
+
+`Update mode`: To speed up the update process, you can limit the number of securities that need to be updated. Options include all active securities (where the `Active` attribute is set) or all securities that are purchased (held). If you have defined [watchlists](../file/new.md#watchlist) in your portfolio, you can also limit the update to the securities in a specific watchlist.
+    
 
 ### Presets
 
@@ -129,7 +129,11 @@ For example, Alpha Vantage is a popular API that provides access to financial da
 
 ## Proxy
 
-Downloading historical prices requires accessing an external web server such as Yahoo Finance. Using a proxy server can hide your IP address, making your online activity more anonymous. In a corporate environment, proxies are often used to enforce internet usage policies, monitor employee activity, and ensure compliance with regulatory requirements.  
+Downloading historical prices requires accessing an external web server such as Yahoo Finance. Using a proxy server can hide your IP address, making your online activity more anonymous. In a corporate environment, proxies are often used to enforce internet usage policies, monitor employee activity, and ensure compliance with regulatory requirements.
+
+## Experimental features
+
+`Enable experimental features`: This feature is only intended for developers or "bold" users who wish to test out new experimental features, such as a new file format
 
 ## Updates
 

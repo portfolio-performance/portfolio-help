@@ -1,6 +1,5 @@
 ---
 title: Help > Check for Updates ...
-description: Guide on manual and automatic update checks in Portfolio Performance, including update dialogs, relevant links, and settings across platforms.
 ---
 
 After installation, you can check for updates manually or let the program check automatically on startup.

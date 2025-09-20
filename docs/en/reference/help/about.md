@@ -1,18 +1,5 @@
 ---
 title: Help > About Portfolio Performance
-description: Detailed information about the Portfolio Performance program, including version, platform, Java version, key software components, contributors, translators, and installation details.
-changes:
-  - date: 2025-05-18
-    author: Nirus2000
-    description:
-      - Updated to version 0.76.2 (May 2025)
-      - Expanded Key Software Components & Libraries section
-      - Updated contributor and translation info
-  - date: 2025-06-14
-    author: Nirus2000
-    description:
-      - Fix headline
-      - Add installation link
 ---
 
 # About Portfolio Performance
