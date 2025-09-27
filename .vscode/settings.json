@@ -1,11 +1,10 @@
 {
    "githubPullRequests.ignoredPullRequestBranches": [
-      "master"
+     "master"
    ],
-   "cSpell.words": [
-      "subperiod",
-      "subperiods",
-      "TTWROR",
-      "TWROR"
-   ]
-}
+    "cSpell.locale": "en-GB",
+    "cSpell.enabled": true,
+    "cSpell.enabledLanguageIds": ["markdown", "plaintext"],
+    "cSpell.words": ["subperiod", "subperiods", "TTWROR", "TWROR"]
+ }
+ 
