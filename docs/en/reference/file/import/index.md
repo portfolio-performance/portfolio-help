@@ -12,4 +12,4 @@ Figure: Menu File > Import.{class=pp-figure}
 
 ![](images/mnu-file-import.png)
 
-
+Bulk import (and export) of classifications ([taxonomies](../../view/taxonomies/index.md)) is supported using a JSON-file, which provides a structured definition of how your financial instruments are grouped and categorised.
