@@ -15,8 +15,11 @@ For a detailed explanation of how cumulative performance is calculated, see the 
 
 The user interface of the Performance Chart is similar to the chart interface of [View > Reports > Statement of Assets > Chart](../statement/statement-chart.md). For example, the context menu is identical. We cover only the differences in this section; see link above for the common features.
 
-The `Configure chart` icon (:gear: top right) provides an additional type of data series, called `Add benchmark ...` (see Figure 3). A benchmark is a security used solely for its historical prices to calculate daily and cumulative performance. Typically, a security with no purchase has a performance of zero. Therefore, a benchmark can be seen as a security with a single share, hypothetically purchased at the start of the reporting period. Naturally, this security does not affect overall portfolio performance.
+With the `Configure chart` icon (:gear: top right), you can add data series to the graph:
 
+- Regular dataseries such as `share-1` as well as more `common` series such as `Entire portfolio`, `Entire portfolio (before taxes)`, or `daily`, `weekly`, `monthly`, ... portfolio performance. The latter represents a daily, monthly, ... bar chart diagram (see Figure 3) of the entire portfolio, displayed as periodic bars.  You can assign different colours to positive and negative performances via the legend’s context menu; e.g. `daily` in Figure 3.  
+- Benchmarks such as share-1 (benchmark) (see Figure 2). A benchmark is a security used solely for its historical prices to calculate daily, monthly, ... and cumulative performance. Typically, a security with no purchase has a performance of zero. Therefore, a benchmark can be seen as a security with a single share, hypothetically purchased at the start of the reporting period. Naturally, this security does not affect overall portfolio performance.
+ 
 The graph in Figure 2 misleadingly suggests a gradual performance increase in the first and second quarters of 2022. Since a line graph connects consecutive (quarterly) data points, it visually implies a continuous change in performance, even though only two data points have been calculated. You can verify this by left-clicking on the chart canvas within a quarter and moving the cursor left or right to change dates. The performance remains unchanged within each quarter.
 
 Figure: Quarterly performance chart of share-1 and its benchmark. {class=pp-figure}
