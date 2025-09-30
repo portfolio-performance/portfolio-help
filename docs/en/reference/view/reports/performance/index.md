@@ -149,9 +149,11 @@ All widgets, except the last three, are single line text widgets.
 
 - *Total*: The market Value of the asset at the end of the reporting period.  The asset and the reporting period can be specified with the context menu.
 
-- *Absolute change*, *Delta (for reporting period)*, *Delta (since first transaction)* : [see above](./index.md#absolute-change) for definition of these terms.
+- *Absolute change*, *Delta (for reporting period)*, *Delta (since first transaction)*: [see above](./index.md#absolute-change) for definition of these terms.
 
-- *Performance-neutral transfers*: these transfers are explained in [View > Reports > Performance > Calculation](./calculation.md#main-pane).
+- *Performance-neutral transfers*: Displays the total of the performance-neutral transfers in the selected holding period; these transfers are explained in [View > Reports > Performance > Calculation](./calculation.md#main-pane).
+
+- *Monthly performance-neutral transfers*: Shows a table listing all performance-neutral transfers. The values are broken down by year and month.
 
 - *Invested Capital (for reporting period)* and *Invested Capital (since first transaction)*: The Invested capital in a portfolio of stocks refers to the total amount of money that has been invested in the portfolio.
 
