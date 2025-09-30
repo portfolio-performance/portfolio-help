@@ -52,3 +52,13 @@ line 1
 line 2
 ```
 to place code-formatted text in multiple lines. Use Alt+255 (Windows) to insert space.
+
+ICONS
+
+:gear:
+:material-calendar-month:
+:material-menu:
+:material-window-maximize:
+:octicons-triangle-down-16:
+:material-layers-triple:
+:octicons-upload-16:
