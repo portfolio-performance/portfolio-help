@@ -5,6 +5,19 @@
     "cSpell.locale": "en-GB",
     "cSpell.enabled": true,
     "cSpell.enabledLanguageIds": ["markdown", "plaintext"],
-    "cSpell.words": ["subperiod", "subperiods", "TTWROR", "TWROR"]
+    "cSpell.words": [
+      "subperiod",
+      "subperiods",
+      "TTWROR",
+      "TWROR"
+    ],
+    "spellright.language": [
+      "en"
+    ],
+    "spellright.documentTypes": [
+      "markdown",
+      "latex",
+      "plaintext"
+    ]
  }
  

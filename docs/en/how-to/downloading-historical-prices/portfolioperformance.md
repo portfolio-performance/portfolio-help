@@ -1,70 +1,62 @@
 ---
-title: Using Portfolio Report
+title: Portfolio Performance (built-in)
+---
+# Portfolio Performance (built-in)
+
+The **Portfolio Performance (built-in)** data source for historical quotes is the easiest to use and the most reliable provider for retrieving historical market data. It covers more than 20 European exchange markets and the major American stock exchanges. The provider is built into the Portfolio Performance application and is free to use.  
+
+To use the built-in provider, you must:
+
+- Create a`Portfolio Performance ID` (only a verifiable e-mail address is required).  
+- Log in to the service and refresh your session approximately every three months.  
+- Set the data source of a security to the built-in provider.  
+
+Please note that the built-in provider is just one of more than 20 data sources available in Portfolio Performance, such as Yahoo Finance, Alpha Vantage, JSON, and others (see [Downloading historical prices](./index.md) for an overview). Therefore, you can use Portfolio Performance without relying on the built-in provider.
+
+1. **Creating a Portfolio Performance ID**
+
+Before using the built-in quote provider, you must register by creating a **free Portfolio Performance ID**. This only needs to be done once. A verified e-mail address is required — meaning you have to enter a verification code sent to that address before proceeding. No additional personal information is requested. The easiest way to register is via the **Settings/Preferences** option in the **Application menu (macOS)** or **Help menu (Windows)**; see Figure 1a.  
+
+Figure: Registering your Portfolio Performance ID.{class=pp-figure}
+
+![]()
+<div class="grid cards" markdown>
+
+- ![](images/settings-api-keys.png){width="400" .center}
+- ![](images/built-in-sign-in.png){width="400" .center}
+- ![](images/built-in-create-account.png){width="400" .center}
+- ![](images/built-in-verify-email.png){width="400" .center}
+
+</div>
+
+Clicking the `Login` button opens the [Registration/Sign-in website](https://accounts.portfolio-performance.info/sign-in) (Figure 1b). Select `Create account`, enter a verifiable e-mail address, obtain the verification code from your e-mail, and paste it as prompted (see Figure 1d).  
+
+Next, set up a password for future logins. You may then close the browser. Your credentials are securely stored on a dedicated identity server. You can unregister at any time by sending an e-mail to [info@portfolio-performance.app](mailto:info@portfolio-performance.app). See the [Privacy Policy](https://www.portfolio-performance.app/privacy-policy) webpage for further details.
+
+
+2. **Logging in to the Service**
+
+Using the same `Settings` panel, you can log in to the service with your Portfolio Performance ID and password.  
+After a successful login, your e-mail address (Portfolio Performance ID) is displayed next to the user field in the Settings panel (see Figure 1a).
+
+The login creates a **refresh token**, which is stored locally in the workspace directory — not in the portfolio XML file.  This login is independent of other logins, such as those used for the forum or for cloud services like OneDrive or Google Drive. The refresh token allows automatic re-authentication whenever historical prices are refreshed. It remains valid for **90 days**, after which you must log in again to renew it.
+
+There is also a separate `Subscription` field. You can subscribe to the service using the same e-mail address as your (paid) mobile app account. The subscription type (e.g. `Premium`) will then appear next to the label.  
+A subscribed user can not only download historical prices but also access delayed quotes, which can be used in the [Latest quote](../../reference/file/new.md#latest-quote) tab of the Security Data panel.
+
 ---
 
-Portfolio Report (PR) is an open-source project that works closely together with the Portfolio Performance (PP) app. Its primary goal is to enhance Portfolio Performance by providing master data for securities, including name, ISIN, WKN, and ticker symbol, as well as historical prices in various currencies.
+3. **Setting the Data Source of a Security to the Built-in Provider**
 
-PR allows you to look up information about securities, such as symbols, industries, and historical prices. Furthermore, it enables the creation of securities within Portfolio Performance from PR and the provision of historical prices for securities that already exist in PP.
+You can assign the built-in data source to a security either via the [New Instrument Creation Wizard](../../getting-started/adding-securities.md) — which handles all steps, including ID creation and login — or manually in the [Historical Quotes](../../reference/file/new.md#historical-quotes) tab of the Security Data panel.
 
-## Looking up information
+- In the [Security Master Data](../../reference/file/new.md#security-master-data) tab of the Security Data panel, enter at least the `ticker symbol` used by your chosen exchange (for example, `AAPL` for Apple Inc. on NASDAQ).  
+- Then, in the `Historical Quotes` tab, set the `Quote feed provider` to `Portfolio Performance (built-in)`.  
+- If multiple exchange markets are available, you can also select the relevant market.  
+  As shown in Figure 2, the built-in provider supports 12 European exchange markets in addition to the American NASDAQ for the `AAPL` ticker symbol.  
 
-When you navigate to the Portfolio Report website [https://www.portfolio-report.net/](https://www.portfolio-report.net/), you will be presented with the following simple but efficient search form (see Figure 1).
+**Figure:** Historical quotes from the built-in provider {class=pp-figure}  
 
-Figure: Portfolio Report website. {class=pp-figure}
+![](images/built-in-historical-quotes-aapl.png)
 
-![](images/portfolio-report-website.png)
-
-In the first box of the search form, you can enter the ISIN, WKN, Symbol, or the full name of the security. Please refer to [Basic concepts > Porfolio Performance terminology](../../concepts/portfolio-performance-terminology.md) for a definition of each term. Note that the use of wildcards, such as 'Amaz*', is not permitted for name searches. On the other hand, one word in the name suffices. For example, searching for `Group` will produce Cimic Group, NN Group, IBI Group, ... Searching for `col` will show Colruyt and Coca Cola Co.
-
-Specifying the security type (share, fund, crypto, or bond) is not necessary, as the default search setting (blank or *) includes all categories.
-
-When you retrieve the historical prices of a security, you have the option to select the currency in which the quotes are displayed with the `Prices` dropdown. Please note that the prices are always retrieved from the XETRA (Frankfurt) exchange market and that this price (in EUR) is converted through the [exchange rates of the ECB](../../reference/view/general-data/currencies.md).
-
-Figure: Search Result{class=pp-figure}
-
-![](images/portfolio-report-search-result.png)
-
-
-## Creating new securities in Portfolio Performance with PR
-
-- Navigate to the [Portfolio Report website](https://www.portfolio-report.net/); start the Portfolio Performance app and, if possible, position both windows side by side on the computer screen, as illustrated in Figure 2.
-- Utilize the Search box located at the top right (refer to Figure 3) to search for the desired security using its name, ISIN, or WKN.
-
-    If the security is in PR's database, the name (e.g *Amazon.com Inc.*), ISIN (*US0231351067*), and eventually WKN are displayed, together with a logo of the security (white arrow on blue background) and some extra information such as the trading market (*XETRA*), the currency (*EUR*), the ticker symbol on the specified trading market (*AMZ*), the country (*United States of America (US)*) and eventually the industry sector of the company. On multiple tabs (1, 2, 3, etc.), you can view the historical prices of the security. By default, only the 10 most recent prices are shown. However, using the drop-down menu on the right, you can adjust the number of prices displayed per page, with options ranging from 10, 30, 100, to 300.
-
-    Only securities that are traded on XETRA (Deutsche Börse) are available within PR. Historical prices, specifically closing prices after the end of trading, are provided. Current prices, which are prices during trading on a marketplace, are not available.
-
-- Drag (= click, hold, and drop) the big blue button `Add to Portfolio Performance` upon the open window of PP. This is -of course- very easy if the two applications are placed next to each other on the screen (see Figure 2). Otherwise, you need to drag the button upon the Portfolio Performance icon in the taskbar.
-
-    Figure: Using Portfolio Report to create a security in Portfolio Performance.{class=pp-figure}
-
-    ![](./images/portfolio-report-drag-drop.svg)
-
-- You can verify the successful addition of the newly created security by checking the master data tab. A message stating `Linked to Portfolio Report` should be visible (see Figure 4). Additionally, on the Historical Quotes tab, the Quote Feed should be populated with the correct information.
-
-    It's important to note that due to the association with PR, the fields `ISIN`, and `WKN` become unmodifiable. If there is a need to update these fields, you must use the "Unlink" button to detach the security. Unfortunately, this also removes the Quote Feed of the Historical Quotes.
-
-    Figure: Master data and historical prices of newly created security. {class=pp-figure}
-
-    ![](./images/portfolio-report-created-security.svg)
-
-## Linking an existing security with PR
-
-It's also possible to link an existing security to PR; in particular to gain access to its quote feed of historical prices.
-
-- Navigate to the [Portfolio Report website](https://www.portfolio-report.net/) and search for the desired security.
-- Copy the URL of the webpage. It should start with `https://www.portfolio-report.net/securities/`, followed by an identifier such as `8761e2dd-873a-4f1c-99c5-65939819eed9`. This is the internal code that PR assigns to this security. You can find this URL in the address bar or at the bottom of the screen when hovering over the big blue button `Add to Portfolio Performance`.
-- In PP, select the desired security in the `All Securities` list; right-click and choose `Link to Portfolio Report`. Additionally, you must manually set  Portfolio Report as the Quote Feed.
-- Securities that no longer exist in Portfolio Report are automatically unlinked.
-
-## Privacy rules
-
-Whenever Portfolio Performance initiates an update, such as through the menu `Online > Update Quotes` a request is sent to the PR website. Portfolio Report only receives information that is technically necessary, including:
-
-- Identification details of the security, the marketplace and, if applicable, the period.
-- The version number of the requesting Portfolio Performance app.
-- The IP address of the requesting device.
-
-This information is temporarily stored in log files on the server. The IP address is stored anonymously. In addition, no storage or evaluation of the data takes place.
-
-The above info is based on a German [article by developer Thomas](https://forum.portfolio-performance.info/t/historische-kurse-von-portfolio-report/8600). The [source code](https://github.com/portfolio-report/pr-www) could be retrieved at Github.
+If you have a paid subscription for the mobile app, you can also specify the `Latest price` provider to download delayed prices. Currently, this option is available only for US securities.

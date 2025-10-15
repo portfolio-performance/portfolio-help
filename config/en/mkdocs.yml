@@ -207,10 +207,10 @@ nav:
       - Copy securities between portfolios: how-to/copy-securities.md
       - Downloading historical prices:
           - Downloading historical prices: how-to/downloading-historical-prices/index.md
+          - Portfolio Performance (built-in): how-to/downloading-historical-prices/portfolioperformance.md
           - Alpha Vantage: how-to/downloading-historical-prices/alpha-vantage.md
           - EODHistorical Data: how-to/downloading-historical-prices/eodhd.md
           - Yahoo Finance: how-to/downloading-historical-prices/yahoo-finance.md
-          - Portfolio Performance: how-to/downloading-historical-prices/portfolioperformance.md
           - CSV File: how-to/downloading-historical-prices/csv-file.md
           - JSON: how-to/downloading-historical-prices/json.md
           - Table on Website: how-to/downloading-historical-prices/table-website.md
