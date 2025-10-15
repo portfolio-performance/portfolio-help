@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://help.portfolio-performance.info/en/how-to/downloading-historical-prices/portfolioperformance/">
       
       
-        <link rel="prev" href="../yahoo-finance/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../csv-file/">
+        <link rel="next" href="../alpha-vantage/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Using Portfolio Report - Portfolio Performance Manual</title>
+        <title>Portfolio Performance (built-in) - Portfolio Performance Manual</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#looking-up-information" class="md-skip">
+        <a href="#portfolio-performance-built-in" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Using Portfolio Report
+              Portfolio Performance (built-in)
             
           </span>
         </div>
@@ -3386,6 +3386,39 @@
                 
   
   
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Portfolio Performance (built-in)
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
@@ -3446,103 +3479,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Portfolio Performance
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Portfolio Performance
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#looking-up-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Looking up information
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-new-securities-in-portfolio-performance-with-pr" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating new securities in Portfolio Performance with PR
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linking-an-existing-security-with-pr" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linking an existing security with PR
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#privacy-rules" class="md-nav__link">
-    <span class="md-ellipsis">
-      Privacy rules
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3970,50 +3906,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#looking-up-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Looking up information
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-new-securities-in-portfolio-performance-with-pr" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating new securities in Portfolio Performance with PR
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linking-an-existing-security-with-pr" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linking an existing security with PR
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#privacy-rules" class="md-nav__link">
-    <span class="md-ellipsis">
-      Privacy rules
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -4037,52 +3931,52 @@
   
 
 
-  <h1>Portfolio Performance</h1>
-
-<p>Portfolio Report (PR) is an open-source project that works closely together with the Portfolio Performance (PP) app. Its primary goal is to enhance Portfolio Performance by providing master data for securities, including name, ISIN, WKN, and ticker symbol, as well as historical prices in various currencies.</p>
-<p>PR allows you to look up information about securities, such as symbols, industries, and historical prices. Furthermore, it enables the creation of securities within Portfolio Performance from PR and the provision of historical prices for securities that already exist in PP.</p>
-<h2 id="looking-up-information">Looking up information</h2>
-<p>When you navigate to the Portfolio Report website <a href="https://www.portfolio-report.net/">https://www.portfolio-report.net/</a>, you will be presented with the following simple but efficient search form (see Figure 1).</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Portfolio Report website. </figcaption><img alt="" src="../images/portfolio-report-website.png"></figure></p>
-<p>In the first box of the search form, you can enter the ISIN, WKN, Symbol, or the full name of the security. Please refer to <a href="../../../concepts/portfolio-performance-terminology/">Basic concepts &gt; Porfolio Performance terminology</a> for a definition of each term. Note that the use of wildcards, such as 'Amaz*', is not permitted for name searches. On the other hand, one word in the name suffices. For example, searching for <code>Group</code> will produce Cimic Group, NN Group, IBI Group, ... Searching for <code>col</code> will show Colruyt and Coca Cola Co.</p>
-<p>Specifying the security type (share, fund, crypto, or bond) is not necessary, as the default search setting (blank or *) includes all categories.</p>
-<p>When you retrieve the historical prices of a security, you have the option to select the currency in which the quotes are displayed with the <code>Prices</code> dropdown. Please note that the prices are always retrieved from the XETRA (Frankfurt) exchange market and that this price (in EUR) is converted through the <a href="../../../reference/view/general-data/currencies/">exchange rates of the ECB</a>.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Search Result</figcaption><img alt="" src="../images/portfolio-report-search-result.png"></figure></p>
-<h2 id="creating-new-securities-in-portfolio-performance-with-pr">Creating new securities in Portfolio Performance with PR</h2>
+<h1 id="portfolio-performance-built-in">Portfolio Performance (built-in)</h1>
+<p>The <strong>Portfolio Performance (built-in)</strong> data source for historical quotes is the easiest to use and the most reliable provider for retrieving historical market data. It covers more than 20 European exchange markets and the major American stock exchanges. The provider is built into the Portfolio Performance application and is free to use.  </p>
+<p>To use the built-in provider, you must:</p>
 <ul>
-<li>Navigate to the <a href="https://www.portfolio-report.net/">Portfolio Report website</a>; start the Portfolio Performance app and, if possible, position both windows side by side on the computer screen, as illustrated in Figure 2.</li>
-<li>
-<p>Utilize the Search box located at the top right (refer to Figure 3) to search for the desired security using its name, ISIN, or WKN.</p>
-<p>If the security is in PR's database, the name (e.g <em>Amazon.com Inc.</em>), ISIN (<em>US0231351067</em>), and eventually WKN are displayed, together with a logo of the security (white arrow on blue background) and some extra information such as the trading market (<em>XETRA</em>), the currency (<em>EUR</em>), the ticker symbol on the specified trading market (<em>AMZ</em>), the country (<em>United States of America (US)</em>) and eventually the industry sector of the company. On multiple tabs (1, 2, 3, etc.), you can view the historical prices of the security. By default, only the 10 most recent prices are shown. However, using the drop-down menu on the right, you can adjust the number of prices displayed per page, with options ranging from 10, 30, 100, to 300.</p>
-<p>Only securities that are traded on XETRA (Deutsche Börse) are available within PR. Historical prices, specifically closing prices after the end of trading, are provided. Current prices, which are prices during trading on a marketplace, are not available.</p>
-</li>
-<li>
-<p>Drag (= click, hold, and drop) the big blue button <code>Add to Portfolio Performance</code> upon the open window of PP. This is -of course- very easy if the two applications are placed next to each other on the screen (see Figure 2). Otherwise, you need to drag the button upon the Portfolio Performance icon in the taskbar.</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Using Portfolio Report to create a security in Portfolio Performance.</figcaption><img alt="" src="../images/portfolio-report-drag-drop.svg"></figure></p>
-</li>
-<li>
-<p>You can verify the successful addition of the newly created security by checking the master data tab. A message stating <code>Linked to Portfolio Report</code> should be visible (see Figure 4). Additionally, on the Historical Quotes tab, the Quote Feed should be populated with the correct information.</p>
-<p>It's important to note that due to the association with PR, the fields <code>ISIN</code>, and <code>WKN</code> become unmodifiable. If there is a need to update these fields, you must use the "Unlink" button to detach the security. Unfortunately, this also removes the Quote Feed of the Historical Quotes.</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. Master data and historical prices of newly created security. </figcaption><img alt="" src="../images/portfolio-report-created-security.svg"></figure></p>
-</li>
+<li>Create a<code>Portfolio Performance ID</code> (only a verifiable e-mail address is required).  </li>
+<li>Log in to the service and refresh your session approximately every three months.  </li>
+<li>Set the data source of a security to the built-in provider.  </li>
 </ul>
-<h2 id="linking-an-existing-security-with-pr">Linking an existing security with PR</h2>
-<p>It's also possible to link an existing security to PR; in particular to gain access to its quote feed of historical prices.</p>
+<p>Please note that the built-in provider is just one of more than 20 data sources available in Portfolio Performance, such as Yahoo Finance, Alpha Vantage, JSON, and others (see <a href="../">Downloading historical prices</a> for an overview). Therefore, you can use Portfolio Performance without relying on the built-in provider.</p>
+<ol>
+<li><strong>Creating a Portfolio Performance ID</strong></li>
+</ol>
+<p>Before using the built-in quote provider, you must register by creating a <strong>free Portfolio Performance ID</strong>. This only needs to be done once. A verified e-mail address is required — meaning you have to enter a verification code sent to that address before proceeding. No additional personal information is requested. The easiest way to register is via the <strong>Settings/Preferences</strong> option in the <strong>Application menu (macOS)</strong> or <strong>Help menu (Windows)</strong>; see Figure 1a.  </p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Registering your Portfolio Performance ID.</figcaption><img alt="" src=""></figure></p>
+<div class="grid cards">
 <ul>
-<li>Navigate to the <a href="https://www.portfolio-report.net/">Portfolio Report website</a> and search for the desired security.</li>
-<li>Copy the URL of the webpage. It should start with <code>https://www.portfolio-report.net/securities/</code>, followed by an identifier such as <code>8761e2dd-873a-4f1c-99c5-65939819eed9</code>. This is the internal code that PR assigns to this security. You can find this URL in the address bar or at the bottom of the screen when hovering over the big blue button <code>Add to Portfolio Performance</code>.</li>
-<li>In PP, select the desired security in the <code>All Securities</code> list; right-click and choose <code>Link to Portfolio Report</code>. Additionally, you must manually set  Portfolio Report as the Quote Feed.</li>
-<li>Securities that no longer exist in Portfolio Report are automatically unlinked.</li>
+<li><img alt="" class="center" src="../images/settings-api-keys.png" width="400"></li>
+<li><img alt="" class="center" src="../images/built-in-sign-in.png" width="400"></li>
+<li><img alt="" class="center" src="../images/built-in-create-account.png" width="400"></li>
+<li><img alt="" class="center" src="../images/built-in-verify-email.png" width="400"></li>
 </ul>
-<h2 id="privacy-rules">Privacy rules</h2>
-<p>Whenever Portfolio Performance initiates an update, such as through the menu <code>Online &gt; Update Quotes</code> a request is sent to the PR website. Portfolio Report only receives information that is technically necessary, including:</p>
+</div>
+<p>Clicking the <code>Login</code> button opens the <a href="https://accounts.portfolio-performance.info/sign-in">Registration/Sign-in website</a> (Figure 1b). Select <code>Create account</code>, enter a verifiable e-mail address, obtain the verification code from your e-mail, and paste it as prompted (see Figure 1d).  </p>
+<p>Next, set up a password for future logins. You may then close the browser. Your credentials are securely stored on a dedicated identity server. You can unregister at any time by sending an e-mail to <a href="mailto:info@portfolio-performance.app">info@portfolio-performance.app</a>. See the <a href="https://www.portfolio-performance.app/privacy-policy">Privacy Policy</a> webpage for further details.</p>
+<ol>
+<li><strong>Logging in to the Service</strong></li>
+</ol>
+<p>Using the same <code>Settings</code> panel, you can log in to the service with your Portfolio Performance ID and password.<br>
+After a successful login, your e-mail address (Portfolio Performance ID) is displayed next to the user field in the Settings panel (see Figure 1a).</p>
+<p>The login creates a <strong>refresh token</strong>, which is stored locally in the workspace directory — not in the portfolio XML file.  This login is independent of other logins, such as those used for the forum or for cloud services like OneDrive or Google Drive. The refresh token allows automatic re-authentication whenever historical prices are refreshed. It remains valid for <strong>90 days</strong>, after which you must log in again to renew it.</p>
+<p>There is also a separate <code>Subscription</code> field. You can subscribe to the service using the same e-mail address as your (paid) mobile app account. The subscription type (e.g. <code>Premium</code>) will then appear next to the label.<br>
+A subscribed user can not only download historical prices but also access delayed quotes, which can be used in the <a href="../../../reference/file/new/#latest-quote">Latest quote</a> tab of the Security Data panel.</p>
+<hr>
+<ol>
+<li><strong>Setting the Data Source of a Security to the Built-in Provider</strong></li>
+</ol>
+<p>You can assign the built-in data source to a security either via the <a href="../../../getting-started/adding-securities/">New Instrument Creation Wizard</a> — which handles all steps, including ID creation and login — or manually in the <a href="../../../reference/file/new/#historical-quotes">Historical Quotes</a> tab of the Security Data panel.</p>
 <ul>
-<li>Identification details of the security, the marketplace and, if applicable, the period.</li>
-<li>The version number of the requesting Portfolio Performance app.</li>
-<li>The IP address of the requesting device.</li>
+<li>In the <a href="../../../reference/file/new/#security-master-data">Security Master Data</a> tab of the Security Data panel, enter at least the <code>ticker symbol</code> used by your chosen exchange (for example, <code>AAPL</code> for Apple Inc. on NASDAQ).  </li>
+<li>Then, in the <code>Historical Quotes</code> tab, set the <code>Quote feed provider</code> to <code>Portfolio Performance (built-in)</code>.  </li>
+<li>If multiple exchange markets are available, you can also select the relevant market.<br>
+  As shown in Figure 2, the built-in provider supports 12 European exchange markets in addition to the American NASDAQ for the <code>AAPL</code> ticker symbol.  </li>
 </ul>
-<p>This information is temporarily stored in log files on the server. The IP address is stored anonymously. In addition, no storage or evaluation of the data takes place.</p>
-<p>The above info is based on a German <a href="https://forum.portfolio-performance.info/t/historische-kurse-von-portfolio-report/8600">article by developer Thomas</a>. The <a href="https://github.com/portfolio-report/pr-www">source code</a> could be retrieved at Github.</p>
+<p><strong>Figure:</strong> Historical quotes from the built-in provider {class=pp-figure}  </p>
+<p><img alt="" src="../images/built-in-historical-quotes-aapl.png"></p>
+<p>If you have a paid subscription for the mobile app, you can also specify the <code>Latest price</code> provider to download delayed prices. Currently, this option is available only for US securities.</p>
 
 
 
@@ -4103,7 +3997,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 8, 2025 17:11:14">August 8, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2025 15:35:40">October 15, 2025</span>
   </span>
 
     

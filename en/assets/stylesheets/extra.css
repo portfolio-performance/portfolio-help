@@ -55,4 +55,7 @@ figure.align-right {
 	color: #0c6280;
 }
 
-
+.center {
+    display: block;
+    margin: 0 auto;
+}
