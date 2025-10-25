@@ -56,7 +56,7 @@ Abbildung: Server Antwort mit Kursdaten im JSON-Format (=2D.DE).{class=pp-figure
 Versuchen wir es mit einem etwas komplizierteren Beispiel. 
 Die folgende URL ermöglicht den Abruf der beiden jüngsten Tageskurse von NVIDIA aus Yahoo Finance (klicken Sie auf den folgenden Link, um das Ergebnis zu sehen).
 
-[https://query1.finance.yahoo.com/v8/finance/chart/NVDA?interval=1d&range=5d](https://query1.finance.yahoo.com/v8/finance/chart/NVDA?interval=1d&range=2d)
+[https://query1.finance.yahoo.com/v8/finance/chart/NVDA?interval=1d&range=2d](https://query1.finance.yahoo.com/v8/finance/chart/NVDA?interval=1d&range=2d)
 
 Die Antwort von Yahoo-Server ist ein langes JSON-Dokument mit allen historischen Kursen der letzten 2 Tage. 
 Die Ausgabe wurde aus Gründen der Übersichtlichkeit umstrukturiert und gekürzt (scrollen Sie nach unten, um die Kurse zu sehen).
