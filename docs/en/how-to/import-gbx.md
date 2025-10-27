@@ -185,7 +185,7 @@ Figure: Importing a GBP dividend to a GBX priced security. {class=pp-figure}
 
 Some cash transactions are general to the cash account. For example, depositing and withdrawing funds to and from the Cash Account. These are not linked to a particular security so no special process is needed.
 
-Some cash transactions are entered along with buy/sell transactions. These are transaction fees and transaction taxes (stamp duty in the UK). We do not need to concern outselves about those here (they are addressed above and in the main Import guide).
+Some cash transactions are entered along with buy/sell transactions. These are transaction fees and transaction taxes (stamp duty in the UK). We do not need to concern ourselves about those here (they are addressed above and in the main Import guide).
 
 The situation is different for cash transactions which are linked to securities which are priced in GBX. Usually this is only dividends and equalisation payments. Less commonly, corporate actions may result in a release of capital or other payment. Any such payment of a cash amount whilst securities are held will use the Dividend type of transaction.
 

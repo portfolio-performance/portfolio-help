@@ -154,7 +154,7 @@ The figure caption is written after `Figure:`. You can add a class to the figure
 
 ### Formulas or mathematical symbols
 
-To include formulas or mathematical symbols, the manual uses the open-source [Katex libary](https://katex.org/).
+To include formulas or mathematical symbols, the manual uses the open-source [Katex library](https://katex.org/).
 
 The `$$ ... $$` syntax is used to insert blocks. The `$ ... $` syntax is needed for inline additions; see [Mkdocs with Material theme](https://squidfunk.github.io/mkdocs-material/reference/math/).
 

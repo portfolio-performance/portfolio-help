@@ -216,7 +216,7 @@ Figure: Result of import from above. {class=pp-figure}
 
 A consistency check is made, for example, to ensure that you don't sell more securities than are available in your portfolio (see Figure 16).
 
-Figure: Consitency check. {class=pp-figure}
+Figure: Consistency check. {class=pp-figure}
 
 ![](./images/mnu-file-import-portfolio-transactions-consistency-check.png)
 
