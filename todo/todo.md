@@ -92,7 +92,7 @@ mkdocs-material == 9.4.2
 mkdocs-caption == 0.0.9
 
 ### 2023-09-28 [solved]
-Refering to a header in another page doesn't seem to work. For example: 
+Referring to a header in another page doesn't seem to work. For example: 
 [convert](deposit.md#transferbetweentwocurrencies) will jump to the correct page but not the header. The TOC extension is activated.
 
 ### 2023-09-30
@@ -135,7 +135,7 @@ Historical prices: many of the presets don't seem to function?
 ### 2024-01-22
 - menu View > Currencies > Currency converter:
     - convert USD-->SEK will be calculates as  USD --> EUR --> SEK?
-    - table has two columns Exchage rate and Value. The value column has an awkwardly looking border
+    - table has two columns Exchange rate and Value. The value column has an awkwardly looking border
     - if you click and hold on a value of the graph a pop-up shows the exchange rate. Holding and moving the mouse to the left or right will go in the past or future (for example 2035-01-01) where no exchange rates exist.
 
 ### 2024-02-25
@@ -161,4 +161,4 @@ Historical prices: many of the presets don't seem to function?
 
 ### 2024-10-05
 - with missing historical prices: the line in the chart between the two known prices is "misleading" (increasing or decreasing) in stead of staying at the last known historical price. For example, two known prices (100 & 200 EUR at jan 1, 2023 & 2024), the line for the year 2023 is increasing from 100 to 200, even though (I think) the price that is taken for calculations in that period is the last known price, e.g. 100 EUR.
-- File > Save as > XML with "ID" attributes? Comparing the file contents reveal that to som sections (e.g. <accounts> <account id="2">) an ID is added. In the comments: "New: Alternative XML format that uses “id” attributes for references (and is therefore easier to read/manipulate by other programs)". Example? Which programs?
+- File > Save as > XML with "ID" attributes? Comparing the file contents reveal that to some sections (e.g. <accounts> <account id="2">) an ID is added. In the comments: "New: Alternative XML format that uses “id” attributes for references (and is therefore easier to read/manipulate by other programs)". Example? Which programs?

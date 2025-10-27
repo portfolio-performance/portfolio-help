@@ -54,7 +54,7 @@ An alternative method that keeps the historical prices and transactions intact i
 - Simultaneously, on the same date, acquire a new quantity of shares equivalent to the theoretical outcome of the split (old quantity x split ratio). Ensure that the total purchase amount matches the selling value determined earlier.
 - Round down the new share quantity to the nearest whole number. If there is a remainder, sell it at the same price as described in step 2.
 
-Let's apply this workflow to a simplified example (see Figure 4). On 1 January 2021, you owned one share priced at 100 EUR. This price remained essentially unchanged until 31 December 2021. On 1 January 2022, a 10-for-1 stock split occured, resulting in 10 shares. The price at the end of the day was 11 EUR. By the end of the year, the price had increased to 13 EUR per share, giving your portfolio a market value of 130 EUR.
+Let's apply this workflow to a simplified example (see Figure 4). On 1 January 2021, you owned one share priced at 100 EUR. This price remained essentially unchanged until 31 December 2021. On 1 January 2022, a 10-for-1 stock split occurred, resulting in 10 shares. The price at the end of the day was 11 EUR. By the end of the year, the price had increased to 13 EUR per share, giving your portfolio a market value of 130 EUR.
 
 Figure: Simplified example of sell-back-back stock split. {class=pp-figure}
 
