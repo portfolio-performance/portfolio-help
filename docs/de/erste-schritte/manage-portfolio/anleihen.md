@@ -7,7 +7,7 @@ Eine Anleihe ist ein Finanzinstrument, das eine Schuldverschreibung darstellt. W
 
 ## Hinzufügen einer Anleihe als Wertpapier
 
-Nehmen wir einmal an, Du hast eine Anleihe von Volkswagen gekauft und erhältst eine Abrechnung ähnlicher der in Abbildung 1.
+Nehmen wir einmal an, Du hast eine Anleihe von Volkswagen gekauft und erhältst eine Abrechnung ähnlich der in Abbildung 1.
 
 Abbildung: Abrechnung über einen Anleihenkauf{pp-figure}
 
