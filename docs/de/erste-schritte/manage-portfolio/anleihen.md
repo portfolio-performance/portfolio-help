@@ -7,7 +7,7 @@ Eine Anleihe ist ein Finanzinstrument, das eine Schuldverschreibung darstellt. W
 
 ## Hinzufügen einer Anleihe als Wertpapier
 
-Nehmen wir einmal an, Du hast eine Anleihe von Volkswagen gekauft und erhältst eine Abrechnung ähnlicher der in Abbildung 1.
+Nehmen wir einmal an, Du hast eine Anleihe von Volkswagen gekauft und erhältst eine Abrechnung ähnlich der in Abbildung 1.
 
 Abbildung: Abrechnung über einen Anleihenkauf{pp-figure}
 
@@ -29,15 +29,15 @@ Um die aufgelaufenen Zinsen korrekt zu verbuchen, gibt es einige Möglichkeiten;
 
 1. Anpassen des Kaufpreises. Im Fall des Beispiels in Abbildung 1 wird der Ankaufspreis zu 4596 EUR `(=4588 + 8,01)`. Der Kurs wird zu 91,92 EUR von 91,92 % `(=4596/50)`. Der Nachteil dieser Methode ist, dass die Preisentwicklung und die Performanceberechnung nicht korrekt sind.
 
-Abbildung: Workaround durch Anpassung des Kurspreises zur Berücksichtigung der aufgelaufenen Zinsen.{pp-figure style= "width: 70%"}
+    Abbildung: Workaround durch Anpassung des Kurspreises zur Berücksichtigung der aufgelaufenen Zinsen.{pp-figure style= "width: 70%"}
 
-![](images/mnu-transaction-buy-bond-vw-1.png)
+    ![](images/mnu-transaction-buy-bond-vw-1.png)
 
 2. Um eine genaue Erfassung des Kaufpreises zu erhalten, könntest Du die aufgelaufenen Zinsen als „Steuer“ verbuchen (siehe Abbildung 3). Der Kaufpreis ist korrekt und der richtige Betrag wird vom Depotkonto entnommen.  Die „falschen“ Steuern können bei der ersten Zinszahlung mit einer „Steuerrückerstattung“ korrigiert werden.
 
-Abbildung: Workaround für eine Buchung von aufgelaufenen Zinsen über Steuer.{pp-figure style= "width: 70%"}
+    Abbildung: Workaround für eine Buchung von aufgelaufenen Zinsen über Steuer.{pp-figure style= "width: 70%"}
 
-![](images/mnu-transaction-buy-bond-vw-2.png)
+    ![](images/mnu-transaction-buy-bond-vw-2.png)
 
 3. Der Kauf des Wertpapiers wird ohne die aufgelaufenen Zinsen verbucht. Um die Stückzinsen zu verbuchen, musst Du den korrekten Betrag (8,01 EUR) von dem mit dem Wertpapier verbundenen Depotkonto auf ein separates Depotkonto umbuchen. Bei der ersten Zinszahlung wird der aufgelaufene Zinsbetrag dann wieder auf das ursprüngliche Depotkonto des Wertpapiers überwiesen. 
 

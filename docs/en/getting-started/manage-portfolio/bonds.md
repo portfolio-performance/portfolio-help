@@ -2,7 +2,7 @@
 title: Managing bonds
 ---
 
-A bond is a financial instrument that represents a debt obligation. When an entity, such as a government or corporation, issues a bond, they are borrowing money from investors. In return, they promise to pay back the principal amount along with periodic interest payments over a specified period [[1](https://www.investopedia.com/articles/bonds/08/bond-market-basics.asp)]. Bonds are not well-supported in Portfolio Performance but with a few simple workarounds mentioned in the [German forum](https://forum.portfolio-performance.info/t/verbuchung-von-anleihen/1537/43), you could manage them effectively. 
+A bond is a financial instrument that represents a debt obligation. When an entity, such as a government or corporation, issues a bond, they are borrowing money from investors. In return, they promise to pay back the principal amount along with periodic interest payments over a specified period [[1](https://www.investopedia.com/articles/bonds/08/bond-market-basics.asp)]. Bonds are not well-supported in Portfolio Performance, but with a few simple workarounds mentioned in the [German forum](https://forum.portfolio-performance.info/t/verbuchung-von-anleihen/1537/43), you can manage them effectively.
 
 # Adding the bond as a security.
 
