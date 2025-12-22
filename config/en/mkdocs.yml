@@ -149,6 +149,7 @@ nav:
             - Import: reference/file/import/index.md
             - CSV-file: reference/file/import/csv-import.md
             - PDF document: reference/file/import/pdf-import.md
+            - Interactive Brokers Flex Query: reference/file/import/ibflex-import.md
           - Export: reference/file/export.md
           - Currency: reference/file/currency.md
       - View Menu:
