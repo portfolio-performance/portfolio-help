@@ -29,7 +29,7 @@ Seit Anfang 2012 gibt es [Portfolio Performance](https://portfolio-performance.i
 
 Die **Portfolio Performance** (PP) Anleitung besteht aus vier Kapiteln, die von einem bekannten [Framework zur Erstellung von Dokumentationen](https://fachglossar.platinus.at/docs/Glossar/D-Glossar/Diataxis-Framework/) abgeleitet sind. Die Dokumentation ist entlang zweier Achsen strukturiert: praktisches versus theoretisches Wissen und Lernen versus Anwenden.
 
-- [Erste Schritte](index.md)
+- [Erste Schritte](erste-schritte/index.md)
 Wenn du neu in Portfolio Performance bist, wird dir dieses Kapitel den Einstieg erleichtern.
 Es behandelt alles von der Installation über die Erstellung eines neuen Portfolios, den Import von Wertpapieren und Transaktionsdaten bis hin zur Auswertung Ihres gesamten Portfolios.
 
