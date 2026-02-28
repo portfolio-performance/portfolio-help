@@ -19,11 +19,11 @@ Figure: Portfolio Performance components and their relationships. {class=pp-figu
 At the center of the system are the Transactions ([All Transactions](../../reference/view/accounts/all-transactions.md)). There are six transactions involved in this example.
 
 1. On March 1, 2024, a deposit of 300 EUR was made into broker-A's (EUR) deposit account to purchase shares.
-2. Later the same day, 10 shares of share-1 were bought at 15 EUR per share. After deducting 5 EUR for fees and taxes, 155 EUR was credited to the broker-A (EUR) deposit account, leaving a balance of 145 EUR.
-3. On March 3, 75 EUR was converted to USD at an exchange rate of 0.9248 USD/EUR, resulting in 81.10 USD. The balance of the broker-A (EUR) account decreased to 70 EUR, while broker-A (USD) held 81.10 USD.
+2. Later the same day, 10 shares of share-1 were bought at 10 EUR per share. After deducting 5 EUR for fees and taxes, 105 EUR was credited to the broker-A (EUR) deposit account, leaving a balance of 195 EUR.
+3. On March 3, 75 EUR was converted to USD at an exchange rate of 0.9248 USD/EUR, resulting in 81.10 USD. The balance of the broker-A (EUR) account decreased to 120 EUR, while broker-A (USD) held 81.10 USD.
 4. Using the USD deposit account, 5 shares of share-2 were purchased at 15 USD per share, resulting in a Net Transaction Value of 78 USD. The balance of broker-A (USD) dropped to 3.10 USD.
-5. A dividend of 1.5 EUR per share was paid on March 4. After deducting 7 EUR for fees and taxes, the balance of broker-A (EUR) increased by 15 EUR to 78 EUR.
-6. On March 5, 5 shares of share-1 were sold at 12 EUR per share, resulting in a Net Transaction Value of 60 EUR. After deducting 11 EUR for fees and taxes, the balance of broker-A (EUR) increased to 127 EUR.
+5. A dividend of 1.5 EUR per share was paid on March 4. After deducting 7 EUR for fees and taxes, the balance of broker-A (EUR) increased by 15 EUR to 128 EUR.
+6. On March 5, 5 shares of share-1 were sold at 12 EUR per share, resulting in a Net Transaction Value of 60 EUR. After deducting 11 EUR for fees and taxes, the balance of broker-A (EUR) increased to 177 EUR.
 
 The transaction flow in the deposit accounts is clear to follow (as outlined above). Regarding the final balance of broker-A's securities account (129.13 EUR), on March 5, the account contains 5 shares of share-1, valued at 60 EUR, and 5 shares of share-2, valued at 75 USD. As the securities account's base currency is EUR, the USD value is converted to EUR using an exchange rate of 0.9217 USD/EUR, resulting in 69.13 EUR. This brings the total to EUR 129.13, representing the final balance of the securities account.
 

@@ -20,11 +20,11 @@ Abbildung: Portfolio Performance Komponenten und ihre Beziehungen. {class=pp-fig
 Im Zentrum des Systems stehen die Transaktionen (Alle Transaktionen). In diesem Beispiel sind sechs Transaktionen enthalten.
 
 1. Am 1. März 2024 wurde eine Einzahlung von 300 EUR auf das EUR-Verrechnungskonto von Broker-A getätigt, um Aktien zu kaufen.
-2. Später am selben Tag wurden 10 Aktien der Aktie-1 zu 15 EUR pro Aktie gekauft. Nach Abzug von 5 EUR für Gebühren und Steuern wurden dem EUR-Verrechnungskonto von Broker-A 155 EUR belastet, sodass ein Saldo von 145 EUR verblieb.
-3. Am 3. März wurden 75 EUR zu einem Wechselkurs von 0,9248 USD/EUR in USD umgetauscht, was 81,10 USD ergab. Der Saldo des EUR-Kontos von Broker-A sank auf 70 EUR, während Broker-A (USD) 81,10 USD hielt.
+2. Später am selben Tag wurden 10 Aktien der Aktie-1 zu 10 EUR pro Aktie gekauft. Nach Abzug von 5 EUR für Gebühren und Steuern wurden dem EUR-Verrechnungskonto von Broker-A 105 EUR belastet, sodass ein Saldo von 195 EUR verblieb.
+3. Am 3. März wurden 75 EUR zu einem Wechselkurs von 0,9248 USD/EUR in USD umgetauscht, was 81,10 USD ergab. Der Saldo des EUR-Kontos von Broker-A sank auf 120 EUR, während Broker-A (USD) 81,10 USD hielt.
 4. Über das USD-Verrechnungskonto wurden 5 Aktien der Aktie-2 zu 15 USD pro Aktie gekauft, was einem Netto-Transaktionswert von 78 USD entspricht. Der Saldo von Broker-A (USD) sank auf 3,10 USD.
-5. Am 4. März wurde eine Dividende von 1,5 EUR pro Aktie gezahlt. Nach Abzug von 7 EUR für Gebühren und Steuern erhöhte sich der Saldo von Broker-A (EUR) um 15 EUR auf 78 EUR.
-6. Am 5. März wurden 5 Aktien der Aktie-1 zu 12 EUR pro Aktie verkauft, was einem Netto-Transaktionswert von 60 EUR entspricht. Nach Abzug von 11 EUR für Gebühren und Steuern erhöhte sich der Saldo von Broker-A (EUR) auf 127 EUR.
+5. Am 4. März wurde eine Dividende von 1,5 EUR pro Aktie gezahlt. Nach Abzug von 7 EUR für Gebühren und Steuern erhöhte sich der Saldo von Broker-A (EUR) um 15 EUR auf 128 EUR.
+6. Am 5. März wurden 5 Aktien der Aktie-1 zu 12 EUR pro Aktie verkauft, was einem Netto-Transaktionswert von 60 EUR entspricht. Nach Abzug von 11 EUR für Gebühren und Steuern erhöhte sich der Saldo von Broker-A (EUR) auf 177 EUR.
 
 Der Transaktionsfluss auf den Verrechnungskonten ist klar nachvollziehbar (wie oben beschrieben). Bezüglich des Endsaldos des Wertpapierdepots von Broker-A (129,13 EUR) am 5. März enthält das Depot 5 Aktien der Aktie-1 im Wert von 60 EUR und 5 Aktien der Aktie-2 im Wert von 75 USD. Da die Basiswährung des Wertpapierdepots EUR ist, wird der USD-Wert mit einem Wechselkurs von 0,9217 USD/EUR in 69,13 EUR umgerechnet. Dies ergibt eine Summe von 129,13 EUR, was den Endsaldo des Wertpapierdepots darstellt.
 
