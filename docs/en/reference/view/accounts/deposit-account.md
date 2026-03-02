@@ -29,7 +29,7 @@ You can delete a deposit account using the context menu. However, it is importan
 
 If you want to delete an account that has transactions, you will need to first delete the transactions that are linked to that account. Once all transactions have been removed, you can then delete the account itself.
 
-Using the Show or Hide columns option (accessible via the :gear: gear icon at the top right), you can customize the view by hiding or adding columns. The available columns for display include: `Cash account`, `Balance`, `Currency`, `Note`, and `Attributes`. See also [How-to > User Interface](../../../how-to/user-interface.md) for more detailed information about handling the table.
+Using the Show or Hide columns option (accessible via the :gear: gear icon at the top right), you can customize the view by hiding or adding columns. The available columns for display include: `Account`, `Balance`, `Currency`, `Note`, and `Attributes`. See also [How-to > User Interface](../../../how-to/user-interface.md) for more detailed information about handling the table.
 
 ## Information pane
 

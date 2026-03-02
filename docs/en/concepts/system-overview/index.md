@@ -40,9 +40,9 @@ Figure: Overview of all transaction types with associated cash flows at portfoli
 
 ![](../images/system-overview-cashflows.svg)
 
-As can be seen, **only four types of transactions** generate a cash flow at the portfolio level: deposit, removal (withdrawal), inbound delivery, and outbound delivery. These transactions will thus influence the performance indicator on the dashboard (View > Reports > Performance); which is a portfolio performance indicator. 
+As can be seen, **only four types of transactions** generate a cash flow at the portfolio level: deposit, withdrawal, inbound delivery, and outbound delivery. These transactions will thus influence the performance indicator on the dashboard (View > Reports > Performance); which is a portfolio performance indicator.
 
-A [*deposit*](../../reference/transaction/deposit-removal.md) transaction generates two cash inflows: one at the portfolio level and one at the deposit account level. This transaction results in an inflow because money is brought into the deposit account, and as such also into the portfolio. On the other hand, a [*withdrawal*](../../reference/transaction/deposit-removal.md) creates two cash outflows and removes money from a cash account and the portfolio.
+A [*deposit*](../../reference/transaction/deposit-withdrawal.md) transaction generates two cash inflows: one at the portfolio level and one at the deposit account level. This transaction results in an inflow because money is brought into the deposit account, and as such also into the portfolio. On the other hand, a [*withdrawal*](../../reference/transaction/deposit-withdrawal.md) creates two cash outflows and removes money from a cash account and the portfolio.
 
 An [*inbound delivery*](../../reference/transaction/delivery.md) adds shares to a security; thus increasing the capital of the security (shares x historical price) **and** the security account. Conversely, an [*outbound delivery*](../../reference/transaction/delivery.md) decreases the capital by removing shares from the security, resulting in a cash outflow.
 

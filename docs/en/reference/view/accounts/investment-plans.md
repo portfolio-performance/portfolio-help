@@ -11,7 +11,7 @@ Figure: Four investment plans in the main pane and generated transactions of pla
 
 ![](images/investment-plans.png)
 
-There are four main types of investment plans: deposit, removal (withdrawal), Interest and Security Purchase/Delivery (as illustrated in Figure&nbsp;1). A deposit and interest plan will increase the balance of a cash account, while a removal plan will decrease it. On the other hand, a Security Purchase/Delivery plan involves both decreasing your deposit account (to fund the purchase of securities) and increasing your security account (as you acquire new securities). To create a new plan, simply click the 'New Plan' :octicons-feed-plus-16: button, located at the top right corner of the interface (as shown in Figure 1).
+There are four main types of investment plans: deposit, withdrawal, Interest and Security Purchase/Delivery (as illustrated in Figure&nbsp;1). A deposit and interest plan will increase the balance of a cash account, while a withdrawal plan will decrease it. On the other hand, a Security Purchase/Delivery plan involves both decreasing your deposit account (to fund the purchase of securities) and increasing your security account (as you acquire new securities). To create a new plan, simply click the 'New Plan' :octicons-feed-plus-16: button, located at the top right corner of the interface (as shown in Figure 1).
 
 ### Deposit Investment Plan
 
@@ -25,13 +25,13 @@ Once you click the `Save` button, the information will be added to the main pane
 
 Alternatively, you can click the 'Save & New' button to add the plan to the list and reopen the dialog box. This allows you to create multiple deposit plans in quick succession.
 
-### Removal Investment Plan
+### Withdrawal Investment Plan
 
-Figure: Removal Investment Plan. {class=pp-figure}
+Figure: Withdrawal Investment Plan. {class=pp-figure}
 
-![](images/investment-plan-removal.png)
+![](images/investment-plan-withdrawal.png)
 
-With a removal investment plan, you can periodically withdraw a specified amount of money from a designated cash account. The process of setting up a withdrawal plan is similar to that of a deposit plan. You will need to provide a descriptive name for the plan, the name of the cash account to be used, the amount of money to be withdrawn, the starting date of the plan, and the frequency of the withdrawals. The same fields that were used to create a deposit plan will be required for a withdrawal plan.
+With a withdrawal investment plan, you can periodically withdraw a specified amount of money from a designated cash account. The process of setting up a withdrawal plan is similar to that of a deposit plan. You will need to provide a descriptive name for the plan, the name of the cash account to be used, the amount of money to be withdrawn, the starting date of the plan, and the frequency of the withdrawals. The same fields that were used to create a deposit plan will be required for a withdrawal plan.
 
 ### Security Purchase/Delivery Investment Plan
 
@@ -43,7 +43,7 @@ With a Security Purchase/Delivery investment plan, you can regularly acquire a s
 
 It's important to note the distinction between purchase and delivery when selecting the cash account. If you want to acquire the security through delivery, you should use the `(Inbound Delivery)` option. On the other hand, if you want to purchase the security, you should use the name of an existing cash account from which the funds will be withdrawn.
 
-The following fields/columns are displayed in the main pane (see Figure 1): `Name`, `Security`, `Securities Account`, `Cash Account`, `Start Date`, `Last Execution`, `Next Execution`, `Interval`, `Auto-Generate`, `Amount`, and `Fees`. Most fields are self-explanatory. The `Auto-Generate` field is automatically set when the `Create transactions automatically when opening the file` option is selected during the initial creation of the plan. Two additional fields, `Notes` and `Attributes`, can be added using the `Show or Hide` button (gear symbol at the top right). For information on how to manipulate individual columns, please refer to the [All Transactions section](../accounts/all-transactions.md/#settings) in the manual.
+The following fields/columns are displayed in the main pane (see Figure 1): `Name`, `Security`, `Securities Account`, `Account`, `Start Date`, `Last Execution`, `Next Execution`, `Interval`, `Auto-Generate`, `Amount`, and `Fees`. Most fields are self-explanatory. The `Auto-Generate` field is automatically set when the `Create transactions automatically when opening the file` option is selected during the initial creation of the plan. Two additional fields, `Notes` and `Attributes`, can be added using the `Show or Hide` button (gear symbol at the top right). For information on how to manipulate individual columns, please refer to the [All Transactions section](../accounts/all-transactions.md/#settings) in the manual.
 
 ### Interest Plan
 
@@ -69,7 +69,7 @@ Figure: Message box at opening of portfolio. {class=align-right style="width:50%
 <br style="clear:both;">
 
 - Selecting the `Generate Transactions` command will instantly create all feasible transactions, subject to the specified date constraints.  
-- Deposit, withdrawal (removal), or Purchase/Delivery transactions are generated from the start date. If the start date falls on a holiday (see Help > Preferences > Calendar) or weekend, the transaction will be moved to the next working day.
+- Deposit, withdrawal, or Purchase/Delivery transactions are generated from the start date. If the start date falls on a holiday (see Help > Preferences > Calendar) or weekend, the transaction will be moved to the next working day.
 - The `Last Execution` column will display the most recent date on which the transaction-generating algorithm was executed. The `Next Execution` column will indicate the earliest future date on which a transaction is scheduled to occur, based on the frequency and last execution date.
 - You cannot accidentally run the plan twice. As long as the current date is before the `Next Execution` date, the `Generate Transactions` command will have no effect.
 

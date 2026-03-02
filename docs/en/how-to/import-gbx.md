@@ -6,7 +6,7 @@ title: How to use the CSV Import functions for GBX priced securities?
 The following *how-to* is based on a discussion *[Getting started: Cash vs Deposit/Reference accounts](https://forum.portfolio-performance.info/t/getting-started-cash-vs-deposit-reference-accounts/27365/20)* in the English language forum.
 
 ## Introduction
-Portfolio Performance (Portfolio Performance from now on) supports importing of different currencies when importing transactions and movements on cash/deposit accounts. Before reading this guide, you should refer to the main guide on importing which covers things which we will not duplicate here.
+Portfolio Performance (Portfolio Performance from now on) supports importing of different currencies when importing transactions and movements on cash accounts/deposit accounts. Before reading this guide, you should refer to the main guide on importing which covers things which we will not duplicate here.
 
 This guide is mainly about the peculiar situations which can arise from the UK market habit of pricing some securities (in particular funds) in pence (GBX in Portfolio Performance language) rather than pounds (GBP). This causes complications because our accounts (Securities accounts where we hold the actual securities and Cash accounts used to show money deposited for purchases and obtained from sales of securities) will be in GBP. GBP and GBX are different currencies in the eyes of Portfolio Performance (and many other portfolio tools). So there is actually a conversion which is treated as a currency exchange by Portfolio Performance that needs to happen -- it's a special case.
 
@@ -130,7 +130,7 @@ Date -- the transaction date. Here we have formatted in the Portfolio Performanc
 
 Securities Account -- this helps avoid errors from overlooking the selection of the correct Securities Account in the Import Wizard. It is essential if you want to import transactions into more than one account in the same import, otherwise it is optional.
 
-Cash Account -- this is included for the same reasons as Securities Account.
+Account -- this is included for the same reasons as Securities Account.
 
 Type -- the type of transaction. Essential.
 
@@ -204,14 +204,14 @@ Figure: Figure 8 - Example dividend import data. {class=pp-figure}
 
 Date, Type, Value, Gross Amount, and Exchange Rate are mandatory. One of Ticker Symbol, Security Name, ISIN or WKN is required to identify which security is involved.
 
-Cash Account is normally optional if all dividends will be applied to the same account (which is specified in the Import Wizard). Here however we are being specific about the Cash Account in order to allow dividends for more than one account to be imported together.
+Account is normally optional if all dividends will be applied to the same cash account (which is specified in the Import Wizard). Here however we are being specific about the Account in order to allow dividends for more than one cash account to be imported together.
 
 Note is optional.
 
 -  The Gross amount, Currency Gross Amount and Exchange Rate can be omitted for the first row (GBP to GBP)
 - The Exchange Rate for the GBX dividend will always be 0.01.
 - The Exchange Rate for the USD dividend paid into a USD cash account is always 1.
--  The Exchange Rate for the USD dividend being paid into a GBP account is the rate which allows conversion between the Gross Amount and the Value (see main Import guide).
+-  The Exchange Rate for the USD dividend being paid into a GBP cash account is the rate which allows conversion between the Gross Amount and the Value (see main Import guide).
 
 A rarer type of dividend occurs when the security is priced in GBP, but dividends are received in USD. HMEF.L is an example of such a fund. There does not appear to be a way to handle this situation through import currently.
 
