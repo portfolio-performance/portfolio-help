@@ -28,7 +28,7 @@ Figure: Payments overview. {class=pp-figure}
     - *Taxes & Fees*: all payments regarding [taxes & fees](../../../transaction/fees-taxes.md). These payments could be either as part of another transaction; for example, buy or interest. Or, they can be booked separately with the transaction type `Taxes`,`Tax refund`, `Fees`, or `Fees refund`. If payment and refund occur in the same period; the net value is displayed.
     - *Closed trades*: The result of a sell transaction is a closed trade. The value displayed here is the Gross Profit/Loss of the sale; thus without deducting the paid taxes and fees. 
     - *&sum; (Sum)*: the sum (&sum;) of all payments per period; e.g. `dividends + net interest + net fees + net taxes`.
-    - *Saving*: all [deposits and withdrawals (removals)](../../../transaction/deposit-removal.md) and [Inbound and Outbound Deliveries](../../../transaction/delivery.md), including taxes and fees. Buy and sell transactions are not included since these contain already a deposit or withdrawal.
+    - *Saving*: all [deposits and withdrawals](../../../transaction/deposit-withdrawal.md) and [Inbound and Outbound Deliveries](../../../transaction/delivery.md), including taxes and fees. Buy and sell transactions are not included since these contain already a deposit or withdrawal.
 
 ## Secondary menu
 
@@ -50,7 +50,7 @@ The secondary menu (below the primary) allows you to adjust the layout of the ma
 
 
 - :bar_chart: *Quarter and Year*: Similar to the monthly bar chart but organized by quarter or year.
-- :chart_with_upwards_trend: *Month (accumulated)*: A line chart with the summed payments per month. The X-axis displays the months (Jan - Dec), while the Y-axis represents the accumulated payments. Each year will be represented by a different colored line (legend).
+- :chart_with_upwards_trend: *Month (cumulative)*: A line chart with the summed payments per month. The X-axis displays the months (Jan - Dec), while the Y-axis represents the cumulative payments. Each year will be represented by a different colored line (legend).
 - *Overview*: a special kind of 'boxed' view, with a box for each year and month, containing the number of transactions and the total amount of payments in that period (see Figure 4).
 
       Figure: Box view of monthly dividend payments since 2022. {class=pp-figure}

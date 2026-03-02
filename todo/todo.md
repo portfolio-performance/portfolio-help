@@ -111,7 +111,7 @@ The acronym MA (moving average) might be better translated as WA (weighted avera
 The option "Adjust range: 0" in reports > chart.md is not understood nor described.
 Earnings: dividends + Interests? or something more? 
 
-In the Pick Dataseries dialog (Reports > Chart > Gear) the option Taxes (accumulated) is present, but Taxes alone is missing (is present for Fees, Dividends, Interests).
+In the Pick Dataseries dialog (Reports > Chart > Gear) the option Taxes (cumulative) is present, but Taxes alone is missing (is present for Fees, Dividends, Interests).
 
 ### 2023-11-06
 Suggestions from Flywire.

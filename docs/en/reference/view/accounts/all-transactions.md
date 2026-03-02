@@ -4,7 +4,7 @@ title: All Transactions
 
 # View &rsaquo; Accounts &rsaquo; All Transactions
 
-The `All Transactions` view displays a table with all the transactions of the portfolio in the main pane, sorted by the transaction's creation time in the portfolio (see Figure 1). The default view presents the columns `Date`, `Type`, `Security`, `Shares`, `Quote`, `Amount`, `Fees`, `Taxes`, `Net Transaction Value`, `Cash Account`, `Offset Account`, `Note`, and `Source` (see the [Glossary](../../../concepts/portfolio-performance-terminology.md) for a definition of these terms).
+The `All Transactions` view displays a table with all the transactions of the portfolio in the main pane, sorted by the transaction's creation time in the portfolio (see Figure 1). The default view presents the columns `Date`, `Type`, `Security`, `Shares`, `Quote`, `Amount`, `Fees`, `Taxes`, `Net Transaction Value`, `Account`, `Offset Account`, `Note`, and `Source` (see the [Glossary](../../../concepts/portfolio-performance-terminology.md) for a definition of these terms).
 
 Figure: The All Transactions View.{class=pp-figure}
 

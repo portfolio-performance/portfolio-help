@@ -1,7 +1,7 @@
 ---
 title: Delivery (Inbound - Outbound)
 ---
-A delivery involves the addition or removal of securities from a securities account, without requiring a deposit transaction. Drawing a comparison between Inbound and Outbound deliveries and Deposit and Withdrawal (removal) transactions can provide clarity.
+A delivery involves the addition or removal of securities from a securities account, without requiring a deposit transaction. Drawing a comparison between Inbound and Outbound deliveries and Deposit and Withdrawal transactions can provide clarity.
 
 Both types of transactions involve the transfer of assets (money), but they impact different types of accounts. Deposit and withdrawal transactions only affect cash accounts. When a deposit is made, the cash account increases, and conversely, it decreases when a withdrawal is made. Similarly, Inbound and Outbound deliveries involve the addition or removal of securities from a securities account. In both cases, whether it's cash or securities, assets are either added to or withdrawn from an account.
 

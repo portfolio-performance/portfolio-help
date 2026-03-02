@@ -50,7 +50,7 @@ where MVE = the market value of the asset at the end of the holding period, MVB 
 
 ## TTWROR at portfolio level
 
-The relevant cash flows for the performance calculation at portfolio level are: `Deposit`, `Withdrawal (removal)`, `Delivery In`, and `Delivery Out`. Refer to the [Defining Cash flows section](money-weighted.md#defining-the-cashflows), and in particular [Figure 3](./images/transaction-cashflows.svg) from the chapter about Money-Weighted Rate of Return for detailed information. Please note that the dividend or sale of `share-1` does not affect *portfolio* performance, as the proceeds remain within the portfolio in a deposit account. Figure 1 displays the necessary info for calculating the TTWROR of `demo-portfolio-03`.
+The relevant cash flows for the performance calculation at portfolio level are: `Deposit`, `Withdrawal`, `Delivery In`, and `Delivery Out`. Refer to the [Defining Cash flows section](money-weighted.md#defining-the-cashflows), and in particular [Figure 3](./images/transaction-cashflows.svg) from the chapter about Money-Weighted Rate of Return for detailed information. Please note that the dividend or sale of `share-1` does not affect *portfolio* performance, as the proceeds remain within the portfolio in a deposit account. Figure 1 displays the necessary info for calculating the TTWROR of `demo-portfolio-03`.
 
 Figure: Overview of transactions - Deposit (3x), Buy (3x), Dividend, and partial Sell and charts of share-1 and share-2.{class=pp-figure}
 

@@ -16,10 +16,6 @@ Figure: Example of Security Account. {class = "pp-figure"}
 
 ## Related Terms
 
-### Cash Account
-
-The term Cash Account is somewhat inconsistently used. In Figure 1 (main pane; first column) it refers to a Deposit Account; which is in line with the name `Cash` Account. In Figure 2 (information pane bottom) the `Cash Account`column refers to a Security Account (broker-1). 
-
 ### Reference Account
 
 A security account is always associated with a deposit account. This is the deposit account that will be used (if no other is explicitly assigned) for any buy or sell transaction on that security account. This deposit account is called the Reference Account. In Figure 2, the `Broker-1` security account has a reference (deposit)account named `Broker-1 (EUR)`.

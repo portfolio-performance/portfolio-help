@@ -1,12 +1,12 @@
 ---
-title: Deposit - Removal (withdrawal)
+title: Deposit - Withdrawal
 ---
 
-A deposit is the process of adding funds to a deposit account, while a removal (withdrawal) is the process of removing funds from an account. A deposit account is sometimes also called a `cash account`. 
+A deposit is the process of adding funds to a deposit account, while a withdrawal is the process of removing funds from an account. A deposit account is sometimes also called a `cash account`. 
 
-Figure: Example of a deposit (in EUR) and removal (withdrawal) in USD. {class=pp-figure}
+Figure: Example of a deposit (in EUR) and withdrawal in USD. {class=pp-figure}
 
-![](images/deposit-removal.svg)
+![](images/deposit-withdrawal.svg)
 
 Figure 1 illustrates a deposit of 15 EUR and a withdrawal of 14 USD. Although the deposit increases (debits) *your* account balance, it is termed a `Credit note` because the funds originate from a third party, whose account will be reduced (credited). This resembles a scenario such as returning goods, where you receive a credit note from the company.
 

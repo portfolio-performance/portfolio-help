@@ -12,7 +12,7 @@ Figure: Dividend dialog box for same and different currency payments. {class=pp-
 ![](images/dividend.svg)
 
 - **Security**: A dividend is linked to a security, often a share in a company. However, dividends can also be used to record the [interest payment](../../getting-started/manage-portfolio/bonds.md#recording-the-interest-payment) on a bond. Use the drop-down to select the security from which the dividend originates.
-- **Cash Account**: Since the dividend is a cash payment, you need a deposit account to record it. Please note that if the currency of the security and deposit account do not match, additional fields are added to the dialog box (Figure 1; right panel).
+- **Account**: Since the dividend is a cash payment, you need a deposit account to record it. Please note that if the currency of the security and deposit account do not match, additional fields are added to the dialog box (Figure 1; right panel).
 - **Date**: there are four [dates](https://www.investopedia.com/terms/d/dividend.asp) relevant regarding dividends. Perhaps the payment date is the most obvious to use in PP.
 - **Shares**: a dividend is paid per share. The number of shares is automatically filled in upon selecting a date. You can change the number manually; reselecting another date will reset the number to the actual available at that time.
 - **Dividend payment per share**: This is the amount agreed upon by the company to pay for each share.  Your broker will provide you with this information. The currency is determined by the share. Many financial websites, such as [Yahoo Finance](https://finance.yahoo.com/quote/MSFT/history?filter=div) or [investing.com](https://www.investing.com/dividends-calendar/), offer historical overviews of dividend payments.

@@ -11,7 +11,7 @@ In this chapter, you will find a concise but clear explanation of several basic 
 
 - [System overview](system-overview/index.md): Provides a bird's-eye view of how Portfolio Performance operates. It discusses all components and their interactions, with a focus on the main goal: calculating the portfolio's performance. An [example](system-overview/system-overview-example.md) is also provided.
 
-- [Transaction](../reference/transaction/index.md): A financial transaction is an agreement between a buyer and seller to exchange goods, services, or assets for payment. In case of PP, the exchange is about securities. There are security transactions such as buy, sell delivery (inbound), and delivery (outbound); deposit transactions such as deposit, removal, interest, interest charge, fees, fees refund, taxes, tax refund; and dividend transactions.
+- [Transaction](../reference/transaction/index.md): A financial transaction is an agreement between a buyer and seller to exchange goods, services, or assets for payment. In case of PP, the exchange is about securities. There are security transactions such as buy, sell delivery (inbound), and delivery (outbound); deposit transactions such as deposit, withdrawal, interest, interest charge, fees, fees refund, taxes, tax refund; and dividend transactions.
 
 - [Reporting period](reporting-period.md): The (reporting) period is the time slice that is taken into account for reporting (calculations, graphs, statistics). It's very important that you realize that for every performance calculation a reporting period is taken into account, even if you haven't set one explicitly.
 

@@ -190,7 +190,7 @@ nav:
           - Delivery (Inbound-Outbound): reference/transaction/delivery.md
           - Transfer: reference/transaction/transfer.md
           - Dividend: reference/transaction/dividend.md
-          - Deposit & removal (withdrawal): reference/transaction/deposit-removal.md
+          - Deposit & withdrawal: reference/transaction/deposit-withdrawal.md
           - Interest & Interest charge: reference/transaction/interest.md
           - Fees & taxes: reference/transaction/fees-taxes.md
       - Online Menu: reference/online.md

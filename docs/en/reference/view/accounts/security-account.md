@@ -34,7 +34,7 @@ Figure: Chart from Securities Account (information pane). {class=pp-figure}
 ![](images/sb-accounts-securities-accounts-chart.png)
 
 
-Clicking on any point in the chart will reveal the actual data of all three time series. With the :gear: data tool (top right), you can also add the `Taxes (Accumulated)` and `Fees (Accumulated)` time series to the chart. Please refer to the section on the [User Interface](../../../how-to/user-interface.md#) for more guidance on customizing the chart.
+Clicking on any point in the chart will reveal the actual data of all three time series. With the :gear: data tool (top right), you can also add the `Taxes (Cumulative)` and `Fees (Cumulative)` time series to the chart. Please refer to the section on the [User Interface](../../../how-to/user-interface.md#) for more guidance on customizing the chart.
 
 ### Holdings
 

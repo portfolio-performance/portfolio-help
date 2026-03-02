@@ -32,7 +32,7 @@ Figure: Saving the mapping configuration.{class=align-right style="width:50%"}
 Step 3 differs depending on the selected type of import. For the historical quotes import type, only the share name should be additional selected. For the other types, you need to set the security and cash account.
 
 !!! Note
-    The cash and security account could be set globally for all import rows of the CSV file through the top panel; see for example Figure 6.  You can also provide this information as part of the CSV file (include a column Cash account and Securities account). Or you can set the accounts through the context menu. Right-click on a row in the table preview and choose the appropriate account.
+    The cash account and security account could be set globally for all import rows of the CSV file through the top panel; see for example Figure 6.  You can also provide this information as part of the CSV file (include a column Account and Securities account). Or you can set the accounts through the context menu. Right-click on a row in the table preview and choose the appropriate account.
 
 ### 1. Historical Quotes import
 
@@ -94,7 +94,7 @@ Only securities listed on XETRA (Deutsche Börse) and analyzed by the Portfolio 
 
 ### 3. Securities Account import
 
-With this import type, you can create a new security (see above), while adding at the same time the first Buy transaction. The required fields are `Shares`, and `Value`. The optional fields are `Ticker`, `Symbol`, `ISIN`, `WKN`, `Time`, `Currency`, `Note`, `Date of Quote`, `Securities Account`, `Cash Account`, `Quote`, `Date of Value`, and `Security Name`. The following CSV file will be imported in Figure 8.
+With this import type, you can create a new security (see above), while adding at the same time the first Buy transaction. The required fields are `Shares`, and `Value`. The optional fields are `Ticker`, `Symbol`, `ISIN`, `WKN`, `Time`, `Currency`, `Note`, `Date of Quote`, `Securities Account`, `Account`, `Quote`, `Date of Value`, and `Security Name`. The following CSV file will be imported in Figure 8.
 ```
 Ticker Symbol; ISIN; Security Name; Currency; shares; value
 BAS; DE000BASF111; BASF; EUR; 20; 900
@@ -109,17 +109,17 @@ Figure: Importing securities (Step 4).{class=pp-figure}
 
 ### 4. Account Transactions import
 
-The Account Transactions import type will be used to register transactions on a deposit or cash account such as deposit, removal, interest, ... It is equivalent with manual recording a transaction with the menu Transaction (third group). The required fields are `Date`, and `Value`.
+The Account Transactions import type will be used to register transactions on a deposit or cash account such as deposit, withdrawal, interest, ... It is equivalent with manual recording a transaction with the menu Transaction (third group). The required fields are `Date`, and `Value`.
 
 !!! Important
     The Account Transactions and Portfolio Transactions import types are quite similar. Internally, an account transaction is reserved to work with cash accounts and their transactions such as deposits. A portfolio transaction works with instruments and their transactions: buy, sell, delivery, ... A buy/sell transaction however has both components: something is added/removed from the securities account and some money is deducted/added to the cash account. In most cases, both types could be used interchangeably.
 
-    :warning: 
-    <span style="color:orange">Use Account Transactions type for deposit, removal, ... and Portfolio Transactions type for buy, sell, ...</span>
+    :warning:
+    <span style="color:orange">Use Account Transactions type for deposit, withdrawal, ... and Portfolio Transactions type for buy, sell, ...</span>
 
-The required fields are `Date`, and `Value`. Optional fields are `Type`, `Transaction Currency`, `Security Name`, `Shares`, `Securities Account`, `Exchange Rate`, `Gross Amount`, `Currency Gross Amount`, `Ticker Symbol`, `Taxes`, `Note`, `Cash Account`, `Fees`, `ISIN`, `WKN`, `Offset Account`, and `Time`.
+The required fields are `Date`, and `Value`. Optional fields are `Type`, `Transaction Currency`, `Security Name`, `Shares`, `Securities Account`, `Exchange Rate`, `Gross Amount`, `Currency Gross Amount`, `Ticker Symbol`, `Taxes`, `Note`, `Account`, `Fees`, `ISIN`, `WKN`, `Offset Account`, and `Time`.
 
-Acceptable values for the field `Type` are `Deposit`, `Removal`, `Buy`, `Sell`, `Dividend`, `Interest`, `Interest Charge`, `Fees`, `Fees Refund`, `Taxes`, `Tax Refund`, `Transfer (Inbound)`, `Transfer (Outbound)`, `Delivery (Inbound)`, and `Delivery (Outbound)`. The default value for `Type` is `Deposit`.
+Acceptable values for the field `Type` are `Deposit`, `Withdrawal`, `Buy`, `Sell`, `Dividend`, `Interest`, `Interest Charge`, `Fees`, `Fees Refund`, `Taxes`, `Tax Refund`, `Transfer (Inbound)`, `Transfer (Outbound)`, `Delivery (Inbound)`, and `Delivery (Outbound)`. The default value for `Type` is `Deposit`.
 
 If the Cash and Securities account are not provided in the CSV file, the value from the top panel is used. It's important to note that Fees and Taxes can be included as part of the Buy or Sell transaction through a dedicated column in the CSV file. In this case, the taxes and fees are subtracted from the total value field (Value = Gross Amount + Taxes + Fees). Alternatively, a separate transaction with the type Fees or Taxes can be created, and the amount is then specified in the Value column. In this case, the fees and taxes are added to the value.
 
@@ -146,7 +146,7 @@ To illustrate, let us assume that a USD dividend of 5 USD is paid for three shar
 
 
 
-| Date       | Type     | Security Name | Shares | Currency | Gross Amount | Exchange Rate | Cash Account | Value (EUR) |
+| Date       | Type     | Security Name | Shares | Currency | Gross Amount | Exchange Rate | Account | Value (EUR) |
 | ---------- | -------- | ------------- | ------ | -------- | ------------ | ------------- | ------------ | ---------- |
 | 2024-01-13 | Dividend | NVIDIA        | 3      | USD      | 15           | 0.5           | broker-A (EUR) | 7.5        |
 
@@ -155,7 +155,7 @@ In this example, the CSV file contains columns for the date, type of transaction
 The raw CSV-file looks like:
 
 ```
-Date;Type;Security Name;Shares; Currency Gross Amount; Gross Amount; Exchange Rate; Cash Account;  Value
+Date;Type;Security Name;Shares; Currency Gross Amount; Gross Amount; Exchange Rate; Account;  Value
 2024-01-13; Dividend; NVIDIA; 3; USD; 15; 0,5; broker-A (EUR);  7,5
 ```
 
@@ -186,18 +186,18 @@ Figure: Result of import from above. {class=pp-figure}
 
 This type of import requires three fields: Shares, Date, Value. The optional fields are the same as above; except that the optional Offset Account field is replaced with Offset Securities Account. The selection of required fields may seem somewhat arbitrary. For transactions like buy and sell, a security identification is essential (such as name, ISIN, etc.). However, for an interest payment, the 'Shares' field is not necessary.
 
-Because the number of shares is a required field, one would assume that simple deposit of removal transactions are not allowed; but they are. The number of shares is then ignored.
+Because the number of shares is a required field, one would assume that simple deposit or withdrawal transactions are not allowed; but they are. The number of shares is then ignored.
 
-The acceptable values for the field `Type` are: `Deposit`, `Removal`, `Interest`, `Interest Charge`, `Dividend`, `Fees`, `Fees Refund`, `Taxes`, `Tax Refund`, `Buy`, `Sell`, `Transfer (Inbound)`, and `Transfer (Outbound)`. The default value of Type is `Sell`.
+The acceptable values for the field `Type` are: `Deposit`, `Withdrawal`, `Interest`, `Interest Charge`, `Dividend`, `Fees`, `Fees Refund`, `Taxes`, `Tax Refund`, `Buy`, `Sell`, `Transfer (Inbound)`, and `Transfer (Outbound)`. The default value of Type is `Sell`.
 
-Suppose that you wish to import two portfolio transactions: a sell of 2 shares of BASF in EUR and a buy of 3 shares NVIDIA in USD. Since we are using the EUR cash account in both cases, the transaction in USD must be converted into EUR. In this case, Portfolio Performance will handle this automatically because the NVIDIA security is listed in USD and the security account in EUR. Alternatively, you can designate the `Currency Gross Amount` column as `USD`. However, a more efficient workflow may involve defining the `Cash Account`, and eventually the `Securities Account`. This prevents the import from defaulting to standard accounts, such as `broker-A` and `broker-A (EUR)` in this case.
+Suppose that you wish to import two portfolio transactions: a sell of 2 shares of BASF in EUR and a buy of 3 shares NVIDIA in USD. Since we are using the EUR cash account in both cases, the transaction in USD must be converted into EUR. In this case, Portfolio Performance will handle this automatically because the NVIDIA security is listed in USD and the security account in EUR. Alternatively, you can designate the `Currency Gross Amount` column as `USD`. However, a more efficient workflow may involve defining the `Account`, and possibly also the `Securities Account`. This prevents the import from defaulting to standard accounts, such as `broker-A` and `broker-A (EUR)` in this case.
 
 Figure 15 displays the `Mapped to Field` dialog box is shown (accessible via double-clicking the Value column). It's advisable to confirm that the selected format aligns with your language settings, especially if you use a comma as the decimal point as in this example.
 
 The CSV file should look as follows.
 
 ```
-Date;Type;Shares;Security Name;Value;Exchange rate;fees;taxes;Securities Account;Cash Account
+Date;Type;Shares;Security Name;Value;Exchange rate;fees;taxes;Securities Account;Account
 2024-01-04; Sell; 2; BASF; 90; ;5; 3; broker-A; broker-A (EUR)
 2024-01-13; Buy; 3; NVIDIA; 1740,98; 1,0837; 15; 10; broker-A; broker-A (EUR)
 ```

@@ -97,7 +97,7 @@ Figure: Available fields Securities. {class=align-right style="width:30%"}
 
 
 
-The only cashflows that matter from a portfolio perspective are the deposit/removal transactions on a cash account OR the money value of the Inbound/Outbound Deliveries of securities into a securities account. Only money from these transactions flow into or out of the portfolio.
+The only cashflows that matter from a portfolio perspective are the deposit/withdrawal transactions on a cash account OR the money value of the Inbound/Outbound Deliveries of securities into a securities account. Only money from these transactions flow into or out of the portfolio.
 
 From a security (account) perspective, the performance of a security is influenced by the value (price) of Buy or Sell transactions or the equivalent Inbound or Outbound Deliveries. The payment of a dividend is considered as a cash inflow into the security (increasing the performance), as are Fees refunds. Paying fees on security transactions however will decrease the performance and will reduce the cash flow as a result of the Buy/Sell or Inbound/Outbound Delivery.
 

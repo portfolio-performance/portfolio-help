@@ -7,7 +7,7 @@ Using the menu `View > Reports > Statement of Assets > Chart` or the sidebar, yo
 
 You can select the desired reporting period using the dropdown menu in the top-right corner. By default, the periods of one, two, or three years are available. Additionally, you have the option to create a custom time period using the `New` feature or `Manage`the existing periods; see [Reporting Period](../../../../concepts/reporting-period.md) for a description.
 
-The default `Standard` View has a time period of one year, displays two data series (Total and Transferals; see below) in black and grey, and shows the Y-axis starting from zero near the bottom of the chart. All of these features can be customized. It is generally good practice to first create a new view using the `New View` button (top right). This new view initially duplicates the default Standard View, allowing you to customize it as needed. Using the drop-down menu to the right of the view name, you can duplicate, rename, or delete a view. If the Standard View is deleted, it will be automatically recreated with its default settings.
+The default `Standard` View has a time period of one year, displays two data series (Total and Net Deposits; see below) in black and grey, and shows the Y-axis starting from zero near the bottom of the chart. All of these features can be customized. It is generally good practice to first create a new view using the `New View` button (top right). This new view initially duplicates the default Standard View, allowing you to customize it as needed. Using the drop-down menu to the right of the view name, you can duplicate, rename, or delete a view. If the Standard View is deleted, it will be automatically recreated with its default settings.
 
 With the `Export data as CSV` button, you create a comma-separated Values (CSV) file of the data of the visible chart or export the chart as an image. The :gear: Gear icon is discussed below.
 
@@ -35,7 +35,7 @@ Figure: Chart of the Total value of the demo portfolio.{class=pp-figure}
 
 ## Canvas
 
-The canvas is a graphical representation of one or more data series. A data series typically comprises a set of paired data points presented in a table format, such as dates and their corresponding values. By default, two data series are displayed: `Transferals` (primarily deposits) and `Total` (see below for an explanation of all possible data series). When you left-click the canvas and hold the mouse down on a specific day, for example, January 14, 2022, a tooltip window will appear, displaying detailed values for all selected data series on that day.
+The canvas is a graphical representation of one or more data series. A data series typically comprises a set of paired data points presented in a table format, such as dates and their corresponding values. By default, two data series are displayed: `Net Deposits` (primarily deposits) and `Total` (see below for an explanation of all possible data series). When you left-click the canvas and hold the mouse down on a specific day, for example, January 14, 2022, a tooltip window will appear, displaying detailed values for all selected data series on that day.
 
 Right-clicking on the chart canvas displays the context menu, providing additional options (see Figure 1).
 
@@ -55,7 +55,7 @@ Figure: Configure menu.{class=align-right}
 
 ![](./images/sb-reports-chart-gear.png)
 
-Using the :gear: gear icon located at the top right (see Figure 1), you can see the data series that are displayed in the graph, such as Total and Transferals. Once a data series is added to the chart, it will appear in the menu (see Figure 2) but will disappear in the list of available data series (see Figure 3).
+Using the :gear: gear icon located at the top right (see Figure 1), you can see the data series that are displayed in the graph, such as Total and Net Deposits. Once a data series is added to the chart, it will appear in the menu (see Figure 2) but will disappear in the list of available data series (see Figure 3).
 
 Portfolio Performance offers two additional charts: the Performance chart (under `View > Reports > Performance > Chart`) and the Historical Returns and Volatility chart (under `View > Reports > Performance > Return/Volatility`). The `Copy from` option adds the data series from these chart views to your current chart. The `Replace by` option works similarly but removes the existing data series before adding the new ones.
 
@@ -73,13 +73,13 @@ Please note that the derived data series are available in both the left and righ
 
 - Delta (for the reporting period or since the first transaction) represents the change in an asset's value from the start to the end of the reporting period or from the first transaction to the end of the period. This Delta will fluctuate around zero, for example for the first transaction day the delta will be zero. The chapter on [Reporting Period](../../../../concepts/reporting-period.md) explains that the valuation of a portfolio can differ according to the selected `Reporting Period`.
 
-- Dividends, Earnings (= dividends + interests), Fees, Interest, Interest Charge, and Taxes are available in both accumulated and 'instance' versions. For example, an 'instanced' dividend will be represented as a spike, whereas the accumulated version will display a graph that steadily increases as dividends accumulate over time. These fields are described in [Transactions](../../../transaction/index.md) and are recorded as part of each transaction.
+- Dividends, Earnings (= dividends + interests), Fees, Interest, Interest Charge, and Taxes are available in both cumulative and 'instance' versions. For example, an 'instanced' dividend will be represented as a spike, whereas the cumulative version will display a graph that steadily increases as dividends accrue over time. These fields are described in [Transactions](../../../transaction/index.md) and are recorded as part of each transaction.
 
 - Invested Capital (for reporting period or since first transaction): the term "invested capital" refers to the total amount of money that an investor has used to purchase various securities, such as stocks, bonds, or other financial instruments. It includes the initial purchase price of the securities, additional investments made over time, and other factors such as fees, taxes, ...
 
 - Total: the total value of the portfolio valuated over time.
 
-- Transferals (instanced and accumulated): Each transferal, whether a deposit/removal or delivery inbound/outbound, is represented by a small spike (positive or negative) on the day the transferal was made (instance). The accumulated version is represented by a block diagram, showing the cumulative net value of all transferals over time.
+- Net Deposits (instanced and cumulative): Each deposit or withdrawal, whether a deposit/withdrawal or delivery inbound/outbound, is represented by a small spike (positive or negative) on the day the transaction was made (instance). The cumulative version is represented by a block diagram, showing the cumulative net value of all deposits and withdrawals over time.
 
 
 
