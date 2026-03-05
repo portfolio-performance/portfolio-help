@@ -5,7 +5,7 @@ Figure: Context menu of the bookmarks page.{class=align-right style="width:50%"}
 
 ![](images/bookmarks-context-menu.svg)
 
-You can overrule the default width =30% 
+You can overrule the default width =40% 
 
 *Adding clear*
 <br style="clear:both;">
