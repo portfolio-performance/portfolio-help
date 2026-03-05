@@ -2883,12 +2883,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/transaction/deposit-removal/" class="md-nav__link">
+      <a href="../../reference/transaction/deposit-withdrawal/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Deposit & removal (withdrawal)
+    Deposit & withdrawal
     
   </span>
   
@@ -3986,8 +3986,8 @@
 <p>Things become more complicated when <a href="../../reference/transaction/">transactions</a> occur during the reporting period. There are 13 types of transactions, each generating cash flows into and out of the portfolio, account, or security. Figure 2 illustrates all transaction types between the four major components: the portfolio (represented by a dashed blue line), deposit (cash) accounts in both EUR and USD, three securities (two of which are quoted in USD), and collected into two security accounts (orange and blue dashed lines). Security-2 (USD) is present in both accounts.</p>
 <p>Transactions are represented by arrows. They generate cash outflows (red circle) or cash inflows (green circle). The numbers next to the circles represent the magnitude of the cash flow, based on a hypothetical example of a buy or sell of 5 shares at 10 EUR/USD per share, resulting in a capital inflow of 50 EUR/USD. Fees and taxes are always set at 1 and 2 EUR respectively. A dividend of 2 USD is paid per share; an exchange rate of 0.9 EUR/USD is used.</p>
 <p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Overview of all transaction types with associated cash flows at portfolio, account and security level. </figcaption><img alt="" src="../images/system-overview-cashflows.svg"></figure></p>
-<p>As can be seen, <strong>only four types of transactions</strong> generate a cash flow at the portfolio level: deposit, removal (withdrawal), inbound delivery, and outbound delivery. These transactions will thus influence the performance indicator on the dashboard (View &gt; Reports &gt; Performance); which is a portfolio performance indicator. </p>
-<p>A <a href="../../reference/transaction/deposit-removal/"><em>deposit</em></a> transaction generates two cash inflows: one at the portfolio level and one at the deposit account level. This transaction results in an inflow because money is brought into the deposit account, and as such also into the portfolio. On the other hand, a <a href="../../reference/transaction/deposit-removal/"><em>withdrawal</em></a> creates two cash outflows and removes money from a cash account and the portfolio.</p>
+<p>As can be seen, <strong>only four types of transactions</strong> generate a cash flow at the portfolio level: deposit, withdrawal, inbound delivery, and outbound delivery. These transactions will thus influence the performance indicator on the dashboard (View &gt; Reports &gt; Performance); which is a portfolio performance indicator.</p>
+<p>A <a href="../../reference/transaction/deposit-withdrawal/"><em>deposit</em></a> transaction generates two cash inflows: one at the portfolio level and one at the deposit account level. This transaction results in an inflow because money is brought into the deposit account, and as such also into the portfolio. On the other hand, a <a href="../../reference/transaction/deposit-withdrawal/"><em>withdrawal</em></a> creates two cash outflows and removes money from a cash account and the portfolio.</p>
 <p>An <a href="../../reference/transaction/delivery/"><em>inbound delivery</em></a> adds shares to a security; thus increasing the capital of the security (shares x historical price) <strong>and</strong> the security account. Conversely, an <a href="../../reference/transaction/delivery/"><em>outbound delivery</em></a> decreases the capital by removing shares from the security, resulting in a cash outflow.</p>
 <p>Special attention should be given to <a href="../../reference/transaction/fees-taxes/"><em>fees</em> and <em>taxes</em></a>. The inbound delivery of 5 shares at 10 EUR per share will increase the capital by 50 EUR, but requires a 53 EUR inflow into the portfolio. However, the cash inflow into the security is 51 EUR, because the 1 EUR fee is only split off after the cashflow at the security boundary. To determine the cash inflow or outflow of a security, one should always incorporate the fees. Fees are considered intrinsic to the transaction, whereas taxes are not considered intrinsic to a security. Collecting taxes varies greatly per country, and the performance of a security should not depend on it. Taxes are by default excluded from the performance calculation at security level. Concerning the security account level, Portfolio Performance offers two possibilities: account performance <strong>before</strong> or <strong>after</strong> taxes (default calculation); see menu View &gt; Reports &gt; Chart &gt; configure chart &gt; Add data series ... The default <strong>After taxes</strong> calculation is shown in Figure 2. Upon crossing the security account border (second green circle), the taxes are already accounted for in the taxes component of the security. The cash inflow of the security account is thus 51 EUR. With the <strong>Before taxes</strong> calculation, the security account cash inflow is 53 EUR, because 2 EUR taxes are deposited into the taxes entity only after crossing the security account border.</p>
 <p>All other transactions are internal to the portfolio; they do not influence the portfolio's performance. For example, the <em>transfer-out transaction</em> is a flow between two deposit accounts and, as such, has no impact on the performance of the portfolio, except when there is a currency conversion as in the example of Figure 2. </p>
@@ -4021,7 +4021,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 18, 2025 12:44:24">May 18, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 2, 2026 13:56:31">March 2, 2026</span>
   </span>
 
     

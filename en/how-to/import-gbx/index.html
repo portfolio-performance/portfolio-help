@@ -2880,12 +2880,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/transaction/deposit-removal/" class="md-nav__link">
+      <a href="../../reference/transaction/deposit-withdrawal/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Deposit & removal (withdrawal)
+    Deposit & withdrawal
     
   </span>
   
@@ -4167,7 +4167,7 @@
 <h1 id="how-to-use-the-csv-import-functions-for-gbx-priced-securities">How to use the CSV Import functions for GBX priced securities</h1>
 <p>The following <em>how-to</em> is based on a discussion <em><a href="https://forum.portfolio-performance.info/t/getting-started-cash-vs-deposit-reference-accounts/27365/20">Getting started: Cash vs Deposit/Reference accounts</a></em> in the English language forum.</p>
 <h2 id="introduction">Introduction</h2>
-<p>Portfolio Performance (Portfolio Performance from now on) supports importing of different currencies when importing transactions and movements on cash/deposit accounts. Before reading this guide, you should refer to the main guide on importing which covers things which we will not duplicate here.</p>
+<p>Portfolio Performance (Portfolio Performance from now on) supports importing of different currencies when importing transactions and movements on cash accounts/deposit accounts. Before reading this guide, you should refer to the main guide on importing which covers things which we will not duplicate here.</p>
 <p>This guide is mainly about the peculiar situations which can arise from the UK market habit of pricing some securities (in particular funds) in pence (GBX in Portfolio Performance language) rather than pounds (GBP). This causes complications because our accounts (Securities accounts where we hold the actual securities and Cash accounts used to show money deposited for purchases and obtained from sales of securities) will be in GBP. GBP and GBX are different currencies in the eyes of Portfolio Performance (and many other portfolio tools). So there is actually a conversion which is treated as a currency exchange by Portfolio Performance that needs to happen -- it's a special case.</p>
 <p>The importer does a lot well, but has limitations and is at times more helpful or less helpful when it comes to error messages. The process needed to make this work is not always intuitive. It is also possible to successfully import and then find later that the transactions are not actually correct.</p>
 <p>The main guide on importing now helps a great deal. It is possible to figure out how to do it now that that guide exists. This extra information is intended to spell out exactly how to do it and hopefully spare some frustration which can otherwise occur.</p>
@@ -4226,7 +4226,7 @@
 <p>In the example above we have the following columns:</p>
 <p>Date -- the transaction date. Here we have formatted in the Portfolio Performance default date and time format. It can also be just in YYYY-MM-DD format. This can be changed by using a "Custom" number format if using Excel and entering YYYY-MM-DD as the format. The date can be in other formats, but then you will need to choose the right format in the import wizard which is slower and is easy to forget leading to incorrect dates being imported. Essential.</p>
 <p>Securities Account -- this helps avoid errors from overlooking the selection of the correct Securities Account in the Import Wizard. It is essential if you want to import transactions into more than one account in the same import, otherwise it is optional.</p>
-<p>Cash Account -- this is included for the same reasons as Securities Account.</p>
+<p>Account -- this is included for the same reasons as Securities Account.</p>
 <p>Type -- the type of transaction. Essential.</p>
 <p>Value -- the net value of the transaction in the base currency of the securities account (i.e. the number of shares x the price of the transaction in the base currency of the securities account). In this case, all the values here are in GBP (£s) NOT GBX/pence. Essential.</p>
 <p>Currency Gross Amount -- the denominated currency of the security. NOT the transaction amount currency. Where the pricing currency of the security matches the currency of the securities account, this is blank, but is Essential where there is a difference.</p>
@@ -4268,13 +4268,13 @@
 <p><figure-caption-end></figure-caption-end></p>
 <p><img alt="" src="../images/image5.png"></p>
 <p>Date, Type, Value, Gross Amount, and Exchange Rate are mandatory. One of Ticker Symbol, Security Name, ISIN or WKN is required to identify which security is involved.</p>
-<p>Cash Account is normally optional if all dividends will be applied to the same account (which is specified in the Import Wizard). Here however we are being specific about the Cash Account in order to allow dividends for more than one account to be imported together.</p>
+<p>Account is normally optional if all dividends will be applied to the same cash account (which is specified in the Import Wizard). Here however we are being specific about the Account in order to allow dividends for more than one cash account to be imported together.</p>
 <p>Note is optional.</p>
 <ul>
 <li>The Gross amount, Currency Gross Amount and Exchange Rate can be omitted for the first row (GBP to GBP)</li>
 <li>The Exchange Rate for the GBX dividend will always be 0.01.</li>
 <li>The Exchange Rate for the USD dividend paid into a USD cash account is always 1.</li>
-<li>The Exchange Rate for the USD dividend being paid into a GBP account is the rate which allows conversion between the Gross Amount and the Value (see main Import guide).</li>
+<li>The Exchange Rate for the USD dividend being paid into a GBP cash account is the rate which allows conversion between the Gross Amount and the Value (see main Import guide).</li>
 </ul>
 <p>A rarer type of dividend occurs when the security is priced in GBP, but dividends are received in USD. HMEF.L is an example of such a fund. There does not appear to be a way to handle this situation through import currently.</p>
 <p>The options to handle this are:</p>
@@ -4302,7 +4302,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 27, 2025 14:59:24">October 27, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 2, 2026 13:56:31">March 2, 2026</span>
   </span>
 
     
