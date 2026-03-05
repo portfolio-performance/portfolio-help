@@ -72,12 +72,15 @@ Minor changes can be easily previewed within your Markdown editor.
 
 ### Plugins
 
-Two plugins are specified in the requirements.txt
+Four plugins/extensions are specified in the requirements.txt
 
 - mkdocs-caption == 0.0.9
 - mkdocs-git-revision-date-localized-plugin == 1.2.1
+- mkdocs-material == 9.6.12
+- pymdown-extensions == 10.16.1
 
-The `mkdocs-caption` is needed to insert numbered figure captions on pages. The second plugin will add 'Last update: month, day, year' at the bottom of each page. 
+
+The `mkdocs-caption` is needed to insert numbered figure captions on pages. The second plugin `revision-date` will add 'Last update: month, day, year' at the bottom of each page. `material` is being used for navigation, search, and table of contents. `pymdown-extensions` is used for headlines, codeblocks, links, and pictures.
 
 ### Version control
 Since the Portfolio Performance manual is being maintained in GitHub, version control is already in place. Please pay special attention to the following:
