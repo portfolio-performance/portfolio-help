@@ -3965,14 +3965,11 @@
 <li>Set the data source of a security to the built-in provider.  </li>
 </ul>
 <p>Please note that the built-in provider is just one of more than 20 data sources available in Portfolio Performance, such as Yahoo Finance, Alpha Vantage, JSON, and others (see <a href="../">Downloading historical prices</a> for an overview). Therefore, you can use Portfolio Performance without relying on the built-in provider.</p>
-<ol>
-<li><strong>Creating a Portfolio Performance ID</strong></li>
-</ol>
+<p><strong>1. Creating a Portfolio Performance ID</strong></p>
 <p>Before using the built-in quote provider, you must register by creating a <strong>free Portfolio Performance ID</strong>. This only needs to be done once. A verified e-mail address is required — meaning you have to enter a verification code sent to that address before proceeding. No additional personal information is requested. The easiest way to register is via the <strong>Settings/Preferences</strong> option in the <strong>Application menu (macOS)</strong> or <strong>Help menu (Windows)</strong>; see Figure 1a.  </p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Registering your Portfolio Performance ID.</figcaption><img alt="" src=""></figure></p>
 <div class="grid cards">
 <ul>
-<li><img alt="" class="center" src="../images/settings-api-keys.png" width="400"></li>
+<li><img alt="" class="center" src="../images/settings-api-keys.png" width="400" title="Registering your Portfolio Performance ID."></li>
 <li><img alt="" class="center" src="../images/built-in-sign-in.png" width="400"></li>
 <li><img alt="" class="center" src="../images/built-in-create-account.png" width="400"></li>
 <li><img alt="" class="center" src="../images/built-in-verify-email.png" width="400"></li>
@@ -3980,18 +3977,14 @@
 </div>
 <p>Clicking the <code>Login</code> button opens the <a href="https://accounts.portfolio-performance.info/sign-in">Registration/Sign-in website</a> (Figure 1b). Select <code>Create account</code>, enter a verifiable e-mail address, obtain the verification code from your e-mail, and paste it as prompted (see Figure 1d).  </p>
 <p>Next, set up a password for future logins. You may then close the browser. Your credentials are securely stored on a dedicated identity server. You can unregister at any time by sending an e-mail to <a href="mailto:info@portfolio-performance.app">info@portfolio-performance.app</a>. See the <a href="https://www.portfolio-performance.app/privacy-policy">Privacy Policy</a> webpage for further details.</p>
-<ol>
-<li><strong>Logging in to the Service</strong></li>
-</ol>
+<p><strong>2. Logging in to the Service</strong></p>
 <p>Using the same <code>Settings</code> panel, you can log in to the service with your Portfolio Performance ID and password.<br>
 After a successful login, your e-mail address (Portfolio Performance ID) is displayed next to the user field in the Settings panel (see Figure 1a).</p>
 <p>The login creates a <strong>refresh token</strong>, which is stored locally in the workspace directory — not in the portfolio XML file.  This login is independent of other logins, such as those used for the forum or for cloud services like OneDrive or Google Drive. The refresh token allows automatic re-authentication whenever historical prices are refreshed. It remains valid for <strong>90 days</strong>, after which you must log in again to renew it.</p>
 <p>There is also a separate <code>Subscription</code> field. You can subscribe to the service using the same e-mail address as your (paid) mobile app account. The subscription type (e.g. <code>Premium</code>) will then appear next to the label.<br>
 A subscribed user can not only download historical prices but also access delayed quotes, which can be used in the <a href="../../../reference/file/new/#latest-quote">Latest quote</a> tab of the Security Data panel.</p>
 <hr>
-<ol>
-<li><strong>Setting the Data Source of a Security to the Built-in Provider</strong></li>
-</ol>
+<p><strong>3. Setting the Data Source of a Security to the Built-in Provider</strong></p>
 <p>You can assign the built-in data source to a security either via the <a href="../../../getting-started/adding-securities/">New Instrument Creation Wizard</a> — which handles all steps, including ID creation and login — or manually in the <a href="../../../reference/file/new/#historical-quotes">Historical Quotes</a> tab of the Security Data panel.</p>
 <ul>
 <li>In the <a href="../../../reference/file/new/#security-master-data">Security Master Data</a> tab of the Security Data panel, enter at least the <code>ticker symbol</code> used by your chosen exchange (for example, <code>AAPL</code> for Apple Inc. on NASDAQ).  </li>
@@ -3999,8 +3992,7 @@ A subscribed user can not only download historical prices but also access delaye
 <li>If multiple exchange markets are available, you can also select the relevant market.<br>
   As shown in Figure 2, the built-in provider supports 12 European exchange markets in addition to the American NASDAQ for the <code>AAPL</code> ticker symbol.  </li>
 </ul>
-<p><strong>Figure:</strong> Historical quotes from the built-in provider {class=pp-figure}  </p>
-<p><img alt="" src="../images/built-in-historical-quotes-aapl.png"></p>
+<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Historical quotes from the built-in provider.</figcaption><img alt="" src="../images/built-in-historical-quotes-aapl.png"></figure></p>
 <p>If you have a paid subscription for the mobile app, you can also specify the <code>Latest price</code> provider to download delayed prices. Currently, this option is available only for US securities.</p>
 
 
@@ -4022,7 +4014,7 @@ A subscribed user can not only download historical prices but also access delaye
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2025 15:35:40">October 15, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 6, 2026 10:25:53">March 6, 2026</span>
   </span>
 
     
