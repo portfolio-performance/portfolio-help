@@ -13,13 +13,12 @@ To use the built-in provider, you must:
 
 Please note that the built-in provider is just one of more than 20 data sources available in Portfolio Performance, such as Yahoo Finance, Alpha Vantage, JSON, and others (see [Downloading historical prices](./index.md) for an overview). Therefore, you can use Portfolio Performance without relying on the built-in provider.
 
-1. **Creating a Portfolio Performance ID**
+**1. Creating a Portfolio Performance ID**
 
 Before using the built-in quote provider, you must register by creating a **free Portfolio Performance ID**. This only needs to be done once. A verified e-mail address is required — meaning you have to enter a verification code sent to that address before proceeding. No additional personal information is requested. The easiest way to register is via the **Settings/Preferences** option in the **Application menu (macOS)** or **Help menu (Windows)**; see Figure 1a.  
 
 Figure: Registering your Portfolio Performance ID.{class=pp-figure}
 
-![]()
 <div class="grid cards" markdown>
 
 - ![](images/settings-api-keys.png){width="400" .center}
@@ -34,7 +33,7 @@ Clicking the `Login` button opens the [Registration/Sign-in website](https://acc
 Next, set up a password for future logins. You may then close the browser. Your credentials are securely stored on a dedicated identity server. You can unregister at any time by sending an e-mail to [info@portfolio-performance.app](mailto:info@portfolio-performance.app). See the [Privacy Policy](https://www.portfolio-performance.app/privacy-policy) webpage for further details.
 
 
-2. **Logging in to the Service**
+**2. Logging in to the Service**
 
 Using the same `Settings` panel, you can log in to the service with your Portfolio Performance ID and password.  
 After a successful login, your e-mail address (Portfolio Performance ID) is displayed next to the user field in the Settings panel (see Figure 1a).
@@ -46,7 +45,7 @@ A subscribed user can not only download historical prices but also access delaye
 
 ---
 
-3. **Setting the Data Source of a Security to the Built-in Provider**
+**3. Setting the Data Source of a Security to the Built-in Provider**
 
 You can assign the built-in data source to a security either via the [New Instrument Creation Wizard](../../getting-started/adding-securities.md) — which handles all steps, including ID creation and login — or manually in the [Historical Quotes](../../reference/file/new.md#historical-quotes) tab of the Security Data panel.
 
@@ -55,7 +54,7 @@ You can assign the built-in data source to a security either via the [New Instru
 - If multiple exchange markets are available, you can also select the relevant market.  
   As shown in Figure 2, the built-in provider supports 12 European exchange markets in addition to the American NASDAQ for the `AAPL` ticker symbol.  
 
-**Figure:** Historical quotes from the built-in provider {class=pp-figure}  
+Figure: Historical quotes from the built-in provider.{class=pp-figure}
 
 ![](images/built-in-historical-quotes-aapl.png)
 
