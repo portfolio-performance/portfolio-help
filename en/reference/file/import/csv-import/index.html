@@ -1648,18 +1648,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-historical-quotes-import" class="md-nav__link">
+  <a href="#1-securities-import" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Historical Quotes import
+      1. Securities import
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-securities-import" class="md-nav__link">
+  <a href="#1-historical-quotes-import" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Securities import
+      1. Historical Quotes import
     </span>
   </a>
   
@@ -4033,18 +4033,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-historical-quotes-import" class="md-nav__link">
+  <a href="#1-securities-import" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Historical Quotes import
+      1. Securities import
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-securities-import" class="md-nav__link">
+  <a href="#1-historical-quotes-import" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Securities import
+      1. Historical Quotes import
     </span>
   </a>
   
@@ -4117,127 +4117,123 @@
 
 
 <h1 id="importing-a-csv-file">Importing a CSV file</h1>
-<p>Portfolio Performance employs a wizard to lead you through the import process, consisting of three steps. At each step, you are required to furnish additional information.</p>
-<p><strong>Step 1</strong>. Start with the menu <code>File &gt; Import &gt; CSV files (comma-separated values)</code>, navigate to the correct folder and select the appropriate CSV file. Only files with the extension <code>CSV</code> are displayed.</p>
-<p>A CSV file is simply a text file. The first line contains the names of the fields (columns); separated by a marker such as a comma. The second and following lines contain the data, also separated by a marker. The number and type of fields the file should contain, depend on the type of import. The names in the heading can be freely chosen, although they should match PP's internal usage, as it simplifies the mapping process (associating each column with its corresponding field in PP). The printout of a CSV file in Table 1 (see below) comprises two fields or columns and four lines of data that could be utilized for importing historical prices.</p>
-<p><figure class="align-right" id="_figure-1"><figcaption>Figure 1. Import types. </figcaption><img alt="" src="../images/import-types.png"></figure></p>
-<p>In <strong>step 2</strong> of the wizard, you need to select the appropriate import type or template by clicking on the drop down box (see Figure 3). Portfolio Performance distinguishes between 5 types of import: <code>Account Transactions</code>, <code>Portfolio Transactions</code>, <code>Securities</code>, <code>Historical Quotes</code>, and <code>Securities Account</code> (see Figure 1). These templates are discussed in detail below. You also need to decide about the following options.</p>
+<p>PortfolioPerformance employs a wizard to guide you through the import process, consisting of three steps. At each step, you are required to provide additional information.</p>
+<p><strong>Step 1</strong>. To begin, navigate to the menu <code>File &gt; Import &gt; CSV files (comma-separated values)</code>. Browse to the appropriate folder and select the desired CSV file. By default, the file type filter displays only files with the <code>.csv</code> extension. To view all file types, select <code>All Files (*.*)</code> from the dropdown menu. Alternatively, you can use the shortcut <code>Cmd + I</code> (or <code>Ctrl + I</code> on Windows), followed by the letter <code>C</code>.</p>
+<p>A CSV file is essentially a plain text file. The first line typically contains the names of the fields (columns), separated by a delimiter such as a comma. Subsequent lines contain the data, also separated by the same delimiter. The required fields and their format depend on the type of import being performed. While the column headings can be freely chosen, it is recommended to align them with PortfolioPerformance's field names to simplify the mapping process (i.e., associating each column with its corresponding field in PortfolioPerformance).</p>
+<p>The example CSV file shown in Table 1 contains five fields (columns) and three rows of data, which can be used for importing securities into your portfolio.</p>
+<p><em>Table 1: Example source data for importing securities.</em>
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Ticker Symbol; ISIN; Security Name; Currency; Info
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>BAS; DE000BASF111; BASF; EUR; XETRA
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>NVDA; ; NVIDIA; USD; NASDAQ
+</code></pre></div>
+<p>In this example, a semicolon (<code>;</code>) is used as the field delimiter. In Europe, numbers are typically written with a comma as the decimal separator; hence, a semicolon is used as the marker in this CSV file. Please note that the ISIN is not provided for the NVIDIA share. This file was created in Excel and saved with UTF-8 encoding. However, any spreadsheet or text editing program can be used to create such a file. It is worth noting that the <code>.csv</code> extension is not mandatory. PortfolioPerformance can also read plain text files, provided the file type filter is set to <code>All Files (*.*)</code> and the layout adheres to the structure shown in Table 1.</p>
+<p>In <strong>step 2</strong> of the wizard, you need to provide additional information, so that the csv-file could be read correctly (see Figure 1). </p>
+<p><figure class='pp-figure"' id="_figure-1"><figcaption>Figure 1. Providing additional information about the CSV-file.</figcaption><img alt="" src="../images/mnu-file-import-securities-step-2.png"></figure></p>
 <ul>
-<li><em>Delimiter</em>: Portfolio Performance will probably choose the correct delimiter; in this case a semicolon. Other possibilities include comma and the tab symbol.</li>
-<li><em>Encoding</em>: "strange" characters in the output table indicate a mismatch between the chosen encoding and the source file encoding. There are numerous possibilities, and the correct choice depends on the application used to create the file. A good choice is likely <code>UTF-8</code> or <code>Windows-1250</code>. </li>
-<li><em>First line contains header</em>: enable this option if the first line of your CSV contains field  labels.</li>
-<li><em>Skip lines</em>: sometimes the CSV-file contains irrelevant information in the first few lines. You can skip them with this option.</li>
-<li><em>Mapping fields</em>: Portfolio Performance needs to determine the corresponding columns for its internal fields. If Portfolio Performance recognizes a field, it will be indicated by a message <code>-&gt; 'Field'</code> in the second row of the output; otherwise, a message <code>Double click here</code> will appear (see Figure 3). To associate a column with an internal Portfolio Performance field, double-click on the second line. You can then choose from the available fields. If you don't want to associate a field, select the <code>---</code> option. Portfolio Performance will then ignore this column. To change the format of a column, e.g. Date format of a date, double-click on the name in the second line.</li>
+<li><em>Message Bar</em>: Additional info is displayed in the message bar at the top. For instance, it may list optional fields that are not provided in the CSV file.</li>
 </ul>
-<p><figure class="align-right" style="width:50%" id="_figure-2"><figcaption>Figure 2. Saving the mapping configuration.</figcaption><img alt="" src="../images/mnu-file-import-securities-step-2.png"></figure></p>
-<ul>
-<li><em>Save Configuration</em> (Gear icon): To save the current mapping, click on the gear icon to the right of "Type of data." A list of <code>Built-in configurations</code> will be displayed, such as comDirect, Consorsbank, etc. (see Figure 3). Using the option <code>Save current configuration</code> will save your current mapping configuration as a custom template. This template will be available under <code>User-specific Configurations</code>, for example, <code>test (Account Transactions)</code> (see Figure 2). You can delete, export, and import configurations. The export function uses a JSON format.</li>
-</ul>
-<p><strong>Step 3</strong>: set additional info, depending on the import type such as accounts and check the preview of the import process.
-Step 3 differs depending on the selected type of import. For the historical quotes import type, only the share name should be additional selected. For the other types, you need to set the security and cash account.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The cash account and security account could be set globally for all import rows of the CSV file through the top panel; see for example Figure 6.  You can also provide this information as part of the CSV file (include a column Account and Securities account). Or you can set the accounts through the context menu. Right-click on a row in the table preview and choose the appropriate account.</p>
+<p>Although the field `Currency' is provided in the CSV-file, it seems not to be recognized by PortfolioPerformance.</p>
 </div>
-<h3 id="1-historical-quotes-import">1. Historical Quotes import</h3>
-<p>To import historical quotes for a security, you only need two columns in the CSV file: one for the date and another for the corresponding quote. These are <em>required</em> fields.  No <em>optional</em> fields are allowed. The security's name must be provided in a separate step. You cannot proceed to the next step if any of the required fields are missing.</p>
-<p><em>Table 1: Source data for the import of Historical Quotes.</em>
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Date; Price
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>2024-01-09; 22,51
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>2024-01-08; 22,54
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>2024-01-05; 22,43
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>2024-01-04; 22,46
-</code></pre></div>
-Please note that the date in Table 1 is in the format <code>YYYY-MM-DD</code>. By double-clicking on the second row of the output panel; e.g. <code>-&gt; 'Date'</code>, you can set the correct date format. January 7th and 6th are not included as these are weekend days (although they could be). In this case, the price information uses a comma as a decimal separator, which is standard in Europe. Therefore, a semicolon (;) is used to separate the fields. The file is saved in Excel with UTF-8 encoding. The heading labels are Date and Price.
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Importing Historical Quotes (step 2).</figcaption><img alt="" src="../images/mnu-file-import-step-2.png"></figure></p>
-<p>In Figure 3, the <code>Next</code> and <code>Finish</code> buttons are greyed out because not all necessary information is available. The message at the top, "Unmapped required field(s): Quote," provides a clue. For this type of import, two fields are required: <code>Date</code> and <code>Quote</code>. However, the CSV file uses the headings <code>Date</code> and <code>Price</code>. The field <code>Price</code> should be mapped to the internal <code>Quote</code> field. Double-click on the column and select the appropriate mapping field, e.g. <code>Quote</code>. The <code>Next</code> and <code>Finish</code> buttons will then become available.</p>
-<p>In step 3 of the wizard, you can select the security that the prices will be added to. If the chosen security already has some historical prices, the quotes will be added (no duplicates).</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. Importing Historical Quotes (step 3).</figcaption><img alt="" src="../images/mnu-file-import-step-3-historical-prices.png"></figure></p>
-<h3 id="2-securities-import">2. Securities import</h3>
+<ul>
+<li>
+<p><em>Type of data</em>: PortfolioPerformance distinguishes between 5 types of import: <code>Account Transactions</code>, <code>Portfolio Transactions</code>, <code>Securities</code>, <code>Historical Quotes</code>, and <code>Securities Account</code> (see Figure 1). These templates are discussed in detail below. Select the appropriate type by clicking the dropdown.</p>
+</li>
+<li>
+<p><em>Delimiter</em>: PortfolioPerformance will probably choose the correct delimiter; a semicolon in case of Table 1. But, you can manually set for another delimiter, e.g. comma, semicolon or tab symbol.</p>
+</li>
+<li>
+<p><em>Encoding</em>: Sometimes, "strange" characters can appear in the output table, indicating a mismatch between the chosen encoding and the source file encoding. There are numerous possibilities, and the correct choice depends on the application used to create the file. A good choice is likely <code>UTF-8</code> or <code>Windows-1250</code>. </p>
+</li>
+<li>
+<p><em>Skip lines</em>: Your CSV file may contain irrelevant information in the initial lines, such as additional titles or metadata. Use this option to specify the number of lines to skip at the beginning of the file.</p>
+</li>
+<li>
+<p><em>First line contains header</em>: Enable this option if the first line of your CSV contains the field labels, as in table 1.</p>
+</li>
+<li>
+<p><em>Preview table with Mapping fields</em>: PortfolioPerformance needs to determine the corresponding columns from the csv for its internal fields. If PortfolioPerformance recognizes a field, it will be indicated by a message <code>&gt;&gt;&gt; 'Field'</code> in the second row of the preview table; otherwise, a message <code>Double click here</code> will appear (see Figure 1). To associate a column with an internal PortfolioPerformance field, double-click on the second line. You can then choose from the available fields. If you don't want to associate a field, select the <code>---</code> option. PortfolioPerformance will then ignore this column. To change the format of a column, e.g. Date format of a date, double-click on the name in the second line.</p>
+</li>
+<li>
+<p><em>Save Configuration</em> (Gear icon): To save the current mapping, click on the gear icon to the right of "Type of data." A list of <code>Built-in configurations</code> will be displayed, such as comDirect, Consorsbank, etc. Using the option <code>Save current configuration</code> will save your current mapping configuration as a custom template. This template will be available under <code>User-specific Configurations</code>. You can delete, export, and import configurations. The export function uses a JSON format.</p>
+</li>
+</ul>
+<p><strong>Step 3</strong> varies depending on the selected import type, and could involve multiple sub-steps. For example, when importing historical quotes, there is only one additional step (providing the security name to associate the historical prices). For all other import types, you must specify multiple additional details, such as the security account and the cash account.</p>
+<h3 id="1-securities-import">1. Securities import</h3>
 <p>Use this type to create new securities from a CSV file. There are no required fields. The optional fields include <code>Ticker Symbol</code>, <code>Security Name</code>, <code>WKN</code>, <code>ISIN</code>, <code>Currency</code>, <code>Date of Quote</code>, <code>Note</code>, and <code>Quote</code>. It is evident that at least one of the first four fields should be mapped. Refer to the <a href="../../../../concepts/portfolio-performance-terminology/">glossary</a> for the meaning of these terms. See Table 2 for an example of the CSV-file.</p>
 <p><em>Table 2: Source data for the import of Securities.</em>
 </p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Ticker Symbol; ISIN; Security Name ;Currency
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>BAS; DE000BASF111; BASF; EUR
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>NVDA; ; NVIDIA; USD
 </code></pre></div>
-Two securities will be added to the portfolio; e.g. BASF and NVIDIA. The ISIN code for the second security (traded on NASDAQ) is unavailable. Note that the NVIDIA stock is traded in USD. Importing this CSV file will display the dialogs of Figure 5 and 6.
-<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5. Importing securities (Step 2).</figcaption><img alt="" src="../images/mnu-file-import-securities-step-2.png"></figure></p>
-<p>In step 3 (below), you can observe that the status of both securities contains a green check mark, indicating that the import will be successful. If the securities already exist, nothing will appear. Click Finish.</p>
-<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6. Importing securities (Step 3).</figcaption><img alt="" src="../images/mnu-file-import-securities-step-3.png"></figure></p>
-<p>The securities are now created and appear in the <code>All Securities</code> list. Although the cash and security account options are provided in Figure 6, it does not make sense to add or change the cash or security account here. The securities are only created in the <code>All Securities</code> list, no transactions are yet in place. Please note that several other fields such as Calendar, Additional Attributes, and Taxonomies cannot be added through CSV-import. The Quote Feed for the Historical Prices could partially be added in the following step (see Figure 7).</p>
-<p><figure class="align-right" style="width:30%" id="_figure-7"><figcaption>Figure 7. Importing securities (Step 4).</figcaption><img alt="" src="../images/mnu-file-import-securities-step-4.png"></figure></p>
-<p>After the securities are created, an additional step allows you to search for a suitable quote feed. This can also be performed manually by right-clicking on a security and choosing <code>Quotes &gt; Search for providers of historical prices...</code></p>
-<p>Only securities listed on XETRA (Deutsche Börse) and analyzed by the Portfolio Report are eligible for an automatic Quote Feed. The BASF security in Figure 7 meets these criteria and can therefore receive an automatic quote feed. However, the NVIDIA security is not listed on XETRA in USD, so automatic quotes should be obtained through another candidate provider e.g. Yahoo Finance.</p>
+Two securities will be added to the portfolio; e.g. BASF and NVIDIA. The first three columns are correctly recognized. The fields <code>Currency</code>and <code>Info</code>are not recognized and should be matched by double clicking the second row and selecting the correct label (e.g. <code>Currency</code> (sic!) and <code>Note</code>). While the BASF security is traded on XETRA, the ticker symbol does not reflect that (BAS.DE). The ISIN code for the second security (NVIDIA traded on NASDAQ) is unavailable and skipped in the CSV-file. Note also that the NVIDIA stock is traded in USD. Importing this CSV file will display the dialogs of Figure 2 and 3.
+<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Importing securities (Step 3-1).</figcaption><img alt="" src="../images/mnu-file-import-securities-step-2.png"></figure></p>
+<p>In <strong>step 3-2</strong> (below), you can observe that the status of both securities is marked with a green check mark, indicating that the import process is ready to proceed successfully. If a security already exist in the portfolio, the green check mark will not appear. In this step, you can also specify the Cash and Securities account, the security is associated with. Click <strong>Finish</strong> to finalise the import process.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The cash account and security account could be set globally for all import rows of the CSV file through the top panel; see Figure 3. You can also provide this information as part of the CSV file (include a column Account and Securities account). Or you can set the accounts through the context menu. Right-click on a row in the table preview and choose the appropriate account.</p>
+</div>
+<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Importing securities (Step 3-2).</figcaption><img alt="" src="../images/mnu-file-import-securities-step-3.png"></figure></p>
+<p>The securities are now created and appear in the <code>All Securities</code> list. Please note that several other fields such as Calendar, Additional Attributes, and Taxonomies cannot be added through CSV-import. The Quote Feed for the Historical Prices could partially be added in the following step (see Figure 4).</p>
+<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. Importing securities (Step 3-3).</figcaption><img alt="" src="../images/mnu-file-import-securities-step-4.png"></figure></p>
+<p>After the securities are created, an additional step allows you to search for a suitable quote feed. Both <a href="../../../../how-to/downloading-historical-prices/yahoo-finance/">Yahoo Finance</a> and the <a href="../../../../how-to/downloading-historical-prices/portfolioperformance/">built-in PortfolioPerformance provider</a> are searched. The updated and yellow coloured configuration is the one that will be applied, unless you click the button <code>Do not change configuration</code>. You must be logged in (see <a href="../../../../how-to/downloading-historical-prices/portfolioperformance/">built-in provider</a>) to effectively read the historical quotes from the built-in provider. Clicking <code>Cancel</code>will skip this step, and <code>OK</code>will read the historical prices. Please note that. the ISIN of the NVIDIA share is filled in and that the ticker symbol is adjusted to the correct <code>BAS.DE</code>.</p>
+<h3 id="1-historical-quotes-import">1. Historical Quotes import</h3>
+<p>The historical prices of most securities are covered by the built-in quote provider or other sources (see above). However, sometimes you may need to import historical prices via a hand-made CSV-file. For this, you only need two columns in the CSV file: one for the date and another for the corresponding quote. These are <em>required</em> fields.  No <em>optional</em> fields are provided. The security's name for those historical prices must be provided in a second step. You cannot proceed to the next step if any of the required fields are missing or misspelled.</p>
+<p>Please note that the date in Figure 5 is in the format <code>YYYY-MM-DD</code>. By double-clicking on the second row of the output panel; e.g. <code>&gt;&gt;&gt; 'Date'</code>, you can set the correct date format.  </p>
+<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5. Importing Historical Quotes (step 2).</figcaption><img alt="" src="../images/mnu-file-import-step-2.png"></figure></p>
+<p>In Figure 5, the <code>Next</code> and <code>Finish</code> buttons are greyed out because not all necessary information is available. The message at the top, "Unmapped required field(s): Quote," provides a clue. For this type of import, two fields are required: <code>Date</code> and <code>Quote</code>. However, the CSV file uses the headings <code>Date</code> and <code>Price</code>. The field <code>Price</code> should be mapped to the internal <code>Quote</code> field. Double-click on the column and select the appropriate mapping field, e.g. <code>Quote</code>. The <code>Next</code> and <code>Finish</code> buttons will then become available.</p>
+<p>In a further step of the wizard, you can select the security to which prices will be added. If the chosen security already has historical prices, new quotes will be appended, rather than overwriting existing data.</p>
+<p><figure class="pp-figure" id="_figure-6"><figcaption>Figure 6. Importing Historical Quotes (step 3).</figcaption><img alt="" src="../images/mnu-file-import-step-3-historical-prices.png"></figure></p>
 <h3 id="3-securities-account-import">3. Securities Account import</h3>
-<p>With this import type, you can create a new security (see above), while adding at the same time the first Buy transaction. The required fields are <code>Shares</code>, and <code>Value</code>. The optional fields are <code>Ticker</code>, <code>Symbol</code>, <code>ISIN</code>, <code>WKN</code>, <code>Time</code>, <code>Currency</code>, <code>Note</code>, <code>Date of Quote</code>, <code>Securities Account</code>, <code>Account</code>, <code>Quote</code>, <code>Date of Value</code>, and <code>Security Name</code>. The following CSV file will be imported in Figure 8.
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Ticker Symbol; ISIN; Security Name; Currency; shares; value
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>BAS; DE000BASF111; BASF; EUR; 20; 900
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>NVDA; ; NVIDIA; USD; 10; 5450
+<p>With this import type, you can create a new security (see above), while adding at the same time the first Buy transaction. The required fields are <code>Shares</code>, and <code>Value</code>. The optional fields are <code>Ticker</code>, <code>Symbol</code>, <code>ISIN</code>, <code>WKN</code>, <code>Time</code>, <code>Currency</code>, <code>Note</code>, <code>Date of Quote</code>, <code>Securities Account</code>, <code>Account</code>, <code>Quote</code>, <code>Date of Value</code>, and <code>Security Name</code>. The following CSV file will be imported in Figure 7.</p>
+<p><em>Table 3: Source data for the import + buy of Securities.</em>
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Date;Ticker Symbol;ISIN;Security Name;Currency;Shares;Value
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>2026-04-05;BAS;DE000BASF111 ;BASF;EUR;20;900
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>2026-04-06;NVDA;;NVIDIA;USD;5;750
 </code></pre></div>
-Two securities will be created and at the same time a Buy transaction will also be recorded (20 shares of BASF for a total value of 900 EUR and 10 shares of NVIDIA for a total value of 5450 USD). Four operations are performed.
-<p><figure class="pp-figure" id="_figure-8"><figcaption>Figure 8. Importing securities (Step 4).</figcaption><img alt="" src="../images/mnu-file-import-securities-account-step-2.png"></figure></p>
+Two securities will be created and at the same time a Buy transaction will also be recorded (20 shares of BASF for a total value of 900 EUR and 5 shares of NVIDIA for a total value of 750 USD). It is not possible to include Fees or Taxes. For that, you need the Account Transaction or Portfolio Transaction Import types.
+<p><figure class="pp-figure" id="_figure-7"><figcaption>Figure 7. Importing securities account.</figcaption><img alt="" src="../images/mnu-file-import-securities-account-step-2.png"></figure></p>
+<p>Please note that, because the <code>Currency</code> of the security is set to <code>EUR</code>or <code>USD</code>, the correct deposit account could be selected automatically.</p>
 <h3 id="4-account-transactions-import">4. Account Transactions import</h3>
 <p>The Account Transactions import type will be used to register transactions on a deposit or cash account such as deposit, withdrawal, interest, ... It is equivalent with manual recording a transaction with the menu Transaction (third group). The required fields are <code>Date</code>, and <code>Value</code>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>The Account Transactions and Portfolio Transactions import types are quite similar. Internally, an account transaction is reserved to work with cash accounts and their transactions such as deposits. A portfolio transaction works with instruments and their transactions: buy, sell, delivery, ... A buy/sell transaction however has both components: something is added/removed from the securities account and some money is deducted/added to the cash account. In most cases, both types could be used interchangeably.</p>
+<p>The Account Transactions and Portfolio Transactions import types are quite similar. Internally, an account transaction is reserved to work with cash accounts and their transactions such as deposits. A portfolio transaction works with instruments and their transactions: buy, sell, delivery, ... A buy/sell transaction however has both components: something is added/removed from the securities account and some money is deducted/added to the cash account. In this case, both import types could be used.</p>
 <p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:">
-<span style="color:orange">Use Account Transactions type for deposit, withdrawal, ... and Portfolio Transactions type for buy, sell, ...</span></p>
+<span style="color:orange">Good practice!!! <br>Use Account Transactions type for deposit, withdrawal, ... and Portfolio Transactions type for buy, sell, ...</span></p>
 </div>
-<p>The required fields are <code>Date</code>, and <code>Value</code>. Optional fields are <code>Type</code>, <code>Transaction Currency</code>, <code>Security Name</code>, <code>Shares</code>, <code>Securities Account</code>, <code>Exchange Rate</code>, <code>Gross Amount</code>, <code>Currency Gross Amount</code>, <code>Ticker Symbol</code>, <code>Taxes</code>, <code>Note</code>, <code>Account</code>, <code>Fees</code>, <code>ISIN</code>, <code>WKN</code>, <code>Offset Account</code>, and <code>Time</code>.</p>
-<p>Acceptable values for the field <code>Type</code> are <code>Deposit</code>, <code>Withdrawal</code>, <code>Buy</code>, <code>Sell</code>, <code>Dividend</code>, <code>Interest</code>, <code>Interest Charge</code>, <code>Fees</code>, <code>Fees Refund</code>, <code>Taxes</code>, <code>Tax Refund</code>, <code>Transfer (Inbound)</code>, <code>Transfer (Outbound)</code>, <code>Delivery (Inbound)</code>, and <code>Delivery (Outbound)</code>. The default value for <code>Type</code> is <code>Deposit</code>.</p>
-<p>If the Cash and Securities account are not provided in the CSV file, the value from the top panel is used. It's important to note that Fees and Taxes can be included as part of the Buy or Sell transaction through a dedicated column in the CSV file. In this case, the taxes and fees are subtracted from the total value field (Value = Gross Amount + Taxes + Fees). Alternatively, a separate transaction with the type Fees or Taxes can be created, and the amount is then specified in the Value column. In this case, the fees and taxes are added to the value.</p>
-<p><figure class="pp-figure" id="_figure-9"><figcaption>Figure 9. Importing account transactions - content CSV file</figcaption><img alt="" src="../images/mnu-file-import-account-transactions-content-csv-file.png"></figure></p>
-<p>Figure 9 displays the content of a sample CSV file. Four transactions are described. Note that the Cash account of the first transaction is not provided. The default account from the top panel is taken in that case.</p>
-<p><figure class="pp-figure" id="_figure-10"><figcaption>Figure 10. Importing account transactions - step 2. </figcaption><img alt="" src="../images/mnu-file-import-account-transactions-step-2.png"></figure></p>
-<p><figure class="pp-figure" id="_figure-11"><figcaption>Figure 11. Importing account transactions - step 3. </figcaption><img alt="" src="../images/mnu-file-import-account-transactions-step-3.png"></figure></p>
-<h4 id="dividend-transaction">Dividend transaction</h4>
-<p>It is noteworthy to address the dividend transaction separately, as it presents unique challenges, particularly when dealing with foreign dividends. For instance, complications may arise when dividends are paid in USD but deposited into a cash account denominated in EUR.</p>
-<p>To illustrate, let us assume that a USD dividend of 5 USD is paid for three shares, with a hypothetical exchange rate of 0.5 EUR-for-1-USD. For this example, we will use the cash account <code>Broker-A (EUR)</code> denominated in EUR for the deposit.</p>
-<table>
-<thead>
-<tr>
-<th>Date</th>
-<th>Type</th>
-<th>Security Name</th>
-<th>Shares</th>
-<th>Currency</th>
-<th>Gross Amount</th>
-<th>Exchange Rate</th>
-<th>Account</th>
-<th>Value (EUR)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2024-01-13</td>
-<td>Dividend</td>
-<td>NVIDIA</td>
-<td>3</td>
-<td>USD</td>
-<td>15</td>
-<td>0.5</td>
-<td>broker-A (EUR)</td>
-<td>7.5</td>
-</tr>
-</tbody>
-</table>
-<p>In this example, the CSV file contains columns for the date, type of transaction (in this case, a dividend), the security name (NVIDIA), the number of shares, the currency in which the dividend was paid (USD), the gross amount of the dividend, the applicable exchange rate, the cash account into which the dividend was deposited <code>broker-A (EUR)</code>, and the converted value of the total dividend in EUR.</p>
-<p>The raw CSV-file looks like:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Date;Type;Security Name;Shares; Currency Gross Amount; Gross Amount; Exchange Rate; Account;  Value
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>2024-01-13; Dividend; NVIDIA; 3; USD; 15; 0,5; broker-A (EUR);  7,5
+<p>The required fields for the <code>Account Transactions</code> type are <code>Date</code>, and <code>Value</code>. Optional fields are <code>Type</code>, <code>Transaction Currency</code>, <code>Security Name</code>, <code>Shares</code>, <code>Securities Account</code>, <code>Exchange Rate</code>, <code>Gross Amount</code>, <code>Currency Gross Amount</code>, <code>Ticker Symbol</code>, <code>Taxes</code>, <code>Note</code>, <code>Account</code>, <code>Fees</code>, <code>ISIN</code>, <code>WKN</code>, <code>Offset Account</code>, and <code>Time</code>.</p>
+<p>Acceptable values for the field <code>Type</code> are <code>Deposit</code>, <code>Withdrawal (or removal)</code>, <code>Dividend</code>, <code>Interest</code>, <code>Interest Charge</code>, <code>Fees</code>, <code>Fees Refund</code>, <code>Taxes</code>, <code>Tax Refund</code>, <code>Transfer (Inbound)</code>, <code>Transfer (Outbound)</code>. <code>Buy</code> and <code>Sell</code> are also possible, but as mentioned before, it is good practice to use the Portfolio Transactions type for this. The default value for <code>Type</code> is <code>Deposit</code>.</p>
+<p>Table 4 represents the CSV-file to import four transactions
+- A withdrawal of 150 EUR from deposit account <code>broker-B (EUR)</code> on 2026-03-04
+- A deposit of 150 EUR to deposit account <code>broker-A (EUR)</code> on 2026-03-04
+- A transfer of 100 EUR from deposit account <code>broker-A (EUR)</code> to deposit account <code>broker-A (USD)</code>. Because the target account is set in USD (= Currency Gross Amount), the CSV-file also specifies the <code>Gross Amount</code> (= 110 USD). This comes down to an <code>Exchange Rate</code> of 0,9091 USD/EUR. Currently, it is not possible to specify the Exchange Rate and let PortfolioPerformance calculate the <code>Gross Amount</code>. 
+- A fee of 2 EUR, payable by <code>broker-A (EUR)</code>account for the currency exchange.</p>
+<p><em>Table 4: Source data for the import of transactions (deposit, withdrawal, transfer, &amp; fees.</em>
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Type; Date; Value; Cash Account; Offset Account; Gross Amount; Currency Gross Amount
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Withdrawal;2026-03-04;150;broker-B (EUR); ; ; 
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Deposit;2026-03-04;150;broker-A (EUR); ; ;
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>Transfer (Outbound);2026-03-04;100;broker-A (EUR);broker-A (USD);110;USD
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>Fees;2026-04-06;2;broker-A (EUR); ; ;
 </code></pre></div>
-<p>Figure 12 illustrates the initial step in the import wizard process. As the CSV file incorporates the accurately spelled field names, no mapping adjustments are required. It is crucial to take note of number formatting of the various fields, particularly the exchange rate field, which will likely always contain a decimal separator (comma or point). Also check the date format; <code>YYYY-MM-DD</code>, or <code>DD/MM/YY</code>, or ....</p>
-<p>In this instance, we are receiving a dividend payment for three shares, with a <code>Gross Amount</code> of 15 USD. Consequently, the dividend value should be 5 USD per share (see Figure 13). Given the <code>Exchange Rate</code> of 0.5 EUR-for-1-USD, the net <code>Value</code> of the dividend, once deposited into the <code>broker-A (EUR)</code> account, should amount to 7.5 EUR.</p>
-<p><figure class="pp-figure" id="_figure-12"><figcaption>Figure 12. Step 1 of the Import wizard: type dividends. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-account-transactions-dividend-step-1.png"></figure></p>
-<p>The necessity of the <code>Gross Amount</code> field is not apparent, particularly as it is not utilized in the subsequent section. However, the Portfolio Performance (PP) software verifies the values within this field, ensuring that the following calculation holds true: <code>Gross Amount</code> multiplied by the <code>Exchange Rate</code> equals the <code>Value</code>. If the numbers do not correspond, an error message will be displayed, preventing progression to the next step.</p>
-<p>Upon importing the CSV file detailed above and selecting the <code>Account Transactions</code> type, the dividend transaction will be generated as depicted in Figure 13.</p>
+<p>Figure 9 displays the result of this import. Please note that the fields <code>Gross Amount</code>and <code>Currency Gross Amount</code> are not displayed in this preview but they certainly are registered.</p>
+<p><figure class="pp-figure" id="_figure-8"><figcaption>Figure 8. Importing account transactions - step 2. </figcaption><img alt="" src="../images/mnu-file-import-account-transactions-step-2.png"></figure></p>
+<h4 id="dividend-transaction">Dividend transaction</h4>
+<p>It is noteworthy to address the dividend transaction separately, as it presents unique challenges, particularly when dealing with foreign dividends. For instance, complications may arise when dividends are paid in one currency but deposited into a cash account denominated in another currency.</p>
+<p>To illustrate, let us assume that a USD dividend of 5 USD is paid for three shares, resulting in a Gross Amount of 15 USD. This dividend is converted to EUR and deposited in the `broker-A (EUR) deposit account for a value of 14 EUR (implicitly as a result of an exchange rate of 0,9333 EUR/USD).</p>
+<p>The raw CSV-file looks like:
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Date; Type; Security Name; Shares; Value; Cash Account; Gross Amount; Currency Gross Amount;
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>2024-01-13; Dividend; NVIDIA; 3; 14; broker-A (EUR); 15; USD;
+</code></pre></div>
+The CSV file contains columns for the date, type of transaction (in this case, a dividend), the security name (NVIDIA), and the number of shares. Because we are depositing the dividend in EUR, the Cash Account is <code>broker-A (EUR)</code> and the Value = 14 (EUR). This comes from a Gross Amount of 15 USD. Because the transaction is a dividend, the cash is generated by the security; which must exist (!) in the portfolio and have a currency equal to the <code>Currency Gross Amount</code>.
+<p><figure class="pp-figure" id="_figure-9"><figcaption>Figure 9. Result of import of a dividend. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-account-transactions-dividend-result.png"></figure></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Regrettably, the software does not currently support the inclusion of Fees and Taxes, either in the foreign or domestic currency. </p>
 </div>
-<p><figure class="pp-figure" id="_figure-13"><figcaption>Figure 13. Result of import from above. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-account-transactions-dividend-result.png"></figure></p>
 <h3 id="5-portfolio-transactions-import">5. Portfolio Transactions import</h3>
+<p>It's important to note that Fees and Taxes can be included as part of the <code>Buy</code> or <code>Sell</code> transaction through a dedicated column in the CSV file. In this case, the taxes and fees are subtracted from the total value field (Value = Gross Amount + Taxes + Fees). Alternatively, a separate transaction with the type Fees or Taxes can be created, and the amount is then specified in the Value column. In this case, the fees and taxes are added to the value.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>If you have transactions with securities in different currencies, it is good practice to explicitly add the <code>Security Account</code> and <code>Cash Account</code> to the CSV-file. As the <code>Date</code> is a required field, pay attention to the default date format (YYYY-MM-DD). </p>
@@ -4245,19 +4241,19 @@ Two securities will be created and at the same time a Buy transaction will also 
 <p>This type of import requires three fields: Shares, Date, Value. The optional fields are the same as above; except that the optional Offset Account field is replaced with Offset Securities Account. The selection of required fields may seem somewhat arbitrary. For transactions like buy and sell, a security identification is essential (such as name, ISIN, etc.). However, for an interest payment, the 'Shares' field is not necessary.</p>
 <p>Because the number of shares is a required field, one would assume that simple deposit or withdrawal transactions are not allowed; but they are. The number of shares is then ignored.</p>
 <p>The acceptable values for the field <code>Type</code> are: <code>Deposit</code>, <code>Withdrawal</code>, <code>Interest</code>, <code>Interest Charge</code>, <code>Dividend</code>, <code>Fees</code>, <code>Fees Refund</code>, <code>Taxes</code>, <code>Tax Refund</code>, <code>Buy</code>, <code>Sell</code>, <code>Transfer (Inbound)</code>, and <code>Transfer (Outbound)</code>. The default value of Type is <code>Sell</code>.</p>
-<p>Suppose that you wish to import two portfolio transactions: a sell of 2 shares of BASF in EUR and a buy of 3 shares NVIDIA in USD. Since we are using the EUR cash account in both cases, the transaction in USD must be converted into EUR. In this case, Portfolio Performance will handle this automatically because the NVIDIA security is listed in USD and the security account in EUR. Alternatively, you can designate the <code>Currency Gross Amount</code> column as <code>USD</code>. However, a more efficient workflow may involve defining the <code>Account</code>, and possibly also the <code>Securities Account</code>. This prevents the import from defaulting to standard accounts, such as <code>broker-A</code> and <code>broker-A (EUR)</code> in this case.</p>
+<p>Suppose that you wish to import two portfolio transactions: a sell of 2 shares of BASF in EUR and a buy of 3 shares NVIDIA in USD. Since we are using the EUR cash account in both cases, the transaction in USD must be converted into EUR. In this case, PortfolioPerformance will handle this automatically because the NVIDIA security is listed in USD and the security account in EUR. Alternatively, you can designate the <code>Currency Gross Amount</code> column as <code>USD</code>. However, a more efficient workflow may involve defining the <code>Cash Account</code>, and possibly also the <code>Securities Account</code>. This prevents the import from defaulting to standard accounts, such as <code>broker-A</code> and <code>broker-A (EUR)</code> in this case.</p>
 <p>Figure 15 displays the <code>Mapped to Field</code> dialog box is shown (accessible via double-clicking the Value column). It's advisable to confirm that the selected format aligns with your language settings, especially if you use a comma as the decimal point as in this example.</p>
 <p>The CSV file should look as follows.</p>
-<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Date;Type;Shares;Security Name;Value;Exchange rate;fees;taxes;Securities Account;Account
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>2024-01-04; Sell; 2; BASF; 90; ;5; 3; broker-A; broker-A (EUR)
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>2024-01-13; Buy; 3; NVIDIA; 1740,98; 1,0837; 15; 10; broker-A; broker-A (EUR)
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Date;Type;Shares;Security Name;Value;Exchange rate;fees;taxes;Securities Account;Cash Account
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>2024-01-04; Sell; 2; BASF; 90; ;5; 3; broker-A; broker-A (EUR)
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>2024-01-13; Buy; 3; NVIDIA; 1740,98; 1,0837; 15; 10; broker-A; broker-A (EUR)
 </code></pre></div>
-Because the <code>(Net) Value</code> field is required, it makes no sense to add the <code>Gross Value</code>, which will be overwritten anyway (Gross Value = Value + Fees + Taxes). Please note that the <code>Exchange Rate</code> field is empty (or zero) in case of the BASF transaction. Figure 14 displays the result of this import transaction.
-<p><figure class="pp-figure" id="_figure-14"><figcaption>Figure 14. Result of import from above. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-account-transactions-result.svg"></figure></p>
+Because the <code>(Net) Value</code> field is required, it makes no sense to add the <code>Gross Value</code>, which will be overwritten anyway (Gross Value = Value + Fees + Taxes). Therefore, we use the <code>Exchange Rate</code> field in this case. Please note that this field is empty (or zero) in case of the BASF transaction. Figure 14 displays the result of this import transaction.
+<p><figure class="pp-figure" id="_figure-10"><figcaption>Figure 10. Result of import from above. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-account-transactions-result.svg"></figure></p>
 <p>Figure 13 displays the first step of the Import wizard. Be sure that the type Portfolio Transactions is selected in step 1; otherwise an error will occur in step 2.  </p>
-<p><figure class="pp-figure" id="_figure-15"><figcaption>Figure 15. Result of import from above. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-transactions.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-11"><figcaption>Figure 11. Result of import from above. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-transactions.png"></figure></p>
 <p>A consistency check is made, for example, to ensure that you don't sell more securities than are available in your portfolio (see Figure 16).</p>
-<p><figure class="pp-figure" id="_figure-16"><figcaption>Figure 16. Consistency check. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-transactions-consistency-check.png"></figure></p>
+<p><figure class="pp-figure" id="_figure-12"><figcaption>Figure 12. Consistency check. </figcaption><img alt="" src="../images/mnu-file-import-portfolio-transactions-consistency-check.png"></figure></p>
 
 
 
@@ -4278,7 +4274,7 @@ Because the <code>(Net) Value</code> field is required, it makes no sense to add
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 2, 2026 13:56:31">March 2, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 17, 2026 21:14:08">March 17, 2026</span>
   </span>
 
     
