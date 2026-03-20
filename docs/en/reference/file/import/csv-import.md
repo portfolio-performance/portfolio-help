@@ -132,6 +132,7 @@ The required fields for the `Account Transactions` type are `Date`, and `Value`.
 Acceptable values for the field `Type` are `Deposit`, `Withdrawal (or removal)`, `Dividend`, `Interest`, `Interest Charge`, `Fees`, `Fees Refund`, `Taxes`, `Tax Refund`, `Transfer (Inbound)`, `Transfer (Outbound)`. `Buy` and `Sell` are also possible, but as mentioned before, it is good practice to use the Portfolio Transactions type for this. The default value for `Type` is `Deposit`.
 
 Table 4 represents the CSV-file to import four transactions
+
 - A withdrawal of 150 EUR from deposit account `broker-B (EUR)` on 2026-03-04
 - A deposit of 150 EUR to deposit account `broker-A (EUR)` on 2026-03-04
 - A transfer of 100 EUR from deposit account `broker-A (EUR)` to deposit account `broker-A (USD)`. Because the target account is set in USD (= Currency Gross Amount), the CSV-file also specifies the `Gross Amount` (= 110 USD). This comes down to an `Exchange Rate` of 0,9091 USD/EUR. Currently, it is not possible to specify the Exchange Rate and let PortfolioPerformance calculate the `Gross Amount`. 
@@ -215,5 +216,3 @@ A consistency check is made, for example, to ensure that you don't sell more sec
 Figure: Consistency check. {class=pp-figure}
 
 ![](./images/mnu-file-import-portfolio-transactions-consistency-check.png)
-
-
