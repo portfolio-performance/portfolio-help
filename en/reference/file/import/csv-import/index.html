@@ -4205,11 +4205,13 @@ Two securities will be created and at the same time a Buy transaction will also 
 </div>
 <p>The required fields for the <code>Account Transactions</code> type are <code>Date</code>, and <code>Value</code>. Optional fields are <code>Type</code>, <code>Transaction Currency</code>, <code>Security Name</code>, <code>Shares</code>, <code>Securities Account</code>, <code>Exchange Rate</code>, <code>Gross Amount</code>, <code>Currency Gross Amount</code>, <code>Ticker Symbol</code>, <code>Taxes</code>, <code>Note</code>, <code>Account</code>, <code>Fees</code>, <code>ISIN</code>, <code>WKN</code>, <code>Offset Account</code>, and <code>Time</code>.</p>
 <p>Acceptable values for the field <code>Type</code> are <code>Deposit</code>, <code>Withdrawal (or removal)</code>, <code>Dividend</code>, <code>Interest</code>, <code>Interest Charge</code>, <code>Fees</code>, <code>Fees Refund</code>, <code>Taxes</code>, <code>Tax Refund</code>, <code>Transfer (Inbound)</code>, <code>Transfer (Outbound)</code>. <code>Buy</code> and <code>Sell</code> are also possible, but as mentioned before, it is good practice to use the Portfolio Transactions type for this. The default value for <code>Type</code> is <code>Deposit</code>.</p>
-<p>Table 4 represents the CSV-file to import four transactions
-- A withdrawal of 150 EUR from deposit account <code>broker-B (EUR)</code> on 2026-03-04
-- A deposit of 150 EUR to deposit account <code>broker-A (EUR)</code> on 2026-03-04
-- A transfer of 100 EUR from deposit account <code>broker-A (EUR)</code> to deposit account <code>broker-A (USD)</code>. Because the target account is set in USD (= Currency Gross Amount), the CSV-file also specifies the <code>Gross Amount</code> (= 110 USD). This comes down to an <code>Exchange Rate</code> of 0,9091 USD/EUR. Currently, it is not possible to specify the Exchange Rate and let PortfolioPerformance calculate the <code>Gross Amount</code>. 
-- A fee of 2 EUR, payable by <code>broker-A (EUR)</code>account for the currency exchange.</p>
+<p>Table 4 represents the CSV-file to import four transactions</p>
+<ul>
+<li>A withdrawal of 150 EUR from deposit account <code>broker-B (EUR)</code> on 2026-03-04</li>
+<li>A deposit of 150 EUR to deposit account <code>broker-A (EUR)</code> on 2026-03-04</li>
+<li>A transfer of 100 EUR from deposit account <code>broker-A (EUR)</code> to deposit account <code>broker-A (USD)</code>. Because the target account is set in USD (= Currency Gross Amount), the CSV-file also specifies the <code>Gross Amount</code> (= 110 USD). This comes down to an <code>Exchange Rate</code> of 0,9091 USD/EUR. Currently, it is not possible to specify the Exchange Rate and let PortfolioPerformance calculate the <code>Gross Amount</code>. </li>
+<li>A fee of 2 EUR, payable by <code>broker-A (EUR)</code>account for the currency exchange.</li>
+</ul>
 <p><em>Table 4: Source data for the import of transactions (deposit, withdrawal, transfer, &amp; fees.</em>
 </p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Type; Date; Value; Cash Account; Offset Account; Gross Amount; Currency Gross Amount
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Withdrawal;2026-03-04;150;broker-B (EUR); ; ; 
@@ -4274,7 +4276,7 @@ Because the <code>(Net) Value</code> field is required, it makes no sense to add
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 17, 2026 21:14:08">March 17, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 20, 2026 21:46:46">March 20, 2026</span>
   </span>
 
     
