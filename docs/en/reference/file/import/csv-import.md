@@ -135,7 +135,7 @@ Table 4 represents the CSV-file to import four transactions
 
 - A withdrawal of 150 EUR from deposit account `broker-B (EUR)` on 2026-03-04
 - A deposit of 150 EUR to deposit account `broker-A (EUR)` on 2026-03-04
-- A transfer of 100 EUR from deposit account `broker-A (EUR)` to deposit account `broker-A (USD)`. Because the target account is set in USD (= Currency Gross Amount), the CSV-file also specifies the `Gross Amount` (= 110 USD). This comes down to an `Exchange Rate` of 0,9091 USD/EUR. Currently, it is not possible to specify the Exchange Rate and let PortfolioPerformance calculate the `Gross Amount`. 
+- A transfer of 100 EUR from deposit account `broker-A (EUR)` to deposit account `broker-A (USD)`. Because the target account is set in USD (= Currency Gross Amount), the CSV-file also specifies the `Gross Amount` (= 110 USD). This comes down to an `Exchange Rate` of 0,9091 USD/EUR. Currently, it is not possible to specify the Exchange Rate and let PortfolioPerformance calculate the `Gross Amount`. It is better to use a Transfer transaction to handle this situation, instead of a Withdrawal of 100 EUR from `broker-A (EUR)``` and a Deposit of 110 USD into broker-A (USD). Deposit and withdrawal transactions are considered external in Portfolio Performance and will therefore affect the performance calculation. This transfer, however, is purely internal and should not affect performance in any way.
 - A fee of 2 EUR, payable by `broker-A (EUR)`account for the currency exchange.
 
 *Table 4: Source data for the import of transactions (deposit, withdrawal, transfer, & fees.*
