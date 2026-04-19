@@ -3,3 +3,4 @@ Withdrawal;2026-03-04;150;broker-B (EUR); ; ;
 Deposit;2026-03-04;150;broker-A (EUR); ; ;
 Transfer (Outbound);2026-03-04;100;broker-A (EUR);broker-A (USD);110;USD
 Fees;2026-04-06;2;broker-A (EUR); ; ;
+Interest;2026-03-14;15;broker-A (EUR); ; ;
