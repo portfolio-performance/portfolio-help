@@ -7,10 +7,10 @@ Abbildung: Documentation Framework.{class=align-right style="width:40%"}
 ![](images/historische-kursquellen.png)
 
 
-Die Suche nach guten und aktuellen sowie kostenlosen Kursquellen kann eine Herausforderung sein. Die Liste der Datenquellen in Portfolio Performance umfasst die folgenden Optionen (siehe Abbildung 1): [Alpha Vantage](alpha-vantage.md), [EOD Historical Data](eodhd.md), Finnhub, Leeway, Twelve Data, [Portfolio Report](portfolioreport.md), Quandl, und [Yahoo Finance](yahoo-finance.md). 
+Die Suche nach guten und aktuellen sowie kostenlosen Kursquellen kann eine Herausforderung sein. Die Liste der Datenquellen in Portfolio Performance umfasst die folgenden Optionen (siehe Abbildung 1): [Alpha Vantage](alpha-vantage.md), [EOD Historical Data](eodhd.md), Finnhub, Leeway, Twelve Data, Quandl, und [Yahoo Finance](yahoo-finance.md). 
 Weitere Optionen sind `Tabelle auf einer Webseite` sowie `JSON. Mit diesen Quellen lassen sich auch exotische Kurse herunterladen.
 
-Leider sind die Nutzungsbedingungen für viele dieser Optionen im Laufe der Zeit immer restriktiver geworden. Sie sind hier hauptsächlich aus Kompatibilitätsgründen aufgeführt. In der Praxis können nur [Portfolio Report](portfolioreport.md) und [Yahoo Finance](yahoo-finance.md) oder JSON für ein typisches Portfolio empfohlen werden.
+Leider sind die Nutzungsbedingungen für viele dieser Optionen im Laufe der Zeit immer restriktiver geworden. Sie sind hier hauptsächlich aus Kompatibilitätsgründen aufgeführt. In der Praxis können nur [Yahoo Finance](yahoo-finance.md) oder JSON für ein typisches Portfolio empfohlen werden.
 
 Einige spezifische Anwendungsfälle werden im Folgenden erörtert. Viele weitere sind im [Forum](https://forum.portfolio-performance.info/t/quellen-fur-historische-kurse/46) beschrieben.
 
