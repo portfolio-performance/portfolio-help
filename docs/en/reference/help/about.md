@@ -97,14 +97,16 @@ Figure: Contributors {class="pp-figure"}
 
 ## Translations
 
-Portfolio Performance is localized into many languages including but not limited to:  
-Spanish, Dutch, Portuguese, Brazilian Portuguese, French, Italian, Czech, Russian, Slovak, Polish, Simplified Chinese, Traditional Chinese, Danish, and many more.
+Portfolio Performance is localized into many languages including:  
+Spanish, Dutch, Portuguese, Brazilian Portuguese, French, Italian, Czech, Russian, Slovak, Polish, Simplified Chinese, Traditional Chinese, Danish, Turkish, Vietnamese, Catalan, Finnish, and German.
+
+
 
 You can contribute or join the translation effort via [Join the POEditor Project](https://poeditor.com/join/project?hash=4lYKLpEWOY).
 
 ---
 
-## Documentation Authors
+## Documentation Writers
 
 The primary sources of documentation are:
 
