@@ -18,4 +18,4 @@ if ! command -v mkdocs >/dev/null 2>&1; then
     exit 1
 fi
 
-mkdocs serve --dirtyreload --livereload
+mkdocs serve --dirtyreload --livereload -a localhost:8005

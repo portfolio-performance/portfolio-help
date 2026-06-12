@@ -124,7 +124,8 @@ Figure: New Widget menu with overview of all available widgets. {class=pp-figure
  - *Heading*: A single line text field.
  - *Description*: A multi-line text field with a smaller font.
  - *Current date*: The text "Current Date", followed by the system date of the computer in the language and format, set in Help > Preferences > Presentation > Language.
- 
+ - *Collapsible Section*: After creation, you can drag and drop other widgets into this section. Click the ▼ (Down Arrow) icon to reveal the content widgets. Click the ▶ (Right Arrow) icon to hide the content.
+  
  - *Exchange rate*: An exchange rate in the format XXX/YYY number. Right-click to choose the specific exchange rate, e.g. EUR/USD.
  
  - :material-chart-box-outline:*Trading activity*: A graph depicting time (per year and per month) is plotted on the X-axis, while the count of trades is represented on the Y-axis. With the context menu, you can add or remove the Y-axis, change the reporting period (by default the period of the dashboard is taken), or change the trading type (by default buy, sell, delivery inbound, and delivery outbound), and the filter (by default the entire portfolio).
@@ -137,9 +138,9 @@ Figure: New Widget menu with overview of all available widgets. {class=pp-figure
  
  - *Securities: Latest Price*. This is a single line widget with the current price of a security; which can be chosen from the context menu. The label will mention the name of the selected security.
 
- - *Website*: A textbox containing the content of a website; specified by an URL in the context menu. Anchors are allowed; for example `https://help.portfolio-performance.info/en/concepts/performance/#the-money-weighted-rate-of-return`. The height of the widget can be increased with the context menu.
+- Security: Distance from ATH: The difference of the current price with the All Time High (ATH) price of the security, measured in %. The security should be specified with the context menu.
 
- - Security: Distance from ATH: The difference of the current price with the All Time High (ATH) price of the security, measured in %. The security should be specified with the context menu.
+ - *Website*: A textbox containing the content of a website; specified by an URL in the context menu. Anchors are allowed; for example `https://help.portfolio-performance.info/en/concepts/performance/#the-money-weighted-rate-of-return`. The height of the widget can be increased with the context menu.
 
 - Vertical spacer: This widget produces an invisible rectangle that occupies space. It is used to visually separate widgets (vertically). Hovering over the widget with the mouse will reveal its label. With right-click, you can change its height.
 
