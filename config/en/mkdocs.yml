@@ -92,7 +92,11 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
@@ -171,6 +175,7 @@ nav:
                 - Holdings: reference/view/reports/statement/holdings.md
               - Performance:
                 - Performance: reference/view/reports/performance/index.md
+                - Dashboard: reference/view/reports/performance/dashboard.md
                 - Calculation: reference/view/reports/performance/calculation.md
                 - Chart: reference/view/reports/performance/performance-chart.md
                 - Securities: reference/view/reports/performance/securities.md
