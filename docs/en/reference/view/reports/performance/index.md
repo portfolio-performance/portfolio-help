@@ -89,9 +89,9 @@ Volatility in portfolio performance refers to the degree of variability in the r
 
 The volatility shown in Figure 2 is 31.33% (refer to Figure 1). It represents the standard deviation of daily returns during the reporting period. To be precise, it is calculated by taking the natural logarithm of (1 + daily return) and then multiplying it by the square root of the total number of days in the reporting period. Notably, weekends and holidays are excluded from this calculation. An efficient method to obtain all the daily returns is by exporting the return/volatility chart as a CSV file.
 
-### Semivariance
-The Semivariance exclusively considers the negative fluctuations of an investment. The semivariance value is 22.63% (refer to Figure 1), with weekends and public holidays disregarded. Hovering over this value with the mouse provides additional information.
+### Semideviation
+The Semideviation (or downside volatility) exclusively considers the negative fluctuations of an investment. It is the standard deviation of those returns that fall below the average return. The semideviation value is 22.63% (refer to Figure 1), with weekends and public holidays disregarded. Hovering over this value with the mouse provides additional information.
 
-In instances where negative and positive fluctuations are balanced, the formula Volatility (v) = Semi-variance (s) x sqrt(2) applies. For a dataset evenly distributed as depicted in Figure 2, the semivariance would be calculated as follows: `s = v / sqrt(2) = 31.33% / sqrt(2) = 22.15%`.
+In instances where negative and positive fluctuations are balanced, the formula Volatility (v) = Semideviation (s) x sqrt(2) applies. For a dataset evenly distributed as depicted in Figure 2, the semideviation would be calculated as follows: `s = v / sqrt(2) = 31.33% / sqrt(2) = 22.15%`.
 
-Given that the actual semivariance is slightly lower than the estimated semivariance (22.15% < 22.63%), it suggests that the returns are not symmetrically distributed, and the negative returns slightly outnumber the positive ones.
+Given that the actual semideviation is slightly lower than the estimated semideviation (22.15% < 22.63%), it suggests that the returns are not symmetrically distributed, and the negative returns slightly outnumber the positive ones.

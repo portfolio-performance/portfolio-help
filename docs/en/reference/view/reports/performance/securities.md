@@ -91,7 +91,7 @@ Figure: Available fields Securities. {class=align-right style="width:30%"}
     If an investment never lost a penny, the maximum drawdown would be zero. The worst possible maximum drawdown would be -100%, meaning the investment is completely worthless.
     - Max Drawdown Duration: the worst (the maximum/longest) amount of time an investment has seen between peaks (equity highs)
     - Volatility: Volatility in portfolio performance refers to the degree of variability in the returns of a portfolio over time.
-    - Semivariance: The Semivariance exclusively considers the negative fluctuations of an investment. 
+    - Semideviation: The Semideviation (or downside volatility) exclusively considers the negative fluctuations of an investment. 
 
 
 
