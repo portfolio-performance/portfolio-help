@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#available-columns" class="md-skip">
+        <a href="#trade-grouping" class="md-skip">
           Skip to content
         </a>
       
@@ -2870,6 +2870,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#trade-grouping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trade grouping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#available-columns" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4649,6 +4660,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#trade-grouping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trade grouping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#available-columns" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4700,7 +4722,7 @@
 <p>A trade occurs whenever you buy or sell a financial security through a <code>Buy</code> or <code>Sell</code> transaction or an <code>Inbound</code> or <code>Outbound Delivery</code>. All trades are listed in the <code>Reports &gt; Performance &gt; Trades</code> view. There are two kinds of trades:</p>
 <ul>
 <li>
-<p><strong>Open Trade</strong>: An open trade is initiated with the first <code>Buy</code> or <code>Inbound Delivery</code> transaction for a security. The <code>Start Date</code> is set to the date of this initial transaction, while the <code>End Date</code> remains open as no <code>Sell</code> or <code>Outbound Delivery</code> has occurred yet. Subsequent purchases of the same security are added to <em>this</em> open trade, updating the number of shares and performance indicators such as Entry Value and Profit/Loss. Thus, an open trade can include multiple purchases.</p>
+<p><strong>Open Trade</strong>: An open trade is initiated with the first <code>Buy</code> or <code>Inbound Delivery</code> transaction for a security. The <code>Start Date</code> is set to the date of this initial transaction, while the <code>End Date</code> remains open as no <code>Sell</code> or <code>Outbound Delivery</code> has occurred yet. Subsequent purchases of the same security are added to <em>this</em> open trade, updating the number of shares and performance indicators such as Entry Value and Profit/Loss. Thus, an open trade can include multiple purchases. With the <a href="#trade-grouping">Trade grouping</a> <code>Show each acquisition as a separate trade</code>, every purchase forms its own trade instead.</p>
 </li>
 <li>
 <p><strong>Closed Trade</strong>: A closed trade is generated with <em>each</em> <code>Sell</code> or <code>Outbound Delivery</code> transaction of a security. If you sell a specific security on three different dates, three separate closed trades will be created, each identified by their respective buy and sell dates. Selling a security can affect the <code>Start Date</code> of the associated open trade, as the system uses the FIFO (First In, First Out) methodology. If all shares from a specific purchase are sold, the <code>Start Date</code> of the open trade will shift to the date of the next purchase.</p>
@@ -4710,6 +4732,20 @@
 <p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. The Reports &gt; Performance &gt; Trades view. </figcaption><img alt="" src="../images/trades-overview.svg"></figure></p>
 <p>With the <code>Filter</code> menu, you can limit the list of trades to <code>Only open trades</code> or <code>Only closed trades</code>. If neither is selected in this group, all trades are displayed. In the second group, you can choose between <code>Only profitable trades</code> or <code>Only lossmaking trades</code>; essentially the green colored versus the red colored rows.</p>
 <p>The <code>Export as CSV</code> icon contains one export, named <code>Trades</code> which represents the table from Figure 1. Fields added or removed with the <code>Settings</code> icon will also be added or removed in the CSV-file. Most of the available fields are already shown in Figure 1.</p>
+<h2 id="trade-grouping">Trade grouping</h2>
+<p>How the transactions of a security are combined into trades is controlled by the <code>Trade grouping</code> option in the <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2699.svg" title=":gear:"> <code>Settings</code> menu:</p>
+<ul>
+<li>
+<p><code>Combine acquisitions into one trade</code> (the default): all purchases that are open at the same time - or that are closed by the same sale - form a single trade. This is the behaviour described above and used throughout this page; the two purchases of <code>share-1</code> result in the one open trade of Figure 1, row 2.</p>
+</li>
+<li>
+<p><code>Show each acquisition as a separate trade</code>: every purchase forms its own trade, so a trade contains at most one purchase and at most one sale. The two purchases of <code>share-1</code> now result in <em>two</em> open trades - one starting January 15, 2021 with 5 shares, one starting January 14, 2022 with 5 shares - each with its own Entry value, Holding period and IRR.</p>
+<p>If a sale consumes more than one purchase, it is split between them, again following the FIFO principle. Each of the resulting closed trades receives the share of the sale that belongs to its purchase: the shares, the proceeds, the fees and the taxes are divided so that the parts add up exactly to the original sale.</p>
+<p>Because the same transactions are only cut differently, the totals over all trades do not change; only the number of rows and the values per row do.</p>
+</li>
+</ul>
+<p>The grouping is stored per installation rather than in the portfolio file, so it applies to every file you open. The option is greyed out when the view was opened with a preselected set of trades - for example by clicking through from a dashboard widget - because those trades are shown as they were calculated and not recalculated here.</p>
+<p>The same option is offered by the <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2699.svg" title=":gear:"> menu of the <code>Trades</code> tab in the information pane of other views (for example below <code>All Securities</code>), where it is stored separately from the setting of this view.</p>
 <h2 id="available-columns">Available columns</h2>
 <ul>
 <li><em>Name</em>: The trades are named by the name of the security that is traded (e.g. <code>share-1</code>). You can rename the trade by double-clicking the name.</li>
@@ -4791,7 +4827,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 6, 2025 09:32:10 CEST">July 6, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 2, 2026 20:12:28 CEST">September 2, 2026</span>
   </span>
 
     
