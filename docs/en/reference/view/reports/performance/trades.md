@@ -4,7 +4,7 @@ title: Trades
 
 A trade occurs whenever you buy or sell a financial security through a `Buy` or `Sell` transaction or an `Inbound` or `Outbound Delivery`. All trades are listed in the `Reports > Performance > Trades` view. There are two kinds of trades:
 
-- **Open Trade**: An open trade is initiated with the first `Buy` or `Inbound Delivery` transaction for a security. The `Start Date` is set to the date of this initial transaction, while the `End Date` remains open as no `Sell` or `Outbound Delivery` has occurred yet. Subsequent purchases of the same security are added to *this* open trade, updating the number of shares and performance indicators such as Entry Value and Profit/Loss. Thus, an open trade can include multiple purchases.
+- **Open Trade**: An open trade is initiated with the first `Buy` or `Inbound Delivery` transaction for a security. The `Start Date` is set to the date of this initial transaction, while the `End Date` remains open as no `Sell` or `Outbound Delivery` has occurred yet. Subsequent purchases of the same security are added to *this* open trade, updating the number of shares and performance indicators such as Entry Value and Profit/Loss. Thus, an open trade can include multiple purchases. With the [Trade grouping](#trade-grouping) `Show each acquisition as a separate trade`, every purchase forms its own trade instead.
 
 - **Closed Trade**: A closed trade is generated with *each* `Sell` or `Outbound Delivery` transaction of a security. If you sell a specific security on three different dates, three separate closed trades will be created, each identified by their respective buy and sell dates. Selling a security can affect the `Start Date` of the associated open trade, as the system uses the FIFO (First In, First Out) methodology. If all shares from a specific purchase are sold, the `Start Date` of the open trade will shift to the date of the next purchase.
 
@@ -17,6 +17,22 @@ Figure: The Reports > Performance > Trades view. {class=pp-figure}
 With the `Filter` menu, you can limit the list of trades to `Only open trades` or `Only closed trades`. If neither is selected in this group, all trades are displayed. In the second group, you can choose between `Only profitable trades` or `Only lossmaking trades`; essentially the green colored versus the red colored rows.
 
 The `Export as CSV` icon contains one export, named `Trades` which represents the table from Figure 1. Fields added or removed with the `Settings` icon will also be added or removed in the CSV-file. Most of the available fields are already shown in Figure 1.
+
+## Trade grouping
+
+How the transactions of a security are combined into trades is controlled by the `Trade grouping` option in the :gear: `Settings` menu:
+
+- `Combine acquisitions into one trade` (the default): all purchases that are open at the same time - or that are closed by the same sale - form a single trade. This is the behaviour described above and used throughout this page; the two purchases of `share-1` result in the one open trade of Figure 1, row 2.
+
+- `Show each acquisition as a separate trade`: every purchase forms its own trade, so a trade contains at most one purchase and at most one sale. The two purchases of `share-1` now result in *two* open trades - one starting January 15, 2021 with 5 shares, one starting January 14, 2022 with 5 shares - each with its own Entry value, Holding period and IRR.
+
+    If a sale consumes more than one purchase, it is split between them, again following the FIFO principle. Each of the resulting closed trades receives the share of the sale that belongs to its purchase: the shares, the proceeds, the fees and the taxes are divided so that the parts add up exactly to the original sale.
+
+    Because the same transactions are only cut differently, the totals over all trades do not change; only the number of rows and the values per row do.
+
+The grouping is stored per installation rather than in the portfolio file, so it applies to every file you open. The option is greyed out when the view was opened with a preselected set of trades - for example by clicking through from a dashboard widget - because those trades are shown as they were calculated and not recalculated here.
+
+The same option is offered by the :gear: menu of the `Trades` tab in the information pane of other views (for example below `All Securities`), where it is stored separately from the setting of this view.
 
 ## Available columns
 
