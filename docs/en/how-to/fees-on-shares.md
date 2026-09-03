@@ -19,17 +19,17 @@ To accurately book those fees, it is important that your broker details the numb
 	This is with this methodology that fees on securities in French *assurances-vies* can be booked.
 
 ### Example
-In this example, let's consider that 0.5671 shares of `stock-A` are owned through a broker applying an annual 0.75 % management fees, taken 4 times a year : 0.75 % / 4 = 0.1875 % fees applied each quarter, on December 19, March 18, June 17 and September 18.
+In this example, let's consider that 0.5671 shares of `stock-A` are owned through a broker applying an annual 0.75% management fees, taken 4 times a year: 0.75% / 4 = 0.1875% fees applied each quarter, on December 19, March 18, June 17 and September 18.
 
 The first quarterly fees on `stock-A` consist in a sell of `0.75/100/4 * 0.5671 = 0.001` shares, whose sold value is taken as fees.
-And again on March 18 :
+And again on March 18:
 `0.75/100/4 * 0.5661 = 0.001` shares are sold by the broker and the sold value is taken as fees. Same for the other dates.
 
 Figure: Several fees transactions booked as Outbound Delivery. {class= pp-figure}
 
 ![](images/fees-on-shares-transactions-list.png)
 
-The [Performance Chart](../reference/view/reports/performance/performance-chart.md) illustrates the impact of these fees : compared to the price performance of `stock-A`, our `stock-A` performance is 0.75 % lower than its benchmark over a year.
+The [Performance Chart](../reference/view/reports/performance/performance-chart.md) illustrates the impact of these fees: compared to the price performance of `stock-A`, our `stock-A` performance is 0.75% lower than its benchmark over a year.
 
 Figure: Difference in performance due to the management fees. {class= pp-figure}
 

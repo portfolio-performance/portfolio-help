@@ -1,7 +1,7 @@
 ---
 title: Dashboard
 ---
-A dashboard is a configurable view that aggregates performance data into a one-page report format. You can access the default Performance dashboard through the menu `View > Reports > Performance` or with the sidebar. It contains three columns with key performance and risk indicators. A dashboard, however, can be much more complex ; see for example Figure 1.
+A dashboard is a configurable view that aggregates performance data into a one-page report format. You can access the default Performance dashboard through the menu `View > Reports > Performance` or with the sidebar. It contains three columns with key performance and risk indicators. A dashboard, however, can be much more complex; see for example Figure 1.
 
 Figure: Yearly Overview dashboard.{class=pp-figure}
 

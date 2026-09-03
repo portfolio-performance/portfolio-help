@@ -12,7 +12,7 @@ The Portfolio Performance forum has a thread [Wo kann ich aktuelle und historisc
 
 The `ariva.de` website has a specific page for [commodities](https://www.ariva.de/rohstoffe/) such as gold, silver, and others. Downloading the latest gold price is as easy as setting the [Quote Feed to a webpage](./downloading-historical-prices/table-website.md) `https://www.ariva.de/goldpreis_gold-kurs/kurse/historische-kurse`. Unfortunately, this method only provides data for the last 30 days. As time progresses, the data will be updated for future days with this method, gradually accumulating several months of gold price history.
 
-Figure: Ariva.de website (translated) with historical gold prices . {class= pp-figure}
+Figure: Ariva.de website (translated) with historical gold prices. {class= pp-figure}
 
 ![](./images/gold-ariva.de-website.png)
 

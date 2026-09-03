@@ -27,7 +27,7 @@ If you find yourself needing a custom layout regularly, you can duplicate the st
 
 With the Search box you can filter the list of visible securities. For example, entering "DE" in the Search box will only display share-1 and share-2 because their ticker symbol contains the string "DE".
 
-The Filter icon is used as a more categorical filter. Available options are: Only active instruments,Only inactive instruments, Only securities, Only exchange rates, Shares held &ne; 0, Shares held = 0, and Securities: Limit price exceeded. For the latter, you need to create a new attribute of type “limit price” in the [settings](../general-data/settings.md) of the portfolio (menu View > Settings). Then you can add this column to the table and enter some values.
+The Filter icon is used as a more categorical filter. Available options are: Only active instruments, Only inactive instruments, Only securities, Only exchange rates, Shares held &ne; 0, Shares held = 0, and Securities: Limit price exceeded. For the latter, you need to create a new attribute of type “limit price” in the [settings](../general-data/settings.md) of the portfolio (menu View > Settings). Then you can add this column to the table and enter some values.
 
 The table displayed in the current view can be exported as a CSV file, preserving the number of rows and columns along with their (custom) column headings.
 
@@ -75,7 +75,7 @@ With Configuration chart icon (gear at the top right) you set numerous additiona
 
 - Scaling (applies to the y-axis)
     - Linear: A linear scale is evenly spaced, where each unit on the scale represents an equal difference in value.
-    - Logarithmic : A logarithmic scale doesn't have a constant spacing between values. Each step represents a power of 10 increase e.g. 1, 10, 100, 1000. The scale compresses large ranges into a more manageable visual representation and highlight relative changes.
+    - Logarithmic: A logarithmic scale doesn't have a constant spacing between values. Each step represents a power of 10 increase e.g. 1, 10, 100, 1000. The scale compresses large ranges into a more manageable visual representation and highlight relative changes.
 
 <span style="clear: both;"></span>
 
