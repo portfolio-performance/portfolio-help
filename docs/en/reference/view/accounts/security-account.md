@@ -40,7 +40,7 @@ Clicking on any point in the chart will reveal the actual data of all three time
 
 The Holdings chart from the Securities Account doesn't have any extra data tools. It's very similar to the portfolio holding chart; see [View > Reports > Statement of Assets > Holdings](../../view/reports/statement/holdings.md). Clicking any part of the chart will reveal some additional information.
 
-Figure: Holdings Chart from Securities Account (information pane). {class=pp-figure}c
+Figure: Holdings Chart from Securities Account (information pane). {class=pp-figure}
 
 ![](images/sb-accounts-securities-accounts-holdings.png)
 

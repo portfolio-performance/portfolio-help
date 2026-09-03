@@ -31,7 +31,7 @@ Performance is calculated on a daily basis. To compute it, you need the market v
 
 - **March 1**
     * share-1: Since the shares are purchased during the day, the market Value at the Beginning of the day (MVB) is zero EUR. MVE is 100 EUR; 10 shares at closing price of 10 EUR per share. To buy the stock, a net cash inflow of 103 EUR is needed (to pay the principal and fees). Taxes are NOT considered. There are no cash outflows. The daily performance = [100/(0 + 103)] - 1 = -0.0291 or -2.91%.
-    * share-2: Allvalues are zero; the performance is also zero (technically, it should be undefined because you are dividing by zero).
+    * share-2: All values are zero; the performance is also zero (technically, it should be undefined because you are dividing by zero).
     * portfolio: The portfolio contains all securities and deposit accounts. The MVE of the portfolio is the market value of share-1 (100 EUR), plus what is left in the deposit account (195 EUR) or in total 295 EUR. The daily performance is thus [295/(0+300)] - 1 = -0.0167 or -1.67%.
 - **March 2**: there are no transactions, and the historical prices are stable. The daily performance is zero, and the cumulative performance stays at the same level for all assets.
 - **March 3**

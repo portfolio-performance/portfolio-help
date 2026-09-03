@@ -83,7 +83,7 @@ In summary :
 | Realized Gains   | 1650 €         | 2250 € | 
 | Total            | 2850 €         | 2850 € | 
 
-The total gain remains the same, but it is allocated differently between realized and unrealized gains depending on the cost methodology used. This is indeed what is presented by Portofolio Performance in [Reports > Performance > Calculation](../reference/view/reports/performance/calculation.md) :
+The total gain remains the same, but it is allocated differently between realized and unrealized gains depending on the cost methodology used. This is indeed what is presented by Portfolio Performance in [Reports > Performance > Calculation](../reference/view/reports/performance/calculation.md) :
 Figure: Performance Calculation with the Moving Average method. {class= pp-figure}
 
 ![](images/cost-acquisition-method-calculation-ACB.png)

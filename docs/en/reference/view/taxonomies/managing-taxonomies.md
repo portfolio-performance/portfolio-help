@@ -13,7 +13,7 @@ Figure: Adding taxonomies. {class=pp-figure}
 
 Click the green plus button <span style="color:green">:octicons-plus-circle-16:</span> or use the `File > New > Taxonomy` menu to add a new taxonomy to your portfolio. You can then utilize one of the [predefined templates](index.md) or create a new taxonomy (see Figure 1), which can be based on one of the existing templates. Choose `Empty taxonomy` if you want to start from scratch and define all categories and sub-categories yourself. Give the new taxonomy a descriptive name. Two taxonomies can have the same name, which is, of course, not ideal. Click "OK" to add the taxonomy in the sidebar.
 
-The context menu of the taxonomies list allows you to rename, copy, or delete existing taxonomies. You can also rearrange the order of items in the list using the the `Move up` or `Move down` options.
+The context menu of the taxonomies list allows you to rename, copy, or delete existing taxonomies. You can also rearrange the order of items in the list using the `Move up` or `Move down` options.
 
 
 ## Editing a taxonomy

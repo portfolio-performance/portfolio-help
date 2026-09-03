@@ -78,7 +78,7 @@ The most significant divergence occurs when a dividend is paid on December 15, 2
     ![](images/benchmark-kommer-02.svg)
 
 
-The overall performance of the benchmark could be read from the graph. A more precise number of the `actual share-1` could be obtained from the Securities table under [View > Report > Securities](../reference/view/reports/performance/securities.md). Unfortunately, this is not possible for the benhmark (there are no transactions). Nevertheless, it is feasible to present the benchmark's performance graph and the TTWROR values of both indices as a widget. See [Reference > view > reports > performance](../reference/view/reports/performance/index.md#configuring-the-dashboard) for info about configuring the dashboard.
+The overall performance of the benchmark could be read from the graph. A more precise number of the `actual share-1` could be obtained from the Securities table under [View > Report > Securities](../reference/view/reports/performance/securities.md). Unfortunately, this is not possible for the benchmark (there are no transactions). Nevertheless, it is feasible to present the benchmark's performance graph and the TTWROR values of both indices as a widget. See [Reference > view > reports > performance](../reference/view/reports/performance/index.md#configuring-the-dashboard) for info about configuring the dashboard.
 
 Figure: Dashboard with performance chart and TTWROR widgets. {class=pp-figure}
 

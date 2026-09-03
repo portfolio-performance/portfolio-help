@@ -180,8 +180,8 @@ Figure: IRR-calculation for individual securities.{class=pp-figure}
 - Selling: Generates a cash outflow from the security and a cash inflow to the deposit account.
 - Dividend: Generates a cash outflow from the security and a cash inflow to the deposit account.
 
-!!! Importyant
-    - The cashflow to and from a security is always *inclusive* of fees. Fees are considered an inherent part of the security and the performance of the security is partly dependent on the the size of the fees.
+!!! Important
+    - The cashflow to and from a security is always *inclusive* of fees. Fees are considered an inherent part of the security and the performance of the security is partly dependent on the size of the fees.
 
     - Taxes are *excluded* from the calculation of security IRR. This exclusion is justified as taxes are not directly associated with a specific security, they are imposed by the government (sometimes collected at later dates), and are beyond the investor's control. Unlike fees, which can be influenced to some extent, taxes cannot. Therefore, the cash flow to consider for the security IRR calculation is the debit note of the transaction minus taxes.
 

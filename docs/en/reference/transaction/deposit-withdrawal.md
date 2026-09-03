@@ -18,7 +18,7 @@ A common mistake for beginners is to record a buy transaction without first ensu
 
 It is not possible to attach an interest rate to a deposit account as is typically done with banks. As a result, funds placed into a deposit account maintain their exact value until the end of the reporting period (MVE). As a result, deposits and withdrawals on their own have no effect on the portfolio's performance. Assume a portfolio Market Value (MVB) of 100 EUR at the beginning of the reporting period and only one deposit of 50 EUR at the exact mid of the 1 year period (see [Concepts > Performance](../../concepts/performance/index.md) for more info about the calculation).
 
-- TTWOR: `r = [150/(100 + 50)] - 1 = 0%`. 
+- TTWROR: `r = [150/(100 + 50)] - 1 = 0%`. 
 - IRR: `150 = 100 x (1 + IRR)^1 + 50 x (1 + IRR)^1/2 = 0%`.
 
 To assign an interest to a deposit account, you can use the menu `Transaction > Interest`.

@@ -12,7 +12,7 @@ The context menu of a security contains several additional options that are not 
 
 Several menu items do also appear in other menu's or views and are already documented in other sections of the documentation.
 - Buy, Sell, Dividend, Tax Refund, Delivery (Inbound), Delivery (Outbound) appear and are documented in the [Transaction menu](../../transaction/index.md).
-- The Transfer item appear under the slightly different label `Security transfer ...`, also in the the [Transaction menu](../../transaction/index.md).
+- The Transfer item appear under the slightly different label `Security transfer ...`, also in the [Transaction menu](../../transaction/index.md).
 - New Plan ... is covered in the sidebar menu Accounts > Investment plans and is documented in [ Reference > View > Accounts > Investment Plans](../../view/accounts/investment-plans.md).
 
 
@@ -38,9 +38,9 @@ Figure: Split stock wizard - step 1. {class=pp-figure}
 
 **Step 2** will show you the impact of this stock split on each transaction (buy, sell, delivery). The result is that the number of shares in your possession will be changed, according to the split ratio. You can skip this step and maintain the transactions unchanged by unchecking the `Convert transactions` option. If there aren't any transactions, this step has no effect.
 
-As can be seen in Figure 2 and 4, there was only one buy transaction on January 3, 2022 (before the split date) of one share. Thus, from Janary 3, 2022 on, you will have 20 shares in your account, given that the default `Convert transactions` is checked.
+As can be seen in Figure 2 and 4, there was only one buy transaction on January 3, 2022 (before the split date) of one share. Thus, from January 3, 2022 on, you will have 20 shares in your account, given that the default `Convert transactions` is checked.
 
-The historical prices can be adjusted in the the following step.
+The historical prices can be adjusted in the following step.
 
 Figure: Split stock wizard - step 2. {class=pp-figure}
 

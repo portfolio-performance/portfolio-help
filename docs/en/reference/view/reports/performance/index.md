@@ -25,7 +25,7 @@ $$\mathrm {r_{cum} = [(1 + r_1) \times (1 + r_2) \times ... \times (1 + r_n)] - 
 
 where MVE = the market value of the asset at the end of day, MVB = the market value at the beginning of the day (or the end of the previous day).  CF<sub>in</sub> and CF<sub>out</sub> represent the net incoming or outgoing cashflows for the day. When a stock pays a dividend, that's an outgoing cashflow from the stock's perspective. A deposit (for buying the stock) is a cash inflow, as is paying the associated fees.
 
-An in-depth explanation of the TTWOR calculation is given [Concepts > Performance > True Time-Weighted Rate of Return](../../../../concepts/performance/time-weighted.md). A step-by-step calculation for a very simplified example can be found at [View > Reports > Performance > Chart](../performance/performance-chart.md).
+An in-depth explanation of the TTWROR calculation is given [Concepts > Performance > True Time-Weighted Rate of Return](../../../../concepts/performance/time-weighted.md). A step-by-step calculation for a very simplified example can be found at [View > Reports > Performance > Chart](../performance/performance-chart.md).
 
 ### Internal Rate of Return (IRR)
 
@@ -57,7 +57,7 @@ For example, the Delta in Figure 1 is 120.82 EUR. This value represents the actu
 
 One would assume that the Last Day is the same as the ending day of the reporting period. Unfortunately, it is not. It is the previous trading day before 'today' as can be seen when hovering over the label. Figure 1 is created on December 8, 2023. The market value of the portfolio was at that time 459.31 EUR. The last trading day before this date is 2023-12-07 with a MV = 455.84 EUR. There are no cashflows on the last day.
 
-The TTWOR for that day is given by Eq. 1 or `(459.31 - 155.84)/455.84 = 0.76%`. 
+The TTWROR for that day is given by Eq. 1 or `(459.31 - 155.84)/455.84 = 0.76%`. 
 
 ### Last Day: Absolute Change
 Equation 3 can be used to calculate the Absolute Change of the last day. It's obvious that the value equals `3.47 EUR = 459.31 EUR - 155.84 EUR`.
