@@ -127,9 +127,13 @@ nav:
 ### Spelling and Grammar
 
 - Before submitting your changes via a pull request, meticulously proofread and edit your text. Check for any spelling and grammar errors, ensuring your writing is clear and concise. Utilize an AI tool, if necessary, to enhance your writing.
-- Maintain consistency in spelling. Some examples are provided below.
-- Capitalise keywords, menus, and field names from PortfolioPerformance, such as `Security Account`, `Gross Amount`, and `Transfer between Accounts`.
-- Enclose instructions like `Accounts --> Cash Account --> right click` and similar information, such as formulas, dates, and share names, within backticks. 
+- Maintain consistency in spelling. The manual uses **American English**: *visualize*, *categorize*, *recognize*, *organize*, *analyze*, *color*, *behavior*, *labeled*, *canceled*. Also prefer *cash flow*, *email*, *drop-down*, *pop-up*, *double-click*, *time frame*, and *startup*. Write the product name as *Portfolio Performance* (two words), except inside file names such as `PortfolioPerformance-X.X.X-setup.exe`.
+- **Capitalization of application terms** depends on whether you are *quoting the application* or *describing a concept*.
+    - When you quote the application — menu paths, buttons, field labels, dialog names, column headers, and CSV import/export column names — reproduce the label exactly as the application shows it and enclose it in backticks: `Reporting Period`, `Gross Amount`, `View > Reports > Performance`.
+    - When the same words describe the concept in running text, write them in lowercase without backticks: "choose a reporting period to see the performance", "the purchase value is calculated using FIFO".
+    - Rule of thumb: **capitalization follows the backticks.** If a phrase reads naturally with "the ... field", "the ... menu", or "the ... column" in front of it, it is a label — use backticks and the application's capitalization.
+    - Exceptions: product names (Portfolio Performance) and other proper nouns stay capitalized anywhere. Tables and figure captions that list field or column names are themselves quoting the application, so they keep its capitalization.
+- Enclose instructions like `Accounts > Cash Account > right-click` and similar information, such as formulas, dates, and share names, within backticks.
 
 ### Images and videos
 
@@ -137,7 +141,7 @@ Images and videos are stored in subfolders named `images` at the level of the do
 
 If you want to annotate a screenshot with text, arrows, boxes, and more, use an SVG file and embed the screenshot as a background image. For example, in Inkscape, you can easily paste the screenshot from the clipboard onto the canvas and then save the resulting image as an SVG.
 
-Consider using the existing demo files located in the Assets folder. Ensure that screenshots do not include any confidential (financial) data. Check that the desktop background or any open file lists do not reveal private information. Preferably, utilise the dark mode of Portfolio Performance unless readability is compromised.
+Consider using the existing demo files located in the Assets folder. Ensure that screenshots do not include any confidential (financial) data. Check that the desktop background or any open file lists do not reveal private information. Preferably, utilize the dark mode of Portfolio Performance unless readability is compromised.
 
  Adjust the resolution of images based on their content; for instance, small pop-up menus may require lower resolution compared to larger screenshots. Minimize unnecessary details in screenshots to reduce the likelihood of future updates. Aim for a minimum resolution of Full HD (1080p) for videos.
 
