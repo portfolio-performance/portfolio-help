@@ -4701,7 +4701,7 @@
   
 
 
-<h1 id="gains-and-acquisition-cost-principle-fifo-vs-moving-average">Gains and Acquisition Cost principle : FIFO vs Moving Average</h1>
+<h1 id="gains-and-acquisition-cost-principle-fifo-vs-moving-average">Gains and Acquisition Cost principle: FIFO vs Moving Average</h1>
 <p>To accurately assess realized and unrealized gains after the sale of a security, the sold amount and the remaining market value must be compared against the acquisition cost of the security. While this is straightforward in the case of a single purchase followed by a sale, various definitions and methodologies apply when multiple purchases and sales occur at different prices. Portfolio Performance calculates gains using two methodologies:</p>
 <ul>
 <li>The <strong>FIFO</strong> (First-In, First-Out) principle</li>
@@ -4712,48 +4712,48 @@ In the moving average method, all shares are assigned the same average purchase 
 <div class="admonition info">
 <p class="admonition-title">Typical use cases</p>
 <p><strong>FIFO</strong> is typically used in Germany 🇩🇪.<br>
-<strong>Moving average</strong> is typically used in Austria 🇦🇹 (<a href="https://de.wikipedia.org/wiki/Gleitender_Durchschnittspreis"><em>GLD-Preis : gleitender Durchschnittspreis</em></a>) , Canada 🇨🇦 (<a href="https://www.adjustedcostbase.ca/blog/how-to-calculate-adjusted-cost-base-acb-and-capital-gains/"><em>ACB : Adjusted Cost Base</em></a>), France 🇫🇷 (<a href="https://bofip.impots.gouv.fr/bofip/3619-PGP.html/identifiant%3DBOI-RPPM-PVBMI-20-10-20-40-20191220"><em>CUMP : Coût Unitaire Moyen Pondéré</em></a>).</p>
+<strong>Moving average</strong> is typically used in Austria 🇦🇹 (<a href="https://de.wikipedia.org/wiki/Gleitender_Durchschnittspreis"><em>GLD-Preis: gleitender Durchschnittspreis</em></a>), Canada 🇨🇦 (<a href="https://www.adjustedcostbase.ca/blog/how-to-calculate-adjusted-cost-base-acb-and-capital-gains/"><em>ACB: Adjusted Cost Base</em></a>), France 🇫🇷 (<a href="https://bofip.impots.gouv.fr/bofip/3619-PGP.html/identifiant%3DBOI-RPPM-PVBMI-20-10-20-40-20191220"><em>CUMP: Coût Unitaire Moyen Pondéré</em></a>).</p>
 </div>
 <h3 id="example-1">Example 1:</h3>
-<p>Let's consider the following transactions for a given security :</p>
-<p>Buy : 100 shares at a share price of 95 €<br>
-Buy : 200 shares at a share price of 105 €<br>
-Buy : 100 shares at a share price of 107 €<br>
-Sell : 150 shares at a share price of 110 €.  </p>
+<p>Let's consider the following transactions for a given security:</p>
+<p>Buy: 100 shares at a share price of 95 €<br>
+Buy: 200 shares at a share price of 105 €<br>
+Buy: 100 shares at a share price of 107 €<br>
+Sell: 150 shares at a share price of 110 €.  </p>
 <p><strong>Moving Average method :</strong></p>
-<p>The moving average Purchase Price of the 400 shares is : $\frac{(100 * 95 €)+(200 * 105 €)+(100 * 107 €)}{400} = 103 €$<br>
+<p>The moving average Purchase Price of the 400 shares is: $\frac{(100 * 95 €)+(200 * 105 €)+(100 * 107 €)}{400} = 103 €$<br>
 This is the Purchase Price of the 150 sold shares, and also of the remaining 250 shares.<br>
-The <strong>Realized Gain</strong>  of this sell is therefore : $150 * 110 € - 150 * 103 € = 1050 €$<br>
+The <strong>Realized Gain</strong>  of this sell is therefore: $150 * 110 € - 150 * 103 € = 1050 €$<br>
 The <strong>Unrealized Gains</strong> of the remaining shares is $250 * 110 € - 250 * 103 € = 1750 €$<br>
-Note : the remaining shares are still at the same acquisition price than before the sale.  </p>
+Note: the remaining shares are still at the same acquisition price than before the sale.  </p>
 <p><strong>FIFO method :</strong></p>
-<p>The 150 sold shares are the oldest shares : 100 from the first purchase and 50 of the second purchase.<br>
+<p>The 150 sold shares are the oldest shares: 100 from the first purchase and 50 of the second purchase.<br>
 The <strong>Realized Gain</strong>  of this sell is therefore $100 * (110 € - 95 €) + 50 * (110 € - 105 €) = 1750 €$<br>
 It is equivalent to having an average FIFO purchase price for the sold shares of $\frac{(100 * 95 €) + (50 * 105 €)}{150} = 98.33 €$  </p>
-<p>The <strong>Unrealized Gains</strong> of the remaining shares is : $150 * (110 € - 105 €) + 100 * (110 € - 107 €) = 1050 €$<br>
+<p>The <strong>Unrealized Gains</strong> of the remaining shares is: $150 * (110 € - 105 €) + 100 * (110 € - 107 €) = 1050 €$<br>
 It is equivalent to having an average FIFO purchase price for the remaining shares of $\frac{(150 * 105 €) + (100 * 107 €)}{250} = 105.8 €$  </p>
-<p>Note : the remaining shares do not have the same average purchase price than before the sale, it went from 103 € to 105.8 €.  </p>
+<p>Note: the remaining shares do not have the same average purchase price than before the sale, it went from 103 € to 105.8 €.  </p>
 <h3 id="example-2">Example 2:</h3>
 <p>Let's add new transactions to the example above where we now own the remaining 250 shares.<br>
-Buy : 50 shares at a share price of 100 € <br>
-Buy : 300 shares at a share price of 107.5 € <br>
-Sale : 200 shares at a share price of 108 €  </p>
+Buy: 50 shares at a share price of 100 € <br>
+Buy: 300 shares at a share price of 107.5 € <br>
+Sale: 200 shares at a share price of 108 €  </p>
 <p><strong>Moving Average method :</strong></p>
-<p>The moving average Purchase Price of the 600 shares is : $\frac{(250 * 103 €)+(50 * 100 €)+(300 * 107.5 €)}{250+50+300} = 105 €$<br>
+<p>The moving average Purchase Price of the 600 shares is: $\frac{(250 * 103 €)+(50 * 100 €)+(300 * 107.5 €)}{250+50+300} = 105 €$<br>
 This is the Purchase Price of the 200 sold shares, and also of the remaining 400 shares.<br>
-The <strong>Realized Gain</strong>  of this sell is therefore : $200 * 108 € - 200 * 105 € = 600 €$<br>
+The <strong>Realized Gain</strong>  of this sell is therefore: $200 * 108 € - 200 * 105 € = 600 €$<br>
 The total Realized Gains from both sells is $1050 € + 600 € = 1650 €$<br>
 The <strong>Unrealized Gains</strong> of the remaining shares is $400 * 108 € - 400 * 105 € = 1200 €$  </p>
 <p><strong>FIFO method :</strong></p>
-<p>The 200 sold shares are the oldest shares : the 150 from the second purchase and 50 from the third purchase.<br>
+<p>The 200 sold shares are the oldest shares: the 150 from the second purchase and 50 from the third purchase.<br>
 The <strong>Realized Gain</strong> of this sell is therefore $150 * (108 € - 105 €) + 50 * (108 € - 107 €) = 500 €$<br>
 It is equivalent to having an average FIFO purchase price for the sold shares of $\frac{(150 * 105 €) + (50 * 107 €)}{200} = 105.5 €$ </p>
 <p>The total Realized Gains from both sells is $1750 € + 500 € = 2250 €$<br>
-The <strong>Unrealized Gains</strong> of the remaining shares is : $50 * (108 € - 107 €) + 50 * (108 € - 100 €) + 300 * (108 € - 107.5 €) = 600 €$<br>
+The <strong>Unrealized Gains</strong> of the remaining shares is: $50 * (108 € - 107 €) + 50 * (108 € - 100 €) + 300 * (108 € - 107.5 €) = 600 €$<br>
 It is equivalent to having an average FIFO purchase price for the remaining shares of $\frac{(50 * 107 €) + (50 * 100 €) + (300 * 107.5 €)}{400} = 106.5 €$</p>
 <p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Purchase Price on the Security Chart. </figcaption><img alt="" src="../images/cost-acquisition-method-security-chart.png"></figure></p>
 <p>Note that the moving average purchase price remains unchanged when a sale occurs, whereas the FIFO average purchase price does change.  </p>
-<p>In summary : </p>
+<p>In summary: </p>
 <table>
 <thead>
 <tr>
@@ -4780,10 +4780,10 @@ It is equivalent to having an average FIFO purchase price for the remaining shar
 </tr>
 </tbody>
 </table>
-<p>The total gain remains the same, but it is allocated differently between realized and unrealized gains depending on the cost methodology used. This is indeed what is presented by Portofolio Performance in <a href="../../reference/view/reports/performance/calculation/">Reports &gt; Performance &gt; Calculation</a> :</p>
+<p>The total gain remains the same, but it is allocated differently between realized and unrealized gains depending on the cost methodology used. This is indeed what is presented by Portfolio Performance in <a href="../../reference/view/reports/performance/calculation/">Reports &gt; Performance &gt; Calculation</a>:</p>
 <p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Performance Calculation with the Moving Average method. </figcaption><img alt="" src="../images/cost-acquisition-method-calculation-ACB.png"></figure></p>
 <p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Performance Calculation with the FIFO method. </figcaption><img alt="" src="../images/cost-acquisition-method-calculation-FIFO.png"></figure></p>
-<p>In Portfolio Performance, you can get :  </p>
+<p>In Portfolio Performance, you can get:  </p>
 <ul>
 <li>The <strong>Purchase Price</strong> (average purchase cost per share) of your shares in the <a href="../../reference/view/securities/all-securities/">Security Chart</a>
  and in the columns of <a href="../../reference/view/reports/statement/">Reports &gt; Statement of Assets</a>
@@ -4817,7 +4817,7 @@ It is equivalent to having an average FIFO purchase price for the remaining shar
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 25, 2025 14:55:41 CEST">July 25, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 3, 2026 21:03:36 CEST">September 3, 2026</span>
   </span>
 
     
