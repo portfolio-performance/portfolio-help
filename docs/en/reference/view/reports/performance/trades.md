@@ -10,7 +10,7 @@ A trade occurs whenever you buy or sell a financial security through a `Buy` or 
 
 For example, in Figure 1, `share-1` has two associated trades, characterized by one sell transaction, depicted by the first closed trade (row 1), and two buy transactions, consolidated into the open trade (row 2).
 
-Figure: The Reports > Performance > Trades view. {class=pp-figure}
+Figure: The Reports > Performance > Trades view (<a href="https://raw.githubusercontent.com/portfolio-performance/portfolio-help/5fc9b00128961e41863ecdeb4653080d583a57ba/docs/en/assets/demo-portfolio-07.xml" download="demo-portfolio-07.xml">download sample XML file</a>). {class=pp-figure}
 
 ![](./images/trades-overview.svg)
 
