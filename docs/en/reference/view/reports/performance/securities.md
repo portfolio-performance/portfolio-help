@@ -4,7 +4,7 @@ title: Securities
 
 While the Reports > Performance menu gives you the most important key performance indicators on portfolio level such as IRR and TTWROR, the Reports > Performance > Securities menu provides you with much more detail on security level. However, it's important to understand the difference; especially in terms of cashflows (see section on performance).
 
-Figure: Overview of Performance > Reports > Securities. {class=pp-figure}
+Figure: Overview of Performance > Reports > Securities (<a href="https://raw.githubusercontent.com/portfolio-performance/portfolio-help/c66b7b82c0db5e57279a2bfde6ff2d3f5ddb1bf6/docs/en/assets/demo.xml" download="demo.xml">download sample XML file</a>). {class=pp-figure}
 
 ![](./images/securities-overview.svg)
 
