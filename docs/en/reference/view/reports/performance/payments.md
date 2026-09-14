@@ -6,7 +6,7 @@ The menu `View > Reports > Performance > Payments` presents an overview of payme
 
 All payments are denoted in the default portfolio currency, such as EUR as illustrated in Figure 1. Payments made in a foreign currency undergo automatic conversion using the currency exchange rate applicable on the payment date. For instance, the Interest Charge of 13 AUD on 2023-08-01 is converted to 7.85 EUR utilizing the conversion rate of 0.6040 AUD/EUR.
 
-Figure: Payments overview. {class=pp-figure}
+Figure: Payments overview (<a href="https://raw.githubusercontent.com/portfolio-performance/portfolio-help/0f038406ff9400afb5b828240724e2cffa76bcb8/docs/en/assets/kommer.xml" download="kommer.xml">download sample XML file</a>). {class=pp-figure}
 
 ![](./images/payments-overview.svg)
 
