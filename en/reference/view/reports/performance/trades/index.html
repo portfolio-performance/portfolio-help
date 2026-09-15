@@ -4808,12 +4808,13 @@
 <p>The IRR equation becomes: <code>271.40 EUR = 0 + 77.50 * (1 + IRR)^(1367/365) + 84 * (1 + IRR)^(1003/365)</code> or 17.34%. Please note that the holding periods and Exit value will change upon trying this example on a later date.</p>
 </li>
 </ul>
-<p>The Return column is a <a href="../../../../../concepts/performance/">simple measure of performance</a>: <code>(Exit Value/Entry Value) -1</code>.</p>
+<p>The Return column is a <a href="../../../../../concepts/performance/">simple measure of performance</a>: <code>(Exit Value/Entry Value) -1</code>. Unlike IRR, it does not annualize the result, and it does not weigh each purchase by its own individual holding period - it simply compares the (combined) Entry value to the Exit value over however long the trade has run. This makes it easy to compute, but it means Return numbers are only directly comparable between trades with similar holding periods, and - for a multi-purchase trade - it does not reflect <em>when</em> each purchase happened, only the totals.</p>
+<p>For a single purchase trade, such as the open trade of share-3, the Internal Rate of Return (IRR), the Time-Weighted Rate of Return per annum (TTWROR p.a.), and the simple Return are identical. For example the <em>periodical</em> simple return of <code>share-3</code> is -5.74%. The <em>annualized</em> IRR is -11.24%. You can annualize a periodical return r with the <a href="../../../../../concepts/performance/time-weighted/#ttwror-pa">formula</a>: <code>((1 + r)^(365/HP)) - 1</code>; where HP is the holding period. For example, the periodical return of -5.74% for a holding period of 181 days has an annualized value of <code>((1 - 0.0574)^(365/181)) - 1</code> or -11.24%, which is exactly the IRR.</p>
 <ul>
-<li>Closed trade (share-1): r = (105 EUR/77.50 EUR) - 1 = 35.48%</li>
-<li>Open trade (share-1): r = (271.40 EUR/161.50 EUR) - 1 = 68.05%</li>
+<li>Closed trade (<code>share-1</code>): r = (105 EUR/77.50 EUR) - 1 = 35.48%</li>
+<li>Open trade (<code>share-1</code>): r = (271.40 EUR/161.50 EUR) - 1 = 68.05%</li>
 </ul>
-<p>For a single purchase trade, such as the open trade of share-3, the Internal Rate of Return (IRR), the Time-Weighted Rate of Return per annum (TTWROR p.a.), and the simple Return are identical. For example the <em>periodical</em> simple return of <code>share-3</code> is -5.74%. The <em>annualized</em> IRR is -11.24%. You can annualize a periodical return r with the <a href="../../../../../concepts/performance/time-weighted/#ttwror-pa">formula</a>: <code>((1 + r)^(365/HP)) - 1</code>; where HP is the holding period. For example, the periodical return of -5.74% for a holding period of 181 days has an annualized value of <code>((1 - 0.0574)^(365/181)) - 1</code> or -11.24%, which is exactly the IRR. </p>
+<p>Notice that the open trade's Return (68.05%) looks very different from its IRR (17.34%): Return is the <em>periodical</em> rate over the entire holding period, while IRR is the equivalent <em>annualized</em> rate - the same distinction as above. Applying the same annualization formula over the (weighted-average) holding period of 1185 days, <code>((1 + 0.6805)^(365/1185)) - 1</code>, gives 17.34%, matching the IRR to the displayed precision. This time it is only an approximation, though (unlike the exact match for share-3): with multiple purchases, this shortcut treats the holding period as a single average rather than weighting each purchase individually the way IRR does. </p>
 
 
 
@@ -4834,7 +4835,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 15, 2026 22:28:53 CEST">September 15, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 15, 2026 22:46:11 CEST">September 15, 2026</span>
   </span>
 
     
