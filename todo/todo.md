@@ -162,3 +162,7 @@ Historical prices: many of the presets don't seem to function?
 ### 2024-10-05
 - with missing historical prices: the line in the chart between the two known prices is "misleading" (increasing or decreasing) in stead of staying at the last known historical price. For example, two known prices (100 & 200 EUR at jan 1, 2023 & 2024), the line for the year 2023 is increasing from 100 to 200, even though (I think) the price that is taken for calculations in that period is the last known price, e.g. 100 EUR.
 - File > Save as > XML with "ID" attributes? Comparing the file contents reveal that to some sections (e.g. <accounts> <account id="2">) an ID is added. In the comments: "New: Alternative XML format that uses “id” attributes for references (and is therefore easier to read/manipulate by other programs)". Example? Which programs?
+
+### 2026-09-15
+- Update the glossary (`portfolio-performance-terminology.md`) with acronyms such as MVB, MVE, CF.
+- Check the complete text and scan whether every concept used throughout the manual is present in the glossary.
