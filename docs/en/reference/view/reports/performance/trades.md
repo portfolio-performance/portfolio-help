@@ -94,12 +94,14 @@ Here, `MVE` and `MVB` are the [market value at the end and at the beginning](../
     
     The IRR equation becomes: `271.40 EUR = 0 + 77.50 * (1 + IRR)^(1367/365) + 84 * (1 + IRR)^(1003/365)` or 17.34%. Please note that the holding periods and Exit value will change upon trying this example on a later date.
 
-The Return column is a [simple measure of performance](../../../../concepts/performance/index.md): `(Exit Value/Entry Value) -1`.
+The Return column is a [simple measure of performance](../../../../concepts/performance/index.md): `(Exit Value/Entry Value) -1`. Unlike IRR, it does not annualize the result, and it does not weigh each purchase by its own individual holding period - it simply compares the (combined) Entry value to the Exit value over however long the trade has run. This makes it easy to compute, but it means Return numbers are only directly comparable between trades with similar holding periods, and - for a multi-purchase trade - it does not reflect *when* each purchase happened, only the totals.
 
-- Closed trade (share-1): r = (105 EUR/77.50 EUR) - 1 = 35.48%
-- Open trade (share-1): r = (271.40 EUR/161.50 EUR) - 1 = 68.05%
+For a single purchase trade, such as the open trade of share-3, the Internal Rate of Return (IRR), the Time-Weighted Rate of Return per annum (TTWROR p.a.), and the simple Return are identical. For example the *periodical* simple return of `share-3` is -5.74%. The *annualized* IRR is -11.24%. You can annualize a periodical return r with the [formula](../../../../concepts/performance/time-weighted.md#ttwror-pa): `((1 + r)^(365/HP)) - 1`; where HP is the holding period. For example, the periodical return of -5.74% for a holding period of 181 days has an annualized value of `((1 - 0.0574)^(365/181)) - 1` or -11.24%, which is exactly the IRR.
 
-For a single purchase trade, such as the open trade of share-3, the Internal Rate of Return (IRR), the Time-Weighted Rate of Return per annum (TTWROR p.a.), and the simple Return are identical. For example the *periodical* simple return of `share-3` is -5.74%. The *annualized* IRR is -11.24%. You can annualize a periodical return r with the [formula](../../../../concepts/performance/time-weighted.md#ttwror-pa): `((1 + r)^(365/HP)) - 1`; where HP is the holding period. For example, the periodical return of -5.74% for a holding period of 181 days has an annualized value of `((1 - 0.0574)^(365/181)) - 1` or -11.24%, which is exactly the IRR. 
+- Closed trade (`share-1`): r = (105 EUR/77.50 EUR) - 1 = 35.48%
+- Open trade (`share-1`): r = (271.40 EUR/161.50 EUR) - 1 = 68.05%
+
+Notice that the open trade's Return (68.05%) looks very different from its IRR (17.34%): Return is the *periodical* rate over the entire holding period, while IRR is the equivalent *annualized* rate - the same distinction as above. Applying the same annualization formula over the (weighted-average) holding period of 1185 days, `((1 + 0.6805)^(365/1185)) - 1`, gives 17.34%, matching the IRR to the displayed precision. This time it is only an approximation, though (unlike the exact match for share-3): with multiple purchases, this shortcut treats the holding period as a single average rather than weighting each purchase individually the way IRR does. 
 
 
 
