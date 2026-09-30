@@ -12,6 +12,8 @@ import re
 import sys
 from collections import defaultdict
 
+import yaml
+
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EN = os.path.join(REPO, "docs", "en")
 ZH = os.path.join(REPO, "docs", "zh")
@@ -176,6 +178,28 @@ def check(rel: str) -> None:
         if not os.path.exists(ap):
             p.append(f"missing image: {t}")
 
+    # A CJK character immediately after a closing quote makes PyYAML reject the
+    # whole front matter block, and MkDocs then renders the raw YAML as body text
+    # (the `---` fences become horizontal rules) with no build error. Parse the
+    # metadata instead of trusting it to be well-formed.
+    if zh.startswith("---"):
+        parts = zh.split("---", 2)
+        if len(parts) < 3:
+            p.append("front matter is not closed by a second ---")
+        else:
+            try:
+                meta = yaml.safe_load(parts[1])
+            except yaml.YAMLError as exc:
+                first = str(exc).splitlines()[0]
+                p.append(f"UNPARSEABLE front matter (renders as body text): {first}")
+            else:
+                if not isinstance(meta, dict):
+                    p.append("front matter is not a mapping")
+                else:
+                    for key in ("title", "description"):
+                        if key in meta and not str(meta[key]).strip():
+                            p.append(f"empty metadata field: {key}")
+
 
 def main() -> int:
     en_files = [f for f in rel_files(EN) if not f.startswith("_")]
@@ -188,7 +212,7 @@ def main() -> int:
     for rel in extra:
         problems[rel].append(f"EXTRA FILE not in en ({rel})")
 
-    n = len(problems)
+    n = len([rel for rel, msgs in problems.items() if msgs])
     for rel in sorted(problems):
         for msg in problems[rel]:
             print(f"[{rel}] {msg}")
