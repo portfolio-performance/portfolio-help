@@ -8,7 +8,7 @@ changes:
     - date: 2025-05-03
       author: Nirus2000
       description:
-        - "关于 Portfolio Performance"页面的初始版本，说明命名中由 'PP' 改为 'Portfolio Performance'，并包含此 YAML 源文件。
+        - "关于 Portfolio Performance 页面的初始版本，说明命名中由 'PP' 改为 'Portfolio Performance'，并包含此 YAML 源文件。"
         - 删除了对论坛中已不存在的 FAQ 主题的引用。
         - 已为此页面禁用导航。
 ---
