@@ -5,7 +5,7 @@ changes:
     - date: 2025-05-03
       author: Nirus2000
       description:
-        - "Portfolio Performance terminology" 页面的初始版本。
+        - "Portfolio Performance terminology 页面的初始版本。"
         - 明确定义了应用中各处使用的属性、字段与概念。
 todo: 持仓概览、图表、持仓、收益、计算、证券、收入、头寸、设置、货币
 ---
