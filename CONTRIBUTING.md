@@ -61,7 +61,7 @@ The Markdown source files of the manual can be retrieved from [https://github.co
 
 ```
 
-At present, the manual is available in two languages: English (en) and German (de). All documentation pages should be stored within these directories; including images and assets (e.g. demo-portfolio.xml). Each language is a separate version and contributors translate the content manually.
+At present, the manual is available in three languages: English (en), German (de) and Chinese (zh). All documentation pages should be stored within these directories; including images and assets (e.g. demo-portfolio.xml). Each language is a separate version and contributors translate the content manually.
 
 Use your favourite (Markdown) text editor to make corrections to the (local) source files. Upon finishing, create a Pull Request to the maintainer of the Portfolio Performance manual. If accepted, your changes will be visible within minutes. 
 
