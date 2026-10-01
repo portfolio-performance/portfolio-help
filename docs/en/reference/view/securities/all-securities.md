@@ -140,9 +140,9 @@ Figure: Context menu of Historical Quotes in the information pane.{class=pp-figu
     
     - Import from CSV file ...: This command is equivalent with the [File > Import](../../file/import/csv-import.md) menu. The CSV file must contain at least two columns.
     
-    <a name="import-html-table"></a>
+    <a id="import-html-table"></a>
 
-    - Import HTML table ...: This option lets you import a table with historical Quotes that you can find on a webpage. Some examples are given (see Figure 7). {#import-html-table}
+    - Import HTML table ...: This option lets you import a table with historical Quotes that you can find on a webpage. Some examples are given (see Figure 7).
         
         Figure: Import HTML table from context menu Historical Quotes. {class=pp-figure}
 
