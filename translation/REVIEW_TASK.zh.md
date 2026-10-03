@@ -1,7 +1,7 @@
 You are reviewing a **Simplified Chinese translation** of the Portfolio Performance
 manual for **financial terminology accuracy and semantic correctness**.
 
-Repo: `/Users/yifeitao/Projects/portfolio-help`
+All paths are relative to the repository root.
 - English source (ground truth): `docs/en/<page>.md`
 - Chinese translation under review: `docs/zh/<page>.md`
 - Authoritative termbase: `translation/TERMINOLOGY.zh.md`
