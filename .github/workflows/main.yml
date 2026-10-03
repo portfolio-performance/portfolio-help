@@ -50,6 +50,9 @@ jobs:
     - name: Build German Documentation
       run: mkdocs build -f config/de/mkdocs.yml
 
+    - name: Build Chinese Documentation
+      run: mkdocs build -f config/zh/mkdocs.yml
+
     - name: Copy common root files (including legacy redirects)
       run: cp -R docs/root/* site
 
