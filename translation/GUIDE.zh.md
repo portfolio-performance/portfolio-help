@@ -1,7 +1,7 @@
 # Portfolio Performance 手册 —— 中文翻译工作说明（子代理必读）
 
 你的任务：把 Portfolio Performance 手册的若干英文页面翻译为简体中文，写入
-`docs/zh/` 下同名路径的文件。仓库根目录为 `/Users/yifeitao/Projects/portfolio-help`。
+`docs/zh/` 下同名路径的文件。所有路径均相对于仓库根目录。
 
 **动手前必须先读**：`translation/TERMINOLOGY.zh.md`（术语基准表）。这是全文唯一术语来源，
 不得自行造词。工作说明原文在 `translation/GUIDE.zh.md`（即本文件）。
