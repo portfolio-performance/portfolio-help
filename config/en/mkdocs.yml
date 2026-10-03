@@ -57,6 +57,9 @@ extra:
     - name: Deutsch
       link: /de/
       lang: de
+    - name: 中文
+      link: /zh/
+      lang: zh
 
   social:
     - icon: material/home
