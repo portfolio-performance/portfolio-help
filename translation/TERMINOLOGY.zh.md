@@ -35,7 +35,7 @@
 | delivery inbound / outbound | 证券转入 / 证券转出 | 官方 `证券转入` / `证券转出`。delivery 一律译"证券转入/转出"，不译"交割" |
 | transfer | 转账 | 账户间转账 |
 | security transfer | 证券转移 | 官方 `LabelSecurityTransfer` = **证券转移**。**注意**：与 delivery（证券转入/转出）是不同的账目类型，全文不可混用「证券转账」 |
-| stock split ratio N-for-M | N 拆 M | 例如 2-for-1 = `2 拆 1`，20-for-1 = `20 拆 1`，反向分股 1-for-5 = `1 拆 5`。比例方向不可颠倒 |
+| stock split ratio N-for-M | M 拆 N | 例如 2-for-1 = `1 拆 2`，20-for-1 = `1 拆 20`，反向分股 1-for-5 = `5 拆 1`。**方向不可颠倒**：英文 "N-for-M" 指 M 股变N 股，中文「A 拆 B」是 A 股变 B 股，故中文须写 "M 拆 N"。中文财经惯例（维基百科及各大财经媒体）一致：10-for-1 = `1 拆 10`，1-for-10 = `10 合 1`。 |
 | symbol | 证券代码 | 官方 `ColumnSymbol` = `证券代码` |
 | deposit (transaction) | 存款 | 官方 `存款`。入金动作用"入金" |
 | withdrawal | 取款 | 官方 `取款`。名词形式亦作"转出"（官方 `转出`），全文择一：用「取款」 |

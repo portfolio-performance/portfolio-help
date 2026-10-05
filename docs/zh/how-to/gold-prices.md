@@ -27,7 +27,7 @@ Portfolio Performance 论坛上有一个帖子 [Wo kann ich aktuelle und histori
 
 [伦敦金银市场](https://www.lbma.org.uk/prices-and-data/precious-metal-prices#/table)是全球最大、最重要的黄金与白银交易市场。你可以获取黄金、白银、铂金和钯金按年计的价格，数据可回溯至 1968 年，以 USD、GBP 和 EUR 计价。每天有两次拍卖（上午场和下午场）。数据可以按年显示为图表或表格。
 
-遗憾的是，Portfolio Performance 无法解析该表格（因为其中不含 `收盘`等必需关键字）。不过，正如用户 [ristretto](https://forum.portfolio-performance.info/t/wo-kann-ich-aktuelle-und-historische-gold-und-silberkurse-laden/14/49)所指出的，你可以通过 JSON `报价馈送`获取价格（见[操作指南 > 下载历史价格](./downloading-historical-prices/json.md)）。下午场拍卖的 `馈送 URL`为 `https://prices.lbma.org.uk/json/gold_pm.json`。"v"（value）键下的三个价格分别代表 USD、GBP 和 EUR。请注意，1968 年没有可用的 EUR 价格。
+遗憾的是，Portfolio Performance 无法解析该表格（因为其中不含 `Close` 这样的必需表头）。不过，正如用户 [ristretto](https://forum.portfolio-performance.info/t/wo-kann-ich-aktuelle-und-historische-gold-und-silberkurse-laden/14/49)所指出的，你可以通过 JSON `报价馈送`获取价格（见[操作指南 > 下载历史价格](./downloading-historical-prices/json.md)）。下午场拍卖的 `馈送 URL`为 `https://prices.lbma.org.uk/json/gold_pm.json`。"v"（value）键下的三个价格分别代表 USD、GBP 和 EUR。请注意，1968 年没有可用的 EUR 价格。
 
 ```
 [
