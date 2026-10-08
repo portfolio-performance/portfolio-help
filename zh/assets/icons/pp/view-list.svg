@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="80"
+   height="80"
+   viewBox="0 0 2.4 2.4"
+   fill="none"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="view-list.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="0.1708477"
+     inkscape:cx="-169.74182"
+     inkscape:cy="933.58003"
+     inkscape:window-width="1200"
+     inkscape:window-height="730"
+     inkscape:window-x="1500"
+     inkscape:window-y="993"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M 9,6 C 9,4.34315 7.65685,3 6,3 H 4 C 2.34315,3 1,4.34315 1,6 v 2 c 0,1.65685 1.34315,3 3,3 H 6 C 7.65685,11 9,9.65685 9,8 Z M 7,6 C 7,5.44772 6.55228,5 6,5 H 4 C 3.44772,5 3,5.44772 3,6 V 8 C 3,8.55228 3.44772,9 4,9 H 6 C 6.55228,9 7,8.55228 7,8 Z"
+     fill="#0f0f0f"
+     id="path1" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M 9,16 C 9,14.3431 7.65685,13 6,13 H 4 c -1.65685,0 -3,1.3431 -3,3 v 2 c 0,1.6569 1.34315,3 3,3 h 2 c 1.65685,0 3,-1.3431 3,-3 z M 7,16 C 7,15.4477 6.55228,15 6,15 H 4 c -0.55228,0 -1,0.4477 -1,1 v 2 c 0,0.5523 0.44772,1 1,1 h 2 c 0.55228,0 1,-0.4477 1,-1 z"
+     fill="#0f0f0f"
+     id="path2" />
+  <path
+     d="m 11,7 c 0,-0.55228 0.4477,-1 1,-1 h 10 c 0.5523,0 1,0.44772 1,1 0,0.55228 -0.4477,1 -1,1 H 12 C 11.4477,8 11,7.55228 11,7 Z"
+     fill="#0f0f0f"
+     id="path3" />
+  <path
+     d="m 11,17 c 0,-0.5523 0.4477,-1 1,-1 h 10 c 0.5523,0 1,0.4477 1,1 0,0.5523 -0.4477,1 -1,1 H 12 c -0.5523,0 -1,-0.4477 -1,-1 z"
+     fill="#0f0f0f"
+     id="path4" />
+</svg>
