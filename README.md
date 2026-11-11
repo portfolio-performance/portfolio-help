@@ -1,6 +1,6 @@
 # Portfolio Performance Manual
 
-Visit the manual at [https://help.portfolio-performance.info/en](https://help.portfolio-performance.info/en/) (English version) or [https://help.portfolio-performance.info/de](https://help.portfolio-performance.info/de/) (German version).
+Visit the manual at [https://help.portfolio-performance.info/en](https://help.portfolio-performance.info/en/) (English version), [https://help.portfolio-performance.info/de](https://help.portfolio-performance.info/de/) (German version) or [https://help.portfolio-performance.info/zh](https://help.portfolio-performance.info/zh/) (Chinese version).
 
 ## Setup
 
@@ -22,7 +22,9 @@ The project uses a [multi-language setup](https://github.com/squidfunk/mkdocs-ma
 │    │   └─ CNAME
 │    ├─ en/
 │    │   └─ index.md
-│    └─ de/
+│    ├─ de/
+│    │   └─ index.md
+│    └─ zh/
 │        └─ index.md
 │
 └─ overrides/
@@ -46,6 +48,7 @@ To run locally, adopt the following instructions to your operating system:
 ```
 mkdocs build -f config/en/mkdocs.yml
 mkdocs build -f config/de/mkdocs.yml
+mkdocs build -f config/zh/mkdocs.yml
 cp -R docs/root/* site
 cd site
 python3 -m http.server

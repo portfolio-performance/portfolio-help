@@ -4,7 +4,7 @@ title: Securities
 
 While the Reports > Performance menu gives you the most important key performance indicators on portfolio level such as IRR and TTWROR, the Reports > Performance > Securities menu provides you with much more detail on security level. However, it's important to understand the difference; especially in terms of cashflows (see section on performance).
 
-Figure: Overview of Performance > Reports > Securities. {class=pp-figure}
+Figure: Overview of Performance > Reports > Securities (<a href="https://raw.githubusercontent.com/portfolio-performance/portfolio-help/c66b7b82c0db5e57279a2bfde6ff2d3f5ddb1bf6/docs/en/assets/demo.xml" download="demo.xml">download sample XML file</a>). {class=pp-figure}
 
 ![](./images/securities-overview.svg)
 
@@ -91,7 +91,7 @@ Figure: Available fields Securities. {class=align-right style="width:30%"}
     If an investment never lost a penny, the maximum drawdown would be zero. The worst possible maximum drawdown would be -100%, meaning the investment is completely worthless.
     - Max Drawdown Duration: the worst (the maximum/longest) amount of time an investment has seen between peaks (equity highs)
     - Volatility: Volatility in portfolio performance refers to the degree of variability in the returns of a portfolio over time.
-    - Semivariance: The Semivariance exclusively considers the negative fluctuations of an investment. 
+    - Semideviation: The Semideviation (or downside volatility) exclusively considers the negative fluctuations of an investment. 
 
 
 

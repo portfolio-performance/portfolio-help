@@ -18,11 +18,11 @@ The title bar (top right) displays the chosen [Reporting period](../../../../con
     
 Using the `Export Data as CSV` icon, you can save each panel as a CSV file. This is useful for performing calculations, such as comparing `Assets at Start` and `Assets at End`, in a spreadsheet program. The columns in the CSV file match the headings of the panel, such as `Shares`, `Name`, `Symbol`, `Quote`, ....
 
-The `Configure view` icon provides two options :
+The `Configure view` icon provides two options:
 
 - `Pre tax` : When selected, the <span style="color:orange">Tax</span> section become null and taxes considererd in <span style="color:orange">Performance neutral Transfer</span> instead. A check mark is added when selected.
 
-- `Cost methodology` : this option impacts the value of <span style="color:orange">Realized</span> and <span style="color:orange">Unrealized Capital Gains</span> based on the cost methodology of your choice. The differences between the two methodologies (FIFO or moving average) is described here : [Acquisition cost methodology](../../../../concepts/cost-methodology.md)
+- `Cost methodology` : this option impacts the value of <span style="color:orange">Realized</span> and <span style="color:orange">Unrealized Capital Gains</span> based on the cost methodology of your choice. The differences between the two methodologies (FIFO or moving average) is described here: [Acquisition cost methodology](../../../../concepts/cost-methodology.md)
 
 ### Calculation & other detail panels
 

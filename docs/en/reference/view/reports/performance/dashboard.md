@@ -1,7 +1,7 @@
 ---
 title: Dashboard
 ---
-A dashboard is a configurable view that aggregates performance data into a one-page report format. You can access the default Performance dashboard through the menu `View > Reports > Performance` or with the sidebar. It contains three columns with key performance and risk indicators. A dashboard, however, can be much more complex ; see for example Figure 1.
+A dashboard is a configurable view that aggregates performance data into a one-page report format. You can access the default Performance dashboard through the menu `View > Reports > Performance` or with the sidebar. It contains three columns with key performance and risk indicators. A dashboard, however, can be much more complex; see for example Figure 1.
 
 Figure: Yearly Overview dashboard.{class=pp-figure}
 
@@ -120,7 +120,7 @@ The first three widgets are single line text; representing the common performanc
 
 ### 4. Risk indicators
 
-The following six widgets are single line text widgets, representing common risk indicators. See [the top of this page](index.md#maximum-drawdown) for an explanation of `Maximum Drawdown`, `Current Drawdown`, `Max Drawdown Duration`, `Volatility`, and `Semivariance`.
+The following six widgets are single line text widgets, representing common risk indicators. See [the top of this page](index.md#maximum-drawdown) for an explanation of `Maximum Drawdown`, `Current Drawdown`, `Max Drawdown Duration`, `Volatility`, and `Semideviation`.
 
 The :material-chart-line: `Drawdown chart` option will create a widget version of the chart as shown in [Figure 1](./images/performance-mdd.svg).
 

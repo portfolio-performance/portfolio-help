@@ -7,6 +7,7 @@ from collections import defaultdict
 DOCS_DIRS = {
     "de": os.path.join("docs", "de"),
     "en": os.path.join("docs", "en"),
+    "zh": os.path.join("docs", "zh"),
 }
 
 # Required Markdown meta-data fields (case-insensitive)

@@ -32,6 +32,6 @@ If you find the concept of IRR challenging, please start by first reading the [m
 ## Time-weighted Rate of Return
 The time-weighted rate of return (TWR) is not influenced by the amount invested. Whether you invest one EUR or 100 EUR, you will achieve the same TWR. The reporting period is divided into several holding periods, and for each holding period, a return value is calculated and then compounded into an overall return. Each period carries equal weight; hence the name time-weighted rate of return. In the True Time-Weighted Rate Of Return methodology (TTWROR), performance is calculated using simple returns without any consideration for the total amount invested.
 
-The TTWOR method is explained in depth in the [time-weighted section](./time-weighted.md) of this chapter.
+The TTWROR method is explained in depth in the [time-weighted section](./time-weighted.md) of this chapter.
 
 A nice video about the calculation and difference between the money-weighted and time-weighted approach is given at the [Finance and Risk Corner](https://www.youtube.com/watch?v=moNiiau33u0).

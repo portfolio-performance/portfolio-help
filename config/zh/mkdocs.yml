@@ -1,0 +1,240 @@
+
+# Project information
+site_name: Portfolio Performance 手册
+
+docs_dir: ../../docs/zh
+site_dir: ../../site/zh
+
+site_description: Portfolio Performance 软件手册
+site_author: Andreas Buchen, et. al.
+site_url: https://help.portfolio-performance.info/zh/
+
+repo_name: portfolio-performance/portfolio-help
+repo_url: https://github.com/portfolio-performance/portfolio-help
+edit_uri: tree/master/docs/zh
+
+copyright: '本作品采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。'
+
+theme:
+  name: material
+  custom_dir: ../../overrides/
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - navigation.expand
+    - navigation.indexes
+    - navigation.tabs
+    - content.action.edit
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.png
+  language: zh
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
+extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Deutsch
+      link: /de/
+      lang: de
+    - name: 中文
+      link: /zh/
+      lang: zh
+
+  social:
+    - icon: material/home
+      link: https://www.portfolio-performance.info
+    - icon: fontawesome/brands/github
+      link: https://github.com/portfolio-performance/portfolio
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/portfolioperf
+    - icon: fontawesome/solid/comments
+      link: https://forum.portfolio-performance.info
+    - icon: material/bug
+      link: https://github.com/portfolio-performance/portfolio/issues
+
+plugins:
+  - search:
+      lang: zh
+  - caption:
+      figure:
+        caption_prefix: '图 {index}：'
+        position: top
+        markdown_identifier: '图：'
+        reference_text: '图 {index}'
+      table:
+        position: top
+  - git-revision-date-localized:
+      type: date
+      custom_format: "%Y 年 %m 月 %d 日"
+      timezone: Europe/Berlin
+      locale: zh
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/icons
+  - attr_list
+  - md_in_html
+  - tables
+
+nav:
+  - 简介:
+      - 简介: index.md
+  - 快速上手:
+      - 快速上手: getting-started/index.md
+      - 安装: getting-started/installation.md
+      - 创建投资组合: getting-started/create-portfolio.md
+      - 添加证券: getting-started/adding-securities.md
+      - 管理投资组合:
+          - 管理投资组合: getting-started/manage-portfolio/index.md
+          - 记录入金: getting-started/manage-portfolio/deposit.md
+          - 买入证券: getting-started/manage-portfolio/buy.md
+          - 卖出证券: getting-started/manage-portfolio/sell.md
+          - 记录证券转入: getting-started/manage-portfolio/delivery.md
+          - 记录股息: getting-started/manage-portfolio/dividend.md
+          - 债券: getting-started/manage-portfolio/bonds.md
+      - 衡量绩效: getting-started/measure-performance.md
+      - 资产分类: getting-started/classify-assets.md
+      - 设定投资组合与再平衡: getting-started/rebalancing.md
+      - 保持投资组合数据最新: getting-started/updating-portfolio.md
+  - 基本概念:
+      - 基本概念: concepts/index.md
+      - Portfolio Performance 术语表: concepts/portfolio-performance-terminology.md
+      - 金融术语: concepts/financial-terminology.md
+      - 系统概览:
+          - 系统概览: concepts/system-overview/index.md
+          - 示例: concepts/system-overview/system-overview-example.md
+      - 报告期: concepts/reporting-period.md
+      - 成本: concepts/purchase-value.md
+      - 绩效:
+          - 绩效: concepts/performance/index.md
+          - 资金加权收益率: concepts/performance/money-weighted.md
+          - 时间加权收益率: concepts/performance/time-weighted.md
+      - 历史价格: concepts/historical-prices.md
+      - 成本计算方法: concepts/cost-methodology.md
+  - 参考手册:
+      - 参考手册: reference/index.md
+      - 文件菜单:
+          - 新建: reference/file/new.md
+          - 保存: reference/file/save.md
+          - 导入:
+            - 导入: reference/file/import/index.md
+            - CSV 文件: reference/file/import/csv-import.md
+            - PDF 文档: reference/file/import/pdf-import.md
+            - Interactive Brokers Flex Query: reference/file/import/ibflex-import.md
+          - 导出: reference/file/export.md
+          - 货币: reference/file/currency.md
+      - 视图菜单:
+          - 选项: reference/view/options.md
+          - 证券:
+              - 全部证券: reference/view/securities/all-securities.md
+              - 右键菜单: reference/view/securities/context-menu.md
+          - 账户:
+              - 账户: reference/view/accounts/index.md
+              - 现金账户: reference/view/accounts/deposit-account.md
+              - 证券账户: reference/view/accounts/security-account.md
+              - 账户分组: reference/view/accounts/grouped-accounts.md
+              - 投资计划: reference/view/accounts/investment-plans.md
+              - 全部账目: reference/view/accounts/all-transactions.md
+          - 报告:
+              - 资产明细:
+                - 资产明细: reference/view/reports/statement/index.md
+                - 图表: reference/view/reports/statement/statement-chart.md
+                - 持仓: reference/view/reports/statement/holdings.md
+              - 收益:
+                - 收益: reference/view/reports/performance/index.md
+                - 仪表板: reference/view/reports/performance/dashboard.md
+                - 计算: reference/view/reports/performance/calculation.md
+                - 图表: reference/view/reports/performance/performance-chart.md
+                - 证券: reference/view/reports/performance/securities.md
+                - 收入: reference/view/reports/performance/payments.md
+                - 头寸: reference/view/reports/performance/trades.md
+          - 类别:
+              - 类别: reference/view/taxonomies/index.md
+              - 管理类别: reference/view/taxonomies/managing-taxonomies.md
+              - 使用类别: reference/view/taxonomies/using-taxonomies.md
+          - 常规数据:
+            - 设置: reference/view/general-data/settings.md
+            - 货币: reference/view/general-data/currencies.md
+            - 价格更新状态: reference/view/general-data/price-update-status.md
+      - 账目菜单:
+          - 账目: reference/transaction/index.md
+          - 买入与卖出: reference/transaction/buy-sell.md
+          - 证券转入与转出: reference/transaction/delivery.md
+          - 转账: reference/transaction/transfer.md
+          - 股息: reference/transaction/dividend.md
+          - 存款与取款: reference/transaction/deposit-withdrawal.md
+          - 利息与利息支出: reference/transaction/interest.md
+          - 费用与税款: reference/transaction/fees-taxes.md
+      - 在线菜单: reference/online.md
+      - 帮助与应用程序菜单:
+          - 帮助与应用程序: reference/help/index.md
+          - 欢迎: reference/help/welcome.md
+          - 关于 Portfolio Performance: reference/help/about.md
+          - 设置/首选项 : reference/help/preferences.md
+          - 检查更新: reference/help/check-updates.md
+          - 加入翻译团队: reference/help/join-translation-teams.md
+          - 故障排查: reference/help/trouble-shooting.md
+  - 操作指南:
+      - 操作指南: how-to/index.md
+      - 为投资组合设定基准: how-to/benchmarking.md
+      - 在投资组合之间复制证券: how-to/copy-securities.md
+      - 下载历史价格:
+          - 下载历史价格: how-to/downloading-historical-prices/index.md
+          - Portfolio Performance (内置): how-to/downloading-historical-prices/portfolioperformance.md
+          - Alpha Vantage: how-to/downloading-historical-prices/alpha-vantage.md
+          - EODHistorical Data: how-to/downloading-historical-prices/eodhd.md
+          - Yahoo Finance: how-to/downloading-historical-prices/yahoo-finance.md
+          - CSV 文件: how-to/downloading-historical-prices/csv-file.md
+          - JSON: how-to/downloading-historical-prices/json.md
+          - 网页表格: how-to/downloading-historical-prices/table-website.md
+          - 从 Morningstar 导入基金数据: how-to/downloading-historical-prices/morningstar.md
+          - 印度 ETF: how-to/downloading-historical-prices/indian.md
+      - 处理选择权股息: how-to/handling-choice-dividend.md
+      - 导入以 GBX 计价证券: how-to/import-gbx.md
+      - 阅读源代码: how-to/inspect-source-code.md
+      - 记录分拆操作: how-to/recording-spin-off.md
+      - 记录拆股操作: how-to/recording-stock-split.md
+      - 记录合并: how-to/recording-merger.md
+      - 记录破产: how-to/insolvency.md
+      - 申请新的 PDF 导入器: how-to/requesting-new-importer.md
+      - 获取黄金价格: how-to/gold-prices.md
+      - 用户界面: how-to/user-interface.md
+      - 管理费的记账: how-to/fees-on-shares.md
+  - 关于: about.md

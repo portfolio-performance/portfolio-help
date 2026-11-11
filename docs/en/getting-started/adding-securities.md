@@ -11,7 +11,7 @@ Figure: Main screen after creating a new portfolio.{class=pp-figure}
 
 ![](images/adding-securties-starting-screen.svg)
 
-The :octicons-plus-circle-16:{.green} `Add new investment instrument` button (left and right; see Figure 1)allows you to start adding securities to your portfolio. As you can see in Figure 1, you can add new instruments (stocks, bonds, ...), cryptocurrencies, exchange rates. You can also import securities from a CSV-file or create a new empty security. This last option allows you to bypass the creation wizard and displays immediately the [Security master data](../reference/file/new.md#security-master-data) dialog box.  You could also use the menu `File > New` menu (see Figure 1).
+The :octicons-plus-circle-16:{.green} `Add new investment instrument` button (left and right; see Figure 1) allows you to start adding securities to your portfolio. As you can see in Figure 1, you can add new instruments (stocks, bonds, ...), cryptocurrencies, exchange rates. You can also import securities from a CSV-file or create a new empty security. This last option allows you to bypass the creation wizard and displays immediately the [Security master data](../reference/file/new.md#security-master-data) dialog box.  You could also use the menu `File > New` menu (see Figure 1).
 
 **New instrument creation wizard**
 

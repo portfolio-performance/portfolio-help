@@ -33,7 +33,7 @@ The following fields are displayed for each instrument:
 - type (e.g. share, Exchange-Traded Product (ETP) such as Exchange-Traded Funds (ETF), or commodity such as energy or metals)  
 - the currencies in which the instrument is traded  
 - the ISIN number of the instrument  
-- the providerof the historical prices (CoinGecko, Yahoo Finance, or the built-in Portfolio Performance data source)  
+- the provider of the historical prices (CoinGecko, Yahoo Finance, or the built-in Portfolio Performance data source)  
 
 See [Basic concepts > Portfolio Performance terminology](../../concepts/portfolio-performance-terminology.md) for a definition of each term.  
 
@@ -103,7 +103,7 @@ At the bottom of Figure 3, you can add a personal `note` for this security.
  
 ## Cryptocurrency
 
-Figure: Create new crypotocurrency.{class=align-right style="width:30%"}
+Figure: Create new cryptocurrency.{class=align-right style="width:30%"}
 
 ![](images/new-cryptocurrency.png)
 

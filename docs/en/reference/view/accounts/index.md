@@ -18,7 +18,7 @@ Figure: Example of Security Account. {class = "pp-figure"}
 
 ### Reference Account
 
-A security account is always associated with a deposit account. This is the deposit account that will be used (if no other is explicitly assigned) for any buy or sell transaction on that security account. This deposit account is called the Reference Account. In Figure 2, the `Broker-1` security account has a reference (deposit)account named `Broker-1 (EUR)`.
+A security account is always associated with a deposit account. This is the deposit account that will be used (if no other is explicitly assigned) for any buy or sell transaction on that security account. This deposit account is called the Reference Account. In Figure 2, the `Broker-1` security account has a reference (deposit) account named `Broker-1 (EUR)`.
 
 The Reference account of a Security account must be set when creating this account (see Figure 2 of [Creating a Portfolio](../../../getting-started/create-portfolio.md)). You can always change the Reference account by selecting `Accounts > Securities Accounts` from the left sidebar. Double-click on the relevant Reference account currency and choose a new one from the drop-down menu (see Figure 2; second column).
 

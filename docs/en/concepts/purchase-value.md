@@ -21,25 +21,25 @@ From [demo-portfolio-03.xml](../assets/demo-portfolio-03.xml), you know that 8 s
 
 `Share-1` is more complex. Ten shares were purchased on 15 January 2021 for a total of 155 EUR (including fees and taxes), and 5 shares on 14 January 2022 for 84 EUR. Five shares were sold on 12 April 2023 for 105 EUR.  
 
-The historical prices for the 3-, 2-, and 1-year Reporting Periods are*14.705 EUR, 17.794 EUR, and 18.15 EUR/share, respectively. See Figure 2 of [Money Weighted Rate of Return](./performance/money-weighted.md) for more details.  
+The historical prices for the 3-, 2-, and 1-year Reporting Periods are 14.705 EUR, 17.794 EUR, and 18.15 EUR/share, respectively. See Figure 2 of [Money Weighted Rate of Return](./performance/money-weighted.md) for more details.  
 
 - **1-Year Reporting Period**  
 
 Both purchases occurred before the start of the Reporting Period. The historical price of 18.15 EUR/share at the beginning of the period is used to value the security.  
 
-At the start of the period, 15 shares were in the portfolio, with a total value of 15 × 18.15 EUR = 272.25 EUR. During the period, 5 shares were sold. The remaining 10 share* were worth (272.25 × 10/15) = 181.50 EUR, which is exactly the Purchase Value for this 1-Year Reporting Period.  
+At the start of the period, 15 shares were in the portfolio, with a total value of 15 × 18.15 EUR = 272.25 EUR. During the period, 5 shares were sold. The remaining 10 shares were worth (272.25 × 10/15) = 181.50 EUR, which is exactly the Purchase Value for this 1-Year Reporting Period.  
 
-The Purchase Pric* is*18.15 EUR/share, which matches the historical price at the beginning of the Reporting Period.  
+The Purchase Price is 18.15 EUR/share, which matches the historical price at the beginning of the Reporting Period.  
 
 - **2-Year Reporting Period**  
 
 Since the period starts on 12 June 2021, the first purchase falls outside the period, while the second purchase and the sell transaction occur within the period.  
 
-At the beginning of the period, the 10 existing shares are valued at 10 × 17.794 EUR/share = 177.94 EUR. Under the FIFO principl*, 5 shares are sold, leaving a remaining value of 177.94 / 2 = 88.97 EUR.  
+At the beginning of the period, the 10 existing shares are valued at 10 × 17.794 EUR/share = 177.94 EUR. Under the FIFO principle, 5 shares are sold, leaving a remaining value of 177.94 / 2 = 88.97 EUR.  
 
-An additional 5 shares are purchased for 84 EUR. Thus, the total Purchase Value*for this period is 88.97 + 84 = 172.97 EUR.  
+An additional 5 shares are purchased for 84 EUR. Thus, the total Purchase Value for this period is 88.97 + 84 = 172.97 EUR.  
 
-The Purchase Price*is the weighted average of the first purchase valuation (17.794 EUR/share) and the second purchase (16 EUR/share), calculated as: (17.794 + 16) / 2 = 16.90 EUR/share.
+The Purchase Price is the weighted average of the first purchase valuation (17.794 EUR/share) and the second purchase (16 EUR/share), calculated as: (17.794 + 16) / 2 = 16.90 EUR/share.
 
 - **3-year Reporting Period**
 
