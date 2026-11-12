@@ -4677,8 +4677,8 @@
 <a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">    </span><span class="p">]</span>
 <a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="p">}</span>
 </code></pre></div>
-<p>Der Pfad zum Datum <strong>$.data[*].date</strong>. '$' steht für das Wurzelelement, mit der Wildcard '*' werden alle Einträge aus dem Array eingesammelt.</p>
-<p>Als Schlusskurs verwenden wir das <strong>close</strong> Attribut und damit den Pfad <strong>$.data[*].close</strong>.</p>
+<p>Der Pfad zum Datum **$.data[<em>].date</em><em>. '$' steht für das Wurzelelement, mit der Wildcard '</em>' werden alle Einträge aus dem Array eingesammelt.</p>
+<p>Als Schlusskurs verwenden wir das <strong>close</strong> Attribut und damit den Pfad **$.data[<em>].close</em>*.</p>
 <p>Ein zweites Beispiel sind die <a href="https://www.quandl.com/data/LBMA/GOLD-Gold-Price-London-Fixing">LBMA/GOLD</a> Kurse von Quandl. Da es einen separaten Quandl Kurslieferant gibt, kann man Kursinformationen von Quandl natürlich einfacher konfigurieren. Es dient hier als Beispiel für ein weiteres JSON.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nt">"dataset"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -4719,8 +4719,8 @@
 <a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="p">}</span>
 </code></pre></div>
-<p><strong>$.dataset.data[*][0]</strong> extrahiert das Datum.</p>
-<p><strong>$.dataset.data[*][6]</strong> extrahiert das 7. Element (JsonPath fängt mit 0 an zu zählen). Von den <strong>column_names</strong> Attribut wissen wir, dass das 7. Element als <strong>EURO (PM)</strong> bezeichnet ist, also das Nachmittags Fixing in Euro.</p>
+<p>*<em>$.dataset.data[<em>][0]</em></em> extrahiert das Datum.</p>
+<p>*<em>$.dataset.data[<em>][6]</em></em> extrahiert das 7. Element (JsonPath fängt mit 0 an zu zählen). Von den <strong>column_names</strong> Attribut wissen wir, dass das 7. Element als <strong>EURO (PM)</strong> bezeichnet ist, also das Nachmittags Fixing in Euro.</p>
 <p>Mit <a href="https://jsonpathfinder.com">JSON Path Finder</a> steht jetzt ein praktisches Online-Tool bereit, um JsonPath-Ausdrücke direkt im Browser zu testen. Die Anwendung ermöglicht es, gezielt Abfragen auf JSON-Daten auszuprobieren und das Ergebnis sofort zu sehen.
 Am besten funktioniert das Tool mit kleineren JSON-Beispielen, um die gewünschten Pfade schnell und übersichtlich zu validieren. Ideal also, um JsonPath-Abfragen zu entwickeln, zu verstehen und zu verfeinern.</p>
 <h2 id="dynamische-kursdaten-urls">Dynamische Kursdaten-URLs</h2>

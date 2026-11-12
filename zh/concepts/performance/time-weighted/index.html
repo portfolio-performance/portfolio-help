@@ -4842,9 +4842,15 @@
 <p>其中 MVE = 该资产在持有期末的市值，MVB 是持有期初的市值（与上一持有期末的 MVE 相同）。CFin 是该期间流入的现金流，CFout 是流出的现金流。</p>
 <h2 id="ttwror-at-portfolio-level">投资组合层面的 TTWROR</h2>
 <p>投资组合层面绩效计算所涉及的现金流是：<code>存款</code>、<code>取款</code>、<code>证券转入</code> 和 <code>证券转出</code>。详见<a href="../money-weighted/#defining-the-cashflows">定义现金流一节</a>，尤其是资金加权收益率一章中的<a href="../images/transaction-cashflows.svg">图 3</a>。请注意，<code>share-1</code> 的股息或卖出不会影响<em>投资组合</em>绩效，因为所得款项仍留在投资组合内的现金账户中。图 1 给出了计算 <code>demo-portfolio-03</code> 之 TTWROR 所需的信息。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 账目总览——存款（3 笔）、买入（3 笔）、股息与部分卖出，以及 share-1 与 share-2 的图表。</figcaption><img alt="" src="../images/demo-portfolio-03-info.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>账目总览——存款（3 笔）、买入（3 笔）、股息与部分卖出，以及 share-1 与 share-2 的图表。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/demo-portfolio-03-info.svg"></p>
 <p>下面的示例将使用一个自 2021 年 6 月 12 日开始的 <strong>2 年报告期</strong>。由于以 155 EUR 首次买入 <code>share-1</code> 发生在该报告期之外，影响绩效的现金流入只有两笔：84 EUR 的存款和 67 EUR 的存款。截至 2021 年 6 月 12 日，投资组合的市值 (MVB) 为 177.94 EUR；见图 2。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： 来自 demo-portfolio-3.xml 的投资组合（2 年报告期）。</figcaption><img alt="" src="../images/TTWROR-manual-calculation-demo-portfolio-03.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>来自 demo-portfolio-3.xml 的投资组合（2 年报告期）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/TTWROR-manual-calculation-demo-portfolio-03.svg"></p>
 <p>如果某个持有期内没有现金流（如 HP1），则可以使用<a href="../">简单收益率</a>公式。当然，这等同于没有现金流时的公式 1：<code>r = MVE/MVB - 1 = 160.26/177.94 - 1 = - 0.0994</code>，即 HP1 的收益率为 - 9.94%。</p>
 <p>第二个持有期始于第一笔现金流入（+ 84 EUR）之前，结束于下一笔现金流入之前。MVE 为 264.57 EUR。依公式 1，收益率 <code>1 + r = 264.57 / (160.26 + 84)</code>，即 r = 8.31%。把现金流入加到分母上，就中和了这笔现金流对绩效的影响。</p>
 <p>HP3 的 MVB 与 HP2 的 MVE 相同，均为 264.57 EUR。该期间有一笔 67 EUR 的现金流入，MVE = 426.82 EUR。绩效 <code>1 + r = 426.82 / (264.57 + 67)</code>，即 r = 28.73%。</p>
@@ -4857,7 +4863,10 @@
 <p>整个期间的 TTWROR 为：<code>[(1 - 0.0994) * (1 + 0.0831) * (1 + 0.2873)] - 1 = (0,9006 * 1,0831 * 1,2873) - 1  = 25,58%</code>，可用菜单 <code>视图 &gt; 报告 &gt; 收益</code> 验证</p>
 <h3 id="exporting-data-from-pp">从 PP 导出数据</h3>
 <p>你可以轻松地把每日投资组合数值导出为 CSV 文件。选择菜单 <code>视图 &gt; 报告 &gt; 收益 &gt; 图表</code>，点击（右上角的）<code>Export Data as CSV</code> 图标。选择 <code>整个投资组合</code>（缩略示例见图 3）。其中 <code>Delta in %</code> 一列对应计算出的收益率 <em>r</em>。<code>Cumulative Performance in %</code> 即累计 TTWROR，也就是把此前各天的全部收益率复利合成。</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： 从 Export Data as CSV 导出的 CSV 文件摘录（2 年期间，投资组合层面）。</figcaption><img alt="" src="../images/TTWROR-manual-calculation-demo-3-excel.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>从 Export Data as CSV 导出的 CSV 文件摘录（2 年期间，投资组合层面）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/TTWROR-manual-calculation-demo-3-excel.png"></p>
 <p>图 3 中的计算与前述手工计算的说明完全类似，只是持有期为一天。请注意，Excel 工作表中的多数行处于隐藏状态。<code>2021-06-12</code> 时投资组合的市值为 177.94 EUR。到 HP1 结束的 <code>2022-01-13</code>，该值降至 160.26 EUR。6 月 14 日发生了一笔存款（并买入 share-2）。然而 HP2 的 MVB 并不是 160.26 EUR + 84 EUR = 244.26 EUR；因为费用与税款是在该笔账目上支付的，而且投资组合在 2022-01-14 交易日内已略有变动。HP2 中投资组合的市值上升到 264.57 EUR。同样地，由于费用与税款（见图 2），2022-09-30 的当日绩效为负。累计绩效依公式 2 计算，只是现在按<em>日</em>计算，结果整个报告期的总绩效同为 25.58%。</p>
 <h2 id="ttwror-at-security-level">证券层面的 TTWROR</h2>
 <p>上一节描述的是整个投资组合（含现金账户在内）的绩效。到现在为止，理解单一项证券的绩效计算不应再有困难。基本原则相同。不过，在处理方式上仍有若干差异。</p>
@@ -4867,12 +4876,21 @@
 <li>税款另有专门规定。税款<em>不</em>计入计算；参见 <a href="../money-weighted/#irr-at-security-level">IRR 一节以了解说明</a>。</li>
 </ol>
 <p>在 Portfolio Performance 中，你可以通过菜单 <code>视图 &gt; 报告 &gt; 收益 &gt; 证券</code> 取得某项证券的 IRR 与 TTWROR（见图 4）。不过，这些数值默认不显示，需要用右上角的 <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2699.svg" title=":gear:"> <code>显示或隐藏列</code> 图标将其调出。</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>图 4： 证券的期间 TTWROR 与年化 TTWROR（2 年期间）。 </figcaption><img alt="" src="../images/info-ttwror-securities-calculation.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>证券的期间 TTWROR 与年化 TTWROR（2 年期间）。 </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/info-ttwror-securities-calculation.png"></p>
 <p>菜单 <code>视图 &gt; 报告 &gt; 收益 &gt; 图表</code> 中的图表可以显示多条时间序列（点击齿轮图标）。在图 5 中，整个投资组合的累计 TTWROR 与 <code>share-1</code>、<code>share-2</code> 各自的表现曲线并排显示，报告期为 2 年，自 2021 年 6 月 12 日起算。由于 <code>share-2</code> 是在 2022 年 9 月 30 日取得的，在此日期之前其绩效记为零（由那条水平橙线标示）。自该点起，由于 <code>share-2</code> 的贡献虽然相当可观但在整体投资组合中相对较小，总投资组合的绩效曲线开始与 <code>share-1</code> 的绩效曲线分离。可以看到，整个投资组合的 TTWROR（黑线）止于 25.58%，与图 3 中的计算一致。</p>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>图 5： 投资组合、share-1 与 share-2 累计绩效曲线（2 年期间）。</figcaption><img alt="" src="../images/TTWROR-chart-portfolio-shares.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>投资组合、share-1 与 share-2 累计绩效曲线（2 年期间）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/TTWROR-chart-portfolio-shares.png"></p>
 <p>对于<em>手工</em>计算，你需要先确定持有期。对 <code>share-2</code> 而言这相当容易，一个持有期就够：从买入日期之前一直到报告期末。<code>share-2</code> 在持有期初（买入之前）的 MVB 为 0 EUR。MVE 等于 111.76。买入账目的成本为 66 EUR（含费用，不含税款）。因此 TTWROR 等于 <code>111.76/(0 + 66) = 69.33%</code>。这一点可以在图 5 中看到，那条橙线止于略低于 70% 的位置。</p>
 <p><code>share-1</code> 的手工计算要复杂一些。下表（图 6）汇总了全部相关信息，它基于图 6 曲线图中<em>每日</em>数据的 CSV 导出（点击右上角的 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9 16v-6H5l7-7 7 7h-4v6zm-4 4v-2h14v2z"></path></svg></span> 向上箭头）。</p>
-<p><figure class="pp-figure" id="_figure-6"><figcaption>图 6： share-1 累计绩效的手工计算。</figcaption><img alt="" src="../images/TTWROR-manual-calculation-demo-3-excel-share-1.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>share-1 累计绩效的手工计算。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/TTWROR-manual-calculation-demo-3-excel-share-1.png"></p>
 <p>HP1 的收益率一目了然：<code>r = [(160.26)/(177.94 + 0)] - 1 = -9.94%</code>。HP2 含有一笔现金流入（买入）：<code>r = [(287.49)/(160.26 + 83)] - 1 = 6.43%</code>。</p>
 <p>HP3 与 HP4 是特殊情况，因为它们含有现金流出。HP3 的收益率为 <code>r = [(339)/(287.49 - 30)] - 1 = 31.66%</code>，HP4 为 <code>r = [(190.06)/(339 - 107)] - 1 = -18.08%</code>。整个报告期的 TTWROR 合计为 14,80%；略低于图 4 中 Portfolio Performance 报告的 TTWROR（14,98%）。这一细微差异源于：公式 1 假定所有账目都在交易日开始时完成，而公式 3 假定现金流出发生在交易日结束时。由于份额的市值在一天之内会有波动，这些波动会使公式 1 与公式 3 的结果略有出入。</p>
 <h2 id="ttwror-pa">TTWROR p.a.</h2>

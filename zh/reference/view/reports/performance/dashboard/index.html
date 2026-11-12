@@ -4794,14 +4794,23 @@
   <h1>仪表板</h1>
 
 <p>仪表板是一种可配置的视图，把绩效数据汇总为单页报告的格式。你可以通过菜单 <code>视图 &gt; 报告 &gt; 收益</code>或侧边栏进入默认的收益仪表板。它包含三列关键绩效与风险指标。不过，仪表板可以复杂得多；例如见图 1。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 年度概览仪表板。</figcaption><img alt="" src="../images/performance-dashboard.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>年度概览仪表板。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/performance-dashboard.svg"></p>
 <p>你可以点击报告期左侧的 <code>新建仪表板</code>图标，创建一个新的（空）仪表板（见图 1）。你可以在空白仪表板、关键指标（即默认的收益仪表板）和收入之间选择（见图 2）。要把某个仪表板从菜单中移除，点击名称旁边的箭头并选择 <code>删除</code>。你可以把仪表板移到列表最前面（置于顶层）、重命名仪表板，或为所选仪表板创建一个副本。</p>
-<p><figure class="align-right" style="width:30%" id="_figure-2"><figcaption>图 2： 创建新仪表板。</figcaption><img alt="" src="../images/dashboard-add-new.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=align-right style="width:30%"&gt;</p>
+<p>创建新仪表板。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/dashboard-add-new.png"></p>
 <p>一个仪表板包含一列或多列；图 1 中的仪表板包含 6 列。你看不到列的边框。在（空白）区域内右击可删除某一列。你可以借助配置仪表板的齿轮图标（右上角）添加新列。如果已经至少有一列，你也可以在某一列区域内右击，选择 <code>左侧新建列</code>、<code>右侧新建列</code>或 <code>复制列</code>（见图 5）。通过 <code>列宽</code>你可以逐级增减所选列的宽度。当然，由于窗口总宽度保持不变，其他列的宽度也会受到影响。使用 <code>应用到全部</code>选项，你可以为仪表板中所有组件统一设置报告期和数据序列。</p>
 <p>每一列可以包含若干可配置的组件：由标签与数值构成的数据块，或一幅图，例如总收益变化或绩效图表。在列中的<em>空白处</em>右击可管理组件，例如添加组件。在<em>组件标签</em>上右击可管理该具体组件，例如更改数据序列或报告期。</p>
 <p>组件是按你的喜好定制仪表板的有力工具。<a href="https://youtu.be/_-9iC7UqLsw">Finanzkoch 的 YouTube 视频</a>对此有详尽的介绍（德语讲解，但可开启英语字幕）。论坛上还可以找到 fellow investors 整理的<a href="https://forum.portfolio-performance.info/t/beispiele-fur-auswertungen-grafiken-und-berichte/5367/118">一批非常出色的仪表板</a>。</p>
 <p><code>新建组件</code>选项会展开一个子菜单，其中列出六类组件（参见图 3）。下面逐一说明各类组件。在组件标签上右击会弹出上下文菜单。多数组件都有 <code>编辑标签</code>、<code>删除</code>和 <code>高度</code>等选项。你可以在列内以及列之间拖放组件。按下 CTRL 键（Windows）即为复制而非移动。</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： 新建组件菜单，含所有可用组件一览。</figcaption><img alt="" src=""></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>新建组件菜单，含所有可用组件一览。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src=""></p>
 <pre class="mermaid"><code>graph TD
     A[New Widget] --&gt; B(1. Common);
     A --&gt; C(2. Statement of Assets);
@@ -4929,7 +4938,10 @@
 <h3 id="4-risk-indicators">4. 风险指标</h3>
 <p>以下六个组件是单行文本组件，代表常见的风险指标。关于 <code>最大回撤</code>、<code>当前回撤</code>、<code>最长回撤期</code>、<code>波动率</code>和<code>下行波动率</code>的说明，见<a href="../#maximum-drawdown">本页顶部</a>。</p>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m16 11.78 4.24-7.33 1.73 1-5.23 9.05-6.51-3.75L5.46 19H22v2H2V3h2v14.54L9.5 8z"></path></svg></span> <code>回撤图表</code>选项会创建该图表的组件版本，如<a href="../images/performance-mdd.svg">图 1</a>所示。</p>
-<p><figure class="align-right" style="width:30%" id="_figure-4"><figcaption>图 4： 从上下文菜单设置无风险收益率。</figcaption><img alt="" src="../images/sharpe-set-risk-free.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=align-right style="width:30%"&gt;</p>
+<p>从上下文菜单设置无风险收益率。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/sharpe-set-risk-free.png"></p>
 <p><code>夏普比率</code>是一项金融指标，在考虑投资组合风险的前提下，衡量该投资组合相对于无风险资产的表现。其计算方法是用投资组合的收益率（如内部收益率 (IRR)）减去无风险收益率，再除以投资组合收益率的标准差（后者是衡量其波动率的指标）。</p>
 <p>无风险收益率默认为 0%，但可通过上下文菜单调整，以反映你当前的无风险利率（见图 4）。由于该比率以波动率为基础，因此需要完整的历史价格。若价格不完整，计算出的波动率可能被低估。</p>
 <h3 id="5-earnings">5. 收入</h3>

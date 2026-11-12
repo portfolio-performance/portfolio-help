@@ -4776,7 +4776,10 @@
 </ul>
 <p>你还可以用鼠标中键滚动来调整 y 轴的刻度。把鼠标光标停在图中希望放大或缩小刻度的垂直位置上。这对于放大图中的某个特定数据点很有用。</p>
 <p>按 0（数字零）键可将图表恢复到其原始刻度。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 演示投资组合总价值的图表。</figcaption><img alt="" src="../images/sb-reports-chart.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>演示投资组合总价值的图表。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/sb-reports-chart.svg"></p>
 <h2 id="canvas">画布</h2>
 <p>画布是一个或多个数据序列的图形表示。一个数据序列通常包含一组以表格形式呈现的成对数据点，例如日期及其对应的数值。默认显示两个数据序列：<code>净存款</code>（主要是存款）与<code>合计</code>（所有可能的数据序列说明见下文）。当你在画布上左击并在某一天（例如 2022 年 1 月 14 日）按住鼠标时，会弹出一个提示窗口，显示所选各数据序列在该日的详细数值。</p>
 <p>在图表画布上右击会显示上下文菜单，提供更多选项（见图 1）。</p>
@@ -4790,12 +4793,18 @@
 <h2 id="legend">图例</h2>
 <p>在图例图标上右击（例如图 1 中的蓝色或橙色方块）会打开更多格式设置选项（见图 1）。对于所有类型的数据序列及其图例条目，你都可以修改 <code>颜色</code>、<code>位置</code>（向后移、移到最底层或向前移，以及置于最顶层）和 <code>排序</code>（A-Z 或 Z-A）。后两个选项会相应地按从左到右重新排列图例条目。对于像合计值这样的线型数据序列，你还可以调整 <code>线条样式</code>（实线、虚线、点线……）以及 <code>显示面积</code>选项（填充数据序列下方的区域）。此外，你还可以选择隐藏它（图例条目仍然可见但被划掉，数据序列不在图表上显示），或将其彻底移除（图例与数据序列都从图表中完全删除）。你也可以通过双击相应的图例图标来隐藏或显示某个数据序列。</p>
 <h2 id="configure-chart">配置图表</h2>
-<p><figure class="align-right" id="_figure-2"><figcaption>图 2： 配置菜单。</figcaption><img alt="" src="../images/sb-reports-chart-gear.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=align-right&gt;</p>
+<p>配置菜单。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/sb-reports-chart-gear.png"></p>
 <p>通过右上角的 <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2699.svg" title=":gear:"> 齿轮图标（见图 1），你可以看到图表中显示的数据序列，例如合计与净存款。某个数据序列一旦添加到图表中，它就会出现在该菜单中（见图 2），但会从可用数据序列列表中消失（见图 3）。</p>
 <p>Portfolio Performance 还提供两个附加图表：绩效图表（位于 <code>视图 &gt; 报告 &gt; 收益 &gt; 图表</code>）以及历史收益率与波动率图表（位于 <code>视图 &gt; 报告 &gt; 收益 &gt; 收益率/波动率</code>）。<code>复制自</code>选项会把这些图表视图中的数据序列添加到当前图表。<code>替换为</code>选项作用类似，但会先移除已有的数据序列，再添加新的数据序列。</p>
 <p>图表的实际数据通过 <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2699.svg" title=":gear:"> 菜单选项 <code>添加数据序列 ...</code> 和 <code>添加派生数据序列 ...</code> 来配置。数据序列是一组成对数据点，例如日期与投资组合总值。派生数据序列则由原始数据序列计算或推导而来，例如 <code>投入资本</code>、<code>税款与费用</code>、<code>股息</code>等。这些派生数据序列列在图 3 的右侧面板中，以及标题 <code>通用</code>之下（左侧面板）。</p>
 <p>借助 <code>账户与投资组合</code>选项，你可以选择显示特定的账户组合，例如<em>证券账户</em> <code>broker-A</code>、<em>现金账户</em> <code>broker-A (EUR)</code>，或二者的组合。在图 2 底部还提供了单只证券的列表。选中合适的选项并按住 Ctrl（Cmd）可添加更多选择。一旦你添加了某个数据序列，它就不再出现在图 3 的可用数据序列列表中，但会在齿轮菜单中被勾选。你可以在齿轮菜单中取消勾选，或通过删除图例条目（见上文说明）的方式，把数据序列从图表中移除。</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： 数据序列（左）与派生数据序列（右）。</figcaption><img alt="" src="../images/sb-reports-chart-dataseries.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>数据序列（左）与派生数据序列（右）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/sb-reports-chart-dataseries.svg"></p>
 <p>借助 <code>账户与投资组合</code>选项，你可以选择显示特定的账户组合，例如证券账户 <code>broker-A</code>、现金账户 <code>broker-A (EUR)</code>，或二者的组合。在图 2 底部，你还可以选择单只证券。按住 Ctrl（Cmd）可添加更多选择。一旦你添加了某个数据序列，它就不再出现在图 3 的可用数据序列列表中，但会在齿轮菜单中被勾选。你可以在齿轮菜单中取消勾选，或通过删除图例条目（见上文说明）的方式，把数据序列从图表中移除。</p>
 <p>请注意，派生数据序列在图 3 的左右两个面板中都可获得。不过，左侧面板中的数据始终代表整个投资组合，而右侧面板则允许细分为各个组成部分。例如，左侧面板中的费用反映投资组合内支付的所有费用，而在右侧面板中，还可以按来源账户或证券拆分。</p>
 <ul>

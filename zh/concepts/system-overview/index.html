@@ -4642,7 +4642,10 @@
 
 <p>PortfolioPerformance (PP) 这一名称很好地体现了它的用途：从绩效的角度管理投资组合。这一侧重点与许多券商的自有应用不同，后者主要协助执行订单的技术性操作。下文将概述主要组件（见图 1）。点击各链接可获得更详细的信息。另有一篇单独的文本，给出了使用简单投资组合的<a href="system-overview-example/">示例</a>。</p>
 <h2 id="components">组件</h2>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 包含各组件及其关系的系统概览。</figcaption><img alt="" src="../images/system-overview-components.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>包含各组件及其关系的系统概览。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/system-overview-components.svg"></p>
 <p>绩效是一个多层面的概念。它不仅有多种计算方法，例如<a href="../performance/money-weighted/">资金加权 (IRR)</a>与<a href="../performance/time-weighted/">时间加权 (TTWROR)</a>收益率，而且可以在不同层面计算绩效：<a href="../../reference/view/reports/performance/">整个投资组合</a>、单个证券账户或现金账户、<a href="../../reference/view/reports/performance/securities/">单项证券</a>，或某一笔<a href="../../reference/view/reports/performance/trades/">头寸</a>。在其最简单的形式下，即没有任何账目时，投资组合的绩效可用下列公式表示（更详细的信息请参见前文提供的链接）：</p>
 <p>$$\mathrm{r = \frac{(MVE - MVB)}{MVB} \quad (Eq  1)}$$</p>
 <p>其中 MVE = 投资组合在报告期末的市值，MVB = 投资组合在期初的市值。</p>
@@ -4653,7 +4656,10 @@
 <h2 id="transactions">账目</h2>
 <p>当报告期内发生<a href="../../reference/transaction/">账目</a>时，事情就变得复杂起来。账目共有 13 种类型，每一种都会在投资组合、账户或证券层面产生现金流入与流出。图 2 展示了四个主要组成部分之间的全部账目类型：投资组合（以蓝色虚线表示）、EUR 与 USD 两种币种的现金账户、三项证券（其中两项以 USD 报价），并归入两个证券账户（橙色与蓝色虚线）。Security-2 (USD) 同时存在于两个账户中。</p>
 <p>账目以箭头表示。它们产生现金流出（红色圆形）或现金流入（绿色圆形）。圆形旁的数字表示现金流的大小，其依据是一个假设示例：以每股 10 EUR/USD 买入或卖出 5 份，形成 50 EUR/USD 的资金流入。费用与税款分别固定为 1 和 2 EUR。每份派发 2 USD 股息；采用的汇率为 0.9 EUR/USD。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： 全部账目类型及其在投资组合、账户和证券层面所对应现金流的概览。 </figcaption><img alt="" src="../images/system-overview-cashflows.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>全部账目类型及其在投资组合、账户和证券层面所对应现金流的概览。 </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/system-overview-cashflows.svg"></p>
 <p>由此可见，投资组合层面<strong>只有四种账目类型</strong>会产生现金流：存款、取款、证券转入和证券转出。因此，只有这些账目会影响仪表板（<code>视图 &gt; 报告 &gt; 收益</code>）上的绩效指标，而该指标是投资组合层面的绩效指标。</p>
 <p>一笔<a href="../../reference/transaction/deposit-withdrawal/"><em>存款</em></a>账目会产生两笔现金流入：一笔在投资组合层面，一笔在现金账户层面。这笔账目之所以形成流入，是因为资金进入了现金账户，因而也进入了投资组合。另一方面，一笔<a href="../../reference/transaction/deposit-withdrawal/"><em>取款</em></a>账目会产生两笔现金流出，使资金从现金账户和投资组合中消失。</p>
 <p>一笔<a href="../../reference/transaction/delivery/"><em>证券转入</em></a>账目会增加某项证券的份额，从而增加该证券的本金（份额数 x 历史价格）<strong>以及</strong>证券账户的数值。反之，一笔<a href="../../reference/transaction/delivery/"><em>证券转出</em></a>账目会通过从证券中移除份额来减少本金，形成一笔现金流出。</p>

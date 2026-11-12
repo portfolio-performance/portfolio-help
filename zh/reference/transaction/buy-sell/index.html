@@ -4709,7 +4709,10 @@
 <p>在第一种情形中，如果证券与现金账户使用相同货币，这笔账目就很直接。买方或卖方只需支付或收取与证券价值相当的金额，该金额会从其现金账户中借记或贷记。</p>
 <p>在第二种情形中，如果证券与现金账户使用不同货币，就需要进行货币换算。如果你的券商或银行以本币向你收取税款与费用，而你使用的现金账户又以证券的外币计价，同样会产生货币换算的需要。</p>
 <h2 id="one-currency">单一货币</h2>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 单一货币下的买入与卖出账目。</figcaption><img alt="" src="../images/buy-sell-same-currency.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>单一货币下的买入与卖出账目。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/buy-sell-same-currency.svg"></p>
 <p>在图 1 中，证券与现金账户均以 EUR 计价。因此，对于这家特定的券商而言，由于费用与税款也以 EUR 计价，故无需进行货币换算。<code>证券</code>、<code>证券账户</code>、<code>现金账户</code>、<code>份额</code> 和 <code>借记</code> 是必填字段。在所有条件都满足之前，顶部会一直显示一条错误消息，如图 1 所示。</p>
 <p>你可以用键盘上的 Tab 键在这些字段之间移动，也可以使用鼠标。</p>
 <ul>
@@ -4736,7 +4739,7 @@
 </li>
 </ul>
 <p>录入上述信息的典型流程可能是 <code>份额数 * 报价（价格） &gt;&gt; 总价值 + 费用 + 税款 &gt;&gt; 借记</code>。如果事后再作修改，会有若干微妙之处（见图 3）。</p>
-<p><figure id="_figure-2"><figcaption>图 2： 份额数与借记之间的计算流程。</figcaption><img alt="" class="pp-figure" src="../images/info-transaction-calculation-flow.svg"></figure></p>
+<p><figure id="_figure-1"><figcaption>图 1： 份额数与借记之间的计算流程。</figcaption><img alt="" class="pp-figure" src="../images/info-transaction-calculation-flow.svg"></figure></p>
 <ul>
 <li>事后修改<em>借记</em>会改变总价值，进而使报价随之调整。份额数保持不变。</li>
 <li>事后修改<em>总价值</em>会改变借记与报价。费用、税款与份额数不受影响。</li>
@@ -4744,7 +4747,10 @@
 <p>点击"保存"按钮会相应更新投资组合。如果选择"保存并新建"，则不仅会更新投资组合，还会弹出新的买入/卖出对话框，以便继续录入后续账目。</p>
 <h2 id="two-currencies">两种货币</h2>
 <p>有时，证券的货币可能与你所用现金账户的货币不同。在这种情况下，系统会针对预填的日期自动生成一个<a href="../../view/general-data/currencies/">汇率</a>。该汇率每日取自欧洲中央银行（ECB），且不考虑具体时点。需要注意的是，此后修改日期同样会改变汇率，无论该汇率是自动获取还是手动输入的。</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： 两种货币下的买入与卖出账目。</figcaption><img alt="" src="../images/buy-sell-different-currency.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>两种货币下的买入与卖出账目。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/buy-sell-different-currency.svg"></p>
 <p>需要注意的是，报价与（第一笔）总额始终以所交易证券的货币表示（例如图 2 中的 EUR）。另一方面，借记则始终以存款的货币表示（因为它代表实际付款）。而费用与税款则可以以证券的货币（左侧）或现金账户的货币（右侧）录入，甚至可以同时用两种货币录入。</p>
 
 

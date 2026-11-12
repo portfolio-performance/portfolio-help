@@ -4732,7 +4732,10 @@
 <p>Portfolio Performance 论坛上有一个帖子 <a href="https://forum.portfolio-performance.info/t/wo-kann-ich-aktuelle-und-historische-gold-und-silberkurse-laden/14/49">Wo kann ich aktuelle und historische Gold- und Silberkurse laden?</a>。本节是该帖所讨论信息的总结与扩展。</p>
 <h2 id="website-arivade">网站 Ariva.de</h2>
 <p><code>ariva.de</code> 网站有一个专供<a href="https://www.ariva.de/rohstoffe/">大宗商品</a>的页面，黄金、白银等都在其中。下载最新金价很简单，只需把<a href="../downloading-historical-prices/table-website/">报价馈送设为网页</a>并填入 <code>https://www.ariva.de/goldpreis_gold-kurs/kurse/historische-kurse</code>。遗憾的是，这种方法只提供最近 30 天的数据。随着时间推移，这种方法会为未来日期更新数据，从而逐步积累起数月的金价历史。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： Ariva.de 网站（已翻译），其中显示黄金历史价格。</figcaption><img alt="" src="../images/gold-ariva.de-website.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class= pp-figure&gt;</p>
+<p>Ariva.de 网站（已翻译），其中显示黄金历史价格。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/gold-ariva.de-website.png"></p>
 <p>你也可以把馈送 URL 替换成前几个月份中任意一个（例如 <code>https://www.ariva.de/goldpreis_gold-kurs/kurse/historische-kurse?go=1&amp;boerse_id=172&amp;month=2024-02-29</code>）。导入数据时，Portfolio Performance 会询问你是否要保留已有的历史价格。若选择保留原有数据，就能为你下载过的所有月份维持一份连续的金价记录。</p>
 <p>不过，或许更好的方法是使用动态数据 URL。把上面 URL 中的 <code>month=2024-02-29</code>替换为宏版本 <code>month={DATE:yyyy-MM-32}</code>。该宏会遍历此前所有月份（一直回溯到 2003 年），每个月发出一次请求，直到没有可用数据为止。如果从头开始，这一过程可能耗时较长，并会给 ariva.de 的服务器带来相当大的负载。</p>
 <p>获取黄金历史价格的另一个选择是注册一个免费账户。这样你就可以把历史价格下载为 CSV 文件，再<a href="../../reference/file/import/csv-import/#importing-a-csv-file">导入</a>到 Portfolio Performance (PP) 中。</p>
@@ -4762,7 +4765,10 @@
 <a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>]
 </code></pre></div>
 <p>要发现这个 JSON 端点 URL，可以在浏览器中打开开发者工具面板，切换到网络标签页，然后刷新图表。<code>日期路径</code>为 <code>$.*.d</code>，<code>日期格式</code>为 <code>yyyy-MM-dd</code>。以 USD 计价的 <code>收盘价路径</code>为 <code>$.*.v[0]</code>。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： 通过伦敦金银市场的 JSON 报价馈送获取的黄金价格。</figcaption><img alt="" src="../images/gold-retrive-json-London-Bullion.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>通过伦敦金银市场的 JSON 报价馈送获取的黄金价格。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/gold-retrive-json-London-Bullion.png"></p>
 <h2 id="website-goldorg">网站 Gold.org</h2>
 <p>gold.org 网站以不同货币、不同数量单位（盎司、克、千克；1 金衡盎司 = 31.1034768 克）提供黄金历史价格。要获取这些数值数据，你需要用一个变通办法。首先，打开<a href="https://www.gold.org/goldhub/data/gold-prices">黄金价格图表</a>。服务器会发送一个文本文件（JSON 文件）其中包含数据，随后该数据被用来在你的计算机本地生成图表。这种方式在时间和带宽上更为高效。</p>
 <p>要找到 JSON 下载的 URL，请按以下步骤操作：</p>
@@ -4772,7 +4778,10 @@
 <li>在开发者工具窗口的网络标签页中查找出现的请求变化。</li>
 <li>复制出现的 URL。它应当与图 1 中所示的类似。</li>
 </ol>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： 显示了开发者工具的 gold.org 网站。</figcaption><img alt="" src="../images/gold-developer-tools.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class= pp-figure&gt;</p>
+<p>显示了开发者工具的 gold.org 网站。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/gold-developer-tools.png"></p>
 <p>该 URL 应当形如：</p>
 <p><code>https://fsapi.gold.org/api/goldprice/v11/chart/price/usd/oz/1693853240038,1709582076959?cache</code></p>
 <p>在浏览器中输入该 URL 后，你会看到如下结果。</p>
@@ -4828,7 +4837,10 @@
 <li>收盘价路径：$.chartData.USD[*].[1]</li>
 </ul>
 <p>要提取日期和价格，你需要 JSON 路径（见图 4）。</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>图 4： 含馈送 URL 与日期路径、收盘价路径的报价馈送 JSON 提供方。</figcaption><img alt="" src="../images/gold-PP-JSON-path.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class= pp-figure&gt;</p>
+<p>含馈送 URL 与日期路径、收盘价路径的报价馈送 JSON 提供方。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/gold-PP-JSON-path.png"></p>
 
 
 

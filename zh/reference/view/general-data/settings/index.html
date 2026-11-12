@@ -4625,11 +4625,17 @@
 <li>
 <h1 id="bookmarks">书签</h1>
 <p>大多数财经网站都提供按特定证券检索的选项。例如，在 <a href="https://www.ariva.de/">https://www.ariva.de/</a> 上点击搜索框，即可按证券的 <code>名称</code>、<code>WKN</code> 或 <code>ISIN</code> 查找证券。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 定义其他属性。</figcaption><img alt="" src="../../images/settings-bookmarks.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>定义其他属性。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../../images/settings-bookmarks.png"></p>
 <p>在设置面板中定义的书签用于简化这一过程。随后你可以右键单击某项证券或账目，用 <code>在浏览器中打开</code> 来打开它。该网站所需的属性会自动嵌入 URL 中，从而把你引导到财经网站上的相应页面。</p>
 <p>该列表包含若干示例。在<a href="https://forum.portfolio-performance.info/t/verschiedene-links-fur-im-browser-offnen/629">论坛</a>中，人们提出了更多示例以及一些变通做法。</p>
 <p>使用 <code>新建书签</code> 图标（右上角），你可以按个人需要添加自定义书签。列表中会新增一行名为 "New Bookmark" 的条目，其 URL 为 <code>http://example.net/{tickerSymbol}?isin={isin}&amp;wkn={wkn}&amp;name={name}</code>（见图 1 最后一行）。双击名称或 URL 即可更改其值。你需要查看原网站，弄清如何构造正确的 URL。例如，finance.yahoo.com 需要形如 https://finance.yahoo.com/quote/NVDA 的 URL 才能获取 NVIDIA 的网页。使用占位符 {tickerSymbol} 后，该 URL 在运行时会被动态填充为所选证券的相应代码。</p>
-<p><figure class="align-right" style="width:50%" id="_figure-2"><figcaption>图 2： 书签页面的右键菜单。</figcaption><img alt="" src="../../images/bookmarks-context-menu.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=align-right style="width:50%"&gt;</p>
+<p>书签页面的右键菜单。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../../images/bookmarks-context-menu.svg"></p>
 <p>可用的占位符列在书签页面的右键菜单中（通过右键单击打开），位于 <code>插入替换项</code> 选项之下（见图 2）：{isin}、{name}、{wkn}、{tickersymbol} 和 {tickersymbolprefix}。在代码格式 XXX.YY（例如 DTE.DE）中，XXX 对应 {tickersymbolprefix}，xxx.YY 代表 {tickersymbol}。对某些网站，你可能只需要 {tickersymbolprefix}。</p>
 <p>通过此右键菜单，你可以管理书签列表。</p>
 <ul>
@@ -4645,7 +4651,10 @@
 <h1 id="attributes-securities">属性：证券</h1>
 <p>可以为证券（见图 2）、现金账户、证券账户和投资计划定义新的属性或字段。
 除了证券主数据中已定义的属性（如名称、ISIN、报价提供方……）之外，图 2 还包含另外六个属性，如 logo、总体费用率……。</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： 定义其他属性。</figcaption><img alt="" src="../../images/settings-securities-attributes.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>定义其他属性。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../../images/settings-securities-attributes.png"></p>
 <p>你可以用 <code>带字段类型的新建属性</code> 图标（右上角）创建自己的自定义属性。点击它会显示一个子面板，列出可用的数据类型（见图 2）。例如，已有的 <code>Àctive</code> 属性很可能是 <code>是/否</code> 类型，而名称属性则应为 <code>文本</code> 类型。</p>
 <p>这些附加属性会在任何与证券有关的表格视图中显示，也会在证券的<a href="../../../file/new/#additional-attributes">附加属性</a>面板中显示。这些属性不能用于计算，但你可以用它们对列表排序。</p>
 </li>

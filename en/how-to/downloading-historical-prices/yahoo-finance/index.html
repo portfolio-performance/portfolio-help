@@ -4614,14 +4614,20 @@
   <h1>Yahoo Finance</h1>
 
 <p><a href="https://finance.yahoo.com/">Yahoo Finance</a> provides a wide array of tools and financial resources, including historical and real-time stock quotes, interactive charts, and news updates that cover a diverse range of financial markets.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Yahoo Finance website with historical prices of Apple.</figcaption><img alt="" src="../images/yahoo-finance-webpage-aapl.png"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>Yahoo Finance website with historical prices of Apple.</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/yahoo-finance-webpage-aapl.png"></p>
 <p>Click on the search box at the top and enter a (partial) name; for instance "App". Select the correct security, which in this case is Apple Inc (AAPL). Navigate to the second menu and click on Historical Data (see Figure 1). Subsequently, you can adjust the Time Period and Frequency as needed.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The Yahoo (ticker) symbol is visible in parentheses after the security name, as illustrated in Figure 1. The ticker symbol is a series of letters representing a publicly traded company or financial instrument. For example, the ticker symbol for Apple Inc. is <code>AAPL</code>. When there could be confusion as with <code>DTE</code> (which corresponds to two different companies), the market place is added. For example, <code>DTE.DE</code> refers to Deutsche Telekom, a security traded on the Deutsche Börse, while <code>DTE (default)</code> refers to DTE Energy Company, which is traded on the NASDAQ.</p>
 </div>
 <p>Since late 2024, one cannot any longer download these historical prices as a CSV file, without a paid subscription.  In the chapter on <a href="../csv-file/">CSV file</a>, we explore this topic in more detail.</p>
-<p><figure class="align-right" style="width:40%" id="_figure-2"><figcaption>Figure 2. Data sources Historical Quotes.</figcaption><img alt="" src="../images/yahoo-finance-historical-quotes-aapl.png"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=align-right style="width:40%"&gt;</p>
+<p>Data sources Historical Quotes.</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/yahoo-finance-historical-quotes-aapl.png"></p>
 <p>Portfolio Performance has a predefined Quote Feed provider for Yahoo Finance and Yahoo Finance (Adjusted Close). Please note that the Day's High, Day's Low, and Volume info is not retrieved in both cases.</p>
 <p>To retrieve the historical quotes of <code>Apple</code>, enter the ticker symbol (AAPL) in the Security Master Data (see Figure 1, top left) and select Yahoo Finance as the Quote Feed Provider within the Historical Quotes tab. A list of 30 quotes, starting from today will appear.</p>
 <p>In the background, Portfolio Performance initiates the following query (becomes visible in the event of an error, for example with ticker symbol DTE.XX).</p>

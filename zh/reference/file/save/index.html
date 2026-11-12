@@ -4799,13 +4799,19 @@
 
 <h1 id="-">文件 › 保存 - 另存为 - 全部保存</h1>
 <h2 id="save">保存</h2>
-<p><figure class="align-right" style="width:20%" id="_figure-1"><figcaption>图 1： 文件格式选择器。</figcaption><img alt="" src="../images/pick-file-format.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=align-right style="width:20%"&gt;</p>
+<p>文件格式选择器。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/pick-file-format.png"></p>
 <p>使用菜单 <code>文件 &gt; 保存</code>，你可以沿用现有的名称与文件格式保存投资组合，不再有任何其他干预。如果此前从未保存过该文件，则会出现 <code>请选择文件格式</code> 对话框（见图 1），提供三个选项。这些选项将在下一节中说明。选择文件格式之后，其余操作就等同于从菜单中选择 <code>文件 &gt; 另存为</code>。</p>
 <h2 id="save-as">另存为</h2>
 <p><code>文件 &gt; 另存为</code> 选项把这三个文件格式作为子菜单呈现出来。在接下来的步骤中，你可以输入文件名并指定文件位置。该选项允许你把此前保存的文件以不同文件格式和／或不同名称创建一份新副本，同时保持原文件不变。</p>
 <h2 id="save-all">全部保存</h2>
 <p>如果打开了多个投资组合，上述命令只会保存当前活动的投资组合。请使用 <code>全部保存</code> 选项同时保存所有已打开的文件。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： 关闭应用时（两个投资组合已更新）的对话框。</figcaption><img alt="" src="../images/app-close.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>关闭应用时（两个投资组合已更新）的对话框。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/app-close.png"></p>
 <p>关闭一个自打开以来已被修改的投资组合，会弹出对话框 <code>'xxx.xml 已修改。是否保存更改？'</code>。在有多个已更新项目的情况下关闭应用程序，则会弹出图 2 所示的对话框。</p>
 <h2 id="xml-format">XML 格式</h2>
 <p>投资组合的全部数据都存储在一个 XML 文件（eXtensible Markup Language，可扩展标记语言）中。这是一种人类可读的文件格式。例如，下面的 xml 文件 <a href="../../../assets/test.xml">test.xml</a> 是一个最简单的投资组合，只含一项证券（<code>share-1</code>）和两笔账目（一笔存款与一笔买入）。你可以用文本编辑器（如 Notepad++）打开该文件来查看其 xml 内容。下面简要说明各主要元素：</p>
@@ -4834,7 +4840,10 @@
 <li><code>&lt;configurationSets&gt;</code>：存储带特定数据的配置集。</li>
 </ul>
 <p>下面是图 3 中买入账目的 xml 代码。</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： 买入账目示例。</figcaption><img alt="" src="../images/mnu-transaction-buy-share-microsoft.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>买入账目示例。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/mnu-transaction-buy-share-microsoft.png"></p>
 <p>这一笔买入账目由以下 XML 代码表示。</p>
 <p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&lt;transactions&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">   </span><span class="nt">&lt;portfolio-transaction&gt;</span>
@@ -4863,7 +4872,10 @@
 <p>2024 年 2 月推出的 PortfolioPerformance 移动应用不支持 XML 文件格式。</p>
 <h2 id="password-protected-aes-256">密码保护（AES-256）</h2>
 <p>AES-256 加密是一种数据保护方法，它把数据转换成只有凭唯一密钥才能访问的代码。这项加密技术使用 256 位密钥（即由 256 个零与一组成的字符串）来加密与解密数据。数据经 AES-256 加密后，会变成一串随机字符，没有密钥就无法解读。要生成该密钥，Portfolio Performance 需要一个至少 6 个字符的密码。不过，更长、更复杂的密码具有更强的随机性与不可预测性，也就更难被猜中。</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>图 4： 以 AES-256 加密保存投资组合需要密码。</figcaption><img alt="" src="../images/mnu-save-encrypted.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>以 AES-256 加密保存投资组合需要密码。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/mnu-save-encrypted.png"></p>
 <h2 id="binary">二进制</h2>
 <p>XML 文件是一种人类可读的文件格式（示例见上文）。二进制格式更紧凑、更高效，因此文件的打开与保存要快得多。但它不再是人类可读的。更多信息见 <a href="https://github.com/portfolio-performance/portfolio/issues/2363">Issue #2363</a>；比如可以看看其中对含 720 项证券与 1.3 MB 历史价格的项目在打开速度上的比较。</p>
 <p>通过查看文件扩展名，可以把密码保护或二进制文件与常规 XML 文件区分开来。加密文件与二进制文件的扩展名是 .portfolio，而不是 XML。</p>

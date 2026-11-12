@@ -4896,18 +4896,27 @@
 <p>就本指南而言，我们假定你日后想使用 Yahoo! Finance（下文简称 YF）获取历史报价（价格），并将以此情形为重点。如果你打算使用其他历史报价提供方，则值得先查清该来源使用什么代码符号或其他标识（如 ISIN、WKN），并在此阶段一并填入。YF 的代码符号基本只被 YF 自己使用。更为复杂的是，YF 有时确实会使用一些更通用的符号。下面的例子中，VWRP.L、EQIX 和 GILG.L 就属于这种情况。</p>
 <p>因此，这份 CSV 中的信息将至少包括：代码符号、货币。</p>
 <p>顺便也把证券名称加上。像这样：</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 证券导入电子表格示例。</figcaption><img alt="" src="../images/image4.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>证券导入电子表格示例。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/image4.png"></p>
 <p>上图展示了一个定义了若干证券的电子表格示例。它可以保存为逗号分隔值（CSV）文件，以供导入 PP。</p>
 <p>如何导入该文件，请参阅证券导入主指南。</p>
 <p><strong>说明</strong></p>
 <p>值得先把所有你想在全部证券账户中使用的证券列成清单，并附上你所选历史报价（价格）提供方的代码符号以及该证券的货币（如 GBP、USD、GBp/GBX）。如果你打算用 YF 获取历史价格，那么你的券商导出文件很可能不会提供 Yahoo! 的代码符号，因此你需要自行补上。</p>
 <p>YF 的投资组合工具在这里会很有帮助：你可以逐个搜索每只证券并加入某个投资组合，从而列出一份证券清单。再把该投资组合的视图设为显示上述所需信息。参见下面的示例：</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： Yahoo! Finance 投资组合视图示例。</figcaption><img alt="" src="../images/image8.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>Yahoo! Finance 投资组合视图示例。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/image8.png"></p>
 <p>遗憾的是，YF 的导出功能<strong>不会</strong>遵循你所创建的视图。请改为在浏览器中选中数据，然后复制粘贴到电子表格中。粘贴时，请选择"仅以文本方式粘贴"。</p>
 <p>如果走这条路线，就必须把 YF 用于便士（GBp）的符号改为 PP 的符号（GBX）。但一个简单的"查找/替换"（请记住区分大小写）就能做到。在下面的例子中，列名已改得与 Portfolio Performance 所要求的一致，GBp 也已被替换为 GBX。</p>
 <p>这里有必要重申导入主指南中提出的一点。货币这一列的名称应当是"Transaction Currency"。尽管在导入向导中 Portfolio Performance 称其为"Currency"。如果你把该列标为"Currency"，它就不会被自动选中导入（你会看到在导入向导中该列不是绿色的）。不过如有需要，在导入向导中选中该列标题也很简单。</p>
 <p>"Transaction Currency"这个名字可能让人困惑。当你实际买卖时，你的券商平台大概会用 GBP 而非 GBX 处理一切，因此在这里用 GBX 定义"Transaction Currency"似乎有些奇怪。真正的含义是证券用于定价/报价的计价单位。Portfolio Performance 需要知道提供方所返回的价格/报价是采用哪种货币。</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： 由 Yahoo! Finance 复制粘贴而来的证券 CSV 导入示例。</figcaption><img alt="" src="../images/image4.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>由 Yahoo! Finance 复制粘贴而来的证券 CSV 导入示例。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/image4.png"></p>
 <h3 id="importing">导入</h3>
 <p>请按照导入主指南导入证券。</p>
 <p>启动导入向导时，请确保你的数据所有列在 Portfolio Performance 中都呈高亮的绿色。各种问题（例如 CSV 列名中含有不可见字符）都可能导致 Portfolio Performance 无法自动识别正确的列名映射。若发生这种情况，请双击显示"Double click here"的位置，并从下拉列表中选择正确的字段名。</p>
@@ -4917,13 +4926,19 @@
 <h2 id="preparing-your-transaction-data"><strong>准备你的账目数据</strong></h2>
 <p><strong>快速版</strong></p>
 <p>创建一个包含你希望导入的全部账目的 CSV，其列名如下，格式类似下面的（电子表格格式）示例。</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>图 4： 投资组合账目导入数据示例。</figcaption><img alt="" src="../images/image2.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>投资组合账目导入数据示例。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/image2.png"></p>
 <p>重要——在导入向导中使用"Portfolio Transactions"（投资组合账目）数据类型。使用默认的 Account Transactions（账户账目）行不通。</p>
 <p><strong>说明</strong></p>
 <p>在这些示例中，账目货币是 GBP。所以金额、费用和税款都以 GBP 计。</p>
 <p>这里的目标是确保你的投资组合账目 CSV 在导入之前保持一致，并具有正确的货币单位与汇率。</p>
 <p>这是必要的，因为从券商平台导出的数据极不可能完全符合 Portfolio Performance 导入的需要，还需要补充数据。</p>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>图 5： 投资组合账目导入数据示例。</figcaption><img alt="" src="../images/image2.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>投资组合账目导入数据示例。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/image2.png"></p>
 <p>在上例中，我们有以下各列：</p>
 <p>Date -- 账目日期。这里我们采用 Portfolio Performance 默认的日期和时间格式。也可以仅用 YYYY-MM-DD 格式。如果使用 Excel，可以通过"自定义"数字格式并输入 YYYY-MM-DD 来更改。日期也可以采用其他格式，但那样你就需要在导入向导中选择正确的格式，这更慢，而且容易忘，从而导致导入的日期不正确。必填。</p>
 <p>Securities Account -- 这有助于避免在导入向导中忽略选择正确证券账户所造成的错误。如果你想在同一次导入中把账目导入多个账户，它就是必填的；否则可选。</p>
@@ -4938,7 +4953,10 @@
 <h3 id="importing">导入</h3>
 <p>请按照导入投资组合账目的主指南操作。</p>
 <p>在向导第一屏点击"Next"之后，Portfolio Performance 会在下图的"Status"列中显示哪些账目已成功载入（绿色对勾），哪些可能失败（红圈中的白色叉号，并被划掉）（由于列宽限制，Status 缩写作 S.）。</p>
-<p><figure class="pp-figure" id="_figure-6"><figcaption>图 6： 导入中显示两笔错误账目和一笔证券不存在的账目。</figcaption><img alt="" src="../images/image3.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>导入中显示两笔错误账目和一笔证券不存在的账目。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/image3.png"></p>
 <p>在上例中，有两笔账目被标记为错误。那只证券（iShares Global Inflation Linked Govt...）实际是以 GBP 计价的，但我在本次导入前把 Portfolio Performance 中该证券的货币改成了 GBX，以演示这个错误。</p>
 <p>由于导入 CSV（见前文）中没有为该证券的账目提供汇率，Portfolio Performance 不知道该如何从账目货币（GBP）换算为证券货币（GBX）。</p>
 <p>另请注意该导入屏幕的最后一行显示账目类型为"Security"。这是因为我在导入账目之前没有在 Portfolio Performance 中创建这只证券（你会注意到它在此前的证券导入示例中是缺失的）。Portfolio Performance 足够聪明，会在你首次导入某笔账目时创建该证券。如果它是一只 GBP 证券，这很有帮助，也省时。</p>

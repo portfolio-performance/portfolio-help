@@ -4532,7 +4532,10 @@
 <p>Um auf einen bestimmten Wert innerhalb dieser hierarchischen Struktur zuzugreifen, musst Du den Pfad von der Wurzel zum Element angeben. Um auf ein Element in einer Liste zuzugreifen, musst Du seinen Index verwenden, der eine Zahl ist, die seine Position in der Liste angibt. Der Index beginnt bei 0 für das erste Element. Um auf ein Element von einem Objekt aus zuzugreifen, musst Du seinen Schlüssel verwenden, der eine Zeichenkette ist, die seinen Namen im Objekt angibt. Der Schlüssel wird in doppelte Anführungszeichen "" eingeschlossen.</p>
 <p>Eine Abfragesprache wie <em>JSONPath</em> (von Portfolio Performance verwendet) stellt die Wurzel der JSON-Antwort mit einem $-Symbol dar. Um die Elemente im Pfad zu trennen, musst Du einen Punkt verwenden. Um zum Beispiel auf den Schlusskurs des zweiten Tages zuzugreifen, musst Du den Pfad <code>$[1].close</code> verwenden. Das bedeutet, dass Du mit der Wurzel $ beginnst, dann zum zweiten Element in der Liste <code>$[1]</code> gehst, das ein Objekt ist, und dann zum Wert mit dem Schlüssel "close" im Objekt <code>$[1].close</code> gehst, das eine Zahl ist.</p>
 <p>Du brauchst diesen JSON-Pfad, um den JSON Quote Feed Provider von Portfolio Performance zu vervollständigen. Verwende  die folgenden Parameter, um die historischen Kurse abzurufen (siehe auch Abbildung 1). Eine Erklärung der Bedeutung der verschiedenen Kursnotierungen findest Du unter Grundlagen &gt; <a href="../../../grundlagen/historische-kurse/">Historische Kurse</a>.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Abbildung 1. Server Antwort mit Kursdaten im JSON-Format (=2D.DE).</figcaption><img alt="" src="../images/o2-json-parameter.png"></figure></p>
+<p>&lt;figure-caption identifier="Abbildung"class=pp-figure&gt;</p>
+<p>Server Antwort mit Kursdaten im JSON-Format (=2D.DE).</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/o2-json-parameter.png"></p>
 <ul>
 <li>Kurs-URL: <code>https://www.ls-tc.de/_rpc/json/instrument/chart/dataForInstrument?container=chart1&amp;instrumentId=41717&amp;marketId=1&amp;quotetype=mid&amp;series=intraday%2Chistory%2Cflags&amp;type=&amp;localeId=2</code></li>
 <li>Pfad zu Datum: <code>$.series.history.data[*][0]</code></li>
@@ -4589,7 +4592,10 @@ Es enthält Metadaten des Wertpapiers, Unix-Zeitstempel der beiden abgerufenen D
 </ul>
 <p>Wenn Du das üben möchtest, nutzt Du am besten <a href="https://jsonpath.com/">JSONPath Online Evaluator</a>. Kopiere die JSON-Antwort in die Eingabemaske. Ein weiteres praktisches Tool <a href="https://jsonpathfinder.com/">JSONPath Finder</a>.</p>
 <p>Mit den oben genannten Informationen sollte es ein Leichtes sein, Kurse mit JSON abzurufen.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Abbildung 2. JSON Kursdaten Parameter.</figcaption><img alt="" src="../images/json-yahoo-parameter.png"></figure></p>
+<p>&lt;figure-caption identifier="Abbildung"class=pp-figure&gt;</p>
+<p>JSON Kursdaten Parameter.</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/json-yahoo-parameter.png"></p>
 <p>Bei den meisten Diensten muss man sich registrieren, um einen API-Schlüssel zu erhalten, eine eindeutige Kennung, die den Nutzer authentifiziert und den Zugang zum Dienst ermöglicht. Zwar bieten zahlreiche Finanzdienste scheinbar kostenlose API-Schlüssel an, doch erweisen sich ihre Nutzungsbedingungen und langfristigen Verpflichtungen oft als unzureichend. Portfolio Performance hat aus Kompatibilitätsgründen mehrere dieser Dienste in seiner Liste der Kursquellen-Anbieter behalten; z.B. Alpha Vantage, eodhd, .... In der Regel empfiehlt es sich, Portfolio Report und Yahoo Finance für ein typisches Portfolio zu nutzen.</p>
 <h2 id="beispiel-onvista-api-stand-03082024">Beispiel Onvista API (Stand: 03.08.2024)</h2>
 <p>Onvista (https://www.onvista.de/) hat ein breites Spektrum an Assets und dazu auch sehr lang vorgehaltene historische Daten. 
@@ -4597,8 +4603,14 @@ Wer historische Daten von vor 10 Jahren und mehr benötigt (bspw. für das Track
 hat hier große Chancen fündig zu werden.</p>
 <p>Auf der Seite eines Assets kann man aktuell unter <code>Alle Kurse</code> ganz unten unter <code>Historische Kurse zu XYZ</code> 
 historische Daten von einem Monat direkt einsehen. Längere Zeiträume müssen als CSV Datei runter geladen werden.</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Abbildung 3. Alle Kurse anzeigen Onvista </figcaption><img alt="" src="../images/screenshot_onvista_json_alle_kurse.png"></figure></p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Abbildung 4. Historische Kursdaten Onvista </figcaption><img alt="" src="../images/screenshot_onvista_json_historische_Daten.png"></figure></p>
+<p>&lt;figure-caption identifier="Abbildung"class="pp-figure"&gt;</p>
+<p>Alle Kurse anzeigen Onvista </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/screenshot_onvista_json_alle_kurse.png"></p>
+<p>&lt;figure-caption identifier="Abbildung"class="pp-figure"&gt;</p>
+<p>Historische Kursdaten Onvista </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/screenshot_onvista_json_historische_Daten.png"></p>
 <p>In der Filterauswahl über der Tabelle ist es möglich den jeweiligen Handelsplatz auszuwählen, 
 das Startdatum festzulegen und den Zeitraum, der betrachtet werden soll. Sobald mehr als ein Monat ausgewählt wird,
 erscheint statt der Kursliste ein Download Button und man muss eine CSV runter laden. 
@@ -4632,16 +4644,28 @@ Textfilter <code>eod_history?</code> ein. Zudem löscht man zuvor am besten einm
 <code>Clear Nework Logs</code>-Button. 
 So bekommt man beim Ausführen des Downloads nur die Calls angezeigt, die zum Download der
 CSV gehören. Nach dem erneuten Ausführen des Downloads, kann man den Download Call dann in Log-Liste sehen. </p>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>Abbildung 5. Onvista API Call Developer Tools  </figcaption><img alt="" src="../images/screenshot_onvista_json_developer_tools.png"></figure></p>
+<p>&lt;figure-caption identifier="Abbildung"class="pp-figure"&gt;</p>
+<p>Onvista API Call Developer Tools  </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/screenshot_onvista_json_developer_tools.png"></p>
 <p>Durch Anklicken des Calls, kann man den Call genauer betrachten und sich die URL aus den Call-Details
 kopieren. Den Teil <code>&amp;withEarnings=true</code> kann man dabei auslassen. </p>
-<p><figure class="pp-figure" id="_figure-6"><figcaption>Abbildung 6. Onvista JSON URL mittels Developer Tools beziehen </figcaption><img alt="" src="../images/screenshot_onvista_json_developer_tools_details.png"></figure></p>
+<p>&lt;figure-caption identifier="Abbildung"class="pp-figure"&gt;</p>
+<p>Onvista JSON URL mittels Developer Tools beziehen </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/screenshot_onvista_json_developer_tools_details.png"></p>
 <p>Diese Url kann nun in Portfolio Performance als Kurs-Url eingetragen werden.</p>
-<p><figure class="pp-figure" id="_figure-7"><figcaption>Abbildung 7. Onvista JSON in Call Details </figcaption><img alt="" src="../images/screenshot_onvista_json_settings_pp.png"></figure></p>
+<p>&lt;figure-caption identifier="Abbildung"class="pp-figure"&gt;</p>
+<p>Onvista JSON in Call Details </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/screenshot_onvista_json_settings_pp.png"></p>
 <h3 id="json-antwort-einsehen">JSON Antwort einsehen</h3>
 <p>Um die oben erläuterten JSON Pfade zu ermitteln, kann man die URL auch einfach in der Browser Adressbar eingeben und 
 man bekommt das JSON direkt im Browser angezeigt. Alternativ ist es auch im Tab <code>Response</code> in den Call-Details zu finden.</p>
-<p><figure class="pp-figure" id="_figure-8"><figcaption>Abbildung 8. Onvista JSON in Call Details </figcaption><img alt="" src="../images/screenshot_onvista_json_developer_tools_details_json.png"></figure></p>
+<p>&lt;figure-caption identifier="Abbildung"class="pp-figure"&gt;</p>
+<p>Onvista JSON in Call Details </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/screenshot_onvista_json_developer_tools_details_json.png"></p>
 <h3 id="beispiel-json">Beispiel JSON</h3>
 <p>Hier ein gekürztes Beispiel des gelieferten Onvista API JSONs:</p>
 <p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
@@ -4777,7 +4801,10 @@ Aus der Struktur ergeben sich folgenden Eingaben in Portfolio Performance:
 <h4 id="eingabe-in-portfolio-performance">Eingabe in Portfolio Performance</h4>
 <p>Wenn man die URL, den Datums- und den Kurs-Pfad angegeben hat, sollte Portfolio Performance bereits Kursdaten laden und 
 im Dialogfenster unten anzeigen. Die anderen Felder sind nicht zwingend notwendig. </p>
-<p><figure class="pp-figure" id="_figure-9"><figcaption>Abbildung 9. Finale Settings Portfolio Performance Onvista JSON </figcaption><img alt="" src="../images/screenshot_onvista_json_settings_pp_final.png"></figure></p>
+<p>&lt;figure-caption identifier="Abbildung"class="pp-figure"&gt;</p>
+<p>Finale Settings Portfolio Performance Onvista JSON </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/screenshot_onvista_json_settings_pp_final.png"></p>
 <h3 id="weitere-angaben">Weitere Angaben</h3>
 <h4 id="datumsformat">Datumsformat</h4>
 <p>Portfolio Performance erkennt gängige Arten, ein Datum darzustellen, automatisch. Dazu gehören insbesondere ISO-Datenangaben (z. B. 2025-06-21) und UNIX Timestamps (die Anzahl von Sekunden seit Mitternacht 01.01.1970, UTC). Sollte eine API das Datum auf eine andere Weise darstellen, so kann im Feld "Datumsformat" der korrekte Aufbau angegeben werden. Das deutsche Datumsformat würde z. B. mit "dd.MM.yyyy" beschrieben. Eine vollständige Beschreibung der möglichen Angaben (englisch) gibt es hier: <a href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns">https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#patterns</a>.</p>

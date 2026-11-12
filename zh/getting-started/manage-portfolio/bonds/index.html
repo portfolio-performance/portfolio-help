@@ -4623,7 +4623,10 @@
 <p>债券是一种代表债务义务的金融工具。当某个实体（例如政府或公司）发行债券时，他们是在向投资者借钱。作为回报，他们承诺在约定期限内偿还本金，并定期支付利息 [<a href="https://www.investopedia.com/articles/bonds/08/bond-market-basics.asp">1</a>]。Portfolio Performance 对债券的支持不算完善，但借助<a href="https://forum.portfolio-performance.info/t/verbuchung-von-anleihen/1537/43">德文论坛</a>中提到的几种简单变通办法，你仍可以有效地管理债券。</p>
 <h1 id="_1">添加债券证券</h1>
 <p>假设你买入了一只大众汽车债券。你收到了如图 1 所示的如下银行通知。</p>
-<p><figure pp-figure="" id="_figure-1"><figcaption>图 1： 买入债券的银行通知。</figcaption><img alt="" src="../../../images/info-bank-note-bond-vw.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："pp-figure&gt;</p>
+<p>买入债券的银行通知。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../../../images/info-bank-note-bond-vw.svg"></p>
 <p>在添加买入账目之前，你必须先在证券中<a href="../../adding-securities/">创建该证券</a>。在 Portfolio Performance 中搜索该债券的 ISIN 不会有任何结果，按名称搜索则返回可交易的 Volkswagen 股票。因此，你需要创建一个空的金融工具并手动输入债券信息。债券的历史价格并非特别关键，因为债券最终会在到期时按 100% 兑付。不过——如有需要——你确实可以从例如 <a href="https://www.ariva.de/XS1972547696/kurse/historische-kurse?go=1&amp;boerse_id=1&amp;month=&amp;clean_bezug=1">ariva.de 网站</a><a href="../../../how-to/downloading-historical-prices/table-website/">以表格形式下载</a>它们。需要注意的一点是，历史记录中的债券价格通常以百分比表示，取值范围从 0 到 100%，而不是像股票那样以某种具体货币（如 EUR）表示。</p>
 <h1 id="_2">记录买入账目</h1>
 <p>由于历史价格以 0 到 100 之间的数字表示，你也可以用这种格式表示买入价格。到期时，该债券的价值为 5000 EUR，价格为 100%。就<code>份额数</code>与<code>报价</code>而言，这意味着你将获得 50 份 x 100 EUR 的价值。然而，你是以 91.76% 的价格买入该证券的（见图 1 中的银行通知）。总价值变为 50 x 91.76 EUR = 4588 EUR。费用与税款照常登记即可。</p>
@@ -4632,11 +4635,14 @@
 <ol>
 <li>
 <p>调整买入价格。在图 1 的示例中，买入价格变为 4596 EUR（=4588 + 8.01）。报价变为每股 91.92 EUR，即 91.92%（=4596/50）。这种方法的缺点是价格走势与绩效计算都不正确。</p>
-<p><figure id="_figure-2"><figcaption>图 2： 通过调整报价以纳入应计利息的变通办法。</figcaption><img alt="" pp-figure="pp-figure" src="../../../images/mnu-transaction-buy-bond-vw-1.png"></figure></p>
+<p><figure id="_figure-1"><figcaption>图 1： 通过调整报价以纳入应计利息的变通办法。</figcaption><img alt="" pp-figure src="../../../images/mnu-transaction-buy-bond-vw-1.png"></figure></p>
 </li>
 <li>
 <p>为精确记录买入价格，你可以把应计利息记为一笔额外的<code>税款</code>（见图 3）。这样报价是正确的，并且会从现金账户中扣除正确的金额。这笔"虚假的"税款可以在首次付息时用一笔 <code>退税款</code> 账目加以冲正。</p>
-<p><figure pp-figure="" id="_figure-3"><figcaption>图 3： 把应计利息计入税款的变通办法。</figcaption><img alt="" src="../../../images/mnu-transaction-buy-bond-vw-2.png"></figure></p>
+<p>&lt;figure-caption identifier="图："pp-figure&gt;</p>
+<p>把应计利息计入税款的变通办法。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../../../images/mnu-transaction-buy-bond-vw-2.png"></p>
 </li>
 <li>
 <p>记录该债券证券的买入账目时不包含应计利息。为处理这笔应计利息，你把正确的金额（8.01 EUR）从与该证券关联的现金账户转入另一个独立的现金账户。首次付息时，再把该应计利息金额转回与该证券关联的原现金账户。</p>
@@ -4648,7 +4654,7 @@
 <ol>
 <li>
 <p>把应计利息全额记为股息（见图 4）。购买日应付给卖方的应计利息（8.01 EUR）已经计入所记录的买入价格之中。</p>
-<p><figure id="_figure-4"><figcaption>图 4： 5000 EUR 按 2.25% 支付的利息。</figcaption><img alt="" src="../../../images/mnu-transaction-dividend-vw-1.png"></figure></p>
+<p><figure id="_figure-2"><figcaption>图 2： 5000 EUR 按 2.25% 支付的利息。</figcaption><img alt="" src="../../../images/mnu-transaction-dividend-vw-1.png"></figure></p>
 </li>
 <li>
 <p>利息支付（112.50 EUR）要减去购买日已记为税款的金额（8.01 EUR）。用一笔 <code>账目 &gt; 退税款</code> 账目退还该金额。</p>

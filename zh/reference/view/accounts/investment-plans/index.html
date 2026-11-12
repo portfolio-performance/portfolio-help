@@ -4907,28 +4907,46 @@
 
 <p>投资计划是一种自动化的方式，用于简化定期账目（如存款、取款、利息支付或买入）的处理。它让你能以极少的手工操作，按固定间隔系统性地投资或提取资金。</p>
 <h2 id="types-of-investment-plans">投资计划的类型</h2>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 主面板中的四种投资计划，以及信息面板中 plan-3 生成的账目。</figcaption><img alt="" src="../images/investment-plans.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>主面板中的四种投资计划，以及信息面板中 plan-3 生成的账目。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/investment-plans.png"></p>
 <p>投资计划主要有四种类型：存款、取款、利息以及证券买入/转入（如 图 1 所示）。存款计划和利息计划会增加现金账户的余额，而取款计划会减少余额。另一方面，证券买入/转入计划会同时减少你的现金账户（为买入证券提供资金）和增加你的证券账户（因为你获得了新的证券）。要创建新计划，只需点击界面右上角的"创建投资计划" <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0m1.062 4.312a1 1 0 1 0-2 0v2.75h-2.75a1 1 0 0 0 0 2h2.75v2.75a1 1 0 1 0 2 0v-2.75h2.75a1 1 0 1 0 0-2h-2.75Z"></path></svg></span> 按钮（如图 1 所示）。</p>
 <h3 id="deposit-investment-plan">存款投资计划</h3>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： 存款投资计划。</figcaption><img alt="" src="../images/investment-plan-deposit.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>存款投资计划。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/investment-plan-deposit.png"></p>
 <p>借助存款投资计划，你可以定期把指定金额的款项存入指定的现金账户。要设置存款计划，你需要提供一个描述性名称（例如 <code>plan-1</code>）、现金账户的名称、要存入的金额、计划的起始日期，以及存款的频率（间隔，从每月一次到每 12 个月一次不等）。起始日期也可以在过去或在未来。</p>
 <p>点击 <code>保存</code> 按钮后，该信息会被添加到投资计划的主面板中（如图 1 所示），但计划不会立即执行。此阶段不会执行任何账目。不过，如果你勾选了<code>打开文件时自动创建账目</code>，那么下次打开文件时该计划就会自动执行。</p>
 <p>另外，你也可以点击"保存 &amp;&amp; 创建"按钮，把该计划加入列表并重新打开对话框。这样你就可以连续快速地创建多个存款计划。</p>
 <h3 id="withdrawal-investment-plan">取款投资计划</h3>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： 取款投资计划。</figcaption><img alt="" src="../images/investment-plan-withdrawal.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>取款投资计划。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/investment-plan-withdrawal.png"></p>
 <p>借助取款投资计划，你可以定期从指定的现金账户中取出指定金额的款项。设置取款计划的过程与设置存款计划类似。你需要为该计划提供一个描述性名称、要使用的现金账户名称、要取出的金额、计划的起始日期，以及取款的频率。创建取款计划所需的字段与创建存款计划时相同。</p>
 <h3 id="security-purchasedelivery-investment-plan">证券买入/转入投资计划</h3>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>图 4： 证券买入/转入投资计划。</figcaption><img alt="" src="../images/investment-plan-purchase.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>证券买入/转入投资计划。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/investment-plan-purchase.png"></p>
 <p>借助证券买入/转入投资计划，你可以使用指定现金账户中的资金，定期获取某项指定证券。如图 4 所示，你需要为该计划提供一个描述性名称（例如 <code>plan-3</code>）、证券账户名称与要获取的具体证券、资金将从中支取的现金账户名称、计划的起始日期、买入的频率、每次投入的金额，以及任何相关费用。</p>
 <p>在选择现金账户时，务必注意买入与转入之间的区别。如果你想通过转入方式获取证券，应使用 <code>(证券转入)</code> 选项。反之，如果你想通过买入方式获取证券，则应使用某个现有现金账户的名称，资金将从该账户中支取。</p>
 <p>主面板中显示以下字段/列（见图 1）：<code>名称</code>、<code>证券</code>、<code>证券账户</code>、<code>现金账户</code>、<code>起始日期</code>、<code>上次执行</code>、<code>下次执行</code>、<code>周期</code>、<code>自动生成</code>、<code>金额</code>和<code>费用</code>。大多数字段一看便知。在初次创建计划时若选择了<code>打开文件时自动创建账目</code>选项，<code>自动生成</code>字段就会自动设置。还可以使用 <code>显示或隐藏</code> 按钮（右上角的齿轮符号）添加两个额外字段：<code>备注</code>和<code>属性</code>。关于如何调整各列的说明，请参阅手册中的<a href="../all-transactions/#settings">全部账目一节</a>。</p>
 <h3 id="interest-plan">利息计划</h3>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>图 5： 利息计划。</figcaption><img alt="" src="../images/investment-plan-interest.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>利息计划。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/investment-plan-interest.png"></p>
 <p>利息计划与存款计划相似，因为它同样会在指定的现金账户中生成一笔存款。此外，它还允许进行税款抵扣。此计划下的账目被归类为 <code>利息</code>，从而在计算绩效时不会被计入现金流。（见<a href="../../../../concepts/system-overview/#transactions">系统概览一节</a>）</p>
 <h2 id="managing-investment-plans">管理投资计划</h2>
 <p>图 1 的主面板列出了投资组合中所有投资计划的完整清单。通过上下文菜单（在一个计划上右击即可访问），你可以生成账目、修改所选投资计划，或将其彻底删除。</p>
 <h3 id="generate-transactions">生成账目</h3>
-<p><figure class="align-right" style="width:50%" id="_figure-6"><figcaption>图 6： 打开投资组合时的消息框。</figcaption><img alt="" src="../images/investment-plan-auto-generate.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=align-right style="width:50%"&gt;</p>
+<p>打开投资组合时的消息框。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/investment-plan-auto-generate.png"></p>
 <ul>
 <li>如果在创建计划时选择了 <code>打开文件时自动创建账目</code>选项，账目就会在下次打开文件时自动生成。打开投资组合时，会显示一个类似于图 6 所示的消息框。</li>
 </ul>

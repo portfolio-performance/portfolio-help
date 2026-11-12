@@ -4534,10 +4534,54 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#website-edelkurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Website EdelKurs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#website-goldde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Website Gold.de
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#website-goldorg" class="md-nav__link">
     <span class="md-ellipsis">
       
         Website Gold.org
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#world-bank-monthly-averages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        World Bank (monthly averages)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-checking-the-sources-with-a-gold-etc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-checking the sources with a gold ETC
       
     </span>
   </a>
@@ -4690,10 +4734,54 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#website-edelkurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Website EdelKurs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#website-goldde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Website Gold.de
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#website-goldorg" class="md-nav__link">
     <span class="md-ellipsis">
       
         Website Gold.org
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#world-bank-monthly-averages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        World Bank (monthly averages)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-checking-the-sources-with-a-gold-etc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-checking the sources with a gold ETC
       
     </span>
   </a>
@@ -4728,107 +4816,160 @@
   <h1>Retrieving gold prices</h1>
 
 <p>Investing in gold is often chosen in times of economic uncertainty. There are multiple ways to gain exposure to gold. One popular method is investing in physical gold, which involves purchasing gold bullion, coins, or jewelry. Another approach is investing in gold exchange-traded funds (ETFs) or gold trackers, such as <a href="https://www.invesco.com/uk/en/financial-products/etfs/invesco-physical-gold-etc.html">Invesco Physical Gold</a>. These financial instruments aim to replicate the performance of the gold price by holding physical gold in a secure vault. A third but indirect method of investing in gold is by purchasing shares of gold mining companies. Gold miners engage in the exploration, extraction, and production of gold, and their stock prices can be influenced by the price of gold.</p>
-<p>Investing in gold through ETFs and gold mining company shares can be handled similarly to regular stocks like Apple Inc., offering ease of access, liquidity, and potential income. While physical gold differs from traditional stocks in several aspects (e.g. gold does not provide ownership in a company or entitle the holder to dividends), it can still be considered an investment that can be bought, sold, and managed as part of a well-diversified portfolio. And therefore, it can be handled in Portfolio Performance as a regular security.</p>
+<p>Investing in gold through ETFs and gold mining company shares can be handled similarly to regular stocks like Apple Inc., offering ease of access, liquidity, and potential income. While physical gold differs from traditional stocks in several aspects (e.g. gold does not provide ownership in a company or entitle the holder to dividends), it can still be considered an investment that can be bought, sold, and managed as part of a well-diversified portfolio. Therefore, it can be handled in Portfolio Performance as a regular security.</p>
 <p>The Portfolio Performance forum has a thread <a href="https://forum.portfolio-performance.info/t/wo-kann-ich-aktuelle-und-historische-gold-und-silberkurse-laden/14/49">Wo kann ich aktuelle und historische Gold- und Silberkurse laden?</a>. This section provides a summary and expands upon the information discussed in the thread.</p>
 <h2 id="website-arivade">Website Ariva.de</h2>
-<p>The <code>ariva.de</code> website has a specific page for <a href="https://www.ariva.de/rohstoffe/">commodities</a> such as gold, silver, and others. Downloading the latest gold price is as easy as setting the <a href="../downloading-historical-prices/table-website/">Quote Feed to a webpage</a> <code>https://www.ariva.de/goldpreis_gold-kurs/kurse/historische-kurse</code>. Unfortunately, this method only provides data for the last 30 days. As time progresses, the data will be updated for future days with this method, gradually accumulating several months of gold price history.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Ariva.de website (translated) with historical gold prices. </figcaption><img alt="" src="../images/gold-ariva.de-website.png"></figure></p>
-<p>You can also replace the Quote Feed URL by one of the previous months (e.g. <code>https://www.ariva.de/goldpreis_gold-kurs/kurse/historische-kurse?go=1&amp;boerse_id=172&amp;month=2024-02-29</code>). When importing the data, Portfolio Performance will ask if you want to keep the existing historical prices. By choosing to keep the previous data, you can maintain a continuous record of gold prices for all the months you have downloaded.</p>
-<p>But, perhaps the better method is to use a dynamic data URLs. Replace the <code>month=2024-02-29</code> in the URL from above in the macro version <code>month={DATE:yyyy-MM-32}</code>. This macro will iterate through all previous months (going back to 2003) and send a request for each month until there is no data available. If you start from scratch, this process can take some time and will put a significant load on the ariva.de web server.</p>
+<p>The <code>ariva.de</code> website has a specific page for <a href="https://www.ariva.de/rohstoffe/">commodities</a> such as gold, silver, and others. Downloading the latest gold price is as easy as setting the <a href="../downloading-historical-prices/table-website/">Quote Feed to a webpage</a> <code>https://www.ariva.de/gold-kurs/kurse/historische-kurse</code>. Unfortunately, this method only provides data for the last 30 days. As time progresses, the data will be updated for future days with this method, gradually accumulating several months of gold price history.</p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>Ariva.de website (translated) with historical gold prices. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/gold-ariva.de-website.png"></p>
+<p>You can also replace the Quote Feed URL by one of the previous months (e.g. <code>https://www.ariva.de/gold-kurs/kurse/historische-kurse?go=1&amp;boerse_id=172&amp;month=2026-10-11</code>). When importing the data, Portfolio Performance will ask if you want to keep the existing historical prices. By choosing to keep the previous data, you can maintain a continuous record of gold prices for all the months you have downloaded.</p>
+<p>But, perhaps the better method is to use a dynamic data URL. Replace the <code>month=2026-10-11</code> in the URL from above with the macro version <code>month={DATE:yyyy-MM-32}</code>. This macro will iterate through all previous months (going back to 2003) and send a request for each month until there is no data available. If you start from scratch, this process can take some time and will put a significant load on the ariva.de web server.</p>
 <p>Another option to obtain historical gold prices is to register for a free account. Then you can download the historical prices as a CSV file, which can be <a href="../../reference/file/import/csv-import/#importing-a-csv-file">imported</a> into Portfolio Performance (PP).</p>
 <h2 id="london-bullion-market-association-lbma">London Bullion Market Association (LBMA)</h2>
-<p>The <a href="https://www.lbma.org.uk/prices-and-data/precious-metal-prices#/table">London Bullion Market</a> is the world's largest and most significant market for trading gold and silver. You can retrieve the prices for gold, silver, platinum and palladium per year, going back to 1968, in USD, GBP, and EUR. There are two auctions per day (AM and PM). The data can be displayed as a graph or table per year.</p>
-<p>Unfortunately, this table could not be parsed by Portfolio Performance (as it does not contain the necessary keywords such as <code>Close</code>). However, as User <a href="https://forum.portfolio-performance.info/t/wo-kann-ich-aktuelle-und-historische-gold-und-silberkurse-laden/14/49">ristretto</a> pointed out, you can retrieve the prices through the JSON <code>Quote Feed</code> (see <a href="../downloading-historical-prices/json/">How-to &gt; Downloading Historical Prices</a>). The <code>Feed URL</code> is <code>https://prices.lbma.org.uk/json/gold_pm.json</code> for the PM auction. The three prices under the "v" (value) key represent USD, GBP, and EUR, respectively. Please note that in 1968, there is no price available in EUR.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>[
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    {
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        "is_cms_locked": 0,
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        "d": "1968-04-01",
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        "v": [
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>            37.7,
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>            15.68,
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>            0
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        ]
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    },
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    {
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        "is_cms_locked": 0,
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        "d": "1968-04-02",
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        "v": [
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>            37.3,
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>            37.3,
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>            0
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        ]
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    },
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    ...
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>]
+<p>The <a href="https://www.lbma.org.uk/prices-and-data/precious-metal-prices#/table">London Bullion Market Association</a> is the trade association of the London bullion market — the world's largest and most significant market for trading gold and silver. You can retrieve the prices for gold, silver, platinum, and palladium per year, going back to 1968, in USD, GBP, and EUR. There are two auctions per day (AM and PM). The data can be displayed as a graph or table per year.</p>
+<p>Unfortunately, these tables can no longer be accessed without a license key. The graphs (3m, 6m, YTD, All) are just pre-made images (png), and cannot be used inside of the Portfolio Performance app.</p>
+<h2 id="website-edelkurs">Website EdelKurs</h2>
+<p>Most price quotes represent the price at which dealers <em>sell</em> precious metals. The <a href="https://edelkurs.de">EdelKurs</a> website (a project by a Portfolio Performance forum user) takes the opposite approach: every day at noon it collects the <em>purchase prices</em> (German: <code>Ankaufspreise</code>) — the price a dealer would actually pay you — from several well-known precious metals dealers in EUR. If you invest in physical coins and bars, this is the value you would realize when selling, making it a more realistic quote than the spot price.</p>
+<p>EdelKurs data has been collected daily since February 2019 (older data going back to 2006 is based on selling prices). The collection runs fully automatically and covers gold, silver, platinum, and palladium, both bars and popular coins such as the Krügerrand, Maple Leaf, Wiener Philharmoniker, and the 100 g gold bar.</p>
+<p>The easiest way to use it is through the Portfolio Performance search itself. Simply search for <code>Krügerrand</code> when adding a new instrument. The matching EdelKurs configuration appears in the results, and the JSON quote feed settings are applied automatically.</p>
+<p>Alternatively, you can set up the <a href="../downloading-historical-prices/json/">JSON Quote Feed</a> manually with the following parameters:</p>
+<ul>
+<li>Feed URL: <code>https://edelkurs.de/Kursdaten/Gold_Kruger.json</code></li>
+<li>Path to Date: <code>$[*].datum</code></li>
+<li>Path to Close: <code>$[*].kurs</code></li>
+</ul>
+<p>The <code>datum</code> entries are summarized per day (e.g. 2026-11-10) with the corresponding purchase price in EUR (e.g. 3612.20) for a Krügerrand of 1 oz. For other products, simply replace the file name in the URL, e.g. <code>Gold_Barren.json</code> (gold bar 100 g), <code>Gold_Maple.json</code> (Maple Leaf 1 oz), <code>Gold_WienPhil.json</code> (Wiener Philharmoniker 1 oz), <code>Silber_Barren.json</code> (silver bar 1000 g), <code>Silber_Kruger.json</code> (silver Krügerrand 1 oz), <code>Silber_Maple.json</code> (silver Maple Leaf 1 oz), <code>Platin_Barren.json</code> (platinum bar 100 g), <code>Platin_Munze.json</code> (platinum coin 1 oz), <code>Palladium_Barren.json</code> (palladium bar 100 g) or <code>Palladium_Munze.json</code> (palladium coin 1 oz). If you own e.g. a 10 g gold bar instead of the 100 g bar, you can apply a factor (e.g. <code>0.1</code>) in the quote feed settings to convert the price accordingly.</p>
+<h2 id="website-goldde">Website Gold.de</h2>
+<p>The German website <a href="https://www.gold.de/">gold.de</a> publishes daily reference prices for all four precious metals: gold, silver, platinum, and palladium. The prices are quoted in EUR and USD, per gram, per troy ounce, or per kilogram, and the history goes back about ten years. Similar to the <a href="#website-goldorg">gold.org</a> prices, they closely track the international market price (based on the London Bullion Market), but they are not identical to the official LBMA benchmark price.</p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>Gold.de website (translated) with historical gold prices. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/gold.de-website.png"></p>
+<p>The charts on the <a href="https://www.gold.de/kurse/goldpreis/">Gold</a>, <a href="https://www.gold.de/kurse/silberpreis/">Silver</a>, <a href="https://www.gold.de/kurse/platinpreis/">Platin</a>, and <a href="https://www.gold.de/kurse/palladiumpreis/">Palladium</a> pages are powered by a small JSON API. For example, the following URL returns the gold price in EUR per troy ounce over the last year:</p>
+<p><code>https://www.gold.de/api/index.php?cur=e&amp;em=g&amp;zr=1j&amp;stkl=oz&amp;from=&amp;to=&amp;func=emk</code></p>
+<p>The response is a simple list of <code>[timestamp, price]</code> pairs, where the timestamp is expressed in Unix milliseconds, which Portfolio Performance can work with natively.</p>
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">[</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">[</span><span class="mi">1767318000000</span><span class="p">,</span><span class="w"> </span><span class="mf">4352.95</span><span class="p">],</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">[</span><span class="mi">1767404400000</span><span class="p">,</span><span class="w"> </span><span class="mf">4364.9</span><span class="p">],</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">[</span><span class="mi">1767490800000</span><span class="p">,</span><span class="w"> </span><span class="mf">4381.25</span><span class="p">],</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="err">...</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">]</span>
 </code></pre></div>
-<p>You can discover the JSON Endpoint URL by opening the developers tool panel in the webbrowser, selecting the network tab, and refreshing the chart. The <code>Path to Date</code> is <code>$.*.d</code> and the <code>Date Format</code> is <code>yyyy-MM-dd</code>. The <code>Path to Close</code> is <code>$.*.v[0]</code> for the price in USD. </p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Gold prices through JSON Quote Feed from London Bullion Market.</figcaption><img alt="" src="../images/gold-retrive-json-London-Bullion.png"></figure></p>
+Set up the <a href="../downloading-historical-prices/json/">JSON Quote Feed</a> with the following parameters:
+<ul>
+<li>Feed URL: <code>https://www.gold.de/api/index.php?cur=e&amp;em=g&amp;zr=1j&amp;stkl=oz&amp;from=&amp;to=&amp;func=emk</code></li>
+<li>Path to Date: <code>$[*][0]</code></li>
+<li>Path to Close: <code>$[*][1]</code></li>
+</ul>
+<p>The URL parameters can be adjusted to your needs:</p>
+<ul>
+<li><code>em=g</code> (gold), <code>em=s</code> (silver), <code>em=pl</code> (platinum) or <code>em=pa</code> (palladium)</li>
+<li><code>cur=e</code> (EUR) or <code>cur=u</code> (USD)</li>
+<li><code>stkl=g</code> (per gram), <code>stkl=oz</code> (per troy ounce) or <code>stkl=kg</code> (per kilogram)</li>
+<li><code>zr=1j</code> (one year) or <code>zr=10j</code> (ten years)</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Use exactly the values above for the <code>em</code> parameter. Any other value silently returns the <em>gold</em> price, which is easily overlooked in a precious metals portfolio. The <code>func=emk</code> feed does not support <code>zr=hist</code>; only the product charts described below provide the full history.</p>
+</div>
+<p>Many product pages also contain price charts for specific coins and bars, e.g. the Krügerrand or the American Buffalo; they use the same API with <code>func=ppe</code> and a product ID (<code>kid=</code>), which you can read from the API request in your browser's developer tools. Since the <a href="#website-edelkurs">EdelKurs</a> website already provides dealer <em>purchase prices</em> for the most common coins and bars, the gold.de metal reference prices above are the more natural complement: one quote per metal, in the currency and unit of your choice.</p>
 <h2 id="website-goldorg">Website Gold.org</h2>
-<p>The website gold.org offers historical gold prices in different currencies and for various quantities (oz, grams, kg; 1 (troy) ounce = 31.1034768 gr). To access the numerical data, you'll need a workaround. First, open the <a href="https://www.gold.org/goldhub/data/gold-prices">gold prices graph</a>. The server sends a text file (JSON file) containing the data, which is then used to create the graph locally on your computer. This method is more efficient in terms of time and bandwidth.</p>
+<p>The website gold.org offers historical gold prices in different currencies and for various quantities (oz, grams, kg; 1 (troy) ounce = 31.1034768 g). To access the numerical data, you'll need a workaround. First, open the <a href="https://www.gold.org/goldhub/data/gold-prices">gold prices graph</a>. The server sends a text file (JSON file) containing the data, which is then used to create the graph locally on your computer. This method is more efficient in terms of time and bandwidth.</p>
 <p>To find the URL for the JSON download, follow these steps:</p>
 <ol>
 <li>Open the developer tools window in your browser, usually by pressing the F12 key.</li>
 <li>Change something in the graph, such as the period, to trigger a data update.</li>
 <li>Look for a change in the network tab of the developer tools window.</li>
-<li>Copy the URL that appears. It should look something like the one shown in Figure 1.</li>
+<li>Copy the URL that appears. It should look something like the one shown below.</li>
 </ol>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. gold.org website with developer tools visible. </figcaption><img alt="" src="../images/gold-developer-tools.png"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>gold.org website with developer tools visible. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/gold-developer-tools.png"></p>
 <p>The URL should look something like:</p>
-<p><code>https://fsapi.gold.org/api/goldprice/v11/chart/price/usd/oz/1693853240038,1709582076959?cache</code></p>
+<p><code>https://fsapi.gold.org/api/goldprice/v13/chart/price/usd/grams/1699833600000,1794418427236?cache09092024</code></p>
 <p>Upon entering this URL in your browser, you will see the result displayed below.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    "system": {
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        "request_time": "2024-03-04 20:19:20",
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        "APIserverHostname": "fsapi.gold.org",
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>        "protocol": "https",
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>        "uri": "https://fsapi.gold.org/api/goldprice/v11/chart/price/usd/oz/1693853240038,1709582076959",
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>        "route": "fsapi.gold.org",
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        "cached": false,
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>        "q": false,
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        "params": {},
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        "user": null,
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        "response_size": 3318,
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>        "time_start": "2024-03-04 20:19:21",
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>        "time_stop": "2024-03-04 20:19:21",
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>        "mem_start": 32540152,
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>        "time": "0.021 secs",
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>        "mem_stop": 57446376,
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>        "mem_used": "24322.48 KB",
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>        "size": "3.33 KB"
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    },
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    "chartData": {
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>        "USD": [
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>            [
-<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>                1693872000000,
-<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>                1926.1
-<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>            ],
-<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>            [
-<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>                1693958400000,
-<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>                1922.05
-<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>            ],
-<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>            [
-<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>                1694044800000,
-<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>                1918.35
-<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>            ],
-<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>            [
-<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>                1694131200000,
-<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>                1927.8
-<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>            ],
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">"request_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-11-11 17:34:26"</span><span class="p">,</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nt">"APIserverHostname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fsapi.gold.org"</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nt">"protocol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https"</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="nt">"uri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fsapi.gold.org/api/goldprice/v13/chart/price/usd/grams/1699833600000,1794418427236?cache09092024="</span><span class="p">,</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nt">"route"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fsapi.gold.org"</span><span class="p">,</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="nt">"cached"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="nt">"q"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="nt">"params"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="nt">"user"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="nt">"response_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">9515</span><span class="p">,</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="nt">"time_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-11-11 17:34:27"</span><span class="p">,</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">    </span><span class="nt">"time_stop"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-11-11 17:34:27"</span><span class="p">,</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="nt">"mem_start"</span><span class="p">:</span><span class="w"> </span><span class="mi">1497456</span><span class="p">,</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">    </span><span class="nt">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.039 secs"</span><span class="p">,</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">    </span><span class="nt">"mem_stop"</span><span class="p">:</span><span class="w"> </span><span class="mi">2072448</span><span class="p">,</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">    </span><span class="nt">"mem_used"</span><span class="p">:</span><span class="w"> </span><span class="s2">"561.52 KB"</span><span class="p">,</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">    </span><span class="nt">"size"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9.38 KB"</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">  </span><span class="nt">"chartData"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">    </span><span class="nt">"USD"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">      </span><span class="p">[</span><span class="mi">1699833600000</span><span class="p">,</span><span class="w"> </span><span class="mf">62.0879</span><span class="p">],</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">      </span><span class="p">[</span><span class="mi">1700006400000</span><span class="p">,</span><span class="w"> </span><span class="mf">62.9576</span><span class="p">],</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">      </span><span class="p">[</span><span class="mi">1700179200000</span><span class="p">,</span><span class="w"> </span><span class="mf">63.6922</span><span class="p">],</span>
 </code></pre></div>
 <p>You may remove the <code>?cache</code> parameter. Keep in mind that the workaround may change if the website updates its structure or data retrieval method.</p>
 <p>This URL provides JSON data of gold prices between two dates, expressed as Unix timestamps (number of milliseconds since January 1st, 1970), for example, 1693853240038 and 1709582076959. You can easily convert these timestamps to human-readable dates and vice versa using the <a href="https://www.epochconverter.com/">Epoch Converter</a> website. Luckily, Portfolio Performance can work natively with these dates.</p>
 <ul>
-<li>1693853240038: Monday, September 4, 2023</li>
-<li>1709582076959: Monday, March 4, 2024</li>
+<li>1699833600000: Monday, November 13, 2023 </li>
+<li>1794268800000: Tuesday, November 10, 2026</li>
 </ul>
-<p>Of course, you want the gold prices until today, not March 4, 2024. Leaving out the second parameter will do that. So, the following URL will display the gold prices from September 4, 2023 until today (note the comma at the end).</p>
+<p>Of course, you want the gold prices until today, not November 10, 2026 . Leaving out the second parameter will do that. So, the following URL will display the gold prices from September 4, 2023 until today (note the comma at the end).</p>
 <ul>
-<li>Feed URL: <code>https://fsapi.gold.org/api/goldprice/v11/chart/price/usd/oz/1693853240038,</code></li>
-<li>Path to Date: $.chartData.USD[*].[0]</li>
-<li>Path to Close: $.chartData.USD[*].[1]</li>
+<li>Feed URL: <code>https://fsapi.gold.org/api/goldprice/v11/chart/price/eur/gram/1699833600000,</code></li>
+<li>Path to Date: $.chartData.EUR[*].[0]</li>
+<li>Path to Close: $.chartData.EUR[*].[1]</li>
 </ul>
-<p>To extract the date and the price, you need the JSON-path (see Figure 4).</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. Quote Feed JSON Provider with Feed URL and Path to Date and Close. </figcaption><img alt="" src="../images/gold-PP-JSON-path.png"></figure></p>
+<p>To extract the date and the price, you need the JSON-path (see Figure 4 below).</p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>Quote Feed JSON Provider with Feed URL and Path to Date and Close. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/gold-PP-JSON-path.png"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Be carefull about the requested time period</p>
+</div>
+<h2 id="world-bank-monthly-averages">World Bank (monthly averages)</h2>
+<p>For a long-term view, the World Bank publishes monthly commodity prices in its so-called <a href="https://www.worldbank.org/en/research/commodity-markets">Pink Sheet</a> (Commodity Markets data), including gold, silver, platinum, and palladium in USD per troy ounce since 1960. Each value is the average of the daily London fixings of that month.</p>
+<p>The underlying price is the same London Bullion Market benchmark described in the <a href="#london-bullion-market-association-lbma">LBMA section</a> above. The trade-off is the resolution: these are monthly averages, not daily quotes — perfectly suited for a decades-long chart or a long-term asset allocation, not for tracking the latest fixing. Note also the publication lag: the current file runs through the last complete month.</p>
+<p>A convenient, machine-readable way to obtain the series is the CSV mirror maintained in the <a href="https://github.com/datasets/gold-prices">datasets/gold-prices</a> repository on GitHub:</p>
+<p><code>https://raw.githubusercontent.com/datasets/gold-prices/master/data/monthly.csv</code></p>
+<p>The file is a simple two-column list; the monthly values from 1960 onward are sourced from the World Bank Commodity Markets portal, while the older values back to 1833 are based on historical records compiled by Timothy Green. An <code>annual.csv</code> with annual averages is available alongside it.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Date,Price
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>1833-01,18.930
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>1833-02,18.930
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>...
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>2026-10,4105.000
+</code></pre></div>
+<p>Since this is a static file rather than an API, it cannot be used directly as a Quote Feed. Download the CSV file and <a href="../../reference/file/import/csv-import/#importing-a-csv-file">import it</a> into Portfolio Performance, mapping <code>Date</code> to the date (format <code>yyyy-MM</code>) and <code>Price</code> to the close price. Import it once for the long-term history, and combine it with one of the daily quote feeds from the sections above for the recent months.</p>
+<h2 id="cross-checking-the-sources-with-a-gold-etc">Cross-checking the sources with a gold ETC</h2>
+<p>The price sources above are quite different in nature: a daily reference price from an industry association (gold.org), a dealer purchase price (EdelKurs), and a monthly average (World Bank). A practical way to validate them is to compare them with an Exchange Traded Commodity (ETC): a stock-exchange-traded security that is fully backed by physical gold, such as the <a href="https://www.ishares.com/uk/individual/en/products/258441/ishares-physical-gold-etc">iShares Physical Gold ETC</a> (ISIN <code>IE00B4ND3602</code>). Unlike shares of gold mining companies, it tracks the metal itself, and it can be added in Portfolio Performance simply as a regular security with its ordinary ticker.</p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>Comparison of the three data sources for gold prices. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/comparison-gold-prices.png"></p>
+<p>Because the three series are quoted in different currencies and units, compare the daily <em>percentage changes</em> rather than the absolute values:</p>
+<ol>
+<li>Add the ETC as a security in Portfolio Performance with its exchange ticker.</li>
+<li>Create the <code>gold.org</code> JSON Quote Feed from <a href="https://www.epochconverter.com/">January 1st</a> onwards, e.g. <code>https://fsapi.gold.org/api/goldprice/v13/chart/price/usd/grams/1767225600000,</code>.</li>
+<li>Add the EdelKurs purchase price of a 1 oz product, e.g. <code>https://edelkurs.de/Kursdaten/Gold_Kruger.json</code>.</li>
+<li>Chart all three securities from the same date. If the curves move in tandem within a few tenths of a percent per day, the sources corroborate each other.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Expect some small deviations: an ETC trades continuously at the exchange while the other sources publish one daily price; the ETC's price lags the metal slightly due to its running costs (the <a href="https://www.ishares.com/uk/individual/en/products/258441/ishares-physical-gold-etc">Total Expense Ratio</a> is 0.12% per year, deducted from the gold backing); and a dealer purchase price sits below the market price by the dealer's margin.</p>
+</div>
 
 
 
@@ -4849,7 +4990,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 3, 2026 21:03:36 CEST">September 3, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 11, 2026 21:05:31 CET">November 11, 2026</span>
   </span>
 
     

@@ -4728,15 +4728,24 @@
   <h1>PDF 文档</h1>
 
 <p>银行与券商常常为图方便，以纸质或 PDF 格式提供对账单（买入、卖出、股息等）。Portfolio Performance 能够读取 90 多家银行与券商的 PDF 文档，并导入其中所述的账目。图 1 中的 PDF 描述了一笔来自某澳大利亚券商的（虚构的）买入账目。若你想跟着示例操作，可以<a href="../../../../assets/SelfwealthBuy01.pdf">下载</a>该 PDF 文档。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： SelfWealth 的买入对账单，25 份 Beta SP500 YieldMax。</figcaption><img alt="" src="../images/testPDF-buy.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>SelfWealth 的买入对账单，25 份 Beta SP500 YieldMax。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/testPDF-buy.png"></p>
 <h2 id="checking-the-existence-of-the-importer">检查导入器是否存在</h2>
 <p>Portfolio Performance 必须对来自你的银行或券商的 PDF 文档"了解"一些细节。例如，图 1 中账目的类型由标题 "Buy Confirmation"（买入确认）标识，股票代码（UMAX）则标在 "Security Code"（证券代码）列标题之下。Portfolio Performance 必须能识别每一笔账目的这些细节，才能从 PDF 中提取所需内容。因此，对于每一家受支持的银行或券商，Portfolio Performance 都开发了一个了解不同<a href="../../../transaction/">账目类型</a>的专用导入器（解析器）。开发这些导入器时，Portfolio Performance 依靠用户提供的信息（见<a href="./#requesting-a-new-importer">申请新的导入器</a>）。</p>
 <p>要确认你的银行或券商是否受支持，请尝试导入一份 PDF 文档（见下一节）。导入向导要么会自动识别它，要么会显示一条错误信息，列出它已尝试过的所有银行／券商。你也可以用 <code>PDF import</code> 或 <code>PDF import [name-of-your-bank-or-broker]</code> 作为关键词搜索<a href="https://forum.portfolio-performance.info/c/english/">论坛</a>，看看你所在机构是否已有导入器，以及是否存在相关问题。如果导入器已存在，你可以继续下一节；否则，你需要先申请一个新的导入器（见<a href="./#requesting-a-new-importer">申请新的导入器</a>）。</p>
 <h2 id="importing-a-pdf">导入 PDF</h2>
 <p>使用菜单 <code>文件 &gt; 导入 &gt; 导入 PDF 银行文档</code> 或快捷键 <code>CTRL+I, P</code>，然后在本地系统中找到该 PDF 文档。你可以选择<em>一份以上</em>PDF 文档。如果某份文档能被 Portfolio Performance 识别（即该文档所属银行或券商已有导入器），就会显示如图 2 所示的 <code>导入账目</code> 对话框。</p>
 <p>在这个特定案例中，存在一个小问题，导致导入操作无法完整执行。底部的错误信息给出了提示：来自演示用 Kommer 投资组合的现金账户 <code>Call Money Account</code> 被用于该笔账目的现金处理，但这个现金账户以 EUR 计价，而该账目的货币是 AUD。选择（或新建）一个 AUD 现金账户即可解决该问题。请注意，图 2 中安排了两项操作：(1) 该笔买入账目，以及 (2) 创建证券 <code>Beta S&amp;P500 Yieldmax</code>。如果该证券已存在于投资组合中，导入向导会使用已有的证券。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： 从图 1 的 PDF 导入的账目。</figcaption><img alt="" src="../images/testPDF-buy-import.png"></figure></p>
-<p><figure class="align-right" style="width:60%" id="_figure-3"><figcaption>图 3： 搜索报价提供方（示例见 Portfolio Report）。</figcaption><img alt="" src="../images/testPDF-buy-create-security.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>从图 1 的 PDF 导入的账目。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/testPDF-buy-import.png"></p>
+<p>&lt;figure-caption identifier="图："class=align-right style="width:60%"&gt;</p>
+<p>搜索报价提供方（示例见 Portfolio Report）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/testPDF-buy-create-security.png"></p>
 <p>如果涉及的是一项新证券，则会显示一个 <code>搜索报价历史提供方</code> 框。如果该证券已在 <a href="../../../../how-to/downloading-historical-prices/portfolioperformance/">Portfolio Performance（内置）</a> 中列出，则历史价格可自动添加。否则，该证券仍会被创建，但你需要手动编辑数据源，才能<a href="../../../../how-to/downloading-historical-prices/">下载历史价格</a>。</p>
 <p><br style="clear:both;"></p>
 <h2 id="requesting-a-new-importer">申请新的导入器</h2>

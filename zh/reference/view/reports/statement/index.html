@@ -4653,7 +4653,10 @@
 
 <h1 id="_1">资产明细</h1>
 <p><strong>资产明细</strong>报告提供你投资组合的各项资产（证券与账户）在<em>特定</em>时点上的快照。默认显示当天。不过，你可以通过右上角的日历图标进入 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9 10v2H7v-2zm4 0v2h-2v-2zm4 0v2h-2v-2zm2-7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h1V1h2v2h8V1h2v2zm0 16V8H5v11zM9 14v2H7v-2zm4 0v2h-2v-2zm4 0v2h-2v-2z"></path></svg></span> 时光机，选择其他日期（见图 1）。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： demo-portfolio-04.xml 的资产明细报告（两张快照）</figcaption><img alt="" src="images/sb-reports-statement.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>demo-portfolio-04.xml 的资产明细报告（两张快照）</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="images/sb-reports-statement.svg"></p>
 <p>如图 1 所示，<a href="../../../../assets/portfolios/demo-portfolio-04.xml"><code>demo-portfolio-04.xml</code></a>的两张快照差异显著。在第一个快照日期，<em>仅</em>买入了 <code>share-1</code>，这意味着该证券占投资组合价值的 100%。到第二个快照时，该投资组合的所有账目都已完成，包括 <code>share-2</code>、<code>share-3</code>（以 USD 计价）的买入以及一笔股息付款。请注意，现金账户 <code>broker-A (USD)</code> 并未列出，尽管它确实存在。这是因为其余额为 0 USD。</p>
 <h2 id="toolbar">工具栏</h2>
 <p>工具栏包含以下图标：<span class="twemoji active"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M4 4h16v16H4zm2 4v10h12V8z"></path></svg></span><code>标准视图</code>、<span class="twemoji"><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
@@ -4682,7 +4685,10 @@
 </li>
 </ul>
 <h2 id="available-columns">可用列</h2>
-<p><figure class="align-right" id="_figure-2"><figcaption>图 2： 可用列。</figcaption><img alt="" src="images/sb-reports-statement-gear-icon.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=align-right&gt;</p>
+<p>可用列。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="images/sb-reports-statement-gear-icon.png"></p>
 <p>你可以用右上角的 <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2699.svg" title=":gear:"> 图标自定义默认列（见图 1）。默认显示的列是 <code>份额</code>、<code>名称</code>、<code>证券代码</code>、<code>报价</code>、<code>市值</code>、<code>占比 %</code> 和 <code>备注</code>。此外还有大量其他列/字段可用（见图 2）。虽然列标题大多不言自明，但其中少数几个可能需要进一步说明。</p>
 <p><strong>买价与成本（FIFO 与移动平均）</strong></p>
 <p>如<a href="../../../../concepts/purchase-value/">成本</a>一节所述，Portfolio Performance 使用先进先出 (FIFO) 方法计算价格与数值。不过"移动平均"也是另一种常用方法。例如在图 1 中，两种方法算出的买价略有差异（含税款与费用）：2023-09-12 为 16.15 EUR（移动平均）对 15.93 EUR（FIFO）；而在 2022-09-01 则没有差异（15.93 EUR）。为什么？让我们看看这些账目：</p>
@@ -4706,7 +4712,10 @@
 <p><code>外汇</code>（Foreign Exchange）选项让你查看每项资产报价所用的货币，以及它相对投资组合基准货币的汇率。标注为 <code>市值**</code>、<code>买价**</code> 和 <code>盈 / 亏**</code>（带双星号）的字段与上文中以基准货币表示的对应字段含义相同，只是以外币呈现。</p>
 <p>例如，来看以 USD 交易的 <code>share-3</code>。在默认视图中，<code>市值</code>以 EUR 表示（图 1 下半部分为 127.96）。若想改用 USD 查看该数值，只需选择 <code>市值**</code>字段即可（见图 3）。</p>
 <p><strong>距 SMA</strong></p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： demo-portfolio-04.xml 的资产明细报告（市值 **、SMA 与 ATH）</figcaption><img alt="" src="images/sb-reports-statement-SMA-ATH.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>demo-portfolio-04.xml 的资产明细报告（市值 **、SMA 与 ATH）</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="images/sb-reports-statement-SMA-ATH.png"></p>
 <p><code>距 SMA</code>是一项度量指标，用于衡量某只证券的当前价格与其在过去指定天数内的平均价格之间的差异。缩写"SMA"应指"简单移动平均"。</p>
 <p>选择加入该列时，你还需要指定一个周期，例如 5 天、20 天、50 天或 200 天。假设你想知道 <code>share-1</code> 的 Δ to SMA5（5 天周期的距 SMA）。2023-09-12 之前可得的最后 5 个价格分别为：20.43、20.14、20.015、19.942 和 19.868 EUR/份。计算过程如下：</p>
 <ol>
@@ -4717,7 +4726,10 @@
 <p><strong>距 ATH</strong></p>
 <p><code>距 ATH</code>（历史最高）是一项类似的指标，显示报告期内最后一个价格与该期间最高价格相距多远。你必须在子菜单中选择该周期。例如，<code>share-1</code> 在 2022 年的最高价为 2022 年 11 月 25 日的 19,766 EUR。将鼠标悬停在该字段上，可以查看历史最高（ATH）的确切价格与日期。该期间最后一个价格为 2022 年 12 月 30 日的 18.638 EUR/份。因此 2022 年的 Δ ATH（即 2022 年的距 ATH）等于 (18.638 - 19.766)/19.766，即 -5,71%。</p>
 <p><strong>价格区间</strong></p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>图 4： demo-portfolio-04.xml 的资产明细报告（价格区间）</figcaption><img alt="" src="images/sb-reports-statement-price-range.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>demo-portfolio-04.xml 的资产明细报告（价格区间）</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="images/sb-reports-statement-price-range.png"></p>
 <p>对于该字段，你需要指定一个报告期，例如 1 年、2 年或 3 年，并可选择用时光机指定一个评估日期。</p>
 <p><code>价格区间</code>列显示当前价格相对于所选周期内某只证券的最高价与最低价的位置。不过，当前价格取决于所选的时间周期。</p>
 <p>图 4 展示了 2022 年的价格区间，评估日期设为 2023 年 9 月 12 日（另见图 1）。此时，当前价格等于 2022 年最后一个可得价格/报价，例如 2022 年 12 月 30 日的价格。这并<em>不是</em>第三列中显示的报价价格，后者是时光机所设评估日期（如 2023-09-12）对应的价格。若选择更自然的周期（如 1 年），当前价格才会反映最近可得的报价。</p>
@@ -4736,7 +4748,10 @@
 <p>两个指数绝对值之和等于 100%。</p>
 <h2 id="multiple-charts">多重图表</h2>
 <p>信息面板通常显示上面板中所选证券的图表。不过，你也可以显示多只证券（见图 5）。用 <code>Shift</code> 键选择相邻证券，或用 <code>Ctrl</code>（Mac 上为 <code>Cmd</code>）选择不相邻的证券。通过 <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2699.svg" title=":gear:"> <code>配置图表</code>图标添加的标记——例如股息、投资（买入、卖出）等——将不再显示，以保持图表清晰。</p>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>图 5： 资产明细视图信息面板中的多重图表。</figcaption><img alt="" src="images/sb-reports-statement-chart.mp4"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>资产明细视图信息面板中的多重图表。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="images/sb-reports-statement-chart.mp4"></p>
 
 
 

@@ -4731,21 +4731,36 @@
 <h2 id="transfer-between-accounts">账户间转账</h2>
 <p>你可以在相同货币或不同货币的现金账户之间转账。例如在图 1 中，100 EUR 从 <code>deposit-account-1 (EUR)</code> 转至 <code>deposit-account-2 (USD)</code>。按 1.0696 EUR/USD 的汇率计算，后一个账户将存入 106.96 USD。</p>
 <p>汇率会针对指定日期自动从<a href="../../view/general-data/currencies/">欧洲中央银行</a>获取，必要时也可以手动覆盖。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： EUR 现金账户与 USD 现金账户之间的转账。</figcaption><img alt="" src="../images/transfer-between-dep-accounts.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>EUR 现金账户与 USD 现金账户之间的转账。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/transfer-between-dep-accounts.png"></p>
 <h2 id="security-transfer">证券转移</h2>
 <p>顾名思义，这笔账目涉及把指定数量的份额从一个证券账户转到另一个证券账户。只有当投资组合包含多个证券账户时，才可以在菜单中访问它。关于只有一个证券账户或多个账户的投资组合的若干讨论，参见主题<a href="../../view/accounts/security-account/#one-or-more-security-accounts">参考 &gt; 视图 &gt; 账户 &gt; 证券账户</a>。</p>
 <p>在许多情形下都可能需要证券转移。例如，如果你有多个券商各自的证券账户，可能需要在它们之间转移某项证券，这类似于现实中把证券从一家券商转到另一家券商的情形。</p>
 <p>另一个常见情形是为将来作安排，例如为孩子预留一部分股票。在把这些股票保留于你的投资组合中的同时，你可以从<em>父</em>账户向<em>子</em>账户转移一部分。这种隔离确保了从父账户卖出股票不会影响子账户的绩效，从而可以分别追踪两者的绩效。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： 证券转移对话框。</figcaption><img alt="" src="../images/security-transfer.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure &gt;</p>
+<p>证券转移对话框。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/security-transfer.png"></p>
 <p>借助三个下拉框，你可以选择证券（<code>share-1</code>），以及作为来源（<code>security-account-1</code>）和目标（<code>security-account-2</code>）的证券账户；见图 2。系统会进行若干校验；例如，你无法转出在来源账户中不存在或数量不足的证券。你还需要提供转账日期、份额数量和报价。</p>
 <p>虽然从技术上讲这是一笔账目，但在幕后，Portfolio Performance 会创建两笔"虚拟"账目（参见图 3 的信息窗格）。证券转移被拆分为从 <code>security-account-1</code> 转出 3 份的转出账目，随后是一笔转入 <code>security-account-2</code> 的转入账目。不过，这两笔账目被视为同一个整体。编辑其中一笔会弹出证券转移对话框。删除其中一笔账目也会同时删除另一笔。</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： 证券转移账目的结果。</figcaption><img alt="" src="../images/security-transfer-result.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>证券转移账目的结果。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/security-transfer-result.png"></p>
 <p>证券转移账目的一个后果是会产生两个未结头寸，如图 4 所示。第二个头寸涵盖 <code>security-account-1</code> 中剩余的 7 份，而第一个头寸则由 <code>security-account-2</code> 中转移过去的 4 份组成。两个头寸都记为从最初买入该股票的日期开始。虽然也可以认为第二个头寸应当从转账日期开始，但事实并非如此。此外，两个头寸采用相同的买价，尽管也有人主张改用转账时的报价。需要指出的是，证券转移时填入的日期与报价在此过程中似乎并未被采用。</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>图 4： 证券转移账目产生的头寸。</figcaption><img alt="" src="../images/security-transfer-result-trades.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>证券转移账目产生的头寸。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/security-transfer-result-trades.png"></p>
 <h2 id="setting-the-quote-price">设置报价</h2>
 <p>为什么需要报价？应该输入什么价格：买价、转账日期的历史价格，还是零？为什么不能<em>直接</em>把份额从一个账户转到另一个？简短的答案是：绩效追踪。</p>
 <p>以上述情形为例，转出 3 份（见图 2）。该股票于 2023 年 1 月 1 日以每股 10 EUR 买入。转账当时的历史价格为每股 12 EUR，尽管你实际以每股 10 EUR 转出（见图 3）。如今（2024-01-01），价格已升至每股 15 EUR。在 2023-01-01 至 2024-01-01 这一报告期内，两个证券账户的绩效分别是多少？请记住，报告期从第一天结束之时（例如 2023-01-01）起算，直至最后一天结束之时。</p>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>图 5： 来源账户与目标账户的总收益与内部收益率（转账报价 = 10 EUR）。</figcaption><img alt="" src="../images/security-transfer-performance.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>来源账户与目标账户的总收益与内部收益率（转账报价 = 10 EUR）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/security-transfer-performance.svg"></p>
 <p><a href="../../view/reports/performance/#absolute-change">总收益</a>的公式为：<strong>MVE - MVB + CFout - CFin</strong>，其中 MVE = 期末市值，MVB = 期初市值，CFout = 流出该账户的现金流，CFin = 流入该账户的现金流。账户的总收益是该账户期初价值与期末价值之差，但须对流入与流出的部分加以修正。</p>
 <ol>
 <li>

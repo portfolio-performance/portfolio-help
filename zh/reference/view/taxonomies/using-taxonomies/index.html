@@ -4816,7 +4816,10 @@
   <h1>使用类别</h1>
 
 <p>从侧边栏或视图菜单中选定某个类别后，分类情况就会显示在主面板中。表头包含标准数据图标、搜索框、报告期选择器以及七个显示选项。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 类别的主面板。</figcaption><img alt="" src="../images/taxonomies-definition.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>类别的主面板。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/taxonomies-definition.svg"></p>
 <h2 id="definition-view">定义视图</h2>
 <p>默认情况下，定义视图显示一张含五个字段的表：</p>
 <ul>
@@ -4843,7 +4846,10 @@
 <p>定义视图给出的是当前类别状态的一个快照。因此，报告期（默认为 1 年）呈灰色不可用。只有堆叠柱状图和堆叠面积图会利用报告期中的时间信息。</p>
 <h2 id="rebalancing-view">再平衡视图</h2>
 <p>再平衡是一种策略，把已经偏离目标资产配置的投资组合重新拉回正轨[<a href="https://en.wikipedia.org/wiki/Rebalancing_investments">维基百科</a>]。任何类别（例如行业或区域）都可以作为目标资产配置的基础。不过通常你会使用自己的分类方式。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： 再平衡视图。</figcaption><img alt="" src="../images/taxonomies-rebalancing.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>再平衡视图。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/taxonomies-rebalancing.svg"></p>
 <p>再平衡过程的第一步是为每个类别输入目标 <code>配置</code> 比例，以及每项证券的 <code>权重</code>。</p>
 <ul>
 <li>配置：某类别中每个子类在父类别内所占的目标百分比。一个类别内各项配置之和必须始终等于 100%。</li>
@@ -4854,27 +4860,45 @@
 <p>要对这个子类进行再平衡，你需要卖出证券。Daimler 与 Mercedes 的权重均为 100%，因此你需要在每项证券上各卖出 105.66 EUR。这大约相当于 2.9 股 Daimler 和 1.6 股 Mercedes。</p>
 <p>比如说，如果把 Mercedes 的权重设为 50%，其实际价值将降至 336.95 EUR（而不是 653.90 EUR），基准货币子类的实际价值将降至 1049.55 EUR（而不是 1376.90 EUR）。在这种情况下，差值将为 440.18 EUR。考虑到只有 50% 的 Mercedes 可供卖出，这可以通过卖出 9.7 股 Daimler 和 2.6 股 Mercedes 来实现。</p>
 <h2 id="pie-chart">饼图</h2>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： 投资组合饼图及放大视图。</figcaption><img alt="" src="../images/taxonomies-pie-chart.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>投资组合饼图及放大视图。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/taxonomies-pie-chart.svg"></p>
 <p>图 3 中表示整个投资组合的饼图显得简单而不完整，因为并非所有证券都在 <code>myTaxonomy</code> 中被分配到了类别。从图 1 可以推断，约有 28% 的证券已被分配，以紫色扇区表示。</p>
 <p>点击饼图的某个扇区，可以放大显示该部分。图 3 中间的第二个饼图显示 <code>myTaxonomy</code> 内的各类别，例如基准货币与外部货币。第三个饼图则专门聚焦于 <code>基准货币</code> 类别。</p>
 <h2 id="donut-chart">圆环图</h2>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>图 4： 投资组合圆环图。</figcaption><img alt="" src="../images/taxonomies-donut-chart.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>投资组合圆环图。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/taxonomies-donut-chart.png"></p>
 <p>圆环图表示类别的筛选结果，因此它是图 1 中 <code>占总价值比例</code> 字段的图形化呈现。使用 <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2699.svg" title=":gear:"> 图标，你可以选择是否包含 <code>未分类</code> 类别。 </p>
 <h2 id="tree-map">树状图</h2>
 <p>树状图是一种用矩形来可视化数据的图表。每个矩形代表一项证券，矩形的大小与该证券的市值相对应。与圆环图类似，树状图反映的是证券的价值。不过在树状图中，百分比是由矩形的面积而非扇区来表示的。每个类别也以不同颜色加以区分。与圆环图一样，你可以选择是否包含 <code>未分类</code> 类别。</p>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>图 5： 投资组合树状图。</figcaption><img alt="" src="../images/taxonomies-tree-chart.png"></figure></p>
-<p><figure class="align-right" id="_figure-6"><figcaption>图 6： 树状图的齿轮菜单。</figcaption><img alt="" src="../images/taxonomies-tree-chart-menu-gear.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>投资组合树状图。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/taxonomies-tree-chart.png"></p>
+<p>&lt;figure-caption identifier="图："class=align-right&gt;</p>
+<p>树状图的齿轮菜单。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/taxonomies-tree-chart-menu-gear.png"></p>
 <p>使用 <code>:gear:</code> 图标，你可以选择图表的基础配色方案（见图 6）。可选方案有：<code>绿-黄-红</code>、<code>绿-白-红</code>、<code>绿-灰-红</code>、<code>蓝-灰-橙</code> 以及 <code>黄-白-黑</code>。矩形的实际颜色可由证券的 <code>类别</code> 决定，也可由证券的收益表现决定。</p>
 <p>选择 <code>按类别着色</code>，即为类别的每个类别分配不同颜色。或者选择 <code>按时间加权收益率 (累计) 着色</code>，依据证券的 TTWROR 表现来着色。对于该选项，你还需设置 <code>报告期</code>（例如图 5 中的本年度至今 (YTD)）。收益表现为负的证券，其色调更接近配色方案中的第三种颜色；收益表现为正的证券则更接近第一种颜色。图 5 中使用的是 <code>蓝-灰-橙</code> 配色方案。</p>
 <p>分组后证券的（子）类别名称，例如 <code>商品</code>，可以使用 <code>显示标题</code> 选项添加。</p>
 <p>将鼠标悬停在某项证券上时，会在树状图下方显示 <code>类别路径</code>。例如在图 5 中，鼠标位于 Mercedes 股票上方，显示出的路径从 <code>资产配置类别 &gt; 风险组合部分 &gt; 西欧 &gt; Mercedes Benz Group AG</code> 开始。</p>
 <p>你可以左键单击图表中相应的矩形来放大某个特定类别。例如，在 <code>kommer.xml</code> 示例中选择菜单 <code>视图 &gt; 类别 &gt; 资产配置</code>，只会显示两个类别：<code>风险型</code> 与 <code>无风险组合部分</code>。在图 5 中，被点击的是 <code>风险型</code> 类别，展开后可见 <code>美国／北美</code>（含 iShares 与 Amazon）、<code>新兴市场资产</code> 和 <code>西欧</code> 等子类。</p>
 <h2 id="stacked-chart">堆叠柱状图</h2>
-<p><figure class="pp-figure" id="_figure-7"><figcaption>图 7： 投资组合堆叠柱状图。</figcaption><img alt="" src="../images/taxonomies-stacked-chart.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>投资组合堆叠柱状图。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/taxonomies-stacked-chart.png"></p>
 <p>堆叠柱状图是一种以一系列彩色线条显示数据的图表，每条线代表一个类别。线条在 y 轴上的位置对应于该类别的累计价值。这些线条相互堆叠，以显示所有类别合计的总价值，即 100%。默认情况下，类别按由大到小堆叠，最大的类别位于图表底部。可以使用 <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2699.svg" title=":gear:"> 图标调整堆叠顺序，让线条按数值大小堆叠，或按其在类别列表中的位置堆叠。</p>
 <p>堆叠柱状图和堆叠面积图都在 x 轴上绘制时间，由所选的报告期（默认 = 1 年）确定。</p>
 <h2 id="stacked-area-chart">堆叠面积图</h2>
-<p><figure class="pp-figure" id="_figure-8"><figcaption>图 8： 投资组合堆叠面积图。</figcaption><img alt="" src="../images/taxonomies-stacked-area-chart.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>投资组合堆叠面积图。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/taxonomies-stacked-area-chart.png"></p>
 <p>堆叠面积图的 y 轴表示不同类别随时间变化的实际货币价值。与堆叠柱状图类似，它显示的是各堆叠类别的累计价值。但与堆叠柱状图中数值加总为 100% 不同，堆叠面积图显示的是各类别随时间变化的实际货币金额。</p>
 
 

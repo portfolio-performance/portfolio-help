@@ -4736,7 +4736,10 @@
 <p><strong>已结头寸</strong>：某只证券的<em>每一笔</em> <code>卖出</code>或 <code>证券转出</code>账目都会生成一笔已结头寸。若你在三个不同日期卖出同一只证券，就会生成三笔独立的已结头寸，各自以其相应的买入和卖出日期来标识。卖出一只证券可能会影响相应未结头寸的 <code>开始日期</code>，因为系统采用先进先出 (FIFO) 方法。若某次买入的全部份额都已卖出，未结头寸的 <code>开始日期</code>就会顺延至下一次买入的日期。</p>
 </li>
 </ul>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 报告 &gt; 收益 &gt; 头寸视图 <a href="https://raw.githubusercontent.com/portfolio-performance/portfolio-help/5fc9b00128961e41863ecdeb4653080d583a57ba/docs/en/assets/demo-portfolio-07.xml" title="Right-click and choose 'Save Link As' to download" style="font-style: normal;">[Portfolio Performance 文件]</a>。</figcaption><img alt="" src="../images/trades-overview.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>报告 &gt; 收益 &gt; 头寸视图 <a href="https://raw.githubusercontent.com/portfolio-performance/portfolio-help/5fc9b00128961e41863ecdeb4653080d583a57ba/docs/en/assets/demo-portfolio-07.xml" title="Right-click and choose 'Save Link As' to download" style="font-style: normal;">[Portfolio Performance 文件]</a>。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/trades-overview.svg"></p>
 <p>查看图 1 的 <code>全部账目</code>（上面板），你可以区分出 5 笔头寸（见下面板）。
 1. 已结头寸（<code>share-1</code>），于 2023 年 4 月 12 日通过卖出 15 份中的 5 份而结束。该头寸始于 2021 年 1 月 15 日的（其中一半）首次买入；第二次买入（2022 年 1 月 14 日）不属于这笔头寸——它完全属于下方的未结头寸。
 2. 未结头寸（<code>share-1</code>），始于 2021 年 1 月 15 日（首次买入 10 份）。其中 5 份于 2023 年 4 月 12 日卖出。然而剩余的 5 份仍然计入该头寸的期末价值，2022 年 1 月 14 日第二次买入的 5 份同样如此。该头寸之所以未结，是因为截至今天投资组合中仍有 10 份 <code>share-1</code>。
@@ -4766,7 +4769,10 @@
 <li><em>结束日期</em>：要么是该证券被卖出的日期，要么标记为（未结），表示该头寸仍然有效。一旦全部份额售出，这笔未结头寸就会从列表中移除。</li>
 <li>
 <p><em># 账目</em>：一笔头寸中的账目数通常是一笔（只有一笔买入账目）或两笔（买入 + 卖出）。将鼠标悬停在 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2z"></path></svg></span> 图标附近的单元格上会弹出附加信息。从图 2 可以推断，2023 年 4 月 12 日卖出了 5 份 <code>share-1</code>。将鼠标悬停在未结头寸上（第 2 行）会显示，2021 年 1 月 15 日买入了 5 份，2022 年 1 月 14 日又买入了 5 份。在这里你可以看到先进先出原则的实际运作：卖出的那 5 份是从最初买入的 10 份中扣减的。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： share-1 已结头寸的信息浮层。</figcaption><img alt="" src="../images/trades-info-overlay.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>share-1 已结头寸的信息浮层。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/trades-info-overlay.png"></p>
 </li>
 <li>
 <p><em>份额</em>：该头寸中的份额数。</p>

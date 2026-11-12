@@ -4707,7 +4707,10 @@
 
 <p>In addition to transaction fees, some brokers charge management fees, typically an annual percentage of the portfolio’s value. In such cases, the broker deducts these fees by selling a small portion of your shares, reducing the total number you own.</p>
 <p>This is essentially a sell transaction followed by a fee transaction. These can be booked in a single transaction through an <a href="../../reference/transaction/delivery/"><em>Outbound Delivery</em></a> where the shares are sold and the fees are applied to the sold value within the same transaction. This results in a <strong>total outbound delivery amount of 0</strong>. </p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Outbound Delivery used to book the fee transaction. </figcaption><img alt="" src="../images/fees-on-shares-outbound.png"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class= pp-figure&gt;</p>
+<p>Outbound Delivery used to book the fee transaction. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/fees-on-shares-outbound.png"></p>
 <p>To accurately book those fees, it is important that your broker details the number of sold shares.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -4722,9 +4725,15 @@
 <p>The first quarterly fees on <code>stock-A</code> consist in a sell of <code>0.75/100/4 * 0.5671 = 0.001</code> shares, whose sold value is taken as fees.
 And again on March 18:
 <code>0.75/100/4 * 0.5661 = 0.001</code> shares are sold by the broker and the sold value is taken as fees. Same for the other dates.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Several fees transactions booked as Outbound Delivery. </figcaption><img alt="" src="../images/fees-on-shares-transactions-list.png"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class= pp-figure&gt;</p>
+<p>Several fees transactions booked as Outbound Delivery. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/fees-on-shares-transactions-list.png"></p>
 <p>The <a href="../../reference/view/reports/performance/performance-chart/">Performance Chart</a> illustrates the impact of these fees: compared to the price performance of <code>stock-A</code>, our <code>stock-A</code> performance is 0.75% lower than its benchmark over a year.</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Difference in performance due to the management fees. </figcaption><img alt="" src="../images/fees-on-shares-performance.png"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class= pp-figure&gt;</p>
+<p>Difference in performance due to the management fees. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/fees-on-shares-performance.png"></p>
 <h3 id="second-method">Second method</h3>
 <p>This could also be done by separating the Sell and the Fee transactions by using:</p>
 <ol>
@@ -4732,7 +4741,10 @@ And again on March 18:
 <li>Second a <a href="../../reference/transaction/fees-taxes/"><em>Fees</em></a> transaction on the cash account, related to the sold security.</li>
 </ol>
 <p>but this creates two transactions and forces to use a cash account.</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. List of transactions on the cash account with this second method. </figcaption><img alt="" src="../images/fees-on-shares-second-method.png"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class= pp-figure&gt;</p>
+<p>List of transactions on the cash account with this second method. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/fees-on-shares-second-method.png"></p>
 
 
 

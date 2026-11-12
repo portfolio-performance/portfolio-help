@@ -4794,14 +4794,23 @@
   <h1>Dashboard</h1>
 
 <p>A dashboard is a configurable view that aggregates performance data into a one-page report format. You can access the default Performance dashboard through the menu <code>View &gt; Reports &gt; Performance</code> or with the sidebar. It contains three columns with key performance and risk indicators. A dashboard, however, can be much more complex; see for example Figure 1.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Yearly Overview dashboard.</figcaption><img alt="" src="../images/performance-dashboard.svg"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>Yearly Overview dashboard.</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/performance-dashboard.svg"></p>
 <p>You can create a new (empty) dashboard by clicking on the icon <code>New dashboard</code> at the left of the reporting period (see Figure 1). You can choose between a blank dashboard, key indicators (= the default Performance dashboard), and Earnings (see Figure 2). To remove a dashboard from the menu, click the arrow next to the name and choose <code>Delete</code>. You can move the dashboard to the first in the list (bring to front), rename the dashboard, or make a duplicate of the selected dashboard.</p>
-<p><figure class="align-right" style="width:30%" id="_figure-2"><figcaption>Figure 2. Creating a new dashboard. </figcaption><img alt="" src="../images/dashboard-add-new.png"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=align-right style="width:30%"&gt;</p>
+<p>Creating a new dashboard. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/dashboard-add-new.png"></p>
 <p>A dashboard contains one or more columns; the dashboard of Figure 1 contains 6 columns.  You cannot see the borders of the column. Delete a column by right-clicking in the (empty) area. You can add a new column with the configure dashboard gear icon (top right). If there is already at least one column, you can also right-click in a column area and choose <code>New column on the left</code>,  <code>New column on the right</code>, or <code>Duplicate column</code> (see Figure 5). With <code>Column width</code> you can increase or decrease (step wise) the column width of the selected column. Of course, the width of the other columns is affected since the total width of the window stays the same. With the Option <code>Apply to All</code>, you can set the reporting period and the data series for all widgets in the dashboard.</p>
 <p>Each column can contain several configurable widgets: data blocks comprising a label and a numerical value or a diagram; e.g. Absolute Change or a Performance chart.  Right mouse click on an <em>empty space</em> in a column lets you manage the widgets, e.g. adding a widget. Right clicking the <em>widget label</em> lets you manage the specific widget; e.g. change the data series or reporting period.</p>
 <p>Widgets are a very powerful tool to customize the dashboard to your liking. A thorough introduction is given in a <a href="https://youtu.be/_-9iC7UqLsw">YouTube video by Finanzkoch</a> (German spoken but English subtitles are possible). A <a href="https://forum.portfolio-performance.info/t/beispiele-fur-auswertungen-grafiken-und-berichte/5367/118">list of very nice dashboards</a> by fellow investors can be found at the forum.</p>
 <p>The <code>New Widget</code> option reveals a submenu featuring six categories of widgets (refer to Figure 3). Below is a description of each widget. Right-clicking on the widget label will reveal a context menu. Most widgets feature options such as <code>Edit label</code>, <code>Delete</code>, and <code>Height</code>. You can drag and drop widgets within and between columns. Press the CTRL key (Windows) to duplicate instead of moving.</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. New Widget menu with overview of all available widgets. </figcaption><img alt="" src=""></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>New Widget menu with overview of all available widgets. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src=""></p>
 <pre class="mermaid"><code>graph TD
     A[New Widget] --&gt; B(1. Common);
     A --&gt; C(2. Statement of Assets);
@@ -4929,7 +4938,10 @@
 <h3 id="4-risk-indicators">4. Risk indicators</h3>
 <p>The following six widgets are single line text widgets, representing common risk indicators. See <a href="../#maximum-drawdown">the top of this page</a> for an explanation of <code>Maximum Drawdown</code>, <code>Current Drawdown</code>, <code>Max Drawdown Duration</code>, <code>Volatility</code>, and <code>Semideviation</code>.</p>
 <p>The <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m16 11.78 4.24-7.33 1.73 1-5.23 9.05-6.51-3.75L5.46 19H22v2H2V3h2v14.54L9.5 8z"></path></svg></span> <code>Drawdown chart</code> option will create a widget version of the chart as shown in <a href="../images/performance-mdd.svg">Figure 1</a>.</p>
-<p><figure class="align-right" style="width:30%" id="_figure-4"><figcaption>Figure 4. Setting the risk-free return from the context menu. </figcaption><img alt="" src="../images/sharpe-set-risk-free.png"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=align-right style="width:30%"&gt;</p>
+<p>Setting the risk-free return from the context menu. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/sharpe-set-risk-free.png"></p>
 <p>The <code>Sharpe ratio</code> is a financial metric that measures the performance of a portfolio compared to a risk-free asset, taking into account the portfolio's risk. It is calculated by subtracting the risk-free return from the portfolio's return, such as the Internal Rate of Return (IRR), and then dividing the result by the standard deviation of the portfolio's return, which is a measure of its volatility.</p>
 <p>The risk-free return is set by default to 0%, but this can be adjusted through the context menu to reflect your current risk-free rate (see Figure 4). As the ratio is based on volatility, complete historical prices are required. Without complete prices, the calculated volatility may be underestimated.</p>
 <h3 id="5-earnings">5. Earnings</h3>

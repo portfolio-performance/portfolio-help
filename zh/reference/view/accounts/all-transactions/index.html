@@ -4755,16 +4755,25 @@
 
 <h1 id="_1">视图 › 账户 › 全部账目</h1>
 <p><code>全部账目</code>视图在主面板中显示一张表格，列出投资组合的所有账目，按账目在投资组合中的创建时间排序（见图 1）。默认视图显示的列有 <code>日期</code>、<code>类型</code>、<code>证券</code>、<code>份额</code>、<code>报价</code>、<code>金额</code>、<code>费用</code>、<code>税款</code>、<code>净额</code>、<code>现金账户</code>、<code>目标账户</code>、<code>备注</code>和<code>来源</code>（这些术语的定义见<a href="../../../../concepts/portfolio-performance-terminology/">术语表</a>）。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 全部账目视图。</figcaption><img alt="" src="../images/all-transactions-view.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>全部账目视图。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/all-transactions-view.png"></p>
 <p>尽管它的用处不如 <code>全部证券</code>视图那么大，但位于底部的信息面板（图 1 中未显示）可以提供与主面板中所选账目相关联的证券的更多细节。</p>
 <h2 id="settings">设置</h2>
-<p><figure class="align-right" style="width:30%" id="_figure-2"><figcaption>图 2： 显示或隐藏列按钮（齿轮）。</figcaption><img alt="" src="../images/all-transactions-view-gear-icon.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=align-right style="width:30%"&gt;</p>
+<p>显示或隐藏列按钮（齿轮）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/all-transactions-view-gear-icon.png"></p>
 <p>点击列标题可按该列以升序 (∧) 或降序 (∨) 排列表格。你可以拖动列标题来重新排列任意一列。拖动两列之间的分隔线可调整左列的宽度，双击则可调整为最佳匹配。你可以用上下文菜单（在列标题上右击）重命名或隐藏某一列。添加、删除或把列重置为原始布局，可用"显示或隐藏列"图标（右上角的齿轮符号）完成。默认的列显示在图 1 中；它们在图 2 中也有勾选标记。图 2 给出了所有可用列的清单。</p>
 <p>可以看到，除了 <code>ISIN</code>、<code>证券代码</code>和 ´WKN´ 之外，所有可用列都已显示，这些通常是证券相关术语（见<a href="../../../../concepts/portfolio-performance-terminology/">术语表</a>）。</p>
 <h2 id="search">搜索</h2>
 <p>在一个典型的投资组合中，账目表格可能包含数百行。不过，你可以使用搜索功能来缩小所显示的行范围。该功能会扫描每一列的所有单元格，若某个单元格包含搜索值，则显示相应的账目（行）。例如，在图 1 的搜索框中输入 <code>share-3</code>，列表会缩小到第一行。输入 <code>share</code>（实际上输入 <code>sh</code> 就够了）会显示所有证券列（事实上是每一列）中包含 <code>share</code> 一词的账目。该功能会搜索所有可用列，无论它们是否被显示。你不能使用 <code>*</code> 或 <code>?</code> 之类的通配符，也不能把搜索功能限定在某单独一列。</p>
 <h2 id="filter">过滤</h2>
-<p><figure class="align-right" style="width:30%" id="_figure-3"><figcaption>图 3： 过滤证券按钮。</figcaption><img alt="" src="../images/all-transactions-view-filter-icon.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=align-right style="width:30%"&gt;</p>
+<p>过滤证券按钮。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/all-transactions-view-filter-icon.png"></p>
 <p>限制账目数量的另一种方法，是使用位于界面右上角的"过滤证券"按钮。图 3 展示了所有可用的选项。默认情况下，表格中显示的是<code>整个投资组合</code>中<code>全部账目类型</code>的账目。</p>
 <p>过滤分为两个主要组：<code>以账目类型过滤</code>与<code>以投资组合与关联账户过滤数据</code>。第一组用于选择诸如全部买入或卖出之类的账目。第二组用于选择某个特定证券账户中的账目。各个选项的意义不言自明。德国原文 <code>Buchungen mit Wertpapier</code> 的译名 <code>包含投资品的账目</code> 不甚理想，更恰当的术语是 <code>包含证券的账目</code>。</p>
 <p>过滤器以"二者取一"的方式工作。从某组中选择一个选项，会替换该组中此前的任何选择。例如，你可以选择"买入和卖出"，也可以只选"买入"或只选"卖出"。</p>
@@ -4772,7 +4781,10 @@
 <p>也存在一些限制。例如，你只能按<em>关联</em>账户过滤，而不能按任何现金账户（如 <code>broker-A (USD)</code>）过滤。不过，借助 <code>创建...</code> 选项，你可以为任意（现金）账户创建筛选器。请注意，似乎也无法筛选<strong>不含</strong>税款或费用的账目。</p>
 <p>通过 <code>管理...</code> 选项，你可以重命名（新建的）自定义筛选器、为其添加元素或删除该筛选器。<code>移除所有过滤器</code> 选项会把第二组筛选器重置为整个投资组合。</p>
 <h2 id="export">导出</h2>
-<p><figure class="align-right" style="width:30%" id="_figure-4"><figcaption>图 4： 导出所选行。</figcaption><img alt="" src="../images/all-transactions-view-export-selected-rows.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=align-right style="width:30%"&gt;</p>
+<p>导出所选行。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/all-transactions-view-export-selected-rows.png"></p>
 <p>通过右上角的导出按钮，你可以选择把所显示的账目表格保存为 CSV 或 JSON 文件。只有当前显示的列和行（包括标题行）会被保存。</p>
 <p>如果你在表格中做了选择，导出按钮会提供四个选项而非两个（见图 4），其中也包括仅导出所选账目的可能。</p>
 <div class="admonition note">

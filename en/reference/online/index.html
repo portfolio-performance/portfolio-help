@@ -4772,7 +4772,10 @@
   <h1>Online Menu</h1>
 
 <p>To assess the performance of your portfolio, it's essential to have historical prices or quotes for all securities. You can input these manually or, more conveniently, obtain them through a Quote Feed. This could be in the form of a table on a website or another online data source. With the menu <code>Online</code> these historical prices could be updated.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Menu Online.</figcaption><img alt="" src="../mnu-online.png"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>Menu Online.</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../mnu-online.png"></p>
 <h2 id="update-quotes">Update quotes</h2>
 <p>For all securities that are connected to an online quote feed provider, this command will trigger a request to the online service for the latest quotes ranging from the first historical quote to the present day.</p>
 <p>Quotes that were previously downloaded but subsequently deleted will be reinstated. However, quotes that have been manually altered after online download or those in the historical prices table that are not available online (e.g., quotes in the distant past) will remain unchanged during this operation.</p>
@@ -4780,7 +4783,10 @@
 <p>If you want more details about the updating process, there is a special <a href="../view/general-data/price-update-status/">Price Update Status</a> view available for inspection.</p>
 <h2 id="update-quotes-only-active-securities">Update quotes (only active securities)</h2>
 <p>Securities could be set to active or inactive in the Security Master Data tab of the Securities Attributes panel (see Figure 2, near the bottom).</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Inactive setting in the Security Master Data tab.</figcaption><img alt="" src="../file/images/securities-master-data.svg"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>Inactive setting in the Security Master Data tab.</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../file/images/securities-master-data.svg"></p>
 <p>This command will update only the securities, with the option <code>Inactive</code>, turned off.</p>
 <h2 id="update-quotes-only-held-securities">Update quotes (only held securities)</h2>
 <p>With this menu, you can restrict price updates to securities you actually possess (hold) or those added to a watchlist (i.e. <em>without</em> recorded purchases).</p>

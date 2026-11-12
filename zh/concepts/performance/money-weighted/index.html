@@ -4971,7 +4971,10 @@
 <p>$$\mathrm{MVB \times (1 + IRR)^{\frac{RD}{365}} + \sum_{t=1} ^{n}CF_t \times (1+IRR)^{\frac{RD_t}{365}} = MVE \qquad \text{(Eq 1)}}$$</p>
 <p>其中 <em>n</em> = 报告期内现金流的笔数，CF<sub>t</sub> = 时点 <em>t</em> 的现金流，RD<sub>t</sub> = CF<sub>t</sub> 之后至期末所剩的天数。对 MVB 而言，RD 等于整个期间的长度（以天计）。若要求年化收益率，需将剩余天数除以 365。若要计算整个期间（例如 2 年）的期间收益率，则应除以整个期间的天数，例如 730 天。</p>
 <p>公式 1 与未来值的计算非常相似。在图 1 中，假设你的投资年利率为 10%，初始本金 1000 EUR 在三年后会增长到未来值 1331 EUR。其后两年再分别投入 500 EUR 与 1000 EUR，届时将分别变为 605 EUR 与 1100 EUR。三年后，该投资的总未来值为 3036 EUR。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 未来值计算的可视化。</figcaption><img alt="" src="../images/info-irr-future-value.svg"> </figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>未来值计算的可视化。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/info-irr-future-value.svg"> </p>
 <p>计算 IRR 是计算投资未来值 (FV) 的逆运算。你并不知道利率或 IRR，但你知道期初市值、期末市值，以及期间陆续发生的各笔现金流。依公式：</p>
 <p><code>1000 * (1 + IRR)^(3x365/365) + 500 * (1 + IRR)^(2x365/365) + 1000 * (1 + IRR)^(365/365) = 3036</code></p>
 <p>自此以后，公式均以电子表格风格书写：用星号 (*) 表示乘法，用插入符 (^) 表示乘方。这样写出的公式更简洁，也便于直接复制粘贴到电子表格中验证。</p>
@@ -4980,7 +4983,10 @@
 <p>遗憾的是，没有简便的方法从公式 1 中解出 IRR 的值。Excel 等软件工具提供 IRR、XIRR 之类的函数，它们采用试算法：用不同的 IRR「猜测值」反复代入公式求解，直到找到合适的匹配结果。在下面的示例中，我们将用 Excel 的单变量求解来说明求解过程。</p>
 <h2 id="defining-the-cashflows">定义现金流</h2>
 <p>现金流的概念看似浅显：它指流入或流出一个系统的现金。不过，我们以 demo-portfolio-03 为例来看（见图 2）。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： 账目总览——存款（3 笔）、买入（3 笔）、股息与部分卖出，以及 share-1 与 share-2 的图表。</figcaption><img alt="" src="../images/demo-portfolio-03-info.svg"> </figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>账目总览——存款（3 笔）、买入（3 笔）、股息与部分卖出，以及 share-1 与 share-2 的图表。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/demo-portfolio-03-info.svg"> </p>
 <p>该投资组合有一个现金账户 <code>broker-A (EUR)</code> 和一个证券账户 <code>broker-A</code>，后者持有两项证券 <code>share-1</code> 与 <code>share-2</code>。只发生了四种<a href="../../../reference/transaction/">账目类型</a>：存款、买入、股息和卖出。问题是，在这一情境下，公式 1 中相关的现金流究竟有哪些？例如，一笔存款账目会把资金转入投资组合<em>以及</em>现金账户。而一笔卖出账目会把资金从某项证券与证券账户中取出<em>并</em>转入现金账户，<em>但</em>它并不影响投资组合。</p>
 <p>在定义相关现金流之前，必须先确定绩效计算需要在哪个层面进行。你需要计算的是整个投资组合的绩效（以及针对哪个期间）、某个特定账户或证券的绩效，还是某一笔头寸的绩效？</p>
 <p>从投资组合的角度看，只有当现金或证券进入或离开投资组合时才产生现金流。相关的账目类型只有四种：<code>存款</code>、<code>取款</code>、<code>证券转入</code> 和 <code>证券转出</code>（参见图 3 的左右两侧）。买入、卖出和股息账目都不会产生投资组合层面的现金流。资金既未进入也未离开投资组合，只是在投资组合<em>内部</em>的账户之间划转。</p>
@@ -4993,7 +4999,10 @@
 <li><strong>不含费用与税款（150 EUR）</strong>：这是这 10 份股票在买入时的价值。今后该证券（账户）更值钱或不值钱时，就与这个数字相比。按这种看法，绩效计算中不应计入费用与税款。</li>
 </ul>
 <p>事实证明，Portfolio Performance 取的是折中立场。计算整个投资组合的绩效时，费用与税款都计入（例如 155 EUR）；而在证券与证券账户层面，只计费用，不计税款。</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： 定义投资组合内所有可能的现金流。</figcaption><img alt="" src="../images/transaction-cashflows.svg"> </figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>定义投资组合内所有可能的现金流。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/transaction-cashflows.svg"> </p>
 <h2 id="irr-at-portfolio-level"><span style="color:orange">投资组合层面的 IRR</span></h2>
 <p>以下示例将计算整个投资组合的 IRR。你可以在 <code>视图 &gt; 报告 &gt; 收益</code> 仪表板中找到这一绩效指标。所得的 IRR 不能外推到单个账户或单项证券，它反映的是整个投资组合的绩效。要计算<a href="#irr-at-security-level">特定证券</a>或<a href="#irr-at-trade-level">头寸</a>的 IRR，请参见后续章节。所有示例均基于 <a href="../../../assets/demo-portfolio-03.xml">demo-portfolio-03</a>。</p>
 <h3 id="example-1-one-deposit-buy-transaction"><strong>示例 1</strong>：一笔存款 + 一笔买入账目</h3>
@@ -5031,7 +5040,10 @@
 </code></pre></div>
 <p>图 5 展示了在 Excel 中的计算过程（<a href="../../../assets/demo-portfolio-03-calculation.xlsx">下载工作簿</a>）。若持有期为 878 天、年利率为 15.60%，初始现金流 155 EUR 将增长到 219.68 EUR。第二笔买入则从 84 EUR 增长到 103.03 EUR。<code>share-2</code> 的收益显得较小，是因为其持有天数更少。可以使用 Excel 的 <code>数据 &gt; 单变量求解</code> 来模拟 IRR 的计算（见图 4）。该方法的做法是：反复改变 IRR 的值（单元格 F3），使计算出的 MVE（单元格 F11）等于观测到的 MVE（手动输入值），直至找到匹配值（15.60%）。</p>
 <p>请注意，各份额单独计算出的期末值未必与实际观测到的期末值一致。比如比较一下 <code>share-2</code> 的预期值与观测值，观测值（单元格 J9）要高得多。只有整个投资组合的总和能够对上，且同一个算出的 IRR 被应用到所有份额上。当然，Portfolio Performance 也能针对单项证券计算 IRR；如何计算<a href="#irr-at-security-level">单项证券</a>与<a href="#irr-at-trade-level">头寸</a>的绩效，见下文。</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>图 4： 三笔买入账目的 IRR 计算。 </figcaption><img alt="" src="../images/info-irr-caluclation-excel-buys-only.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>三笔买入账目的 IRR 计算。 </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/info-irr-caluclation-excel-buys-only.png"></p>
 <h3 id="example-3-buy---dividend---sell-transactions"><strong>示例 3</strong>：买入—股息—卖出账目</h3>
 <p>在 PP 中，卖出账目所得的现金会存入现金账户。因此，卖出账目正好与买入账目相反：证券（账户）减少，而关联的现金账户按相同金额增加。两笔现金流相互抵消。</p>
 <p>派发股息时，关联的现金账户也会按股息金额增加。不过，这笔钱的来源可能并不清楚。它看似来自外部来源，但 Portfolio Performance 把它视为由该证券自身产生。没有这项证券，也就没有股息。公司向股东派发股息，实质上意味着你作为股东/所有者，是从公司的收入或利润中给自己派发股息。其结果是，公司的价值以及你所持份额的价值相应下降。</p>
@@ -5040,7 +5052,10 @@
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>↓                 ↓                         ↓                         ↓               ↓
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>0 + 155*(1+0.2028)^(878/365) + 84*(1+0.2028)^(514/365) + 67*(1+0.2028)^(255/365) = 426.82`
 </code></pre></div>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>图 5： 买入—卖出—股息账目的 IRR 计算。 </figcaption><img alt="" src="../images/info-irr-caluclation-excel-buys-dividend-sell.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>买入—卖出—股息账目的 IRR 计算。 </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/info-irr-caluclation-excel-buys-dividend-sell.png"></p>
 <p>然而，如果股息或卖出所得被「花掉」（比如你用它给自己买了杯咖啡），从而形成一笔外部现金流（取款），就应当在 PP 中记录这笔账目。同样，如果你选择把股息或卖出所得再投资，也需要在 PP 中记录一笔新账目。</p>
 <h3 id="example-4-mvb-0"><strong>示例 4</strong>：MVB &gt; 0</h3>
 <p>在前面的示例中，所有账目都发生在报告期内。但情况并非总是如此。区分以下几种情形非常重要：</p>
@@ -5067,10 +5082,16 @@
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>             ↓                         ↓                      ↓               ↓
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>177.94 x (1+IRR)^(730/365) + 84*(1+IRR)^(514/365) + 67*(1+IRR)^(255/365) = 426.82`
 </code></pre></div>
-<p><figure class="pp-figure" id="_figure-6"><figcaption>图 6： 2 年持有期的 IRR 计算（MVB &gt; 0）。</figcaption><img alt="" src="../images/info-irr-caluclation-excel-2y-period.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>2 年持有期的 IRR 计算（MVB &gt; 0）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/info-irr-caluclation-excel-2y-period.png"></p>
 <h2 id="irr-at-security-level"><span style="color:orange">证券层面的 IRR</span></h2>
 <p>在投资组合层面算出的 IRR，几乎说明不了某一项特定证券的绩效。例如，<code>demo-portfolio-03</code> 的 IRR（3 年报告期）为 20.28%（见图 5），而 <code>share-2</code> 的证券 IRR 为 112.53%（见图 7 上部）。看一眼图 7（下部）就能明白原因：该项证券是在整个期间内价格最低时买入的。你可以用菜单 <code>视图 &gt; 报告 &gt; 证券</code> 分别取得每项证券的 IRR（见图 7）。</p>
-<p><figure class="pp-figure" id="_figure-7"><figcaption>图 7： 单项证券的 IRR 计算。</figcaption><img alt="" src="../images/info-irr-calculation-securities.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>单项证券的 IRR 计算。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/info-irr-calculation-securities.png"></p>
 <p>计算单一项证券的绩效时，需要考虑的账目是买入、卖出与股息（见图 3）。本例中没有涉及任何证券转入或转出。请注意，从单一项证券的角度来看：</p>
 <ul>
 <li>买入：从现金账户产生一笔现金流出，并向该证券产生一笔现金流入。</li>
@@ -5108,7 +5129,10 @@
 </code></pre></div>
 <h3 id="example-6-a-security-with-multiple-transactions"><strong>示例 6</strong>：存在多笔账目的证券</h3>
 <p>如图 2 所示，<code>share-1</code> 存在多笔账目：2 次买入、部分卖出和股息。务必把日期和现金流弄清楚，见图 9。</p>
-<p><figure class="pp-figure" id="_figure-8"><figcaption>图 8： 存在多笔账目的单项证券的 IRR 计算。</figcaption><img alt="" src="../images/info-irr-calculation-multiple-securities.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>存在多笔账目的单项证券的 IRR 计算。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/info-irr-calculation-multiple-securities.png"></p>
 <p>第一笔和第二笔现金流相当直观：10 份 × 15 EUR/份 + 3 EUR 费用，以及 5 份 × 16 EUR/份 + 3 EUR 费用。假设 <code>IRR = 18%</code>（见图 7），<code>share-1</code> 计算出的期末值为 153 x 1.18^(878/365) = 227.81 EUR。 </p>
 <p>请注意，股息支付与卖出是按账目日期记为现金流的。这与投资组合层面 IRR 计算中的处理方式不同。</p>
 <p>把这些值代入公式 2 得：</p>
@@ -5127,7 +5151,10 @@
 <li>Portfolio Performance 遵循<strong>先进先出原则</strong>来判断卖出的是哪些份额。2023-04-12 卖出的 5 份对应的是 2021-01-15 取得的那部分，而不是 2022-01-14 取得的那部分。</li>
 </ul>
 </div>
-<p><figure class="pp-figure" id="_figure-9"><figcaption>图 9： 头寸的 IRR 计算。</figcaption><img alt="" src="../images/mnu-view-reports-trade-irr-example.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>头寸的 IRR 计算。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/mnu-view-reports-trade-irr-example.png"></p>
 <h3 id="example-7-irr-calculation-of-a-closed-trade"><strong>示例 7</strong>：已结头寸的 IRR 计算</h3>
 <p>2023 年 4 月 12 日卖出了 5 份 <code>share-1</code>。当天的历史收盘价为每股 22.40 EUR。费用与税款合计 7 EUR，得出净额 105 EUR（见图 1），即图 10 中的离场价格。</p>
 <p>由于遵循先进先出原则，这 5 份来自第一次买入，其买入成本为 5 x 15 EUR = 75 EUR。费用与税款（10 份共 5 EUR）按比例分摊，本例中为 5/2 = 2.5 EUR。因此这笔已结头寸的入场价格为 77.50 EUR。证券的持有期为 817 天（自 <code>2021-01-15</code> 至 <code>2023-04-12</code>）。卖出账目与 MVE 相对应。此时可以使用<a href="../">简化公式</a>（不含任何账目）。<code>IRR = 14.53%</code> 可解出该公式。</p>

@@ -4653,7 +4653,10 @@
 
 <h1 id="statement-of-assets">Statement of Assets</h1>
 <p>The <strong>Statement of Assets</strong> report provides a snapshot of your portfolio’s assets (securities and accounts) at a <em>specific</em> point in time. By default, it displays the current day. However, you can select a different date using the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9 10v2H7v-2zm4 0v2h-2v-2zm4 0v2h-2v-2zm2-7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h1V1h2v2h8V1h2v2zm0 16V8H5v11zM9 14v2H7v-2zm4 0v2h-2v-2zm4 0v2h-2v-2z"></path></svg></span> Time Machine, accessed via the calendar icon at the top right (see Figure 1).</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Statement of Assets report of demo-portfolio-04.xml (two snapshots)</figcaption><img alt="" src="images/sb-reports-statement.svg"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>Statement of Assets report of demo-portfolio-04.xml (two snapshots)</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="images/sb-reports-statement.svg"></p>
 <p>As shown in Figure 1, the two snapshots of <a href="../../../../assets/portfolios/demo-portfolio-04.xml"><code>demo-portfolio-04.xml</code></a> differ significantly. On the first snapshot date, <em>only</em> <code>share-1</code> had been purchased, meaning this share accounted for 100% of the portfolio's value. By the second snapshot, all transactions for this portfolio had been completed, including the purchase of <code>share-2</code> and <code>share-3</code> (in USD) and a dividend payment. Note that the deposit account <code>broker-A (USD)</code> is not mentioned, even though it exists. This is because its balance is zero USD.</p>
 <h2 id="toolbar">Toolbar</h2>
 <p>The toolbar contains the icons: <span class="twemoji active"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M4 4h16v16H4zm2 4v10h12V8z"></path></svg></span><code>Standard View</code>, <span class="twemoji"><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
@@ -4682,7 +4685,10 @@
 </li>
 </ul>
 <h2 id="available-columns">Available columns</h2>
-<p><figure class="align-right" id="_figure-2"><figcaption>Figure 2. Available columns. </figcaption><img alt="" src="images/sb-reports-statement-gear-icon.png"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=align-right&gt;</p>
+<p>Available columns. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="images/sb-reports-statement-gear-icon.png"></p>
 <p>You can customize the default columns using the <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2699.svg" title=":gear:"> icon located in the top-right corner (see Figure 1). The default columns that are displayed are <code>Shares</code>, <code>Name</code>, <code>Symbol</code>, <code>Quote</code>, <code>Market Value</code>, <code>Share in %</code>, and <code>Note</code>. Many more columns/fields are available (see Figure 2). While the column headings are mostly self-explanatory, a few of them may require further clarification.</p>
 <p><strong>Purchase Price &amp; Value (FIFO &amp; MA)</strong></p>
 <p>As mentioned in the discussion about <a href="../../../../concepts/purchase-value/">Purchase Value</a>, Portfolio Performance uses the FIFO (First-in, First-out) method to calculate prices and values. "Moving average", however, is another commonly used method. For example, in Figure 1, the Purchase Price differs slightly between the two methods (taxes and fees included): 16.15 EUR (MA) versus 15.93 EUR (FIFO) on 2023-09-12, but not on 2022-09-01 (15.93 EUR). Why? Let's take a look at the transactions:</p>
@@ -4706,7 +4712,10 @@
 <p>The <code>Forex</code> (Foreign Exchange) option allows you to view the currency of the quote for each asset and its exchange rate relative to the base currency of the portfolio. The fields labeled as <code>Market Value**</code>, <code>Purchase Price**</code>, and <code>Profit/Loss**</code> (with a double asterisk) retain the same meaning as their counterparts in the base currency (see above), but they are presented in the foreign currency. </p>
 <p>For instance, let's consider <code>share-3</code>, which is traded in USD. In the default view, the <code>Market Value</code> is expressed in EUR (127.96 in Figure 1, bottom half). If you wish to view that value in USD instead, you can achieve this by choosing the <code>Market Value**</code> field (see Figure 3).</p>
 <p><strong>Distance to SMA</strong></p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>Figure 3. Statement of Assets report of demo-portfolio-04.xml (Market Value **, SMA and ATH)</figcaption><img alt="" src="images/sb-reports-statement-SMA-ATH.png"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>Statement of Assets report of demo-portfolio-04.xml (Market Value **, SMA and ATH)</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="images/sb-reports-statement-SMA-ATH.png"></p>
 <p>The <code>Distance to SMA</code> is a metric that measures the difference between the current price of a share and the average price of that share over a specified number of past days. The acronym "SMA" presumably represents "Simple Moving Average."</p>
 <p>When you choose to include this column, you'll also need to specify a period, such as 5 days, 20 days, 50 days, or 200 days. Suppose that you want to know the Δ to SMA5 (Distance to SMA for a 5 days period) of <code>share-1</code>. The last 5 available prices (before 2023-09-12) are: 20.43, 20.14, 20.015, 19.942, and 19.868 EUR/share. The calculation is carried out as follows:</p>
 <ol>
@@ -4717,7 +4726,10 @@
 <p><strong>Distance from ATH</strong></p>
 <p><code>Distance from ATH</code> (All Time High) is a likewise metric that shows how far the last price in a reporting period is from the highest price in that period. You must select this period in a submenu. For example, the highest price of <code>share-1</code> in the year 2022 was 19,766 EUR on November 25, 2022. You can view the exact price and date of the all-time high (ATH) by hovering over the field. The last price in that period was 18.638 EUR/share on december 30, 2022. So the Δ ATH for 2022 (Distance to ATH for year 2022) is equal to (18.638 - 19.766)/19.766 or -5,71%.</p>
 <p><strong>Price Range</strong></p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>Figure 4. Statement of Assets report of demo-portfolio-04.xml (Price Range)</figcaption><img alt="" src="images/sb-reports-statement-price-range.png"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>Statement of Assets report of demo-portfolio-04.xml (Price Range)</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="images/sb-reports-statement-price-range.png"></p>
 <p>For this field, you need to specify a reporting period, such as 1, 2, or 3 years, and optionally an evaluation date using the Time Machine.</p>
 <p>The <code>Price Range</code> column displays the current price in relation to the highest and lowest prices of a security within the selected period. However, the current price depends on the chosen time period.</p>
 <p>Figure 4 illustrates the price range for the year 2022, with the evaluation date set to September 12, 2023 (see also Figure 1). In this case, the current price is equal to the last available price/quote from the year 2022, e.g., December 30, 2022. This is NOT the quote price shown in the third column, which is the price at the evaluation date set by the Time Machine, e.g., 2023-09-12. If a more natural period, such as 1 year, is selected, the current price would indeed reflect the latest available quote.</p>
@@ -4736,7 +4748,10 @@
 <p>The sum of the absolute values of both indices equals 100%.</p>
 <h2 id="multiple-charts">Multiple charts</h2>
 <p>The information pane normally displays a chart of the security selected in the top pane. However, you can display multiple securities (see Figure 5). Use the <code>Shift</code> key to select adjacent securities, or <code>Ctrl</code> (<code>Cmd</code> on Mac) to select non-adjacent ones. Markers you have added via the <img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2699.svg" title=":gear:"> <code>Configure Chart</code> icon - such as dividends, investments (buy, sell), etc. - are no longer displayed, in order to keep the chart clear.</p>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>Figure 5. Multiple charts in the information pane of the Statement of Assets view. </figcaption><img alt="" src="images/sb-reports-statement-chart.mp4"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>Multiple charts in the information pane of the Statement of Assets view. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="images/sb-reports-statement-chart.mp4"></p>
 
 
 

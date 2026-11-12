@@ -4736,7 +4736,10 @@
 <p><strong>Closed Trade</strong>: A closed trade is created with <em>each</em> <code>Sell</code> or <code>Outbound Delivery</code> transaction of a security. If you sell a specific security on three different dates, three separate closed trades will be created, each identified by their respective buy and sell dates. Selling a security can affect the <code>Start Date</code> of the associated open trade, as the system uses the FIFO (First In, First Out) methodology. If all shares from a specific purchase are sold, the <code>Start Date</code> of the open trade will shift to the date of the next purchase.</p>
 </li>
 </ul>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. The Reports &gt; Performance &gt; Trades view <a href="https://raw.githubusercontent.com/portfolio-performance/portfolio-help/5fc9b00128961e41863ecdeb4653080d583a57ba/docs/en/assets/demo-portfolio-07.xml" title="Right-click and choose 'Save Link As' to download" style="font-style: normal;">[Portfolio Performance file]</a>. </figcaption><img alt="" src="../images/trades-overview.svg"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>The Reports &gt; Performance &gt; Trades view <a href="https://raw.githubusercontent.com/portfolio-performance/portfolio-help/5fc9b00128961e41863ecdeb4653080d583a57ba/docs/en/assets/demo-portfolio-07.xml" title="Right-click and choose 'Save Link As' to download" style="font-style: normal;">[Portfolio Performance file]</a>. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/trades-overview.svg"></p>
 <p>Looking at <code>All transactions</code> of Figure 1 (top panel), you can distinguish between 5 trades (see bottom panel).
 1. Closed trade (<code>share-1</code>), ending on Apr 12, 2023 by selling 5 out of 15 shares. The trade started with (half of) the first purchase on Jan 15, 2021; the second purchase (Jan 14, 2022) is not part of this trade - it belongs entirely to the open trade below.
 2. Open trade (<code>share-1</code>), starting on Jan 15, 2021 (first purchase of 10 shares). Five of them are sold on Apr 12, 2023. The remaining five shares, however, are still contributing to the end value of the trade, as are the 5 shares from the second purchase on Jan 14, 2022. The trade is open because, as of today, there are still 10 shares of <code>share-1</code> in the portfolio.
@@ -4766,7 +4769,10 @@
 <li><em>End date</em>: This is either the date when the security is sold or marked as (open) if the position is still active. Once all shares are sold, the open trade will be removed from the list.</li>
 <li>
 <p><em># transactions</em>: The number of transactions in a trade is typically one (only one buy transaction) or two (buy + sell). Hovering over the cell near the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2z"></path></svg></span> icon will trigger a pop-up displaying additional information. From Figure 2, it can be deduced that 5 shares of <code>share-1</code> were sold on April 12, 2023. Hovering over the open trade (row 2) will reveal that 5 shares were purchased on January 15, 2021, and another 5 on January 14, 2022. Here, you can observe the FIFO principle in action. The five sold shares are subtracted from the first purchase, which initially consisted of 10 shares.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Info overlay closed trade share-1. </figcaption><img alt="" src="../images/trades-info-overlay.png"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>Info overlay closed trade share-1. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/trades-info-overlay.png"></p>
 </li>
 <li>
 <p><em>Shares</em>: The number of shares in the trade.</p>

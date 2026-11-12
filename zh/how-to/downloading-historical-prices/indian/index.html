@@ -4705,7 +4705,10 @@
 
   <h1>印度 ETF</h1>
 
-<p><figure class="align-right" style="width:50%" id="_figure-1"><figcaption>图 1： 印度的报价馈送提供方。 </figcaption><img alt="" src="../images/indian-quote-feed-providers.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class= align-right style="width:50%"&gt;</p>
+<p>印度的报价馈送提供方。 </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/indian-quote-feed-providers.svg"></p>
 <p>你打算投资于印度证券，最好是以印度卢比（INR）计价的 ETF。通过以下两个可用的数据馈送，历史报价的获取会更容易（见图 1）：</p>
 <ul>
 <li>AMFI India：<a href="https://www.amfiindia.com/">印度共同基金协会</a></li>
@@ -4718,7 +4721,10 @@
 <p class="admonition-title">Note</p>
 <p>该报价馈送提供方只提供最新价格。如果你需要历史价格，就必须把它们下载为文本文件。从下拉框中选择 ETF 名称，指定类型和日期范围，然后下载历史 NAV。每次最多只能下载 90 天的数据。</p>
 </div>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： AMFI 上的 ETF 列表。 </figcaption><img alt="" src=""></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>AMFI 上的 ETF 列表。 </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src=""></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Scheme Code;ISIN Div Payout/ ISIN Growth;ISIN Div Reinvestment;Scheme Name;Net Asset Value;Date
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Open Ended Schemes(Debt Scheme - Banking and PSU Fund)
@@ -4756,12 +4762,21 @@
 </code></pre></div>
 <h2 id="mfapi">MFAPI</h2>
 <p>在 <a href="https://www.mfapi.in/">MFAPI</a> 网站上，你可以开始在搜索框中输入共同基金的名称，例如 "Aditya Birla Sun Life"。随着你继续输入，可用的 ETF 列表就会出现（见图 3）。</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： MFAPI 上的 ETF 列表。 </figcaption><img alt="" src="../images/indian-quote-feed-providers-MFAPI.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>MFAPI 上的 ETF 列表。 </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/indian-quote-feed-providers-MFAPI.svg"></p>
 <p>选择某个共同基金后，会显示你可以在其中找到历史价格或最新价格的 URL。</p>
 <p>要用 Portfolio Performance 获取历史价格，你需要该方案的代码（编号的最后六位），例如 <code>119551</code>。这个方案代码也可以从 AMFI 网站获得；它就是响应中列在 ISIN 代码之前的第一个数字（见图 2）。</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>图 4： MFAPI 网站的报价馈送提供方。 </figcaption><img alt="" src="../images/indian-quote-feed-providers-MFAPI-result.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>MFAPI 网站的报价馈送提供方。 </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/indian-quote-feed-providers-MFAPI-result.svg"></p>
 <p>稍加编码，你也可以用 JSON 报价馈送提供方达到同样的效果。例如，URL 可以是：<a href="https://api.mfapi.in/mf/119551">https://api.mfapi.in/mf/119551</a>。到日期和收盘价的路径见图 4。</p>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>图 5： 通过 JSON 报价馈送提供方获取历史价格。 </figcaption><img alt="" src="../images/indian-quote-feed-providers-MFAPI-json.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>通过 JSON 报价馈送提供方获取历史价格。 </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/indian-quote-feed-providers-MFAPI-json.svg"></p>
 
 
 

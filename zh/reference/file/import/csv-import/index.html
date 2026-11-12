@@ -4821,7 +4821,10 @@
 </code></pre></div>
 <p>在此示例中，字段分隔符使用了分号（<code>;</code>）。在欧洲，数字通常以逗号作小数分隔符书写；因此该 CSV 文件使用分号作为标记。请注意，NVIDIA 股票的 ISIN 并未提供。该文件在 Excel 中创建，并以 UTF-8 编码保存。不过，任何电子表格或文本编辑程序都可以用来创建这样的文件。值得注意的是，<code>.csv</code> 扩展名并非必需。只要把文件类型筛选器设为 <code>全部文件 (*.*)</code>，且布局符合表 1 所示的结构，PortfolioPerformance 同样可以读取纯文本文件。</p>
 <p>在向导的<strong>第 2 步</strong>中，你需要提供额外信息，以便正确读取该 CSV 文件（见图 1）。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 提供关于 CSV 文件的额外信息。</figcaption><img alt="" src="../images/mnu-file-import-securities-step-2.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>提供关于 CSV 文件的额外信息。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/mnu-file-import-securities-step-2.png"></p>
 <ul>
 <li>
 <p><em>信息栏</em>：额外信息显示在顶部的信息栏中。例如，它可能列出 CSV 文件中未提供的可选字段。</p>
@@ -4869,15 +4872,24 @@
 </code></pre></div>
 <p>若要导入示例数据中的第 3、4 列，可以使用表 1 中的 CSV 文件。请注意，表 2 中的所有字段并未都包含在该 CSV 文件中；例如 <code>Date</code> 与 <code>Quote</code> 字段就不在其中。<code>WKN</code> 字段包含在 CSV 文件中，但对两个待导入的证券都没有取值。字段的导入顺序无关紧要，且导入顺序与表 1 中所示的并不相同。</p>
 <p>如图 2 所示，将有两项证券被加入投资组合，即 BASF 与 NVIDIA。前三个字段被正确识别。<code>Currency</code> 与 <code>Info</code> 字段未被自动识别，需要双击第二行并选择正确的标签（即 <code>Currency</code>（原文如此）与 <code>Note</code>）来做映射。虽然 BASF 证券在 XETRA 交易（如 <code>BAS.DE</code>），CSV 文件中的股票代码却未反映这一点。第二项证券（NVIDIA，在 NASDAQ 交易）的 ISIN 代码在 CSV 文件中不可得。另请注意，NVIDIA 股票以 USD 交易。BASF 股票的货币并未提供，因此使用投资组合的基准货币（EUR）。导入该 CSV 文件时会显示图 2 与图 3 所示的对话框。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： 导入证券（第 3-1 步）。</figcaption><img alt="" src="../images/mnu-file-import-securities-step-2.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>导入证券（第 3-1 步）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/mnu-file-import-securities-step-2.png"></p>
 <p>在<strong>第 3-2 步</strong>（下图）中，可以看到两项证券的状态都标有绿色对勾，表明导入过程已就绪并将顺利完成。如果某项证券已存在于投资组合中，则不会出现绿色对勾。在这一步中，你还可以指定该证券所关联的现金账户与证券账户。点击<strong>完成</strong>以最终完成导入过程。</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>通过顶部面板，可以为该 CSV 文件的所有导入行统一设置现金账户与证券账户；见图 3。你也可以把这项信息作为 CSV 文件的一部分提供（加入 Account 与 Securities account 两列）。还可以通过右键菜单设置账户：在表格预览中右击某一行，选择相应的账户。</p>
 </div>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： 导入证券（第 3-2 步）。</figcaption><img alt="" src="../images/mnu-file-import-securities-step-3.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>导入证券（第 3-2 步）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/mnu-file-import-securities-step-3.png"></p>
 <p>证券现已创建完毕，并出现在 <code>全部证券</code> 列表中。请注意，还有若干其他字段（如日历、附加属性与类别）无法通过 CSV 导入添加。历史价格的报价馈送可在下一步中部分添加（见图 4）。</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>图 4： 导入证券（第 3-3 步）。</figcaption><img alt="" src="../images/mnu-file-import-securities-step-4.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>导入证券（第 3-3 步）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/mnu-file-import-securities-step-4.png"></p>
 <p>证券创建之后，还有一个额外步骤可让你搜索合适的报价馈送。系统会搜索 <a href="../../../../how-to/downloading-historical-prices/yahoo-finance/">Yahoo Finance</a> 与<a href="../../../../how-to/downloading-historical-prices/portfolioperformance/">内置的 PortfolioPerformance 提供方</a>。更新后并以黄色标示的配置将被应用，除非你点击 <code>不更改配置</code> 按钮。要真正从内置提供方读取历史报价，你必须处于登录状态（见<a href="../../../../how-to/downloading-historical-prices/portfolioperformance/">内置提供方</a>）。点击 <code>取消</code> 将跳过这一步，点击 <code>确定</code> 则读取历史价格。请注意，NVIDIA 股票的 ISIN 已填入，股票代码也已更正为正确的 <code>BAS.DE</code>。</p>
 <h3 id="2-historical-quotes-import">2. 历史报价导入</h3>
 <p>大多数证券的历史价格已由内置报价提供方或其他来源涵盖（见上文）。不过，你有时仍需通过手工创建的 CSV 文件导入历史价格。为此，你只需要 CSV 文件中的两列：一列用于日期，另一列用于相应的报价。两者都是<em>必填</em>字段。没有<em>可选</em>字段。这些历史价格所属证券的名称必须在第二步中提供。如果任何必填字段缺失或拼写有误，你都无法进入下一步。</p>
@@ -4889,9 +4901,15 @@
 </code></pre></div>
 <p>请注意，图 5 中的日期采用 <code>YYYY-MM-DD</code> 格式。双击输出面板的第二行（如 <code>&gt;&gt;&gt; 'Date'</code>）可选择其他日期格式；例如 MM-DD-YY 或 dd-MMM-yyyy（当前语言），如 01-Feb-2026。请从 20 多种格式的列表中选出正确的一项。</p>
 <p>在图 5 中，<code>下一步</code> 与 <code>完成</code> 按钮呈灰色，因为必要信息尚不齐全。顶部的消息"未映射必要字段：Quote," 给出了线索。在 CSV 文件中使用的字段名是 <code>Price</code>。它应映射到内部的 <code>Quote</code> 字段。双击该列并选择相应的映射字段，例如 <code>Quote</code>。随后 <code>下一步</code> 与 <code>完成</code> 按钮即可使用。在那里，你还可以选择小数点或逗号。</p>
-<p><figure class="pp-figure" id="_figure-5"><figcaption>图 5： 导入历史报价（第 2 步）。</figcaption><img alt="" src="../images/mnu-file-import-step-2.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>导入历史报价（第 2 步）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/mnu-file-import-step-2.png"></p>
 <p>在向导的又一步中，你可以选择要把价格添加到哪一项证券。如果所选证券已有历史价格，新报价会被追加，而不会覆盖已有数据。</p>
-<p><figure class="pp-figure" id="_figure-6"><figcaption>图 6： 导入历史报价（第 3 步）。</figcaption><img alt="" src="../images/mnu-file-import-step-3-historical-prices.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>导入历史报价（第 3 步）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/mnu-file-import-step-3-historical-prices.png"></p>
 <h3 id="3-securities-account-import">3. 证券账户导入</h3>
 <p>使用该导入类型，你可以在添加第一笔 <code>买入</code> 账目的同时创建一项新证券（见上文）。表 4 列出可接受的字段；只有 <code>Shares</code> 与 <code>Value</code> 是必填的，另外还需要 <code>Ticker Symbol</code>、<code>ISIN</code>、<code>WKN</code> 或 <code>Security Name</code> 之一。你可以提供 <code>Quote</code> 与 <code>Date of Quote</code>。这会在该日期上创建一条历史价格。不过，该报价不用于计算账目的价值（例如，Value = Shares x Quote）。与手动创建 <code>买入</code> 账目时一样，你可以创建一笔 '报价' 不同于历史价格的账目。在表 4 的示例 1 中，该笔账目的计算报价为 45 EUR（=900/20）。</p>
 <p><em>表 4：证券类型导入的可用字段</em>
@@ -4914,7 +4932,10 @@
 </code></pre></div>
 <p>将创建两项证券，同时也会记录两笔 <code>买入</code> 账目（以 900 EUR 买入 20 份 BASF，以 750 USD 买入 5 份 NVIDIA）。无法包含费用或税款。为此，你需要使用 <code>账户账目</code> 或 <code>投资组合账目</code> 导入类型（见下文）。</p>
 <p>如图 7 所示，证券与现金账户既可以通过对话框（上半部分）指定，也可以通过 CSV 文件指定。以 CSV 文件的取值为准。只有当 CSV 文件中未提供这些值时，程序才会回退到用户所选的账户。</p>
-<p><figure class="pp-figure" id="_figure-7"><figcaption>图 7： 导入证券账户。</figcaption><img alt="" src="../images/mnu-file-import-securities-account-step-2.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>导入证券账户。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/mnu-file-import-securities-account-step-2.png"></p>
 <p>请注意，由于该证券的 <code>Currency</code> 被设为 <code>EUR</code> 或 <code>USD</code>，因此可以自动选出正确的现金账户。</p>
 <h3 id="4-account-transactions-import">4. 账户账目导入</h3>
 <p><code>账户账目</code> 导入类型用于登记现金账户上的账目，例如存款、取款、利息等。这等同于使用账目菜单选项（第三组）手动记录一笔账目。必填字段为 <code>Date</code> 与 <code>Value</code>。</p>
@@ -4956,7 +4977,10 @@
 <li>一笔 2 EUR 的费用，由 <code>broker-A (EUR)</code> 账户为货币兑换而支付。</li>
 </ul>
 <p>图 8 显示了此次导入的结果。请注意，字段 <code>Gross Amount</code> 与 <code>Currency Gross Amount</code> 未在此预览中显示，但确实已被登记。</p>
-<p><figure class="pp-figure" id="_figure-8"><figcaption>图 8： 导入账户账目 - 第 2 步。</figcaption><img alt="" src="../images/mnu-file-import-account-transactions-step-2.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>导入账户账目 - 第 2 步。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/mnu-file-import-account-transactions-step-2.png"></p>
 <h4 id="dividend-transaction">股息账目</h4>
 <p>需要特别注意的是，由于股息账目有其独特复杂性，尤其是境外股息，因此应单独处理。例如，当以某种货币支付的股息存入以另一种货币计价的账户时，可能会出现问题。</p>
 <p>举例来说，3 份股票每股 5 USD 的股息，总额为 $15。按 0.9333 EUR/USD 的汇率换算后为 €14，并存入 <code>broker-A (EUR)</code> 现金账户。</p>
@@ -4965,7 +4989,10 @@
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>2024-01-13; Dividend; NVIDIA; 3; 14; broker-A (EUR); 15; USD;
 </code></pre></div>
 由于我们以 EUR 存入这笔股息，现金账户为 <code>broker-A (EUR)</code>，金额为 €14。这对应于总额 $15 USD。由于该笔账目是股息，现金必须由投资组合中某项货币与 <code>Currency Gross Amount</code> 一致的已有证券产生。
-<p><figure class="pp-figure" id="_figure-9"><figcaption>图 9： 股息导入的结果。</figcaption><img alt="" src="../images/mnu-file-import-portfolio-account-transactions-dividend-result.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>股息导入的结果。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/mnu-file-import-portfolio-account-transactions-dividend-result.png"></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>遗憾的是，当前版本的 PortfolioPerformance 软件尚不支持在 CSV 导入过程中同时包含本币与外币的费用和税款。</p>
@@ -5008,11 +5035,20 @@
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>2024-01-13; Buy; 3; NVIDIA; 1740,98; 1,0837; 15; 10; broker-A; broker-A (EUR)
 </code></pre></div>
 由于 <code>(Net) Value</code> 字段是必需的，再添加 <code>Gross Value</code> 就没有意义，反正它也会被覆盖（Gross Value = Value + Fees + Taxes）。因此，我们在这种情况下使用 <code>Exchange Rate</code> 字段。请注意，在 BASF 那笔账目中该字段为空（或为零）。图 11 展示了此次导入账目的结果。
-<p><figure class="pp-figure" id="_figure-10"><figcaption>图 10： 上述导入的结果。</figcaption><img alt="" src="../images/mnu-file-import-portfolio-account-transactions-result.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>上述导入的结果。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/mnu-file-import-portfolio-account-transactions-result.svg"></p>
 <p>图 11 展示了导入向导的第一步。请确保在第 1 步中选中了投资组合账目这一类型；否则在第 2 步会出现错误。</p>
-<p><figure class="pp-figure" id="_figure-11"><figcaption>图 11： 上述导入的结果。</figcaption><img alt="" src="../images/mnu-file-import-portfolio-transactions.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>上述导入的结果。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/mnu-file-import-portfolio-transactions.png"></p>
 <p>系统会进行一致性检查，以确保你卖出的证券没有超过投资组合中可持有的数量（见图 12）。</p>
-<p><figure class="pp-figure" id="_figure-12"><figcaption>图 12： 一致性检查。</figcaption><img alt="" src="../images/mnu-file-import-portfolio-transactions-consistency-check.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>一致性检查。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/mnu-file-import-portfolio-transactions-consistency-check.png"></p>
 
 
 

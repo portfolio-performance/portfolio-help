@@ -4623,7 +4623,10 @@
 <h1 id="_1">收益 › 图表</h1>
 <p>通过 <code>视图 &gt; 报告 &gt; 收益 &gt; 图表</code>菜单或侧边栏菜单，你可以生成资产相对绩效随时间变化的图形表示（见图 1）。x 轴表示时间。你可以用右上角的下拉菜单选择所需的报告期。默认可选 1 年、2 年和 3 年的报告期。此外，你还可以用 <code>新建</code>功能创建自定义时间期间。参见<a href="../../../../../concepts/reporting-period/">报告期</a>中的说明。</p>
 <p>y 轴以百分比表示累计绩效，从报告期起算的 0% 开始。它反映资产价值相对上一期间的总体增减，上一期间可以是日、周、月、季度或年。更长期间的绩效通过把日收益率复利合成来计算。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 自定义 2 年报告期内单只份额与整个投资组合的每日绩效图表。</figcaption><img alt="" src="../images/performance-chart.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>自定义 2 年报告期内单只份额与整个投资组合的每日绩效图表。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/performance-chart.png"></p>
 <p>关于累计绩效如何计算的详细说明，请参阅<a href="../../../../../concepts/performance/time-weighted/">时间加权绩效</a>一节。由于 <code>share-2</code>直到 2022 年 9 月 30 日才买入，其绩效在此日期之前一直为零，这意味着在此之前 <code>share-1</code>的绩效与投资组合绩效相同。</p>
 <p>绩效图表的用户界面与<a href="../../statement/statement-chart/">视图 &gt; 报告 &gt; 资产明细 &gt; 图表</a>的图表界面相似。例如，上下文菜单完全相同。本节只讨论差异之处；通用功能请参见上面的链接。</p>
 <p>借助 <code>配置图表</code>图标（<img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2699.svg" title=":gear:"> 右上角），你可以向图表添加数据序列：</p>
@@ -4632,9 +4635,15 @@
 <li>基准，例如 share-1（基准）（见图 2）。基准是仅使用其历史价格来计算日绩效、月绩效……以及累计绩效的证券。通常，没有买入记录的证券其绩效为零。因此，基准可以看作是一只仅持有一份份额、假设在报告期开始时买入的证券。显然，该证券不会影响投资组合的整体绩效。</li>
 </ul>
 <p>图 2 中的曲线具有误导性，似乎暗示 2022 年第一和第二季度的绩效在逐步上升。由于折线图连接的是相邻的（季度）数据点，它在视觉上暗示绩效是连续变化的，尽管实际上只计算了两个数据点。你可以在某个季度内左击图表画布，再左右移动光标改变日期来验证这一点。每个季度内绩效保持不变。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： share-1 及其基准的季度绩效图表。</figcaption><img alt="" src="../images/performance-chart-quarterly.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>share-1 及其基准的季度绩效图表。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/performance-chart-quarterly.svg"></p>
 <p>从图 3 可以看出，第一季度的上升完全不是线性的，而是有涨有跌。请注意，绩效从 0% 开始，因为此处选择了一个新的报告期（1 月 1 日至 3 月 31 日）。</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： 2022 年第一季度的每日绩效图表。</figcaption><img alt="" src="../images/performance-chart-quarter-1-detail.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>2022 年第一季度的每日绩效图表。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/performance-chart-quarter-1-detail.png"></p>
 <p>图 2 和图 3 中的曲线还显示，自 2022 年第一季度起，<code>share-1</code>与其基准的绩效开始分化。这是由 <code>share-1</code>在 2022-01-14 的首次买入所致。请记住，Portfolio Performance 始终按日计算绩效：<code>1 + r = (MVE + CFOut)/(MVB + CFIn)</code>（<a href="../../../../../concepts/performance/money-weighted/">公式 1</a>）。季度绩效只是日绩效的复利合成。</p>
 <ul>
 <li>2022-01-13（买入前一天）：<code>share-1</code>的历史价格从 16.016 EUR/份上涨到 16.026 EUR/份。因此 <code>share-1 (benchmark)</code>的日绩效为 (16.026 / 16.016) -1 = 0.0624%。这与已持有的 10 份 <code>share-1</code>投资的绩效相同：((160.26 + 0) / (160.16 + 0)) - 1 = 0.0624%。在没有现金流的日子里，<code>share-1</code>与其基准的日绩效相同。</li>

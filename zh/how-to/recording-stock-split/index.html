@@ -4712,11 +4712,20 @@
 <p>此更改具有破坏性，且不易撤销。必要时，可以通过执行一次比例相反的分股来纠正一次执行不当的分股。但更好的做法或许是为投资组合文件创建一个备份副本。</p>
 <p>在参考手册关于分股流程的说明中，示例用的是 Amazon 于 2022 年 6 月 6 日进行的 1 拆 20 分股。有关 PP <a href="../../reference/view/securities/context-menu/#stock-split">如何使用内置分股功能</a>的细节，请先阅读该节。</p>
 <p>在图 1 中，展示了最近五年的股价走势。非常明显的是，2022 年 6 月 3 日至 6 日之间有一次大幅下跌。这两天的收盘价分别为 <code>$ 2447</code> 与 <code>$ 124.79</code>（但请记住，你持有的份额是其 20 倍）。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： Amazon 的历史报价图表（未调整价格 - 图表来自 PP）。</figcaption><img alt="" src="../../reference/view/securities/images/split-stock-amazon-unadjusted-PP.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>Amazon 的历史报价图表（未调整价格 - 图表来自 PP）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../../reference/view/securities/images/split-stock-amazon-unadjusted-PP.png"></p>
 <p>把该图与大多数其他金融网站的图表作比较时，往往会产生相当多的困惑；例如 <a href="https://www.investing.com/equities/amazon-com-inc">investing.com</a> 的 5 年图表看起来就大不相同。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： Amazon 的历史报价图表（已调整价格 - 图表来自 investing.com）。</figcaption><img alt="" src="../images/split-stock-amazon-adjusted-investing.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>Amazon 的历史报价图表（已调整价格 - 图表来自 investing.com）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/split-stock-amazon-adjusted-investing.png"></p>
 <p>两张图都跨越五年。但你在 2022 年 1 月前后的买价为 <code>$ 3408</code>（图 1），而据 <a href="https://www.investing.com/equities/amazon-com-inc">investing.com</a> 显示却约为 <code>$ 150</code>（图 2）。这种差异产生的原因在于，金融网站在分股之后通常会对所有历史价格作"调整"。这种调整会重新计算分股之前的历史价格，正如 PP 的分股功能所做的那样。</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： Amazon 的历史报价图表（分股后已调整价格 - 图表来自 PP）。</figcaption><img alt="" src="../../reference/view/securities/images/split-stock-amazon-adjusted-PP.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>Amazon 的历史报价图表（分股后已调整价格 - 图表来自 PP）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../../reference/view/securities/images/split-stock-amazon-adjusted-PP.png"></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Yahoo Finance 的<em>常规</em>收盘价已经针对分股作过调整。<em>调整后收盘</em>价在此基础上，还针对股息和/或资本利得分配作了调整。</p>
@@ -4741,7 +4750,10 @@
 <li>将新股的股数向下取整到最接近的整数。如有余数，则按与第 2 步相同的价格将其卖出。</li>
 </ul>
 <p>我们用一个简化示例来演示这一工作流（见图 4）。2021 年 1 月 1 日，你持有 1 股价格为 100 EUR 的股票。该价格一直到 2021 年 12 月 31 日都基本未变。2022 年 1 月 1 日，发生了 1 拆 10 的分股，得到 10 股。当日收盘价为 11 EUR。到年底，价格已上涨至每股 13 EUR，你的投资组合市值因此为 130 EUR。</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>图 4： 卖出再买入式分股的简化示例。</figcaption><img alt="" src="../images/stock-split-sell-buy-back-method.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>卖出再买入式分股的简化示例。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/stock-split-sell-buy-back-method.svg"></p>
 <p>内置分股功能的绩效计算相当直截了当。由于分股功能具有追溯性，最初以每股 100 EUR 买入 1 股（期初市值）会被调整为以每股 10 EUR 买入 10 股。两年报告期结束时，你仍持有 10 股，但其总价值已增至 130 EUR（期末市值）。使用<a href="../../concepts/performance/money-weighted/">资金加权收益率 (IRR)</a>与<a href="../../concepts/performance/time-weighted/">时间加权收益率 (TTWROR)</a>一节中的公式：</p>
 <ul>
 <li>IRR：<code>130 = 100 * (1 + IRR)^2</code>，即 <code>IRR = SQRT(130/100) - 1</code> = 14.0157%。</li>

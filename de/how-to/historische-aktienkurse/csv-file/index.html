@@ -4275,7 +4275,10 @@
 <h2 id="yahoo-finance">Yahoo Finance</h2>
 <p>Nachdem Du zu <a href="https://finance.yahoo.com">Yahoo Finance</a> navigiert bist, kannst Du den Namen "NVIDIA" in das Suchfeld oben auf dem Bildschirm eingeben (siehe Abbildung 1). Wähle die Registerkarte "Historische Kurse" in der Mitte des Bildschirms. 
 Hier kannst Du jetzt den Zeitraum und die Frequenz wählen, bevor Du eine CSV-Datei mit historischen Kursen herunterlädst. Importiere dies CSV-Datei über das Menü "Datei &gt; Importieren &gt; CSV-Dateien" in Portfolio Performance, wähle die Option <code>Historische Kurse</code> und ordne sie dem richtigen Wertpapier zu.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Abbildung 1. Webseite von finance.yahoo.com zum Download für historische Kurse von NVIDIA.</figcaption><img alt="" src="../../images/yahoo-finance-website.png"></figure></p>
+<p>&lt;figure-caption identifier="Abbildung"class=pp-figure&gt;</p>
+<p>Webseite von finance.yahoo.com zum Download für historische Kurse von NVIDIA.</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../../images/yahoo-finance-website.png"></p>
 <p>Wenn Du mit der Maus über das Download Symbol gehst, findest Du am unteren Bildschirmrand die URL.</p>
 <p><code>https://query1.finance.yahoo.com/v7/finance/download/NVDA?period1=1674359406&amp;period2=1705895406&amp;interval=1d&amp;events=history&amp;includeAdjustedClose=true</code></p>
 <p>Das ist die Anfrage, die an den Yahoo-Server gesendet wird. Sie enthält das Tickersymbol des Wertpapiers (NVDA), den Zeitraum, ausgedrückt als Unix-Zeitstempel oder die Anzahl der Sekunden, die seit dem 1. Januar 1970 verstrichen sind, die Frequenz oder das Intervall (1d), die Art der gewünschten Informationen (events=history) und den angepassten Schlusskurs. Die CSV-Datei enthält 7 Spalten: Datum, Open, High, Low, Close, Volumen und Adj Close.</p>

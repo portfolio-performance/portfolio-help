@@ -4615,9 +4615,15 @@
 
 <p>为计算绩效，Portfolio Performance 可能需要两类历史价格：证券的历史报价，以及在投资境外资产时的历史汇率。</p>
 <p>你可以在菜单 <code>视图 &gt; 常规数据 &gt; 货币</code> 下找到历史汇率（见图 1）。这些汇率取自<a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">欧洲中央银行</a>（ECB），可追溯至 1999 年欧元进入金融市场之时。它们实际上是参考汇率，很可能与你的券商或银行所用的实际成交汇率略有差异。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 汇率。</figcaption><img alt="" src="../../reference/view/general-data/images/currencies.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>汇率。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../../reference/view/general-data/images/currencies.png"></p>
 <p>证券在 NASDAQ、XETRA 等交易所市场交易，买卖双方在此就价格达成一致。历史报价即证券在不同时间点的价格。<code>收盘</code>价是证券在交易日当天的最后一个价格。其他类型还有：<code>开盘</code>价，即交易日开始时证券的第一个价格；<code>最低</code>与<code>最高</code>价，即交易日当天的最低价与最高价。<code>最新</code>价是交易所市场上可获得的证券最近价格。最新价可能与收盘价不同。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： Yahoo Finance 上的历史价格。</figcaption><img alt="" src="../../how-to/downloading-historical-prices/images/yahoo-finance-webpage-aapl.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>Yahoo Finance 上的历史价格。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../../how-to/downloading-historical-prices/images/yahoo-finance-webpage-aapl.png"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Portfolio Performance 在绩效计算中使用 <code>收盘</code>价。若存在最新价，它会被计入收盘价。对比特币而言情况更复杂，因为它们 7×24 小时交易。Portfolio Performance 以（用户系统上的）午夜作为收盘价。因此，不同用户看到的比特币历史报价可能不同。</p>

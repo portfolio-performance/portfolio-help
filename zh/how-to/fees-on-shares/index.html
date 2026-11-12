@@ -4707,7 +4707,10 @@
 
 <p>除账目费用之外，有些券商还会收取管理费，通常是按投资组合价值的一定年百分比计算。在这种情况下，券商通过卖出你所持份额中的一小部分来扣除这些费用，从而使你持有的总份额数减少。</p>
 <p>这本质上是一笔卖出账目加上一笔费用账目。可以通过一笔 <a href="../../reference/transaction/delivery/"><em>证券转出</em></a>账目同时记录：在同一笔账目中卖出份额，并把费用计入卖出金额。这样得到的<strong>证券转出总额为 0</strong>。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 用证券转出记录费用账目。</figcaption><img alt="" src="../images/fees-on-shares-outbound.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class= pp-figure&gt;</p>
+<p>用证券转出记录费用账目。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/fees-on-shares-outbound.png"></p>
 <p>要把这些费用记录准确，关键是券商要提供所卖份额的数量。</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -4722,9 +4725,15 @@
 <p><code>stock-A</code>的第一笔季度费用，是卖出 <code>0.75/100/4 * 0.5671 = 0.001</code>份份额，其卖出金额即作为费用。
 3 月 18 日再次如此：
 券商卖出 <code>0.75/100/4 * 0.5661 = 0.001</code>份份额，卖出金额作为费用。其他日期同理。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： 多笔费用账目记为证券转出。</figcaption><img alt="" src="../images/fees-on-shares-transactions-list.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class= pp-figure&gt;</p>
+<p>多笔费用账目记为证券转出。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/fees-on-shares-transactions-list.png"></p>
 <p><a href="../../reference/view/reports/performance/performance-chart/">绩效图表</a>展示了这些费用的影响：与 <code>stock-A</code>的价格绩效相比，我们的 <code>stock-A</code>绩效在一年中比其基准低 0.75%。</p>
-<p><figure class="pp-figure" id="_figure-3"><figcaption>图 3： 管理费带来的绩效差异。</figcaption><img alt="" src="../images/fees-on-shares-performance.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class= pp-figure&gt;</p>
+<p>管理费带来的绩效差异。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/fees-on-shares-performance.png"></p>
 <h3 id="second-method">第二种方法</h3>
 <p>也可以用以下方式把卖出账目与费用账目分开记录：</p>
 <ol>
@@ -4732,7 +4741,10 @@
 <li>再在现金账户上记一笔与所卖证券相关的 <a href="../../reference/transaction/fees-taxes/"><em>费用</em></a>账目。</li>
 </ol>
 <p>但这样会产生两笔账目，并且必须使用现金账户。</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>图 4： 采用第二种方法时现金账户上的账目列表。</figcaption><img alt="" src="../images/fees-on-shares-second-method.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class= pp-figure&gt;</p>
+<p>采用第二种方法时现金账户上的账目列表。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/fees-on-shares-second-method.png"></p>
 
 
 

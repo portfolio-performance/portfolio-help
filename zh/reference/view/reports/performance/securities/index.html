@@ -4740,7 +4740,10 @@
   <h1>证券</h1>
 
 <p><code>报告 &gt; 收益</code>菜单提供的是投资组合层面最重要的关键绩效指标，例如 IRR 和 TTWROR；而 <code>报告 &gt; 收益 &gt; 证券</code>菜单则在证券层面提供了丰富得多的细节。不过，理解两者的差异很重要，尤其是在现金流方面（参见绩效一节）。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 报告 &gt; 收益 &gt; 证券概览（<a href="https://raw.githubusercontent.com/portfolio-performance/portfolio-help/c66b7b82c0db5e57279a2bfde6ff2d3f5ddb1bf6/docs/en/assets/demo.xml" download="demo.xml">下载示例 XML 文件</a>）。</figcaption><img alt="" src="../images/securities-overview.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>报告 &gt; 收益 &gt; 证券概览（<a href="https://raw.githubusercontent.com/portfolio-performance/portfolio-help/c66b7b82c0db5e57279a2bfde6ff2d3f5ddb1bf6/docs/en/assets/demo.xml" download="demo.xml">下载示例 XML 文件</a>）。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/securities-overview.svg"></p>
 <h2 id="main-pane">主面板</h2>
 <p><code>报告 &gt; 收益 &gt; 证券</code>菜单包含主面板（上方）和信息面板（下方），后者显示主面板中所选证券的信息。绩效计算始终取决于所选的报告期，可用右上角的下拉菜单设置。</p>
 <p>第一个筛选器组（右上角）可把证券列表限定为 <code>份额</code>≠ <code>0</code> 或 <code>份额</code>= <code>0</code>。后一个筛选器只显示已完全卖出的份额，即买入份额数已降至零的份额。若不使用这两个筛选器，则显示所有份额，无论数量多少。第二个筛选器组在<a href="../calculation/#main-pane">收益 &gt; 计算菜单</a>中也有详细介绍，可让你选择整个投资组合或特定的具体账户。</p>
@@ -4755,7 +4758,10 @@
 <p>成本：列名之前的小图标表示这一概念与更常见的<code>买价</code>有所不同。将鼠标悬停在列标题上，会弹出一个小型窗口，解释该概念的含义。可用份额的成本（在估值时点）采用先进先出 (FIFO) 方法计算，并包含交易费用和税款。
     对图 1 中的 <code>share-2</code>而言，这一计算相对直接。2022 年 9 月 30 日，以每股 16 EUR 的报价买入 8 份，合计 67 EUR，其中包括 3 EUR 的交易费用和税款。</p>
 <p>将鼠标悬停在 <code>share-1</code>的成本上，会显示一份账目历史（参见图 2），情况较为复杂。2021 年 1 月 15 日，以 155 EUR（含费用与税款）买入 10 份。这 10 份中，在 2023 年 4 月 12 日卖出 5 份后仍剩 5 份，价值为 77.50 EUR（原始 155 EUR 的一半）。2022 年 1 月 14 日又以 84 EUR 买入 5 份，使估值时点的成本合计达到 161.50 EUR。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： 成本。</figcaption><img alt="" src="../images/securities-popup-purchase-value.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>成本。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/securities-popup-purchase-value.png"></p>
 </li>
 <li>
 <p>买价：与成本一样，这是计算得出的买入价格，已考虑多次买入与卖出。例如，<code>share-1</code>第一次买入后剩余的 5 份价格定为每股 15 EUR，不含费用与税款。第二次买入的 5 份价格定为每股 16 EUR（不含费用与税款）。<em>加权</em>平均买价为 [(5 x 15) + (5 x 16)]/10 = 15.50 EUR。</p>
@@ -4770,7 +4776,10 @@
 </ul>
 <h3 id="available-columns">可用列</h3>
 <p>除上文所述的默认可见列之外，还可以添加若干其他字段（见图 3）。</p>
-<p><figure class="align-right" style="width:30%" id="_figure-3"><figcaption>图 3： 证券的可用字段。</figcaption><img alt="" src="../images/securities-available-columns.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=align-right style="width:30%"&gt;</p>
+<p>证券的可用字段。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/securities-available-columns.png"></p>
 <ul>
 <li>
 <p>成本（移动平均）：默认情况下，Portfolio Performance 采用 FIFO 方法对股票存量估值。在该方法下，卖出时最先买入的股票也最先卖出，较近的买入则留作剩余股票。在上涨行情中，这意味着最贵的份额被留存下来，绩效看上去也更为有利，尤其是与 LIFO 方法相比时。</p>
@@ -4811,7 +4820,10 @@
 <ul>
 <li>
 <p>已实现收益：将鼠标悬停在数值上会弹出一个包含更多信息的窗口。例如，<code>share-1</code>的已实现收益为 37 EUR。这 5 份以 112 EUR 的总额卖出；而成本（不含费用与税款）为 75 EUR。因此已实现收益为 37 EUR。</p>
-<p><figure class="pp-figure" id="_figure-4"><figcaption>图 4： share-1 的已实现收益。</figcaption><img alt="" src="../images/securities-popup-realized-gains.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>share-1 的已实现收益。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/securities-popup-realized-gains.png"></p>
 </li>
 <li>
 <p>汇兑损益 / 已实现收益：如果卖出以外币计价的证券，可能会产生汇兑损益。例如，2022-04-01 投入的 100 USD 按 USD/EUR = 0.9048 的汇率折合 90.48 EUR。若在 2024-04-26 卖出这笔投资，可实现 93.34 EUR；原因仅仅在于汇率已升至 USD/EUR = 0.9334。即便报价价格毫无变化，这笔投资也应产生 2.86 EUR 的汇兑收益。</p>

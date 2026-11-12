@@ -4728,15 +4728,24 @@
   <h1>管理类别</h1>
 
 <p>新建投资组合时，侧边栏中初始不显示任何类别（见图 1 左上角）。理论上，可添加的类别数量不受限制。不过在多数情况下，两三个类别就足够了。这些类别不仅会列在侧边栏中，也会列在 <code>视图</code> 菜单中。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 添加类别。</figcaption><img alt="" src="../images/taxonomies-new.svg"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>添加类别。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/taxonomies-new.svg"></p>
 <h2 id="adding-a-new-taxonomy">添加新类别</h2>
 <p>点击绿色加号按钮 <span style="color:green"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0m7.25-3.25v2.5h2.5a.75.75 0 0 1 0 1.5h-2.5v2.5a.75.75 0 0 1-1.5 0v-2.5h-2.5a.75.75 0 0 1 0-1.5h2.5v-2.5a.75.75 0 0 1 1.5 0"></path></svg></span></span>，或使用 <code>文件 &gt; 新建 &gt; 类别</code> 菜单，即可为你的投资组合添加一个新类别。随后你可以使用某个<a href="../">预定义模板</a>，或者创建一个新类别（见图 1），该新类别可以基于现有模板之一。如果想从零开始、自行定义所有类别与子类，请选择 <code>空白类别</code>。为新类别取一个有说明性的名称。两个类别可以同名，这当然不是理想做法。点击 <code>确定</code> 即可把该类别加入侧边栏。</p>
 <p>类别列表的右键菜单允许你重命名、复制或删除已有类别。你还可以使用 <code>上移</code> 或 <code>下移</code> 选项重新排列列表中条目的顺序。</p>
 <h2 id="editing-a-taxonomy">编辑类别</h2>
 <p>从侧边栏列表中选定某个类别后，其结构会显示在主面板中（见图 2）。主面板包含两个可展开的列表：一个是已分配资产的列表，它通常（但不总是）与该类别同名（例如 "myTaxonomy"）；另一个是未分配资产的列表，标记为 <code>未分类</code>。第一个列表包含各类别与子类及其已分配资产，初始时可能为空。第二个列表包含尚未分配到任何类别下的证券和现金账户，按字母顺序排列。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： 类别的主面板。</figcaption><img alt="" src="../images/taxonomies-edit-classification.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>类别的主面板。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/taxonomies-edit-classification.png"></p>
 <p>在图 2 中，两个列表都处于展开状态。<code>myTaxonomy</code> 列表包含两个类别 <code>基准货币</code> 与 <code>外部货币</code>，并已分配相应的证券。<code>未分类</code> 列表包含所有未分配的证券。请注意，你<strong>可以</strong>把同一项证券分配到多个类别。但各项权重之和应达到 100%。</p>
-<p><figure class="align-right" style="width:20%" id="_figure-3"><figcaption>图 3： 右键菜单。</figcaption><img alt="" src="../images/taxonomies-edit-context-menu.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=align-right style="width:20%"&gt;</p>
+<p>右键菜单。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/taxonomies-edit-context-menu.png"></p>
 <p>如果你选择的是空白类别，必须先添加类别和子类，然后才能把证券分配给它们。使用 <code>添加新分类</code> 右键菜单创建新的分类（见图 3）。如果选中了某个子类，新的分类将创建在该子类内部。只需把类别拖放到新位置，即可重新排序。要删除选中的类别或列表，请使用右键菜单。</p>
 <p>选中的列表可按以下方式排序：<code>类型与名称</code>、<code>类型与实际价值</code>、<code>名称</code> 或 <code>实际价值</code>。如图 2 所示，每个类别都分配了一种颜色，可以通过右键菜单更改。</p>
 <p>要展开某个类别列表，请点击它左侧的 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M247.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L179.2 256 41.9 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg></span> 图标，该图标会变为 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M169.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 306.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg></span> 图标。点击向下的箭头即可折叠列表。要一次性展开或折叠所有类别，请使用右键菜单并选择 <code>全部展开</code> 或 <code>全部折叠</code>。 </p>
@@ -4751,7 +4760,10 @@
 <p><strong>右键菜单</strong>：在你的类别中右键单击某个类别，从右键菜单中选择 <code>分配</code>。随后会显示可用资产的列表，你可以从中选择要分配给该类别的证券。</p>
 </li>
 </ul>
-<p><figure class="align-right" style="width:50%" id="_figure-4"><figcaption>图 4： 证券数据窗口中的类别面板。</figcaption><img alt="" src="../images/taxonomies-assign-security.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=align-right style="width:50%"&gt;</p>
+<p>证券数据窗口中的类别面板。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/taxonomies-assign-security.png"></p>
 <ul>
 <li><strong>编辑证券</strong>：此方法仅适用于证券，不能用于指数和现金账户。在证券出现的任意视图中右键单击该证券，既可以是 <code>未分类</code> 列表，甚至也可以是 <code>全部证券</code> 视图。从右键菜单中选择 <code>编辑</code>。在 <code>类别</code> 标签页中，你可以把该证券添加到一个或多个类别中。如图 4 所示，Daimler Truck 证券被添加到若干预定义类别中，同时也被添加到我们新建的 MyTaxonomy 的 <code>基准货币</code> 类别下。更多信息见<a href="../../../file/new/#taxonomies">参考手册 &gt; 文件 &gt; 新建</a>。</li>
 </ul>

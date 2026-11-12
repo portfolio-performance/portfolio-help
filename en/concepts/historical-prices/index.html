@@ -4615,9 +4615,15 @@
 
 <p>To calculate performance, Portfolio Performance may need two types of historical prices: historical security quotes and, in the case of foreign investments, historical exchange rates.</p>
 <p>You can find the historical exchange rates under the menu <code>View &gt; General Data &gt; Currencies</code> (see Figure 1). These exchange rates are retrieved from <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">The European Central Bank</a> (ECB) and go back until the year 1999 when the EUR was introduced on the financial markets. They are in fact reference rates and will probably differ slightly from the real transaction rates that your broker or bank will use.</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>Figure 1. Exchange Rates. </figcaption><img alt="" src="../../reference/view/general-data/images/currencies.png"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>Exchange Rates. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../../reference/view/general-data/images/currencies.png"></p>
 <p>Securities are traded on exchange markets such as NASDAQ or XETRA, where buyers and sellers agree on a price. Historical quotes are the prices of securities at different points in time. The <code>Close</code> price is the last price of the security at the end of the trading day. Other types are the <code>Open</code> quote, the first price of the security at the start of the trading day, the <code>Low</code> and <code>High</code>quotes, which are the lowest and highest price of the security during the trading day. The <code>Latest</code> quote is the most recent price of the security available from the exchange market. The latest quote may not be the same as the close price.</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>Figure 2. Historical prices on Yahoo Finance. </figcaption><img alt="" src="../../how-to/downloading-historical-prices/images/yahoo-finance-webpage-aapl.png"></figure></p>
+<p>&lt;figure-caption identifier="Figure"class=pp-figure&gt;</p>
+<p>Historical prices on Yahoo Finance. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../../how-to/downloading-historical-prices/images/yahoo-finance-webpage-aapl.png"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Portfolio Performance uses the <code>Close</code> quote in its performance calculations. If there is a Latest quote available, it will be integrated in the Close price. For Bitcoins, the situation is more complex because they are traded 7/24. Portfolio Performance uses midnight (on the users system) to set the Close Quote. So, the historical quotes of a bitcoin could vary between users.</p>

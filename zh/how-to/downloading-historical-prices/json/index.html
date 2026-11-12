@@ -4825,7 +4825,10 @@
 <p>要访问这个层级结构中的某个特定值，你必须指定从根节点到该元素的路径。要访问列表中的元素，需要使用它的索引，即一个表示其在列表中位置的数字。索引从第一个元素的 0 开始。要访问对象中的元素，需要使用它的键，即一个表示其在对象中名称的字符串。键用双引号 " " 括起来。</p>
 <p>诸如 <em>JSONPath</em>（PP 所使用）这样的查询语言用 $ 符号表示 JSON 响应的根节点。要分隔路径中的各个元素，需要用点号。例如，要访问第二天的收盘价，你需要使用路径 <code>$[1].close</code>。这意味着：从根节点 $ 出发，进入列表中的第二个元素 <code>$[1]</code>（它是一个对象），再进入该对象中键为 "close" 的值 <code>$[1].close</code>，它是一个数字。</p>
 <p>你需要这条 JSON 路径来完成 PP 的 JSON 报价馈送提供方的配置。使用以下参数获取历史报价（另见图 1）。关于不同报价价格含义的解释，请参见<a href="../../../concepts/historical-prices/">概念 &gt; 历史价格</a>。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： JSON 报价馈送提供方收到的服务器响应（EODHD）。 </figcaption><img alt="" src="../images/json-eodhd-parameters.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>JSON 报价馈送提供方收到的服务器响应（EODHD）。 </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/json-eodhd-parameters.png"></p>
 <ul>
 <li>Feed URL: <code>https://eodhd.com/api/eod/AAPL?from=2024-01-15&amp;to=2024-01-17&amp;period=d&amp;api_token=demo&amp;fmt=json</code></li>
 <li>Path to Date: <code>$[*].date</code></li>
@@ -4882,7 +4885,10 @@
 </ul>
 <p>如果你想练习，可以使用 <a href="https://jsonpath.com/">JSONPath Online Evaluator</a>。把 URL 端点返回的 JSON 结果复制到输入窗口中。另一个实用工具是 <a href="https://jsonpathfinder.com/">JSONPath Finder</a>。</p>
 <p>有了以上信息，向 Portfolio Performance 的 JSON 报价馈送提供方填入正确输入就应当很容易了。</p>
-<p><figure class="pp-figure" id="_figure-2"><figcaption>图 2： JSON 报价馈送提供方参数。 </figcaption><img alt="" src="../images/json-yahoo-parameters.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>JSON 报价馈送提供方参数。 </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/json-yahoo-parameters.png"></p>
 <p>对大多数服务而言，你需要注册并获得一个 API 密钥，即一个用于验证用户身份并授予其访问该服务权限的唯一标识符。虽然许多金融服务看似免费地提供 API 密钥，但它们的使用条款和长期承诺往往并不令人满意。Portfolio Performance 出于兼容性考虑，在其报价馈送提供方清单中保留了其中若干服务；例如 Alpha Vantage、eodhd、……它们曾经是出色的解决方案，但后来改变了服务内容，作为免费服务已不再那么有用。就实际使用而言，对于典型投资组合，只有 Portfolio Report 和 Yahoo Finance 值得推荐。</p>
 <h3 id="further-fields">更多字段</h3>
 <h4 id="date-format">日期格式</h4>

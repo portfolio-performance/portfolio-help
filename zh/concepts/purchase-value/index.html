@@ -4621,7 +4621,10 @@
 </ul>
 <p><strong>买价</strong>是基于全部买入或估值得出的、假设性的每股平均买入价格。成本与买价这两个概念用于 <a href="../../reference/view/reports/performance/securities/">视图 &gt; 报告 &gt; 收益 &gt; 证券</a>（见图 1）。</p>
 <p>作为参照，假设采用 <a href="../../assets/demo-portfolio-03.xml">demo-portfolio-03.xml</a> 中的情形。全部账目总览见<a href="../performance/money-weighted/">资金加权收益率</a>一节。</p>
-<p><figure class="pp-figure" id="_figure-1"><figcaption>图 1： 多个报告期下证券的成本。</figcaption><img alt="" src="../images/purchase-value-reports-securities.png"></figure></p>
+<p>&lt;figure-caption identifier="图："class=pp-figure&gt;</p>
+<p>多个报告期下证券的成本。</p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/purchase-value-reports-securities.png"></p>
 <p>如图 1 所示，某些证券（如 <code>share-1</code>）所报告的成本取决于所选报告期。不过我们先聚焦于 <code>share-2</code>，它的成本与买价在三个报告期内都保持不变。</p>
 <p>从 <a href="../../assets/demo-portfolio-03.xml">demo-portfolio-03.xml</a> 可知，2022 年 9 月 30 日以每股 8 EUR 买入 8 份，合计 67 EUR，其中含 3 EUR 费用与税款。由于该买入日期落在每一个报告期内，实际买入数据便成为三个报告期的共同依据，由此得出成本为 67 EUR，买价为 8 EUR/份。</p>
 <p><code>share-1</code> 则更复杂。2021 年 1 月 15 日以合计 155 EUR（含费用与税款）买入 10 份，2022 年 1 月 14 日以 84 EUR 买入 5 份。2023 年 4 月 12 日以 105 EUR 卖出 5 份。</p>
@@ -4645,7 +4648,7 @@
 <p>由于全部账目都发生在报告期内，故采用实际买入数据。</p>
 <p>首次买入 10 份估值 155 EUR。卖出后仅剩 5 份，中间成本为 155 / 2 = 77.50 EUR。</p>
 <p>第二次买入估值 84 EUR，最终成本为 77.50 + 84 = 161.50 EUR。将鼠标悬停在成本字段上时弹出的提示中即显示此计算过程（见图 3）。</p>
-<p><figure id="_figure-2"><figcaption>图 2： 成本字段的悬停提示面板。{class=pp-figure}  </figcaption><img alt="" src="../images/purchase-value-pop-over.png">  </figure></p>
+<p><figure id="_figure-1"><figcaption>图 1： 成本字段的悬停提示面板。{class=pp-figure}  </figcaption><img alt="" src="../images/purchase-value-pop-over.png">  </figure></p>
 <p>买价为第一次与第二次买入价格的平均，计算方式为：(15 + 16) / 2 = 15.50 EUR/份。</p>
 
 
