@@ -11,7 +11,7 @@ Abbildung: Dropdown-Liste zur Auswahl des Berichtszeitraums. {class=pp-figure}
 Der Berichtszeitraum kann die Performance erheblich beeinflussen und lässt sich leicht manipulieren, um eine bestimmte Sichtweise zu unterstützen. Schau dir zum Beispiel den Preistrend der Amazon-Aktie, wie in Abbildung 2 dargestellt. Je nach Berichtszeitraum haben Sie entweder einen massiven Verlust, einen massiven Gewinn oder einen moderaten Verlust.
 
 !!! Hinweis
-    Verwenden Sie die Gleichungen unter [Grundlagen > Performance](./performance/index.md), um die Performance-Kennzahlen zu berechnen. Wenn du die Zahlen in PP überprüfen möchten, verwende das Kommer-Portfolio. Füge Amazon als [Benchmark](../reference/view/reports/performance/performance-chart.md) zum Performance-Diagramm hinzu und stelle den entsprechenden Berichtszeitraum ein, z.B. 2022. Vergiss nicht, die Portfolio-Währung auf USD zu ändern, um die Performance-Berechnungen in USD durchzuführen.
+    Verwenden Sie die Gleichungen unter [Grundlagen > Performance](./performance/index.md), um die Performance-Kennzahlen zu berechnen. Wenn du die Zahlen in PP überprüfen möchten, verwende das Kommer-Portfolio. Füge Amazon als [Benchmark](../referenzhandbuch/ansichten/berichte/performance/performance-diagramm.md) zum Performance-Diagramm hinzu und stelle den entsprechenden Berichtszeitraum ein, z.B. 2022. Vergiss nicht, die Portfolio-Währung auf USD zu ändern, um die Performance-Berechnungen in USD durchzuführen.
 
 - 2022: `TTWROR = IRR = (84/166,72)-1 = -49,62%`
 - 2023: `TTWROR = IRR = (151,94/84)-1 = +80,88%`
