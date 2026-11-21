@@ -4176,7 +4176,42 @@
 
   <h1>Berichtszeitraum</h1>
 
-
+<p>Der Berichtszeitraum bezieht sich auf den spezifischen Zeitraum, der bei der Berichterstattung über die Performance Ihres Portfolios verwendet wird. Zum Beispiel werden die in Abbildung 1 dargestellten Performance-Kennzahlen über einen einjährigen Zeitraum berechnet, beginnend ab dem heutigen Datum. Andere Berichte und Diagramme, wie zum Beispiel solche bezüglich Rendite/Varianz und Sicherheitsleistung, berücksichtigen ebenfalls diesen Berichtszeitraum. Es ist entscheidend zu verstehen, dass <em>jede</em> Performance-Berechnung auf einem Berichtszeitraum basiert, selbst wenn dieser nicht explizit definiert wurde. Standardmäßig ist er in Portfolio Performance auf ein Jahr ab dem heutigen Datum eingestellt.</p>
+<p>&lt;figure-caption identifier="Abbildung"class=pp-figure&gt;</p>
+<p>Dropdown-Liste zur Auswahl des Berichtszeitraums. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/reporting-period-performance.svg"></p>
+<p>Der Berichtszeitraum kann die Performance erheblich beeinflussen und lässt sich leicht manipulieren, um eine bestimmte Sichtweise zu unterstützen. Schau dir zum Beispiel den Preistrend der Amazon-Aktie, wie in Abbildung 2 dargestellt. Je nach Berichtszeitraum haben Sie entweder einen massiven Verlust, einen massiven Gewinn oder einen moderaten Verlust.</p>
+<div class="admonition hinweis">
+<p class="admonition-title">Hinweis</p>
+<p>Verwenden Sie die Gleichungen unter <a href="../performance/">Grundlagen &gt; Performance</a>, um die Performance-Kennzahlen zu berechnen. Wenn du die Zahlen in PP überprüfen möchten, verwende das Kommer-Portfolio. Füge Amazon als <a href="../../referenzhandbuch/ansichten/berichte/performance/performance-diagramm/">Benchmark</a> zum Performance-Diagramm hinzu und stelle den entsprechenden Berichtszeitraum ein, z.B. 2022. Vergiss nicht, die Portfolio-Währung auf USD zu ändern, um die Performance-Berechnungen in USD durchzuführen.</p>
+</div>
+<ul>
+<li>2022: <code>TTWROR = IRR = (84/166,72)-1 = -49,62%</code></li>
+<li>2023: <code>TTWROR = IRR = (151,94/84)-1 = +80,88%</code></li>
+<li>2022-2023: <code>TTWROR = IRR = (151,94/166,72)-1 = -8,87% oder -4,53% p.a.</code></li>
+</ul>
+<p>&lt;figure-caption identifier="Abbildung"class=pp-figure&gt;</p>
+<p>Historische Kurse in USD für Amazon (Zeitraum 2022 - 2023). </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/reporting-period-amazon.svg"></p>
+<p>Du kannst den Berichtszeitraum mit dem Dropdown <span style="font-variant: small-caps;">Zeitraum</span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M8 9h8l-4 7"></path></svg></span> in der oberen rechten Ecke des Fensters einstellen (siehe Abbildung 1). Die verfügbaren Optionen sind: <code>1 Jahr</code>, <code>2 Jahre</code>, <code>3 Jahre</code>, <code>Neu ...</code> und <code>Verwalten ...</code>. Mit dieser letzten Option kannst du die verfügbaren Zeiträume löschen oder neu anordnen.</p>
+<p>Der Zeitraum von 1, 2 oder 3 Jahren wird immer vom heutigen Tag berechnet und erstreckt sich vom Ende des heutigen Tages bis zum Ende des Tages vor einem, zwei oder drei Jahren. Wenn heute der 4. Juli 2024 ist, dann erstreckt sich ein Berichtszeitraum von 1 Jahr vom Schlusszeitpunkt des 4. Juli 2023 bis zum Schlusszeitpunkt des 4. Juli 2024. Der Marktwert zu Beginn (MVB) dieses Zeitraums spiegelt den Status des Portfolios am Ende des 4. Juli 2023 wider, während MVE den Status des Portfolios am Ende des 4. Juli 2024 darstellt (siehe zum Beispiel Abbildung 3). In Bezug auf die <a href="../performance/geld-gewichtet/">IRR-Berechnungsgleichung</a> sollten Transaktionen, die am ersten Datum erfolgen, z.B. am 4. Juli 2023, nicht in die Gleichung einbezogen werden, da sie bereits in der MVB des Zeitraums berücksichtigt sind. Umgekehrt sollten Transaktionen am letzten Tag des Zeitraums in die Gleichung einbezogen werden, da sie die MVE beeinflussen, selbst wenn für einen sehr kurzen Zeitraum. In dem oben erwähnten Beispiel erstreckt sich der Zeitraum <code>Jahr 2022</code> vom 31. Dezember 2021 bis zum 31. Dezember 2022, weshalb ein Kauf am 1. Januar 2022 als Cashzufluss betrachtet werden sollte.</p>
+<p>Mit dem Untermenü <code>Neu</code> kannst du benutzerdefinierte Zeiträume erstellen. Die Auswahlmöglichkeiten in Abbildung 3 sind ziemlich selbsterklärend. Du kannst diesem Zeitraum keinen benutzerdefinierten Namen geben, da sie vordefiniert und von PP benannt werden: zum Beispiel <code>Letzte 10 Handelstage</code> oder <code>2023</code> für das Jahr 2023.</p>
+<p>&lt;figure-caption identifier="Abbildung"class=pp-figure&gt;</p>
+<p>Mögliche benutzerdefinierte Zeiträume für Berichte (der aktuelle Tag ist der 4. Juli 2024). </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/reporting-period-new.png"></p>
+<ul>
+<li><code>Letzte xxx Jahre yyyy Monate</code>: Von dem aktuellen Tag minus der Anzahl der Jahre und Monate. Die Standardzeiträume von <code>1 Jahr</code>, <code>2 Jahre</code>, <code>3 Jahre</code> könnten mit dieser Option neu erstellt werden. Mit dieser Syntax kannst du jedoch auch einen benutzerdefinierten Zeitraum erstellen, wie z.B. einen <code>1,5 Jahren</code> Zeitraum.</li>
+<li><code>Letzte xxx Tage</code>: Ein Tag bezieht sich auf einen Kalendertag. Beachte, dass in Abbildung 3 die letzten xxx Tage bereits vorausgefüllt sind. Portfolio Performance erkennt, dass das aktuelle Jahr 2024 ein Schaltjahr mit dem 29. Februar ist und setzt daher automatisch die Anzahl der Tage auf 366.</li>
+<li><code>Letzte xxx Handelstage</code>: Ein Handelstag bezieht sich auf einen regulären Geschäftstag, an dem die Finanzmärkte für den Handel geöffnet sind. Wochenenden und Tage aus dem <a href="../../referenzhandbuch/hilfe/einstellungen/#kalender">ausgewählten Kalender</a> werden ausgeschlossen. Der zu verwendende Kalender kann im Menü <code>Hilfe &gt; Einstellungen &gt; Kalender</code> festgelegt werden. Gibt es 256 Handelstage in 2024? In Abbildung 3 wurde der <code>Standard</code>-Kalender ausgewählt, der sieben Feiertage enthält: Neujahr, Ostermontag, Heiligabend und vier weitere. In dem ausgewählten Zeitraum gibt es 262 nicht-Wochenende-Tage. Von den sieben Feiertagen fallen sechs (außer Heiligabend 2023) auf einen Wochentag. Somit gibt es insgesamt 256 Handelstage im Jahr.</li>
+<li><code>Von xxx (exkl.) bis yyy</code>: Ein Zeitraum zwischen zwei Daten, wobei der erste Tag nicht eingeschlossen ist (beginnt am Ende dieses Tages).</li>
+<li><code>Seit xxx (exkl)</code>: Von dem angegebenen Datum (ausgeschlossen) bis heute (eingeschlossen).</li>
+<li><code>Jahr xxxx</code>: Das Jahr läuft immer vom 31. Dezember xxxx bis zum 31. Dezember xxxx+1.</li>
+<li><code>Aktuell</code>: <code>Woche</code>, <code>Monat</code>, <code>Quartal</code> oder <code>Jahr</code>. Eine Woche läuft vom Sonntag oder Montag (Abend) bis zum folgenden Sonntag oder Montag (Abend), abhängig vom in den <a href="../../referenzhandbuch/hilfe/einstellungen/#sprache">Einstellungen</a> angegebenen Land. Ein Quartal umfasst drei Monate, z.B. Januar bis März, April bis Juni und so weiter. Die Abkürzung <code>YTD</code> steht für <em>Year-to-date</em> und bezieht sich auf den Zeitraum vom Beginn des aktuellen Jahres bis zum heutigen Tag.</li>
+<li><code>Vorherige</code>: <code>Tag</code>, <code>Handelstag</code>, <code>Woche</code>, <code>Monat</code>, <code>Quartal</code> und <code>Jahr</code>. Der <code>Vorherige Tag</code> ist nicht dasselbe wie die <code>Letzten 1 Tage</code>. Bis heute, dem 4. Juli, wäre der Vorherige Tag der 3. Juli, der vom Abend des 2. Juli bis zum Abend des 3. Juli läuft, während der Zeitraum der <code>Letzten 1 Tag</code> den 4. Juli (den aktuellen Tag) umfasst. Der Vorherige Handelstag ist ähnlich dem Vorherigen Tag, aber ohne Wochenenden und Feiertage. Der Vorherige Monat läuft vom ersten Tag des vorherigen Monats bis zum letzten Tag des aktuellen Monats. Das erste Quartal läuft vom 1. Januar bis zum 31. März. Das Vorherige Jahr beginnt am 1. Januar des vorherigen Jahres und endet am 31. Dezember des vorherigen Jahres.</li>
+</ul>
 
 
 
@@ -4197,7 +4232,7 @@
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="9. Februar 2025 10:20:04 CET">9. Februar 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="21. November 2026 23:33:13 CET">21. November 2026</span>
   </span>
 
     
